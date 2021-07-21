@@ -3,8 +3,8 @@ this.lash_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.lash";
-		this.m.Name = "Lash";
-		this.m.Description = "Aim for an opponent\'s head. Somewhat unpredictable in damage, but able to strike over or around shield cover with a bit of luck.";
+		this.m.Name = "Coup à la Tête";
+		this.m.Description = "Vise la tête de l\'ennemi. Quelque peut imprévisible au niveau des dégâts, mais peut frapper par dessus ou de contourner le bouclier avec un peu de chance.";
 		this.m.Icon = "skills/active_91.png";
 		this.m.IconDisabled = "skills/active_91_sw.png";
 		this.m.Overlay = "active_91";
@@ -49,7 +49,7 @@ this.lash_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance to hit the head"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance de toucher la tête"
 			}
 		]);
 
@@ -59,7 +59,7 @@ this.lash_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Ignores the bonus to Melee Defense granted by shields"
+				text = "Ignore le bonus de Défense en Mêlée donné par les boucliers"
 			});
 		}
 

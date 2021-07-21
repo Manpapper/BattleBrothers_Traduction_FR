@@ -15,7 +15,7 @@ this.split_shield <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.split_shield";
-		this.m.Name = "Fendre Bouclier";
+		this.m.Name = "Pourfendre un Bouclier";
 		this.m.Description = "Une attaque qui a pour but de détruire le bouclier de l\'ennemi. Peut seulement être utiliser sur les ennemis qui possèdent un bouclier. Touchera toujours mais il faudra probablement plusieurs coups en fonction du bouclier et de l\'arme utilisé.";
 		this.m.Icon = "skills/active_09.png";
 		this.m.IconDisabled = "skills/active_09_sw.png";

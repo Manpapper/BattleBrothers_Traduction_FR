@@ -3,8 +3,8 @@ this.hail_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.hail";
-		this.m.Name = "Hail";
-		this.m.Description = "Aim for an opponent\'s head. Each striking head can hit or miss on its own for one third of the weapon\'s damage, and will strike over or around shield cover.";
+		this.m.Name = "Avalanche de Coups à la Tête";
+		this.m.Description = "Vise la tête de l\'ennemi. Chaque coup peut toucher ou manquer chacun inflige un tier des dégâts de l\'arme, et frappera par dessus ou de contourner le bouclier.";
 		this.m.Icon = "skills/active_126.png";
 		this.m.IconDisabled = "skills/active_126_sw.png";
 		this.m.Overlay = "active_126";
@@ -50,13 +50,13 @@ this.hail_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance to hit the head"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance de toucher la tête"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Will make three separate strikes for one third of the weapon\'s damage each."
+				text = "Fera trois coups séparés pour un tiers des dégâts de l\'arme chacun."
 			}
 		]);
 
@@ -66,7 +66,7 @@ this.hail_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Ignores the bonus to Melee Defense granted by shields"
+				text = "Ignore le bonus de Défense en Mêlée donné par les boucliers"
 			});
 		}
 

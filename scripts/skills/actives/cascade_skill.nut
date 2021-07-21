@@ -3,8 +3,8 @@ this.cascade_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.cascade";
-		this.m.Name = "Avalanche";
-		this.m.Description = "Vous lâchez une avalanche de trois coups sur la tête de votre adversaire. Permet de frapper par dessus ou de contourner le bouclier.";
+		this.m.Name = "Avalanche de Coups";
+		this.m.Description = "Vous lâchez une avalanche de trois coups de votre adversaire. Permet de frapper par dessus ou de contourner le bouclier.";
 		this.m.KilledString = "Cogné à mort";
 		this.m.Icon = "skills/active_125.png";
 		this.m.IconDisabled = "skills/active_125_sw.png";

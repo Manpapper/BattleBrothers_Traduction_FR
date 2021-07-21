@@ -5,7 +5,7 @@ this.strike_down_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.strike_down";
-		this.m.Name = "Frapper avec le Plat de la Lame";
+		this.m.Name = "Frappe Descendante";
 		this.m.Description = "Donne un coup puissant qui a pour but d\'incapaciter et d\'étourdir la cible pour deux tours, mais ne fait pas le plus de dégâts. Les cibles étourdis ne peuvent pas garder en place leur Mur de Bouclier, Mur de Lance ou toute autre compétence similaire.";
 		this.m.KilledString = "Cudgeled to death";
 		this.m.Icon = "skills/active_134.png";
