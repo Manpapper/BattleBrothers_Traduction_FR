@@ -63,7 +63,7 @@ CharacterScreenRightPanelHeaderModule.prototype.createDIV = function (_parentDiv
 
     layout = $('<div class="l-button is-perks"/>');
     middleButtonContainer.append(layout);
-    this.mSwitchToPerksButton = layout.createTabTextButton("Atouts", function()
+    this.mSwitchToPerksButton = layout.createTabTextButton("Talents", function()
 	{
         if (self.mOnSwitchToPerksCallback !== null && jQuery.isFunction(self.mOnSwitchToPerksCallback))
         {
@@ -209,11 +209,11 @@ CharacterScreenRightPanelHeaderModule.prototype.updateButtonsByBrother = functio
     var perkPoints = this.mDataSource.getBrotherPerkPoints(_brother);
     if (perkPoints > 0)
     {
-        this.mSwitchToPerksButton.findButtonText().html('Perks (<span class="font-bold font-color-positive-value">' + perkPoints + '</span>)');
+        this.mSwitchToPerksButton.findButtonText().html('Talents (<span class="font-bold font-color-positive-value">' + perkPoints + '</span>)');
     }
     else
     {
-        this.mSwitchToPerksButton.findButtonText().html('Perks');
+        this.mSwitchToPerksButton.findButtonText().html('Talents');
     }
 };
 
@@ -224,11 +224,11 @@ CharacterScreenRightPanelHeaderModule.prototype.updateButtonsByInventoryMode = f
         case CharacterScreenDatasourceIdentifier.InventoryMode.BattlePreparation:
         case CharacterScreenDatasourceIdentifier.InventoryMode.Stash:
         {
-            this.mSwitchToInventoryButton.findButtonText().html('Stash');
+            this.mSwitchToInventoryButton.findButtonText().html('Inventaire');
         } break;
         case CharacterScreenDatasourceIdentifier.InventoryMode.Ground:
         {
-            this.mSwitchToInventoryButton.findButtonText().html('Ground');
+            this.mSwitchToInventoryButton.findButtonText().html('Au Sol');
         } break;
     }
 };

@@ -2623,7 +2623,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ce personnage vient de monter de niveau! Trouvez-le dans votre compagnie, accessible depuis la map monde pour monter ses attributs et selectionner un atout."
+					text = "Ce personnage vient de monter de niveau! Trouvez-le dans votre compagnie, accessible depuis la map monde pour monter ses attributs et sélectionner un Talent."
 				}
 			];
 			return result;
@@ -2690,7 +2690,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre de point d\'expérience gagné en combattant et tuant des ennemis. Gagner assez de points d\'expérience permettra à ce personnage de montre de niveau, ce qui augmentera ses attributs et lui permettra de choisir un atout."
+					text = "Le nombre de point d\'expérience gagné en combattant et tuant des ennemis. Gagner assez de points d\'expérience permettra à ce personnage de montre de niveau, ce qui augmentera ses attributs et lui permettra de choisir un Talent."
 				}
 			];
 
@@ -2798,7 +2798,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les personnages gagnent des points d\'expérience quand vous ou vos alliés tuent des ennemies en bataille. Si un combattant accumule assez d\'expérience, il montera de niveau et aura la possibilité de monter ses attributs et de sélectionner un atout qui offrira un bonus unique.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points d\'atout, mais ils continueront de s\'ameliorer."
+					text = "Les personnages gagnent des points d\'expérience quand vous ou vos alliés tuent des ennemies en bataille. Si un combattant accumule assez d\'expérience, il montera de niveau et aura la possibilité de monter ses attributs et de sélectionner un Talent qui offrira un bonus unique.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points de Talent, mais ils continueront de s\'ameliorer."
 				}
 			];
 
@@ -2812,7 +2812,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le niveau d\'un personnage mesure son niveau d\'expérience au combat. Les personnages montent en niveau au fur et à mesure qu\'ils gagnent de l\'expérience et gagne la possibilité de gagner des atouts qui les rendent meilleurs dans leur travail de mercenaires.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points d\'atout, mais ils continueront de s\'ameliorer."
+					text = "Le niveau d\'un personnage mesure son niveau d\'expérience au combat. Les personnages montent en niveau au fur et à mesure qu\'ils gagnent de l\'expérience et gagne la possibilité de gagner des Talents qui les rendent meilleurs dans leur travail de mercenaires.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points de Talent, mais ils continueront de s\'ameliorer."
 				}
 			];
 
@@ -2826,7 +2826,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ce personnage est monté de niveau. Monter ses attributs et sélectionner un atout!"
+					text = "Ce personnage est monté de niveau. Monter ses attributs et sélectionner un Talent!"
 				}
 			];
 			return result;
@@ -2864,12 +2864,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Atouts"
+					text = "Talents"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Afficher les atouts du personnage sélectionné.\n\nLe nombre entre crochets, s\'il y en a, est le nombre disponible de points d\'atouts."
+					text = "Afficher les Talents du personnage sélectionné.\n\nLe nombre entre crochets, s\'il y en a, est le nombre disponible de points de Talents."
 				}
 			];
 
