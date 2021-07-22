@@ -61,8 +61,8 @@ this.fractured_skull_injury <- this.inherit("scripts/skills/injury/injury", {
 			{
 				id = 7,
 				type = "text",
-				icon = "ui/icons/à la Vue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] à la Vue"
+				icon = "ui/icons/Vision.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] de Vision"
 			}
 		];
 		this.addTooltipHint(ret);
@@ -78,7 +78,7 @@ this.fractured_skull_injury <- this.inherit("scripts/skills/injury/injury", {
 			return;
 		}
 
-		_properties.à la Vue -= 2;
+		_properties.Vision -= 2;
 		_properties.InitiativeMult *= 0.5;
 		_properties.MeleeSkillMult *= 0.5;
 		_properties.RangedSkillMult *= 0.5;
