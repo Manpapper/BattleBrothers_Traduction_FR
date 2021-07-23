@@ -4,7 +4,7 @@ this.burnt_face_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.burnt_face";
-		this.m.Name = "Visage  brulé";
+		this.m.Name = "Visage brulé";
 		this.m.Description = "Des marques de brulé couvrent des partis du visage et des yeux, ce qui rend difficile de se concentrer et de voir la cible.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_48";

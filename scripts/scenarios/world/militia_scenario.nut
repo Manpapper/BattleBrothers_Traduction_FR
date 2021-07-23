@@ -4,7 +4,7 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 	{
 		this.m.ID = "scenario.militia";
 		this.m.Name = "Milice Paysanne";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Ça a commencé avec une milice en guenille composé de courageux ou de personnes assez désespérés pour se proposer à défendre leurs maisons, mais qui a grossit pour devenir une petite armée. Une armée qui a besoin d\'être nourrit tous les jours. Peut-être que les services de la milice pouraient être loués?\n\n[color=#bcad8c]Armée Paysanne:[/color] Commencez avec une compagnie de 12 paysans très mals équippés.\n[color=#bcad8c]Vague Humaine[/color]: Emmenez jusqu\'à 16 hommes en bataille en même temps, et ayez jusqu\'à 25 hommes dans votre compagnie.\n[color=#bcad8c]Paysans Sales[/color]: Vous ne pouvez engager des personnes qui ne sont pas des paysans.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Ça a commencé avec une milice en guenille composé de courageux ou de personnes assez désespérés pour se proposer à défendre leurs maisons, mais qui a grossit pour devenir une petite armée. Une armée qui a besoin d\'être nourrit tous les jours. Peut-être que les services de la milice pouraient être loués?\n[color=#bcad8c]Armée Paysanne:[/color] Commencez avec une compagnie de 12 paysans très mals équippés.\n[color=#bcad8c]Vague Humaine[/color]: Emmenez jusqu\'à 16 hommes en bataille en même temps, et ayez jusqu\'à 25 hommes dans votre compagnie.\n[color=#bcad8c]Paysans Sales[/color]: Vous ne pouvez engager des personnes qui ne sont pas des paysans.[/p]";
 		this.m.Difficulty = 1;
 		this.m.Order = 20;
 	}

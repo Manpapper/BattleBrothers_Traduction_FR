@@ -80,7 +80,7 @@ this.split_shield <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "A une distance d\'attaque de  [color=" + this.Const.UI.Color.PositiveValue + "] " + this.m.MaxRange + "[/color] tuiles"
+				text = "A une distance d\'attaque de [color=" + this.Const.UI.Color.PositiveValue + "] " + this.m.MaxRange + "[/color] tuiles"
 			});
 		}
 
@@ -154,7 +154,7 @@ this.split_shield <- this.inherit("scripts/skills/skill", {
 
 				if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 				{
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " utilise Fendre Bouclier et touche le bouclier de " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + "  pour [b]" + (conditionBefore - shield.getCondition()) + "[/b] de dégâts");
+					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " utilise Fendre Bouclier et touche le bouclier de " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " pour [b]" + (conditionBefore - shield.getCondition()) + "[/b] de dégâts");
 				}
 			}
 

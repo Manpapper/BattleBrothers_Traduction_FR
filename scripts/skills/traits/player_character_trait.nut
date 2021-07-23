@@ -6,7 +6,7 @@ this.player_character_trait <- this.inherit("scripts/skills/traits/character_tra
 		this.m.ID = "trait.player";
 		this.m.Name = "Joueur";
 		this.m.Icon = "ui/traits/trait_icon_63.png";
-		this.m.Description = "Il s\'agit de votre personnage, en d\'autres mots, vous-meme. S\'il meurt, votre campgane se termine. Vous ne pouvez le renvoyer, et il ne désertera jamais.";
+		this.m.Description = "Il s\'agit de votre personnage, en d\'autres mots, de vous-mÃªme. S\'il meurt, votre campgane se termine. Vous ne pouvez le renvoyer, et il ne dÃ©sertera jamais.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Type = this.m.Type;
 		this.m.Titles = [];
@@ -30,7 +30,7 @@ this.player_character_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Détermination"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de DÃ©termination"
 			}
 		];
 	}

@@ -48,7 +48,7 @@ this.slash <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de  chance de toucher"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de chance de toucher"
 			}
 		]);
 		return ret;

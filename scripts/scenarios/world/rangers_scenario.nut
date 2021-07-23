@@ -3,8 +3,8 @@ this.rangers_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 	function create()
 	{
 		this.m.ID = "scenario.rangers";
-		this.m.Name = "Groupe de Braconneurs";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Pendant des années, vous avez vécu une vie décente egrâce au braconnage dans les fôrets locales, en échappant aux hommes de votre seigneur en étant rapide. Mais les récoltes deviennent de plus en plus mince, et vous faites face à une décision - Comment vivre quand tout ce que vous savez faire c'est utiliser un arc?\n\n[color=#bcad8c]Chasseurs:[/color] Commencez  avec un groupe de trois forestiers.\n[color=#bcad8c]Eclaireurs Expert:[/color] Vous vous déplacer plus rapidement et vous recevez toujours un rapport de vos éclaireurs pour chaque ennemi près de vous.\n[color=#bcad8c]Voyager Léger:[/color] Vous transportez moins d\'objet dans l\'inventaire de votre compagnie.[/p]";
+		this.m.Name = "Groupe de Braconniers";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Pendant des années, vous avez vécu une vie décente grâce au braconnage dans les fôrets locales, en échappant aux hommes de votre seigneur en étant rapide. Mais les récoltes deviennent de plus en plus mince, et vous faites face à une décision - Comment vivre quand tout ce que vous savez faire c'est utiliser un arc?\n[color=#bcad8c]Chasseurs:[/color] Commencez avec un groupe de trois forestiers.\n[color=#bcad8c]Eclaireurs Expert:[/color] Vous vous déplacer plus rapidement et vous recevez toujours un rapport de vos éclaireurs pour chaque ennemi près de vous.\n[color=#bcad8c]Voyager Léger:[/color] Vous transportez moins d\'objet dans l\'inventaire de votre compagnie.[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 30;
 	}

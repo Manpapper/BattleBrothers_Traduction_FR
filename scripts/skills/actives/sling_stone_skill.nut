@@ -7,7 +7,7 @@ this.sling_stone_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.sling_stone";
 		this.m.Name = "Fronde";
-		this.m.Description = "Lance une pierre vers la cible avec votre fronde. La précision descend rapidement avec la distance.  Ne peut être utilisé si vous êtes attaqué en mêlée.";
+		this.m.Description = "Lance une pierre vers la cible avec votre fronde. La précision descend rapidement avec la distance. Ne peut être utilisé si vous êtes attaqué en mêlée.";
 		this.m.KilledString = "Stoned";
 		this.m.Icon = "skills/active_12.png";
 		this.m.IconDisabled = "skills/active_12_sw.png";

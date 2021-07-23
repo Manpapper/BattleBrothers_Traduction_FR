@@ -3,8 +3,8 @@ this.early_access_scenario <- this.inherit("scripts/scenarios/world/starting_sce
 	function create()
 	{
 		this.m.ID = "scenario.early_access";
-		this.m.Name = "A New Company";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]After years of bloodying your sword for meager pay, you\'ve saved enough crowns to start your very own mercenary company. With you are three experienced mercenaries with whom you\'ve fought side by side in the shieldwall before.\n\n[color=#bcad8c]A quick start into the world, without any particular advantages or disadvantages.[/color][/p]";
+		this.m.Name = "Nouvelle Compagnie";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Après des années à couvrir votre épée de sang pour un salaire ridicule, vous avez enfin assez de couronnes pour commencer votre propre compagnie de mercenaire. Trois mercenaires avec lesquels vous avez combattu côte à côte dans le Mur de Bouclier vous ont rejoint.\n\n[color=#bcad8c]Un début rapide dans le monde, sans advantages ou de désavantages particuliers.[/color][/p]";
 		this.m.Difficulty = 1;
 		this.m.Order = 10;
 	}

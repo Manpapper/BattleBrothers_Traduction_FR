@@ -3,8 +3,8 @@ this.perfect_focus <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.perfect_focus";
-		this.m.Name = "Perfect Focus";
-		this.m.Description = "Become one with your weapon and gain perfect focus as if time itself were to stand still.";
+		this.m.Name = "Concentration Parfaite";
+		this.m.Description = "Devenez un avec votre arme et gagnez une concentration parfaite comme si le temps s\'arrêtait.";
 		this.m.Icon = "ui/perks/perk_37_active.png";
 		this.m.IconDisabled = "ui/perks/perk_37_active_sw.png";
 		this.m.Overlay = "perk_37_active";
@@ -46,7 +46,7 @@ this.perfect_focus <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The Action Point cost for using skills is reduced by half for the remainder of this round, but Fatigue costs are doubled."
+				text = "Les Points d\'Action pour utiliser des compétences sont divisés par deux jusqu\'à la fin de ce tour, mais le gain de Fatigue est doublé."
 			}
 		];
 		return ret;

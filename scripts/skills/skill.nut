@@ -1788,7 +1788,7 @@ this.skill <- {
 		local dir = _info.User.getTile().getDirectionTo(_info.TileHit);
 		local flip = dir <= this.Const.Direction.S ? false : true;
 
-		for( local n = this.Const.Combat.SpawnArrowDecalAttempts; n != 0;  )
+		for( local n = this.Const.Combat.SpawnArrowDecalAttempts; n != 0; )
 		{
 			local decal = this.Const.ProjectileDecals[_info.Skill.getProjectileType()][this.Math.rand(0, this.Const.ProjectileDecals[_info.Skill.getProjectileType()].len() - 1)];
 

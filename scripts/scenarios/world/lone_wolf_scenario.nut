@@ -4,7 +4,7 @@ this.lone_wolf_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 	{
 		this.m.ID = "scenario.lone_wolf";
 		this.m.Name = "Loup Solitaire";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Vous avez voyagé seul pendant très longtemps, prenant par aux tournois ou des duels contre de jeunes nobles. Un chevalier érrant aussi grand qu\'un arbre, vous n\'avez jamais vraiment eu besoin de quelqu\'un très longtemps. Mais est-ce toujours vrai?\n\n[color=#bcad8c]Loup Solitaire:[/color] Commencez avec un seul chevalier errant avec un bon équipement, mais peu de fonds.\n[color=#bcad8c]Une Unité d\'Elite:[/color] Vous ne pouvez pas avoir plus de 12 hommes dans votre compagnie.\n[color=#bcad8c]Avatar:[/color] Si votre chevalier errant meurt, la campagne se termine.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Vous avez voyagé seul pendant très longtemps, prenant part aux tournois ou des duels contre de jeunes nobles. Un chevalier érrant aussi grand qu\'un arbre, vous n\'avez jamais vraiment eu besoin de quelqu\'un très longtemps. Mais est-ce toujours vrai?\n\n[color=#bcad8c]Loup Solitaire:[/color] Commencez avec un seul chevalier errant avec un bon équipement, mais peu de fonds.\n[color=#bcad8c]Une Unité d\'Elite:[/color] Vous ne pouvez pas avoir plus de 12 hommes dans votre compagnie.\n[color=#bcad8c]Avatar:[/color] Si votre chevalier errant meurt, la campagne se termine.[/p]";
 		this.m.Difficulty = 3;
 		this.m.Order = 110;
 		this.m.IsFixedLook = true;

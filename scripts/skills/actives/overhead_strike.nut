@@ -10,8 +10,8 @@ this.overhead_strike <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.overhead_strike";
-		this.m.Name = "Overhead Strike";
-		this.m.Description = "A diagonal overhead strike performed with full force to devastating effect.";
+		this.m.Name = "Coup Aérien";
+		this.m.Description = "Un coup en diagonal venant du haut provoquant des effets dévastateurs.";
 		this.m.Icon = "skills/active_20.png";
 		this.m.IconDisabled = "skills/active_20_sw.png";
 		this.m.Overlay = "active_20";
@@ -75,7 +75,7 @@ this.overhead_strike <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] damage to hitpoints, of which [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] can ignore armor"
+			text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] de dégâts aux Point de Vie, avec [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] qui peuvent ignorer l\'armure"
 		});
 
 		if (damage_Armor_max > 0)
@@ -84,7 +84,7 @@ this.overhead_strike <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_max + "[/color] damage to armor"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_max + "[/color] de dégâts à l\'Armure"
 			});
 		}
 
@@ -92,7 +92,7 @@ this.overhead_strike <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+5%" + "[/color] chance to hit"
+			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+5%" + "[/color] de chance de toucher"
 		});
 
 		if (this.m.StunChance != 0)
@@ -101,7 +101,7 @@ this.overhead_strike <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] chance to stun on a hit"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] de chance chance d\'étourdir en touchant"
 			});
 		}
 
@@ -129,7 +129,7 @@ this.overhead_strike <- this.inherit("scripts/skills/skill", {
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has stunned " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " for one turn");
+				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " a étourdi " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " pour un tour");
 			}
 		}
 

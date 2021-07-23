@@ -4,7 +4,7 @@ this.southern_quickstart_scenario <- this.inherit("scripts/scenarios/world/start
 	{
 		this.m.ID = "scenario.southern_quickstart";
 		this.m.Name = "Mercenaires du Sud";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_156.png[/img][/p][p]Vous et votre petit groupe de mercenaires avez fait le sale travaille d\'un petit marchand pendant des années, et pourtant vous avez à peine ce qu\'il faut pour vous différencier de brigands. Vous souhaitez vous agrandir plus que ça. Vous voulez plus. Et le Gilder vous révèlera la voie.\n\n[color=#bcad8c]Un début rapide dans la partie Sud du monde, sans d\'advantages et de désavantages particuliers.[/color][/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_156.png[/img][/p][p]Vous et votre petit groupe de mercenaires avez fait le sale travaille d\'un petit marchand pendant des années, et pourtant vous avez à peine ce qu\'il faut pour vous différencier de brigands. Vous souhaitez vous agrandir plus que ça. Vous voulez plus. Et le Gilder vous révèlera la voie.\n\n[color=#bcad8c]Un début rapide dans la partie Sud du monde, sans advantages ou de désavantages particuliers.[/color][/p]";
 		this.m.Difficulty = 1;
 		this.m.Order = 11;
 	}
