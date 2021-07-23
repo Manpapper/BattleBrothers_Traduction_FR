@@ -660,26 +660,26 @@ gt.Const.Strings.AlpStateName <- [
 	"Existing mostly in dreams"
 ];
 gt.Const.Strings.BodyPartName <- [
-	"body",
-	"head"
+	"corps",
+	"tête"
 ];
 gt.Const.Strings.ItemSlotName <- [
-	"Body",
-	"Head",
-	"Mainhand",
-	"Offhand",
-	"Accessory",
-	"Bag"
+	"Corps",
+	"Tête",
+	"Main Dominante",
+	"Main Non-Dominante",
+	"Accessoire",
+	"Sac"
 ];
 gt.Const.Strings.World.TimeOfDay <- [
-	"Dawn",
-	"Morning",
-	"Midday",
-	"Afternoon",
-	"Evening",
-	"Dusk",
-	"Night",
-	"Dawn"
+	"Aube",
+	"Matin",
+	"Midi",
+	"Après-Midi",
+	"Soir",
+	"Crépuscule",
+	"Nuit",
+	"Aube"
 ];
 gt.Const.Strings.Direction <- [
 	"north",
@@ -691,14 +691,14 @@ gt.Const.Strings.Direction <- [
 	"<undefined>"
 ];
 gt.Const.Strings.Direction8 <- [
-	"north",
-	"north-east",
-	"east",
-	"south-east",
-	"south",
-	"south-west",
-	"west",
-	"north-west"
+	"au nord",
+	"au nord-est",
+	"à l\'est",
+	"au sud-est",
+	"au sud",
+	"au sud-ouest",
+	"à l\'ouest",
+	"au nord-west"
 ];
 gt.Const.Strings.Terrain <- [
 	"",
@@ -1214,12 +1214,12 @@ gt.Const.Strings.TerrainRegionNames <- [
 	]
 ];
 gt.Const.Strings.Distance <- [
-	"close by",
-	"not far",
-	"some way",
-	"a long way",
-	"far",
-	"far away"
+	"près",
+	"pas loin",
+	"pas très loin",
+	"une certaine distance",
+	"loin",
+	"très loin"
 ];
 gt.Const.Strings.PartyStrength <- [
 	"Puny",
@@ -1231,11 +1231,11 @@ gt.Const.Strings.PartyStrength <- [
 	"Invincible"
 ];
 gt.Const.Strings.EngageEnemyNumbers <- [
-	"A few",
-	"Some",
-	"Many",
-	"Lots of",
-	"A plethora of"
+	"Un peu",
+	"Quelques",
+	"Un peu Beaucoup",
+	"Beaucoup",
+	"Énormément"
 ];
 gt.Const.Strings.InventoryHeader <- [
 	"Donkey",
