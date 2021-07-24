@@ -836,7 +836,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We have other obligations. | I won\'t grind the company in some siege.}",
+					Text = "{Ça ne vaut pas le coup. | Nous avons d\'autres obligations. | I won\'t grind the company in some siege.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

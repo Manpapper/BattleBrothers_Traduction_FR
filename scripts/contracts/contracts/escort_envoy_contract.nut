@@ -252,7 +252,7 @@ this.escort_envoy_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Let\'s talk money. | How much is this worth to you? | What will the pay be?}",
+					Text = "{Parlons argent. | How much is this worth to you? | What will the pay be?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -260,7 +260,7 @@ this.escort_envoy_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{You\'ll have to find protection elsewhere. | This is not the kind of work we\'re looking for.}",
+					Text = "{You\'ll have to find protection elsewhere. | Ce n\'est pas le type de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

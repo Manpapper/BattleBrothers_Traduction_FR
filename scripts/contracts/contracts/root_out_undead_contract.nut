@@ -327,7 +327,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We\'re needed elsewhere.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

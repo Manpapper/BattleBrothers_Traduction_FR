@@ -284,7 +284,7 @@ this.raze_attached_location_contract <- this.inherit("scripts/contracts/contract
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Let\'s talk money. | How many crowns are we talking about? | What will the pay be? | For the right price, everything can be done.}",
+					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | What will the pay be? | For the right price, everything can be done.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -292,7 +292,7 @@ this.raze_attached_location_contract <- this.inherit("scripts/contracts/contract
 
 				},
 				{
-					Text = "{That\'s not our line of work. | That\'s not for the %companyname%.}",
+					Text = "{Ça ne fait pas parti de notre travail. | Ce n\'est pas pour %companyname%.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

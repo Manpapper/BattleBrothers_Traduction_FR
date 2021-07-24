@@ -190,7 +190,7 @@ gt.Const.Contracts.NegotiationDefault <- [
 
 			if (!this.Contract.m.Payment.IsNegotiating)
 			{
-				this.Text = "[img]gfx/ui/events/event_04.png[/img]{He nods.%SPEECH_ON%Oui. Bien. Je pensais à votre paiement pour la tâche plus tôt. | Il se redresse.%SPEECH_ON%Alors, pour le paiement. | Il sourit.%SPEECH_ON%Cela fera de vous un homme riche, mon ami. | Il inspire profondément.%SPEECH_ON%Très bien, c\'est ce que je suis prêt à vous offrir. | Il pose sa main sur votre épaule, en vours souriant.%SPEECH_ON%Je pense avoir une compensation adéquate pour vos services. | Il bouge ses mains dans tous les sens, en pointant ses doigts comme s\'il comptait quelque chose, mais ça ne veut rien dire pour vous.%SPEECH_ON%À en jugé par votre expérience, c\'est un bon prix pour la tâche. | Il hoche de la tête. %SPEECH_ON%Vous semblez capable, donc je suis prêt à payer un peu. | Il fait du bruit avec un sac de pièces.%SPEECH_ON%Elles seront votre si vous m\'aidez. | Il ouvre la paaume de sa main.%SPEECH_ON%Je suis à sec, donc avant que vous ne demandiez, c\'est tout ce que j\'ai en ce moment. | %SPEECH_ON%Soyez rassuré ce que je vous offre maintenant est un bon prix pour votre travail.} ";
+				this.Text = "[img]gfx/ui/events/event_04.png[/img]{He nods.%SPEECH_ON%Oui. Hé bien. Je réflèchissais justement à votre paiement pour la tâche un peu plus tôt. | Il se redresse.%SPEECH_ON%Alors, pour le paiement. | Il sourit.%SPEECH_ON%Cela fera de vous un homme riche, mon ami. | Il inspire profondément.%SPEECH_ON%Très bien, c\'est ce que je suis prêt à vous offrir. | Il pose sa main sur votre épaule, en vours souriant.%SPEECH_ON%Je pense avoir une compensation adéquate pour vos services. | Il bouge ses mains dans tous les sens, en pointant ses doigts comme s\'il comptait quelque chose, mais ça ne veut rien dire pour vous.%SPEECH_ON%À en jugé par votre expérience, c\'est un bon prix pour la tâche. | Il hoche de la tête. %SPEECH_ON%Vous semblez capable, donc je suis prêt à payer un peu. | Il fait du bruit avec un sac de pièces.%SPEECH_ON%Elles seront votre si vous m\'aidez. | Il ouvre la paume de sa main.%SPEECH_ON%Je suis à sec, donc avant que vous ne demandiez, c\'est tout ce que j\'ai en ce moment. | %SPEECH_ON%Soyez rassuré ce que je vous offre maintenant est un bon prix pour votre travail.} ";
 				this.Contract.m.Payment.IsNegotiating = true;
 			}
 			else if (this.Contract.m.Payment.IsFinal)
@@ -204,19 +204,19 @@ gt.Const.Contracts.NegotiationDefault <- [
 
 			if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance == 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnes quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnes quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé} %reward_advance% Couronnes d\'avance.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé} %reward_advance% Couronnes d\'avance.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else
 			{
-				this.Text += "You\'ll be paid nothing. Is that what you want?%SPEECH_OFF%";
+				this.Text += " Vous ne serez pas payé. C\'est ce que vous voulez?%SPEECH_OFF%";
 			}
 		}
 
@@ -257,7 +257,7 @@ gt.Const.Contracts.NegotiationPerHead <- [
 		{
 			this.Options = [];
 			this.Options.push({
-				Text = "I accept your offer.",
+				Text = "J\'accepte votre offre.",
 				function getResult()
 				{
 					this.Contract.m.BulletpointsPayment = [];
@@ -282,7 +282,7 @@ gt.Const.Contracts.NegotiationPerHead <- [
 
 			});
 			this.Options.push({
-				Text = "Nous avons besoin d\'être payé plus pour ça.",
+				Text = "Nous avons besoin d\'être payés plus pour ça.",
 				function getResult()
 				{
 					if (!this.World.Retinue.hasFollower("follower.negotiator"))
@@ -315,7 +315,7 @@ gt.Const.Contracts.NegotiationPerHead <- [
 			if (this.Contract.m.Payment.Count < 1.0)
 			{
 				this.Options.push({
-					Text = this.Contract.m.Payment.Count == 0 ? "Nous avons besoin d\'être payé plus par tête que nous ramenons." : "Nous avons besoin d\'être payé plus par tête que nous ramenons",
+					Text = this.Contract.m.Payment.Count == 0 ? "Nous avons besoin d\'être payés plus par tête que nous ramenons." : "Nous avons besoin d\'être payés plus par tête que nous ramenons",
 					function getResult()
 					{
 						this.Contract.m.Payment.Annoyance += this.Math.maxf(1.0, this.Math.rand(this.Const.Contracts.Settings.NegotiationAnnoyanceGainMin, this.Const.Contracts.Settings.NegotiationAnnoyanceGainMax) * this.World.Assets.m.NegotiationAnnoyanceMult);
@@ -457,7 +457,7 @@ gt.Const.Contracts.NegotiationPerHead <- [
 
 			if (!this.Contract.m.Payment.IsNegotiating)
 			{
-				this.Text = "[img]gfx/ui/events/event_04.png[/img]{He nods.%SPEECH_ON%Oui. Bien. Je pensais à votre paiement pour la tâche plus tôt. | Il se redresse.%SPEECH_ON%Alors, pour le paiement. | Il sourit.%SPEECH_ON%Cela fera de vous un homme riche, mon ami. | Il inspire profondément.%SPEECH_ON%Très bien, c\'est ce que je suis prêt à vous offrir. | Il pose sa main sur votre épaule, en vours souriant.%SPEECH_ON%Je pense avoir une compensation adéquate pour vos services. | Il bouge ses mains dans tous les sens, en pointant ses doigts comme s\'il comptait quelque chose, mais ça ne veut rien dire pour vous.%SPEECH_ON%À en jugé par votre expérience, c\'est un bon prix pour la tâche. | Il hoche de la tête. %SPEECH_ON%Vous semblez capable, donc je suis prêt à payer un peu. | Il fait du bruit avec un sac de pièces.%SPEECH_ON%Elles seront votre si vous m\'aidez. | Il ouvre la paaume de sa main.%SPEECH_ON%Je suis à sec, donc avant que vous ne demandiez, c\'est tout ce que j\'ai en ce moment. | %SPEECH_ON%Soyez rassuré ce que je vous offre maintenant est un bon prix pour votre travail.} ";				this.Contract.m.Payment.IsNegotiating = true;
+				this.Text = "[img]gfx/ui/events/event_04.png[/img]{He nods.%SPEECH_ON%Oui. Hé bien. Je réflèchissais justement à votre paiement pour la tâche un peu plus tôt. | Il se redresse.%SPEECH_ON%Alors, pour le paiement. | Il sourit.%SPEECH_ON%Cela fera de vous un homme riche, mon ami. | Il inspire profondément.%SPEECH_ON%Très bien, c\'est ce que je suis prêt à vous offrir. | Il pose sa main sur votre épaule, en vours souriant.%SPEECH_ON%Je pense avoir une compensation adéquate pour vos services. | Il bouge ses mains dans tous les sens, en pointant ses doigts comme s\'il comptait quelque chose, mais ça ne veut rien dire pour vous.%SPEECH_ON%À en jugé par votre expérience, c\'est un bon prix pour la tâche. | Il hoche de la tête. %SPEECH_ON%Vous semblez capable, donc je suis prêt à payer un peu. | Il fait du bruit avec un sac de pièces.%SPEECH_ON%Elles seront votre si vous m\'aidez. | Il ouvre la paume de sa main.%SPEECH_ON%Je suis à sec, donc avant que vous ne demandiez, c\'est tout ce que j\'ai en ce moment. | %SPEECH_ON%Soyez rassuré ce que je vous offre maintenant est un bon prix pour votre travail.} ";				this.Contract.m.Payment.IsNegotiating = true;
 			}
 			else if (this.Contract.m.Payment.IsFinal)
 			{
@@ -470,35 +470,35 @@ gt.Const.Contracts.NegotiationPerHead <- [
 
 			if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count == 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnes quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnes quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count == 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé} %reward_advance% Courrones d\'avance.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé} %reward_advance% Courrones d\'avance.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count == 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, and another %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, and another %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, et encore %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, et encore %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else
 			{
-				this.Text += "Vous ne serez pas payé. C\'est ce que vous voulez?%SPEECH_OFF%";
+				this.Text += " Vous ne serez pas payé. C\'est ce que vous voulez?%SPEECH_OFF%";
 			}
 		}
 
@@ -539,7 +539,7 @@ gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 		{
 			this.Options = [];
 			this.Options.push({
-				Text = "I accept your offer.",
+				Text = "J\'accepte votre offre.",
 				function getResult()
 				{
 					this.Contract.m.BulletpointsPayment = [];
@@ -597,7 +597,7 @@ gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 			if (this.Contract.m.Payment.Count < 1.0)
 			{
 				this.Options.push({
-					Text = this.Contract.m.Payment.Count == 0 ? "Nous avons besoin d\'être payé plus par tête que nous ramenons." : "Nous avons besoin d\'être payé plus par tête que nous ramenons.",
+					Text = this.Contract.m.Payment.Count == 0 ? "Nous avons besoin d\'être payés plus par tête que nous ramenons." : "Nous avons besoin d\'être payés plus par tête que nous ramenons.",
 					function getResult()
 					{
 						this.Contract.m.Payment.Annoyance += this.Math.maxf(1.0, this.Math.rand(this.Const.Contracts.Settings.NegotiationAnnoyanceGainMin, this.Const.Contracts.Settings.NegotiationAnnoyanceGainMax) * this.World.Assets.m.NegotiationAnnoyanceMult);
@@ -685,7 +685,7 @@ gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 			if (this.Contract.m.Payment.Completion < 1.0)
 			{
 				this.Options.push({
-					Text = this.Contract.m.Payment.Completion == 0 ? "Nous avons besoin d\'un paiement une fois le travail accompli." : "Nous avons besoin d\'^tre payés plus une fois le travail accompli.",
+					Text = this.Contract.m.Payment.Completion == 0 ? "Nous avons besoin d\'un paiement une fois le travail accompli." : "Nous avons besoin d\'être payés plus une fois le travail accompli.",
 					function getResult()
 					{
 						this.Contract.m.Payment.Annoyance += this.Math.maxf(1.0, this.Math.rand(this.Const.Contracts.Settings.NegotiationAnnoyanceGainMin, this.Const.Contracts.Settings.NegotiationAnnoyanceGainMax) * this.World.Assets.m.NegotiationAnnoyanceMult);
@@ -739,7 +739,7 @@ gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 			
 			if (!this.Contract.m.Payment.IsNegotiating)
 			{
-				this.Text = "[img]gfx/ui/events/event_04.png[/img]{He nods.%SPEECH_ON%Oui. Bien. Je pensais à votre paiement pour la tâche plus tôt. | Il se redresse.%SPEECH_ON%Alors, pour le paiement. | Il sourit.%SPEECH_ON%Cela fera de vous un homme riche, mon ami. | Il inspire profondément.%SPEECH_ON%Très bien, c\'est ce que je suis prêt à vous offrir. | Il pose sa main sur votre épaule, en vours souriant.%SPEECH_ON%Je pense avoir une compensation adéquate pour vos services. | Il bouge ses mains dans tous les sens, en pointant ses doigts comme s\'il comptait quelque chose, mais ça ne veut rien dire pour vous.%SPEECH_ON%À en jugé par votre expérience, c\'est un bon prix pour la tâche. | Il hoche de la tête. %SPEECH_ON%Vous semblez capable, donc je suis prêt à payer un peu. | Il fait du bruit avec un sac de pièces.%SPEECH_ON%Elles seront votre si vous m\'aidez. | Il ouvre la paaume de sa main.%SPEECH_ON%Je suis à sec, donc avant que vous ne demandiez, c\'est tout ce que j\'ai en ce moment. | %SPEECH_ON%Soyez rassuré ce que je vous offre maintenant est un bon prix pour votre travail.} ";				this.Contract.m.Payment.IsNegotiating = true;
+				this.Text = "[img]gfx/ui/events/event_04.png[/img]{He nods.%SPEECH_ON%Oui. Hé bien. Je réflèchissais justement à votre paiement pour la tâche un peu plus tôt. | Il se redresse.%SPEECH_ON%Alors, pour le paiement. | Il sourit.%SPEECH_ON%Cela fera de vous un homme riche, mon ami. | Il inspire profondément.%SPEECH_ON%Très bien, c\'est ce que je suis prêt à vous offrir. | Il pose sa main sur votre épaule, en vours souriant.%SPEECH_ON%Je pense avoir une compensation adéquate pour vos services. | Il bouge ses mains dans tous les sens, en pointant ses doigts comme s\'il comptait quelque chose, mais ça ne veut rien dire pour vous.%SPEECH_ON%À en jugé par votre expérience, c\'est un bon prix pour la tâche. | Il hoche de la tête. %SPEECH_ON%Vous semblez capable, donc je suis prêt à payer un peu. | Il fait du bruit avec un sac de pièces.%SPEECH_ON%Elles seront votre si vous m\'aidez. | Il ouvre la paume de sa main.%SPEECH_ON%Je suis à sec, donc avant que vous ne demandiez, c\'est tout ce que j\'ai en ce moment. | %SPEECH_ON%Soyez rassuré ce que je vous offre maintenant est un bon prix pour votre travail.} ";				this.Contract.m.Payment.IsNegotiating = true;
 			}
 			else if (this.Contract.m.Payment.IsFinal)
 			{
@@ -752,35 +752,35 @@ gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 
 			if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count == 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnez quand le travail est fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnez quand le travail est fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count == 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé} all %reward_advance% Couronnes d\'avance.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé} all %reward_advance% Couronnes d\'avance.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Courrones par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Courrones par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count == 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_count% crowns per head you arrive with, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, et %reward_count% crowns per head you arrive with, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Courrones par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, et encore %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Courrones par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, et encore %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += "{Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, %reward_count% Courrones par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, aet encore %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_advance% Couronnes d\'avance, %reward_count% Courrones par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, aet encore %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else
 			{
-				this.Text += "Vous ne serez pas payé. C\'est ce que vous voulez?%SPEECH_OFF%";
+				this.Text += " Vous ne serez pas payé. C\'est ce que vous voulez?%SPEECH_OFF%";
 			}
 		}
 

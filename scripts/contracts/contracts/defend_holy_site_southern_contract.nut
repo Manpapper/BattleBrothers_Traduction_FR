@@ -445,7 +445,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{The %companyname% can help you with this. | Defending against a northern host better pay well. | I\'m interested, go on.}",
+					Text = "{The %companyname% can help you with this. | Defending against a northern host better pay well. | I\'m interested, Continuez.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -453,7 +453,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We\'re needed elsewhere. | I won\'t risk the company against northern armies.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | I won\'t risk the company against northern armies.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

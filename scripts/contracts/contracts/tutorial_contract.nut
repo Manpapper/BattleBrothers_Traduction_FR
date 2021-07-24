@@ -285,7 +285,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 			{
 				this.Contract.m.Home.getSprite("selection").Visible = true;
 				this.Contract.m.BulletpointsObjectives = [
-					"Retournez à " + this.Contract.m.Home.getName() + " pour être payé"
+					"Retournez à " + this.Contract.m.Home.getName() + " pour être payés"
 				];
 				this.World.State.getPlayer().setAttackable(false);
 				this.World.State.m.IsAutosaving = true;

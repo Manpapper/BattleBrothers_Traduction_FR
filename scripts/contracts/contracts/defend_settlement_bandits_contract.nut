@@ -409,7 +409,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{What is %townname% prepared to pay for their safety? | This should be worth a good amount of crowns to you, right?}",
+					Text = "{Combien est prêt à payer %townname% pour leur sécurité? | This should be worth a good amount of crowns to you, right?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -417,7 +417,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "{I\'m afraid you\'re on your own. | We have more important matters to settle. | I wish you luck, but we\'ll not be part of this.}",
+					Text = "{I\'m afraid you\'re on your own. | Nous avons d\'autres importants problèmes à régler. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 60)

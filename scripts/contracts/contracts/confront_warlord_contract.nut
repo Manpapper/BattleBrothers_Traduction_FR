@@ -274,7 +274,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{I trust you\'ll pay amply for this. | Everything can be done, if the pay is right. | Convince me with jingling coin.}",
+					Text = "{J\'imagine que vous allez payer chère pour ça. | Tout peut être fait si la paie est juste. | Convince me with jingling coin.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -282,7 +282,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We\'re needed elsewhere.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

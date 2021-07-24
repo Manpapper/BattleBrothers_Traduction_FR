@@ -313,7 +313,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How many crowns are we talking about here? | That\'s no small feat to ask. | I could be persuaded for the right price. | A task like this better pay well.}",
+					Text = "{De combien de Couronnes parlent-on ici? | Ce n\'est pas une tâche facile à demander. | Je pourrais être persuadé pour le bon prix. | Pour une tâche pareil la paie à intérêt à bien payer.}",
 					function getResult()
 					{
 						return "Negotiation";

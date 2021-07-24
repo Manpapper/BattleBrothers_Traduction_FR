@@ -394,7 +394,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We have other obligations.}",
+					Text = "{Ça ne vaut pas le coup. | Nous avons d\'autres obligations.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

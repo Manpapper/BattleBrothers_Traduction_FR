@@ -436,7 +436,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We\'re needed elsewhere. | I won\'t risk the company to hold some ruins.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | I won\'t risk the company to hold some ruins.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

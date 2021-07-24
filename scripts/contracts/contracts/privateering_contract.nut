@@ -575,7 +575,7 @@ this.privateering_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We\'re needed elsewhere. | It\'s too long a commitment for the company.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | It\'s too long a commitment for the company.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -632,7 +632,7 @@ this.privateering_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "An intriguing offer. I accept.",
+					Text = "Une offre intriguante. J\'accepte.",
 					function getResult()
 					{
 						return "AcceptChangingSides";

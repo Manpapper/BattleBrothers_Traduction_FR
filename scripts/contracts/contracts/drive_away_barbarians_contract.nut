@@ -244,7 +244,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How many crowns are we talking about? | What is %townname% prepared to pay for their safety? | Let\'s talk money.}",
+					Text = "{De combien de Couronnes parle-t-on? | Combien est prêt à payer %townname% pour leur sécurité? | Parlons argent.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -252,7 +252,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 
 				},
 				{
-					Text = "{Not interested. | We have more important matters to settle. | I wish you luck, but we\'ll not be part of this.}",
+					Text = "{Pas intéressé. | Nous avons d\'autres importants problèmes à régler. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

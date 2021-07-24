@@ -251,7 +251,7 @@ this.destroy_orc_camp_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Fighting orcs won\'t come cheap. | I trust you\'ll pay amply for this. | Let\'s talk money.}",
+					Text = "{Combattre des orcs ne sera pas gratuit. | J\'imagine que vous allez payer chère pour ça. | Parlons argent.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -259,7 +259,7 @@ this.destroy_orc_camp_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We have other obligations.}",
+					Text = "{Ça ne vaut pas le coup. | Nous avons d\'autres obligations.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

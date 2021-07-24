@@ -253,7 +253,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{You did right by coming to us. Let\'s talk payment. | Let\'s talk money. | Sounds simple enough. What\'s the pay?}",
+					Text = "{You did right by coming to us. Let\'s talk payment. | Parlons argent. | Sounds simple enough. What\'s the pay?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -261,7 +261,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Not interested. | We have more important matters to settle. | I\'m sure you\'ll find someone else to do this.}",
+					Text = "{Pas intéressé. | Nous avons d\'autres importants problèmes à régler. | Je suis sûr que vous trouverez quelqu\'un d\'autre pour faire ça.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

@@ -402,7 +402,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We\'re needed elsewhere. | This will take too much of our time.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | This will take too much of our time.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

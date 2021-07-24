@@ -289,7 +289,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Not interested. | Our travels will not take us there for a while. | This is not the kind of work we\'re looking for.}",
+					Text = "{Pas intéressé. | Nos voyages ne nous menerons pas là-bas avant un moment. | Ce n\'est pas le type de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

@@ -529,7 +529,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Let\'s talk money. | How many crowns are we talking about? | What does it pay?}",
+					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | What does it pay?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -537,7 +537,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Not interested. | This is not the kind of work we\'re looking for.}",
+					Text = "{Pas intéressé. | Ce n\'est pas le type de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -561,7 +561,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Let\'s talk money. | How many crowns are we talking about? | What does it pay?}",
+					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | What does it pay?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -569,7 +569,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Not interested. | This is not the kind of work we\'re looking for.}",
+					Text = "{Pas intéressé. | Ce n\'est pas le type de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

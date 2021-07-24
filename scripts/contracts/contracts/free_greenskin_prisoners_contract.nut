@@ -285,7 +285,7 @@ this.free_greenskin_prisoners_contract <- this.inherit("scripts/contracts/contra
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{I trust you\'ll pay amply for this. | Let\'s talk money. | Everything can be done, if the pay is right.}",
+					Text = "{J\'imagine que vous allez payer chère pour ça. | Parlons argent. | Tout peut être fait si la paie est juste.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -293,7 +293,7 @@ this.free_greenskin_prisoners_contract <- this.inherit("scripts/contracts/contra
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We\'re needed elsewhere.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

@@ -381,7 +381,7 @@ this.last_stand_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t worth it. | I\'m afraid %objective% is on their own.}",
+					Text = "{Ça ne vaut pas le coup. | I\'m afraid %objective% is on their own.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

@@ -270,7 +270,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Not interested. | We have more important matters to settle. | I wish you luck, but we\'ll not be part of this.}",
+					Text = "{Pas intéressé. | Nous avons d\'autres importants problèmes à régler. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

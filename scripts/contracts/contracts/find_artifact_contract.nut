@@ -357,7 +357,7 @@ this.find_artifact_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t worth it. | It\'s too long a march. | We have more pressing business to attend to. | We\'re needed elsewhere.}",
+					Text = "{Ça ne vaut pas le coup. | It\'s too long a march. | We have more pressing business to attend to. | On est demandé autre part.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

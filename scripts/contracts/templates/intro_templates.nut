@@ -78,7 +78,7 @@ gt.Const.Contracts.IntroSettlementNeutral <- [
 		ShowDifficulty = true,
 		Options = [
 			{
-				Text = "je suis toute ouïe.",
+				Text = "Je suis toute ouïe.",
 				function getResult()
 				{
 					return "Task";
@@ -99,7 +99,7 @@ gt.Const.Contracts.IntroSettlementFriendly <- [
 		ShowDifficulty = true,
 		Options = [
 			{
-				Text = "je suis toute ouïe",
+				Text = "Je suis toute ouïe",
 				function getResult()
 				{
 					return "Task";

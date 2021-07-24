@@ -206,7 +206,7 @@ this.hunting_sand_golems_contract <- this.inherit("scripts/contracts/contract", 
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{I\'m interested, go on. | Hunting down an enemy like this doesn\'t come cheap. | This is going to cost you. | Hunting a mirage in the desert. What is not to like. | The %companyname% can help, for the right price.}",
+					Text = "{I\'m interested, Continuez. | Hunting down an enemy like this doesn\'t come cheap. | This is going to cost you. | Hunting a mirage in the desert. What is not to like. | The %companyname% can help, for the right price.}",
 					function getResult()
 					{
 						return "Negotiation";

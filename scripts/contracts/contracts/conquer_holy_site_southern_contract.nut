@@ -473,7 +473,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 
 				},
 				{
-					Text = "{This isn\'t worth it. | It\'s too long a march. | We have more pressing business to attend to. | We\'re needed elsewhere.}",
+					Text = "{Ça ne vaut pas le coup. | It\'s too long a march. | We have more pressing business to attend to. | On est demandé autre part.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

@@ -514,7 +514,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "I accept.",
+					Text = "J\'accepte.",
 					function getResult()
 					{
 						this.World.Assets.getStash().add(this.new("scripts/items/accessory/special/arena_collar_item"));

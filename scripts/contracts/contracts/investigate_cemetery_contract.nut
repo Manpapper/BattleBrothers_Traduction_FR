@@ -301,7 +301,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "Let\'s talk money.",
+					Text = "Parlons argent.",
 					function getResult()
 					{
 						return "Negotiation";
@@ -309,7 +309,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 
 				},
 				{
-					Text = "Not interested.",
+					Text = "Pas intéressé.",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

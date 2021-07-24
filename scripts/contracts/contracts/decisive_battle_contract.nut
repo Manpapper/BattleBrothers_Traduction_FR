@@ -775,7 +775,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{I won\'t submit the %companyname% to another man\'s command. | I have to decline. | We\'re needed elsewhere.}",
+					Text = "{I won\'t submit the %companyname% to another man\'s command. | I have to decline. | On est demandé autre part.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

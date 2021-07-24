@@ -312,7 +312,7 @@ this.hunting_lindwurms_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "Very well. I accept your offer.",
+					Text = "Très bien. J\'accepte votre offre.",
 					function getResult()
 					{
 						return "AnimalActivistAccept";

@@ -339,7 +339,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How much is saving %objective% worth to you? | Breaking a siege is something the %companyname% can do.}",
+					Text = "{Combien ça vaudrait de sauvez %objective% pour vous? | Brisé un siège c\'est quelque chose que %companyname% peut faire.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -347,7 +347,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 
 				},
 				{
-					Text = "{This isn\'t worth it. | We have other obligations.}",
+					Text = "{Ça ne vaut pas le coup. | Nous avons d\'autres obligations.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -386,7 +386,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 			List = [],
 			Options = [
 				{
-					Text = "We must go on.",
+					Text = "We must Continuez.",
 					function getResult()
 					{
 						return 0;

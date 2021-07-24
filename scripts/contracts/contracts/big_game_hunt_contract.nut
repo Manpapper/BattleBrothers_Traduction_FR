@@ -211,7 +211,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 				}
 
 				this.Contract.m.BulletpointsObjectives.push("Chassez aux alentours de %regiontype% region de %worldmapregion% et d\'autres régions");
-				this.Contract.m.BulletpointsObjectives.push("Retournez à %townname% à tout moment pour être payé");
+				this.Contract.m.BulletpointsObjectives.push("Retournez à %townname% à tout moment pour être payés");
 
 				if (this.Contract.m.Size == 0)
 				{
@@ -288,7 +288,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 					this.Contract.m.BulletpointsObjectives.push("Chassez des Schrats et des Lindwurms autour de %regiontype% région de %worldmapregion% (%killcount%/%maxcount%)");
 				}
 
-				this.Contract.m.BulletpointsObjectives.push("Retournez à %townname% a n\'importe quel moment pour être payé");
+				this.Contract.m.BulletpointsObjectives.push("Retournez à %townname% a n\'importe quel moment pour être payés");
 			}
 
 			function update()
@@ -373,7 +373,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How many crowns are we talking about here? | I could be persuaded for the right price. | Go on. | How much is the safety of your subjects worth to you?}",
+					Text = "{De combien de Couronnes parlent-on ici? | Je pourrais être persuadé pour le bon prix. | Continuez. | Combien vaut la sureté de vos sujets pour vous?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -405,7 +405,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How many crowns are we talking about here? | I could be persuaded for the right price. | Go on. | How much is the safety of your subjects worth to you?}",
+					Text = "{De combien de Couronnes parlent-on ici? | Je pourrais être persuadé pour le bon prix. | Continuez. | Combien vaut la sureté de vos sujets pour vous?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -437,7 +437,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How many crowns are we talking about here? | That\'s no small feat to ask. | I could be persuaded for the right price. | A task like this better pay well. | How much is the safety of your subjects worth to you?}",
+					Text = "{De combien de Couronnes parlent-on ici? | Ce n\'est pas une tâche facile à demander. | Je pourrais être persuadé pour le bon prix. | Pour une tâche pareil la paie à intérêt à bien payer. | Combien vaut la sureté de vos sujets pour vous?}",
 					function getResult()
 					{
 						return "Negotiation";
