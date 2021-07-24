@@ -487,7 +487,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 			}
 
@@ -520,7 +520,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 			}
 
@@ -553,7 +553,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 			}
 
