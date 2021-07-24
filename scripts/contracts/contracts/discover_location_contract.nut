@@ -281,7 +281,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{What does it pay? | For the right price we\'ll find it.}",
+					Text = "{Combien ça paie? | Pour le bon prix, nous le trouverons.}",
 					function getResult()
 					{
 						return "Negotiation";

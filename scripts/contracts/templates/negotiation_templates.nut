@@ -32,7 +32,7 @@ gt.Const.Contracts.Overview <- [
 
 			},
 			{
-				Text = "Après mûre réfléxion, Je décline ce contrat.",
+				Text = "Après mûre réflexion, je décline ce contrat.",
 				function getResult()
 				{
 					this.World.Contracts.removeContract(this.Contract);

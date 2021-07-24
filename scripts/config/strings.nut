@@ -11,7 +11,7 @@ if (!("Strings" in gt.Const))
 				"I",
 				"O",
 				"U"
-			]) ? "an " : "a ";
+			]) ? "un " : "un ";
 		}
 
 		function getArticleCapitalized( _object )
@@ -22,7 +22,7 @@ if (!("Strings" in gt.Const))
 				"I",
 				"O",
 				"U"
-			]) ? "An " : "A ";
+			]) ? "Un " : "Un ";
 		}
 
 	};
@@ -127,8 +127,8 @@ gt.Const.Strings.AmountC <- [
 	"Thirty"
 ];
 gt.Const.Strings.Difficulty <- [
-	"Beginner",
-	"Veteran",
+	"Débutant",
+	"Vétéran",
 	"Expert"
 ];
 gt.Const.Strings.EntityName <- [
@@ -1222,20 +1222,20 @@ gt.Const.Strings.Distance <- [
 	"très loin"
 ];
 gt.Const.Strings.PartyStrength <- [
-	"Puny",
-	"Weak",
-	"Average",
-	"Strong",
-	"Dangerous",
-	"Deadly",
+	"Ridicule",
+	"Faible",
+	"Moyen",
+	"Fort",
+	"Dangereux",
+	"Mortel",
 	"Invincible"
 ];
 gt.Const.Strings.EngageEnemyNumbers <- [
 	"Un peu",
 	"Quelques",
-	"Un peu Beaucoup",
+	"De nombreux",
 	"Beaucoup",
-	"Énormément"
+	"Une multitude"
 ];
 gt.Const.Strings.InventoryHeader <- [
 	"Donkey",
@@ -1390,13 +1390,13 @@ gt.Const.Strings.PerkDescription <- {
 };
 gt.Const.Strings.Tooltip <- {
 	World = {
-		Hint_FocusParty = "Click to focus party",
-		Hint_FocusLocation = "Click to focus location"
+		Hint_FocusParty = "Cliquer pour vous concentrer sur le groupe",
+		Hint_FocusLocation = "Cliquer pour vous concentrer sur l\'emplacement"
 	},
 	Tactical = {
-		Hint_FocusCharacter = "Click to focus character",
-		Hint_CannotChangeItemInCombat = "Can not be changed in combat",
-		Hint_OnlyActiveCharacterCanChangeItemsInCombat = "Only the character whose turn it is right now can change items"
+		Hint_FocusCharacter = "Cliquer pour vous concentrer sur le personnage",
+		Hint_CannotChangeItemInCombat = "Ne peut êtree changé en combat",
+		Hint_OnlyActiveCharacterCanChangeItemsInCombat = "Seulement le personnage qui doit agir pendant ce tour peut changer d\'objet"
 	}
 };
 

@@ -167,7 +167,7 @@ WorldTownScreenHireDialogModule.prototype.createDIV = function (_parentDiv)
     costsHeader.append(costsHeaderLabel);
     var costsInitial = $('<div class="row is-initial-costs"/>');
     detailsRow.append(costsInitial);
-    var costsLabel = $('<div class="costs-label title-font-normal font-bold font-bottom-shadow font-color-title">Paiement Direct</div>');
+    var costsLabel = $('<div class="costs-label title-font-normal font-bold font-bottom-shadow font-color-title">Paiement</div>');
     costsInitial.append(costsLabel);
     var costsContainer = $('<div class="l-costs-container"/>');
     costsInitial.append(costsContainer);

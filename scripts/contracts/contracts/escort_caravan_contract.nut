@@ -529,7 +529,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | What does it pay?}",
+					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | Combien ça paie?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -561,7 +561,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | What does it pay?}",
+					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | Combien ça paie?}",
 					function getResult()
 					{
 						return "Negotiation";
