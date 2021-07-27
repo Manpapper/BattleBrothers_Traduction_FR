@@ -10,13 +10,13 @@ this.beggar_begs_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{As you take stock of the inventory, you can\'t help but notice %beggar% lingering in your peripheral. Sighing, you finally turn to the former beggar and ask what he wants. Like the poorest of the poor he holds a hand out, asking if maybe you could spare a few crowns. | With practiced theatrics, %beggar% approaches you and lets loose a long tale of troubles and squabbles and empty bottles. The former beggar is down on his luck, apparently, and just needs a few extra crowns to get by. | %otherguy% tells you that %beggar% is going around the camp asking for crowns. Apparently the former beggar just needs a little more, expressing a longwinded sob story to anyone who\'ll listen. Hearing this news, you go to see the man yourself but before you can even get a word out the man lets loose his long narrative. Finished, he looks you in the eye, trying to gauge whether or not you\'ll give him something. | Apparently %beggar% the former beggar needs some help. He\'s come to you, begging for a few crowns to help him get by. The man looks like he\'s in a poor state, but he\'s had plenty of practice of actually being poor so it\'s hard to tell if he\'s being honest or not.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Alors que vous faites le point sur l\'inventaire, vous ne pouvez vous empêcher de remarquer que %beggar% traîne autour de vous. En soupirant, vous vous tournez finalement vers l\'ancien mendiant et lui demandez ce qu\'il veut. Comme le plus pauvre des pauvres, il vous tend la main, vous demandant si vous pouvez vous passer de quelques couronnes. | Avec un sens du théâtre bien rodé, %beggar% s\'approche de vous et vous raconte une longue histoire de problèmes, de querelles et de bouteilles vides. L\'ancien mendiant n\'a apparemment pas de chance et a juste besoin de quelques couronnes supplémentaires pour s\'en sortir. | %otherguy% vous dit que %beggar% fait le tour du camp pour demander des couronnes. Apparemment, l\'ancien mendiant a juste besoin d\'un peu plus, exprimant une longue histoire de pleurs à qui veut bien l\'entendre. En entendant cette nouvelle, vous allez voir l\'homme vous-même, mais avant même que vous ne puissiez prononcer un mot, l\'homme lâche son long récit. Fini, il vous regarde dans les yeux, essayant de jauger si oui ou non vous allez lui donner quelque chose. | Apparemment, %beggar% l\'ancien mendiant a besoin d\'aide. Il est venu vous voir, vous demandant quelques couronnes pour l\'aider à s\'en sortir. L\'homme a l\'air d\'être dans un état de pauvreté, mais comme il a l\'habitude d\'être pauvre, il est difficile de dire si l\'homme est honnête ou non.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Get back to work!",
+					Text = "Retourne au travail!",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,7 @@ this.beggar_begs_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Here you go, have a few crowns.",
+					Text = "Tiens, prends quelques couronnes.",
 					function getResult( _event )
 					{
 						return "C";
@@ -40,7 +40,7 @@ this.beggar_begs_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You tell the beggar you\'ll cross his hands with a sword if he doesn\'t get back to work. The man shrugs and pretty much does as told. That was easier than expected. | The beggar\'s shoulders sag as you tell him to get back to work. You feel a little bad, but then remember that\'s how they get ya.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous dites au mendiant que vous allez lui couper les mains avec une épée s\'il ne se remet pas au travail. L\'homme hausse les épaules et fait à peu près ce qu\'on lui dit. C\'était plus facile que prévu. | Les épaules du mendiant s\'affaissent alors que vous lui dites de se remettre au travail. Vous vous sentez un peu mal, mais vous vous rappelez que c\'est comme ça qu\'on vous gagne..}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -62,7 +62,7 @@ this.beggar_begs_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{The beggar takes the crowns and with a smile gets right back to work. | Tired of his games, you give the beggar a few crowns and tell him to get back to work. He bows and thanks you and, surprisingly, actually gets back to work.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Le mendiant prend les couronnes et, avec un sourire, se remet au travail. | Fatigué de ses jeux, vous donnez au mendiant quelques couronnes et lui dites de se remettre au travail. Il s\'incline, vous remercie et, étonnamment, se remet au travail.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -83,9 +83,9 @@ this.beggar_begs_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]10[/color] Crowns"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]10[/color] Couronnes"
 				});
-				_event.m.Beggar.improveMood(0.5, "Got a few extra crowns from you");
+				_event.m.Beggar.improveMood(0.5, "Avoir quelques couronnes supplémentaires de votre part");
 
 				if (_event.m.Beggar.getMoodState() >= this.Const.MoodState.Neutral)
 				{

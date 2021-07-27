@@ -11,13 +11,13 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%bowyer% the bowyer comes to you with a bit of request: he wishes to build a weapon for the ages. Apparently, the man has been attempting to build a bow of legendary qualities for many years, but now that he has been on the road he\'s picked up a few things to fill in his gaps of knowledge. Truly, he believes he can get it right this time. All he needs is a few resources to help procure the elements needed to construct it. A sum of 500 crowns is what he humbly requests, and the quality wood you carry.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%bowyer% le fabricant d'arc vient vous voir avec une petite requête : il souhaite construire une arme depuis des années. Apparemment, l'homme a tenté de construire un arc légendaire pendant de nombreuses années, mais maintenant qu'il est sur la route, il a appris quelques trucs pour combler ses lacunes. En vérité, il croit qu'il peut réussir cette fois-ci. Tout ce dont il a besoin, c'est de quelques ressources pour l'aider à se procurer les éléments nécessaires à sa construction. Une somme de 500 couronnes qu'il demande humblement, et le bois de qualité que vous transportez.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Build me a bow of legends!",
+					Text = "Construisez-moi un arc de légendes!",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 60 ? "B" : "C";
@@ -25,7 +25,7 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We don\'t have time for this.",
+					Text = "Nous n'avons pas le temps pour ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -41,13 +41,13 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{The bow isn\'t quite legendary, but it is quite good. It\'s light in the grip, easily spun from side to side with the air whistling as it whirls. You test the draw. A strong man will be required to wield it that is for sure. When you loose an arrow, the shaft travels unbelievably straight and the shot almost seems to aim itself. A brilliant weapon if you ever saw one! | The bow was constructed with a mix of woods whose names you do not know. Colors of this tree and that spiral through the curve of the weapon, looking arboreally damascened. Testing the draw, the string proves itself mighty. You\'re no marksman, but when you loose an arrow it almost seems to guide itself to its target. A terrific weapon, if for no other reason it made you look better than you really are. You congratulate the bowyer.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{L'arc n'est pas légendaire, mais il est très bien. C'est léger dans la prise en main, facile à faire tourner d'un côté à l'autre avec l'air qui siffle quand il tourbillonne. Vous essayez de tirer sur la corde. Un homme fort sera nécessaire pour le manier, c'est certain. Lorsque vous décochez une flèche, le manche se déplace de façon incroyablement droite et le tir semble presque se faire tout seul. Une arme brillante si vous en avez jamais vu une! | L'arc a été construit avec un mélange de bois dont vous ne connaissez pas le nom. Des couleurs de tel ou tel arbre s'enroulent le long l'arme, donnant l'impression d'un damasquinage arborescent. En testant la corde vous remarquez qu'elle s'avère puissante. Tu n'es pas un tireur d'élite, mais quand tu lâches une flèche, elle semble presque se guider toute seule vers sa cible. Une arme formidable, ne serait-ce que parce qu'elle vous fait paraître meilleur que vous ne l'êtes vraiment. Vous félicitez fabricant d'arc.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A masterwork!",
+					Text = "Un chef d'oeuvre!",
 					function getResult( _event )
 					{
 						return 0;
@@ -62,7 +62,7 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Courrones"
 				});
 				local stash = this.World.Assets.getStash().getItems();
 
@@ -74,21 +74,21 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "You lose " + item.getName()
+							text = "Vous perdez " + item.getName()
 						});
 						break;
 					}
 				}
 
 				local item = this.new("scripts/items/weapons/masterwork_bow");
-				item.m.Name = _event.m.Bowyer.getNameOnly() + "\'s " + item.m.Name;
+				item.m.Name = item.m.Name + " de " + _event.m.Bowyer.getNameOnly();
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
-				_event.m.Bowyer.improveMood(2.0, "Created a masterwork");
+				_event.m.Bowyer.improveMood(2.0, "A créé un chef d'oeuvre");
 
 				if (_event.m.Bowyer.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -103,13 +103,13 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]Is this thing a wild experiment? The wood cricks and cracks when bent, the string frizzes and goes wiry every time you draw it back, and you swear you saw a termite poking its head out of the shaft. Every tested arrow goes haywire, skirting this way or that, anywhere but its supposed target.\n\nYou ease the bowyer\'s pain by blaming yourself for how inaccurate the weapon is, but %otherguy1% and %otherguy2% both give it a try and come to even worse results. The bowyer eventually shuffles off, cradling his construction in his arms before tossing it onto the stockpile of weapons where you\'d wish it\'d look just like any other bow, but its obscene ugliness makes it stick out like a hot coal on a haystack. Surely no man will be accidentally wielding that thing!",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Est-ce que ce truc est une expérience ? Le bois craque et se fissure lorsqu'on le plie, la corde s'effiloche et se déforme à chaque fois qu'on la tire, et on jurerait avoir vu une termite sortir sa tête de l'arc. Toutes les flèches que vous avez envoyés sont presque partis à l'opposé d'où vous le souhaitiez, elles vont de-ci de-là, n'importe où, sauf sur la cible supposée.\n\nVous soulagez la douleur du fabricant d'arc en vous rendant responsable de l'imprécision de l'arme, mais %otherguy1% et %otherguy2% s'y essaient et obtiennent des résultats encore pires. Le fabricant d'arc finit par s'éloigner, en prenant sa création dans ses bras avant de la jeter sur la pile d'armes où l'on aimerait qu'elle ressemble à n'importe quel autre arc, mais sa laideur obscène la fait ressortir comme un charbon chaud sur une botte de foin. Il est certain qu'aucun homme ne maniera cette chose par accident!",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I see now why you\'re no longer working as a bowyer.",
+					Text = "Je comprends maintenant pourquoi tu ne travailles plus comme fabriquant d'arc.",
 					function getResult( _event )
 					{
 						return 0;
@@ -124,7 +124,7 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Couronnes"
 				});
 				local stash = this.World.Assets.getStash().getItems();
 
@@ -136,21 +136,21 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "You lose " + item.getName()
+							text = "Vous perdez " + item.getName()
 						});
 						break;
 					}
 				}
 
 				local item = this.new("scripts/items/weapons/wonky_bow");
-				item.m.Name = _event.m.Bowyer.getNameOnly() + "\'s " + item.m.Name;
+				item.m.Name = item.m.Name + " de " +_event.m.Bowyer.getNameOnly();
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
-				_event.m.Bowyer.worsenMood(1.0, "Failed in creating a masterwork");
+				_event.m.Bowyer.worsenMood(1.0, "N'a pas réussi à créer un chef d'oeuvre");
 
 				if (_event.m.Bowyer.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -165,13 +165,13 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You tell the bowyer that the %companyname% has no resources to spare. The man grinds his teeth, and apparently whatever words he had to say, for he says nothing and turns on his heels and stomps off. In the distance you finally hear what kindness he had in store for you - a litany of swearing and cursing and eventually moaning disappointment.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous dites au fabriquant d'arc que %companyname% n'a pas de ressources supplémentaire à disposition. L'homme grince des dents, et apparemment retiens les mots qu'il avait à dire, car il ne dit rien et tourne les talons et s'en va. Au loin, vous entendez enfin la gentillesse qu'il vous réservait - une litanie de jurons et d'injures et finalement des gémissements de déception.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Pull yourself together.",
+					Text = "Ressaisis-toi.",
 					function getResult( _event )
 					{
 						return 0;
@@ -182,7 +182,7 @@ this.bowyer_crafts_masterwork_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Bowyer.getImagePath());
-				_event.m.Bowyer.worsenMood(2.0, "Was denied a request");
+				_event.m.Bowyer.worsenMood(2.0, "Une demande a été refusée");
 
 				if (_event.m.Bowyer.getMoodState() < this.Const.MoodState.Neutral)
 				{
