@@ -56,7 +56,7 @@ gt.Const.Contracts.Overview <- [
 gt.Const.Contracts.NegotiationDefault <- [
 	{
 		ID = "Negotiation",
-		Title = "Négotiations",
+		Title = "Négociations",
 		Text = "",
 		Image = "",
 		List = [],
@@ -223,7 +223,7 @@ gt.Const.Contracts.NegotiationDefault <- [
 	},
 	{
 		ID = "Negotiation.Fail",
-		Title = "Négotiations",
+		Title = "Négociations",
 		Text = "[img]gfx/ui/events/event_74.png[/img]{%SPEECH_START%Vous agissez comme si vous étiez les seuls à tenir une épée pour des pièces. Je pense que je vais allez regarder autre part pour les hommes dont j\'ai besoin. Bonne journée.%SPEECH_OFF% | %SPEECH_START%Ma patience a ses limites, je pense que je perds mon temps ici.%SPEECH_OFF% | %SPEECH_START%J\'en ai eu assez! Je suis sûr que je trouverais quelqu\'un d\'autre pour faire le travail!%SPEECH_OFF% | %SPEECH_START%N\'insultez pas mon intelligence! Oubliez tout à propos de ce contrat. On en a fini.%SPEECH_OFF% | Sa tête devient rouge de colère.%SPEECH_ON%Sortez d\'ici, je n\'ai pas pour habitude de faire affaire avec des démons cupides!%SPEECH_OFF% | Il soupire. %SPEECH_ON%Juste... Oubliez. Je n\'aurais pas du vous faire confiance en premier lieu. Laissez moi que je puisse trouver d\'autres personnes plus sensible .%SPEECH_OFF% | %SPEECH_START%Je pensais vraiment que nous avions une bonne relation. Mais je sais que je ne peux pousser plus loin. je ne pense pas que ça marchera. Je  m\'en vais.%SPEECH_OFF% | %SPEECH_START%Ça a été une totale perte de temps pour moi. Ne vous embêtez pas à revenir tant que vous n\'aurez pas un minimum de raison.%SPEECH_OFF%}",
 		Image = "",
 		List = [],
@@ -246,7 +246,7 @@ gt.Const.Contracts.NegotiationDefault <- [
 gt.Const.Contracts.NegotiationPerHead <- [
 	{
 		ID = "Negotiation",
-		Title = "Négotiations",
+		Title = "Négociations",
 		Text = "",
 		Image = "",
 		List = [],
@@ -490,7 +490,7 @@ gt.Const.Contracts.NegotiationPerHead <- [
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count != 0)
 			{
-				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, and another %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_count% Couronnes par tête que vous ramenez, {pour un maximum de %maxcount% têtes | et je vous paierais pour un maximum de %maxcount% têtes | %maxcount% têtes au maximum}, et encore %reward_completion% quand le travail sera fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count != 0)
 			{
@@ -505,7 +505,7 @@ gt.Const.Contracts.NegotiationPerHead <- [
 	},
 	{
 		ID = "Negotiation.Fail",
-		Title = "Négotiations",
+		Title = "Négociations",
 		Text = "[img]gfx/ui/events/event_74.png[/img]{%SPEECH_START%Vous agissez comme si vous étiez les seuls à tenir une épée pour des pièces. Je pense que je vais allez regarder autre part pour les hommes dont j\'ai besoin. Bonne journée.%SPEECH_OFF% | %SPEECH_START%Ma patience a ses limites, je pense que je perds mon temps ici.%SPEECH_OFF% | %SPEECH_START%J\'en ai eu assez! Je suis sûr que je trouverais quelqu\'un d\'autre pour faire le travail!%SPEECH_OFF% | %SPEECH_START%N\'insultez pas mon intelligence! Oubliez tout à propos de ce contrat. On en a fini.%SPEECH_OFF% | Sa tête devient rouge de colère.%SPEECH_ON%Sortez d\'ici, je n\'ai pas pour habitude de faire affaire avec des démons cupides!%SPEECH_OFF% | Il soupire. %SPEECH_ON%Juste... Oubliez. Je n\'aurais pas du vous faire confiance en premier lieu. Laissez moi que je puisse trouver d\'autres personnes plus sensible .%SPEECH_OFF% | %SPEECH_START%Je pensais vraiment que nous avions une bonne relation. Mais je sais que je ne peux pousser plus loin. je ne pense pas que ça marchera. Je  m\'en vais.%SPEECH_OFF% | %SPEECH_START%Ça a été une totale perte de temps pour moi. Ne vous embêtez pas à revenir tant que vous n\'aurez pas un minimum de raison.%SPEECH_OFF%}",
 		Image = "",
 		List = [],
@@ -528,7 +528,7 @@ gt.Const.Contracts.NegotiationPerHead <- [
 gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 	{
 		ID = "Negotiation",
-		Title = "Négotiations",
+		Title = "Négociations",
 		Text = "",
 		Image = "",
 		List = [],
@@ -787,7 +787,7 @@ gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 	},
 	{
 		ID = "Negotiation.Fail",
-		Title = "Négotiations",
+		Title = "Négociations",
 		Text = "[img]gfx/ui/events/event_74.png[/img]{%SPEECH_START%Vous agissez comme si vous étiez les seuls à tenir une épée pour des pièces. Je pense que je vais allez regarder autre part pour les hommes dont j\'ai besoin. Bonne journée.%SPEECH_OFF% | %SPEECH_START%Ma patience a ses limites, je pense que je perds mon temps ici.%SPEECH_OFF% | %SPEECH_START%J\'en ai eu assez! Je suis sûr que je trouverais quelqu\'un d\'autre pour faire le travail!%SPEECH_OFF% | %SPEECH_START%N\'insultez pas mon intelligence! Oubliez tout à propos de ce contrat. On en a fini.%SPEECH_OFF% | Sa tête devient rouge de colère.%SPEECH_ON%Sortez d\'ici, je n\'ai pas pour habitude de faire affaire avec des démons cupides!%SPEECH_OFF% | Il soupire. %SPEECH_ON%Juste... Oubliez. Je n\'aurais pas du vous faire confiance en premier lieu. Laissez moi que je puisse trouver d\'autres personnes plus sensible .%SPEECH_OFF% | %SPEECH_START%Je pensais vraiment que nous avions une bonne relation. Mais je sais que je ne peux pousser plus loin. je ne pense pas que ça marchera. Je  m\'en vais.%SPEECH_OFF% | %SPEECH_START%Ça a été une totale perte de temps pour moi. Ne vous embêtez pas à revenir tant que vous n\'aurez pas un minimum de raison.%SPEECH_OFF%}",
 		Image = "",
 		List = [],

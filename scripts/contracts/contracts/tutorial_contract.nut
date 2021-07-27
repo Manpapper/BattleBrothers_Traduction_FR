@@ -456,7 +456,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 					"Tuez %boss%"
 				];
 				this.Contract.m.BulletpointsPayment = [
-					"Recevez 400 Couronnes à l'achèvement du contrat"
+					"Recevez 400 Couronnes à l\'achèvement du contrat"
 				];
 				this.World.State.getPlayer().setAttackable(false);
 			}
@@ -559,13 +559,13 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.m.Screens.push({
 			ID = "Intro",
-			Title = "The Last Battle",
+			Title = "La Dernière Bataille",
 			Text = "[img]gfx/ui/events/event_21.png[/img]Tout est parti en vrille. Deux jours plus tôt la compagnie a été engagé pour traquer %boss% et sa bande de voleur, mais c\'est eux qui nous ont trouvés en premier. Une embuscade. Des blagues sur les chevaux, coupé court par une flèche dans la gorge. Des flèches venant de partout et nul par en même temps. Des hommes hurlant, un doux son face à la mort.\n\nEn voyant la pluie de flèches s\'arrêter, vous sortez votre arme et vos compagnons font de même, enfin pour ceux qui sont vivant... Vous tombez à genou. Une flèche a percé votre flanc. Vous hurlez de douleur. Un regard rapide où vous voyez vos hommes chargés sans vous dans un dernier effort, l\'acier se heurt à l\'acier.\n\nVos yeux et ceux du capitaine se rencontrent, un dernier acquiescement de la tête avant que sa gorge ne soit tranché. Vous êtes laissé aux commandes des derniers hommes encore en vie. Tremblant de douleur, vous vous appuyé sur votre épée et avec toute la détermination que vous pouvez rassembler vous vous relevez encore...",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Jusqu'à la mort!",
+					Text = "Jusqu\'à la mort!",
 					function getResult()
 					{
 						return 0;
@@ -581,12 +581,12 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "IntroAftermath",
 			Title = "The Aftermath",
-			Text = "[img]gfx/ui/events/event_22.png[/img]You\'re alive. You won.\n\nThe adrenaline fades and in its wake you can\'t help but sink back to the ground. Gritting your teeth, you snap the arrow\'s shaft. Your chest heaves, pain for breath, everything blurs.\n\nThe company has been devastated, cut down to but a few men. And that bastard Hoggart did justice to his name, fleeing like the weasel he is.%SPEECH_ON%What now, captain?%SPEECH_OFF%A voice says from behind. It\'s %bro2% who sits down beside you, bedding his bloodied axe on his legs. You turn to him to reply, but before you can answer he continues.%SPEECH_ON%Bernhard\'s dead. They slit his throat. He was a good man and a damn good leader, but all it took was one mistake. That makes you the one in charge now, don\'t it?%SPEECH_OFF%%bro3% joins the two of you, still breathing heavily. Then %bro1%.%SPEECH_ON%Save the ceremony and anointments for another day. Let\'s give the men a good burial and Retournez à %townname% to collect our pay. The weasel\'s men are slain, afterall. Besides, captain, we ought to see to that wound before we lose you, too. Wouldn\'t want to leave %bro3% in charge, right?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_22.png[/img]Vous êts en vie. Vous avez gagné.\n\nEn sentant l\'adrénalie disparaître vous vous alongez par terre. En serrant les dents, vous cassez les manche de la flèche. Votre torse se soulève, de la douleur en respirant, tout se trouble.\n\nLa companie a été dévastée, réduite à seulement quelques hommes. Et ce connard d\'Hoggart a rendu justice à son nom, en fuyant tel la fouine qu\'il est.%SPEECH_ON%Et maintenant, capitaine?%SPEECH_OFF%Une voix dit derrière vous. C\'est %bro2% qui s\'asseaoit à côté de vous, posant sa hâche ensanglanté sur ses jambes. Vous vous tournez vers lui et lui répondez, mais avant que vous puissiez répondre il continu.%SPEECH_ON%Bernhard est mort. Ils lui ont tranché la gorge. Il était un bon homme et un très bon capitaine, mais il n\'aura fallu qu\'une seule erreur. Ce qui fait de toi celui aux commandees maintenant, n\'est-ce pas?%SPEECH_OFF%%bro3% se joint à vous deux, toujours en respirant lourdement. Puis %bro1%.%SPEECH_ON%Gardez la cérémonie et les onctions pour un autre jour. Donnons une bonne sépulture à nos camarades et retournons à %townname% récupérer notre paie. Les hommes de la fouine sont mort après tout. Et puis, capitaine, captain, on devrait regarder cette blessure avant que nous vous perdions aussi. On voudrait pas laisser %bro3% aux commandes, pas vrai?%SPEECH_OFF%",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "So be it.",
+					Text = "Qu\'il en soit ainsi.",
 					function getResult()
 					{
 						this.Contract.setState("ReturnAfterIntro");
@@ -604,14 +604,14 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "PaymentAfterIntro1",
-			Title = "The Retournez à %townname%",
-			Text = "[img]gfx/ui/events/event_79.png[/img]What a sorry display it must be for the onlookers as you arrive in %townname%. Four bloodied and beaten mercenaries down on their luck. The man who hired the company days ago, %employer%, no doubt expected you to return in a more glorious fashion.\n\nStill, he welcomes you to his house and offers bread and wine while a servant fetches a healer. Few words are exchanged except for the occasional grunt and wheeze as an elderly man with shaky hands tends your wounds. A pin pierces your skin, the first of many stitches to come. You grit your teeth \'til you think you hear one break. %employer% sits beside you and asks if you took care of Hoggart. You shake your head.%SPEECH_ON%We killed his men, but the weasel eluded our blades in the end.%SPEECH_OFF%The healer waves around a glowing firepoke, suggesting he wants to push it into your wound. You nod and he does so. For a moment, that\'s all there is. You\'re not a man, but a pinch of fire, flesh from flame, a golem of pain. %employer% hands you a goblet of wine.%SPEECH_ON%You did well, sellsword. The brigands have been removed, though it is a shame that Hoggart still lives.%SPEECH_OFF%",
+			Title = "Retournez à %townname%",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Quel spectacle désolant pour les badauds lorsque vous arrivez à %townname%. Quatres mercenaires ensanglantés et fatigué qui n\'ont pas eu de chance. L\'homme qui vous a embauché deux jours plus tôt, %employer%, sans aucun doute s\'attendait à un retour plus glorieux.\n\nCependant, il vous acceuille chez lui et vous offre du pain et du vin pendant qu\'un servant va chercher un soigneur. Peu de mots sont échangés à part quelques grognements occasionnel et la respiration du vieil homme avec les mains tremblantes qui s\'occupe de vos blessures. Une aiguille perce votre peu, la première de beaucoup à venir. Vous serre les dents jusqu\'à ce que vous pensez en enendre une se casser. %employer% s\'assoit à côté de vous et vous demande si vous vous êtes bien occupé de Hoggart. Vous dites non de la tête.%SPEECH_ON%On a tué ses hommes, mais cette fouine a réussit à échapper à nos épées à la fin.%SPEECH_OFF%Le soigneur agite une arme de métal incandescente, suggérant qu\'il veut l\'appliquer sur la plaie. Vous hochez de la tête et il commence. Pendant un moment c\'est tout ce qu\'il y avait. Vous n\'êtes pas un homme, mais une pique de flamme, peau contre feu, un avatar de la douleur. %employer% vous tends un gobelet de vin.%SPEECH_ON%Vous avez bien travaillé, mercenaire. Les brigands ne sont plus, malgré le fait que Hoggart soit toujours en vie.%SPEECH_OFF%",
 			Characters = [],
 			ShowEmployer = true,
 			List = [],
 			Options = [
 				{
-					Text = "We expect to get paid for this.",
+					Text = "On esperait être payés pour cela.",
 					function getResult()
 					{
 						return "PaymentAfterIntro2";
@@ -628,13 +628,13 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "PaymentAfterIntro2",
-			Title = "The Retournez à %townname%",
-			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% gasps.%SPEECH_ON%Well, naturally! 400 crowns as agreed upon.%SPEECH_OFF%He gestures towards a servant who rushes to your side with the pay in hand.%SPEECH_ON%I wonder... may I make use of your services one more time? I\'d very much like to end the headache that is Hoggart once and for all. And I would pay you again, of course. Another 400 crowns, shall we say?%SPEECH_OFF%%bro2% scoffs and turns to drink more wine, but %bro1% stands to speak.%SPEECH_ON%Yes, the company is in ruin, but we will rebuild it! Without the %companyname%, %bro2% would drink the crowns away and end up begging on the streets, and %bro3%, by the gods we all know he\'d go chasing the womenfolk until one stove his rotted head in. We need the %companyname%, it\'s all we have! What say you, captain?%SPEECH_OFF%%bro2% burps and raises his cup to you. %bro3% playfully thumbs his nose and nods.%SPEECH_ON%Kill that bastard Hoggart or not, it\'s up to you, captain.%SPEECH_OFF%",
+			Title = "Retournez à %townname%",
+			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% vous regarde.%SPEECH_ON%Oui bien sûr, naturellement! 400 Couronnes comme convenu.%SPEECH_OFF%Il fait signe à un servant qui s\'empresse de venir vers vous avec la paie dans ses mains.%SPEECH_ON%Je me demandais... puis-je encore faire appel à vos services encore une fois? J\'aimerais vraiment de libéré du problème qu\'est Hoggart une bonne fois pour toute. Et je vous paierais de nouveau, bien sûr. De nouveau 400 Couronnes, qu\'en dîtes vous?%SPEECH_OFF%%bro2% rigole et se tourne pour boire plus de vin, mais %bro1% se lève pour parler.%SPEECH_ON%Oui, la compagnie est en ruine, mais nous allons la reconstruire! Sans %companyname%, %bro2% boira les couronnes et finira par mendier dans les rues, et %bro3%, par les dieux nous savons tous qu\'ils passera sont temps après les femmes jusqu\'à ce que l\'une d\'entre elle finisse par lui mettre la tête dans le four. On a besoin de %companyname%, c\'est tout ce que nous avons! Qu\'en pensez vous capitaine?%SPEECH_OFF%%bro2% fait un rot puis lève son verre vers vous. %bro3% met sa main sur son nez et acquiesce.%SPEECH_ON%Que l\'on tue ce salaud d\'Hoggart ou non, ça ne dépend que de vous capitaine.%SPEECH_OFF%",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Yes, we have unfinished business with Hoggart.",
+					Text = "Oui, nous avons des affaires à régler avec Hoggart.",
 					function getResult()
 					{
 						return "PaymentAfterIntro3";
@@ -642,7 +642,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "No, we\'ll find our fortune elsewhere.",
+					Text = "Non, nous ferons fortune autre part.",
 					function getResult()
 					{
 						this.World.Contracts.finishActiveContract();
@@ -660,13 +660,13 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "PaymentAfterIntro3",
-			Title = "The Retournez à %townname%",
-			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% claps his hands in satisfaction.%SPEECH_ON%Excellent! My little birds will need some time to find where Hoggart is hiding his hide now. In the meantime, I suggest you see about stocking up on supplies so that you\'ll be good and ready to end this when the time comes. I shall see you in a few days\' time at the latest!%SPEECH_OFF%As you leave %employer%\'s house and stand on the outskirts of %townname%, %bro1% seeks a word with you.%SPEECH_ON%We need more men, captain. I know I gave a big speech back there, but bravado won\'t do shite. We need more warm bodies in the ranks. Figure we find three good men, buy them some decent weapons, and dress them in the best armor we can afford.%SPEECH_OFF%The man pauses to glance around.%SPEECH_ON%I bet this bodunk town\'s got a desperate peasant or two looking for a new life. Or we could Voyagez jusqu\'à %bigcity% in the %citydirection%. Them cityfolk aren\'t always as hardy as these country bumpkins, but we\'re more likely to find men with fighting experience stopping to rest there.%SPEECH_OFF%",
+			Title = "Retournez à %townname%",
+			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% frappe dans ses main de bonheur.%SPEECH_ON%Excellent! Mes hommes vont mettre un peu de temps à trouver où Hoggart se cache. Pendant ce temps, je vous suggère de faire le plein de provisions pour que vous soyez prêt quand le moment viendra. On se revoit d\'ici quelques jours au plus tard!%SPEECH_OFF%En quittant la maison de %employer% et en vous rendant en bordure de %townname%, %bro1% souhaite vous parler.%SPEECH_ON%Nous avons besoin de plus d\'hommes capitaine. Je sais que j\'ai donné un beau discours tout à l\'heure mais la bravoure n\'y changera rien. Nous avons besoin de plus de personnes dans les rangs. Je pense que trois hommes serait un bon début, achetez quelques armes décentes, et habillez les de la meilleure armures que vous puissiez.%SPEECH_OFF%L\'homme s\'arrête et regarde autour.%SPEECH_ON%Je suis sûr que dans cette ville perdu, nous trouverons un ou deux paysans cherchant une nouvelle vie. Sinon nou pourrions aller jusqu\'à %bigcity% %citydirection%. Les gens de cette ville ne seront probablement pas aussi endurcis que ces gens de la campagne, mais on aura probablement plus de chance de tomber sur des hommes avec un peu d\'expériencee qui se sont arrêtés là bas pour se reposer.%SPEECH_OFF%",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That\'s what we shall do.",
+					Text = "C\'est ce que nous devrions faire.",
 					function getResult()
 					{
 						this.Contract.setState("Recruit");
@@ -684,13 +684,13 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "MarketplaceTip",
-			Title = "Along the way...",
-			Text = "[img]gfx/ui/events/event_77.png[/img]As %bigcity%\'s skyline appears on the horizon, %bro3% seeks a word with you.%SPEECH_ON%Never been to %bigcity% before, but I\'ve been around ones that look a lot like it. Cities like these are great for selling goods as all these prissy, pompous pricks love to have their goods delivered. With so many merchants, you can find almost everything you need, too. Keep an eye out for bargains, and don\'t get swindled by them cutthroat merchants.%SPEECH_OFF%%bro2% sees fit to add his own opinion of what you should do.%SPEECH_ON%If there\'s a good tavern, I say that\'s where we should go first. Nothing helps a man down on his luck more than a good pint. Gods know we earned it!%SPEECH_OFF%%bro3% shakes his head.%SPEECH_ON%You say that every time we stop into town! You say that even when you\'re already drunk!%SPEECH_OFF%",
+			Title = "Sur la route",
+			Text = "[img]gfx/ui/events/event_77.png[/img]Au même moment que vous commencez à apercevoir %bigcity% au niveau de l\'horizon, %bro3% souhaite vous parler.%SPEECH_ON%Je suis jamais allé à %bigcity% avant, mais je suis déjà allé dans d\'autres qui y ressemblait. Les villes comme celles-ci sont bien pour vendre des biens à ces personnes prétentieuses et pompeuses adorent se faire livre leur choses dont ils ont besoin. Avec autant de marchands vous y trouverez aussi tout ce que vous voulez. Gardez un oeil alerte pour les bonnes affaires et ne vous faites pas avoir par les marchands.%SPEECH_OFF%%bro2% juge bon de partager son opinion de ce que vous devriez faire.%SPEECH_ON%S\'il y a une bonne taverne, je dirais qu\'il faudrait y aller en premier. Rien n\'aide plus la chance d\'un homme que de boire une bonne peinte. Et dieu sait que nous l\'aurions mérité!%SPEECH_OFF%%bro3% secoue sa tête.%SPEECH_ON%Tu dis ça à chaque fois que l\'on s\'arrête dans une ville! Tu le dis même quand tu es complètement bourré!%SPEECH_OFF%",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll keep it in mind.",
+					Text = "Je garderais ça à l\'esprit.",
 					function getResult()
 					{
 						return 0;
@@ -711,7 +711,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Briefing",
 			Title = "Unfinished Business",
-			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% is pacing back and forth when you find him. The healer who\'d damn near killed you with the firepoke is standing nearby. He\'s picking chunks of dried blood out of his fingernails. %employer% claps his hands.%SPEECH_ON%Finally, you\'re here. I have good news! We got hold of one of Hoggart\'s former men! My good friend here had a nice little talk with the man and now I know where Hoggart\'s licking his wounds.%SPEECH_OFF%The healer clears his throat, splaying his fingers out like a maiden looking to paint them. He speaks as though he\'s identifying a disease he is about to excise.%SPEECH_ON%The brigand known as Hoggart is hiding in a small hut %terrain% to the %direction% of here. Based upon my most civil discussion with one of his men, Hoggart knows the  %companyname% is on his heels and will have gathered more men since the last time you met him.%SPEECH_OFF%Nodding, %employer% waves you off.%SPEECH_ON%Good luck, sellsword.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% est en train de faire les cent pas quand vous le trouvez. Le guerisseur qui vous a presque tué avec la barre de métal en fusion se tient pas très loin. Il est en train de retirer des morceaux de sang coincés sous ses ongles. %employer% frappe dans ses mains.%SPEECH_ON%Enfin, vous êtes là. I have good news! We got hold of one of Hoggart\'s former men! My good friend here had a nice little talk with the man and now I know where Hoggart\'s licking his wounds.%SPEECH_OFF%The healer clears his throat, splaying his fingers out like a maiden looking to paint them. He speaks as though he\'s identifying a disease he is about to excise.%SPEECH_ON%The brigand known as Hoggart is hiding in a small hut %terrain% to the %direction% of here. Based upon my most civil discussion with one of his men, Hoggart knows the  %companyname% is on his heels and will have gathered more men since the last time you met him.%SPEECH_OFF%Nodding, %employer% waves you off.%SPEECH_ON%Good luck, sellsword.%SPEECH_OFF%",
 			ShowEmployer = true,
 			List = [],
 			Options = [
@@ -823,7 +823,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]400[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]400[/color] Couronnes"
 				});
 			}
 

@@ -5,7 +5,7 @@ this.pierced_chest_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.pierced_chest";
 		this.m.Name = "Torse Percé";
-		this.m.Description = "Une attaque d\'estoc a perforé le torse, blessant les muscles et éraflé les côtes. Bien qu'aucun point vital n\'ait été touché, c\'est tout de même douloureux de respirer.";
+		this.m.Description = "Une attaque d\'estoc a perforé le torse, blessant les muscles et éraflé les côtes. Bien qu\'aucun point vital n\'ait été touché, c\'est tout de même douloureux de respirer.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_35";
 		this.m.Icon = "ui/injury/injury_icon_35.png";

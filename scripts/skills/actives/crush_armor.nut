@@ -4,7 +4,7 @@ this.crush_armor <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.crush_armor";
 		this.m.Name = "Détruire l\'Armure";
-		this.m.Description = "Utilise l\'arme pour écraser, déformer, arracher l\'armure de la cible pour la rendre inutilisable. Même si ses effets peuvent être ressentis même au travers des armures les plus robustes, cela n'affectera pas de grosses blessures à la cible.";
+		this.m.Description = "Utilise l\'arme pour écraser, déformer, arracher l\'armure de la cible pour la rendre inutilisable. Même si ses effets peuvent être ressentis même au travers des armures les plus robustes, cela n\'affectera pas de grosses blessures à la cible.";
 		this.m.Icon = "skills/active_36.png";
 		this.m.IconDisabled = "skills/active_36_sw.png";
 		this.m.Overlay = "active_36";

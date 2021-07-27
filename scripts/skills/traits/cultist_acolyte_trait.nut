@@ -6,7 +6,7 @@ this.cultist_acolyte_trait <- this.inherit("scripts/skills/traits/character_trai
 		this.m.ID = "trait.cultist_acolyte";
 		this.m.Name = "Acolyte de Davkul";
 		this.m.Icon = "ui/traits/trait_icon_66.png";
-		this.m.Description = "Ce personnage est un acolyte de Davkul, un individu avec une connaissance intime des enseignements sur l'ancien Dieu. Il embrasse les douleurs physique et la mise en péril car ça le rapproche du salut.";
+		this.m.Description = "Ce personnage est un acolyte de Davkul, un individu avec une connaissance intime des enseignements sur l\'ancien Dieu. Il embrasse les douleurs physique et la mise en péril car ça le rapproche du salut.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 	}
 

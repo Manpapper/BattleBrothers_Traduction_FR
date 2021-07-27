@@ -32,7 +32,7 @@ this.collapsed_lung_part_injury <- this.inherit("scripts/skills/injury_permanent
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Est toujours content d'être placé en réserve"
+				text = "Est toujours content d\'être placé en réserve"
 			}
 		];
 		this.addTooltipHint(ret);

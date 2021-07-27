@@ -4,7 +4,7 @@ this.tutorial_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 	{
 		this.m.ID = "scenario.tutorial";
 		this.m.Name = "Nouvelle Compagnie (Tutoriel)";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_21.png[/img][/p][p]Votre compagnie de mercenaire était en train de traquer un brigant au nom de Hoggart depuis un certain temps maintenant. Un évenement inopportun a laissé la compagnie en morceau, et vous êtes en charge pour la mener à sa gloire d\'antan.\n\n[color=#bcad8c]Recommendé pour les nouveaux joueurs vu qu'il y a des indications utiles au début.[/color][/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_21.png[/img][/p][p]Votre compagnie de mercenaire était en train de traquer un brigant au nom de Hoggart depuis un certain temps maintenant. Un évenement inopportun a laissé la compagnie en morceau, et vous êtes en charge pour la mener à sa gloire d\'antan.\n\n[color=#bcad8c]Recommendé pour les nouveaux joueurs vu qu\'il y a des indications utiles au début.[/color][/p]";
 		this.m.Difficulty = 1;
 		this.m.Order = 0;
 	}

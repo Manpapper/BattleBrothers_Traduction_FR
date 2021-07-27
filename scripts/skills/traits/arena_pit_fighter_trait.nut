@@ -6,7 +6,7 @@ this.arena_pit_fighter_trait <- this.inherit("scripts/skills/traits/character_tr
 		this.m.ID = "trait.pit_fighter";
 		this.m.Name = "Combattant de fosse";
 		this.m.Icon = "ui/traits/trait_icon_73.png";
-		this.m.Description = "Ce personnage vient juste de mettre le pied dans laprofession brutale que sont les combats d\'arène et a survécu pour en raconter les histoires.";
+		this.m.Description = "Ce personnage vient juste de mettre le pied dans la profession brutale que sont les combats d\'arène et a survécu pour en raconter les histoires.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 	}
 
@@ -18,25 +18,28 @@ this.arena_pit_fighter_trait <- this.inherit("scripts/skills/traits/character_tr
 
 		if (matches == 1)
 		{
-			text = " So far, this character has fought in one match";
+			text = " Jusqu\'à maintenant, ce personnage n\'a combattu que dans un seul match";
 
 			if (won == 1)
 			{
-				text = text + " and won it.";
+				text = text + " et l\'a gagné";
 			}
 			else
 			{
-				text = text + " but lost it.";
+				text = text + " mais l\'a perdu.";
 			}
 		}
 		else
 		{
 			if (won == matches)
 			{
-				won = "all";
+				text = " Jusqu\'à maintenant, ce personnage a combattu dans " + matches + " matches et les a tous gagnés" ;
 			}
-
-			text = " Jusqu\'à maintenant, ce personnage a combattu dans " + matches + " matches et en a gagné " + won ;
+			else
+			{
+				text = " Jusqu\'à maintenant, ce personnage a combattu dans " + matches + " matches et en a gagné " + won ;			
+			}
+			
 		}
 
 		return [

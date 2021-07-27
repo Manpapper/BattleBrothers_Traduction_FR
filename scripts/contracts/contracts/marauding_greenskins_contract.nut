@@ -353,7 +353,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 
 				if (this.Contract.m.Payment.Completion != 0)
 				{
-					this.Contract.m.BulletpointsPayment.push("Recevez " + this.Contract.m.Payment.getOnCompletion() + " Couronnes à l'achèvement du contrat");
+					this.Contract.m.BulletpointsPayment.push("Recevez " + this.Contract.m.Payment.getOnCompletion() + " Couronnes à l\'achèvement du contrat");
 				}
 
 				this.Contract.m.Home.getSprite("selection").Visible = true;

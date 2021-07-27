@@ -46,14 +46,14 @@ OptionsMenuModuleControlsPanel.prototype.createDIV = function (_parentDiv)
 	// create: camera options
 	var row = $('<div class="row"></div>');
 	leftColumn.append(row);
-	var tile = $('<div class="title title-font-big font-color-title">Scrollmode</div>');
+	var tile = $('<div class="title title-font-big font-color-title">Faire Défiler</div>');
 	row.append(tile);
 
 	var dragWithMouseControl = $('<div class="control"></div>');
 	row.append(dragWithMouseControl);
 	this.mDragWithMouseCheckbox = $('<input type="radio" id="cb-drag-with-mouse" name="scrollmode" />');
 	dragWithMouseControl.append(this.mDragWithMouseCheckbox);
-	var dragWithMouseCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-drag-with-mouse">Drag with Mouse</label>');
+	var dragWithMouseCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-drag-with-mouse">Faire glisser avec la Souris</label>');
 	this.mDragWithMouseLabel = dragWithMouseCheckboxLabel;
 	dragWithMouseControl.append(dragWithMouseCheckboxLabel);
 	this.mDragWithMouseCheckbox.iCheck({
@@ -66,7 +66,7 @@ OptionsMenuModuleControlsPanel.prototype.createDIV = function (_parentDiv)
 	row.append(edgeOfScreenControl);
 	this.mEdgeOfScreenCheckbox = $('<input type="radio" id="cb-edge-of-screen" name="scrollmode" />');
 	edgeOfScreenControl.append(this.mEdgeOfScreenCheckbox);
-	var edgeOfScreenCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-edge-of-screen">Edge of Screen</label>');
+	var edgeOfScreenCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-edge-of-screen">Bord de l\'écran</label>');
 	this.mEdgeOfScreenLabel = edgeOfScreenCheckboxLabel;
 	edgeOfScreenControl.append(edgeOfScreenCheckboxLabel);
 	this.mEdgeOfScreenCheckbox.iCheck({
@@ -78,14 +78,14 @@ OptionsMenuModuleControlsPanel.prototype.createDIV = function (_parentDiv)
 	// create: mouse options
 	row = $('<div class="row"></div>');
 	rightColumn.append(row);
-	tile = $('<div class="title title-font-big font-color-title">Mouse</div>');
+	tile = $('<div class="title title-font-big font-color-title">Souris</div>');
 	row.append(tile);
 	
 	var hardwareMouseControl = $('<div class="control"></div>');
 	row.append(hardwareMouseControl);
 	this.mHardwareMouseCheckbox = $('<input type="checkbox" id="cb-hardware-mouse" name="hardware-mouse" />');
 	hardwareMouseControl.append(this.mHardwareMouseCheckbox);
-	var hardwareMouseCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-hardware-mouse">Hardware Cursor</label>');
+	var hardwareMouseCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-hardware-mouse">Curseur Matériel</label>');
 	this.mHardwareMouseLabel = hardwareMouseCheckboxLabel;
 	hardwareMouseControl.append(hardwareMouseCheckboxLabel);
 	this.mHardwareMouseCheckbox.iCheck({

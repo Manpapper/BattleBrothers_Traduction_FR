@@ -34,7 +34,7 @@ this.disloyal_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Est toujours content d'être placé en réserve"
+				text = "Est toujours content d\'être placé en réserve"
 			}
 		];
 	}

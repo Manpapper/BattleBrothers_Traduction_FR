@@ -67,20 +67,20 @@ OptionsMenuModuleAudioPanel.prototype.createDIV = function (_parentDiv)
 	row.append(displayTile);
 	
 	this.createVolumeControlDIV(this.mVolumeOptions.Master, 'Master', row);	
-	this.createVolumeControlDIV(this.mVolumeOptions.Music, 'Music', row);
-	this.createVolumeControlDIV(this.mVolumeOptions.Effects, 'Effects', row);
+	this.createVolumeControlDIV(this.mVolumeOptions.Music, 'Musique', row);
+	this.createVolumeControlDIV(this.mVolumeOptions.Effects, 'Effets', row);
     this.createVolumeControlDIV(this.mVolumeOptions.Ambience, 'Ambience', row);
 
     var row = $('<div class="row"></div>');
     rightColumn.append(row);
-    var displayTile = $('<div class="title title-font-big font-bold font-color-title">Advanced</div>');
+    var displayTile = $('<div class="title title-font-big font-bold font-color-title">Avancé</div>');
     row.append(displayTile);
 
     var hwControl = $('<div class="control"/>');
     row.append(hwControl);
     this.mHWCheckbox = $('<input type="checkbox" id="cb-hw"/>');
     hwControl.append(this.mHWCheckbox);
-    this.mHWLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-hw">Hardware Sound</label>');
+    this.mHWLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-hw">Son Matériel</label>');
     hwControl.append(this.mHWLabel);
     this.mHWCheckbox.iCheck(
     {

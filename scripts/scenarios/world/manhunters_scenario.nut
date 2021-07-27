@@ -3,7 +3,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 	function create()
 	{
 		this.m.ID = "scenario.manhunters";
-		this.m.Name = "Chasseur d'Hommes";
+		this.m.Name = "Chasseur d\'Hommes";
 		this.m.Description = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Un conflit constant entre les villes état et les nomades permet de faire de bonnes affaires. La majorité de vos hommes sont des prisonniers, forcés à se battre pour gagner leur liberté, et leur rang s\'aggrangit après chaque bataille.\n\n[color=#bcad8c]Armée de Prisonniers:[/color] Commencez avec deux chasseurs d\'homme et quatre endettés. Vous pouvez emmener jusqu\'à 16 hommes en combat. Avoir autant ou moins d\'endetté que de non-endetté rendra vos hommes insatisfaits.\n[color=#bcad8c]Superviseurs:[/color] Tous les non-endetté peuvent fouetter les endettés en combat pour réinitialiser leur morale et améliorer leurs stats.\n[color=#bcad8c]Prisonniers:[/color] Les prisonniers gagne 25% d\'experience en moins, sont bloqués au niveau 7 et mourront s\'ils sont abattu.[/p]";
 		this.m.Difficulty = 3;
 		this.m.Order = 89;

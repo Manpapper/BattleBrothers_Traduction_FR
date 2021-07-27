@@ -62,14 +62,14 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	// create: camera options
 	row = $('<div class="row"></div>');
 	leftColumn.append(row);
-	var displayTile = $('<div class="title title-font-big font-color-title">Camera</div>');
+	var displayTile = $('<div class="title title-font-big font-color-title">Caméra</div>');
 	row.append(displayTile);
 
 	var control = $('<div class="control"></div>');
 	row.append(control);
 	this.mCameraFollowCheckbox = $('<input type="checkbox" id="cb-camera-follow" name="camera-follow" />');
 	control.append(this.mCameraFollowCheckbox);
-	var cameraFollowCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-camera-follow">Always Focus AI Movement</label>');
+	var cameraFollowCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-camera-follow">Toujours suivre les Mouvements de l\'IA</label>');
 	this.mCameraFollowLabel = cameraFollowCheckboxLabel;
 	control.append(cameraFollowCheckboxLabel);
 	this.mCameraFollowCheckbox.iCheck({
@@ -82,7 +82,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mCameraAdjustLevelCheckbox = $('<input type="checkbox" id="cb-camera-adjust" name="camera-adjust-level" />');
 	control.append(this.mCameraAdjustLevelCheckbox);
-	var cameraAdjustLevelCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-camera-adjust">Auto-Adjust Height Level</label>');
+	var cameraAdjustLevelCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-camera-adjust">Ajustement Auto de la Hauteur</label>');
 	this.mCameraAdjustLevelLabel = cameraAdjustLevelCheckboxLabel;
 	control.append(cameraAdjustLevelCheckboxLabel);
 	this.mCameraAdjustLevelCheckbox.iCheck({
@@ -95,7 +95,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mAlwaysHideTreesCheckbox = $('<input type="checkbox" id="cb-always-hide-trees" name="always-hide-trees" />');
 	control.append(this.mAlwaysHideTreesCheckbox);
-	var alwaysHideTreesCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-always-hide-trees">Always Hide Trees</label>');
+	var alwaysHideTreesCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-always-hide-trees">Toujours Cacher les Arbres</label>');
 	this.mAlwaysHideTreesLabel = alwaysHideTreesCheckboxLabel;
 	control.append(alwaysHideTreesCheckboxLabel);
 	this.mAlwaysHideTreesCheckbox.iCheck({
@@ -107,14 +107,14 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	// create: overlays options
 	var row = $('<div class="row"></div>');
 	rightColumn.append(row);
-	displayTile = $('<div class="title title-font-big font-color-title">Overlays</div>');
+	displayTile = $('<div class="title title-font-big font-color-title">Affichage</div>');
 	row.append(displayTile);
 	
 	control = $('<div class="control"></div>');
 	row.append(control);
 	this.mStatsOverlaysCheckbox = $('<input type="checkbox" id="cb-stats-overlays" name="stats-overlays" />');
 	control.append(this.mStatsOverlaysCheckbox);
-	var statsOverlaysCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-stats-overlays">Always Show Hitpoint Bars</label>');
+	var statsOverlaysCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-stats-overlays">Afficher les Barres de Points de Vie</label>');
 	this.mStatsOverlaysLabel = statsOverlaysCheckboxLabel;
 	control.append(statsOverlaysCheckboxLabel);
 	this.mStatsOverlaysCheckbox.iCheck({
@@ -127,7 +127,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mOrientationOverlaysCheckbox = $('<input type="checkbox" id="cb-orientation-overlays" name="orientation-overlays" />');
 	control.append(this.mOrientationOverlaysCheckbox);
-	var orientationOverlaysCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-orientation-overlays">Show Orientation Icons</label>');
+	var orientationOverlaysCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-orientation-overlays">Afficher les Icônes d\'orientation</label>');
 	this.mOrientationOverlaysLabel = orientationOverlaysCheckboxLabel;
 	control.append(orientationOverlaysCheckboxLabel);
 	this.mOrientationOverlaysCheckbox.iCheck({
@@ -146,7 +146,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mMovementPlayerCheckbox = $('<input type="checkbox" id="cb-movement-player" name="movement-player" />');
 	control.append(this.mMovementPlayerCheckbox);
-	var movementPlayerCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-movement-player">Faster Player Movement</label>');
+	var movementPlayerCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-movement-player">Mouvement du Joueur Plus Rapide</label>');
 	this.mMovementPlayerLabel = movementPlayerCheckboxLabel;
 	control.append(movementPlayerCheckboxLabel);
 	this.mMovementPlayerCheckbox.iCheck({
@@ -159,7 +159,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mMovementAICheckbox = $('<input type="checkbox" id="cb-movement-ai" name="movement-ai" />');
 	control.append(this.mMovementAICheckbox);
-	var movementAICheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-movement-ai">Faster AI Movement</label>');
+	var movementAICheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-movement-ai">Mouvement de l\'IA Plus Rapide</label>');
 	this.mMovementAILabel = movementAICheckboxLabel;
 	control.append(movementAICheckboxLabel);
 	this.mMovementAICheckbox.iCheck({
@@ -172,7 +172,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mAutoEndTurnCheckbox = $('<input type="checkbox" id="cb-auto-end-turn" name="auto-end-turn" />');
 	control.append(this.mAutoEndTurnCheckbox);
-	var AutoEndTurnCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-auto-end-turn">Auto-End Turns</label>');
+	var AutoEndTurnCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-auto-end-turn">Fin Automatique des Tours</label>');
 	this.mAutoEndTurnLabel = AutoEndTurnCheckboxLabel;
 	control.append(AutoEndTurnCheckboxLabel);
 	this.mAutoEndTurnCheckbox.iCheck({
@@ -185,7 +185,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mAutoLootCheckbox = $('<input type="checkbox" id="cb-auto-loot" name="auto-loot" />');
 	control.append(this.mAutoLootCheckbox);
-	var autoLootCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-auto-loot">Auto-Loot</label>');
+	var autoLootCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-auto-loot">Butin-Auto</label>');
 	this.mAutoLootLabel = autoLootCheckboxLabel;
 	control.append(autoLootCheckboxLabel);
 	this.mAutoLootCheckbox.iCheck({
@@ -198,7 +198,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
 	row.append(control);
 	this.mRestoreEquipmentCheckbox = $('<input type="checkbox" id="cb-restore-equipment" name="restore-equipment" />');
 	control.append(this.mRestoreEquipmentCheckbox);
-	var restoreEquipmentLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-restore-equipment">Reset Equipment After Battle</label>');
+	var restoreEquipmentLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-restore-equipment">Réinitialiser les Équipements Après la Bataille</label>');
 	this.mRestoreEquipmentLabel = restoreEquipmentLabel;
 	control.append(restoreEquipmentLabel);
 	this.mRestoreEquipmentCheckbox.iCheck({
@@ -211,7 +211,7 @@ OptionsMenuModuleGameplayPanel.prototype.createDIV = function (_parentDiv)
     row.append(control);
     this.mAutoPauseAfterCityCheckbox = $('<input type="checkbox" id="cb-auto-pause-after-city" name="auto-pause-after-city" />');
     control.append(this.mAutoPauseAfterCityCheckbox);
-    var autoPauseAfterCityLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-auto-pause-after-city">Auto-Pause After Leaving City</label>');
+    var autoPauseAfterCityLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-auto-pause-after-city">Auto-Pause Après Avoir Quitté Une Ville</label>');
     this.mAutoPauseAfterCityLabel = autoPauseAfterCityLabel;
     control.append(autoPauseAfterCityLabel);
     this.mAutoPauseAfterCityCheckbox.iCheck({

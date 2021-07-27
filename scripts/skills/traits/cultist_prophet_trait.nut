@@ -69,7 +69,7 @@ this.cultist_prophet_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "N'est pas affecté pas les blessures de la chair durant la bataille actuelle"
+				text = "N\'est pas affecté pas les blessures de la chair durant la bataille actuelle"
 			}
 		];
 	}

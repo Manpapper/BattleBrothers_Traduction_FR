@@ -111,7 +111,7 @@ this.injury <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Will take effect only after combat ends due to the Iron Will effect"
+				text = "Ne prendra effet qu\'à la fin du combat du à l\'effet de Volonté de Fer"
 			});
 		}
 
@@ -159,7 +159,7 @@ this.injury <- this.inherit("scripts/skills/skill", {
 				}
 				else if (ht.Max > 1)
 				{
-					d = "Sera guéri dans " + ht.Min + " to " + ht.Max + " jours";
+					d = "Sera guéri dans " + ht.Min + " à " + ht.Max + " jours";
 				}
 				else
 				{
@@ -181,7 +181,7 @@ this.injury <- this.inherit("scripts/skills/skill", {
 				}
 				else if (ht.Max > 1)
 				{
-					d = "Sera guéri dans " + ht.Min + " to " + ht.Max + " jours";
+					d = "Sera guéri dans " + ht.Min + " à " + ht.Max + " jours";
 				}
 				else
 				{

@@ -5,7 +5,7 @@ this.deep_face_cut_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.deep_face_cut";
 		this.m.Name = "Entaille Profonde sur le Visage";
-		this.m.Description = "Une entaille Profonde d\'un bout à l'\autre du visage qui saigne abondamment sur les yeux, le nez et la bouche.";
+		this.m.Description = "Une entaille Profonde d\'un bout à l\'autre du visage qui saigne abondamment sur les yeux, le nez et la bouche.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_10";
 		this.m.Icon = "ui/injury/injury_icon_10.png";

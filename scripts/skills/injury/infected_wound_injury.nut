@@ -5,7 +5,7 @@ this.infected_wound_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.infected_wound";
 		this.m.Name = "Blessure Infectée";
-		this.m.Description = "Une blessure sale qui s'est infectée drainant la constitution de ce personne.";
+		this.m.Description = "Une blessure sale qui s\'est infectée drainant la constitution de ce personne.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_16";
 		this.m.Icon = "ui/injury/injury_icon_16.png";

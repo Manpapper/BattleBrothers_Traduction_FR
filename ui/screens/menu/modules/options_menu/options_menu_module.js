@@ -91,7 +91,7 @@ OptionsMenuModule.prototype.createDIV = function (_parentDiv)
 
     var layout = $('<div class="l-tab-button"/>');
     tabButtonsContainer.append(layout);
-    this.mSwitchToVideoButton = layout.createTabTextButton("Video", function ()
+    this.mSwitchToVideoButton = layout.createTabTextButton("Vidéo", function ()
     {
         self.switchToVideoPanel();
     }, null, 'tab-button', 7);
@@ -105,14 +105,14 @@ OptionsMenuModule.prototype.createDIV = function (_parentDiv)
 
     layout = $('<div class="l-tab-button"/>');
     tabButtonsContainer.append(layout);
-    this.mSwitchToControlsButton = layout.createTabTextButton("Controls", function ()
+    this.mSwitchToControlsButton = layout.createTabTextButton("Contrôles", function ()
     {
         self.switchToControlsPanel();
     }, null, 'tab-button', 7);
 
     layout = $('<div class="l-tab-button"/>');
     tabButtonsContainer.append(layout);
-    this.mSwitchToGameplayButton = layout.createTabTextButton("Gameplay", function ()
+    this.mSwitchToGameplayButton = layout.createTabTextButton("Jeu", function ()
     {
         self.switchToGameplayPanel();
     }, null, 'tab-button', 7);
@@ -131,14 +131,14 @@ OptionsMenuModule.prototype.createDIV = function (_parentDiv)
 
     layout = $('<div class="l-apply-button"/>');
     footerButtonBar.append(layout);
-    this.mApplyButton = layout.createTextButton("Apply", function ()
+    this.mApplyButton = layout.createTextButton("Appliquer", function ()
     {
         self.applyOptions(false);
     }, '', 1);
 
     layout = $('<div class="l-cancel-button"/>');
     footerButtonBar.append(layout);
-    this.mCloseButton = layout.createTextButton("Cancel", function ()
+    this.mCloseButton = layout.createTextButton("Annuler", function ()
     {
         self.notifyBackendCancelButtonPressed();
     }, '', 1);

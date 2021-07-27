@@ -6,7 +6,7 @@ this.fear_undead_trait <- this.inherit("scripts/skills/traits/character_trait", 
 		this.m.ID = "trait.fear_undead";
 		this.m.Name = "Peur des Morts-Vivants";
 		this.m.Icon = "ui/traits/trait_icon_47.png";
-		this.m.Description = "Des évenements passés ou des histoires particulierement convaiquantes dans la vie de ce personnage l'a laissé appeuré de ce que les Morts-Vivants étaient capable de faire, le rendant moins fiable lors de bataille contre eux.";
+		this.m.Description = "Des évenements passés ou des histoires particulierement convaiquantes dans la vie de ce personnage l\'a laissé appeuré de ce que les Morts-Vivants étaient capable de faire, le rendant moins fiable lors de bataille contre eux.";
 		this.m.Excluded = [
 			"trait.fearless",
 			"trait.brave",

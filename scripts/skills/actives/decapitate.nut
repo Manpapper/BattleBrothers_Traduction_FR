@@ -16,7 +16,7 @@ this.decapitate <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.decapitate";
 		this.m.Name = "Decapitater";
-		this.m.Description = "Un coup dévastateur qui vise à décapiter la cible sur place. Fait plus de dégâts aux points de vie si la cible a déjà des blessures. Tuer la cible résultera toujours à la décapiter, si c'est possible.";
+		this.m.Description = "Un coup dévastateur qui vise à décapiter la cible sur place. Fait plus de dégâts aux points de vie si la cible a déjà des blessures. Tuer la cible résultera toujours à la décapiter, si c\'est possible.";
 		this.m.Icon = "skills/active_34.png";
 		this.m.IconDisabled = "skills/active_34_sw.png";
 		this.m.Overlay = "active_34";

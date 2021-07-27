@@ -146,7 +146,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 			function start()
 			{
 				this.Contract.m.BulletpointsObjectives = [
-					"Trouvez %location% %direction% and autour de la région de %region%"
+					"Trouvez %location% %direction% et aux alentours de la région de %region%"
 				];
 
 				if (this.Contract.m.Location != null && !this.Contract.m.Location.isNull())

@@ -4,7 +4,7 @@ this.demolish_armor_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.demolish_armor";
 		this.m.Name = "Destruction d\'Armure";
-		this.m.Description = "Utilise l\'arme pour écraser, déformer, arracher l\'armure de la cible pour la rendre inutilisable. Même si ses effets peuvent être ressentis même au travers des armures les plus robustes, cela n'affectera pas de grosses blessures à la cible.";
+		this.m.Description = "Utilise l\'arme pour écraser, déformer, arracher l\'armure de la cible pour la rendre inutilisable. Même si ses effets peuvent être ressentis même au travers des armures les plus robustes, cela n\'affectera pas de grosses blessures à la cible.";
 		this.m.Icon = "skills/active_137.png";
 		this.m.IconDisabled = "skills/active_137_sw.png";
 		this.m.Overlay = "active_137";

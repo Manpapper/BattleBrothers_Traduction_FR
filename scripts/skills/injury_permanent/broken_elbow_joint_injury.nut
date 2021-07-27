@@ -5,7 +5,7 @@ this.broken_elbow_joint_injury <- this.inherit("scripts/skills/injury_permanent/
 		this.permanent_injury.create();
 		this.m.ID = "injury.broken_elbow_joint";
 		this.m.Name = "Jointures du Coude Cassées";
-		this.m.Description = "Un coude cassé qui n'a jamais vraiment soigné et qui gêne les mouvements du bras et réduit grandement de l\'efficacité au combat.";
+		this.m.Description = "Un coude cassé qui n\'a jamais vraiment soigné et qui gêne les mouvements du bras et réduit grandement de l\'efficacité au combat.";
 		this.m.Icon = "ui/injury/injury_permanent_icon_08.png";
 	}
 
@@ -44,7 +44,7 @@ this.broken_elbow_joint_injury <- this.inherit("scripts/skills/injury_permanent/
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Est toujours content d'être placé en réserve"
+				text = "Est toujours content d\'être placé en réserve"
 			}
 		];
 		this.addTooltipHint(ret);

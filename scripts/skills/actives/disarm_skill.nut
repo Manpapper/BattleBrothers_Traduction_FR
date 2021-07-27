@@ -4,7 +4,7 @@ this.disarm_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.disarm";
 		this.m.Name = "Désarme";
-		this.m.Description = "Utilise le fouet d\'une certaine distance pour désarmer temporairement la cible touché. Un adversaire désarmé ne peut utiliser des compétences d\'armes, mais il peut toujours utiliser ses autres compétences. Les cibles qui n'ont pas d\'armes ne peuvent être désarmés.";
+		this.m.Description = "Utilise le fouet d\'une certaine distance pour désarmer temporairement la cible touché. Un adversaire désarmé ne peut utiliser des compétences d\'armes, mais il peut toujours utiliser ses autres compétences. Les cibles qui n\'ont pas d\'armes ne peuvent être désarmés.";
 		this.m.Icon = "skills/active_170.png";
 		this.m.IconDisabled = "skills/active_170_sw.png";
 		this.m.Overlay = "active_170";

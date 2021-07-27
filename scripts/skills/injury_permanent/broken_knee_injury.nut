@@ -44,7 +44,7 @@ this.broken_knee_injury <- this.inherit("scripts/skills/injury_permanent/permane
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Est toujours content d'être placé en réserve"
+				text = "Est toujours content d\'être placé en réserve"
 			}
 		];
 		this.addTooltipHint(ret);

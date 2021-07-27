@@ -57,7 +57,7 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	// create: resolution list
 	var resolutionsRow = $('<div class="row"/>');
 	leftColumn.append(resolutionsRow);
-	var resolutionsTile = $('<div class="title title-font-big font-bold font-color-title">Resolution</div>');
+	var resolutionsTile = $('<div class="title title-font-big font-bold font-color-title">Résolution</div>');
 	resolutionsRow.append(resolutionsTile);
 
     var listContainerLayout = $('<div class="control l-list-container"/>');
@@ -68,14 +68,14 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	// create: display options
 	var displayRow = $('<div class="row"/>');
 	rightColumn.append(displayRow);
-	var displayTile = $('<div class="title title-font-big font-bold font-color-title">Display</div>');
+	var displayTile = $('<div class="title title-font-big font-bold font-color-title">Affichage</div>');
 	displayRow.append(displayTile);
 	
 	var fullscreenControl = $('<div class="control"/>');
 	displayRow.append(fullscreenControl);
 	this.mFullscreenCheckbox = $('<input type="radio" id="cb-fullscreen" name="display"/>');
 	fullscreenControl.append(this.mFullscreenCheckbox);
-	var fullscreenCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-fullscreen">Fullscreen</label>');
+	var fullscreenCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-fullscreen">Plein Écran</label>');
 	fullscreenControl.append(fullscreenCheckboxLabel);
 	this.mFullscreenCheckbox.iCheck({
 		checkboxClass: 'icheckbox_flat-orange',
@@ -87,7 +87,7 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	displayRow.append(windowControl);
 	this.mWindowCheckbox = $('<input type="radio" id="cb-window" name="display"/>');
 	windowControl.append(this.mWindowCheckbox);
-	var borderlessCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-window">Window</label>');
+	var borderlessCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-window">Fenêtré</label>');
 	windowControl.append(borderlessCheckboxLabel);
 	this.mWindowCheckbox.iCheck({
 		checkboxClass: 'icheckbox_flat-orange',
@@ -99,7 +99,7 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	displayRow.append(borderlessControl);
 	this.mBorderlessCheckbox = $('<input type="radio" id="cb-borderless" name="display"/>');
 	borderlessControl.append(this.mBorderlessCheckbox);
-	borderlessCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-borderless">Borderless Window</label>');
+	borderlessCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-borderless">Écran sans Bordures</label>');
 	borderlessControl.append(borderlessCheckboxLabel);
 	this.mBorderlessCheckbox.iCheck({
 		checkboxClass: 'icheckbox_flat-orange',
@@ -122,14 +122,14 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	// create: detail options
 	var detailRow = $('<div class="row"/>');
 	rightColumn.append(detailRow);
-	var detailTile = $('<div class="title title-font-big font-bold font-color-title">Detail</div>');
+	var detailTile = $('<div class="title title-font-big font-bold font-color-title">Détail</div>');
 	detailRow.append(detailTile);
 
 	var depthOfFieldControl = $('<div class="control"/>');
 	detailRow.append(depthOfFieldControl);
 	this.mDepthOfFieldCheckbox = $('<input type="checkbox" id="cb-depth-of-field"/>');
 	depthOfFieldControl.append(this.mDepthOfFieldCheckbox);
-	var depthOfFieldCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-depth-of-field">Depth of Field</label>');
+	var depthOfFieldCheckboxLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-depth-of-field">Profondeur de Champ</label>');
 	this.mDepthOfFieldLabel = depthOfFieldCheckboxLabel;
 	depthOfFieldControl.append(depthOfFieldCheckboxLabel);
 	this.mDepthOfFieldCheckbox.iCheck({
@@ -141,7 +141,7 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	// create: ui scaling options
 	var scalingRow = $('<div class="row"/>');
 	rightColumn.append(scalingRow);
-	var scalingTile = $('<div class="title title-font-big font-bold font-color-title">UI Scale</div>');
+	var scalingTile = $('<div class="title title-font-big font-bold font-color-title">Échelle de l\'Interface</div>');
 	scalingRow.append(scalingTile);
 
 	var scaleControl = $('<div class="scale-control"/>');
@@ -167,7 +167,7 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	// create: sprite scaling options
 	var scalingRow = $('<div class="row"/>');
 	rightColumn.append(scalingRow);
-	var scalingTile = $('<div class="title title-font-big font-bold font-color-title">Scene Scale</div>');
+	var scalingTile = $('<div class="title title-font-big font-bold font-color-title">Échelle de la Scène</div>');
 	scalingRow.append(scalingTile);
 
 	var scaleControl = $('<div class="scale-control"/>');
@@ -196,7 +196,7 @@ OptionsMenuModuleVideoPanel.prototype.createDIV = function (_parentDiv)
 	var thanksImage = $('<img class="" src="' + Path.GFX + 'ui/tooltips/warning.png" />');
 	thanksMike.append(thanksImage);
 
-	var thanksLabel = $('<label class="text-font-normal font-color-brother-name">Changes take effect after restart!</label>');
+	var thanksLabel = $('<label class="text-font-normal font-color-brother-name">Les changements prendront effet après un redémarrage!</label>');
 	thanksMike.append(thanksLabel);
 
     this.setupEventHandler();

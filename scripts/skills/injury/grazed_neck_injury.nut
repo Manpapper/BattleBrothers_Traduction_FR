@@ -7,7 +7,7 @@ this.grazed_neck_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.grazed_neck";
 		this.m.Name = "Cou Ecorché";
-		this.m.Description = "Une écourchure sur votre cou qui saigne abondemment. Si vous survivez, il s'ensuit une diminution de la constitution à cause de la perte de sang.";
+		this.m.Description = "Une écourchure sur votre cou qui saigne abondemment. Si vous survivez, il s\'ensuit une diminution de la constitution à cause de la perte de sang.";
 		this.m.KilledString = "Bled to death";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_44";

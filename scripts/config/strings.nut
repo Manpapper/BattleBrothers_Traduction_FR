@@ -555,13 +555,13 @@ gt.Const.Strings.CityStateNames <- [
 	"Al-Anwar"
 ];
 gt.Const.Strings.CityStateTitles <- [
-	"City State of",
-	"City of",
-	"Protectorate of",
-	"Realm of",
-	"Grand City of",
-	"Free City of",
-	"Holy City of"
+	"Cité État de",
+	"Cité de",
+	"Protectorat de",
+	"Royaume de",
+	"Grande ville de",
+	"Ville Libre de",
+	"Ville Sainte de"
 ];
 gt.Const.Strings.BusinessReputation <- [
 	"Treacherous",
@@ -682,13 +682,13 @@ gt.Const.Strings.World.TimeOfDay <- [
 	"Aube"
 ];
 gt.Const.Strings.Direction <- [
-	"north",
-	"north-east",
-	"south-east",
-	"south",
-	"south-west",
-	"north-west",
-	"<undefined>"
+	"nord",
+	"nord-est",
+	"sud-est",
+	"sud",
+	"sud-ouest",
+	"nord-ouest",
+	"<Indéfini>"
 ];
 gt.Const.Strings.Direction8 <- [
 	"au nord",
@@ -698,7 +698,7 @@ gt.Const.Strings.Direction8 <- [
 	"au sud",
 	"au sud-ouest",
 	"à l\'ouest",
-	"au nord-west"
+	"au nord-ouest"
 ];
 gt.Const.Strings.Terrain <- [
 	"",
@@ -1122,7 +1122,7 @@ gt.Const.Strings.TerrainRegionNames <- [
 		"Northern Clanlands",
 		"Northern Reaches",
 		"Ragwilds",
-		"Barrens",
+		"Landes",
 		"Ragnar\'s Range",
 		"Pagan Heathland",
 		"Ruffmuir",
@@ -1249,9 +1249,9 @@ gt.Const.Strings.InventoryUpgradeHeader <- [
 	"Buy a Big Wagon"
 ];
 gt.Const.Strings.InventoryUpgradeText <- [
-	"buy a cart",
-	"buy a wagon",
-	"buy a big wagon"
+	"acheter une charette",
+	"acheter un chariot",
+	"acheter un grand chariot"
 ];
 gt.Const.Strings.InventoryUpgradeCosts <- [
 	"5,000",
@@ -1273,7 +1273,7 @@ gt.Const.Strings.PerkName <- {
 	ShieldExpert = "Maîtrise du Bouclier",
 	NineLives = "Neufs Vies",
 	BatteringRam = "Bélier",
-	BattleForged = "Façonner par les Batailles",
+	BattleForged = "Façonné par les Batailles",
 	BagsAndBelts = "Sacs et ceintures",
 	Student = "Erudit",
 	Zweihander = "Maîtrise à Deux Mains",
@@ -1295,7 +1295,7 @@ gt.Const.Strings.PerkName <- {
 	SunderingStrikes = "Coup Fracassant",
 	BattleFlow = "Au Coeur de la Bataille",
 	HeadHunter = "Chasseur de Têtes",
-	RallyTheTroops = "Rallier the Troupes",
+	RallyTheTroops = "Rallier les Troupes",
 	Fearsome = "Effroyable",
 	Indomitable = "Invincible",
 	Debilitate = "Fragiliser",
@@ -1337,7 +1337,7 @@ gt.Const.Strings.PerkDescription <- {
 	FastAdaption = "Adaptez vous aux attaques de vos ennemies! Gagnez un stack additionnel de [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de chance de toucher pour chaque attaque qui manque un ennemie. Le bonus est réinitialisé dès que vous touchez un ennemi.",
 	Weaponmaster = "Toutes les attaques coutent [color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] de Fatigue à utiliser et la condition des armes se dégrade moitié moins vite. Dancer gracieusement avec votre arme et faites que chaque coup compte. ",
 	CoupDeGrace = "Inflige des dégâts additionnels de [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] contre les ennemis qui ont subis n\'importe quelle blessure comme un bras cassé.",
-	SteelBrow = "Les coups à la tête n\'infligent mainteannt plus de coups critique à ce personnage, ce qui diminue par la même occasion la probabilité de subir des blessures invalidantes à la tête de manière significative.",
+	SteelBrow = "Les coups à la tête n\'infligent maintenant plus de coups critique à ce personnage, ce qui diminue par la même occasion la probabilité de subir des blessures invalidantes à la tête de manière significative.",
 	Anticipation = "Quand vous êtes attaqué par des armes à distance, vous gagnez [color=" + this.Const.UI.Color.PositiveValue + "]1 + 10% de votre Défense à Distance[/color] en défense à Distance additionnel par case de distance d\'où se trouve l\'attaquant, et toujours au minimum un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] en Défense à Distance.",
 	HoldOut = "Tenez le Coup! Tous les status négatifs ont une durée prédéfini (par exemple Saignement, Charmé) ont leur durée réduite de [color=" + this.Const.UI.Color.NegativeValue + "]1[/color] tour. Les Status qui ont leurs effets réduits au fur et à mesure du temps (par exemple Le poison Goblin) sont dans leur état le plus faible dès le début.",
 	Dodge = "Trop rapide pour toi! Gagnez [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] de l\'initiative du personnage en tant que bonus de Défense (Mêlée et à Distance).",
@@ -1345,7 +1345,7 @@ gt.Const.Strings.PerkDescription <- {
 	BattleForged = "Vous êtes spécialisé en armure lourd! Les dégats d\'armure sont réduits pars un pourcentage égale à [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] du total de la valeur de l\'armure (tête et corps). Le plus lourd l\'armure et le casque, le meilleur le bénéfice.\n\nN\'affecte pas les attaques mentales et les Effets de Status, mais peut aider à les esquiver.",
 	Duelist = "Devenez un avec votre arme et visez les points faibles! Quand vous avez une main libre ou avec un outil jetable (exemple Filer à jeter), vous aurez un bonus supplémentaire de [color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] qui ignorera l\'armure. Ne fonctionne pas avec les armes à deux mains.",
 	CripplingStrikes = "Handicaper vos ennemis! Diminue la probabilité minimum pour infliger des blessures par [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color] pour les armes de mêlée et les armes à distance.",
-	QuickHands = "Vous cherchiez quelque chose? Echanger un objet (sauf les boucliers) devient une action gratuite et ne consomme as de points d'action (Une fois par tour seulement).",
+	QuickHands = "Vous cherchiez quelque chose? Echanger un objet (sauf les boucliers) devient une action gratuite et ne consomme as de points d\'action (Une fois par tour seulement).",
 	Bullseye = "C\'est réglé! La pénalité de toucher un ennemi pour lequel vous n\'avez pas d\'angle de tir passe à [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] au lieu de [color=" + this.Const.UI.Color.NegativeValue + "]75%[/color] pour les armes à distance.",
 	Ballistics = "The range penalty to hitchance is reduced by [color=" + this.Const.UI.Color.NegativeValue + "]-1[/color] per tile.",
 	Berserk = "RAAARGH! Une fois par tour, en tuant un ennemi, [color=" + this.Const.UI.Color.PositiveValue + "]4[/color] Points d\'Action sont récupérés immédiatement. Les personnages ne peuvent regagner plus que leur nombre de points d\'action maximum.",
@@ -1375,15 +1375,15 @@ gt.Const.Strings.PerkDescription <- {
 	LoneWolf = "Je travaille mieux seul. Si vous n\'avez aucun allié dans un rayon de 3 tuiles de distance, vous gagnez un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] en Maîtrise de Mêlée, Maîtrise à distance, Défense en Mêlée, Défense à distance et en Détermination.",
 	ReachAdvantage = "Apprenez à vous servir de votre avantage d\'avoir une arme à grande portée pour empêcher les ennemis de se rapprocher pour vous frapper.\n\nChaque coup porté avec une arme de mêlée à deux main rajoute un stack du Talent Avantage de Portée ce qui augmente votre Défense de Mêlée de [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color], jusqu\'à un maximum de 5 stacks, jusqu\'au prochain tour du personnage. Une attaque qui touche plusieurs cibles peut rajouter plusieurs stacks en une fois.\n\nSi vous rangez votre arme vous perdez tous les stacks.",
 	Overwhelm = "Apprenez à mieux utiliser votre Initiative en empêchant les ennemies de vous attaquer efficacement en les submergeant avec vos attques!\n\nAvec chaque attaque, touché ou manqué contre un ennemi qui agit après vous dans le tour en cours, lui inflige l\'état \'Submergé\' ce qui diminue sa Maîtrise de mêlée et à distance de [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] pour chaque tour.\n\nL\'effet se stack à chaque attaque, et peut être appliqué à plusieurs cibles en même temps en une seule attaque.",
-	SpecBow = "Maîtrisez l'art de l'archerie et bombarder les ennemis de flèches depuis une certaine distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLa distance de vue et la distance maximale de tir avec les arcs sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color].",
-	SpecCrossbow = "Maîtrisez les arbalètes et les armes à feu, et apprenez comment avoir une meilleur visée. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nEt [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] de dégâts supplémentaires infligés aves les Arbalètes ignorent l\'armure.\n\nLes Armes de poing ont maintenant besoin de [color=" + this.Const.UI.Color.NegativeValue + "]6[/color] Points d\'Action pour recharger et peuvent tirer à chaque tour et n'ont plus besoin d'attendre un tour après avoir recharger pour tirer.",
+	SpecBow = "Maîtrisez l\'art de l\'archerie et bombarder les ennemis de flèches depuis une certaine distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLa distance de vue et la distance maximale de tir avec les arcs sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color].",
+	SpecCrossbow = "Maîtrisez les arbalètes et les armes à feu, et apprenez comment avoir une meilleur visée. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nEt [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] de dégâts supplémentaires infligés aves les Arbalètes ignorent l\'armure.\n\nLes Armes de poing ont maintenant besoin de [color=" + this.Const.UI.Color.NegativeValue + "]6[/color] Points d\'Action pour recharger et peuvent tirer à chaque tour et n\'ont plus besoin d\'attendre un tour après avoir recharger pour tirer.",
 	SpecThrowing = "Maîtrisez le lancé d\'armes de lancé pour blesser ou tuer les ennemies avant même qu\'ils aient le temps de se rapprocher. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes dégâts sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]40%[/color] en attaquant à 2 tuiles de distance.\n\nLes dégâts sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] en attaquant à 3 tuiles de distance.",
 	SpecAxe = "Maîtrisez le combat avec des haches ou de destruction de bouclier. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes dégâts de \'Pourfendre un Bouclier\' sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] en utilisant des haches.\n\n\'Coup Tournoyant\' gagne [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance de toucher.\n\nLa Hache Danoise n\'a plus de pénalité en attaquant les cibles au contact.",
 	SpecCleaver = "Maîtrisez les fendoirs pour infliger des blessures horrible. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes dégâts de saignement infligés par les fendoirs et les fouets doublés à [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] et [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] par tour, respectivement.\n\nDésarmé a seulement la moitié de la pénalité pour toucher.",
 	SpecDagger = "Maîtrise des dagues rapides et mortels. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Poignarder\', \'Percer\' et \'Coup Mortel\' ont un coup en Points d\'Action réduit pour permettre une attaque supplémentaire à chaque tour.",
 	SpecSword = "Maîtrisez l\'art du combat à l\'épée et utilisez les erreurs de vos ennemies à votre avantage. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Riposte\' n\'a plus de malus à la probabilité de toucher.\n\n\'Entaille\' a un palier diminué de [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] pour infliger des blessures.\n\n\'Fendre\' et \'Coup d\'épée\' ont [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance en plus de toucher.",
 	SpecSpear = "Maîtrisez le combat avec les lances et gardez vos ennemis à distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Mur de Lance\' n\'est plus désactivé dans un ennemie arrive à y rentrer. Effectivement, \'Mur de Lance\' peut toujours être utilisé et continue de faire des attaques gratuite à tous les ennemis qui tentent de rentrer dans la zone de contrôle.\n\nLe Spetum and Fourche de Guerre n\'ont plus de pénalité en attaquant les cibles au contact.",
-	SpecPolearm = "Maîtrisez les armes d'hast et gardez l\'ennemi à distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes Armes d\'hast ont leur coup en Point d\'action réduit à [color=" + this.Const.UI.Color.NegativeValue + "]5[/color], et n\'ont plus de pénalité en attaquant les cibles au contact.",
+	SpecPolearm = "Maîtrisez les armes d\'hast et gardez l\'ennemi à distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes Armes d\'hast ont leur coup en Point d\'action réduit à [color=" + this.Const.UI.Color.NegativeValue + "]5[/color], et n\'ont plus de pénalité en attaquant les cibles au contact.",
 	SpecHammer = "Maîtrisez les marteaux et combattez les ennemis en armure lourde. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Détruire l\'Armure\' et \'Destruction d\'Armure\' infligent [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] de dégâts en plus contre l\'armure.\n\n\'Fracasser\' gagne [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance de toucher.\n\nLe Polehammer n\'a plus de pénalité en attaquant les cibles au contact.",
 	SpecMace = "Maîtrisez les massues et soumettez vos ennemis par les coups, qu\'ils soient en armure ou non. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Assomer\', \'Renverser\' et \'Frappe Descendante\' ont [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance d\'étourdir la cible si elle n\'est pas immunisé.\n\nLa Polemace n\'a plus de pénalité en attaquant les cibles au contact.",
 	SpecFlail = "Maîtrisez les fléaux et contournez le bouclier de vos ennemis. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Coup à la Tête\' et \'Avalanche de Coups à la Tête\' ignorent le bonus de défense des boucliers.\n\n\'Faucher\' gagne [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance de toucher."

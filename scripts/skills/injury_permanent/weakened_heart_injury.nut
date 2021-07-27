@@ -32,7 +32,7 @@ this.weakened_heart_injury <- this.inherit("scripts/skills/injury_permanent/perm
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Est toujours content d'être placé en réserve"
+				text = "Est toujours content d\'être placé en réserve"
 			}
 		];
 		this.addTooltipHint(ret);
