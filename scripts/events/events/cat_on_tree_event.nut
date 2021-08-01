@@ -109,7 +109,7 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Archer.getImagePath());
-				_event.m.Archer.worsenMood(1.0, "A accidentellement tiré sur le chat d\'une petite fille);
+				_event.m.Archer.worsenMood(1.0, "A accidentellement tiré sur le chat d\'une petite fille");
 
 				if (_event.m.Archer.getMoodState() < this.Const.MoodState.Neutral)
 				{
