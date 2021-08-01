@@ -66,7 +66,7 @@ this.shooting_contest_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_ammo.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-30[/color] Ammunition"
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-30[/color] Ammunition"
 					}
 				];
 				_event.m.Archer1.getBaseProperties().RangedSkill += 1;
@@ -113,7 +113,7 @@ this.shooting_contest_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_ammo.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-60[/color] Ammunition"
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-60[/color] Ammunition"
 					}
 				];
 				_event.m.Archer1.getBaseProperties().Bravery += 1;

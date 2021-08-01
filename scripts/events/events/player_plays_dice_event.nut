@@ -100,7 +100,7 @@ this.player_plays_dice_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]25[/color] Crowns"
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]25[/color] Crowns"
 					}
 				];
 			}

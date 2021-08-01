@@ -278,7 +278,7 @@ this.jousting_tournament_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Bet + "[/color] Crowns"
+					text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Bet + "[/color] Crowns"
 				});
 				local injury = _event.m.Jouster.addInjury(this.Const.Injury.Jousting);
 				this.List.push({

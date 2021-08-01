@@ -10,13 +10,13 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_06.png[/img]While you expect the men you hire to leave their old lives behind, sometimes it is not so. It appears that %caravanhand% and %raider% are well acquainted: the caravan hand once dealt with the raider personally in some sort of battle that ended with no victors. Now they seek to finish what they\'d started long ago, the two tumbling about on the ground, throwing punches and elbows and some spit if an eye or cheek calls for it. You separate the two yourself, pulling them apart and making it quite clear that they are sellswords now, not enemies. You force the two to shake hands and they do so. The caravan hand nods.%SPEECH_ON%Nice left, %raider%.%SPEECH_OFF%The raider nods back, wiping away a bit of blood running clear of his nose.%SPEECH_ON%Yer stronger than I remember.%SPEECH_OFF%The two men go off together to get fixed up, going as men do, their troubles so easily left behind.",
+			Text = "[img]gfx/ui/events/event_06.png[/img]Vous vous attendez à ce que les hommes que vous engagez laissent leur ancienne vie derrière eux, mais parfois il n\'en est rien. Il semble que %caravanhand% et %raider% se connaissent bien : le caravanhand a déjà eu affaire au raider personnellement dans une sorte de bataille qui s\'est terminée sans vainqueur. Maintenant, ils cherchent à finir ce qu\'ils ont commencé il y a longtemps, les deux tombent au sol, lançant des coups de poing et de coude et quelques crachats si un œil ou une joue l\'exige. Vous séparez les deux vous-même, les éloignant l\'un de l\'autre et faisant clairement comprendre qu\'ils sont désormais des mercenaires et non des ennemis. Vous forcez les deux à se serrer la main, ce qu\'ils font. L\'ancien homme de main de la caravane acquiesce.%SPEECH_ON%Bien il reste %raider% maintenant.%SPEECH_OFF%Le pillard acquiesce en essuyant un peu de sang qui coule de son nez.%SPEECH_ON%Tu es plus fort que dans mon souvenir.%SPEECH_OFF%Les deux hommes partent ensemble pour s\'arranger, comme le font les hommes, leurs problèmes étant si facilement oubliés.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Small world...",
+					Text = "Que le monde est petit...",
 					function getResult( _event )
 					{
 						return 0;
@@ -35,7 +35,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.CaravanHand.getName() + " suffers light wounds"
+						text = _event.m.CaravanHand.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -44,7 +44,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.CaravanHand.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.CaravanHand.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 
@@ -54,7 +54,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 11,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Raider.getName() + " suffers light wounds"
+						text = _event.m.Raider.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -63,7 +63,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Raider.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Raider.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 			}
@@ -71,13 +71,13 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_06.png[/img]While you expect the men you hire to leave their old lives behind, sometimes it is not so. It appears that %caravanhand% and %raider% are well acquainted: the caravan hand once dealt with the nomad raider personally in some sort of battle that ended with no victors. Now they seek to finish what they\'d started long ago, the two tumbling about on the ground, throwing punches and elbows and some spit if an eye or cheek calls for it. You separate the two yourself, pulling them apart and making it quite clear that they are sellswords now, not enemies. You force the two to shake hands and they do so. The caravan hand nods.%SPEECH_ON%Nice left, %raider%.%SPEECH_OFF%The nomad nods back, wiping away a bit of blood running clear of his nose.%SPEECH_ON%Yer stronger than I remember.%SPEECH_OFF%The two men go off together to get fixed up, going as men do, their troubles so easily left behind.",
+			Text = "[img]gfx/ui/events/event_06.png[/img]Vous vous attendez à ce que les hommes que vous engagez laissent leur ancienne vie derrière eux, mais parfois il n\'en est rien. Il semble que %caravanhand% et %raider% se connaissent bien : le caravanhand a déjà eu affaire au raider personnellement dans une sorte de bataille qui s\'est terminée sans vainqueur. Maintenant, ils cherchent à finir ce qu\'ils ont commencé il y a longtemps, les deux tombent au sol, lançant des coups de poing et de coude et quelques crachats si un œil ou une joue l\'exige. Vous séparez les deux vous-même, les éloignant l\'un de l\'autre et faisant clairement comprendre qu\'ils sont désormais des mercenaires et non des ennemis. Vous forcez les deux à se serrer la main, ce qu\'ils font. L\'ancien homme de main de la caravane acquiesce.%SPEECH_ON%Bien il reste %raider% maintenant.%SPEECH_OFF%Le pillard acquiesce en essuyant un peu de sang qui coule de son nez.%SPEECH_ON%Tu es plus fort que dans mon souvenir.%SPEECH_OFF%Les deux hommes partent ensemble pour s\'arranger, comme le font les hommes, leurs problèmes étant si facilement oubliés.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Small world...",
+					Text = "Que le monde est petit...",
 					function getResult( _event )
 					{
 						return 0;
@@ -96,7 +96,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.CaravanHand.getName() + " suffers light wounds"
+						text = _event.m.CaravanHand.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -105,7 +105,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.CaravanHand.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.CaravanHand.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 
@@ -115,7 +115,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 11,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Raider.getName() + " suffers light wounds"
+						text = _event.m.Raider.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -124,7 +124,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Raider.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Raider.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 			}

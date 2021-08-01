@@ -9,13 +9,13 @@ this.caravan_hand_cart_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_55.png[/img]You come across the once-caravan hand, %caravanhand%, finicking with the company wagon. He\'s nailing a slat of board to the bed and using pins to put it on a roller. The board can then drop down into the belly of the wagon with a little bit of a pull and switch. Rather ingenious. This will allow you to load more onto the wagon.",
+			Text = "[img]gfx/ui/events/event_55.png[/img]Vous rencontrez l\'ancien ouvrier de la caravane, %caravanhand%, qui s\'occupe du chariot de la compagnie. Il cloue une planche de bois au lit du chariot et utilise des épingles pour la mettre sur un rouleau. La planche peut alors descendre du wagon en tirant un peu et en appuyant sur l\'interrupteur. Plutôt ingénieux. Cela vous permettra de charger davantage sur le chariot.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nicely done.",
+					Text = "Bien joué.",
 					function getResult( _event )
 					{
 						return 0;
@@ -32,7 +32,7 @@ this.caravan_hand_cart_event <- this.inherit("scripts/events/event", {
 					icon = "ui/icons/special.png",
 					text = "Vous recevez inventory space"
 				});
-				_event.m.CaravanHand.improveMood(1.0, "Improved the company\'s cart");
+				_event.m.CaravanHand.improveMood(1.0, "A amélioré le chariot de la compagnie");
 
 				if (_event.m.CaravanHand.getMoodState() >= this.Const.MoodState.Neutral)
 				{

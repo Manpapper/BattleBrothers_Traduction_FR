@@ -11,7 +11,7 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_97.png[/img]You find a boy and girl looking up a tree. The girl throws her hands up.%SPEECH_ON%Alright, stay there until you die! See if I care!%SPEECH_OFF%The boy, spotting you, asks if perhaps you could help them get their cat out of the tree. Looking up, you do see a feline flopped over a branch, basking in the sun.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Vous trouvez un garçon et une fille qui regardent en haut d\'un arbre. La fille jette ses mains en l\'air.%SPEECH_ON%D\'accord, reste là jusqu\'à ce que tu meures ! On verra si ça m\'intéresse !%SPEECH_OFF%Le garçon, qui vous a repéré, demande si vous pouvez les aider à faire descendre leur chat de l\'arbre. En levant les yeux, vous voyez un félin allongé sur une branche, se prélassant au soleil.",
 			Image = "",
 			List = [],
 			Options = [],
@@ -20,7 +20,7 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Archer != null)
 				{
 					this.Options.push({
-						Text = "%archerfull%, try to knock it down with an arrow?",
+						Text = "%archerfull%, essaye de le faire descendre avec une flèche ?",
 						function getResult( _event )
 						{
 							if (this.Math.rand(1, 100) <= 70)
@@ -39,7 +39,7 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Ratcatcher != null)
 				{
 					this.Options.push({
-						Text = "%ratcatcherfull% has something up his sleeve.",
+						Text = "%ratcatcherfull% a quelque chose dans sa manche.",
 						function getResult( _event )
 						{
 							return "Ratcatcher";
@@ -49,7 +49,7 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "This really isn\'t our problem.",
+					Text = "Ce n\'est vraiment pas notre problème.",
 					function getResult( _event )
 					{
 						return "F";
@@ -61,13 +61,13 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "ArrowGood",
-			Text = "[img]gfx/ui/events/event_97.png[/img]%archer% nocks an arrow and sticks his tongue out as he aims up the tree. The girl and boy don\'t seem fond of this idea and clap their hands over their eyes. The archer looses the shot and it cracks against the cat\'s branch, breaking it and sending the cat cartwheeling down the tree like a game of devil sticks. When it hits the ground, the boy and girl lunge on it. They pet it and thank you for your troubles. The girl squeezes the cat warmly.%SPEECH_ON%Finally, we got ourselves something to eat!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_97.png[/img]%archer% encoche une flèche et tire la langue en visant l\'arbre. La fille et le garçon ne semblent pas apprécier cette idée et se couvrent les yeux avec leurs mains. L\'archer lâche son tir et celui-ci se brise contre la branche du chat, la cassant et envoyant le chat faire la roue le long de l\'arbre. Quand il touche le sol, le garçon et la fille se jettent dessus. Ils le caressent et vous remercient pour vos efforts. La fille serre chaleureusement le chat dans ses bras.%SPEECH_ON%Enfin, nous avons quelque chose à manger !%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Wait, what?",
+					Text = "Attendez, quoi?",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(1);
@@ -91,13 +91,13 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "ArrowBad",
-			Text = "[img]gfx/ui/events/event_97.png[/img]%archer% readies himself, nocking an arrow and taking aim. The cat purrs as it stares down the line of the shot, rather sublime in its suicidal stance. Closing one eye, the archer lets the arrow fly. There isn\'t much mewling to be had. The cat tumbles down the tree like a game of devil sticks and lands on the ground with an arrow shaft halfway out its head. The girl crouches down and stares at the slinky bit of brain wobbling off the arrowtip. She looks up at you, as though it were you who fired the shot.%SPEECH_ON%That was my friend.%SPEECH_OFF%You tell her you\'re sorry and that she\'ll find more friends. As for the boy, he pockets the bit of brain and slings the cat carcass over his shoulder. He bleakly states.%SPEECH_ON%At least we\'ve somethin\' to eat now.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_97.png[/img]%archer% se prépare, encoche une flèche et vise. Le chat ronronne en fixant la ligne de tir, plutôt sublime dans sa position. Fermant un œil, l\'archer laisse voler la flèche. Il n\'y a pas beaucoup de gémissements à avoir. Le chat dévale l\'arbre et atterrit sur le sol avec un morceau de flèche à moitié sorti de sa tête. La jeune fille s\'accroupit et fixe le morceau de cerveau qui se détache de la pointe de la flèche. Elle lève les yeux vers vous, comme si c\'était vous qui aviez tiré.%SPEECH_ON%C\'était mon ami.%SPEECH_OFF%Vous lui dites que vous êtes désolé et qu\'elle trouvera d\'autres amis. Quant au garçon, il prend le morceau de cerveau et met la carcasse du chat sur son épaule. Il déclare tristement.%SPEECH_ON%Au moins, nous avons quelque chose à manger maintenant.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Rest in peace, kitty.",
+					Text = "Repose en paix, chaton.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(1);
@@ -109,7 +109,7 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Archer.getImagePath());
-				_event.m.Archer.worsenMood(1.0, "Accidentally shot a little girl\'s pet cat");
+				_event.m.Archer.worsenMood(1.0, "A accidentellement tiré sur le chat d\'une petite fille);
 
 				if (_event.m.Archer.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -124,13 +124,13 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Ratcatcher",
-			Text = "[img]gfx/ui/events/event_97.png[/img]%ratcatcher% snaps his fingers.%SPEECH_ON%Oy, I\'veuhplan! You little runts just wait a moment!%SPEECH_OFF%The rat catcher takes a rat out of his pocket you\'d no idea he even had. Chirping his lips like a mewling cat himself, he holds the little rodent up. The cat takes notice, perking its ears.%SPEECH_ON%Yeah that\'s right you pussy, c\'mon down, it\'s lunch time.%SPEECH_OFF%The rat catcher brings the rat to his lips and whispers.%SPEECH_ON%No it\'s not, heheh.%SPEECH_OFF%As the cat descends, %ratcatcher% holds his friend out a little more. It begins to scrape and scuttle against his hands, perhaps not trusting its master to keep it. But the moment the cat lunges for the meal, the rat catcher pockets the rat and snags the cat all in one swift motion. The children clap and cheer as he hands the cat over. Even some of the men are impressed by the fella\'s feline-like reflexes!",
+			Text = "[img]gfx/ui/events/event_97.png[/img]%ratcatcher% claque des doigts.%SPEECH_ON%J\'ai un plan ! Petits avortons, attendez un moment !%SPEECH_OFF%Le chasseur de rat sort de sa poche un rat dont vous ne soupçonniez pas l\'existence. En faisant couiner ses lèvres comme un chat qui miaule, il brandit le petit rongeur. Le chat l\'a remarqué et a dressé ses oreilles.%SPEECH_ON%Ouais, c\'est ça chaton, descends, c\'est l\'heure du déjeuner.%SPEECH_OFF%Le chasseur de rat porte le rat à ses lèvres et murmure.%SPEECH_ON%Non, c\'est pas vrai.%SPEECH_OFF%Alors que le chat descend, %ratcatcher% tend un peu plus son ami. Le rat commence à gratter et à se déplacer contre ses mains, ne faisant peut-être pas confiance à son maître pour le protéger. Mais au moment où le chat se jette sur son repas, le \"Chasseur de Rats\" range le rat et attrape le chat d\'un seul coup. Les enfants applaudissent et acclament lorsqu\'il leur remet le chat. Même certains hommes sont impressionnés par les réflexes félins du Chasseur de Rats!",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Masterfully done!",
+					Text = "Réalisé d\'une main de maître!",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(1);
@@ -147,7 +147,7 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/initiative.png",
-					text = _event.m.Ratcatcher.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Initiative"
+					text = _event.m.Ratcatcher.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] d\'Initiative"
 				});
 				_event.m.Ratcatcher.improveMood(1.0, "Impressed everyone with his swiftness");
 
@@ -164,13 +164,13 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_97.png[/img]You bluntly tell the kids they should get a dog and make your leave.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Vous dîtes sèchement aux enfants qu\'ils feraient mieux d\'avoir un chien et partez sur ces mots.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The cat doesn\'t wanna be your friend anyway.",
+					Text = "Le chat ne veut pas être votre ami de toute façon.",
 					function getResult( _event )
 					{
 						return 0;

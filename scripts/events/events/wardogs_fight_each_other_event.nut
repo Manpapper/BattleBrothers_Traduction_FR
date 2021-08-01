@@ -144,14 +144,14 @@ this.wardogs_fight_each_other_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + _event.m.Wardog1.getIcon(),
-					text = "You lose " + _event.m.Wardog1.getName()
+					text = "Vous perdez " + _event.m.Wardog1.getName()
 				});
 				this.World.Assets.getStash().remove(_event.m.Wardog1);
 				_event.m.Wardog1 = null;
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + _event.m.Wardog2.getIcon(),
-					text = "You lose " + _event.m.Wardog2.getName()
+					text = "Vous perdez " + _event.m.Wardog2.getName()
 				});
 				this.World.Assets.getStash().remove(_event.m.Wardog2);
 				_event.m.Wardog2 = null;
@@ -200,7 +200,7 @@ this.wardogs_fight_each_other_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + _event.m.Wardog1.getIcon(),
-					text = "You lose " + _event.m.Wardog1.getName()
+					text = "Vous perdez " + _event.m.Wardog1.getName()
 				});
 				this.World.Assets.getStash().remove(_event.m.Wardog1);
 				_event.m.Wardog1 = null;

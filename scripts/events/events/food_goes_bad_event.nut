@@ -53,7 +53,7 @@ this.food_goes_bad_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/items/" + food.getIcon(),
-						text = "You lose " + food.getName()
+						text = "Vous perdez " + food.getName()
 					}
 				];
 			}

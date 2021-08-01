@@ -109,7 +109,7 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
 					}
 				];
 				_event.m.Peddler.addLightInjury();

@@ -135,7 +135,7 @@ this.creepy_guy_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + money + "[/color] Crowns"
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + money + "[/color] Crowns"
 					}
 				];
 			}
@@ -213,7 +213,7 @@ this.creepy_guy_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
+					text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
 				});
 				this.List.push({
 					id = 10,

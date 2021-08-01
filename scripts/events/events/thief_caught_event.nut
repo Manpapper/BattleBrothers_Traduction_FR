@@ -73,7 +73,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/items/" + food.getIcon(),
-							text = "You lose " + food.getName()
+							text = "Vous perdez " + food.getName()
 						}
 					];
 				}
@@ -85,7 +85,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/icons/asset_ammo.png",
-							text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Ammunition"
+							text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Ammunition"
 						}
 					];
 				}
@@ -97,7 +97,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/icons/asset_supplies.png",
-							text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies"
+							text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies"
 						}
 					];
 				}
@@ -109,7 +109,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/icons/asset_medicine.png",
-							text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies"
+							text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies"
 						}
 					];
 				}
@@ -169,7 +169,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/items/" + food.getIcon(),
-						text = "You lose some " + food.getName()
+						text = "Vous perdez some " + food.getName()
 					}
 				];
 			}
@@ -315,7 +315,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/items/" + food.getIcon(),
-							text = "You lose " + food.getName()
+							text = "Vous perdez " + food.getName()
 						}
 					];
 				}
@@ -327,7 +327,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/icons/asset_ammo.png",
-							text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Ammunition"
+							text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Ammunition"
 						}
 					];
 				}
@@ -339,7 +339,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/icons/asset_supplies.png",
-							text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies"
+							text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies"
 						}
 					];
 				}
@@ -351,7 +351,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/icons/asset_medicine.png",
-							text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies"
+							text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies"
 						}
 					];
 				}
