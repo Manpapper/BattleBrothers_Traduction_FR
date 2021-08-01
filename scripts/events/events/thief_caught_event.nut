@@ -228,7 +228,7 @@ this.thief_caught_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Fine. I\'ll spare your life  if you work for me.",
+					Text = "Fine. I\'ll spare your life if you work for me.",
 					function getResult( _event )
 					{
 						return "H";

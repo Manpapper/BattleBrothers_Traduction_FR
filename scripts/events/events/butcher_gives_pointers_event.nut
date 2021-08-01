@@ -40,7 +40,7 @@ this.butcher_gives_pointers_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Flagellant.getName() + " souffre de  " + injury.getNameOnly()
+					text = _event.m.Flagellant.getName() + " souffre de " + injury.getNameOnly()
 				});
 				_event.m.Butcher.improveMood(2.0, "A pris du plaisir dans la douleur de quelqu\'un d\'autre.");
 

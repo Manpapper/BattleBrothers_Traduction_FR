@@ -30,7 +30,7 @@ this.wildman_finds_something_event <- this.inherit("scripts/events/event", {
 				local item;
 				local items = 0;
 
-				for( local maxitems = this.Math.rand(1, 2); items < maxitems;  )
+				for( local maxitems = this.Math.rand(1, 2); items < maxitems; )
 				{
 					item = null;
 					local r = this.Math.rand(1, 10);

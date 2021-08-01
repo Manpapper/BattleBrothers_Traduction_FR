@@ -59,7 +59,7 @@ this.ratcatcher_spreads_disease_event <- this.inherit("scripts/events/event", {
 						chance = chance + 20;
 					}
 
-					for( ; this.Math.rand(1, 100) < chance;  )
+					for( ; this.Math.rand(1, 100) < chance; )
 					{
 						if (chance < lowestChance)
 						{
