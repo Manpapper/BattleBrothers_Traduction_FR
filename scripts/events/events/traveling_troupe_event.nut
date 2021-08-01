@@ -7,7 +7,7 @@ this.traveling_troupe_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.traveling_troupe";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -166,21 +166,21 @@ this.traveling_troupe_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				item = this.new("scripts/items/weapons/lute");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				item = this.Math.rand(50, 200);
 				this.World.Assets.addMoney(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + item + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + item + "[/color] Crowns"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 

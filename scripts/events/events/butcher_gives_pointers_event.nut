@@ -10,13 +10,13 @@ this.butcher_gives_pointers_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_38.png[/img]You find %butcher% the butcher tracing a finger along %flagellant%\'s unclothed back. He finds a point between the sinews and scars and taps it.%SPEECH_ON%Here. If you strike yourself here, the largest amount of meat - I mean muscle, I will be hit.%SPEECH_OFF%The flagellant looks up.%SPEECH_ON%Will it be painful?%SPEECH_OFF%A grin crosses the butcher\'s face.%SPEECH_ON%Oh yes, very much so.%SPEECH_OFF%It appears the man is giving the flagellant pointers on how to mark himself up. Before you can step in, %flagellant% takes up a whip and hits himself right where %butcher% had directed him to. The tendrils of leather, glass, and sharpened bone snap against the man\'s back, dig in, and then upon retrieval tear his flesh asunder.",
+			Text = "[img]gfx/ui/events/event_38.png[/img]Vous trouvez %butcher% le boucher qui trace une ligne avec son doigt le long du dos nu de %flagellant%. Il trouve un point entre les tendons et les cicatrices et tapote.%SPEECH_ON%Ici. Si vous vous frappez ici, la plus grande quantité de viande - je veux dire de muscle, serait touché.%SPEECH_OFF%Le flagellant lève les yeux.%SPEECH_ON%Est-ce que ce sera douloureux ?%SPEECH_OFF%Un sourire traverse le visage du boucher.%SPEECH_ON%Oh oui, tout à fait.%SPEECH_OFF%Il semble que l\'homme donne au flagellant des conseils sur la façon de faire le plus mal possible. Avant que vous ne puissiez intervenir, %flagellant% prend un fouet et se frappe lui-même à l\'endroit où %butcher% lui avait indiqué de le faire. Les vrilles de cuir, de verre et d\'os aiguisés se heurtent au dos de l\'homme, s\'enfoncent et, déchirent sa chair.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Why the hell would you show him that?",
+					Text = "Pourquoi diable lui montrerais-tu ça ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -34,15 +34,15 @@ this.butcher_gives_pointers_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/melee_skill.png",
-					text = _event.m.Flagellant.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Maîtrise de Mêlée"
+					text = _event.m.Flagellant.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] de Maîtrise de Mêlée"
 				});
 				local injury = _event.m.Flagellant.addInjury(this.Const.Injury.Flagellation);
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Flagellant.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Flagellant.getName() + " souffre de  " + injury.getNameOnly()
 				});
-				_event.m.Butcher.improveMood(2.0, "Took pleasure from someone else\'s pain");
+				_event.m.Butcher.improveMood(2.0, "A pris du plaisir dans la douleur de quelqu\'un d\'autre.");
 
 				if (_event.m.Butcher.getMoodState() >= this.Const.MoodState.Neutral)
 				{

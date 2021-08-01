@@ -5,7 +5,7 @@ this.peacenik_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.peacenik";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -59,7 +59,7 @@ this.peacenik_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Crowns"
 				});
 				_event.m.Houndmaster.getBaseProperties().Bravery += 1;
 				_event.m.Houndmaster.getSkills().update();

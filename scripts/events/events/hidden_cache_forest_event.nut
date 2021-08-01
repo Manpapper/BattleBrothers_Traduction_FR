@@ -39,7 +39,7 @@ this.hidden_cache_forest_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
 				});
 				local r = this.Math.rand(1, 8);
 				local item;
@@ -81,7 +81,7 @@ this.hidden_cache_forest_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				r = this.Math.rand(1, 5);
 
@@ -110,7 +110,7 @@ this.hidden_cache_forest_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 
@@ -158,7 +158,7 @@ this.hidden_cache_forest_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 

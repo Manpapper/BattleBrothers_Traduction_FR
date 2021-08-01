@@ -3,7 +3,7 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.come_across_burial";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 130.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -58,7 +58,7 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 
@@ -118,7 +118,7 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 

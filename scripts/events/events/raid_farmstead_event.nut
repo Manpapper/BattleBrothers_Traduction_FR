@@ -6,7 +6,7 @@ this.raid_farmstead_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.raid_farmstead";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -96,14 +96,14 @@ this.raid_farmstead_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				food = this.new("scripts/items/supplies/bread_item");
 				this.World.Assets.getStash().add(food);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				this.World.Assets.updateFood();
 			}
@@ -133,28 +133,28 @@ this.raid_farmstead_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				food = this.new("scripts/items/supplies/smoked_ham_item");
 				this.World.Assets.getStash().add(food);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				food = this.new("scripts/items/supplies/goat_cheese_item");
 				this.World.Assets.getStash().add(food);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				food = this.new("scripts/items/supplies/bread_item");
 				this.World.Assets.getStash().add(food);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				this.World.Assets.updateFood();
 			}
@@ -184,28 +184,28 @@ this.raid_farmstead_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				food = this.new("scripts/items/supplies/smoked_ham_item");
 				this.World.Assets.getStash().add(food);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				food = this.new("scripts/items/supplies/goat_cheese_item");
 				this.World.Assets.getStash().add(food);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				food = this.new("scripts/items/supplies/bread_item");
 				this.World.Assets.getStash().add(food);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				this.World.Assets.updateFood();
 
@@ -216,7 +216,7 @@ this.raid_farmstead_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + pitchfork.getIcon(),
-						text = "You gain a " + pitchfork.getName()
+						text = "Vous recevez a " + pitchfork.getName()
 					});
 				}
 

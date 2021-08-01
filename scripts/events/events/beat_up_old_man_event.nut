@@ -5,7 +5,7 @@ this.beat_up_old_man_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.beat_up_old_man";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 60 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

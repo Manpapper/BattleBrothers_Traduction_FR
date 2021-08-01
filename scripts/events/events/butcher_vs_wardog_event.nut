@@ -9,13 +9,13 @@ this.butcher_vs_wardog_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_27.png[/img]You hear a yelp and quickly rush to the noise. When you get there, you\'re not sure whether it was man or dog that produced it. %butcher% the butcher is holding a cleaver up and a wardog is rearing beneath him, both sides ready to lunge. The man sees you and quickly sweeps the weapon behind his back. The hound takes a squat and throws some puppy eyes your way. Raising an eyebrow, you try not to make sense of the scene.%SPEECH_ON%Play nice now.%SPEECH_OFF%The butcher scoffs.%SPEECH_ON%Oy\', me and the bitch were just having a talk that\'s all.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_27.png[/img]Vous entendez un jappement et vous vous précipitez rapidement vers le bruit. Une fois sur place, vous ne savez pas si c\'est un homme ou un chien qui l\'a produit. %butcher% le boucher tient un couperet et un chien de guerre se cabre, les deux côtés prêts à bondir. L\'homme vous voit et cache rapidement l\'arme derrière son dos. Le molosse s\'accroupit et vous lance des regards de chiots. Levant un sourcil, vous essayez de ne pas donner de sens à la scène.%SPEECH_ON%Jouez gentiment maintenant.%SPEECH_OFF%Le boucher se rigole.%SPEECH_ON%Hé, moi et le molosse avions juste une discussion c\'est tout.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Uh, right.",
+					Text = "Hum, okay.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.butcher_vs_wardog_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Butcher.getImagePath());
-				_event.m.Butcher.worsenMood(0.5, "Didn\'t get along with the company\'s wardogs");
+				_event.m.Butcher.worsenMood(0.5, "Ne sentant pas bien avec les chiens de guerre de la compagnie");
 
 				if (_event.m.Butcher.getMoodState() >= this.Const.MoodState.Neutral)
 				{

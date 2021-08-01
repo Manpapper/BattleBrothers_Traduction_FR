@@ -29,7 +29,7 @@ this.dogs_dig_up_loot_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + _event.m.FoundItem.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(_event.m.FoundItem.getName()) + _event.m.FoundItem.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(_event.m.FoundItem.getName()) + _event.m.FoundItem.getName()
 				});
 			}
 

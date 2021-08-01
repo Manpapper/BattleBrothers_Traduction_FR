@@ -5,16 +5,16 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.broken_cart";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_55.png[/img]While marching down the road, you find a man with a broken cart by the side of the path. By the wagon there is a donkey standing idle and as defeated as a donkey can look. The trader looks a little better than that and your appearance seems to have scared him. He rears up, backing away momentarily.%SPEECH_ON%Have you come to take my things? If so, you needn\'t kill me. Take what you want.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_55.png[/img]Alors que vous marchez sur la route, vous trouvez un homme avec un chariot cassé sur le bord du chemin. Près de la charrette, il y a un âne qui se tient à l\'écart et aussi déprimé qu\'un âne puisse paraître. Le marchand a l\'air un peu mieux que ça et votre apparition semble l\'avoir effrayé. Il se recule brièvement.%SPEECH_ON%Vous êtes venu prendre mes affaires ? Si c\'est le cas, vous n\'avez pas besoin de me tuer. Prenez ce que vous voulez.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Men, take everything we can use from the cart!",
+					Text = "Messieurs, prenez tout ce que nous pouvons utiliser dans le chariot !",
 					function getResult( _event )
 					{
 						return "D";
@@ -22,7 +22,7 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let us help you get your cart on the road again.",
+					Text = "Laissez-nous vous aider à remettre votre chariot sur la route.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 70 ? "B" : "C";
@@ -30,7 +30,7 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We have no time for this.",
+					Text = "On a pas le temps pour ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -45,12 +45,12 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_55.png[/img]You disarm the man from his fears and order a few of the %companyname%\'s finest to get the wagon back on the road. They make short work of it, the trader looking rather impressed by their efficiency. With his wares back on the road, he offers a few tokens of gratitude right off the wagon itself. These provisions will be useful in the days to come.",
+			Text = "[img]gfx/ui/events/event_55.png[/img]Vous rassurez l\'homme et ordonnez à quelques-uns des meilleurs hommes de %companyname% de remettre le chariot sur la route. Ils s\'en acquittent rapidement, le commerçant semblant plutôt impressionné par leur efficacité. Avec ses marchandises de retour sur la route, il offre quelques gages de gratitude récupérés du chariot lui-même. Ces provisions seront utiles dans les jours à venir.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Farewell.",
+					Text = "Au revoir.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(2);
@@ -67,13 +67,13 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_55.png[/img]The merchant is scared in your presence, but you quickly disarm him of his fears. A few brothers are ordered to get the cart back onto the path. They do it as fast as hardy men can, but when it\'s over one of them cries out and doubles over.\n\nThe trader, eyes wide with renewed horror, quickly offers you some provisions as a token of his gratitude. Maybe he thinks you\'ll punish him for the injuries? Regardless, the supplies will be a welcome addition for the days to come.",
+			Text = "[img]gfx/ui/events/event_55.png[/img]Le marchand est effrayé de votre présence, mais vous le libérez rapidement de ses craintes. Quelques hommes reçoivent l\'ordre de remettre le chariot sur le chemin. Ils le font aussi vite que des hommes robustes le peuvent, mais quand c\'est fini, l\'un d\'eux crie et se met à plat ventre.\n\nLe commerçant, les yeux écarquillés par une nouvelle horreur, vous offre rapidement quelques provisions en gage de sa gratitude. Peut-être qu\'il pense que vous allez le punir pour les blessures ? Quoi qu\'il en soit, les fournitures seront les bienvenues pour les jours à venir.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I hope it was worth it.",
+					Text = "J\'espère que ça en valait le coup.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(2);
@@ -90,7 +90,7 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Injured.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Injured.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 				this.List.extend(_event.giveStuff(1));
@@ -99,12 +99,12 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_55.png[/img]You order the men to search the cart and take what they can. %randombrother% draws his sword and looks ready to slay the donkey, the animal looking stupidly at its own mortality in the reflection of the blade. The merchant cries out and you hold your hand out, staying the execution.%SPEECH_ON%Leave the draught animal where it stands.%SPEECH_OFF%The trader offers meager thanks as a line of your men walk behind him, his very goods in their hands.",
+			Text = "[img]gfx/ui/events/event_55.png[/img]Vous ordonnez aux hommes de fouiller le chariot et de prendre ce qu\'ils peuvent. %randombrother% tire son épée et semble prêt à tuer l\'âne, l\'animal regardant stupidement sa propre mort dans le reflet de la lame. Le marchand crie et vous tendez la main pour suspendre l\'exécution.%SPEECH_ON%Laissez l\'animal de trait là où il se trouve.%SPEECH_OFF%Le commerçant offre de maigres remerciements tandis que vos hommes marche derrière lui, ses marchandises dans leurs mains.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Store everything, we\'re moving on.",
+					Text = "Rangez tout, on avance.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(-2);
@@ -134,7 +134,7 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = "ui/items/" + food.getIcon(),
-				text = "You gain " + food.getName()
+				text = "Vous recevez " + food.getName()
 			});
 		}
 
@@ -146,7 +146,7 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = "ui/icons/asset_supplies.png",
-				text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Tools and Supplies."
+				text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] d\'Outils et de Provisions."
 			});
 		}
 
@@ -158,7 +158,7 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = "ui/icons/asset_medicine.png",
-				text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Medical Supplies."
+				text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] de Provisions Médicales."
 			});
 		}
 
@@ -169,7 +169,7 @@ this.broken_cart_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = "ui/items/" + food.getIcon(),
-				text = "You gain " + food.getName()
+				text = "Vous recevez " + food.getName()
 			});
 		}
 

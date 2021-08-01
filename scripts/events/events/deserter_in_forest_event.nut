@@ -99,7 +99,7 @@ this.deserter_in_forest_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]200[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]200[/color] Crowns"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 

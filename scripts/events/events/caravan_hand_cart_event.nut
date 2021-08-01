@@ -30,7 +30,7 @@ this.caravan_hand_cart_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/special.png",
-					text = "You gain inventory space"
+					text = "Vous recevez inventory space"
 				});
 				_event.m.CaravanHand.improveMood(1.0, "Improved the company\'s cart");
 

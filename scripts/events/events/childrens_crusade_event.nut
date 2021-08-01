@@ -6,7 +6,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.childrens_crusade";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 300.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -235,14 +235,14 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				item = this.new("scripts/items/weapons/militia_spear");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 11,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 

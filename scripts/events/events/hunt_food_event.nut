@@ -33,7 +33,7 @@ this.hunt_food_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/items/" + food.getIcon(),
-						text = "You gain Venison"
+						text = "Vous recevez Venison"
 					}
 				];
 				_event.m.Hunter.improveMood(0.5, "Has hunted successfully");

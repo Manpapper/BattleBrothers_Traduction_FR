@@ -10,7 +10,7 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.shady_character_offers_map";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

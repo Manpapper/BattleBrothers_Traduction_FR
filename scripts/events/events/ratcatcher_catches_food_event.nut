@@ -33,7 +33,7 @@ this.ratcatcher_catches_food_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/items/" + food.getIcon(),
-						text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + food.getAmount() + "[/color] Rat Meat"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + food.getAmount() + "[/color] Rat Meat"
 					}
 				];
 				local brothers = this.World.getPlayerRoster().getAll();

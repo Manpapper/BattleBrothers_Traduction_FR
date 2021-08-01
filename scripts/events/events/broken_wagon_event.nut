@@ -3,16 +3,16 @@ this.broken_wagon_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.broken_wagon";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%You find an abandoned wagon amongst some tall reeds. %randombrother% checks it out and barks back.%SPEECH_ON%It\'s broke as shit, but I think we can salvage parts of it.%SPEECH_OFF%",
+			Text = "%terrainImage%Vous trouvez un chariot abandonné parmi de grands roseaux. %randombrother% l\'examine et hurle en réponse.%SPEECH_ON%Le chariot est explosé mais je pense qu\'on peut en sauver des parties.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Not bad.",
+					Text = "Pas mal.",
 					function getResult( _event )
 					{
 						return 0;
@@ -27,7 +27,7 @@ this.broken_wagon_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_supplies.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Tools and Supplies."
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] d\'Outils et de Provisions."
 				});
 			}
 

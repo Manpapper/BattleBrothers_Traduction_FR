@@ -60,7 +60,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]150[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]150[/color] Crowns"
 					}
 				];
 				local brothers = this.World.getPlayerRoster().getAll();
@@ -153,7 +153,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]200[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]200[/color] Crowns"
 					}
 				];
 				local brothers = this.World.getPlayerRoster().getAll();

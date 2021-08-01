@@ -9,12 +9,12 @@ this.broken_wagon_in_swamp_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_09.png[/img]Swamps are no safe place for a man\'s travels. Judging by the neverending smog and the way the trees bend, there\'s little doubt that it\'s a bubbling domicile for all things demonic. At least that\'s what the druids of these parts like to say. All you find is a couple of dead horses drowned in the mire and a wagon crushed by the mud which has seeped over its wheels and bed. %randombrother% rifles through the remains and manages to recover some items.%SPEECH_ON%Well, it\'s something. Whoever left this here left a short while ago. Probably spooked by whatever the hell lives out here in the day-to-day.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_09.png[/img]Les marais ne sont pas un endroit sûr pour les voyages. À en juger par le brouillard incessant et la façon dont les arbres se courbent, il ne fait aucun doute que c\'est un lieu où grouillent des choses démoniaques. Du moins, c\'est ce que les druides de ces régions disent. Tout ce que vous trouvez, c\'est un couple de chevaux morts noyés dans la boue et un chariot écrasé par la boue qui s\'est infiltrée sur ses roues et sur lui-même. %randombrother% fouille les restes et parvient à récupérer quelques objets.%SPEECH_ON%Eh bien, c\'est quelque chose. Celui qui a laissé ça ici est parti il y a peu de temps. Probablement effrayé par ce qui vit ici.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Still useful.",
+					Text = "Toujours utile.",
 					function getResult( _event )
 					{
 						if (_event.m.Butcher != null)
@@ -36,20 +36,20 @@ this.broken_wagon_in_swamp_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_supplies.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Tools and Supplies."
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] d\'Outils et de Provisions."
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "Butcher",
-			Text = "[img]gfx/ui/events/event_14.png[/img]%SPEECH_ON%Sir, wait.%SPEECH_OFF%The former butcher, %butcher%, says. He moves on ahead and starts hacking at the corpse of a horse. He cuts out a series of chunks, wraps them in large leaves, dries them with a bit of dirt and salt, and hands them over.%SPEECH_ON%No reason in leaving behind what can be used.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_14.png[/img]%SPEECH_ON%Monsieur, attendez.%SPEECH_OFF% Dit l\'ancien boucher, %butcher%. Il avance et commence à tailler dans le cadavre d\'un cheval. Il découpe une série de morceaux, les enveloppe dans de grandes feuilles, les fait sécher avec un peu de terre et de sel, et vous les remet.%SPEECH_ON%Il n\'y a aucune raison de laisser derrière nous ce qui peut être utilisé.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "And you\'re sure this is edible still?",
+					Text = "Et vous êtes sûr que c\'est encore comestible ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -67,7 +67,7 @@ this.broken_wagon_in_swamp_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 

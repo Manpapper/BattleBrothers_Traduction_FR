@@ -105,7 +105,7 @@ this.creepy_guy_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]500[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]500[/color] Crowns"
 					}
 				];
 			}
@@ -166,7 +166,7 @@ this.creepy_guy_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]500[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]500[/color] Crowns"
 					}
 				];
 				local initiative = this.Math.rand(2, 4);
@@ -218,7 +218,7 @@ this.creepy_guy_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]1000[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]1000[/color] Crowns"
 				});
 				local initiative = this.Math.rand(2, 4);
 				_event.m.Minstrel.getBaseProperties().Initiative += initiative;
@@ -264,7 +264,7 @@ this.creepy_guy_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]250[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]250[/color] Crowns"
 				});
 				_event.m.Butcher.improveMood(1.0, "Has made a tidy sum selling one of his fingers");
 

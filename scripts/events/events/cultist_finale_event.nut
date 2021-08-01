@@ -104,7 +104,7 @@ this.cultist_finale_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain the " + item.getName()
+					text = "Vous recevez the " + item.getName()
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 

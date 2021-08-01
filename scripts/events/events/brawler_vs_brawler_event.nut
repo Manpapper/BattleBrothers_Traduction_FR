@@ -10,13 +10,13 @@ this.brawler_vs_brawler_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]As you sit with the men around the fire, a discussion across the flames starts to get a little loud. %brawler% the brawler stands up and points at his own chest with a hearty laugh.%SPEECH_ON%You? You think you could take me?%SPEECH_OFF%The other brawler, %brawler2%, jumps to his feet.%SPEECH_ON%Take you? I could put ya under the ground ya farkin\' pillowfisted fool!%SPEECH_OFF%The slightest suggestion that %brawler%\'s fists weren\'t made of jaw-demolishing bricks kicks off a brutal fight. The brawlers grab one another and swing their free hands in looping undercuts. Each punch lands with cracking ferocity. Surely no man could take so much damage and stay on his feet, but here you\'re witnessing two fellas doing just that. You order the company to break up the fight.\n\n%brawler% pinches a nostril and shoots blood out of the other. He shrugs.%SPEECH_ON%Just havin\' a bit o\' a scrap, sir.%SPEECH_OFF%Popping a shoulder back into socket, %brawler2% nods.%SPEECH_ON%Aye, no harm no foul.%SPEECH_OFF%You watch as the two men shake hands and clap one another on the shoulder, each congratulating the other on how nasty their punches were.",
+			Text = "[img]gfx/ui/events/event_26.png[/img]Tandis que vous vous asseyez avec vos hommes autour du feu, une discussion au-delà des flammes commence à devenir un peu bruyante. %brawler% le bagarreur se lève et montre sa poitrine en riant.%SPEECH_ON%Toi ? Tu penses que tu peux me battre ?%SPEECH_OFF%L\'autre bagarreur, %brawler2%, se lève d\'un bond.%SPEECH_ON%Te battre ? Je pourrais te mettre sous terre avec une main, espèce d\'imbécile !%SPEECH_OFF%La mention du fait que les poings de %brawler% n\'étaient pas assez puissant pour démolir des murs de briques déclenche un combat brutal. Les bagarreurs s\'agrippent l\'un à l\'autre et utilisent leurs mains libres pour faire des uppercut à la chaîne. Chaque coup de poing atterrit avec une férocité déconcertante. Aucun homme ne pourrait encaisser autant de dégâts et rester sur leurs pieds, mais ici vous êtes témoins de deux hommes qui le font. Vous ordonnez à la compagnie d\'interrompre le combat. %brawler% se pince une narine et fait couler du sang par l\'autre. Il hausse les épaules.%SPEECH_ON%On s\'amusait juste un peu, monsieur.%SPEECH_OFF%Remettant une épaule en place, %brawler2% acquiesce.%SPEECH_ON%Oui, il n\'y a pas de mal à ça.%SPEECH_OFF%Vous regardez les deux hommes se serrer la main et se taper sur l\'épaule, chacun félicitant l\'autre pour la qualité de ses coups.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That\'s one way to come together.",
+					Text = "C\'est une façon de se réconcilier.",
 					function getResult( _event )
 					{
 						return 0;
@@ -35,7 +35,7 @@ this.brawler_vs_brawler_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury1.getIcon(),
-						text = _event.m.Brawler1.getName() + " suffers " + injury1.getNameOnly()
+						text = _event.m.Brawler1.getName() + " souffre de " + injury1.getNameOnly()
 					});
 				}
 				else
@@ -44,7 +44,7 @@ this.brawler_vs_brawler_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Brawler1.getName() + " suffers light wounds"
+						text = _event.m.Brawler1.getName() + " souffre de blessures légères"
 					});
 				}
 

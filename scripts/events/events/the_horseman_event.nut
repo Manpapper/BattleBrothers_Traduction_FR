@@ -7,7 +7,7 @@ this.the_horseman_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.the_horseman";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -255,7 +255,7 @@ this.the_horseman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 
