@@ -11,14 +11,14 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_72.png[/img]While on the march, you come across a lone cow standing in a field. Not much to it: it\'s just a cow.\n\n But then %randombrother% sidles up next to you. He\'s gnawing on some broomstraw and twists it around as he talks.%SPEECH_ON%So who do you think can do it?%SPEECH_OFF%You ask \'do what.\' He smiles.%SPEECH_ON%Aw, sorry cap\'. Didn\'t realize you hadn\'t heard. We\'re gonna see if someone can knock that cow over! Say, seeing as how we can only knock it over once, how about you choose which of us has a go?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_72.png[/img]Alors que vous marchez, vous croisez une vache solitaire dans un champ. Il n'y a pas grand chose à en dire : c'est juste une vache. Mais c'est alors que %randombrother% s'approche de vous, en rongeant un morceau de paille et en le faisant tourner en rond tout en parlant.%SPEECH_ON%Alors, qui peut le faire, à votre avis ?%SPEECH_OFF%Vous demandez \'Faire quoi?\' il sourit.%SPEECH_ON%Oh, désolé, Cap'. Je n'avais pas réalisé que vous n'aviez pas entendu. Nous allons voir si quelqu'un peut faire tomber cette vache ! Vu qu'on ne peut la renverser qu'une fois, pourquoi ne pas choisir lequel d'entre nous va essayer en premier ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [],
 			function start( _event )
 			{
 				this.Options.push({
-					Text = "Pick whoever you think is best.",
+					Text = "Choisissez celui que vous pensez être le meilleur.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -29,7 +29,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Strong != null)
 				{
 					this.Options.push({
-						Text = "I bet %strong% is strong enough to do it.",
+						Text = "Je parie que %strong% est assez fort pour le faire.",
 						function getResult( _event )
 						{
 							return "Strong";
@@ -41,7 +41,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Cocky != null)
 				{
 					this.Options.push({
-						Text = "That cocky bastard %cocky% looks itching to have a go.",
+						Text = "Ce bâtard arrogant, %cocky%, a l'air d'avoir envie d'y aller.",
 						function getResult( _event )
 						{
 							return "Cocky";
@@ -51,7 +51,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Leave that cow alone.",
+					Text = "Laissez cette vache tranquille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -63,13 +63,13 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_72.png[/img]You tell the men to sort it out themselves. They quickly choose %cowtipper% who, after some badgering, agrees to give it a go.\n\n The sellsword carefully steps across the field, trying his best to avoid the cow patties. The cow itself nonchalantly looks over. It moos once before returning its short bovine attention to the grass. Snickering, the men shoo %cowtipper% onward, mouthing \'do it!\' and \'what are you waiting for?\' Finally, standing a few feet from the cow, %cowtipper% charges.%SPEECH_ON%Yaaahh!%SPEECH_OFF%He storms into the cow\'s side and he might as well have run into a house: his feet slip out from beneath him and he goes skidding beneath the animal, a glide well-oiled by fresh shit. The company bursts out laughing.%SPEECH_ON%You can\'t tip a cow ya fool! They\'re too goddam heavy!%SPEECH_OFF% %cowtipper% no doubt has a new beef with these jokers, but his \'sacrifice\' was worth the easy entertainment.",
+			Text = "[img]gfx/ui/events/event_72.png[/img]Vous dites aux hommes de se débrouiller eux-mêmes. Ils choisissent rapidement %cowtipper% qui, après avoir été intimidé, accepte de tenter le coup.\n\nLe mercenaire traverse prudemment le champ, en faisant de son mieux pour éviter les bouses de vache. La vache elle-même regarde nonchalamment. Elle mugit une fois avant de reporter son attention de petit bovin sur l'herbe. En ricanant, les hommes poussent %cowtipper% vers l'avant, en lui disant \"fais-le !\" et \"qu'est-ce que tu attends ?\" Finalement, à quelques mètres de la vache, %cowtipper% charge.%SPEECH_ON%Yaaahh!%SPEECH_OFF%Il fonce dans le flanc de la vache et c'est comme s'il avait foncé dans une maison : ses pieds se dérobent sous lui et il dérape sous l'animal, un glissement bien huilé par la merde fraîche. La compagnie éclate de rire.%SPEECH_ON%Tu ne peux pas faire basculer une vache, imbécile ! Elles sont trop lourdes, putain !%SPEECH_OFF% %cowtipper% a sans doute une nouvelle dent contre ces rigolos, mais son \"sacrifice\" valait bien ce divertissement.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What a show!",
+					Text = "Quel spectacle!",
 					function getResult( _event )
 					{
 						return 0;
@@ -80,7 +80,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Other.getImagePath());
-				_event.m.Other.worsenMood(0.5, "Humiliated himself in front of the company");
+				_event.m.Other.worsenMood(0.5, "S'est humilié devant la compagnie");
 
 				if (_event.m.Other.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -102,7 +102,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(0.5, "Entertained by " + _event.m.Other.getName() + "\'s attempt to tip over a cow");
+						bro.improveMood(0.5, "Amusé par la tentative de " + _event.m.Other.getName() + " de renverser une vache");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -119,13 +119,13 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_72.png[/img]You tell the men to sort it out themselves. They quickly choose %cowtipper%. The sellsword carefully steps across the field, trying his best to avoid the cow patties. The cow itself nonchalantly looks over and moos once before returning its attention to the grass. Snickering, the men shoo %cowtipper% onward, mouthing \'do it!\' and \'hurry now!\'. Finally, standing a few feet from the cow, %cowtipper% charges forward.%SPEECH_ON%Yaaahh!%SPEECH_OFF%The scream spooks the cow. She dips her withers and kicks, catching %cowtipper% with a bit of hooved heel. He violently spins on his feet and twists right into the grass. The men laugh for a moment, then realize it\'s serious. As the cow moos and trots away, the sellsword is \'rescued.\' Though badly hurt, he\'ll survive this near-bovine homicide.",
+			Text = "[img]gfx/ui/events/event_72.png[/img]Vous dites aux hommes de se débrouiller seuls. Ils choisissent rapidement %cowtipper%. Le mercenaire traverse le champ avec précaution, en faisant de son mieux pour éviter les bouses de vache. La vache elle-même regarde nonchalamment par-dessus et mugit une fois avant de retourner son attention à l'herbe. En ricanant, les hommes poussent %cowtipper% vers l'avant, en lui disant : \"fais-le !\" et \"dépêche-toi maintenant !\". Enfin, se tenant à quelques mètres de la vache, %cowtipper% charge en avant.%SPEECH_ON%Yaaahh!%SPEECH_OFF%Le cri effraie la vache. Elle se penche en avant et donne un coup de sabot, attrapant %cowtipper% avec un bout de sabot. Il tourne violemment sur ses pieds et s'écrase dans l'herbe. Les hommes rient un instant, puis réalisent que c'est sérieux. Alors que la vache meugle et s'éloigne au trot, le mercenaire est \"sauvé\". Bien que gravement blessé, il survivra à ce quasi homicide bovin.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Fun\'s over.",
+					Text = "La fête est terminée.",
 					function getResult( _event )
 					{
 						return 0;
@@ -140,9 +140,9 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Other.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Other.getName() + " souffre de " + injury.getNameOnly()
 				});
-				_event.m.Other.worsenMood(0.5, "Humiliated himself in front of the company");
+				_event.m.Other.worsenMood(0.5, "S'est humilié devant la compagnie");
 
 				if (_event.m.Other.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -157,13 +157,13 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Strong",
-			Text = "[img]gfx/ui/events/event_72.png[/img]You figure the strong and burly %strong% could give the cow a good tipping. Your awkward wording alone has the men laughing, but %strong% respectfully bows.%SPEECH_ON%I am honored, sir.%SPEECH_OFF%He rolls up his sleeves and strolls across the field, striding over cow patties like a merchant stepping over the homeless. The cow looks over, raising a curious eyebrow. %strong% nods.%SPEECH_ON%That\'s right, I\'m coming.%SPEECH_OFF%More phrasing issues abound. Despite the laughter of the company, %strong% charges the cow. At first, he simply presses against its side, muscled and heaving with breath. The men laugh as his efforts get him nowhere, but they quickly quiet down when the cow slides across the mud and grass. With a mighty roar, %strong% surges forward and the cow goes falling sideways with a confused moo.\n\n %otherbrother% stands there, slackjawed.%SPEECH_ON%It was a joke... I didn\'t think it was actually possible...%SPEECH_OFF%The company erupts in cheers for the strong man\'s incredible feat!",
+			Text = "[img]gfx/ui/events/event_72.png[/img]Vous pensez que %strong%, fort et costaud, pourrait donner un bon coup à la vache. Votre formulation maladroite fait rire les hommes, mais %strong% s'incline respectueusement.%SPEECH_ON%Je suis honoré, boss.%SPEECH_OFF%Il retrousse ses manches et traverse le champ, enjambant les bouses de vache comme un enfant jouant à le sol est de la lave. La vache le regarde, levant un sourcil curieux. %strong% hoche la tête.%SPEECH_ON%C'est ça, j'arrive.%SPEECH_OFF%D'autres problèmes de formulation apparaissent. Malgré les rires de la compagnie, %strong% charge la vache. Au début, il se contente de s'appuyer contre son flanc, musclé et haletant. Les hommes rient alors que ses efforts ne mènent nulle part, mais ils se calment rapidement lorsque la vache glisse sur la boue et l'herbe. Avec un puissant rugissement, %strong% s'élance en avant et la vache tombe sur le côté avec un meuglement confus.\n\n %otherbrother% se tient là, bouche bée.%SPEECH_ON%C'était une blague... Je ne pensais pas que c'était réellement possible...%SPEECH_OFF%La compagnie applaudit à tout va la performance incroyable de cet homme!",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Bien Jou�!",
+					Text = "Bien Joué!",
 					function getResult( _event )
 					{
 						return 0;
@@ -179,9 +179,9 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 17,
 					icon = "ui/icons/fatigue.png",
-					text = _event.m.Strong.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Max Fatigue"
+					text = _event.m.Strong.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Fatigue Maximum"
 				});
-				_event.m.Strong.improveMood(0.5, "Has shown off of his physical prowess");
+				_event.m.Strong.improveMood(0.5, "A montré ses prouesses physiques");
 
 				if (_event.m.Other.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -203,7 +203,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 50)
 					{
-						bro.improveMood(0.5, "Witnessed " + _event.m.Strong.getName() + "\'s incredible feat");
+						bro.improveMood(0.5, "A été témoin de l'exploit incroyable de " + _event.m.Strong.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -220,13 +220,13 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Cocky",
-			Text = "[img]gfx/ui/events/event_72.png[/img]Before you can even finish your sentence, %cocky% beats his chest and steps forward.%SPEECH_ON%I will fell that petty cow!%SPEECH_OFF%You remind him that the company has no beef with the bovine creature and that this is all for fun and games. He stands there, arms tent-poled with his fists at his hips.%SPEECH_ON%Nonsense. The company laughs and thinks this an impossibility, but I\'m here to show them all just how wrong they are!%SPEECH_OFF%The cocksure sellsword steps into the field and immediately cuts his boot across a cow patty. He sidewinders forward, arms flailing for balance, but it\'s all for naught as he slams to the ground. The men burst into laughter. The cow glances over before simply walking off. %cocky% cleans himself up.%SPEECH_ON%A minor misstep. But look! The cowardly cattle wants no part of me!%SPEECH_OFF%%otherbrother% laughs and points at the sellsword\'s stained garb.%SPEECH_ON%Maybe, but it looks like you got a little part of her.%SPEECH_OFF%The cocky sellsword quickly swipes the shite off his shirt. Despite the failure, he is undeterred and the men are almost passing out they\'re laughing so hard.",
+			Text = "[img]gfx/ui/events/event_72.png[/img]Avant même que vous ne puissiez finir votre phrase, %cocky% se frappe la poitrine et s'avance.%SPEECH_ON%Je vais abattre cette vache mesquine !%SPEECH_OFF%Vous lui rappelez que la compagnie n'a rien contre cette créature bovine et que tout ceci n'est qu'un jeu. Il reste là, les bras en croix, les poings sur les hanches.%SPEECH_OFF%Le mercenaire sur de lui entre dans le champ et marche immédiatement sur une bouse de vache. Il se déplace en avant, les bras en l'air pour trouver l'équilibre, mais c'est en vain qu'il s'écrase sur le sol. Les hommes éclatent de rire. La vache jette un coup d'œil avant de s'en aller. %cocky% se nettoie.%SPEECH_ON%Un petit faux pas. Mais regardez ! Cette vache trouillarde ne veut rien savoir de moi !%SPEECH_OFF%%otherbrother% rit et montre du doigt les vêtements tachés du mercenaire.%SPEECH_ON%Peut-être, mais on dirait que tu as une petite partie d'elle.%SPEECH_OFF%L'arrogant mercenaire enlève rapidement la merde de sa chemise. Malgré l'échec, il ne se décourage pas et les hommes manquent de s'évanouir tellement ils rient.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You did well enough.",
+					Text = "Ça aurait pu être pire.",
 					function getResult( _event )
 					{
 						return 0;
@@ -242,7 +242,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 17,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Cocky.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Détermination"
+					text = _event.m.Cocky.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Détermination"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -255,7 +255,7 @@ this.cow_tipping_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 50)
 					{
-						bro.improveMood(0.5, "Witnessed " + _event.m.Cocky.getName() + "\'s entertaining failure");
+						bro.improveMood(0.5, "A été témoin de l'échec incroyable de" + _event.m.Cocky.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
