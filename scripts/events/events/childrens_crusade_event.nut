@@ -10,12 +10,12 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 300.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_97.png[/img]While on the path, you come across a small army of children. The oldest and biggest amongst them is probably fifteen at most with a tussled crop of orange hair and a spear for a weapon. He\'s leading the troop, a little fighting force provincial to the path more than any town or city. As they cross paths with you, this little leader tips his head at you.%SPEECH_ON%Make way! We are on a righteous march and shan\'t be stopped!%SPEECH_OFF%Curious, you ask where it is they are off to. The kid answers as though incredulous you don\'t know.%SPEECH_ON%Well let me tell you, sellsword. We are heading north through the frozen wastes. Uncultured and uncivilized tribes need to hear of the old gods, either by the word or by the sword.%SPEECH_OFF%He lifts the spear. A rather chirpy \'warcry\' is raised from the army. It appears some religious fervor has taken ahold of this wandering and harmless, and therefore suicidal, group.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Sur le chemin, vous rencontrez une petite armée d\'enfants. Le plus âgé et le plus grand d\'entre eux a probablement quinze ans tout au plus, avec une chevelure orange touffue et avec une lance comme arme. Il mène la troupe, une petite force de combat provinciale sur le chemin ce qui  est déjà plus dans certaines ville ou village. Lorsqu\'ils vous croisent, ce petit chef incline sa tête vers vous.%SPEECH_ON%Faites place ! Nous sommes en marche pour la justice et rien ne doit nous arrêter !%SPEECH_OFF%Curieux, vous demandez où ils vont. L\'enfant répond comme s\'il était étonné que vous ne le sachiez pas.%SPEECH_ON%Eh bien, laissez-moi vous le dire, mercenaire. Nous nous dirigeons vers le nord à travers les régions gelées. Les tribus incultes et non civilisées ont besoin d\'entendre parler des anciens dieux, que ce soit par la parole ou par l\'épée.%SPEECH_OFF%Il lève la lance. Un \"cri de guerre\" plutôt joyeux s\'élève de l\'armée. Il semble qu\'une certaine ferveur religieuse se soit emparée de ce groupe errant et inoffensif, et donc suicidaire.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "You ought to go home to your parents, kids.",
+					Text = "Vous devriez rentrer chez vos parents, les enfants.",
 					function getResult( _event )
 					{
 						return "B";
@@ -28,7 +28,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Monk != null)
 				{
 					this.Options.push({
-						Text = "%monk%, you speak for the old gods. What say you?",
+						Text = "%monk%, tu parles au nom des anciens dieux. Qu\'en dis-tu ?",
 						function getResult( _event )
 						{
 							return "Monk";
@@ -40,7 +40,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Traveller != null)
 				{
 					this.Options.push({
-						Text = "%walker%, you\'ve travelled up there. Say something.",
+						Text = "%walker%, tu as voyagé là-bas. Dis quelque chose.",
 						function getResult( _event )
 						{
 							return "Traveller";
@@ -50,7 +50,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "I\'ll save you the long walk and rid you of any valuables right here.",
+					Text = "Je vais vous épargner la longue marche et vous débarrasser de tout objet de valeur ici.",
 					function getResult( _event )
 					{
 						return "C";
@@ -58,7 +58,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 
 				});
 				this.Options.push({
-					Text = "Good luck, I guess.",
+					Text = "Bonne chance, j\'imagine.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(-1);
@@ -71,13 +71,13 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_97.png[/img]You tell the kids to go home to their parents. The leader laughs and the others follow suit, like little \'uns easily impressed by their big brother. He shakes his head.%SPEECH_ON%Why do you think we\'ve come this far? Our parents know right where we are, and they know where we are is truthfully right. The old gods need to be known throughout the land! Now, make way!%SPEECH_OFF%The kids press forth. A little banner flaps past you and there is much clinking and clanking of their little weapons, mostly bottles and sling shots and tableware.\n\n No doubt they are marching toward certain doom. Raiders and vagabonds are sure to prey upon them, like hawks upon lemmings, and slaves don\'t mind making ostensibly orphaned children \'disappear.\' Were they to get further than those threats, the northern wastes will provide for them a frozen coffin to die in.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Vous dites aux enfants de rentrer chez leurs parents. Le chef rit et les autres lui emboîtent le pas, comme des gamins facilement impressionnés par leur grand frère. Il secoue la tête.%SPEECH_ON%Pourquoi pensez-vous que nous sommes allés si loin ? Nos parents savent où nous sommes, et ils savent que là où nous sommes, c\'est pour la bonne cause. Les anciens dieux doivent être connus dans tout le pays ! Maintenant, faites place !%SPEECH_OFF%Les enfants se dépêchent. Une petite bannière passe devant vous et il y a beaucoup de cliquetis de leurs petites armes, principalement des bouteilles, des lance-pierres et de la vaisselle.\n\nIl ne fait aucun doute qu\'ils marchent vers une mort certaine. Les voleurs et les vagabonds sont sûrs de s\'en prendre à eux, comme des faucons à des rongeurs, et les esclavagistes n\'hésitent pas à faire disparaître des enfants apparemment orphelins. S\'ils vont au-delà de ces menaces, les terres du nord leur fourniront un cercueil gelé dans lequel ils mourront.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Godspeed.",
+					Text = "Bonne chance.",
 					function getResult( _event )
 					{
 						return 0;
@@ -93,13 +93,13 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Monk",
-			Text = "[img]gfx/ui/events/event_97.png[/img]%monk% the monk steps forward and brings the children to a huddle. They instantly respect the man, for he represents in part the very cause they wish to promote. He bends a knee.%SPEECH_ON%Was it the old gods who told you to come out and do this?%SPEECH_OFF%The little leader nods.%SPEECH_ON%They spoke to me in my sleep.%SPEECH_OFF%The monk nods back, rubbing his chin and mulling it over. He pats the boy on his head.%SPEECH_ON%The old gods speak to me and I for them. Interpreting their message requires years of study, let me tell ya! Are you certain that it was you, little one, that was meant to carry this burden? Perhaps you were to be the messenger, no? See us, we\'re warriors. Fit, fighting men who can kill those who despise and demark the old gods. You are not yet like us, but you have a strong voice and the command of a true leader yet. I believe the old gods wanted to use you for your charisma, not your muscles.%SPEECH_OFF%The monk gives the boy a playful push. He smiles, realizing the truth of what the friar has to say. The little leader tells his party that they are to return home as the monk is assuredly right. Some men are thankful that these kids were talked out of going to a certain doom.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]%monk% le moine s\'avance et rassemble les enfants. Ils respectent instantanément l\'homme, car il représente en partie la cause même qu\'ils souhaitent promouvoir. Il plie un genou.%SPEECH_ON%Est-ce que ce sont les anciens dieux qui vous ont dit de sortir et de faire ça ?%SPEECH_OFF%Le petit chef acquiesce.%SPEECH_ON%Ils m\'ont parlé dans mon sommeil.%SPEECH_OFF%Le moine acquiesce, se frotte le menton et réfléchit. Il tapote le garçon sur sa tête.%SPEECH_ON%Les anciens dieux me parlent et je parle pour eux. L\'interprétation de leur message demande des années d\'étude, laissez-moi vous le dire ! Es-tu certain que c\'est toi, petit, qui devais porter ce fardeau ? Peut-être devais-tu être le messager, non ? Regarde-nous, nous sommes des guerriers. Des hommes en pleine forme, capables de tuer ceux qui méprisent et abaissent les anciens dieux. Tu n\'es pas encore comme nous, mais tu as une voix forte et le commandement d\'un vrai chef. Je crois que les anciens dieux voulaient t\'utiliser pour ton charisme, pas pour tes muscles.%SPEECH_OFF%Le moine donne au garçon une tape sur l\'épaule. Il sourit, réalisant la pertinence de ce que le moine a à dire. Le petit chef dit à son groupe qu\'ils doivent rentrer chez eux car le moine a certainement raison. Certains hommes sont reconnaissants que ces enfants aient été dissuadés d\'aller vers une mort certaine.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Stupid kids.",
+					Text = "Des enfants idiots.",
 					function getResult( _event )
 					{
 						return 0;
@@ -117,9 +117,9 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Monk.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Détermination"
+					text = _event.m.Monk.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] de Détermination"
 				});
-				_event.m.Monk.improveMood(1.0, "Saved some children from certain doom");
+				_event.m.Monk.improveMood(1.0, "A sauvé des enfants d\'une mort certaine");
 
 				if (_event.m.Monk.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -136,7 +136,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getID() != _event.m.Monk.getID() && this.Math.rand(1, 100) <= 25)
 					{
-						bro.improveMood(0.5, "Glad that " + _event.m.Monk.getName() + " saved children from certain doom");
+						bro.improveMood(0.5, "Est heureux que " + _event.m.Monk.getName() + " ait sauvé des enfants d\'une mort certaine");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -153,13 +153,13 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Traveller",
-			Text = "[img]gfx/ui/events/event_97.png[/img]%walker% takes his boots off and show the bottom of his feet to the children. They recoil, gagging and covering their mouths. A little girl lets out a long \'ewww\' to really drive the point home. The man wags his foot around, showing off disgustingly calloused skin.%SPEECH_ON%I spent years on the road and most of them without a good shoe to step with. I know what it\'s like out there. I\'ve seen the dangers. People stabbing one another in their sleep. Killing for a bite of a biscuit. Strangers befriend ya so they can betray ya. And all that is when it\'s going well! When it goes bad, it gets... well, it gets real bad. You kids got no business being out here. You\'ll be raped, murdered, enslaved, tortured, fed to dogs, eaten by boars, bears, wolves, all things that look at ya like it\'s lunchtime on two legs. Go home. The lot of you.%SPEECH_OFF%The band of children murmurs amongst themselves. One announces he\'s going back to his mom. A little girl states that she didn\'t even want to be out here anyway and never got the treats she was promised. Sensing a morale break, the little leader tries to corral the children, but it\'s no use. The group breaks apart and, thankfully, starts going home. Some of the men are relieved as they did not wish to see the little ones continue their doomed journey.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]%walker% enlève ses bottes et montre le dessous de ses pieds aux enfants. Ils reculent, s\'étouffent et se couvrent la bouche. Une petite fille laisse échapper un long \"beurk\" pour bien faire passer le message. L\'homme remue son pied dans tous les sens, montrant une peau calleuse et dégoûtante.%SPEECH_ON%J\'ai passé des années sur la route et la plupart d\'entre elles sans une bonne chaussure pour marcher. Je sais comment c\'est dehors. J\'en connait les dangers. Des gens qui se poignardent les uns les autres dans leur sommeil. Tuer pour une bouchée de biscuit. Des étrangers se lient d\'amitié avec vous pour vous trahir ensuite. Et tout ça c\'est quand tout va bien ! Quand ça va mal, ça devient... eh bien, ça devient vraiment moche. Les enfants, vous n\'avez rien à faire ici. Vous serez violés, assassinés, réduits en esclavage, torturés, donnés en pâture aux chiens, mangés par les sangliers, les ours, les loups, toutes les choses qui vous regardent comme si vous étiez leurs repas sur deux pattes. Rentrez chez vous. Tous autant que vous êtes.%SPEECH_OFF%La bande d\'enfants murmure entre eux. L\'un d\'eux annonce qu\'il va retourner chez sa mère. Une petite fille déclare qu\'elle ne voulait même pas être ici de toute façon et qu\'elle n\'a jamais eu les friandises promises. Sentant que le moral est au plus bas, le petit chef tente de rassembler les enfants, mais c\'est inutile. Le groupe se sépare et, heureusement, commence à rentrer chez lui. Certains des hommes sont soulagés car ils ne souhaitaient pas voir les petits poursuivre leur voyage mortel.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You should probably get those feet looked at.",
+					Text = "Tu devrais probablement faire examiner ces pieds.",
 					function getResult( _event )
 					{
 						return 0;
@@ -177,9 +177,9 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Traveller.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Détermination"
+					text = _event.m.Traveller.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] de Détermination"
 				});
-				_event.m.Traveller.improveMood(1.0, "Saved some children from certain doom");
+				_event.m.Traveller.improveMood(1.0, "A sauvé des enfants d\'une mort certaine");
 
 				if (_event.m.Traveller.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -196,7 +196,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getID() != _event.m.Traveller.getID() && this.Math.rand(1, 100) <= 25)
 					{
-						bro.improveMood(0.5, "Glad that " + _event.m.Traveller.getName() + " saved children from certain doom");
+						bro.improveMood(0.5, "Est heureux que " + _event.m.Traveller.getName() + " ait sauvé des enfants d\'une mort certaine");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -213,13 +213,13 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_97.png[/img]You doubt that you can talk the fervor out of these kids, but if your pop\'s parenting is anything to go by you can probably beat it out of them. With a swift order, you have the company set upon the kids, knocking them around and taking their stuff. The little leader tries to spear a sellsword and gets cold cocked for his troubles.\n\n This isn\'t the prettiest of things to do and it\'d look really bad if anyone saw the company beating up children, but this \'end\' to their crusade is preferable to the nastier sorts that await them on the road.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Vous doutez que vous puissiez faire sortir la passion de ces enfants avec des mots, mais en vous fiant à l\'éducation que vous avez eu de votre père, vous pouvez probablement la leur faire sortir avec les poings. Avec un ordre rapide, vous faites en sorte que la compagnie s\'en prenne aux enfants, les frappant et prenant leurs affaires. Le petit chef essaie de piquer un mercenaire et se fait battre à plate couture.\n\nCe n\'est pas la plus belle des choses à faire et ce serait vraiment mal vu si quelqu\'un voyait la compagnie battre des enfants, mais cette \"fin\" à leur croisade est préférable aux plus méchantes qui les attendent sur la route.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Eat dirt, you little runts.",
+					Text = "Mangez de la terre, petits avortons.",
 					function getResult( _event )
 					{
 						return 0;
@@ -250,7 +250,7 @@ this.childrens_crusade_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getBackground().isOffendedByViolence() && this.Math.rand(1, 100) <= 75)
 					{
-						bro.worsenMood(1.0, "Was appalled by your order to rob children");
+						bro.worsenMood(1.0, "A été consterné par votre ordre de voler des enfants");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{

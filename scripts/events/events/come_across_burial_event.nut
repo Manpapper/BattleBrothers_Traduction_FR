@@ -7,13 +7,13 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 130.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_28.png[/img]While on the road, you come across a crowd of people huddled around a mound of earth. Getting closer, you realize that it\'s a funeral. One of the attendees turns to look at you.%SPEECH_ON%Did you know him? Did you fight by his side?%SPEECH_OFF%You shake your head and start cutting into the crowd to see the man himself. You find a man looking about as old as the dead can look. He\'s got a terrifically sharp and glinting sword running along his chest with his grubby, wormfood fingers clutching the pommel. %randombrother% joins your side and whispers.%SPEECH_ON%That\'s, uh, a pretty nice lookin\' weapon there, just saying.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_28.png[/img]Sur la route, vous croisez une foule de personnes rassemblées autour d\'un monticule de terre. En vous approchant, vous réalisez qu\'il s\'agit d\'un enterrement. L\'un des participants se retourne pour vous regarder.%SPEECH_ON%L\'avez-vous connu ? Avez-vous combattu à ses côtés ?%SPEECH_OFF%Vous secouez la tête et commencez à couper dans la foule pour voir l\'homme lui-même. Vous trouvez un homme qui semble aussi vieux que les morts peuvent l\'être. Il a une épée terriblement tranchante et étincelante qui court le long de sa poitrine, ses doigts sales et véreux agrippant le pommeau. %randombrother% vous rejoint et chuchote.%SPEECH_ON%C\'est, euh, une épée plutôt jolie, je dis ça comme ça.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s make it ours.",
+					Text = "Faisons en sorte qu\'elle soit nôtre.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 35 ? "B" : "C";
@@ -21,7 +21,7 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Leave them be.",
+					Text = "Laissons les.",
 					function getResult( _event )
 					{
 						return 0;
@@ -36,13 +36,13 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_36.png[/img]You draw out your sword and the rest of the company does the same. The mercenaries push the crowd back, but there isn\'t as much resistance as you expected. One of the attendees steps forward.%SPEECH_ON%It\'s the sword you want, isn\'t it? Go on, take it. That there dead man spoke of someone like you. Said you\'d need it more than he ever would.%SPEECH_OFF%Sheathing your sword, you ask him if that\'s why they were all standing around. The man laughs.%SPEECH_ON%Naw, he also said he\'d never die, so we were curious to know if that part of his sayings would come true.%SPEECH_OFF%You slowly take the sword, now curious if there was some saying about butchering the man who laid his hands upon it. Thankfully, ostensibly, the mighty dead man said no such thing.",
+			Text = "[img]gfx/ui/events/event_36.png[/img]Vous sortez votre épée et le reste de la compagnie fait de même. Les mercenaires repoussent la foule, mais il n\'y a pas autant de résistance que vous le pensiez. L\'un des participants s\'avance.%SPEECH_ON%C\'est l\'épée que vous voulez, n\'est-ce pas ? Allez-y, prenez-la. Cet homme mort là-bas a parlé de quelqu\'un comme vous. Il a dit que vous en auriez plus besoin que lui.%SPEECH_OFF%Rengainant votre épée, vous lui demandez si c\'est pour ça qu\'ils étaient tous là. L\'homme rit.%SPEECH_ON%Nah, il a aussi dit qu\'il ne mourrait jamais, donc nous étions curieux de savoir si cette partie de ses paroles se réaliserait.%SPEECH_OFF%Vous prenez lentement l\'épée, curieux de savoir s\'il y a un dicton qui parle de massacrer l\'homme qui pose ses mains dessus. Heureusement, ostensiblement, le puissant homme mort n\'a pas dit une telle chose.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "He won\'t be needing that anymore.",
+					Text = "Il n\'en aura plus besoin maintenant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -65,13 +65,13 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_28.png[/img]You reach through the crowd and grab the dead man\'s sword. One of the attendees screams out. %randombrother% uncorks a punch and sends the peasant astral planing. The rest of the company draw out their weapons to make sure any further protests don\'t get far. An elderly woman cuts through the crowd as well as an elderly woman can, wobbling and shaking.%SPEECH_ON%Sir, that don\'t belong to you. Put it back.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_28.png[/img]Vous traversez la foule et attrapez l\'épée du mort. L\'un des participants s\'écrie. %randombrother% décoche un coup de poing et envoie le paysan voldinguer. Les autres membres de la compagnie sortent leurs armes pour s\'assurer que les protestations n\'aillent pas loin. Une femme âgée se fraye un chemin dans la foule, aussi bien qu\'une femme âgée le peut, en vacillant et en tremblant.%SPEECH_ON%Messire, ce n\'est pas à vous. Remettez-la à sa place.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It does now.",
+					Text = "Elle m\'appartient maintenant",
 					function getResult( _event )
 					{
 						return "D";
@@ -79,7 +79,7 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "The crone is right, we shan\'t disturb the burial any further.",
+					Text = "La vieille femme a raison, nous ne devrions pas déranger l\'enterrement plus longtemps.",
 					function getResult( _event )
 					{
 						return "E";
@@ -95,13 +95,13 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_36.png[/img]You tell the old lady to crawl her crotchety ass into a hole and die there. The dead man\'s sword is put in with your inventory and the %companyname% get back on the road.\n\nUpset, the peasants cry out that word of what you\'d done would travel the winds like the shitting farts of a thousand cows. You simply laugh and appreciate their imaginativeness.",
+			Text = "[img]gfx/ui/events/event_36.png[/img]Vous dites à la vieille dame de ramper dans un trou et d\'y mourir. L\'épée de l\'homme mort est mise dans votre inventaire et %companyname% reprend la route.\n\nBouleversés, les paysans s\'écrient que la nouvelle de ce que vous avez fait va parcourir les vents comme un coup de tonnerre. Vous riez simplement et appréciez leur imagination.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That\'s how the world works.",
+					Text = "C\'est comme ça que le monde fonctionne",
 					function getResult( _event )
 					{
 						return 0;
@@ -125,13 +125,13 @@ this.come_across_burial_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_28.png[/img]You put the sword back into the dead man\'s hands. The old lady nods.%SPEECH_ON%So there are good men who will still listen to the wise.%SPEECH_OFF%Another peasant hails your honor and others follow suit. It appears that simply taking the weapon and then putting it back was enough to warrant a manner of celebratory prestige in the eyes of the laymen. Perhaps you should feign theft more often.",
+			Text = "[img]gfx/ui/events/event_28.png[/img]Vous remettez l\'épée dans les mains de l\'homme mort. La vieille dame acquiesce.%SPEECH_ON%Il y a donc toujours des hommes de bien qui écouteront encore les personnes les plus sages.%SPEECH_OFF%Un autre paysan salue votre honneur et d\'autres font de même. Il semble que le simple fait de prendre l\'arme et de la remettre en place était suffisant pour justifier une sorte de prestige festif aux yeux des profanes. Peut-être que vous devriez feindre le vol plus souvent.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We didn\'t need it anyway.",
+					Text = "On en avait pas besoin de toute façon.",
 					function getResult( _event )
 					{
 						return 0;

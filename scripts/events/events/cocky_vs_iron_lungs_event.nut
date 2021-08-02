@@ -10,13 +10,13 @@ this.cocky_vs_iron_lungs_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 150.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]As you roll up some maps and put them back in their panniers, a commotion draws you outside your tent. The men are dragging %cocky% across the ground. His clothes are sopping wet and his face one shade short of death. The men give him some good slaps on the cheeks. Eventually, he wakes up, eyes wild, mouth gargling water like a broken fountain. He looks around and asks what you, too, wish to know.%SPEECH_ON%What happened?%SPEECH_OFF%%ironlungs% walks over, a similarly wet visage, but with a far more colorful complexion.%SPEECH_ON%You cocky cunt dared to see which of us could hold their breath the longest. You lost because they don\'t call these the iron lungs for nuttin\'.%SPEECH_OFF%The men have a laugh as %ironlungs% boastfully pounds his chest. %cocky%, still wobbly, gets to his feet. Mere moments after being completely unconscious, he\'s already back to his prideful ways.%SPEECH_ON%Yeah yeah, you bested me this day, but I shall be the best, just you wait!%SPEECH_OFF%Another sellsword whimsically points out that the cocksure fella has a huge string of snot dangling from his nose. He confidently wipes it away despite the roaring laughter of the company.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Alors que vous roulez des cartes et les remettez dans leurs sacoches, une agitation vous attire hors de votre tente. Les hommes traînent %cocky% sur le sol. Ses vêtements sont trempés et son visage n\'est pas loin de la mort. Les hommes lui donnent quelques bonnes claques sur les joues. Finalement, il se réveille, les yeux fous, la bouche gargarisant de l\'eau comme une fontaine cassée. Il regarde autour de lui et demande ce que vous aussi souhaitiez savoir.%SPEECH_ON%Que s\'est-il passé?%SPEECH_OFF%%ironlungs% s\'avance, un visage tout aussi humide, mais avec un teint beaucoup plus coloré.%SPEECH_ON%Toi l\'espèce de connard arrogant que tu es, a voulu voir lequel d\'entre nous pouvait retenir sa respiration le plus longtemps. Tu as perdu parce qu\'ils n\'appellent pas ça des poumons d\'acier pour rien.%SPEECH_OFF%Les hommes rient tandis que %ironlungs% se frappe la poitrine avec arrogance. %cocky%, toujours chancelant, se relève. Quelques instants après avoir été complètement inconscient, il est déjà de retour à ses habitudes orgueilleuses.%SPEECH_ON%Ouais ouais, tu m\'as battu aujourd\'hui, mais je serai le meilleur, tu verras !%SPEECH_OFF%Un mercenaire lui fait remarquer avec fantaisie qu\'il a un énorme fil de morve qui pend de son nez. Il l\'essuie avec confiance malgré les rires de la compagnie.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Ah, the always safe measurement of manliness.",
+					Text = "Ah, la technique toujours sûre pour mesurer la virilité.",
 					function getResult( _event )
 					{
 						return 0;
@@ -34,13 +34,13 @@ this.cocky_vs_iron_lungs_event <- this.inherit("scripts/events/event", {
 					icon = "ui/icons/days_wounded.png",
 					text = _event.m.Cocky.getName() + " suffers light wounds"
 				});
-				_event.m.Cocky.worsenMood(1.0, "Was humiliated in front of the company");
+				_event.m.Cocky.worsenMood(1.0, "A été humilié devant toute la compagnie");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Cocky.getMoodState()],
 					text = _event.m.Cocky.getName() + this.Const.MoodStateEvent[_event.m.Cocky.getMoodState()]
 				});
-				_event.m.IronLungs.improveMood(1.0, "Beat " + _event.m.Cocky.getName() + " in a contest of strength");
+				_event.m.IronLungs.improveMood(1.0, "A battu " + _event.m.Cocky.getName() + " dans un concours de force");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.IronLungs.getMoodState()],
@@ -52,7 +52,7 @@ this.cocky_vs_iron_lungs_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getID() != _event.m.Cocky.getID() && bro.getID() != _event.m.IronLungs.getID() && this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(0.5, "Felt entertained by " + _event.m.Cocky.getNameOnly());
+						bro.improveMood(0.5, "S\'est senti amusé par " + _event.m.Cocky.getNameOnly());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

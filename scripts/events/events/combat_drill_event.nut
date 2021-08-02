@@ -9,13 +9,13 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You step out of your tent to survey the men. A great many of them are freshly hired grunts, nervously buddying up with one another or trying their hand at some of the weapons. %oldguard% comes to your side.%SPEECH_ON%I know what yer thinking. Yer thinking you\'d just hired a bunch of meat for a thresher. How about I whip these boys into shape so they don\'t eat an orcish blade their first go in the field?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous sortez de votre tente pour observer les hommes. Un grand nombre d\'entre eux sont des grognards fraîchement embauchés, qui s\'associent nerveusement les uns aux autres ou s\'essaient à certaines armes. %oldguard% vient à vos côtés.%SPEECH_ON%Je sais ce que vous pensez. Vous pensez que vous venez d\'engager un tas de viande pour l\'abattoir. Et si je donnais un coup de fouet à ces garçons pour qu\'ils ne se mangent pas une lame d\'orc à leur premier combat sur le terrain ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Very well, see if you can teach them to fight man against man.",
+					Text = "Très bien, voyez si vous pouvez leur apprendre à se battre comme des hommes.",
 					function getResult( _event )
 					{
 						return "B1";
@@ -23,7 +23,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Very well, see that they can put bow and arrow to use.",
+					Text = "Très bien, faites en sorte qu\'ils sachent se servir d\'un arc et de flèches.",
 					function getResult( _event )
 					{
 						return "C1";
@@ -31,7 +31,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Very well, get them in shape to carry real armor.",
+					Text = "Très bien, mettez-les en forme pour porter de vraies armures.",
 					function getResult( _event )
 					{
 						return "D1";
@@ -39,7 +39,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No, they need to keep what little strength they have for battle.",
+					Text = "Non, ils ont besoin de garder le peu de force qu\'ils ont pour la bataille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -55,13 +55,13 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B1",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%oldguard% tells the recruits to take up weapons. When every single one of them picks up a sword, the old guard yells at them, stating that not every foe hankering for you being graveyard dead is gonna be wielding the exact same blade. A few nod before hurriedly exchanging their swords for axes and spears. With the crew equipped, the training begins. Mostly, %oldguard% teaches basics like how a formation makes it easier to defend not only one another, but also yourself.%SPEECH_ON%Ye need not watch corner-to-corner if ya know a brother is by yer side. But if yer separated, if yer all out there by yer lonesome, then ye might be proper farked lest ye got a heretofore unknown way with a blade which I\'ll go ahead and assume ye don\'t.%SPEECH_OFF%The training moves to offense where %oldguard% shows a few tricks with various weapons.%SPEECH_ON%With swords ye can slash, cut, stab, and riposte. Proper-hard to miss with a sword, given every side of it is a killin\' side. If I see any of you trying to cut down an arrow with a sword like the fairy tales told ya I\'mma beat ya down myself. It ain\'t true, so stop fancying it!\n\nSpears are good for keeping distance. They won\'t do much to armor, but they\'ll keep ya safe. Just point this sharp-end away from ya. If an armored brute gets past this pointy end here then yer probably proper farked so don\'t let that happen.\n\nFinally, there\'s the axe. Just pretend the other man is a tree and cleave it so. Now let\'s practice!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%oldguard% dit aux recrues de prendre des armes. Lorsque chacune d\'entre elles prend une épée, le vieux garde leur crie dessus, déclarant que tous les ennemis qui veulent vous voir mort ne vont pas forcément brandir la même lame. Quelques-uns acquiescent avant de changer précipitamment leurs épées contre des haches et des lances. Une fois tout le monde équipé, l\'entraînement commence. %oldguard% leur enseigne surtout les bases, comme le fait qu\'une formation permet de se défendre plus facilement, non seulement les uns les autres, mais aussi soi-même.%SPEECH_ON%Vous n\'avez pas besoin de surveiller partout si vous savez qu\'un frère d\'armes à vos côtés. Mais si vous êtes séparés, si vous vous retrouvez seuls, alors vous risquez d\'avoir des ennuis avec une lame que vous ne connaissez pas.%SPEECH_OFF%L\'entraînement passe à l\'offensive où %oldguard% montre quelques tours avec des armes variées.%SPEECH_ON%Avec les épées, vous pouvez trancher, couper, poignarder et riposter. Difficile de rater son coup avec une épée, vu que chaque côté de celle-ci est un côté qui tue. Si je vois l\'un d\'entre vous essayer de couper une flèche en deux avec une épée comme le disent les contes de fées, je vous battrai moi-même. Ce n\'est pas vrai, alors arrêtez de faire semblant !\n\nLes lances sont bonnes pour garder la distance. Elles ne font pas grand-chose aux armures, mais elles vous protègent. Pointez juste le bout pointu loin de vous. Si une brute en armure arrive à passer le bout pointu, vous êtes probablement foutu, alors ne le laissez pas faire.\n\nEnfin, il y a la hache. Imaginez que l\'autre homme est un arbre et coupez-le en deux. Maintenant, on s\'entraîne !%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Show me what you can do!",
+					Text = "Montrez-moi ce que vous savez faire!",
 					function getResult( _event )
 					{
 						return "B2";
@@ -72,19 +72,19 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Teacher.getImagePath());
-				_event.m.Teacher.improveMood(0.5, "Has drilled the new recruits");
+				_event.m.Teacher.improveMood(0.5, "A entrainé les nouvelles recrues");
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "B2",
-			Text = "[img]gfx/ui/events/event_50.png[/img]The training goes fairly well from there, though the men do come out the other side with a few bumps and bruises.",
+			Text = "[img]gfx/ui/events/event_50.png[/img]L\'entraînement se passe assez bien à partir de là, même si quelques hommes en ressortent avec quelques bosses et quelques bleus.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well done.",
+					Text = "Bien joué.",
 					function getResult( _event )
 					{
 						return 0;
@@ -115,7 +115,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 16,
 							icon = "ui/icons/melee_skill.png",
-							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeSkill + "[/color] Maîtrise de Mêlée"
+							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeSkill + "[/color] de Maîtrise de Mêlée"
 						});
 					}
 
@@ -124,7 +124,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 16,
 							icon = "ui/icons/melee_defense.png",
-							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeDefense + "[/color] Maîtrise à Distance"
+							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeDefense + "[/color] de Maîtrise à Distance"
 						});
 					}
 
@@ -153,7 +153,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 							this.List.push({
 								id = 10,
 								icon = "ui/icons/days_wounded.png",
-								text = bro.getName() + " suffers light wounds"
+								text = bro.getName() + " souffre de blessures légères"
 							});
 						}
 						else
@@ -162,7 +162,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 							this.List.push({
 								id = 10,
 								icon = injury.getIcon(),
-								text = bro.getName() + " suffers " + injury.getNameOnly()
+								text = bro.getName() + " souffre de " + injury.getNameOnly()
 							});
 						}
 					}
@@ -172,13 +172,13 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C1",
-			Text = "[img]gfx/ui/events/event_05.png[/img] %oldguard% musters the men together and begins handing them training bows.%SPEECH_ON%Now these ain\'t made for killing unless ye got an axe to grind with a newborn babe, which I\'m sure of y\'all do, but for now we\'ll just use them to practice.\n\nHere\'s how this contraption works. Oh, ye already know? Yer not a bunch of fools? Well go ahead, then, show me what ye sharpshooters got.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img] %oldguard% rassemble les hommes et commence à leur donner des arcs d\'entraînement.%SPEECH_ON%Maintenant, cette arme n\'est pas faite pour tuer, à moins que vous n\'ayez l\'intention de vous en servir contre nouveau-né, ce qui est le cas de certains d\'entre vous j\'en suis sûre, mais pour l\'instant nous allons juste les utiliser pour nous entraîner.\n\nVoici comment fonctionne cet engin. Oh, vous le savez déjà ? Vous n\'êtes pas une bande d\'idiots ? Eh bien, allez-y, montrez-moi ce que vous valez comme tireurs d\'élite.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see if you lot can hit anything.",
+					Text = "Voyons si vous pouvez toucher quelque chose.",
 					function getResult( _event )
 					{
 						return "C2";
@@ -189,19 +189,19 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Teacher.getImagePath());
-				_event.m.Teacher.improveMood(0.5, "Has drilled the new recruits");
+				_event.m.Teacher.improveMood(0.5, "A entrainé les nouvelles recrues");
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "C2",
-			Text = "[img]gfx/ui/events/event_10.png[/img]The men take practiced shots downrange, the arrows peppering all around their targets, a scant few lucky ones going where they should. %oldguard% spends the rest of the day exhaustingly having the men shoot and shoot and shoot until luck is squeezed out of the equation altogether.",
+			Text = "[img]gfx/ui/events/event_10.png[/img]Les hommes s\'entraînent à tirer en direction du champ de tir, les flèches s\'éparpillant tout autour de leurs cibles, quelques rares flèches chanceuses allant là où elles doivent aller. %oldguard% passe le reste de la journée à faire tirer les hommes, encore et encore, jusqu\'à ce que la chance soit complètement éliminée de l\'équation.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well done.",
+					Text = "Bien joué.",
 					function getResult( _event )
 					{
 						return 0;
@@ -258,7 +258,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = effect.getIcon(),
-							text = bro.getName() + " is exhausted"
+							text = bro.getName() + " est épuisé"
 						});
 					}
 				}
@@ -267,13 +267,13 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D1",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%oldguard% looses a sharp whistle, gathering the new recruits around him. He looks around, grinning, then nods.%SPEECH_ON%Alright ye limpdick teatsucking noodlearm goatfarkers, we\'re going on a march!%SPEECH_OFF%The veteran spends the rest of the day ruthlessly running the recruits as far as he can until the last one drops from exhaustion.%SPEECH_ON%Breathe, little babe, breathe! Take it all in. There\'s plenty to go around for the rest of us, don\'t feel bad! Swallow it like yer mother should\'ve swallowed you. Now, I\'ve shot stains that ran faster than the lot of ye, so I\'ll be seeing y\'all again tomorrow on good, proper time. That\'d be before the sun rises, shitsticks.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%oldguard% émet un sifflement aigu, rassemblant les nouvelles recrues autour de lui. Il regarde autour de lui en souriant, puis fait un signe de tête.%SPEECH_ON%Très bien, vous, bande de couilles molles, suceurs de tétines, bras cassés nous allons faire une marche !%SPEECH_OFF%Le vétéran passe le reste de la journée à faire courir les recrues aussi loin qu\'il le peut jusqu\'à ce que la dernière tombe d\'épuisement.%SPEECH_ON%Respirez, bande de bébés, respirez ! Inspirez profondement. Il y en a assez pour tout le monde, ne vous sentez pas mal ! Avalez ça comme votre mère vous aurait du vous avalé. Maintenant, j\'ai déjà tiré sur des taches qui couraient plus vite que vous tous, donc je vous reverrai tous demain à l\'heure habituelle. C\'est avant que le soleil ne se lève, bande de merdeux.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll do that again, tomorrow!",
+					Text = "Nous le ferons encore demain !",
 					function getResult( _event )
 					{
 						return "D2";
@@ -284,19 +284,19 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Teacher.getImagePath());
-				_event.m.Teacher.improveMood(0.5, "Has drilled the new recruits");
+				_event.m.Teacher.improveMood(0.5, "A entrainé les nouvelles recrues");
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "D2",
-			Text = "%oldguard% shows little mercy and has the men running again and again in the days to come. After all, he says, it\'s for their own damn good.",
+			Text = "%oldguard% ne montre guère de pitié et fait courir les hommes encore et encore les jours à venir. Après tout, dit-il, c\'est pour leur propre bien.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well done.",
+					Text = "Bien joué.",
 					function getResult( _event )
 					{
 						return 0;
@@ -327,7 +327,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 16,
 							icon = "ui/icons/fatigue.png",
-							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + stamina + "[/color] Max Fatigue"
+							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + stamina + "[/color] de Fatigue Maximum"
 						});
 					}
 
@@ -336,7 +336,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 16,
 							icon = "ui/icons/initiative.png",
-							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
+							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] d\'Initiative"
 						});
 					}
 
@@ -364,7 +364,7 @@ this.combat_drill_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = effect.getIcon(),
-							text = bro.getName() + " is exhausted"
+							text = bro.getName() + " est epuisé"
 						});
 					}
 				}

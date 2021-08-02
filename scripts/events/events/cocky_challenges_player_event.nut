@@ -9,13 +9,13 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]While joining the company at a campfire, %cocky% stands up and speaks with reddened face.%SPEECH_ON%I don\'t know about the rest of you sad clods, but I think I could run this camp better than anyone! Especially better than him!%SPEECH_OFF%He points a finger at you.\n\nYou take a seat. The men are staring at you, waiting for a response.",
+			Text = "[img]gfx/ui/events/event_26.png[/img]Alors que vous rejoignez la compagnie autour du feu de camp, %cocky% se lève et parle le visage rougi.%SPEECH_ON%Je ne sais pas pour le reste d\'entre vous, tristes bougres, mais je pense que je pourrais diriger ce camp mieux que quiconque ! Surtout mieux que lui !%SPEECH_OFF%Il pointe un doigt vers vous.\n\nVous prenez un siège. Les hommes vous fixent, attendant une réponse.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You\'re totally right. You should be in charge.",
+					Text = "Tu as tout à fait raison. C\'est toi qui devrais être responsable.",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Time to cut you down to size.",
+					Text = "Il est temps de te remettre à ta place.",
 					function getResult( _event )
 					{
 						return "C";
@@ -31,7 +31,7 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I\'m in charge here! This is my company!",
+					Text = "C\'est moi qui commande ici ! C\'est ma compagnie !",
 					function getResult( _event )
 					{
 						return "D";
@@ -47,13 +47,13 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_26.png[/img]You kick your feet out, legs akimbo, and place your hands in your lap. Nodding, you speak to the man.%SPEECH_ON%Alright, %cocky%. You\'re the man now. You gotta count inventory every morning and night. I know you can\'t count for shite, but you\'ll learn. Don\'t want these fine men going into battle a few arrows short.%SPEECH_OFF%You throw a hand out to a few of the tents.%SPEECH_ON%You\'ll also need to keep a steady count on your people. They\'re not easily controlled, to which you might find some irony - or not.%SPEECH_OFF%Looking at your hands, which have grown calloused and bruised over the days, you keep talking.%SPEECH_ON%And you\'ll need to bark orders that aren\'t just there to be heard - but there to keep men alive and breathing. You know, like yourself and those who sit around you. So yeah, take the job, %cocky%. It\'s yours.%SPEECH_OFF%As soon as you finish, a group of brothers immediately stands up and begs for you to remain in charge. %cocky%, seeing this, backs down and slinks away as yells of \'you\'re in charge!\' fill the air.",
+			Text = "[img]gfx/ui/events/event_26.png[/img]Vous bougez vos pieds, les jambes écartées, et placez vos mains sur vos genoux. En hochant la tête, vous vous adressez à l\'homme.%SPEECH_ON%D\'accord, %cocky%. C\'est toi l\'homme maintenant. Tu devras faire l\'inventaire chaque matin et chaque soir. Je sais que tu ne sais pas compter, mais tu apprendras. Je ne veux pas que ces hommes aillent au combat avec quelques flèches en moins.%SPEECH_OFF%Vous faites signe de la main vers les tentes.%SPEECH_ON%Tu devras aussi garder un oeil sur les hommes. Ils ne sont pas faciles à contrôler, ce qui peut être ironique, ou pas.%SPEECH_OFF%En regardant vos mains, qui sont devenues calleuses et meurtries au fil des années, vous continuez à parler.%SPEECH_ON%Et tu devras aboyer des ordres qui ne sont pas seulement là pour être entendus, mais aussi pour garder les hommes en vie et les faire continuer de respirer. Tu sais, comme toi-même et ceux qui sont assis autour de vous. Alors ouais, prends le job, %cocky%. Il est tout à toi.%SPEECH_OFF%Dès que tu as terminé, un groupe de frères d\'armes se lève immédiatement et te supplie de rester aux commandes. %cocky%, voyant cela, recule et s\'éloigne alors que les cris de \"C\'est toi le chef !\" remplissent l\'air.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You\'re damn right.",
+					Text = "Vous avez bien raison.",
 					function getResult( _event )
 					{
 						return 0;
@@ -70,7 +70,7 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getMoodState() < this.Const.MoodState.Neutral && this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(1.0, "Gained confidence in your leadership");
+						bro.improveMood(1.0, "Confiance accrue en votre leadership");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -87,13 +87,13 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_26.png[/img]The campfire crackles an orange glow across your face. Nodding, you stand up and walk up to %cocky%. He takes a step back, but not before you throw a hand out and grab him by the shoulder. You quickly step forward, scissoring a leg back behind his knee, buckling him and throwing him onto his back. You follow him to the ground and there plant one hand around his throat while the other points an accusing finger.%SPEECH_ON%You\'re a good man %cocky%, but a stupid one, too. Now, I see some of y\'all aren\'t happy about how things are going, but let me remind you that you are all still alive! If someone like %cocky% was in charge you\'d all be dead in a fortnight!%SPEECH_OFF%Standing up, you actually help %cocky% to his feet. He sneers at you and takes off, kicking a stack of barrels over as he leaves. A wave of pain eminates from where the arrow hit you not long ago, but you clench your teeth and try not to give away anything as you sit down again.",
+			Text = "[img]gfx/ui/events/event_26.png[/img]Le feu de camp crépite et l\'on peut apercevoir une lueur orange sur votre visage. En hochant la tête, vous vous levez et vous vous dirigez vers %cocky%. Il recule d\'un pas, mais pas avant que vous ne lanciez une main pour l\'attraper par l\'épaule. Vous vous avancez rapidement, donnant un coup de pied derrière son genou, le faisant plier et le projetant sur le dos. Vous le suivez au sol et plantez une main autour de sa gorge tandis que l\'autre pointe un doigt accusateur.%SPEECH_ON%Tu es un homme bon %cocky%, mais aussi un homme stupide. Maintenant, je vois que certains d\'entre vous ne sont pas contents de la façon dont les choses se passent, mais laissez-moi vous rappeler que vous êtes tous encore en vie ! Si quelqu\'un comme %cocky% était aux commandes, vous seriez tous morts en quinze jours !%SPEECH_OFF%En vous levant, vous aidez %cocky% à se relever. Il ricane et s\'en va, renversant une pile de tonneaux en partant. Une vague de douleur s\'échappe de l\'endroit où la flèche vous a touché il n\'y a pas longtemps, mais vous serrez les dents et essayez de ne rien laisser paraître en vous rasseyant.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Still got it!",
+					Text = "Je l\'ai toujours !",
 					function getResult( _event )
 					{
 						return 0;
@@ -104,7 +104,7 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Cocky.getImagePath());
-				_event.m.Cocky.worsenMood(3.0, "Felt humiliated in front of the company");
+				_event.m.Cocky.worsenMood(3.0, "S\'est fait humilié devant toute la compagnie");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Cocky.getMoodState()],
@@ -115,13 +115,13 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_26.png[/img]You immediately jump back to your feet and begin shouting.%SPEECH_ON%I\'m the one in charge here! Me! Who has the money? Me! If it weren\'t for me, none of y\'all would even be here! You\'d still be in the pits of whatever old lives you had! You should be groveling before my feet for the opportunities I have provided! And %cocky%, if you contest me again I swear to the gods I will have you flogged and hanged, understand?%SPEECH_OFF%The outburst instantly quiets the camp. %cocky% nods and backs away. A few of the men murmur between themselves as you take your seat again.",
+			Text = "[img]gfx/ui/events/event_26.png[/img]Vous vous remettez immédiatement sur vos pieds et commencez à crier.%SPEECH_ON%C\'est moi qui commande ici ! Moi ! Qui a l\'argent ? Moi ! Si ce n\'était pas pour moi, aucun de vous ne serait ici ! Vous seriez encore dans les trous d\'où je vous ais sauvés ! Vous devriez ramper à mes pieds pour les opportunités que je vous ai offertes ! Et %cocky%, si tu me contestes encore, je jure devant les dieux que je te ferai fouetter et pendre, compris ?%SPEECH_OFF%Cet explosion de rage fait instantanément taire le camp. %cocky% acquiesce et se retire. Quelques hommes murmurent entre eux tandis que vous reprenez votre place.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That went pretty well, no?",
+					Text = "Ça s\'est plutôt bien passé, non ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -138,7 +138,7 @@ this.cocky_challenges_player_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.worsenMood(1.0, "Lost confidence in your leadership");
+						bro.worsenMood(1.0, "Perd confiance en votre leadership");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
