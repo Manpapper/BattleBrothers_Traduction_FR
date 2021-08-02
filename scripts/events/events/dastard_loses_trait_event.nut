@@ -11,13 +11,13 @@ this.dastard_loses_trait_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_58.png[/img]You come across %braveman1% and %braveman2% sitting with %dastard%. The two men are pepping up the rather skittish brother, letting him know that there is nothing to fear in battle. %dastard% explains that he is fearful of a painful death. %braveman1% says he has seen many men die and by the sword, truly, is one of the fastest. %braveman2% raises his hand.%SPEECH_ON%Unless it gets you in the stomach.%SPEECH_OFF%%braveman1% nods.%SPEECH_ON%Right. But other than that, you have nothing to fear!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_58.png[/img]Vous rencontrez %braveman1% et %braveman2% assis avec %dastard%. Les deux hommes sont en train de réconforter le frère d\'arme un peu capricieux, lui faisant comprendre qu\'il n\'y a rien à craindre au combat. %dastard% explique qu\'il a peur d\'une mort douloureuse. %braveman1% dit qu\'il a vu beaucoup d\'hommes mourir et que l\'épée est vraiment l\'une des plus rapides. %braveman2% lève la main.%SPEECH_ON%A moins qu\'elle ne te touche à l\'estomac.%SPEECH_OFF%%braveman1% acquiesce.%SPEECH_ON%C\'est vrai. Mais à part ça, tu n\'as rien à craindre !%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Growing up to become a real sellsword after all, are we?",
+					Text = "On grandit pour devenir un vrai mercenaire après tout, n\'est-ce pas ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -34,7 +34,7 @@ this.dastard_loses_trait_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/traits/trait_icon_38.png",
-						text = _event.m.Dastard.getName() + " is no longer a dastard"
+						text = _event.m.Dastard.getName() + " n\'est plus un bâtard"
 					}
 				];
 			}

@@ -10,13 +10,13 @@ this.cultist_vs_uneducated_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]A few brothers come to you looking rather worried. They say %cultist% has been sitting with %uneducated% for a few hours now. When you ask what\'s the worry, they remind you that the cultist has a scarred forehead and speaks of incredibly strange things. Ah, right.\n\nYou go and see the two men. %uneducated% looks up at you, smiling, and says the cultist actually has a lot to teach him. Grimacing, you wonder if you should put a stop to these... lessons.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Quelques freres d\'armes viennent vous voir, l\'air plutôt inquiet. Ils disent que %cultist% est assis avec %uneducated% depuis quelques heures maintenant. Lorsque vous leur demandez ce qui les inquiete, ils vous rappellent que le cultist a une cicatrice sur le front et parle de choses incroyablement étranges. Ah, d\'accord.\n\nVous allez voir les deux hommes. %uneducated% vous regarde en souriant et vous dit que le cultist a en fait beaucoup a lui apprendre. Grimaçant, vous vous demandez si vous ne devriez pas mettre un terme a ces... leçons.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Do as you wish, as long as you don\'t forget what I hired you to do.",
+					Text = "Faites ce que vous voulez, tant que vous n\'oubliez pas ce pour quoi je vous ai engagé.",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,8 @@ this.cultist_vs_uneducated_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Stop this nonsense.",
+					Text = "Arretez ces betises.",
+					Text = "Arretez ces betises.",
 					function getResult( _event )
 					{
 						return "C";
@@ -41,13 +42,13 @@ this.cultist_vs_uneducated_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You nod and turn away. The rest of the brothers shake their heads. By next morning, %uneducated% is found with a fresh wound on his forehead, the blood of conversion. When you ask how he is doing, he only says a few words.%SPEECH_ON%Davkul is coming.%SPEECH_OFF%Well, great.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous hochez la tete et vous vous retournez. Les autres freres d\'armes secouent la tete. Le lendemain matin, %uneducated% est retrouvé avec une blessure fraîche sur le front, le sang de la conversion. Quand vous lui demandez comment il va, il ne dit que quelques mots.%SPEECH_ON%Davkul arrive.%SPEECH_OFF%Eh bien, super.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Suit yourself.",
+					Text = "Fais comme tu veux.",
 					function getResult( _event )
 					{
 						return 0;
@@ -68,7 +69,7 @@ this.cultist_vs_uneducated_event <- this.inherit("scripts/events/event", {
 					{
 						id = 13,
 						icon = background.getIcon(),
-						text = _event.m.Uneducated.getName() + " has been converted to a Cultist"
+						text = _event.m.Uneducated.getName() + " a été converti en cultiste"
 					}
 				];
 				_event.m.Cultist.getBaseProperties().Bravery += 2;
@@ -76,20 +77,20 @@ this.cultist_vs_uneducated_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Cultist.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Détermination"
+					text = _event.m.Cultist.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] de Détermination"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You separate the two men, telling %uneducated% to go count some inventory. When he leaves, the cultist sneers at you.%SPEECH_ON%Davkul awaits. You see him in your sleep. You see him in the nights. His darkness is coming. No light burns forever.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous séparez les deux hommes, en disant à %uneducated% d\'aller faire l\'inventaire. Quand il part, le cultistes ricane.%SPEECH_ON%Davkul t\'attend. Vous le voyez dans votre sommeil. Vous le voyez dans les nuits. Ses ténèbres arrivent. Aucune lumière ne brûle à jamais.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Yeah, well, until then you work for me.",
+					Text = "Oui, eh bien, en attendant, tu travailles pour moi.",
 					function getResult( _event )
 					{
 						return 0;
@@ -101,7 +102,7 @@ this.cultist_vs_uneducated_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Cultist.getImagePath());
 				this.Characters.push(_event.m.Uneducated.getImagePath());
-				_event.m.Cultist.worsenMood(2.0, "Was denied the chance to convert " + _event.m.Uneducated.getName());
+				_event.m.Cultist.worsenMood(2.0, "On lui a refusé la possibilité de convertir " + _event.m.Uneducated.getName());
 
 				if (_event.m.Cultist.getMoodState() < this.Const.MoodState.Neutral)
 				{

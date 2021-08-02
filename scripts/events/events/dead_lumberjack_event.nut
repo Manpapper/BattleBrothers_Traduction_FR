@@ -7,13 +7,13 @@ this.dead_lumberjack_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 120.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]The forest is home to many curiosities and dead bodies, really, aren\'t even the most curious of those. So when you stumble upon a litter of dead lumberjacks the only thing that piques your interest is the lump of a direwolf slain beside them. %randombrother% eyes the tracks going back and forth across a cutting field so abruptly interrupted that some axes were left hewn into tree trunks. He spits and nods.%SPEECH_ON%Poor fellas. Looks like some direwolves bushwhacked them something fierce.%SPEECH_OFF%You have the men collect what\'s left to be recovered and make your leave.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]La forêt abrite de nombreuses curiosités et des cadavres,  mais ce n\'est pas les choses les plus curieuses. Aussi, lorsque vous tombez sur une bande de bûcherons morts, la seule chose qui pique votre intérêt est la masse d\'un loup-garou tué à côté d\'eux. %randombrother% regarde les traces qui vont et viennent à travers un champ de coupe si brusquement interrompu que certaines haches sont restées taillées dans des troncs d\'arbres. Il crache et hoche la tête.%SPEECH_ON%Pauvres gars. On dirait que des loups-garous les ont violemment attaqués par surprise.%SPEECH_OFF%Demandez aux hommes de récupérer ce qui reste à récupérer et partez.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Rest in peace.",
+					Text = "Reposez en paix.",
 					function getResult( _event )
 					{
 						return 0;
