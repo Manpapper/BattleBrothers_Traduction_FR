@@ -142,7 +142,7 @@ this.dogfighting_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_47.png[/img]Les deux chiens sprintent l\'un vers l\'autre et traversent la petite arène en un éclair. Ils se heurtent, leurs corps grossiers s\'écartant l\'un de l\'autre avant que leurs pieds ne se plantent et ne se lancent dans une nouvelle attaque. Le chien de l\'adversaire s\'esquive sous le %wardog% puis se relève, s\'accrochant à la partie inférieure du cou de votre chien.\n\nLes mains de %doghandler%\ s\'approchent de son visage, ses yeux regardant entre ses doigts. Vous regardez %wardog% être secoué d\'un côté à l\'autre. Le sang gicle de son nez et il glapit. Vous pouvez entendre le bruit des pattes qui s\'entrechoquent, impuissantes, alors que le chien tente de donner des coups de pattes sur la terre. Le public ricane et rit.",
+			Text = "[img]gfx/ui/events/event_47.png[/img]Les deux chiens sprintent l\'un vers l\'autre et traversent la petite arène en un éclair. Ils se heurtent, leurs corps grossiers s\'écartant l\'un de l\'autre avant que leurs pieds ne se plantent et ne se lancent dans une nouvelle attaque. Le chien de l\'adversaire s\'esquive sous le %wardog% puis se relève, s\'accrochant à la partie inférieure du cou de votre chien.\n\nLes mains de %doghandler% s\'approchent de son visage, ses yeux regardant entre ses doigts. Vous regardez %wardog% être secoué d\'un côté à l\'autre. Le sang gicle de son nez et il glapit. Vous pouvez entendre le bruit des pattes qui s\'entrechoquent, impuissantes, alors que le chien tente de donner des coups de pattes sur la terre. Le public ricane et rit.",
 			Image = "",
 			List = [],
 			Characters = [],

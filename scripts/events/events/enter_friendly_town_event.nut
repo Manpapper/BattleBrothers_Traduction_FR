@@ -1,4 +1,4 @@
-this.enter_friendly_town_event <- this.inherit("scripts/events/event", {quelques demandes en mariage que vous ne pouvez pas refuser assez vite.
+this.enter_friendly_town_event <- this.inherit("scripts/events/event", {
 	m = {
 		Town = null
 	},
