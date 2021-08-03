@@ -9,13 +9,13 @@ this.dogs_dig_up_loot_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_27.png[/img]While along the roads, your wardogs suddenly scamper off and begin digging into the earth. You\'re not sure why as you don\'t recall giving either one a bone. A few moments later and they\'re fighting over what appears to be %finding%. You interrupt the tug of war, taking the goods for yourself. The hounds whine, but a few good pets settles them down.",
+			Text = "[img]gfx/ui/events/event_27.png[/img]Alors que vous êtes sur la route, vos chiens de garde s\'enfuient soudainement et commencent à creuser la terre. Vous ne savez pas pourquoi, car vous ne vous rappelez pas avoir donné un os à l\'un ou l\'autre. Quelques instants plus tard, ils se battent pour ce qui semble être %finding%. Vous interrompez la lutte acharnée et prenez la marchandise pour vous. Les chiens gémissent, mais quelques bonnes caresses les calment.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good boy.",
+					Text = "Bons chiens.",
 					function getResult( _event )
 					{
 						return 0;

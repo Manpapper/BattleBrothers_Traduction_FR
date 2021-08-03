@@ -9,13 +9,13 @@ this.determined_delivers_peptalk_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_58.png[/img]You are beginning to worry that a sort of malaise has fallen upon the men. They sit about the campfire, mindlessly poking sticks into the flames. Each face shows a loss of control, a loss of governance over one\'s own destiny. If a man can\'t know if tomorrow will be better than today, then how is he to keep pushing forward? Just as you are about to address this, %determined% stands up and so despondent is the mood that even the swift motion by itself catches the company\'s attention.%SPEECH_ON%Look at you bunch of sorry sad sacks. Do you think you\'re unique? Do you think you\'re the first to feel like shit? No, of course not. You\'d not be the first to give up, either. To lay down and not rise again. That\'s the easy thing to do. That\'s what the world wants you to do. There\'s enough sonsabitches around, no need in having some sorry asses like yourselves mucking things up if you don\'t want no part and parcel in this punishment we call life.%SPEECH_OFF%Roused by this speech, you see a bit of a glint falling over the company.",
+			Text = "[img]gfx/ui/events/event_58.png[/img]Vous commencez à vous inquiéter du fait qu\'une sorte de malaise s\'est abattu sur les hommes. Ils sont assis autour du feu de camp, jetant sans réfléchir des bâtons dans les flammes. Chaque visage montre une perte de contrôle, une perte de maîtrise de leur propre destin. Si un homme ne peut pas savoir si demain sera meilleur qu\'aujourd\'hui, comment peut-il continuer à aller de l\'avant ? Au moment où vous vous apprêtez à aborder cette question, %determined% se lève et l\'humeur est si décourageante que même le mouvement rapide attire l\'attention de la compagnie.%SPEECH_ON%Regardez-moi cette bande de pauvres bougres pathétiques. Vous pensez que vous êtes uniques ? Vous pensez que vous êtes les premiers à vous sentir comme une merde ? Non, bien sûr que non. Vous ne seriez pas non plus les premiers à abandonner. A vous coucher et à ne plus vous relever. C\'est la chose la plus facile à faire. C\'est ce que le monde veut que vous fassiez. Il y a assez de fils de pute, pas besoin d\'avoir des culs minables comme vous pour tout gâcher, si vous ne voulez pas participer à cette punition qu\'on appelle la vie.%SPEECH_OFF%Stimulé par ce discours, vous voyez une petite lueur se répandre sur la compagnie.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The man is right!",
+					Text = "Cet homme a raison !",
 					function getResult( _event )
 					{
 						return "B";
@@ -31,13 +31,13 @@ this.determined_delivers_peptalk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_58.png[/img]%determined% continues, almost stabbing his thumb into his chest.%SPEECH_ON%I\'m not taking the world\'s shit. I\'m gonna make the world sorry for having me here. I didn\'t ask for no invitation so I ain\'t gonna play nice to this farkin\' party. See you in the next life, men, but until then, let\'s dance in this one!%SPEECH_OFF%A cheer erupts and the men get to their feet, a sense of elation bursting forth as though the ground had them chained all along.",
+			Text = "[img]gfx/ui/events/event_58.png[/img]%determined% continue, en enfonçant presque son pouce dans sa poitrine.%SPEECH_ON%Je ne prendrai pas la merde de ce monde. Je vais faire en sorte que le monde regrette de m\'avoir ici. Je n\'ai pas demandé d\'invitation, alors je ne vais pas me la couler douce à cette putain de fête. On se voit dans la prochaine vie, les gars, mais en attendant, dansons dans celle-ci !%SPEECH_OFF%Une acclamation éclate et les hommes se lèvent, un sentiment d\'exaltation jaillit comme si le sol les avait entravés depuis le début.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Hear, hear!",
+					Text = "Ecoutez, écoutez !",
 					function getResult( _event )
 					{
 						return 0;
@@ -54,7 +54,7 @@ this.determined_delivers_peptalk_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getMoodState() <= this.Const.MoodState.Neutral && this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(1.0, "Inspired by " + _event.m.Determined.getNameOnly() + "\'s speech");
+						bro.improveMood(1.0, "Inspiré par le discours de " + _event.m.Determined.getNameOnly());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

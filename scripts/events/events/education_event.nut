@@ -10,13 +10,13 @@ this.education_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_15.png[/img]During your travels, %scholar% has taken some interest in %dumbguy%\'s intellectual shortcomings. %scholar_short% says that, with some time, he could learn the man a thing or two. %dumbguy_short% can put one foot in front of the other - and sometimes quite confidently - but you think that\'s about where his aptitude for all things comes to an end. Not only that, but %scholar_short% has gotten easily frustrated in the past. Teaching the dumb brother might just be an exercise in inflating his own ego.",
+			Text = "[img]gfx/ui/events/event_15.png[/img]Au cours de vos voyages, %scholar% s\'est intéressé aux lacunes intellectuelles de %dumbguy%. %scholar_short% dit qu\'avec un peu de temps, il pourrait apprendre à cet homme une chose ou deux. %dumbguy_short% peut mettre un pied devant l\'autre - et parfois avec beaucoup d\'assurance - mais vous pensez que ses aptitudes s\'arrêtent là. De plus, %scholar_short% a déjà été facilement frustré par le passé. Enseigner au frère stupide pourrait n\'être qu\'un exercice pour gonfler son propre ego.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "See what you can teach him.",
+					Text = "Voyez ce que vous pouvez lui apprendre.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 60 ? "B" : "C";
@@ -24,7 +24,7 @@ this.education_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Leave %dumbguy% alone.",
+					Text = "Laisse %dumbguy% tranquille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -41,13 +41,13 @@ this.education_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_15.png[/img]{You come across %scholar% and %dumbguy% staring at a patch of dirt. Along the brown canvas you see that %scholar_short% has drawn geometric shapes, letters, numbers, and what look like constellations. It appears that they\'ve been at this for hours now. \n\nA teaching stick in hand, %scholar% madly points at one of the star clusters and demands to know what it is. %dumbguy%, with a pained expression, guesses a sheep. %scholar% snaps the teaching stick in half and kicks dirt all over his drawings. It\'s a horse! A horse! %scholar% sighs heavily before marching off to the beat of endless profanity. Personally, you thought it was a crab. | You find %scholar% standing over %dumbguy%. Count the beetles, don\'t smash them, the learned man says with exasperation. %dumbguy% looks down at his beetle-juiced hands where {fragments of insect carapaces | carapaces of once-insects} dot his flesh. He nods, understandingly, and turns to pulling the beetles\' legs off instead. %scholar% lets out a string of swears you\'ve never heard in your life. | You find %scholar% and %dumbguy% yelling at one another. It appears they\'re at a very red-faced crossroads. %dumbguy_short% says he doesn\'t care if he\'s dumb, and the %scholar_short% argues that every man should be learned. Well it appears %dumbguy_short% would prefer to be left to his devices for he shows %scholar_short% his back as he walks away. Guess that\'s the end of the lesson for both men. | You find %dumbguy% squatting beside a creek, staring at himself in the shimmering reflection. He must have been at it for a while now for he\'s showing signs of sunburn. You ask if everything is alright, to which he explains that he is not \'getting it\' with %scholar%\'s teachings, and that %scholar% nearly went mad today before finally giving up on the venture. You explain that %dumbguy% doesn\'t have to be smart, he just needs to know how to swing a sword and shoot a bow. That\'s what you hired him for, after all. The man tries to hide a smile, but the running water betrays him. You take him back to camp where you then tell %scholar% to lay off for a while.}",
+			Text = "[img]gfx/ui/events/event_15.png[/img]{Vous croisez %scholar% et %dumbguy% qui fixent un morceau de terre. Le long de la toile brune, vous voyez que %scholar_short% a dessiné des formes géométriques, des lettres, des chiffres et ce qui ressemble à des constellations. Il semble qu\'ils soient là depuis des heures maintenant.\n\nUn bâton d\'enseignement à la main, %scholar% montre du doigt l\'un des amas d\'étoiles et demande à savoir ce que c\'est. %dumbguy%, avec une expression douloureuse, devine un mouton. %scholar% casse le bâton d\'enseignement en deux et jette de la terre sur ses dessins. C\'est un cheval ! Un cheval ! %scholar% soupire lourdement avant de s\'en aller d\'un air dépité. Personnellement, vous pensiez que c\'était un crabe. | Vous trouvez %scholar% debout devant %dumbguy%. Compte les coléoptères, ne les écrase pas, dit le savant avec exaspération. %dumbguy% regarde ses mains pleines de coléoptères où {des fragments de carapaces d\'insectes | des carapaces d\'anciens insectes} parsèment sa chair. Il acquiesce, compréhensif, et se met à arracher les pattes des scarabées. %scholar% laisse échapper une série de jurons que vous n\'aviez jamais entendus de votre vie. | Vous trouvez %scholar% et %dumbguy% qui se crient dessus. Il semble qu\'ils soient dans une impasse. %dumbguy_short% dit qu\'il ne se soucie pas qu\'il soit idiot, et %scholar_short% soutient que tout homme devrait être instruit. Il semble que %dumbguy_short% préfère être laissé seul car il montre son dos à %scholar_short% en s\'éloignant. Je suppose que c\'est la fin de la leçon pour les deux hommes. | Vous trouvez %dumbguy% accroupi près d\'un ruisseau, se regardant dans le reflet miroitant. Il doit être là depuis un moment maintenant car il montre des signes de coups de soleil. Vous lui demandez si tout va bien, ce à quoi il répond qu\'il n\'arrive pas à suivre les enseignements de %scholar% et que %scholar% a failli devenir fou aujourd\'hui avant d\'abandonner l\'experience. Vous expliquez à %dumbguy% qu\'il n\'a pas besoin d\'être intelligent, il doit juste savoir manier l\'épée et tirer à l\'arc. C\'est pour cela que vous l\'avez engagé, après tout. L\'homme essaie de cacher un sourire, mais l\'eau courante le trahit. Vous le ramenez au camp où vous dites à %scholar% de se reposer un peu.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "{Why will you not learn?! | Ignorance is bliss.}",
+					Text = "{Pourquoi n\'apprends-tu pas ? ! | L\'ignorance est une bénédiction.}",
 					function getResult( _event )
 					{
 						return 0;
@@ -59,7 +59,7 @@ this.education_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Scholar.getImagePath());
 				this.Characters.push(_event.m.DumbGuy.getImagePath());
-				_event.m.Scholar.worsenMood(2.0, "Failed to teach " + _event.m.DumbGuy.getName() + " anything");
+				_event.m.Scholar.worsenMood(2.0, "N\'a pas réussi à faire apprendre quelque chose à " + _event.m.DumbGuy.getName());
 
 				if (_event.m.Scholar.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -76,13 +76,13 @@ this.education_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_15.png[/img]{You come across %dumbguy% mulling over a set of coins on a table. You inquire as to what he is doing and he says he\'s trying to figure out how much to save for retirement. First off, you\'re surprised he even knows what the word retirement is. Second off, counting? Looks like you might owe %scholar% a pint. | You find %dumbguy% sitting on a stump as he writes across a scroll. When you ask what he\'s doing, he says he\'s writing a letter. When you ask to whom it is addressed, the man looks up with a sheepish grin and asks, does it matter? Just then, you spot %scholar% in the distance, arms crossed, a look of satisfaction on his face.}",
+			Text = "[img]gfx/ui/events/event_15.png[/img]{Vous rencontrez %dumbguy% qui réfléchit devant un ensemble de pièces de monnaie sur une table. Vous lui demandez ce qu\'il fait et il vous répond qu\'il essaie de savoir combien il doit économiser pour sa retraite. D\'abord, vous êtes surpris qu\'il sache ce que signifie le mot retraite. Et puis, il sait compter ? On dirait que vous devez une pinte à %scholar%. | Vous trouvez %dumbguy% assis sur une souche alors qu\'il écrit sur un parchemin. Lorsque vous lui demandez ce qu\'il fait, il répond qu\'il écrit une lettre. Lorsque vous lui demandez à qui elle est adressée, l\'homme lève les yeux au ciel avec un sourire coupable et vous demande si cela a de l\'importance. À ce moment-là, vous apercevez %scholar% au loin, les bras croisés, un air de satisfaction sur le visage.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Fascinating.",
+					Text = "Fascinant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -94,12 +94,12 @@ this.education_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Scholar.getImagePath());
 				this.Characters.push(_event.m.DumbGuy.getImagePath());
-				_event.m.Scholar.improveMood(2.0, "Taught " + _event.m.DumbGuy.getName() + " quelque chose");
+				_event.m.Scholar.improveMood(2.0, "A appris quelque chose à " + _event.m.DumbGuy.getName());
 				_event.m.DumbGuy.getSkills().removeByID("trait.dumb");
 				this.List.push({
 					id = 10,
 					icon = "ui/traits/trait_icon_17.png",
-					text = _event.m.DumbGuy.getName() + " is no longer dumb"
+					text = _event.m.DumbGuy.getName() + " n\'est plus idiot"
 				});
 
 				if (_event.m.Scholar.getMoodState() >= this.Const.MoodState.Neutral)

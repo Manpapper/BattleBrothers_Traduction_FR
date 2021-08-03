@@ -9,13 +9,13 @@ this.fainthearted_is_shellshocked_event <- this.inherit("scripts/events/event", 
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_12.png[/img]You find %fainthearted% leaning back and forth before the campfire. His face is speckled with dried blood and his hands are shaking. A few brothers try and talk to him, but none manage to get through. It appears the fainthearted man has been rattled by the horrors of a recent and brutal battle.",
+			Text = "[img]gfx/ui/events/event_12.png[/img]Vous trouvez %fainthearted% penché en avant puis en arrière devant le feu de camp. Son visage est tacheté de sang séché et ses mains tremblent. Quelques frères d\'armes essaient de lui parler, mais aucun ne parvient à le faire parler. Il semble que l\'homme au cœur fragile ait été ébranlé par les horreurs d\'une récente et brutale bataille.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Leave him be.",
+					Text = "Laissez-le tranquille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.fainthearted_is_shellshocked_event <- this.inherit("scripts/events/event", 
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Rookie.getImagePath());
-				_event.m.Rookie.worsenMood(1.5, "Shocked by the horrors of battle");
+				_event.m.Rookie.worsenMood(1.5, "Choqué par les horreurs de la bataille");
 
 				if (_event.m.Rookie.getMoodState() < this.Const.MoodState.Neutral)
 				{

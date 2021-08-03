@@ -9,13 +9,13 @@ this.enter_unfriendly_town_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 21.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_43.png[/img]{The {denizens | citizens | peasants | laymen | townfolk} of %townname% greet you with {a few rotten eggs thrown with such velocity and aim that you can\'t help but think these people do not take kindly to your presence. | a tarred and feather doll swinging from a nearby tree. The face of it is remarkably similar to your own, but you consider this nothing more than a coincidence. | a few rambunctious children, no doubt set loose by their parents to do evil that, in the adult world, would have garnered some measure of violent response. As the little runts go after you causing chaos, you order your men to put their boots to work. A few good stomps and kicks drive the bastards off, but for how long? | a burning effigy in your likeness. The peasants douse it in a pig trough. They stand around it, making sure you can\'t see what\'s left of the you-shapened wood.}",
+			Text = "[img]gfx/ui/events/event_43.png[/img]{Les {habitants | citoyens | paysans | profanes | citadins} de %townname% acceuillent avec {quelques œufs pourris lancés avec une telle vélocité et une telle précision que l\'on ne peut s\'empêcher de penser que ces personnes n\'apprécient guère votre présence. | une poupée de goudron et de plumes se balançant d\'un arbre proche. Son visage est remarquablement similaire au vôtre, mais vous ne considérez cela que comme une coïncidence. | quelques enfants turbulents, sans doute lâchés par leurs parents pour faire des méfaits qui, dans le monde des adultes, auraient suscité une réaction violente. Alors que les petits avortons vous poursuivent en semant le chaos, vous ordonnez à vos hommes de mettre leurs bottes au travail. Quelques bons coups de pied et de poing font fuir les bâtards, mais pour combien de temps ? | une effigie en feu à votre effigie. Les paysans la trempent dans une auge à cochons. Ils se tiennent autour, s\'assurant que vous ne pouvez pas voir ce qui reste du bois sculpté.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I can\'t stand this town.",
+					Text = "Je ne supporte pas cette ville.",
 					function getResult( _event )
 					{
 						return 0;

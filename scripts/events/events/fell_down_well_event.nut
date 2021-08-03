@@ -10,12 +10,12 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 150.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_91.png[/img]A woman jumps out of the treeline beside the path.%SPEECH_ON%Oh thank the gods, my prayers have been answered! Please, come quick! My grandpap has fallen down the well!%SPEECH_OFF%She turns and hurries away as though you\'ve already agreed to help her. %otherbrother% glances at you and shrugs.",
+			Text = "[img]gfx/ui/events/event_91.png[/img]Une femme sort de la fôret en sautant à côté du chemin.%SPEECH_ON%Oh, grâce aux dieux, mes prières ont été entendues ! S\'il vous plaît, venez vite ! Mon grand-père est tombé dans le puits !%SPEECH_OFF%Elle se retourne et s\'éloigne comme si vous aviez déjà accepté de l\'aider. %otherbrother% vous regarde et hausse les épaules.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "I guess we can help her.",
+					Text = "Je suppose que nous pouvons l\'aider.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -35,7 +35,7 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Strong != null)
 				{
 					this.Options.push({
-						Text = "%strongbrother%, you\'re strong. Give her a hand.",
+						Text = "%strongbrother%, tu es fort. Donne-lui un coup de main.",
 						function getResult( _event )
 						{
 							return "Strong";
@@ -45,7 +45,7 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "We have no time for this.",
+					Text = "Nous n\'avons pas le temps pour ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -57,13 +57,13 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Good",
-			Text = "[img]gfx/ui/events/event_91.png[/img]You decide it\'s worth your time and go and take a look. The old man was doing repairs on the wellhead, a wooden framework meant to cover its opening, when it broke apart and sent him plunging down. Staring into the well, you find the man staring back up. He gives a wave.%SPEECH_ON%Oy\' there, fellas. I\'m in a bit of a pickle. I\'m actually being pickled, now that I think about it...%SPEECH_OFF%Eh, right. %otherbrother% throws down a rope and the old man ties it around himself. You and the sellsword pull the woman\'s grandfather up and back onto dry land. He shakes your hand and thanks you cordially.%SPEECH_ON%Farkin\' hell, glad you came when you did, I was about to shit and piss like no other. Let me tell ya, this ain\'t my first time going down a well. Five years ago I\'d done it while repairing the wellhead, because the wellhead breaks often, you see. And it\'s not really a wellhead, we just call it that cause we\'re lazy. Back in my day we called it a... well, heh well, I actually done forgot. I guess a \'wellhead\' makes sense now, as I\'m not well in the head! Ho! Still got it. I was quite the charmer in my days, you see, and it\'s not often I get to put the practice in. M\'wife died ten years ago, and the one prior to her left me twenty winters ago! I say winters, because that\'s when she left me, in the winter. It was a brutal one and I had asked her to help chop the wood lest we all freeze. She said she wasn\'t doing that shit and taking care of the kids at the same time. I had kids with her as well as with the second wife. Five total. One died. Measles. Another disappeared, so he\'s probably dead. I try to be honest to myself about it, but you know, there\'s hope. If a random stranger can be found in the forest to save me in the nick of time, then maybe my son survived that battle with the greenskins. Ain\'t heard of him, though. I pray to the old gods and even that Davkul fella every now and again. Do you know of Davkul? I\'m not sure what to make of it. One time this man came by with a scar on his forehead, said he\'d show me the way of darkness. I said I see darkness everytime I nap. This scarred fella said one day I won\'t wake and I said good! Ha! So then this scarred bastard starts getting upset with me...%SPEECH_OFF%As he drones on, you look around for %otherbrother% only to find him stepping out of the woman\'s home, the lady herself carrying a bit of... obvious warmth on her face. You retrieve your sellsword and leave before the old man lops your head with the most longwinded and one-sided conversation ever.",
+			Text = "[img]gfx/ui/events/event_91.png[/img]Vous décidez que cela vaut la peine d\'essayer et vous allez jeter un coup d\'oeil. Le vieil homme effectuait des réparations sur le haut du puits, une structure en bois destinée à couvrir l\'ouverture du puit, lorsqu\'elle s\'est brisée il est tombé. En regardant dans le puits, vous voyez l\'homme qui regarde vers le haut. Il fait un signe de la main.%SPEECH_ON%Bonjour, les gars. Je suis un peu dans le pétrin. Je suis en fait en train de me faire mariner, maintenant que j\'y pense...%SPEECH_OFF%Eh, d\'accord. %otherbrother% jette une corde et le vieil homme l\'attache autour de lui. Le mercenaire et vous tirez le grand-père de la femme et le ramenez sur la terre ferme. Il vous serre la main et vous remercie cordialement.%SPEECH_ON%Putain de merde, content que vous soyez venu, j\'étais sur le point de chier et de pisser comme personne. Laissez-moi vous dire que ce n\'était pas la première fois que je descendais dans un puits. Il y a cinq ans, je l\'avais fait en réparant la tête de puits, parce que la tête de puits se casse souvent, vous voyez. Et ce n\'est pas vraiment une tête de puits, on l\'appelle comme ça parce qu\'on est paresseux. De mon temps, on appelait ça une... enfin, heh bien, j\'ai oublié en fait. Je suppose qu\'une \"tête de puits\" a du sens maintenant, puisque je ne suis pas bien dans ma tête ! Ho ! Je l\'ai toujours. J\'étais un charmeur dans le temps, vous voyez, et ce n\'est pas souvent que j\'ai l\'occasion de m\'entraîner. Ma femme est morte il y a dix ans, et celle qui l\'a précédée m\'a quitté il y a vingt hivers ! Je dis hivers, parce que c\'est là qu\'elle m\'a quitté, en hiver. C\'était un hiver brutal et je lui avais demandé d\'aider à couper le bois de peur que nous ne soyons tous gelés. Elle a dit qu\'elle ne pouvait pas faire cette merde et s\'occuper des enfants en même temps. J\'ai eu des enfants avec elle ainsi qu\'avec la seconde femme. Cinq au total. Un est mort. La rougeole. Un autre a disparu, donc il est probablement mort. J\'essaie d\'être honnête avec moi-même à ce sujet, mais vous savez, il y a de l\'espoir. Si un étranger peut être trouvé dans la forêt pour me sauver à temps, alors peut-être que mon fils a survécu à cette bataille avec les peaux vertes. Je n\'ai jamais entendu parler de lui, cependant. Je prie les anciens dieux et même ce Davkul de temps en temps. Connaissez-vous Davkul ? Je ne sais pas trop quoi en penser. Un jour, un homme est venu avec une cicatrice sur le front, il a dit qu\'il me montrerait le chemin des ténèbres. J\'ai dit que je voyais les ténèbres à chaque fois que je faisais une sieste. Ce type à la cicatrice a dit qu\'un jour je ne me réveillerais pas et j\'ai dit que c\'était bien ! Ha ! Alors ce bâtard balafré commence à s\'énerver contre moi...%SPEECH_OFF%Tandis qu\'il continue, vous regardez autour de vous à la recherche de %otherbrother%, mais vous le trouvez en train de sortir de la maison de la femme, la dame elle-même ayant... une chaleur évidente sur son visage. Vous récupérez votre mercenaire et partez avant que le vieil homme ne vous coupe la tête avec la conversation la plus longue et unilatérale qui soit.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nobody\'s ever there to save me.",
+					Text = "Personne n\'est jamais là pour me sauver.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(2);
@@ -75,7 +75,7 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Other.getImagePath());
-				_event.m.Other.improveMood(2.0, "Got some loving");
+				_event.m.Other.improveMood(2.0, "A reçu un peu d\'amour");
 
 				if (_event.m.Other.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -90,13 +90,13 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Bad",
-			Text = "[img]gfx/ui/events/event_91.png[/img]The old man was doing repairs atop the wooden wellhead when it broke apart. Unfortunately, if you\'re standing atop a wellhead when it goes bust there\'s only one place to go: down. Very, very far down. As you look over the edge of the well, you can see the old man floating in a matter that is most unlively. %otherbrother% sidles up next to you and whispers, using a hand to keep his words from being heard.%SPEECH_ON%Uh, he\'s not moving.%SPEECH_OFF%An expertly observation, truly. You inform the lady of the man\'s passing. She purses her lips and asks that you remove the body anyway, explaning her reasoning rather succinctly.%SPEECH_ON%We can\'t be drinking his filth after all.%SPEECH_OFF%Fair enough. %otherbrother% manages to hook a rope-loop around the corpse and pull it up, its limbs dangling loosely like white washrags. He asks if she needs you to bury it, too. The woman wipes a tear and shakes her head.%SPEECH_ON%Nah. I\'ll bury that feller myself, weep over his grave tomorrow, and then get on with living.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_91.png[/img]Tle vieil homme faisait des réparations au sommet du puits en bois quand il s\'est brisé. Malheureusement, si vous vous tenez au sommet du puits quand ils\'effondre, il n\'y a qu\'un seul endroit où aller : en bas. Très, très bas. En regardant par-dessus le bord du puits, vous pouvez voir le vieil homme flotter dans d\'une matière peu vivante. %otherbrother% s\'approche de vous et chuchote, utilisant une main pour ne pas être entendu.%SPEECH_ON%Euh, il ne bouge pas.%SPEECH_OFF%Une observation experte, vraiment. Vous informez la dame du décès de l\'homme. Elle pince les lèvres et demande que vous enleviez quand même le corps, expliquant son raisonnement plutôt succinctement.%SPEECH_ON%On ne peut pas boire sa saleté après tout.%SPEECH_OFF%C\'est juste. %otherbrother% réussit à accrocher une corde autour du cadavre et à le remonter, ses membres pendent comme du linge. Il demande si elle a besoin de vous pour l\'enterrer aussi. La femme essuie une larme et secoue la tête.%SPEECH_ON%Non. J\'enterrerai ce vieux crouton moi-même, je pleurerai sur sa tombe demain, et je continuerai à vivre.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well, alright.",
+					Text = "Bon, d\'accord.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(1);
@@ -112,13 +112,13 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Strong",
-			Text = "[img]gfx/ui/events/event_91.png[/img]You decide it\'s worth your time and go and take a look. The wellhead, a wooden framework meant to cover its opening, has broken apart. Apparently, the old man was doing repairs atop it when this happened and so he plunged down into the well. He looks up at you.%SPEECH_ON%Oy\' there, fellas. I\'m in a bit of a pickle. I\'m actually being pickled now that I think about it...%SPEECH_OFF%Eh, right. %strongbrother% throws down a rope. The old man ties it around himself. You and the sellsword pull the woman\'s grandfather up and back onto dry land. He shakes your hand and thanks you cordially.%SPEECH_ON%Farkin\' hell, glad you came when you did, I was about to shit and piss like no other.%SPEECH_OFF%You talk with the old fella for a time, learning a lot about him. A while later, you realize %strongbrother% is nowhere in sight. Just as you think to start looking for him he steps out of the woman\'s home. She\'s glomming onto his muscles and being rather touchy feely.",
+			Text = "[img]gfx/ui/events/event_91.png[/img]Vous décidez que cela vaut la peine d\'essayer et vous allez jeter un coup d\'oeil. Le haut du puits, une structure en bois destinée à couvrir son ouverture, s\'est brisée. Apparemment, le vieil homme effectuait des réparations à son sommet lorsque cela s\'est produit et il a plongé dans le puits. Il lève les yeux vers vous.%SPEECH_ON%Bonjour, les gars. Je suis un peu dans le pétrin. Je suis en fait en train de me faire mariner maintenant que j\'y pense...%SPEECH_OFF%Eh, c\'est vrai. %strongbrother% jette une corde. Le vieil homme l\'attache autour de lui. Vous et le mercenaire tirez le grand-père de la femme et le ramenez sur la terre ferme. Il vous serre la main et vous remercie cordialement.%SPEECH_ON%Putain, je suis content que vous soyez venu, j\'étais sur le point de chier et de pisser comme personne d\'autre.%SPEECH_OFF%Vous parlez avec le vieil homme pendant un certain temps, apprenant beaucoup de choses sur lui. Un peu plus tard, vous réalisez que %strongbrother% n\'est pas dans les parages. Au moment où vous pensez commencer à le chercher, il sort de la maison de la femme. Elle s\'accroche à ses muscles et se montre plutôt tactile.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Gonna be some strong lads roaming these part soon, no doubt...",
+					Text = "Il y aura bientôt des gars forts dans cette région, sans aucun doute...",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(2);
@@ -130,7 +130,7 @@ this.fell_down_well_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Strong.getImagePath());
-				_event.m.Strong.improveMood(2.0, "Got some loving");
+				_event.m.Strong.improveMood(2.0, "A reçu un peu d\'amour");
 
 				if (_event.m.Strong.getMoodState() >= this.Const.MoodState.Neutral)
 				{

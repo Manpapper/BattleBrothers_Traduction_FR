@@ -10,13 +10,13 @@ this.eunuch_ladies_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_85.png[/img]Word is spreading about %eunuch% the eunuch. Apparently, him and some brothers visited the town brothel. The whores and brothers alike initially made fun of the eunuch, but he demanded only five minutes with the most experienced of the ladies. She came back out after two minutes and the rumors about %eunuch%\'s bedroom prowess has only exploded from there.\n\nNow, half the town, more precisely its women, speak highly of the %companyname% and would love to see it visit again. %eunuch% himself gives you a wink and a smile. You notice that he\'s rather warty around the lips.",
+			Text = "[img]gfx/ui/events/event_85.png[/img]La rumeur se répand sur %eunuch% l\'eunuque. Apparemment, lui et quelques frères ont visité le bordel de la ville. Les putes et les frères se sont d\'abord moqués de l\'eunuque, mais il n\'a exigé que cinq minutes avec la plus expérimentée des dames. Elle est ressortie au bout de deux minutes et les rumeurs sur les prouesses au lit de l\'eunuque n\'ont fait qu\'exploser à partir de là.\n\nMaintenant, la moitié de la ville, plus précisément les femmes, ne tarissent pas d\'éloges sur %companyname% et aimeraient vous voir revenir. %eunuch% lui-même vous fait un clin d\'œil et un sourire. Vous remarquez qu\'il est plutôt verruqueux au niveau des lèvres.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A hidden talent.",
+					Text = "Un talent caché.",
 					function getResult( _event )
 					{
 						return 0;
@@ -30,14 +30,14 @@ this.eunuch_ladies_event <- this.inherit("scripts/events/event", {
 
 				if (_event.m.Town.isSouthern())
 				{
-					_event.m.Town.getOwner().addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "One of your men got a reputation with the ladies");
+					_event.m.Town.getOwner().addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Un de vos hommes a obtenu une bonne réputation avec les dames");
 				}
 				else
 				{
-					_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "One of your men got a reputation with the ladies");
+					_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Un de vos hommes a obtenu une bonne réputation avec les dames");
 				}
 
-				_event.m.Eunuch.improveMood(1.5, "Got friendly with some ladies in " + _event.m.Town.getName());
+				_event.m.Eunuch.improveMood(1.5, "A sympathisé avec des dames de " + _event.m.Town.getName());
 
 				if (_event.m.Eunuch.getMoodState() >= this.Const.MoodState.Neutral)
 				{

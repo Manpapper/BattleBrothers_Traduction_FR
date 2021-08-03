@@ -1,4 +1,4 @@
-this.enter_friendly_town_event <- this.inherit("scripts/events/event", {
+this.enter_friendly_town_event <- this.inherit("scripts/events/event", {quelques demandes en mariage que vous ne pouvez pas refuser assez vite.
 	m = {
 		Town = null
 	},
@@ -9,13 +9,13 @@ this.enter_friendly_town_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 21.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_85.png[/img]{Your arrival in %townname% seems to be cause for some celebration. One of the town\'s councilman greets you, offering refreshments. | %townname% shows its appreciation for your business there by handing you and your men a tray of refreshments. %randombrother% slams a few mugs down as a dainty, girlish server looks on in awe. He wipes his mouth.%SPEECH_ON%Appreciated. More, please.%SPEECH_OFF% | Business in %townname% has been good and the people there seem to appreciate you more and more: on today\'s arrival they gave you {plenty of useless thanks | a storm of gratitude | flowers upon flowers which you have no use for | trinkets and other things that you throw away when the peasants aren\'t looking | a tray of ale which your men quickly consume | a cask of ale which your men tactlessly criticize as \'tasting wooden\' | a few marriage proposals which you gracefully turn down | a few marriage proposals which you can\'t turn down fast enough | one marriage proposal from the town ugly. She has a face that could stop a sundial. You decline the offer | a quick celebration wherein a few people shouted incoherently. Their tone seemed cheery, anyway | a few slaps on the back. You reminded them that such a doing might leave them handless on the next go around | an offering of orphans. You\'ve no idea what gave them the notion that you\'d accept such a gift, but you return the children to their sad home, also known as the streets}.}",
+			Text = "[img]gfx/ui/events/event_85.png[/img]{Votre arrivée à %townname% semble être une raison de faire la fête. L\'un des conseillers municipaux vous salue et vous offre des rafraîchissements. | %townname% montre sa reconnaissance pour votre travail en vous offrant, à vous et à vos hommes, un plateau de rafraîchissements. %randombrother% fait claquer quelques chopes sous le regard émerveillé d\'une serveuse délicate et féminine. Il s\'essuie la bouche.%SPEECH_ON%Merci à vous. Plus, s\'il vous plaît.%SPEECH_OFF% | Les affaires à %townname% ont été bonnes et les habitants semblent vous apprécier de plus en plus : en arrivant aujourd\'hui, ils vous ont donné {beaucoup de remerciements inutiles | une tempête de gratitude | des fleurs dont vous n\'avez que faire | des babioles et autres choses que l\'on jette quand les paysans ne regardent pas | un plateau de bière que vos hommes consomment rapidement | un tonneau de bière que vos hommes critiquent sans délicatesse comme ayant \"un goût de bois\" | quelques demandes en mariage que vous refusez gentiment | quelques demandes en mariage que vous ne pouvez pas refuser assez vite | une demande en mariage de la mocheté de la ville. Elle a un visage qui pourrait rendre aveugle. Vous déclinez l\'offre | une célébration rapide où quelques personnes ont crié de façon incohérente. Leur ton semblait joyeux, en tout cas | quelques tapes dans le dos. Vous leur rappelez qu\'une telle action pourrait les laisser sans mains la prochaine fois | une offrande d\'orphelins. Vous n\'avez aucune idée de ce qui leur a donné l\'idée que vous accepteriez un tel cadeau, mais vous renvoyez les enfants dans leur triste foyer, aussi connu sous le nom de rues}.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Always nice to be in %townname%.",
+					Text = "Toujours agréable d\'être à %townname%.",
 					function getResult( _event )
 					{
 						return 0;
