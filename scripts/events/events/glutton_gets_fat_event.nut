@@ -9,13 +9,13 @@ this.glutton_gets_fat_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_14.png[/img] You find %glutton% helping himself to a third helping of food. That\'s far too much and so you demand that it be his last. Another brother joins in, mocking the man for his habits. The glutton, enraged, slams his food down and stands up. His stomach however, sways at a different pace than the rest of him and the rather fattened man goes down in a heap of flailing limbs. While the rest of the company has a laugh, you can\'t help but wonder if the sellsword really has gotten too fat.",
+			Text = "[img]gfx/ui/events/event_14.png[/img] Vous trouvez %glutton% en train de se servir une troisième portion de nourriture. C\'est beaucoup trop et vous exigez que ce soit la dernière. Un autre frère d\'arme se joint à vous, se moquant de l\'homme pour ses habitudes. Le glouton, enragé, fait claquer sa nourriture et se lève. Son estomac, cependant, se balance à un rythme différent de celui du reste de son corps et l\'homme plutôt gras s\'écroule dans un tas de membres agités. Alors que le reste de la compagnie rit, on ne peut s\'empêcher de se demander si le mercenaire n\'est pas devenu trop gros.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Drop the pork. Now.",
+					Text = "Lâchez ce porc. Maintenant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -31,7 +31,7 @@ this.glutton_gets_fat_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.Glutton.getName() + " gets fat"
+					text = _event.m.Glutton.getName() + " devient gros"
 				});
 			}
 

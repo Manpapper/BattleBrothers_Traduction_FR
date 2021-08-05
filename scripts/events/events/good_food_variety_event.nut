@@ -7,13 +7,13 @@ this.good_food_variety_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_61.png[/img]{You watch as the men chow down on plates about as colorful as the men\'s personalities. Supplying the company with such a diverse stock of food has raised their spirits as good as any victory! | A hot meal is what any man needs, but a hot meal, with a couple of sides and entrees? Well, that\'s something else entirely! Your purchases of diverse foods has the men gleefully chowing down and feeling good about life. | Food as diverse as any nobleman\'s - or close enough, anyway. That\'s what you have supplied the company and the men are supremely appreciative as they chow down.}",
+			Text = "[img]gfx/ui/events/event_61.png[/img]{Vous regardez les hommes dévorer des assiettes aussi colorées que les personnalités des hommes. Fournir à la compagnie un stock de nourriture aussi varié leur a remonté le moral aussi bien que n\'importe quelle victoire ! | Un repas chaud est ce dont tout homme a besoin, mais un repas chaud, avec quelques accompagnements et entrées ? Eh bien, c\'est tout autre chose ! Grâce à vos achats d\'aliments variés, les hommes se régalent et se sentent bien dans leur peau. | Une nourriture aussi variée que celle de n\'importe quel noble, ou assez proche, en tout cas. C\'est ce que vous avez fourni à la compagnie et les hommes sont extrêmement reconnaissants lorsqu\'ils se régalent.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Enjoy.",
+					Text = "Profitez en.",
 					function getResult( _event )
 					{
 						return 0;
@@ -33,11 +33,11 @@ this.good_food_variety_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getSkills().hasSkill("trait.gluttonous") || bro.getSkills().hasSkill("trait.fat"))
 					{
-						bro.improveMood(2.0, "Very much appreciated the food variety");
+						bro.improveMood(2.0, "A beaucoup apprécié la variété des aliments");
 					}
 					else
 					{
-						bro.improveMood(1.0, "Appreciated the food variety");
+						bro.improveMood(1.0, "A apprécié la variété des aliments");
 					}
 
 					if (bro.getMoodState() >= this.Const.MoodState.Neutral)
