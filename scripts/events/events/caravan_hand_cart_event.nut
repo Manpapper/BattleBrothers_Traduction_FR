@@ -9,7 +9,7 @@ this.caravan_hand_cart_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_55.png[/img]Vous rencontrez l\'ancien ouvrier de la caravane, %caravanhand%, qui s\'occupe du chariot de la compagnie. Il cloue une planche de bois au lit du chariot et utilise des épingles pour la mettre sur un rouleau. La planche peut alors descendre du wagon en tirant un peu et en appuyant sur l\'interrupteur. Plutôt ingénieux. Cela vous permettra de charger davantage sur le chariot.",
+			Text = "[img]gfx/ui/events/event_55.png[/img]Vous rencontrez l\'ancien employé de la caravane, %caravanhand%, qui s\'occupe du chariot de la compagnie. Il cloue une planche de bois au lit du chariot et utilise des épingles pour la mettre sur un rouleau. La planche peut alors descendre du wagon en tirant un peu et en appuyant sur l\'interrupteur. Plutôt ingénieux. Cela vous permettra de charger davantage sur le chariot.",
 			Image = "",
 			List = [],
 			Characters = [],

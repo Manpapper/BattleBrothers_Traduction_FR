@@ -10,13 +10,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%graverobber% the grimy graverobber enters your tent with his hands behind his back. You don\'t wish to delay what madness has been brought before you much longer, so you go ahead and ask what the man wants.%SPEECH_ON%Sir... I\'ve... I\'ve gotten word that a local baron - a wealthy man, indeed! - has been recently put to rest in a graveyard not far from here.%SPEECH_OFF%Leaning back in your chair, you give the man a shrug. He continues.%SPEECH_ON%I... I don\'t wish to ask the other men to help, for they look at me like some sort of horrid thing. But you... you\'re different. You hired me after all.%SPEECH_OFF%You lean forward, drawing your armor taught and the chair beneath you to a groaning wooden whine.%SPEECH_ON%Let me guess: you want me to help you dig up this baron\'s grave.%SPEECH_OFF%The man grins, a pathetic sight, one that reminds you of the time you scolded a dog for stealing a biscuit.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%graverobber% le sinistre pilleur de tombes entre dans votre tente, les mains derrière le dos. Vous ne souhaitez pas retarder plus longtemps la folie qui vous a été présentée, alors vous allez de l\'avant et demandez ce que l\'homme veut.%SPEECH_ON%Monsieur... J\'ai... On m\'a dit qu\'un baron local - un homme riche, en effet ! - a été récemment enterré dans un cimetière non loin d\'ici.%SPEECH_OFF%En vous penchant sur votre chaise, vous donnez à l\'homme un haussement d\'épaules. Il continue.%SPEECH_ON%I... Je ne souhaite pas demander l\'aide des autres hommes, car ils me regardent comme une sorte de chose horrible. Mais vous... vous êtes différent. Vous m\'avez engagé après tout.%SPEECH_OFF%Vous vous penchez en avant, tirant votre armure et la chaise sous vous à un grincement de bois.%SPEECH_ON%Laissez-moi deviner : vous voulez que je vous aide à creuser la tombe de ce baron.%SPEECH_OFF%L\'homme sourit, un spectacle pathétique, qui vous rappelle la fois où vous avez grondé un chien pour avoir volé un biscuit.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Uh, maybe some other time.",
+					Text = "Euh, peut-être une autre fois.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -31,7 +31,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I\'m not going to, and neither are you.",
+					Text = "Je ne vais pas le faire, et toi non plus.",
 					function getResult( _event )
 					{
 						return "D";
@@ -39,7 +39,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I\'ll go get my shovel!",
+					Text = "Je vais chercher ma pelle !",
 					function getResult( _event )
 					{
 						return "E";
@@ -55,13 +55,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_33.png[/img]Having excused yourself from the excavating expedition, you get back to work. Time flies, millmoths arcing in rote loops about a candle that droops lower and lower, its glassy flame so easily flicked to the wingbeats of the creatures about it. Finally, %graverobber% returns, heaving a bit of a chest into the tent. He looks more mud than man.%SPEECH_ON%I got it, sir!%SPEECH_OFF%The graverobber quickly looks behind himself, then says again, his voice a bit quieter this time.%SPEECH_ON%I got it... I got all of it. Look, I\'ll split it with you. I mean, you didn\'t help me avoid the watchman, or shovel up the earth, or drag the body out, or drag the chest out, or put the coffin back in its place, or put the dirt back on the coffin, or avoid the watchman a second time, or drag the chest all the way into camp... but you did let me do it!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Après vous être excusé de l\'expédition de fouilles, vous vous remettez au travail. Le temps s\'écoule, les papillons de nuit décrivant des boucles répétitives autour d\'une bougie qui s\'abaisse de plus en plus, sa flamme claire s\'adaptant si facilement aux battements d\'ailes des créatures qui l\'entourent. Finalement, %graverobber% revient, soulevant un bout de coffre dans la tente. Il ressemble plus à de la boue qu\'à un homme.%SPEECH_ON%Je l\'ai, monsieur !%SPEECH_OFF%Le fossoyeur regarde rapidement derrière lui, puis répète, la voix un peu plus faible cette fois.%SPEECH_ON%Je l\'ai... Je les ai tous. Ecoute, je vais partager avec toi. Je veux dire, tu ne m\'as pas aidé à éviter le gardien, ni à ramasser la terre, ni à sortir le corps, ni à sortir le coffre, ni à remettre le cercueil à sa place, ni à remettre la terre sur le cercueil, ni à éviter le gardien une seconde fois, ni à traîner le coffre jusqu\'au camp... mais tu m\'as laissé faire !%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That\'s right.",
+					Text = "C\'est vrai.",
 					function getResult( _event )
 					{
 						return 0;
@@ -78,7 +78,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 					}
 				];
 			}
@@ -86,13 +86,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_33.png[/img]Having excused yourself from the excavating expedition, you get back to work. Time flies, millmoths arcing in rote loops about a candle that droops lower and lower, its glassy flame so easily flicked to the wingbeats of the creatures about it. Finally, %graverobber% returns, the first sign of him the edge of your tent flap moving just so. You set your quillpen down and ask the man to enter. He does so, rather tentatively, as a man about to cross a threshold he\'d rather not. Even in the dim candlelight you can see the colors darkness is so ordinarily good at hiding: purples and blues and dark reds. He grins sheepishly.%SPEECH_ON%They, uh, caught me sir.%SPEECH_OFF%You nod.%SPEECH_ON%Yes, I can see that.%SPEECH_OFF%The man quickly raises a finger, a slop of mud flying waywardly into nowhere but a wet sound.%SPEECH_ON%But next time!%SPEECH_OFF%You stop the man with a raised hand.%SPEECH_ON%How about you go get patched up and then we\'ll talk about this \'next time\', yeah?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Après vous être excusé de l\'expédition de fouilles, vous vous remettez au travail. Le temps s\'écoule, les papillons de nuit décrivant des boucles répétitives autour d\'une bougie qui s\'abaisse de plus en plus, sa flamme claire s\'adaptant si facilement aux battements d\'ailes des créatures qui l\'entourent. Finalement, %graverobber% revient, le premier signe de son retour étant le bord du rabat de votre tente qui bouge juste comme il faut. Vous posez votre couette et demandez à l\'homme d\'entrer. Il le fait, plutôt timidement, comme un homme sur le point de franchir un seuil qu\'il préférerait ne pas franchir. Même à la faible lueur des bougies, vous pouvez voir les couleurs que l\'obscurité sait si bien cacher : des violets, des bleus et des rouges sombres. Il sourit d\'un air penaud.%SPEECH_ON%Ils, euh, m\'ont attrapé monsieur.%SPEECH_OFF%Vous hochez la tête.%SPEECH_ON%Oui, je peux voir ça.%SPEECH_OFF%L\'homme lève rapidement un doigt, un filet de boue volant vers nulle part, puis un bruit humide.%SPEECH_ON%Mais la prochaine fois !%SPEECH_OFF%Vous arrêtez l\'homme avec une main levée.%SPEECH_ON%Et si tu allais te faire soigner et qu\'on parle ensuite de cette \"Prochaine Fois\", hein ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "And see that you don\'t fling anymore mud around on your way out.",
+					Text = "Et veille à ne pas jeter plus de boue en sortant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -123,7 +123,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 					});
 				}
 
-				_event.m.Graverobber.worsenMood(0.5, "Got beaten up in " + _event.m.Town.getName());
+				_event.m.Graverobber.worsenMood(0.5, "S\'est fait tabasser dans " + _event.m.Town.getName());
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Graverobber.getMoodState()],
@@ -134,13 +134,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%townname% is not the pillar upon which you wish to sacrifice your good standing in the world - or at least, what good standing a mercenary can have. You tell %graverobber% that not only will you not be accompanying him, but that you refuse to let him go off and do this alone. He pouts like a young hunter whose bow has been taken away by an angry father.%SPEECH_ON%Well... alright then... I suppose it was only riches...%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%townname% n\'est pas le pilier sur lequel vous souhaitez sacrifier votre bonne réputation dans le monde - ou du moins, la bonne réputation qu\'un mercenaire peut avoir. Vous dites à %graverobber% que non seulement vous ne l\'accompagnerez pas, mais que vous refusez de le laisser se débrouiller seul. Il boude comme un jeune chasseur à qui un père en colère a retiré son arc.%SPEECH_ON%Bien... d\'accord alors... Je suppose que ce n\'était que quelques Couronnes...%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Get back to work.",
+					Text = "Retourne au travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -151,7 +151,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Graverobber.getImagePath());
-				_event.m.Graverobber.worsenMood(1.0, "Was forbidden to rob a grave");
+				_event.m.Graverobber.worsenMood(1.0, "Il lui a été interdit de piller une tombe");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Graverobber.getMoodState()],
@@ -162,13 +162,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_33.png[/img]You and %graverobber% stalk low through the bushes, a gangly duo of absurdity, silhouettes murky and ruminating of obvious hijinks even in the darkest of nights. The two of you enter the graveyard as though you were to happen about it by accident, merrily pretending that what is to unfold next would surely not come from two stranges such as yourselves.\n\n About the graveyard are rows and rows of gray slabs and marbled statues with no faces and black iron gates that hee-hawed in the wind. Tall grass everywhere, fertilizer in abundance. Flowers homegrown and others laid down from elsewhere, and some a bit of both.\n\nPursing his lips, the graverobber turns about. He stabs his shovel into the ground and puts his fists to his hips.%SPEECH_ON%Goddammit.%SPEECH_OFF%Sensing something off, you ask what\'s wrong. He spits and answers.%SPEECH_ON%I can\'t \'member if it is that grave, that one, or that one.%SPEECH_OFF%He points to three different sites: one is a modest little stone, bleached and balded to commemorate a death; another is gated with gothic spires; another is but a door to a mausoleum. The graverobber turns to you.%SPEECH_ON%We probably don\'t have much time here, which grave you think it be?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Vous et %graverobber% marchez à ras de terre à travers les buissons, un duo absurde, aux silhouettes sombres et ruminant d\'évidentes facéties, même dans la nuit la plus noire. Vous entrez tous les deux dans le cimetière comme si vous l\'aviez découvert par hasard, prétendant joyeusement que ce qui va se passer ensuite ne viendrait sûrement pas de deux étranges comme vous.\n\n Autour du cimetière, il y a des rangées et des rangées de dalles grises, des statues marbrées sans visage et des portes en fer noir qui gémissent dans le vent. De l\'herbe haute partout, de l\'engrais en abondance. Des fleurs qui ont grandis en intérieur, d\'autres en extérieur seulement, et certaines un peu des deux. Se pinçant les lèvres, le fossoyeur se retourne. Il plante sa pelle dans le sol et met ses poings sur ses hanches.%SPEECH_ON%Bordel de merde.%SPEECH_OFF%Sentant que quelque chose ne va pas, vous demandez ce qui ne va pas. Il crache et répond.%SPEECH_ON%Je n\'arrive pas à savoir si c\'est cette tombe, celle-là, ou celle-là.%SPEECH_OFF%Il désigne trois sites différents : l\'un est une modeste petite pierre, blanchie et dégarnie pour commémorer un décès ; un autre est clôturé par des flèches gothiques ; un autre n\'est que la porte d\'un mausolée. Le fossoyeur se tourne vers vous.%SPEECH_ON%Nous n\'avons probablement pas beaucoup de temps ici, quel tombe pensez-vous être la bonne?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll dig up the motley grave.",
+					Text = "Nous allons déterrer la tombe hétéroclite.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 66)
@@ -183,7 +183,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ll break past the gothic fence.",
+					Text = "On va prend celle avec la barrière gothique.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 66)
@@ -198,7 +198,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ll break into the mausoleum.",
+					Text = "Nous allons nous introduire dans le mausolée.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 66)
@@ -221,13 +221,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_33.png[/img]You and %graverobber% stalk low through the bushes, a gangly duo of absurdity, silhouettes murky and ruminating of obvious hijinks even in the darkest of nights. The two of you enter the graveyard as though you were to happen about it by accident, merrily pretending that what is to unfold next would surely not come from two stranges such as yourselves.\n\n About the graveyard are rows and rows of gray slabs and marbled statues with no faces and black iron gates that hee-hawed in the wind. Tall grass everywhere, fertilizer in abundance. Flowers homegrown and others laid down from elsewhere, and some a bit of both.\n\nPursing his lips, the graverobber turns about. He stabs his shovel into the ground and puts his fists to his hips.%SPEECH_ON%Goddammit.%SPEECH_OFF%Sensing something off, you ask what\'s wrong. He spits and answers.%SPEECH_ON%I can\'t \'member if it is that grave, that one, or that one.%SPEECH_OFF%He points to three different sites: one is a modest little stone, bleached and balded to commemorate a death; another is gated with gothic spires; another is but a door to a mausoleum. The graverobber turns to you.%SPEECH_ON%We probably don\'t have much time here, which grave you think it be?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Vous et %graverobber% commencez à creuser, tout ce que vous finissez par trouver c\'est de la terre et des os.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "All for naught.",
+					Text = "Tout ça pour rien.",
 					function getResult( _event )
 					{
 						return 0;
@@ -238,7 +238,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Graverobber.getImagePath());
-				_event.m.Graverobber.worsenMood(0.5, "Had no success robbing a grave with you");
+				_event.m.Graverobber.worsenMood(0.5, "N\'a pas réussi à piller une tombe avec vous");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Graverobber.getMoodState()],
@@ -249,13 +249,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_33.png[/img]With a swift crack of your spade, the gothic gate is broken open. The twang of metal on metal is sent grumbling between the gravestones and swaying tree branches seem to snicker at your rather loud trespass. When you swing the gate open, the hinges squall as if they themselves were awakened spirits. You enter the little square plot and lean against the spires of the fence. A short order gets %graverobber% to work while you keep a look out like a man unimpressed by the nature of his own crimes. Some minutes of scrupulous shoveling later and the robber of graves is finished. What ends up being found is a very large coffin that has no hopes of being dragged out of the ground, not with just two men anyway.\n\n Using the same manner with which you dealt the gate a blow, you break the latches off the casket and throw it open. A freshly-dead man stares back up at you, two stones painted with eyes rolling away from his sockets. The sight startles you, but you quickly start rifling through the dead man\'s baggage. As it turns out, %graverobber% was right: the man was buried with great satchels of gold and goblets and golden goblets. You take it all, close the casket, and sneak back out of the graveyard.",
+			Text = "[img]gfx/ui/events/event_33.png[/img]D\'un coup de bêche, la porte gothique est ouverte. Le tintement du métal sur le métal est envoyé en grondant entre les pierres tombales et les branches des arbres qui se balancent semblent ricaner de votre intrusion plutôt bruyante. Lorsque vous ouvrez le portail, les gonds grincent comme s\'ils étaient eux-mêmes des esprits éveillés. Vous entrez dans la petite parcelle carrée et vous vous appuyez sur les flèches de la clôture. Une courte commande met %graverobber% au travail tandis que vous restez à l\'affût comme un homme peu impressionné par la nature de ses propres crimes. Quelques minutes de pelletage scrupuleux plus tard, le pilleur de tombes a terminé. Ce qu\'on finit par trouver, c\'est un très grand cercueil qui n\'a aucun espoir d\'être sorti de terre, pas avec seulement deux hommes en tout cas.\n\n De la même manière que vous avez porté un coup à la porte, vous brisez les loquets du cercueil et vous l\'ouvrez. Un homme fraîchement mort vous regarde fixement, deux pierres peintes avec des yeux roulant hors de ses orbites. La vue vous fait sursauter, mais vous commencez rapidement à fouiller dans les affaires du mort. Il s\'avère que %graverobber% avait raison : l\'homme a été enterré avec de grands sacs d\'or et des gobelets et des gobelets en or. Vous prenez tout, refermez le cercueil et sortez discrètement du cimetière.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Treasures!",
+					Text = "Trésors!",
 					function getResult( _event )
 					{
 						return 0;
@@ -272,10 +272,10 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 					}
 				];
-				_event.m.Graverobber.improveMood(1.0, "Found treasure while robbing a grave");
+				_event.m.Graverobber.improveMood(1.0, "A trouvé un trésor en pillant une tombe");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Graverobber.getMoodState()],
@@ -286,13 +286,13 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "H",
-			Text = "[img]gfx/ui/events/event_33.png[/img]You enter the mausoleum like a man fearful that the door behind him might forever snap closed. The coffin rests on a slab of marble with candles burning about its four corners. While there was no wind outside, you can\'t help but hear a faint moan of it circling about the room. Shaking away your fears, you and %graverobber% push the casket\'s lid off, careful not to let it drop off the otherside and presumably wake half the town.\n\n Inside the sarcophagus, you find a man attired in a knight\'s clothing: a helmet, chest plate, and shield. His sword crosses his body from neck to groin, his hands clasped around the handle in a battle-ready embrace. You look to %graverobber% who shrugs.%SPEECH_ON%Suppose this fella was a knight.%SPEECH_OFF%You nod. The graverobber glances from dead man to living.%SPEECH_ON%Suppose... this knight don\'t need that stuff no more...%SPEECH_OFF%Seeing as how you don\'t plan to leave empty handed, you nod again. The dead knight puts up quite the fight as %graverobber% struggles to free him of that which he no longer needs. After a few minutes of battle, you lend a hand in removing the helmet. What falls out is a great bundle of blonde hair. %graverobber% steps back.%SPEECH_ON%That\'s a woman!%SPEECH_OFF%Suddenly, voices rise up from outside the graveyard. You grab all the things you can and tell the graverobber to start running.",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Vous entrez dans le mausolée comme un homme qui craint que la porte derrière lui ne se referme à jamais. Le cercueil repose sur une dalle de marbre et des bougies brûlent à ses quatre coins. Bien qu\'il n\'y ait pas de vent à l\'extérieur, vous ne pouvez vous empêcher d\'en entendre un faible gémissement qui tourne autour de la pièce. Secouant vos craintes, vous et %graverobber% poussez le couvercle du cercueil, en prenant soin de ne pas le laisser tomber de l\'autre côté et de ne pas réveiller la moitié de la ville.\n\n À l\'intérieur du sarcophage, vous trouvez un homme vêtu d\'une tenue de chevalier : un casque, un plastron et un bouclier. Son épée traverse son corps du cou à l\'aine, ses mains se refermant autour de la poignée dans une étreinte prête au combat. Vous regardez %graverobber% qui hausse les épaules.%SPEECH_ON%Je suppose que ce type était un chevalier.%SPEECH_OFF%Vous acquiescez. Le pilleur de tombes jette un coup d\'œil du mort au vivant.%SPEECH_ON%Je suppose que... ce chevalier n\'a plus besoin de ces trucs...%SPEECH_OFF%Comme vous n\'avez pas l\'intention de partir les mains vides, vous acquiescez à nouveau. Le chevalier mort se défend bien alors que %graverobber% se bat pour le libérer de ce dont il n\'a plus besoin. Après quelques minutes de combat, vous donnez un coup de main pour enlever le casque. Ce qui en tombe est un gros paquet de cheveux blonds. %graverobber% recule.%SPEECH_ON%C\'est une femme%SPEECH_OFF%Soudain, des voix s\'élèvent de l\'extérieur du cimetière. Vous attrapez tout ce que vous pouvez et dites au pilleur de tombes de commencer à courir.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Treasures!",
+					Text = "Trésors!",
 					function getResult( _event )
 					{
 						return 0;
@@ -326,7 +326,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 					icon = "ui/items/" + item.getIcon(),
 					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
-				_event.m.Graverobber.improveMood(1.0, "Found treasure while robbing a grave");
+				_event.m.Graverobber.improveMood(1.0, "A trouvé un trésor en pillant une tombe");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Graverobber.getMoodState()],
@@ -337,16 +337,16 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "I",
-			Text = "[img]gfx/ui/events/event_33.png[/img]Just as you take your shovel into hand, a man\'s voice calls out to you.%SPEECH_ON%Just what in the hell do you think y\'all are doing?%SPEECH_OFF%You wheel around to see a man lighting a lantern. He holds it up, the handle creaking as it swivels back and forth.%SPEECH_ON%Y\'all look like graverobbers to me.%SPEECH_OFF%%graverobber% unsheathes a knife from his belt. The watchman unsheathes a bell from his own belt, a large, rotund instrument that glistens gold on the side of the lantern\'s light and white on the side of the moon\'s.%SPEECH_ON%Come after me ye may, but not before I give this here bell a good ringing. Then the next bell you\'ll hear shall toll for thee.%SPEECH_OFF%You grab %graverobber% by the collar and tell him to leave. There\'s no sense in causing trouble. The watchman barks at you as you depart.%SPEECH_ON%I\'ll remember yer faces! Like a kicked dog knows the boot that done did it, I\'ll remember yer faces!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Au moment où vous prenez votre pelle en main, la voix d\'un homme vous interpelle.%SPEECH_ON%Mais qu\'est-ce que vous pensez que vous faites ?%SPEECH_OFF%Vous vous retournez pour voir un homme qui allume une lanterne. Il la tient en l\'air, la poignée grince en pivotant d\'avant en arrière.%SPEECH_ON%Vous ressemblez à des fossoyeurs pour moi.%SPEECH_OFF%%graverobber% dégaine un couteau de sa ceinture. Le veilleur dégaine une cloche de sa ceinture, un grand instrument rondouillard qui brille d\'or du côté de la lumière de la lanterne et de blanc du côté de celle de la lune.%SPEECH_ON%Vous pouvez m\'attaque, mais pas avant que j\'aie fait sonner cette cloche. Alors la prochaine cloche que vous entendrez sonnera pour vous.%SPEECH_OFF%Vous attrapez %graverobber% par le col et lui dites de partir. Il n\'y a pas de raison de causer des problèmes. Le gardien vous aboie dessus lorsque vous partez.%SPEECH_ON%Je me souviendrai de vos visages ! Comme un chien battu connaît la botte qui l\'a frappé, je me souviendrai de vos visages !%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Embarrassing.",
+					Text = "Embarrassant.",
 					function getResult( _event )
 					{
-						this.World.FactionManager.getFaction(_event.m.Town.getFactions()[0]).addPlayerRelation(this.Const.World.Assets.RelationOffense, "You and your men attempted to rob a local grave");
+						this.World.FactionManager.getFaction(_event.m.Town.getFactions()[0]).addPlayerRelation(this.Const.World.Assets.RelationOffense, "Vous et vos hommes avez tenté de voler une tombe locale");
 						this.World.Assets.addMoralReputation(-1);
 						return 0;
 					}
@@ -356,7 +356,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Graverobber.getImagePath());
-				_event.m.Graverobber.worsenMood(0.5, "Was caught trying to rob a grave");
+				_event.m.Graverobber.worsenMood(0.5, "A été pris en train d\'essayer de piller une tombe");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Graverobber.getMoodState()],

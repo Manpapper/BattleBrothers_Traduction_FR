@@ -12,13 +12,13 @@ this.graverobber_finds_item_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_33.png[/img]The weather is nice. A fine evening, if any, for the moon to be where it is: an orange rind of it slipping in and out of the clouds - clouds that pass by on the seemingly innocuous gesture that a light breeze can have. So bright is this rim of a moon you wonder if any flowers might bloom, mistaking the evening light for its brighter cousin. You wonder if the millmoths and flies and armor-backed beetles see the moon and dance toward it as they would any candle or torch. Do they have that quiet desperation? That inescapable cruelty of realizing that, when your stock is placed against the greater whole, you have and are nothing... and the hatred that realization can bring, and the jealousy...\n\n Suddenly, %graverobber% the graverobber appears by your side, his smell skewering your thoughts with miasmic proficiency. He\'s hardly a man at all, but a golem, mudslaked and grass-peppered with two white eyes peering out. Sighing, you ask what he wants. He thumbs over one shoulder, the other occupied by a shovel.%SPEECH_ON%Went digging through a grave or three. Found somethin\' and I don\'t mean just what them graves are for. Wanna come take a look?%SPEECH_OFF%Of course you do...",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Le temps est agréable. Une belle soirée, si tant est qu\'il y en ait une, pour que la lune soit là où elle est : une croûte orange qui se glisse dans les nuages et en sort - des nuages qui passent sur le geste apparemment inoffensif que peut avoir une brise légère. Ce bord de lune est si brillant que l\'on se demande si des fleurs ne vont pas éclore, confondant la lumière du soir avec sa cousine plus brillante. Vous vous demandez si les papillons de nuit, les mouches et les scarabées à dos rayé voient la lune et dansent vers elle comme ils le feraient avec une bougie ou une torche. Ont-ils ce désespoir tranquille ? Cette cruauté inéluctable de réaliser que, lorsque votre personne est placé contre le grand tout, vous n\'avez et n\'êtes rien... et la haine que cette réalisation peut apporter, et la jalousie...\n\n Soudain, %graverobber% le pilleur de tombe apparaît à vos côtés, son odeur embrouillant vos pensées avec une compétence miasmique. Ce n\'est pas vraiment un homme, mais un golem, couvert de boue et d\'herbe, avec deux yeux blancs. En soupirant, vous demandez ce qu\'il veut. Il vous regarde par-dessus une épaule, l\'autre étant occupée par une pelle.%SPEECH_ON%Je suis allé creuser dans une ou trois tombes. J\'ai trouvé quelque chose et je ne parle pas de ce à quoi servent ces tombes. Tu veux venir jeter un coup d\'oeil ?%SPEECH_OFF%Bien sûr que vous le voulez...",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see...",
+					Text = "Voyons voir...",
 					function getResult( _event )
 					{
 						return "B";
@@ -33,7 +33,7 @@ this.graverobber_finds_item_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Historian != null)
 				{
 					this.Options.push({
-						Text = "Let\'s fetch %historian% the Historian, he\'ll know about buried treasure.",
+						Text = "Allons chercher %historian% l\'Historien, il saura tout sur les trésors enfouis.",
 						function getResult( _event )
 						{
 							return "C";
@@ -46,13 +46,13 @@ this.graverobber_finds_item_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_33.png[/img]%graverobber% brings you to a big hole in the ground. The top half of a skeleton is at the bottom, its arms loose over the earth as though it had bedded there for a night\'s rest. Empty eye sockets look up at you. The graverobber crouches and grabs something. He wipes the mud and worms off it and hands it over.%SPEECH_ON%I think we can use that.%SPEECH_OFF%You nod, but tell the man to quickly fill the grave before anyone sees what he\'s done.",
+			Text = "[img]gfx/ui/events/event_33.png[/img]%graverobber% vous amène à un grand trou dans le sol. La moitié supérieure d\'un squelette se trouve au fond, les bras relâchés sur la terre comme s\'il s\'était couché là pour une nuit de repos. Des orbites vides vous regardent. Le fossoyeur s\'accroupit et attrape quelque chose. Il essuie la boue et les vers et vous le donne.%SPEECH_ON%Je pense que nous pouvons l\'utiliser.%SPEECH_OFF%Vous acquiescez, mais dites à l\'homme de remplir rapidement la tombe avant que quelqu\'un ne voit ce qu\'il a fait.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "He won\'t be needing that anymore.",
+					Text = "Il n\'en a plus besoin.",
 					function getResult( _event )
 					{
 						return 0;
@@ -110,13 +110,13 @@ this.graverobber_finds_item_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_33.png[/img]While looking down at the goods, %historian% the rather astute scholar and historian sidles up next to you. He\'s rubbing his chin and a faint hum ruminates deeply within him.%SPEECH_ON%Yes, yes...%SPEECH_OFF%You turn to him to ask what he\'s going on about. He snaps his fingers and points down at what the graverobber had found. He explains that this isn\'t just any chest plate or weapon, but indeed the gear of a famous fighter, nobleman, and womanizer, %noblename%.",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Tout en regardant les marchandises, %historian%, l\'érudit et historien plutôt avisé, s\'approche de vous. Il se frotte le menton et un léger ronronnement rumine profondément en lui.%SPEECH_ON%Oui, oui...%SPEECH_OFF%Vous vous tournez vers lui pour lui demander de quoi il s\'agit. Il claque des doigts et vous montre du doigt ce que le pilleur de tombes a trouvé. Il explique que ce n\'est pas n\'importe quelle plaque de poitrine ou arme, mais bien l\'équipement d\'un célèbre combattant, noble et coureur de jupons, %noblename%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Fascinating.",
+					Text = "Fascinant.",
 					function getResult( _event )
 					{
 						return 0;
