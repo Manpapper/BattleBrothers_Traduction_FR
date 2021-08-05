@@ -1246,7 +1246,7 @@ gt.Const.Strings.InventoryHeader <- [
 gt.Const.Strings.InventoryUpgradeHeader <- [
 	"Acheter une Charette",
 	"Acheter un Chariot",
-	"Acheter un grand Wagon"
+	"Acheter un grand Chariot"
 ];
 gt.Const.Strings.InventoryUpgradeText <- [
 	"acheter une charette",
