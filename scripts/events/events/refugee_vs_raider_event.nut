@@ -35,7 +35,7 @@ this.refugee_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury1.getIcon(),
-						text = _event.m.Refugee.getName() + " suffers " + injury1.getNameOnly()
+						text = _event.m.Refugee.getName() + " souffre de " + injury1.getNameOnly()
 					});
 				}
 				else
@@ -44,7 +44,7 @@ this.refugee_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Refugee.getName() + " suffers light wounds"
+						text = _event.m.Refugee.getName() + " souffre de blessures légères"
 					});
 				}
 
@@ -61,7 +61,7 @@ this.refugee_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury2.getIcon(),
-						text = _event.m.Raider.getName() + " suffers " + injury2.getNameOnly()
+						text = _event.m.Raider.getName() + " souffre de " + injury2.getNameOnly()
 					});
 				}
 				else
@@ -70,7 +70,7 @@ this.refugee_vs_raider_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Raider.getName() + " suffers light wounds"
+						text = _event.m.Raider.getName() + " souffre de blessures légères"
 					});
 				}
 			}

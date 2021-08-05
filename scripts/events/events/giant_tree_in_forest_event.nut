@@ -9,13 +9,13 @@ this.giant_tree_in_forest_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 200.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You pass through a wall of shrubs and find yourself stopped by quite a sight. To call it a tree would seem insulting. The trees about it are so low beneath their neighbor they appear to be bending at midtrunk, swearing fealty to that which is arboreally suzerain, a domain rippled with roots as thick as any man, and enough shade above to lose time between the days and night.\n\n You walk to the base of the enormity and run a hand along its bark, but then you stop, fearing that your flesh may have just trespassed upon holy ground like a child tumbling playfully into a church of one wholly quiet crowd. %monk% the monk comes to your side nodding and with his hands firmly behind his back.%SPEECH_ON%This is a godtree. The roots go through the earth and into the realm of the gods. It is said they once listened, but now... we are not so sure.%SPEECH_OFF%You stare at the man, and his particularly withheld posture, and ask if he fears the tree. He smiles at you and shakes his head.%SPEECH_ON%I respect it like a man would the sea, for the waters of the oceans hold many things to fear and, yet, the sailor sails anyway. Were the ocean a docile beast, would man refer to it so lovingly?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous passez à travers un mur d\'arbustes et vous vous retrouvez arrêté par un sacré spectacle. L\'appeler un arbre serait insultant. Les arbres qui l\'entourent sont si bas sous leur voisin qu\'ils semblent plier à mi-tronc, jurant fidélité à ce qui est arboricolement suzerain, un domaine ondulé de racines aussi épaisses que n\'importe quel homme, et suffisamment d\'ombre au-dessus pour perdre la notion du temps entre les jours et la nuit.\n\n Vous marchez jusqu\'à la base de l\'énormité et passez une main le long de son écorce, mais vous vous arrêtez, craignant que votre chair ne vienne empiéter sur cette terre sainte, comme un enfant qui tombe en jouant dans l\'église d\'une foule totalement silencieuse. %monk% s\'approche de vous en hochant la tête et en plaçant ses mains derrière son dos.%SPEECH_ON%C\'est un arbre divin. Ses racines traversent la terre et pénètrent dans le royaume des dieux. On dit qu\'ils écoutaient autrefois, mais maintenant... on n\'en est plus si sûrs.%SPEECH_OFF%Vous fixez l\'homme, et sa posture particulièrement détendue, et lui demandez s\'il a peur de l\'arbre. Il vous sourit et secoue la tête.%SPEECH_ON%Je le respecte comme un homme respecte la mer, car les eaux des océans recèlent bien des choses à craindre et pourtant, le marin navigue quand même. Si l\'océan était une bête docile, l\'homme le traiterait-il avec autant d\'amour ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Fascinating.",
+					Text = "Fascinant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -25,7 +25,7 @@ this.giant_tree_in_forest_event <- this.inherit("scripts/events/event", {
 			],
 			function start( _event )
 			{
-				_event.m.Monk.improveMood(2.0, "Saw a godtree with his own eyes");
+				_event.m.Monk.improveMood(2.0, "A vu un arbre-dieu de ses propres yeux.");
 
 				if (_event.m.Monk.getMoodState() >= this.Const.MoodState.Neutral)
 				{

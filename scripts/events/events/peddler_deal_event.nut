@@ -116,7 +116,7 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.Peddler.getName() + " suffers light wounds"
+					text = _event.m.Peddler.getName() + " souffre de blessures légeres"
 				});
 				_event.m.Peddler.worsenMood(2, "Failed in his plan and lost a large amount of money");
 

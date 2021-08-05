@@ -190,7 +190,7 @@ this.adopt_wardog_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Bro.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Bro.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 			}

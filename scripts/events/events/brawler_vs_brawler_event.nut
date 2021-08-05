@@ -61,7 +61,7 @@ this.brawler_vs_brawler_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury2.getIcon(),
-						text = _event.m.Brawler2.getName() + " suffers " + injury2.getNameOnly()
+						text = _event.m.Brawler2.getName() + " souffre de " + injury2.getNameOnly()
 					});
 				}
 				else
@@ -70,7 +70,7 @@ this.brawler_vs_brawler_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Brawler2.getName() + " suffers light wounds"
+						text = _event.m.Brawler2.getName() + " souffre de blessures légères"
 					});
 				}
 

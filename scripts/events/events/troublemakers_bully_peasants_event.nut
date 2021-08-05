@@ -239,7 +239,7 @@ this.troublemakers_bully_peasants_event <- this.inherit("scripts/events/event", 
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Peacekeeper.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Peacekeeper.getName() + " souffre de " + injury.getNameOnly()
 				});
 				_event.m.Peacekeeper.worsenMood(2.0, "Was humiliated in front of the company");
 

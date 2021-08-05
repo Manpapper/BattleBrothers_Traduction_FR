@@ -10,13 +10,13 @@ this.gambler_vs_other_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{%gambler% and %nongambler% walk up to mottled with bruises. It appears they\'ve been in a bit of a scuffle. Seeing as how neither one is dead, you don\'t really care what it was over, but they tell you anyway.\n\nApparently the gambler took some money in a bit of sly cardsmanship. You ask either man if the company\'s money was involved. They say no. You ask what the hell they want from you then. | A game of cards comes to a table-flipping end when %nongambler% jumps off his stool and launches a tirade at %gambler%. The professional gambler looks around with sheepish incredulity. How could such a man come into so much money over a game of cards, he asks, but when his hands go up to feign confusion a few \'extra\' cards slip out of his sleeves. The ensuing battle is amusing, but you put a stop to it before anyone gets seriously hurt.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{%gambler% et %nongambler% s\'avancent tachetés d\'ecchymoses. Il semble qu\'il y ait eu une petite bagarre. Vu qu\'aucun des deux n\'est mort, vous ne vous souciez pas vraiment de ce qui s\'est passé, mais ils vous le disent quand même.\n\nApparemment, le joueur a pris de l\'argent en jouant sournoisement aux cartes. Vous demandez aux deux hommes si l\'argent de la compagnie est impliqué. Ils répondent que non. Vous demandez ce qu\'ils veulent de vous alors. | Une partie de cartes se termine par un renversement de table lorsque %nongambler% saute de son tabouret et lance une tirade à %gambler%. Le joueur professionnel regarde autour de lui avec une incrédulité penaude. Comment un tel homme a-t-il pu gagner autant d\'argent avec un jeu de cartes, se demande-t-il, mais lorsque ses mains se lèvent pour feindre la confusion, quelques cartes "supplémentaires" sortent de ses manches. La bataille qui s\'ensuit est amusante, mais vous l\'arrêtez avant que quelqu\'un ne soit sérieusement blessé.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Save it for battle.",
+					Text = "Gardez-la pour la bataille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -35,7 +35,7 @@ this.gambler_vs_other_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Gambler.getName() + " suffers light wounds"
+						text = _event.m.Gambler.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -44,7 +44,7 @@ this.gambler_vs_other_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Gambler.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Gambler.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 
@@ -54,7 +54,7 @@ this.gambler_vs_other_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.DumbGuy.getName() + " suffers light wounds"
+						text = _event.m.DumbGuy.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -63,7 +63,7 @@ this.gambler_vs_other_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.DumbGuy.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.DumbGuy.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 			}

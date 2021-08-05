@@ -72,12 +72,12 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury1.getIcon(),
-					text = _event.m.Noble.getName() + " suffers " + injury1.getNameOnly()
+					text = _event.m.Noble.getName() + " souffre de " + injury1.getNameOnly()
 				});
 				this.List.push({
 					id = 10,
 					icon = injury2.getIcon(),
-					text = _event.m.Lowborn.getName() + " suffers " + injury2.getNameOnly()
+					text = _event.m.Lowborn.getName() + " souffre de " + injury2.getNameOnly()
 				});
 			}
 

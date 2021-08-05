@@ -112,7 +112,7 @@ this.wildman_testing_money_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.OtherGuy.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.OtherGuy.getName() + " souffre de " + injury.getNameOnly()
 				});
 
 				if (_event.m.Item != null)

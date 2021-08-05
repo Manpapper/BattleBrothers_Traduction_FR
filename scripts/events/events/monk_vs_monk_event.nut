@@ -146,7 +146,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Monk1.getName() + " suffers light wounds"
+						text = _event.m.Monk1.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -155,7 +155,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Monk1.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Monk1.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 
@@ -165,7 +165,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Monk2.getName() + " suffers light wounds"
+						text = _event.m.Monk2.getName() + " souffre de blessures légères"
 					});
 				}
 				else
@@ -174,7 +174,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Monk2.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Monk2.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 			}

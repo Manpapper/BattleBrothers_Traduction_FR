@@ -69,7 +69,7 @@ this.juggler_tempts_fate_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Juggler.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Juggler.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 				_event.m.Juggler.worsenMood(1.0, "Failed his act and injured himself");
@@ -109,7 +109,7 @@ this.juggler_tempts_fate_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Juggler.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Juggler.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 			}
@@ -139,7 +139,7 @@ this.juggler_tempts_fate_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Juggler.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Juggler.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 			}

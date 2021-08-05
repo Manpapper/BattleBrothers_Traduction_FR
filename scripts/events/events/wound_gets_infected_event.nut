@@ -39,7 +39,7 @@ this.wound_gets_infected_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Injured.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Injured.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 			}

@@ -39,7 +39,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = injury.getIcon(),
-							text = _event.m.ClumsyGuy.getName() + " suffers " + injury.getNameOnly()
+							text = _event.m.ClumsyGuy.getName() + " souffre de " + injury.getNameOnly()
 						}
 					];
 				}
@@ -50,7 +50,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.ClumsyGuy.getName() + " suffers light wounds"
+						text = _event.m.ClumsyGuy.getName() + " souffre de blessures légères"
 					});
 				}
 				else if (r == 3)
@@ -61,7 +61,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = injury.getIcon(),
-							text = _event.m.ClumsyGuy.getName() + " suffers " + injury.getNameOnly()
+							text = _event.m.ClumsyGuy.getName() + " souffre de " + injury.getNameOnly()
 						}
 					];
 				}
@@ -73,7 +73,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = injury.getIcon(),
-							text = _event.m.ClumsyGuy.getName() + " suffers " + injury.getNameOnly()
+							text = _event.m.ClumsyGuy.getName() + " souffre de " + injury.getNameOnly()
 						}
 					];
 				}
@@ -85,7 +85,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = injury.getIcon(),
-							text = _event.m.ClumsyGuy.getName() + " suffers " + injury.getNameOnly()
+							text = _event.m.ClumsyGuy.getName() + " souffre de " + injury.getNameOnly()
 						}
 					];
 				}
@@ -96,7 +96,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.ClumsyGuy.getName() + " suffers light wounds"
+						text = _event.m.ClumsyGuy.getName() + " souffre de blessures légères"
 					});
 				}
 			}

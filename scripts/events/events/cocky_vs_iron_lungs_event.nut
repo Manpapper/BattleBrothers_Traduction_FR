@@ -32,7 +32,7 @@ this.cocky_vs_iron_lungs_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.Cocky.getName() + " suffers light wounds"
+					text = _event.m.Cocky.getName() + " souffre de blessures légères"
 				});
 				_event.m.Cocky.worsenMood(1.0, "A été humilié devant toute la compagnie");
 				this.List.push({

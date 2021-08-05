@@ -70,7 +70,7 @@ this.mountains_are_dangerous_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = injury.getIcon(),
-				text = bro.getName() + " suffers " + injury.getNameOnly()
+				text = bro.getName() + " souffre de " + injury.getNameOnly()
 			});
 		}
 
@@ -80,7 +80,7 @@ this.mountains_are_dangerous_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = injury.getIcon(),
-				text = lowestBro.getName() + " suffers " + injury.getNameOnly()
+				text = lowestBro.getName() + " souffre de " + injury.getNameOnly()
 			});
 		}
 

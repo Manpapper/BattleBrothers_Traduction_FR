@@ -94,7 +94,7 @@ this.archery_stunt_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Clown.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Clown.getName() + " souffre de " + injury.getNameOnly()
 				});
 				_event.m.Archer.worsenMood(2.0, "Gravement blessé " + _event.m.Clown.getName() + " par accident");
 

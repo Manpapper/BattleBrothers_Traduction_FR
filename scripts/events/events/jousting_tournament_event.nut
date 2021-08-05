@@ -250,7 +250,7 @@ this.jousting_tournament_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Jouster.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Jouster.getName() + " souffre de " + injury.getNameOnly()
 				});
 			}
 
@@ -284,7 +284,7 @@ this.jousting_tournament_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Jouster.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Jouster.getName() + " souffre de " + injury.getNameOnly()
 				});
 			}
 

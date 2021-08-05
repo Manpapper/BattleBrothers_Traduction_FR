@@ -212,7 +212,7 @@ this.imprisoned_wildman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Other.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Other.getName() + " souffre de " + injury.getNameOnly()
 				});
 			}
 
@@ -474,7 +474,7 @@ this.imprisoned_wildman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.Other.getName() + " suffers light wounds"
+					text = _event.m.Other.getName() + " souffre de blessures légeres"
 				});
 				local money = this.Math.rand(200, 500);
 				this.World.Assets.addMoney(money);

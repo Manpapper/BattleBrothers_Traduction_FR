@@ -38,7 +38,7 @@ this.graverobber_vs_gravedigger_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Graverobber.getName() + " suffers light wounds"
+						text = _event.m.Graverobber.getName() + " souffre de blessures légères"
 					});
 				}
 
@@ -58,7 +58,7 @@ this.graverobber_vs_gravedigger_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Gravedigger.getName() + " suffers light wounds"
+						text = _event.m.Gravedigger.getName() + " souffre de blessures légères"
 					});
 				}
 

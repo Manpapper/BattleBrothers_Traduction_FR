@@ -104,12 +104,12 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight1.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight1.getName() + " souffre de blessures légères"
 				});
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight2.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight2.getName() + " souffre de blessures légères"
 				});
 			}
 
@@ -147,12 +147,12 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight1.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight1.getName() + " souffre de blessures légères"
 				});
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight2.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight2.getName() + " souffre de blessures légères"
 				});
 			}
 
@@ -198,12 +198,12 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight1.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight1.getName() + " souffre de blessures légères"
 				});
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight2.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight2.getName() + " souffre de blessures légères"
 				});
 			}
 
@@ -249,12 +249,12 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight1.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight1.getName() + " souffre de blessures légères"
 				});
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.HedgeKnight2.getName() + " suffers light wounds"
+					text = _event.m.HedgeKnight2.getName() + " souffre de blessures légères"
 				});
 			}
 
@@ -354,7 +354,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/icons/days_wounded.png",
-							text = bro.getName() + " suffers light wounds"
+							text = bro.getName() + " souffre de blessures légères"
 						});
 					}
 					else
@@ -363,7 +363,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = injury.getIcon(),
-							text = bro.getName() + " suffers " + injury.getNameOnly()
+							text = bro.getName() + " souffre de " + injury.getNameOnly()
 						});
 					}
 				}
@@ -411,7 +411,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.HedgeKnight1.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.HedgeKnight1.getName() + " souffre de " + injury.getNameOnly()
 				});
 
 				if (this.Math.rand(1, 2) == 1)
@@ -480,7 +480,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.HedgeKnight2.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.HedgeKnight2.getName() + " souffre de " + injury.getNameOnly()
 				});
 
 				if (this.Math.rand(1, 2) == 1)

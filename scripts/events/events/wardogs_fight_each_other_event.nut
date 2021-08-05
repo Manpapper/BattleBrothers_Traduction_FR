@@ -230,7 +230,7 @@ this.wardogs_fight_each_other_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Otherbrother.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Otherbrother.getName() + " souffre de " + injury.getNameOnly()
 				});
 			}
 

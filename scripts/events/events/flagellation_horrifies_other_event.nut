@@ -10,13 +10,13 @@ this.flagellation_horrifies_other_event <- this.inherit("scripts/events/event", 
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_38.png[/img]Flesh torn asunder. Parts of man rendered unfamiliar. A copper stench in the air. These are the things you find when beckoned by a brother\'s call.\n\n %flagellant% the flagellant stooped over on a stump, his whole body unmoving save for his arm which flicks a glass and thorn-peppered whip against his own back. A gargling belch draws your eyes to %weakbro% who is bent over in the tall grass losing his lunch. Sensing that he is disturbing the others, %flagellant% cracks something of a smile that doesn\'t falter an inch to the horror he\'s committing to his own hide.%SPEECH_ON%Fear not the reaper, %weakbro%, I shall bleed even more in favor of saving your soul.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_38.png[/img]La chair déchirée en morceaux. Des parties de l\'homme rendues méconnaissables. Une odeur de cuivre dans l\'air. Ce sont les choses que l\'on trouve quand on est attiré par l\'appel d\'un frère d\'armes.\n\n %flagellant% le flagellant, courbé sur une souche, le corps immobile à l\'exception de son bras qui fait claquer un fouet de verre et d\'épines contre son propre dos. Un gargouillement attire votre attention sur %weakbro% qui est courbé dans les hautes herbes en train de perdre son déjeuner. Sentant qu\'il dérange les autres, %flagellant% esquisse une sorte de sourire qui ne cède en rien à l\'horreur qu\'il commet sur sa propre peau.%SPEECH_ON%Ne crains pas la faucheuse, %weakbro%, je saignerai encore plus pour sauver ton âme.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "{A strange custom. | This can\'t be healthy.}",
+					Text = "{Une étrange coutume. | Ça ne peut pas être sain.}",
 					function getResult( _event )
 					{
 						return 0;
@@ -28,7 +28,7 @@ this.flagellation_horrifies_other_event <- this.inherit("scripts/events/event", 
 			{
 				this.Characters.push(_event.m.Flagellant.getImagePath());
 				this.Characters.push(_event.m.OtherGuy.getImagePath());
-				_event.m.OtherGuy.worsenMood(1.0, "Horrified by " + _event.m.Flagellant.getName() + "\'s flagellation");
+				_event.m.OtherGuy.worsenMood(1.0, "Horrifié par la flagelation de " + _event.m.Flagellant.getName());
 
 				if (_event.m.OtherGuy.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -39,7 +39,7 @@ this.flagellation_horrifies_other_event <- this.inherit("scripts/events/event", 
 					});
 				}
 
-				_event.m.Flagellant.improveMood(1.0, "Satisfied with his flagellation");
+				_event.m.Flagellant.improveMood(1.0, "Satisfait par sa flagelation");
 
 				if (_event.m.Flagellant.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -56,7 +56,7 @@ this.flagellation_horrifies_other_event <- this.inherit("scripts/events/event", 
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Flagellant.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Flagellant.getName() + " souffre de " + injury.getNameOnly()
 					});
 				}
 				else
@@ -65,7 +65,7 @@ this.flagellation_horrifies_other_event <- this.inherit("scripts/events/event", 
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Flagellant.getName() + " suffers light wounds"
+						text = _event.m.Flagellant.getName() + " souffre de blessures légères"
 					});
 				}
 			}

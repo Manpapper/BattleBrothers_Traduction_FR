@@ -111,7 +111,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 							this.List.push({
 								id = 10,
 								icon = injury.getIcon(),
-								text = bro.getName() + " suffers " + injury.getNameOnly()
+								text = bro.getName() + " souffre de " + injury.getNameOnly()
 							});
 						}
 						else
@@ -120,7 +120,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 							this.List.push({
 								id = 10,
 								icon = "ui/icons/days_wounded.png",
-								text = bro.getName() + " suffers light wounds"
+								text = bro.getName() + " souffre de blessures légères"
 							});
 						}
 					}

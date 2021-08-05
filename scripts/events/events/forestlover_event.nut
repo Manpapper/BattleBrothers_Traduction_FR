@@ -9,13 +9,13 @@ this.forestlover_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img] {%forestlover% looks up at the forest canopy, his hand playfully strumming through the lightfalls. He looks at you.%SPEECH_ON%I used to play through these forests as a kid.%SPEECH_OFF%You nod, then wonder aloud.%SPEECH_ON%I thought you were born outside %randomtown%?%SPEECH_OFF%%forestlover%\'s hand falls and he stares at the ground.%SPEECH_ON%Oh yeah, that\'s right. Well, we should get moving then, right?%SPEECH_OFF%Before you can say anything more, the red-faced man marches on. | You find that %forestlover% appears to be in better spirits lately. As it turns out, these forests are familiar to him and a return to their greenery has the man beaming with warm nostalgia. | Even though you\'ve marched through plenty of forests, this one\'s viridscapes has you impressed. No doubt %forestlover% is loving a return to the trees\' thick domain. | Trees, fat trunks and strong-limbed, rise above you. %forestlover% seems to be mesmerized by their towering. You find the man smiling all the time lately, as though a return to the forest is a return to better times.}",
+			Text = "[img]gfx/ui/events/event_25.png[/img] {%forestlover% lève les yeux vers la canopée de la forêt, sa main s\'amusant à jouer avec les chutes de lumière. Il vous regarde.%SPEECH_ON%J\'avais l\'habitude de jouer dans ces forêts quand j\'étais enfant.%SPEECH_OFF%Vous acquiescez, puis vous vous demandez à haute voix.%SPEECH_ON%Je croyais que tu étais né en dehors de %randomtown% ?%SPEECH_OFF%La main de %forestlover% tombe et il fixe le sol.%SPEECH_ON%Oh oui, c\'est vrai. Bon, on devrait se bouger alors, non ?%SPEECH_OFF%Avant que vous ne puissiez en dire plus, l\'homme au visage rouge continue son chemin. | Vous trouvez que %forestlover% semble être de meilleure humeur ces derniers temps. Il s\'avère que ces forêts lui sont familières et un retour à leur verdure fait rayonner l\'homme d\'une chaleureuse nostalgie. | Bien que vous ayez traversé de nombreuses forêts, le paysage sauvage de celle-ci vous a impressionné. Nul doute que le %forestlover% aime ce retour au domaine épais des arbres. | Des arbres, aux troncs gras et aux membres robustes, s\'élèvent au-dessus de vous. %forestlover% semble être hypnotisé par leur hauteur. Vous trouvez que l\'homme sourit tout le temps ces derniers temps, comme si un retour à la forêt était un retour à des temps meilleurs.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good for him.",
+					Text = "C\'est bien pour lui..",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.forestlover_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Forestlover.getImagePath());
-				_event.m.Forestlover.improveMood(1.0, "Enjoyed being in a forest");
+				_event.m.Forestlover.improveMood(1.0, "A aimé être dans une forêt");
 
 				if (_event.m.Forestlover.getMoodState() >= this.Const.MoodState.Neutral)
 				{

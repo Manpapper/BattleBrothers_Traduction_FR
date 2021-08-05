@@ -32,7 +32,7 @@ this.shortsighted_shoots_bro_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.OtherGuy.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.OtherGuy.getName() + " souffre de " + injury.getNameOnly()
 				});
 				_event.m.Shortsighted.worsenMood(1.0, "Shot at " + _event.m.OtherGuy.getName() + " by accident");
 				_event.m.OtherGuy.worsenMood(1.0, "Got shot at by " + _event.m.Shortsighted.getName());

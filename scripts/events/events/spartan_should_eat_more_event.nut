@@ -86,7 +86,7 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = "ui/icons/days_wounded.png",
-							text = _event.m.Spartan.getName() + " suffers light wounds"
+							text = _event.m.Spartan.getName() + " souffre de blessures légères"
 						}
 					];
 				}
@@ -97,7 +97,7 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 						{
 							id = 10,
 							icon = injury.getIcon(),
-							text = _event.m.Spartan.getName() + " suffers " + injury.getNameOnly()
+							text = _event.m.Spartan.getName() + " souffre de " + injury.getNameOnly()
 						}
 					];
 				}

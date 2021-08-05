@@ -110,7 +110,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury2.getIcon(),
-						text = _event.m.Graverobber.getName() + " suffers " + injury2.getNameOnly()
+						text = _event.m.Graverobber.getName() + " souffre de " + injury2.getNameOnly()
 					});
 				}
 				else
@@ -119,7 +119,7 @@ this.graverobber_heist_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Graverobber.getName() + " suffers light wounds"
+						text = _event.m.Graverobber.getName() + " souffre de blessures légères"
 					});
 				}
 

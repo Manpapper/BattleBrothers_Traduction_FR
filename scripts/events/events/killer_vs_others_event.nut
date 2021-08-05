@@ -87,7 +87,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Killer.getName() + " suffers light wounds"
+						text = _event.m.Killer.getName() + " souffre de blessures légères"
 					}
 				];
 
@@ -280,13 +280,13 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 13,
 					icon = injury.getIcon(),
-					text = _event.m.Killer.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Killer.getName() + " souffre de " + injury.getNameOnly()
 				});
 				injury = _event.m.Killer.addInjury(this.Const.Injury.Brawl);
 				this.List.push({
 					id = 13,
 					icon = injury.getIcon(),
-					text = _event.m.Killer.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Killer.getName() + " souffre de " + injury.getNameOnly()
 				});
 				_event.m.Killer.worsenMood(2.0, "Was beaten up by men of the company");
 
