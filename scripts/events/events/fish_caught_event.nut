@@ -9,13 +9,13 @@ this.fish_caught_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 7.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_52.png[/img]{While stopped near a river of water, it appears %fisherman% went out to practice his old trade and netted a few fish! | You\'ve come to a body of water and stopped to talk to a few locals about the surrounding land. %fisherman% the once-fisherman took that opportunity to go catch a few salmon and other river-running critters. | While marching near a river, %fisherman% the once-fisherman managed to run along the banks and collect a bucketful of crawdads! Boiled in a pot, they make for some good eats.}",
+			Text = "[img]gfx/ui/events/event_52.png[/img]{Lors de votre halte près d\'un cours d\'eau, il semble que %fisherman% soit sorti pour pratiquer son vieux métier et ait attrapé quelques poissons ! | Vous êtes arrivé à un plan d\'eau et vous vous êtes arrêté pour parler à quelques habitants des terres environnantes. %fisherman%, l\'ancien pêcheur, a profité de cette occasion pour aller attraper quelques saumons et autres créatures de la rivière. | Alors que vous marchiez près d\'une rivière, %fisherman% l\'ancien pêcheur a réussi à courir le long des berges et à ramasser un seau plein d\'écrevisses ! Bouillies dans une marmite, elles constitueront un bon repas.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s fish tonight!",
+					Text = "C\'est poisson ce soir !",
 					function getResult( _event )
 					{
 						return 0;
@@ -32,10 +32,10 @@ this.fish_caught_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/items/" + food.getIcon(),
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + food.getAmount() + "[/color] Fish"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + food.getAmount() + "[/color] Poissons"
 					}
 				];
-				_event.m.Fisherman.improveMood(0.5, "Has caught some fish");
+				_event.m.Fisherman.improveMood(0.5, "A attrapé quelques poissons");
 
 				if (_event.m.Fisherman.getMoodState() >= this.Const.MoodState.Neutral)
 				{

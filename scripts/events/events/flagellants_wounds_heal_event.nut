@@ -9,13 +9,13 @@ this.flagellants_wounds_heal_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_39.png[/img]%flagellant% the flagellant is found sitting cross-legged before a campfire. He\'s all alone save the millmoths fluttering dangerously close to the flames. Sensing your presence, he calls you over. You take a seat beside him and he smiles at you.%SPEECH_ON%I\'ve become a better man since joining this company.%SPEECH_OFF%You nod as he surely has. He continues.%SPEECH_ON%I\'ve bled for the gods a great deal, but my wounds... they are but scars now. I feel stronger than ever.%SPEECH_OFF%Again you nod, but then quickly ask if he is going to stop hurting himself. The man\'s eyes stare into the red-brimming embers. He shakes his head no.%SPEECH_ON%I will bleed for the gods until they say no more.%SPEECH_OFF%Wondering aloud, you ask if the gods have spoken to him at all. Without a pause the man shakes his head no again.%SPEECH_ON%They have not and so I shall bleed until their silence is broken or until I join them in the forever quiet.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_39.png[/img]%flagellant% le flagellant est assis les jambes croisées devant le feu de camp. Il est tout seul, mis à part les papillons de nuit qui volent dangereusement près des flammes. Sentant votre présence, il vous appelle. Vous prenez place à côté de lui et il vous sourit.%SPEECH_ON%Je suis devenu un homme meilleur depuis que j\'ai rejoint cette compagnie.%SPEECH_OFF%Vous acquiescez, comme c\'est probablement le cas. Il continue.%SPEECH_ON%J\'ai beaucoup saigné pour les dieux, mais mes blessures... ne sont que des cicatrices maintenant. Je me sens plus fort que jamais.%SPEECH_OFF%Vous acquiescez à nouveau, mais vous lui demandez rapidement s\'il va arrêter de se faire du mal. Les yeux de l\'homme fixent les braises rouges. Il secoue la tête pour dire non.%SPEECH_ON%Je saignerai pour les dieux jusqu\'à ce qu\'ils n\'en disent plus rien.%SPEECH_OFF%S\'interrogeant à voix haute, vous demandez si les dieux lui ont parlé. Sans hésiter, l\'homme secoue à nouveau la tête pour dire non.%SPEECH_ON%Ils ne l\'ont pas fait et je saignerai donc jusqu\'à ce que leur silence soit brisé ou que je les rejoigne dans le silence éternel.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "So time does heal all wounds, then.",
+					Text = "Donc le temps guérit toutes les blessures.",
 					function getResult( _event )
 					{
 						return 0;
@@ -34,7 +34,7 @@ this.flagellants_wounds_heal_event <- this.inherit("scripts/events/event", {
 					{
 						id = 17,
 						icon = "ui/icons/health.png",
-						text = _event.m.Flagellant.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + hitpoints + "[/color] Hitpoints"
+						text = _event.m.Flagellant.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + hitpoints + "[/color] de Points de Vie"
 					}
 				];
 			}

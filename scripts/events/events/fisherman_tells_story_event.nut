@@ -9,13 +9,13 @@ this.fisherman_tells_story_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]%fisherman%, the ol\' fisherman, regals the company with tales of his fishing days.%SPEECH_ON%{T\'was this big. I swear on me mum! Fish so big that when I yanked it from the waters the whole river dried a foot! | The ocean is a beast, aye, and the skies above its master, the winds its leash, and we men the fleas. | Lost I was! A summer adrift, the whole boat run through with hunting waters, each wave having taken a sailor for itself until only I remained, aye, aye! Tis the truth! By autumn, I saw land again, and so happy I was to see the trees and the mountains and the birds that dwell above both that I smashed my ship right into the rocks and kissed the sands as debris drifted about me. T\'was the happiest day of m\'life. | Never seen a great white whale before, but a green one? Aye. Wore a coat of moss, a stolen land fur if nothing else. We hunted it down with spears and ol\' sailor spirit. Alas, it realized we were on it when %randomname% - a man with the finest harpoon aim there is - struck it in the blowhole. I did not know a whale could turn \'round so quickly, but it did, and it made short work of our ship and drowned a number of sailors in a fit of vengenace. | I once caught a bass about, yeigh, big. Can you believe that? Alright, it was this big. Okay, maybe this big. Alright I\'ve never caught a bass. Fine! I\'ve never even seen a bass! I just know they\'re out there! Leave me alone you land lovers! I fish the big seas, dammit! I know nothing of your silly ponds. Except bass, of course, I know about them.}%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_26.png[/img]%fisherman%le vieux pêcheur, régale la compagnie avec des récits de ses jours de pêche.%SPEECH_ON%{C\'était gros comme ça. Je le jure sur ma mère ! Un poisson si gros que quand je l\'ai sorti de l\'eau, la rivière entière s\'est asséchée d\'un pied ! | L\'océan est une bête, oui, et les cieux au-dessus son maître, les vents sa chaîne, et nous les hommes les puces. | J\'étais perdu ! Un été à la dérive, le bateau entier traversé par les eaux déchainées, chaque vague a emporté un marin pour elle-même jusqu\'à ce que je sois le seul à rester, aye, aye ! C\'est la vérité ! À l\'automne, j\'ai revu la terre, et j\'étais si heureux de voir les arbres, les montagnes et les oiseaux que j\'ai fracassé mon bateau contre les rochers et embrassé le sable alors que des débris dérivaient autour de moi. Ce fut le plus beau jour de ma vie. | Je n\'ai jamais vu de grande baleine blanche, mais une verte ? Oui. Elle portait un manteau de mousse, une fourrure de terre volée. Nous l\'avons chassée avec des lances et un esprit marin. Hélas, elle s\'est rendue compte que nous étions sur elle quand %randomname% - un homme avec la meilleur précision au tir de de harpon qui ait jamais existé - l\'a frappé dans l\'évent. Je ne savais pas qu\'une baleine pouvait se retourner aussi rapidement, mais elle l\'a fait, et elle a rapidement détruit notre navire et noyé un certain nombre de marins dans son dernier acte vengeance. | Une fois, j\'ai attrapé un bar d\'environ, ouais, gros. Vous n\'y croyez pas ? D\'accord, c\'était gros comme ça. Ok, peut-être de cette taille. D\'accord, je n\'ai jamais attrapé de bar. Bien ! Je n\'ai même jamais vu de bar ! Je sais juste qu\'ils sont là ! Laissez-moi tranquille, amoureux de la terre ferme ! Je pêche en haute mer, bon sang ! Je ne connais rien de vos étangs idiots. Sauf les bars, bien sûr, je les connais.}%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Sounds fishy to me.",
+					Text = "Ça me semble louche.",
 					function getResult( _event )
 					{
 						return 0;
@@ -32,7 +32,7 @@ this.fisherman_tells_story_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 25)
 					{
-						bro.improveMood(1.0, "Felt entertained");
+						bro.improveMood(1.0, "S\'est senti amusé");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
