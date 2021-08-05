@@ -155,12 +155,12 @@ gt.Const.Strings.EntityName <- [
 	"Capitaine de milice",
 	"Chasseur de primes",
 	"Paysan",
-	"Caravane",
+	"Employé de caravane",
 	"Garde de caravane",
-	"Chariot de caravane",
+	"Charette de caravane",
 	"Fantassins",
 	"Zweihander",
-	"Hallebardier",
+	"Vougier",
 	"Arbalétrier",
 	"Porte-étendard",
 	"Sergent",
@@ -235,7 +235,7 @@ gt.Const.Strings.EntityName <- [
 	"Citoyen",
 	"Le Gardien du Savoir (Lorekeeper)",
 	"Apparition du Gardien du Savoir",
-	"Amulette (Phylacter => Phylactère? todo)",
+	"Phylactères",
 	"Chasseur de trésors (perdu ? todo)",
 	"Crâne hurlant"
 ];
@@ -263,12 +263,12 @@ gt.Const.Strings.EntityNamePlural <- [
 	"Capitaines de milice",
 	"Chasseurs de primes",
 	"Paysans",
-	"Caravanes",
+	"Employés de caravane",
 	"Gardes de caravane",
 	"Chariots de caravane",
 	"Fantassins",
 	"Zweihanders",
-	"Hallebardiers",
+	"Vougiers",
 	"Arbalétriers",
 	"Porte-étendards",
 	"Sergents",
@@ -332,18 +332,18 @@ gt.Const.Strings.EntityNamePlural <- [
 	"Endetté",
 	"Gladiateurs",
 	"Mortiers",
-	"Nomades Coupe-gorges",
-	"Nomades Hors-la-loi",
-	"Nomades Frondeurs",
-	"Nomades Archers",
-	"Nomades Chefs",
+	"Coupe-gorges nomades",
+	"Hors-la-loi nomades",
+	"Frondeurs nomades",
+	"Archers nomades",
+	"Chefs nomades",
 	"Traqueurs du désert",
-	"Nomades Bourreaux",
+	"Bourreaux nomades",
 	"Danseur de lames",
 	"Citoyens",
 	"Le Gardien du Savoir(Lorekeeper)",
 	"Apparition du Gardien du Savoir",
-	"Amulettes (Phylacteries? todo)",
+	"Phylactères",
 	"Chasseurs de trésors (perdus ? todo)",
 	"Crânes hurlants"
 ];
@@ -369,13 +369,13 @@ gt.Const.Strings.Tactical.EntityDescription <- {
 	Brush = "Arbuste très dense qui bloque le mouvement et la ligne de mire.",
 	Cartwheel = "La vieille roue cassée d'un char à bœufs.",
 	RuinedPillar = "TODO",
-	Cart = "Un chariot plein de marchandises commerciales.",
+	Cart = "Une charette pleine de marchandises commerciales.",
 	Donkey = "Un âne utilisé pour tirer des charrettes lourdes.",
 	Plant = "Une plante exotique qui bloque le mouvement et la ligne de mire."
 };
 gt.Const.Strings.FootprintsType <- [
 	"",
-	"Northern soldiers",
+	"Des soldats du nord",
 	"Gilded soldiers",
 	"Une caravane",
 	"Des paysans",
@@ -387,7 +387,7 @@ gt.Const.Strings.FootprintsType <- [
 	"Gobelins",
 	"Barbares",
 	"Nomades",
-	"des loups-garous",
+	"Des loups-garous",
 	"Nachzehrers",
 	"Des hyènes",
 	"Des serpents",
@@ -397,7 +397,7 @@ gt.Const.Strings.FootprintsType <- [
 	"Hexen",
 	"Des Gnomes",
 	"Un kraken",
-	"des éfrits",
+	"Des éfrits",
 	"Lindwurms",
 	"Des mercenaires"
 ];
@@ -633,15 +633,15 @@ gt.Const.Strings.Tactical.TerrainDescription <- [
 	"Une route pavée utilisée pour les transports et les gros véhicules.",
 	"Herbe courte sur sol plat et solide.",
 	"Terre nue et plate avec peu de végétation.",
-	"Sol forestier recouvert d'une couche de mousse épaisse et douce.",
+	"Sol forestier recouvert d\'une couche de mousse épaisse et douce.",
 	"Terre sombre et boueuse.",
 	"Sol principalement ferme recouvert d'herbe haute et molle.",
 	"Eau peu profonde et trouble couvrant un sol meuble et boueux.",
 	"Sol plat et ferme recouvert d'herbes sèches et ratatinées.",
 	"Des plaques de terre dures complètement desséchées par le soleil et la chaleur.",
-	"Sol plat et aride couvert d'herbes rugueuses et de mauvaises herbes.",
-	"Sol gelé recouvert d'une épaisse couche de neige.",
-	"Sol gelé recouvert d'une légère couche de neige.",
+	"Sol plat et aride couvert d\'herbes rugueuses et de mauvaises herbes.",
+	"Sol gelé recouvert d\'une épaisse couche de neige.",
+	"Sol gelé recouvert d\'une légère couche de neige.",
 	"Sol en pierre lisse offrant une bonne assise.",
 	"Sol en pierre brute.",
 	"Sable brûlant du désert.",
@@ -1239,13 +1239,13 @@ gt.Const.Strings.EngageEnemyNumbers <- [
 ];
 gt.Const.Strings.InventoryHeader <- [
 	"Âne",
+	"Charette",
 	"Chariot",
-	"Wagon",
-	"Grand Wagon"
+	"Grand Chariot"
 ];
 gt.Const.Strings.InventoryUpgradeHeader <- [
+	"Acheter une Charette",
 	"Acheter un Chariot",
-	"Acheter un Wagon",
 	"Acheter un grand Wagon"
 ];
 gt.Const.Strings.InventoryUpgradeText <- [
