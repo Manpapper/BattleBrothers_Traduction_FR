@@ -94,7 +94,7 @@ gt.Const.Strings.Amount <- [
 	"trente"
 ];
 gt.Const.Strings.AmountC <- [
-	"aucun",
+	"Aucun",
 	"Un",
 	"Deux",
 	"Trois",
