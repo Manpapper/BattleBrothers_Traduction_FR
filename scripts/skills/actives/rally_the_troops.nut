@@ -104,10 +104,6 @@ this.rally_the_troops <- this.inherit("scripts/skills/skill", {
 			{
 				a.getSkills().removeByID("effects.sleeping");
 
-				for( ; a.getMoraleState() >= this.Const.MoraleState.Steady;  )
-				{
-				}
-
 				local difficulty = bravery;
 				local distance = a.getTile().getDistanceTo(myTile) * 10;
 				local morale = a.getMoraleState();
@@ -127,7 +123,6 @@ this.rally_the_troops <- this.inherit("scripts/skills/skill", {
 				}
 			}
 		}
-
 		this.getContainer().add(this.new("scripts/skills/effects/rallied_effect"));
 		return true;
 	}
