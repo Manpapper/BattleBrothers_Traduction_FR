@@ -1388,10 +1388,11 @@ this.contract <- {
 				{
 					continue;
 				}
-
+				/*
 				for( ; path.getSize() > _maxDist * pathDistanceMult;  )
 				{
 				}
+				*/
 			}
 
 			if (_needsLandConnectionToPlayer)
