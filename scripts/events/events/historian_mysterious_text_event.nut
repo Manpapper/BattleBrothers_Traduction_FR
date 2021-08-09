@@ -9,13 +9,13 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_57.png[/img]You come across an abandoned chapel. Cobwebs dress its cracks, and bird nests the corners. The pews are tipped over or have been chopped up for firewood. The old gods have surely left this place.\n\n %historian% the historian comes to you with what look like muddy logs in his hands.%SPEECH_ON%Would you look at this? Old scripts!%SPEECH_OFF%He blows the blackened dust and ash off the scrolls.%SPEECH_ON%Have you ever seen something so spectacular? I don\'t know what they say yet, but it\'s still a most interesting of finds!%SPEECH_OFF%Right, whatever.",
+			Text = "[img]gfx/ui/events/event_57.png[/img]Vous tombez sur une chapelle abandonnée. Des toiles d\'araignée recouvrent ses fissures, et des nids d\'oiseaux ses coins. Les bancs sont renversés ou ont été coupés pour faire du bois de chauffage. Les anciens dieux ont sûrement quitté cet endroit.\n\n %historian% l\'historien vient vers vous avec ce qui ressemble à des bûches boueuses dans les mains.%SPEECH_ON% Voyez-vous ça ? De vieux parchemins!%SPEECH_OFF%Il souffle sur la poussière et la cendre noircie des parchemins.%SPEECH_ON%Avez-vous déjà vu quelque chose d\'aussi spectaculaire ? Je ne sais pas encore ce qu\'ils disent, mais c\'est quand même une découverte des plus intéressantes!%SPEECH_OFF%D\'accord, peu importe.",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Just read it and tell me what it says already.",
+					Text = "Juste lis-le et dis-moi ce qu\'il dit déjà.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -38,13 +38,13 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_15.png[/img]As you make camp outside the temple, %historian% the historian enters your tent.%SPEECH_ON%Sir, I think you might be interested in this.%SPEECH_OFF%He\'s got the scrolls from the chapel in his arms and unravels a few of them across your desk. There you see the historian\'s sloppy scribblings. His notes are in a language you can\'t read, but you can easily follow the arrows he\'s drawn over the pages to connect segments together. He then unfurls another scroll, a fresh one, with all the translations.%SPEECH_ON%These are old training manuals. They speak of techniques I never knew existed. Shall I disperse them amongst the men?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_15.png[/img]Alors que vous campez à l\'extérieur du temple, %historian% l\'historien entre dans votre tente.%SPEECH_ON%Boss, je pense que ceci pourrait vous intéresser.%SPEECH_OFF%Il a les parchemins de la chapelle dans les bras et en déroule quelques-uns sur votre bureau. Vous y voyez les gribouillages peu soignés de l\'historien. Ses notes sont dans une langue que vous ne pouvez pas lire, mais vous pouvez facilement suivre les flèches qu\'il a tracées sur les pages pour relier des segments entre eux. Il déroule ensuite un autre parchemin, tout neuf, avec toutes les traductions.%SPEECH_ON%Ce sont de vieux manuels d\'entraînement. Ils parlent de techniques dont j\'ignorais l\'existence. Dois-je les distribuer aux hommes ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Disperse them you shall.",
+					Text = "Les distribuer, tu devrais.",
 					function getResult( _event )
 					{
 						return 0;
@@ -64,7 +64,7 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 16,
 						icon = "ui/icons/ranged_defense.png",
-						text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Ranged Defense"
+						text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Défense à Distance"
 					});
 				}
 			}
@@ -72,13 +72,13 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_15.png[/img]While sitting in your tent outside the abandoned temple, %historian% the historian enters in a manner best described as reluctant. In his hands are the scrolls he found in the chapel a few days back.%SPEECH_ON%Sir, uh, the scrolls... they were most interesting.%SPEECH_OFF%Bored, you inquire as to \'how interesting.\' The man explains.%SPEECH_ON%Well, they\'ve been written in a very ancient language. I\'m not well versed in it, but I can certainly read portions here and there.%SPEECH_OFF%You ask him what he wants then.%SPEECH_ON%I\'d like to read the scrolls, but I could use a little bit of confidence before I do. Would you grace the reading? That is what my old professors would do before any great undertaking.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_15.png[/img]Alors que vous êtes assis dans votre tente à l\'extérieur du temple abandonné, %historian% l\'historien entre d\'une manière que l\'on pourrait qualifier de réticente. Dans ses mains se trouvent les parchemins qu\'il a trouvé dans la chapelle il y a quelques jours.%SPEECH_ON%Boss, euh, les parchemins... ils étaient très intéressants.%SPEECH_OFF%Ennuyé, vous demandez \"à quel point\". L\'homme explique.%SPEECH_ON%Eh bien, ils ont été écrits dans une langue très ancienne. Je ne la connais pas très bien, mais je peux certainement en lire des parties ici et là.%SPEECH_OFF%Vous lui demandez alors ce qu\'il veut.%SPEECH_ON%J\'aimerais lire les parchemins, mais j\'aurais besoin d\'un peu de soutien avant de le faire. Voulez-vous faire la bénédiction de la lecture ? C\'est ce que mes anciens professeurs faisaient avant toute grande tâche.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Alright, go on ahead and read.",
+					Text = "Très-bien, vas-y, lis.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -93,7 +93,7 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "If you\'re so scared to read, perhaps it is best we don\'t.",
+					Text = "Si tu as si peur de lire, il vaut peut-être mieux ne pas le faire.",
 					function getResult( _event )
 					{
 						return 0;
@@ -109,13 +109,13 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_12.png[/img]%historian% picks up the scrolls. He licks his lips, clears his throat, and begins to read aloud. The words that come forth are not ones you\'d easily recognize. They sound so lazily produced as though he were a man being wrangled from a deep sleep, and indeed bringing with him the monsters that would inhabit the dreamworlds.\n\n He stops and looks up.%SPEECH_ON%That was it. Do you feel anything?%SPEECH_OFF%You raise an eyebrow. Feel anything? Why would--\n\n Madness. You see a spiraling darkness wreathed in living shadows, the screaming specters of creatures that still yet yearn for finality in death, and amongst them swirl beings, grinning and yapping, like bestial puppet masters, maws slipped to yonder depths, their boned teeth the only light in this realm, their smiles but crescents of ill-shaped moons come to feast on the stars themselves.%SPEECH_ON%Oh naive one, does thou think Davkul does not listen?%SPEECH_OFF%You suddenly awake to %historian%\'s screams. He says all manner of monsters are afoot. With not a moment to waste you go to warn the men before all the hells and those not yet known can break loose.",
+			Text = "[img]gfx/ui/events/event_12.png[/img]%historian% ramasse les parchemins. Il se lèche les lèvres, se racle la gorge et commence à lire à haute voix. Les mots qui sortent ne sont pas de ceux que l\'on reconnaît facilement. Ils sonnent de façon si paresseuse, comme s\'il s\'agissait d\'un homme que l\'on tire d\'un profond sommeil, et qu\'il amenait avec lui les monstres qui peuplent les mondes oniriques.\n\n Il s\'arrête et lève les yeux.%SPEECH_ON% C\'était tout. Vous sentez quelque chose ? %SPEECH_OFF%Vous levez un sourcil. Je ne ressens rien ? Pourquoi devrais-je... Démence. Vous voyez une spirale de ténèbres enveloppée d\'ombres vivantes, les spectres hurlants de créatures qui aspirent encore à la finalité de la mort, et parmi eux tourbillonnent des êtres, souriant et jappant, comme des marionnettistes bestiaux, les gueules glissées jusqu\'aux profondeurs, leurs dents osseuses étant la seule lumière de ce royaume, leurs sourires n\'étant que des croissants de lunes mal formées venues se repaître des étoiles elles-mêmes. %SPEECH_ON%Oh petit naïf, pensais-tu que Davkul n\'écoutait pas ? %SPEECH_OFF%Vous vous réveillez soudainement avec les cris de %historian%. Il dit que toutes sortes de monstres sont en liberté. Sans perdre un instant, vous allez prévenir les hommes avant que tous les enfers et ceux qui ne sont pas encore connus ne se déchaînent.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux Armes!",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -141,13 +141,13 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_15.png[/img]%historian% picks up the scroll and begins to read. The language is at both familiar and yet primordially ancient. It tickles the ear like the scratch of vipers over sand and by no means any less threatening. When he\'s finished, the historian looks up.%SPEECH_ON%Feel anything?%SPEECH_OFF%Suddenly a dark, yet soft hand wraps around the man from behind, curving down toward his loins.%SPEECH_ON%Oh, humans. We did not think you would survive this long, and indeed it has been long since our services were called upon.%SPEECH_OFF%Lithe, hip-swaying creatures slip so lightly into the tent as though they were hardly more than the wind itself. Outside, you can hear the murmur of the rest of the company being overcome by the seductive beings. One walks toward you, her shape flashing between all the women of your life, testing your response, and when your heart warms it settles on a young lady that once broke your heart. The succubus falls atop you.%SPEECH_ON%Don\'t mind me, human, this is for you. Relax.%SPEECH_OFF%You let the pleasures wash over you.\n\n Immeasurable hours later you awake with your trousers down and %historian% in the corner rubbing his head.%SPEECH_ON%They were so wonderful, but the scroll\'s gone. I think it burned up after I said the words. Oh by the old gods do I wish I remember what they said!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_15.png[/img]%historian% prend le parchemin et commence à lire. La langue est à la fois familière et primordialement ancienne. Elle chatouille l\'oreille comme le grattement des vipères sur le sable et n\'en est pas moins menaçante. Quand il a fini, l\'historien lève les yeux.%SPEECH_ON%Vous sentez quelque chose ? %SPEECH_OFF%Soudain une main sombre mais douce entoure l\'homme par derrière, descendant vers ses reins.%SPEECH_ON%Oh, humains. Nous ne pensions pas que vous survivriez aussi longtemps, et en effet cela fait longtemps que l\'on n\'a pas fait appel à nos services.%SPEECH_OFF%Les créatures qui se déhanchent se glissent si légèrement dans la tente comme si elles n\'étaient guère plus que le vent lui-même. Dehors, vous pouvez entendre le murmure du reste de la compagnie qui se laisse envahir par les êtres séduisants. L\'une d\'entre elles s\'avance vers vous, sa silhouette passant par toutes les femmes de votre vie, testant votre réaction, et lorsque votre cœur se réchauffe, elle se pose sur une jeune femme qui vous a autrefois brisé le cœur. La succube tombe sur vous.%SPEECH_ON%Ne fais pas attention à moi, humain, c\'est pour toi. Détends-toi.%SPEECH_OFF%Vous laissez les plaisirs vous envahir.\n\nDes heures innombrables plus tard vous vous réveillez avec votre pantalon baissé et %historian% dans le coin se frottant la tête.%SPEECH_ON%Elles étaient si merveilleuses, mais le parchemin a disparu. Je pense qu\'il a brûlé après que j\'ai prononcé les mots. Oh par les vieux dieux, j\'aimerais me souvenir de ce qu\'elles ont dit!%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Incredible.",
+					Text = "Incroyable.",
 					function getResult( _event )
 					{
 						return 0;
@@ -164,7 +164,7 @@ this.historian_mysterious_text_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 75)
 					{
-						bro.improveMood(1.0, "Had a pleasurable supernatural experience");
+						bro.improveMood(1.0, "A eu une expérience surnaturelle agréable");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

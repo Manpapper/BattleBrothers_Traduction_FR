@@ -9,13 +9,13 @@ this.historian_records_adventures_event <- this.inherit("scripts/events/event", 
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_15.png[/img]Carrying a leathered tome in hand, %historian% shuffles into your tent. Without a word spoken he lays the book on the table and takes a step back. You set your quill pen down and ask what it is. He says to open it. Sighing, you open the book and come to find pages littered with names and events you know well. It is a history of the company and its adventures. You flip through the pages, seeing old tales that warm the heart and some that break it. You close the book and push it back across the table. The historian asks if it is alright, and you nod. You say give it to the men to read around camp for it will surely lift their spirits.",
+			Text = "[img]gfx/ui/events/event_15.png[/img]Un tome en cuir à la main, %historian% entre dans votre tente en traînant les pieds. Sans dire un mot, il pose le livre sur la table et fait un pas en arrière. Vous posez votre plume d\'oie et demandez ce que c\'est. Il vous dit de l\'ouvrir. En soupirant, vous ouvrez le livre et découvrez des pages pleines de noms et d\'événements que vous connaissez bien. Il s\'agit de l\'histoire de la compagnie et de ses aventures. Vous feuilletez les pages, voyant de vieux récits qui réchauffent le cœur et d\'autres qui le brisent. Vous fermez le livre et le repoussez sur la table. L\'historien vous demande si c\'est bien, et vous acquiescez. Vous dites de le donner aux hommes pour qu\'ils le lisent au camp, car ça leur remontera sûrement le moral.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The deeds of the %companyname% shan\'t be forgotten.",
+					Text = "Les actes de %companyname% ne doivent pas être oubliés.",
 					function getResult( _event )
 					{
 						return 0;
@@ -35,7 +35,7 @@ this.historian_records_adventures_event <- this.inherit("scripts/events/event", 
 						continue;
 					}
 
-					bro.improveMood(1.0, "Proud of the company\'s achievements");
+					bro.improveMood(1.0, "Fier des exploits de la compagnie.");
 
 					if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 					{

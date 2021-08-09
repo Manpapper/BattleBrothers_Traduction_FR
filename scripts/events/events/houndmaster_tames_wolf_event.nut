@@ -9,13 +9,13 @@ this.houndmaster_tames_wolf_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_143.png[/img]While traversing the snowy wastelands of the realm\'s north, %houndmaster% the houndmaster has come to befriend a creature that\'s been trailing beside the company\'s march: a wolf. The houndmaster frequently remained in the rearguard, crouched low, hands at his side, locking eyes with the lone wolf for minutes on end. But today, using a bit of leftover meat, he plied the beast right into the middle of the camp. Now he squats at its side, dwarfed by its prominent, muscled withers, its pointed and attentive ears, and a lapping maw lined with mankilling canines.\n\n The rest of the men stand behind their weapons. One yells at the houndmaster to stop what he is doing. Another says the wolf can smell fear. Yet another throws a rock at it. The wolf winces, but doesn\'t react. Laughing, the houndmaster makes a \'tssst!\' noise and points. The wolf launches forward, picking up the stone and bringing it back to the man. He rubs the beast\'s mane.%SPEECH_ON%See, easily trained, just any dog. Only bigger, faster, and stronger. Smarter, too.%SPEECH_OFF%Its eyes meet yours. The wolf lays low, almost like a man bowing. %houndmaster% laughs again.%SPEECH_ON%See? It already knows who is alpha of this pack.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_143.png[/img]En traversant les terres désolées et enneigées du nord du royaume, %houndmaster% le maître des chiens s\'est lié d\'amitié avec une créature qui suivait la marche de la compagnie : un loup. Le maître des chiens restait souvent à l\'arrière, accroupi, les mains sur le côté, fixant le loup pendant de longues minutes. Mais aujourd\'hui, avec un peu de viande restante, il a mené la bête jusqu\'au milieu du camp. Maintenant, il s\'accroupit à ses côtés, rapetissé par son garrot proéminent et musclé, ses oreilles pointues et attentives, et sa gueule bordée de canines tueuses d\'hommes.\n\n Le reste des hommes se tiennent derrière leurs armes. L\'un d\'eux crie au maître des chiens d\'arrêter ce qu\'il fait. Un autre dit que le loup peut sentir la peur. Un autre encore lui jette une pierre. Le loup grimace, mais ne réagit pas. En riant, le maître-chien fait un bruit de \"tssst !\" et pointe du doigt. Le loup s\'élance en avant, ramasse la pierre et la ramène à l\'homme. Il frotte la crinière de la bête. %SPEECH_ON%Regardez, facile à dresser, comme n\'importe quel chien. Mais plus gros, plus rapide et plus fort. Plus malin aussi%SPEECH_OFF%. Ses yeux rencontrent les vôtres. Le loup se couche à terre, presque comme un homme qui s\'incline. %houndmaster% rit à nouveau.%SPEECH_ON%Vous voyez ? Il sait déjà qui est l\'alpha de cette meute.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A noble beast.",
+					Text = "Une noble bête.",
 					function getResult( _event )
 					{
 						return 0;
@@ -33,7 +33,7 @@ this.houndmaster_tames_wolf_event <- this.inherit("scripts/events/event", {
 					icon = "ui/items/" + item.getIcon(),
 					text = "Vous recevez " + item.getName()
 				});
-				_event.m.Houndmaster.improveMood(2.0, "Managed to tame a wolf");
+				_event.m.Houndmaster.improveMood(2.0, "A réussi à apprivoiser un loup");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Houndmaster.getMoodState()],

@@ -6,7 +6,7 @@ this.fear_greenskins_trait <- this.inherit("scripts/skills/traits/character_trai
 		this.m.ID = "trait.fear_greenskins";
 		this.m.Name = "Peur des Peaux-Vertes";
 		this.m.Icon = "ui/traits/trait_icon_49.png";
-		this.m.Description = "Des évenements passés ou des histoires particulierement convaiquantes dans la vie de ce personnage l\'a laissé appeuré de ce que les Peaux-Vertes étaient capable de faire, le rendant moins fiable lors de bataille contre eux.";
+		this.m.Description = "Des Ã©venements passÃ©s ou des histoires particulierement convaiquantes dans la vie de ce personnage l\'a laissÃ© appeurÃ© de ce que les Peaux-Vertes Ã©taient capable de faire, le rendant moins fiable lors de bataille contre eux.";
 		this.m.Excluded = [
 			"trait.fearless",
 			"trait.brave",
@@ -34,7 +34,7 @@ this.fear_greenskins_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination quand vous etes en bataille contre des Peaux-Vertes"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de DÃ©termination quand vous etes en bataille contre des Peaux-Vertes"
 			}
 		];
 	}

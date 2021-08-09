@@ -10,12 +10,12 @@ this.herbs_along_the_way_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%While heading toward your destination, %volunteer% runs up to you with a bundle of herbs in hand. Now you know this fool knows nothing about plants or wildlife, but he seems rather persistent in wanting to try them out. Something about \'hearing\' of magical powers to be found in the essence of herbs. This talk gets the attention of a few others in the company. Soon, a number of them are asking to try out the \'medicine\' for the good of their brothers.",
+			Text = "%terrainImage%Alors que vous vous dirigez vers votre destination, %volunteer% se précipite vers vous avec un paquet d\'herbes à la main. Vous savez que cet idiot ne connaît rien aux plantes ou à la vie sauvage, mais il semble plutôt persistant à vouloir les essayer. Il parle d\'\"entendre\" les pouvoirs magiques que l\'on peut trouver dans l\'essence des herbes. Cette conversation attire l\'attention de quelques autres personnes de la compagnie. Bientôt, un certain nombre d\'entre eux demandent à essayer la \"médecine\" pour le bien de leurs frères d\'armes.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "They look good, any volunteer to try them?",
+					Text = "Ils ont l\'air sympas, des volontaires pour les essayer ?",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "C" : "B";
@@ -23,7 +23,7 @@ this.herbs_along_the_way_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "{Better not try our luck. | You fools will only poison yourselves.}",
+					Text = "{Mieux vaut ne pas tenter notre chance. | Vous ne ferez que vous empoisonner vous-mêmes, bande d\'idiots.}",
 					function getResult( _event )
 					{
 						return 0;
@@ -38,12 +38,12 @@ this.herbs_along_the_way_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "%terrainImage%It appears that the herbs are not just harmless, but rather even proactive in taking care of some nagging issues with the men. %volunteer%\'s cold seems to have lifted, and the stomach pains of %otherguy% have abated. After trying some yourself, you see a splinter wiggle its way out of your thumb. Amazing!",
+			Text = "%terrainImage%Il semble que les herbes ne soient pas seulement inoffensives, mais qu\'elles aient même des vertus curatives chez certains problèmes récurrents de vos hommes. Le rhume de %volunteer% semble s\'être dissipé et les douleurs d\'estomac de %otherguy% se sont atténuées. Après avoir essayé vous-même, vous voyez une écharde s\'échapper de votre pouce. Incroyable !",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Amazing!",
+					Text = "Incroyable!",
 					function getResult( _event )
 					{
 						return 0;
@@ -59,7 +59,7 @@ this.herbs_along_the_way_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_medicine.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Medical Supplies"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] de Ressources Médicales"
 					}
 				];
 			}
@@ -67,12 +67,12 @@ this.herbs_along_the_way_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_18.png[/img]From one end comes vomit and from the other shite. It appears the herbs were not worth a try after all. %volunteer% bravely elected himself ready to chow down on the mystery plants and, suffice it to say, the proportions which you are seeing come out of him are definitely mystical in that strange, \'can the body really hold that much?\', sort of way.",
+			Text = "[img]gfx/ui/events/event_18.png[/img]D\'un bout vient le vomi et de l\'autre la merde. Il semble que les herbes ne valaient pas la peine d\'être essayées après tout. %volontaire% s\'est courageusement déclaré prêt à engloutir les plantes mystérieuses et, il suffit de le dire, les proportions que vous voyez sortir de lui sont définitivement mystiques dans le sens large du terme, \"le corps peut-il vraiment en contenir autant ?\".",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Ewww.",
+					Text = "Beurk.",
 					function getResult( _event )
 					{
 						return 0;
@@ -88,7 +88,7 @@ this.herbs_along_the_way_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = effect.getIcon(),
-						text = _event.m.Volunteer.getName() + " is sick"
+						text = _event.m.Volunteer.getName() + " est malade"
 					}
 				];
 			}

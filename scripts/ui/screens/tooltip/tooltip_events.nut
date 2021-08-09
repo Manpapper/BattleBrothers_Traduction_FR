@@ -1547,7 +1547,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Maîtrise de Mélée"
+					text = "Maîtrise de Mêlée"
 				},
 				{
 					id = 2,

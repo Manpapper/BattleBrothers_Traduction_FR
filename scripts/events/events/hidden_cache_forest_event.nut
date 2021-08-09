@@ -10,13 +10,13 @@ this.hidden_cache_forest_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 200.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]The forest is no friend of man which is why men of ill-repute sure love to put their keepsakes there. And today you\'ve stumbled across one: a cache that %otherbrother% found by way of stubbing his toe on the edge of it. Digging out the crate and cracking it open, you find an assortment of weapons, armor, and gold. You clap the sellsword on the shoulder and thank him for his \'hard work\'. He wags his boot around.%SPEECH_ON%Yessir, I\'ve got a toe like the nose of a bloodhound.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_25.png[/img]La forêt n\'est pas l\'amie de l\'homme, c\'est pourquoi les hommes de mauvaise réputation aiment y déposer leurs trésors. Et aujourd\'hui, vous êtes tombé sur l\'un d\'entre eux : une cache que  %otherbrother% a trouvée en se cognant l\'orteil à l\'orée de la forêt. En déterrant la caisse et en l\'ouvrant, vous trouvez un assortiment d\'armes, d\'armures et d\'or. Vous tapez sur l\'épaule du mercenaire et le remerciez pour son \"dur labeur\". Il remue sa botte dans tous les sens.%SPEECH_ON%Oui, Boss, j\'ai un orteil aussi fin comme le nez d\'un limier.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Indeed you do.",
+					Text = "En effet, c\'est le cas.",
 					function getResult( _event )
 					{
 						if (_event.m.Graverobber != null)
@@ -39,7 +39,7 @@ this.hidden_cache_forest_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				local r = this.Math.rand(1, 8);
 				local item;
@@ -117,7 +117,7 @@ this.hidden_cache_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_25.png[/img]As you get ready to leave, %graverobber% the graverobber stops you.%SPEECH_ON%Wait a minute.%SPEECH_OFF%He jumps down into the pit in which the cache was buried. He starts knocking around on the dirt. Tap. Tap. Tap. Clack. His knuckle raps hard and a smile crosses his face.%SPEECH_ON%Yeah, that\'s what I thought.%SPEECH_OFF%The man digs into the earth and drags out another crate and opens it up. You\'re wowed by the sight of what\'s inside. The graverobber nods.%SPEECH_ON%If someone has something good to hide, they don\'t just hide it in the ground, they hide it with things of lesser value. That way, even if you find their treasure there\'s still a chance you\'ll get distracted from the real good stuff. Quite clever, really, but it don\'t fool me none.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Alors que vous vous apprêtez à partir, %graverobber% le fossoyeur vous arrête.%SPEECH_ON%Attendez une minute.%SPEECH_OFF%Il saute dans la fosse dans laquelle la cache était enterrée. Il commence à frapper sur la terre. Tape. Tape. Tap. Clack. Sa jointure frappe fort et un sourire traverse son visage.%SPEECH_ON%Ouais, c\'est ce que je pensais.%SPEECH_OFF%L\'homme creuse dans la terre et sort une autre caisse qu\'il ouvre. Vous êtes impressionnés par la vue de ce qu\'il y a à l\'intérieur. Le fossoyeur acquiesce.%SPEECH_ON%Si quelqu\'un a quelque chose de bien à cacher, il ne se contente pas de le cacher dans le sol, il le cache avec des choses de moindre valeur. De cette façon, même si vous trouvez leur trésor, il y a toujours une chance que vous soyez distrait de la vraie bonne chose. Très astucieux, vraiment, mais il ne m\'auront pas.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
