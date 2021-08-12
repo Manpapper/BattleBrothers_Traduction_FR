@@ -7,11 +7,11 @@ this.fulfill_x_southern_contracts_ambition <- this.inherit("scripts/ambitions/am
 		this.ambition.create();
 		this.m.ID = "ambition.fulfill_x_southern_contracts";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "The city states of the south have crowns aplenty.\nWe shall get rich under the blazing desert sun!";
-		this.m.UIText = "Fulfill contracts for the city states";
-		this.m.TooltipText = "Travel south, visit the southern city states and find employment there. Take on and complete contracts for the ruling elite.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_150.png[/img]For all their intellectual pursuits and proper mannerisms, the Southerners are under no misapprehension as to your role as a mercenary. Whereas in the north they\'d call you sellsword, here they dub you crownling. You\'ve spent little mind toward either attribution, recognizing only the stark reality that for as much as they despise you, they seek out your work, award your competency, and remember your billing when future crises arise.\n\n And therein lies the cornerstone of the North and South: the mighty crown itself. Languages, religion, peoples, all be damned. A bit of gold needs no translation, no accommodation, and no arbitration. Your pursuit of the crown has shown you to be reliable to the Southerners, and your renown has grown as deep as their pockets.";
-		this.m.SuccessButtonText = "Gold is gold.";
+		this.m.ButtonText = "Les villes-états du sud ont des couronnes à profusion. \nNous allons nous enrichir sous le soleil brûlant du désert !";
+		this.m.UIText = "Exécuter les contrats pour les Cités-États";
+		this.m.TooltipText = "Voyagez vers le sud, visitez les Cités-États du sud et trouvez-y un emploi. Acceptez et remplissez des contrats pour l'élite dirigeante.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_150.png[/img]Malgré toutes leurs recherches intellectuelles et leurs bonnes manières, les gens du Sud ne se méprennent pas sur votre rôle de mercenaire. Alors que dans le nord, on vous appellerait mercenaire, ici, on vous surnomme couronne. Vous ne vous souciez guère de l'une ou l'autre de ces attributions, reconnaissant seulement la dure réalité que, même s'ils vous méprisent, ils recherchent votre travail, récompensent vos compétences et se souviennent de vous lors des crises futures.\n\nEt c'est là que se trouve le point commun entre le Nord et le Sud : la puissante couronne elle-même. Les langues, les religions, les peuples, peu importer. Un peu d'or n'a besoin d'aucune traduction, d'aucun compromis, et d'aucun arbitrage. Votre quête de la couronne a montré que vous étiez digne de confiance aux yeux des Sudistes, et votre renommée est aussi grande que leurs poches.";
+		this.m.SuccessButtonText = "L'or c'est de l'or.";
 	}
 
 	function getUIText()

@@ -322,7 +322,7 @@ gt.Const.Strings.EntityNamePlural <- [
 	"Bêtes de l\'hiver",
 	"Barbares fous",
 	"Serpents",
-	"Efrits",
+	"Ifrits",
 	"Hyènes",
 	"Conscrits",
 	"Artilleurs",

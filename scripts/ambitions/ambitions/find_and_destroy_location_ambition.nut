@@ -5,11 +5,11 @@ this.find_and_destroy_location_ambition <- this.inherit("scripts/ambitions/ambit
 		this.ambition.create();
 		this.m.ID = "ambition.find_and_destroy_location";
 		this.m.Duration = 7.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Let us set out into the wilderness, discover the unknown, and plunder it.\nBe it a wizard\'s tomb, goblin camp, or aught else we may find.";
-		this.m.UIText = "Discover a ruin or hostile camp, and destroy it";
-		this.m.TooltipText = "Discover a ruin, camp or other hostile location on your own by exploring the land, destroy it, and take the plunder.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_65.png[/img]It sounded like a good idea at the time, but tramping around the wilderness without a map or any destination in mind turned out to be quite a strenuous way to find riches, or even a battle. Your footsore band did eventually come upon a worthy target though, and everyone had to agree the venture was worthwhile after all. %farmer% is almost glowing with satisfaction as he surveys the few remaining embers of the %recently_destroyed%.%SPEECH_ON%They hadn\'t the merest clue we were coming. Like wheat before our scythes, brothers!%SPEECH_OFF%%notfarmer% raises an eyebrow.%SPEECH_ON%Speak for yourself. I\'m no farmer.%SPEECH_OFF%";
-		this.m.SuccessButtonText = "Another challenge conquered.";
+		this.m.ButtonText = "Partons dans le désert, découvrons l'inconnu et pillons-le. Qu'il s'agisse de la tombe d'un sorcier, \nd'un camp de gobelins ou de toute autre chose que nous pourrions trouver.";
+		this.m.UIText = "Découvrir une ruine ou un camp hostile, et le détruire.";
+		this.m.TooltipText = "Découvrez une ruine, un camp ou tout autre lieu hostile par vous-même en explorant le monde, détruisez-le et prenez le butin.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_65.png[/img]Cela semblait être une bonne idée à l'époque, mais marcher dans la nature sans carte ni destination en tête s'est avéré être un moyen assez difficile de trouver des richesses, ou même une bataille. Mais votre groupe a fini par tomber sur une cible valable, et tout le monde a reconnu que l'aventure en valait la peine après tout. %farmer% est presque rayonnant de satisfaction alors qu'il observe les quelques braises restantes de %recently_destroyed%.%SPEECH_ON%Ils n'avaient pas le moindre soupçon que nous arrivions. Comme le blé devant nos faux, mes frères!%SPEECH_OFF%%notfarmer% lève un sourcil.%SPEECH_ON% Parle pour toi. Je ne suis pas un fermier.%SPEECH_OFF%";
+		this.m.SuccessButtonText = "Un autre défi relevé.";
 	}
 
 	function onUpdateScore()
