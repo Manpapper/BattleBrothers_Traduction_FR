@@ -4,7 +4,7 @@ this.early_access_scenario <- this.inherit("scripts/scenarios/world/starting_sce
 	{
 		this.m.ID = "scenario.early_access";
 		this.m.Name = "Nouvelle Compagnie";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Après des années à couvrir votre épée de sang pour un salaire ridicule, vous avez enfin assez de couronnes pour commencer votre propre compagnie de mercenaire. Trois mercenaires avec lesquels vous avez combattu côte à côte dans le Mur de Bouclier vous ont rejoint.\n\n[color=#bcad8c]Un début rapide dans le monde, sans advantages ou de désavantages particuliers.[/color][/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Après des années à couvrir votre épée de sang pour un salaire ridicule, vous avez enfin assez de couronnes pour commencer votre propre compagnie de mercenaire. Trois mercenaires avec lesquels vous avez combattu côte à côte dans le Mur de Bouclier vous ont rejoint.\n\n[color=#bcad8c]Un début rapide dans le monde, sans avantages ou de désavantages particuliers.[/color][/p]";
 		this.m.Difficulty = 1;
 		this.m.Order = 10;
 	}

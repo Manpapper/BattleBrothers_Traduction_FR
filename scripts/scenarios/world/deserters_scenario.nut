@@ -4,7 +4,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 	{
 		this.m.ID = "scenario.deserters";
 		this.m.Name = "Déserteurs";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]Pendant trop longtemps vous avez été traîné d\'une bataille sanglante à une autre au bon vouloir des seigneurs restant dans leurs hautes tours. La nuit dernière, vous vous êtes enfuit de votre camp avec 3 compères. Vous êtes toujours habillés comme des soldats, mais vous êtes des déserteurs, et la corde sera votre fin si vous restez ici trop longtemps.\n\n[color=#bcad8c]Déserteurs:[/color] Commencez avec 3 déserteurs et des armures décentes, mais peu de fonds et une Maison de Noble qui vous traque.\n[color=#bcad8c]Premiers à courrir:[/color] Vos hommes sont toujours les premiers à agir dans le premier tour d\'un combat.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]Pendant trop longtemps vous avez été traîné d\'une bataille sanglante à une autre au bon vouloir des seigneurs restant dans leurs hautes tours. La nuit dernière, vous vous êtes enfuis de votre camp avec 3 compères. Vous êtes toujours habillés comme des soldats, mais vous êtes des déserteurs, et la corde sera votre fin si vous restez ici trop longtemps.\n\n[color=#bcad8c]Déserteurs :[/color] Commencez avec 3 déserteurs et des armures décentes, mais peu de fonds et une Maison de Noble qui vous traque.\n[color=#bcad8c]Premiers à courrir :[/color] Vos hommes sont toujours les premiers à agir dans le premier tour d\'un combat.[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 50;
 	}

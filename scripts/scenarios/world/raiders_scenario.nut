@@ -4,7 +4,7 @@ this.raiders_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 	{
 		this.m.ID = "scenario.raiders";
 		this.m.Name = "Pillards du Nord";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Pendant toute votre vie d\'adulte vous avez attaqué et pillé dans ces terres. Mais avec la paysannerie locale étant aussi pauvre que des souris, vous voulez étendre vos activités dans quelque chose de plus lucratif - le Travail de Mercenaire, si vos potentiels employeurs veulent vient pardonner vos actes passés.\n\n[color=#bcad8c]Bande:[/color] Commencez avec trois barbares.\n[color=#bcad8c]Pillards:[/color] Vous avez plus de chance d\'avoir des objets sur les ennemis tués en tant que butin.\n[color=#bcad8c]Hors-la-loi:[/color] Commencez avec de mauvaise relations avec la plupart des factions humaines.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Pendant toute votre vie d\'adulte vous avez attaqué et pillé dans ces terres. Mais avec la paysannerie locale étant aussi pauvre que des souris, vous voulez étendre vos activités dans quelque chose de plus lucratif - le Travail de Mercenaire, si vos potentiels employeurs veulent bien pardonner vos actes passés.\n\n[color=#bcad8c]Bande :[/color] Commencez avec trois barbares.\n[color=#bcad8c]Pillards :[/color] Vous avez plus de chance d\'avoir des objets sur les ennemis tués en tant que butin.\n[color=#bcad8c]Hors-la-loi :[/color] Commencez avec de mauvaise relations avec la plupart des factions humaines.[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 60;
 	}

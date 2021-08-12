@@ -4,7 +4,7 @@ this.gladiators_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 	{
 		this.m.ID = "scenario.gladiators";
 		this.m.Name = "Gladiateurs";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Vous vous êtes battu dans l\'arène pendant des années. Au début pour votre liberté, ensuite pour les couronnes, et enfin pour devenir immortel. Que pourrait avoir le destin en stock pour vous?\n\n[color=#bcad8c]Gladiators:[/color] Commencez avec trois gladiateurs expérimentés possedant un bon équipement, mais une paie journalière très élevée.\n[color=#bcad8c]Légendes de l\'Arène:[/color] Chaque gladiateur a un très unique en combat.\n[color=#bcad8c]Les Trois Glorieux:[/color] Vous ne pouvez avoir plus de 12 hommes dans votre compagnie, et si les trois gladiateurs du départ meurent, votre campagne se termine.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Vous vous êtes battu dans l\'arène pendant des années. Au début pour votre liberté, ensuite pour les couronnes, et enfin pour devenir immortel. Que pourrait avoir le destin en stock pour vous ?\n\n[color=#bcad8c]Gladiators :[/color] Commencez avec trois gladiateurs expérimentés possédant un bon équipement, mais une paie journalière très élevée.\n[color=#bcad8c]Légendes de l\'Arène :[/color] Chaque gladiateur a un trait unique en combat.\n[color=#bcad8c]Les Trois Glorieux :[/color] Vous ne pouvez avoir plus de 12 hommes dans votre compagnie, et si les trois gladiateurs du départ meurent, votre campagne se termine.[/p]";
 		this.m.Difficulty = 3;
 		this.m.Order = 100;
 		this.m.IsFixedLook = true;

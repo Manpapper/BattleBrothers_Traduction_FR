@@ -4,7 +4,7 @@ this.trader_scenario <- this.inherit("scripts/scenarios/world/starting_scenario"
 	{
 		this.m.ID = "scenario.trader";
 		this.m.Name = "Caravane Marchande";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Vous êtes à la tête d\'une petite caravane et avez la plupart de vos couronnes investies dans des biens marchandables. Mais les routes sont devenus dangereuses - Les brigands et les Peaux-Vertes attendent en embuscade, et des rumeurs circulent disant qu\'ils y a encore pire là dehors.\n\n[color=#bcad8c]Caravane:[/color] Commencez avec deux caravaniers que vous avez embauchés.\n[color=#bcad8c]Commerçant:[/color] Ayez un bonus de 10% sur vos ventes et achats.\n[color=#bcad8c]Pas un Guerrier:[/color] Commencez sans renom et gagnez les gains de renoms sont à 66%.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Vous êtes à la tête d\'une petite caravane et avez la plupart de vos couronnes investies dans des biens marchandables. Mais les routes sont devenues dangereuses - Les brigands et les Peaux-Vertes attendent en embuscade, et des rumeurs circulent disant qu\'il y a encore pire là dehors.\n\n[color=#bcad8c]Caravane :[/color] Commencez avec deux caravaniers que vous avez embauchés.\n[color=#bcad8c]Commerçant :[/color] Ayez un bonus de 10% sur vos ventes et achats.\n[color=#bcad8c]Pas un Guerrier :[/color] Commencez sans renom et gagnez les gains de renoms sont à 66%.[/p]";
 		this.m.Difficulty = 1;
 		this.m.Order = 19;
 	}
