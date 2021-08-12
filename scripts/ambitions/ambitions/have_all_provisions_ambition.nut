@@ -5,12 +5,12 @@ this.have_all_provisions_ambition <- this.inherit("scripts/ambitions/ambition", 
 		this.ambition.create();
 		this.m.ID = "ambition.have_all_provisions";
 		this.m.Duration = 14.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "I know you are weary of our bad fortune and the stale fare day after day.\nWe shall get food and drink from all over the land and have a feast!";
-		this.m.RewardTooltip = "Significantly improve the mood of your men.";
-		this.m.UIText = "Have one of each provision type there is";
-		this.m.TooltipText = "Have one of each provision type there is in your stash to hold a feast.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_61.png[/img]Having put in the legwork chasing down provisioners and haggling with farmers, you assemble a selection of foodstuffs that would catch the eye of even the most jaded nobleman. With the larder full, you call a feast for the %companyname% and invite every man to eat his fill. Your brothers waste no time. What they lack in manners, they make up in appetite. %randombrother% uses the opportunity to share his knowledge on meat.%SPEECH_ON%This beast died with joy in its heart, that\'s why it is so tender.%SPEECH_OFF%To the admiration of his comrades, %strongest_brother% gives a thunderous belch.%SPEECH_ON%I am ashamed to say it, but I must wash this down with water, not more grog.%SPEECH_OFF%After this, there is not much in the way of talk, but greasy beards and full bellies guarantee the men will be in good spirits for your next encounter.";
-		this.m.SuccessButtonText = "The men have earned it.";
+		this.m.ButtonText = "Je sais que vous êtes fatigués de notre mauvaise fortune et de nos plats rassis jour après jour. \nNous allons donc chercher de la nourriture et des boissons dans tout le pays et faire un festin !";
+		this.m.RewardTooltip = "Améliore significativement l\'humeur de vos hommes.";
+		this.m.UIText = "Ayez une provision de chaque type existant";
+		this.m.TooltipText = "Ayez une provision de chaque type dans votre réserve pour organiser un festin.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_61.png[/img]Après avoir fait le tour des fournisseurs et marchandé avec les agriculteurs, vous avez rassemblé une sélection de denrées alimentaires qui attirerait l\'attention du noble le plus endurci. Le garde-manger rempli, vous organisez un festin pour %companyname% et invitez chaque homme à manger à sa faim. Vos frères d\'armes ne perdent pas de temps. Ce qui leur manque en manières, ils le compensent en appétit. %randombrother% profite de l\'occasion pour partager ses connaissances sur la viande.%SPEECH_ON%Cette bête est morte avec de la joie dans le cœur, c\'est pour cela qu\'elle est si tendre.%SPEECH_OFF%Devant l\'admiration de ses camarades, %strongest_brother% fait un rot tonitruant. Après cela, il n\'y a pas beaucoup de conversation, mais les barbes grasses et les ventres pleins garantissent que les hommes seront de bonne humeur pour votre prochain combat.";
+		this.m.SuccessButtonText = "Les hommes l\'ont mérité.";
 	}
 
 	function getTooltipText()
@@ -110,71 +110,71 @@ this.have_all_provisions_ambition <- this.inherit("scripts/ambitions/ambition", 
 			}
 		}
 
-		local ret = this.m.TooltipText + "\n\nYou\'re currently lacking some provisions.\n";
+		local ret = this.m.TooltipText + "\n\nIl vous manque actuellement certaines provisions.\n";
 
 		if (!beer)
 		{
-			ret = ret + "\n- Beer";
+			ret = ret + "\n- Bière";
 		}
 
 		if (!bread)
 		{
-			ret = ret + "\n- Bread";
+			ret = ret + "\n- Pain";
 		}
 
 		if (!cured_venison)
 		{
-			ret = ret + "\n- Cured Venison";
+			ret = ret + "\n- Gibier Séché";
 		}
 
 		if (!dried_fish)
 		{
-			ret = ret + "\n- Dried Fish";
+			ret = ret + "\n- Poisson Séché";
 		}
 
 		if (!dried_fruits)
 		{
-			ret = ret + "\n- Dried Fruits";
+			ret = ret + "\n- Fruits Secs";
 		}
 
 		if (!ground_grains)
 		{
-			ret = ret + "\n- Ground Grains";
+			ret = ret + "\n- Céréales Moulues";
 		}
 
 		if (!goat_cheese)
 		{
-			ret = ret + "\n- Goat Cheese";
+			ret = ret + "\n- Fromage de Chèvre";
 		}
 
 		if (!mead)
 		{
-			ret = ret + "\n- Mead";
+			ret = ret + "\n- Hydromel";
 		}
 
 		if (!mushrooms)
 		{
-			ret = ret + "\n- Mushrooms";
+			ret = ret + "\n- Champignons";
 		}
 
 		if (!berries)
 		{
-			ret = ret + "\n- Roots and Berries";
+			ret = ret + "\n- Racines et Baies";
 		}
 
 		if (!smoked_ham)
 		{
-			ret = ret + "\n- Smoked Ham";
+			ret = ret + "\n- Jambon Fumé";
 		}
 
 		if (!wine)
 		{
-			ret = ret + "\n- Wine";
+			ret = ret + "\n- Vin";
 		}
 
 		if (!cured_rations)
 		{
-			ret = ret + "\n- Cured Rations";
+			ret = ret + "\n- Rations Traitées";
 		}
 
 		if (this.Const.DLC.Desert)
@@ -186,12 +186,12 @@ this.have_all_provisions_ambition <- this.inherit("scripts/ambitions/ambition", 
 
 			if (!rice)
 			{
-				ret = ret + "\n- Rice";
+				ret = ret + "\n- Riz";
 			}
 
 			if (!dried_lamb)
 			{
-				ret = ret + "\n- Dried Lamb";
+				ret = ret + "\n- Agneau Séché";
 			}
 		}
 
@@ -335,7 +335,7 @@ this.have_all_provisions_ambition <- this.inherit("scripts/ambitions/ambition", 
 
 		foreach( bro in brothers )
 		{
-			bro.improveMood(1.0, "Feasted with the company");
+			bro.improveMood(1.0, "Un festin avec la compagnie");
 		}
 	}
 

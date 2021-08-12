@@ -5,11 +5,11 @@ this.have_armor_upgrades_ambition <- this.inherit("scripts/ambitions/ambition", 
 		this.ambition.create();
 		this.m.ID = "ambition.have_armor_upgrades";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Mundane armors won\'t do for a real mercenary outfit.\nWe should adorn our gear with trophies of our deeds!";
-		this.m.UIText = "Have at least 6 armors with attachments";
-		this.m.TooltipText = "Have at least 6 armors with attachments in your possession. Buy them, loot them, or have a taxidermist craft them for you, then combine them with the armor of your men.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_82.png[/img]When you took command of the company it was a ragtag band of men clinging for life, an ad hoc assembly of sellswords stitched together with nothing if not sheer stubbornness and absolute contempt for common sense. Now you watch as the men walk around like frayed revenants of an unworldly wild, their armor adorned with hideous scalps and pelts and bones, the ill-shapen recreation of conquest fitted such that others may know the %companyname% could not be sorted by any measure known to the earth whether it be monster or man.";
-		this.m.SuccessButtonText = "This will serve us well.";
+		this.m.ButtonText = "Des armures banales ne suffisent pas pour une vraie tenue de mercenaire. \nNous devrions orner notre équipement de trophées de nos exploits !";
+		this.m.UIText = "Avoir au moins 6 armures avec des accessoires";
+		this.m.TooltipText = "Ayez en votre possession au moins 6 armures avec des accessoires. Achetez-les, pillez-les ou demandez à un taxidermiste de vous les fabriquer, puis combinez-les avec les armures de vos hommes.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_82.png[/img]Lorsque vous avez pris le commandement de la compagnie, c\'était un groupe d\'hommes en guenilles qui s\'accrochaient à la vie, un groupe de mercenaires assemblé sur le moment n\'ayant rien d\'autre que de l\'obstination et un mépris absolu pour le bon sens. Aujourd\'hui, vous regardez les hommes se promener comme des revenants effilochés d\'un monde sauvage, leur armure ornée de scalps, de peaux et d\'os hideux, ces ornements que vous avez recupérer au fil de vos batailles ou acheter au premier commerçant venu. Beaucoup pensent que la compagnie ne peut être mise dans une case que ce soit en tant qu\'homme ou en tant que monstre.";
+		this.m.SuccessButtonText = "Cela nous servira bien.";
 	}
 
 	function onUpdateScore()

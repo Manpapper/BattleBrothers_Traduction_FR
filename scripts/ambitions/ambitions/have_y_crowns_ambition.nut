@@ -5,10 +5,10 @@ this.have_y_crowns_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.have_y_Couronnes";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Should a battle or two go against us we may find ourselves out of pocket and\nshort of equipment. The company will therefore build a reserve of 10,000 crowns.";
-		this.m.UIText = "Have at least 10,000 Couronnes";
-		this.m.TooltipText = "Have at least 10,000 crowns as a reserve, in order to persevere when things may turn bad in the future. You can make money by completing contracts, looting camps and ruins, or trading.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_04.png[/img]Your increased store of coin and other valuables lets you sleep easier. The men do too, knowing that they won\'t have to chase you across the steppe when payroll is due. You\'ll no longer be at a disadvantage when it comes to contract negotiations, and you\'ll not end up short on men or equipment should a battle or two go against you.\n\nYour new reserve also begins to open doors for the %companyname%. Merchants, money lenders and nobles have one thing in common: they prefer to rub elbows with their own kind. Merely getting an audience can be a chore if they suspect you have empty pockets. But now that you\'ve proven yourself to be a man of resource, the company has become more attractive to wealthy individuals and decision makers.";
+		this.m.ButtonText = "Si une ou deux batailles tournent mal, nous risquons de nous retrouver \nà court d'argent et d'équipement. La compagnie va donc constituer une réserve de 10.000 Couronnes.";
+		this.m.UIText = "Avoir au moins 10 000 Couronnes";
+		this.m.TooltipText = "Ayez au moins 10 000 couronnes en réserve, afin de survivre si les choses tourne mal à l'avenir. Vous pouvez gagner de l'argent en remplissant des contrats, en pillant des camps et des ruines, ou en faisant du commerce.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_04.png[/img]Votre réserve de pièces et autres objets de valeur étant plus pleine cela vous permet de dormir plus facilement. Les hommes aussi, sachant qu'ils n'auront pas à vous pourchasser à travers la steppe lorsque vous devrez payer vos salaires. Vous ne serez plus désavantagé lors de la négociation de contrats, et vous ne manquerez pas d'hommes ou d'équipement si une bataille ou deux tournent mal. \n\nVotre nouvelle réserve commence également à ouvrir des portes pour %compagnie%. Les marchands, les prêteurs d'argent et les nobles ont une chose en commun : ils préfèrent se frotter à leurs semblables. Obtenir une audience peut être une corvée s'ils vous soupçonnent d'avoir les poches vides. Mais maintenant que vous avez prouvé que vous êtes un homme de ressources, la compagnie est devenue plus attrayante pour les individus fortunés et les décideurs.";
 		this.m.SuccessButtonText = "Excellent!";
 	}
 
