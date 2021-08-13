@@ -7,7 +7,7 @@ this.win_against_x_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.win_against_x";
 		this.m.Duration = 14.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Mettons de côté les escarmouches pour le moment et cherchons à vaincre un groupe d\'au\nmoins une douzaine d\'adversaires. C\'est ainsi que notre nom sera connu dans tout le pays !";
+		this.m.ButtonText = "Mettons de côté les escarmouches pour le moment et cherchons à vaincre un groupe d\'au moins une douzaine d\'adversaires. C\'est ainsi que notre nom sera connu dans tout le pays !";
 		this.m.RewardTooltip = "Gagnez 150 de renom supplémentaire pour votre réussite.";
 		this.m.UIText = "Gagner une bataille contre 12 ennemis ou plus";
 		this.m.TooltipText = "Gagnez une bataille contre 12 ennemis ou plus, que ce soit en les tuant ou en les faisant se disperser et fuir. Vous pouvez le faire dans le cadre d\'un contrat ou en vous battant à votre guise.";

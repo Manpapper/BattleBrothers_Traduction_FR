@@ -5,7 +5,7 @@ this.have_all_provisions_ambition <- this.inherit("scripts/ambitions/ambition", 
 		this.ambition.create();
 		this.m.ID = "ambition.have_all_provisions";
 		this.m.Duration = 14.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Je sais que vous êtes fatigués de notre mauvaise fortune et de nos plats rassis jour après jour. \nNous allons donc chercher de la nourriture et des boissons dans tout le pays et faire un festin !";
+		this.m.ButtonText = "Je sais que vous êtes fatigués de notre mauvaise fortune et de nos plats rassis jour après jour. Nous allons donc chercher de la nourriture et des boissons dans tout le pays et faire un festin !";
 		this.m.RewardTooltip = "Améliore significativement l\'humeur de vos hommes.";
 		this.m.UIText = "Ayez une provision de chaque type existant";
 		this.m.TooltipText = "Ayez une provision de chaque type dans votre réserve pour organiser un festin.";

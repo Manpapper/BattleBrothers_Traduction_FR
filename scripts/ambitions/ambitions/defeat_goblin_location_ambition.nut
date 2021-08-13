@@ -7,7 +7,7 @@ this.defeat_goblin_location_ambition <- this.inherit("scripts/ambitions/ambition
 		this.ambition.create();
 		this.m.ID = "ambition.defeat_goblin_location";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Seuls les plus audacieux s\'attaquent aux gobelins en grand nombre.\n Nous brûlerons quelques-uns de leurs campements fétides, et la nouvelle circulera !";
+		this.m.ButtonText = "Seuls les plus audacieux s\'attaquent aux gobelins en grand nombre. Nous brûlerons quelques-uns de leurs campements fétides, et la nouvelle circulera !";
 		this.m.RewardTooltip = "Vous recevrez un accessoire unique qui rendra son porteur insensible à l\'enracinement.";
 		this.m.UIText = "Détruire les lieux contrôlés par les gobelins";
 		this.m.TooltipText = "Détruisez quatre lieux contrôlés par des gobelins pour prouver les prouesses de la compagnie, que ce soit dans le cadre d\'un contrat ou par vous même. Vous aurez également besoin d\'assez de place dans votre inventaire pour un nouvel objet.";

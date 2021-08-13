@@ -7,7 +7,7 @@ this.defeat_undead_location_ambition <- this.inherit("scripts/ambitions/ambition
 		this.ambition.create();
 		this.m.ID = "ambition.defeat_undead_location";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Les morts-vivants sont une terrible malédiction pour l\'homme.\nBrûlons quelques-uns de leurs repaires et gagnons le respect de tous les honnêtes gens !";
+		this.m.ButtonText = "Les morts-vivants sont une terrible malédiction pour l\'homme. Brûlons quelques-uns de leurs repaires et gagnons le respect de tous les honnêtes gens !";
 		this.m.RewardTooltip = "Vous recevrez un accessoire unique qui double la détermination du porteur lorsqu\'il se défend contre les effets de la peur et du contrôle mental.";
 		this.m.UIText = "Détruire les lieux assaillis par les morts-vivants";
 		this.m.TooltipText = "Détruisez quatre lieux envahis de morts-vivants pour prouver les prouesses de la compagnie, que ce soit dans le cadre d\'un contrat ou par vous même. Vous aurez également besoin d\'assez de place dans votre inventaire pour un nouvel objet.";

@@ -5,7 +5,7 @@ this.defeat_holywar_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.defeat_holywar";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Les feux de la tourmente religieuse menacent d\'engloutir les terres. Laissez la compagnie être\n forgée plus forte que jamais par la chaleur et les flammes, et gagnez une fortune en gagnant la guerre !";
+		this.m.ButtonText = "Les feux de la tourmente religieuse menacent d\'engloutir les terres. Laissez la compagnie être forgée plus forte que jamais par la chaleur et les flammes, et gagnez une fortune en gagnant la guerre !";
 		this.m.UIText = "Mettre fin à la guerre entre le nord et le sud";
 		this.m.TooltipText = "Choisissez les maisons nobles du nord ou les villes-états du sud et travaillez avec elles pour gagner leur guerre sainte. Chaque armée détruite, et chaque contrat rempli, vous rapprochera de la fin de la guerre.";
 		this.m.SuccessButtonText = "Qu\'ils nous aiment ou nous détestent, tout le monde connaît %companyname% maintenant !";

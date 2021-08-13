@@ -5,7 +5,7 @@ this.have_armor_upgrades_ambition <- this.inherit("scripts/ambitions/ambition", 
 		this.ambition.create();
 		this.m.ID = "ambition.have_armor_upgrades";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Des armures banales ne suffisent pas pour une vraie tenue de mercenaire. \nNous devrions orner notre équipement de trophées de nos exploits !";
+		this.m.ButtonText = "Des armures banales ne suffisent pas pour une vraie tenue de mercenaire. Nous devrions orner notre équipement de trophées de nos exploits !";
 		this.m.UIText = "Avoir au moins 6 armures avec des accessoires";
 		this.m.TooltipText = "Ayez en votre possession au moins 6 armures avec des accessoires. Achetez-les, pillez-les ou demandez à un taxidermiste de vous les fabriquer, puis combinez-les avec les armures de vos hommes.";
 		this.m.SuccessText = "[img]gfx/ui/events/event_82.png[/img]Lorsque vous avez pris le commandement de la compagnie, c\'était un groupe d\'hommes en guenilles qui s\'accrochaient à la vie, un groupe de mercenaires assemblé sur le moment n\'ayant rien d\'autre que de l\'obstination et un mépris absolu pour le bon sens. Aujourd\'hui, vous regardez les hommes se promener comme des revenants effilochés d\'un monde sauvage, leur armure ornée de scalps, de peaux et d\'os hideux, ces ornements que vous avez recupérer au fil de vos batailles ou acheter au premier commerçant venu. Beaucoup pensent que la compagnie ne peut être mise dans une case que ce soit en tant qu\'homme ou en tant que monstre.";

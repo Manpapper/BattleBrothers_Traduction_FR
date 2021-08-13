@@ -5,7 +5,7 @@ this.find_and_destroy_location_ambition <- this.inherit("scripts/ambitions/ambit
 		this.ambition.create();
 		this.m.ID = "ambition.find_and_destroy_location";
 		this.m.Duration = 7.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Partons dans le désert, découvrons l\'inconnu et pillons-le. Qu\'il s\'agisse de la tombe d\'un sorcier, \nd\'un camp de gobelins ou de toute autre chose que nous pourrions trouver.";
+		this.m.ButtonText = "Partons dans le désert, découvrons l\'inconnu et pillons-le. Qu\'il s\'agisse de la tombe d\'un sorcier, d\'un camp de gobelins ou de toute autre chose que nous pourrions trouver.";
 		this.m.UIText = "Découvrir une ruine ou un camp hostile, et le détruire.";
 		this.m.TooltipText = "Découvrez une ruine, un camp ou tout autre lieu hostile par vous-même en explorant le monde, détruisez-le et prenez le butin.";
 		this.m.SuccessText = "[img]gfx/ui/events/event_65.png[/img]Cela semblait être une bonne idée à l\'époque, mais marcher dans la nature sans carte ni destination en tête s\'est avéré être un moyen assez difficile de trouver des richesses, ou même une bataille. Mais votre groupe a fini par tomber sur une cible valable, et tout le monde a reconnu que l\'aventure en valait la peine après tout. %farmer% est presque rayonnant de satisfaction alors qu\'il observe les quelques braises restantes de %recently_destroyed%.%SPEECH_ON%Ils n\'avaient pas le moindre soupçon que nous arrivions. Comme le blé devant nos faux, mes frères!%SPEECH_OFF%%notfarmer% lève un sourcil.%SPEECH_ON% Parle pour toi. Je ne suis pas un fermier.%SPEECH_OFF%";

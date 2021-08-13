@@ -5,7 +5,7 @@ this.make_nobles_aware_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.make_nobles_aware";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Nous devons attirer l\'attention d\'une des maisons nobles pour un travail plus rentable.\nIls jouent à des jeux dangereux, mais qu\'importe, tant que la paie est bonne.";
+		this.m.ButtonText = "Nous devons attirer l\'attention d\'une des maisons nobles pour un travail plus rentable. Ils jouent à des jeux dangereux, mais qu\'importe, tant que la paie est bonne.";
 		this.m.RewardTooltip = "Vous débloquerez de tout nouveaux contrats émis par des nobles qui rapporte plus.";
 		this.m.UIText = "Atteindre le rang de renom \"Professionnel\".";
 		this.m.TooltipText = "Devenez connu en étant \"Professionnel\" (1 050 renommées) afin d\'attirer l\'attention des maisons nobles. Vous pouvez augmenter votre renommée en remplissant des contrats et en gagnant des batailles.";

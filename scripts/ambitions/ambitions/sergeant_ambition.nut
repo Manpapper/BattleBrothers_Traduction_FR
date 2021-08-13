@@ -5,7 +5,7 @@ this.sergeant_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.sergeant";
 		this.m.Duration = 14.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Nous nous battons bien, mais nous devons être mieux organisés au cas où\nles choses tourneraient mal. Je vais nommer un sergent pour vous rallier sur le champ de bataille.";
+		this.m.ButtonText = "Nous nous battons bien, mais nous devons être mieux organisés au cas où les choses tourneraient mal. Je vais nommer un sergent pour vous rallier sur le champ de bataille.";
 		this.m.RewardTooltip = "Vous recevrez un accessoire unique qui vous donnera de la détermination supplémentaire.";
 		this.m.UIText = "Avoir un homme avec le Talent \"Ralliez les troupes\"";
 		this.m.TooltipText = "Ayez au moins un homme avec le Talent \"Ralliez les troupes\". Vous aurez également besoin d\'assez de place dans votre inventaire pour un nouvel objet.";

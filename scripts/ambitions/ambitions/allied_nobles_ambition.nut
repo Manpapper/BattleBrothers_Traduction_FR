@@ -5,7 +5,7 @@ this.allied_nobles_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.allied_nobles";
 		this.m.Duration = 40.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Nous devons gagner la confiance d\'une maison noble et devenir leur allié. Ils partageront \nsûrement leurs armureries bien remplies avec de bons amis.";
+		this.m.ButtonText = "Nous devons gagner la confiance d\'une maison noble et devenir leur allié. Ils partageront sûrement leurs armureries bien remplies avec de bons amis.";
 		this.m.RewardTooltip = "Vous recevrez un équipement unique de la maison noble avec laquelle vous vous alliez.";
 		this.m.UIText = "Atteignez le niveau de relation \"Allié\" avec une maison noble.";
 		this.m.TooltipText = "Augmentez vos relations avec n\'importe quelle maison noble à \"Allié\" en remplissant les contrats donnés par les membres de la faction. Si vous ne respectez pas les contrats ou si vous trahissez leur confiance, vos relations diminueront.";

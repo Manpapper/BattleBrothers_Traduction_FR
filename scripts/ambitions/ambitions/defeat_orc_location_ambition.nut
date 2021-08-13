@@ -7,7 +7,7 @@ this.defeat_orc_location_ambition <- this.inherit("scripts/ambitions/ambition", 
 		this.ambition.create();
 		this.m.ID = "ambition.defeat_orc_location";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Battre les orcs au combat et brûler certains de leurs camps ferait connaître \naux gens les capacités de la compagnie sur le champ de bataille. Allons-y !";
+		this.m.ButtonText = "Battre les orcs au combat et brûler certains de leurs camps ferait connaître aux gens les capacités de la compagnie sur le champ de bataille. Allons-y !";
 		this.m.RewardTooltip = "Vous recevrez un accessoire unique qui rendra son porteur insensible aux étourdissements.";
 		this.m.UIText = "Détruire les lieux contrôlés par les orcs";
 		this.m.TooltipText = "Détruisez quatre lieux contrôlés par des orcs pour prouver les prouesses de la compagnie, que ce soit dans le cadre d\'un contrat ou de votre côté. Vous aurez également besoin d\'assez de place dans votre inventaire pour un nouvel objet.";

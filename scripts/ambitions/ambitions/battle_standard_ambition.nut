@@ -5,7 +5,7 @@ this.battle_standard_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.battle_standard";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Nous avons besoin d\'un étendard pour être reconnus de loin !\n Faire fabriquer un étendard est coûteux, nous devons donc\n réunir 2 000 couronnes pour cela.";
+		this.m.ButtonText = "Nous avons besoin d\'un étendard pour être reconnus de loin !Faire fabriquer un étendard est coûteux, nous devons donc réunir 2 000 couronnes pour cela.";
 		this.m.RewardTooltip = "Vous recevrez un objet unique qui donne de la détermination supplémentaire à tous ceux qui se trouvent à proximité du porteur.";
 		this.m.UIText = "Ayez au moins 2 000 couronnes";
 		this.m.TooltipText = "Rassemblez la somme de 2 000 couronnes ou plus, afin de pouvoir vous permettre de faire fabriquer un étendard pour la compagnie. Vous pouvez gagner de l\'argent en remplissant des contrats, en pillant des camps et des ruines, ou en faisant du commerce. Vous aurez également besoin d\'un espace suffisant dans votre inventaire pour le nouvel objet.";

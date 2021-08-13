@@ -5,7 +5,7 @@ this.named_item_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.named_item";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Une compagnie respectable se reconnaît à son équipement. Nous devrions sortir\net réclamer une arme, un bouclier, une armure ou un casque célèbre pour augmenter notre renommée.";
+		this.m.ButtonText = "Une compagnie respectable se reconnaît à son équipement. Nous devrions sortir et réclamer une arme, un bouclier, une armure ou un casque célèbre pour augmenter notre renommée.";
 		this.m.RewardTooltip = "Gagnez 150 renommées supplémentaires pour votre succès.";
 		this.m.UIText = "Avoir au moins une pièce d\'équipement célèbre";
 		this.m.TooltipText = "Avoir en sa possession au moins une pièce d\'équipement célèbre - arme, bouclier, armure ou casque. Suivez les rumeurs dans les tavernes pour savoir où l\'on peut trouver des objets célèbres, achetez-les dans les boutiques spécialisées des grandes villes et des châteaux, ou partez seul explorer et piller des ruines et des camps. Plus vous vous éloignez de la civilisation, plus vous avez de chances de trouver des objets rares.";

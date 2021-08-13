@@ -5,7 +5,7 @@ this.allied_civilians_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.allied_civilians";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Nous avons besoin d\'alliés. En tissant un lien d\'amitié et de confiance avec l\'une des villes,\n la compagnie obtiendra de meilleurs prix, d\'avantage de volontaires et un travail plus régulier.";
+		this.m.ButtonText = "Nous avons besoin d\'alliés. En tissant un lien d\'amitié et de confiance avec l\'une des villes, la compagnie obtiendra de meilleurs prix, d\'avantage de volontaires et un travail plus régulier.";
 		this.m.UIText = "Atteignez le niveau de relation \"Amical\" avec une faction civile.";
 		this.m.RewardTooltip = "En ayant de bonnes relations, vous obtiendrez de meilleurs prix et plus d\'hommes à engager.";
 		this.m.TooltipText = "Augmentez vos relations avec une faction civile d\'un village ou d\'une ville du monde à \"Amical\" en remplissant les contrats donnés dans la colonie de la faction. Si vous ne respectez pas les contrats ou si vous trahissez leur confiance, vos relations diminueront. L\'augmentation des relations avec les cités-États prend plus de temps que l\'augmentation des relations avec les petits villages. Les maisons nobles ne comptent pas comme des factions civiles.";
