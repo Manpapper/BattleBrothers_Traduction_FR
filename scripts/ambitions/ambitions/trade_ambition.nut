@@ -8,11 +8,11 @@ this.trade_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.trade";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "There\'s lots of crowns to be made with trading between towns.\nLet\'s earn us a fortune!";
-		this.m.UIText = "Buy and sell trading goods";
-		this.m.TooltipText = "Buy and sell 25 items of trading goods, such as furs, salt or spices. Buying them in small villages that produce them and selling them in big cities will earn you the most coin. Some trading goods are also exclusive to certain regions, like the southern deserts, and selling them in other parts of the world can further increase your profit margin.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_55.png[/img]The thought bore down on you from the start, and it is one that escapes many a mercenary captain. A thought so simple that perhaps its very simplicity camouflages it from a sword wielding leader\'s ego. If the %companyname% is to be traveling from city to city looking for sellsword work, it may as already have one foot in another vocation altogether: that of trade. You picked up on it quick, realizing that goods carry a different sort of currency than which appears at face, a value hidden from the eye, and hidden in the ripples of time and location themselves. Now you spend evenings struggling to tabulate the crowns. For once, it\'s a good problem to have.";
-		this.m.SuccessButtonText = "That\'s the bottom line.";
+		this.m.ButtonText = "Il y a beaucoup de couronnes à gagner avec le commerce entre les villes.\nGagnons une fortune !";
+		this.m.UIText = "Acheter et vendre des biens";
+		this.m.TooltipText = "Achetez et vendez 25 objets de commerce, comme des fourrures, du sel ou des épices. C\'est en les achetant dans les petits villages qui les produisent et en les vendant dans les grandes villes que vous gagnerez le plus d\'argent. Certains produits commerciaux sont également exclusifs à certaines régions, comme les déserts du sud, et les vendre dans d\'autres parties du monde peut encore augmenter votre marge.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_55.png[/img]La pensée vous envahit dès le début, et c\'est une pensée qui échappe à beaucoup de capitaines mercenaires. Une idée si simple que peut-être sa simplicité même la camoufle à l\'ego d\'un leader maniant l\'épée. Si %companyname% doit voyager de ville en ville à la recherche de travail, on peut déjà avoir un pied dans une toute autre vocation : celle du commerce. Vous avez vite compris que les marchandises ont une valeur différente de celle qui apparaît à première vue, une valeur cachée à l\'œil nu, et cachée dans les fluctuations du temps et de l\'espace. Maintenant, vous passez des soirées à vous battre pour compter les couronnes. Pour une fois, c\'est un bon problème à avoir.";
+		this.m.SuccessButtonText = "C\'est l\'essentiel.";
 	}
 
 	function getUIText()

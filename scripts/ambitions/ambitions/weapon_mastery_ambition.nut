@@ -5,11 +5,11 @@ this.weapon_mastery_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.weapon_mastery";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Imagine the trail of terror we could blaze if your skills matched your bravery.\nWe shall train five men to master their weapons so that they may act as a vanguard!";
-		this.m.UIText = "Have men with a weapon mastery perk each";
-		this.m.TooltipText = "Have 5 of your men with a weapon mastery perk each, no matter which one.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_50.png[/img]Introducing a new regimen to train the brothers in mastering a weapon is good for everyone\'s morale. Those who do the training improve their prowess and chances of survival, and earn the admiration of their companions, while the others have something fun to watch while sitting on a log and stuffing their faces with mutton.\n\nThe trainees practice in every spare moment with a variety of weapons until hard arms have become like oaken branches, and sharp eyes grow as keen and unforgiving as those of a great cat.%SPEECH_ON%Not only is %weaponbrother% a fearsome threat to our enemies, but his swift footwork makes you think of dancing girls.%SPEECH_OFF%%notweaponbrother% remarks, only to be soundly chastised with a training sword by %weaponbrother%.";
-		this.m.SuccessButtonText = "They\'re professionals now.";
+		this.m.ButtonText = "Imaginez la terreur que nous pourrions faire régner si vos compétences étaient à la hauteur de votre courage.\nNous allons entraîner cinq hommes à maîtriser leurs armes pour qu\'ils puissent servir d\'avant-garde !";
+		this.m.UIText = "Avoir des hommes ayant chacun une maîtrise d\'arme";
+		this.m.TooltipText = "Ayez 5 de vos hommes avoir chacun une maîtrise d\'arme, peu importe laquel.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_50.png[/img]Introduire un nouveau régime pour entraîner les mercenaires à la maîtrise d\'une arme est bon pour le moral de tous. Ceux qui s\'entraînent améliorent leurs prouesses et leurs chances de survie, et gagnent l\'admiration de leurs compagnons, tandis que les autres ont quelque chose d\'amusant à regarder en s\'asseyant sur une bûche et en se gavant de mouton.\n\nLes apprentis s\'entraînent à chaque moment libre avec une variété d\'armes jusqu\'à ce que leurs bras deviennent durs comme des branches de chêne, et que leurs yeux aiguisés deviennent aussi vifs et impitoyables que ceux d\'un grand chat%SPEECH_ON%Non seulement %weaponbrother% est une menace redoutable pour nos ennemis, mais son jeu de jambes rapide vous fait penser à une danseuse.%SPEECH_OFF%%notweaponbrother% remarque, seulement pour se faire châtier avec une épée d\'entraînement par %weaponbrother%.";
+		this.m.SuccessButtonText = "Ce sont des professionnels maintenant.";
 	}
 
 	function getUIText()

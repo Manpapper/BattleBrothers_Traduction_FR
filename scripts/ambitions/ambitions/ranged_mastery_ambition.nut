@@ -5,11 +5,11 @@ this.ranged_mastery_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.ranged_mastery";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "The company lacks competent archers, limiting our tactical options.\nWe shall train three men to master bow or crossbow and be deadly from afar!";
-		this.m.UIText = "Have men with the bow or crossbow mastery perk";
-		this.m.TooltipText = "Have 3 men with the bow or crossbow mastery perk.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_10.png[/img]At every opportunity, you encourage the men under your command to let loose a few volleys. Everyone participates, even the slow witted louts who would sleep in their armor if you let them. Any target at all suffices: the bole of a small tree, a doe grazing in the early hours, or a goblin scout fleeing for his life.%SPEECH_ON%Yes, we are the terror of hay bales throughout the land!%SPEECH_OFF%%randombrother% says, referring to a common choice of target during practice. He ducks when an arrow from one of his comrades whistles close past his skull and starts cursing at the shooter.\n\nWith plenty of practice, those arrows are striking closer and closer to the bullseye, and now that the company is fielding better trained bowmen, your frontline is breathing easier and living, at least marginally, longer.";
-		this.m.SuccessButtonText = "This will serve us well.";
+		this.m.ButtonText = "La compagnie manque d\'archers compétents, ce qui limite nos options tactiques.\nNous allons former trois hommes à la maîtrise de l\'arc ou de l\'arbalète et être mortels à distance !";
+		this.m.UIText = "Avoir des hommes avec le perk de Maîtrise de l\'Arc ou de l\'Arbalète.";
+		this.m.TooltipText = "Avoir des hommes avec le perk de Maîtrise de l\'Arc ou de l\'Arbalète.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_10.png[/img]À chaque occasion, vous encouragez les hommes sous votre commandement à lâcher quelques volées. Tout le monde participe, même les rustres à l\'esprit lent qui dormiraient dans leur armure si vous les laissiez faire. N\'importe quelle cible suffit : le tronc d\'un petit arbre, une biche qui broute au petit matin ou un éclaireur gobelin qui fuit pour sauver sa vie.%SPEECH_ON%Oui, nous sommes la terreur des bottes de foin dans tout le pays!%SPEECH_OFF%%randombrother% dit, en faisant référence à un choix de cible commun pendant l\'entraînement. Il s\'esquive lorsqu\'une flèche d\'un de ses camarades siffle près de son crâne et commence à maudire le tireur.\n\nAvec beaucoup d\'entraînement, ces flèches frappent de plus en plus près du centre de la cible, et maintenant que la compagnie dispose d\'archers mieux entraînés, votre ligne de front respire mieux et vit, au moins légèrement, plus longtemps.";
+		this.m.SuccessButtonText = "Cela nous servira.";
 	}
 
 	function getUIText()

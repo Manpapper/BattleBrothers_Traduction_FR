@@ -5,12 +5,12 @@ this.named_item_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.named_item";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "A respectable company is recognized by their equipment. We should head out\nand claim either a famed weapon, shield, armor or helmet to increase our renown.";
-		this.m.RewardTooltip = "Gain an additional 150 renown for your victory.";
-		this.m.UIText = "Have at least 1 famed piece of equipment";
-		this.m.TooltipText = "Have at least 1 famed piece of equipment in your possession - weapon, shield, armor or helmet. Follow rumors in taverns to learn where famed items can be found, purchase them at specialized shops in large cities and castles, or go out on your own to explore and raid ruins and camps. The further away from civilization, the higher the chance of finding rare items.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_28.png[/img]It was no easy task seeking out one of those rare items recognized as a talisman of fighting men, but the %nameditem% is truly remarkable. The men fairly glow with pride after acquiring it. Around the fire, some of the brothers even grow maudlin and teary-eyed when in their cups, pawing it like a favorite hound.%SPEECH_ON%Isn\'t it beautiful?%SPEECH_OFF%%randombrother% asks while admiring it in the glow of the campfire, quickly cut off by another of the men.%SPEECH_ON%Turn it this way so I can have a proper peek!%SPEECH_OFF%In the days that follow your men are parading the %nameditem% around like the trophy head of some fearsome beast. Usually in taverns or at festivals, and near other sources of mead and beer, the brothers make a habit of showing their prize off everywhere you go.";
-		this.m.SuccessButtonText = "This will serve us well.";
+		this.m.ButtonText = "Une compagnie respectable se reconnaît à son équipement. Nous devrions sortir\net réclamer une arme, un bouclier, une armure ou un casque célèbre pour augmenter notre renommée.";
+		this.m.RewardTooltip = "Gagnez 150 renommées supplémentaires pour votre succès.";
+		this.m.UIText = "Avoir au moins une pièce d\'équipement célèbre";
+		this.m.TooltipText = "Avoir en sa possession au moins une pièce d\'équipement célèbre - arme, bouclier, armure ou casque. Suivez les rumeurs dans les tavernes pour savoir où l\'on peut trouver des objets célèbres, achetez-les dans les boutiques spécialisées des grandes villes et des châteaux, ou partez seul explorer et piller des ruines et des camps. Plus vous vous éloignez de la civilisation, plus vous avez de chances de trouver des objets rares.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_28.png[/img]Il n\'a pas été facile de trouver l\'un de ces objets rares reconnus comme le saint graal des combattants, mais %nameditem% est vraiment remarquable. Les hommes rayonnent de fierté après l\'avoir acquis. Autour du feu, certains des frères deviennent même larmoyants et pleurnichards lorsqu\'ils sont dans leur tasse, la tripotant comme leur chien de chasse favori.%SPEECH_ON%N\'est-elle pas magnifique ? %SPEECH_OFF%%randombrother% demande en l\'admirant à la lueur du feu de camp, rapidement interrompu par un autre mercenaire.%SPEECH_ON%Tourne le vers nous que puisse mieux le voir !%SPEECH_OFF% Dans les jours qui suivent, vos hommes font parader %nomeditem% comme la tête d\'un trophée d\'une bête redoutable. Habituellement dans les tavernes ou lors de festivals, et près d\'autres sources d\'hydromel et de bière, les frères ont l\'habitude de montrer leur prix partout où vous allez.";
+		this.m.SuccessButtonText = "Cela nous servira bien.";
 	}
 
 	function onUpdateScore()
@@ -193,7 +193,7 @@ this.named_item_ambition <- this.inherit("scripts/ambitions/ambition", {
 
 		_vars.push([
 			"nameditem",
-			nameditem != null ? nameditem.getName() : "Famous Greatsword"
+			nameditem != null ? nameditem.getName() : "Célèbre Espadon"
 		]);
 	}
 
@@ -203,7 +203,7 @@ this.named_item_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.m.SuccessList.push({
 			id = 10,
 			icon = "ui/icons/special.png",
-			text = "Vous recevez additional renown for having a famed item"
+			text = "Vous recevez un bonus de renom pour avoir un objet célèbre."
 		});
 	}
 

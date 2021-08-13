@@ -5,11 +5,11 @@ this.visit_settlements_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.visit_settlements";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "I know the soles of your feet are itchy for the open road, and we need to spread\n word about the company. Let us pay visit to every settlement far and wide!";
-		this.m.UIText = "Visit every town and fortification in the world";
-		this.m.TooltipText = "Enter each village, city, fortification and castle there is in the world to learn about their goods and services, and spread word about the company.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_16.png[/img]You soon discover that the wanderlust of which the skalds sing is not as widespread as they say. Your decision for the band to broaden its horizons is met with grumbling about forced marches and nights on the road. But not all join in the lamenting.%SPEECH_ON%If a day\'s march or a night spent in the rain wears you down, how will you face an orc charge?%SPEECH_OFF%%sergeantbrother% asks the men, only to get a snappish reply.%SPEECH_ON%Dry and alert.%SPEECH_OFF%You cracked the whip though and forced them to it. At each village and town, you encouraged the men to make themselves known, and they take this request to heart, getting in brawls, passing out in the town square, threatening the merchants, and harassing the settlement\'s daughters. Whatever the poor tradesmen and farmers think of the company, at least they won\'t soon forget you! Having traveled to the edges of your map, the name \'%companyname%\' is more widely known, and you earned a better understanding of the land.";
-		this.m.SuccessButtonText = "Remember the name, \'%companyname%\'!";
+		this.m.ButtonText = "Je sais que la semelle de vos pieds vous démange, et nous devons faire connaître la compagnie.\nRendons visite à tous les villages du monde !";
+		this.m.UIText = "Visiter toutes les villes et fortifications du monde";
+		this.m.TooltipText = "Entrez dans chaque village, ville, fortification et château du monde pour découvrir leurs biens et services et faire connaître la compagnie.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_16.png[/img]Vous découvrez rapidement que l\'envie de voyager dont parlent les bardes n\'est pas aussi répandue qu\'on le dit. Votre décision d\'élargir les horizons de la bande se heurte à la protestation des marches forcées et des nuits sur la route. Mais tous ne se joignent pas aux lamentations.%SPEECH_ON%Si une marche d\'un jour ou une nuit passée sous la pluie vous épuise, comment ferez-vous face à une charge d\'orcs ? %SPEECH_OFF%%sergeantbrother% demande aux hommes, pour obtenir une réponse cinglante. %SPEECH_ON%sec et alerte.%SPEECH_OFF%Vous avez fait claquer le fouet et les avez forcés à le faire. Dans chaque village et ville, vous avez encouragé les hommes à se faire connaître, et ils prennent cette demande à cœur, se bagarrant, s\'évanouissant sur la place publique, menaçant les marchands et harcelant les filles des commerçants. Quoi que les pauvres commerçants et paysans pensent de la compagnie, au moins, ils ne vous oublieront pas de sitôt ! Après avoir voyagé jusqu\'aux limites de ta carte, le nom \"%companyname%\" est plus connu et vous avez acquis une meilleure connaissance du pays.";
+		this.m.SuccessButtonText = "N\'oubliez pas le nom, \"%companyname%\" !";
 	}
 
 	function getTooltipText()
@@ -20,7 +20,7 @@ this.visit_settlements_ambition <- this.inherit("scripts/ambitions/ambition", {
 		}
 		else if (!this.onCheckSuccess())
 		{
-			local ret = this.m.TooltipText + "\n\nThere\'s still some settlements left to visit.\n";
+			local ret = this.m.TooltipText + "\n\nIl y a encore quelques colonies à visiter.\n";
 			local c = 0;
 			local settlements = this.World.EntityManager.getSettlements();
 
@@ -36,7 +36,7 @@ this.visit_settlements_ambition <- this.inherit("scripts/ambitions/ambition", {
 					}
 					else
 					{
-						ret = ret + "\n... and others!";
+						ret = ret + "\n... et d\'autres";
 						break;
 					}
 				}
@@ -46,7 +46,7 @@ this.visit_settlements_ambition <- this.inherit("scripts/ambitions/ambition", {
 		}
 		else
 		{
-			local ret = this.m.TooltipText + "\n\nYou\'ve done what you set out to do.\n";
+			local ret = this.m.TooltipText + "\n\nVous avez fait ce que vous aviez prévu de faire.\n";
 			return ret;
 		}
 	}

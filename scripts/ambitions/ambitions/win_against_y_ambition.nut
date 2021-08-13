@@ -7,11 +7,11 @@ this.win_against_y_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.win_against_y";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "We achieved some renown, but now you can see real fame on the horizon.\nLet us defeat a formidable force of two dozen opponents in battle!";
-		this.m.UIText = "Win a battle against 24 or more enemies";
-		this.m.TooltipText = "Win a battle against 24 or more enemies, whether by killing them or having them scatter and flee. You can do so as part of a contract or by fighting on your own terms.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_22.png[/img]After the fight, %lowesthp_brother% sits gazing at his feet, looking completely knackered, as do the others. %SPEECH_ON%That was the battle I was born to fight! Now if I die, it will be alongside the bravest and deadliest bunch of men I\'ve ever known, and I\'m proud to call them my brothers!%SPEECH_OFF%This is met with a chorus of weary assent all round.%SPEECH_ON%Peasants talk of sweat, blood and tears but the men of the %companyname% have walked through fire and prevailed!%SPEECH_OFF%Three times the men shout the company name, tired but victorious.\n\nIn the days to come you find that wherever civilized people gather, they point you out and whisper, whether in fear or admiration you do not know. Everywhere you go, word of your mighty victory has traveled the land before you.";
-		this.m.SuccessButtonText = "Who dares stand against us now?";
+		this.m.ButtonText = "Nous avons atteint une certaine renommée, mais maintenant vous pouvez voir la vrai gloire à l\'horizon.\nLaissez-nous vaincre une force formidable de deux douzaines d\'adversaires dans la bataille !";
+		this.m.UIText = "Gagner une bataille contre 24 ennemis ou plus";
+		this.m.TooltipText = "Gagnez une bataille contre 24 ennemis ou plus, que ce soit en les tuant ou en les faisant se disperser et fuir. Vous pouvez le faire dans le cadre d\'un contrat ou en vous battant à votre guise.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_22.png[/img]Après le combat, %lowesthp_brother% est assis et regarde ses pieds, l\'air complètement crevé, tout comme les autres. C\'était la bataille pour laquelle j\'étais né ! Maintenant si je meurs, ce sera aux côtés de la bande d\'hommes la plus courageuse et la plus mortelle que j\'ai jamais connue, et je suis fier de les appeler mes frères !%SPEECH_OFF%Ceci est accueilli par un chœur de consentements las tout autour.%SPEECH_ON%Les paysans parlent de sueur, de sang et de larmes mais les hommes de %companyname% ont marché dans le feu et l\'ont emporté !%SPEECH_OFF%Trois fois, les hommes crient le nom de la compagnie, fatigués mais victorieux.\n\Dans les jours qui suivent, vous constatez que partout où les gens civilisés se rassemblent, ils vous désignent et chuchotent, que ce soit par peur ou par admiration, vous ne savez pas. Partout où vous allez, la rumeur de votre puissante victoire a parcouru le pays avant vous.";
+		this.m.SuccessButtonText = "Qui osera se dresser contre nous maintenant ?";
 	}
 
 	function onUpdateScore()

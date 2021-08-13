@@ -5,10 +5,10 @@ this.have_z_crowns_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.have_z_Couronnes";
 		this.m.Duration = 60.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Crowns mean power and influence, and we can never have enough of either.\nLet us gather 50,000 crowns and earn our seat amongst noblemen and kings!";
-		this.m.UIText = "Have at least 50,000 crowns.";
-		this.m.TooltipText = "Have at least 50,000 crowns to be counted among the wealthy. You can make money by completing contracts, looting camps and ruins, or trading.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_04.png[/img]Plunder, plunder and, yes, more plunder! The company has accumulated riches to rival a dragon\'s hoard. The finest armor and weapons are yours for the asking. Should you wish to hire a ship, or a fleet of ships, you need merely snap your fingers. Vendors of all kinds lay out their best wares when you are in town, most eager to help you find new ways to spend your gold.\n\nAs your wealth rivals that of a nobleman, you no longer need defer to them. You could purchase your own noble title and lands, or take up the career of a merchant banker, should you ever tire of acting nursemaid to this bunch of hardheaded, temperamental louts.";
+		this.m.ButtonText = "Les couronnes sont synonymes de pouvoir et d\'influence, et on n\'en a jamais assez.\nRassemblons 50 000 couronnes et gagnons notre place parmi les nobles et les rois !";
+		this.m.UIText = "Avoir au moins 50 000 couronnes.";
+		this.m.TooltipText = "Ayez au moins 50 000 couronnes pour être compté parmi les riches. Vous pouvez gagner de l\'argent en remplissant des contrats, en pillant des camps et des ruines, ou en faisant du commerce.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_04.png[/img]Du pillage, du pillage et, oui, encore du pillage ! La compagnie a accumulé des richesses qui rivalisent avec le trésor d\'un dragon. Les meilleures armures et armes sont à votre disposition. Si vous souhaitez louer un navire, ou une flotte de navires, il vous suffit de claquer des doigts. Des vendeurs de toutes sortes proposent leurs meilleures marchandises lorsque vous êtes en ville, et sont prêts à vous aider à trouver de nouvelles façons de dépenser votre or. Lorsque votre richesse rivalise avec celle d\'un noble, vous n\'avez plus besoin de vous en remettre à lui. Vous pouvez acquérir votre propre titre de noblesse et vos propres terres, ou embrasser la carrière de banquier, si jamais vous en avez assez de jouer les nourrices pour cette bande de rustres au caractère bien trempé.";
 		this.m.SuccessButtonText = "Excellent.";
 	}
 

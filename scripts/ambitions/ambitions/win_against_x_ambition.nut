@@ -7,12 +7,12 @@ this.win_against_x_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.win_against_x";
 		this.m.Duration = 14.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Let us set aside skirmishes for now and seek to defeat a group of at least a dozen\nopponents. That is how our name will become known throughout the land!";
-		this.m.RewardTooltip = "Gain an additional 150 renown for your victory.";
-		this.m.UIText = "Win a battle against 12 or more enemies";
-		this.m.TooltipText = "Win a battle against 12 or more enemies, whether by killing them or having them scatter and flee. You can do so as part of a contract or by fighting on your own terms.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_22.png[/img]As all your enemies either lie dead or are in retreat, %bravest_brother% waves the company\'s banner in celebration.%SPEECH_ON%Once more the %companyname% fought, and once more the %companyname% prevailed!%SPEECH_OFF%Raucous cheers echo him all around. You soon discover that your recent battle is the talk of the local towns and villages. Whenever they stop at a tavern along the road, the brothers find that drinks are poured when the story of that battle is told, and the more the telling is embellished, the more freely the libations flow.";
-		this.m.SuccessButtonText = "Who dares stand against us now?";
+		this.m.ButtonText = "Mettons de côté les escarmouches pour le moment et cherchons à vaincre un groupe d\'au\nmoins une douzaine d\'adversaires. C\'est ainsi que notre nom sera connu dans tout le pays !";
+		this.m.RewardTooltip = "Gagnez 150 de renom supplémentaire pour votre réussite.";
+		this.m.UIText = "Gagner une bataille contre 12 ennemis ou plus";
+		this.m.TooltipText = "Gagnez une bataille contre 12 ennemis ou plus, que ce soit en les tuant ou en les faisant se disperser et fuir. Vous pouvez le faire dans le cadre d\'un contrat ou en vous battant à votre guise.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_22.png[/img]Alors que tous vos ennemis sont morts ou ont battu en retraite, %bravest_brother% brandit la bannière de la compagnie en signe de célébration.%SPEECH_ON%Une fois de plus %companyname% a combattu, et une fois de plus %companyname% a vaincu!%SPEECH_OFF%Des acclamations bruyantes lui font écho tout autour. Vous découvrez bientôt que votre récente bataille est le sujet de conversation des villes et villages locaux. Chaque fois qu\'ils s\'arrêtent dans une taverne le long de la route, les mercenaries constatent que les boissons sont versées lorsque l\'histoire de cette bataille est racontée, et plus le récit est embelli, plus les boissons coulent à flots.";
+		this.m.SuccessButtonText = "Qui osera se dresser contre nous maintenant ?";
 	}
 
 	function onUpdateScore()
@@ -62,7 +62,7 @@ this.win_against_x_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.m.SuccessList.push({
 			id = 10,
 			icon = "ui/icons/special.png",
-			text = "Vous recevez additional renown for your victory"
+			text = "Vous recevez un renom supplémentaire pour votre victoire"
 		});
 	}
 

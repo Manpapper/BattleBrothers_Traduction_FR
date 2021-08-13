@@ -5,12 +5,12 @@ this.sergeant_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.sergeant";
 		this.m.Duration = 14.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "We fight well, but we need to be better organized in case things get dire.\nI shall name a sergeant to rally you on the battlefield.";
-		this.m.RewardTooltip = "You\'ll be awarded a unique accessory that grants the wearer additional resolve.";
-		this.m.UIText = "Have one man with the \'Rally the Troops\' perk";
-		this.m.TooltipText = "Have at least one man with the \'Rally the Troops\' perk. You\'ll also need space enough in your inventory for a new item.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_64.png[/img]You were unsure at first about assigning %sergeantbrother% to this important task, for he was as committed to revelry and carousing as any other man. But %sergeantbrother% takes to his duties with a zeal that is at first admirable, and later worrying.\n\nScoffing at dawn as the rising hour of the cowardly and infirm, %sergeantbrother% decides that everyone must start the day much earlier. He runs the men through the usual sparring routines and checks their equipment for splits and wear, but to such light work he adds strict rules about setting up and breaking camp, formation drills, lessons on flanking, forced marches with stones in their packs, and a detailed punishment regime for anyone who dares fall behind.\n\nWords such as \'back-breaking\', \'cruel\', \'flint-hearted\' and \'merciless\', as well as dozens of saltier epithets, ring in the air whenever %sergeantbrother% is safely out of earshot, though never when he is sleeping. For the brothers have learned that %sergeantbrotherfull% never truly sleeps.";
-		this.m.SuccessButtonText = "This will help us greatly in the days to come.";
+		this.m.ButtonText = "Nous nous battons bien, mais nous devons être mieux organisés au cas où\nles choses tourneraient mal. Je vais nommer un sergent pour vous rallier sur le champ de bataille.";
+		this.m.RewardTooltip = "Vous recevrez un accessoire unique qui vous donnera de la détermination supplémentaire.";
+		this.m.UIText = "Avoir un homme avec le Talent \"Ralliez les troupes\"";
+		this.m.TooltipText = "Ayez au moins un homme avec le Talent \"Ralliez les troupes\". Vous aurez également besoin d\'assez de place dans votre inventaire pour un nouvel objet.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_64.png[/img]Au début, vous n\'étiez pas sûr de confier cette tâche importante à %sergeantbrother%, car il était aussi adepte des réjouissances et des fêtes que n\'importe quel autre homme. Mais %sergeantbrother% s\'acquitte de sa tâche avec un zèle d\'abord admirable, puis inquiétant.\n\nL\'aube étant connu comme l\'heure du lever des lâches et des infirmes, %sergeantbrother% décide que tout le monde doit commencer la journée beaucoup plus tôt.\n\nIl fait faire aux hommes les routines habituelles d\'entraînement et leur fait vérifier que leur équipement n\'est pas fendu ou usé, mais à ce travail léger, il ajoute des règles strictes sur l\'établissement et la levée du camp, des exercices de formation, des leçons sur les formations, des marches forcées avec des pierres dans leurs sacs, et un régime de punition détaillé pour quiconque ose prendre du retard. \n\nDes mots tels que \"briseur de dos\", \"cruel\", \"cœur de pierre\" et \"sans pitié\", ainsi que des dizaines d\'épithètes plus salées, résonnent dans l\'air chaque fois que %sergentbrother% est hors de portée de voix, mais jamais quand il dort. Car les frères ont appris que %sergeantbrotherfull% ne dort jamais vraiment.";
+		this.m.SuccessButtonText = "Cela nous aidera beaucoup dans les jours à venir.";
 	}
 
 	function onUpdateScore()
@@ -72,7 +72,7 @@ this.sergeant_ambition <- this.inherit("scripts/ambitions/ambition", {
 			this.m.SuccessList.push({
 				id = 90,
 				icon = "ui/icons/special.png",
-				text = bestSergeant.getNameOnly() + " is now known as " + bestSergeant.getName()
+				text = bestSergeant.getNameOnly() + " est désormais connu sous le nom de " + bestSergeant.getName()
 			});
 		}
 

@@ -5,11 +5,11 @@ this.have_z_renown_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.have_z_renown";
 		this.m.Duration = 100.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "There were few legendary mercenary companies throughout history.\nWe are close to having our name become immortal and be counted among them!";
-		this.m.UIText = "Reach \'Invincible\' renown";
-		this.m.TooltipText = "Become known as \'Invincible\' (8,000 renown) and leave your mark in history. You can increase your renown by completing contracts and winning battles.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_82.png[/img]With rivers of blood, a hundred burned fortresses, and ten thousand fat, feasting crows at your back, the tales of your company\'s prowess will never die. The name \'%companyname%\' is spoken in triumphant shouts and hushed awe in every corner of the known world. Fathers name their sons after your bravest men, and those boys will grow up acting out the many famous battles you fought.\n\nYour renown is such now that is has become an inconvenience to visit any place larger than a hamlet. Everywhere you travel you are harried day and night. Eligible maidens competing for the mens\' attention end up in fisticuffs. Shopkeepers, thinking you magnificently wealthy, call at all hours with their wares. Worst of all, every braggart in the land wishes to challenge your men, with the militia waiting for the outcome, hoping that the simple fine for fighting in the street may be elevated to a blood debt.\n\nBut you achieved what you set out to, even if the result is not quite what you anticipated. Whatever your fate, the %companyname% has already become immortal in the history of the world.";
-		this.m.SuccessButtonText = "The %companyname%\'s name shall live on forever!";
+		this.m.ButtonText = "Il y a eu peu de compagnies de mercenaires légendaires à travers l\'histoire.\nNous sommes sur le point de voir notre nom devenir immortel et d\'être compté parmi eux !";
+		this.m.UIText = "Atteindre le rang de renom \"Invincible\"";
+		this.m.TooltipText = "Devenez connu en étant \"Invincible\" (8 000 renommées) et laissez votre marque dans l\'histoire. Vous pouvez augmenter votre renommée en remplissant des contrats et en gagnant des batailles.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_82.png[/img]Avec des rivières de sang, une centaine de forteresses brûlées et dix mille corbeaux gras et gourmands vous suivant, les récits des prouesses de votre compagnie ne mourront jamais. Le nom \"%companyname%\" est prononcé dans des cris de triomphe et de respect silencieux dans tous les coins du monde connu. Les pères donnent à leurs fils le nom de vos hommes les plus courageux, et ces garçons grandissent en jouant les nombreuses batailles célèbres que vous avez livrées.\n\nVotre renom est telle qu\'il est devenu gênant de visiter tout endroit plus grand qu\'un hameau. Partout où vous voyagez, vous êtes harcelé jour et nuit. Les jeunes filles qui se disputent l\'attention des hommes finissent par se battre. Les commerçants, vous croyant magnifiquement riche, vous appellent à toute heure avec leurs marchandises. Le pire, c\'est que tous les fanfarons du pays veulent défier vos hommes, et la milice attend le résultat, en espérant que la simple amende pour bagarre devienne une dette de sang.\n\nMais vous avez atteint votre objectif, même si le résultat n\'est pas tout à fait ce que vous aviez prévu. Quel que soit votre destin, %companyname% est déjà devenu immortel dans l\'histoire du monde.";
+		this.m.SuccessButtonText = "Le nom de %companyname% vivra à jamais !";
 	}
 
 	function onUpdateScore()
@@ -58,7 +58,7 @@ this.have_z_renown_ambition <- this.inherit("scripts/ambitions/ambition", {
 			this.m.SuccessList.push({
 				id = 10,
 				icon = "ui/icons/special.png",
-				text = "Your look on the worldmap has been updated"
+				text = "Votre apparence sur la carte du monde a été mise à jour."
 			});
 		}
 	}

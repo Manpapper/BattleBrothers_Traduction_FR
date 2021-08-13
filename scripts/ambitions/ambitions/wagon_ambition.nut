@@ -5,12 +5,12 @@ this.wagon_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.wagon";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "A cart to carry our things is fine and all, but it won\'t do.\nLet\'s save up 15,000 crowns and buy us a real wagon!";
-		this.m.RewardTooltip = "You\'ll unlock an additional 27 slots in your inventory.";
-		this.m.UIText = "Have at least 15,000 Couronnes";
-		this.m.TooltipText = "Gather the amount of 15,000 crowns or more, so that you can afford to buy a wagon for additional inventory space. You can make money by completing contracts, looting camps and ruins, or trading.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_158.png[/img]A wise man once told you that a wagon loses value the second it leaves the lot. The axiom dwells in the back of your head as you hand over 10,000 crowns for the wagon. But then you step up into the boxseat and jack your boot against the toeboard and feel right at home. You turn and take a look into the bed. There the wagonmaker installed a series of side-turned gates with iron spikes situated to hang trophies, pelts, and other goods. There is also a cage to hold a dog or a dog of a man if need be. A wooden toolbox with a heavy slaplatch carries all the means necessary to repair weapons and armor. Spare axles and wheels are held undercarriage.\n\nNodding, you turn back around and gander at the workhorse. The draught animal is a squat creature with muscled legs and an indifferent demeanor. It mindlessly crops the grass at its feet until you take up the jerkline and jockey it forward. The wagon trundles and tips and sags with nothing to suggest it was made to do anything you\'ve beckoned it to do. And yet there it goes.\n\n %randombrother% walks by swigging a wine bottle. When he asks how\'s the ride you steal his bottle and smash it across the wagon\'s side and yell out \'rawhide!\'";
-		this.m.SuccessButtonText = "Finally.";
+		this.m.ButtonText = "Une charrette pour transporter nos affaires, c\'est bien et tout, mais ça ne suffira pas.\n Economisons 15 000 couronnes et achetons-nous un vrai chariot !";
+		this.m.RewardTooltip = "Vous débloquerez 27 emplacements supplémentaires dans votre inventaire.";
+		this.m.UIText = "Avoir au moins 15 000 Couronnes";
+		this.m.TooltipText = "Rassemblez la somme de 15 000 couronnes ou plus, afin de pouvoir vous permettre d\'acheter un chariot pour disposer d\'un espace d\'inventaire supplémentaire. Vous pouvez gagner de l\'argent en remplissant des contrats, en pillant des camps et des ruines, ou en faisant du commerce.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_158.png[/img]Un homme sage vous a dit un jour qu\'un chariot perd de sa valeur dès qu\'il quitte le terrain. Cet axiome vous trotte dans la tête alors que vous versez 10 000 couronnes pour le wagon. Mais ensuite, vous montez sur le siège du coffre, vous cognez votre botte contre la planche de bord et vous vous sentez comme chez vous. Vous vous retournez et jetez un coup d\'oeil dans le lit. Le constructeur du chariot y a installé une série de portes tournées sur le côté avec des pointes de fer situées pour accrocher des trophées, des peaux et d\'autres marchandises. Il y a aussi une cage pour contenir un chien ou un homme chien si besoin est. Une boîte à outils en bois avec un lourd clapet contient tous les outils nécessaires à la réparation des armes et des armures. Des essieux et des roues de rechange sont rangés sous le châssis.\n\nVous hochez la tête, vous faites demi-tour et jetez un coup d\'œil au cheval de trait. L\'animal de trait est une créature trapue aux jambes musclées et au comportement indifférent. Il ratisse sans réfléchir l\'herbe à ses pieds jusqu\'à ce que vous preniez la corde et le fassiez avancer. Le chariot roule, penche et vacille sans que rien ne suggère qu\'il a été conçu pour faire ce que vous lui avez demandé. Et pourtant, il est là.\n\n randombrother% passe en sirotant une bouteille de vin. Quand il demande comment est le trajet, vous volez sa bouteille et la fracassez sur le côté du chariot et vous criez : \"C\'est du cuir brut !\".";
+		this.m.SuccessButtonText = "Enfin.";
 	}
 
 	function onUpdateScore()
@@ -62,7 +62,7 @@ this.wagon_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.m.SuccessList.push({
 			id = 10,
 			icon = "ui/icons/special.png",
-			text = "Vous recevez 27 additional inventory slots"
+			text = "Vous recevez 27 d\'emplacements d\'inventaire supplémentaires"
 		});
 	}
 

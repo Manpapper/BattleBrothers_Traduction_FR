@@ -5,12 +5,12 @@ this.make_nobles_aware_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.make_nobles_aware";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "We need to catch the eye of one of the noble houses for more profitable work. They\nplay their own dangerous game, but what does it matter as long as the pay is good?";
-		this.m.RewardTooltip = "You\'ll unlock entirely new contracts issued by nobles which pay better.";
-		this.m.UIText = "Reach \'Professional\' renown";
-		this.m.TooltipText = "Become known as \'Professional\' (1,050 renown) in order to catch the attention of the noble houses. You can increase your renown by completing contracts and winning battles.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_31.png[/img]Thinking to set tongues wagging with the name the %companyname%, and thereby increase your prospects with the nobility, you pushed your men to great deeds, outstanding bravery, and plentiful bloodshed. After several contracts and more than a few skirmishes, you worked hard enough and long enough to have some of the lords take notice of the company\'s competence.\n\nThese are the gentlefolk who rule the land by virtue of some long-dead ancestor subjugating a group of unarmed peasants. As %highestexperience_brother% puts it, now these pampered, inbred fops are well impressed enough with you to grind the company in one of their feuds. If you wash your face and ask politely, they should favor you with a profitable contract now and again. You can congratulate yourself!";
-		this.m.SuccessButtonText = "We are about to reach into the nobility\'s deep pockets!";
+		this.m.ButtonText = "Nous devons attirer l\'attention d\'une des maisons nobles pour un travail plus rentable.\nIls jouent à des jeux dangereux, mais qu\'importe, tant que la paie est bonne.";
+		this.m.RewardTooltip = "Vous débloquerez de tout nouveaux contrats émis par des nobles qui rapporte plus.";
+		this.m.UIText = "Atteindre le rang de renom \"Professionnel\".";
+		this.m.TooltipText = "Devenez connu en étant \"Professionnel\" (1 050 renommées) afin d\'attirer l\'attention des maisons nobles. Vous pouvez augmenter votre renommée en remplissant des contrats et en gagnant des batailles.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_31.png[/img]Pensant faire parler de vous avec le nom de %companyname%, et ainsi augmenter vos chances auprès de la noblesse, vous avez poussé vos hommes à faire de grandes choses, en faisant preuve d\'une bravoure exceptionnelle et en faisant couler beaucoup de sang. Après plusieurs contrats et plus d\'une escarmouche, vous avez travaillé assez dur et assez longtemps pour que certains seigneurs remarquent les compétences de la compagnie.\n\nIl s\'agit des gentilshommes qui règnent sur le pays grâce à un ancêtre mort depuis longtemps qui a soumis un groupe de paysans désarmés. Comme le dit %highestexperience_brother%, maintenant ces consanguins sont assez impressionnés par vous pour mêler la compagnie à une de leurs querelles. Si vous vous lavez le visage et demandez poliment, ils devraient vous favoriser avec un contrat profitable de temps en temps. Vous pouvez vous féliciter !";
+		this.m.SuccessButtonText = "Nous sommes sur le point d\'atteindre les poches profondes de la noblesse !";
 	}
 
 	function onUpdateScore()
@@ -71,7 +71,7 @@ this.make_nobles_aware_ambition <- this.inherit("scripts/ambitions/ambition", {
 			this.m.SuccessList.push({
 				id = 10,
 				icon = "ui/icons/special.png",
-				text = "Your look on the worldmap has been updated"
+				text = "Votre apparence sur la carte du monde a été mise à jour."
 			});
 		}
 	}

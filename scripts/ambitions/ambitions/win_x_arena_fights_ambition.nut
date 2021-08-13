@@ -7,11 +7,11 @@ this.win_x_arena_fights_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.win_x_arena_fights";
 		this.m.Duration = 14.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Let us seek fame and fortune fighting before crowds that chant our names.\nWe\'ll draw blood in the arenas of the south!";
-		this.m.UIText = "Win arena fights";
-		this.m.TooltipText = "Enter and win 5 fights in the arena of the southern city states.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_22.png[/img]Having dispatched all manner of creatures that walk on two legs or more, and sometimes perhaps none at all, you\'ve come to collect a fair bit of renown for your gladiatorial prowess. Southerners speak your name as though itself were the carrier of good news, vicariously relishing in your victories and hoping to see you win more. It is an odd spin of fate, as most attend the arenas to see gladiators find as grisly a demise as possible. To have the masses cheer for you is a strange realization indeed, though you just realize that when it is you in that light, your very presence filling the stands and bannisters, that there is still an ugly end the crowd seeks: that of your opponent. And, frankly, for that much coin you\'ve no problem satiating the audience\'s bloodlust.";
-		this.m.SuccessButtonText = "I still hear them chanting our names!";
+		this.m.ButtonText = "Cherchons la gloire et la fortune en nous battant devant des foules qui scandent nos noms.\nNous ferons couler le sang dans les arènes du sud !";
+		this.m.UIText = "Gagner des combats d\'arène";
+		this.m.TooltipText = "Participez et gagnez 5 combats dans l\'arène des Cités-Etats du Sud.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_22.png[/img]Après avoir éliminé toutes sortes de créatures qui marchent sur deux jambes ou plus, et parfois même aucune, vous avez acquis une certaine renommée pour vos prouesses de gladiateur. Les habitants du Sud prononcent votre nom comme s\'il était porteur de bonnes nouvelles, se délectant par procuration de vos victoires et espérant vous voir en remporter d\'autres. C\'est un étrange tour du destin, car la plupart des gens se rendent aux arènes pour voir les gladiateurs mourir de la façon la plus horrible possible. Le fait que les masses vous acclament est en effet une réalisation étrange, bien que vous réalisiez que lorsque c\'est vous dans cette lumière, votre présence même remplissant les tribunes et les rampes, il y a toujours une fin hideuse que la foule recherche : celle de votre adversaire. Et, franchement, pour autant d\'argent, vous n\'avez aucun problème à satisfaire la soif de sang du public.";
+		this.m.SuccessButtonText = "Je les entends encore scander nos noms !";
 	}
 
 	function getUIText()

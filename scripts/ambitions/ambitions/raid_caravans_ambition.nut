@@ -7,11 +7,11 @@ this.raid_caravans_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.raid_caravans";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "There are lots of riches to be claimed from caravans.\nWe need but take them like fruit from a tree!";
-		this.m.UIText = "Raid trade or supply caravans";
-		this.m.TooltipText = "Raid 4 trade or supply caravans along the road. If you\'re not already hostile to their faction, you can force an attack by holding the CTRL key while left-clicking on them - but only if you\'re not currently hired for a contract.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_60.png[/img]A dead merchant\'s voice rings in your head.%SPEECH_ON%Why did you do it? We\'d have given you it all.%SPEECH_OFF%But the memory isn\'t about him. It\'s about his wagon, and what parts of it he wouldn\'t even divulge with his life on the balance. Since setting out to raid them, attacking caravans has turned into something of a sport for you and the %companyname%. Awashed in the riches of your ambushes, the men are happy, and you\'ve accrued a bit of renown for your dastardly deeds.";
-		this.m.SuccessButtonText = "Like taking candy from a child.";
+		this.m.ButtonText = "Il y a beaucoup de richesses à revendiquer dans les caravanes. Il faut les prendre comme les fruits d\'un arbre !";
+		this.m.UIText = "Attaquer des caravanes de commerce ou d\'approvisionnement";
+		this.m.TooltipText = "Attaquez 4 caravanes de commerce ou d\'approvisionnement le long de la route. Si vous n\'êtes pas déjà hostile à leur faction, vous pouvez forcer une attaque en maintenant la touche CTRL enfoncée tout en cliquant sur eux avec le bouton gauche de la souris - mais seulement si vous n\'êtes pas actuellement engagé pour un contrat.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_60.png[/img]La voix d\'un marchand mort résonne dans votre tête.%SPEECH_ON%Pourquoi avez-vous fait ça ? Nous vous aurions tout donné.%SPEECH_OFF%Mais le souvenir n\'est pas à propos de lui. C\'est à propos de son chariot, et des parties qu\'il ne veut pas divulguer même avec sa vie en jeu. Depuis que vous avez commencé à les attaquer, l\'attaque des caravanes est devenue une sorte de sport pour vous et %companyname%. Enivrés par les richesses de vos embuscades, les hommes sont heureux, et vous avez acquis un peu de renommée pour vos actes ignobles.";
+		this.m.SuccessButtonText = "Comme prendre des bonbons à un enfant.";
 	}
 
 	function getUIText()

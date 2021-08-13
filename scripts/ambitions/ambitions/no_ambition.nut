@@ -5,7 +5,7 @@ this.no_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.none";
 		this.m.Duration = 7.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "The company is doing great, we just need to keep it up!\n(No Ambition)";
+		this.m.ButtonText = "La compagnie se porte très bien, il faut juste que ça continue!\n(Aucune Ambition)";
 		this.m.RewardTooltip = null;
 	}
 
@@ -15,12 +15,12 @@ this.no_ambition <- this.inherit("scripts/ambitions/ambition", {
 			{
 				id = 1,
 				type = "header",
-				text = "No Ambition"
+				text = "Aucune Ambition"
 			},
 			{
 				id = 2,
 				type = "text",
-				text = "Don\'t choose an ambition right now. You\'ll be asked to choose again after three days."
+				text = "Ne choisissez pas d\'ambition pour l\'instant. On vous demandera de choisir à nouveau après trois jours."
 			}
 		];
 		return ret;
