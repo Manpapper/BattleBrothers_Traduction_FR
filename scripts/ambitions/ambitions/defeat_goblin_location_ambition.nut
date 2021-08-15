@@ -12,7 +12,7 @@ this.defeat_goblin_location_ambition <- this.inherit("scripts/ambitions/ambition
 		this.m.UIText = "Détruire les lieux contrôlés par les gobelins";
 		this.m.TooltipText = "Détruisez quatre lieux contrôlés par des gobelins pour prouver les prouesses de la compagnie, que ce soit dans le cadre d\'un contrat ou par vous même. Vous aurez également besoin d\'assez de place dans votre inventaire pour un nouvel objet.";
 		this.m.SuccessText = "[img]gfx/ui/events/event_83.png[/img]Les hommes sont éparpillés sur le champ de bataille, respirant encore lourdement après un dur combat. Pendant que vous arpentez le terrain, %randombrother% et %randombrother2% le fouillent à la recherche d\'objets de valeur.%SPEECH_ON% Nous avançons, ils reculent. Nous nous retirons, ils nous harcèlent. Tirez une volée de flèches et ils se mettent à l\'abri. Un mur de bouclier est transpercé de lames empoisonnées, et à la charge, ils se dispersent comme des insectes. Ces maudites choses qu\'ils vous lancent voleront dans mes rêves dans les nuits à venir.%SPEECH_OFF%%randombrother2% pique un gobelin mort avec son arme, et, satisfait qu\'il soit bien mort, s\'agenouille pour regarder de plus près ses affaires. Mais plus le combat est amer, plus la victoire est douce.%SPEECH_OFF% Il se lève et croise le regard de %randombrother%. %SPEECH_ON% Plus le combat est amer, plus je me sens vivant. Viens.%SPEECH_OFF%Ils continuent lentement à rejoindre le reste des hommes, s\'arrêtant ici et là pour chercher des choses qui valent une couronne ou deux avant que la compagnie s\'éloigne vers une nouvelle ville.";
-		this.m.SuccessButtonText = "Victoire!";
+		this.m.SuccessButtonText = "Victoire !";
 	}
 
 	function getUIText()

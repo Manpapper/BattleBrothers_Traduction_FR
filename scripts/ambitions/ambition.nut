@@ -111,7 +111,7 @@ this.ambition <- {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/ambition_tooltip.png",
-			text = "Votre Renom augmentera, ce qui signifie une meilleure paie pour les contrats et potentiellement débloquer de nouveaux types de contrats."
+			text = "Votre Renom augmentera, ce qui signifie une meilleure paie pour les contrats et potentiellement débloquera de nouveaux types de contrats."
 		});
 		return ret;
 	}

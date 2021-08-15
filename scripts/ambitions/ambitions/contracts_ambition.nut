@@ -7,7 +7,7 @@ this.contracts_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.contracts";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Nous devons nous établir comme des mercenaires sur lesquels on peut compter.Soyons testés encore et encore pour le prouver sans aucun doute !";
+		this.m.ButtonText = "Nous devons nous établir comme des mercenaires sur lesquels on peut compter. Soyons testés encore et encore pour le prouver sans aucun doute !";
 		this.m.UIText = "Accomplir plus de contrats";
 		this.m.TooltipText = "Accomplissez 8 contrats supplémentaires de toute nature pour prouver votre fiabilité sans aucun doute.";
 		this.m.SuccessText = "[img]gfx/ui/events/event_62.png[/img]Lorsque vous débutez, le monde vous voit pour ce que vous êtes : l\'ambition armée d\'une arme. Tout le monde a un rêve, et environ la moitié de ces hommes ont une arme. Vous n\'étiez pas unique, pas exceptionnel, ni même particulièrement dangereux si vous regardez votre ancien vous dans les yeux. Mais vous l\'avez fait. Les portes se sont fermées devant vous. Les tentatives de marchandage qui vous ont fait perdre de bonnes affaires. Les crachats. Tellement de crachats. C\'est un monde froid et vous avez osé vous réchauffer tout seul. Et vous avez réussi.\n\n Contrats à votre actif, contrats à l\'horizon, ils se confondent. Une culture de la victoire a commencé à envahir %companyname% et vous avez de bonnes raisons d\'être fier de votre maîtrise de cette culture.";

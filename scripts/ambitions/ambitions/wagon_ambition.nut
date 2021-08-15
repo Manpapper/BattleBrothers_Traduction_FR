@@ -5,7 +5,7 @@ this.wagon_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.wagon";
 		this.m.Duration = 21.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Une charrette pour transporter nos affaires, c\'est bien et tout, mais ça ne suffira pas. Economisons 15 000 couronnes et achetons-nous un vrai chariot !";
+		this.m.ButtonText = "Une charrette pour transporter nos affaires, c\'est bien et tout, mais ça ne suffira pas. Économisons 15 000 couronnes et achetons-nous un vrai chariot !";
 		this.m.RewardTooltip = "Vous débloquerez 27 emplacements supplémentaires dans votre inventaire.";
 		this.m.UIText = "Avoir au moins 15 000 Couronnes";
 		this.m.TooltipText = "Rassemblez la somme de 15 000 couronnes ou plus, afin de pouvoir vous permettre d\'acheter un chariot pour disposer d\'un espace d\'inventaire supplémentaire. Vous pouvez gagner de l\'argent en remplissant des contrats, en pillant des camps et des ruines, ou en faisant du commerce.";

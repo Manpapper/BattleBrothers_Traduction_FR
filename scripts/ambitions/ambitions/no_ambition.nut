@@ -5,7 +5,7 @@ this.no_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.ambition.create();
 		this.m.ID = "ambition.none";
 		this.m.Duration = 7.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "La compagnie se porte très bien, il faut juste que ça continue!\n(Aucune Ambition)";
+		this.m.ButtonText = "La compagnie se porte très bien, il faut juste que ça continue !\n(Aucune Ambition)";
 		this.m.RewardTooltip = null;
 	}
 

@@ -181,7 +181,7 @@ this.have_all_provisions_ambition <- this.inherit("scripts/ambitions/ambition", 
 		{
 			if (!dates)
 			{
-				ret = ret + "\n- Dates";
+				ret = ret + "\n- Dattes";
 			}
 
 			if (!rice)
