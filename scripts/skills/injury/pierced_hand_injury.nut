@@ -4,7 +4,7 @@ this.pierced_hand_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.pierced_hand";
-		this.m.Name = "Main Transpercé";
+		this.m.Name = "Main Transpercée";
 		this.m.Description = "Avoir une main avec un trou n\'arrêtera probablement pas un combatant déterminé mais cela rend le maniement d\'une arme plus difficile.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_41";

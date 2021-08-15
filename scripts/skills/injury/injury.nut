@@ -111,7 +111,7 @@ this.injury <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Ne prendra effet qu\'à la fin du combat du à l\'effet de Volonté de Fer"
+				text = "Ne prendra effet qu\'à la fin du combat dû à l\'effet de Volonté de Fer"
 			});
 		}
 

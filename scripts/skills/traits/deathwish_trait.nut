@@ -6,7 +6,7 @@ this.deathwish_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.deathwish";
 		this.m.Name = "Désir de Mort";
 		this.m.Icon = "ui/traits/trait_icon_13.png";
-		this.m.Description = "Je ne suis pas encore mort! Ce personnage ne se soucie pas de recevoir des blessures et continuera de se battre.";
+		this.m.Description = "Je ne suis pas encore mort ! Ce personnage ne se soucie pas de recevoir des blessures et continuera de se battre.";
 		this.m.Titles = [
 			"le Fou",
 			"l\'Etrange",
@@ -39,7 +39,7 @@ this.deathwish_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Pas de test de morale en perdant des points de vie"
+				text = "Pas de test de moral en perdant des points de vie"
 			}
 		];
 	}

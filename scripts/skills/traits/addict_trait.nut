@@ -6,7 +6,7 @@ this.addict_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.addict";
 		this.m.Name = "Toxicomane";
 		this.m.Icon = "ui/traits/trait_icon_62.png";
-		this.m.Description = "Ce personnage a développé une addiction a certaines subtances. S\'il n\'a pas sa dose régulièrement, il pourra souffrir de symptômes de sevrage.";
+		this.m.Description = "Ce personnage a développé une addiction à certaines subtances. S\'il n\'a pas sa dose régulièrement, il pourra souffrir de symptômes de sevrage.";
 		this.m.Excluded = [];
 	}
 
@@ -76,7 +76,7 @@ this.addict_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Actuellement aucun effet car des drogues ont été consommés dans les 5 derniers jours"
+				text = "Actuellement aucun effet car des drogues ont été consommées dans les 5 derniers jours"
 			});
 		}
 

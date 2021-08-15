@@ -6,7 +6,7 @@ this.gluttonous_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.gluttonous";
 		this.m.Name = "Glouton";
 		this.m.Icon = "ui/traits/trait_icon_07.png";
-		this.m.Description = "Délicieux, prenons en un autre! Il serait mieux de prendre des provisions supplémentaires en voyageant avec ce personnage et prévoyez à ce qu\'il parte vite si vous n\'avez plus de provisions.";
+		this.m.Description = "Délicieux, prenons en un autre ! Il serait mieux de prendre des provisions supplémentaires en voyageant avec ce personnage et prévoyez à ce qu\'il parte vite si vous n\'avez plus de provisions.";
 		this.m.Titles = [
 			"le Porc"
 		];

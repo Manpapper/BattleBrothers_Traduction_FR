@@ -4,8 +4,8 @@ this.burnt_legs_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.burnt_legs";
-		this.m.Name = "Jambes Brulées";
-		this.m.Description = "Des jambes brulées qui limitent la mobilité et rend incroyablement douloureux le fait de se déplacer.";
+		this.m.Name = "Jambes Brûlées";
+		this.m.Description = "Des jambes brûlées qui limitent la mobilité et rend incroyablement douloureux le fait de se déplacer.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_46";
 		this.m.Icon = "ui/injury/injury_icon_46.png";

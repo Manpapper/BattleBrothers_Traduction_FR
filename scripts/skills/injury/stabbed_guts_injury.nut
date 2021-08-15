@@ -5,7 +5,7 @@ this.stabbed_guts_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.stabbed_guts";
 		this.m.Name = "Intestins Poignardés";
-		this.m.Description = "Une blessures aux intestins qui draine la constitution, et la grosse possibilité d\'infections et la perspective de la mort n\'aide pas non plus.";
+		this.m.Description = "Une blessure aux intestins qui draine la constitution, et la grosse possibilité d\'infections et la perspective de la mort n\'aide pas non plus.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_39";
 		this.m.Icon = "ui/injury/injury_icon_39.png";

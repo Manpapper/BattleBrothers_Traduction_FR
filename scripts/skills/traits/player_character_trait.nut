@@ -6,7 +6,7 @@ this.player_character_trait <- this.inherit("scripts/skills/traits/character_tra
 		this.m.ID = "trait.player";
 		this.m.Name = "Joueur";
 		this.m.Icon = "ui/traits/trait_icon_63.png";
-		this.m.Description = "Il s\'agit de votre personnage, en d\'autres mots, de vous-même. S\'il meurt, votre campgane se termine. Vous ne pouvez le renvoyer, et il ne désertera jamais.";
+		this.m.Description = "Il s\'agit de votre personnage, en d\'autres termes, de vous-même. S\'il meurt, votre campgane se termine. Vous ne pouvez le renvoyer, et il ne désertera jamais.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Type = this.m.Type;
 		this.m.Titles = [];

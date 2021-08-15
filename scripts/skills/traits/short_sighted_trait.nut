@@ -6,7 +6,7 @@ this.short_sighted_trait <- this.inherit("scripts/skills/traits/character_trait"
 		this.m.ID = "trait.short_sighted";
 		this.m.Name = "Bigleux";
 		this.m.Icon = "ui/traits/trait_icon_27.png";
-		this.m.Description = "Est-ce que c\'est un orc ou un arbre là bas? Ce personnage est bigleux et ne voit pas très loin.";
+		this.m.Description = "Est-ce que c\'est un orc ou un arbre là bas ? Ce personnage est bigleux et ne voit pas très loin.";
 		this.m.Excluded = [
 			"trait.eagle_eyes",
 			"trait.night_owl"

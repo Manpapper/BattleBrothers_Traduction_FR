@@ -6,7 +6,7 @@ this.cultist_acolyte_trait <- this.inherit("scripts/skills/traits/character_trai
 		this.m.ID = "trait.cultist_acolyte";
 		this.m.Name = "Acolyte de Davkul";
 		this.m.Icon = "ui/traits/trait_icon_66.png";
-		this.m.Description = "Ce personnage est un acolyte de Davkul, un individu avec une connaissance intime des enseignements sur l\'ancien Dieu. Il embrasse les douleurs physique et la mise en péril car ça le rapproche du salut.";
+		this.m.Description = "Ce personnage est un acolyte de Davkul, un individu avec une connaissance intime des enseignements sur l\'ancien Dieu. Il embrasse les douleurs physiques et la mise en péril car ça le rapproche du salut.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 	}
 
@@ -27,7 +27,7 @@ this.cultist_acolyte_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] de Fatigue Recupéré par tour"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] de Fatigue Recupérée par tour"
 			},
 			{
 				id = 10,

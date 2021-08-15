@@ -43,7 +43,7 @@ this.dastard_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Commence le combat avec un moral vaccilant"
+				text = "Commence le combat avec un moral chancelant"
 			},
 			{
 				id = 16,

@@ -5,7 +5,7 @@ this.broken_knee_injury <- this.inherit("scripts/skills/injury_permanent/permane
 		this.permanent_injury.create();
 		this.m.ID = "injury.broken_knee";
 		this.m.Name = "Genou Cassé";
-		this.m.Description = "Ce personnage a prit quelque chose dans le genou, et ça n\'a jamais vraiment guéri. Se précipiter en avant ou éviter des coups peut être douloureux, et ça manque d\'une grâce certaine.";
+		this.m.Description = "Ce personnage a pris quelque chose dans le genou, et ça n\'a jamais vraiment guéri. Se précipiter en avant ou éviter des coups peut être douloureux, et ça manque d\'une grâce certaine.";
 		this.m.Icon = "ui/injury/injury_permanent_icon_11.png";
 	}
 

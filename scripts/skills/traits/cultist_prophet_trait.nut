@@ -45,7 +45,7 @@ this.cultist_prophet_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] de Fatigue Récupérées par tour"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] de Fatigue Récupérée par tour"
 			},
 			{
 				id = 10,

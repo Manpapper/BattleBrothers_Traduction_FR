@@ -5,7 +5,7 @@ this.pierced_lung_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.pierced_lung";
 		this.m.Name = "Poumon Perforé";
-		this.m.Description = "Une nouvelle entrée pour respirer semble guère utile, sauf pour faire le bruit d\'une corne muse.";
+		this.m.Description = "Une nouvelle entrée pour respirer semble guère utile, sauf pour faire le bruit d\'une cornemuse.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_36";
 		this.m.Icon = "ui/injury/injury_icon_36.png";

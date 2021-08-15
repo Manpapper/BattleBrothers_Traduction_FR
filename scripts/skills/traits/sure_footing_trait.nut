@@ -6,7 +6,7 @@ this.sure_footing_trait <- this.inherit("scripts/skills/traits/character_trait",
 		this.m.ID = "trait.sure_footing";
 		this.m.Name = "Pied Sûr";
 		this.m.Icon = "ui/traits/trait_icon_05.png";
-		this.m.Description = "Un pas déterminé qui rend difficile de déséquilibré ce personnage pour donner un coup.";
+		this.m.Description = "Un pas déterminé qui rend difficile de déséquilibrer ce personnage pour donner un coup.";
 		this.m.Excluded = [
 			"trait.clumsy",
 			"trait.insecure"

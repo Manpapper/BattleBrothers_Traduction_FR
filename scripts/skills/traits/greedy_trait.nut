@@ -6,7 +6,7 @@ this.greedy_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.greedy";
 		this.m.Name = "Avare";
 		this.m.Icon = "ui/traits/trait_icon_06.png";
-		this.m.Description = "J\'en veux plus! Ce personnage est avare et demandera un paiement journalier plus élevé que quelqu\'un avec une origine similaire, et poartira plus vite si vous arrivez à cours de couronnes.";
+		this.m.Description = "J\'en veux plus ! Ce personnage est avare et demandera un paiement journalier plus élevé que quelqu\'un avec une origine similaire, et partira plus vite si vous arrivez à court de couronnes.";
 		this.m.Excluded = [];
 	}
 

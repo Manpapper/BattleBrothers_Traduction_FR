@@ -4,9 +4,9 @@ this.cultist_chosen_trait <- this.inherit("scripts/skills/traits/character_trait
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.cultist_chosen";
-		this.m.Name = "L\'Elu de Davkul";
+		this.m.Name = "L\'Élu de Davkul";
 		this.m.Icon = "ui/traits/trait_icon_68.png";
-		this.m.Description = "Ce personnage se sent choisi par, quelque chose que peu peuvent revendiquer dans ce monde. Il embrasse les douleurs physique et la mise en péril car ça le rapproche du salut, et croit que son dieu le protège pour qu\'il puisse agir en son nom.";
+		this.m.Description = "Ce personnage se sent choisi par quelque chose que peu peuvent revendiquer dans ce monde. Il embrasse les douleurs physique et la mise en péril car ça le rapproche du salut, et croit que son dieu le protège pour qu\'il puisse agir en son nom.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 	}
 
@@ -45,7 +45,7 @@ this.cultist_chosen_trait <- this.inherit("scripts/skills/traits/character_trait
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] de Fatigue récupéré par tour"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] de Fatigue récupérée par tour"
 			},
 			{
 				id = 10,

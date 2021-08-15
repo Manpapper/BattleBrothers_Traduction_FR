@@ -4,8 +4,8 @@ this.grazed_eye_socket_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.grazed_eye_socket";
-		this.m.Name = "Oeil Ecorché";
-		this.m.Description = "Un coup ecorche et déchire une partie de la peau près d\'un oeil, provoquant un saignement et un goflement obligeant de fermer votre oeil.";
+		this.m.Name = "Oeil Écorché";
+		this.m.Description = "Un coup écorche et déchire une partie de la peau près d\'un oeil, provoquant un saignement et un gonflement obligeant de fermer votre oeil.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_43";
 		this.m.Icon = "ui/injury/injury_icon_43.png";

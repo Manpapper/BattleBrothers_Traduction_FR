@@ -4,7 +4,7 @@ this.crushed_finger_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.crushed_finger";
-		this.m.Name = "Doigt Ecrasé";
+		this.m.Name = "Doigt Écrasé";
 		this.m.Description = "Un coup malheureux a écrasé un doigt, ce qui rend douloureux de garder une poigne ferme.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_21";

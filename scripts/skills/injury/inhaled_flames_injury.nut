@@ -5,7 +5,7 @@ this.inhaled_flames_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.inhaled_flames";
 		this.m.Name = "Flammes Inhalées";
-		this.m.Description = "Essayer de respirer de nouveau semble vain, sauf si c\'est pour ressembler à une corne muse.";
+		this.m.Description = "Essayer de respirer de nouveau semble vain, sauf si c\'est pour ressembler à une cornemuse.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_49";
 		this.m.Icon = "ui/injury/injury_icon_49.png";

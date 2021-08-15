@@ -5,7 +5,7 @@ this.missing_ear_injury <- this.inherit("scripts/skills/injury_permanent/permane
 		this.permanent_injury.create();
 		this.m.ID = "injury.missing_ear";
 		this.m.Name = "Oreille Manquante";
-		this.m.Description = "Heureusement, une oreille manquante n\'est pas vraiment un problème dans la vie de tous les jours pour ce personnage. Mais , c\'est vraiment immonde.";
+		this.m.Description = "Heureusement, une oreille manquante n\'est pas vraiment un problème dans la vie de tous les jours pour ce personnage. Mais c\'est vraiment immonde.";
 		this.m.Icon = "ui/injury/injury_permanent_icon_01.png";
 	}
 

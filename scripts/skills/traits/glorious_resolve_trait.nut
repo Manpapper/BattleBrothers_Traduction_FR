@@ -27,7 +27,7 @@ this.glorious_resolve_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Rejoue une deuxième fois chaque test de morale échoué pour une seconde chance"
+				text = "Rejoue une deuxième fois chaque test de moral échoué pour une seconde chance"
 			}
 		];
 	}

@@ -4,8 +4,8 @@ this.fractured_ribs_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.fractured_ribs";
-		this.m.Name = "Côtes Fracturés";
-		this.m.Description = "Des côtes fracturés qui cause des vagues de douleurs à chaque fois que vous respirez.";
+		this.m.Name = "Côtes Fracturées";
+		this.m.Description = "Des côtes fracturées qui cause des vagues de douleurs à chaque fois que vous respirez.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_02";
 		this.m.Icon = "ui/injury/injury_icon_02.png";

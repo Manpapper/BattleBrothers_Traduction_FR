@@ -7,7 +7,7 @@ this.cut_throat_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.cut_throat";
 		this.m.Name = "Entaille sur la Jugulaire";
-		this.m.Description = "Une entaille sur la jugulaire, conduisant une hémorragie massive et qui mènera à une mort certaine si elle n\'est pas traitée rapidement en dehors du combat. Si vous survivez, il s\'ensuit une constitution sévèrement diminué à cause de la grosse perte de sang, et laissera une cicatrice menaçante.";
+		this.m.Description = "Une entaille sur la jugulaire, conduisant une hémorragie massive et qui mènera à une mort certaine si elle n\'est pas traitée rapidement en dehors du combat. Si vous survivez, il s\'ensuit une constitution sévèrement diminuée à cause de la grosse perte de sang, et laissera une cicatrice menaçante.";
 		this.m.KilledString = "Bled to death";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_30";

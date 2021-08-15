@@ -4,8 +4,8 @@ this.burnt_hands_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.burnt_hands";
-		this.m.Name = "Mains brulés";
-		this.m.Description = "Des mains brulés qui réduisent anormalement la possibilité de faire des actions rapides et précises. Aussi, ça démange énormément.";
+		this.m.Name = "Mains brûlées";
+		this.m.Description = "Des mains brûlées qui réduisent anormalement la possibilité de faire des actions rapides et précises. Aussi, ça démange énormément.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_47";
 		this.m.Icon = "ui/injury/injury_icon_47.png";

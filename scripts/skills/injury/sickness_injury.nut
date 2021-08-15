@@ -5,7 +5,7 @@ this.sickness_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.sickness";
 		this.m.Name = "Malade";
-		this.m.Description = "Frappé par la maladie, ce personnage ne se sent pas bien du tout et n\'est pas en condition de se battre. S\'il n\'est pas prit par la fièvre, elle passera avec le temps.";
+		this.m.Description = "Frappé par la maladie, ce personnage ne se sent pas bien du tout et n\'est pas en condition de se battre. S\'il n\'est pas pris par la fièvre, elle passera avec le temps.";
 		this.m.Type = this.m.Type | this.Const.SkillType.StatusEffect | this.Const.SkillType.SemiInjury;
 		this.m.DropIcon = "injury_icon_25";
 		this.m.Icon = "ui/injury/injury_icon_25.png";

@@ -6,7 +6,7 @@ this.tiny_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.tiny";
 		this.m.Name = "Petit";
 		this.m.Icon = "ui/traits/trait_icon_02.png";
-		this.m.Description = "Etant petit, ce personnage est habitué à passer inaperçu.";
+		this.m.Description = "Étant petit, ce personnage est habitué à passer inaperçu.";
 		this.m.Titles = [
 			"le Nain",
 			"le Semi-Homme",

@@ -4,7 +4,7 @@ this.dislocated_shoulder_injury <- this.inherit("scripts/skills/injury/injury", 
 	{
 		this.injury.create();
 		this.m.ID = "injury.dislocated_shoulder";
-		this.m.Name = "Epaule Déboitée";
+		this.m.Name = "Épaule Déboitée";
 		this.m.Description = "Un lourd coup qui sort votre épaule de ses jointures rendant le bras difficile à bouger voir impossible.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_03";

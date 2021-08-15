@@ -5,7 +5,7 @@ this.split_hand_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.split_hand";
 		this.m.Name = "Main Fendu";
-		this.m.Description = "Un coup aiguisé à fendu la main en son milieu. Tant que ce n\'est pas soigné, elle ne peut pratiquement plus être utilisé.";
+		this.m.Description = "Un coup aiguisé a fendu la main en son milieu. Tant que ce n\'est pas soigné, elle ne peut pratiquement plus être utilisée.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_08";
 		this.m.Icon = "ui/injury/injury_icon_08.png";

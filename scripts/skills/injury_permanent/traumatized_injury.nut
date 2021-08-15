@@ -5,7 +5,7 @@ this.traumatized_injury <- this.inherit("scripts/skills/injury_permanent/permane
 		this.permanent_injury.create();
 		this.m.ID = "injury.traumatized";
 		this.m.Name = "Traumatisé";
-		this.m.Description = "Ce personnage revient de l\'autre côté. En faisant face a sa propre mortalité, l\'expérience de mourrir et de revenir à la vie la laissé un homme brisé.";
+		this.m.Description = "Ce personnage revient de l\'autre côté. En faisant face à sa propre mortalité, l\'expérience de mourrir et de revenir à la vie l\'a laissé un homme brisé.";
 		this.m.Icon = "ui/injury/injury_permanent_icon_13.png";
 	}
 

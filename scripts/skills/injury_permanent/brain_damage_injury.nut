@@ -5,7 +5,7 @@ this.brain_damage_injury <- this.inherit("scripts/skills/injury_permanent/perman
 		this.permanent_injury.create();
 		this.m.ID = "injury.brain_damage";
 		this.m.Name = "Dommages Cérébraux";
-		this.m.Description = "Un coup lourd à la tête secoue des choses et qui n\'aide pas vraiment les compétences cognitives de ce personnage. Du bon côté, il est maintenant probablement trop bête pour réaliser quand il faut fuir.";
+		this.m.Description = "Un coup lourd à la tête secoue des choses et qui n\'aide pas vraiment les compétences cognitives de ce personnage. Le bon côté, il est maintenant probablement trop bête pour réaliser quand il faut fuir.";
 		this.m.Icon = "ui/injury/injury_permanent_icon_12.png";
 	}
 
@@ -32,7 +32,7 @@ this.brain_damage_injury <- this.inherit("scripts/skills/injury_permanent/perman
 				id = 7,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] de Gain d\'Experience"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] de Gain d\'Expérience"
 			},
 			{
 				id = 7,

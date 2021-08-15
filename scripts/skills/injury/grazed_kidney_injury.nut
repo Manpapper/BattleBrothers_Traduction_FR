@@ -4,8 +4,8 @@ this.grazed_kidney_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.grazed_kidney";
-		this.m.Name = "Rein Ecorché";
-		this.m.Description = "Une douleur abdominale, du sang dans les urines, et le danger constant d\'une infection. Un rein échorché est un risque sévère pour la vie de n\'importe quel personnage ce qui draine leur constitution.";
+		this.m.Name = "Rein Écorché";
+		this.m.Description = "Une douleur abdominale, du sang dans les urines, et le danger constant d\'une infection. Un rein écorché est un risque sévère pour la vie de n\'importe quel personnage ce qui draine leur constitution.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_37";
 		this.m.Icon = "ui/injury/injury_icon_37.png";

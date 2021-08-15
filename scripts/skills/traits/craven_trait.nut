@@ -6,7 +6,7 @@ this.craven_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.craven";
 		this.m.Name = "Lâche";
 		this.m.Icon = "ui/traits/trait_icon_40.png";
-		this.m.Description = "Fuyez pour vos vies! Ce personnage est un lâche et fuira au moindre signe de défaite.";
+		this.m.Description = "Fuyez pour vos vies ! Ce personnage est un lâche et fuira au moindre signe de défaite.";
 		this.m.Titles = [
 			"le Lâche",
 			"le Traître",

@@ -4,8 +4,8 @@ this.crushed_windpipe_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.crushed_windpipe";
-		this.m.Name = "Trachée Ecrasée";
-		this.m.Description = "A coup sur la nuque a blessé votre trachée, rendant très difficile et douloureux de respirer, et je ne parle pas de ce qu\'il en ait pour vous battre.";
+		this.m.Name = "Trachée Écrasée";
+		this.m.Description = "Un coup sur la nuque a blessé votre trachée, rendant très difficile et douloureux de respirer, et je ne parle pas de ce qu\'il en ait pour vous battre.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_38";
 		this.m.Icon = "ui/injury/injury_icon_38.png";

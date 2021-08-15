@@ -5,7 +5,7 @@ this.broken_leg_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.broken_leg";
 		this.m.Name = "Jambe Cassé";
-		this.m.Description = "Une jambe cassé qui limite énormement la mobilité et peut prendre assez longtemps à guérir.";
+		this.m.Description = "Une jambe cassée qui limite énormément la mobilité et peut prendre assez longtemps à guérir.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_04";
 		this.m.Icon = "ui/injury/injury_icon_04.png";
@@ -31,7 +31,7 @@ this.broken_leg_injury <- this.inherit("scripts/skills/injury/injury", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]2[/color] Points Action supplémentaires par tuile"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]2[/color] Points d\'Action supplémentaires par tuile"
 			},
 			{
 				id = 7,

@@ -6,7 +6,7 @@ this.impatient_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.impatient";
 		this.m.Name = "Impatient";
 		this.m.Icon = "ui/traits/trait_icon_46.png";
-		this.m.Description = "Allons-y! Qu\'est-ce qui prend si longtemps? Ce personnage veut que les choses commencent le plus tôt possible.";
+		this.m.Description = "Allons-y ! Qu\'est-ce qui prend si longtemps ? Ce personnage veut que les choses commencent le plus tôt possible.";
 		this.m.Titles = [
 			"le Rapide",
 			"le Désireux",
@@ -36,7 +36,7 @@ this.impatient_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Agis toujours en premier d\'un tour de combat"
+				text = "Agit toujours en premier d\'un tour de combat"
 			}
 		];
 	}

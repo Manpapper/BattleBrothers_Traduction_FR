@@ -6,7 +6,7 @@ this.fainthearted_trait <- this.inherit("scripts/skills/traits/character_trait",
 		this.m.ID = "trait.fainthearted";
 		this.m.Name = "Faible d\'Esprit";
 		this.m.Icon = "ui/traits/trait_icon_41.png";
-		this.m.Description = "Ce personnage à besoin régulièrement de mots réconfortants ou d\'une tape sur l\'épaule.";
+		this.m.Description = "Ce personnage a besoin régulièrement de mots réconfortants ou d\'une tape sur l\'épaule.";
 		this.m.Titles = [
 			"la poule Mouillée",
 			"le Docile"

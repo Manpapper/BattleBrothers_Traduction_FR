@@ -33,7 +33,7 @@ this.drunkard_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Damage"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Dégâts"
 			},
 			{
 				id = 11,

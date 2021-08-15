@@ -6,7 +6,7 @@ this.paranoid_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.paranoid";
 		this.m.Name = "Paranoïaque";
 		this.m.Icon = "ui/traits/trait_icon_55.png";
-		this.m.Description = "Je le jure lae buisson était en train de bouger! Ce personnage est très prudent et est réticent à aller de l\'avant.";
+		this.m.Description = "Je le jure le buisson était en train de bouger ! Ce personnage est très prudent et est réticent à aller de l\'avant.";
 		this.m.Titles = [
 			"le Fou",
 			"Le Paranoïaque"

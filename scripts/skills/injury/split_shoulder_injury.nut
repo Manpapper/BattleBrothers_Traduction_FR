@@ -4,8 +4,8 @@ this.split_shoulder_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.split_shoulder";
-		this.m.Name = "Epaule Fendu";
-		this.m.Description = "Un coup profond qui a ouvret l\'épaule de ce personnage, ingligeant des dégâts aux muscles limitant sévèrement la mobilité du bras.";
+		this.m.Name = "Épaule Fendu";
+		this.m.Description = "Un coup profond qui a ouvert l\'épaule de ce personnage, infligeant des dégâts aux muscles limitant sévèrement la mobilité du bras.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_29";
 		this.m.Icon = "ui/injury/injury_icon_29.png";

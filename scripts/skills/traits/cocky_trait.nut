@@ -6,7 +6,7 @@ this.cocky_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.cocky";
 		this.m.Name = "Arrogant";
 		this.m.Icon = "ui/traits/trait_icon_24.png";
-		this.m.Description = "C\'etait trop facile! Ce personnage est un peu trop arrogant pour son bien. ";
+		this.m.Description = "C\'etait trop facile ! Ce personnage est un peu trop arrogant pour son bien. ";
 		this.m.Titles = [
 			"le Brave",
 			"l\'Arrogant"

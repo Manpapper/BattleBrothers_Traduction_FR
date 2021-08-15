@@ -6,7 +6,7 @@ this.brute_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.brute";
 		this.m.Name = "Brute";
 		this.m.Icon = "ui/traits/trait_icon_01.png";
-		this.m.Description = "Pas un qui fait dans la finesse, ce personnage causera des dégâts supplémentaires en frappant la tête de l\'ennemie en mêlée contre un malus de précision.";
+		this.m.Description = "Pas du genre à faire dans la finesse, ce personnage causera des dégâts supplémentaires en frappant la tête de l\'ennemi en mêlée contre un malus de précision.";
 		this.m.Titles = [
 			"le Taureau",
 			"le Boeuf",

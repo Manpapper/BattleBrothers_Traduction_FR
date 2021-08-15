@@ -31,7 +31,7 @@ this.irrational_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "A aléatoirement [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] ou [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination à chaque vérification de morale"
+				text = "A aléatoirement [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] ou [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination à chaque vérification de moral"
 			}
 		];
 	}

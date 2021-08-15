@@ -36,7 +36,7 @@ this.clubfooted_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]2[/color] de Fatigue additionnel pour chaque tuile parcourue"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]2[/color] de Fatigue additionnelle pour chaque tuile parcourue"
 			}
 		];
 	}

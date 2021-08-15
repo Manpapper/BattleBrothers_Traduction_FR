@@ -4,7 +4,7 @@ this.teamplayer_trait <- this.inherit("scripts/skills/traits/character_trait", {
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.teamplayer";
-		this.m.Name = "Joueur d\'Equipe";
+		this.m.Name = "Joueur d\'Équipe";
 		this.m.Icon = "ui/traits/trait_icon_58.png";
 		this.m.Description = "Ce personnage s\'assure toujours d\'annoncer ses intentions à ses frères d\'armes. En fait, il ne s\'arrête jamais de parler. Au moins ça réduit le risque d\'accidents.";
 		this.m.Titles = [];

@@ -4,7 +4,7 @@ this.fractured_hand_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.fractured_hand";
-		this.m.Name = "Main Fracturé";
+		this.m.Name = "Main Fracturée";
 		this.m.Description = "Des fractures mineures sur les os de la main ce qui rend difficle de tenir fermement tout type d\'arme.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_01";

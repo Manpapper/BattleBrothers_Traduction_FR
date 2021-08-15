@@ -5,7 +5,7 @@ this.pierced_leg_muscles_injury <- this.inherit("scripts/skills/injury/injury", 
 		this.injury.create();
 		this.m.ID = "injury.pierced_leg_muscles";
 		this.m.Name = "Muscles de la Jambe Percés";
-		this.m.Description = "Avoir les muscles de la jambe perforés rend toute tentative de faire des mouvements brusque et rapide une expérience douloureuse, voire impossible.";
+		this.m.Description = "Avoir les muscles de la jambe perforés rend toute tentative de faire des mouvements brusques et rapides une expérience douloureuse, voire impossible.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_11";
 		this.m.Icon = "ui/injury/injury_icon_11.png";

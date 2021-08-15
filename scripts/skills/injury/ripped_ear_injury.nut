@@ -5,7 +5,7 @@ this.ripped_ear_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.ripped_ear";
 		this.m.Name = "Oreille Presque Arrachée";
-		this.m.Description = "L\'oreille de ce personnage a presque été arraché, envoyant du sang le long de la tête et du coup, rendant ce personnage moins concient de ce qui se passe autour de lui.";
+		this.m.Description = "L\'oreille de ce personnage a presque été arrachée, envoyant du sang le long de la tête et du coup, rendant ce personnage moins conscient de ce qui se passe autour de lui.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_42";
 		this.m.Icon = "ui/injury/injury_icon_42.png";

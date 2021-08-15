@@ -5,7 +5,7 @@ this.missing_finger_injury <- this.inherit("scripts/skills/injury_permanent/perm
 		this.permanent_injury.create();
 		this.m.ID = "injury.missing_finger";
 		this.m.Name = "Doigt Manquant";
-		this.m.Description = "Un doigt manquant qui rend difficile d\'aggriper correctement une arme ou un bouclier. Mais, c\'est toujours une bonne histoire à raconter.";
+		this.m.Description = "Un doigt manquant qui rend difficile d\'aggriper correctement une arme ou un bouclier. Mais c\'est toujours une bonne histoire à raconter.";
 		this.m.Icon = "ui/injury/injury_permanent_icon_02.png";
 	}
 

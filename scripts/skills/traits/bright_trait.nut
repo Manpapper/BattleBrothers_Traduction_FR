@@ -35,7 +35,7 @@ this.bright_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de Gain d\'Experience"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de Gain d\'Expérience"
 			}
 		];
 	}

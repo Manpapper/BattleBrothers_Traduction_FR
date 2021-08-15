@@ -31,7 +31,7 @@ this.injured_knee_cap_injury <- this.inherit("scripts/skills/injury/injury", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]2[/color] Points d\'action supplémentaires par tuile"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]2[/color] Points d\'action supplémentaire par tuile"
 			},
 			{
 				id = 7,

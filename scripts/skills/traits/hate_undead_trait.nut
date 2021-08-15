@@ -6,7 +6,7 @@ this.hate_undead_trait <- this.inherit("scripts/skills/traits/character_trait", 
 		this.m.ID = "trait.hate_undead";
 		this.m.Name = "La Haine des Morts-Vivant";
 		this.m.Icon = "ui/traits/trait_icon_50.png";
-		this.m.Description = "Des évenements du passé dans la vie de ce personnage ont alimenté une haine contre toutes les choses qui ne restent pas six pieds sous terre.";
+		this.m.Description = "Des Ã©venements du passÃ© dans la vie de ce personnage ont alimentÃ© une haine contre toutes les choses qui ne restent pas six pieds sous terre.";
 		this.m.Excluded = [
 			"trait.weasel",
 			"trait.craven",
@@ -33,7 +33,7 @@ this.hate_undead_trait <- this.inherit("scripts/skills/traits/character_trait", 
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Détermination quand vous etes en bataille contre les Morts-Vivant"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de DÃ©termination quand vous Ãªtes en bataille contre les Morts-Vivant"
 			}
 		];
 	}

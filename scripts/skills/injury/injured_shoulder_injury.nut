@@ -4,7 +4,7 @@ this.injured_shoulder_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.injured_shoulder";
-		this.m.Name = "Epaule Blessé";
+		this.m.Name = "Épaule Blessé";
 		this.m.Description = "Les muscles blessés dans l\'épaule rendent difficile de mettre de la force dans vos attaques.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_12";

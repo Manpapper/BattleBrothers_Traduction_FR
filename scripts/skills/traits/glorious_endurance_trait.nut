@@ -13,7 +13,7 @@ this.glorious_endurance_trait <- this.inherit("scripts/skills/traits/character_t
 
 	function getDescription()
 	{
-		return "Forgé dans les arènes du Sud, ce personnage a combattu beaucoup de batailles, et chaque coup ne fera qu\'augmenter se Détermination inébranlable et son endurance. Son niveau de vie fabuleux demande une grosse paie, mais il ne désertera jamais et ne peut être renvoyé. Si les trois membres du départ meurent la campagne se terminera.";
+		return "Forgé dans les arènes du Sud, ce personnage a combattu beaucoup de batailles, et chaque coup ne fera qu\'augmenter sa détermination inébranlable et son endurance. Son niveau de vie fabuleux demande une grosse paie, mais il ne désertera jamais et ne peut être renvoyé. Si les trois membres du départ meurent la campagne se terminera.";
 	}
 
 	function getTooltip()

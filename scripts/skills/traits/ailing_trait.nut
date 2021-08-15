@@ -6,9 +6,9 @@ this.ailing_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.ailing";
 		this.m.Name = "Malade";
 		this.m.Icon = "ui/traits/trait_icon_59.png";
-		this.m.Description = "Ce personnage est toujours pale et malade, ce qui le rend particulièrement susceptible aux poisons.";
+		this.m.Description = "Ce personnage est toujours pâle et malade, ce qui le rend particulièrement susceptible aux poisons.";
 		this.m.Titles = [
-			"le Pale",
+			"le Pâle",
 			"le Malade",
 			"le Souffrant"
 		];

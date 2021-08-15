@@ -6,7 +6,7 @@ this.asthmatic_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.asthmatic";
 		this.m.Name = "Asthmatique";
 		this.m.Icon = "ui/traits/trait_icon_22.png";
-		this.m.Description = "A voir le souffle court et sujet à tousser, ce personnage prend plus de temps à récupérer que les autres.";
+		this.m.Description = "Ayant le souffle court et étant sujet à tousser, ce personnage met plus de temps que les autres à se remettre de la fatigue.";
 		this.m.Titles = [];
 		this.m.Excluded = [
 			"trait.athletic",

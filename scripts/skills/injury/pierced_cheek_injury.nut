@@ -5,7 +5,7 @@ this.pierced_cheek_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.pierced_cheek";
 		this.m.Name = "Joue Transpersée";
-		this.m.Description = "Contrairement à ce que l\'on peut penser, avoir un trou supplémentaire dans la joue n\'a pas à mieux respirer.";
+		this.m.Description = "Contrairement à ce que l\'on peut penser, avoir un trou supplémentaire dans la joue n\'aide pas à mieux respirer.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_45";
 		this.m.Icon = "ui/injury/injury_icon_45.png";

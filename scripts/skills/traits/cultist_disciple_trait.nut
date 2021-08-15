@@ -6,7 +6,7 @@ this.cultist_disciple_trait <- this.inherit("scripts/skills/traits/character_tra
 		this.m.ID = "trait.cultist_disciple";
 		this.m.Name = "Disciple de Davkul";
 		this.m.Icon = "ui/traits/trait_icon_67.png";
-		this.m.Description = "Ce personnages est un disciple de Davkul, un individu avec un loyauté inquestionnable envers l\'ancien dieu. Il embrasse les douleurs physique et la mise en péril car ça le rapproche du salut.";
+		this.m.Description = "Ce personnages est un disciple de Davkul, un individu avec un loyauté inquestionnable envers l\'ancien dieu. Il embrasse les douleurs physiques et la mise en péril car ça le rapproche du salut.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 	}
 
@@ -27,13 +27,13 @@ this.cultist_disciple_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Hitpoints"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Points de Vie"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] Fatigue Recovery per turn"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] Fatigue récupérée par tour"
 			},
 			{
 				id = 10,

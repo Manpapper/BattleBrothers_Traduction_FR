@@ -6,7 +6,7 @@ this.tough_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.tough";
 		this.m.Name = "Résistant";
 		this.m.Icon = "ui/traits/trait_icon_14.png";
-		this.m.Description = "Ce personnage est aussi résistant que des clous, ignorant la plupart des coups et des frappes.";
+		this.m.Description = "Ce personnage est un dur à cuire, ignorant la plupart des coups et des frappes.";
 		this.m.Titles = [
 			"the Rock",
 			"le Boeuf",

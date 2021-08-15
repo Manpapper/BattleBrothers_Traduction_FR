@@ -6,7 +6,7 @@ this.huge_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.huge";
 		this.m.Name = "Immense";
 		this.m.Icon = "ui/traits/trait_icon_61.png";
-		this.m.Description = "Etant particulièrement grand et costaud, les coups de ce personnage font très mal, mais il est aussi une plus grosse cible que d\'autres.";
+		this.m.Description = "Étant particulièrement grand et costaud, les coups de ce personnage font très mal, mais il est aussi une plus grosse cible que d\'autres.";
 		this.m.Titles = [
 			"la Montagne",
 			"le Boeuf",

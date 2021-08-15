@@ -6,7 +6,7 @@ this.mad_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.mad";
 		this.m.Name = "Fou";
 		this.m.Icon = "ui/traits/trait_icon_76.png";
-		this.m.Description = "Ce personnage a regarder dans les abysses, et les abysses l\'ont regardé, cela l\'a rendu fou. Il divague souvent de manière inintelligible, et son esprit tourmenté est devenu inacessible que ce soit ses alliés ou ses ennemis.";
+		this.m.Description = "Ce personnage a regardé dans les abysses, et les abysses l\'ont regardé, cela l\'a rendu fou. Il divague souvent de manière inintelligible, et son esprit tourmenté est devenu inacessible que ce soit ses alliés ou ses ennemis.";
 	}
 
 	function getTooltip()
@@ -26,7 +26,7 @@ this.mad_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "A aléatoirement [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] ou [color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] de Détermination à chaque vérification de morale"
+				text = "A aléatoirement [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] ou [color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] de Détermination à chaque vérification de moral"
 			},
 			{
 				id = 10,

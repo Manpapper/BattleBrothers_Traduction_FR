@@ -5,7 +5,7 @@ this.broken_ribs_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.broken_ribs";
 		this.m.Name = "Côtes Cassées";
-		this.m.Description = "Plusieurs Côtes de cassés suite à un coup contondant, ce qui rend le simple fait de respirer un processus douloureux.";
+		this.m.Description = "Plusieurs Côtes cassées suite à un coup contondant, ce qui rend le simple fait de respirer un processus douloureux.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_20";
 		this.m.Icon = "ui/injury/injury_icon_20.png";

@@ -4,7 +4,7 @@ this.exposed_ribs_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.exposed_ribs";
-		this.m.Name = "Côtes Exposés";
+		this.m.Name = "Côtes Exposées";
 		this.m.Description = "Un coup profond qui retire une partie de la peau de la cage thoracique.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_27";

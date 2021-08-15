@@ -6,7 +6,7 @@ this.quick_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.quick";
 		this.m.Name = "Rapide";
 		this.m.Icon = "ui/traits/trait_icon_18.png";
-		this.m.Description = "J\'y suis déjà! Ce personnage agit rapidement, souvent avant l\'ennemi.";
+		this.m.Description = "J\'y suis déjà ! Ce personnage agit rapidement, souvent avant l\'ennemi.";
 		this.m.Titles = [
 			"le Rapide"
 		];

@@ -4,8 +4,8 @@ this.smashed_hand_injury <- this.inherit("scripts/skills/injury/injury", {
 	{
 		this.injury.create();
 		this.m.ID = "injury.smashed_hand";
-		this.m.Name = "Main Ecrasé";
-		this.m.Description = "Une main écrasé par un coup puissant qui rend quasiment impossible d\'utiliser n\'importe quelle arme.";
+		this.m.Name = "Main Écrasée";
+		this.m.Description = "Une main écrasée par un coup puissant qui rend quasiment impossible d\'utiliser n\'importe quelle arme.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_19";
 		this.m.Icon = "ui/injury/injury_icon_19.png";

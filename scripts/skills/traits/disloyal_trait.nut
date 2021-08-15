@@ -4,9 +4,9 @@ this.disloyal_trait <- this.inherit("scripts/skills/traits/character_trait", {
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.disloyal";
-		this.m.Name = "Déloyale";
+		this.m.Name = "Déloyal";
 		this.m.Icon = "ui/traits/trait_icon_35.png";
-		this.m.Description = "Je dois être le premier! Ce personnage est déloyale et sera rapide à partir dès que vous arriverez à court de couronnes ou de provisions.";
+		this.m.Description = "Je dois être le premier ! Ce personnage est déloyal et sera prompt à partir dès que vous arriverez à court de couronnes ou de provisions.";
 		this.m.Titles = [
 			"Le Menteur"
 		];

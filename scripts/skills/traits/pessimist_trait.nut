@@ -6,7 +6,7 @@ this.pessimist_trait <- this.inherit("scripts/skills/traits/character_trait", {
 		this.m.ID = "trait.pessimist";
 		this.m.Name = "Pessimiste";
 		this.m.Icon = "ui/traits/trait_icon_20.png";
-		this.m.Description = "Le verre est a moitié vide.";
+		this.m.Description = "Le verre est a moitiÃ© vide.";
 		this.m.Excluded = [
 			"trait.optimist",
 			"trait.irrational",
@@ -33,7 +33,7 @@ this.pessimist_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Détermination aux tests de morale négatifs"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de DÃ©termination aux tests de moral nÃ©gatif"
 			},
 			{
 				id = 11,
