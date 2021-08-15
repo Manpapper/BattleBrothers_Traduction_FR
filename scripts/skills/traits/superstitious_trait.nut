@@ -6,7 +6,7 @@ this.superstitious_trait <- this.inherit("scripts/skills/traits/character_trait"
 		this.m.ID = "trait.superstitious";
 		this.m.Name = "Superticieux";
 		this.m.Icon = "ui/traits/trait_icon_26.png";
-		this.m.Description = "C\'est maudit! Ce personnage est extremement supersticieux et est donc plus vulnérable aux attaques qui visent sa Détermination.";
+		this.m.Description = "C\'est maudit! Ce personnage est extremement supersticieux et est donc plus vulnÃ©rable aux attaques qui visent sa DÃ©termination.";
 		this.m.Excluded = [
 			"trait.fearless",
 			"trait.brave"
@@ -30,7 +30,7 @@ this.superstitious_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination aux tests de moral contre la Peur, la Panique ou le Contrôle Mental"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de DÃ©termination aux tests de moral contre la Peur, la Panique ou le ContrÃ´le Mental"
 			}
 		];
 	}

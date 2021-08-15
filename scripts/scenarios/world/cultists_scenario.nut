@@ -4,7 +4,7 @@ this.cultists_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 	{
 		this.m.ID = "scenario.cultists";
 		this.m.Name = "Adeptes de Davkul";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul attend. Vous dirigez un petit groupe de personnes dévoué à l\'ancien dieu, et il est temps de répendre l\'information. Trouvez plus de fidèles, faites fortune, et satisfaire Davkul avec des sacrifices.\n\n[color=#bcad8c]Adeptes :[/color] Commencez avec un groupe de 4 adeptes avec un équipement inadéquat. Plus d\'adeptes se joindront à vous gratuitement.\n[color=#bcad8c]Sacrifices :[/color] Davkul demandera régulièrement des sacrifices, mais il fait aussi des faveurs à ceux qui lui sont fidèles.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul attend. Vous dirigez un petit groupe de personnes dévoué à l\'ancien dieu, et il est temps de répandre l\'information. Trouvez plus de fidèles, faites fortune, et satisfaire Davkul avec des sacrifices.\n\n[color=#bcad8c]Adeptes :[/color] Commencez avec un groupe de 4 adeptes avec un équipement inadéquat. Plus d\'adeptes se joindront à vous gratuitement.\n[color=#bcad8c]Sacrifices :[/color] Davkul demandera régulièrement des sacrifices, mais il fait aussi des faveurs à ceux qui lui sont fidèles.[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 80;
 	}
