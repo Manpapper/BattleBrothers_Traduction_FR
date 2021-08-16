@@ -9,12 +9,12 @@ this.inadvertently_save_merchant_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 130.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%townImage%Walking about %townname% with a few sellswords, you turn a corner to find an opulent man surrounded by thieves and bandits. They look over their shoulders and widen their eyes. One nicks the merchant on the cheek.%SPEECH_ON%Alright, we\'ll get you next time ya bastard!%SPEECH_OFF%The scoundrels quickly make their leave. A moment later and the merchant\'s heavily-armed guards appear. Nursing his wound, he starts yelling at them.%SPEECH_ON%What am I paying you for you sorry bastards? The second I get into trouble and you\'re nowhere to be seen? Look at this man here, that\'s who I should be paying! Hey, take this for your troubles, stranger.%SPEECH_OFF%The merchant throws you a satchel of crowns for your \'trouble,\' though all you did was turn a corner and run into a coincidence.",
+			Text = "%townImage%En vous promenant dans %townname% avec quelques mercenaires, vous tournez à un coin pour trouver un homme opulent entouré de voleurs et de bandits. Ils regardent par-dessus leurs épaules et écarquillent les yeux. L\'un d\'eux pique le marchand sur la joue.%SPEECH_ON%Très bien, on t\'aura la prochaine fois salaud !%SPEECH_OFF%Les scélérats s\'en vont rapidement. Un instant plus tard, les gardes du marchand, lourdement armés, apparaissent. En soignant sa blessure, il commence à leur hurler dessus.%SPEECH_ON% Pourquoi je vous paye, bande de bons à rien ? Dès que j\'ai des problèmes, vous n\'êtes pas là ? Regardez cet homme, c\'est lui que je devrais payer ! Hé, prends ça pour tes ennuis, étranger. Le marchand te lance une sacoche de couronnes pour tes \"ennuis\", alors que tu n\'as fait que tourner au coin de la rue et tomber sur une coïncidence.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Well, okay.",
+					Text = "Eh bien, pourquoi pas.",
 					function getResult( _event )
 					{
 						return 0;
@@ -28,7 +28,7 @@ this.inadvertently_save_merchant_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]25[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]25[/color] Couronnes"
 				});
 			}
 

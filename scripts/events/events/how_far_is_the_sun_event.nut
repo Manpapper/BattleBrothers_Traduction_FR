@@ -13,7 +13,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]While resting, the men start a conversation about how far away the sun is. %otherbrother% looks up at it, wincing and gritting his teeth as he just about blinds himself in his measuring. Finally, he looks back down.%SPEECH_ON%I\'d wager it\'s about ten to fifteen miles away.%SPEECH_OFF%He nods at his own presumably accurate summation.%SPEECH_ON%Aye, probably not even that far. I heard a story about an archer in a faraway land hitting it with an arrow.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Alors qu\'ils se reposent, les hommes entament une conversation sur la distance à laquelle se trouve le soleil. %otherbrother% regarde en l\'air, grimaçant et serrant les dents alors qu\'il est presque aveuglé en essayant d\'évaluer la distance. Finalement, il baisse les yeux : %SPEECH_ON% Je parie qu\'il est à environ dix ou quinze miles. %SPEECH_OFF% Il acquiesce à son propre résumé, vraisemblablement exact : %SPEECH_ON% Oui, probablement même pas aussi loin. J\'ai entendu une histoire à propos d\'un archer dans un pays lointain qui l\'a touché avec une flèche.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [],
@@ -22,7 +22,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Historian != null)
 				{
 					this.Options.push({
-						Text = "%historianfull%, what have you to say?",
+						Text = "%historianfull%, qu\'as-tu à dire ?",
 						function getResult( _event )
 						{
 							return "Historian";
@@ -34,7 +34,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Monk != null)
 				{
 					this.Options.push({
-						Text = "I bet %monkfull% knows the truth.",
+						Text = "Je parie que %monkfull% connaît la vérité.",
 						function getResult( _event )
 						{
 							return "Monk";
@@ -46,7 +46,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Cultist != null)
 				{
 					this.Options.push({
-						Text = "I see you thinking, %cultistfull%. What say you?",
+						Text = "Je te vois pensif, %cultistfull%. Qu\'en dis-tu ?",
 						function getResult( _event )
 						{
 							return "Cultist";
@@ -58,7 +58,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Archer != null)
 				{
 					this.Options.push({
-						Text = "%archerfull%, why don\'t you take a shot?",
+						Text = "%archerfull%, pourquoi ne pas tenter le coup ?",
 						function getResult( _event )
 						{
 							return "Archer";
@@ -68,7 +68,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Enough star talk. Back to the road.",
+					Text = "Assez parlé d\'étoiles. Retournons sur la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -80,13 +80,13 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Historian",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%historian% the historian starts in on the conversation.%SPEECH_ON%I doubt the veracity of that claim about shooting it with a bow. Here\'s a much more truthful tale I\'ve read of: there are men in the mountains of the east who have big spyglasses to stare up at the night sky. They think the sun is quite far away. At least ten thousand miles, even. They also think the nightlights are other suns and not the souls of dead heroes.%SPEECH_OFF%%otherbrother% gets up.%SPEECH_ON%Watch yer mouth, fool, and don\'t speak ill of our ancestors.%SPEECH_OFF%The historian nods.%SPEECH_ON%Of course! It was only an idea.%SPEECH_OFF%What hogwash. Pretty dumb shite for a supposed \'smart\' man like %historian%. A few of the brothers have a laugh at the historian\'s silly notions.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%historian% l\'historien se joint à la conversation. %SPEECH_ON%Je doute de la véracité de cette affirmation concernant le tir à l\'arc. Écoutez, voici une histoire beaucoup plus plausible que j\'ai lue : il y a des hommes dans les montagnes de l\'est qui ont de grosses longues-vues pour regarder le ciel nocturne. Ils pensent que le soleil est très loin. Au moins 15 000 km, et même plus. Ils pensent aussi que les lumières de la nuit sont d\'autres soleils et pas les âmes des héros morts.%SPEECH_OFF%%otherbrother% se lève.%SPEECH_ON%Fais attention à ce que tu dis, idiot, et ne dis pas de mal de nos ancêtres.%SPEECH_OFF%L\'historien hoche la tête.%SPEECH_ON%Bien sûr ! Ce n\'était qu\'une idée.%SPEECH_OFF% Quelle foutaise. Quelle connerie pour un homme supposé \"intelligent\" comme %historian%. Quelques-uns des frères se moquent des idées stupides de l\'historien.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What a laugh riot he is.",
+					Text = "Il est vraiment très drôle.",
 					function getResult( _event )
 					{
 						return 0;
@@ -108,7 +108,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(0.5, "Entertained by " + _event.m.Historian.getName() + "\'s silly notions about the sun");
+						bro.improveMood(0.5, "Diverti par les notions stupides à propos du soleil de " + _event.m.Historian.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -125,13 +125,13 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Monk",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%monk% the monk starts in on the conversation.%SPEECH_ON%The sun is neither far nor close. It is the eye of many of the gods, the scope through which they use to watch over us.%SPEECH_OFF%%otherbrother% nods, but then, curious, asks about the moon. The monk smiles confidently.%SPEECH_ON%Do you think the gods would shine upon us for all hours? Of course they dim the lights a bit, to give us mortals a nice night to sleep in.%SPEECH_OFF%You nod. Truly the old gods are always looking out for us.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%monk% le moine se joint à la conversation. %SPEECH_ON%Le soleil n\'est ni lointain ni proche. C\'est l\'œil de beaucoup de dieux, la lunette à travers laquelle ils nous surveillent.%SPEECH_OFF%%otherbrother% acquiesce, mais ensuite, curieux, il pose une question sur la lune. Le moine sourit avec confiance. %SPEECH_ON%Pensez-vous que les dieux nous éclairent à toute heure ? Bien sûr, ils tamisent un peu les lumières, pour que nous, les mortels, ayons une bonne nuit de sommeil.%SPEECH_OFF%Vous acquiescez. Vraiment, les vieux dieux veillent toujours sur nous.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Bless them.",
+					Text = "Bénissez-les.",
 					function getResult( _event )
 					{
 						return 0;
@@ -153,7 +153,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(0.5, "Encouraged by " + _event.m.Monk.getName() + "\'s preaching");
+						bro.improveMood(0.5, "Encouragé par le sermon de " + _event.m.Monk.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -170,13 +170,13 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Cultist",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%cultist% the cultist gets up and looks at the sun. As he continues to stare at it, a shadow slowly emerges over his face, as though some entity were shielding him from the light. Suddenly, he raises a hand and starts drawing some aerial rites with his hand. You swear the darkness on his face is moving as though an imprint of his drawings, a sort of shifting tattoo. When he\'s finished, he takes a seat.%SPEECH_ON%The sun is dying.%SPEECH_OFF%The men look concerned. One interjects.%SPEECH_ON%Dying? What do you mean?%SPEECH_OFF%%cultist% stares at him.%SPEECH_ON%Davkul wills it that all may die.%SPEECH_OFF%One man asks if this supposed \'Davkul\' will die too. The cultist nods.%SPEECH_ON%When there is nothing left to die, Davkul may finally rest. A crueler god would have departed already. It is by Davkul\'s good graces that he will go last, and for that we praise him.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%cultist% le cultist se lève et regarde le soleil. Alors qu\'il continue à le fixer, une ombre se dessine lentement sur son visage, comme si une entité le protégeait de la lumière. Soudain, il lève une main et commence à dessiner des rites aériens avec sa main. On jurerait que l\'obscurité sur son visage se déplace comme une empreinte de ses dessins, une sorte de tatouage mouvant. Quand il a fini, il s\'assied.%SPEECH_ON%Le soleil se meurt.%SPEECH_OFF%Les hommes ont l\'air inquiets. L\'un d\'eux intervient. %SPEECH_ON%Mourir ? Qu\'est-ce que tu veux dire ? %SPEECH_OFF%%cultist% le regarde fixement.%SPEECH_ON%Davkul le souhaite afin que toute chose meure.%SPEECH_OFF%Un homme demande si ce supposé \'Davkul\' va mourir aussi. Le cultist fait un signe de tête.%SPEECH_ON%Quand il n\'y aura plus rien à mourir, Davkul pourra enfin se reposer. Un dieu plus cruel serait déjà parti. C\'est par les bonnes grâces de Davkul qu\'il partira en dernier, et c\'est pour cela pour cela nous le glorifions.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Errr, right.",
+					Text = "Ehhh, d\'accord.",
 					function getResult( _event )
 					{
 						return 0;
@@ -193,7 +193,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getID() == _event.m.Cultist.getID())
 					{
-						bro.improveMood(1.0, "Relished the opportunity to talk about the dying sun");
+						bro.improveMood(1.0, "A profité de l\'occasion pour parler de la mort du soleil.");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -206,7 +206,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getBackground().getID() == "background.cultist")
 					{
-						bro.improveMood(0.5, "Relished " + _event.m.Cultist.getName() + "\'s speech about the dying sun");
+						bro.improveMood(0.5, "A apprécié le discours de " + _event.m.Cultist.getName() + " à propos de la mort du soleil");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -219,7 +219,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getEthnicity() == 1)
 					{
-						bro.worsenMood(1.0, "Angry about the heretical ramblings of " + _event.m.Cultist.getName());
+						bro.worsenMood(1.0, "En colère contre les divagations hérétiques de " + _event.m.Cultist.getName());
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -232,7 +232,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getSkills().hasSkill("trait.superstitious") || bro.getSkills().hasSkill("trait.mad"))
 					{
-						bro.worsenMood(1.0, "Terrified at the prospect of a dying sun");
+						bro.worsenMood(1.0, "Terrifié par la perspective d\'un soleil mourant");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -249,13 +249,13 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Archer",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%archer% takes the challenge, grabbing his bow and a couple of arrows. He licks his finger and holds it up.%SPEECH_ON%Wind\'s right for a good star shootin\'.%SPEECH_OFF%The archer nocks an arrow, draws, and takes aim. The blistering light is instantly blinding.%SPEECH_ON%Fark, I can\'t see shit.%SPEECH_OFF%His aim wobbles as dark spots take over his vision. The arrow is loosed and sails wide of the sun. Real wide. He looks at the company, eyes dimmed, hands out as he tries to steady himself while his sight returns.%SPEECH_ON%Did I hit it?%SPEECH_OFF%%otherbrother% hides his chuckling.%SPEECH_ON%Right on the button!%SPEECH_OFF%The men burst into laughter.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%archer% relève le défi, prend son arc et quelques flèches. Il se lèche le doigt et le tient en l\'air. %SPEECH_ON%Le vent est bon pour un bon tir sur une étoile. %SPEECH_OFF%L\'archer encoche une flèche, tire et vise. La lumière foudroyante est instantanément aveuglante.%SPEECH_ON%Merde, je n\'y vois rien.%SPEECH_OFF%Sa visée vacille alors que des taches sombres envahissent sa vision. La flèche est décochée et passe à côté du soleil. Vraiment très loin. Il regarde la compagnie, les yeux éteints, les mains tendues pour essayer de se stabiliser pendant que sa vue revient.%SPEECH_ON%Est-ce que je l\'ai touché?%SPEECH_OFF%otherbrother% cache son rire.%SPEECH_ON%En plein dans le mille!%SPEECH_OFF%Les hommes éclatent de rire.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good shot, sir!",
+					Text = "Bon tir",
 					function getResult( _event )
 					{
 						return 0;
@@ -272,7 +272,7 @@ this.how_far_is_the_sun_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(0.5, "Entertained by " + _event.m.Archer.getName() + "\'s attempt to shoot the sun");
+						bro.improveMood(0.5, "Diverti par la tentitive de tirer sur le soleil de " + _event.m.Archer.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

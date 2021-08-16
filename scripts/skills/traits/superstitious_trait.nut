@@ -4,7 +4,7 @@ this.superstitious_trait <- this.inherit("scripts/skills/traits/character_trait"
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.superstitious";
-		this.m.Name = "Superticieux";
+		this.m.Name = "Superstitieux";
 		this.m.Icon = "ui/traits/trait_icon_26.png";
 		this.m.Description = "C\'est maudit ! Ce personnage est extrêmement supersticieux et est donc plus vulnérable aux attaques qui visent sa Détermination.";
 		this.m.Excluded = [

@@ -10,13 +10,13 @@ this.juggler_entertains_townsfolk_event <- this.inherit("scripts/events/event", 
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_92.png[/img]As the men wander through %townname% looking for things to do, %juggler% the juggler takes it upon himself to provide his own entertainment. He takes a message barker\'s scroll and folds it into a paper hat with horns. Placing it upon his head, he then glides into a crowd of peasants and asks for anything with which to juggle. They toss him all manner of objects from carrots to knives and one man even offers a newborn infant before the mother slaps him for even suggesting it. Whatever is thrown up there, the juggler easily hurls through the air, his own body twisting and turning, his feet alternating between hands to kick things back into the air. It\'s dexterous poetry in motion - and a boon for the town\'s downtrodden. You get the feeling that the juggler has represented the %companyname% well this day.",
+			Text = "[img]gfx/ui/events/event_92.png[/img]Alors que les hommes errent dans %townname% à la recherche de choses à faire, %juggler% le jongleur prend sur lui de fournir son propre divertissement. Il prend un parchemin et le plie en un chapeau de papier avec des cornes. Le plaçant sur sa tête, il se glisse ensuite dans une foule de paysans et leur demande de quoi jongler. Ils lui lancent toutes sortes d\'objets, des carottes aux couteaux, et un homme offre même un nouveau-né avant que la mère ne le gifle pour l\'avoir suggéré. Quel que soit l\'objet lancé, le jongleur le projette facilement dans les airs, son propre corps se tordant et tournant, ses pieds alternant entre les mains pour renvoyer les objets dans les airs. C\'est une poésie artistique en mouvement - et une aubaine pour les opprimés de la ville. On a l\'impression que le jongleur a bien représenté %companyname% ce jour-là.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well done, well done.",
+					Text = "Bien joué, bien joué.",
 					function getResult( _event )
 					{
 						return 0;
@@ -30,14 +30,14 @@ this.juggler_entertains_townsfolk_event <- this.inherit("scripts/events/event", 
 
 				if (_event.m.Town.isSouthern())
 				{
-					_event.m.Town.getOwner().addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "One of your men entertained the masses");
+					_event.m.Town.getOwner().addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "un de vos hommes a diverti les masses");
 				}
 				else
 				{
-					_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "One of your men entertained the townsfolk");
+					_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Un de vos hommes a diverti les habitants de la ville.");
 				}
 
-				_event.m.Juggler.improveMood(2.0, "Entertained townsfolk with his juggling");
+				_event.m.Juggler.improveMood(2.0, "A diverti les habitants de la ville avec ses tours de jongleur");
 
 				if (_event.m.Juggler.getMoodState() >= this.Const.MoodState.Neutral)
 				{

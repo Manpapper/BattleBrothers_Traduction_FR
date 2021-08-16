@@ -9,12 +9,12 @@ this.kids_and_dead_merchant_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_97.png[/img]You find a kid wearing a rather opulent chain around his neck. It\'s so heavy his head is bent forward, but that minor struggle doesn\'t wipe the mile wide grin off his face. %randombrother% pushes the kid down and takes the necklace.%SPEECH_ON%Where did you get this?%SPEECH_OFF%The kid cries out, trying to grab his treasure back, but he\'s about three feet and a good jump too short.%SPEECH_ON%Hey, that\'s mine! Give it back!%SPEECH_OFF%Another kid comes over flashing a ring so large it\'s pinching two fingers at once. Alright. That\'s enough. The company fans out and eventually find a dead merchant in some tall grass beside a treeline. His face is purpled and jagged with broken bones. It appears he has been stoned to death.\n\n A group of about forty or fifty youngsters appear from the treeline, each juggling a stone in hand. Their leader, a little runt with red hair and sleeves of tattoos, asks what you want. You tell him that you\'ll be taking the merchant\'s goods. The leader laughs.%SPEECH_ON%Oy is that so? I\'ll give ya ten seconds to rethink that choice, oy that I will, mister!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Vous trouvez un enfant portant une chaîne plutôt opulente autour du cou. La chaîne est si lourde qu\'il a la tête penchée en avant, mais cette petite lutte n\'efface pas le large sourire de son visage. %randombrother% pousse le gamin et prend le collier.%SPEECH_ON% Où as-tu eu ça?%SPEECH_OFF% Le gamin crie, essayant de récupérer son trésor, mais il lui manque environ un mètre et un bon saut.%SPEECH_ON%Hey, c\'est à moi ! Rends-le moi !%SPEECH_OFF%Un autre enfant arrive en montrant une bague si grosse qu\'elle lui pince deux doigts à la fois. D\'accord. C\'en est assez. La compagnie se déploie et finit par trouver un marchand mort dans les hautes herbes près d\'un arbre. Son visage est violacé et déchiqueté par des os brisés. Il semble qu\'il ait été lapidé à mort. Un groupe d\'environ quarante ou cinquante jeunes surgit de la limite des arbres, chacun jonglant avec une pierre à la main. Leur chef, un petit avorton aux cheveux roux et aux bras plein de tatouages, demande ce que vous voulez. Vous lui dites que vous allez prendre les biens du marchand. Le chef se met à rire.%SPEECH_ON%Ohh, C\'est vrai? Je te donne dix secondes pour repenser à ce choix, oui que je le ferai, monsieur!%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'re taking the goods.",
+					Text = "On prend la marchandise.",
 					function getResult( _event )
 					{
 						return "B";
@@ -27,7 +27,7 @@ this.kids_and_dead_merchant_event <- this.inherit("scripts/events/event", {
 				if (_event.m.HedgeKnight != null)
 				{
 					this.Options.push({
-						Text = "You got something to say, %hedgeknight%?",
+						Text = "Tu as quelque chose à dire, %hedgeknight%?",
 						function getResult( _event )
 						{
 							return "HedgeKnight";
@@ -37,7 +37,7 @@ this.kids_and_dead_merchant_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Back off, men.",
+					Text = "Reculez, les gars.",
 					function getResult( _event )
 					{
 						return 0;
@@ -49,13 +49,13 @@ this.kids_and_dead_merchant_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_97.png[/img]Despite the miniature military force arrayed before you, the goods are ordered to be taken. The little tyke in charge of this operation screams a warcry more dying cat than diving hawk.%SPEECH_ON%Take them down! Throw! Throw! Throooowww!%SPEECH_OFF%On his command, the mob of children start hurling stones from the treeline. The sellswords band together, holding shields up in a formation akin to a tortoise, and slowly move forward. It\'s a strange effort, like a shell-game artist sliding his cup over the ball, but the company manages to grab the merchant\'s goods and slide away out of the field, all the while being pelted from every which way. The little leader kid shakes his fist at you. You give him the finger and start back onto the path where you take a good look at the merchant\'s goods. %randombrother% stares at the rewards while rubbing a welt on his forehead.%SPEECH_ON%Goddam, man. I\'ve seen armies not nearly so fierce. I weep for the future men who have to cross swords with those lads and lasses.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Malgré la force militaire miniature qui se dresse devant vous, vous avez l\'ordre de prendre la marchandise. Le petit garçon chargé de l\'opération lance un cri de guerre qui tient plus du chat mourant que de l\'épervier plongeur.%SPEECH_ON%Descendez-les ! Lancez ! Lancez ! Lanceeezzzz ! %SPEECH_OFF%A son commandement, la foule d\'enfants commence à lancer des pierres depuis la cime des arbres. Les mercenaires se regroupent, tenant leurs boucliers en une formation semblable à une tortue, et avancent lentement. C\'est un drôle de mouvement, mais la compagnie parvient à saisir les marchandises du marchand et à s\'éloigner, tout en se faisant bombarder de toutes parts. Le petit chef vous fait un signe du poing. Vous lui faites un doigt d\'honneur et reprenez le chemin où vous regardez attentivement les marchandises du marchand. %randombrother%  fixe les récompenses tout en se frottant une plaie sur le front.%SPEECH_ON% Bon sang, mec. J\'ai vu des armées loin d\'être aussi féroces. Je pleure pour les futurs hommes qui devront croiser le fer avec ces garçons et ces filles.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Those little bastards really gave it to us.",
+					Text = "Ces petits bâtards nous en ont fait voir de toutes les couleurs.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(-1);
@@ -78,7 +78,7 @@ this.kids_and_dead_merchant_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + item + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + item + "[/color] Couronnes"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -111,13 +111,13 @@ this.kids_and_dead_merchant_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "HedgeKnight",
-			Text = "[img]gfx/ui/events/event_35.png[/img]%hedgeknight% steps forward and heaves his weapon to the fore. He waves it at all the kids.%SPEECH_ON%Ah, so you want to be little bandits or heroes or some such shit? Well, that\'s good. That\'s fine. But I\'ll be watching to see who throws the first stone. He, or she, who does so will find out what happens when I get angry. And then after the rest of you have watched, I\'ll kill the lot of you. And I\'ll follow your little footprints all the way home, find your kin, and smash their farkin\' heads in.%SPEECH_OFF%The hedge knight pauses to glare about.%SPEECH_ON%So, which of you shall throw the first stone?%SPEECH_OFF%The tyke in charge of this miniature army raises his hand and speaks.%SPEECH_ON%Let the men go. We\'ve better things to do than quarrel with these travelers.%SPEECH_OFF%Hey, that\'s a wise move. With pride-swallowing smarts like that the red-headed bugger might someday lead a company to great fortunes. But this day is yours. You take the merchant\'s goods and make your leave.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]%hedgeknight% s\'avance et brandit son arme. Il la brandit vers tous les enfants. %SPEECH_ON%Ah, alors vous voulez être des petits bandits ou des héros ou une merde du genre ? Bien, c\'est bien. C\'est très bien. Mais je vais regarder pour voir qui jettera la première pierre. Celui, ou celle, qui le fera découvrira ce qui se passe quand je suis en colère. Et après que vous ayez tous regardé, je vous tuerai tous. Et je suivrai vos petites empreintes jusqu\'à votre maison, je trouverai vos proches et je leur casserai la tête. Le chevalier errant s\'arrête pour regarder autour de lui.%SPEECH_ON% Alors, lequel d\'entre vous jettera la première pierre ?%SPEECH_OFF%Le gamin en charge de cette armée miniature lève la main et parle.%SPEECH_ON%Laissons les partir. Nous avons mieux à faire que de nous disputer avec ces voyageurs. %SPEECH_OFF%Hé, c\'est une sage décision. Avec un tel sens de l\'humour, le bougre roux pourrait un jour mener à la fortune une compagnie. Mais ce jour est le vôtre. Vous prenez les biens du marchand et vous partez.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Little pricks.",
+					Text = "Des petites bites.",
 					function getResult( _event )
 					{
 						return 0;
@@ -140,7 +140,7 @@ this.kids_and_dead_merchant_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + item + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + item + "[/color] Couronnes"
 				});
 			}
 
