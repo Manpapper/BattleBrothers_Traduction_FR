@@ -1093,12 +1093,12 @@ this.tooltip_events <- {
 					{
 						id = 1,
 						type = "title",
-						text = "Courrones"
+						text = "Couronnes"
 					},
 					{
 						id = 2,
 						type = "description",
-						text = "Le nombre de pièces votre compagnie possède. Utilisé pour payer tous vos hommes à midi, ainsi qu\'à engager de nouvelles personnes ou acheter du nouvel equipement.\n\nVous payez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyMoney + "[/color] couronnes par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + money + "[/color] couronnes dureront encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jour."
+						text = "Le nombre de pièces que votre compagnie possède. Utilisé pour payer tous vos hommes à midi, ainsi qu\'à engager de nouvelles personnes ou acheter du nouvel equipement.\n\nVous payez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyMoney + "[/color] couronnes par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + money + "[/color] couronnes dureront encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jour."
 					}
 				];
 			}
