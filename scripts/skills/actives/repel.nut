@@ -4,7 +4,7 @@ this.repel <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.repel";
 		this.m.Name = "Repousser";
-		this.m.Description = "Repousse une cible dans le but de la faire reculer d\'une tuile. Les cibles touchés tituberont et perdront l\'initiative, et pourront prendre des dégâts s\'ils tombent de plusieurs niveaux. Mur de Bouclier, Mur de Lance et riposte seront annulés si la cible est repoussée. Une cible enracinée ne peut être repoussée.";
+		this.m.Description = "Repousse une cible dans le but de la faire reculer d\'une tuile. Les cibles touchées tituberont et perdront l\'initiative, et pourront prendre des dégâts s\'ils tombent de plusieurs niveaux. Mur de Bouclier, Mur de Lance et riposte seront annulés si la cible est repoussée. Une cible enracinée ne peut être repoussée.";
 		this.m.Icon = "skills/active_55.png";
 		this.m.IconDisabled = "skills/active_55_sw.png";
 		this.m.Overlay = "active_55";

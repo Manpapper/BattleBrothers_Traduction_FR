@@ -4,7 +4,7 @@ this.puncture <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.puncture";
 		this.m.Name = "Percer";
-		this.m.Description = "Une attaque bien placé sur le point faible de l\'armure. Ignore toute l\'armure mais est plus difficile à toucher et ne peut pas causer de dégâts critique pour des dégâts supplémentaire, et n\'infligera pas non plus de dégâts supplementaire en ayant double prise.";
+		this.m.Description = "Une attaque bien placée sur le point faible de l\'armure. Ignore toute l\'armure mais est plus difficile à toucher et ne peut pas causer de dégâts critiques pour des dégâts supplémentaires, et n\'infligera pas non plus de dégâts supplementaire en ayant double prise.";
 		this.m.KilledString = "Poignardé";
 		this.m.Icon = "skills/active_27.png";
 		this.m.IconDisabled = "skills/active_27_sw.png";

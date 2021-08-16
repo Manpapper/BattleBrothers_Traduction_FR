@@ -10,7 +10,7 @@ this.rupture <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.rupture";
 		this.m.Name = "Rupture";
-		this.m.Description = "un coup d\'estoc qui peut couvrir une distance de 2 tuiles et peut être utiliser derrière la ligne de front, hors d\'atteinte de la plupart des armes de mêlée, et peut provoquer des plaies saignantes si elle n\'est pas stoppée par une armure.";
+		this.m.Description = "un coup d\'estoc qui peut couvrir une distance de 2 tuiles et peut être utilisé derrière la ligne de front, hors d\'atteinte de la plupart des armes de mêlée, et peut provoquer des plaies saignantes si elle n\'est pas stoppée par une armure.";
 		this.m.KilledString = "Empalé";
 		this.m.Icon = "skills/active_80.png";
 		this.m.IconDisabled = "skills/active_80_sw.png";

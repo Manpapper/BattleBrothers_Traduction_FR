@@ -3,7 +3,7 @@ this.fake_drink_night_vision_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.fake_drink_night_vision";
-		this.m.Name = "Boire un Elixir de Vision Nocturne";
+		this.m.Name = "Boire un Élixir de Vision Nocturne";
 		this.m.Description = "Buvez une prouesse alchimique pour voir dans la nuit comme s\'il était midi. Ne peut être utilisé si le personnage est engagé en mêlée";
 		this.m.Icon = "skills/active_142.png";
 		this.m.IconDisabled = "skills/active_142_sw.png";
@@ -77,7 +77,7 @@ this.fake_drink_night_vision_skill <- this.inherit("scripts/skills/skill", {
 
 		if (!_user.isHiddenToPlayer())
 		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " boit un Elixir de Vision Nocturne");
+			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " boit un Élixir de Vision Nocturne");
 		}
 
 		return true;

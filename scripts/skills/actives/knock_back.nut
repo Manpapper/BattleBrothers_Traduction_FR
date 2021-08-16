@@ -4,7 +4,7 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.knock_back";
 		this.m.Name = "Repousser";
-		this.m.Description = "Utilise le bouclier pour repousser la cible d\'une tuile. la cible touché pourra recevoir de la fatigue et des dégats si elle tombe de plusieurs niveaux. Mur de Bouclier, Mur de Lance et riposte seront annulés si la cible est repoussée. Une cible enracinée ne peut être repoussée.";
+		this.m.Description = "Utilise le bouclier pour repousser la cible d\'une tuile. la cible touchée pourra recevoir de la fatigue et des dégâts si elle tombe de plusieurs niveaux. Mur de Bouclier, Mur de Lance et riposte seront annulés si la cible est repoussée. Une cible enracinée ne peut être repoussée.";
 		this.m.Icon = "skills/active_10.png";
 		this.m.IconDisabled = "skills/active_10_sw.png";
 		this.m.Overlay = "active_10";

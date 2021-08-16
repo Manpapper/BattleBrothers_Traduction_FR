@@ -11,7 +11,7 @@ this.first_aid_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.first_aid";
 		this.m.Name = "Premier soin";
-		this.m.Description = "Sauvez-vous d\'un saignement à mort en appliquant un pression et en mettant un bandage sur la blessure. Ne soigne pas les points de vie. Ne peut être utilisé si vous êtes attaqué en mêlée.";
+		this.m.Description = "Sauvez-vous d\'un saignement à mort en appliquant une pression et en mettant un bandage sur la blessure. Ne soigne pas les points de vie. Ne peut être utilisé si vous êtes attaqué en mêlée.";
 		this.m.Icon = "ui/perks/perk_55_active.png";
 		this.m.IconDisabled = "ui/perks/perk_55_active_sw.png";
 		this.m.Overlay = "perk_55_active";
@@ -61,7 +61,7 @@ this.first_aid_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Supprime les blessures suivantes Artère Récemment Coupée, Coupure sur la Jugulaire et Cou Eraflé"
+				text = "Supprime les blessures suivantes Artère Récemment Coupée, Coupure sur la Jugulaire et Cou Éraflé"
 			}
 		];
 

@@ -62,7 +62,7 @@ this.bandage_ally_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Supprime les blessures suivantes Artère Récemment Coupée, Coupure sur la Jugulaire et Cou Eraflé"
+				text = "Supprime les blessures suivantes Artère Récemment Coupée, Coupure sur la Jugulaire et Cou Éraflé"
 			}
 		];
 

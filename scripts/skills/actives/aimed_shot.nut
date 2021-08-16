@@ -11,7 +11,7 @@ this.aimed_shot <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.aimed_shot";
 		this.m.Name = "Tir Précis";
-		this.m.Description = "Un tir précis où vous vous êtes concentré avec l\'intention de bien touché votre cible même à distance. Ne peut être utilisé si vous êtes attaqué en mêlée.";
+		this.m.Description = "Un tir précis où vous vous êtes concentré avec l\'intention de bien toucher votre cible même à distance. Ne peut être utilisé si vous êtes attaqué en mêlée.";
 		this.m.KilledString = "Abattu";
 		this.m.Icon = "skills/active_18.png";
 		this.m.IconDisabled = "skills/active_18_sw.png";
@@ -108,7 +108,7 @@ this.aimed_shot <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois non vide équippé[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois non vide équipé[/color]"
 			});
 		}
 

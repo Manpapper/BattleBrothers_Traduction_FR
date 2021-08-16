@@ -64,7 +64,7 @@ this.reload_handgonne_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un sac de poudre à canon non vide équippé[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un sac de poudre à canon non vide équipé[/color]"
 			});
 		}
 

@@ -12,7 +12,7 @@ this.shoot_bolt <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.shoot_bolt";
 		this.m.Name = "Tir de Carreau";
-		this.m.Description = "Une rapide pression sur la gâchette pour lancer le carreau. Doit être recharger à chaque tir pour pouvoir tirer de nouveau.";
+		this.m.Description = "Une rapide pression sur la gâchette pour lancer le carreau. Doit être rechargé à chaque tir pour pouvoir tirer de nouveau.";
 		this.m.KilledString = "Criblé de carreau";
 		this.m.Icon = "skills/active_17.png";
 		this.m.IconDisabled = "skills/active_17_sw.png";
@@ -109,7 +109,7 @@ this.shoot_bolt <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois de carreaux non vide équippé[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois de carreaux non vide équipé[/color]"
 			});
 		}
 

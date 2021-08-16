@@ -15,7 +15,7 @@ this.cleave <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.cleave";
 		this.m.Name = "Fendre";
-		this.m.Description = "Une attaque de force brute qui peut infliger des blessure s\'il n\'y a pas d\'armure pour absorber l\'attaque et si la cible peut saigner.";
+		this.m.Description = "Une attaque de force brute qui peut infliger des blessures s\'il n\'y a pas d\'armure pour absorber l\'attaque et si la cible peut saigner.";
 		this.m.KilledString = "Fendu";
 		this.m.Icon = "skills/active_19.png";
 		this.m.IconDisabled = "skills/active_19_sw.png";

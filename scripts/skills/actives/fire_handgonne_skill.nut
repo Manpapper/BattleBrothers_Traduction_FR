@@ -13,7 +13,7 @@ this.fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.fire_handgonne";
 		this.m.Name = "Tirer à l\'arme de poing";
-		this.m.Description = "Alumer la mêche de votre arme de poing. Peut toucher plusieurs cible en même temps, mais plus la cible est loin moins elle a de chance d\'être touché. Ne peut être utilisé si le personnage est engagé en mêlée.";
+		this.m.Description = "Allumer la mêche de votre arme de poing. Peut toucher plusieurs cible en même temps, mais plus la cible est loin moins elle a de chance d\'être touchée. Ne peut être utilisé si le personnage est engagé en mêlée.";
 		this.m.Icon = "skills/active_203.png";
 		this.m.IconDisabled = "skills/active_203_sw.png";
 		this.m.Overlay = "active_203";
@@ -109,7 +109,7 @@ this.fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]A besoin d\'un sac de poudre à canon non vide équippé[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]A besoin d\'un sac de poudre à canon non vide équipé[/color]"
 			});
 		}
 
@@ -119,7 +119,7 @@ this.fire_handgonne_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être recharger avant de pouvoir tirer de nouveau[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être rechargé avant de pouvoir tirer de nouveau[/color]"
 			});
 		}
 

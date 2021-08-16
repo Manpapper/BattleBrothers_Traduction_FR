@@ -4,8 +4,8 @@ this.hand_to_hand <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.hand_to_hand";
 		this.m.Name = "Attaque au corps à corps";
-		this.m.Description = "Une attaque basique au poing. Faites les volés!";
-		this.m.KilledString = "Ecrasé à mort";
+		this.m.Description = "Une attaque basique au poing. Faites les voler !";
+		this.m.KilledString = "Écrasé à mort";
 		this.m.Icon = "skills/active_08.png";
 		this.m.IconDisabled = "skills/active_08_sw.png";
 		this.m.Overlay = "active_08";

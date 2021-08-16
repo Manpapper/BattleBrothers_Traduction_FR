@@ -4,7 +4,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.hook";
 		this.m.Name = "Crochet";
-		this.m.Description = "Une cible à deux tuiles est accroché et attiré plus près s\'il y a de la place. Toute personne touché titubera est perdra son initiative. Une cible ne peut pas être soulever sur une tuile plus haute, mais elle peut prendre des dégats si elle tombe de plusieurs niveaux d\'un coup. Mur de Bouclier, Mur de Lance et riposte seront annulés si la cible est accroché. Une cible enracinée ne peut être accrochée.";
+		this.m.Description = "Une cible à deux tuiles est accrochée et attirée plus près s\'il y a de la place. Toute personne touchée titubera et perdra son initiative. Une cible ne peut pas être soulevée sur une tuile plus haute, mais elle peut prendre des dégâts si elle tombe de plusieurs niveaux d\'un coup. Mur de Bouclier, Mur de Lance et riposte seront annulés si la cible est accrochée. Une cible enracinée ne peut être accrochée.";
 		this.m.Icon = "skills/active_31.png";
 		this.m.IconDisabled = "skills/active_31_sw.png";
 		this.m.Overlay = "active_31";
@@ -47,7 +47,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance de tituber si elle est touché"
+			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance de tituber si elle est touchée"
 		});
 		ret.push({
 			id = 6,

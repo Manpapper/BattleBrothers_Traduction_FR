@@ -3,7 +3,7 @@ this.hammer <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.hammer";
-		this.m.Name = "Ecraser";
+		this.m.Name = "Écraser";
 		this.m.Description = "Un coup dont les effets peuvent être ressentis même au travers des armures les plus robustes et y laisseront une marque.";
 		this.m.KilledString = "Martelé à mort";
 		this.m.Icon = "skills/active_35.png";

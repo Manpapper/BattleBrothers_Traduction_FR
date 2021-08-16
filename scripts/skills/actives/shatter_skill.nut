@@ -6,7 +6,7 @@ this.shatter_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.shatter";
 		this.m.Name = "Fracasser";
-		this.m.Description = "Donne un coup dans un grand arc de cercle qui touche trois cases adjacentes dans un ordre anti-horaire. Une cible touché peut être repoussée ou peut tituber à cause de la force du coup. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez!";
+		this.m.Description = "Donne un coup dans un grand arc de cercle qui touche trois cases adjacentes dans un ordre anti-horaire. Une cible touchée peut être repoussée ou peut tituber à cause de la force du coup. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez !";
 		this.m.KilledString = "Crushed";
 		this.m.Icon = "skills/active_90.png";
 		this.m.IconDisabled = "skills/active_90_sw.png";

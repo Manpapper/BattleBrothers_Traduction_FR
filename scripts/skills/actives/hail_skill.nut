@@ -4,7 +4,7 @@ this.hail_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.hail";
 		this.m.Name = "Avalanche de Coups à la Tête";
-		this.m.Description = "Vise la tête de l\'ennemi. Chaque coup peut toucher ou manquer chacun inflige un tier des dégâts de l\'arme, et frappera par dessus ou de contourner le bouclier.";
+		this.m.Description = "Vise la tête de l\'ennemi. Chaque coup peut toucher ou manquer chacun inflige un tiers des dégâts de l\'arme, et frappera par dessus ou de contourner le bouclier.";
 		this.m.Icon = "skills/active_126.png";
 		this.m.IconDisabled = "skills/active_126_sw.png";
 		this.m.Overlay = "active_126";

@@ -38,7 +38,7 @@ this.stealth_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Ne peut être utiliser si visible par un ennemi"
+				text = "Ne peut être utilisé si visible par un ennemi"
 			});
 		}
 

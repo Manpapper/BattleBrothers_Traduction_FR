@@ -4,7 +4,7 @@ this.deathblow_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.deathblow";
 		this.m.Name = "Coup Mortel";
-		this.m.Description = "Donne un coup mortel sur une cible affaibli pour la terminer.";
+		this.m.Description = "Donne un coup mortel sur une cible affaiblie pour la terminer.";
 		this.m.KilledString = "Poignardé";
 		this.m.Icon = "skills/active_199.png";
 		this.m.IconDisabled = "skills/active_199_sw.png";
@@ -46,7 +46,7 @@ this.deathblow_skill <- this.inherit("scripts/skills/skill", {
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] plus de dégâts et ignore [color=" + this.Const.UI.Color.DamageValue + "]20%[/color] d\'armure pour les cibles qui sont Affaibli, Etourdi ou Piégé dans un filet"
+			text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] plus de dégâts et ignore [color=" + this.Const.UI.Color.DamageValue + "]20%[/color] d\'armure pour les cibles qui sont Affaiblies, Étourdies ou Piégées dans un filet"
 		});
 		return ret;
 	}

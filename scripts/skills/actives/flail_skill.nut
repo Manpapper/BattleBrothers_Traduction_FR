@@ -4,7 +4,7 @@ this.flail_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.flail";
 		this.m.Name = "Fouetter";
-		this.m.Description = "Fouetter un ennemi. Quelque peu imprévisible au niveau des dégats, mais permet de frapper par dessus ou de contourner le bouclier.";
+		this.m.Description = "Fouetter un ennemi. Quelque peu imprévisible au niveau des dégâts, mais permet de frapper par dessus ou de contourner le bouclier.";
 		this.m.KilledString = "Ecrasé";
 		this.m.Icon = "skills/active_39.png";
 		this.m.IconDisabled = "skills/active_39_sw.png";

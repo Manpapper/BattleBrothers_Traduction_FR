@@ -4,7 +4,7 @@ this.throw_spear_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.throw_spear";
 		this.m.Name = "Lancer de lance";
-		this.m.Description = "Lance une lance sur une cible rendant leur bouclier inutilisable. Les cibles avec un bouclier seront toujours touchés. Toucher une cible sans bouclier infligera des dégâts dévastateur, mais l\'attaque peut manquer. Ne peut être utilisé si vous êtes attaqué en mêlée.";
+		this.m.Description = "Lance une lance sur une cible rendant leur bouclier inutilisable. Les cibles avec un bouclier seront toujours touchées. Toucher une cible sans bouclier infligera des dégâts dévastateurs, mais l\'attaque peut manquer. Ne peut être utilisé si vous êtes attaqué en mêlée.";
 		this.m.KilledString = "Empalé";
 		this.m.Icon = "skills/active_138.png";
 		this.m.IconDisabled = "skills/active_138_sw.png";

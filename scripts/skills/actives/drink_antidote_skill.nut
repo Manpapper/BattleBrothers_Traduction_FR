@@ -11,7 +11,7 @@ this.drink_antidote_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.drink_antidote";
 		this.m.Name = "Boire ou donner un antidote";
-		this.m.Description = "Donner à un allié à proximité ou buver vous-même un antidote pour retirer les poisons. Ne peut être utiliser quand vous êtes engagés en mêlée, et toute personne recevant l\'objet se doit d\'avoir un emplacement de sac vide.";
+		this.m.Description = "Donner à un allié à proximité ou buver vous-même un antidote pour retirer les poisons. Ne peut être utilisé quand vous êtes engagés en mêlée, et toute personne recevant l\'objet se doit d\'avoir un emplacement de sac vide.";
 		this.m.Icon = "skills/active_96.png";
 		this.m.IconDisabled = "skills/active_96_sw.png";
 		this.m.Overlay = "active_96";
@@ -72,7 +72,7 @@ this.drink_antidote_skill <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut être utilisé cas le personnage est engagé en mêlée[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut être utilisé car le personnage est engagé en mêlée[/color]"
 			});
 		}
 

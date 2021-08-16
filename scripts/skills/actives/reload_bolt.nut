@@ -4,7 +4,7 @@ this.reload_bolt <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.reload_bolt";
 		this.m.Name = "Recharger";
-		this.m.Description = "Prépare un nouveau carreau à être tirer. Ne peut être utilisé si vous êtes attaqué en mêlée.";
+		this.m.Description = "Prépare un nouveau carreau à être tiré. Ne peut être utilisé si vous êtes attaqué en mêlée.";
 		this.m.Icon = "skills/active_16.png";
 		this.m.IconDisabled = "skills/active_16_sw.png";
 		this.m.Overlay = "active_16";
@@ -64,7 +64,7 @@ this.reload_bolt <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois de carreaux non vide équippé[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois de carreaux non vide équipé[/color]"
 			});
 		}
 

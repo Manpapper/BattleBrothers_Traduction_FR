@@ -10,7 +10,7 @@ this.gash_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.gash";
 		this.m.Name = "Entaille";
-		this.m.Description = "Une attaque coupante bien placé qui a une possibilité de fragiliser la cible.";
+		this.m.Description = "Une attaque coupante bien placée qui a une possibilité de fragiliser la cible.";
 		this.m.KilledString = "Coupé";
 		this.m.Icon = "skills/active_189.png";
 		this.m.IconDisabled = "skills/active_189_sw.png";

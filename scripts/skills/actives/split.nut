@@ -4,7 +4,7 @@ this.split <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.split";
 		this.m.Name = "Fendre";
-		this.m.Description = "Un coup large au dessus de la tête effectuée pour avoir plus d\'atteinte plutôt que de la force qui peut attaquer deux cases en ligne droite.";
+		this.m.Description = "Un coup large au dessus de la tête effectué pour avoir plus d\'atteinte plutôt que de la force qui peut attaquer deux cases en ligne droite.";
 		this.m.KilledString = "Fendu en deux";
 		this.m.Icon = "skills/active_07.png";
 		this.m.IconDisabled = "skills/active_07_sw.png";

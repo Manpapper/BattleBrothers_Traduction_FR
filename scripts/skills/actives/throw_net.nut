@@ -11,7 +11,7 @@ this.throw_net <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.throw_net";
 		this.m.Name = "Lancer un Filet";
-		this.m.Description = "Lance un filet vers votre cible dans le but de les empêcher de bouger et de se défendre efficacement. Touchera toujours si la cible n\'est pas immunisé";
+		this.m.Description = "Lance un filet vers votre cible dans le but de l\'empêcher de bouger et de se défendre efficacement. Touchera toujours si la cible n\'est pas immunisée";
 		this.m.Icon = "skills/active_73.png";
 		this.m.IconDisabled = "skills/active_73_sw.png";
 		this.m.Overlay = "active_73";

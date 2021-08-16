@@ -4,7 +4,7 @@ this.adrenaline_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.adrenaline";
 		this.m.Name = "Adrenaline";
-		this.m.Description = "Vous sentez l\'adrenalie parcourir vos veines, vous saisissez l\'opportunité par agir plus rapidement que vos adversaires.";
+		this.m.Description = "Vous sentez l\'adrénaline parcourir vos veines, vous saisissez l\'opportunité pour agir plus rapidement que vos adversaires.";
 		this.m.Icon = "ui/perks/perk_37_active.png";
 		this.m.IconDisabled = "ui/perks/perk_37_active_sw.png";
 		this.m.Overlay = "perk_37_active";

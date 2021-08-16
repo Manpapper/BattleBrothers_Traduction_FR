@@ -4,7 +4,7 @@ this.break_ally_free_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.break_ally_free";
 		this.m.Name = "Libérer un Allié";
-		this.m.Description = "Utilisez tout ce qui est à votre disposition pour libérer un allié proche de ce qui les retiens sur place. Taillader, couper, écraser ou ronger peu importe du peu que ça fonctionne!";
+		this.m.Description = "Utilisez tout ce qui est à votre disposition pour libérer un allié proche de ce qui les retient sur place. Taillader, couper, écraser ou ronger peu importe du moment que ça fonctionne !";
 		this.m.Icon = "skills/active_151.png";
 		this.m.IconDisabled = "skills/active_151_sw.png";
 		this.m.Overlay = "active_151";

@@ -30,7 +30,7 @@ this.spearwall <- this.inherit("scripts/skills/skill", {
 
 	function getDescription()
 	{
-		return "Vous vous préparez à attaquer n\'importe quel ennemi qui essaierait de se mettre au corps à corps contre vous, si vous touchez, cela empêchera l\'ennemi de s\'approcher. Les ennemis qui sont touchés prennent la moitié des dégats de base de l\'arme " + this.m.BaseAttackName;
+		return "Vous vous préparez à attaquer n\'importe quel ennemi qui essaierait de se mettre au corps à corps contre vous, si vous touchez, cela empêchera l\'ennemi de s\'approcher. Les ennemis qui sont touchés prennent la moitié des dégâts de base de l\'arme " + this.m.BaseAttackName;
 	}
 
 	function getTooltip()

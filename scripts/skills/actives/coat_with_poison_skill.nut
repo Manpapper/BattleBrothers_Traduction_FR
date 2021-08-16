@@ -11,7 +11,7 @@ this.coat_with_poison_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.coat_with_poison";
 		this.m.Name = "Utiliser du poison";
-		this.m.Description = "Enduit vos arme et vos pointes de flèches avec du poison. Ne peut être utilisé quand vous êtes attaqué en mêlée.";
+		this.m.Description = "Enduit vos armes et vos pointes de flèches avec du poison. Ne peut être utilisé quand vous êtes attaqué en mêlée.";
 		this.m.Icon = "skills/active_95.png";
 		this.m.IconDisabled = "skills/active_95_sw.png";
 		this.m.Overlay = "active_95";

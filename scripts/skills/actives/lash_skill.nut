@@ -4,7 +4,7 @@ this.lash_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.lash";
 		this.m.Name = "Coup à la Tête";
-		this.m.Description = "Vise la tête de l\'ennemi. Quelque peut imprévisible au niveau des dégâts, mais peut frapper par dessus ou de contourner le bouclier avec un peu de chance.";
+		this.m.Description = "Vise la tête de l\'ennemi. Quelque peu imprévisible au niveau des dégâts, mais peut frapper par dessus ou de contourner le bouclier avec un peu de chance.";
 		this.m.Icon = "skills/active_91.png";
 		this.m.IconDisabled = "skills/active_91_sw.png";
 		this.m.Overlay = "active_91";

@@ -4,7 +4,7 @@ this.throw_acid_flask <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.throw_acid_flask";
 		this.m.Name = "Lancer Flacon d\'Acide";
-		this.m.Description = "Lance un flacon d\'acide vers une cible, où elle se cassera et répendra son contenu. L\'acide attaquera lentement l\'armure de ceux touchés - Aussi bien les alliés que les ennemies.";
+		this.m.Description = "Lance un flacon d\'acide vers une cible, où elle se cassera et répandra son contenu. L\'acide attaquera lentement l\'armure de ceux touchés - Aussi bien les alliés que les ennemis.";
 		this.m.Icon = "skills/active_106.png";
 		this.m.IconDisabled = "skills/active_106_sw.png";
 		this.m.Overlay = "active_106";

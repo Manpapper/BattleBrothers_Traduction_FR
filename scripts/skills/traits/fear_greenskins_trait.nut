@@ -6,7 +6,7 @@ this.fear_greenskins_trait <- this.inherit("scripts/skills/traits/character_trai
 		this.m.ID = "trait.fear_greenskins";
 		this.m.Name = "Peur des Peaux-Vertes";
 		this.m.Icon = "ui/traits/trait_icon_49.png";
-		this.m.Description = "Un événement passé ou une histoire particulièrement convaincante dans la vie de ce personnage l\'a effrayé de ce que les Peaux-Vertes étaient capable de faire, le rendant moins fiable lors de batailles contre eux.";
+		this.m.Description = "Un événement passé ou une histoire particulièrement convaincante dans la vie de ce personnage l\'a effrayé de ce que les Peaux-Vertes étaient capables de faire, le rendant moins fiable lors de batailles contre eux.";
 		this.m.Excluded = [
 			"trait.fearless",
 			"trait.brave",

@@ -9,7 +9,7 @@ this.slash_lightning <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.slash_lightning";
 		this.m.Name = "Porteur de foudre";
-		this.m.Description = "Un coup rapide qui en touchant appelera la foudre qui ira d\'ennemi en ennemie.";
+		this.m.Description = "Un coup rapide qui en touchant appellera la foudre qui ira d\'ennemi en ennemi.";
 		this.m.KilledString = "Cut down";
 		this.m.Icon = "skills/active_155.png";
 		this.m.IconDisabled = "skills/active_155_sw.png";

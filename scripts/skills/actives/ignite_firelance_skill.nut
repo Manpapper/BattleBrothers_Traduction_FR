@@ -82,7 +82,7 @@ this.ignite_firelance_skill <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Plus de charges disponible[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Plus de charges disponibles[/color]"
 			});
 		}
 

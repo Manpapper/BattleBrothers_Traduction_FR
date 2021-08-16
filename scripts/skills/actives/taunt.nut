@@ -53,7 +53,7 @@ this.taunt <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Oblige la cible à engager et attquer ce personnage, si possible, à leur prochain tour. Notez que la cible adhère toujours à la stratégie de leur groupe, et ne foncera probablement pas sans réfléchir."
+				text = "Oblige la cible à engager et attaquer ce personnage, si possible, à leur prochain tour. Notez que la cible adhère toujours à la stratégie de leur groupe, et ne foncera probablement pas sans réfléchir."
 			}
 		];
 		return ret;

@@ -12,7 +12,7 @@ this.knock_over_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.knock_over";
 		this.m.Name = "Renverser";
-		this.m.Description = "Un lourd coup qui a pour but d\'étourdir ou d\'incapaciter la personne pendant un tour, mais ne fait pas beaucoup de dégâts. Les cibles étourdis ne peuvent pas garder en place leur Mur de Bouclier, Mur de Lance ou toute autre compétence similaire.";
+		this.m.Description = "Un lourd coup qui a pour but d\'étourdir ou d\'incapaciter la personne pendant un tour, mais ne fait pas beaucoup de dégâts. Les cibles étourdies ne peuvent pas garder en place leur Mur de Bouclier, Mur de Lance ou toute autre compétence similaire.";
 		this.m.Icon = "skills/active_206.png";
 		this.m.IconDisabled = "skills/active_206_sw.png";
 		this.m.Overlay = "active_206";
@@ -72,7 +72,7 @@ this.knock_over_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance d\'étourdir quand la cible est touché"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance d\'étourdir quand la cible est touchée"
 			});
 		}
 		else
@@ -81,7 +81,7 @@ this.knock_over_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] de chance d\'étourdir quand la cible est touché"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] de chance d\'étourdir quand la cible est touchée"
 			});
 		}
 
@@ -91,7 +91,7 @@ this.knock_over_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] de chance de toucher les cibles adjacentes ca l\'arme est peu maniable"
+				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] de chance de toucher les cibles adjacentes car l\'arme est peu maniable"
 			});
 		}
 

@@ -11,7 +11,7 @@ this.coat_with_spider_poison_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.coat_with_spider_poison";
 		this.m.Name = "Utiliser Poison d\'Araignée";
-		this.m.Description = "Enduit vos arme et vos pointes de flèches avec du poison. Ne peut être utilisé quand vous êtes attaqué en mêlée.";
+		this.m.Description = "Enduit vos armes et vos pointes de flèches avec du poison. Ne peut être utilisé quand vous êtes attaqué en mêlée.";
 		this.m.Icon = "skills/active_139.png";
 		this.m.IconDisabled = "skills/active_139_sw.png";
 		this.m.Overlay = "active_139";

@@ -16,7 +16,7 @@ this.whip_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.whip";
 		this.m.Name = "Fouet";
-		this.m.Description = "Faites cracker le fouet depuis une distance qui inflige deux stacks de saignement en une fois. Très inefficace contre l\'armure Quite ineffective against armor.";
+		this.m.Description = "Faites claquer le fouet depuis une distance qui inflige deux stacks de saignement en une fois. Très inefficace contre l\'armure Quite ineffective against armor.";
 		this.m.KilledString = "Whipped to death";
 		this.m.Icon = "skills/active_161.png";
 		this.m.IconDisabled = "skills/active_161.png";

@@ -4,7 +4,7 @@ this.cudgel_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.cudgel";
 		this.m.Name = "Gourdin";
-		this.m.Description = "Un coup lent mais puissant pour aplatir la cible. N\'importe qui touché par un coup comme ça sera hébété et cherchera à reprendre son souffle, ce qui les empêchera de taper à pleine puissance pour deux tours.";
+		this.m.Description = "Un coup lent mais puissant pour aplatir la cible. N\'importe qui touché par un coup comme ça sera hébété et cherchera à reprendre son souffle, ce qui l\'empêchera de taper à pleine puissance pour deux tours.";
 		this.m.KilledString = "Battu à mort";
 		this.m.Icon = "skills/active_133.png";
 		this.m.IconDisabled = "skills/active_133_sw.png";

@@ -15,7 +15,7 @@ this.decapitate <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.decapitate";
-		this.m.Name = "Decapitater";
+		this.m.Name = "Décapiter";
 		this.m.Description = "Un coup dévastateur qui vise à décapiter la cible sur place. Fait plus de dégâts aux points de vie si la cible a déjà des blessures. Tuer la cible résultera toujours à la décapiter, si c\'est possible.";
 		this.m.Icon = "skills/active_34.png";
 		this.m.IconDisabled = "skills/active_34_sw.png";
@@ -80,7 +80,7 @@ this.decapitate <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max * 2 + "[/color] de dommage qui dépendent à quel point la cible est déjà blessé, auxquels [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] peuvent ignorer l\'armure"
+			text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max * 2 + "[/color] de dommages qui dépendent à quel point la cible est déjà blessée, auxquels [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] peuvent ignorer l\'armure"
 		});
 
 		if (damage_Armor_max > 0)

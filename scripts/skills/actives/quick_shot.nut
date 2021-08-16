@@ -104,7 +104,7 @@ this.quick_shot <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois non vide équippé[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Vous avez besoin d\'un carquois non vide équipé[/color]"
 			});
 		}
 

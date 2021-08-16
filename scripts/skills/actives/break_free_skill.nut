@@ -23,7 +23,7 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.break_free";
 		this.m.Name = "Se Libérer";
-		this.m.Description = "Utilisez tout ce qui est à votre disposition pour vous libérer de ce qui vous retiens sur place. Taillader, couper, écraser ou ronger peu importe du peu que ça fonctionne!";
+		this.m.Description = "Utilisez tout ce qui est à votre disposition pour vous libérer de ce qui vous retient sur place. Taillader, couper, écraser ou ronger peu importe du moment que ça fonctionne !";
 		this.m.Icon = "skills/active_15.png";
 		this.m.IconDisabled = "skills/active_15_sw.png";
 		this.m.Overlay = "active_15";

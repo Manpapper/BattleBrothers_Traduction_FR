@@ -4,7 +4,7 @@ this.swing <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.swing";
 		this.m.Name = "Coup d\'épée";
-		this.m.Description = "Donne un coup dans un grand arc de cercle qui touche trois cases adjacentes dans un ordre anti-horaire. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez!";;
+		this.m.Description = "Donne un coup dans un grand arc de cercle qui touche trois cases adjacentes dans un ordre anti-horaire. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez !";;
 		this.m.Icon = "skills/active_06.png";
 		this.m.IconDisabled = "skills/active_06_sw.png";
 		this.m.Overlay = "active_06";

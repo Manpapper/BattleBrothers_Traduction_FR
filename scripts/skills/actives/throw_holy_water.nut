@@ -4,7 +4,7 @@ this.throw_holy_water <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.throw_holy_water";
 		this.m.Name = "Lancer de l\'Eau Bénite";
-		this.m.Description = "Lancer un fiole d\'eau bénite vers la cible, où elle se cassera et répendra son contenu. L\'eau bénite brûlera les morts, mais n\'affectera les autres cibles.";
+		this.m.Description = "Lancer un fiole d\'eau bénite vers la cible, où elle se cassera et répandra son contenu. L\'eau bénite brûlera les morts, mais n\'affectera pas les autres cibles.";
 		this.m.Icon = "skills/active_97.png";
 		this.m.IconDisabled = "skills/active_97_sw.png";
 		this.m.Overlay = "active_97";

@@ -4,7 +4,7 @@ this.hand_to_hand_orc <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.hand_to_hand";
 		this.m.Name = "Attaque au corps à corps";
-		this.m.KilledString = "Ecrasé à mort";
+		this.m.KilledString = "Écrasé à mort";
 		this.m.Icon = "skills/active_222.png";
 		this.m.IconDisabled = this.m.Icon;
 		this.m.Overlay = "active_222";

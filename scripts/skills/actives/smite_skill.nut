@@ -4,7 +4,7 @@ this.smite_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.smite";
 		this.m.Name = "Châtiment";
-		this.m.Description = "Un coup lent vers le haut dans le but de détruire la cible en mille morceaux. Toute personne touché titubera et perdra de l\'initiative.";
+		this.m.Description = "Un coup lent vers le haut dans le but de détruire la cible en mille morceaux. Toute personne touchée titubera et perdra de l\'initiative.";
 		this.m.KilledString = "Ecrasé";
 		this.m.Icon = "skills/active_89.png";
 		this.m.IconDisabled = "skills/active_89_sw.png";
@@ -86,7 +86,7 @@ this.smite_skill <- this.inherit("scripts/skills/skill", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance de faire tituber la cible si elle est touché"
+			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance de faire tituber la cible si elle est touchée"
 		});
 		return ret;
 	}
@@ -112,7 +112,7 @@ this.smite_skill <- this.inherit("scripts/skills/skill", {
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " a fait titubé " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " pour un tour");
+				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " a fait tituber " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " pour un tour");
 			}
 		}
 

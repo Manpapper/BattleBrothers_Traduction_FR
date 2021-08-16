@@ -59,7 +59,7 @@ this.indomitable <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Ne peut pas être repousser ou attraper"
+				text = "Ne peut pas être repoussé ou attrapé"
 			}
 		];
 	}

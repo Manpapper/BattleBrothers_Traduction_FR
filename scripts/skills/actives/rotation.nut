@@ -4,7 +4,7 @@ this.rotation <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.rotation";
 		this.m.Name = "Remplacer";
-		this.m.Description = "Prend la place d\'un personnage adjacent, en perant en considération que la cible n\'est pas étourdi ni enracinée, il en va de même pour la personne qui lance la compétence. Remplacez la ligne de front pour garder des troupes en forme au front!";
+		this.m.Description = "Prend la place d\'un personnage adjacent, en prenant en considération que la cible n\'est pas étourdie ni enracinée, il en va de même pour la personne qui lance la compétence. Remplacez la ligne de front pour garder des troupes en forme au front !";
 		this.m.Icon = "ui/perks/perk_11_active.png";
 		this.m.IconDisabled = "ui/perks/perk_11_active_sw.png";
 		this.m.Overlay = "perk_11_active";
