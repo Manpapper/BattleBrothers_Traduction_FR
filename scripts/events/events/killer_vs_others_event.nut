@@ -11,13 +11,13 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_06.png[/img]While you attempt to study some poorly drawn maps, the sound of blades being drawn pierces your ears. You roll up your work and put it into a scroll\'s sleeve before making way to the disturbance.\n\n%killerontherun% is being held down by one brother\'s knee, while %otherguy1% and %otherguy2% look about ready to chop his head off. Seeing your arrival, the men calm down for a moment. They explain that the killer tried to slay one of them. Indeed, the brother has a nick on his neck. A little bit deeper and something other than words would be coming out of his mouth right about now. The men demand %killerontherun% be hanged for this attempted murder.",
+			Text = "[img]gfx/ui/events/event_06.png[/img]Alors que vous tentez d'étudier des cartes mal dessinées, le bruit de lames tirées vous perce les oreilles. Vous enroulez votre travail et le rangez dans la pochette ovale avant de vous frayer un chemin jusqu'à la perturbation.\n\n%killerontherun% est maintenu au sol par le genou d'un frère d'armes, tandis que %otherguy1% et %otherguy2% semblent prêts à lui couper la tête. En voyant votre arrivée, les hommes se calment un instant. Ils expliquent que le tueur a essayé de tuer l'un d'entre eux. En effet, le confrère a une entaille dans le cou. Un peu plus profond et c'est autre chose que des mots qui sortiraient de sa bouche en ce moment même. Les hommes demandent que %killerontherun% soit pendu pour cette tentative de meurtre.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Have him flogged for this.",
+					Text = "Qu'il soit fouetté pour ça.",
 					function getResult( _event )
 					{
 						return "B";
@@ -25,7 +25,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Have him hanged for this.",
+					Text = "Qu'on le pende pour ça.",
 					function getResult( _event )
 					{
 						return "C";
@@ -33,7 +33,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "This is your family now. Do not ever dare such a thing again!",
+					Text = "C'est ta famille maintenant. N'ose plus jamais faire une telle chose !",
 					function getResult( _event )
 					{
 						local r = this.Math.rand(1, 3);
@@ -63,13 +63,13 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_38.png[/img]You order the man flogged. %killerontherun% spits on your name as the brothers tie him up to a tree. You say do that again and you\'ll add more lashings. They rip his shirt off and take turns with the whip as you stand by the side, counting. On the first lash a straight line of skin is stripped from his back. The man flinches and you hear the ropes that bind him draw taut as his hands clench into fists. By the fifth lashing he is no longer standing. By the tenth he is no longer awake. After five more you call it and order the men to take him down and tend his wounds.",
+			Text = "[img]gfx/ui/events/event_38.png[/img]Vous ordonnez que l'homme soit fouetté. %killerontherun% crache sur votre nom alors que les frères d'armes l'attachent à un arbre. Vous dites \"refais-le et tu te ajouteras des coups de fouet\". Ils lui arrachent sa chemise et se relaient avec le fouet pendant que vous vous tenez sur le côté, en comptant. Au premier coup de fouet, une ligne droite de peau est arrachée de son dos. L'homme tressaille et vous entendez les cordes qui le lient se tendre tandis que ses mains se crispent en poings. Au cinquième coup de fouet, il ne se tient plus debout. Au dixième, il n'est plus éveillé. Après cinq autres coups de fouet, vous ordonnez aux hommes de le descendre et de soigner ses blessures.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I hope this is a lesson learned.",
+					Text = "J'espère qu'il aura appris la leçon.",
 					function getResult( _event )
 					{
 						return 0;
@@ -82,7 +82,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 				this.Characters.push(_event.m.OtherGuy1.getImagePath());
 				this.Characters.push(_event.m.Killer.getImagePath());
 				_event.m.Killer.addLightInjury();
-				_event.m.Killer.worsenMood(3.0, "Was flogged on your orders");
+				_event.m.Killer.worsenMood(3.0, "A été fouetté sur vos ordres");
 				this.List = [
 					{
 						id = 10,
@@ -104,13 +104,13 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_02.png[/img]You order the man hanged. Half the company cheers and %killerontherun% screams a shriek rather suitable for seeing death ordered to his side. They drag the man beneath a tree. Ropes are thrown up over the branches, again and again, looping and drawing taut. One man ties a noose while the others cheer and clap and drink beer. A stool is placed and the condemned man is forced to stand on it. As %killerontherun%\'s head is put into the noose, he says he has a word for all of you, but whatever he has to say is cut off when %otherguy1% kicks the stool out from beneath him.\n\nThis is not a good way to die. It is by an executioner\'s hand or means. Ordinarily a man dropped from a platform breaks his neck, or is even decapitated. This man hangs choking and kicking. You hear some screams in his lungs, but they struggle to get past his throat. A few minutes pass and he is still fighting. %otherguy2% steps over to the dying man, grabbing one of his jerking feet to keep him still, and with his free hand he stabs %killerontherun% in the heart. And that was that.\n\n{Surprisingly, the brothers agree to cut the man down and bury him. | The man is left hanging there when the company\'s march begins anew.}",
+			Text = "[img]gfx/ui/events/event_02.png[/img]Vous ordonnez la pendaison de l'homme. La moitié de la compagnie applaudit et %killerontherun% pousse un cri plutôt approprié pour quelqu'un qui voit sa propre mort ordonnée. Ils traînent l'homme sous un arbre. Des cordes sont jetées sur les branches, encore et encore, s'enroulant et se tendant. Un homme noue un nœud coulant pendant que les autres applaudissent et boivent de la bière. Un tabouret est placé et le condamné est obligé de s'y tenir debout. Alors que la tête de %killerontherun% est mise dans le nœud coulant, il dit qu'il a un mot pour vous tous, mais ce qu'il a à dire est coupé lorsque %otherguy1% fait tomber le tabouret de dessous lui.\n\nCe n'est pas une bonne façon de mourir. C'est par la main ou les moyens d'un bourreau. D'ordinaire, un homme lâché d'une plate-forme se brise le cou, ou est même décapité. Cet homme se pend en s'étouffant et en donnant des coups. On entend des cris dans ses poumons, mais ils ont du mal à passer la gorge. Quelques minutes passent et il se bat toujours. %otherguy2% s'avance vers l'homme mourant, saisit l'un de ses pieds tremblants pour le maintenir immobile, et de sa main libre, il poignarde %killerontherun% en plein cœur. Et c'est tout.\n\n{À la surprise générale, les mercenaires acceptent de détacher l'homme et de l'enterrer. | L'homme est laissé en plan et la compagnie reprend son chemin.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We march on.",
+					Text = "Nous continuons.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(-1);
@@ -125,11 +125,11 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 13,
 					icon = "ui/icons/kills.png",
-					text = _event.m.Killer.getName() + " has died"
+					text = _event.m.Killer.getName() + " est mort"
 				});
 				_event.m.Killer.getItems().transferToStash(this.World.Assets.getStash());
 				this.World.getPlayerRoster().remove(_event.m.Killer);
-				_event.m.OtherGuy1.improveMood(2.0, "Got satisfaction with " + _event.m.Killer.getNameOnly() + "\'s hanging");
+				_event.m.OtherGuy1.improveMood(2.0, "Est satisfait par la pendaison de " + _event.m.Killer.getNameOnly());
 
 				if (_event.m.OtherGuy1.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -144,13 +144,13 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_64.png[/img]While you try to bring peace between a party of misfits, your attempts for neutrality only seem to anger a few of the men. In particular, the man with the nicked neck is seething, swearing and kicking things over. A few of the other men worry aloud about a lack of discipline.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Alors que vous essayez de ramener la paix entre les membres du groupe, vos tentatives de neutralité ne fait qu'irriter quelques-uns des hommes. En particulier, l'homme au cou entaillé bouillonne, jure et donne des coups de pied dans le vide. Quelques-uns des autres hommes s'inquiètent à voix haute du manque de discipline.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We march on.",
+					Text = "Nous continuons.",
 					function getResult( _event )
 					{
 						return 0;
@@ -162,7 +162,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.OtherGuy1.getImagePath());
 				this.Characters.push(_event.m.Killer.getImagePath());
-				_event.m.OtherGuy1.worsenMood(4.0, "Angry about lack of justice under your command");
+				_event.m.OtherGuy1.worsenMood(4.0, "En colère contre le manque de justice sous votre commandement");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.OtherGuy1.getMoodState()],
@@ -177,7 +177,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 						continue;
 					}
 
-					bro.worsenMood(1.0, "Concerned about lack of discipline");
+					bro.worsenMood(1.0, "Préoccupé par le manque de discipline");
 
 					if (bro.getMoodState() < this.Const.MoodState.Neutral)
 					{
@@ -193,13 +193,13 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_64.png[/img]The call for cooler heads to prevail seems to have failed as %killerontherun%\'s body is found dead anyway. {It appears someone stabbed him in the back. | Someone garroted the man with a line of strong linen. | He was nearly chopped in half, the work of a truly angry person. | His head was found resting on his chest, his hands placed in such a manner as to be holding it. | Emphasis on the word \'body\', as his head was nowhere to be found. | Someone had slit his throat in the night. | Bruises on his body and cuts on his hands suggests a fight, but whoever it was managed to gut the man anyway.} You have a good guess as to who did it, but none of the men seem all that upset about the man\'s death and certain proof would elude any kind of investigation. While all of that may be true, you still order the suspected brother to help bury the dead.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]L'appel à l'apaisement semble avoir échoué, car le corps de %killerontherun% est quand même retrouvé mort. {Il semble que quelqu'un l'ait poignardé dans le dos. | Quelqu'un a étranglé l'homme avec une ligne de linge fort. | Il a été presque coupé en deux, l'œuvre d'une personne vraiment en colère. | Sa tête a été trouvée reposant sur sa poitrine, ses mains étant placées de manière à la tenir. | J'insiste sur le mot \"corps\", car sa tête était introuvable. | Quelqu'un lui avait tranché la gorge dans la nuit. | Les bleus sur son corps et les coupures sur ses mains suggèrent un combat, mais qui que ce soit, il a quand même réussi à étriper l'homme.} Vous avez une bonne idée de qui a fait le coup, mais aucun des hommes ne semble vraiment bouleversé par la mort de l'homme et une preuve certaine échapperait à toute sorte d'enquête. Même si tout cela est vrai, vous ordonnez au suspect d'aider à enterrer le mort.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nothing to be done now.",
+					Text = "Il n'y a plus rien à faire maintenant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -217,14 +217,14 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 					TimeWithCompany = this.Math.max(1, dead.getDaysWithCompany()),
 					Kills = dead.getLifetimeStats().Kills,
 					Battles = dead.getLifetimeStats().Battles,
-					KilledBy = "Murdered by his fellow brothers",
+					KilledBy = "Assassiné par ses camarades",
 					Expendable = dead.getBackground().getID() == "background.slave"
 				};
 				this.World.Statistics.addFallen(fallen);
 				this.List.push({
 					id = 13,
 					icon = "ui/icons/kills.png",
-					text = _event.m.Killer.getName() + " has died"
+					text = _event.m.Killer.getName() + " est mort"
 				});
 				_event.m.Killer.getItems().transferToStash(this.World.Assets.getStash());
 				this.World.getPlayerRoster().remove(_event.m.Killer);
@@ -242,7 +242,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 						continue;
 					}
 
-					bro.worsenMood(1.0, "Concerned about lack of discipline");
+					bro.worsenMood(1.0, "Préoccupé par le manque de discipline");
 
 					if (bro.getMoodState() < this.Const.MoodState.Neutral)
 					{
@@ -258,13 +258,13 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "Well, %killerontherun% isn\'t dead, but he stands before you broken and beaten. It looks like vengeful justice found him out anyway. He demands that some suspected brothers be punished for going around your orders. You consider this, but then ask the man what will happen if you continue this cycle of violence. It\'s hard to see the man\'s face as it is puffed up in blacks and purples, and his eyes are lost behind puckered lids, but he nods gingerly. You are right, he says. It is best to let this whole thing die down lest it get out of control.",
+			Text = "Eh bien, %killerontherun% n'est pas mort, mais il se tient devant vous, brisé et battu. On dirait que la justice vengeresse l'a quand même démasqué. Il demande que certains frères suspects soient punis pour avoir contourné vos ordres. Vous y réfléchissez, mais vous demandez ensuite à l'homme ce qui se passera si vous continuez ce cycle de violence. Il est difficile de voir le visage de l'homme, car il est gonflé de noir et de violet, et ses yeux sont perdus derrière des paupières plissées, mais il hoche la tête avec précaution. Vous avez raison, dit-il. Il vaut mieux laisser cette histoire se calmer, de peur qu'elle ne devienne incontrôlable.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We march on.",
+					Text = "Nous continuons.",
 					function getResult( _event )
 					{
 						return 0;
@@ -288,7 +288,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 					icon = injury.getIcon(),
 					text = _event.m.Killer.getName() + " souffre de " + injury.getNameOnly()
 				});
-				_event.m.Killer.worsenMood(2.0, "Was beaten up by men of the company");
+				_event.m.Killer.worsenMood(2.0, "A été battu par des hommes de la compagnie.");
 
 				if (_event.m.Killer.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -313,7 +313,7 @@ this.killer_vs_others_event <- this.inherit("scripts/events/event", {
 						continue;
 					}
 
-					bro.worsenMood(1.0, "Concerned about lack of discipline");
+					bro.worsenMood(1.0, "Préoccupé par le manque de discipline");
 
 					if (bro.getMoodState() < this.Const.MoodState.Neutral)
 					{

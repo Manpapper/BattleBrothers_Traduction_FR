@@ -11,14 +11,14 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_90.png[/img]Riders crest a nearby hill, their silhouettes dark and oddly shaped on its rim like a reef of rippling black. Not wholly able to see who they are, you order a few of your brothers to hide away. An ambush might be needed to defend yourself otherwise you stand no chance against such a mounted force. As the selected mercenaries dip into the bushes, the horsemen begin heading down the hill. The thunder of the hooves grows louder, but you stand resolute, hoping to give your men a good show of bravery.\n\nYou see that the bannerman is carrying a sigil of %noblehousename%. Behind him another horseman is dragging a travois with a few shackled men for cargo. When the men arrive, their leader stands up between the withers of his horse and points at you before talking.%SPEECH_ON%Mercenary! We have by the lord\'s authority the right to claim the - shackled! - hands of a sir %criminal%. Said man is within your midst. He must pay for his crimes. Hand him over immediately and you will be rewarded.%SPEECH_OFF%You turn your head and spit. You nod at the lawman before asking him a question.%SPEECH_ON%And whose authority do you have? There are a lot of lords in these lands and not all of them pay me well.%SPEECH_OFF%The lawmen\'s captain sits back down in his saddle. His hands cross over his pommel, resting there with armored authority. He does not look the least bit amused and voices his displeasure as such.%SPEECH_ON%The punishment for willfully harboring a fugitive is death. You\'ve but one more chance to release this criminal to me or you shall face a fate well suited for a sword-selling dog.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_90.png[/img]Des cavaliers franchissent la crête d'une colline voisine, leurs silhouettes sombres et bizarrement formées sur son bord comme un récif de noir ondulant. N'étant pas totalement capable de voir qui ils sont, vous ordonnez à quelques-uns de vos confrères de se cacher. Une embuscade pourrait être nécessaire pour vous défendre, sinon vous n'avez aucune chance contre une telle force montée. Alors que les mercenaires sélectionnés s'enfoncent dans les buissons, les cavaliers commencent à descendre la colline. Le tonnerre des sabots se fait plus fort, mais vous restez résolu, espérant donner à vos hommes une belle démonstration de bravoure.\n\nVous voyez que le porte-bannière porte un sigle de %noblehousename%. Derrière lui, un autre cavalier traîne un traîneau avec quelques hommes enchaînés comme chargement. Lorsque les hommes arrivent, leur chef se dresse sur les garrots de son cheval et vous désigne avant de parler.%SPEECH_ON%Mercenaire ! Nous avons par l'autorité du seigneur le droit de réclamer les - enchaînés ! - donnez-nous %criminal%. Cet homme est parmi vous. Il doit payer pour ses crimes. Livrez-le immédiatement et vous serez récompensé.%SPEECH_OFF% Vous tournez la tête et crachez. Vous faites un signe de tête à l'homme de loi avant de lui poser une question.%SPEECH_ON%Et de quelle autorité disposez-vous ? Il y a beaucoup de seigneurs dans ces terres et tous ne me paient pas bien.%SPEECH_OFF%Le chef se rassied sur sa selle. Ses mains se croisent sur son pommeau, s'y posant avec une autorité imperturbable. Il n'a pas l'air amusé et exprime ainsi son mécontentement.%SPEECH_ON%La punition pour avoir délibérément hébergé un fugitif est la mort. Vous n'avez plus qu'une seule chance de me rendre ce criminel ou vous connaîtrez un sort bien adapté à un chien de mercenaire.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Banner = [],
 			Options = [
 				{
-					Text = "The company would only suffer if we fought over this. The man is yours.",
+					Text = "La compagnie ne ferait que souffrir si nous nous battions pour ça. L'homme est à vous.",
 					function getResult( _event )
 					{
 						return "B";
@@ -26,7 +26,7 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ll not give him up.",
+					Text = "Nous ne l'abandonnerons pas.",
 					function getResult( _event )
 					{
 						return "C";
@@ -39,7 +39,7 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 				if (this.World.Assets.getMoney() >= 1500)
 				{
 					this.Options.push({
-						Text = "Surely this isn\'t something that can\'t be solved with a fat purse of crowns?",
+						Text = "Ce n'est pas quelque chose qui ne peut pas être résolu avec une grosse bourse de couronnes ?",
 						function getResult( _event )
 						{
 							return "F";
@@ -51,7 +51,7 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 				if (this.World.Assets.getBusinessReputation() > 3000)
 				{
 					this.Options.push({
-						Text = "You know who it is you\'re threatening? The %companyname%!",
+						Text = "Vous savez qui vous menacez ? %companyname% !",
 						function getResult( _event )
 						{
 							return "G";
@@ -62,7 +62,7 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 				else
 				{
 					this.Options.push({
-						Text = "You got a drawing of the man you\'re after? Let me take a look.",
+						Text = "Vous avez un dessin de l'homme que vous recherchez ? Laissez-moi y jeter un coup d'oeil.",
 						function getResult( _event )
 						{
 							return this.Math.rand(1, 100) <= 50 ? "D" : "E";
@@ -78,14 +78,14 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_53.png[/img]You stand no chance against these men. Although it pains you mightily, you hand %criminal% over. He barks curses at you as the lawmen chain him up, and swears your name into the mud as they throw him in with the rest of the bound men. The captain of the lawmen trots his horse over to you. He sneers at you before throwing a purse of coins to the ground. His body is close and there\'s an opening in his armor. You could fit a knife in there, right between the ribs, lead the blade right to his heart. It\'d be quick. But you wouldn\'t last much long after, and all of your men would be quickly slain.\n\nInstead, you lean over and pick up the coins, swallow you pride, and say your thanks. The lawmen waste little time returning from whence they came.",
+			Text = "[img]gfx/ui/events/event_53.png[/img]Vous n'avez aucune chance contre ces hommes. Bien que cela vous fasse très mal, vous livrez %criminal%. Il vous aboie des injures pendant que les hommes de loi l'enchaînent, et traine votre nom dans la boue pendant qu'ils le jettent avec le reste des hommes attachés. Le capitaine des hommes de loi se dirige vers vous au trot sur son cheval. Il ricane avant de jeter une bourse de pièces sur le sol. Son corps est proche et il y a une ouverture dans son armure. Vous pourriez y glisser un couteau, juste entre les côtes, et conduire la lame jusqu'à son coeur. Ce serait rapide. Mais vous ne tiendriez pas longtemps après, et tous vos hommes seraient rapidement tués. Au lieu de cela, vous vous penchez et ramassez les pièces, ravalez votre fierté, et dites merci. Les hommes de loi ne perdent pas de temps pour retourner d'où ils viennent.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Banner = [],
 			Options = [
 				{
-					Text = "I can\'t put the whole company on the line for you.",
+					Text = "Je ne peux pas mettre toute la compagnie en jeu pour toi.",
 					function getResult( _event )
 					{
 						return 0;
@@ -100,7 +100,7 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 13,
 					icon = "ui/icons/asset_brothers.png",
-					text = _event.m.Criminal.getName() + " has left the company"
+					text = _event.m.Criminal.getName() + " a quitté la compagnie"
 				});
 				_event.m.Criminal.getItems().transferToStash(this.World.Assets.getStash());
 				this.World.getPlayerRoster().remove(_event.m.Criminal);
@@ -108,24 +108,24 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 100 + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 100 + "[/color] Couronnes"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_10.png[/img]As the lawman stares at you, waiting for an answer, you let out a sharp whistle. Half of the company emerges from the bushes, whooping and hollering in ambush. The steed pulling the travois bucks its rider to the ground before taking off altogether, a group of wide-eyed criminals going along for the ride. Another lawman retreats, abandoning his troop.\n\n%randombrother% plucks one man from his saddle while another brother drives a spear into a horse\'s chest, bringing both beast and man crashing to the ground. The captain falls off his horse when it rears up in wild fear. It\'s a hard tumble, but he manages to roll back to his feet only for the bucking horse to clip him in the head. It is a quick, blunt demise that leaves the captain face down in the cradle of his own helmet.\n\nThe rest of his men come to stand by his body and they look to you with vengeance in their eyes.",
+			Text = "[img]gfx/ui/events/event_10.png[/img]Alors que l'homme de loi vous regarde, attendant une réponse, vous émettez un sifflement aigu. La moitié de la compagnie émerge des buissons, poussant des cris et des hurlements en guise d'embuscade. Le cheval qui tire le traineau fait ruer son cavalier au sol avant de partir en trombe, avec un groupe de criminels aux yeux écarquillés qui l'accompagnent. Un autre homme de loi bat en retraite, abandonnant sa troupe. Un mercenaire arrache un homme de sa selle tandis qu'un autre enfonce une lance dans la poitrine d'un cheval, faisant s'écraser au sol la bête et l'homme. Le capitaine tombe de son cheval quand celui-ci se cabre dans une peur sauvage. La chute est rude, mais il parvient à se remettre sur ses pieds, et le cheval qui se cabre le frappe à la tête. C'est une mort rapide et brutale qui laisse le capitaine face contre terre dans le cercueil de son propre casque. Le reste de ses hommes vient se placer près de son corps et vous regarde avec la vengeance dans les yeux.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Banner = [],
 			Options = [
 				{
-					Text = "Charge!",
+					Text = "Chargez!",
 					function getResult( _event )
 					{
-						_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationAttacked, "You killed some of their men");
+						_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationAttacked, "Vous avez tué certains de leurs hommes");
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
 						properties.CombatID = "Event";
 						properties.Music = this.Const.Music.NobleTracks;
@@ -150,14 +150,14 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_78.png[/img]The captain of the lawmen snaps his fingers at one of the bannermen. He hands over a scroll which the captain unfurls before handing it to you. The man you see looks remarkably like %criminal%, but since you\'ve been on the road the mercenary has gained a few scars that separate his visage from the one on the paper. But they won\'t buy that. So you lie instead.%SPEECH_ON%The man you\'re looking for is dead. He was a criminal, just as you said, and we found him thieving from our foods. %other_bro% ran a sword through him when we\'d found out.%SPEECH_OFF%The brother looks at you, and then the lawmen. He nods.%SPEECH_ON%That I did. He had a mouthful of my bread when I stuck him like a pig! I saved the rest of the loaf for m\'self, thank goodness.%SPEECH_OFF%The lawmen chuckle amongst themselves. Their captain looks back on them, his gaze a quieting one. He looks back to you. You can see why they shut up: his eyes are stern, unmoving, fierce, black. The man holds you in this stare for nearly half a minute before he nods and gathers his reins.%SPEECH_ON%Alright, mercenary. Thank you for letting us know.%SPEECH_OFF%The lawmen pack up and head back from whence they came. A sigh of relief passes over the company as a whole and you order the men hiding in the bushes to come out. It\'s a long road ahead and hopefully there won\'t be more problems like this one.",
+			Text = "[img]gfx/ui/events/event_78.png[/img]Le capitaine des hommes de loi fait claquer ses doigts à l'un des porte-étendards. Celui-ci lui remet un parchemin que le capitaine déplie avant de vous le remettre. L'homme que vous voyez ressemble remarquablement à %criminal%, mais depuis que vous êtes sur la route, le mercenaire a gagné quelques cicatrices qui séparent son visage de celui sur le papier. Mais ils ne vous croiront pas. Alors vous mentez à la place.%SPEECH_ON%L'homme que vous recherchez est mort. C'était un criminel, comme vous l'avez dit, et nous l'avons trouvé en train de voler nos aliments. %other_bro% l'a transpercé d'une épée quand on l'a découvert.%SPEECH_OFF% %other_bro% te regarde, puis les hommes de loi. Il hoche la tête.%SPEECH_ON% C'est ce que j'ai fait. Il avait la bouche pleine de mon pain quand je l'ai planté comme un porc ! J'ai gardé le reste du pain pour moi, Dieu merci.%SPEECH_OFF% Les hommes de loi gloussent entre eux. Leur capitaine les regarde en arrière, son regard les calmes en un instant. Il se tourne vers vous. Vous comprenez pourquoi ils se taisent : ses yeux sont sévères, immobiles, féroces, noirs. L'homme vous tient dans ce regard pendant près d'une demi-minute avant de hocher la tête et de rassembler ses rênes.%SPEECH_ON%D'accord, mercenaire. Merci de nous avoir prévenus.%SPEECH_OFF%Les hommes de loi remballent et repartent d'où ils sont venus. Un soupir de soulagement passe dans toute la compagnie et vous ordonnez aux hommes cachés dans les buissons de sortir. La route est encore longue et vous espèrez qu'il n'y aura pas d'autres problèmes comme celui-ci.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Banner = [],
 			Options = [
 				{
-					Text = "Phew.",
+					Text = "Ouf.",
 					function getResult( _event )
 					{
 						return 0;
@@ -169,7 +169,7 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 			{
 				this.Banner = _event.m.NobleHouse.getUIBannerSmall();
 				this.Characters.push(_event.m.Criminal.getImagePath());
-				_event.m.Criminal.improveMood(2.0, "Was protected by the company");
+				_event.m.Criminal.improveMood(2.0, "A était protégé par la compagnie.");
 
 				if (_event.m.Criminal.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -184,17 +184,17 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_78.png[/img]The captain hands you a scroll with %criminal%\'s face on it. True, the resemblance is there. But the man has been in your company long enough to gain a scar or two. Maybe they won\'t realize it\'s him? You ask the criminal to step forward and, nervously, he does as told. You look to the captain.%SPEECH_ON%Is this the man you are after? I can see why you might think this is him, but look at these scars. The man in the drawing has none. And look at his hair! The one in the drawing is straight, and this man\'s is clearly matted and curly.%SPEECH_OFF%You stop because judging by the faces of your audience this isn\'t even coming close to working. The captain draws his sword.%SPEECH_ON%Do you take me for a fool? Kill them all.%SPEECH_OFF%Well, so much for that. Before the lawmen can charge you whistle as loud as you can. Half the company surges forth from the bushes, whooping and hollering like banshees. The sudden fright drives the horses wild, pitching their riders into the dirt and the travois-puller even runs off altogether, carrying with it a couple of very confused criminals.\n\n%randombrother% comes charging across the field of mayhem with a spear in hand. He plunges it deep into the captain\'s steed, bringing both man and beast crashing to the ground. The lawmen, what\'s left of them, gather around their captain. Seemingly growling, the man wipes blood from his face and spits out a tooth. He grins a gapped smile before ordering his men to charge.",
+			Text = "[img]gfx/ui/events/event_78.png[/img]Le capitaine vous tend un parchemin avec le visage de %criminal% dessus. C'est vrai, la ressemblance est là. Mais l'homme est dans votre compagnie depuis assez longtemps pour avoir une cicatrice ou deux. Peut-être n'ont-ils pas réalisé que c'était lui ? Vous demandez au criminel de s'avancer et, nerveusement, il s'exécute. Vous regardez le capitaine. %SPEECH_ON%Est-ce l'homme que vous recherchez ? Je comprends pourquoi vous pensez que c'est lui, mais regardez ces cicatrices. L'homme du dessin n'en a aucune. Et regardez ses cheveux ! Ceux du dessin sont raides, alors que ceux de cet homme sont clairement emmêlés et bouclés.%SPEECH_OFF% Vous arrêtez parce qu'à en juger par les visages de votre public, ce n'est même pas près de fonctionner. Le capitaine tire son épée.%SPEECH_ON%Vous me prenez pour un idiot ? Tuez-les tous.%SPEECH_OFF%Eh bien, tant pis pour ça. Avant que les hommes de loi puissent charger, vous sifflez aussi fort que possible. La moitié de la compagnie sort des buissons en hurlant comme des fous. La frayeur soudaine rend les chevaux sauvages, jetant leurs cavaliers dans la boue, et le tireur de traineau s'enfuit même, emportant avec lui un couple de criminels très confus.\n\n%randombrother% traverse le champ de bataille, une lance à la main. Il la plante profondément dans le destrier du capitaine, faisant s'écraser l'homme et la bête au sol. Les hommes de loi, ou ce qu'il en reste, se rassemblent autour de leur capitaine. Semblant grogner, l'homme essuie le sang de son visage et crache une dent. Il esquisse un sourire béat avant d'ordonner à ses hommes de charger.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Banner = [],
 			Options = [
 				{
-					Text = "Form up!",
+					Text = "Formez les rangs !",
 					function getResult( _event )
 					{
-						_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationAttacked, "You killed some of their men");
+						_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationAttacked, "Vous avez tué certains de leurs hommes");
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
 						properties.CombatID = "Event";
 						properties.Music = this.Const.Music.NobleTracks;
@@ -219,14 +219,14 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_04.png[/img]The captain\'s threats are cooled when you retrieve a large satchel of crowns. His men exchange glances as you hold the bag up.%SPEECH_ON%We\'ve no time for this. What I have here is %bribe% crowns. Take it and go away. Stay, and earn yourself a grave. Your choice, lawman.%SPEECH_OFF%Sensing the stares of his fellow riders, the captain is especially careful in mulling this one over. He sizes up your men, and briefly does the same to his men. He must see great losses for he finally nods. Jerking his horse\'s bridle, he drives his steed forward and the two of you come face to face. You smile as you hand the crowns over.%SPEECH_ON%Spend it well.%SPEECH_OFF%The captain takes the satchel and cinches it to the side of his saddle, looping the leather harness over the hilt of a sword while his men look on. He nods, but does not smile back.%SPEECH_ON%My daughter is to be wed in a fortnight. I\'d like to be there.%SPEECH_OFF%You nod and bid the humorless captain farewell.%SPEECH_ON%May her husband be kind, and her children bountiful.%SPEECH_OFF%The captain haws his horse and leads it back to his men. They depart, the hooves of their mounts steadily thumping into the distance until there is nothing but the scratch of wind-tickled grass to fill the air.",
+			Text = "[img]gfx/ui/events/event_04.png[/img]Les menaces du capitaine se refroidissent lorsque vous récupérez une grande sacoche de couronnes. Ses hommes échangent des regards lorsque vous leur montrez la sacoche.%SPEECH_ON%Nous n'avons pas le temps pour ça. Ce que j'ai là, c'est %bribe% couronnes. Prenez-les et partez. Restez, et gagnez une tombe. Votre choix, homme de loi.%SPEECH_OFF% Sentant les regards de ses compagnons de route, le capitaine est particulièrement prudent dans sa réflexion. Il évalue vos hommes, et fait brièvement de même pour les siens. Il doit constater de grandes pertes car il finit par hocher la tête. Tirant sur la bride de son cheval, il fait avancer sa monture et vous vous retrouvez tous les deux face à face. Vous souriez en remettant les couronnes.%SPEECH_ON%Dépensez-les bien.%SPEECH_OFF%Le capitaine prend la sacoche et l'attache sur le côté de sa selle, passant le harnais de cuir sur la poignée d'une épée sous le regard de ses hommes. Il hoche la tête, mais ne sourit pas en retour.%SPEECH_ON%Ma fille doit se marier dans une quinzaine de jours. J'aimerais y être vivant.%SPEECH_OFF% Vous hochez la tête et faites vos adieux au capitaine sans humour.%SPEECH_ON%Que son mari soit bon, et ses enfants nombreux.%SPEECH_OFF%Le capitaine fait avancer son cheval et le ramène à ses hommes. Ils partent, les sabots de leurs montures s'enfonçant dans le lointain jusqu'à ce qu'il n'y ait plus que le bruissement de l'herbe soulevée par le vent pour remplir l'air.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Banner = [],
 			Options = [
 				{
-					Text = "What I don\'t do for you lot...",
+					Text = "Ce que je ne fais pas pour vous...",
 					function getResult( _event )
 					{
 						return 0;
@@ -242,21 +242,21 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + 1000 + "[/color] Crowns"
+					text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + 1000 + "[/color] Couronnes"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_12.png[/img]You walk directly toward the captain, stopping halfway between your men and his. With your fists to your hips, you call out to the captain\'s lawmen, asking if they know the name of the %companyname%. You see a few of the riders shift up on their saddles, balancing tented arms on their pommels as they stare intently at your banner. They quickly sit back down and hushed whispers trickle down and back up their battle line.\n\nOne man calls out, asking if it\'s true that you shorn the noses of those you slay. It is not true, but you\'ve no reason to spill the truth. Another man asks if %randombrother% is in your ranks, and if he has a necklace of ears and eats bonemeal for breakfast. You stifle the urge to laugh, only nodding in return. Quite naturally, the rumors overtake your opponents and they begin to cry out that this fight is not theirs to have.\n\nThe captain tells them that you\'re full of shit and to charge, but none follow his orders. Eventually, the captain is forced to turn back, heading after his men who are now in retreat.\n\nThe supposed cannibal-brother walks up, scratching his head.%SPEECH_ON%Bonemeal for breakfast?%SPEECH_OFF%A crackle of laughter rips through the company and soon a chant of \'don\'t eat me!\' is to be had.",
+			Text = "[img]gfx/ui/events/event_12.png[/img]Vous marchez directement vers le capitaine, vous arrêtant à mi-chemin entre vos hommes et les siens. Les poings sur les hanches, vous appelez les hommes de loi du capitaine, leur demandant s'ils connaissent le nom de %companyname%. Vous voyez quelques-uns des cavaliers se redresser sur leurs selles, faisant tenir en équilibre les bras tendus sur leurs arçons tout en regardant attentivement votre bannière. Ils se rasseoient rapidement et des murmures étouffés descendent et remontent le long de leur ligne de bataille.\n\n Un homme demande si c'est vrai que vous tondez le nez de ceux que vous tuez. Ce n'est pas vrai, mais vous n'avez aucune raison de dire la vérité. Un autre homme demande si %randombrother% est dans vos rangs, et s'il a un collier d'oreilles et mange de la farine d'os au petit déjeuner. Vous étouffez l'envie de rire et vous vous contentez de hocher la tête. Tout naturellement, les rumeurs gagnent vos adversaires et ils commencent à crier que ce combat n'est pas le leur.\n\n Le capitaine leur dit que vous racontez des conneries et de charger, mais aucun ne suit ses ordres. Finalement, le capitaine est forcé de faire demi-tour, et de poursuivre ses hommes qui sont maintenant en retraite.\n\n Le supposé frère cannibale s'approche, en se grattant la tête. %SPEECH_ON%De la farine d'os pour le petit déjeuner?%SPEECH_OFF%Un grésillement de rire parcourt la compagnie et bientôt un chant de \"Ne me mange pas\" est entonné.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Banner = [],
 			Options = [
 				{
-					Text = "Don\'t challenge the %companyname%!",
+					Text = "Ne défiez pas %companyname% !",
 					function getResult( _event )
 					{
 						return 0;

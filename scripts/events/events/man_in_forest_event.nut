@@ -7,13 +7,13 @@ this.man_in_forest_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_76.png[/img]While traipsing between the trees, a man suddenly emerges from one of the bushes. Twigs and brush are all twisted up in his sweat swept hair. He rears up at the sight of you.%SPEECH_ON%Please, no more.%SPEECH_OFF%You raise your hand to calm him then ask what is going on. The stranger takes a step back.%SPEECH_ON%Please, no more!%SPEECH_OFF%He turns and runs off, thrashing his way back from whence he came. %randombrother% hurries to your side.%SPEECH_ON%Should we follow him?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_76.png[/img]Alors qu'il se faufile entre les arbres, un homme émerge soudainement d'un des buissons. Les brindilles et les broussailles sont toutes emmêlées dans ses cheveux en sueur. Il se redresse à votre vue.%SPEECH_ON%S'il vous plaît, arrêtez.%SPEECH_OFF% Vous levez la main pour le calmer puis lui demandez ce qui se passe. L'étranger recule d'un pas.%SPEECH_ON%S'il vous plaît, arrêtez !%SPEECH_OFF%Il se retourne et s'enfuit en se débattant pour revenir d'où il est venu. %randombrother% se précipite à vos côtés.%SPEECH_ON% Devrions-nous le suivre?%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Follow him, quick!",
+					Text = "Suivons-le, vite !",
 					function getResult( _event )
 					{
 						local r = this.Math.rand(1, 100);
@@ -34,7 +34,7 @@ this.man_in_forest_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "He\'s not our concern. Let him go.",
+					Text = "Il n'est pas notre préoccupation. Laissez-le partir.",
 					function getResult( _event )
 					{
 						return 0;
@@ -49,13 +49,13 @@ this.man_in_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_50.png[/img]You follow the man into the thicket. His muddy footsteps aren\'t hard to track, his ungraceful retreat leaving much evidence. But suddenly, they disappear. The man exited into a clearing and then his tracks are gone. You hear a whistle above you. Looking up, you see the man sitting on a branch. He waves.%SPEECH_ON%Howdy, strangers.%SPEECH_OFF%He glances across the clearing. Men are approaching and they are well armed. The man in the tree snorts.%SPEECH_ON%Goodbye, strangers.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_50.png[/img]Vous suivez l'homme dans le fourré. Ses pas boueux ne sont pas difficiles à suivre, sa retraite peu gracieuse laisse beaucoup de traces. Mais soudainement, elles disparaissent. L'homme est sorti dans une clairière, puis ses traces ont disparu. Vous entendez un sifflement au-dessus de vous. Levant les yeux, vous voyez l'homme assis sur une branche. Il fait signe de la main.%SPEECH_ON%Bonjour, étrangers.%SPEECH_OFF%Il jette un coup d'œil à travers la clairière. Des hommes approchent et ils sont bien armés. L'homme dans l'arbre s'ébroue.%SPEECH_ON%Au revoir, étrangers.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux Armes!",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -77,13 +77,13 @@ this.man_in_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_25.png[/img]The man\'s tracks lead away in the hurry that so frightfully forced him out of your sight. A scared man such as he is not hard to find, unfortunately he\'s not scared anymore, because all you find of him is thoroughly eviscerated corpse.\n\nA slight growl vibrates the nearby bushes. You look over to see slick, black fur slowly stepping out from behind a tree. You yell to the men to arm themselves.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Les traces de l'homme s'éloignent dans la hâte qui l'a si effroyablement forcé à disparaître de votre vue. Un homme effrayé comme lui n'est pas difficile à trouver, malheureusement il n'est plus effrayé, car tout ce que vous trouvez de lui est un cadavre complètement éviscéré. Un léger grognement fait vibrer les buissons voisins. Vous regardez pour voir une fourrure noire et lisse sortir lentement de derrière un arbre. Vous criez aux hommes de s'armer.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux Armes!",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -105,13 +105,13 @@ this.man_in_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_25.png[/img]The frightened man was not hard to find. You spot him curled up at the base of a tree. He\'s clutching something to his chest as though he were seeking warmth from it on a cold night. The man himself, however, is dead. You pry the item from his glomming grasp.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]L'homme effrayé n'était pas difficile à trouver. Vous le repérez recroquevillé au pied d'un arbre. Il serre quelque chose contre sa poitrine comme s'il cherchait à s'en réchauffer par une nuit froide. L'homme lui-même, cependant, est mort. Vous arrachez l'objet de sa main collante.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What\'s this?",
+					Text = "Qu'est-ce que c'est ?",
 					function getResult( _event )
 					{
 						return 0;
