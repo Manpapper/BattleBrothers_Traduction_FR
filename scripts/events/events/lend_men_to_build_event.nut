@@ -9,13 +9,13 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_79.png[/img]En approchant de %townname%, un homme du coin vous fait signe de venir. Il est debout à côté du début de ce qui semble être un moulin. Exaspéré, il explique que ses ouvriers ne sont pas venus aujourd'hui et qu'il doit terminer le moulin avant l'arrivée d'un baron local. S'il ne le termine pas, le baron pourrait ne plus lui donner de contrat. Vous avez quelques anciens ouvriers dans la compagnie. Peut-être peuvent-ils être utilisés pour aider cet homme ?",
+			Text = "[img]gfx/ui/events/event_79.png[/img]En approchant de %townname%, un homme du coin vous fait signe de venir. Il est debout à côté du début de ce qui semble être un moulin. Exaspéré, il explique que ses ouvriers ne sont pas venus aujourd\'hui et qu\'il doit terminer le moulin avant l\'arrivée d\'un baron local. S\'il ne le termine pas, le baron pourrait ne plus lui donner de contrat. Vous avez quelques anciens ouvriers dans la compagnie. Peut-être peuvent-ils être utilisés pour aider cet homme ?",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Vous construisez, nous tuons. Trouvez quelqu'un d'autre.",
+					Text = "Vous construisez, nous tuons. Trouvez quelqu\'un d\'autre.",
 					function getResult( _event )
 					{
 						return 0;
@@ -23,7 +23,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Très bien, je peux me passer d'un homme ou deux.",
+					Text = "Très bien, je peux me passer d\'un homme ou deux.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -38,7 +38,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_79.png[/img]Vous acceptez de prêter quelques-uns des meilleurs éléments de %companyname% au projet. Ils retombent dans leurs anciens rôles comme un gant, s'affairant rapidement à collecter des ressources, à marteler, à briquer, à ouvrir une porte ? Peu importe ce qu'il faut faire pour installer une porte, ils le font et rapidement. Lorsque tout est terminé, l'homme du coin vient vous voir en souriant jusqu'aux oreilles. Il vous tend une sacoche.%SPEECH_ON% Vous l'avez méritée, mon bon monsieur ! Et plus encore, vous avez mérité ma parole - je répandrai votre bienveillance dès que je le pourrai!%SPEECH_OFF%.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous acceptez de prêter quelques-uns des meilleurs éléments de %companyname% au projet. Ils retombent dans leurs anciens rôles comme un gant, s\'affairant rapidement à collecter des ressources, à marteler, à briquer, à ouvrir une porte ? Peu importe ce qu\'il faut faire pour installer une porte, ils le font et rapidement. Lorsque tout est terminé, l\'homme du coin vient vous voir en souriant jusqu\'aux oreilles. Il vous tend une sacoche.%SPEECH_ON% Vous l\'avez méritée, mon bon monsieur ! Et plus encore, vous avez mérité ma parole - je répandrai votre bienveillance dès que je le pourrai!%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -102,7 +102,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_79.png[/img]Vous acceptez d'aider cet homme. Malheureusement, il semble qu'il n'ait pas bien planifié les choses. Le toit s'effondre à la seconde où l'un de vos\ "ouvriers\" y met le pied, envoyant l'homme dans un gouffre de tuiles. Un autre homme enfonce un clou, mais le support en bois se brise en deux, lui envoyant des éclats de bois au visage. Les briques en vrac se libèrent, la boue humide fait glisser les hommes et toutes sortes de dangers sur le lieu de travail font basculer le projet dans un désastre. L'homme du coin s'excuse abondamment tout en se rongeant les ongles et en se demandant comment il va s'y prendre avec le baron. En claquant des doigts, il s'exclame qu'il va simplement lui payer les couronnes.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous acceptez d\'aider cet homme. Malheureusement, il semble qu\'il n\'ait pas bien planifié les choses. Le toit s\'effondre à la seconde où l\'un de vos\ "ouvriers\" y met le pied, envoyant l\'homme dans un gouffre de tuiles. Un autre homme enfonce un clou, mais le support en bois se brise en deux, lui envoyant des éclats de bois au visage. Les briques en vrac se libèrent, la boue humide fait glisser les hommes et toutes sortes de dangers sur le lieu de travail font basculer le projet dans un désastre. L\'homme du coin s\'excuse abondamment tout en se rongeant les ongles et en se demandant comment il va s\'y prendre avec le baron. En claquant des doigts, il s\'exclame qu\'il va simplement lui payer les couronnes.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -131,7 +131,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_79.png[/img]Alors que l'esprit de l'homme dérive vers une conclusion satisfaisante de son problème, vous claquez des doigts pour le ramener à la cruelle réalité.%SPEECH_ON%Ces couronnes nous appartiennent, paysan. C'était le marché.%SPEECH_OFF% Les mâchoires de l'homme s'agitent en secouant la tête.%SPEECH_ON% Mais le moulin... il n'est même pas fini!%SPEECH_OFF% Vous haussez les épaules.%SPEECH_ON% Pas notre problème. Maintenant donnez l'argent, avant que je ne fasse de toi notre problème.%SPEECH_OFF%Hochant la tête solennellement, l'homme obéit et vous donne sa sacoche de couronnes.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Alors que l\'esprit de l\'homme dérive vers une conclusion satisfaisante de son problème, vous claquez des doigts pour le ramener à la cruelle réalité.%SPEECH_ON%Ces couronnes nous appartiennent, paysan. C\'était le marché.%SPEECH_OFF% Les mâchoires de l\'homme s\'agitent en secouant la tête.%SPEECH_ON% Mais le moulin... il n\'est même pas fini!%SPEECH_OFF% Vous haussez les épaules.%SPEECH_ON% Pas notre problème. Maintenant donnez l\'argent, avant que je ne fasse de toi notre problème.%SPEECH_OFF%Hochant la tête solennellement, l\'homme obéit et vous donne sa sacoche de couronnes.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -195,7 +195,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_79.png[/img]Pendant un bref instant, vous vous voyez en train de transpercer l'homme aux yeux bridés avec votre épée. Ça l'aurait vraiment réveillé à la réalité du monde, mais au lieu de ça, vous lui donnez une pause. Les ouvriers qui ont pris part à ce projet désastreux ne sont pas très heureux. Espérons que les leçons apprises les fortifieront quand même.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Pendant un bref instant, vous vous voyez en train de transpercer l\'homme aux yeux bridés avec votre épée. Ça l\'aurait vraiment réveillé à la réalité du monde, mais au lieu de ça, vous lui donnez une pause. Les ouvriers qui ont pris part à ce projet désastreux ne sont pas très heureux. Espérons que les leçons apprises les fortifieront quand même.",
 			Image = "",
 			List = [],
 			Characters = [],

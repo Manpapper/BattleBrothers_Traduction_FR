@@ -9,13 +9,13 @@ this.miner_atop_world_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 80.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_42.png[/img]The company marches into the mountains, or what %randombrother% poetically referred to as the \'realm\'s tits\'. Clouds start passing at eye-level and the air gets so thin it\'s like you\'re breathing through a straw. Snow crunches underfoot and harsh winds threaten to your eyes into ice cubes. Despite the steep escarpments and dangerous crevasses to cross, %miner% the miner seems rather happy to be this far up.%SPEECH_ON%It\'s like we\'re on top of the world! Isn\'t this wonderful?%SPEECH_OFF%He can hardly breathe for shit, but the miner is too happy to care. Years of digging deep into the earth has made this reversal of perspective all the more wonderful.",
+			Text = "[img]gfx/ui/events/event_42.png[/img]La compagnie marche vers les montagnes, que %randombrother% appelle poétiquement les \"seins du royaume\". Les nuages commencent à passer à hauteur des yeux et l\'air devient si fin qu\'on a l\'impression de respirer à travers une paille. La neige crisse sous les pieds et les vents violents menacent de transformer vos yeux en glaçons. Malgré les escarpements et les crevasses dangereuses à traverser, %miner% le mineur semble plutôt heureux d\'être aussi haut.%SPEECH_ON%C\'est comme si nous étions au sommet du monde ! N\'est-ce pas merveilleux ? %SPEECH_OFF%Il a du mal à respirer, mais le mineur est trop heureux pour s\'en soucier. Des années à creuser profondément dans la terre ont rendu ce renversement de perspective d\'autant plus merveilleux.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well, at least someone is enjoying themselves.",
+					Text = "Au moins, quelqu\'un s\'amuse.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.miner_atop_world_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Miner.getImagePath());
-				_event.m.Miner.improveMood(2.0, "Enjoyed the view from atop a mountain");
+				_event.m.Miner.improveMood(2.0, "A apprécié la vue du haut d\'une montagne");
 
 				if (_event.m.Miner.getMoodState() >= this.Const.MoodState.Neutral)
 				{

@@ -10,7 +10,7 @@ this.minstrel_regals_refugee_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img] The company sits around a fire when %minstrel% the minstrel notices the refugee, %refugee%, sitting solemnly by himself. Within but a moment, the minstrel is on his feet, standing high on a stump, and waving his arms wide.%SPEECH_ON%Lo\', the town of %refugee% was small, its place quaint, and its food, well, a little on the \'eh\' side. But ho\'! Were its people big! For here sits amongst our company one of its kin, the world after his spirit, death on his heels, yet here he be, and we\'ve but only thanks - and crowns! - to offer him! Such is the price of his company, and such we are willing to give.%SPEECH_OFF%The minstrel sits back down and bows to the refugee. All of the %companyname% stands up and cheers, bringing a rare smile to %refugee%\'s face.",
+			Text = "[img]gfx/ui/events/event_26.png[/img] La compagnie est assise autour du feu lorsque %minstrel% le ménestrel remarque le réfugié, %refugee%, assis tout seul. En un instant, le ménestrel est sur pied, debout sur une souche, et agite les bras en tous sens.%SPEECH_ON%La ville de %refugee% était petite, son lieu pittoresque, et sa nourriture, eh bien, un peu du côté \'bof\'. Mais bon ! Ses habitants étaient grands ! Car ici est assis parmi notre compagnie l\'un de ses membres, le monde est après son esprit, la mort est sur ses talons, et pourtant il est là, et nous n\'avons que des remerciements - et des couronnes ! - à lui offrir ! Tel est le prix de sa compagnie, et nous sommes prêts à le donner.%SPEECH_OFF%Le ménestrel se rassoit et s\'incline devant le réfugié. Tous les membres de %companyname% se lèvent et applaudissent, apportant un rare sourire sur le visage de %refugee%.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -28,7 +28,7 @@ this.minstrel_regals_refugee_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Minstrel.getImagePath());
 				this.Characters.push(_event.m.Refugee.getImagePath());
-				_event.m.Refugee.improveMood(1.0, "Was regaled by " + _event.m.Minstrel.getName());
+				_event.m.Refugee.improveMood(1.0, "A été réconforté par " + _event.m.Minstrel.getName());
 
 				if (_event.m.Refugee.getMoodState() >= this.Const.MoodState.Neutral)
 				{

@@ -10,13 +10,13 @@ this.minstrel_outsmarts_gambler_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img] %gambler%, the man with a gambling problem, has apparently gone around camp asking men to play a game of horseshoes - with a few crowns on the line, of course. It appears that %minstrel%, the wily minstrel, has obliged him and taken the bet. He says he\'s pretty good at the game to which the gambler responds that he is the best. \n\n The two men heave horseshoes until their arms tire and the sun wanes. Nobody is the winner as the game can\'t move off of a tie. After another indecisive round, %minstrel% says he\'ll go for a double-or-nothing round if they go left-handed. %gambler% agrees. He goes first, throwing three horseshoes. The first two go haywire, but the third manages to spin around the ring. He grins as he wishes the minstrel good luck. %minstrel% nods and rolls up his sleeves. He sticks his tongue out and slims his eyes, lining up the shot. His feet do a little tap-dance and just before he throws he looks back and says,%SPEECH_ON%I should probably let you know that I *am* left-handed.%SPEECH_OFF%Without even looking forward, the minstrel lets loose his horseshoe. The throw is perfect, landing dead center about the stake, and the next two are tossed so quickly and so seamlessly that anybody watching erupts in hooting laughter. The gambler\'s mouth can only drop in disbelief.",
+			Text = "[img]gfx/ui/events/event_26.png[/img] %gambler%, l\'homme qui a un problème de jeu, a apparemment fait le tour du camp pour demander aux hommes de jouer au fer à cheval - avec quelques couronnes en jeu, bien sûr. Il semble que %minstrel%, le ménestrel rusé, l\'ait obligé et ait accepté le pari. Il dit qu\'il est plutôt bon au jeu, ce à quoi le joueur répond qu\'il est le meilleur. \n\nLes deux hommes lancent des fers à cheval jusqu\'à ce que leurs bras se fatiguent et que le soleil décline. Personne ne gagne car le jeu ne peut pas finir sur une égalité. Après un autre tour indécis, %minstrel% dit qu\'il va faire un quitte ou doubleen utilisant leur main gauche. %gambler% accepte. Il commence en lançant trois fers à cheval. Les deux premiers se détraquent, mais le troisième parvient à tourner autour de l\'anneau. Il sourit en souhaitant bonne chance au ménestrel. %minstrel% acquiesce et retrousse ses manches. Il tire la langue et ferme les yeux, pour aligner le tir. Ses pieds font des claquettes et juste avant de lancer, il se retourne et dit : %SPEECH_ON% Je devrais probablement vous dire que je suis gaucher.%SPEECH_OFF% Sans même regarder devant lui, le ménestrel lâche son fer à cheval. Le lancer est parfait, atterrissant en plein centre de la mise, et les deux suivants sont lancés si rapidement et si facilement que tous les spectateurs éclatent de rire. Le joueur, lui, ne peut que rester bouche bée, incrédule.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Cheeky little git.",
+					Text = "Petit con effronté.",
 					function getResult( _event )
 					{
 						return 0;
@@ -28,7 +28,7 @@ this.minstrel_outsmarts_gambler_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Minstrel.getImagePath());
 				this.Characters.push(_event.m.Gambler.getImagePath());
-				_event.m.Minstrel.improveMood(1.0, "Has outsmarted " + _event.m.Gambler.getName());
+				_event.m.Minstrel.improveMood(1.0, "A été plus malin que " + _event.m.Gambler.getName());
 
 				if (_event.m.Minstrel.getMoodState() >= this.Const.MoodState.Neutral)
 				{

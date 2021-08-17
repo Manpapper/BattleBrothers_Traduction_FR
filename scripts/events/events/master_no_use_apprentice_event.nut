@@ -10,13 +10,13 @@ this.master_no_use_apprentice_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%townImage%While walking about %townname%, you run into an old man dragging a youthful man by the ear.%SPEECH_ON%You want to be a master, it takes time! Blood! Sweat! Tears if yer of the cryin\' sort and there\'s no shame in that if ya are. Here, look! A sellsword! If you want to fight so bad, why not go to him?%SPEECH_OFF%You hold your hands out and ask for an explanation before getting offloaded some annoying git. The elderly man calms himself and lets the kid\'s ear go.%SPEECH_ON%Aye, I suppose you are owed more of an explanation. I\'m the fencing master of this town, but I teach discipline and patience before anyone so much can touch a sword! And this damned student of mine has neither! So I told him, if you want to fight so bad, get the hell out!%SPEECH_OFF%You look at the kid. He\'s got a fresh face, but there is in fact some impatient eagerness in his eyes. You ask him if what the swordmaster says is true. The kid nods.%SPEECH_ON%Yessir. And I\'d be more than happy to fight for you, too.%SPEECH_OFF%",
+			Text = "%townImage%En vous promenant dans %townname%, vous rencontrez un vieil homme qui traîne un jeune homme par l\'oreille.%SPEECH_ON% Si tu veux devenir un maître, il faut du temps ! Du sang ! De la sueur ! Des larmes ! Si tu es du genre à pleurer et il n\'y a pas de honte à ça si tu pleures. Tiens, regarde ! Un mercenaire ! Si tu veux tant te battre, pourquoi ne pas aller le voir ? %SPEECH_OFF%Vous tendez les mains et demandez une explication avant qu\'il ne déblatère des inepties. Le vieil homme se calme et lâche l\'oreille du gamin.%SPEECH_ON%Oui, je suppose que tu as droit à une explication. Je suis le maître d\'armes de cette ville, mais j\'enseigne la discipline et la patience avant que quiconque ne touche une épée ! Et mon maudit élève n\'a ni l\'un ni l\'autre ! Alors je lui ai dit, si tu veux tant te battre, dégage !%SPEECH_OFF% Vous regardez le gamin. Il a un visage jeune, mais il y a effectivement une certaine impatience dans ses yeux. Vous lui demandez si ce que le maître d\'épée dit est vrai. Le gamin hoche la tête. Oui. Et je serais plus qu\'heureux de me battre pour vous, aussi.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Alright, we\'ll take him.",
+					Text = "D\'accord, on le prend.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
@@ -27,7 +27,7 @@ this.master_no_use_apprentice_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No, thanks. He\'s all yours.",
+					Text = "Non, merci. Il est tout à vous.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -43,7 +43,7 @@ this.master_no_use_apprentice_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"apprentice_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "An impatient student of a fencing and swordmaster, %name% didn\'t have the mental aptitude to stick with the trials and tribulations of becoming a master of the blade himself. But what he lacks in mental fortitude he more than makes up for in effort. You \'hired\' him simply by taking him off the old man\'s hands.";
+				_event.m.Dude.getBackground().m.RawDescription = "Élève impatient d\'un maître d\'escrime et d\'épée, %name% n\'avait pas les aptitudes mentales pour s\'astreindre aux épreuves et aux tribulations pour devenir lui-même un maître de la lame. Mais ce qui lui manque en force mentale, il le compense largement en efforts. Vous l\'avez \"embauché\" simplement en le retirant des mains du vieil homme.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}
