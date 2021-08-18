@@ -6,7 +6,7 @@ this.hate_greenskins_trait <- this.inherit("scripts/skills/traits/character_trai
 		this.m.ID = "trait.hate_greenskins";
 		this.m.Name = "La Haine des Peaux-Vertes";
 		this.m.Icon = "ui/traits/trait_icon_52.png";
-		this.m.Description = "Des évenements du passé dans la vie de ce personnage ont alimenté une haine contre toutes les choses vertes et méchantes.";
+		this.m.Description = "Des Ã©venements du passÃ© dans la vie de ce personnage ont alimentÃ© une haine contre toutes les choses vertes et mÃ©chantes.";
 		this.m.Titles = [
 			"Orcbane"
 		];
@@ -36,7 +36,7 @@ this.hate_greenskins_trait <- this.inherit("scripts/skills/traits/character_trai
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Détermination quand vous etes en bataille contre les Peaux-Vertes"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de DÃ©termination quand vous Ãªtes en bataille contre les Peaux-Vertes"
 			}
 		];
 	}

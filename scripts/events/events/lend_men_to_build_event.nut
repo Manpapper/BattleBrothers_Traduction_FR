@@ -102,7 +102,7 @@ this.lend_men_to_build_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_79.png[/img]Vous acceptez d\'aider cet homme. Malheureusement, il semble qu\'il n\'ait pas bien planifié les choses. Le toit s\'effondre à la seconde où l\'un de vos\ "ouvriers\" y met le pied, envoyant l\'homme dans un gouffre de tuiles. Un autre homme enfonce un clou, mais le support en bois se brise en deux, lui envoyant des éclats de bois au visage. Les briques en vrac se libèrent, la boue humide fait glisser les hommes et toutes sortes de dangers sur le lieu de travail font basculer le projet dans un désastre. L\'homme du coin s\'excuse abondamment tout en se rongeant les ongles et en se demandant comment il va s\'y prendre avec le baron. En claquant des doigts, il s\'exclame qu\'il va simplement lui payer les couronnes.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous acceptez d\'aider cet homme. Malheureusement, il semble qu\'il n\'ait pas bien planifié les choses. Le toit s\'effondre à la seconde où l\'un de vos \"ouvriers\" y met le pied, envoyant l\'homme dans un gouffre de tuiles. Un autre homme enfonce un clou, mais le support en bois se brise en deux, lui envoyant des éclats de bois au visage. Les briques en vrac se libèrent, la boue humide fait glisser les hommes et toutes sortes de dangers sur le lieu de travail font basculer le projet dans un désastre. L\'homme du coin s\'excuse abondamment tout en se rongeant les ongles et en se demandant comment il va s\'y prendre avec le baron. En claquant des doigts, il s\'exclame qu\'il va simplement lui payer les couronnes.",
 			Image = "",
 			List = [],
 			Characters = [],
