@@ -10,13 +10,13 @@ this.more_action_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]You\'re sitting in your tent enjoying the peace and quiet which, like some increasable quantity, seemingly has accrued in such a way that each day is more enjoyable than the last. Suddenly, %combatbro1% and %combatbro2% enter. They demand you have a talk. You oblige, fanning your hands across your table and inviting them to sit. They do and quickly state that it has been a long while since they last saw combat. Taken aback, you quite literally lean back in your chair.%SPEECH_ON%Isn\'t that a good thing?%SPEECH_OFF%%combatbro1% shakes his head and cuts a determined hand through the air.%SPEECH_ON%No. We were hired to fight, and fighting is what we want. We want battles, we want carnage, and we want the glory that comes with both.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Vous êtes assis dans votre tente, profitant de la paix et de la tranquillité qui, comme une chose tangible, semble s\'être accumulée de telle manière que chaque jour est plus agréable que le précédent. Soudain, %combatbro1% et %combatbro2% entrent. Ils vous demandent de discuter. Vous vous exécutez en balayant la table de vos mains et en les invitant à s\'asseoir. Ils le font et déclarent rapidement que cela fait longtemps qu\'ils n\'ont pas vu de combat. Pris au dépourvu, vous vous penchez littéralement en arrière sur votre chaise. %SPEECH_ON%Ce n\'est pas une bonne chose ? %SPEECH_OFF%%combatbro1% secoue la tête et lance une main déterminée dans l\'air. %SPEECH_ON%Non. Nous avons été engagés pour nous battre, et nous voulons nous battre. Nous voulons des batailles, nous voulons du carnage, et nous voulons la gloire qui vient avec les deux.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll see battle soon - you have my word!",
+					Text = "Nous nous verrons bientôt en bataille - vous avez ma parole !",
 					function getResult( _event )
 					{
 						return "D";
@@ -24,7 +24,7 @@ this.more_action_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You\'re getting paid either way - and now you even get to live and spend the crowns.",
+					Text = "Vous serez payé de toute façon - et maintenant vous pouvez même vivre et dépenser les couronnes.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -41,13 +41,13 @@ this.more_action_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_64.png[/img]You nod.%SPEECH_ON%I understand. You are two battle-earnest men. You even remind me of myself though, with your skills, I can assure you that only I come out looking better by such a comparison. You are fine warriors, but is it not true that you will be paid the same regardless of this battle or that? Why be so worried about battles? They will come. I\'ve not paid you to sit. I\'ve paid you to be ready to stand.%SPEECH_OFF%The men exchange a glance and then shrug and nod. They stand up in unison.%SPEECH_ON%You are right, sir. And, when the time comes, we will be ready to stand and fight for you!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Vous acquiescez.%SPEECH_ON%Je comprends. Vous êtes deux hommes qui vivent de batailles. Vous me faites même penser à moi, mais avec vos compétences, je peux vous assurer que je suis le seul à sortir grandi d\'une telle comparaison. Vous êtes de bons guerriers, mais n\'est-il pas vrai que vous serez payés de la même façon quelle que soit la bataille ? Pourquoi être si inquiet au sujet des batailles ? Elles viendront. Je ne vous ai pas payé pour vous asseoir. Je vous ai payé pour que vous soyez prêts à vous lever.%SPEECH_OFF%Les hommes échangent un regard, puis haussent les épaules et acquiescent. Ils se lèvent à l\'unisson. %SPEECH_ON%Vous avez raison, chef. Et, quand le moment sera venu, nous serons prêts à nous lever et à nous battre pour vous!%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good to have the men burn for battle like this.",
+					Text = "C\'est bien d\'avoir des hommes façonnés pour la bataille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -64,13 +64,13 @@ this.more_action_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_64.png[/img]You try and explain to the men that, regardless of whether or not they\'re fighting, they are going to be getting paid. But money is not their primary concern. They truly wish to fight and you words have little effect on their rather earnest attitudes.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Vous essayez d\'expliquer aux hommes que, qu\'ils se battent ou non, ils vont être payés. Mais l\'argent n\'est pas leur préoccupation première. Ils veulent vraiment se battre et vos paroles ont peu d\'effet sur leur attitude plutôt sérieuse.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "But...",
+					Text = "Mais...",
 					function getResult( _event )
 					{
 						return 0;
@@ -88,7 +88,7 @@ this.more_action_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getBackground().isCombatBackground() && this.Math.rand(1, 100) <= 50)
 					{
-						bro.worsenMood(1.0, "Lost confidence in your leadership");
+						bro.worsenMood(1.0, "Perte de confiance en votre leadership");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -105,13 +105,13 @@ this.more_action_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_64.png[/img]You stand up and flatten your knuckles on the table.%SPEECH_ON%Is it fighting you want?%SPEECH_OFF%The men exchange a glance then quickly nod at you.%SPEECH_ON%Then it is fighting you shall have! Fear not the sheathed sword, mercenaries. I will find you a good battle in due time!%SPEECH_OFF%Rising to their feet, the men shake your hand. They thank you as they leave the tent. Once they\'re gone, you go to your maps and look for the nearest ass to kick.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Vous vous levez et écrasez vos poings sur la table. %SPEECH_ON% C\'est du combat que vous voulez ? %SPEECH_OFF% Les hommes échangent un regard puis vous font rapidement un signe de tête. %SPEECH_ON% Alors c\'est du combat que vous aurez ! Ne craignez pas l\'épée rengainée, mercenaires. Je vous trouverai une bonne bataille en temps voulu !%SPEECH_OFF%Les hommes se lèvent et vous serrent la main. Ils vous remercient en quittant la tente. Une fois qu\'ils sont partis, vous consultez vos cartes et cherchez le plus proche cul à botter.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good to have the men burn for battle like this.",
+					Text = "C\'est bien d\'avoir des hommes façonnés pour la bataille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -129,7 +129,7 @@ this.more_action_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getBackground().isCombatBackground() && this.Math.rand(1, 100) <= 25)
 					{
-						bro.improveMood(1.0, "Was promised a battle soon");
+						bro.improveMood(1.0, "On lui a promis une bataille pour bientôt");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

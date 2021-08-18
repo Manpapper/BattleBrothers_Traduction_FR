@@ -11,13 +11,13 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img] Ah, the campfire is brimming with talk and chatter. The men are enjoying some beer and food when rather suddenly the shouts of two men in particular get everyone else to quiet down, not because they yell louder than the rest, but because it\'s rather out of character for the both of them: the monks %monk1% and %monk2% are screaming-deep in a theological debate.\n\nYou\'ve not the education to understand the intricacies nor complexities of what they are arguing, but you do understand that getting into another man\'s face and pointing furiously at him, or at a holy book, is probably asking for trouble one way or another.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] Ah, les feux de camp débordant de conversations et de bavardages. Les hommes profitent de la bière et de la nourriture quand soudain, les cris de deux hommes en particulier incitent tout le monde à se calmer, non pas parce qu\'ils crient plus fort que les autres, mais parce que cela ne leur ressemble pas : les moines %monk1% et %monk2% sont en plein débat théologique. \n\nVous n\'avez pas l\'éducation nécessaire pour comprendre les subtilités et les complexités de ce qu\'ils discutent, mais vous comprenez que se provoquer un autre homme et le pointer furieusement du doigt, ou un livre saint, c\'est probablement s\'attirer des ennuis d\'une manière ou d\'une autre.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This doesn\'t concern me.",
+					Text = "Cela ne me concerne pas.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -25,7 +25,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "A mercenary company is no place to talk religion!",
+					Text = "Une compagnie de mercenaires n\'est pas un endroit pour parler de religion !",
 					function getResult( _event )
 					{
 						return 0;
@@ -42,13 +42,13 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img] For a moment, you think to stop the debate before it gets out of hand and into fists, but then you remember that this isn\'t the first time you\'ve seen two holy men exchanging rather heatedly. It\'s just what they do. So you decide to let the men hash it out. In time, their voices lower in volume, and their faces lower together into a book. They quietly peruse it, bumping heads as they draw their eyes over the pages. Finally, %monk1% raises up, pointing to some sentence.%SPEECH_ON%There! Right there! \'Man from mud\', not \'man from blood\'. Man can\'t be from blood, he is blood! Man can\'t be from himself, see? Now does it make sense?%SPEECH_OFF%Scratching his chin, %monk2% nods, but then wonders aloud.%SPEECH_ON%What if...%SPEECH_OFF%Before he can even finish the thought %monk1% slaps the book closed and throws his hands into the air.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] Pendant un moment, vous pensez à arrêter le débat avant qu\'il ne devienne incontrôlable et qu\'il ne se termine avec les poings, mais vous vous rappelez que ce n\'est pas la première fois que vous voyez deux hommes saints échanger de manière assez vive. C\'est juste ce qu\'ils font. Vous décidez donc de les laisser se disputer. Avec le temps, leurs voix baissent de volume et leurs visages se baissent pour vers un livre. Ils le feuillettent tranquillement, en se cognant la tête en parcourant les pages du regard. Finalement, %monk1% se lève et pointe du doigt une phrase.%SPEECH_ON%C\'est là ! Juste là ! \"Homme de la boue\", pas \"homme du sang\". L\'homme ne peut pas venir du sang, il est le sang ! L\'homme ne peut pas venir ce qu\'il est déjà, tu vois ? Maintenant est-ce que ça a un sens ? %SPEECH_OFF%Se grattant le menton, %monk2% acquiesce, mais se demande à haute voix. %SPEECH_ON%Et si...%SPEECH_OFF%Avant même qu\'il puisse terminer sa pensée %monk1% claque le livre et jette ses mains en l\'air.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The holy men avert another crisis.",
+					Text = "Les hommes saints évitent une autre crise.",
 					function getResult( _event )
 					{
 						return 0;
@@ -60,7 +60,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Monk1.getImagePath());
 				this.Characters.push(_event.m.Monk2.getImagePath());
-				_event.m.Monk1.improveMood(1.0, "Had a stimulating discourse on religious matters");
+				_event.m.Monk1.improveMood(1.0, "A eu un discours stimulant sur des questions religieuses");
 
 				if (_event.m.Monk1.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -71,7 +71,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 					});
 				}
 
-				_event.m.Monk2.improveMood(1, "Had a stimulating discourse on religious matters");
+				_event.m.Monk2.improveMood(1, "A eu un discours stimulant sur des questions religieuses");
 
 				if (_event.m.Monk2.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -86,13 +86,13 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_06.png[/img]Now, this isn\'t the first time you\'ve seen two monks squabbling. The last time it happened the debaters hashed it out right quick. So naturally you think these two will do the same. Alas, it isn\'t to be. Their voices grow louder and louder. You never knew monks could be so sharp-tongued. Fierceness and lewdness don\'t even begin to describe the insults being thrown back and forth. It isn\'t but a few seconds later that they are on the ground, wrestling and punching until you order %otherguy% to put an end to it.\n\nThe company of sellswords and their bloody daywork, it seems, have left a mark on the once peaceful demeanor of the two.",
+			Text = "[img]gfx/ui/events/event_06.png[/img]Ce n\'est pas la première fois que vous voyez les deux moines se chamailler. La dernière fois que c\'est arrivé, les moines se sont vite réconciliés. Alors naturellement, vous pensez que ces deux-là vont faire de même. Hélas, ce n\'est pas le cas. Leurs voix deviennent de plus en plus fortes. Vous ne saviez pas que les moines pouvaient avoir la langue si bien pendue. La férocité et l\'obscénité ne décrivent même pas les insultes qui sont lancées de part et d\'autre. Ce n\'est que quelques secondes plus tard qu\'ils se retrouvent au sol, à se battre et à se frapper jusqu\'à ce que vous ordonniez à %otherguy% d\'y mettre fin. La compagnie de mercenaires et leur journée de travail sanglante ont, semble-t-il, laissé une marque sur le comportement autrefois paisible de ces deux-là.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I suppose this is what they call a crisis of faith.",
+					Text = "Je suppose que c\'est ce qu\'on appelle une crise de foi.",
 					function getResult( _event )
 					{
 						return 0;
@@ -109,16 +109,16 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Monk1.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Détermination"
+					text = _event.m.Monk1.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Détermination"
 				});
 				_event.m.Monk2.getBaseProperties().Bravery += 1;
 				_event.m.Monk2.getSkills().update();
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Monk2.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Détermination"
+					text = _event.m.Monk2.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Détermination"
 				});
-				_event.m.Monk1.worsenMood(1.0, "Lost his composure and resorted to violence");
+				_event.m.Monk1.worsenMood(1.0, "A perdu son sang-froid et a eu recours à la violence");
 
 				if (_event.m.Monk1.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -129,7 +129,7 @@ this.monk_vs_monk_event <- this.inherit("scripts/events/event", {
 					});
 				}
 
-				_event.m.Monk2.worsenMood(1.0, "Lost his composure and resorted to violence");
+				_event.m.Monk2.worsenMood(1.0, "A perdu son sang-froid et a eu recours à la violence");
 
 				if (_event.m.Monk2.getMoodState() < this.Const.MoodState.Neutral)
 				{

@@ -7,13 +7,13 @@ this.no_food_variety_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_52.png[/img]{You find the mercenaries circled around a campfire, except they\'ve no real food to put over the flames. One throws his bowl of soup down. It is such a sludge that it barely moves to spill which is, honestly, quite disgusting. %randombrother% looks at you.%SPEECH_ON%Sir, please, let us get some meat! Or something beyond this shite!%SPEECH_OFF%A bit of variety wouldn\'t hurt, you agree. | %randombrother% comes to you and slams a spoon on your desk. There\'s something on the spoon, but what exactly you can\'t tell. The mercenary leans back, thumbs jacked into his beltline, his chest growing with breath. Then he sighs, for he knows not to behave in such ill-manner in your presence. But he does explain himself.%SPEECH_ON%Sir, the men are complaining about the food. I think it\'d be great for company morale if perhaps we picked up some meats and other goods in the next town. Only a suggestion, of course.%SPEECH_OFF%He quickly leaves. You pick up the spoon and look at whatever is in the scoop of it. That... that can\'t really be what they\'re eating out there, can it? Perhaps some variety wouldn\'t hurt... | %randombrother% approaches with a bowl in hand. He tilts it forward, showing the contents which are colorless and slide ever so slowly down the rim of the bowl. The mercenary shakes his head.%SPEECH_ON%The men are unhappy sir, and myself too, about the dinners we\'ve been eating. A man can only eat the same contents day after day for so long, especially when he knows he can afford so much more. It is only a suggestion, sir, from myself and from all the men, that perhaps we liven up our food stocks so that not every meal is... well, this.%SPEECH_OFF%He sets the bowl down and walks off. | A few of your mercenaries are complaining around a campfire. You stay within earshot, carefully listening as they might say things they wouldn\'t in your presence. Thankfully, it\'s not a mutiny in motion, but instead a series of cooking criticisms. There simply is not enough variety in the company\'s food stocks. They\'re tired of eating the same thing over and over. Perhaps this could be remedied in the next town the %companyname% visits?}",
+			Text = "[img]gfx/ui/events/event_52.png[/img]{Vous trouvez les mercenaires autour d\'un feu de camp, sauf qu\'ils n\'ont pas de vraie nourriture à mettre sur les flammes. L\'un d\'eux jette son bol de soupe par terre. C\'est une telle bouillie qu\'elle bouge à peine pour se renverser, ce qui est, honnêtement, assez dégoûtant.%randombrother% vous regarde.%SPEECH_ON%Boss, s\'il vous plaît, laissez-nous trouver de la viande ! Ou quelque chose d\'autre que cette merde!%SPEECH_OFF% Un peu de variété ne ferait pas de mal, vous êtes d\'accord. | %randombrother% vient vous voir et tape une cuillère sur votre bureau. Il y a quelque chose sur la cuillère, mais vous ne pouvez pas dire quoi exactement. Le mercenaire se penche en arrière, les pouces enfoncés dans sa ceinture, la poitrine gonflée par le souffle. Puis il soupire, car il sait qu\'il ne doit pas se comporter de façon aussi déplacée en votre présence. Mais il s\'explique.%SPEECH_ON%Sir, les hommes se plaignent de la nourriture. Je pense que ce serait bon pour le moral de la compagnie si nous allions chercher de la viande et d\'autres produits dans la prochaine ville. Ce n\'est qu\'une suggestion, bien sûr. %SPEECH_OFF%Il part rapidement. Vous ramassez la cuillère et regardez ce qu\'il y a dans la cuillère. Ça... ça ne peut pas vraiment être ce qu\'ils mangent, n\'est-ce pas ? Peut-être qu\'un peu de variété ne ferait pas de mal... | %randombrother% s\'approche avec un bol à la main. Il l\'incline vers l\'avant, montrant le contenu qui est incolore et glisse très lentement sur le bord du bol. Le mercenaire secoue la tête. %SPEECH_ON% Les hommes sont mécontents monsieur, et moi aussi, des dîners que nous avons mangés. Un homme ne peut pas manger le même contenu jour après jour pendant si longtemps, surtout quand il sait qu\'il peut se permettre beaucoup plus. Ce n\'est qu\'une suggestion, monsieur, de ma part et de celle de tous les hommes, que peut-être nous pourrions remplir nos stocks de nourriture pour que chaque repas ne soit pas... eh bien, ceci.%SPEECH_OFF% Il pose le bol et s\'en va. | Quelques-uns de vos mercenaires se plaignent autour d\'un feu de camp. Vous restez à portée de voix, écoutant attentivement car ils pourraient dire des choses qu\'ils ne diraient pas en votre présence. Heureusement, il ne s\'agit pas d\'une mutinerie en cours, mais plutôt d\'une série de critiques sur la cuisine. Il n\'y a tout simplement pas assez de variété dans les stocks de nourriture de la compagnie. Ils sont fatigués de manger la même chose encore et encore. Peut-être pourrait-on remédier à cela dans la prochaine ville que visitera %companyname% ?}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well, they ain\'t getting cake.",
+					Text = "Eh bien, ils n\'auront pas de gâteau.",
 					function getResult( _event )
 					{
 						return 0;
@@ -34,11 +34,11 @@ this.no_food_variety_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getSkills().hasSkill("trait.gluttonous"))
 					{
-						bro.worsenMood(1.0, "Has eaten nothing but ground grains for days");
+						bro.worsenMood(1.0, "N\'a mangé que des céréales moulues pendant des jours");
 					}
 					else
 					{
-						bro.worsenMood(0.5, "Has eaten nothing but ground grains for days");
+						bro.worsenMood(0.5, "N\'a mangé que des céréales moulues pendant des jours");
 					}
 
 					if (bro.getMoodState() < this.Const.MoodState.Neutral)

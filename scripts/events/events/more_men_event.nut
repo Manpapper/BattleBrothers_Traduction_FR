@@ -7,13 +7,13 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]The entire company - a motley little crew if you say so yourself - enters your tent all at once. A troupe of sellswords appearing in such a fashion is not the friendliest of sights and so for a split-second you think to reach for your sword. But then you notice that none of them have their weapons out nor do they carry the faces of men about to commit a murder. While they don\'t seem to be forming a mutiny to take your head, you keep the thought in mind nonetheless.\n\n You are only further relieved when they don\'t immediately start talking, instead waiting for your words to come first. This is a show of respect, and so the thought of reaching for your sword grows more distant. Crossing your arms over the table, you ask them what is on their minds.\n\n They explain that the company is too thin. Everywhere they go there is danger and the men are now concerned that every new battle shall be their last. Finally, they state their wants outright: if they are going to survive, they\'re going to need more brothers by their side.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]La compagnie entière - une petite équipe hétéroclite si vous deviez la décrire vous-même - entre dans votre tente en même temps. Une troupe de mercenaires apparaissant de la sorte n\'est pas le plus beau des spectacles et pendant une fraction de seconde, vous pensez à saisir votre épée. Mais vous remarquez alors qu\'aucun d\'entre eux n\'a sorti son arme et qu\'ils n\'ont pas le visage d\'hommes sur le point de commettre un meurtre. Bien qu\'ils ne semblent pas former une mutinerie pour s\'emparer de votre tête, vous gardez néanmoins cette idée à l\'esprit.\n\nVous êtes d\'autant plus soulagé qu\'ils ne commencent pas immédiatement à parler, attendant plutôt que vous parliez en premier. C\'est une preuve de respect, et l\'idée de prendre votre épée s\'éloigne. Croisant les bras au-dessus de la table, vous leur demandez ce qui les préoccupe.\n\nIls vous expliquent que la compagnie est trop faible. Partout où ils vont, il y a du danger et les hommes craignent maintenant que chaque nouvelle bataille soit leur dernière. Enfin, ils déclarent carrément ce qu\'ils veulent : s\'ils veulent survivre, ils vont avoir besoin de plus de frères d\'armes à leurs côtés.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'d hire more men if only we could afford it.",
+					Text = "J\'embaucherais plus d\'hommes si seulement nous pouvons nous le permettre.",
 					function getResult( _event )
 					{
 						if (this.World.Assets.getMoney() >= 3000)
@@ -30,7 +30,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ll reinforce the company with new men soon - you have my word.",
+					Text = "Nous renforcerons bientôt la compagnie avec de nouveaux hommes - vous avez ma parole.",
 					function getResult( _event )
 					{
 						return "B";
@@ -38,7 +38,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "There is no need to hire men, we\'re doing fine this way.",
+					Text = "Il n\'y a pas besoin d\'embaucher des hommes, on se débrouille bien comme ça.",
 					function getResult( _event )
 					{
 						return "C";
@@ -53,7 +53,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You immediately stand up and rap the table with your knuckles.%SPEECH_ON%The best of minds truly must think alike for I have already set aside some crowns for hiring new brothers!%SPEECH_OFF%The anxious, almost sad faces on the men slowly begin to change. They smile and nod and say things like \'alright\' and \'that\'s good.\' When they turn to leave, you notice they\'ve got daggers sheathed behind their backs.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous vous levez immédiatement et frappez la table avec vos poings. %SPEECH_ON%Les meilleurs esprits doivent vraiment se penser de la même façon car j\'ai déjà mis de côté quelques couronnes pour engager de nouveaux frères d\'armes !%SPEECH_OFF%Les visages anxieux, presque tristes des hommes commencent lentement à changer. Ils sourient, hochent la tête et disent des choses comme \"bien\" et \"c\'est bien\". Quand ils se tournent pour partir, vous remarquez qu\'ils ont des poignards rangés derrière leur dos.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -74,13 +74,13 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]Unfortunately, you just don\'t agree.%SPEECH_ON%You are some of the finest soldiers I\'ve ever seen. I don\'t think you have anything to fear. Our enemies fear for their own lives when they see you!%SPEECH_OFF%But your words don\'t go over well. One man leans forward with an arm behind his back, but another man claps a hand on his shoulder and quickly shakes his head. He only looks at you and says.%SPEECH_ON%This is most concerning news, sir, but we shall carry on.%SPEECH_OFF%When they turn to leave, you notice the clasp on one man\'s sheathed dagger has been unlatched.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Malheureusement, vous n\'êtes pas d\'accord.%SPEECH_ON%Vous êtes parmi les meilleurs soldats que j\'ai jamais vus. Je pense que vous n\'avez rien à craindre. Nos ennemis craignent pour leurs propres vies quand ils vous voient !%SPEECH_OFF%Mais vos paroles ne sont pas bien reçues. Un homme se penche en avant avec un bras derrière le dos, mais un autre homme lui tape sur l\'épaule et secoue rapidement la tête. Il vous regarde seulement et dit : %SPEECH_ON% C\'est une nouvelle très inquiétante, monsieur, mais nous allons continuer.%SPEECH_OFF% Lorsqu\'ils se tournent pour partir, vous remarquez que le fermoir de la dague rengainée d\'un homme a été déverrouillé.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That could be a problem...",
+					Text = "Ça pourrait devenir un problème...",
 					function getResult( _event )
 					{
 						return 0;
@@ -96,7 +96,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 50)
 					{
-						bro.worsenMood(this.Math.rand(1, 3), "Lost confidence in your leadership");
+						bro.worsenMood(this.Math.rand(1, 3), "Perte de confiance en votre leadership");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -113,13 +113,13 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_05.png[/img]Fanning your arms out and pressing forth a smile that couldn\'t sell water to a thirsty man, you lie.%SPEECH_ON%We\'ve simply not the coffers to take on more men.%SPEECH_OFF%The men don\'t take it well. One immediately turns around and exits the tent, a wake of curses and swears in the wake of his leaving. Another brother momentarily reaches behind his back. You glance at your sword again. He sees you doing this, and then puts his hands back where you can see them. Finally, he nods.%SPEECH_ON%We\'ll do as told, sir. For now.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous mentez en écartant les bras et en affichant un sourire qui ne vendrait pas d\'eau à un homme assoiffé. %SPEECH_ON%Nous n\'avons tout simplement pas les fonds nécessaires pour engager plus d\'hommes. %SPEECH_OFF%Les hommes ne le prennent pas bien. L\'un d\'entre eux fait immédiatement demi-tour et sort de la tente, laissant derrière lui un sillage d\'insultes et de jurons. Un autre frère d\'armes passe momentanément la main derrière son dos. Vous regardez à nouveau votre épée. Il vous voit faire cela, puis remet ses mains en place, là où vous pouvez les voir. Finalement, il hoche la tête.%SPEECH_ON%Je ferai ce qu\'on me dit, monsieur. Pour l\'instant.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That could be a problem...",
+					Text = "Ça pourrait devenir un problème...",
 					function getResult( _event )
 					{
 						return 0;
@@ -133,7 +133,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 
 				foreach( bro in brothers )
 				{
-					bro.worsenMood(this.Math.rand(1, 6), "Was lied to and lost confidence in your leadership");
+					bro.worsenMood(this.Math.rand(1, 6), "On lui a menti et il n\'a plus confiance en votre leadership.");
 					this.List.push({
 						id = 10,
 						icon = this.Const.MoodStateIcon[bro.getMoodState()],
@@ -145,13 +145,13 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_05.png[/img]When you let the men know that you\'ve not enough crowns on hand to hire more men, they nod.%SPEECH_ON%We thought you might say that. So here\'s our suggestion, and we don\'t say this lightly, but each of us will give you part of what we saved up for retirement so that you may hire others. And you\'ll pay us back with our wages.%SPEECH_OFF%You quickly glance up, the suggestion seemingly coming out of nowhere.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Lorsque vous faites savoir aux hommes que vous n\'avez pas assez de couronnes pour en engager d\'autres, ils acquiescent.%SPEECH_ON%Nous savions que vous alliez dire ça, alors voici notre suggestion, et nous ne le disons pas à la légère, mais chacun de nous vous donnera une partie de ce qu\'il a économisé pour sa retraite afin que vous puissiez embaucher d\'autres hommes. Et vous nous rembourserez en augmentant nos salaires.%SPEECH_OFF%Vous levez rapidement les yeux au ciel, la suggestion semblant venir de nulle part.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This is the way we shall do it then - thank you all for your sacrifice.",
+					Text = "C\'est ainsi que nous procéderons alors - merci à tous pour votre sacrifice.",
 					function getResult( _event )
 					{
 						return "G";
@@ -159,7 +159,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "That won\'t be necessary.",
+					Text = "Ce ne sera pas nécessaire.",
 					function getResult( _event )
 					{
 						return "H";
@@ -174,13 +174,13 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You let the men know that you\'ve not the crowns to take on more sellswords. They collectively sigh and nod.%SPEECH_ON%That\'s alright, sir. T\'was only a suggestion. As always, we shall march on your orders.%SPEECH_OFF%The men turn and leave, a little slouched over and quieter than before.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous faites savoir aux hommes que vous n\'avez pas les couronnes pour prendre plus de mercenaires. Ils soupirent collectivement et hochent la tête.%SPEECH_ON%C\'est bon, monsieur. C\'était seulement une suggestion. Comme toujours, nous marcherons sur vos ordres.%SPEECH_OFF%Les hommes se retournent et partent, un peu plus courbés et plus silencieux qu\'avant.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Things will pick up for the company, I\'m sure.",
+					Text = "Les choses vont s\'améliorer pour la compagnie, j\'en suis sûr.",
 					function getResult( _event )
 					{
 						return 0;
@@ -196,7 +196,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 20)
 					{
-						bro.worsenMood(1, "Lost confidence in your leadership");
+						bro.worsenMood(1, "Perte de confiance en votre leadership");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -213,13 +213,13 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You get up and shake the hands of each man. While you loudly state that you wish it didn\'t come to this, you are secretly beaming at the fact you now have more crowns at your disposal.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous vous levez et serrez la main de chaque homme. Tout en déclarant à voix haute que vous souhaitiez ne pas en arriver là, vous vous réjouissez secrètement du fait que vous avez maintenant plus de couronnes à votre disposition.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s go hire some more men for the company!",
+					Text = "Allons embaucher quelques hommes de plus pour la compagnie !",
 					function getResult( _event )
 					{
 						return 0;
@@ -233,7 +233,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 1000 + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 1000 + "[/color] Couronnes"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -244,7 +244,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_daily_money.png",
-						text = bro.getName() + " is now paid " + bro.getDailyCost() + " crowns a day"
+						text = bro.getName() + " est maintenant payé " + bro.getDailyCost() + " Couronnes par jour"
 					});
 				}
 			}
@@ -252,13 +252,13 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "H",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You look the men over. They are solemn creatures, not the ones you last saw grinning and laughing over their latest victory or triumph. While you can\'t yet afford to get them more men, there really is no need to cut their pay.%SPEECH_ON%I appreciate the selflessness and bravery it must\'ve took to suggest such a thing, but I cannot possibly consider myself a man of honor and grant you this request. Your savings shall remain untouched.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous regardez les hommes. Ce sont des personnes solennelles, pas celles que vous avez vues la dernière fois, souriant et riant de leur dernière victoire ou triomphe. Bien que vous ne puissiez pas encore vous permettre de leur donner plus d\'hommes, il n\'y a vraiment pas besoin de piocher dans leur retraite.%SPEECH_ON% J\'apprécie l\'altruisme et la bravoure qu\'il a fallu pour suggérer une telle chose, mais je ne peux pas me considérer comme un homme d\'honneur et vous accorder cette requête. Vos économies ne seront pas touchées.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I appreciate the offer, nontheless.",
+					Text = "J\'apprécie l\'offre, néanmoins.",
 					function getResult( _event )
 					{
 						return 0;
@@ -274,7 +274,7 @@ this.more_men_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 20)
 					{
-						bro.improveMood(1.0, "Gained confidence in your leadership");
+						bro.improveMood(1.0, "Confiance accrue en votre leadership");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

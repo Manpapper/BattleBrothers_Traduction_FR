@@ -7,13 +7,13 @@ this.no_food_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_52.png[/img]{Food stocks have run out! Despite the horrors of this world, the %companyname% can\'t be fielding a company of skeletons! You need to get the men food fast before they rightfully leave. | Even the most loyal of men is only as good as about five or six missed meals. After that, anyone is apt to leave and get themselves fed. Acquire food - and do it fast before the company falls apart! | You\'ve miscalculated the food reserves and placed the %companyname% into a unique danger - that of going hungry. Even the deadliest of companies would fall apart in days if it goes unfed and this company will be no different if you don\'t change things fast!}",
+			Text = "[img]gfx/ui/events/event_52.png[/img]{Les stocks de nourriture sont épuisés ! Malgré les horreurs de ce monde, la compagnie %companyname% ne peut pas engager une compagnie de squelettes ! Vous devez apporter de la nourriture aux hommes avant qu\'ils ne partent. | Même le plus loyal des hommes ne peut tenir que cinq ou six repas manqués. Après cela, tout le monde est susceptible de partir pour se nourrir. Procurez-vous de la nourriture - et faites-le vite avant que la compagnie ne s\'effondre ! | Vous avez mal évalué les réserves de nourriture et placé la compagnie %companyname% dans un danger unique - celui d\'avoir faim. Même la plus mortelle des compagnies s\'effondrerait en quelques jours si elle n\'est pas nourrie et cette compagnie ne sera pas différente si vous ne changez pas les choses rapidement !}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I need to get the men something to eat.",
+					Text = "Je dois donner aux hommes quelque chose à manger.",
 					function getResult( _event )
 					{
 						return 0;
