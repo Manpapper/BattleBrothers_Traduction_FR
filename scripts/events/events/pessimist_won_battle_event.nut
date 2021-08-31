@@ -9,13 +9,13 @@ this.pessimist_won_battle_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 35.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]Ever the downer, %pessimist% mopes around, wallowing in victory as good as any pissy pessimist could. He throws a dismissive hand out.%SPEECH_ON%We have tasted victory and what of it? Our victory was their defeat, so it very well may be that one day someone else\'s victory is going to come at our expense, don\'t you see? Let us not put the cart in front of the horse lest the shadows of morrow sneak upon us whilst we bask in this supposedly glorious light.%SPEECH_OFF%A few sellswords tell him to stop being such a prick, but his brunt realism tempers the zeal of others.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Toujours aussi déprimant, %pessimist% se morfond, se complaisant dans la victoire aussi bien que n\'importe quel pessimiste. Il jette une main dédaigneuse.%SPEECH_ON% Nous avons goûté à la victoire et qu\'en est-il ? Notre victoire a été leur défaite, alors il se peut très bien qu\'un jour la victoire de quelqu\'un d\'autre se fasse à nos dépens, ne voyez-vous pas ? Ne mettons pas la charrue devant les bœufs, de peur que les ombres du lendemain ne nous surprennent pendant que nous nous prélassons dans cette lumière soi-disant glorieuse.%SPEECH_OFF% Quelques mercenaires lui disent d\'arrêter de faire le con, mais son réalisme brutal tempère le zèle des autres.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The worst part about pessimists is that they\'re usually right.",
+					Text = "Le pire avec les pessimistes, c\'est qu\'ils ont souvent raison.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.pessimist_won_battle_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Pessimist.getImagePath());
-				_event.m.Pessimist.worsenMood(0.5, "Is pessimistic despite a recent victory");
+				_event.m.Pessimist.worsenMood(0.5, "Est pessimiste malgré une récente victoire");
 
 				if (_event.m.Pessimist.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -48,7 +48,7 @@ this.pessimist_won_battle_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 50 && !bro.getSkills().hasSkill("trait.optimist"))
 					{
-						bro.worsenMood(0.4, "Tempered by " + _event.m.Pessimist.getName() + "\'s pessimism");
+						bro.worsenMood(0.4, "Tempéré par le pessimiste de " + _event.m.Pessimist.getName());
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{

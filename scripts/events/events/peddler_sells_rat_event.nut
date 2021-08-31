@@ -10,13 +10,13 @@ this.peddler_sells_rat_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 80.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%SPEECH_ON%For the last time, no, I won\'t buy a rat.%SPEECH_OFF%You see %ratcatcher% the ratcatcher turn a corner with the skeevy peddler %peddler% on his heels. The salesman throws another pitch.%SPEECH_ON%\'Course you won\'t buy one! You\'re a ratcatcher, why would you buy one? But what if...%SPEECH_OFF%The ratcatcher stops and turns on his heels, planting a firm finger into the peddler\'s chest.%SPEECH_ON%Pet rats don\'t go grow on trees, %peddler%! They\'re born of a different stock! If I need a rat by my side I\'ll find him myself! Now, if you got a rat you need killin\', that\'s a different matter.%SPEECH_OFF%%peddler%\'s eyes fall to the ground, thinking for a moment. Suddenly, his gaze lifts along with his spirits and a pointing finger.%SPEECH_ON%Ah, a goldfish then? Would you buy a goldfish?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%SPEECH_ON%Pour la dernière fois, non, je n\'achèterai pas de rat.%SPEECH_OFF%Vous voyez %ratcatcher% le chasseur de rats tourner un coin de rue avec le colporteur %peddler% derrière lui. Le vendeur lance un autre discours. %SPEECH_ON%Bien sûr, tu n\'en achèteras pas ! Tu es un chasseur de rats, pourquoi en achèterais-tu un ? Mais si... %SPEECH_OFF%Le chasseur de rats s\'arrête et tourne sur ses talons, plantant un doigt ferme dans la poitrine du colporteur. %SPEECH_ON%Les rats de compagnie ne poussent pas sur les arbres, %peddler% ! Ils sont d\'une autre race ! Si j\'ai besoin d\'un rat à mes côtés, je le trouverai moi-même ! Maintenant, si tu as un rat à tuer, c\'est une autre histoire. %SPEECH_OFF%Les yeux de %peddler% se baissent vers le sol, il réfléchit un moment. Soudain, son regard se lève avec son esprit et un doigt pointé.%SPEECH_ON%Ah, un poisson rouge alors ? Est-ce que vous achèteriez un poisson rouge ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Everything in order here.",
+					Text = "Tout est en ordre ici.",
 					function getResult( _event )
 					{
 						return 0;

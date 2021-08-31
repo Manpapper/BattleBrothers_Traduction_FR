@@ -11,13 +11,13 @@ this.oldguard_becomes_drunkard_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_39.png[/img]You find %oldguard% nursing a rather large tankard next to a fire. In fact, it\'s not a tankard at all, but a wooden bucket filled with ale. A few more modest mugs are littered about his feet. He tips back, gulping from the bucket\'s lip. When he sees you, he tries to dress up, sloughing the foam off his face and attempting a smile that quickly sloops into a drunken frown.%SPEECH_ON%Hey there, captain. Didn\'t mean for you to see me like this.%SPEECH_OFF%You set yourself down by the man and ask how he is doing.%SPEECH_ON%Being drunk.%SPEECH_OFF%Nodding, you reach for the bucket and the man gives it up, though his hands are shaped as if to still be holding it. You set the bucket down and ask again how he is doing. He finally drops his hands into his lap.%SPEECH_ON%Like shit. That\'s how I\'m feeling. First, %casualty% went down. Then %othercasualty%. I know there\'s been at least five or six others. Just dead men. Come and gone. I got memories of them talking, and memories of them screaming, and I can\'t have one without the other. But I\'m alright now cause right now I can\'t even think straight. If I can\'t unlearn a memory, I\'ll just go ahead and drown it. The ale does me well, heh.%SPEECH_OFF%With a sigh, you hand the bucket back to the man. Eyes lost in the fire, his mind lost in the past, he says nothing else.",
+			Text = "[img]gfx/ui/events/event_39.png[/img]Vous trouvez %oldguard% en train de soigner une assez grande chope près d\'un feu. En fait, ce n\'est pas du tout une chope, mais un seau en bois rempli de bière. Quelques chopes plus modestes sont éparpillées à ses pieds. Il se penche en arrière, et boit à petites gorgées depuis le bord du seau. Quand il vous voit, il essaie de se mettre sur son 31, en enlevant la mousse de son visage et en tentant un sourire qui se transforme rapidement en un froncement de sourcils d\'ivrogne.%SPEECH_ON%Salut, capitaine. Je ne voulais pas que vous me voyiez comme ça.%SPEECH_OFF%Vous vous installez près de l\'homme et lui demandez comment il va.%SPEECH_ON%Ivre.%SPEECH_OFF%En hochant la tête, vous tendez la main vers le seau et l\'homme vous le tend, bien que ses mains soient serrés comme s\'il le tenait encore. Vous posez le seau et lui demandez à nouveau comment il va. Il finit par laisser tomber ses mains sur ses genoux.%SPEECH_ON%Comme une merde. C\'est ce que je ressens. D\'abord, %casualty% est tombé. Puis %autrecasualty%. Je sais qu\'il y en a eu au moins cinq ou six autres. Juste des hommes morts. Venus et partis. Je me souviens d\'eux en train de parler, et d\'eux en train de crier, et je ne peux pas avoir l\'un sans l\'autre. Mais je vais bien maintenant, parce que je n\'arrive pas à penser correctement. Si je ne peux pas désapprendre un souvenir, je vais juste aller de l\'avant et le noyer. La bière me fait du bien, heh.%SPEECH_OFF%Avec un soupir, vous rendez le seau à l\'homme. Les yeux perdus dans le feu, l\'esprit perdu dans le passé, il ne dit rien d\'autre.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To absent friends...",
+					Text = "Aux amis absents...",
 					function getResult( _event )
 					{
 						return 0;
@@ -33,9 +33,9 @@ this.oldguard_becomes_drunkard_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.Oldguard.getName() + " has become a drunkard"
+					text = _event.m.Oldguard.getName() + " est devenu un ivrogne"
 				});
-				_event.m.Oldguard.worsenMood(1.0, "Has lost too many friends");
+				_event.m.Oldguard.worsenMood(1.0, "A perdu trop d\'amis");
 
 				if (_event.m.Oldguard.getMoodState() < this.Const.MoodState.Neutral)
 				{

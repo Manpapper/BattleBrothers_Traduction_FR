@@ -9,13 +9,13 @@ this.optimist_lost_battle_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 35.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_88.png[/img]Despite a recent defeat, %optimist% still sees a bright future for the %companyname%.%SPEECH_ON%Not all of life can be spent standin\', fellas. Sometimes it\'s gotta be spent getting\' back up. But we\'ll never spend it layin\' down forever, I know that much! This company\'s too good for that lollygaggin\' shite.%SPEECH_OFF%The ever optimistic sellsword\'s relentless positivity rubs off on some of the men, raising their spirits and leaving them ready for the tomorrows to come.",
+			Text = "[img]gfx/ui/events/event_88.png[/img]Malgré une récente défaite, %optimist% voit toujours un brillant avenir pour %companyname%. %SPEECH_ON% La vie ne peut pas toujours être passée debout, les gars. Parfois, il faut la passer à se relever. Mais on ne la passera jamais à se coucher pour toujours, ça je le sais ! Cette compagnie est trop bonne pour toutes ces conneries.%SPEECH_OFF% L\'optimisme sans faille du mercenaire déteint sur certains des hommes, leur remontant le moral et les laissant prêts pour les jours à venir.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A man to go down fighting with.",
+					Text = "Un homme avec qui se battre.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.optimist_lost_battle_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Optimist.getImagePath());
-				_event.m.Optimist.improveMood(0.5, "Is optimistic despite a recent setback");
+				_event.m.Optimist.improveMood(0.5, "Est optimiste malgré un récent revers");
 
 				if (_event.m.Optimist.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -48,7 +48,7 @@ this.optimist_lost_battle_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 50 && !bro.getSkills().hasSkill("trait.pessimist"))
 					{
-						bro.improveMood(0.5, "Rallied by " + _event.m.Optimist.getName() + "\'s optimism");
+						bro.improveMood(0.5, "Rallié par l\'optimisme de " + _event.m.Optimist.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

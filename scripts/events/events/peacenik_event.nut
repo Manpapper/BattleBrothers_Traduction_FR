@@ -9,13 +9,13 @@ this.peacenik_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_40.png[/img]While on the path, you come across a man staring at a hole in the ground. Naturally, you go over and ask what he\'s doing. He states that there\'s an orc in the pit. You look down. There is. Taking out your sword, you ask if you should take care of it for him. He reels back.%SPEECH_ON%What? No! I want that alive. I think we can try and understand it.%SPEECH_OFF%Understand it? What is this man on about? He pleads.%SPEECH_ON%Let us merely try! Everyone kills an orc on sight, but they\'re not mere animals. They show intelligence, and if they have intelligence it means that they can learn, and if they can learn then perhaps they can learn to coexist with us.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_40.png[/img]Sur le chemin, vous croisez un homme qui regarde fixement un trou dans le sol. Naturellement, vous vous approchez et lui demandez ce qu\'il fait. Il dit qu\'il y a un orque dans le trou. Vous regardez en bas. Il y en a un. Vous sortez votre épée et vous demandez si vous pouvez vous en occuper pour lui. Il recule.%SPEECH_ON%Quoi ? Non ! Je le veux vivant. Je pense qu\'on peut essayer de le comprendre.%SPEECH_OFF%Comprendre ? Qu\'est-ce que cet homme veut dire ? Il supplie.%SPEECH_ON% Laissez-nous simplement essayer ! Tout le monde tue un orc à vue, mais ce ne sont pas de simples animaux. Ils font preuve d\'intelligence, et s\'ils ont de l\'intelligence cela signifie qu\'ils peuvent apprendre, et s\'ils peuvent apprendre alors peut-être qu\'ils peuvent apprendre à coexister avec nous.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Dogs are smart, too, but what do we do with the bad ones?",
+					Text = "Les chiens sont aussi intelligents, mais que faisons-nous des mauvais ?",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.peacenik_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Right. Good luck with that.",
+					Text = "Bien sûr. Bonne chance avec ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -38,13 +38,13 @@ this.peacenik_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_40.png[/img]%houndmaster% the houndmaster nods and explains that an animal, no matter how intelligent or well trained, is still an animal. The peacenik thinks for a time.%SPEECH_ON%I-it\'s not a mere dog, though!%SPEECH_OFF%Your houndmaster takes the man by the shoulder.%SPEECH_ON%But you\'ve cornered it like one, haven\'t you? What do you think a man would do in this situation, all his intellect and wisdom with him, his back to a wall and enemies afoot? This is not the place nor time for making \'peace,\' friend, whether it be with man or beast.%SPEECH_OFF%The stranger slowly begins to nod. He sees the sense of the argument and, thankfully, lets you destroy the orc without any incident. With the greenskin put away, the man gives you a satchel of crowns.%SPEECH_ON%I wanted to try and parlay with it using these. That ain\'t happening now, clearly, and I\'d probably be dead if you hadn\'t shown up. Consider this my thanks, sellsword.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_40.png[/img]%houndmaster% le maître chien acquiesce et explique qu\'un animal, aussi intelligent ou bien dressé soit-il, reste un animal. Le pacifiste réfléchit un moment.%SPEECH_ON%I- ce n\'est pas un simple chien, pourtant!%SPEECH_OFF%Votre maître chien prend l\'homme par l\'épaule.%SPEECH_ON%Mais vous l\'avez acculé comme tel, n\'est-ce pas ? Que pensez-vous qu\'un homme ferait dans cette situation, avec toute son intelligence et sa sagesse, le dos au mur et des ennemis à l\'affût ? Ce n\'est ni l\'endroit ni le moment de faire la \"paix\", ami, que ce soit avec les hommes ou les bêtes.%SPEECH_OFF%L\'étranger commence lentement à hocher la tête. Il comprend le sens de l\'argument et, heureusement, te laisse détruire l\'orc sans aucun incident. Une fois la peau verte enlevée, l\'homme vous donne une sacoche de couronnes.%SPEECH_ON% Je voulais essayer de négocier avec lui en utilisant celles-ci. Ce n\'est plus le cas maintenant, clairement, et je serais probablement mort si vous n\'étiez pas arrivé. Considérez ceci comme mes remerciements, mercenaire.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Much appreciated.",
+					Text = "Nous apprécions beaucoup.",
 					function getResult( _event )
 					{
 						return 0;
@@ -59,7 +59,7 @@ this.peacenik_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Couronnes"
 				});
 				_event.m.Houndmaster.getBaseProperties().Bravery += 1;
 				_event.m.Houndmaster.getSkills().update();
@@ -68,7 +68,7 @@ this.peacenik_event <- this.inherit("scripts/events/event", {
 					icon = "ui/icons/bravery.png",
 					text = _event.m.Houndmaster.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Détermination"
 				});
-				_event.m.Houndmaster.improveMood(1.0, "Gave a lecture on the nature of animals");
+				_event.m.Houndmaster.improveMood(1.0, "Il a donné une conférence sur la nature des animaux");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Houndmaster.getMoodState()],

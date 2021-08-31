@@ -10,13 +10,13 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 35.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img] You find the nobleman %nobleman_short% and the rather ragged-looking %lowborn% quarreling over the last piece of food on a spit. Apparently the lowborn got his fork to it first, but the nobleman claimed that his high stature granted him the right to the meat.",
+			Text = "[img]gfx/ui/events/event_64.png[/img] Vous trouvez %nobleman_short% le noble et %lowborn% à l\'air plutôt débraillé en train de se disputer le dernier morceau de nourriture sur une broche. Apparemment, %lowborn% a pris sa fourchette en premier, mais le noble prétend que sa haute stature lui donne droit à la viande.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Sort it out yourselves.",
+					Text = "Réglez ça vous-mêmes.",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,7 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "In the company of sellswords, no man is low or highborn.",
+					Text = "Dans la compagnie des mercenaires, personne n\'est de basse ou de haute naissance.",
 					function getResult( _event )
 					{
 						return "C";
@@ -32,7 +32,7 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You know the rules of the land, give the noble what he wants.",
+					Text = "Tu connais les règles du pays, donne au noble ce qu\'il veut.",
 					function getResult( _event )
 					{
 						return "D";
@@ -49,13 +49,13 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_06.png[/img] As the two men look to you for guidance, you fold your arms and shrug. They slowly turn back to one another. The other men in the camp stand up and step back, giving room to what is coming. The lowborn draws his dagger first. It is a simple thing with a wooden handle and jagged, unnaturally serrated edges. The nobleman pulls his blade in return, brandishing a metal that curves with the care of a blacksmith\'s mastery. Two golden snakes curl up the handle to bite the pommel. Its wielder grins, saying the riff-raff should learn their place. The lowborn grins like a man who has had no practice doing it.\n\nSurprisingly, both men then chuck the daggers into the stumps upon which they sat and close rank with fists raised, the most equal of fighting grounds. In the ensuing battle the spit is immediately knocked aside and flames fan upward, raining wild embers and the felled food is now flavored with ash and soot.\n\nSeeing their meal ruined, the rest of the company finally puts an end to the combat, pulling the two men apart. They threaten and spit at one another, but after a few minutes everything settles down.",
+			Text = "[img]gfx/ui/events/event_06.png[/img] Alors que les deux hommes vous regardent pour votre avis, vous croisez les bras et haussez les épaules. Ils se retournent lentement l\'un vers l\'autre. Les autres hommes du camp se lèvent et reculent, laissant la place à ce qui va arriver. Le bas-né tire sa dague en premier. C\'est une chose simple avec un manche en bois et des bords dentelés de façon non naturelle. Le noble tire sa lame en retour, brandissant un métal qui se courbe une lame faite par un fin forgeron. Deux serpents dorés s\'enroulent le long du manche pour mordre le pommeau. Celui qui la manie sourit, disant que la racaille devrait apprendre sa place. Le bas-né sourit comme un homme qui n\'a pas l\'habitude de le faire.\n\n Étonnamment, les deux hommes jettent ensuite les dagues dans les souches sur lesquelles ils sont assis et se lèvent, poings levés, pour un combat plus égal qui ne dépend pas de l\'équipement. Dans la bataille qui s\'ensuit, la broche est immédiatement mise de côté et les flammes s\'élèvent, faisant pleuvoir des braises sauvages et la nourriture abattue est maintenant parfumée de cendres et de suie. Voyant leur repas gâché, le reste de la compagnie met finalement fin au combat, séparant les deux hommes. Ils se menacent et se crachent dessus, mais après quelques minutes, tout se calme.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "They\'ll become brothers in battle soon enough.",
+					Text = "Ils deviendront des frères d\'armes bien assez tôt.",
 					function getResult( _event )
 					{
 						return 0;
@@ -84,13 +84,13 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_64.png[/img]%nobleman% looks aghast. He slowly lifts his fork from the spit and %lowborn% immediately shovels the last bit of meat into his mouth. The nobleman gets up and heads your way. He straightens before you, bumping his chest into yours as you lock eyes. A few of the men put their hands on their pommels.%SPEECH_ON%{Siding with the lowborn, huh? I fancied you would, being lowborn yourself. Don\'t ever expect to become one of us. You\'re a sellsword for life. Remember that. | You expect to get a piece of land when all this is said and done, yeah? I hope you do, because then I\'ll come and knock and show you how nobles really treat one another.}%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Le %nobleman% a l\'air effaré. Il soulève lentement sa fourchette de la broche et %lowborn% s\'enfonce immédiatement le dernier morceau de viande dans la bouche. Le noble se lève et se dirige vers vous. Il se redresse devant vous, heurtant sa poitrine contre la vôtre tandis que vous vous regardez fixement. Quelques hommes posent leurs mains sur leurs pommeaux. %SPEECH_ON%{Se ranger du côté des bas-né, hein ? Je m\'en doutais, puisque tu es toi-même de basse naissance. Ne t\'attends pas à devenir l\'un des nôtres. Tu es un mercenaire à vie. Souviens-toi de ça. | Tu espères avoir un bout de terrain quand tout ça sera terminé, hein ? J\'espère que oui, parce qu\'alors je viendrai frapper et te montrer comment les nobles se traitent vraiment les uns les autres.}%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Get out of my sight.",
+					Text = "Hors de ma vue.",
 					function getResult( _event )
 					{
 						return 0;
@@ -102,7 +102,7 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Noble.getImagePath());
 				this.Characters.push(_event.m.Lowborn.getImagePath());
-				_event.m.Noble.worsenMood(2.0, "Was humiliated in front of the company");
+				_event.m.Noble.worsenMood(2.0, "A été humilié devant la compagnie");
 
 				if (_event.m.Noble.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -117,13 +117,13 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_64.png[/img]%nobleman% grins as he knocks %lowborn%\'s fork out of the way. The nobleman takes the food for himself as the lowborn gets up and storms toward you. As he nears, some men look ready to draw swords, but you hold a hand out, calming them.%SPEECH_ON%I thought you were one of us, but I guess not. I suppose you think someday you\'ll be one of them, huh? Keep dreaming. As that man would say to me, \'Know your place\'.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_64.png[/img]L\'homme noble sourit en repoussant la fourchette de l\'homme de basse naissance. Le noble prend la nourriture pour lui tandis que le bas-né se lève et fonce vers vous. Alors qu\'il s\'approche, certains hommes semblent prêts à dégainer leur épée, mais vous tendez une main pour les calmer.%SPEECH_ON% Je pensais que tu étais l\'un des nôtres, mais je suppose que non. Je suppose que tu penses qu\'un jour tu seras l\'un d\'entre eux, hein ? Continue de rêver. Comme cet homme me disait, "\Connais ta place\".%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Get out of my sight.",
+					Text = "Hors de ma vue.",
 					function getResult( _event )
 					{
 						return 0;
@@ -135,7 +135,7 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Noble.getImagePath());
 				this.Characters.push(_event.m.Lowborn.getImagePath());
-				_event.m.Lowborn.worsenMood(2.0, "Was humiliated in front of the company");
+				_event.m.Lowborn.worsenMood(2.0, "A été humilié devant la compagnie");
 
 				if (_event.m.Lowborn.getMoodState() < this.Const.MoodState.Neutral)
 				{

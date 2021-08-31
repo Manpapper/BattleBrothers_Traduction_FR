@@ -9,13 +9,13 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%peddler% comes to you, rubbing the back of his neck and nervously pulling on the front of his shirt. He proposes a plan wherein he goes into town with a handful of goods to peddle around, as he\'s done so often in the past.\n\nOnly problem is that he doesn\'t yet have the goods - he has to buy them from some local in the nearby hinterlands. All he needs now is a bit of money to get him started and help purchase the goods. A sum of 500 crowns all in all. Naturally, as a partner, you will get a cut of the profits once it\'s all said and done.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%peddler% vient vers vous, se frottant la nuque et tirant nerveusement sur le devant de sa chemise. Il vous propose un plan dans lequel il se rend en ville avec une poignée de marchandises à colporter, comme il l\'a fait si souvent dans le passé.\n\n Le seul problème est qu\'il n\'a pas encore les marchandises - il doit les acheter à un habitant de l\'arrière-pays voisin. Tout ce dont il a besoin maintenant, c\'est d\'un peu d\'argent pour démarrer et l\'aider à acheter les marchandises. Une somme de 500 couronnes en tout et pour tout. Bien entendu, en tant que partenaire, vous recevrez une part des bénéfices une fois que tout sera terminé.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Count me in!",
+					Text = "Compte sur moi !",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 70 ? "B" : "C";
@@ -23,7 +23,7 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You\'re a mercenary now. Time to leave that old life behind.",
+					Text = "Tu es un mercenaire maintenant. Il est temps de laisser cette ancienne vie derrière vous.",
 					function getResult( _event )
 					{
 						return 0;
@@ -39,13 +39,13 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_04.png[/img]You hand %peddler% the crowns and off he goes.\n\nA few hours later, the peddler comes running up with a small lockbox in hand. The wily grin on his face is undeniable and he\'s unwittingly fistpumping as he glides to you. When he tries to speak, gasps of breath seize him. You hold your hand out, telling him to take his time. Settling down, the man hands over a heavy purse of coins, stating that it is your cut of the profits.\n\nBefore you can even say anything, the man wheels on his heels and jumps away, giddy with his success.",
+			Text = "[img]gfx/ui/events/event_04.png[/img]Vous remettez les couronnes à %peddler% et il s\'en va. Quelques heures plus tard, le colporteur arrive en courant avec un petit coffre à la main. Le sourire malicieux sur son visage est indéniable et il fait involontairement le poing pendant qu\'il glisse vers vous. Lorsqu\'il essaie de parler, il est saisi d\'un souffle. Vous lui tendez la main, lui disant de prendre son temps. S\'installant, l\'homme vous tend une lourde bourse de pièces, en précisant qu\'il s\'agit de votre part des bénéfices. Avant même que vous ne puissiez dire quoi que ce soit, l\'homme tourne sur ses talons et saute au loin, étourdi par son succès.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A pleasure to do business with you.",
+					Text = "C\'est un plaisir de faire affaire avec toi.",
 					function getResult( _event )
 					{
 						return 0;
@@ -62,7 +62,7 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You earn [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 					}
 				];
 				_event.m.Peddler.getBaseProperties().Bravery += 1;
@@ -72,7 +72,7 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 					icon = "ui/icons/bravery.png",
 					text = _event.m.Peddler.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Détermination"
 				});
-				_event.m.Peddler.improveMood(2.0, "Made a profit peddling wares");
+				_event.m.Peddler.improveMood(2.0, "A fait du profit en colportant des marchandises");
 
 				if (_event.m.Peddler.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -87,7 +87,7 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%peddler% makes off and you tend to other business for the day.\n\nAs you step out of your tent hours later, you see a slumped shape in the distance, steadily heading your way. It appears to be the peddler. He carries nothing with him but a frown. As he gets closer, you begin to see the bruises that dot his body. He explains that while he managed to purchase the goods from his source, the actual townspeople weren\'t particularly warm to his selling tactics.\n\nWhat money was invested has been lost and %peddler% heads to a tent to nurse his wounds.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%peddler% s\'en va et vous vous occupez d\'autres affaires pour la journée. En sortant de votre tente quelques heures plus tard, vous apercevez au loin une forme affaissée qui se dirige vers vous. Il semble s\'agir du colporteur. Il ne porte rien d\'autre avec lui qu\'un froncement de sourcils. Alors qu\'il se rapproche, vous commencez à voir les bleus qui parsèment son corps. Il explique que, bien qu\'il ait réussi à acheter les marchandises à sa source, les habitants de la ville n\'étaient pas très chauds à l\'idée de sa tactique de vente.\n\nL\'argent investis a été perdu et %peddler% se dirige vers une tente pour soigner ses blessures.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -109,16 +109,16 @@ this.peddler_deal_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Couronnes"
 					}
 				];
 				_event.m.Peddler.addLightInjury();
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.Peddler.getName() + " souffre de blessures l�geres"
+					text = _event.m.Peddler.getName() + " souffre de blessures légères"
 				});
-				_event.m.Peddler.worsenMood(2, "Failed in his plan and lost a large amount of money");
+				_event.m.Peddler.worsenMood(2, "Son plan a failli et a perdu une grosse somme d\'argent");
 
 				if (_event.m.Peddler.getMoodState() < this.Const.MoodState.Neutral)
 				{
