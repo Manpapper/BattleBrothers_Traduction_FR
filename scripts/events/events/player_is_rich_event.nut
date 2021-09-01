@@ -7,12 +7,12 @@ this.player_is_rich_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_04.png[/img]Over time, you\'ve come to acquire a great deal of money. While you keep the war chest under lock and key, you can\'t help but notice a few brothers have gotten a bit greedier over the time they\'ve spent in your company. Now you hear rumors of the men demanding higher pay.",
+			Text = "[img]gfx/ui/events/event_04.png[/img]Au fil du temps, vous avez acquis une grande quantité d\'argent. Bien que vous gardiez le trésor de guerre sous clé, vous ne pouvez vous empêcher de remarquer que quelques frères d\'armes sont devenus un peu plus avides au fil du temps qu\'ils ont passé dans votre compagnie. Vous entendez maintenant des rumeurs selon lesquelles les hommes exigent un salaire plus élevé.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Aye, it\'s fine time you all get a raise.",
+					Text = "Oui, il est grand temps que vous soyez tous augmentés.",
 					function getResult( _event )
 					{
 						return "B";
@@ -20,7 +20,7 @@ this.player_is_rich_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You all signed the dotted line and get paid according to it.",
+					Text = "Vous avez tous signé la ligne pointillée et êtes payés en fonction de celle-ci.",
 					function getResult( _event )
 					{
 						return "C";
@@ -35,12 +35,12 @@ this.player_is_rich_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_04.png[/img]Preempting any sort of mutiny or raise requests, you announce that the group shall have a company-wide raise. Three crowns a day for everyone. As it turns out, the men are quite fond of this move and cheer your name with a huzzah!",
+			Text = "[img]gfx/ui/events/event_04.png[/img]Anticipant toute sorte de mutinerie ou de demande d\'augmentation, vous annoncez que le groupe aura une augmentation pour toute la compagnie. Trois couronnes par jour pour tout le monde. Il s\'avère que les hommes apprécient beaucoup cette initiative et acclament votre nom avec un hourra !",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "You\'ve earned it, boys!",
+					Text = "Vous l\'avez mérité, les gars !",
 					function getResult( _event )
 					{
 						return 0;
@@ -60,7 +60,7 @@ this.player_is_rich_event <- this.inherit("scripts/events/event", {
 					}
 
 					bro.getBaseProperties().DailyWage += 4;
-					bro.improveMood(2.0, "Got a pay raise");
+					bro.improveMood(2.0, "A eu une augmentation de salaire");
 
 					if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 					{
@@ -76,13 +76,13 @@ this.player_is_rich_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]Before anyone gets any ideas, you step up before the whole company and announce that there will be no raises. As far as you are concerned, every man present signed the contract. Any prospect of earning more pay shall be done by experience only, and that is only done by doing what sellswords do best: kill.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Avant que quiconque ne se fasse des idées, vous vous présentez devant toute la compagnie et annoncez qu\'il n\'y aura pas d\'augmentation. En ce qui vous concerne, chaque homme présent a signé le contrat. Toute perspective de gagner plus de salaire ne se fera que par l\'expérience, et cela ne se fait qu\'en faisant ce que les mercenaires font le mieux : tuer.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That\'s how it works with the %companyname%.",
+					Text = "C\'est comme ça que ça marche avec %companyname%.",
 					function getResult( _event )
 					{
 						return 0;
@@ -103,7 +103,7 @@ this.player_is_rich_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getSkills().hasSkill("trait.greedy"))
 					{
-						bro.worsenMood(2.0, "Was denied a pay raise");
+						bro.worsenMood(2.0, "On lui a refusé une augmentation de salaire");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -123,12 +123,12 @@ this.player_is_rich_event <- this.inherit("scripts/events/event", {
 							this.List.push({
 								id = 10,
 								icon = trait.getIcon(),
-								text = bro.getName() + " gets greedy"
+								text = bro.getName() + " devient cupide"
 							});
 						}
 						else
 						{
-							bro.worsenMood(1.0, "Was denied a pay raise");
+							bro.worsenMood(1.0, "On lui a refusé une augmentation de salaire");
 
 							if (bro.getMoodState() < this.Const.MoodState.Neutral)
 							{

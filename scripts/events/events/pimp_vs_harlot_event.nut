@@ -13,12 +13,12 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_92.png[/img]You come across a man and woman arguing outside one of the town\'s buildings.%SPEECH_ON%Why do I give you all of it? I\'m the one doing all the work!%SPEECH_OFF%She yells. The man rubs his chin and responds.%SPEECH_ON%I manage the minge! How would you find work without me?%SPEECH_OFF%The woman, seeing you, turns and asks if you\'d sleep with her. She could be shaped like two circles and a triangle and you\'d probably still have a go. The woman throws her hands out.%SPEECH_ON%See? Half this world\'s ready for business if I so much as open my legs!%SPEECH_OFF%The wannabe-pimp asks you to talk some sense into his \'prospect.\'",
+			Text = "[img]gfx/ui/events/event_92.png[/img]Vous croisez un homme et une femme qui se disputent devant l\'un des bâtiments de la ville.%SPEECH_ON%Pourquoi est-ce que je vous donne tout ? C\'est moi qui fais tout le travail !%SPEECH_OFF%Elle crie. L\'homme se frotte le menton et répond : %SPEECH_ON% C\'est moi qui domine ta chatte ! Comment pourrais-tu trouver du travail sans moi?%SPEECH_OFF% La femme, en vous voyant, se retourne et vous demande si vous voulez bien coucher avec elle. Elle pourrait avoir la forme de deux cercles et d\'un triangle que vous seriez probablement toujours partant. La femme jette ses mains en l\'air.%SPEECH_ON%Vous voyez ? La moitié de ce monde est prête à faire des affaires si j\'ouvre ne serait-ce que les jambes!%SPEECH_OFF%L\'aspirant maquereau vous demande de ramener à la raison son \"avenir\".",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Pimps keep you safe in this world.",
+					Text = "Les proxénètes vous gardent en sécurité dans ce monde.",
 					function getResult( _event )
 					{
 						return "B";
@@ -26,7 +26,7 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Nothing wrong with a sellwhore playing by her own rules.",
+					Text = "Il n\'y a rien de mal à ce qu\'une prostituée joue selon ses propres règles.",
 					function getResult( _event )
 					{
 						return "C";
@@ -39,7 +39,7 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Minstrel != null)
 				{
 					this.Options.push({
-						Text = "Looks like our minstrel has something to say.",
+						Text = "On dirait que notre ménestrel a quelque chose à dire.",
 						function getResult( _event )
 						{
 							return "Minstrel";
@@ -51,7 +51,7 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Monk != null)
 				{
 					this.Options.push({
-						Text = "Does our monk wish to speak about this... trade?",
+						Text = "Notre moine souhaite-t-il parler de cet... échange?",
 						function getResult( _event )
 						{
 							return "Monk";
@@ -63,7 +63,7 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Tailor != null)
 				{
 					this.Options.push({
-						Text = "The company tailor might have some input here.",
+						Text = "Le tailleur de la compagnie pourrait avoir son mot à dire.",
 						function getResult( _event )
 						{
 							return "Tailor";
@@ -76,13 +76,13 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_92.png[/img]You give your answer.%SPEECH_ON%A pimp provides security. Just cause every swinging dick wants what\'s between your legs don\'t make you safe. The smallest slight can bring out a customer\'s darker, more violent nature.%SPEECH_OFF% The pimp nods.%SPEECH_ON%That\'s right! Listen to \'im!%SPEECH_OFF%Thinking, the prostitute nods before suddenly slapping the pimp across the face. He cries out and rubs the welt. The woman nods again.%SPEECH_ON%This lark is supposed to protect me, really? Good day, sirs.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_92.png[/img]Vous donnez votre réponse.%SPEECH_ON%Un proxénète assure la sécurité. Ce n\'est pas parce que toutes les bites veulent ce qu\'il y a entre tes jambes que tu es en sécurité. Le plus petit détail peut faire ressortir la nature plus sombre et plus violente d\'un client.%SPEECH_OFF%Le mac hoche la tête.%SPEECH_ON%Écoutez-le !%SPEECH_OFF%Pensant, la prostituée acquiesce avant de gifler soudainement le proxénète. Il crie et frotte la plaie. La femme hoche à nouveau la tête.%SPEECH_ON%Cette lopette est censée me protéger, vraiment ? Bonne journée, messieurs.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Damn. Thought he had a stronger pimp game.",
+					Text = "Merde. Je pensais qu\'il avait un jeu de maquereau plus fort.",
 					function getResult( _event )
 					{
 						return 0;
@@ -97,13 +97,13 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_92.png[/img]With a fatherly appeal you take the pimp by the shoulder.%SPEECH_ON%You can take the woman out of a whore, but you can\'t take the whore out of a woman.%SPEECH_OFF%The pimp thinks it over. You do, too, as you were never one for logic. The pimp looks at you.%SPEECH_ON%What?%SPEECH_OFF%The lady steps forward, taking the pimp by the other shoulder.%SPEECH_ON%I think he\'s saying to cut me loose.%SPEECH_OFF%When the pimp raises an eyebrow, the woman clarifies.%SPEECH_ON%Figuratively speaking.%SPEECH_OFF%The pimp sighs.%SPEECH_ON%I don\'t understand what the hell you two are saying, but alright. I thought maybe I could get a business going here. A woman here, a woman there, peddle their gooches and mooches, make some crowns, retire early. Oh well, back to grinding wheat into flour until I keel over and die.%SPEECH_OFF%The man walks off, his nose sniffling.",
+			Text = "[img]gfx/ui/events/event_92.png[/img]Avec un geste paternel, vous prenez le proxénète par l\'épaule.%SPEECH_ON%On peut sortir la femme d\'une pute, mais on ne peut sortir la pute d\'une femme.%SPEECH_OFF%Le proxénète réfléchit. Vous aussi, car vous n\'avez jamais été du genre logique. Le mac te regarde. %SPEECH_ON%Quoi ? %SPEECH_OFF%La dame s\'avance et prend le mac par l\'autre épaule. %SPEECH_ON% Je crois qu\'il veut dire de me relâcher. Comme le maquereau lève un sourcil, la femme clarifie : %SPEECH_ON%Figurativement parlant.%SPEECH_OFF%Le maquereau soupire : %SPEECH_ON%Je ne comprends pas ce que vous dites, mais d\'accord. J\'ai pensé que peut-être je pourrais monter une affaire ici. Une femme par-ci, une femme par-là, je gagne quelques couronnes et prendre une retraite anticipée. Et puis finalement, je retourne moudre du blé pour en faire de la farine jusqu\'à ce que je m\'écroule et que je meure.%SPEECH_OFF% L\'homme s\'en va, son nez reniflant.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The pimp game isn\'t for everyone.",
+					Text = "Le métier de maquereau n\'est pas fait pour tout le monde.",
 					function getResult( _event )
 					{
 						return 0;
@@ -118,13 +118,13 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Minstrel",
-			Text = "[img]gfx/ui/events/event_92.png[/img]%minstrel% the minstrel glides forward.%SPEECH_ON%Ahoy, what is this but a tale of a dullard and tail of a whore? With one look I know what you need to do my friend: profess your undying love to this minge!%SPEECH_OFF%The woman crosses her arms and creases her eyebrows.%SPEECH_ON%Just what are you on abou--%SPEECH_OFF%The minstrel bats her out of the way as he raises an arm and a singly voice with it.%SPEECH_ON%Ahoyyy! Love, yes, love is in the air! Best let it flare! - and I\'m not just talking about his cock and balls. He loves you, my dear, can\'t you see? Why else would he make a harlot out of only thee? A pimp needs a diverse portfolio, not a business of one holy-oh, ohhh!%SPEECH_OFF%The pimp drops his head, face red and embarrassed. He admits it\'s true, all of it. The woman looks over, her face flushed. They lock eyes. You roll yours. They embrace and make off all lovey-dovey. %minstrel% scratches his chin.%SPEECH_ON%I\'m a poet and I didn\'t even... realize it.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_92.png[/img]%minstrel% le ménestrel s\'avance. %SPEECH_ON%Hum oui, qu\'est-ce que c\'est que cette histoire d\'un abruti et la queue d\'une putain ? D\'un seul regard je sais ce que tu dois faire mon ami : déclarer ton amour éternel à cette jeune femme!%SPEECH_OFF%La femme croise les bras et fronce les sourcils.%SPEECH_ON%Qu\'est ce que tu racontes--%SPEECH_OFF%Le ménestrel l\'écarte du chemin en levant un bras et une voix simple avec.%SPEECH_ON%Ouiii! L\'amour, oui, l\'amour est dans l\'air ! Mieux vaut le laisser s\'enflammer ! - et je ne parle pas seulement de sa queue et de ses couilles. Il t\'aime, ma chère, ne vois-tu pas ? Sinon, pourquoi aurait-il fait de toi une prostituée ? Un proxénète a besoin d\'un nombre de choix diversifié, pas d\'un business d\'une seule sainte-oh, ohhh!%SPEECH_OFF%Le proxénète baisse la tête, le visage rouge et embarrassé. Il admet que c\'est vrai, tout est vrai. La femme se retourne, le visage rougi. Ils se regardent. Vous faites rouler les vôtres. Ils s\'embrassent et partent en amoureux.%SPEECH_ON% Je suis un poète et je ne m\'en suis même pas... rendu compte.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Real nice work, minstrel.",
+					Text = "Très beau travail, ménestrel.",
 					function getResult( _event )
 					{
 						return 0;
@@ -135,7 +135,7 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Minstrel.getImagePath());
-				_event.m.Minstrel.improveMood(2.0, "Enchanted by his own poetry");
+				_event.m.Minstrel.improveMood(2.0, "Enchanté par sa propre poésie");
 
 				if (_event.m.Minstrel.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -150,13 +150,13 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Tailor",
-			Text = "[img]gfx/ui/events/event_92.png[/img]\'Tsk, tsk, tks.\' %tailor% the tailor struts on up shaking his head. He runs a finger along the prostitute\'s dress. He remarks that he thought whores were supposed to be pretty. The pimp raises his hand.%SPEECH_ON%That\'s my property you\'re spittin\' on.%SPEECH_OFF%%tailor% bows.%SPEECH_ON%Apologies, sir, but I do believe you have already spit on her yourself dressing her in such a manner. I\'d not know she\'s looking for a whore\'s coin had you not yelled at her with a pimp\'s, hm, lackadaisical sense of economics.%SPEECH_OFF%The pimp draws a dagger out and attacks. The tailor pirouettes, spinning beneath the blade\'s strike. He springs back upright and jams a thick pair of scissors to the pimp\'s throat.%SPEECH_ON%Mmm, what a quaint position to be in. I daresay you have but two ways out, and one is much shinier than the other. Yes, that\'s right, you get it don\'t you? Pay up or I\'ll cut yer throat and clip your nuts and the order which I do it just might surprise you.%SPEECH_OFF%The pimp hastily forks over some crowns to spare his life. The tailor \'snips\' his scissors closed and pockets them.%SPEECH_ON%Good. Now for some advice. You can find linens for cheap down the street yonder. The man who works the shop there is, hm, particularly good at outfitting women... and men. Tata now.%SPEECH_OFF%%tailor% turns to you with a grin and asks if he can go and visit some shops to spend his newly found gold.",
+			Text = "[img]gfx/ui/events/event_92.png[/img]\"Tsk, tsk, tks.\" %tailor% le tailleur se pavane en secouant la tête. Il passe un doigt le long de la robe de la prostituée. Il fait remarquer qu\'il pensait que les putes étaient censées être jolies. Le proxénète lève la main : %SPEECH_ON% C\'est sur ma propriété que vous crachez. %SPEECH_OFF%%tailleur% s\'incline : %SPEECH_ON%Pardon, monsieur, mais je crois que vous avez déjà craché sur elle en l\'habillant de cette façon. Je ne saurais pas qu\'elle cherche l\'argent d\'une putain si vous ne lui aviez pas crié dessus avec le sens de l\'économie d\'un maquereau.%SPEECH_OFF%Le maquereau sort un poignard et attaque. Le tailleur pirouette, virevoltant sous le coup de la lame. Il se redresse et plante une paire de ciseaux épais sur la gorge du proxénète.%SPEECH_ON%Mmm, quelle drôle de position. J\'ose dire que vous n\'avez que deux issues, et l\'une est beaucoup plus brillante que l\'autre. Oui, c\'est ça, vous avez compris, n\'est-ce pas ? Payez ou je vous tranche la gorge et les couilles et l\'ordre dans lequel je le fais pourrait vous surprendre.%SPEECH_OFF%Le maquereau s\'empresse de donner quelques couronnes pour qu\'il épargner sa vie. Le tailleur referme ses ciseaux et les empoche.%SPEECH_ON%Bien. Maintenant, quelques conseils. Vous pouvez trouver du linge de maison pour pas cher dans la rue là-bas. L\'homme qui travaille dans cette boutique est, hm, particulièrement doué pour habiller les femmes... et les hommes. Allez allez maintenant.%SPEECH_OFF%%tailleur% se tourne vers vous avec un sourire et demande s\'il peut aller visiter quelques magasins pour dépenser son or nouvellement gagné.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well done.",
+					Text = "Bien joué.",
 					function getResult( _event )
 					{
 						return 0;
@@ -171,17 +171,17 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				_event.m.Tailor.getBaseProperties().Initiative += 2;
 				_event.m.Tailor.getSkills().update();
 				this.List.push({
 					id = 17,
 					icon = "ui/icons/initiative.png",
-					text = _event.m.Tailor.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Initiative"
+					text = _event.m.Tailor.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] d\'Initiative"
 				});
 				this.Characters.push(_event.m.Tailor.getImagePath());
-				_event.m.Tailor.improveMood(1.0, "Cut a pimp down to size");
+				_event.m.Tailor.improveMood(1.0, "A Réduit l\'égo d\'un maquereau");
 
 				if (_event.m.Tailor.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -196,13 +196,13 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Monk",
-			Text = "[img]gfx/ui/events/event_92.png[/img]%monk% the monk steps forward. He takes the pimp by the hands. Were you to do that, the pimp would not doubt shrink back or strike you. But the holy man does it with such grace and humility that the pimp simply stares at him. The monk smiles warmly.%SPEECH_ON%This is not the path for you, that much is clear. You have not the means to handle this woman, and this is but one woman, when a pimp really needs many. The old gods tell me you are meant for a different path, one which is for hardier men. I daresay you are fit for a mercenary company. Leave the women-wrangling to the snake handlers.%SPEECH_OFF%The pimp thinks for a time, but you can tell the words have gotten to him. He asks if you\'d accept him into your company.",
+			Text = "[img]gfx/ui/events/event_92.png[/img]Le moine s\'avance. Il prend le maquereau par les mains. Si vous faisiez cela, le maquereau reculerait sans doute ou vous frapperait. Mais le saint homme le fait avec tant de grâce et d\'humilité que le proxénète se contente de le regarder fixement. Le moine sourit chaleureusement.%SPEECH_ON% Ce n\'est pas une voie pour vous, c\'est clair. Vous n\'avez pas les moyens de vous occuper de cette femme, et ce n\'est qu\'une seule femme, alors qu\'un proxénète en a besoin de plusieurs. Les vieux dieux me disent que vous êtes destiné à un autre chemin, un chemin qui est pour les hommes plus robustes. J\'ose dire que vous êtes fait pour une compagnie de mercenaires. Laissez les femmes à ceux qui savent manier les serpents.%SPEECH_OFF% Le mac réfléchit un moment, mais vous pouvez voir que les mots l\'ont atteint. Il demande si vous l\'accepteriez dans votre compagnie.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Alright, we\'ll take you.",
+					Text = "D\'accord, on vous emmène.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
@@ -214,7 +214,7 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No, thanks.",
+					Text = "Non, merci.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -226,7 +226,7 @@ this.pimp_vs_harlot_event <- this.inherit("scripts/events/event", {
 			],
 			function start( _event )
 			{
-				_event.m.Monk.improveMood(1.0, "Led a man back onto the path of rightenousness");
+				_event.m.Monk.improveMood(1.0, "A ramené un homme sur le droit chemin.");
 
 				if (_event.m.Monk.getMoodState() >= this.Const.MoodState.Neutral)
 				{

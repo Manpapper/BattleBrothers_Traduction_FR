@@ -117,7 +117,7 @@ this.noble_vs_lowborn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_64.png[/img]L\'homme noble sourit en repoussant la fourchette de l\'homme de basse naissance. Le noble prend la nourriture pour lui tandis que le bas-né se lève et fonce vers vous. Alors qu\'il s\'approche, certains hommes semblent prêts à dégainer leur épée, mais vous tendez une main pour les calmer.%SPEECH_ON% Je pensais que tu étais l\'un des nôtres, mais je suppose que non. Je suppose que tu penses qu\'un jour tu seras l\'un d\'entre eux, hein ? Continue de rêver. Comme cet homme me disait, "\Connais ta place\".%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_64.png[/img]L\'homme noble sourit en repoussant la fourchette de l\'homme de basse naissance. Le noble prend la nourriture pour lui tandis que le bas-né se lève et fonce vers vous. Alors qu\'il s\'approche, certains hommes semblent prêts à dégainer leur épée, mais vous tendez une main pour les calmer.%SPEECH_ON% Je pensais que tu étais l\'un des nôtres, mais je suppose que non. Je suppose que tu penses qu\'un jour tu seras l\'un d\'entre eux, hein ? Continue de rêver. Comme cet homme me disait, \"Connais ta place\".%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
