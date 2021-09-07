@@ -9,12 +9,12 @@ this.religious_peasants_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 200.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_59.png[/img]The forests have always been a refuge for man - the wilds from whence he came, to the wilds where he always wishes to return. And here you find a great number of men, a tribe of the lost, unconcerned with their departed civilizations, draped in religious habits, and carrying great sigils of faith, and tomes of truth. They\'re impoverished almost to the point of being decadently fashionable, like great kings looking to fit in with commoners. You sit and watch this shuffle by, clinking, clanging, hollow wooden beads rattling, whispers under their breath, raspy and dry. And so they go on, hardly even bothering to look at you.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Les forêts ont toujours été un refuge pour l\'homme - la nature sauvage d\'où il est venu, la nature sauvage où il souhaite toujours retourner. Et là, vous trouvez un grand nombre d\'hommes, une tribu d\'égarés, insouciants de leurs civilisations disparues, vêtus d\'habits religieux, portant de grands sceaux de foi et des tomes de vérité. Ils sont appauvris, presque au point d\'être décadents, comme de grands rois cherchant à s\'intégrer aux roturiers. Vous vous asseyez et vous les regardez passer en traînant les pieds, en s\'entrechoquant, en faisant tinter des perles de bois creuses, en murmurant dans leur souffle, rauque et sec. Et ils continuent ainsi, sans même prendre la peine de vous regarder.",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see where they\'re going.",
+					Text = "Voyons voir où ils vont.",
 					function getResult( _event )
 					{
 						if (_event.m.Monk != null)
@@ -51,7 +51,7 @@ this.religious_peasants_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Probably best to leave them be.",
+					Text = "C\'est probablement mieux de les laisser tranquilles.",
 					function getResult( _event )
 					{
 						return 0;
@@ -66,13 +66,13 @@ this.religious_peasants_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_03.png[/img]Curious, you call out to the men to ask where they are going. The man in front slowly turns to you, his eyes peering out from the dark of a wrapped shawl. He slowly draws the cloak back, revealing a head scarred in a pattern of religious rites. All the men behind him slowly follow suit, like a row of cards falling by the brush of a chaotic and mad wind.%SPEECH_ON%Davkul shall see you in the next world!%SPEECH_OFF%One of them shouts and they charge.",
+			Text = "[img]gfx/ui/events/event_03.png[/img]Curieux, vous appelez les hommes pour leur demander où ils vont. L\'homme de devant se tourne lentement vers vous, ses yeux émergeant de la pénombre d\'un châle enveloppé. Il retire lentement son manteau, révélant une tête marquée par un motif de rites religieux. Tous les hommes derrière lui font lentement de même, comme une rangée de cartes tombant au gré d\'un vent chaotique et fou.%SPEECH_ON%Davkul vous verra dans l\'autre monde!%SPEECH_OFF%L\'un d\'eux crie et ils chargent.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -101,13 +101,13 @@ this.religious_peasants_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_12.png[/img]{Obviously, this isn\'t an ordinary sight for you so, curious, you call out to the weary travelers. Words barely leave your lips before the entire line of men stops in an instant and bolts upright. Their cloaks unravel and droop from their heads, and their tomes and sticks and religious imports fall aside in a uniform clatter. The men look around, wide eyes more alive than ever. One screams. Then another. And soon they are all screaming, and some crumple to the ground, clutching their ears as though to silence the horrid howls their mouths had to give, while others wheel in circles, arms out, begging for answers.\n\n Your mere utterance has seemingly broken a spell that was so long over their heads it had brought them here, impoverished, hungry, and insane. Step by step, they were governed by a malicious higher power, and step by step they felt the control in their lives slip away, and with it the sanity all men require to be themselves. Unfortunately, you can hardly ask them what or who did this to them, for some fall over dead while others make naked sprints into the forest. | A curious sight such as this begs questioning, but the second a word leaves your lips the entire troop of religious men bolt upright, the sudden shuffle of clothes and gear clattering in such uniformity it as if a door was slammed shut. The men drop their things and begin screaming. It is a raspy chorus. They all begin to collapse, either buckling on bony knees or clutching their stomachs in pained hunger.\n\n %randombrother% comes up, shaking his head.%SPEECH_ON%Were they cursed? What could have done this?%SPEECH_OFF%You won\'t ever get an answer for a minute later every single man is dead, looking no better than corpses having recently been thawed out of the mountains. The spell must have forcibly piloted their pilgrimage here, straining the human body while keeping it alive by the mere strand of ethereal malevolence. Although they are all dead, you do not regret freeing them of such a horrid curse.}",
+			Text = "[img]gfx/ui/events/event_12.png[/img]{De toute évidence, ce n\'est pas un spectacle ordinaire pour vous, alors, curieux, vous appelez les voyageurs fatigués. Les mots sortent à peine de vos lèvres que toute la file d\'hommes s\'arrête en un instant et se redresse. Leurs manteaux s\'effilochent et tombent de leurs têtes, et leurs tomes, leurs bâtons et leurs importations religieuses tombent dans un fracas uniforme. Les hommes regardent autour d\'eux, les yeux plus vivants que jamais. L\'un d\'eux crie. Puis un autre. Et bientôt, ils crient tous, et certains s\'effondrent sur le sol, se serrant les oreilles comme pour faire taire les hurlements horribles que leurs bouches ont dû émettre, tandis que d\'autres tournent en rond, les bras tendus, suppliant qu\'on leur donne des réponses.\n\n Votre simple parole a apparemment brisé un sort qui était depuis si longtemps au-dessus de leurs têtes qu\'il les avait amenés ici, appauvris, affamés et fous. Petit à petit, ils ont été gouvernés par une puissance supérieure malveillante, et petit à petit, ils ont senti le contrôle de leur vie leur échapper, et avec lui, la santé mentale dont tous les hommes ont besoin pour être eux-mêmes. Malheureusement, vous pouvez difficilement leur demander ce qui leur est arrivé ou qui leur a fait ça, car certains tombent raides morts tandis que d\'autres sprintent nus dans la forêt. | Un tel spectacle suscite des questions, mais à la seconde où vous prononcez un mot, toute la troupe de religieux se redresse brusquement, les vêtements et le matériel s\'entrechoquent avec une telle uniformité qu\'on dirait qu\'une porte a été claquée. Les hommes laissent tomber leurs affaires et se mettent à crier. C\'est un chœur rauque. Ils commencent tous à s\'effondrer, soit en se tordant sur des genoux osseux, soit en se serrant l\'estomac dû à une faim douloureuse.\n\n%randombrother% s\'approche, secouant la tête. %SPEECH_ON% Ont-ils été maudits ? Qu\'est-ce qui a bien pu faire ça?%SPEECH_OFF% Vous n\'aurez jamais de réponse car une minute plus tard, tous les hommes sont morts, ressemblant à des cadavres récemment décongelés des montagnes. Le sort a dû piloter de force leur pèlerinage jusqu\'ici, mettant à rude épreuve le corps humain tout en le maintenant en vie par le simple fil de la malveillance éthérée. Bien qu\'ils soient tous morts, vous ne regrettez pas de les avoir libérés d\'une si horrible malédiction.}",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "May they rest in peace.",
+					Text = "Qu\'ils reposent en paix.",
 					function getResult( _event )
 					{
 						return 0;
@@ -123,7 +123,7 @@ this.religious_peasants_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getSkills().hasSkill("trait.superstitious") || this.Math.rand(1, 100) <= 33)
 					{
-						bro.worsenMood(0.5, "Witnessed a horrible curse");
+						bro.worsenMood(0.5, "Témoin d\'une horrible malédiction");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -140,13 +140,13 @@ this.religious_peasants_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_59.png[/img]Curious as to where these men are going, you open your mouth, but %monk% the monk steps forward, cutting you off. He goes to the man in front of the troop and has quiet counsel with him. There is plenty of nodding, hrrumphing, and other gesticulations of men who dwell long on things well beyond the human realm. Eventually, the monk comes back.%SPEECH_ON%They\'re on a pilgrimage and now our name travels with them. Many shall hear of it.%SPEECH_OFF%You thank the monk for a job well done.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Curieux de savoir où vont ces hommes, vous ouvrez la bouche, mais %monk% le moine s\'avance et vous coupe la parole. Il se rend auprès de l\'homme qui se trouve à l\'avant de la troupe et s\'entretient tranquillement avec lui. Il y a beaucoup de hochements de tête, de rires et autres gesticulations d\'hommes qui s\'attardent longtemps sur des choses bien au-delà du domaine humain. Finalement, le moine revient.%SPEECH_ON%Ils sont en pèlerinage et maintenant notre nom voyage avec eux. Beaucoup en entendront parler.%SPEECH_OFF%Vous remerciez le moine pour son travail bien fait.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "We are for sure damned souls, but they don\'t know that...",
+					Text = "Nous sommes certainement des âmes damnées, mais ils ne le savent pas...",
 					function getResult( _event )
 					{
 						return 0;
@@ -162,9 +162,9 @@ this.religious_peasants_event <- this.inherit("scripts/events/event", {
 				this.List.insert(0, {
 					id = 10,
 					icon = "ui/icons/special.png",
-					text = "The company gained renown"
+					text = "La compagnie a gagné en renommée"
 				});
-				_event.m.Monk.improveMood(1.0, "Helped spread word about the company");
+				_event.m.Monk.improveMood(1.0, "A aidé à faire connaître la compagnie.");
 
 				if (_event.m.Monk.getMoodState() >= this.Const.MoodState.Neutral)
 				{

@@ -9,13 +9,13 @@ this.ratcatcher_crafts_net_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You come across %ratcatcher% sitting with his hands full of rope. He\'s got the cords looping so ferociously - as ropes can be looped - that you worry to not put your foot close to it. Curious, you ask the man what he\'s up to. As though he were expecting just that question, he quickly raises his project into the air and announces he\'s fashioned himself a net. Ah! You put your hands to your hips.%SPEECH_ON%That shall be great on the battlefield!%SPEECH_OFF%The ratcatcher purses his lips. He slowly lowers the net.%SPEECH_ON%Oh, I meant... to use it... to snag me some rat...%SPEECH_OFF%He pauses, then throws his head up, a cheeky if not cheesy smile adorned across it.%SPEECH_ON%But I shall use it on the field of battle! No rat, man or furry or that which scurries, shall escape me!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous tombez sur %ratcatcher% assis avec les mains pleines de corde. Curieux, vous demandez à l\'homme ce qu\'il fait. Comme s\'il s\'attendait à cette question, il lève rapidement son projet en l\'air et annonce qu\'il s\'est fabriqué un filet. Ah ! Vous mettez les mains sur vos hanches.%SPEECH_ON%Ça sera génial sur le champ de bataille !%SPEECH_OFF%Le chasseur de rats se pince les lèvres. Il abaisse lentement le filet.%SPEECH_ON%Oh, je voulais... l\'utiliser... pour me trouver des rats...%SPEECH_OFF%Il marque un temps d\'arrêt, puis lève la tête, un sourire effronté, sinon insolent, au visage.%SPEECH_ON%Mais je l\'utiliserai sur le champ de bataille ! Aucun rat, homme ou animal à fourrure ou autre, ne m\'échappera !%SPEECH_OFF%"
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Very good.",
+					Text = "Très bien.",
 					function getResult( _event )
 					{
 						return 0;

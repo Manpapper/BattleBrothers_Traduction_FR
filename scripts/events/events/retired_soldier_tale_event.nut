@@ -9,13 +9,13 @@ this.retired_soldier_tale_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]%retiredsoldier% sits about the campfire telling war stories. If he\'s lying, it\'s merely an embellishment, as the scars all about his body speak unsightly truths. With each tale, the men become more engrossed, emboldened, and ready to get back out there and forge their own stories.",
+			Text = "[img]gfx/ui/events/event_26.png[/img]%retiredsoldier% est assis autour du feu de camp à raconter des histoires de guerre. S\'il ment, c\'est simplement pour embellir les choses, car les cicatrices sur son corps disent des vérités inesthétiques. Avec chaque histoire, les hommes deviennent plus captivés, enhardis et prêts à retourner sur le terrain et à forger leurs propres histoires.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Killing men does make for great bedtime stories.",
+					Text = "Tuer des hommes, ça fait de belles histoires autour d\'un feu de camp.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.retired_soldier_tale_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Soldier.getImagePath());
-				_event.m.Soldier.improveMood(0.25, "Told one of his war stories");
+				_event.m.Soldier.improveMood(0.25, "A raconté une de ses histoires de guerre");
 
 				if (_event.m.Soldier.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -48,7 +48,7 @@ this.retired_soldier_tale_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 50)
 					{
-						bro.improveMood(1.0, "Felt emboldened by " + _event.m.Soldier.getName() + "\'s war stories");
+						bro.improveMood(1.0, "S\'est senti encouragé par les histoires de guerre de " + _event.m.Soldier.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

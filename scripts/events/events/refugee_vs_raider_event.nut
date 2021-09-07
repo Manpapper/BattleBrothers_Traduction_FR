@@ -10,13 +10,13 @@ this.refugee_vs_raider_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_06.png[/img]%refugee%, a man who once forced onto the roads as a refugee, stares blankly at %raider%. The raider, sensing he\'s being stared at, lowers his plate of food.%SPEECH_ON%Whatcha farkin\' looking at, huh?%SPEECH_OFF%The refugee points a dripping spoon.%SPEECH_ON%Yer a raider, right?%SPEECH_OFF%%raider% nods.%SPEECH_ON%Was. Might be again someday. What\'s it to you?%SPEECH_OFF%Standing up, %refugee% points.%SPEECH_ON%It were men like you who forced good people out of their homes. Good people to drag their whole lives onto the damned road.%SPEECH_OFF%Laughing, %raider% gets to his feet.%SPEECH_ON%Oh, is that right? And what made them so good? That they couldn\'t swing a sword or protect themselves? Do you believe for one moment that were the boot on the other foot they wouldn\'t do the same to me? Or to you, too? Folk are only as good as their options.%SPEECH_OFF%The spate\'s getting wild and some of the other mercenaries get to their feet. Nobody can stop the initial scuffle, the two men exchanging blows and curses as good as any tavern brawl you\'ve seen. Thankfully, nothing too serious comes of the fight.",
+			Text = "[img]gfx/ui/events/event_06.png[/img]%refugee%, un homme qui a déjà été forcé de partir sur les routes en tant que réfugié, regarde fixement %raider%. Le pillard, sentant qu\'on le dévisage, baisse son assiette de nourriture. %SPEECH_ON% Qu\'est-ce que tu regardes, hein ? %SPEECH_OFF%Le réfugié montre une cuillère dégoulinante. %SPEECH_ON%Tu es un pillard, non ? %SPEECH_OFF%%le pillard%hoche la tête. %SPEECH_ON%Je l\'était. Je pourrais le redevenir un jour. Qu\'est ce que ça peut te faire ?%SPEECH_OFF%Se relevant, %refugee% pointe du doigt.%SPEECH_ON%C\'est des hommes comme toi qui ont forcé de bonnes personnes à quitter leur maison. De bonnes personnes qui ont traîné leur vie entière sur cette maudite route.%SPEECH_OFF%Riant, %raider% se lève.%SPEECH_ON%Oh, c\'est vrai ? Et qu\'est-ce qui les rendait si bons ? Qu\'ils ne pouvaient pas brandir une épée ou se protéger eux-mêmes ? Crois-tu un seul instant que si la botte était sur l\'autre pied, ils ne feraient pas la même chose avec moi ? Ou à vous, aussi ? Les gens ne sont bons qu\'en fonction des options qu\'ils ont.%SPEECH_OFF%Le débat s\'emballe et certains des autres mercenaires se lèvent. Personne ne peut arrêter la bagarre initiale, les deux hommes échangeant des coups et des insultes aussi bien que n\'importe quelle bagarre de taverne que vous avez vue. Heureusement, rien de grave ne se produit.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take it easy now.",
+					Text = "Calmez-vous, maintenant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -48,7 +48,7 @@ this.refugee_vs_raider_event <- this.inherit("scripts/events/event", {
 					});
 				}
 
-				_event.m.Refugee.worsenMood(1.0, "Got in a brawl with " + _event.m.Raider.getName());
+				_event.m.Refugee.worsenMood(1.0, "A eu une bagarre avec " + _event.m.Raider.getName());
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Refugee.getMoodState()],

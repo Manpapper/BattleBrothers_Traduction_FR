@@ -9,13 +9,13 @@ this.ratcatcher_spreads_disease_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_18.png[/img]%ratcatcher% the ratcatcher has earned his old vocation\'s namesake: apparently he\'s been rounding up rats as your party has been traveling about. Tonight, they all escaped. Some of the food stocks needed to be thrown away and a few men have fallen ill.",
+			Text = "[img]gfx/ui/events/event_18.png[/img]%ratcatcher% le chasseur de rat a mérité son ancien nom : apparemment, il a rassemblé des rats pendant que votre groupe se déplaçait. Ce soir, ils se sont tous échappés. Une partie des stocks de nourriture a dû être jetée et quelques hommes sont tombés malades.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "My throat\'s so scratchy I can barely squeak out a word!",
+					Text = "Ma gorge est si irritée que je peux à peine articuler un mot !",
 					function getResult( _event )
 					{
 						return 0;
@@ -74,7 +74,7 @@ this.ratcatcher_spreads_disease_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = effect.getIcon(),
-						text = bro.getName() + " is sick"
+						text = bro.getName() + " est malade"
 					});
 				}
 
@@ -85,7 +85,7 @@ this.ratcatcher_spreads_disease_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = effect.getIcon(),
-						text = lowestBro.getName() + " is sick"
+						text = lowestBro.getName() + " est malade"
 					});
 				}
 			}
