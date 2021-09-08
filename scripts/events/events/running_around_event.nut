@@ -9,13 +9,13 @@ this.running_around_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{Walking, running, fighting, fucking, all good for a man\'s heart. The time spent traveling the land has improved the vitality and vigor of the men. You even caught one of the cheekier mercenaries flexing into pondwater, admiring his own reflection like some smirkin\' wench. | All this running about the land has increased the stamina of the men. One runs in place, holding a finger to his neck. He remarks that his heart rate isn\'t going up at all. Another brother remarks that the guy doesn\'t even know how to count. The running man pauses.%SPEECH_ON%Oh. That\'s right.%SPEECH_OFF%}",
+			Text = "%terrainImage%{Marcher, courir, se battre, baiser, tout est bon pour le cœur d\'un homme. Le temps passé à parcourir le pays a amélioré la vitalité et la vigueur des hommes. Vous avez même surpris un des mercenaires les plus effrontés en train de s\'étirer dans l\'eau de l\'étang, admirant son propre reflet comme une jeune fille qui sourit. | Toute cette marche sur le terrain a augmenté l\'endurance des hommes. L\'un d\'eux court sur place en portant un doigt à son cou. Il remarque que son rythme cardiaque n\'augmente pas du tout. Un autre frère remarque que ce type ne sait même pas compter. L\'homme qui court fait une pause.%SPEECH_ON%Oh. C\'est vrai.%SPEECH_OFF%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s all worth it.",
+					Text = "Ça en vaut la peine.",
 					function getResult( _event )
 					{
 						return 0;

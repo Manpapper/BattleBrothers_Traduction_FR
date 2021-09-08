@@ -10,13 +10,13 @@ this.sellsword_vs_raider_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_82.png[/img]The raider, %raider%, is sharpening his weapon beside the campfire. He tells stories of his days raiding coasts and making off with piles of loot, his crooked smile grinning in the blade\'s sharpened sheen. %sellsword% the sellsword listens for a time then gets up laughing.%SPEECH_ON%Oh, fella, them quite the stories you tell. Here\'s mine: I earned my keep killing men, whether in their homes or in battle, but men nonetheless. You run about in yer boats, waitin\' for the menfolk to be gone, then ya scamper across the beaches to kick the little lads, rape the lasses, and steal from old friars. You got nothing to boast of, raider.%SPEECH_OFF%%raider% lowers his blade.%SPEECH_ON%We islanders at least have honor amongst us, whereas you\'d stab the %companyname% in the back for an extra crown in your purse. Speak ill of my past again, sellsword, and I\'ll have that mouth of yours gnawing dirt.%SPEECH_OFF%An exchange of fightin\' words leads to just that: a fight. Blades flash and blood is spilled. The rest of the company jumps in before too much damage can be done.",
+			Text = "[img]gfx/ui/events/event_82.png[/img]Le pillard, %raider%, aiguise son arme près du feu de camp. Il raconte des histoires de ses journées passées à piller les côtes et à s\'enfuir avec des tas de butin, son sourire tordu se reflétant dans l\'éclat aiguisé de la lame. Le mercenaire écoute un moment puis se lève en riant...%SPEECH_ON%Oh, mon gars, tu racontes de sacrées histoires. Voici la mienne : J\'ai gagné mon pain en tuant des hommes, que ce soit chez eux ou au combat, mais des hommes quand même. Vous vous baladez dans vos bateaux, attendant que les hommes soient partis, puis vous vous précipitez sur les plages pour frapper les petits garçons, violer les jeunes filles et voler les vieux moines. T\'as pas de quoi te vanter, pilleur.%SPEECH_OFF%%raider% abaisse sa lame.%SPEECH_ON% Nous autres insulaires avons au moins de l\'honneur parmi nous, alors que toi tu poignarderais %companyname% dans le dos pour une couronne de plus dans ta bourse. Parle encore une fois de mon passé, mercenaire, et je ferai ronger les racines par le pied.%SPEECH_OFF% Un échange de mots entre combattants mène à quelque chose : un combat. Les lames clignotent et le sang coule. Le reste de la compagnie intervient avant que les dégâts ne soient trop importants.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I don\'t give a rat\'s ass where you came from, stop fighting.",
+					Text = "J\'en ai rien à faire d\'où vous venez, arrêtez de vous battre.",
 					function getResult( _event )
 					{
 						return 0;

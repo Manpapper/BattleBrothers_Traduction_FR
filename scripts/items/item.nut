@@ -312,7 +312,7 @@ this.item <- {
 	{
 		if (this.getValue() != 0)
 		{
-			return "Vaut [img]gfx/ui/tooltips/money.png[/img][b]" + this.getValue() + "[/b]";
+			return "Valeur [img]gfx/ui/tooltips/money.png[/img][b]" + this.getValue() + "[/b]";
 		}
 		else
 		{

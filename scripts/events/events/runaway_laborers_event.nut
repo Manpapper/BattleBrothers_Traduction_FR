@@ -9,12 +9,12 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_59.png[/img]As you walk along the roads, a throng of ragged-looking men speed past you. They clear off the path and jump down into an embankment and hide behind a wall of bushes.\n\nWith the shrubbery still swaying, another group of men soon appears. Before the first man even speaks you already know what\'s coming. Apparently some laborers had agreed in union to abandon a project over what the pursuing overseers simplify as \'issues\'. They ask if you have seen these ne\'er do wells.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Alors que vous marchez le long des routes, une foule d\'hommes à l\'air dépenaillé vous dépasse à toute vitesse. Ils quittent le chemin, sautent dans un talus et se cachent derrière un mur de buissons.\n\nAlors que les buissons se balancent encore, un autre groupe d\'hommes apparaît bientôt. Avant même que le premier homme ne parle, vous savez déjà ce qui va se passer. Apparemment, certains ouvriers se sont mis d\'accord pour abandonner un projet à cause de ce que les surveillants qui les poursuivent qualifient de \"problèmes\". Ils vous demandent si vous avez déjà vu ces puits à ciel ouvert.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "They\'re right over there!",
+					Text = "Ils sont juste là !",
 					function getResult( _event )
 					{
 						return "B";
@@ -22,7 +22,7 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We haven\'t seen anyone around these parts.",
+					Text = "Nous n\'avons vu personne par ici.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(1);
@@ -46,12 +46,12 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_59.png[/img]The overseers nod and draw clubs and pitchforks and even some nets. They scramble off the road and converge onto the bushes like a bunch of raiders would a wagon. It is a wild, though one-sided, fight. Men are beaten and battered like fish in a bush. Even far up the hillside you can hear the unmistakable clonking of wood on skull. You see one man fatally stabbed with a spear, perhaps the resolution of a conflict of a somewhat more personal matter. When the battle ends, the head overseer returns to you, a line of prisoners behind him looking rather worse for the wear. He hands you a purse of coins, clapping you on the shoulder and thanking you for keeping \'order\'.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Les surveillants acquiescent et sortent des gourdins, des fourches et même des filets. Ils quittent la route et se dirigent vers les buissons comme une bande de pillards vers un chariot. C\'est un combat sauvage, bien qu\'à sens unique. Les hommes sont battus et malmenés comme des poissons dans un buisson. Même loin sur le flanc de la colline, on peut entendre le claquement inimitable du bois sur le crâne. On voit un homme mortellement poignardé avec une lance, peut-être la résolution d\'un conflit d\'ordre un peu plus personnel. À la fin de la bataille, le chef des surveillants revient vers vous, avec derrière lui une file de prisonniers à l\'air plutôt mal en point. Il vous tend une bourse de pièces, vous tape sur l\'épaule et vous remercie de garder l\'ordre.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Easy crowns.",
+					Text = "Des couronnes faciles.",
 					function getResult( _event )
 					{
 						return 0;
@@ -67,7 +67,7 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Couronnes"
 					}
 				];
 			}
@@ -75,13 +75,13 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_59.png[/img]With your finger still pointing the wrong way, the overseers take off. Their angry barking fades into the distance. When they are gone, the laborers slowly emerge. They appear rather surprised that a sellsword didn\'t sell word of them in the bushes. One by one they take off their hats and bless you for your mercy. One even calls it \'justice\', a strange word in a mercenary\'s ear.\n\nWhile most of them make off, one man stands idly behind. He asks if maybe he can join your company if, you know, you got room for him.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Alors que votre doigt pointe toujours du mauvais côté, les surveillants s\'en vont. Leurs aboiements furieux s\'estompent au loin. Quand ils sont partis, les ouvriers émergent lentement. Ils semblent plutôt surpris qu\'un mercenaire n\'ait pas vendu leur position dans les buissons. Un par un, ils enlèvent leurs chapeaux et vous bénissent pour votre clémence. L\'un d\'eux l\'appelle même \"justice\", un mot étrange à l\'oreille d\'un mercenaire. Pendant que la plupart d\'entre eux s\'en vont, un homme reste en retrait. Il demande s\'il peut rejoindre votre compagnie si, vous savez, vous avez de la place pour lui.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome to the %companyname%!",
+					Text = "Bienvenue dans %companyname%!",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
@@ -92,7 +92,7 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "This is no place for you.",
+					Text = "Ce n\'est pas un endroit pour toi.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -112,12 +112,12 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_59.png[/img]All of the overseers take off in the wrong direction - except one. He stands still the by roadside, looking down the embankment. For a brief moment you consider taking a cool blade across his neck, drawing the words out of his throat instead of his mouth. The man quickly turns to his comrades and yells and points down the hillside. Sensing their being seen, the laborers dash out of the bushes going this way and that. They must be malnourished for most move with the speed of a skeleton climbing a flight of stairs.\n\nThe ensuing battle is rather gruesome and uncalled for, the overseers being quite punitive in their capturing measures. When it\'s all said and done they begin to depart just as quickly as they came, the laborers now tied up in rope and their heads covered with sacks. Before he leaves, the head overseer shares a word of contempt for you. With your blade slowly coming out of its sheathe, you ask the man if he has anything else he wishes to add. He spits and shakes his head no.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Tous les contremaîtres partent dans la mauvaise direction, sauf un. Il reste immobile sur le bord de la route, regardant le talus. Pendant un bref instant, vous envisagez de lui passer une lame froide sur le cou, faisant sortir les mots de sa gorge au lieu de sa bouche. L\'homme se tourne rapidement vers ses camarades et crie en désignant le bas de la colline. Sentant qu\'ils sont vus, les ouvriers se précipitent hors des buissons, allant dans tous les sens. Ils doivent être sous-alimentés car la plupart d\'entre eux se déplacent à la vitesse d\'un squelette gravissant un escalier\n\nLa bataille qui s\'ensuit est plutôt horrible et injustifiée, les surveillants étant assez punitifs dans leurs méthodes de capture. Lorsque tout est terminé, ils commencent à partir aussi vite qu\'ils sont venus, les ouvriers étant maintenant attachés avec des cordes et leurs têtes couvertes de sacs. Avant de partir, le chef des surveillants vous adresse un mot de mépris. Votre lame sortant lentement de son fourreau, vous demandez à l\'homme s\'il a quelque chose à ajouter. Il crache et secoue la tête pour dire non.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Then move out of my sight!",
+					Text = "Alors, disparaissez de ma vue !",
 					function getResult( _event )
 					{
 						return 0;
@@ -132,12 +132,12 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_59.png[/img]With your finger still pointing the wrong way, the overseers take off. Their angry barking fades into the distance. When they are gone, the laborers slowly emerge. They appear rather surprised that a sellsword didn\'t sell word of them in the bushes. One by one they take off their hats and bless you for your mercy. One even calls it \'justice\', a strange word in a mercenary\'s ear.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Alors que votre doigt pointe toujours du mauvais côté, les surveillants s\'en vont. Leurs aboiements furieux s\'estompent au loin. Quand ils sont partis, les ouvriers émergent lentement. Ils semblent plutôt surpris qu\'un mercenaire n\'ait pas vendu un mot de leur position parmi les buissons. Un par un, ils enlèvent leurs chapeaux et vous bénissent pour votre clémence. L\'un d\'eux l\'appelle même \"justice\", un mot étrange à l\'oreille d\'un mercenaire.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Farewell.",
+					Text = "Adieu.",
 					function getResult( _event )
 					{
 						return 0;
