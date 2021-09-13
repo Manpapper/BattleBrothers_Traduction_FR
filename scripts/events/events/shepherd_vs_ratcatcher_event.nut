@@ -10,13 +10,13 @@ this.shepherd_vs_ratcatcher_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]%ratcatcher% and %shepherd% are sitting beside the campfire. As their conversation carries on, the ratcatcher becomes a bit confused.%SPEECH_ON%Lemme, lemme, lemme get this straight. Y-you use a stick, and so they follow because you have the stick? It\'s all about the stick?%SPEECH_OFF%Nodding, the shepherd explains.%SPEECH_ON%I prefer to call it a staff, but yes. Sheep are simple creatures and all that they demand is a leader. The staff is an itemization of my role. I wield the staff, therefore I am the leader. At least in a little sheep\'s eyes. An obedient dog helps a lot, too. Truthfully, a dog would be the true leader did they not have the loyalty and honor we wished we had ourselves.%SPEECH_OFF%%ratcatcher% nods.%SPEECH_ON%I\'ll have to try the stick, I mean staff, with my rats. And get a dog, too.%SPEECH_OFF%The shepherd smiles.%SPEECH_ON%Or a cat. What? I\'m joking, friend, just joking.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_26.png[/img]%ratcatcher% et %shepherd% sont assis près du feu de camp. Alors que leur conversation se poursuit, le chasseur de rats devient un peu confus.%SPEECH_ON%Alors, alors, alors, que je comprenne bien. T-tu utilises un bâton, et donc ils te suivent parce que tu as le bâtonnet? Tout vient du bâtonnet? %SPEECH_OFF%En hochant la tête, le berger explique.%SPEECH_ON%Je préfère l\'appeler un bâton, mais oui. Les moutons sont des créatures simples et tout ce qu\'ils demandent c\'est un chef. Le bâton est la représentation de mon rôle. Je manie le bâton, donc je suis le chef. Du moins aux yeux d\'un petit mouton. Un chien obéissant aide beaucoup, aussi. En vérité, un chien serait le vrai chef s\'il n\'avait pas la loyauté et l\'honneur que nous aimerions avoir nous-mêmes.%SPEECH_OFF%%ratcatcher% hoche la tête.%SPEECH_ON%Il faudra que j\'essaie le bâtonnet, je veux dire le bâton, avec mes rats. Et prendre un chien aussi..%SPEECH_OFF%Le berger sourit. %SPEECH_ON%Ou un chat. Quoi ? je plaisante, mon ami, je plaisante juste.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Like peas in a pod. Or pigs in a pen?",
+					Text = "Euh ok.",
 					function getResult( _event )
 					{
 						return 0;

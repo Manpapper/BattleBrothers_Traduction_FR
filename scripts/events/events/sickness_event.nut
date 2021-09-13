@@ -9,13 +9,13 @@ this.sickness_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 21.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_09.png[/img] {The swamp clutches at your every step, so wanting you to stay it is. While your boots sink into the mire, %someguy% turns and suddenly heaves, adding his breakfast to the bog. You turn to see another brother in the distance double over, loosing from his mouth a great spew that has you choking back some vomit yourself. The %companyname% express their collective discomfort as more men wretch and gag. This truly is no place for man to be. | While teeming with disgusting forms of life, the swamp actually smells of noxious death. Seemingly toxic steam undulates off the bog\'s still currents. It burns your eyes and throat and poisons all your foods with ill-tastes. What foul things would dare live here? You see toads and snakes and critters that certainly had the devil\'s touch in their birthing. The %companyname% are uniformly falling sick in this damned place. Only the strong may have the gut to bear it, everyone else is already heaving and seeing things which are not there.}",
+			Text = "[img]gfx/ui/events/event_09.png[/img] {Le marais s\'agrippe à chacun de vos pas, tant il veut vous retenir. Alors que vos bottes s\'enfoncent dans la boue, %someguy% se retourne et vomit soudainement, ajoutant son petit-déjeuner à la tourbière. Vous vous retournez pour voir un autre frère d\'arme au loin se retourner, laissant échapper de sa bouche un grand vomissement qui vous fait suffoquer vous-même. companyname% expriment leur malaise collectif tandis que d\'autres hommes vomissent et s\'étouffent. Ce n\'est vraiment pas un endroit où l\'homme doit être. | Bien qu\'il grouille de formes de vie dégoûtantes, le marais sent en fait la mort délétère. Une vapeur apparemment toxique ondule sur les eaux calmes du marais. Elle vous brûle les yeux et la gorge et empoisonne tous vos aliments en leur donnant mauvais goût. Quelles sont les choses immondes qui osent vivre ici ? Vous voyez des crapauds, des serpents et des créatures qui ont certainement été touchées par le diable lors de leur naissance. les membres de %companyname% tombent tous malades dans cet endroit maudit. Seuls les plus forts peuvent avoir les tripes pour le supporter, tous les autres ont déjà des haut-le-coeur et voient des choses qui ne sont pas là.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Damn this place!",
+					Text = "Maudit soit cet endroit !",
 					function getResult( _event )
 					{
 						return 0;
@@ -31,13 +31,13 @@ this.sickness_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_08.png[/img] Your breath appears before you as though it were carried in purses of grey. It started slowly, this pain. Spits of snow. Winds that had come from ancient glaciers. One step sank your foot deep into the white powder and it was then you knew the rest of the journey would be a test of endurance.\n\nYou wonder how the men of old did it, living in these parts. They sat around campfires with all the world out to get them. Sat in the darkness surrounded by flurries of ice. Sat in isolation. They were born here, that must have been their trick. Ignorance was their warmth. Only a man who knows no better could live in a place such as this.\n\nThe men of the %companyname% stagger and fall and don\'t get back up with quite the speed they used to. A few have taken to coughing fits and others look about ready to succumb to exhaustion. Only the strongest of the bunch carry on with no problem. It is those men who surely share a link with the ancestors of this horrid land.",
+			Text = "[img]gfx/ui/events/event_08.png[/img] Votre souffle apparaît devant vous comme s\'il était gelé sur place. Ça a commencé lentement, cette douleur. Des crachats de neige. Des vents qui venaient d\'anciens glaciers. Un pas a enfoncé votre pied profondément dans la poudre blanche et c\'est alors que vous avez su que le reste du voyage serait une épreuve d\'endurance.\n\nVous vous demandez comment les hommes d\'autrefois faisaient, en vivant dans ces régions. Ils s\'asseyaient autour d\'un feu de camp avec le monde entier à leurs trousses. Assis dans l\'obscurité, entourés de rafales de glace. Assis dans l\'isolement. Ils sont nés ici, ça a devait être leur truc. L\'ignorance était leur chaleur. Seul un homme qui ne connaît rien de mieux pourrait vivre dans un endroit comme celui-ci.\n\nLes hommes de %companyname% titubent et tombent et ne se relèvent pas aussi vite qu\'avant. Quelques-uns sont pris de quintes de toux et d\'autres semblent prêts à succomber à l\'épuisement. Seuls les plus forts d\'entre eux continuent sans problème. Ce sont ces hommes qui ont sûrement un lien avec les ancêtres de cette horrible terre.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Damn this place!",
+					Text = "Maudit soit cet endroit !",
 					function getResult( _event )
 					{
 						return 0;
@@ -102,7 +102,7 @@ this.sickness_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = effect.getIcon(),
-				text = bro.getName() + " is sick"
+				text = bro.getName() + " est malade"
 			});
 		}
 
@@ -113,7 +113,7 @@ this.sickness_event <- this.inherit("scripts/events/event", {
 			result.push({
 				id = 10,
 				icon = effect.getIcon(),
-				text = lowestBro.getName() + " is sick"
+				text = lowestBro.getName() + " est malade"
 			});
 		}
 

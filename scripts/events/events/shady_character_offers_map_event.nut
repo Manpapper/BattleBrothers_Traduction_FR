@@ -14,12 +14,12 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_41.png[/img]While marching along, a lone merchant with his packhorse emerges onto your path. He has his arms out and his hands visible.%SPEECH_ON%Evening, travelers. Might I interest you in some wares?%SPEECH_OFF%He lists off a number of things the %companyname% could possibly have no use for, but then he mentions a map. You must\'ve raised an eyebrow, because he raises his and a smile with it.%SPEECH_ON%Ah, interested in a map are ya? This here cartographical, topographical, geographical oddity carried by a man who, I assure you, is quite sensical! This here paper tells you the exact location of the famous \'%location%\'. I\'m sure you\'ve heard about it, yes? Host to untold treasures! Resting place of some this world\'s finest arms! And all it\'ll cost you is a meager %mapcost% crowns!%SPEECH_OFF%He turns his head with a long grin. It appears he\'s sold some of his teeth in his days on the road.%SPEECH_ON%So, travelers, what you got to say to that?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_41.png[/img]Alors que vous marchez, un marchand solitaire avec son cheval de trait apparaît sur votre chemin. Il a les bras tendus et les mains visibles.%SPEECH_ON%Bonsoir, voyageurs. Puis-je vous proposer quelques marchandises ? %SPEECH_OFF%Il énumère un certain nombre de choses dont %companyname% ne pourrait avoir l\'utilité, mais il mentionne ensuite une carte. Vous avez dû lever un sourcil, car il lève le sien et sourit.%SPEECH_ON%Ah, vous vous intéressez cette carte ? Cette bizarrerie cartographique, topographique, géographique, portée par un homme qui, je vous l\'assure, est très sensé ! Ce papier vous indique l\'emplacement exact du fameux \"%location%\". Je suis sûr que vous en avez entendu parler, non ? Il abrite des trésors inestimables ! Lieu de repos de certaines des plus belles armes du monde ! Et tout ce que cela vous coûtera, c\'est un maigre  versement  de %mapcost% couronnes!%SPEECH_OFF%Il tourne la tête avec un long sourire. Il semble qu\'il ait vendu certaines de ses dents pendant ses jours sur la route.%SPEECH_ON%Alors, voyageurs, qu\'en dites-vous ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "I\'m intrigued, we\'ll buy the map.",
+					Text = "Je suis intriguée, nous allons acheter la carte.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoney(-_event.m.Cost);
@@ -50,7 +50,7 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Peddler != null)
 				{
 					this.Options.push({
-						Text = "%peddler%, you used to be a peddler. Get us a better deal!",
+						Text = "%peddler%, tu étais un colporteur avant. Obtiens-nous une meilleure offre !",
 						function getResult( _event )
 						{
 							return "E";
@@ -62,7 +62,7 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Thief != null)
 				{
 					this.Options.push({
-						Text = "%thief%, you used to be a thief. Get us that map!",
+						Text = "%thief%, tu étais un voleur avant. Obtiens-nous cette carte !",
 						function getResult( _event )
 						{
 							return "F";
@@ -75,13 +75,13 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_45.png[/img]Having acquired the map, you take a good long look at it. You take out your own map and start looking between the two. There\'s nothing on the purchased map that can be cross-referenced. In fact, the map you bought has strange runes scribbled at the edges. It\'s either a recent fake, or it originated in a time when the common tongue was not your own. Either way, it seems very unusable.\n\n Just as you get ready to ball it up and throw it away, %historian% the historian walks up and gently takes it. He looks at the runes and begins nodding, running his finger along the edges before drawing them further inward, amongst the map\'s poorly drawn mountains and rivers and forests.%SPEECH_ON%Hmmm... Oh... Ah yes, I\'ve read of this place before. And I know these runes, though I dare not speak them aloud.%SPEECH_OFF%He takes the company map and uses three quill pens pinched between his fingers to slowly triangulate and translate the directions. Finished, he nods and whacks the back of his hand against the company map.%SPEECH_ON%There, sir. That\'s where we\'ll find it.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_45.png[/img]Ayant acquis la carte, vous l\'examinez longuement. Vous sortez votre propre carte et commencez à regarder les deux. Il n\'y a rien sur la carte achetée qui puisse être recoupé. En fait, la carte que vous avez achetée a des runes étranges griffonnées sur les bords. Soit c\'est une contrefaçon récente, soit elle provient d\'une époque où la langue commune n\'était pas la vôtre. Dans tous les cas, elle semble inutilisable.\n\n Au moment où vous vous apprêtez à le mettre en boule et à le jeter, %historian% l\'historien s\'approche et le prend doucement. Il regarde les runes et commence à hocher la tête, passant son doigt le long des bords avant de les ramener vers l\'intérieur, parmi les montagnes, les rivières et les forêts mal dessinées de la carte.%SPEECH_ON%Hmmm... Oh... Ah oui, j\'ai déjà entendu parler de cet endroit. Et je connais ces runes, même si je n\'ose pas les dire à haute voix.%SPEECH_OFF%Il prend la carte de la compagnie et utilise trois plumes d\'oie coincées entre ses doigts pour trianguler et traduire lentement les directions. Une fois terminé, il hoche la tête et frappe du dos de sa main la carte de la compagnie.%SPEECH_ON%Là, monsieur. C\'est là que nous le trouverons.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good to have someone with your skills with us.",
+					Text = "C\'est bien d\'avoir quelqu\'un avec vos compétences parmi nous.",
 					function getResult( _event )
 					{
 						this.World.uncoverFogOfWar(_event.m.Location.getTile().Pos, 700.0);
@@ -102,7 +102,7 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.PricePaid + "[/color] Crowns"
+						text = "Vous dépensez[color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.PricePaid + "[/color] Couronnes"
 					});
 				}
 			}
@@ -110,12 +110,12 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_45.png[/img]You take the map and give it a good read. You can identify some of the locations and, in time, translate its contents onto your own map. The %companyname% is murmuring with excitement over what might be there.",
+			Text = "[img]gfx/ui/events/event_45.png[/img]Vous prenez la carte et la lisez attentivement. Vous pouvez identifier certains des emplacements et, avec le temps, transposer son contenu sur votre propre carte. %companyname% murmure avec excitation sur ce qui pourrait se trouver là.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Let\'s claim it for the company!",
+					Text = "Réclamons-le pour la compagnie !",
 					function getResult( _event )
 					{
 						this.World.uncoverFogOfWar(_event.m.Location.getTile().Pos, 700.0);
@@ -134,7 +134,7 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.PricePaid + "[/color] Crowns"
+						text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.PricePaid + "[/color] Couronnes"
 					});
 				}
 			}
@@ -142,12 +142,12 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_45.png[/img]You look at the map, you stare at it, you practically interrogate it with a long, long gaze. But you\'re just not seeing it. %randombrother% takes a look then shakes his head.%SPEECH_ON%I don\'t recognize a bit of it, sir.%SPEECH_OFF%It\'s a fake or a map to a land you do not recognize as your own - either way, it\'s completely useless.",
+			Text = "[img]gfx/ui/events/event_45.png[/img]Vous regardez la carte, vous la fixez, vous l\'interrogez pratiquement d\'un long, long regard. Mais vous ne la voyez pas. %randombrother% y jetes un long regard et secoue la tête.%SPEECH_ON%Je n\'en reconnais pas une miette, monsieur...%SPEECH_OFF% C\'est un fausse carte ou une carte d\'un pays que vous ne reconnaissez pas comme le vôtre - dans tous les cas, c\'est complètement inutile.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ve been had.",
+					Text = "On s\'est fait avoir.",
 					function getResult( _event )
 					{
 						return 0;
@@ -162,7 +162,7 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.PricePaid + "[/color] Crowns"
+						text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.PricePaid + "[/color] Couronnes"
 					});
 				}
 			}
@@ -170,13 +170,13 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_41.png[/img]%peddler% the peddler steps forward, his hands out just like the traveling merchant\'s had been. Apparently this is a common tactic amongst honest thieves.%SPEECH_ON%Sir, sir, please. Come on. That price is outrageous.%SPEECH_OFF%The merchant\'s face sours.%SPEECH_ON%There is nothing outrageous about it, I promise you.%SPEECH_OFF%But your peddler persists.%SPEECH_ON%Clearly there is something outrageous, because I just said so, did I not?%SPEECH_OFF%The merchant nods. The peddler continues.%SPEECH_ON%So we\'ve decided to not purchase it at your original asking price. That much is clear. So, friend, I think we will purchase it for %newcost%. That is fair to all parties involved, and surely a fine businessman such as yourself can see a deal! We\'re hardly businessmen ourselves, but we know that\'s a good deal!%SPEECH_OFF%The merchant scratches his chin, then nods.%SPEECH_ON%Alright, that price is fair.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_41.png[/img]%peddler% le colporteur s\'avance, les mains tendues comme l\'avait été celles du marchand ambulant. Apparemment, c\'est une tactique courante chez les honnêtes voleurs.%SPEECH_ON%Monsieur, monsieur, s\'il vous plaît. Je vous en prie. Ce prix est scandaleux.%SPEECH_OFF% Le visage du marchand s\'empourpre.%SPEECH_ON% Il n\'y a rien de scandaleux là-dedans, je vous le promets.%SPEECH_OFF% Mais votre colporteur persiste.%SPEECH_ON% Il y a clairement quelque chose de scandaleux, parce que je viens de le dire, n\'est-ce pas?%SPEECH_OFF% Le marchand acquiesce. Le colporteur continue. %SPEECH_ON% Donc nous avons décidé de ne pas l\'acheter à votre prix initial. C\'est clair. Alors, mon ami, je pense que nous allons l\'acheter pour %newcost%. C\'est équitable pour toutes les parties concernées, et un homme d\'affaires tel que vous peut sûrement trouver un accord ! Nous ne sommes pas des hommes d\'affaires nous-mêmes, mais nous savons que c\'est une bonne affaire !%SPEECH_OFF% Le marchand se gratte le menton, puis hoche la tête.%SPEECH_ON%Très bien, ce prix est honnête%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A better bargain!",
+					Text = "Une meilleure affaire !",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoney(-_event.m.Cost / 2);
@@ -210,13 +210,13 @@ this.shady_character_offers_map_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_41.png[/img]While you\'re talking to the merchant, %thief% the thief sidles up next to you, appearing rather interested in the conversation. He glances at you. You do a double take. He grins and nods. You quickly eye the salesman then glance back at the thief and nod. The merchant is in the middle of his sales pitch and sees none of this. He keeps talking, but you hear little of it. You just know to keep nodding for a merchant such as he only tells you things you want to hear anyway.\n\n The thief slips around the back and drops a weapon into the mud.%SPEECH_ON%Clumsy me.%SPEECH_OFF%He bends down, pauses, there\'s a motion you can hardly detect, and then he\'s upright again. He gives you a wink. You tell the merchant you appreciate the offer, but you\'ll have to pass. When he\'s gone, %thief% presents you with the map and grins.%SPEECH_ON%They say the best things in life are free.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_41.png[/img]Pendant que vous parlez au marchand, %thief% le voleur s\'approche de vous, semblant plutôt intéressé par la conversation. Il vous jette un coup d\'œil. Vous faites un signe. Il sourit et acquiesce. Vous regardez rapidement le vendeur, puis vous vous retournez vers le voleur et hochez la tête. Le marchand est en plein milieu de son discours de vente et ne voit rien de tout cela. Il continue de parler, mais vous n\'entendez pas grand-chose. Vous savez juste qu\'il faut continuer à hocher la tête car un marchand comme lui ne vous dit que des choses que vous voulez entendre de toute façon.\n\nLe voleur se glisse par l\'arrière et laisse tomber une arme dans la boue. %SPEECH_ON%Quel maladroit.%SPEECH_OFF%Il se baisse, fait une pause, il y a un mouvement que vous pouvez à peine détecter, puis il se redresse. Il vous fait un clin d\'œil. Vous dites au marchand que vous appréciez l\'offre, mais que vous devez passer votre tour. Quand il est parti, %thief% vous remet la carte et sourit. %SPEECH_ON%On dit que les meilleures choses dans la vie sont gratuites. %SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Now that\'s what I call a discount.",
+					Text = "Ça, c\'est ce que j\'appelle une affaire.",
 					function getResult( _event )
 					{
 						if (_event.m.Historian != null)

@@ -10,13 +10,13 @@ this.strength_contest_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img] %strong1% and %strong2% - the strongest men in the outfit by some measure - are apparently undertaking something of a competition to see who is the better. You watch as they carry enormous stones from one side of an ad hoc competitive ground to the other. Then they take turns seeing how far they can throw these very stones. And then they roll the stones up a nearby hill. And then they see who can completely bury a stone the fastest.\n\nAll in all, there are a lot of heavy stones being jostled about and by the end of the festive affair both men are completely exhausted. Even without a winner, the time-honored tradition of moving rocks around to no real end has improved the men\'s morale.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] %strong1% et %strong2% - les hommes les plus forts du groupe - se livrent apparemment à une sorte de compétition pour voir qui est le meilleur. Vous les voyez transporter d\'énormes pierres d\'un côté à l\'autre d\'un terrain de compétition. Puis ils se relaient pour voir jusqu\'où ils peuvent lancer ces mêmes pierres. Puis ils font rouler les pierres sur une colline voisine. Et enfin, ils voient qui peut enterrer complètement une pierre le plus rapidement.\n\n Dans l\'ensemble, il y a beaucoup de pierres lourdes qui sont bousculées et à la fin de cette affaire festive, les deux hommes sont complètement épuisés. Même s\'il n\'y a pas de gagnant, cette tradition ancestrale de déplacer des pierres sans but précis a amélioré le moral des hommes.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We are but simple creatures.",
+					Text = "Nous ne sommes que de simples créatures.",
 					function getResult( _event )
 					{
 						return 0;
@@ -35,22 +35,22 @@ this.strength_contest_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/fatigue.png",
-					text = _event.m.Strong1.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Max Fatigue"
+					text = _event.m.Strong1.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Fatigue Maximum"
 				});
 				_event.m.Strong2.getBaseProperties().Stamina += 1;
 				_event.m.Strong2.getSkills().update();
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/fatigue.png",
-					text = _event.m.Strong2.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Max Fatigue"
+					text = _event.m.Strong2.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Fatigue Maximum"
 				});
-				_event.m.Strong1.improveMood(1.0, "Bonded with " + _event.m.Strong2.getName());
+				_event.m.Strong1.improveMood(1.0, "S\'est lié d\'amitié avec " + _event.m.Strong2.getName());
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Strong1.getMoodState()],
 					text = _event.m.Strong1.getName() + this.Const.MoodStateEvent[_event.m.Strong1.getMoodState()]
 				});
-				_event.m.Strong2.improveMood(1.0, "Bonded with " + _event.m.Strong1.getName());
+				_event.m.Strong2.improveMood(1.0, "S\'est lié d\'amitié avec " + _event.m.Strong1.getName());
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Strong2.getMoodState()],

@@ -9,13 +9,13 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img] %spartan% has always been a bit tight with how much he eats. You\'re not sure if it\'s part of some religious rite, a sense of duty, or he\'s just not a big eater. Regardless, the lack of food has weakened the man and you find him barely able to sit upright on a log. You\'ve got a bowl of meat and corn in hand, wondering if maybe you should offer it to him.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] %spartan% a toujours été un peu strict sur la quantité de nourriture qu\'il mange. Vous ne savez pas si cela fait partie d\'un rite religieux, d\'un sens du devoir, ou s\'il n\'est tout simplement pas un gros mangeur. Quoi qu\'il en soit, le manque de nourriture a affaibli l\'homme et vous le trouvez à peine capable de s\'asseoir droit sur une bûche. Vous avez un bol de viande et de maïs à la main et vous vous demandez si vous ne devriez pas le lui offrir.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll leave you be.",
+					Text = "Je vais le laisser tranquille.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 75 ? "B" : "C";
@@ -23,7 +23,7 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Eat up, fool!",
+					Text = "Mange, idiot !",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 75 ? "D" : "E";
@@ -39,13 +39,13 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img] You decide that the man has probably been through this before and decide to leave him be. A few moments later, you catch him walking and talking just fine. In fact, he gets around pretty well for a man who eats so lightly!",
+			Text = "[img]gfx/ui/events/event_05.png[/img] Vous décidez que l\'homme est probablement déjà passé par là et vous décidez de le laisser tranquille. Quelques instants plus tard, vous le surprenez en train de marcher et de parler sans problème. En fait, il se déplace plutôt bien pour un homme qui mange si peu !",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To each his own.",
+					Text = "Chacun son truc.",
 					function getResult( _event )
 					{
 						return 0;
@@ -61,13 +61,13 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img] The man\'s done this before, he can do it again. You turn around to go eat your meal elsewhere, only to hear the man crumple to the ground. He\'s completely passed out and appears to have hit his head on the way down.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] L\'homme l\'a fait avant, il peut le refaire. Vous vous retournez pour aller manger votre repas ailleurs, seulement vous entendez l\'homme s\'effondrer sur le sol. Il est complètement évanoui et semble s\'être cogné la tête en tombant.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What in the seven hells is wrong with you?",
+					Text = "Par les sept enfers, qu\'est-ce qui ne va pas chez toi ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -106,13 +106,13 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_05.png[/img] You order the man to eat. He resists, but you remind him that it is an \'order\', not a request. The sellsword does as told, eating rather gingerly from your bowl. He complains that he does not wish to eat anymore, but you order him to finish the meal. In time, whatever ailed him seems lifted. Energy returns to his eyes and he gets up with a good spring in his step. Unfortunately, he does not care for being told to break his personal codes.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] Vous ordonnez à l\'homme de manger. Il résiste, mais vous lui rappelez que c\'est un\ "ordre\", pas une demande. Le mercenaire s\'exécute et mange avec précaution dans votre bol. Il se plaint qu\'il ne veut plus manger, mais vous lui ordonnez de terminer le repas. Avec le temps, ce qui le rendait malade semble avoir disparu. L\'énergie revient dans ses yeux et il se lève avec un bon élan dans sa démarche. Malheureusement, il n\'aime pas qu\'on lui dise d\'enfreindre ses codes personnels.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Don\'t make me repeat this.",
+					Text = "Ne me fais pas répéter ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -123,7 +123,7 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Spartan.getImagePath());
-				_event.m.Spartan.worsenMood(1.0, "Forced to eat against his beliefs");
+				_event.m.Spartan.worsenMood(1.0, "Forcé de manger contre ses croyances");
 
 				if (_event.m.Spartan.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -138,13 +138,13 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_05.png[/img] Ordering the man to eat, the man does as told. At first, he seems rather reluctant, but after a few bites he dives into the bowl, engorging himself in juices and flecks of corn dot his cheeks. He is almost mad with delight. You\'ve reminded him of just how good food can be. Personally, you thought the meat was a little overcooked.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] Ordonnant à l\'homme de manger, celui-ci s\'exécute. Au début, il semble plutôt réticent, mais après quelques bouchées, il plonge dans le bol, s\'engorgeant de jus et des grains de maïs parsèment ses joues. Il est presque fou de joie. Vous lui avez rappelé à quel point la nourriture peut être bonne. Personnellement, vous avez trouvé que la viande était un peu trop cuite.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Don\'t make me repeat this.",
+					Text = "Ne me fais pas répéter ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -160,7 +160,7 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/traits/trait_icon_08.png",
-						text = _event.m.Spartan.getName() + " is no longer spartan"
+						text = _event.m.Spartan.getName() + " n\'est plus un spartan"
 					}
 				];
 			}

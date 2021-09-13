@@ -10,13 +10,13 @@ this.squire_vs_hedge_knight_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_82.png[/img]%squire% the young squire is eyeing %hedgeknight% from a safe distance. The hedge knight is sharpening his blades, running a whetstone over the edges and stropping the metals to give \'em a good sheen. Catching the squire staring, %hedgeknight% lowers his equipment.%SPEECH_ON%So you want to be a knight, is that it?%SPEECH_OFF%%squire% nods and answers proudly.%SPEECH_ON%It is my dream, yes, and one day it will happen.%SPEECH_OFF%The hedge knight stands and walks over, coming to tower over the youth.%SPEECH_ON%What is it you think a knight does? Saves damsels? Rules fiefs to be loved by the peasants? Owes allegiance to his lord? Well let me tell you, that\'s all bullshit. Dainty farks like yourself are nothing but mealworm. You want to be a knight you gotta learn to kill.%SPEECH_OFF%The squire straightens up and pulls his shoulders back.%SPEECH_ON%I\'ve no issue killing.%SPEECH_OFF%The hedge knight pushes the man back with only a single finger.%SPEECH_ON%Is that so? And have you gutted a man and murdered his family while he bled out on the ground? What of crushing a child\'s head in your hands because your liege gave the order? Would you gouge out a woman\'s eyes because your lord believed that was due punishment for stealing a loaf of bread? Who do you think I am, squire? Do you think I was born big, mean, and savage? No, little squire, you will have to kill, and who you kill first is none other than yourself. That is how you become a knight in these lands, in these times.%SPEECH_OFF%The hedge knight returns to his work. The squire is visibly shaken, but seems to be earnestly thinking over what he\'d just heard.",
+			Text = "[img]gfx/ui/events/event_82.png[/img]%squire% le jeune écuyer observe %hedgeknight% à bonne distance. Le chevalier errant est en train d\'aiguiser ses lames, passant une pierre à aiguiser sur les bords et caressant les métaux pour leur donner un bon éclat. Voyant que l\'écuyer le regarde fixement, le chevalier errant baisse son équipement.%SPEECH_ON%Alors tu veux être chevalier, c\'est ça ? %SPEECH_OFF%squire% hoche la tête et répond fièrement.%SPEECH_ON%C\'est mon rêve, oui, et un jour ça arrivera.%SPEECH_OFF%Le chevalier errant se lève et s\'avance vers le jeune homme, le surplombant.%SPEECH_ON%Qu\'est-ce que tu crois qu\'un chevalier fait ? Sauver les jeunes filles ? Diriger des fiefs pour être aimé des paysans ? Doit faire allégeance à son seigneur ? Laisse-moi te dire que c\'est des conneries. Les imbéciles délicats comme toi ne sont rien d\'autre que des vers de terre. Si tu veux être un chevalier tu dois apprendre à tuer.%SPEECH_OFF%L\'écuyer se redresse et met ses épaules en arrière.%SPEECH_ON%Je n\'ai aucun problème à tuer.%SPEECH_OFF%Le chevalier de la haie repousse l\'homme d\'un seul doigt.%SPEECH_ON%C\'est vrai ? Et as-tu éviscéré un homme et assassiné sa famille pendant qu\'il se vidait de son sang sur le sol ? Et écraser la tête d\'un enfant dans vos mains parce que votre seigneur vous en a donné l\'ordre ? Avez-vous arraché les yeux d\'une femme parce que votre seigneur croyait que c\'était la punition pour avoir volé un pain ? Qui pensez-vous que je sois, écuyer ? Crois-tu que je sois né grand, méchant et sauvage ? Non, petit écuyer, tu devras tuer, et celui que tu tueras en premier n\'est autre que toi-même. C\'est ainsi que l\'on devient chevalier dans ces terres, à cette époque.%SPEECH_OFF%Le chevalier errant retourne à son travail. L\'écuyer est visiblement secoué, mais semble réfléchir sérieusement à ce qu\'il vient d\'entendre.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Life\'s not a knight\'s tale.",
+					Text = "La vie n\'est pas un conte de fées.",
 					function getResult( _event )
 					{
 						return 0;
@@ -35,9 +35,9 @@ this.squire_vs_hedge_knight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Squire.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Détermination"
+					text = _event.m.Squire.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] de Détermination"
 				});
-				_event.m.Squire.worsenMood(1.5, "Has been shaken in his beliefs");
+				_event.m.Squire.worsenMood(1.5, "A été ébranlé dans ses convictions");
 				this.List.push({
 					id = 10,
 					icon = this.Const.MoodStateIcon[_event.m.Squire.getMoodState()],
