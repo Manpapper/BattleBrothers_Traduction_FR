@@ -10,13 +10,13 @@ this.swordmaster_teaches_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_17.png[/img]An old man\'s voice is heard quietly issuing orders.%SPEECH_ON%The foot leads, the body follows. Again.%SPEECH_OFF%You find %swordmaster% the swordmaster and %swordstudent% practicing in a field. The elder shakes his head at the most recent display of swordsmanship.%SPEECH_ON%The foot leads, the body follows. Again!%SPEECH_OFF%The student practices what he is taught. Nodding, the swordmaster barks another order.%SPEECH_ON%Now do it in reverse. The foot retreats, the body follows. Do not retreat with your mind. Let your feet do the thinking for you. Instinct is survival! Thinking is death! Move as though the world demanded it. If a wind blows are you faster than the leaves which hear its call? I see. Good... you are learning. Now... again.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_17.png[/img]On entend la voix d\'un vieil homme qui donne des ordres à voix basse.%SPEECH_ON% Le pied mène, le corps suit. Encore.%SPEECH_OFF%Vous trouvez %swordmaster% le maître d\'épée et %swordstudent% s\'entraînant dans un champ. L\'aîné secoue la tête à la plus récente démonstration d\'épée.%SPEECH_ON%Le pied mène, le corps suit. Encore une fois!%SPEECH_OFF%L\'élève pratique ce qu\'on lui enseigne. En hochant la tête, le maître d\'armes aboie un autre ordre.%SPEECH_ON%Maintenant faites le en sens inverse. Le pied recule, le corps suit. Ne recule pas avec ton esprit. Laisse tes pieds réfléchir pour toi. L\'instinct, c\'est la survie ! Penser, c\'est mourir ! Bougez comme si le monde l\'exigeait. Si le vent souffle, es-tu plus rapide que les feuilles qui entendent son appel ? Je vois. Bien... tu apprends. Maintenant... encore.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Now put it to good use.",
+					Text = "Maintenant, fais-en bon usage.",
 					function getResult( _event )
 					{
 						return 0;
@@ -38,7 +38,7 @@ this.swordmaster_teaches_event <- this.inherit("scripts/events/event", {
 					{
 						id = 17,
 						icon = "ui/icons/melee_defense.png",
-						text = _event.m.Student.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeDefense + "[/color] Maîtrise à Distance"
+						text = _event.m.Student.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeDefense + "[/color] de Defense à Distance"
 					}
 				];
 

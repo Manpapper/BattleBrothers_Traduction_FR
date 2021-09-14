@@ -11,12 +11,12 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 200.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_79.png[/img]You cross into a small hamlet beside the path. It\'s a rather nondescript place save for the woman tied atop a soon-to-be bonfire. She\'s surrounded by a band of peasants as is usual for a woman in this position. A monk from the mob reads from a holy tome, apparently letting everyone know the deontological nature of her crimes. Another man dutifully stands by with a torch, his hands itchy to put it to use.\n\n Seeing you, the woman shouts for help.%SPEECH_ON%They\'re going to burn me! You must do something! I\'ve done no wrong here!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous traversez un petit hameau au bord du chemin. C\'est un endroit plutôt indescriptible, à l\'exception de la femme attachée au sommet d\'un futur feu de joie. Elle est entourée d\'une bande de paysans, comme il est habituel pour une femme dans cette position. Un moine de la foule lit un tome sacré, faisant apparemment savoir à tous la nature déontologique de ses crimes.Un autre homme se tient consciencieusement debout avec une torche, ses mains le démange à l\'utiliser.\n\n En vous voyant, la femme crie au secours.%SPEECH_ON%Ils vont me brûler !  Vous devez faire quelque chose ! Je n\'ai rien fait de mal ici!%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Let\'s free her.",
+					Text = "Libérons-la.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 80)
@@ -36,7 +36,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Witchhunter != null)
 				{
 					this.Options.push({
-						Text = "What does a witch hunter say to this, %witchhunterfull%?",
+						Text = "Qu\'est-ce que le chasseur de sorcières a à dire, %witchhunterfull%?",
 						function getResult( _event )
 						{
 							return "Witchhunter";
@@ -48,7 +48,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Monk != null)
 				{
 					this.Options.push({
-						Text = "What do the old gods say, %monkfull%?",
+						Text = "Que disent les vieux dieux, %monkfull%?",
 						function getResult( _event )
 						{
 							return "Monk";
@@ -60,7 +60,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Cultist != null)
 				{
 					this.Options.push({
-						Text = "What does your strange god make of this, %cultistfull%?",
+						Text = "Qu\'est-ce que votre dieu étrange fait dans ce cas, %cultistfull%?",
 						function getResult( _event )
 						{
 							return "Cultist";
@@ -70,7 +70,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "This isn\'t our problem.",
+					Text = "Ce n\'est pas notre problème.",
 					function getResult( _event )
 					{
 						return 0;
@@ -82,13 +82,13 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Good",
-			Text = "[img]gfx/ui/events/event_79.png[/img]You will not stand idly by while an innocent woman is burned for some imaginary crime. Blade in hand, you climb the wooden pallets and cut her free. She quickly scurries away, seeking her own safety. The crowd, enraged, sets upon the company in an instant. A scuffle between peasants and sellswords ends poorly for the former, but they do put in some damage.\n\n For losing control of the crowd, you have the monk beaten up, and the man carrying the torch, too. A few of the brothers believe this was the right thing to do and are pleased with your decision.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous ne resterez pas sans rien faire pendant qu\'une femme innocente est brûlée pour un crime imaginaire. Lame en main, vous grimpez sur les palettes de bois et la libérez. Elle s\'enfuit rapidement, cherchant sa propre sécurité. La foule, enragée, s\'en prend à la compagnie en un instant. Une bagarre entre paysans et mercenaires se termine mal pour les premiers, mais ils font quelques dégâts.\n\nPour avoir perdu le contrôle de la foule, vous faites tabasser le moine, ainsi que l\'homme portant la torche. Quelques frères d\'armes pensent que c\'était la bonne chose à faire et sont satisfaits de votre décision.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I hope she finds somewhere safe to be.",
+					Text = "J\'espère qu\'elle trouvera un endroit sûr.",
 					function getResult( _event )
 					{
 						return 0;
@@ -127,7 +127,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 25 && bro.getBackground().getID() != "background.witchhunter")
 					{
-						bro.improveMood(1.0, "You saved a woman from being burned at the stake");
+						bro.improveMood(1.0, "Vous avez sauvé une femme qui allait être brûlée sur le bûcher.");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -144,13 +144,13 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Bad",
-			Text = "[img]gfx/ui/events/event_79.png[/img]You will not stand idly by while an innocent woman is burned for some imaginary crime. Blade in hand, you climb the wooden pallets and cut her free. When she\'s free, she leans down and takes you in her hands. Her skin is smooth and unmarked.%SPEECH_ON%Thank you, sellsword.%SPEECH_OFF%She plants a kiss and it feels as though her lips are ice. You watch as she floats down the wooden pallets. Uh oh.\n\n The town monk retreats, trying to hide himself in the crowd, but the witch screams and splits the mob, leaving only the friar by himself on the ground. He slowly slides across the dirt before rising to his feet as though pushed by an invisible force. He tries to retreat again, but there\'s no going anywhere. She kisses him as she did you, but the man\'s eyes roll back in his head and you see his veins engorge, purpling violently, his whole body issuing blood out of every pore as he shakes. He screams, but it\'s lost in the mouth of the witch who eats it with a moan. When she lets go, he drops to the ground a sopping red corpse.\n\n The villagers scatter while your men try and fight this evil. She laughs and shrinks into the center of her clothes, her cloak rolling itself in a bundle out of which shoots a cackling specter. It\'s soars to the nearest tree line hopefully to never be seen again.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous ne resterez pas sans rien faire pendant qu\'une femme innocente est brûlée pour un crime imaginaire. Lame en main, vous grimpez sur les palettes de bois et la libérez. Quand elle est libre, elle se penche et vous prend dans ses mains. Sa peau est lisse et sans marque.%SPEECH_ON%Merci, mercenaire.%SPEECH_OFF%Elle vous embrasse et vous avez l\'impression que ses lèvres sont de glace. Vous la regardez flotter le long des palettes de bois. Oh oh.\n\nLe moine de la ville bat en retraite, essayant de se cacher dans la foule, mais la sorcière hurle et divise la foule, ne laissant que le moine seul sur le sol. Il glisse lentement sur la terre avant de se relever comme s\'il était poussé par une force invisible. Il tente à nouveau de battre en retraite, mais il n\'y a pas d\'issue. Elle l\'embrasse comme elle l\'a fait avec vous, mais les yeux de l\'homme se retournent dans sa tête et vous voyez ses veines s\'engorger, se violacer violemment, son corps entier cracher du sang par tous les pores tandis qu\'il tremble. Il hurle, mais c\'est perdu dans la bouche de la sorcière qui le dévore avec un gémissement. Quand elle le lâche, il tombe sur le sol comme un cadavre rouge et trempé. Les villageois se dispersent pendant que vos hommes tentent de combattre ce mal. Elle rit et se rétracte au centre de ses vêtements, sa cape s\'enroule en un paquet d\'où jaillit un spectre ricanant. Il s\'envole vers la ligne d\'arbres la plus proche, en espérant ne plus jamais être vu.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Oh shit.",
+					Text = "Oh, merde.",
 					function getResult( _event )
 					{
 					}
@@ -166,7 +166,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 25 || bro.getBackground().getID() == "background.witchhunter" || bro.getBackground().getID() == "background.monk" || bro.getSkills().hasSkill("trait.superstitious") || bro.getSkills().hasSkill("trait.mad"))
 					{
-						bro.worsenMood(1.0, "You set free an evil spirit");
+						bro.worsenMood(1.0, "A libéré un mauvais esprit");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -183,13 +183,13 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Witchhunter",
-			Text = "[img]gfx/ui/events/event_79.png[/img]%witchhunter% steps forward with a skeptical eye. He looks at the woman who strains to say \'please.\' The witch hunter stares her up and down, then he turns and drives a blade through the man holding the torch. He gargles with it in his throat and his hands work to try and pry it out.%SPEECH_ON%Stop with the farce, you will not fool me.%SPEECH_OFF%The witch hunter says. He yanks out the blade and the torch-wielder stands there for a moment, but his wide eyes slowly settle down and the \'blood\' stops in an instant. His face widens, skin stretching taut like the melted visage of a puppeteer\'s most gruesome doll. Its voice is shrieking, every syllable the pitch of a dying cat.%SPEECH_ON%I am NOT the last! You\'ll NEVER be rid of us all!%SPEECH_OFF%And with that, %witchhunter% drives his weapon into the evil spirit\'s skull. The skin hardens like a desert earth before chipping away.\n\n With the truth out there, the woman is cut down and freed. The monk is defrocked by an angry mob with nowhere else to turn their energy. Naked and humiliated, he is driven from the hamlet for his wrongful accusations.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]%witchhunter% s\'avance, l\'œil sceptique. Il regarde la femme qui s\'efforce de dire \"s\'il vous plaît\". Le chasseur de sorcières la fixe de haut en bas, puis il se retourne et plante une lame dans l\'homme qui tient la torche. Il se gargarise avec la torche dans sa gorge et ses mains s\'efforcent de l\'extraire.%SPEECH_ON% Arrête avec cette farce, tu ne me tromperas pas.%SPEECH_OFF%Dit le chasseur de sorcières. Il arrache la lame et le porteur de la torche reste là un moment, mais ses yeux écarquillés se calment lentement et le "sang" s\'arrête en un instant. Son visage s\'élargit, la peau se tend comme le visage fondu de la poupée la plus horrible d\'un marionnettiste. Sa voix est criarde, chaque syllabe ayant la hauteur d\'un chat mourant.%SPEECH_ON%Je ne suis PAS le dernier ! Vous ne serez JAMAIS débarrassé de nous tous!%SPEECH_OFF%Et avec ça, %witchhunter% enfonce son arme dans le crâne de l\'esprit maléfique. La peau durcit comme la terre du désert avant de s\'effriter.\n\n La vérité étant connue, la femme est détachée et libérée. Le moine est défroqué par une foule en colère qui n\'a nulle part où aller avec son énergie. Nu et humilié, il est chassé du hameau pour ses accusations injustifiées.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "True evil hides itself well.",
+					Text = "Le vrai mal se dissimule bien.",
 					function getResult( _event )
 					{
 						return 0;
@@ -205,7 +205,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				_event.m.Witchhunter.getBaseProperties().Bravery += resolve;
 				_event.m.Witchhunter.getBaseProperties().Initiative += initiative;
 				_event.m.Witchhunter.getSkills().update();
-				_event.m.Witchhunter.improveMood(2.0, "Killed an evil spirit");
+				_event.m.Witchhunter.improveMood(2.0, "A tué un mauvais esprit");
 
 				if (_event.m.Witchhunter.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -219,7 +219,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Witchhunter.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Détermination"
+					text = _event.m.Witchhunter.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] de Détermination"
 				});
 				this.List.push({
 					id = 16,
@@ -232,7 +232,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getID() != _event.m.Witchhunter.getID() && (this.Math.rand(1, 100) <= 25 || bro.getBackground().getID() == "background.witchhunter" || bro.getBackground().getID() == "background.monk" || bro.getSkills().hasSkill("trait.superstitious")))
 					{
-						bro.improveMood(1.0, "Saw an evil spirit meet its end");
+						bro.improveMood(1.0, "A vu un mauvais esprit rencontrer sa fin");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -249,13 +249,13 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Monk",
-			Text = "[img]gfx/ui/events/event_79.png[/img]The monk, %monk%, sits with the town\'s own friar and talks for a time. When they are done, a nod is given to the torchman who sets the wooden pallets aflame. The woman screams for mercy, but the flames have none for her, slowly working up feet first. It is a horrific sight and only when the smoke is a choking cloud does the dying woman go silent. The fire consumes her entirely as the rest of the town claps and cheers. %monk% states that she was clearly a witch and had to be done away with. You\'re not sure. All you saw was a woman burned alive, but you trust that he knows more than you about the war between the old gods and the evils of sorcery.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Le moine, %monk%, s\'assied avec le prêtre de la ville et discute un moment. Lorsqu\'ils ont terminé, ils font un signe de tête au flambeur qui met le feu aux palettes de bois. La femme hurle à la pitié, mais les flammes n\'en ont pas pour elle, et se lèvent lentement, les pieds devant. C\'est un spectacle horrible et ce n\'est que lorsque la fumée est un nuage étouffant que la femme mourante se tait. Le feu la consume entièrement tandis que le reste de la ville applaudit et acclame. %monk% dit qu\'elle était clairement une sorcière et qu\'il fallait s\'en débarrasser. Vous n\'êtes pas sûr. Tout ce que tu as vu, c\'est une femme brûlée vive, mais vous pensez qu\'il en sait plus que vous sur la guerre entre les anciens dieux et la sorcellerie.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Rooting out evil is never easy.",
+					Text = "Déraciner le mal n\'est jamais facile.",
 					function getResult( _event )
 					{
 						return 0;
@@ -269,7 +269,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				local resolve = this.Math.rand(2, 3);
 				_event.m.Monk.getBaseProperties().Bravery += resolve;
 				_event.m.Monk.getSkills().update();
-				_event.m.Monk.improveMood(2.0, "Had a witch burned");
+				_event.m.Monk.improveMood(2.0, "A fait brûler une sorcière");
 
 				if (_event.m.Monk.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -291,7 +291,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getID() != _event.m.Monk.getID() && (bro.getBackground().getID() == "background.witchhunter" || bro.getBackground().getID() == "background.monk" || bro.getSkills().hasSkill("trait.superstitious")))
 					{
-						bro.improveMood(1.0, "Saw a witch burning at the stake");
+						bro.improveMood(1.0, "A vu une sorcière brûler sur le bûcher");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -308,13 +308,13 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Cultist",
-			Text = "[img]gfx/ui/events/event_79.png[/img]%cultist% steps forward and looks the villagers up and down. He shakes his head.%SPEECH_ON%You all should kill yourselves.%SPEECH_OFF%The town monk rustles up his cloak.%SPEECH_ON%E-excuse me?%SPEECH_OFF%The cultist starts to cut the woman down. A few of your mercenaries step forward to stop anyone from protesting. When she\'s free and sent running for her own safety, %cultist% speaks again.%SPEECH_ON%Kill yourselves. Each of you. Tonight. You\'ve angered Davkul and his rage is a debt you\'d do best to pay yourself.%SPEECH_OFF%The monk opens his mouth to say something, but his nose cracks as though indented by an invisible stone. He lurches, blood spewing from his nostrils. %cultist% nods.%SPEECH_ON%Hmm, he is angrier than I had thought. Davkul awaits us all, but he is now on your doorstep.%SPEECH_OFF%Screaming, the monk falls to the ground as his jaw sickeningly cracks open, his mouth left permanently ajar. The villagers scream and disperse like rabbits beneath the shadow of a hawk.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]%cultist% s\'avance et regarde les villageois de haut en bas. Il secoue la tête.%SPEECH_ON% Vous devriez tous vous tuer.%SPEECH_OFF% Le moine de la ville remue sa cape.%SPEECH_ON%E-excusez-moi?%SPEECH_OFF% Le cultist commence à détacher la femme. Quelques-uns de vos mercenaires s\'avancent pour empêcher quiconque de protester. Quand elle est libre et qu\'elle a couru pour sa propre sécurité, %cultist% parle à nouveau.%SPEECH_ON%Tuez vous. Chacun d\'entre vous. Ce soir. Vous avez mis Davkul en colère et sa rage est une dette que vous feriez mieux de payer vous-même.%SPEECH_OFF%Le moine ouvre la bouche pour dire quelque chose, mais son nez se fend comme s\'il avait été entaillé par une pierre invisible. Il vacille, du sang s\'écoule de ses narines. %cultist% hôche de la tête.%SPEECH_ON%Hmm, Il est plus en colère que je ne le pensais. Davkul nous attend tous, mais il est maintenant sur le pas de votre porte.%SPEECH_OFF%Crisant, le moine tombe sur le sol alors que sa mâchoire s\'ouvre de façon écoeurante, sa bouche restant entrouverte en permanence. Les villageois hurlent et se dispersent comme des lapins sous l\'ombre d\'un faucon.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Disturbing.",
+					Text = "Troublant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -328,7 +328,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				local resolve = 2;
 				_event.m.Cultist.getBaseProperties().Bravery += resolve;
 				_event.m.Cultist.getSkills().update();
-				_event.m.Cultist.improveMood(2.0, "Witnessed Davkul\'s power");
+				_event.m.Cultist.improveMood(2.0, "A été témoin de la puissance de Davkul");
 
 				if (_event.m.Cultist.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -350,7 +350,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getID() != _event.m.Cultist.getID() && (bro.getBackground().getID() == "background.cultist" || bro.getBackground().getID() == "background.converted_cultist"))
 					{
-						bro.improveMood(1.0, "Witnessed Davkul\'s power");
+						bro.improveMood(1.0, "A été témoin de la puissance de Davkul");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -363,7 +363,7 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getBackground().getID() == "background.witchhunter" || bro.getBackground().getID() == "background.monk" || bro.getSkills().hasSkill("trait.superstitious"))
 					{
-						bro.worsenMood(1.0, _event.m.Cultist.getName() + " freed a witch");
+						bro.worsenMood(1.0, _event.m.Cultist.getName() + " a libéré une sorcière");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{

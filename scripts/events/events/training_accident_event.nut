@@ -17,7 +17,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "À least he didn\'t kill himself.",
+					Text = "Au moins, il ne s\'est pas suicidé.",
 					function getResult( _event )
 					{
 						return 0;
@@ -33,7 +33,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 
 				if (r == 1)
 				{
-					this.Text = "[img]gfx/ui/events/event_19.png[/img]While training, %clumsyguy%, not being the most dexterous fellow, manages to hurt himself with his own weapon.";
+					this.Text = "[img]gfx/ui/events/event_19.png[/img]Pendant son entraînement, %clumsyguy%, qui n\'est pas le plus adroit des hommes, parvient à se blesser avec sa propre arme.";
 					injury = _event.m.ClumsyGuy.addInjury(this.Const.Injury.Accident1);
 					this.List = [
 						{
@@ -45,7 +45,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 				}
 				else if (r == 2)
 				{
-					this.Text = "[img]gfx/ui/events/event_34.png[/img]Traveling, you like to keep your men fresh with the occasional training exercise. Unfortunately, while practicing a riposte, %clumsyguy% managed to stick himself in the foot. The man appears even more hurt by the embarrassment.";
+					this.Text = "[img]gfx/ui/events/event_34.png[/img]En voyage, vous aimez garder vos hommes frais et dispos avec un exercice d\'entraînement occasionnel. Malheureusement, en s\'exerçant à une riposte, %clumsyguy% a réussi à se planter dans le pied. L\'homme semble encore plus blessé par cet embarras.";
 					_event.m.ClumsyGuy.addLightInjury();
 					this.List.push({
 						id = 10,
@@ -55,7 +55,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 				}
 				else if (r == 3)
 				{
-					this.Text = "[img]gfx/ui/events/event_34.png[/img]While doing inventory, you ask %clumsyguy% to carry over a quiver of arrows. The short, simple journey ends with the man tripping over a rock and turning himself into a pincushion.";
+					this.Text = "[img]gfx/ui/events/event_34.png[/img]En faisant l\'inventaire, vous demandez à %clumsyguy% de vous apporter un carquois de flèches. Ce court et simple voyage se termine lorsque l\'homme trébuche sur un rocher et se transforme en pelote d\'épingles.";
 					injury = _event.m.ClumsyGuy.addInjury(this.Const.Injury.Accident2);
 					this.List = [
 						{
@@ -67,7 +67,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 				}
 				else if (r == 4)
 				{
-					this.Text = "[img]gfx/ui/events/event_34.png[/img]You find a rather drunk %clumsyguy% nursing the side of his face. %otherguy1% explains that the idiot tried to dance over a series of rocks, only to fall and bash himself in the face. Great.";
+					this.Text = "[img]gfx/ui/events/event_34.png[/img]Vous trouvez un %clumsyguy% plutôt ivre en train de soigner le côté de son visage. %otherguy1% explique que l\'idiot a essayé de danser sur une série de rochers, avant de tomber et de se frapper au visage. Super.";
 					injury = _event.m.ClumsyGuy.addInjury(this.Const.Injury.Accident3);
 					this.List = [
 						{
@@ -79,7 +79,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 				}
 				else if (r == 5)
 				{
-					this.Text = "[img]gfx/ui/events/event_34.png[/img]While %otherguy1% and %otherguy2% train, %clumsyguy% comes in between them, lecturing on how to do it properly while at the same time not watching where he\'s going. A wayward wooden sword crosses paths with his face and a moment later the idiot is unconscious.";
+					this.Text = "[img]gfx/ui/events/event_34.png[/img]Pendant que %otherguy1% et %otherguy2% s\'entraînent, %clumsyguy% s\'interpose entre eux, leur donnant des leçons sur la façon de faire correctement tout en ne regardant pas où il va. Une épée en bois errante croise son visage et un instant plus tard, l\'idiot est inconscient.";
 					injury = _event.m.ClumsyGuy.addInjury(this.Const.Injury.Accident3);
 					this.List = [
 						{
@@ -91,7 +91,7 @@ this.training_accident_event <- this.inherit("scripts/events/event", {
 				}
 				else
 				{
-					this.Text = "[img]gfx/ui/events/event_34.png[/img]It appears %clumsyguy% got a little too much to drink before partaking in today\'s sparring. As the story was explained to you, the drunkard mistakened a tree for an enemy combatant. He then, again as the story goes, proceeded to charge said tree, knocking himself out in the process.";
+					this.Text = "[img]gfx/ui/events/event_34.png[/img]Il semble que %clumsyguy% ait un peu trop bu avant de participer au combat d\'aujourd\'hui. Comme on vous l\'a expliqué, l\'ivrogne a confondu un arbre avec un combattant ennemi. Il a ensuite, toujours selon l\'histoire, chargé l\'arbre, s\'assommant au passage.";
 					_event.m.ClumsyGuy.addLightInjury();
 					this.List.push({
 						id = 10,

@@ -10,13 +10,13 @@ this.surefooted_saves_damsel_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_85.png[/img]A few brothers come back to you with the most curious of stories. Apparently %surefooted%, the ever surefooted sellsword, managed to make a bit of a name for himself in %townname%.\n\n While carousing with ladies on a tavern staircase, the bannister broke and a damsel went careening downward. With a horn of ale in one hand and a wench wrapped in the tender grip of the other, the mercenary stuck his foot out and managed to catch the falling mistress on the toe of his boot, quite literally bringing her to heel much to the roaring applause of the inebriated crowd below. You ask where he is now. The mercenaries laugh.%SPEECH_ON%Dropping trou with the easily impressed, what else?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_85.png[/img]Quelques frères reviennent vers vous avec une histoire des plus curieuses. Apparemment, %surefooted%, le mercenaire toujours aussi sûr de lui, a réussi à se faire un nom dans %townname%.\n\nAlors qu\'il s\'amusait avec des dames dans l\'escalier d\'une taverne, la rampe s\'est brisée et une demoiselle a dégringolé. Avec une corne de bière dans une main et une jeune fille enveloppée dans l\'autre, le mercenaire a sorti son pied et a réussi à attraper la maîtresse qui tombait sur le bout de sa botte, la mettant littéralement au pied du mur, sous les applaudissements de la foule ivre en bas. Vous demandez où il est maintenant. Les mercenaires rigolent.%SPEECH_ON%Baisser son froc pour les personnes facilement impressionnables, quoi d\'autre?%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Of course, of course.",
+					Text = "Bien sûr, bien sûr.",
 					function getResult( _event )
 					{
 						return 0;
@@ -33,7 +33,7 @@ this.surefooted_saves_damsel_event <- this.inherit("scripts/events/event", {
 					_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "One of your men got a reputation with the ladies");
 				}
 
-				_event.m.Surefooted.improveMood(2.0, "Had a bit of a partie carree");
+				_event.m.Surefooted.improveMood(2.0, "S\'est bien amusé à la fête");
 
 				if (_event.m.Surefooted.getMoodState() >= this.Const.MoodState.Neutral)
 				{

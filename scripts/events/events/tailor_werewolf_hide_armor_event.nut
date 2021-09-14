@@ -9,13 +9,13 @@ this.tailor_werewolf_hide_armor_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]While stressing over where to go and when, %tailor% the tailor walks into your tent, something dark and heavy wrapped over both his outstretched arms. You take a step back, seeing what look like claws or some such manifestation glinting in the candlelight.\n\nThe tailor explains that he\'s made a suit of armor stitched together by the hide of direwolves. He sets the armor down on the table where a few left-over claws rap against the wood with deadly weight. He unfolds the armor and shows it in whole, a ghastly thing of black and sharpened bones, a creature shorn of its insides, left to be occupied by man or some other creature seeking warmth in its emptied hide, the head of the beast tilted up to look at its soon to be wearer. Altogether fearsome, no doubt, and has you pondering when and where the tailor got such an idea in the first place.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Alors que vous vous demandez où aller et quand, le tailleur %tailor% entre dans votre tente, quelque chose de sombre et de lourd enveloppant ses deux bras tendus. Vous reculez d\'un pas, voyant ce qui ressemble à des griffes ou à une manifestation de ce genre scintiller à la lumière des bougies.\n\nLe tailleur vous explique qu\'il a fabriqué une armure cousue à partir de la peau de loups-garous. Il pose l\'armure sur la table où quelques griffes restantes frappent le bois avec un poids mortel. Il déplie l\'armure et la montre dans son ensemble, une chose effroyable de noir et d\'os aiguisés, une créature privée de ses entrailles, laissée à la disposition de l\'homme ou d\'une autre créature cherchant la chaleur dans sa peau vide, la tête de la bête inclinée vers le haut pour regarder son futur porteur. Tout à fait effrayant, sans aucun doute, et vous vous demandez quand et où le tailleur a eu une telle idée en premier lieu.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A fearsome armor to behold.",
+					Text = "Une armure redoutable à contempler.",
 					function getResult( _event )
 					{
 						return 0;
