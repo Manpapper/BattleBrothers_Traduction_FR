@@ -10,13 +10,13 @@ this.wildman_offers_mushrooms_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You take a rest at the base of an enormous tree. Somehow, the sun manages to sear a path through the forest canopy and blind your eyes. Getting up to move, you run into %wildman% the wildman. He\'s offering you a handful of various questionables: mushrooms, flower petals, berries. With a grunt, he ushers them toward your face.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous vous reposez à la base d\'un arbre énorme. Le soleil a réussi à se frayer un chemin à travers la canopée de la forêt et à vous aveugler. En vous levant pour bouger, vous tombez sur %wildman% le sauvage. Il vous offre une poignée d\'objets divers : champignons, pétales de fleurs, baies. Avec un grognement, il les dirige vers votre visage.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Sure, %wildman%, I\'ll take some of those.",
+					Text = "Bien sûr, %wildman%, je vais en prendre un peu.",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,7 @@ this.wildman_offers_mushrooms_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Umm, no thanks.",
+					Text = "Humm, non merci.",
 					function getResult( _event )
 					{
 						return 0;
@@ -40,13 +40,13 @@ this.wildman_offers_mushrooms_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_25.png[/img]Surprisingly, the bits of forest foods are actually quite good. Sweet, but not too sweet, and with a hint of oak. You thank teh weeldman fore his gift. He rises hyyy into the skies, the skies of all things, shaking what are noww braanches you had earlier mistakenly assumed were human arms of humane purposes. Cats rain from his mouth as he speaks. His tongue is a leenguage of marbled letters, floating before his lips innn.. innn... in great sighs for sentences. Feeling good about his graces, you give him a weave, a wave of yer hand, but find yer fingers are also hands, something you had not noticed in the befores. A shock to your beliefs, yer memories of childhood flooded with fleeting feet rocking yer crib, yer domain, yer castle. All lies. All of it! Blackness comes. The darkness smiles.\n\nYou awake on the ground, %otherguy% gently dabbing a rag of water over your forehead.%SPEECH_ON%He\'s back! You alright?%SPEECH_OFF%You can\'t quite remember what happened, but your mind is desperately telling you not to ask. You simply nod in response and get the men back to marching.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Étonnamment, les morceaux de nourriture forestière sont en fait assez bons. Doux, mais pas trop, et avec un soupçon de chêne. Vous remerciez le sauvageon pour son cadeau. Il s\'élève dans les cieux, les cieux de toutes choses, secouant ce qui est maintenant des branches que vous aviez pris pour des bras humains. Les chats pleuvent de sa bouche quand il parle. Sa langue est un language de lettres marbrées, flottant devant ses lèvres dans de grands soupirs pour des phrases. Heureux de ses grâces, vous lui faites un signe de la main, mais vous constatez que vos doigts sont aussi des mains, ce que vous n\'aviez pas remarqué auparavant. Un choc pour vos croyances, vos souvenirs d\'enfance inondés de pieds fugaces berçant votre berceau, votre domaine, votre château. Tout est mensonge. Tout cela ! Les ténèbres arrivent. Les ténèbres sourient. Vous vous réveillez sur le sol, %otherguy% vous tamponne doucement le front avec un chiffon d\'eau.%SPEECH_ON% Il est revenu à lui, tu vas bien ? %SPEECH_OFF% Vous vous ne vous souvenez pas vraiment de ce qui s\'est passé, mais votre esprit vous dit désespérément de ne pas demander. Vous faites simplement un signe de tête en guise de réponse et vous remettez les hommes en marche.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ve learned something today.",
+					Text = "J\'ai appris quelque chose aujourd\'hui.",
 					function getResult( _event )
 					{
 						return 0;

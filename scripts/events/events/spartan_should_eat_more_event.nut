@@ -106,7 +106,7 @@ this.spartan_should_eat_more_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_05.png[/img] Vous ordonnez à l\'homme de manger. Il résiste, mais vous lui rappelez que c\'est un\ "ordre\", pas une demande. Le mercenaire s\'exécute et mange avec précaution dans votre bol. Il se plaint qu\'il ne veut plus manger, mais vous lui ordonnez de terminer le repas. Avec le temps, ce qui le rendait malade semble avoir disparu. L\'énergie revient dans ses yeux et il se lève avec un bon élan dans sa démarche. Malheureusement, il n\'aime pas qu\'on lui dise d\'enfreindre ses codes personnels.",
+			Text = "[img]gfx/ui/events/event_05.png[/img] Vous ordonnez à l\'homme de manger. Il résiste, mais vous lui rappelez que c\'est un \"ordre\", pas une demande. Le mercenaire s\'exécute et mange avec précaution dans votre bol. Il se plaint qu\'il ne veut plus manger, mais vous lui ordonnez de terminer le repas. Avec le temps, ce qui le rendait malade semble avoir disparu. L\'énergie revient dans ses yeux et il se lève avec un bon élan dans sa démarche. Malheureusement, il n\'aime pas qu\'on lui dise d\'enfreindre ses codes personnels.",
 			Image = "",
 			List = [],
 			Characters = [],

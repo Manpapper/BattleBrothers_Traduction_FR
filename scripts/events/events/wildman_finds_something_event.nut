@@ -10,13 +10,13 @@ this.wildman_finds_something_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]While trying not to lose your temper at just how many low-hanging branches are catching you in the face, %otherguy% hurries to your side and says %wildman% the wildman has run off. You turn round to see the rest of the men looking as confused as you are. Holding your fist up to quiet the company, the forest returns your order of silence with muted chirps of distant birds and the buzz of a bee or wasp somewhere unseen. Shaking your head, you decide to continue the march.\n\nA few hours later, the wildman jumps out of a bush you were about to cleave with a machete. He\'s got an armful of random items in hand. Where he got these things, you\'ve no idea, but you have the men sift through the findings. %wildman% returns to rank as though nothing happened at all. You glance at the man and catch him staring at a butterfly on his finger. When you glance at him again, the butterfly is gone and the man is swallowing something. %otherguy% gives you a report on what he brought.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Alors que vous essayez de ne pas perdre votre sang-froid devant le nombre de branches basses qui vous tombent dessus, %otherguy% se précipite à vos côtés et vous dit %wildman% que le sauvage s\'est enfui. Vous vous retournez pour voir le reste des hommes aussi confus que vous. Levant le poing pour faire taire la compagnie, la forêt vous rend votre ordre de silence avec des gazouillis sourds d\'oiseaux lointains et le bourdonnement d\'une abeille ou d\'une guêpe quelque part dans l\'ombre.\n\nSecouant la tête, vous décidez de poursuivre la marche. Quelques heures plus tard, le sauvage surgit d\'un buisson que vous étiez sur le point de fendre avec une machette. Il a une brassée d\'objets divers à la main. Vous n\'avez aucune idée de l\'endroit où il a trouvé ces objets, mais vous demandez aux hommes de passer en revue les trouvailles. %wildman% reprend son rang comme si de rien n\'était. Vous regardez l\'homme et le surprenez en train de fixer un papillon à son doigt. Lorsque vous le regardez à nouveau, le papillon a disparu et l\'homme est en train d\'avaler quelque chose. %otherguy% vous fait un rapport sur ce qu\'il a apporté.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Where did he get these?",
+					Text = "Où les a-t-il trouvées ?",
 					function getResult( _event )
 					{
 						return 0;

@@ -11,13 +11,13 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%townImage%Civilization is no place for a wildman like %wildman% and he quickly proves it.\n\nApparently, the damned man went crazy while in a shop and trashed the whole place. As the story goes, he just walked in and started taking things, not quite understanding the social norms of paying for goods. The shop owner then came after him with a broom, trying to shoo the man out of his store. Believing the broom a monster, the wildman proceeded to go completely crazy. Judging by the reports, it was quite the commotion, up to and including shite throwing.\n\nNow the shop owner is in your face demanding compensation for the damage done. Apparently he\'s wanting %compensation% crowns. Behind him, a few town militia stand with very watchful eyes.",
+			Text = "%townImage%La civilisation n\'est pas un endroit pour un sauvage comme %wildman% et il le prouve rapidement.\n\nApparemment, l\'homme a perdu la tête dans un magasin et a tout saccagé. L\'histoire raconte qu\'il est entré et a commencé à prendre des objets, ne comprenant pas vraiment les normes sociales de paiement des marchandises. Le propriétaire du magasin l\'a alors poursuivi avec un balai, essayant de chasser l\'homme de son magasin. Croyant que le balai était un monstre, l\'homme sauvage est devenu complètement fou. À en juger par les rapports, c\'était une sacrée agitation, allant jusqu\'à des jets de merde. Maintenant, le propriétaire du magasin vous demande une compensation pour les dommages causés. Apparemment, il veut une compensation de %compensation% couronnes. Derrière lui, quelques miliciens de la ville se tiennent debout avec des yeux très attentifs.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This ain\'t our problem.",
+					Text = "Ce n\'est pas notre problème.",
 					function getResult( _event )
 					{
 						return "B";
@@ -25,7 +25,7 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Fine, the company will cover the damages.",
+					Text = "Bien, la compagnie couvrira les dommages.",
 					function getResult( _event )
 					{
 						return "C";
@@ -33,7 +33,7 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Fine, the company will cover the damages - but %wildman% will work it off.",
+					Text = "Bien, la compagnie couvrira les dommages - mais %wildman% s\'en acquittera.",
 					function getResult( _event )
 					{
 						return "D";
@@ -49,13 +49,13 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "%townImage%You push the shop owner away, telling him that you owe nothing. When he jumps forward again, your hand deftly moves to the pommel of your sword, stopping the man in one swift motion. He raises his hands up, nodding as he backs off. A few townspeople see this and skirt by, trying to avoid your gaze. The militiamen notice, but they seem uncertain on whether to take action or not.",
+			Text = "%townImage%Vous repoussez le commerçant en lui disant que vous ne lui devez rien. Lorsqu\'il saute à nouveau en avant, votre main se déplace habilement vers le pommeau de votre épée, arrêtant l\'homme d\'un geste rapide. Il lève les mains en l\'air et recule d\'un signe de tête. Quelques habitants de la ville voient cela et passent à côté, essayant d\'éviter votre regard. Les miliciens le remarquent, mais ils ne semblent pas savoir s\'ils doivent agir ou non.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To hell with your shop.",
+					Text = "Au diable votre magasin.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "E" : 0;
@@ -72,13 +72,13 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_01.png[/img]You go and see the shop. The wildman truly did a number on the place. And it reeks of his... scent. It would be a bad look for the company to not handle this issue with great care. You agree to pay for the damages, something most mercenary bands would not have done. This act of kindness does not slip the townspeople by.",
+			Text = "[img]gfx/ui/events/event_01.png[/img]Vous allez voir la boutique. Le sauvageon a vraiment saccagé sur cet endroit. Et ça pue son... odeur. Ce serait une mauvaise image pour la compagnie de ne pas traiter ce problème avec grand soin. Vous acceptez de payer les dégâts, ce que la plupart des groupes de mercenaires n\'auraient pas fait. Cet acte de bonté n\'échappe pas aux habitants de la ville.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Charity through destruction?",
+					Text = "La charité par la destruction ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -93,20 +93,20 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Compensation + "[/color] Crowns"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Compensation + "[/color] Couronnes"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "%townImage%Surveying the damage, you agree to compensate the businessman. But this isn\'t your fault, it\'s the wildman\'s. You dock his pay: for some time to come, the mercenary\'s earnings will be halved. Furthermore, you take what earnings he\'s made and hand them over to the shop owner. It doesn\'t even begin to cover the damages, but it\'s a start. One man is left happy, and another quite disgruntled.\n\nYou tell the wild cretin that now he\'ll think twice about smearing shit all over someone else\'s walls. But the wildman doesn\'t seem to understand you. He just understands that the gold he once owned has been given to someone else, and he eyes its departure with sadness and bottled anger.",
+			Text = "%townImage%Constatant les dégâts, vous acceptez de dédommager l\'homme d\'affaires. Mais ce n\'est pas votre faute, c\'est celle du sauvageon. Vous réduisez son salaire : pendant un certain temps, les revenus du mercenaire seront réduits de moitié. De plus, vous prenez les gains qu\'il a faits et les remettez au propriétaire du magasin. Ça ne couvre même pas les dommages, mais c\'est un début. Un homme est heureux, un autre est mécontent.\n\n Vous dites au crétin sauvage que maintenant il réfléchira à deux fois avant d\'étaler de la merde sur les murs de quelqu\'un d\'autre. Mais le sauvageon ne semble pas te comprendre. Il comprend juste que l\'or qu\'il possédait a été donné à quelqu\'un d\'autre, et il regarde son départ avec tristesse et une colère contenue.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Don\'t look at me like that, you know what you did.",
+					Text = "Ne me regarde pas comme ça, tu sais ce que tu as fait.",
 					function getResult( _event )
 					{
 						return 0;
@@ -120,7 +120,7 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Compensation + "[/color] Crowns"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Compensation + "[/color] Couronnes"
 				});
 				this.Characters.push(_event.m.Wildman.getImagePath());
 				_event.m.Wildman.getBaseProperties().DailyWage -= this.Math.floor(_event.m.Wildman.getDailyCost() / 4);
@@ -129,9 +129,9 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_daily_money.png",
-					text = _event.m.Wildman.getName() + " is now paid [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Wildman.getDailyCost() + "[/color] crowns a day"
+					text = _event.m.Wildman.getName() + " est maintenant payé [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Wildman.getDailyCost() + "[/color] Couronnes par jour"
 				});
-				_event.m.Wildman.worsenMood(2.0, "Got a pay cut");
+				_event.m.Wildman.worsenMood(2.0, "A eu une réduction de salaire");
 
 				if (_event.m.Wildman.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -146,16 +146,16 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_141.png[/img]While leaving town, you hear a bark over your shoulder. But it is from no dog: you turn \'round to find a number of militiamen converging on the road, fanning out from homes and shops. They say you did that businessman wrong and they won\'t be having your kind in a place like this no more. You can either pay up right now, or they\'ll take it from you by force.",
+			Text = "[img]gfx/ui/events/event_141.png[/img]En quittant la ville, vous entendez un aboiement par-dessus votre épaule. Mais il ne s\'agit pas d\'un chien : vous vous retournez pour trouver un certain nombre de miliciens qui convergent sur la route, sortant en éventail des maisons et des magasins. Ils disent que vous avez fait du tort à cet homme d\'affaires et qu\'ils ne voudront plus de votre espèce dans un endroit comme celui-ci. Vous pouvez payer tout de suite, ou ils vous le prendront de force.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A shame it had to come to this.",
+					Text = "C\'est dommage qu\'il faille en arriver là.",
 					function getResult( _event )
 					{
-						this.World.FactionManager.getFaction(_event.m.Town.getFactions()[0]).addPlayerRelation(this.Const.World.Assets.RelationBetrayal, "You killed some of the militia");
+						this.World.FactionManager.getFaction(_event.m.Town.getFactions()[0]).addPlayerRelation(this.Const.World.Assets.RelationBetrayal, "Vous avez tué des membres de la milice");
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
 						properties.CombatID = "Event";
 						properties.Music = this.Const.Music.CivilianTracks;
@@ -168,7 +168,7 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Fine. I did not wake up this morning looking to slaughter innocents.",
+					Text = "Bien. Je ne me suis pas réveillé ce matin avec l\'intention de massacrer des innocents.",
 					function getResult( _event )
 					{
 						return "G";
@@ -184,13 +184,13 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_141.png[/img]The men before you are weak and frail, a force cobbled together out of the meek and downtrodden. Nowhere in their ranks is the actual businessman you had trouble with. While you admire their tenacity, you can\'t quite bring yourself to slaughter half a town over a rather small affair. You reach to your side, drawing a few gasps from the poorly armed crowd of men, only to return your hand with a purse in its palm. A deal is struck and the compensation is paid. The townspeople are relieved, though a few of the men are not so happy about backing down from a fight.",
+			Text = "[img]gfx/ui/events/event_141.png[/img]Les hommes devant vous sont faibles et fragiles, une force bricolée à partir des plus humbles et des plus opprimés. Nulle part dans leurs rangs ne se trouve l\'homme du métier avec lesquels vous avez eu des problèmes. Bien que vous admiriez leur ténacité, vous ne pouvez pas vous résoudre à massacrer la moitié d\'une ville pour une petite affaire. Vous tendez la main de votre côté, suscitant quelques halètements de la part de la foule d\'hommes mal armés, pour qu\'elle vous rende votre main avec une bourse dans sa paume. Un accord est conclu et la compensation est versée. Les habitants de la ville sont soulagés, bien que quelques hommes ne soient pas très heureux de reculer devant un combat.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s better this way.",
+					Text = "C\'est mieux comme ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -205,7 +205,7 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Compensation + "[/color] Crowns"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Compensation + "[/color] Couronnes"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -213,7 +213,7 @@ this.wildman_causes_havoc_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getBackground().isCombatBackground() && this.Math.rand(1, 100) <= 33)
 					{
-						bro.worsenMood(1.0, "The company backed down from a fight");
+						bro.worsenMood(1.0, "La compagnie a renoncé à se battre.");
 					}
 
 					if (bro.getMoodState() < this.Const.MoodState.Neutral)

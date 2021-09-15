@@ -9,13 +9,13 @@ this.uber_courageous_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_50.png[/img]%juggernaut% carries a brand of courage one part fearless, one part craziness. His urgency to throw himself against his enemies is inspirational, if no doubt foolish to a mind of reason and rationality. But this is the %companyname%, a band of men who are drawn to the simple life of sword and coin. %juggernaut%\'s indomitable nature in this struggle of kill or be killed has rubbed off on a few of the sellswords.",
+			Text = "[img]gfx/ui/events/event_50.png[/img]%juggernaut% porte une marque de courage à moitié intrépide et à moitié fou. Son empressement à se jeter sur ses ennemis est une source d\'inspiration, même s\'il est sans doute insensé pour un esprit de raison et de rationalité de faire cela. Mais c\'est %companyname%, un groupe d\'hommes attirés par la vie simple de l\'épée et de l\'argent La nature indomptable de %juggernaut% dans cette lutte pour tuer ou être tué a déteint sur quelques mercenaires.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This would be a mad world if all men were like him.",
+					Text = "Ce serait un monde de fou si tous les hommes étaient comme lui.",
 					function getResult( _event )
 					{
 						return 0;
@@ -37,7 +37,7 @@ this.uber_courageous_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 75)
 					{
-						bro.improveMood(0.5, "Inspired by " + _event.m.Juggernaut.getName() + "\'s bravery");
+						bro.improveMood(0.5, "A été inspiré par la bravoure de " + _event.m.Juggernaut.getName());
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

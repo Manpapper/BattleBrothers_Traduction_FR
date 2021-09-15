@@ -10,13 +10,13 @@ this.walkers_bond_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_16.png[/img]{Men of the road, %walker1% and %walker2% share stories of their travels with one another. You don\'t really understand what\'s so rich about walking about, but the two men do bond over their tales and that\'s good enough for you. | %walker1% and %walker2% have seen much of the world. They\'ve spent years on the road, and now they\'re telling tales of those years to one another.\n\nTheir appreciation for each other rises, and your appreciation for not listening to boring travel stories also increases. | Most men find the task of walking about to be pretty simple, but men who do little else but walk about find more interest in the affair. Unsurprisingly, %walker1% and %walker2% have come to bond of their tales of... walking around.}",
+			Text = "[img]gfx/ui/events/event_16.png[/img]{Sur la route, %walker1% et %walker2% se racontent des histoires de leurs voyages. Vous ne comprenez pas vraiment ce qu\'il y a de si riche dans le fait de se promener, mais les deux hommes se lient autour de leurs récits et cela vous suffit. | %walker1% et %walker2% ont vu beaucoup de choses dans le monde. Ils ont passé des années sur la route, et maintenant ils se racontent des histoires de ces années. Ils s\'apprécient mutuellement, et vous appréciez également de ne pas écouter des histoires de voyage ennuyeuses. | La plupart des hommes trouvent la tâche de se promener plutôt simple, mais les hommes qui ne font rien d\'autre que de se promener trouvent plus d\'intérêt aux raggots et autres histoires. Sans surprise, %walker1% et %walker2% ont fini par se lier d\'amitié avec leurs histoires de... promenade.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We march on.",
+					Text = "On continue.",
 					function getResult( _event )
 					{
 						return 0;
@@ -28,8 +28,8 @@ this.walkers_bond_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Walker1.getImagePath());
 				this.Characters.push(_event.m.Walker2.getImagePath());
-				_event.m.Walker1.improveMood(1.0, "Bonded with " + _event.m.Walker2.getName());
-				_event.m.Walker2.improveMood(1.0, "Bonded with " + _event.m.Walker1.getName());
+				_event.m.Walker1.improveMood(1.0, "S\'est lié d\'amitié avec " + _event.m.Walker2.getName());
+				_event.m.Walker2.improveMood(1.0, "S\'est lié d\'amitié avec " + _event.m.Walker1.getName());
 
 				if (_event.m.Walker1.getMoodState() >= this.Const.MoodState.Neutral)
 				{

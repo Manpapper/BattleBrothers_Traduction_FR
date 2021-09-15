@@ -9,13 +9,13 @@ this.witchhunter_ghoul_teeth_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%witchhunter% the witch hunter comes to you with a vial of unknown liquid.%SPEECH_ON%Anti-poison.%SPEECH_OFF%He explains. He pops the cork off and gives you a smell. There\'s a strong scent of piss. He nods.%SPEECH_ON%Aye, it\'s wretched, but you need the wretched to fight the wretched, and a goblin\'s poison is a real wretched matter to contend with. But this will help.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%witchhunter% le chasseur de sorcières vient vers vous avec une fiole de liquide inconnu. %SPEECH_ON%Anti-poison.%SPEECH_OFF%Il vous explique. Il fait sauter le bouchon et vous fait sentir. Il y a une forte odeur de pisse. Il hoche la tête.%SPEECH_ON%Oui, c\'est misérable, mais il faut des méthodes misérables pour combattre les misérables, et le poison d\'un gobelin est une vrai misère à affronter. Mais ceci va aider.%SPEECH_OFF%.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Useful.",
+					Text = "Utile",
 					function getResult( _event )
 					{
 						return 0;

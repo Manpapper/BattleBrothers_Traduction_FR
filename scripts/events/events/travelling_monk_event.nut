@@ -7,12 +7,12 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A1",
-			Text = "[img]gfx/ui/events/event_40.png[/img]You meet a monk on the roads and with him is a donkey-pulled cart, the poor draught animal carrying its head low in mute exhaustion. Broomstraw and virid moss are strung up to one side of the cart, both twisting eagerly in the very winds that dried them, and some pots and pans clatter like rustic windchimes as the modest wares come to a bumbling stop. A barrel totters on the edge of the cart\'s bed and a couple of bees sway to keep up, poking and prodding at its cracks with thirsty curiosity.\n\nThe monk lifts a wool hat up out of his face but the lip of it folds back down over his eyes. He takes it off altogether and passes a sleeve across his brow. Carrying a jolly smile, he seems not at all disturbed by the veritable living armory standing before him.%SPEECH_ON%Evening gents. Don\'t s\'pose yer the kind to march b\'neath a lord\'s banner. Y\'look like sellswords t\'me.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_40.png[/img]Vous rencontrez un moine sur les routes accompagné d\'une charrette tirée par un âne, le pauvre animal de trait se déplace avec la tête basse en signe d\'épuisement. De la paille et de la mousse sont accrochés à un côté de la charrette, se tordebnt avec ardeur dans le vent même qui les a séchés, il y a aussi quelques pots et casseroles qui s\'entrechoquent comme des carillons rustiques lorsque les modestes marchandises s\'arrêtent. Un tonneau vacille sur le bord de la charrette et un couple d\'abeilles se balance pour le suivre, picorant ses fentes avec une curiosité assoiffée.\n\nLe moine soulève un bonnet de laine pour le dégager de son visage, mais le rebord se rabat sur ses yeux. Il l\'enlève complètement et passe une manche sur son front. Affichant un sourire jovial, il ne semble pas du tout perturbé par la véritable armurerie vivante qui se tient devant lui.%SPEECH_ON%Bonsoir messieurs. Je n\'ai pas l\'impression que vous êtes du genre à marcher sous la bannière d\'un seigneur. Vous ressemblez plutôt à des mercenaires pour moi.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "What is it you carry?",
+					Text = "Qu\'est-ce que vous transportez ?",
 					function getResult( _event )
 					{
 						return "A2";
@@ -27,12 +27,12 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "A2",
-			Text = "[img]gfx/ui/events/event_40.png[/img]%SPEECH_ON%Aye, I was thinkin\' you\'d ask. This here is Bessie, a cow\'s name for a donkey\'s arse. Don\'t worry, she won\'t kick ye. She\'s all hawed-out, see? What she carry, well, that\'s beer. For men yonder, so that they may drink to men above. If ye don\'t mind, or if ye don\'t mind m\'business, I\'d like to get on where I be going.%SPEECH_OFF%The monk picks up the reins of his jenny as he readies to start moving.",
+			Text = "[img]gfx/ui/events/event_40.png[/img]%SPEECH_ON%Oui, je savais que vous demanderiez ça. Voici Bessie, un nom de vache pour un âne. Ne vous inquiétez pas, elle ne va pas vous frapper. Elle est toute cravatée, vous voyez ? Ce qu\'elle transporte, eh bien, c\'est de la bière. Pour les hommes là-bas, afin qu\'ils puissent boire aux hommes décédés. Si ça ne vous dérange pas, ou si ça ne vous dérange pas pour mes affaires, j\'aimerais continur mon chemin.%SPEECH_OFF%Le moine prend les rênes de son jenny et se prépare à partir.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "How many crowns for a round of beer?",
+					Text = "Combien de couronnes pour une tournée de bière ?",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 70 ? "B" : "D";
@@ -40,7 +40,7 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We earned this by keeping the roads safe - take the beer, men!",
+					Text = "Nous l\'avons mérité en gardant les routes sûres - prenez la bière, les gars !",
 					function getResult( _event )
 					{
 						return "E";
@@ -55,12 +55,12 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_40.png[/img]You hold your hand up, stopping the monk before he can get going again. He sighs, slowly lowering the reins out of his hand. Feeling as though he may be getting the wrong impression, you quickly ask if maybe he has beer to spare for your men. You are more than willing to pay. The monk looks back at his stock for a moment, then turns around.%SPEECH_ON%Aye. I give yer men a sip for a crown or two. Don\'t mind the bees \'round the top, they\'ll scurry when you come, but if you scurry when they scurry, they\'ll scurry after ya. Strange little gits.%SPEECH_OFF%You ask the man how much he wants.%SPEECH_ON%I\'d wager ten crowns a head will do. I\'m no business man, though, I might be takin\' advantage of m\'self here.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_40.png[/img]Vous levez la main, arrêtant le moine avant qu\'il ne puisse repartir. Il soupire et retire lentement les rênes de sa main. Ayant l\'impression qu\'il se fait des idées, vous lui demandez rapidement s\'il n\'aurait pas de la bière pour vos hommes. Vous êtes plus que prêt à payer. Le moine regarde son stock un moment, puis se retourne.%SPEECH_ON%Oui. Je donne à vos hommes une gorgée pour une couronne ou deux. Ne faites pas attention aux abeilles autour du dessus, elles détaleront quand vous arriverez, mais si vous détalez quand elles détalent, elles vous poursuivront. Drôles de petites bêtes.%SPEECH_OFF% Vous demandez à l\'homme combien il veut.%SPEECH_ON% Je dirait que 10 couronnes par tête feront l\'affaire. Je ne suis pas un homme d\'affaire, je pourrais profiter de moi-même ici.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "A round for the whole company!",
+					Text = "Une tournée pour toute la compagnie !",
 					function getResult( _event )
 					{
 						return "C";
@@ -68,7 +68,7 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You ask too much.",
+					Text = "Vous en demandez trop.",
 					function getResult( _event )
 					{
 						return 0;
@@ -83,12 +83,12 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_40.png[/img]You agree to pay the man what he\'s asked for and he opens his arm in invitation. Your men pop the lid off the cask and dip their cups in. They come to sit in the shade, sipping tankards and exchanging beers. The monk bids you a good farewell and the men all lift their cups to him in a loud, increasingly slurred cheer.",
+			Text = "[img]gfx/ui/events/event_40.png[/img]Vous acceptez de payer à l\'homme ce qu\'il a demandé et il ouvre son bras en signe d\'invitation. Vos hommes soulèvent le couvercle du tonneau et plongent leurs gobelets dedans. Ils viennent s\'asseoir à l\'ombre, sirotant des tankards et échangeant des bières. Le moine vous fait ses adieux et les hommes lui lèvent tous leur coupe dans une acclamation bruyante et de plus en plus bredouillante.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prost!",
+					Text = "Santé !",
 					function getResult( _event )
 					{
 						return 0;
@@ -103,7 +103,7 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + 10 * this.World.getPlayerRoster().getSize() + "[/color] Crowns"
+						text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + 10 * this.World.getPlayerRoster().getSize() + "[/color] Couronnes"
 					}
 				];
 				this.List.extend(_event.giveTraits(90));
@@ -112,12 +112,12 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_40.png[/img]You hold your hand up, stopping the monk before he can get going again. He sighs, slowly lowering the reins out of his hand. Feeling as though he may be getting the wrong impression, you quickly ask if maybe he has beer to spare for your men. You are more than willing to pay. The monk looks back at his stock for a moment, then turns around.%SPEECH_ON%Aye. Damn it to hells if the gods wouldn\'t be happy with yer money crossin\' m\'palms. If ye fight the good fight, then I bid you to take some for free, but not all of it of course.%SPEECH_OFF%You thank the monk for his generosity and order you men to be modest with their drinking. As a few brothers circle around to the cask, the monk throws his hands up.%SPEECH_ON%Don\'t mind the bees \'round the top, they\'ll scurry when you come, but if you scurry when they scurry, they\'ll scurry after ya. Strange little gits.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_40.png[/img]Vous levez la main, arrêtant le moine avant qu\'il ne puisse repartir. Il soupire et retire lentement les rênes de sa main. Ayant l\'impression qu\'il se fait des idées, vous lui demandez rapidement s\'il n\'aurait pas de la bière pour vos hommes. Vous êtes plus que prêt à payer. Le moine regarde son stock pendant un moment, puis se retourne.%SPEECH_ON%Oui. Que les dieux soient maudits s\'ils ne sont pas contents que ton argent croise leurs paumes. Si vous vous battez pour le bon côté, vous pouvez en prendre un peu gratuitement, mais pas tout bien sûr%SPEECH_OFF% Vous remerciez le moine pour sa générosité et vous ordonnez à vos hommes d\'être modestes dans leur consommation. Alors que quelques frères tournent autour du tonneau, le moine lève les mains en l\'air.%SPEECH_ON%Ne faites pas attention aux abeilles autour du sommet, elles détaleront quand vous arriverez, mais si vous détalez quand elles détalent, elles vous poursuivront. Drôles de petites bêtes.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prost!",
+					Text = "Santé !",
 					function getResult( _event )
 					{
 						return 0;
@@ -133,12 +133,12 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_40.png[/img]As the cart waddles by, you take the pommel of your sword and bash it against the cask of beer, popping the lid off the top and sending a number of bees into a frenzy. The monk lets go of the reins as he looks back at you.%SPEECH_ON%T\'was afraid you\'d do that.%SPEECH_OFF%The man disappears beneath a punch, his body twisting as he falls to the ground. A few brothers converge on him for some good kicks while others lift the beer and take it to some shade. You dip a mug into the cask for a drink then lift it to the monk writhing on the ground.%SPEECH_ON%Bottom\'s up lads, and let us not forget to thank our generous friend over there!%SPEECH_OFF%The monk turns over, eyes wincing as they rapidly blink. He\'s clutching his back with one hand while using the other to slowly get up. With a bent posture, he takes the reins of the donkey and starts forward. He tries to slip his hat back on but it falls away and he doesn\'t bother to go after it. The man grows small in the distance, blurred by horizon and alcohol alike, and then he is gone.\n\nThe men all lift their cups to you in a loud, increasingly slurred cheer.",
+			Text = "[img]gfx/ui/events/event_40.png[/img]Alors que la charrette passe, vous prenez le pommeau de votre épée et le frappez contre le tonneau de bière, faisant sauter le couvercle et mettant un certain nombre d\'abeilles en émoi. Le moine lâche les rênes en se retournant vers toi.%SPEECH_ON%J\'avais peur que vous ne fassiez ça.%SPEECH_OFF%L\'homme disparaît sous un coup de poing, son corps se tord en tombant au sol. Quelques frères convergent vers lui pour lui donner de bons coups de pied tandis que d\'autres soulèvent la bière et la portent à l\'ombre. Vous plongez une chope dans le tonneau pour boire un coup puis vous la portez au moine qui se tortille sur le sol.%SPEECH_ON%Cul sec les gars, et n\'oublions pas de remercier notre généreux ami là-bas!%SPEECH_OFF%Le moine se retourne, les yeux grimaçants car ils clignent rapidement. Il se tient le dos d\'une main et utilise l\'autre pour se relever lentement. La posture courbée, il prend les rênes de l\'âne et se met en marche. Il essaie de remettre son chapeau, mais celui-ci tombe et il ne prend pas la peine de le chercher. L\'homme se fait petit au loin, brouillé par l\'horizon et l\'alcool, puis il disparaît.\n\nLes hommes lèvent tous leur coupe vers vous dans une acclamation bruyante et de plus en plus brouillonne.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prost!",
+					Text = "Santé !",
 					function getResult( _event )
 					{
 						return 0;
