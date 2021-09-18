@@ -56,10 +56,9 @@ this.icy_cave_enter_event <- this.inherit("scripts/events/event", {
 						}
 
 					});
-					  // [057]  OP_CLOSE          0      6    0    0
 				}
 
-				$[stack offset 0].Options.push({
+				this.Options.push({
 					Text = "We should leave this place.",
 					function getResult( _event )
 					{
@@ -113,10 +112,9 @@ this.icy_cave_enter_event <- this.inherit("scripts/events/event", {
 						}
 
 					});
-					  // [036]  OP_CLOSE          0      5    0    0
 				}
 
-				$[stack offset 0].Options.push({
+				this.Options.push({
 					Text = "We should leave this place.",
 					function getResult( _event )
 					{
@@ -271,10 +269,9 @@ this.icy_cave_enter_event <- this.inherit("scripts/events/event", {
 						}
 
 					});
-					  // [057]  OP_CLOSE          0      5    0    0
 				}
 
-				$[stack offset 0].Options.push({
+				this.Options.push({
 					Text = "This isn\'t worth it. We should leave this place.",
 					function getResult( _event )
 					{

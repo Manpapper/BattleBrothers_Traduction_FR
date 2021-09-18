@@ -6,14 +6,14 @@ this.rangers_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_10.png[/img]Despite tales of lone hungry hunters just looking to feed a family, poachers often work in teams and create whole businesses out of the trade of stolen furs and meats.\n\nBut as your local lord, %noble%, became increasingly annoyed with poachers hunting in his woods, most of the surrounding groups of hunters were caught, mutilated, and hanged. With just yourself, %hunter1%, %hunter2%, and %hunter3% remaining, a decision had to be made - how to make a living when all you know is how to use a bow?\n\nIt was decided to turn your collective talents to mercenary work, and you were promptly elected captain of the outfit.%SPEECH_ON%You have the sharpest eyes of us all.%SPEECH_OFF%%hunter2% said, and %hunter3% agreed, though tempered it.%SPEECH_ON%And you are, of course, easily the worst shot of the group. Don\'t whip for that one, CAPTAIN, ha-haaa!%SPEECH_OFF%Certainly, your merry band of poachers brings unique talents to the table - your men prefer to travel light, but they are quick on their feet, good shots with a bow and experts in scouting to avoid unfavorable engagements.",
+			Text = "[img]gfx/ui/events/event_10.png[/img]Malgré les histoires de chasseurs solitaires affamés qui cherchent juste à nourrir leur famille, les braconniers travaillent souvent en équipe et créent des commerces entiers à partir du commerce de fourrures et de viandes volées.\n\nMais comme votre seigneur local, %noble%, est devenu de plus en plus agacé par les braconniers qui chassent dans ses environs Il ne restait plus que vous, %hunter1%, %hunter2% et %hunter3%, et une décision devait être prise : comment gagner sa vie quand tout ce que vous savez faire, c\'est utiliser un arc ?\n\nIl a été décidé de mettre vos talents collectifs au service du mercenariat, et vous avez été rapidement élu capitaine de la bande.%SPEECH_ON% Vous avez les yeux les plus aiguisés de nous tous.%SPEECH_OFF%%hunter2% dit, et %hunter3% est d\'accord, bien que tempéré.%SPEECH_ON% Et vous êtes, bien sûr, facilement le pire tireur du groupe.%SPEECH_OFF%C Certes, votre joyeuse bande de braconniers apporte des talents uniques à la table - vos hommes préfèrent voyager léger, mais ils sont rapides sur leurs pieds, bons tireurs à l\'arc et experts en repérage pour éviter les engagements défavorables.",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll do just fine.",
+					Text = "Nous nous en sortirons bien.",
 					function getResult( _event )
 					{
 						return 0;

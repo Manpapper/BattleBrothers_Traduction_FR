@@ -14,13 +14,13 @@ this.dismiss_veteran_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]It was a tough decision, but you had to cut %dismissed% loose. However, it appears you should have consulted the rest of the men first for none of them are happy with your choice. The mercenary had been in the company long enough to make friends, and even those who weren\'t close to him still felt as though his place on the battlefield ensured their own safety.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]C\'était une décision difficile, mais vous avez dû vous séparer de %dismissed%. Cependant, il semble que vous auriez dû consulter le reste des hommes d\'abord, car aucun d\'entre eux n\'est satisfait de votre choix. Le mercenaire était dans la compagnie depuis assez longtemps pour se faire des amis, et même ceux qui n\'étaient pas proches de lui avaient l\'impression que sa place sur le champ de bataille assurait leur propre sécurité.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "They\'ll get over it.",
+					Text = "Ils s\'en remettront.",
 					function getResult( _event )
 					{
 						return 0;
@@ -39,7 +39,7 @@ this.dismiss_veteran_event <- this.inherit("scripts/events/event", {
 						continue;
 					}
 
-					bro.worsenMood(this.Const.MoodChange.VeteranDismissed, "You dismissed " + _event.m.Fired + ", a veteran of the company");
+					bro.worsenMood(this.Const.MoodChange.VeteranDismissed, "Vous avez renvoyé " + _event.m.Fired + ", un vétéran de la compagnie");
 
 					if (bro.getMoodState() < this.Const.MoodState.Neutral)
 					{

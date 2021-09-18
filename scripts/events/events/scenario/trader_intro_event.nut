@@ -6,14 +6,14 @@ this.trader_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_95.png[/img]The corpses are abuzz with flies and %ch1% stands amidst the swarm like he built the deathly totem which brought their presence. He turns to you.%SPEECH_ON%Greenskins did this one. No man can hew a head in half like that, and no sane man would stack them in such a manner. And there\'s goblin poison on them arrow tips.%SPEECH_OFF% %ch2% nods.%SPEECH_ON%Yesterday we find that merchant hanged by brigands, now this. The roads are getting too dangerous for a wagon carrying shine. Now, I ain\'t saying my swordhand ain\'t worth its weight in salt, but with just the two of us on duty we\'re throwing dice by the hour. Sir, you should look into hiring more guard.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_95.png[/img]Les cadavres grouillent de mouches et %ch1% se tient au milieu de l\'essaim comme s\'il avait construit le totem mortel qui a provoqué leur présence. Il se tourne vers vous. %SPEECH_ON%Ce sont les peaux vertes qui ont fait ça. Aucun homme ne peut couper une tête en deux comme ça, et aucun homme sain d\'esprit ne les empilerait de cette manière. Et il y a du poison de gobelin sur les pointes de flèches. %SPEECH_OFF% %ch2% hoche la tête.%SPEECH_ON% Hier on a trouvé ce marchand pendu par des brigands, maintenant ça. Les routes deviennent trop dangereuses pour un chariot transportant du vin. Maintenant, je ne dis pas que mon épée ne vaut pas son poids en sel, mais avec seulement deux d\'entre nous en service, nous jetons les dés d\'heure en heure. Monsieur, vous devriez envisager d\'engager plus de gardes.%SPEECH_OFF%",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Ah, we\'ll be fine.",
+					Text = "Ah, ça va aller.",
 					function getResult( _event )
 					{
 						return "C";
@@ -21,7 +21,7 @@ this.trader_intro_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ll hire more guards and then some!",
+					Text = "Je vais engager plus de gardes et même plus !",
 					function getResult( _event )
 					{
 						return "B";
@@ -40,14 +40,14 @@ this.trader_intro_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_95.png[/img]You shake your head.%SPEECH_ON%No. What we\'ll be doing is fighting back and then some. I aim to hire sellswords to fit a company of making, and if your swordhands want to earn a steady keep, you two can be the first.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_95.png[/img]Vous secouez la tête.%SPEECH_ON%Non. Ce que nous allons faire, c\'est nous défendre et même plus. J\'ai l\'intention d\'embaucher des mercenaires pour créer une compagnie, et si vous voulez gagner un salaire régulier, vous deux pouvez être les premiers.%SPEECH_OFF%",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Onwards, now, we have wares to sell!",
+					Text = "En avant, maintenant, nous avons des marchandises à vendre !",
 					function getResult( _event )
 					{
 						return 0;
@@ -66,14 +66,14 @@ this.trader_intro_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_95.png[/img]You shake your head.%SPEECH_ON%We\'re hardly making a profit as is. I can\'t spare the coin to hire any more guards. Not unless we find a new profitable trade route, that is. And I aim to do just that!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_95.png[/img]Tu secoues la tête.%SPEECH_ON%On fait à peine des profits comme ça. Je n\'ai pas les moyens d\'engager plus de gardes. A moins que nous ne trouvions une nouvelle route commerciale rentable, bien sûr. Et c\'est ce que j\'ai l\'intention de faire!%SPEECH_OFF%.",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Onwards, now, we have wares to sell!",
+					Text = "En avant, maintenant, nous avons des marchandises à vendre !",
 					function getResult( _event )
 					{
 						return 0;

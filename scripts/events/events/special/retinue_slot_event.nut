@@ -8,13 +8,13 @@ this.retinue_slot_event <- this.inherit("scripts/events/event", {
 		this.m.Title = "Along the way...";
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{The prestige and renown of the %companyname% is growing. Everywhere you go, people are looking to join - and not just sellswords, but followers who may be of other use! | With every battle your sellswords fight, the renown of the company grows. As this fame rises, more people, and not just sellswords, will be looking to join the %companyname%. Perhaps it is time the company takes on another follower? | Followers of the %companyname% need not just be fighters - it appears that with the company\'s growing renown and prestige there may be others willing to ride the coattails. Perhaps these tagalongs may be of great utility to the company, even if they are not contributing on the battlefield.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{Le prestige et la renommée de %companyname% ne cessent de croître. Partout où vous allez, des gens cherchent à vous rejoindre - et pas seulement des mercenaires, mais des adeptes qui peuvent être d\'une autre utilité ! | A chaque bataille de vos mercenaires, la renommée de la compagnie grandit. Au fur et à mesure que cette renommée augmente, de plus en plus de personnes, et pas seulement des mercenaires, chercheront à rejoindre  %companyname%. Peut-être est-il temps que la compagnie prenne un autre compagnon non-combattant ? | Les compagnons de %companyname% ne doivent pas être uniquement des combattants - il semble qu\'avec la renommée et le prestige croissants de la compagnie, d\'autres personnes soient prêtes à suivre le mouvement. Ces compagnons pourraient être d\'une grande utilité pour la compagnie, même s\'ils ne contribuent pas sur le champ de bataille.}",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll take a look at our retinue!",
+					Text = "Je vais jeter un coup d\'oeil à notre suite !",
 					function getResult( _event )
 					{
 						return 0;

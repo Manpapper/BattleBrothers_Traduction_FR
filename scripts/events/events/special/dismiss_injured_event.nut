@@ -14,13 +14,13 @@ this.dismiss_injured_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]%dismissed%\'s injuries proved too much: the man didn\'t die, but in your mind he might as well have for he was no longer fit for combat. You let him go. While this may have been an altruistic move that spared the sellsword\'s life, the rest of the company doesn\'t see it the same way. All they see is that one injury is all it took for you to cut a man loose. Now they worry that if they get wounded you might do the same to them, like a selfish man ridding himself of a lame horse.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Les blessures de %dismissed% s\'avèrent trop lourdes : l\'homme n\'est pas mort, mais dans votre esprit, il aurait pu tout aussi bien mourir car il n\'était plus apte au combat. Vous l\'avez laissé partir. Bien que ce soit un geste altruiste qui a épargné la vie du mercenaire, le reste de la compagnie ne le voit pas de la même façon. Tout ce qu\'ils voient c\'est qu\'une blessure est tout ce qu\'il faut pour que vous abandonniez un homme. Ils craignent maintenant que s\'ils sont blessés, vous ne leur fassiez la même chose, comme un homme égoïste se débarrassant d\'un cheval boiteux.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "They\'ll get over it.",
+					Text = "Ils s\'en remettront.",
 					function getResult( _event )
 					{
 						return 0;
@@ -41,7 +41,7 @@ this.dismiss_injured_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getSkills().hasSkillOfType(this.Const.SkillType.PermanentInjury))
 					{
-						bro.worsenMood(1.5, "Afraid to be dismissed on account of his injury");
+						bro.worsenMood(1.5, "A peur d\'être licencié en raison de sa blessure.");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -54,7 +54,7 @@ this.dismiss_injured_event <- this.inherit("scripts/events/event", {
 					}
 					else if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.worsenMood(this.Const.MoodChange.BrotherDismissed, "Lost confidence in the company\'s solidarity");
+						bro.worsenMood(this.Const.MoodChange.BrotherDismissed, "A perdu confiance en la solidarité de la compagnie.");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{

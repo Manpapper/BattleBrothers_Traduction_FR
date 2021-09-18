@@ -6,14 +6,14 @@ this.beast_hunter_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_124.png[/img]You met the man in his home. He offered food, drink, and the contract at hand. Kill the witch of the forest and you\'ll be paid in sum. You and your men set out and did just that, bringing back the wench\'s head.\n\nBut your employer only laughed upon your return. He said it was the witch who put him in power and that you had freed him of his debts to her, that he outsmarted you and your stupid men. His lackeys stepped out of the shadows, their swords already drawn. The ambush started upon the criminal\'s arrogance and ended with his head cleared from his shoulders. But it came at the cost of many of your fellow beast slayers, leaving only yourself, %bs1%, %bs2%, and %bs3% remaining.\n\n Monsters of this world are often kept out of sight: the cruelties of man hide behind blind allegiance, the horrors of beasts behind dark legends. As the leader of a band of beast slayers, it has become steadily more apparent that you can no longer differentiate between the two. If you are to make coin hunting creatures, then you might as well add more to the pot by adding man to the ledger.",
+			Text = "[img]gfx/ui/events/event_124.png[/img]Vous avez rencontré l\'homme dans sa maison. Il vous a offert à manger, à boire, et le contrat en question. Tuez la sorcière de la forêt et vous serez payé en conséquence. Vous et vos hommes êtes partis et l\'avez fait, ramenant la tête de la sorcière.\n\nMais votre employeur n\'a fait que rire à votre retour. Il a dit que c\'était la sorcière qui l\'avait mis au pouvoir et que vous l\'aviez libéré de ses dettes envers elle, qu\'il avait été plus malin que vous et vos hommes stupides. Ses laquais sont sortis de l\'ombre, leurs épées déjà dégainées. L\'embuscade a commencé sur l\'arrogance du criminel et s\'est terminée avec sa tête dégagée de ses épaules. Mais elle a coûté la vie à beaucoup de vos compagnons tueurs de bêtes, et il ne reste que vous, %bs1%, %bs2% et %bs3%.\n\nLes monstres de ce monde sont souvent tenus à l\'écart : la cruauté des hommes se cache derrière une allégeance aveugle, les horreurs des bêtes derrière de sombres légendes. En tant que chef d\'une bande de tueurs de bêtes, il est devenu de plus en plus évident que vous ne pouvez plus faire la différence entre les deux. Si vous devez gagner de l\'argent en chassant des créatures, alors autant en rajouter en ajoutant l\'homme à la liste.",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The most wicked beast is the one that thinks itself more.",
+					Text = "La bête la plus méchante est celle qui se croit la meilleure.",
 					function getResult( _event )
 					{
 						return 0;

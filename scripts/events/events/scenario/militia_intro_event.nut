@@ -6,14 +6,14 @@ this.militia_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_141.png[/img]{Hunt down bandits. Ward off raiders. Trap wolves attacking the farmsteads. All in a militiaman\'s work. And if more is asked then there is simply more to answer. All to keep your home of %home% safe.\n\n When a nobleman called on you, you and a group of ad hoc fighters took to the field in a battle between highborn. You didn\'t know their names or their quarry, only that one mustered you and your men to the field. And so there you went. Unfortunately, a lowborn man with spear and shield is little more than a peasant with misgivings of warriorship. Your militia was used to hold a contingent of enemy knights in place while your own side\'s archers rained hell from above, hitting knight and peasant alike.\n\n After the battle, you and your men fled the fields for good. You took up arms as sellswords and swore to one another by blood pact that you\'d never have a highborn in your company. A mercenary band of motley men and that is that.}",
+			Text = "[img]gfx/ui/events/event_141.png[/img]{Chassez les bandits. Repousser les pilleurs. Piéger les loups qui attaquent les fermes. Tout cela fait partie du travail d\'un milicien. Et si l\'on demande plus, alors il y a simplement plus à répondre. Tout cela pour assurer la sécurité de votre foyer. \n\nLorsqu\'un noble a fait appel à vous, vous et un groupe de combattants avez pris part à une bataille entre des personnes de haut rang. Vous ne connaissiez ni leur nom, ni leur but, seulement le fait qu\'on vous ait appelé, vous et vos hommes, sur le champ de bataille. Et donc vous y êtes allés. Malheureusement, un homme de basse naissance avec une lance et un bouclier n\'est guère plus qu\'un paysan qui a des doutes sur le métier de guerrier. Votre milice a été utilisée pour maintenir en place un contingent de chevaliers ennemis pendant que les archers de ton propre camp faisaient pleuvoir l\'enfer du haut des airs, frappant chevaliers et paysans de la même façon.\n\n Après la bataille, vous et vos hommes avez fui les champs pour de bon. Vous avez pris les armes comme mercenaires et vous vous êtes jurés par un pacte de sang de ne jamais avoir de noble dans votre compagnie. Une bande de mercenaires hétéroclites et c\'est tout.}",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We are our own lords.",
+					Text = "Nous sommes nos propres seigneurs.",
 					function getResult( _event )
 					{
 						return 0;

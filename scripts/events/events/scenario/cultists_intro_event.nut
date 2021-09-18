@@ -6,14 +6,14 @@ this.cultists_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_71.png[/img]%SPEECH_ON%I put the woman and child in the barn which you have surely already found in ashes. They were knocked unconscious for he does not seek their pain. Please do not dwell upon their demise, they are with him now and in their passing I have been freed of all obligations to do what must be done. By now I will be gone. I will have taken up a new role, a new face, and beneath both I will become something I am not. I will pretend. I will act. But in the end, it is with one purpose. And you know what that purpose is. I must not name it, but you shall find it in the moments when you realize no one truly believes they are going to die. The purity of one\'s own annihilation must be clouded by distraction and merriment. Not all can see him, not all should, but see him they will.\n\nBe well, strangers that you have become, for Davkul awaits us all.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_71.png[/img]%SPEECH_ON%J\'ai mis la femme et l\'enfant dans la grange que vous avez sûrement déjà trouvée en cendres. Ils ont été assommés, car il ne veut pas qu\'ils souffrent. S\'il vous plaît, ne vous attardez pas sur leur mort, ils sont avec lui maintenant et dans leur passage, j\'ai été libéré de toute obligation de faire ce qui doit être fait. A présent, je vais partir. J\'aurai pris un nouveau rôle, un nouveau visage, et sous les deux, je deviendrai quelque chose que je ne suis pas. Je ferai semblant. Je jouerai la comédie. Mais au final, c\'est dans un seul but. Et vous savez quel est ce but. Je ne dois pas le nommer, mais vous le trouverez dans les moments où vous réaliserez que personne ne croit vraiment qu\'il va mourir. La pureté de son propre anéantissement doit être obscurcie par la distraction et la joie. Tous ne peuvent pas le voir, tous ne devraient pas, mais ils le verront.\n\n Portez-vous bien, étrangers que vous êtes devenus, car Davkul nous attend tous.%SPEECH_OFF%",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Davkul awaits.",
+					Text = "Davkul attend.",
 					function getResult( _event )
 					{
 						return 0;

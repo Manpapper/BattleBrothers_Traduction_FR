@@ -6,14 +6,14 @@ this.lone_wolf_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_137.png[/img]{You walk the stands of a jousting arena. Moldy fruits and vegetables litter the floor. Dried blood freckles the seats. And silence fills the air. When you sit, the wood of the place seems to groan in unison as though discomfited by the haunt of a rare visitor.\n\nIn your hands is a note. \'Looking fer hardy men, knowledge of the sword pref\'rred but all welcome.\' It is an old note, its purpose long since served. But what draws your eye is the price offered to the task: more crowns than you could muster in five tournaments.\n\n If this is the coin to be earned, then to hell with the jousts and the sparring. But you\'re not one to suit up for some other captain\'s orders. With all that you\'ve earned over the years you imagine you could start your own mercenary band just fine.}",
+			Text = "[img]gfx/ui/events/event_137.png[/img]{Vous marchez sur les gradins d\'une arène de joute. Des fruits et légumes moisis jonchent le sol. Du sang séché tache les sièges. Et le silence emplit l\'air. Lorsque vous vous asseyez, le bois du lieu semble gémir à l\'unisson, comme s\'il était déconcerté par la présence d\'un rare visiteur.\n\nDans vos mains se trouve une note. \"Cherche hommes robustes, connaissance de l\'épée préférée mais tous bienvenus. C\'est une vieille note, dont le but est depuis longtemps atteint. Mais ce qui attire votre attention, c\'est le prix offert pour cette tâche : plus de couronnes que ce que vous pourriez rassembler en cinq tournois.\n\n Si c\'est l\'argent à gagner, alors au diable les joutes et les tournois. Mais vous n\'êtes pas du genre à suivre les ordres d\'un autre capitaine. Avec tout ce que vous avez gagné au fil des ans, vous imaginez que vous pourriez très bien monter votre propre groupe de mercenaires.}",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "And that\'s what I\'ll do.",
+					Text = "Et c\'est ce que je vais faire.",
 					function getResult( _event )
 					{
 						return 0;

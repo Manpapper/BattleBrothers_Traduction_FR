@@ -9,13 +9,13 @@ this.helped_caravan_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_60.png[/img]{The caravan\'s lead merchant comes to you with thanks for saving him. Naturally, he provides more than just words: a number of goods are given, some of which will be of use. | %SPEECH_ON%Thank you, traveler, thank you!%SPEECH_OFF%The caravan\'s merchant master clasps his hands and shakes them up and down as though to thank you and the old gods alike. He also says thanks with material goods, providing the %companyname% with an assortment of rewards straight off the wagons. | It is rare for strangers in this world to see one another in good grace, but even a wily merchant understands that if he is saved from total annihilation then perhaps he best reward his saviors. The caravan lightens its load by rewarding you with a number of goods. | Had you not arrived this caravan surely would have met doom. It rewards you properly for your impromptu \'services.\' | %SPEECH_ON%Oh by any higher power which may or may not exist to you, but whatever it is, it now reigns over me!%SPEECH_OFF%The merchant is clearly in shock. And, like any disturbed peddler, he immediately goes to the one thing he knows how to do.%SPEECH_ON%Look, we\'ve goods to offer, how about these? Tokens of our gratitude, free of charge.%SPEECH_OFF% | Though the battle is over, the hysteria of the saved merchants is just as loud as the carnage which has just passed.%SPEECH_ON%Sellswords, sellswords! Our saviors!%SPEECH_OFF%Suddenly, you find the merchants swarming with goods as thanks for saving them.}",
+			Text = "[img]gfx/ui/events/event_60.png[/img]{Le chef de la caravane vient vous voir pour vous remercier de l\'avoir sauvé. Bien entendu, il ne se contente pas de mots : il vous offre un certain nombre de marchandises, dont certaines vous seront utiles. | %SPEECH_ON%Merci, mercenaire, merci!%SPEECH_OFF% Le maître marchand de la caravane joint ses mains et les secoue de haut en bas comme pour vous remercier et remercier les anciens dieux. Il remercie aussi avec des biens matériels, offrant à %companyname% un assortiment de récompenses directement issues des wagons. | Il est rare que des étrangers dans ce monde se voient de bonne grâce, mais même un marchand rusé comprend que s\'il est sauvé de l\'anéantissement total, il vaut peut-être mieux récompenser ses sauveurs. La caravane allège son chargement en vous récompensant avec un certain nombre de marchandises. | Si vous n\'étiez pas arrivé, cette caravane aurait sûrement connu la mort. Elle vous récompense comme il se doit pour vos services impromptus. | %SPEECH_ON%Par une puissance supérieure qui peut ou non exister pour vous, mais quelle qu\'elle soit, elle règne maintenant sur moi!%SPEECH_OFF% Le marchand est clairement sous le choc. Et, comme tout colporteur perturbé, il se tourne immédiatement vers la seule chose qu\'il sait faire.%SPEECH_ON%Ecoutez, nous avons des biens à offrir, que diriez-vous de ceci ? En témoignage de notre gratitude, tout cela gratuitement, bien sûr.%SPEECH_OFF%. | Bien que la bataille soit terminée, l\'hystérie des marchands sauvés est aussi forte que le carnage qui vient de se dérouler.%SPEECH_ON%Mercenaires, Mercenaires ! Nos sauveurs !%SPEECH_OFF%Soudainement, vous trouvez les marchands grouillant de marchandises pour vous remercier de les avoir sauvés.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Glad to be of help.",
+					Text = "Heureux d\'avoir pu vous aider.",
 					function getResult( _event )
 					{
 						return 0;
@@ -39,7 +39,7 @@ this.helped_caravan_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + item.getName()
+						text = "Vous recevez " + item.getName()
 					});
 				}
 			}

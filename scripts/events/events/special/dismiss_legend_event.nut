@@ -14,13 +14,13 @@ this.dismiss_legend_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]The man you let go wasn\'t just a part of the company: he was a legend. Many knew %dismissed%\'s name, not just yourself and a few mercenaries, and having him leave is akin to firing a heroic general before a war-ending battle. The decision, naturally, does not go over well with the rest of the sellswords.",
+			Text = "[img]gfx/ui/events/event_64.png[/img]L\'homme que vous avez laissé partir n\'était pas seulement un membre de la compagnie : c\'était une légende. Beaucoup connaissaient le nom de %dismissed%, pas seulement vous et quelques mercenaires, et le voir partir revient à virer un général héroïque avant une bataille de fin de guerre. Cette décision, bien sûr, n\'est pas bien accueillie par le reste des mercenaires.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "They\'ll get over it.",
+					Text = "Ils s\'en remettront.",
 					function getResult( _event )
 					{
 						return 0;
@@ -39,7 +39,7 @@ this.dismiss_legend_event <- this.inherit("scripts/events/event", {
 						continue;
 					}
 
-					bro.worsenMood(this.Const.MoodChange.VeteranDismissed, "You dismissed " + _event.m.Fired + ", a legend of the company");
+					bro.worsenMood(this.Const.MoodChange.VeteranDismissed, "Vous avez renvoyé " + _event.m.Fired + ", une légende de la compagnie");
 
 					if (bro.getMoodState() < this.Const.MoodState.Neutral)
 					{

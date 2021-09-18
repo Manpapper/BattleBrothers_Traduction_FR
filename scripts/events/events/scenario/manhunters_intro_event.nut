@@ -6,14 +6,14 @@ this.manhunters_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_172.png[/img]{Constant conflict between nomads, city states, and vagabonds makes for good business: deserters, criminals, prisoners of war, and indebted alike flee across the land, and you with manacle in hand give chase.\n\nDespite the barren wastes upon which they rule, the Southern Realms are home to large and ever shifting populations which makes personhood itself a resource worth harvesting. The riverlike flow of persons is as natural an economy as any raw material.\n\nPrisoners of war make up the bulk of your outfit, beaten men who must submit to and fight for another force: your own. Criminals and general riff raff fill in here and there, easy pickings from smaller villages who don\'t have the means to handle their resident reprobates. And then there are the indebted... hellfire-doomed souls who must work their way back into the Gilder\'s gleam, and find salvation through blood, sweat, and tears. While most must work as laborers, you favor pressing them into your company. The indebted will not protest, for even the priests state it must be within the Gilder\'s sublime vision that they will find penitence in the %companyname%.}",
+			Text = "[img]gfx/ui/events/event_172.png[/img]{Les conflits constants entre les nomades, les cités-États et les vagabonds sont source de bonnes affaires : les déserteurs, les criminels, les prisonniers de guerre et les endettés s\'enfuient à travers le pays, et c\'est vous, manille en main, qui les poursuivez. Malgré les terres arides sur lesquelles ils règnent, les royaumes du Sud abritent des populations importantes et en constante évolution, ce qui fait de la personne elle-même une ressource à exploiter. Le mouvement fluvial des personnes est une économie aussi naturelle que n\'importe quelle matière première.\n\nLes prisonniers de guerre constituent le gros de votre effectif, des hommes battus qui doivent se soumettre et se battre pour une autre force : la vôtre. Les criminels et la racaille en général sont présents ici et là, des proies faciles pour les petits villages qui n\'ont pas les moyens de gérer leurs réprouvés. Et puis il y a les endettés... des âmes condamnées par les flammes de l\'enfer qui doivent travailler pour retrouver le lustre de la Gildera, et trouver le salut dans le sang, la sueur et les larmes. Bien que la plupart doivent travailler comme ouvriers, vous préférez les intégrer dans votre compagnie. Les endettés ne protesteront pas, car même les prêtres affirment que c\'est dans le cadre de la vision sublime de Gilder qu\'ils trouveront pénitence dans %companyname%.}",
 			Image = "",
 			Banner = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Everyone can earn salvation by working off their debt to the Gilder.",
+					Text = "Tout le monde peut gagner le salut en travaillant pour rembourser sa dette au Gilder.",
 					function getResult( _event )
 					{
 						return 0;

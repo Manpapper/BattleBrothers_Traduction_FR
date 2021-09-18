@@ -305,14 +305,13 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 					}
 
 				});
-				  // [028]  OP_CLOSE          0      4    0    0
 			}
 		}
 
 		if (n == 0)
 		{
 			_to.push({
-				Text = $[stack offset 0].m.Texts[3],
+				Text = this.m.Texts[3],
 				function getResult( _event )
 				{
 					return "C";

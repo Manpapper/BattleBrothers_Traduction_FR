@@ -242,15 +242,13 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 				{
 					break;
 				}
-
-				  // [034]  OP_CLOSE          0      4    0    0
 			}
 		}
 
 		if (n == 0)
 		{
 			_to.push({
-				Text = $[stack offset 0].m.Texts[6],
+				Text = this.m.Texts[6],
 				function getResult( _event )
 				{
 					return "Dream";
