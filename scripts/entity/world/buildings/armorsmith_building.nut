@@ -11,8 +11,8 @@ this.armorsmith_building <- this.inherit("scripts/entity/world/settlements/build
 	{
 		this.building.create();
 		this.m.ID = "building.armorsmith";
-		this.m.Name = "Armorer";
-		this.m.Description = "This armorer\'s workshop is the right place to look for well-made and durable protection";
+		this.m.Name = "Armurier";
+		this.m.Description = "L'atelier de cet armurier est le bon endroit pour trouver une protection bien faite et durable";
 		this.m.UIImage = "ui/settlements/building_01";
 		this.m.UIImageNight = "ui/settlements/building_01_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Armorsmith";

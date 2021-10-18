@@ -12,7 +12,7 @@ this.tavern_building <- this.inherit("scripts/entity/world/settlements/buildings
 	{
 		this.building.create();
 		this.m.ID = "building.tavern";
-		this.m.Name = "Tavern";
+		this.m.Name = "Taverne";
 		this.m.UIImage = "ui/settlements/building_02";
 		this.m.UIImageNight = "ui/settlements/building_02_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Tavern";
@@ -266,11 +266,11 @@ this.tavern_building <- this.inherit("scripts/entity/world/settlements/buildings
 		{
 			if (_isPaidFor)
 			{
-				return "The patrons raise their cups to you, but it seems there is nothing more to be learned by talking to them tonight.";
+				return "Les clients lèvent leurs verres vers vous, mais il semble qu'il n'y ait rien de plus à apprendre en leur parlant ce soir.";
 			}
 			else
 			{
-				return "The patrons talk about this and that.";
+				return "Les clients parlent de ceci et de cela.";
 			}
 		}
 		else

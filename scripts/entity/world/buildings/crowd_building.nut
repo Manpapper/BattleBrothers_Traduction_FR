@@ -35,7 +35,7 @@ this.crowd_building <- this.inherit("scripts/entity/world/settlements/buildings/
 		this.m.ID = "building.crowd";
 		this.m.UIImage = "ui/settlements/crowd_01";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Crowd";
-		this.m.Name = "Hire";
+		this.m.Name = "Engager";
 	}
 
 	function onClicked( _townScreen )

@@ -5,7 +5,7 @@ this.temple_building <- this.inherit("scripts/entity/world/settlements/buildings
 		this.building.create();
 		this.m.ID = "building.temple";
 		this.m.Name = "Temple";
-		this.m.Description = "Have your wounded treated by priests";
+		this.m.Description = "Faites soigner vos blessés par des prêtres";
 		this.m.UIImage = "ui/settlements/building_03";
 		this.m.UIImageNight = "ui/settlements/building_03_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Temple";

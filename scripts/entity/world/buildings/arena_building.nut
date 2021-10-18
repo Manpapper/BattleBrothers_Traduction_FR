@@ -17,7 +17,7 @@ this.arena_building <- this.inherit("scripts/entity/world/settlements/buildings/
 	{
 		this.building.create();
 		this.m.ID = "building.arena";
-		this.m.Name = "Arena";
+		this.m.Name = "Arène";
 		this.m.UIImage = "ui/settlements/desert_building_05";
 		this.m.UIImageNight = "ui/settlements/desert_building_05_night";
 		this.m.UIImageClosed = "ui/settlements/desert_building_05_closed";

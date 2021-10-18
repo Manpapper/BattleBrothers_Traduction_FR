@@ -4,8 +4,8 @@ this.taxidermist_building <- this.inherit("scripts/entity/world/settlements/buil
 	{
 		this.building.create();
 		this.m.ID = "building.taxidermist";
-		this.m.Name = "Taxidermist";
-		this.m.Description = "A taxidermist can create useful items from all kinds of trophies you claimed";
+		this.m.Name = "Taxidermiste";
+		this.m.Description = "Un taxidermiste peut créer des objets utiles à partir de toutes sortes de trophées que vous avez récuperés";
 		this.m.UIImage = "ui/settlements/building_13";
 		this.m.UIImageNight = "ui/settlements/building_13_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Taxidermist";

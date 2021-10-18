@@ -11,8 +11,8 @@ this.weaponsmith_building <- this.inherit("scripts/entity/world/settlements/buil
 	{
 		this.building.create();
 		this.m.ID = "building.weaponsmith";
-		this.m.Name = "Weaponsmith";
-		this.m.Description = "A weaponsmith\'s workshop displaying all kinds of well crafted weapons";
+		this.m.Name = "Forgeron";
+		this.m.Description = "Un atelier de forgeron présentant toutes sortes d'armes bien faites";
 		this.m.UIImage = "ui/settlements/building_04";
 		this.m.UIImageNight = "ui/settlements/building_04_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Weaponsmith";

@@ -11,8 +11,8 @@ this.alchemist_building <- this.inherit("scripts/entity/world/settlements/buildi
 	{
 		this.building.create();
 		this.m.ID = "building.alchemist";
-		this.m.Name = "Alchemist";
-		this.m.Description = "Exotic and dangerous alchemical contraptions can be bought here";
+		this.m.Name = "Alchimiste";
+		this.m.Description = "Des produits alchimiques exotiques et dangereux peuvent être achetés ici";
 		this.m.UIImage = "ui/settlements/desert_building_14";
 		this.m.UIImageNight = "ui/settlements/desert_building_14_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Alchemist";

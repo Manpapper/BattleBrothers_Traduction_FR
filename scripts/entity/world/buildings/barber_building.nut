@@ -4,8 +4,8 @@ this.barber_building <- this.inherit("scripts/entity/world/settlements/buildings
 	{
 		this.building.create();
 		this.m.ID = "building.barber";
-		this.m.Name = "Barber";
-		this.m.Description = "Customize the appearance of your men at the barber";
+		this.m.Name = "Coiffeur";
+		this.m.Description = "Personnalisez l'apparence de vos hommes chez le coiffeur.";
 		this.m.UIImage = "ui/settlements/building_12";
 		this.m.UIImageNight = "ui/settlements/building_12_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Barber";

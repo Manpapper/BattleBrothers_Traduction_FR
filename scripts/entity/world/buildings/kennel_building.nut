@@ -11,8 +11,8 @@ this.kennel_building <- this.inherit("scripts/entity/world/settlements/buildings
 	{
 		this.building.create();
 		this.m.ID = "building.kennel";
-		this.m.Name = "Kennel";
-		this.m.Description = "Strong and fast wardogs are bred and kept at this kennel";
+		this.m.Name = "Chenil";
+		this.m.Description = "Des chiens de garde forts et rapides sont élevés et gardés dans ce chenil";
 		this.m.UIImage = "ui/settlements/building_10";
 		this.m.UIImageNight = "ui/settlements/building_10_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Kennel";

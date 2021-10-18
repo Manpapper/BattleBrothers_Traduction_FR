@@ -11,8 +11,8 @@ this.marketplace_building <- this.inherit("scripts/entity/world/settlements/buil
 	{
 		this.building.create();
 		this.m.ID = "building.marketplace";
-		this.m.Name = "Marketplace";
-		this.m.Description = "A lively market offering all sorts of goods common in the region";
+		this.m.Name = "Place du Marché";
+		this.m.Description = "Un marché animé proposant toutes sortes de produits répandus dans la région.";
 		this.m.UIImage = "ui/settlements/building_06";
 		this.m.UIImageNight = "ui/settlements/building_06_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Marketplace";

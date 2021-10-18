@@ -9,12 +9,12 @@ this.port_building <- this.inherit("scripts/entity/world/settlements/buildings/b
 	{
 		this.building.create();
 		this.m.ID = "building.port";
-		this.m.Name = "Harbor";
+		this.m.Name = "Port";
 		this.m.UIImage = "ui/settlements/building_09";
 		this.m.UIImageNight = "ui/settlements/building_09_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Port";
 		this.m.TooltipIcon = "ui/icons/buildings/harbor.png";
-		this.m.Description = "A harbor that serves both foreign trading ships and local fishermen";
+		this.m.Description = "Un port qui sert à la fois aux navires de commerce étrangers et aux pêcheurs locaux";
 		this.m.IsClosedAtNight = false;
 		this.m.Sounds = [
 			{
