@@ -66,8 +66,8 @@ this.medium_snow_village <- this.inherit("scripts/entity/world/settlement", {
 			"disowned_noble_background",
 			"cripple_background"
 		];
-		this.m.UIDescription = "Un village de taille moyenne recouvert de neige pendant la majeure partie de l'année";
-		this.m.Description = "Un village de taille moyenne recouvert de neige pendant la majeure partie de l'année.";
+		this.m.UIDescription = "Un village de taille moyenne recouvert de neige pendant la majeure partie de l\'année";
+		this.m.Description = "Un village de taille moyenne recouvert de neige pendant la majeure partie de l\'année.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02_snow";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left_snow";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right_snow";

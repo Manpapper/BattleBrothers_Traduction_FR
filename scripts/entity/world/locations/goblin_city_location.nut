@@ -2,7 +2,7 @@ this.goblin_city_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Une grande cité gobeline nichée dans les vestiges d'une ancienne forteresse. Protégée par des murs sombres et imposants, elle abrite une armée de vicieuses peaux-vertes.";
+		return "Une grande cité gobeline nichée dans les vestiges d\'une ancienne forteresse. Protégée par des murs sombres et imposants, elle abrite une armée de vicieuses peaux-vertes.";
 	}
 
 	function create()

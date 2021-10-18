@@ -2,7 +2,7 @@ this.abandoned_fortress_location <- this.inherit("scripts/entity/world/location"
 	m = {},
 	function getDescription()
 	{
-		return "Les restes d'une ancienne forteresse. Elle semble entièrement abandonnée.";
+		return "Les restes d\'une ancienne forteresse. Elle semble entièrement abandonnée.";
 	}
 
 	function create()

@@ -59,7 +59,7 @@ this.small_snow_village <- this.inherit("scripts/entity/world/settlement", {
 			"wildman_background"
 		];
 		this.m.UIDescription = "Des cabanes serrées les unes contre les autres";
-		this.m.Description = "Un petit groupe de huttes s'est serré les unes contre les autres, défiant les durs vents de neige du nord.";
+		this.m.Description = "Un petit groupe de huttes s\'est serré les unes contre les autres, défiant les durs vents de neige du nord.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01_snow";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

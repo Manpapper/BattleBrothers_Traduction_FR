@@ -2,7 +2,7 @@ this.witch_hut_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Une cabane de travers et flétrie qui semble pouvoir s'effondrer à tout moment. De la fumée s'échappe d'une cheminée déréglée.";
+		return "Une cabane de travers et flétrie qui semble pouvoir s\'effondrer à tout moment. De la fumée s\'échappe d\'une cheminée déréglée.";
 	}
 
 	function create()

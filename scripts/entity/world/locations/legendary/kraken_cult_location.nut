@@ -2,7 +2,7 @@ this.kraken_cult_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Des cercles de pierres et des piliers portant des marques étranges laissent présager que quelque chose d'étrange se profile dans la région.";
+		return "Des cercles de pierres et des piliers portant des marques étranges laissent présager que quelque chose d\'étrange se profile dans la région.";
 	}
 
 	function create()

@@ -2,7 +2,7 @@ this.icy_cave_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Une grotte au milieu d'une mer de neige et de rochers. Une épaisse barrière de glaçons garde votre entrée bien gardée.";
+		return "Une grotte au milieu d\'une mer de neige et de rochers. Une épaisse barrière de glaçons garde votre entrée bien gardée.";
 	}
 
 	function create()

@@ -72,7 +72,7 @@ this.medium_swamp_village <- this.inherit("scripts/entity/world/settlement", {
 		}
 
 		this.m.UIDescription = "Une plus grande colonie entourée de marais nauséabonds";
-		this.m.Description = "Une colonie un peu plus grande s'étend sur divers endroits secs et fermes du marais.";
+		this.m.Description = "Une colonie un peu plus grande s\'étend sur divers endroits secs et fermes du marais.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

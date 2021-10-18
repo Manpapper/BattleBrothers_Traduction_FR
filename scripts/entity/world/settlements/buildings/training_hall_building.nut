@@ -4,8 +4,8 @@ this.training_hall_building <- this.inherit("scripts/entity/world/settlements/bu
 	{
 		this.building.create();
 		this.m.ID = "building.training_hall";
-		this.m.Name = "Hall d'Entraînement";
-		this.m.Description = "Ayez vos hommes s'entraîner au combat et apprendre des vétérans";
+		this.m.Name = "Hall d\'Entraînement";
+		this.m.Description = "Ayez vos hommes s\'entraîner au combat et apprendre des vétérans";
 		this.m.UIImage = "ui/settlements/building_07";
 		this.m.UIImageNight = "ui/settlements/building_07_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.VeteransHall";

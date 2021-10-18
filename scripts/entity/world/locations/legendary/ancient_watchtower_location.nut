@@ -2,7 +2,7 @@ this.ancient_watchtower_location <- this.inherit("scripts/entity/world/location"
 	m = {},
 	function getDescription()
 	{
-		return "Une fine tour qui s'élève dans le ciel. La vue du sommet doit être stupéfiante.";
+		return "Une fine tour qui s\'élève dans le ciel. La vue du sommet doit être stupéfiante.";
 	}
 
 	function create()

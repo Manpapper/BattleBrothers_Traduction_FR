@@ -2,7 +2,7 @@ this.oracle_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Les vestiges d'un temple qui abritait un oracle à une époque révolue. Bien qu'il soit aujourd'hui en ruine, les gens continuent à s'y rendre et à avoir des visions de choses qui vont se réaliser.";
+		return "Les vestiges d\'un temple qui abritait un oracle à une époque révolue. Bien qu\'il soit aujourd\'hui en ruine, les gens continuent à s\'y rendre et à avoir des visions de choses qui vont se réaliser.";
 	}
 
 	function create()
@@ -21,7 +21,7 @@ this.oracle_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "L'Oracle";
+		this.m.Name = "L\'Oracle";
 		this.location.onSpawned();
 	}
 

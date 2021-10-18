@@ -266,7 +266,7 @@ this.tavern_building <- this.inherit("scripts/entity/world/settlements/buildings
 		{
 			if (_isPaidFor)
 			{
-				return "Les clients lèvent leurs verres vers vous, mais il semble qu'il n'y ait rien de plus à apprendre en leur parlant ce soir.";
+				return "Les clients lèvent leurs verres vers vous, mais il semble qu\'il n\'y ait rien de plus à apprendre en leur parlant ce soir.";
 			}
 			else
 			{

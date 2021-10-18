@@ -2,7 +2,7 @@ this.meteorite_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Un grand cratère dans le sol fait par un rocher tombé du ciel. Un mausolée a été construit autour il y a longtemps, et jusqu'à ce jour, des gens de tous les coins du monde s'y rendent en pèlerinage.";
+		return "Un grand cratère dans le sol fait par un rocher tombé du ciel. Un mausolée a été construit autour il y a longtemps, et jusqu\'à ce jour, des gens de tous les coins du monde s\'y rendent en pèlerinage.";
 	}
 
 	function create()

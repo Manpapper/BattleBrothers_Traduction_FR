@@ -2,7 +2,7 @@ this.goblin_camp_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Un campement de fortune érigé par les gobelins pour s'abriter et stocker des provisions.";
+		return "Un campement de fortune érigé par les gobelins pour s\'abriter et stocker des provisions.";
 	}
 
 	function create()

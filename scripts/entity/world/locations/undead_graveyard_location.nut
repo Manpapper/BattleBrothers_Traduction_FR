@@ -2,7 +2,7 @@ this.undead_graveyard_location <- this.inherit("scripts/entity/world/location", 
 	m = {},
 	function getDescription()
 	{
-		return "Un endroit où les gens ont enterré leurs morts, les déposant pour leur dernier repos. Ou du moins ils l'espéraient.";
+		return "Un endroit où les gens ont enterré leurs morts, les déposant pour leur dernier repos. Ou du moins ils l\'espéraient.";
 	}
 
 	function create()

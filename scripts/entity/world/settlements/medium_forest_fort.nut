@@ -63,7 +63,7 @@ this.medium_forest_fort <- this.inherit("scripts/entity/world/settlement", {
 		}
 
 		this.m.UIDescription = "Un puissant donjon de pierre entouré de bois";
-		this.m.Description = "Ce puissant donjon de pierre entouré de forêt sert de base d'opérations dans la région.";
+		this.m.Description = "Ce puissant donjon de pierre entouré de forêt sert de base d\'opérations dans la région.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

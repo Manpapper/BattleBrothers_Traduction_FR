@@ -49,7 +49,7 @@ this.small_mountains_fort <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background"
 		];
 		this.m.UIDescription = "Une petite fortification construite dans les montagnes";
-		this.m.Description = "Une petite fortification a été construite dans cette région montagneuse pour servir de base d'opérations et contrôler les terres environnantes.";
+		this.m.Description = "Une petite fortification a été construite dans cette région montagneuse pour servir de base d\'opérations et contrôler les terres environnantes.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

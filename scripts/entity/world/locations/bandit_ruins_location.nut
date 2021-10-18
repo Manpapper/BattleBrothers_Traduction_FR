@@ -10,7 +10,7 @@ this.bandit_ruins_location <- this.inherit("scripts/entity/world/location", {
 		}
 		else
 		{
-			return "Une forteresse autrefois fière, aujourd'hui en ruines.";
+			return "Une forteresse autrefois fière, aujourd\'hui en ruines.";
 		}
 	}
 

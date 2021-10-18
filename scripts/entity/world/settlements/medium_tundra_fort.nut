@@ -63,7 +63,7 @@ this.medium_tundra_fort <- this.inherit("scripts/entity/world/settlement", {
 			"sellsword_background"
 		];
 		this.m.UIDescription = "Un donjon de pierre sécurisant la toundra environnante";
-		this.m.Description = "Un donjon de pierre qui est le siège du pouvoir dans la toundra environnante. Il sert de base d'opérations pour une garnison de taille raisonnable.";
+		this.m.Description = "Un donjon de pierre qui est le siège du pouvoir dans la toundra environnante. Il sert de base d\'opérations pour une garnison de taille raisonnable.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

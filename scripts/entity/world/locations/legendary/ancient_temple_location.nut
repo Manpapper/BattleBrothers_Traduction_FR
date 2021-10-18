@@ -2,7 +2,7 @@ this.ancient_temple_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "L'entrée enfoncée et à moitié enterrée d'une sorte de temple ou de mausolée qui sort du sol.";
+		return "L\'entrée enfoncée et à moitié enterrée d\'une sorte de temple ou de mausolée qui sort du sol.";
 	}
 
 	function create()

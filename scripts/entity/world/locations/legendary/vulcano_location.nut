@@ -2,7 +2,7 @@ this.vulcano_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Autrefois une ville prospère, aujourd'hui des ruines recouvertes de cendres. Métropole déchue aux multiples noms, elle est devenue un objet de fierté culturelle et religieuse pour le nord comme pour le sud.";
+		return "Autrefois une ville prospère, aujourd\'hui des ruines recouvertes de cendres. Métropole déchue aux multiples noms, elle est devenue un objet de fierté culturelle et religieuse pour le nord comme pour le sud.";
 	}
 
 	function create()

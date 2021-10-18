@@ -2,7 +2,7 @@ this.fountain_of_youth_location <- this.inherit("scripts/entity/world/location",
 	m = {},
 	function getDescription()
 	{
-		return "Une petite clairière dans la forêt centrée autour d'un arbre curieux et élancé. Cet arbre semble  bizarre, mais il est difficile de le distinguer de loin.";
+		return "Une petite clairière dans la forêt centrée autour d\'un arbre curieux et élancé. Cet arbre semble  bizarre, mais il est difficile de le distinguer de loin.";
 	}
 
 	function create()

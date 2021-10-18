@@ -2,7 +2,7 @@ this.undead_mass_grave_location <- this.inherit("scripts/entity/world/location",
 	m = {},
 	function getDescription()
 	{
-		return "Les tristes restes d'une bataille sans merci, d'une épidémie ou d'une autre catastrophe. Les survivants ont creusé un grand trou et y ont entassé tous les cadavres pour s'en débarrasser rapidement.";
+		return "Les tristes restes d\'une bataille sans merci, d\'une épidémie ou d\'une autre catastrophe. Les survivants ont creusé un grand trou et y ont entassé tous les cadavres pour s\'en débarrasser rapidement.";
 	}
 
 	function create()

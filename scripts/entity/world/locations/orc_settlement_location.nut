@@ -2,7 +2,7 @@ this.orc_settlement_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Une grande mer de tentes nauséabondes, avec la tente et la salle du trône d'un chef de guerre, la plus grande de toutes. C'est la demeure de toute une tribu jusqu'à ce qu'elle parte chasser et piller ailleurs..";
+		return "Une grande mer de tentes nauséabondes, avec la tente et la salle du trône d\'un chef de guerre, la plus grande de toutes. C\'est la demeure de toute une tribu jusqu\'à ce qu\'elle parte chasser et piller ailleurs..";
 	}
 
 	function create()

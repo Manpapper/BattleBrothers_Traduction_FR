@@ -81,7 +81,7 @@ this.large_snow_village <- this.inherit("scripts/entity/world/settlement", {
 		}
 
 		this.m.UIDescription = "Une grande ville qui abrite les voyageurs et les commerçants de la neige et du froid";
-		this.m.Description = "Une grande ville loin au nord. Les commerçants, les voyageurs et les aventuriers viennent s'y abriter de la neige et des tempêtes.";
+		this.m.Description = "Une grande ville loin au nord. Les commerçants, les voyageurs et les aventuriers viennent s\'y abriter de la neige et des tempêtes.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_03_snow";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left_snow";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right_snow";

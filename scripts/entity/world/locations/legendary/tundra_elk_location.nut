@@ -2,7 +2,7 @@ this.tundra_elk_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Un élan solitaire broute dans des prairies vertes, à l'ombre de quelques arbres et près d'un petit lac.";
+		return "Un élan solitaire broute dans des prairies vertes, à l\'ombre de quelques arbres et près d\'un petit lac.";
 	}
 
 	function create()

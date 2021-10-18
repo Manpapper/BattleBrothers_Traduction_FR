@@ -2,7 +2,7 @@ this.black_monolith_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Un monolithe noir domine les terres environnantes, émettant une aura maléfique. Aucun être vivant n'ose s'en approcher.";
+		return "Un monolithe noir domine les terres environnantes, émettant une aura maléfique. Aucun être vivant n\'ose s\'en approcher.";
 	}
 
 	function create()

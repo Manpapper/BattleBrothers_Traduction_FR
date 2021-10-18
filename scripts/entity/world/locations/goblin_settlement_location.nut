@@ -2,7 +2,7 @@ this.goblin_settlement_location <- this.inherit("scripts/entity/world/location",
 	m = {},
 	function getDescription()
 	{
-		return "Les portes d'une grande cité souterraine gobeline, dont les tunnels labyrinthiques regorgent de vicieuses peaux vertes.";
+		return "Les portes d\'une grande cité souterraine gobeline, dont les tunnels labyrinthiques regorgent de vicieuses peaux vertes.";
 	}
 
 	function create()

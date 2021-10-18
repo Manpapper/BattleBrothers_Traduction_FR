@@ -11,8 +11,8 @@ this.fletcher_building <- this.inherit("scripts/entity/world/settlements/buildin
 	{
 		this.building.create();
 		this.m.ID = "building.fletcher";
-		this.m.Name = "Fabricant d'Armes à Distance";
-		this.m.Description = "Toutes sortes d'armes à distance fabriquées par des experts peuvent être trouvées ici";
+		this.m.Name = "Fabricant d\'Armes à Distance";
+		this.m.Description = "Toutes sortes d\'armes à distance fabriquées par des experts peuvent être trouvées ici";
 		this.m.UIImage = "ui/settlements/building_11";
 		this.m.UIImageNight = "ui/settlements/building_11_night";
 		this.m.Tooltip = "world-town-screen.main-dialog-module.Fletcher";

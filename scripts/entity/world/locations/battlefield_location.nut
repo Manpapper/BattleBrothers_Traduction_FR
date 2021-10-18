@@ -5,7 +5,7 @@ this.battlefield_location <- this.inherit("scripts/entity/world/location", {
 	},
 	function getDescription()
 	{
-		return "Une bataille a eu lieu ici il y a peu de temps. De l'équipement brisé et perdu, les taches de sang et le sol déchiré témoignent d'un combat acharné.";
+		return "Une bataille a eu lieu ici il y a peu de temps. De l\'équipement brisé et perdu, les taches de sang et le sol déchiré témoignent d\'un combat acharné.";
 	}
 
 	function setSize( _s )

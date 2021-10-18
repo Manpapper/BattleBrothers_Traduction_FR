@@ -59,7 +59,7 @@ this.small_forest_fort <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "Un point d'appui militaire entouré de bois";
+		this.m.UIDescription = "Un point d\'appui militaire entouré de bois";
 		this.m.Description = "Entouré de forêt, ce petit donjon en bois contrôle les bois environnants.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";

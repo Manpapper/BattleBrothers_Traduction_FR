@@ -2,7 +2,7 @@ this.barbarian_sanctuary_location <- this.inherit("scripts/entity/world/location
 	m = {},
 	function getDescription()
 	{
-		return "Les barbares ont afflué à cet endroit et ont établi leur camp autour d'un site de culte. De nombreux guerriers nordiques féroces sont susceptibles de se trouver à proximité.";
+		return "Les barbares ont afflué à cet endroit et ont établi leur camp autour d\'un site de culte. De nombreux guerriers nordiques féroces sont susceptibles de se trouver à proximité.";
 	}
 
 	function create()

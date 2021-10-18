@@ -2,7 +2,7 @@ this.orc_fortress_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Une puissante forteresse faite d'énormes rondins de bois de fer et couverte de peintures tribales de guerre. Les cris assoiffés de sang des orcs qui résonnent derrière les murs peuvent être entendus de loin.";
+		return "Une puissante forteresse faite d\'énormes rondins de bois de fer et couverte de peintures tribales de guerre. Les cris assoiffés de sang des orcs qui résonnent derrière les murs peuvent être entendus de loin.";
 	}
 
 	function create()

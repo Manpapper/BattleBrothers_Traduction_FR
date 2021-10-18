@@ -2,7 +2,7 @@ this.waterwheel_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Un petit moulin à eau avec une maison en pierre à ses côtés. Il semble que quelqu'un vive ici.";
+		return "Un petit moulin à eau avec une maison en pierre à ses côtés. Il semble que quelqu\'un vive ici.";
 	}
 
 	function create()
