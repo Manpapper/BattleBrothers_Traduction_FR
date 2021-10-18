@@ -2,7 +2,7 @@ this.ancient_temple_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "The sunken and half buried entrance to some sort of temple or mausoleum that sticks out of the ground.";
+		return "L'entrée enfoncée et à moitié enterrée d'une sorte de temple ou de mausolée qui sort du sol.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.ancient_temple_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Ancient Temple";
+		this.m.Name = "Temple Ancien";
 		this.location.onSpawned();
 	}
 

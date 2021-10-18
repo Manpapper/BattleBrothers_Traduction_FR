@@ -2,7 +2,7 @@ this.tundra_elk_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A lone elk grazes on green meadows, in the shadow of some trees and by a small lake.";
+		return "Un élan solitaire broute dans des prairies vertes, à l'ombre de quelques arbres et près d'un petit lac.";
 	}
 
 	function create()
@@ -20,7 +20,7 @@ this.tundra_elk_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Hunting Ground";
+		this.m.Name = "Terrain de Chasse";
 		this.location.onSpawned();
 		this.Const.World.Common.addTroop(this, {
 			Type = this.Const.World.Spawn.Troops.TricksterGod

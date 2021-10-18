@@ -2,7 +2,7 @@ this.sunken_library_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Shimmering in the sun, golden domes peer out of the sand and give away that something larger lies dormant here, sunken and buried under the sand for ages.";
+		return "Scintillant au soleil, des dômes dorés émergent du sable et révèlent que quelque chose de plus grand sommeille ici, enfoui sous le sable depuis des siècles.";
 	}
 
 	function create()
@@ -20,7 +20,7 @@ this.sunken_library_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Sunken Library";
+		this.m.Name = "Bibliothèque Immergé";
 		this.location.onSpawned();
 	}
 

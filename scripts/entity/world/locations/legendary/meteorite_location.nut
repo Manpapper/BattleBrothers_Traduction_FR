@@ -2,7 +2,7 @@ this.meteorite_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A great crater in the ground made by a rock that fell from the sky. A mausoleum was built around it a long ago, and to this day people from all corners of the world set out to pilgrimage here.";
+		return "Un grand cratère dans le sol fait par un rocher tombé du ciel. Un mausolée a été construit autour il y a longtemps, et jusqu'à ce jour, des gens de tous les coins du monde s'y rendent en pèlerinage.";
 	}
 
 	function create()
@@ -21,7 +21,7 @@ this.meteorite_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "The Fallen Star";
+		this.m.Name = "Étoile Tombée";
 		this.location.onSpawned();
 	}
 

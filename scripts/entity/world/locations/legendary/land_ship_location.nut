@@ -2,7 +2,7 @@ this.land_ship_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Atop some trees sits a large wooden structure. As strange as it seems, it looks a lot like a ship.";
+		return "Au sommet de quelques arbres se trouve une grande structure en bois. Aussi étrange que cela puisse paraître, elle ressemble beaucoup à un bateau.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.land_ship_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Curious Ship Wreck";
+		this.m.Name = "Curieuse Épave de Navire";
 		this.location.onSpawned();
 	}
 

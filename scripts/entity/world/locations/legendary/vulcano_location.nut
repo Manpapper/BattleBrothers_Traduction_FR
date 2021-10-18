@@ -2,7 +2,7 @@ this.vulcano_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Once a thriving city, now but ruins covered in ash. A fallen metropolis with many names, it has become an object of cultural and religious pride for north and south alike.";
+		return "Autrefois une ville prospère, aujourd'hui des ruines recouvertes de cendres. Métropole déchue aux multiples noms, elle est devenue un objet de fierté culturelle et religieuse pour le nord comme pour le sud.";
 	}
 
 	function create()
@@ -21,7 +21,7 @@ this.vulcano_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "The Ancient City";
+		this.m.Name = "La Cité Antique";
 		this.location.onSpawned();
 	}
 

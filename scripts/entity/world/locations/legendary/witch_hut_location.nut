@@ -2,7 +2,7 @@ this.witch_hut_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A skewed and withered hut that looks like it could collapse at any moment. Smoke is rising from an awry chimney.";
+		return "Une cabane de travers et flétrie qui semble pouvoir s'effondrer à tout moment. De la fumée s'échappe d'une cheminée déréglée.";
 	}
 
 	function create()
@@ -21,7 +21,7 @@ this.witch_hut_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Witch Hut";
+		this.m.Name = "Cabane de Sorcière";
 		this.location.onSpawned();
 
 		for( local i = 0; i < 4; i = ++i )

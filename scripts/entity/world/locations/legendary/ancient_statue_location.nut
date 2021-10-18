@@ -2,7 +2,7 @@ this.ancient_statue_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A huge statue glittering in the sun that towers over the surrounding landscape.";
+		return "Une immense statue scintillant au soleil qui domine le paysage environnant.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.ancient_statue_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Ancient Statue";
+		this.m.Name = "Statue Ancienne";
 		this.location.onSpawned();
 	}
 

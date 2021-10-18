@@ -2,7 +2,7 @@ this.waterwheel_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A small watermill with a stony house at its side. It looks like someone might be living here.";
+		return "Un petit moulin à eau avec une maison en pierre à ses côtés. Il semble que quelqu'un vive ici.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.waterwheel_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Watermill";
+		this.m.Name = "Moulin à Eau";
 		this.location.onSpawned();
 		this.Const.World.Common.addTroop(this, {
 			Type = this.Const.World.Spawn.Troops.ZombieBoss

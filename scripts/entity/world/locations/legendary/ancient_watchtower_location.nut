@@ -2,7 +2,7 @@ this.ancient_watchtower_location <- this.inherit("scripts/entity/world/location"
 	m = {},
 	function getDescription()
 	{
-		return "A thin spire reaching high into the sky. The view from the top must be staggering.";
+		return "Une fine tour qui s'élève dans le ciel. La vue du sommet doit être stupéfiante.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.ancient_watchtower_location <- this.inherit("scripts/entity/world/location"
 
 	function onSpawned()
 	{
-		this.m.Name = "Ancient Spire";
+		this.m.Name = "Tour Ancienne";
 		this.location.onSpawned();
 	}
 

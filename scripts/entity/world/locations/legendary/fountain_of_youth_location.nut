@@ -2,7 +2,7 @@ this.fountain_of_youth_location <- this.inherit("scripts/entity/world/location",
 	m = {},
 	function getDescription()
 	{
-		return "A small clearing in the forest centered around a curios, slender tree. Something seems to be off about this tree but it is difficult to make out from afar.";
+		return "Une petite clairière dans la forêt centrée autour d'un arbre curieux et élancé. Cet arbre semble  bizarre, mais il est difficile de le distinguer de loin.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.fountain_of_youth_location <- this.inherit("scripts/entity/world/location",
 
 	function onSpawned()
 	{
-		this.m.Name = "Grotesque Tree";
+		this.m.Name = "Arbre Grotesque";
 		this.location.onSpawned();
 	}
 

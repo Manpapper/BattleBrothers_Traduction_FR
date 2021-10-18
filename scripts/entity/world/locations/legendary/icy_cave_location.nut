@@ -2,7 +2,7 @@ this.icy_cave_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A cave amidst a sea of snow and rock. A thick gate of icicles keeps your entrance well stayed.";
+		return "Une grotte au milieu d'une mer de neige et de rochers. Une épaisse barrière de glaçons garde votre entrée bien gardée.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.icy_cave_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Icy Cave";
+		this.m.Name = "Grotte de Glace";
 		this.location.onSpawned();
 	}
 

@@ -2,7 +2,7 @@ this.kraken_cult_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "Stone circles and pillars with strange markings hint at something eerie looming in the area.";
+		return "Des cercles de pierres et des piliers portant des marques étranges laissent présager que quelque chose d'étrange se profile dans la région.";
 	}
 
 	function create()
@@ -26,7 +26,7 @@ this.kraken_cult_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Stone Pillars";
+		this.m.Name = "Piliers de Pierre";
 		this.location.onSpawned();
 		this.Const.World.Common.addTroop(this, {
 			Type = this.Const.World.Spawn.Troops.Kraken

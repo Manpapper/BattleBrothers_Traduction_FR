@@ -2,7 +2,7 @@ this.black_monolith_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A pitch black monolith towers over the surrounding lands, emitting a baleful aura. No living being dares drawing close to it.";
+		return "Un monolithe noir domine les terres environnantes, émettant une aura maléfique. Aucun être vivant n'ose s'en approcher.";
 	}
 
 	function create()
@@ -21,7 +21,7 @@ this.black_monolith_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Black Monolith";
+		this.m.Name = "Monolithe Noir";
 		this.location.onSpawned();
 
 		for( local i = 0; i < 8; i = ++i )

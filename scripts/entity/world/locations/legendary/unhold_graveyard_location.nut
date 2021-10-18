@@ -2,7 +2,7 @@ this.unhold_graveyard_location <- this.inherit("scripts/entity/world/location", 
 	m = {},
 	function getDescription()
 	{
-		return "A wide field littered with gigantic bones and skulls. Some are bleached to white but some are fresh and still have flesh attached to them.";
+		return "Un large champ jonché d'os et de crânes gigantesques. Certains sont blanchis à blanc mais d'autres sont frais et ont encore de la chair attachée à eux.";
 	}
 
 	function create()
@@ -19,7 +19,7 @@ this.unhold_graveyard_location <- this.inherit("scripts/entity/world/location", 
 
 	function onSpawned()
 	{
-		this.m.Name = "Unhold Graveyard";
+		this.m.Name = "Cimetière d'Unhold";
 		this.location.onSpawned();
 	}
 
