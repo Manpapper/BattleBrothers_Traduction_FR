@@ -2,7 +2,7 @@ this.undead_mass_grave_location <- this.inherit("scripts/entity/world/location",
 	m = {},
 	function getDescription()
 	{
-		return "The sad remains of a merciless battle, an epidemic or other catastrophe. The survivors dug a large hole and piled all the corpses into it to get rid of them quickly.";
+		return "Les tristes restes d'une bataille sans merci, d'une épidémie ou d'une autre catastrophe. Les survivants ont creusé un grand trou et y ont entassé tous les cadavres pour s'en débarrasser rapidement.";
 	}
 
 	function create()

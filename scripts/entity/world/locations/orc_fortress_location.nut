@@ -2,7 +2,7 @@ this.orc_fortress_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A mighty fortress made from massive iron wood logs and covered in tribal paintings of war. The bloodthirsty shouts of orcs echoing behind the walls can be heard from afar.";
+		return "Une puissante forteresse faite d'énormes rondins de bois de fer et couverte de peintures tribales de guerre. Les cris assoiffés de sang des orcs qui résonnent derrière les murs peuvent être entendus de loin.";
 	}
 
 	function create()
@@ -23,7 +23,7 @@ this.orc_fortress_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Fortress of the Warlord";
+		this.m.Name = "Forteresse du Seigneur de Guerre";
 		this.location.onSpawned();
 
 		for( local i = 0; i < 16; i = ++i )

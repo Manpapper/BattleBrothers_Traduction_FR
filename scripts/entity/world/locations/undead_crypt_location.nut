@@ -2,7 +2,7 @@ this.undead_crypt_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A long forgotten crypt haunted by the ghosts of the past. The dead won\'t find sleep here.";
+		return "Une crypte oubliée depuis longtemps et hantée par les fantômes du passé. Les morts ne trouveront pas le sommeil ici.";
 	}
 
 	function create()

@@ -2,7 +2,7 @@ this.undead_buried_castle_location <- this.inherit("scripts/entity/world/locatio
 	m = {},
 	function getDescription()
 	{
-		return "Sunken into the ground, this castle has been long abandoned, only to give refuge to much darker creatures.";
+		return "Enfoncé dans le sol, ce château a été abandonné depuis longtemps, pour donner refuge à des créatures bien plus sombres.";
 	}
 
 	function create()

@@ -2,7 +2,7 @@ this.nomad_ruins_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "These ancient ruins cast their shadows far over the surrounding sands.";
+		return "Ces ruines anciennes projettent leurs ombres loin au-dessus des sables environnants.";
 	}
 
 	function create()

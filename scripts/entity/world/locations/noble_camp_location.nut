@@ -2,13 +2,13 @@ this.noble_camp_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A sea of tents, host to the army of a noble house.";
+		return "Une mer de tentes, accueillant l'armée d'une maison noble.";
 	}
 
 	function create()
 	{
 		this.location.create();
-		this.m.Name = "Army Camp";
+		this.m.Name = "Camp d'une Armée";
 		this.m.TypeID = "location.noble_camp";
 		this.m.LocationType = this.Const.World.LocationType.Passive;
 		this.m.CombatLocation.Template[0] = "tactical.human_camp";

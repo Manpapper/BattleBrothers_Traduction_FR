@@ -2,7 +2,7 @@ this.orc_camp_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A small camp erected by Orcs, either as part of a large horde in the vicinity or a small tribes of its own. They\'ll eventually move on to hunt and pillage elsewhere.";
+		return "Un petit campement érigé par les Orques, qu'ils fassent partie d'une grande horde dans les environs ou qu'ils constituent une petite tribu à part entière. Ils finiront par partir chasser et piller ailleurs.";
 	}
 
 	function create()

@@ -2,7 +2,7 @@ this.nomad_tent_city_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A large collection of colorful nomad huts and tents huddled together in the desert.";
+		return "Une grande collection de huttes et de tentes nomades colorées, serrées les unes contre les autres dans le désert.";
 	}
 
 	function create()

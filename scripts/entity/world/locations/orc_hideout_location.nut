@@ -2,7 +2,7 @@ this.orc_hideout_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "An abandoned homestead with a collapsed roof.";
+		return "Une ferme abandonnée dont le toit s'est effondré.";
 	}
 
 	function create()

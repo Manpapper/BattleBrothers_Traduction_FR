@@ -2,7 +2,7 @@ this.goblin_outpost_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A defensible outpost erected by goblins.";
+		return "Un avant-poste défendable érigé par les gobelins.";
 	}
 
 	function create()

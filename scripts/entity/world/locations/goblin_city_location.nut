@@ -2,7 +2,7 @@ this.goblin_city_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A great goblin city nested into the remains of an ancient fortress. Protected by dark and towering walls, it is host to a standing army of vicious greenskins.";
+		return "Une grande cité gobeline nichée dans les vestiges d'une ancienne forteresse. Protégée par des murs sombres et imposants, elle abrite une armée de vicieuses peaux-vertes.";
 	}
 
 	function create()

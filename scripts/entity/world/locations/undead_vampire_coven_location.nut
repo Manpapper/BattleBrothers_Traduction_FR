@@ -2,7 +2,7 @@ this.undead_vampire_coven_location <- this.inherit("scripts/entity/world/locatio
 	m = {},
 	function getDescription()
 	{
-		return "Hidden for centuries, this ancient place became a safe haven for a coven of hemovores.";
+		return "Caché pendant des siècles, cet ancien lieu est devenu un refuge pour un groupe de vampires.";
 	}
 
 	function create()

@@ -2,7 +2,7 @@ this.bandit_camp_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A fortified wooden encampment used by outlaws to stash their loot, rest in between raids and play drinking games.";
+		return "Un campement fortifié en bois utilisé par les hors-la-loi pour cacher leur butin, se reposer entre les raids et jouer à des jeux de boisson.";
 	}
 
 	function create()

@@ -2,7 +2,7 @@ this.nomad_hidden_camp_location <- this.inherit("scripts/entity/world/location",
 	m = {},
 	function getDescription()
 	{
-		return "Nomads hide their camps well to avoid unwanted visitors or pursuing soldiers of the city states.";
+		return "Les nomades cachent bien leurs camps pour éviter les visiteurs indésirables ou les soldats des villes-États qui les poursuivent.";
 	}
 
 	function create()

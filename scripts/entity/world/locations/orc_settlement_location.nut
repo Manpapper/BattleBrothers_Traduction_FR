@@ -2,7 +2,7 @@ this.orc_settlement_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A large and foul-smelling sea of tents, with a warlord\'s tent and throne-room in the middle, the largest of all. It\'s home to a whole tribe until they move on to hunt and raid elsewhere.";
+		return "Une grande mer de tentes nauséabondes, avec la tente et la salle du trône d'un chef de guerre, la plus grande de toutes. C'est la demeure de toute une tribu jusqu'à ce qu'elle parte chasser et piller ailleurs..";
 	}
 
 	function create()

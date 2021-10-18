@@ -2,7 +2,7 @@ this.orc_cave_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "This cave has been occupied by greenskins and turned into a foul-smelling camp.";
+		return "Cette grotte a été occupée par des peaux vertes et transformée en un camp malodorant.";
 	}
 
 	function create()

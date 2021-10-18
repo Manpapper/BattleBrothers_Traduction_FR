@@ -2,7 +2,7 @@ this.undead_necromancers_lair_location <- this.inherit("scripts/entity/world/loc
 	m = {},
 	function getDescription()
 	{
-		return "A necromancer has made this lair his refuge for practicing dark rituals undisturbed.";
+		return "Un nécromancien a fait de ce repaire son refuge pour pratiquer des rituels sombres sans être dérangé.";
 	}
 
 	function create()

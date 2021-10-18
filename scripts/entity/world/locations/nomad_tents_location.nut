@@ -2,7 +2,7 @@ this.nomad_tents_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A small camp of nomad tents that can be packed up and moved quickly.";
+		return "Un petit camp de tentes nomades qui peuvent être emballées et déplacées rapidement.";
 	}
 
 	function create()

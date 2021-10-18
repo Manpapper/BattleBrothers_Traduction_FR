@@ -2,7 +2,7 @@ this.barbarian_shelter_location <- this.inherit("scripts/entity/world/location",
 	m = {},
 	function getDescription()
 	{
-		return "A couple of simple barbarian fur huts huddled down in a circle.";
+		return "Deux simples huttes barbares en fourrure, serrées en cercle.";
 	}
 
 	function create()

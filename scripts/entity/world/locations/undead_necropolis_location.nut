@@ -5,7 +5,7 @@ this.undead_necropolis_location <- this.inherit("scripts/entity/world/location",
 	},
 	function getDescription()
 	{
-		return "Once a thriving human settlement, this place has been defiled and fallen into ruin, turned into a necropolis of the undead. Waves of walking corpses pour forth to spread terror and fear in the surrounding lands.";
+		return "Autrefois une colonie humaine prospère, cet endroit a été souillé et est tombé en ruine, transformé en une nécropole de morts-vivants. Des vagues de cadavres ambulants se déversent pour semer la terreur et la crainte dans les terres environnantes.";
 	}
 
 	function setSprite( _s )

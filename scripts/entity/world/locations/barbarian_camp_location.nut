@@ -2,7 +2,7 @@ this.barbarian_camp_location <- this.inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A set of fur jurts typical for the barbarians of the northern regions.";
+		return "Un ensemble de vêtements en fourrure typique des barbares des régions du nord.";
 	}
 
 	function create()

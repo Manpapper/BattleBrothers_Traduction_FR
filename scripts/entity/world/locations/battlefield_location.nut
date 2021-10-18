@@ -5,7 +5,7 @@ this.battlefield_location <- this.inherit("scripts/entity/world/location", {
 	},
 	function getDescription()
 	{
-		return "A battle took place here a short while ago. Broken and lost equipment, blood stains and torn ground tell of a determined fight.";
+		return "Une bataille a eu lieu ici il y a peu de temps. De l'équipement brisé et perdu, les taches de sang et le sol déchiré témoignent d'un combat acharné.";
 	}
 
 	function setSize( _s )
@@ -16,7 +16,7 @@ this.battlefield_location <- this.inherit("scripts/entity/world/location", {
 	function create()
 	{
 		this.location.create();
-		this.m.Name = "Battle Site";
+		this.m.Name = "Site de Bataille";
 		this.m.TypeID = "location.battlefield";
 		this.m.LocationType = this.Const.World.LocationType.Passive;
 		this.m.IsDespawningDefenders = false;
@@ -28,7 +28,7 @@ this.battlefield_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "Battle Site";
+		this.m.Name = "Site de Bataille";
 		this.location.onSpawned();
 	}
 

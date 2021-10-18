@@ -6,11 +6,11 @@ this.goblin_ruins_location <- this.inherit("scripts/entity/world/location", {
 
 		if (isSouthern)
 		{
-			return "These ancient ruins cast their shadows far over the surrounding sands.";
+			return "Ces ruines anciennes projettent leurs ombres loin au-dessus des sables environnants.";
 		}
 		else
 		{
-			return "A once proud fortress now lying in ruins.";
+			return "Une forteresse autrefois fière, aujourd'hui en ruines.";
 		}
 	}
 
