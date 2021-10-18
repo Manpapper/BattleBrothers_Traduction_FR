@@ -58,8 +58,8 @@ this.medium_coast_fort <- this.inherit("scripts/entity/world/settlement", {
 			"sellsword_background",
 			"swordmaster_background"
 		];
-		this.m.UIDescription = "A stone keep that controls a strategically important port and protects nearby trading routes";
-		this.m.Description = "This stone keep controls a strategically important sea access and protects nearby trading routes.";
+		this.m.UIDescription = "Un donjon en pierre qui contrôle un port d'importance stratégique et protège les routes commerciales voisines";
+		this.m.Description = "Ce donjon en pierre contrôle un accès maritime d'importance stratégique et protège les routes commerciales voisines.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02";
 		this.m.UIBackgroundLeft = "ui/settlements/water_01";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

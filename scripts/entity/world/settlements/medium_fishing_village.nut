@@ -68,8 +68,8 @@ this.medium_fishing_village <- this.inherit("scripts/entity/world/settlement", {
 			"eunuch_background",
 			"sellsword_background"
 		];
-		this.m.UIDescription = "A larger spread out village relying on fishing and a little trade";
-		this.m.Description = "A larger spread out village relying on fishing and a little trade.";
+		this.m.UIDescription = "Un village plus étendu qui dépend de la pêche et d'un peu de commerce";
+		this.m.Description = "Un village plus étendu qui dépend de la pêche et d'un peu de commerce.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02";
 		this.m.UIBackgroundLeft = "ui/settlements/water_01";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

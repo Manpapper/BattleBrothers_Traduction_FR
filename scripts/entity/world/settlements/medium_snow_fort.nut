@@ -63,8 +63,8 @@ this.medium_snow_fort <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"retired_soldier_background"
 		];
-		this.m.UIDescription = "This stone keep shelters a garrison from the snow";
-		this.m.Description = "This stone-built keep offers protection both from the cold and any invaders.";
+		this.m.UIDescription = "Ce donjon en pierre abrite une garnison de la neige";
+		this.m.Description = "Ce donjon en pierre offre une protection à la fois contre le froid et contre tout envahisseur.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02_snow";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left_snow";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right_snow";

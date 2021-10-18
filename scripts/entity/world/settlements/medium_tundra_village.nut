@@ -63,8 +63,8 @@ this.medium_tundra_village <- this.inherit("scripts/entity/world/settlement", {
 			"vagabond_background",
 			"wildman_background"
 		];
-		this.m.UIDescription = "An established village in the rough tundra";
-		this.m.Description = "An established village in the rough tundra that is a meeting point for the area.";
+		this.m.UIDescription = "Un village établi dans la toundra sauvage";
+		this.m.Description = "Un village établi dans la toundra rude qui est un point de rencontre pour la région.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

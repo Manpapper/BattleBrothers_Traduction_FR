@@ -62,8 +62,8 @@ this.large_coast_fort <- this.inherit("scripts/entity/world/settlement", {
 			"cripple_background",
 			"eunuch_background"
 		];
-		this.m.UIDescription = "This massive citadel guards a warport and the surrounding trade routes";
-		this.m.Description = "This massive citadel guards a warport and the surrounding trade routes. It is a seat of power for nobility and home to a large garrison.";
+		this.m.UIDescription = "Cette citadelle massive protège un port de guerre et les routes commerciales environnantes";
+		this.m.Description = "Cette citadelle massive protège un port de guerre et les routes commerciales environnantes. C'est un siège de pouvoir pour la noblesse et le foyer d'une grande garnison.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";
 		this.m.UIBackgroundLeft = "ui/settlements/water_01";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

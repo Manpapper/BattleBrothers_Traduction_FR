@@ -60,8 +60,8 @@ this.small_swamp_fort <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A motte with bailey built on a spot of dry ground";
-		this.m.Description = "Placed on a small bit of solid ground, this motte and baily controls the surrounding lands.";
+		this.m.UIDescription = "Un fort avec une tour construite sur un terrain sec";
+		this.m.Description = "Placé sur un petit bout de terrain solide, ce fort avec une tour contrôle les terres environnantes.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

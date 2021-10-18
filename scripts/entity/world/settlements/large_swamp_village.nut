@@ -87,8 +87,8 @@ this.large_swamp_village <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A modest city spread out over dry spots in the swampy area";
-		this.m.Description = "A collection of many smaller settlements spread out over dry spots in the swampy area to form one modestly sized city.";
+		this.m.UIDescription = "Une ville modeste répartie sur des endroits secs dans la zone marécageuse";
+		this.m.Description = "Une collection de nombreuses petites colonies réparties sur des endroits secs dans la zone marécageuse pour former une ville de taille modeste.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_03";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

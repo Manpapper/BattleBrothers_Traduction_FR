@@ -53,8 +53,8 @@ this.small_fishing_village <- this.inherit("scripts/entity/world/settlement", {
 			"vagabond_background",
 			"vagabond_background"
 		];
-		this.m.UIDescription = "A small fishing village made up of a few humble huts";
-		this.m.Description = "A small fishing village made up of a few humble huts.";
+		this.m.UIDescription = "Un petit village de pêcheurs composé de quelques humbles cabanes";
+		this.m.Description = "Un petit village de pêcheurs composé de quelques humbles cabanes.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01";
 		this.m.UIBackgroundLeft = "ui/settlements/water_01";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

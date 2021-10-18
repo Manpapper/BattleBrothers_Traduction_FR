@@ -58,8 +58,8 @@ this.medium_mountains_fort <- this.inherit("scripts/entity/world/settlement", {
 			"sellsword_background",
 			"sellsword_background"
 		];
-		this.m.UIDescription = "A stone keep that is towering high over the surrounding mountains";
-		this.m.Description = "A stone keep that is towering high over the surrounding mountains. Lookouts on the towers can see approaching troops from miles away.";
+		this.m.UIDescription = "Un donjon en pierre qui domine les montagnes environnantes";
+		this.m.Description = "Un donjon de pierre qui domine les montagnes environnantes. Les guetteurs sur les tours peuvent voir les troupes en approche à des kilomètres de distance.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

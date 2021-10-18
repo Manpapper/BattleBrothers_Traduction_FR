@@ -60,8 +60,8 @@ this.small_swamp_village <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A small and crude settlement in a swampy area";
-		this.m.Description = "A small settlement in a swampy area. The people living here sure know hardship.";
+		this.m.UIDescription = "Un petit établissement rudimentaire dans une zone marécageuse";
+		this.m.Description = "Un petit village dans une zone marécageuse. Les gens qui vivent ici connaissent la dureté de la vie.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

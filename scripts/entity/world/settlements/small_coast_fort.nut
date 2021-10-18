@@ -53,8 +53,8 @@ this.small_coast_fort <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"retired_soldier_background"
 		];
-		this.m.UIDescription = "A wooden motte with a bailey towering high over the nearby coastline";
-		this.m.Description = "A wooden motte with a bailey towering high over the nearby coastline.";
+		this.m.UIDescription = "Une motte en bois avec une tour qui domine la côte avoisinante";
+		this.m.Description = "Une motte en bois avec une tour qui domine la côte avoisinante.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_01";
 		this.m.UIBackgroundLeft = "ui/settlements/water_01";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

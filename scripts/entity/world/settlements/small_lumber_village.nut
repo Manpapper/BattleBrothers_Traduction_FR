@@ -66,8 +66,8 @@ this.small_lumber_village <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A village living off of lumber and everything the forest offers";
-		this.m.Description = "A village living off of lumber and everything the forest offers.";
+		this.m.UIDescription = "Un village vivant du bois et de tout ce que la forêt offre";
+		this.m.Description = "Un village vivant du bois et de tout ce que la forêt offre.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

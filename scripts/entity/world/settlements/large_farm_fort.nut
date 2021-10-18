@@ -61,8 +61,8 @@ this.large_farm_fort <- this.inherit("scripts/entity/world/settlement", {
 			"swordmaster_background",
 			"cripple_background"
 		];
-		this.m.UIDescription = "A massive citadel towering over the open plains";
-		this.m.Description = "A massive citadel towering over the open plains surrounding it. A seat of power to nobles, and housing large armed forces for a firm grip on the region.";
+		this.m.UIDescription = "Une citadelle massive dominant les plaines ouvertes";
+		this.m.Description = "Une citadelle massive qui domine les plaines ouvertes qui l'entourent. Siège du pouvoir des nobles, elle abrite d'importantes forces armées qui lui permettent d'avoir une emprise ferme sur la région.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

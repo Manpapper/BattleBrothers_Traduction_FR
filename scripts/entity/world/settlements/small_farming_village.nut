@@ -60,8 +60,8 @@ this.small_farming_village <- this.inherit("scripts/entity/world/settlement", {
 			"vagabond_background",
 			"poacher_background"
 		];
-		this.m.UIDescription = "A small farming village living mostly off of the surrounding fertile lands";
-		this.m.Description = "A small farming village living mostly off of the surrounding fertile lands.";
+		this.m.UIDescription = "Un petit village agricole vivant principalement des terres fertiles environnantes";
+		this.m.Description = "Un petit village agricole vivant principalement des terres fertiles environnantes.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

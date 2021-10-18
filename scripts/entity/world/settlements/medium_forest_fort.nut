@@ -62,8 +62,8 @@ this.medium_forest_fort <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A mighty stone keep surrounded by woods.";
-		this.m.Description = "This mighty stone keep surrounded by forest acts as a base of operations in the area.";
+		this.m.UIDescription = "Un puissant donjon de pierre entouré de bois";
+		this.m.Description = "Ce puissant donjon de pierre entouré de forêt sert de base d'opérations dans la région.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

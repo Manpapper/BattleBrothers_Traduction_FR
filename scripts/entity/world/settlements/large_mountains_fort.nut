@@ -75,8 +75,8 @@ this.large_mountains_fort <- this.inherit("scripts/entity/world/settlement", {
 			"hedge_knight_background",
 			"hedge_knight_background"
 		];
-		this.m.UIDescription = "A massive stone citadel built into the steep mountains";
-		this.m.Description = "This massive stone citadel is built into the steep mountains. A large number of men are stationed here to hold a firm grip on the land.";
+		this.m.UIDescription = "Une citadelle massive en pierre construite dans les montagnes escarpées";
+		this.m.Description = "Cette citadelle massive en pierre est construite dans les montagnes escarpées. Un grand nombre d'hommes sont stationnés ici pour garder une emprise sur le territoire.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

@@ -77,8 +77,8 @@ this.large_forest_fort <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A citadel towering high over the surrounding woods";
-		this.m.Description = "This citadel towers high over the surrounding forests and dominates the region.";
+		this.m.UIDescription = "Une citadelle dominant les bois environnants";
+		this.m.Description = "Cette citadelle surplombe les forêts environnantes et domine la région.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

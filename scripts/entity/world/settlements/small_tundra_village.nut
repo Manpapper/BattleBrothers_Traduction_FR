@@ -57,8 +57,8 @@ this.small_tundra_village <- this.inherit("scripts/entity/world/settlement", {
 			"wildman_background",
 			"wildman_background"
 		];
-		this.m.UIDescription = "A humble village that managed to survive in the sparse tundra";
-		this.m.Description = "A humble village that managed to survive in the sparse tundra.";
+		this.m.UIDescription = "Un humble village qui a réussi à survivre dans la toundra";
+		this.m.Description = "Un humble village qui a réussi à survivre dans la toundra.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

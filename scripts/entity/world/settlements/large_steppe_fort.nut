@@ -83,8 +83,8 @@ this.large_steppe_fort <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("eunuch_southern_background");
 		}
 
-		this.m.UIDescription = "A mighty citadel towering above the surrounding steppe";
-		this.m.Description = "This mighty citadel towers high above the surrounding steppe and is the seat of power in the region. It houses a large garrison and offers all kinds of services valuable to travellers and mercenaries.";
+		this.m.UIDescription = "Une puissante citadelle dominant la steppe environnante";
+		this.m.Description = "Cette puissante citadelle, qui domine la steppe environnante, est le siège du pouvoir dans la région. Elle abrite une importante garnison et offre toutes sortes de services utiles aux voyageurs et aux mercenaires.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

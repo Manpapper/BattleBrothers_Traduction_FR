@@ -58,8 +58,8 @@ this.small_snow_fort <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background",
 			"retired_soldier_background"
 		];
-		this.m.UIDescription = "This motte with bailey looks wide over the endless snow";
-		this.m.Description = "This motte with bailey looks wide over the endless snow, and offers shelter from the cold and warm food to the garrison stationed here.";
+		this.m.UIDescription = "Cette motte avec bailey regarde largement la neige infinie.";
+		this.m.Description = "Cette motte avec bailey domine les neiges éternelles et offre un abri contre le froid et une nourriture chaude à la garnison qui y est stationnée.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_01_snow";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left_snow";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right_snow";

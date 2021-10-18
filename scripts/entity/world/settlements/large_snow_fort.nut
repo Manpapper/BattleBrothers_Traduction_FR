@@ -79,8 +79,8 @@ this.large_snow_fort <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "This large citadel looks wide over the endless snow";
-		this.m.Description = "This large citadel looks wide over the endless snow and is a stronghold against anything that may come down from the far north. As people flocked to its protection over the years, the many houses and workshops in its vicinity now also grant shelter and supply to travelers, mercenaries and adventurers in the area.";
+		this.m.UIDescription = "Cette grande citadelle donne sur la neige à perte de vue";
+		this.m.Description = "Cette grande citadelle, qui domine les neiges éternelles, est une forteresse contre tout ce qui peut descendre du grand nord. Comme les gens ont afflué vers sa protection au fil des ans, les nombreuses maisons et ateliers situés à proximité offrent également un abri et un approvisionnement aux voyageurs, mercenaires et aventuriers de la région.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03_snow";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left_snow";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right_snow";

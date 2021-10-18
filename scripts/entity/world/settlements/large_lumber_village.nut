@@ -75,8 +75,8 @@ this.large_lumber_village <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A prospering city with its main produce being valuable timber and venison";
-		this.m.Description = "A prospering city located close to the forest with its main produce being valuable timber and venison.";
+		this.m.UIDescription = "Une ville prospère dont les principaux produits sont le bois de valeur et la venaison";
+		this.m.Description = "Une ville prospère située à proximité de la forêt, dont les principaux produits sont le bois de valeur et la venaison.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_03";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

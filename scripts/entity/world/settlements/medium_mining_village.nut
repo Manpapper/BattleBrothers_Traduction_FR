@@ -58,8 +58,8 @@ this.medium_mining_village <- this.inherit("scripts/entity/world/settlement", {
 			"thief_background",
 			"vagabond_background"
 		];
-		this.m.UIDescription = "A stretched out settlement nestled into the surrounding mountains";
-		this.m.Description = "A stretched out settlement nestled into the surrounding mountains. The hammering of pickaxes against stone can be heard from a distance.";
+		this.m.UIDescription = "Un village étendu, niché dans les montagnes environnantes";
+		this.m.Description = "Une colonie étendue, nichée dans les montagnes environnantes. On peut entendre de loin le martèlement des pioches contre la pierre.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

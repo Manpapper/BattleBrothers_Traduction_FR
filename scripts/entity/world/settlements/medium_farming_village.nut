@@ -59,8 +59,8 @@ this.medium_farming_village <- this.inherit("scripts/entity/world/settlement", {
 			"vagabond_background",
 			"retired_soldier_background"
 		];
-		this.m.UIDescription = "A prospering village surrounded by fertile land";
-		this.m.Description = "A prospering village surrounded by fertile land. The market is usually filled with all kinds of fresh food.";
+		this.m.UIDescription = "Un village prospère entouré de terres fertiles";
+		this.m.Description = "Un village prospère entouré de terres fertiles. Le marché est généralement rempli de toutes sortes d'aliments frais.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

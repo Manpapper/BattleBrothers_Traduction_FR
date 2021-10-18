@@ -46,8 +46,8 @@ this.small_steppe_village <- this.inherit("scripts/entity/world/settlement", {
 			"vagabond_background",
 			"poacher_background"
 		];
-		this.m.UIDescription = "A small village in the steppe living mainly off of modest trading";
-		this.m.Description = "A small village in the steppe living mainly off of modest trading.";
+		this.m.UIDescription = "Un petit village de la steppe vivant principalement d'un modeste commerce";
+		this.m.Description = "Un petit village de la steppe vivant principalement d'un modeste commerce.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

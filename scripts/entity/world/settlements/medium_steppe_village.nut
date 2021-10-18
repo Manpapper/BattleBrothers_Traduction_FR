@@ -68,8 +68,8 @@ this.medium_steppe_village <- this.inherit("scripts/entity/world/settlement", {
 			]);
 		}
 
-		this.m.UIDescription = "An established and thriving settlement in the steppe";
-		this.m.Description = "An established settlement surrounded by the dry and flat lands of the steppe.";
+		this.m.UIDescription = "Un établissement établi et prospère dans la steppe";
+		this.m.Description = "Une colonie établie entourée par les terres sèches et plates de la steppe.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

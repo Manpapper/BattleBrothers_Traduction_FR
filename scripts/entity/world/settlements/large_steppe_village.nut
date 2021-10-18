@@ -85,8 +85,8 @@ this.large_steppe_village <- this.inherit("scripts/entity/world/settlement", {
 			]);
 		}
 
-		this.m.UIDescription = "A large city thriving on trade and fine arts";
-		this.m.Description = "A large city thriving in the southern steppe by trading and producing valuable goods and fine arts.";
+		this.m.UIDescription = "Une grande ville prospère grâce au commerce et aux arts";
+		this.m.Description = "Une grande ville prospère dans la steppe méridionale grâce au commerce et à la production de biens de valeur et de beaux arts.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_03";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_03_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_03_right";

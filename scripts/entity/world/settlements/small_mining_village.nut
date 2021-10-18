@@ -55,8 +55,8 @@ this.small_mining_village <- this.inherit("scripts/entity/world/settlement", {
 			"thief_background",
 			"poacher_background"
 		];
-		this.m.UIDescription = "Some huts and small buildings housing workers for the nearby mines";
-		this.m.Description = "Some huts and small buildings housing workers for the nearby mines.";
+		this.m.UIDescription = "Quelques cabanes et petits bâtiments abritant les travailleurs des mines à proximité";
+		this.m.Description = "Quelques cabanes et petits bâtiments abritant les travailleurs des mines à proximité.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";

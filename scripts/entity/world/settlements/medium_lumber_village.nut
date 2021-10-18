@@ -68,8 +68,8 @@ this.medium_lumber_village <- this.inherit("scripts/entity/world/settlement", {
 			this.m.DraftList.push("beast_hunter_background");
 		}
 
-		this.m.UIDescription = "A developed village thriving on lumber and game";
-		this.m.Description = "An established village close to the forest living mainly from lumber cutting and game.";
+		this.m.UIDescription = "Un village développé, prospère grâce au bois et au gibier";
+		this.m.Description = "Un village établi près de la forêt vivant principalement de la coupe du bois et du gibier.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

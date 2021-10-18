@@ -57,8 +57,8 @@ this.medium_steppe_fort <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background",
 			"sellsword_background"
 		];
-		this.m.UIDescription = "A stone keep projecting power over the flat steppe";
-		this.m.Description = "This stone keep is a strongpoint in the area and grants a good view of the surrounding flat and dry lands.";
+		this.m.UIDescription = "Un donjon de pierre qui projette son pouvoir sur la steppe plate";
+		this.m.Description = "Ce donjon en pierre est un point fort de la région et offre une bonne vue sur les terres plates et sèches environnantes.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_02_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_02_right";

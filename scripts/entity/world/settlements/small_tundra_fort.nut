@@ -50,8 +50,8 @@ this.small_tundra_fort <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background",
 			"retired_soldier_background"
 		];
-		this.m.UIDescription = "A wooden motte towering above the tundra";
-		this.m.Description = "In the flat lands of the tundra, this small fortification can be spotted from quite a distance.";
+		this.m.UIDescription = "Un fort de bois dominant la toundra";
+		this.m.Description = "Dans les terres plates de la toundra, cette petite fortification peut être repérée de très loin.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_01";
 		this.m.UIBackgroundLeft = "ui/settlements/bg_houses_01_left";
 		this.m.UIBackgroundRight = "ui/settlements/bg_houses_01_right";
