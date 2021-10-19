@@ -32,10 +32,10 @@ this.bounty_hunter_follower <- this.inherit("scripts/retinue/follower", {
 
 	function onEvaluate()
 	{
-		local na\'tems = this.getNumberOfNa\'tems();
-		this.m.Requirements[0].Text = "Ayez " + this.Math.min(3, na\'tems) + "/3 objets nommés ou légendaires en votre possession";
+		local nameditems = this.getNumberOfNameditems();
+		this.m.Requirements[0].Text = "Ayez " + this.Math.min(3, nameditems) + "/3 objets nommés ou légendaires en votre possession";
 
-		if (na\'tems >= 3)
+		if (nameditems >= 3)
 		{
 			this.m.Requirements[0].IsSatisfied = true;
 		}
@@ -49,7 +49,7 @@ this.bounty_hunter_follower <- this.inherit("scripts/retinue/follower", {
 		}
 	}
 
-	function getNumberOfNa\'tems()
+	function getNumberOfNameditems()
 	{
 		local n = 0;
 		local items = this.World.Assets.getStash().getItems();

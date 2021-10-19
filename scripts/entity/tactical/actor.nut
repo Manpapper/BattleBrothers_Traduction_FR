@@ -76,7 +76,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		IsNonCombatant = false,
 		IsShakingOnHit = true,
 		IsFlashingOnHit = true,
-		IsActingIm\'ately = false,
+		IsActingImmediately = false,
 		IsResurrected = false,
 		IsEmittingMovementSounds = true,
 		IsHidingHelmet = false,
@@ -2194,7 +2194,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 		if (this.m.IsActingEachTurn)
 		{
-			if (this.m.IsActingIm\'ately && this.Time.getRound() > 0)
+			if (this.m.IsActingImmediately && this.Time.getRound() > 0)
 			{
 				this.Tactical.TurnSequenceBar.insertEntity(this);
 			}
