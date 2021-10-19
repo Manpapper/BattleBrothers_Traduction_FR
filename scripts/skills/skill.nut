@@ -1404,11 +1404,11 @@ this.skill <- {
 				{
 					if (isHit)
 					{
-						this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and the shot goes astray and hits " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
+						this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " utilise " + this.getName() + " et le tir s\'envole et touche " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Jet de Dés: " + rolled + ")");
 					}
 					else
 					{
-						this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and the shot goes astray and misses " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
+						this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " utilise " + this.getName() + " et le tir s\'envole et manque " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Jet de Dés: " + rolled + ")");
 					}
 				}
 				else
@@ -1420,11 +1420,11 @@ this.skill <- {
 			{
 				if (isHit)
 				{
-					this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and hits " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
+					this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " utilise " + this.getName() + " et touche " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Jet de Dés: " + rolled + ")");
 				}
 				else
 				{
-					this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and misses " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
+					this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " utilise " + this.getName() + " et manque " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Jet de Dés: " + rolled + ")");
 				}
 			}
 			else

@@ -94,7 +94,7 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 
 		if (rolled <= toHit)
 		{
-			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " breaks free (Chance: " + toHit + ", Rolled: " + rolled + ")");
+			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " se libère (Chance: " + toHit + ", Jet de Dés: " + rolled + ")");
 
 			if (this.m.SoundOnHit.len() != 0)
 			{
@@ -151,7 +151,7 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 		}
 		else
 		{
-			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " fails to break free (Chance: " + toHit + ", Rolled: " + rolled + ")");
+			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " ne parvient pas à se libérer (Chance: " + toHit + ", Jet de Dés: " + rolled + ")");
 
 			if (this.m.SoundOnMiss.len() != 0)
 			{

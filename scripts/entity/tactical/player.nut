@@ -373,7 +373,7 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 				id = 2,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = this.Tactical.TurnSequenceBar.getActiveEntity() == this ? "Agit maintenant" : this.m.IsTurnDone || turnsToGo == null ? "Turn terminé" : "Agit dans " + turnsToGo + (turnsToGo > 1 ? " tours" : " tour")
+				text = this.Tactical.TurnSequenceBar.getActiveEntity() == this ? "Agit maintenant" : this.m.IsTurnDone || turnsToGo == null ? "Tour terminé" : "Agit dans " + turnsToGo + (turnsToGo > 1 ? " tours" : " tour")
 			},
 			{
 				id = 3,
