@@ -5,7 +5,7 @@ this.sprained_ankle_injury <- this.inherit("scripts/skills/injury/injury", {
 		this.injury.create();
 		this.m.ID = "injury.sprained_ankle";
 		this.m.Name = "Cheville Foulée";
-		this.m.Description = "Une cheville Foulée fait que même l'homme le plus rapide boitille sur le champ de bataille.";
+		this.m.Description = "Une cheville foulée fait que même l\'homme le plus rapide boitille sur le champ de bataille.";
 		this.m.Type = this.m.Type | this.Const.SkillType.TemporaryInjury;
 		this.m.DropIcon = "injury_icon_24";
 		this.m.Icon = "ui/injury/injury_icon_24.png";
