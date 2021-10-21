@@ -391,7 +391,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "TheDuel2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_138.png[/img]{%champbrother% sheathes his weapons and stands over the corpse of the slain savage. Nodding, the victorious sellsword stares back at you.%SPEECH_ON%Finished, sir.%SPEECH_OFF%The elder comes forward again and raises his staff.%SPEECH_ON%So it is, what is it that you wish to have been solved by the violence you sought coming here?%SPEECH_OFF%You tell him that those to the south are furious and want them gone from these lands. The elder nods.%SPEECH_ON%If by battle you would have accomplished, then by honorable duel it is finished. We shall leave.%SPEECH_OFF%The savages are told in their tongue to pack up and go. Surprisingly, there\'s little backtalk or complaining. If they\'re true to their word then you can go and tell %employer% now.}",
 			Image = "",
 			List = [],
@@ -418,7 +418,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "TheDuel3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_138.png[/img]{It was a good fight, a clash between men upon the earth with those in observation silent as though in awe of some timeless and honorable rite. But. %champbrother% lies dead on the ground. Bested and killed. The elder steps forward again. He does not carry any hint of gloating or grin.%SPEECH_ON%Outsiders, the battle between two men is as such as it were between all of us combined. We have won, blessed is the Far Rock\'s gaze, and so we request that you depart these lands and do not return.%SPEECH_OFF%A few of the sellswords look to you with anger. One says he doesn\'t think the savages would abide the agreement were things the other way around, that the company should wipe these barbarians out regardless of the outcome.}",
 			Image = "",
 			List = [],
@@ -449,7 +449,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Survivor1",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_145.png[/img]{The battle over, %randombrother% beckons you over. In one of the tents is a barbarian nursing a wound. Men, women, and children litter the floor around him. The sellsword points to him.%SPEECH_ON%We chased the savage in here. I think that\'s his family all around him, or someone he knows, cause he just collapsed and hasn\'t moved since.%SPEECH_OFF%You walk toward the man and crouch before him. You tap one of his deerskin boots and ask if he understand you. He nods and shrugs.%SPEECH_ON%Little. You did this. Didn\'t have to, but did. Finish me, or I fight with you. One, the other, all honorable.%SPEECH_OFF%It seems he\'s offering his hand to fight with the company, no doubt part of some northern code that\'s foreign to yourself. He\'s also offering his head if you want that, too, and he seems totally unafraid of giving it up.}",
 			Image = "",
 			List = [],
@@ -491,7 +491,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Survivor2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_145.png[/img]{You unsheathe your sword and lower the blade toward the man, the corpses in the tent blurring along its metal curvature, and the surviving barbarian\'s face blobbing at the tip. He grins and grips the edges, sheathing it in his huge hands. Blood drips steadily from his palms.%SPEECH_ON%Death, killing, no dishonor. For us both. Yes?%SPEECH_OFF%Nodding, you push the blade into his chest and sink him back to the floor. The weight of him on the sword is like a stone and when you unstick him the corpse claps back against the pile of corpses. Sheathing the sword, you tell the company to round up what goods they can and to ready a Retournez à %employer%.}",
 			Image = "",
 			List = [],
@@ -508,7 +508,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Survivor3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_145.png[/img]{You unsheathe your blade halfway, hold it long enough that the savage sees it, then you slam it back into the scabbard. Nodding, you ask.%SPEECH_ON%Understand?%SPEECH_OFF%The barbarian stands up, briefly slumping against the tent\'s post. You turn and hold your hand out to the tent flap. He nods.%SPEECH_ON%Aye, I know.%SPEECH_OFF%He stumbles out and into the light and away into the northern wastes, his shape tottering side to side, shrinking, and is then gone. You tell the company to get ready to Retournez à %employer% for some well-earned pay.}",
 			Image = "",
 			List = [],
@@ -525,7 +525,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Survivor4",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_145.png[/img]{You stare at the man, then take out your dagger and slice the inside of your palm. Squeezing the blood, you toss the dagger to the barbarian and then hold your hand out, the blood dripping steadily. The savage takes the blade and cuts himself in turn. He stands and puts his hand out and you shake. He nods.%SPEECH_ON%Honor, always. With you, the only way, all the way.%SPEECH_OFF%The man stumbles out of the tent. You tell the men to not kill him, but instead to arm him which raises some eyebrows. His addition to the company is unforeseen, but useful. The southern sellswords will get used to it in time, but for now the %companyname% needs to Retournez à %employer%.}",
 			Image = "",
 			List = [],
@@ -593,7 +593,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Revenge2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_145.png[/img]{The savages are driven from %townname%. Despite the results, it takes time for the villagers to emerge and see your victory in full. %employer% eventually comes out clapping and hollering. There\'s a retinue of sheepish lieutenants looking around, their knees muddied, stray straw and clods of earth all over them. It appears they were hiding.%SPEECH_ON%Well done, sellsword, well done! The old gods surely all of that and will reward you in good time!%SPEECH_OFF%You sheathe your sword and nod at the man\'s useless lieutenants.%SPEECH_ON%Maybe, but you better do it first anyway. The old gods would surely appreciate your acting on their behalf given that others, shall we say, could not?%SPEECH_OFF%The man purses his lips and glances at his lieutenants who glance away. Your employer smiles and nods.%SPEECH_ON%Of course, of course, sellsword. I understand you well. You shall be paid in full and then some! All well-earned, truly!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -627,7 +627,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Revenge3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_94.png[/img]{You\'re run off the field of battle and retreat to a safe enough spot to watch the ruination of %townname%. The savages dip into homes and start raping and murdering of both men and women. Children are collected up and heaved into cages made of bone and hide where the elder gently hands them sliced apples and cups of camphor. At the town square you watch as the primitives set upon %employer%\'s home. A few guards step forward, but they\'re cut down almost immediately. One man is laid out upon the ground and is stripped and kicked toward a pair of dogs who tear at him from every which way and he survives and uncomfortably long time. \n\n Finally, %employer% is dragged out of his home. The barbarian leader stares down at him, nods, then grabs him by the neck with one hand and covers his face with the other. In this suspension the man is suffocated. The corpse is then thrown to the warband who have it stripped, desecrated, and then impaled from anus to mouth and lifted high up in the town square. Once the pillaging is done, the savages take what look they want and depart. The last you see of them is a dog trotting with a human ribcage in its maw. %randombrother% comes to your side.%SPEECH_ON%Well. I don\'t think we\'re getting paid, sir.%SPEECH_OFF%No. You suspect not.}",
 			Image = "",
 			List = [],

@@ -655,8 +655,8 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedE_AftermathGood",
-			Title = "After the battle...",
-			Text = "[img]gfx/ui/events/event_22.png[/img]Shockingly, the crucified man is still alive after the battle. He calls to you with a raspy voice that carries no words, but a simple tone of \'please help\'. You have the brothers cut him down. He passes out the second he hits the ground, then jolts awakes and grabs you by the hand.%SPEECH_ON%Thank you, stranger. Thank you so much. The orcs... they came... and then brigands to pillage the remains... but you, you\'re different. Thank you! I\'ve nothing left in this world but to fight against those who took everything from me. I am %crucifiedman%, the last of my name, and if you give me the honor, I pledge you my sword until the day I die or you see your last victory.%SPEECH_OFF%",
+			Title = "Après la bataille...",
+			Text = "[img]gfx/ui/events/event_22.png[/img]Shockingly, the crucified man is still alive Après la bataille. He calls to you with a raspy voice that carries no words, but a simple tone of \'please help\'. You have the brothers cut him down. He passes out the second he hits the ground, then jolts awakes and grabs you by the hand.%SPEECH_ON%Thank you, stranger. Thank you so much. The orcs... they came... and then brigands to pillage the remains... but you, you\'re different. Thank you! I\'ve nothing left in this world but to fight against those who took everything from me. I am %crucifiedman%, the last of my name, and if you give me the honor, I pledge you my sword until the day I die or you see your last victory.%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
 			List = [],
@@ -717,7 +717,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedE_AftermathBad",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_22.png[/img]The brigands taken care of, you go to see if the crucified man is still alive. He did not survive. With nothing on his body worth taking, you loot the brigands and get the %companyname% back on the path.",
 			Image = "",
 			Characters = [],

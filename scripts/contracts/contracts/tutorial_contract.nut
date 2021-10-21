@@ -732,7 +732,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AfterFinale",
-			Title = "After the Battle",
+			Title = "Après la bataille",
 			Text = "[img]gfx/ui/events/event_87.png[/img]Hoggart lies dead in a pool of his own blood, skewered into a grotesque and panicked pose. He didn\'t weasel his way out of this one. You put a boot on his corpse and look to your men.%SPEECH_ON%For the company. For all the men who\'ve fallen.%SPEECH_OFF%%bro3% spits on the dead man\'s face.%SPEECH_ON%Let\'s take this bastard\'s head and get back to %townname%%SPEECH_OFF%",
 			List = [],
 			Characters = [],

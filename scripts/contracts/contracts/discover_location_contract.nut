@@ -8,7 +8,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.contract.create();
 		this.m.DifficultyMult = this.Math.rand(75, 105) * 0.01;
 		this.m.Type = "contract.discover_location";
-		this.m.Name = "Find Location";
+		this.m.Name = "Trouver Location";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 

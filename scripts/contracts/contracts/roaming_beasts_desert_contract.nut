@@ -240,7 +240,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "CollectingHyenas",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_159.png[/img]{You\'re not entirely sure, as you\'re not particularly knowledgeable about the creature, but you find yourself staring at the hyenas with contempt. They bear the marks of trash diggers, cretins which hunt the weak despite having the strength and numbers to fight for their food. It is only when meeting you, seeing their own finality on the line, did they decide to fulfill their beastly destiny. You cut their heads off and ready a Retournez à %employer%. | The hyenas are contemptuous creatures, but they are tough. Even in death you find yourself having to hack and chop at the necks just to gain some purchase there, and sawing the heads free requires even more time. But soon the deed is done and you ready to take the pates and pelts back to %employer%.}",
 			Image = "",
 			List = [],
@@ -257,7 +257,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "CollectingGhouls",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_131.png[/img]{The fight over, you walk to a dead ghoul and take a knee. Were it not for a gate of ill-shapen teeth, you could easily fit your head into the beast\'s oversized maw. Instead of admiring the dental failures at hand, you take out a knife and saw its head off. You raise the token up and order the %companyname% to follow suit. %employer% will be expecting more proof than just one head, after all. | The ghoul\'s dead body looks more rock than beast as it lays flat and unmoving. Flies are already coupling inside its mouth, sowing life on the frothy remains of death. You order %randombrother% to take its head, for %employer% will be expecting proof. | Dead ghouls are scattered about. You take a knee beside one and look at its mouth. A long broth breath of a blech gurgles from its lungs. Putting a cloth to your nose, you use a dagger to cut the head off. You order a few brothers to follow suit for %employer% will be expecting proof. | A dead ghoul is an interesting specimen to behold. You can\'t help but wonder where it falls on the natural spectrum. Shaped like some hermitic wildman, toned muscles in the manner of a predator, and its head seems more stone than flesh. Curiosity put aside, you order the %companyname% to start collecting scalps for %employer% will surely be wanting proof.}",
 			Image = "",
 			List = [],
@@ -274,7 +274,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "CollectingSerpents",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_169.png[/img]{You crouch before one of the sand serpents. From one end to the other, you could lay flat a few times over and still not reach its full length. A fascinating snake to be sure. You start skinning them to return the wares to %employer% as proof. | The serpents are cut to pieces and you haul together the good bits - mostly their flatheads and curious tails - so as to offer proof to %employer% of a deed completed.}",
 			Image = "",
 			List = [],

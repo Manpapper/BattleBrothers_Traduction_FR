@@ -1044,7 +1044,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_87.png[/img]{The last living northerner is on the ground, a wound in his chest, blood about the ground. He\'s got a long look in his eyes and breathes calmly and with a sense that this is the end of things. You take out your sword but he holds out his hand. Not for mercy, but for a moment.%SPEECH_ON%No need for that. I can see it already. It goes. And it goes. Don\'t know why I cared so much.%SPEECH_OFF%He slumps over and his hand tenses and falls from his chest. %randombrother% prods the corpse, then loots it. You sheathe your sword and tell the men to ready for a Retournez à the Vizier. | Your men go about finishing off the last of the survivors. It\'s mostly a matter of running corpses through with a quick stab or two. Some bodies still jump, but you know they\'re gone. You\'re not sure why they still move like that, as if the man that once was left his fear behind. Others don\'t react at all. There\'s one scream from a soldier who tried to hide, but he is quickly silenced. With the field littered with the defeated, you tell the %companyname% to go loot what they can and prepare for a trip back to the Vizier. | One last northerner has backed himself between the wedge of two rocks, his hands splayed out to the sides like a spider receding back into its hidden hole.%SPEECH_ON%The old gods shant have mercy on ye lot.%SPEECH_OFF%A shadow briefly comes and goes from above, and then the rock which manifested it follows and crushes the man\'s head. He falls to the ground, body jerking, mouth gargling. %randombrother% stares from the peak of the two rocks.%SPEECH_ON%That\'s the last of them. We should get their gear and get back to uh, that fella, the one with the pomp, the viz... vis... viscount?%SPEECH_OFF%Vizier. But close enough.}",
 			Image = "",
 			Characters = [],
@@ -1068,7 +1068,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Failure",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{Well, %holysite% belongs to the northerners now. Given that you place heavy value upon your own head, and wish to keep it there, you see no point in returning to the Vizier for at least awhile.}",
 			Image = "",
 			Characters = [],

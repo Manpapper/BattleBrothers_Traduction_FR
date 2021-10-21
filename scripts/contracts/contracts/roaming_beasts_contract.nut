@@ -409,7 +409,7 @@ this.roaming_beasts_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CollectingPelts",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_56.png[/img]{The beasts slain, you order the men to take their pelts as evidence. Your employer, %employer%, should be most happy to see them. | Having killed the foul creatures, you begin skinning and scalping them. Gruesome creatures require gruesome evidence. Your employer, %employer%, might not believe your work here otherwise. | With the battle over, you have the men start collecting pelts to take back to %employer%, your employer. | Your employer, %employer%, might not believe what happened here without evidence. You order the men to begin taking pelts, trophies, scalps, whatever might show off your victory here.}",
 			Image = "",
 			List = [],
@@ -426,7 +426,7 @@ this.roaming_beasts_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CollectingProof",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_22.png[/img]{Your men take the fools\' disguises lest your employer, %employer%, not believe your doings here. | Your employer might not believe what was going on here. You order your men to collect the disguises. %bro1%, stripping a mask off one of the slain, starts to wonder.%SPEECH_ON%So they dressed themselves up as the sort of thing to attract us, and now they\'re all dead. I hope they didn\'t think it a game.%SPEECH_OFF%%bro2% cleans his blade in the folds of one of the disguises.%SPEECH_ON%Well, if it were a game, I sure enjoyed playing it.%SPEECH_OFF% | %randombrother% nods at the slain.%SPEECH_ON%It\'s mighty likely that %employer% wouldn\'t believe a group of brigands were dressing up as beasts.%SPEECH_OFF%Agreeing, you order the men to begin collecting the masks and disguises as evidence. | You\'ll need evidence to show your employer, %employer%. These weren\'t the beasts you were looking for, but they do carry a lot of disguises that your employer would probably be most interested in seeing. One of the men wonders aloud.%SPEECH_ON%So what were they playing dress up for?%SPEECH_OFF%%bro2% folds some of the disguises over his arm as he goes about collecting them.%SPEECH_ON%Suicide by ceremony? Their dance and fun got our attention, after all.%SPEECH_OFF%He picks up one of the disguises only for the head of the dead to get slinged up with it. The sellsword laughs as he kicks the dead man\'s head out.}",
 			Image = "",
 			List = [],
@@ -443,7 +443,7 @@ this.roaming_beasts_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CollectingGhouls",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_131.png[/img]{The fight over, you walk to a dead Nachzehrer and take a knee. Were it not for a gate of ill-shapen teeth, you could easily fit your head into the beast\'s oversized maw. Instead of admiring the dental failures at hand, you instead take out a knife and saw its head off, ripping through a very tough outer layer of skin before, surprisingly, easily cutting through the muscles and tendons. You raise the head up and order the %companyname% follow suit. %employer% will be expecting some proof, after all. | The Nachzehrers\'s dead body looks more rock than beast as it lays flat and unmoving. Flies are already coupling inside its mouth, sowing life on the frothy remains of death. You order %randombrother% to take its head, for %employer% will be expecting proof. | Dead Nachzehrers are scattered about. You take a knee beside one and look at its mouth. Whatever was in its lungs is still issuing forth, a wheeze burping out. Putting a cloth to your nose, you use the other hand to chop away at its neck with a blade, cutting off the head and holding it up. You order a few brothers to follow suit for %employer% will be expecting proof. | A dead Nachzehrer is an interesting specimen to behold. You can\'t help but wonder where it falls on the natural spectrum. Shaped like crude men, muscled like some beastly thing, and its head is gnarled with features born out of a wildman\'s nightmares. You order the %companyname% to start collecting the heads of the foul things for %employer% will surely be wanting proof.}",
 			Image = "",
 			List = [],
@@ -460,7 +460,7 @@ this.roaming_beasts_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CollectingSpiders",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_123.png[/img]{You order your men to scour the field and collect as many parts as they can of the spiders. A few make the mistake of touching the hairs on the webknechts\' legs, leaving them scratching quickly forming rashes. | The spiders litter the field like they would the corner of an attic. In death, they look like giant gloves stiffly clasped together. You have the men wrench the legs apart to harvest evidence of the bestial remains. | The mercenaries scour the field, hacking and sawing at the spiders\' stiff remains to take back to %employer%. Even in death, the webknechts are ghastly, looking only a moment away from flinching back to life and wrapping themselves autour de nearest breathing animal. Their horrifying features and surreal size does not stop some sellswords from dancing around, clicking their tongues and hissing, and all around preying upon the phobias of those less inclined to go near the damned things.}",
 			Image = "",
 			List = [],

@@ -440,8 +440,8 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "Necromancer0",
-			Title = "After the battle...",
-			Text = "[img]gfx/ui/events/event_56.png[/img]{Having slain all the undead, you find a piece of cloth that glows purple in your hand. You\'re not sure what it is, but for some reason are drawn to keep it. %randombrother% thinks this is stupid, but he\'s not the one in charge. | After the battle, %randombrother% finds a shovelhead with what appears to be a symbol burned into it. He wonders if maybe %employer%, your employer, knows something about it. You agree, taking the scrap of metal with you to see if the local man can identify it. | With the monstrosities laid low, you sheath your sword and scour the battlefield. In your search, you find an odd talisman of crow feathers and cow leather. You pocket it, figuring %employer%, your employer, might know something about it.}",
+			Title = "Après la bataille...",
+			Text = "[img]gfx/ui/events/event_56.png[/img]{Having slain all the undead, you find a piece of cloth that glows purple in your hand. You\'re not sure what it is, but for some reason are drawn to keep it. %randombrother% thinks this is stupid, but he\'s not the one in charge. | Après la bataille, %randombrother% finds a shovelhead with what appears to be a symbol burned into it. He wonders if maybe %employer%, your employer, knows something about it. You agree, taking the scrap of metal with you to see if the local man can identify it. | With the monstrosities laid low, you sheath your sword and scour the battlefield. In your search, you find an odd talisman of crow feathers and cow leather. You pocket it, figuring %employer%, your employer, might know something about it.}",
 			Image = "",
 			List = [],
 			Options = [
@@ -542,7 +542,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "Necromancer3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_56.png[/img]{%necromancer_location%\'s been cleansed. You almost feel holy about it, but then remember you did this for pay, not some righteous cause. Not that you\'d ever prefer the latter, anyway. | The necromancer is dead and you\'ve got his head in hand. Now it\'s time to go tell that sap, %employer%, about it so he can pay you what you\'ve earned. | It wasn\'t an easy fight, but %necromancer_location% is destroyed. The necromancer died and, like any man, fell into a pile of his own flesh and bones. Curious that his wizard tricks could raise the dead, but not be cast while being dead. Curious, but not unfortunate, either. You take the heathen\'s head, just in case. | You\'ve slain the necromancer but, worried that his tricks might go beyond the grave, cut his head off his shoulders and stick it in a sack. %employer%, your employer, should be most happy to see it. | The battle over, you take a sword to the necromancer\'s neck and remove his head from his shoulders. It comes almost too freely, as though it wanted to be in your holding. Well, whatever the case, %employer%, your employer, will want to see it as proof of your doings here.}",
 			Image = "",
 			List = [],

@@ -380,7 +380,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "TroopsHaveDied",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_22.png[/img]All the noble soldiers have died en route to the siege. Better them than you. The %companyname% presses on towards %objective%.",
 			Image = "",
 			List = [],

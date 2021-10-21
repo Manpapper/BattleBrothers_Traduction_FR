@@ -648,7 +648,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		});
 		this.m.Screens.push({
 			ID = "CounterAttack1",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_78.png[/img]{The battle is over, but there\'s a glint and gleam of armor winking in the distance. You slim your eyes and focus on the approaching silhouettes. Perhaps they are the faithful come to fill the holy site and - no, they\'re northeners! It\'s a counter-attack! | As you sheathe your blade an arrow zips overhead and hits the sand with a muted spiff. You look toward the source and see a young and nervous archer being slapped upside the head, and beside this man is an entire contingent of northerners! It\'s a counter-attack!}",
 			Image = "",
 			List = [],
@@ -685,7 +685,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		});
 		this.m.Screens.push({
 			ID = "CounterAttack2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_78.png[/img]{%SPEECH_START%Just more northerners.%SPEECH_OFF%%randombrother% says. You nod and respond.%SPEECH_ON%More logs for the Gilder\'s fire.%SPEECH_OFF%The sellsword mentions the Gilder is more keen on gold than flame, but you tell him to shutup and get prepared for what\'s coming. The defenses of %holysite% itself should serve the company well here. | You order the men to defend themselves within %holysite%. %randombrother% looks around.%SPEECH_ON%You ever wonder if the god or gods watching this get a little ornery? Ya know? Like are we making a mess of their pots and pans?%SPEECH_OFF%You slap him upside the head and tell him to focus.}",
 			Image = "",
 			List = [],
@@ -711,7 +711,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		});
 		this.m.Screens.push({
 			ID = "CounterAttack3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_78.png[/img]{You order the %companyname% into the field. The northern lieutenant greets you with a wave and a grin.%SPEECH_ON%Coming on out, are ye? What, tired of prayin\'?%SPEECH_OFF%You turn and spit.%SPEECH_ON%We were running out of room to bury your bodies.%SPEECH_OFF%The lieutenant\'s smile fades and he orders a charge. To battle!}",
 			Image = "",
 			List = [],
@@ -737,7 +737,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{As you sheath your weapon and have the company set out to collect what they can from the dead, you get the strange feeling that this is not the first time %holysite% has been home to such bloodshed. Oh well, if anyone\'s gonna be dying in their ancestor\'s footsteps you\'re glad it\'s not you. A few southerners arrive to secure the holy tract. With them here, you make your leave, knowing that %employer% will welcome the news you have to bring him. | The enemy is defeated and %holysite% reclaimed. Southern soldiers slowly fill the defenses. Trickling behind them is a crowd of the faithful, passing by the dead so they may prostrate themselves at the holiest of spots. Not a one says thanks to you. Not that it matters, that\'s %employer%\'s job. | With the battle over, a small crowd of the faithful begins to congregate in the corners of %holysite%. You don\'t know where these people even came from. They don\'t mind you, and you don\'t mind them. What matters now is that %employer% will have a huge trove of crowns awaiting your return. As you leave, a few southern soldiers take the post with not a thanks to their lips either.}",
 			Image = "",
 			Characters = [],
@@ -764,7 +764,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		});
 		this.m.Screens.push({
 			ID = "Failure",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{You\'ve failed to protect %holysite% from the northerners. There\'s no reason to stick around, and the only reason to Retournez à %employer% is if you want your head on one of the Vizier\'s gold-encrusted platters.}",
 			Image = "",
 			Characters = [],

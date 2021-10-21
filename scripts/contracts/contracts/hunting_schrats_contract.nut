@@ -319,7 +319,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_121.png[/img]{The schrats are slain, their arboreal remains now resembling little more than ordinary trees. You carve trophies and evidence for a Retournez à %employer%. | You stare at a felled tree and then at a felled schrat. Between the two you see almost no difference, which makes you ponder about all those supposedly dead trees you\'ve been hopping over your whole life. Not one to dwell on such matters, you order the company take trophies as proof of the battle and ready a Retournez à %employer%. | The schrats are felled, each draped against the rest of the forest foliage like brawlers resting between rounds. You walk up beneath the roots of one and get a good look at it, but now it appears no different than any other tree around. You order the company to take what trophies they can to show %employer%.}",
 			Image = "",
 			List = [],
@@ -347,7 +347,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Glade",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_121.png[/img]{As you\'re departing the battlefield, %randombrother% remarks that the surrounding area looks rather ripe. You turn around to see that he\'s indeed correct: a beautiful crop of trees served host to the schrats, presumably chosen for good reason. And if the schrats took it for a good home, then it surely means the wood is very fine. You order the men to make use of this quality glade and chop as many trees down as time and energy permits. The harvested timber is very fine indeed.\n\n It begins to rain as you depart the impromptu lumbermill.}",
 			Image = "",
 			List = [],
@@ -382,7 +382,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "DeadWoodcutter",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_121.png[/img]{Just as you\'re departing a glint catches your eye. You turn around and come to one of the schrats\' trunk. An axe is embedded in the wood. Moss has long since overgrown the handle, and yet the metal of the tool is without error, not a smidge of rust upon it. Scraping the moss away, you uncover wooden fingertips still at full grip. Tracing the fingers ends at the tree trunk where the wrist becomes a vein of wood. You follow that along to a wooden face with a twisted maw, like a face of brown wax melted by time alone. The frame of a helmet twists autour de face and there\'s a chest plate cresting below like the reservoir of a deerchaser.\n\nYou shake your head and retrieve the axe, breaking it free and throwing the wooden fingers off its handle. The misshapen face blankly observes your theft, its stare preserved in the very annihilation from which it is eons removed. You don\'t dwell on the sight and Retournez à the company with the axe.}",
 			Image = "",
 			List = [],

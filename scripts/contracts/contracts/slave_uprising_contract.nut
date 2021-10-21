@@ -320,7 +320,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "FightingBack2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_71.png[/img]{The uprising has been crushed. In death, the faces of the slaves do seem to carry some relief, as though the end of all things is preferred to the relentless cruelty of living in the chain. %employer% and the Viziers will be awaiting your return.}",
 			Image = "",
 			List = [],
@@ -386,7 +386,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Outlaws3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_168.png[/img]{You look down at the corpse of a slave, his body molded by labors of a prior life, but in his hands and around his neck the adornments of stolen weapons and loot. In a cruel turn of thought, you find it strange that they would have been easier to put down had they simply no ambition at all besides their freedom. But it was their greed and sense of wanting that made them all the more dangerous. But. They\'re dead. And the Viziers of %townname% will be happy regardless of whatever lofty goals the indebted had.}",
 			Image = "",
 			List = [],
@@ -522,7 +522,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Spartacus4",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_168.png[/img]{You stand over %spartacus%. Despite his fondness for freedom, the rebellion\'s dead leader is not smiling in his final, liberated moment. His face is wrenched in pain and he has wounds which reveal the slick patterns of that which folds beneath the flesh. But his eyes. There is a spark there, staring up at the sky. A shadow crosses his eyes and you look up expecting a bird, but there is nothing. When you look down, the spark is gone and the dead man is just a dead man.}",
 			Image = "",
 			List = [],
@@ -617,7 +617,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Fleeing3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_168.png[/img]{Putting an end to the indebted is a simple matter once it is all said and done. Any survivors make themselves incapable of a return, instead preferring the steel demise. In their skin you are not sure you would choose it any different. You collect what evidences you can and ready a Retournez à %employer%.}",
 			Image = "",
 			List = [],

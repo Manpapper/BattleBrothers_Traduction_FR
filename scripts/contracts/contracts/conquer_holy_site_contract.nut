@@ -657,7 +657,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CounterAttack1",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_164.png[/img]{The battle is over, but a golden gleam in the distance catches your eye. As you stare at the horizon, a troop of southerners appears, their bright appearance no doubt meant to be seen. It\'s a counter-attack! | As you sheathe your blade %randombrother% calls out. He points at the horizon. A line of southerners is on the approach, their armor glinting, their gait swaggering. The counter-attackers wish to be seen, and no doubt intend to be victorious...}",
 			Image = "",
 			List = [],
@@ -694,7 +694,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CounterAttack2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_164.png[/img]{The southerners\' approach is ever steady.%SPEECH_ON%Roaches, they just never end.%SPEECH_OFF%You look over to see %randombrother% shaking his head. He lifts up his boot and flicks a bug off the toe. He puts his foot down and nods back toward the attackers.%SPEECH_ON%Don\'t worry, captain, we\'ll have %holysite%\'s defenses in tip-top shape for them savage bastards.%SPEECH_OFF% | You order the men to defend the site.%SPEECH_ON%Making a stand in %holysite%, what a time to be alive.%SPEECH_OFF%%randombrother% says. You nod and tell him you hope it will one day be a memory for him. He laughs and asks how he could ever forget. Another sellsword chimes in that there\'s one very certain way he can forget, but you cut him off and tell the men to pay attention to the task at hand.}",
 			Image = "",
 			List = [],
@@ -720,7 +720,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CounterAttack3",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_164.png[/img]{The defenses don\'t look as solid as they did before. You order the %companyname% to take the field in formation where no faulty constructs will get in the way of your command. The southern lieutenant greets you.%SPEECH_ON%You profane %holysite% with blood, for this the Gilder Himself has no doubt drawn you to the field to die like proper men. What have you to say to this?%SPEECH_OFF%You draw your sword.%SPEECH_ON%Wasn\'t my blood.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -746,7 +746,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{As you sheath your weapon and have the company set out to collect what they can from the dead, you get the strange feeling that this is not the first time %holysite% has been home to such bloodshed. Oh well, if anyone\'s gonna be dying in their ancestor\'s footsteps you\'re glad it\'s not you. A few northern soldiers come in to secure the holy tract just as you make your leave for %employer%. | The enemy is defeated and %holysite% reclaimed. A crowd of the faithful slowly trickle in, passing by the dead so they may prostrate themselves at the holiest of spots. Not a one says thanks to you. Not that it matters, that\'s %employer%\'s job. A troop of northern soldiers passes you on your way out, each of the fighters regarding you with sneers and jeers. | With the battle over, little knots of the faithful begins to congregate in the corners of %holysite%. You don\'t know where these people even came from. They don\'t mind you, and you don\'t mind them. What matters now is that %employer% will have a huge trove of crowns awaiting your return. As soon as a few northern soldiers come by, you make your leave.}",
 			Image = "",
 			Characters = [],
@@ -773,7 +773,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{%holysite% has fallen to the southerners. One sellsword shakes his head.%SPEECH_ON%Well. I suspect they\'ll be all over the place shinin\' or shittin\'.%SPEECH_OFF%Indeed. With the sacred tracts lost, there\'ll be no reason to get back to %employer% unless you\'re interested in seeing another kind of holy spectacle.}",
 			Image = "",
 			Characters = [],

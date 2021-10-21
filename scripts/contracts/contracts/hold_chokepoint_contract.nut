@@ -541,7 +541,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Waiting1",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_167.png[/img]{The first attack has been repelled. You briefly consider using the corpses to plug holes in the walls, but you\'ve no interest inviting rats and their pestilence to the field. With a snap order, you have the bodies heaped in a pile outside the walls and then have the men prepare for the next assault.}",
 			Image = "",
 			List = [],
@@ -562,7 +562,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Waiting2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_167.png[/img]{The %companyname% are almost starting to look like the men they were when you first hired them: downtrodden and beaten by the world. But all this time with the company has made them better men. Despite the exhaustion, there is no tiring out training, there is no wearing down prestige, there is no taxing renown. When it comes, the %companyname% will be ready for the next assault.}",
 			Image = "",
 			List = [],
@@ -583,7 +583,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_87.png[/img]{You\'ve seen enough of this. The Vizier tasked the company with holding for a period of time, not to sit here and commit suicide.}",
 			Image = "",
 			List = [],
@@ -607,7 +607,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "EnemyRetreats",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_168.png[/img]{With bodies piling up, flies buzzing about, and buzzards circling the air in great black clouds, it appears the northerners have had enough. A horn sounds off with a defeated pitter-patter of bleats and the men lower their arms and turn back from whence they came. At the same time, a scout arrives from the south saying that %employer%\'s troops will soon arrive. It seems you are safe to Retournez à your employer.}",
 			Image = "",
 			List = [],
@@ -741,7 +741,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_168.png[/img]{Corpses litter the field, sometimes piled three or four high. The men of the %companyname% walk between the bodies to loot what they can, and joining their looting are crows, buzzards, rats, mice, cats, roaming dogs, a wolf, a wildman who is too dangerous to approach, and a flock of geese who apparently found the spot warm enough to stop a seasonal migration. The Vizier\'s men are also here and taking over, so you yourself will need to migrate back to %employer% for your pay. | There is damp stagnation in the air with a pungent smell of copper. So thorough has the slaughter been that the earth here has turned into a swamp of blood and gore. Bodies are twisted up every which way, sometimes stacked upon each other. Sometimes you hear someone moaning, but so plentiful are the dead that it would be a waste of time to try and find the survivor. %employer%\'s men will soon take over your duties, which means it is a good time to Retournez à the Vizier for your pay.}",
 			Image = "",
 			Characters = [],

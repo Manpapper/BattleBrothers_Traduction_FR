@@ -1011,7 +1011,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_168.png[/img]{The last southern soldier looks up at you.%SPEECH_ON%By the Gilder\'s gleam, I am ready.%SPEECH_OFF%You draw out your sword.%SPEECH_ON%And of what use was that gleam if I\'m the one here, and you there?%SPEECH_OFF%Before he can respond, you put the blade through his neck. You tell the sellswords to loot the remains and ready a Retournez à %employer%. | You find the last of the southern soldiers perched against a rock, his arm slung across its top as though it were a drinking buddy. He spits blood and nods.%SPEECH_ON%Perhaps my path was not so gilded as I thought.%SPEECH_OFF%Nodding back, you tell him that he can ask the Gilder about that himself real soon here.%SPEECH_ON%And I\'ll ask Him about you, too.%SPEECH_OFF%He responds. You pause for a moment on that comment, then run him through with the sword. The rest of the remains will need to be looted. %employer% should be happy to see you. | The battle is over and the dead litter the field. You stand over the last breathing southerner. He stares over your shoulder at the sky. When you ask if he thinks his \'Gilder\' is watching, the man smiles.%SPEECH_ON%He\'s watching us both.%SPEECH_OFF%You nod and then end his life. With a sharp whistle, you get the %companyname%\'s attention. Your orders are simple: loot what\'s worthwhile, and then ready to Retournez à %employer%.}",
 			Image = "",
 			Characters = [],
@@ -1035,7 +1035,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{The southerners raise their banners over %holysite%.%SPEECH_ON%I suppose that\'s it, then.%SPEECH_OFF%%randombrother% says. If by \'it\' you mean there\'s no reason to see %employer% about the end of the contract then yes, that is indeed it.}",
 			Image = "",
 			Characters = [],

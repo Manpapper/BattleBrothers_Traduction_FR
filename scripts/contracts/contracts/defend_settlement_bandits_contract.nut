@@ -727,7 +727,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Kidnapping2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_22.png[/img]{Sheathing your sword, you order %randombrother% to go free the prisoners. A litany of bewildered peasants are freed from leather leashes, chains, and dog cages. They thank you for your timely arrival, and for the violence you brought to the brigand. | The brigands are slaughtered to a man. You set your men out to go rescue every peasant they can find. Each one comes together, hugging and crying, mad with happiness that they have survived this horrifying ordeal. | After killing the last brigand around, you tell the company to go around freeing the hostages the vagabonds had taken. Each one comes to you in turn, some kissing your hand, others your feet. You only tell them to get back to %townname% as you will do yourself.}",
 			Image = "",
 			List = [],

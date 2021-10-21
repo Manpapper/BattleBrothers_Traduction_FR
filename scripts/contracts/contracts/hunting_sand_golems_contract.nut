@@ -283,7 +283,7 @@ this.hunting_sand_golems_contract <- this.inherit("scripts/contracts/contract", 
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_160.png[/img]{The battle is over, but the Ifrits do not depart entirely. The sands which made their bodies bubble, and the stones which framed their bodies shift and tremble angrily. You can hear the hiss not of some monstrosity at all, but what is clearly the sound of humans. They hiss, the sound right at your ears. You twist around to find nothing. They hiss behind you again, and this time when you turn autour de noise is gone and the sands are still and the stones earth bidden as they should be. The beasts are slain, and possibly whatever inhabited them, too. It is time to Retournez à %employer%. | The Ifrits are slain, but the bodies only seemed to serve as vessels for something far more sinister. You catch glimpses of spirits soaring toward the horizon, but perhaps it is merely the desert itself playing tricks on you. There\'s no saying, except to say that the beastly nature of the Ifrits has been defeated and %employer% needs to pay you for that alone.}",
 			Image = "",
 			List = [],

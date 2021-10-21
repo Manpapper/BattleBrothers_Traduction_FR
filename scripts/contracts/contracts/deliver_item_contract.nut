@@ -547,7 +547,7 @@ this.deliver_item_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Thieves2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_22.png[/img]{Thief blood runs thick. You manage to find your employer\'s goods still in the camp, all locked and safe. He doesn\'t need to know about this little excursion. | Well, everything\'s right where it should be. %employer%\'s cargo was found underneath a thief\'s writhing body. You made sure to kick him off before running him through. Wouldn\'t want to get blood on the package, after all. | Killing off the last of the thieves, you and the men spread out through the brigands\' camp looking for the package. %randombrother% spots it right quick, the container still held in the clutches of a dead fool. The mercenary fumbles with the corpse\'s grasp and, in frustration, simply cuts the arms off the bastard. You retrieve the package and hold it a little closer for the trip going forward. | Staring over the bodies of the felled thieves, you wonder if %employer% needs to know about this. The package looks alright. Some blood and bone on it, but you can rub that right off. | The package\'s a little scuffed, but it\'ll be fine. Alright, there\'s blood all over it and a thief\'s degloved finger is all smashed up into one of the latches. Those issues aside, everything is perfectly fine.}",
 			Image = "",
 			List = [],

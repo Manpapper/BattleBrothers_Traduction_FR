@@ -483,7 +483,7 @@ this.escort_envoy_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure1",
-			Title = "After the battle",
+			Title = "Après la bataille",
 			Text = "[img]gfx/ui/events/event_60.png[/img]{The envoy didn\'t make it. %employer% can accept losses here and there, but he\'s not going to be happy about this. Try not to fail him again. | Sadly, %envoy% %envoy_title% is dead at your feet. What a terrible fate for a man promised safety! Oh well. Going into the future, it\'d be best to not keep failing %employer%. | Well, would you look at that: the envoy is dead. Your only job was to keep that man breathing. Now, he\'s not doing that. You needn\'t talk to %employer% to know he won\'t be happy about this. | You promised to keep the envoy safe from harm. It\'s hard to get anymore harmed than being outright dead, so it appears you failed quite spectacularly at this here task. | Guard the envoy. Just keep the envoy alive. The envoy must survive. Hey, I\'m an envoy, I\'m too important to die!\n\n These words must have fallen on deaf ears because the envoy is indeed dead. | It\'s hard to keep a man alive when the world wants him dead. Sadly, %envoy% %envoy_title% did not make his journey. %employer% is unlikely to be happy about this lost soul.}",
 			Image = "",
 			List = [],

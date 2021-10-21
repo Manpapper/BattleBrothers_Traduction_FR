@@ -459,7 +459,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_71.png[/img]{The battle is over and %location% has been secured. It\'s time to Retournez à %employer%. | You look over the battle and nod, happy to still have a head upon your shoulders with which to nod with. Time to Retournez à %employer%. | As rough a fight as there can be, you gather the men and ready a Retournez à %employer%. | The fight over, you assess the scene and ready a report. %employer% will want to know everything which has happened here.}",
 			Image = "",
 			List = [],
@@ -548,7 +548,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure1",
-			Title = "After the battle",
+			Title = "Après la bataille",
 			Text = "[img]gfx/ui/events/event_60.png[/img]{The building trek is in ruin and any hope to salvage %location% is lost. At least for the time being.}",
 			Image = "",
 			Characters = [],
@@ -570,7 +570,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure2",
-			Title = "After the battle",
+			Title = "Après la bataille",
 			Text = "[img]gfx/ui/events/event_71.png[/img]{Your men failed to secure the %location% and so you shouldn\'t expect any pay.}",
 			Image = "",
 			Characters = [],

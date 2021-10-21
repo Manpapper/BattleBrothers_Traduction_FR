@@ -333,7 +333,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Treasure2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_168.png[/img]{The nomads slain, you, naturally, go see what the hell they were digging out of the earth. You stand over the pulley they rigged up and stare into the hole. A chest can be seen with ropes already bound around it. You thank the dead nomads for all the work they\'ve done, then turn to easily pull the chest up and out of the ground. You open it to find...}",
 			Image = "",
 			List = [],

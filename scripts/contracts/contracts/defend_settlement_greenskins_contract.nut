@@ -714,7 +714,7 @@ this.defend_settlement_greenskins_contract <- this.inherit("scripts/contracts/co
 		});
 		this.m.Screens.push({
 			ID = "Kidnapping2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_22.png[/img]{Sheathing your sword, you order %randombrother% to go free the prisoners. A litany of bewildered peasants are freed from leather leashes, chains, and dog cages. They thank you for your timely arrival. One scratches the wounds on his wrists where the chains used to be.%SPEECH_ON%Appreciate it, sellsord.%SPEECH_OFF%He nods to a spit where a shriveled black corpse is hanging over a spent fire.%SPEECH_ON%Shame you didn\'t arrive in time to rescue her. She was a real looker. Now, well, look at \'er.%SPEECH_OFF%The man smiles wryly before bursting into tears. | The damned greenskins are slaughtered. You set your men out to go rescue every peasant they can find. Each one comes together, hugging and crying, mad with happiness that they have survived this horrifying ordeal. | After killing the last greenskin, you tell the company to go around freeing the hostages. Each one comes to you in turn, some kissing your hand, others your feet. You only tell them to get back to the townhall of %townname%, as you will be heading there, too. | Having slain the last greenskin, you order the men to free the hostages. They clamber out, completely in shock as they stumble about the ruins of the battle. A few dig through the greenskins\' encampment. You watch as a {man | woman} picks up a pile of smoking, charred bones. They simply stare at the remains, put them down, then get up and walk further into the wilds.}",
 			Image = "",
 			List = [],

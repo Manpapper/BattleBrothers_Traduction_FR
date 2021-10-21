@@ -423,7 +423,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_113.png[/img]{The unholds slain, you order the men to take what trophies they can as proof of your work, and possibly as something to use for yourself. If man can make leather from a cow, surely there\'s something worthy of giants such as these? Either way, %employer% will be waiting. | With the giants slain to the last, %employer% should be awaiting your return now. His town will be forever safe now and no longer require the services of sellswords such as yourself. You dwell on the thought until you start a laughing fit to which none of your men understand. You tell them to ignore it and round them up for the return trip. | The ghastly monsters put up a hell of a fight, but they were no match for the collective strength, smarts, and sheer balls of the %companyname%. You tell the men to take what trophies they can and to prepare for the return march to %employer%. | With the last of the unholds slain, you round up the men. %randombrother% is found jumping on one\'s belly and seems disappointed when you tell him to quit it and get down. %employer% will be looking for killers and their trophies, not a bunch of children.}",
 			Image = "",
 			List = [],
@@ -440,7 +440,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SignsOfAFight",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_113.png[/img]{With the giants slain, you get the men ready for a Retournez à %employer%, but %randombrother% fetches your attention with a bit of quiver in his throat. You head on over to see him standing before one of the felled unholds. He points across its flesh which has been torn asunder in slices and hangs like the ears of a corn stalk. The damage is far beyond the ability of your own weaponry. The sellsword turns and looks past you with his eyes widening.%SPEECH_ON%What do you imagine did that?%SPEECH_OFF%Further along the skin are concave scars shaped like saucers with punctures rent right into the holes. You climb atop the unhold and crank your sword into one of these divots, wrenching free a tooth about the length of your forearm. Along its edges are barbs, teeth upon teeth it seems. The men see this and start muttering amongst themselves and you wished you\'d never saw it at all for you\'ve no sense to make of it.}",
 			Image = "",
 			List = [],

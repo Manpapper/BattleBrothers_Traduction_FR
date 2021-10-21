@@ -292,7 +292,7 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_169.png[/img]{The last of the serpents is dead. You step on its head, then raise your foot realizing it\'s actually the tail. You step along the length of the snake and get to its head and there chop it clean off. It\'s a lot easier now that it\'s not writhing and slipping about. %employer% will be wanting to see you return with the head and all the scales with it. | You go autour de field slinging snakes into a knapsack, the body of which bulges with their girth, and even in death they seem to writhe amongst each other in the sack. Having collected each serpent, you ready a Retournez à %employer%. | The serpents are all dead, strongly indicated by their unmoving status. Just to be sure, though, you go around chopping all their heads off. Sufficiently assured nothing can survive such strokes of damage, you sling the serpents into a knapsack and ready a Retournez à %employer%.}",
 			Image = "",
 			List = [],
@@ -353,7 +353,7 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Caravan2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_169.png[/img]{The battle over, the head of the caravan comes to you personally.%SPEECH_ON%I thank you, Crownling. A slave to the coin you may be, but not without a chain or two adorned upon what we all wish we had, a sense of doing good.%SPEECH_OFF%Well, you were just here for the serpents and the caravan was but happenstance, a welcome supplement of live bait that kept the monsters off your own men. You\'re just about to tell him this, but he cuts you off with a bag of treasures in hand.%SPEECH_ON%As reward for your intervention, Crownling. May your road to the coin be ever more gilded.%SPEECH_OFF%Nodding, you shake his hand and then go about collecting the serpent scales. The merchant asks if he may have one, but with a hand on your sword you tell him this is not a trading post he has stopped at. He gets the message.}",
 			Image = "",
 			List = [],

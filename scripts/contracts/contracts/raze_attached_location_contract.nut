@@ -366,7 +366,7 @@ this.raze_attached_location_contract <- this.inherit("scripts/contracts/contract
 		});
 		this.m.Screens.push({
 			ID = "Done",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_02.png[/img]{The slaughter was a success. You take torches to the place and leave it in smoldering ruin. | A copper smell lingers in the air as you step over and autour de bodies of peasants. You nod at your handiwork then look to %randombrother% and give the order.%SPEECH_ON%Burn it all.%SPEECH_OFF% | They put up a little more of a fight than expected, but ultimately you slayed them all. Or, at least, you hope you did. Not wanting to go half-assed on this, you proceed to set fire to every building in sight. | You\'ve brought ruin to the %location%. Its inhabitants are slain, and its buildings set ablaze. A good day\'s work by any sellsword\'s summation. | The dead are everywhere and the fresh, sweet smell of their passing is already turning sour. Not one to linger in a stench, you quickly set the %location% ablaze and depart. | ...and so the \'resistance\' is put down. A few bodies here, a few there. You hope you got them all. All that\'s left to do is burn everything to ashes and make your leave. | Well, this is what you came here for. You have a few men display the dead bodies in a manner that you find \'informative\', and then have a few other sellswords take torches to every building in sight.}",
 			Image = "",
 			List = [],
@@ -418,7 +418,7 @@ this.raze_attached_location_contract <- this.inherit("scripts/contracts/contract
 		});
 		this.m.Screens.push({
 			ID = "Betrayal2",
-			Title = "After the battle...",
+			Title = "Après la bataille...",
 			Text = "[img]gfx/ui/events/event_22.png[/img]{You wipe your sword on your pant leg and quickly sheathe it. The ambushers lay dead, skewered into this grotesque pose or that one. %randombrother% walks up and inquires what to do now. It appears that %faction% isn\'t going to be on the friendliest of terms. | You kick the dead body of an ambusher off the end of your sword. It appears %faction% isn\'t going to be on the friendliest of terms from now on. Maybe next time, when I agree to do something for these people, I actually do it. | Well, if nothing else, what can be learned from this is to not agree to a task you can\'t complete. The people of these land are not particularly friendly to those who fall short of their promises... | You betrayed %faction%, but that\'s not something to dwell on. They betrayed you, that\'s what is important now! And going into the future, you best be suspicious of them and anyone who flies their banner. | %employer%, judging by the dead bannermen at your feet, appears to no longer be happy with you. If you were to guess, it\'s because of something you did in the past - doublecross, failure, back-talking, sleeping with a nobleman\'s daughter? It all runs together that you try and think about it. What\'s important now is that this wedge between you two will not be easily healed. You best be wary of %faction%\'s men for a little while.}",
 			Image = "",
 			List = [],
