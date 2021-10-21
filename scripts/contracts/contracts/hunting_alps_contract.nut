@@ -254,7 +254,7 @@ this.hunting_alps_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Success",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_79.png[/img]{%employer% asks to see the alp\'s remains. You take it out of the bag. The flesh has deflated and you hold the head more like a scalp than a skull. The townsman touches it with his finger and the alp skin twists away like snakeskin. He asks if they fought well. You shrug.%SPEECH_ON%Hardy creatures to be certain, but I won\'t lose sleep over them.%SPEECH_OFF%The man nods reluctantly.%SPEECH_ON%Right. Well, here is your reward as promised. And throw that awful thing away.%SPEECH_OFF% | You dump the alp\'s head onto %employer%\'s desk. It flops over the wood until its maw rests wide, its emptied eyesockets drooping sadly at the world above. %employer% takes a fire iron and fishes autour de skull before hanging its shapelessness in the air.%SPEECH_ON%What an awful thing this is. I should let you know that many folks came to me just hours ago stating they\'d visions of fields being bathed in a glorious light. Like they\'d dreamt the renewal of the world whole. So I don\'t know if every last one of these monsters is gone, but it seems %townname%\'s plight has been well taken care of. I\'ll see to it that you get your reward as promised.%SPEECH_OFF% | %employer% meets you in his room and laughs at the knapsack you\'ve brought. He shakes his head as he pours a drink.%SPEECH_ON%You need not show me that foul thing\'s face, sellsword. It visited me just hours ago, while I was sitting right there writing notes, an intrusion that was a dream, a sight of its death as though its spirit had been severed from mine and I was forced to see it go. And in its leaving I saw you standing there, sword in hand, victorious as all get out.%SPEECH_OFF%You nod and ask if you looked good. He laughs.%SPEECH_ON%You looked a slayer of worlds, certainly a slayer of that creature\'s world and, I must fear, perhaps a bit of mine as well. Stolen, permanently. Well, no matter, I as a man whole or a man sundered, I\'ve promised you a good pay and here it is.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
@@ -295,7 +295,7 @@ this.hunting_alps_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "GoodNightsSleep",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_33.png[/img]{You wager the men have earned themselves a good rest and take a break in %townname%. The men spend the nap in slumbers so deep they might as well be dead. Awaking, the men stretch and yawn. Not a one has a dream or nightmare to speak of, the snooze but a brief touch of oblivion, and a much needed one at that.}",
 			Image = "",
 			List = [],

@@ -261,7 +261,7 @@ this.hunting_lindwurms_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Banter",
-			Title = "Along the way...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_66.png[/img]{%randombrother% holds a sleeve of scaly skin at the length of his weapon. He wiggles it around, the shedding scratching itself in dry rasps. You tell him to put it down and to be on guard. The lindwurms are no doubt close. | %randombrother% states that he once heard the story of a lindwurm that killed someone without eating them.%SPEECH_ON%That\'s right. They said it spewed green water and the man just melted into his own boots. Said it looked like soup with his shins for stirring.%SPEECH_OFF%A disgusting tale, but one that hopefully keeps the men rightfully on their toes. Those lindwurms can\'t be far. | The tracks have the grass flattened in a snaking pattern with holes set to the sides. %randombrother% crouches beside the patterns.%SPEECH_ON%Either a plough with no dig or this be the critters we\'re lookin\' for.%SPEECH_OFF%You nod. The lindwurms can\'t be far.}",
 			Image = "",
 			List = [],
@@ -559,7 +559,7 @@ this.hunting_lindwurms_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Success",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_77.png[/img]{You enter %employer%\'s room dragging in some lindwurm flesh. He looks up from his desk, eyes the scales and long sleeve of reptilian skin, glances at you, then glances at his paymaster and gives a steady nod. The paymaster takes a satchel of crowns and hands them over. %employer% returns to his work, addressing you as he writes with a quill.%SPEECH_ON%Good work, sellsword. Reports of the bastards has died off in total, so I wager our money here has been put to good use. Leave the skin. I\'ve a man who can fix up some mean boots with it.%SPEECH_OFF%Did the %companyname% just work to get this fool new boots? You shake your head and make your leave. | %employer% welcomes you and your booty, a long, scratchy, scaly, scraping piece of lindwurm skin. You heave it across the floor where it skitters like a stiff leather jacket. The mayor nods.%SPEECH_ON%Very, very well done, good sir! Most excellent. Your pay, as promised.%SPEECH_OFF%The man hands you a satchel heavy with well earned crowns. | %employer% is found warming himself beside a fire. He turns around in the seat to see the lindwurm flesh you have brought in with you. The mayor nods.%SPEECH_ON%Quite alright work, sellsword. I\'m curious, do the lizard bastards grow their limbs back? I\'ve heard tales of the reptilian sort carrying such tricks.%SPEECH_OFF%You shrug and state each creature was slain with as much scientific curiosity a good sword can muster. %employer% purses his lips.%SPEECH_ON%Ah. Right. Well your pay is in the corner there, as much as agreed upon.%SPEECH_OFF%He returns to the fire, cozying himself up in a blanket and sipping at the lip of a steamy mug. | %employer% is found outside and surrounded by raucous peasants. You yell over the crowd and display the lindwurm skin which you\'ve brought. The crowd quiets for a moment, whispers amongst its numbers, then returns to shouting. You purse your lips and elbow your way into the mob and demand the pay which you are owed. %employer% yells at the peons to spread out and let him breathe. While two guards stand close, he hands you a leather satchel.%SPEECH_ON%Good work, sellsword. If it ain\'t all there feel free to come back and kill me. I won\'t mind, not on this damned day.%SPEECH_OFF%As you take the satchel and leave, a peasant jabs his finger at the mayor.%SPEECH_ON%Tellin\' ya, that damned bastard, my supposed \'neighborly neighbor\', stole my birds and if he don\'t return them I\'mma burn his whole farm to the farkin\' ground!%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
@@ -592,7 +592,7 @@ this.hunting_lindwurms_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_43.png[/img]{You find %employer% in his room and it is full of guards. Not sure what is going on, you display the lindwurm\'s flesh to the mayor and demand your pay. His fingers clap together before fanning forward like a lumber saw.%SPEECH_ON%I don\'t think that will be happening, sellsword. I don\'t know where you got that goddam skinsuit you\'re carrying, and trust me I can tell it\'s old as shite and not some new flay, but I\'m still getting reports of lizards tearing the hinterlands a new arshole so if you don\'t mind, please kindly leave this town before I sic a whole different predator upon ya.%SPEECH_OFF%Taking a deep breath, you eye the guards. There\'s too many to fight off. %employer% sighs.%SPEECH_ON%If it\'s your honor you\'re thinking to protect, don\'t. I already talked these folks down from ambushing your arse the second you were to walk through that door. I did that out of little respect I have left. Don\'t waste it, hm?%SPEECH_OFF%Fair enough. It is what it is and you\'ve no one else to blame but yourself anyhow. You close the door and take your leave.}",
 			Image = "",
 			List = [],

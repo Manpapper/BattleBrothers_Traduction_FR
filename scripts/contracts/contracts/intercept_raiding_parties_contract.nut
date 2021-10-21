@@ -418,7 +418,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "LocationDestroyed",
-			Title = "Along the way...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_30.png[/img]{Smoke rises in the distance. Screams beneath the clouds, and flighty silhouettes in the fires that produced them. It is the %location% at %objective%, and it has no doubt been destroyed.}",
 			Image = "",
 			List = [],
@@ -483,7 +483,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Lost",
-			Title = "Along the way...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_94.png[/img]{The enemy is gone, but their work is finished. Smoke lingers around buildings burned to the ground, and those who haven\'t been taken as indebted to be sold down south lie dead in the streets.\n\nThere is little point in you returning to your employer, for you stand little chance to get paid for failure. Best to look for new work elsewhere.}",
 			Image = "",
 			List = [],
@@ -585,7 +585,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Success1",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% waves you in, though it isn\'t as beaming a welcoming as you\'d hope. His tone is somewhere in the realm of fatherly disappointment.%SPEECH_ON%You got a couple of the southern brigandines. Not great, but not terrible either. I\'ll pay you per each party stopped, but I\'d only wished you\'d done better.%SPEECH_OFF%You almost want to apologize, but you know any sign of weakness are your end might result in some shortchanging and keep it to yourself. He pays the %reward% as earned. | %employer% has a few guards with him when you enter, though there are some faces missing amongst the crowd. The man speaks somberly.%SPEECH_ON%You did what you could, sellsword. It wasn\'t likely that you could have gotten all the raiders. That I realize now. I am, of course, offering a bit of rational respite for you here. For all I know I hired the wrong man, but I will not decide that this day. There is too much to rebuild. You %reward%, as agreed upon per raiding party destroyed.%SPEECH_OFF% |  You enter %employer%\'s room to find your reward of %reward% crowns already accounted for and on the table. He points at it with a flippant turn of his hand.%SPEECH_ON%The raiders came, a few you took care of, the rest pillaged and looted and murdered. So. Take your pay of %reward% crowns, sellsword. It is in accordance to the quality of your work, so please do not be surprised if you find the crowns stacked a little short.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
@@ -623,7 +623,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Success2",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_04.png[/img]{You find %employer% not in his war room, but in his side office with a number of ladies milling about. They\'re attending to the cobwebs amongst the corners, filing scrolls into a bookshelf, or dusting the furniture. And they\'re all naked, naturally. The man opens his arms.%SPEECH_ON%I thought it well that I should celebrate, for %townname% has been saved, saved by the likes of you, sellsword!%SPEECH_OFF%He is drunk, and the women gently move out of his way as he veers about the room.%SPEECH_ON%Now... now -hic- now I assure you, that, that I did not take a loan from you %reward% crowns. It is all there -hic- there as promised. The peasantry is pleased, and I am pleased. Most pleased.%SPEECH_OFF%He gives one of the women a squeeze and she responds about as lively as a mottled rug. You grab the purse and go and a few of the lasses slip out the door with you as %employer% falls into a mumbling stupor. | You find %employer% outside his war room and in his library of which there are perhaps more shelves than books. But he seems impressed with himself all the same.%SPEECH_ON%Your work out there was splendid, sellsword. Absolutely splendid. Of course, there were casualties, but in the whole all things are where they should be and them southern shits have been sent running. With your help, our frontlines did not have to slacken to tend to the homes. Here, your %reward% crowns as promised.%SPEECH_OFF%When the man moves out of the way, you see he has stocked a freshly slickened skull on the shelf. He points at it with childish charm.%SPEECH_ON%It\'s one of their skulls. I\'m going to drink wine out of it, or piss into it. Haven\'t decided yet.%SPEECH_OFF% | %employer% is sitting at his desk with a pyramid of three skulls. His hand rests atop it as though one would be patting the head of a dog. You notice that there are still strips of flesh and even hair on them, the bleaching process presumably hurried. The man speaks happily.%SPEECH_ON%My soldiers may stay upon the frontlines because of you, sellsword. Having handled these raiders not only saved the lives of many here, but perhaps prevented the fall of the first domino in a series of many. Without your help, the fathers and brothers and sons on the front may have fallen back to tend to their families and this whole war would have gone all fucked.%SPEECH_OFF%With his free hand, he pushes forward a purse.%SPEECH_ON%Your %reward% crowns. A well earned weight of coin, I\'d say.%SPEECH_OFF%He smiles grimly and cocks his head at the skulls.%SPEECH_ON%I\'d think they would agree, though I must say that in this affair I will be speaking for them.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],

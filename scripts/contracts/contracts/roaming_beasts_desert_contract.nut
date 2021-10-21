@@ -223,7 +223,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "WorkOfBeasts",
-			Title = "Along the way...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_161.png[/img]{Blood in the desert, thick enough to set top the sands. You follow the speckled marks to a large sand dune and crest it. On the other side is a series of limbs scattered down the slope. A torso. One body missing a face. Deep divots in the sands lead away from the area. You\'re not on time to save these people, but you are close. | You come to a well with a hut beside it. The door is open and slanted off a broken hinge. With a sword drawn, you slowly push it open and find a pile of mush that may have once been a man. Blood drips from the ceiling and there\'s a hole in the opposite side of the hut where whatever damaged all this made its leave as violent as its entrance. The beasts must be close. | Bodies litter the area around a desert well. As you draw near, a pair of hands slap to the edges of the wellhead and pull the person up. It is an old man. He clears his legs over the wall and sits there, gathering his breath. He points autour de scene and shrugs. It seems the beasts were just here, but you have just missed them. You go to your canteen and offer it to the old man, but he shoos you away. There is great pain being held in his eyes, but he fights hard to make sure you see little of it.}",
 			Image = "",
 			List = [],
@@ -291,7 +291,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Success1",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_162.png[/img]{%employer% is already outside his palace when you return. He has a few men in silken garb standing at his side. When you deposit the hyenas\' corpses, these men hurry the bodies away. The Vizier remains with a few guards at his sides. He snaps his fingers and a servant hands you a chest of crowns. The Vizier nods.%SPEECH_ON%Well done, Crownling. We shall make good use of these parcels which you have delivered in good time.%SPEECH_OFF%Parcels? You thought you were here to help solve a monster menace. As guards hurry you out of the square, you eye one of the wise men using a protractor to start making measurements while another man sets up a pedestal and begins to paint. | %employer% stands at his door, though you are kept at a good distance. His servants, instead, are the ones to greet you. They take the hyena scalps and loft them into silvered wheelbarrows. The servants scamper the goods back across the yard and disappear just as soon as they came. The Vizier whistles like a hawk bearing down on its prey. You twitch for a second, but all that comes is another pair of servants carrying a trove of crowns. One looks to the sky as he recites.%SPEECH_ON%Crownling, this job, you have done well, see to the chest, and you will find your purse swell.%SPEECH_OFF%The servant clicks his tongue and looks down, grinning wildly.}",
 			Image = "",
 			Characters = [],
@@ -323,7 +323,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Success2",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_162.png[/img]{%employer% is welcomes you into his throne room. It is filled to the brim with what look like very important people, yet you are brought in anyway. Pausing briefly because you\'re not sure if the crowd can take it, you shrug and then spill out the nachzehrers\' remains. The froth of blood and guts and heads puddles across the floor, but not a peep comes from the onlookers.\n\nAll you can hear is the soft steps of the Vizier walking over. He stares at the remains, hands clasped before him like some scientist, then he snaps his fingers and a horde of servants come over and clean up the mess. One man with a quill pen and papers makes notations. When all is said and done the Vizier returns to this throne and sits in silence. The only other sound you hear is the chinky-chank of a treasure chest being dragged over. All %reward% crowns are handed to you as promised, then you are quietly urged to leave the room.\n\n Looking back, you see the crowd return their attention to the Vizier who starts into prayers. | A man stops you outside %employer%\'s room. He has with him a few scrawny men with quill pens and ledgers. They descend upon your collection of nachzehrers and make attributions accordingly to their papers. Each one finishes and tears the page away and hands it to the first man who compares his notes. Satisfied, he hands you a purse of %reward% crowns.%SPEECH_ON%May your road be ever gilded, Crownling.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -354,7 +354,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Success3",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_162.png[/img]{You meet with employer in his garden. He stares at you with a pair of clipping scissors in hand.%SPEECH_ON%I take it the task is completed?%SPEECH_OFF%Nodding, you produce a serpent\'s head and throw it to the ground. It plops mutely and rolls to the Vizier\'s foot which slowly moves out of the way. %employer% looks at you sternly.%SPEECH_ON%Theatrics are not necessary, Crownling, it is the completion of the task itself which is suitable in impressing me. My guards will furnish your purse a weight of %reward% crowns, as agreed upon.%SPEECH_OFF% | You drag the serpent skins toward %employer%, but a man wearing a feathered turban stops you. He speaks in what sounds like gibberish, though the occasional word slips through. It seems he is in the employ of the Vizier, and he is taking the serpent\'s remains. You look to %employer% who nods to confirm that this is what is to happen. He also seems to notice the signs of tension on your face as you worry about your payment. He speaks loudly and proudly.%SPEECH_ON%Fear not, Crownling, the only snakes here are the ones you have brought to us.%SPEECH_OFF%}",
 			Image = "",
 			List = [],

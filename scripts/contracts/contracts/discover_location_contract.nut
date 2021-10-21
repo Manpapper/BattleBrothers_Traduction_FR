@@ -274,7 +274,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Negotiations",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{%employer% is looking at a poorly drawn map, then looks up at you as though you\'re the one responsible for making it.%SPEECH_ON%Look, mercenary, this is a strange thing to task you with, but you seem to have a good head on your shoulders. See this dark spot here? Would you be willing to venture that way and try and find the %location%? It\'s somewhere at or autour de la région de %region%.%SPEECH_OFF% | You step into %employer%\'s room and he shoves a map into your face.%SPEECH_ON%{Sellsword! Time for you to go exploring! See this uncharted spot, %direction% of here in the région de %region%? That\'s where I need you to go in search of the %location%. Do you accept or not? | Alright, this might seem strange, but I need a place by the name of the %location% located and charted. Our maps are incomplete in regards to this spot which, at the very least, I believe is at or near the région de %region% %direction% of here. Go, find it, and come back with the coordinates and you will be properly rewarded. | There are parts of this world man still has yet to find and chart into his maps. I\'m looking for %location% %direction% of here at or near the région de %region%. That\'s about all I know of it, but I do know it exists. So you go and find it for me and you\'ll be properly rewarded. | I need a place found, sellsword. It lies %direction% of here at or near to the région de %region%. The laymen call it %location%, but whatever it is, I need to know WHERE it is, understand? Find it and you will be paid handsomely. | I\'m in need of a soldier and explorer, sellsword, and I think you\'re just the man to be both in one. Now, before you accuse me of being cheap by not hiring both vocations, let\'s just say I have plenty of crowns for you to earn in doing this for me. What is it, hm? Well, I know of a place by the name of %location%, but I know not where it is other than it resides %direction% of here in the stripe of land called %region%. Find it, draw its place on the map, and you\'ll get the pay of both a soldier and an explorer!}%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{%employer% regarde une carte mal dessinée, puis vous regarde comme si c'était vous qui l'aviez faite.%SPEECH_ON%Ecoutez, mercenaire, c'est une tâche étrange pour vous, mais vous semblez avoir la tête sur les épaules. Vous voyez cette tache sombre ici ? Seriez-vous prêt à vous aventurer dans cette direction et à essayer de trouver %location%? C'est quelque part à ou aux autours de la région de %region%.%SPEECH_OFF% | Vous entrez dans la chambre de %employer% et il vous met une carte sous le nez.%SPEECH_ON%{Mercenaire ! Il est temps pour vous de partir en exploration ! Vous voyez cet endroit inexploré, %direction% d'ici dans la région de %region%? C'est là que j'ai besoin que vous alliez à la recherche de %location%. Acceptez-vous ou non ? | D'accord, ça peut sembler étrange, mais j'ai besoin d'un endroit du nom de  %location% soit localisé et cartographié. Nos cartes sont incomplètes en ce qui concerne cet endroit qui, au mieux, j'espère est à ou aux alentours de la région de %region% %direction% d'ici. Partez, trouvez-la et revenez avec les coordonnées et vous serez récompensé comme il se doit. | Il y a des parties de ce monde que l'homme n'a pas encore découverts et inscrits sur ses cartes. Je cherche %location% %direction% d'ici à ou aux alentours de la région de %region%. C'est à peu près tout ce que j'en sais, mais je sais que ça existe. Alors allez le trouver pour moi et vous serez récompensé comme il se doit. | J'ai besoin qu'on me trouve un endroit, mercenaire. Elle se trouve %direction% d'ici, dans la région de %région% ou dans sa proximité. Les profanes l'appellent %location%, mais quoi que ce soit, je dois savoir où c'est, compris ? Trouvez-la et vous serez payé généreusement. | J'ai besoin d'un soldat explorateur et d'un mercenaire, et je pense que vous êtes l'homme idéal pour être les deux à la fois. Maintenant, avant que vous ne m'accusiez d'être radin en n'engageant pas les deux vocations, disons simplement que j'ai beaucoup de couronnes à vous faire gagner en faisant cela pour moi. Qu'est-ce que c'est, hm ? Eh bien, je connais un endroit qui s'appelle %location%, mais je ne sais pas où il se trouve, sinon qu'il se trouve %direction% d'ici, dans la bande de terre appelée %région%. Trouvez-la, dessinez son emplacement sur la carte, et vous recevrez la paie d'un soldat et d'un explorateur !}%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
@@ -306,12 +306,12 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "FoundIt",
 			Title = "At %location%",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{You sight %location% in the glass of your scope and mark it on your maps. Easy enough. Time to Retournez à %employer%. | Well, it\'s already time to Retournez à %employer% as %location% was easier to find than you figured. Marking it on your map, you pause and chuckle and shake your head. What luck. | %location% comes into view and it\'s immediately reborn upon your map to the best of your illustrative capabilities. %randombrother% asks if that\'s all there is to do. You nod. A rough go or an easy one, %employer% will be waiting to pay you all the same.}",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Vous voyez %location% dans le verre de votre lunette et vous la marquez sur vos cartes. C'était assez facile. Il est temps de retournez auprès de %employer%. | Eh bien, il est déjà temps de auprès de %employer% car %location% a été plus facile à trouver que vous ne le pensiez. En le marquant sur votre carte, vous vous arrêtez, riez et secouez la tête. Quelle chance. |  %location% apparaît et il renaît immédiatement sur votre carte au mieux de vos capacités d'illustration. %randombrother% demande si c'est tout ce qu'il y avait à faire. Vous acquiescez. Que ce soit difficile ou facile, %employer% vous attendra pour vous payer.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Time to head back.",
+					Text = "Il est temps de rentrer.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -323,13 +323,13 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Trap",
-			Title = "Along the way...",
-			Text = "[img]gfx/ui/events/event_07.png[/img]The %location% has been spotted - and so has the %companyname%. The supposed \'altruist\' who had given you the directions is standing there, except now he has a band of hardy and unfriendly men with him.%SPEECH_ON%{Well, looks like you can follow directions after all. Setting an ambush is pretty easy when you tell the idiot where to meet ya. Anyway, kill them all! | Hey there, sellsword. Strange seeing you here. Oh wait, no it isn\'t. Kill them all! | Damn, took you long enough! What, you can\'t follow simple instructions on how to walk into your own graves? Foolish, sellsword, and annoyingly dumb. Well, let\'s get this over with. Kill them all.}%SPEECH_OFF%",
+			Title = "Sur la route...",
+			Text = "[img]gfx/ui/events/event_07.png[/img]%location% a été repéré - et %companyname% aussi. Le prétendu \"altruiste\" qui vous a indiqué le chemin est toujours là, sauf qu'il est maintenant accompagné d'une bande d'hommes rustiques et peu amicaux.%SPEECH_ON%{Eh bien, on dirait que vous pouvez suivre des directions après tout. Monter une embuscade est assez facile quand vous dites à l'idiot où vous rencontrer. Quoi qu'il en soit, tuez-les tous ! | Salut, mercenaire. C'est étrange de vous voir ici. Oh attendez, non ça ne l'est pas. Tuez-les tous ! | Bon sang, vous en avez mis du temps ! Quoi, vous ne pouvez pas suivre de simples instructions sur la façon de marcher dans vos propres tombes ? Stupide, mercenaire, et fâcheusement stupide. Eh bien, finissons-en. Tuez-les tous.}%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To Arms!",
+					Text = "Aux Armes!",
 					function getResult()
 					{
 						local tile = this.World.State.getPlayer().getTile();
@@ -350,13 +350,13 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SurprisingHelpAltruists",
-			Title = "Along the way...",
-			Text = "[img]gfx/ui/events/event_76.png[/img]{Waving his hand rather friendly-like, a man approaches. You respond by unsheathing your sword halfway. He laughs.%SPEECH_ON%So many are interested in the %location%, so I can\'t fault you for being so defensive. Look, I\'ll tell you exactly where it\'s at. Just %distance% to the %direction% of here, %terrain%.%SPEECH_OFF%He heads off, cackling with laughter.%SPEECH_ON%I dunno if I\'ve done good or ill, and that\'s just the sort of fun I like!%SPEECH_OFF% | A group of world-weary explorers! They seize up in the middle of the road, half covered in mud and half in leaves and all in unintentional camouflage. One rubs his forehead, eyeing you carefully before a smile widens.%SPEECH_ON%Eh, I know a searcher when I see one. You\'re looking for the %location%, aintcha? Well yer in luck, we was just coming from there! Here, give me your map and I\'ll show you just where it is. You see, %terrain% %distance% to the %direction% of where we are now.%SPEECH_OFF%}",
+			Title = "Sur la route...",
+			Text = "[img]gfx/ui/events/event_76.png[/img]{Un homme s'approche en agitant la main de manière plutôt amicale. Vous répondez en dégainant votre épée à moitié. Il rit.%SPEECH_ON%Beaucoup s'intéressent à %location%, je ne peux donc pas vous reprocher d'être sur la défensive. Écoutez, je vais vous dire exactement où c'est. A %distance% en direction %direction% d'ici, %terrain%.%SPEECH_OFF%Il s'en va en riant aux éclats.%SPEECH_ON%Je ne sais pas si j'ai fait du bien ou du mal, et c'est justement le genre d'amusement que j'aime !%SPEECH_OFF% | Un groupe d'explorateurs fatigués du monde ! Ils s'immobilisent au milieu de la route, à moitié couverts de boue, à moitié couverts de feuilles et tous en camouflage non voulu. L'un d'eux se frotte le front et vous regarde attentivement avant d'élargir son sourire.%SPEECH_ON%Eh, je sais reconnaître un chercheur quand j'en vois un. Vous cherchez %location%, n'est-ce pas ? Eh bien, vous avez de la chance, nous venons juste de là-bàs ! Donnez-moi votre carte et je vous montrerai où c'est. Vous voyez, %terrain% %distance%  %direction% d'où nous sommes actuellement.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Much appreciated.",
+					Text = "Nous apprécions beaucoup.",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 20 && this.Contract.getDifficultyMult() > 0.95)
@@ -372,13 +372,13 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SurprisingHelpOpportunists1",
-			Title = "Along the way...",
-			Text = "[img]gfx/ui/events/event_76.png[/img]{The stranger is a lone man who keeps his distance, one foot on the path, the other inching toward escape.%SPEECH_ON%Hey there.%SPEECH_OFF%He glances across your men, slowly smiling as though he can sense our being lost.%SPEECH_ON%Searching for the %location% are ya? Hmm, yeah. Well I\'ll tell you what, hand me %hint_bribe% crowns and I\'ll tell you exactly where it is! Come after me with yer swords and I\'ll be gone quicker than you can blink!%SPEECH_OFF% | You watch as the stranger comes into the light of the path, shielding his eyes so as to keep much of his face hidden.%SPEECH_ON%You look like the sort to be in search of something, but you know not where it be! The %location% is tricky like that. Good thing I know where it is. Good thing you, too, can know where it is by sliding %hint_bribe% crowns my way. I\'m the fastest sprinter you ever did see, so don\'t try and wring it out of me with one of them shiny swords you got.%SPEECH_OFF%}",
+			Title = "Sur la route...",
+			Text = "[img]gfx/ui/events/event_76.png[/img]{L'étranger est un homme seul qui garde ses distances, un pied sur le chemin, l'autre vers la fuite.%SPEECH_ON%Hey there.%SPEECH_OFF%Il jette un coup d'œil à vos hommes, souriant lentement comme s'il pouvait sentir que nous sommes perdus.%SPEECH_ON%Vous cherchez %location%, c'est ça ? Hmm, ouais. Je vais vous dire, donnez-moi %hint_bribe% couronnes et je vous dirai exactement où c'est ! Venez après moi avec vos épées et je serai parti avant que vous ne puissiez cligner des yeux !%SPEECH_OFF% | Vous observez l'étranger qui entre dans la lumière du chemin, en se protégeant les yeux de manière à cacher une grande partie de son visage.%SPEECH_ON%Vous avez l'air d'être à la recherche de quelque chose, mais vous ne savez pas où c'est ! %location% est compliquée comme ça. Heureusement que je sais où c'est. Heureusement, vous pouvez aussi savoir où il se trouve en glissant %hint_bribe% couronnes vers moi. Je suis le coureur le plus rapide que vous ayez jamais vu, alors n'essayez pas de me soutirer des informations avec une de ces épées brillantes que vous avez.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Fine, here\'s the crowns. Now speak.",
+					Text = "Bien, voici les couronnes. Maintenant, parlez.",
 					function getResult()
 					{
 						return "SurprisingHelpOpportunists2";
@@ -386,7 +386,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "No need, we\'ll find it on our own.",
+					Text = "Pas besoin, nous le trouverons par nous-mêmes.",
 					function getResult()
 					{
 						return 0;
@@ -397,13 +397,13 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SurprisingHelpOpportunists2",
-			Title = "Along the way...",
-			Text = "[img]gfx/ui/events/event_76.png[/img]You accept the man\'s offer and he dishes out the details as promised.%SPEECH_ON%You see, it\'s there, of course, %terrain% %distance% to the %direction% of where we are now. Easy.%SPEECH_OFF%He whistles as he walks off, no doubt a very easy payday for him.",
+			Title = "Sur la route...",
+			Text = "[img]gfx/ui/events/event_76.png[/img]Vous acceptez l'offre de l'homme et il vous donne les détails comme promis.%SPEECH_ON%Vous voyez, c'est là, bien sûr, %terrain% %distance%  %direction% d'où nous sommes actuellement. Facile.%SPEECH_OFF%Il siffle en partant, sans doute un jour de paie très facile pour lui.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Got it.",
+					Text = "J'ai compris.",
 					function getResult()
 					{
 						this.World.Assets.addMoney(-this.Flags.get("HintBribe"));
@@ -417,20 +417,20 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("HintBribe") + "[/color] Crowns"
+					text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("HintBribe") + "[/color] Couronnes"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "AnotherParty1",
-			Title = "At %townname%",
-			Text = "[img]gfx/ui/events/event_51.png[/img]{As you and the %companyname% prepare their journey, %randombrother% states that there is a man who wishes to speak to you directly. You nod and have him led to you. He\'s a glum, small man who states that the \'rulers\' of %townname% have no interest in the %location% other than ones of greed. Of course that\'s the case, so what\'s the problem? The man nods.%SPEECH_ON%Look, I\'ve some folks who are interested in keeping the %location% hidden away for good. If you find it, well, talk to me first. We\'ll make you a pretty penny.%SPEECH_OFF% | While the %companyname% readies its trip to find the %location%, a man sidles up next to you. He hands you a note and departs without saying a word. The scroll reads: LEAVE THE %locationC% WHERE IT BE. IF YOU FIND IT, TALK TO US. OUR CROWNS FOR YOUR SILENCE. THE RULERS OF %townnameC% NEED NOT KNOW NOTHIN\'! | A man approaches the company. Behind him you spy a couple of poor families staring on. You\'re not sure if he\'s their ambassador or not, but either way he comes right for you with a proposition spoken low and quiet.%SPEECH_ON%Listen here, sellsword. If you go out and find the %location%, come to us first. The rulers of %townname% need not bring their greed and lust for power to that place. Leave it to us, alright? We\'ll pay you well.%SPEECH_OFF%Before you can say a word, he straightens up and continues on. When you look back down the road those families are no longer around.}",
+			Title = "À %townname%",
+			Text = "[img]gfx/ui/events/event_51.png[/img]{Alors que vous et %companyname% préparez votre voyage, %randombrother% déclare qu'il y a un homme qui souhaite vous parler directement. Vous acquiescez et le faites conduire jusqu'à vous. C'est un petit homme maussade qui affirme que les \"dirigeants\" de %townname% n'ont aucun intérêt pour %townname% autre que celui de la cupidité. Bien sûr que c'est le cas, alors quel est le problème ? L'homme acquiesce.%SPEECH_ON%Écoutez, j'ai des gens qui veulent garder %location% caché pour de bon. Si vous le trouvez, eh bien, parlez m'en d'abord. Nous vous récompenserons avec un joli paquet de fric.%SPEECH_OFF% | Pendant que %companyname% prépare son voyage pour trouver %location%, un homme s'approche de vous. Il vous remet une note et s'en va sans dire un mot. Le parchemin se lit comme suit : LAISSER LE %location% OÙ IL EST. SI VOUS LE TROUVEZ, PARLEZ-NOUS EN. NOS COURONNES POUR VOTRE SILENCE. LES RÉGENTS DE %townname% NE DOIVENT RIEN SAVOIR ! | Un homme s'approche de la compagnie. Derrière lui, on aperçoit deux familles pauvres qui le regardent. Vous n'êtes pas sûr qu'il soit leur ambassadeur ou non, mais dans tous les cas, il vient vers vous avec une proposition prononcée à voix basse et calme.%SPEECH_ON%Écoute, mercenaire. Si vous sortez et trouvez %location%, venez nous voir d'abord. Les dirigeants de %townname% n'ont pas besoin d'apporter leur avidité et leur soif de pouvoir à cet endroit. Laissez-nous faire, d'accord ? Nous vous paierons bien.%SPEECH_OFF%Avant que vous ne puissiez dire un mot, il se redresse et continue. Quand vous regardez en arrière sur la route, ces familles ne sont plus là.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "I\'ll think about it.",
+					Text = "Je vais y réfléchir.",
 					function getResult()
 					{
 						return 0;
@@ -441,13 +441,13 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AnotherParty2",
-			Title = "On your return...",
-			Text = "[img]gfx/ui/events/event_51.png[/img]{As you head toward %townname%, a stranger comes out to the path. He\'s the man you talked to before, but this time he has a satchel in hand.%SPEECH_ON%{You\'ve no reason to tell the rulers of this town where the %location% is. Leave its secrets to us, you\'ve no idea what heirlooms and history we have there. For your silence, we\'re willing to give you this as payment, %bribe% crowns. Please, sir, accept. | Look, sellsword, I know you speak one language and that is the language of money. Take this satchel as a token of our appreciation - if you stay silent. You needn\'t tell the rulers of %townname% where the %location% is. That place belongs to our families. Those petty rulers will only ruin it with their greed and power-seeking. So, what say you, will you take this? There are %bribe% crowns in there. All you gotta do is take it and not talk.}%SPEECH_OFF% | Entering %townname%, you\'re headed off by a familiar face: the man who had greeted you just before you had departed in the first place. But this time he has a satchel with him.%SPEECH_ON%{%bribe% crowns for your silence. Tell the rulers of this town absolutely nothing and it\'s yours. They need not know about our deal, they just need not know where this place is. It\'s important to us, with history beyond measure, and all they\'ll do is raid and pillage it. Please, accept. | Take this, it\'s %bribe% crowns. That\'s how much we\'re prepared to give you for your silence. The rulers of %townname% will take your information and use it to pillage the %location%, because they know of our own familial relations to it and, well, we\'ve long since fallen out of favor around here. We\'ve little left so, please, let us keep our heirlooms and old home.}%SPEECH_OFF%}",
+			Title = "À votre retour...",
+			Text = "[img]gfx/ui/events/event_51.png[/img]{Alors que vous vous dirigez vers %townname%, un étranger s'avance sur le chemin. C'est l'homme à qui vous avez parlé auparavant, mais cette fois, il a une sacoche à la main.%SPEECH_ON%{Vous n'avez aucune raison de dire aux dirigeants de cette ville où se trouve %location%. Laissez-nous ses secrets, vous n'avez aucune idée des héritages et de l'histoire que nous avons là. Pour votre silence, nous sommes prêts à vous donner ceci comme paiement, %bribe% couronnes. S'il vous plaît, monsieur, acceptez. | Ecoutez, mercenaire, je sais que vous ne parlez qu'une seule langue et c'est celle de l'argent. Prenez cette sacoche en gage de notre reconnaissance, si vous restez silencieux. Vous n'avez pas besoin de dire aux dirigeants de %townname% où se trouve %location%. Cet endroit appartient à nos familles. Ces dirigeants mesquins ne feront que le ruiner avec leur cupidité et leur recherche du pouvoir. Alors, qu'en dites-vous, vous prenez ça ? Il y a %bribe% couronnes là-dedans. Tout ce que vous devez faire est de le prendre et de ne pas parler.}%SPEECH_OFF% | En entrant dans %townname%, vous êtes dirigé par un visage familier : l'homme qui vous avait salué juste avant votre départ. Mais cette fois, il a une sacoche avec lui.%SPEECH_ON%{%bribe% couronnes pour votre silence. Ne dites absolument rien aux dirigeants de cette ville et elle est à vous. Ils n'ont pas besoin de connaître notre accord, ils n'ont juste pas besoin de savoir où se trouve cet endroit. C'est important pour nous, avec une histoire sans commune mesure, et tout ce qu'ils feront, c'est le piller. S'il vous plaît, acceptez. | Prends ça, il y a %bribe% couronnes. C'est la somme que nous sommes prêts à vous donner pour votre silence. Les dirigeants de %townname% vont prendre vos informations et les utiliser pour piller %location%, parce qu'ils connaissent nos propres relations familiales avec elle et, eh bien, nous sommes depuis longtemps tombés en disgrâce. Il nous reste peu de choses, alors, s'il vous plaît, laissez-nous garder nos héritages et notre vieille maison.}%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "I don\'t think so. Only our employer will learn where it is.",
+					Text = "Je ne pense pas. Seul notre employeur saura où il se trouve.",
 					function getResult()
 					{
 						return "AnotherParty3";
@@ -455,7 +455,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "We have a deal. You and no one else will learn where it is.",
+					Text = "Nous avons un accord. Vous et personne d'autre ne saura où il se trouve.",
 					function getResult()
 					{
 						return "AnotherParty4";
@@ -463,7 +463,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "Why get paid only once if we can get paid twice?",
+					Text = "Pourquoi être payé une seule fois si l'on peut être payé deux fois ?",
 					function getResult()
 					{
 						return "AnotherParty5";
@@ -474,13 +474,13 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AnotherParty3",
-			Title = "On your return...",
-			Text = "[img]gfx/ui/events/event_51.png[/img]{After telling the man no, he falls to his knees and cries out, much to the amusement of the %companyname%. He wails on about how you\'ve left the historic past of his family in the hands of lechers and usurers. You tell him that you don\'t care. | Telling the man that you\'ve no interest in betraying your original employer sets him off. He tries to attack you, launching forward to glom onto you with angry hands. %randombrother% pushes him away and threatens to kill him with a blade. The man backs off. He sits beside the path, head between his knees, sobbing. One of the men gives him a handkerchief as they pass by. | You tell the man no. He begs. You tell him no again. He begs some more. You suddenly realize you\'ve done with this with a woman or two. It really isn\'t a good look. You tell him as much, but the emotion of the moment is too much for him. He starts to wail, going on about how his family name will be ruined by the greedy bastards that run %townname%. You tell him that his supposed family name would be spared if, perhaps, he was the one running this town. This does not clear his tears.}",
+			Title = "À votre retour...",
+			Text = "[img]gfx/ui/events/event_51.png[/img]{Après avoir dit non à l'homme, il tombe à genoux et pleure, au grand amusement de %companyname%. Il se lamente sur la façon dont vous avez laissé le passé historique de sa famille entre les mains de profiteurs et d'usuriers. Vous lui dites que vous vous en fichez. | Dire à l'homme que vous n'avez aucun intérêt à trahir votre employeur d'origine l'énerve. Il tente de vous attaquer, s'élançant en avant pour se coller à vous avec des mains en colère. %randombrother% le repousse et menace de le tuer avec une lame. L'homme recule. Il s'assied au bord du chemin, la tête entre les genoux, en sanglotant. Un des hommes lui donne un mouchoir en passant. | Vous dites non à l'homme. Il supplie. Vous lui dites non à nouveau. Il supplie encore. Vous réalisez soudain que vous avez déjà fait ça avec une ou deux femmes. Ce n'est vraiment pas un bon signe. Vous le lui dites, mais l'émotion du moment est trop forte pour lui. Il se met à gémir, expliquant que le nom de sa famille va être ruiné par les salauds cupides qui dirigent %townname%. Vous lui dites que le nom de sa prétendue famille serait épargné si, peut-être, c'était lui qui dirigeait cette ville. Cela ne dissipe pas ses larmes.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Out of the way.",
+					Text = "Hors du chemin.",
 					function getResult()
 					{
 						return "Success1";
@@ -491,18 +491,18 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AnotherParty4",
-			Title = "On your return...",
-			Text = "[img]gfx/ui/events/event_51.png[/img]{You agree to sell the man the details of your expedition. He\'s overly joyous about the whole affair, but %employer% is not. Apparently, a little child saw this exchange and reported your betrayal to the head of %townname%. Your reputation here has, no doubt, been a little hurt. | Well, on one hand you spared this man\'s supposed familial home from destruction at the hands of those who run %townname%. On the other, those who run %townname% quickly heard of what you\'d done. You should have paid more mind to a small town\'s population to double as rumormills extraordinaire.}",
+			Title = "À votre retour...",
+			Text = "[img]gfx/ui/events/event_51.png[/img]{Vous acceptez de vendre à l'homme les détails de votre expédition. Il est très heureux de l'affaire, mais %employeur% ne l'est pas. Apparemment, un petit enfant a vu cet échange et a rapporté votre trahison au chef de %townname%. Votre réputation ici a, sans doute, été un peu entachée. | D'un côté, vous avez épargné la supposée maison familiale de cet homme d'être détruite par les mains de ceux qui dirigent %townname%. D'autre part, ceux qui dirigent %townname% ont rapidement entendu parler de ce que vous aviez fait. Vous auriez dû prêter plus d'attention à la population d'une petite ville pour qu'elle se transforme en rumeurs extraordinaires.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Well, %employer% should have just payed us more.",
+					Text = "Eh bien, %employer% aurait dû juste nous payer plus.",
 					function getResult()
 					{
 						this.World.Assets.addMoney(this.Flags.get("Bribe"));
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "Sold the location of " + this.Flags.get("Location") + " to another party");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "A vendu l'emplacement de " + this.Flags.get("Location") + " à un autre groupe");
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}
@@ -514,26 +514,26 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe") + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe") + "[/color] Couronnes"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "AnotherParty5",
-			Title = "On your return...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]You tell the man that you\'ll keep the location of his familial home a secret. While he celebrates, you go and tell %employer% where the %location% is. Getting paid by both sides makes for a pretty sweet gig. Catching hate from both not so much, but what did they expect in dealing with a sellsword?",
+			Title = "À votre retour...",
+			Text = "[img]gfx/ui/events/event_04.png[/img]Vous dites à l'homme que vous garderez secret l'emplacement de sa maison familiale. Pendant qu'il fait la fête, vous allez dire à %employer% où se trouve %location%. Être payé par les deux parties, c'est un bon boulot. S'attirer la haine des deux, pas vraiment, mais à quoi s'attendaient-ils en traitant avec un mercenaire ?",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Those people will never learn.",
+					Text = "Ces gens n'apprendront jamais.",
 					function getResult()
 					{
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
 						this.World.Assets.addMoney(this.Flags.get("Bribe"));
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail * 2);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail * 1.5, "Gave information to a competitor");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail * 1.5, "Donner des informations à un concurrent");
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}
@@ -545,32 +545,32 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
 				});
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe") + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe") + "[/color] Couronnes"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "Success1",
-			Title = "On your return...",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{%employer% welcomes you back. You hand over your recently illustrated map and he pores over it, swatting the spotted mark with the back of his hand.%SPEECH_ON%Of course that\'s where it is!%SPEECH_OFF%He smirks and pays you what you\'re owed. | You come to %employer%\'s room, a fresh map in hand. He takes it from you and looks it over.%SPEECH_ON%Well then. I\'d mind to think this was a spot too easy, but an agreement is an agreement.%SPEECH_OFF%He hands you a satchel weighed with precisely what is owed. | You report to %employer%, telling him of %location%\'s location. He nods and scribbles, copying the notes from your map. Curious, you ask how he knows you\'re not lying. The man sets down in a chair and leans back, clasping his hands over his belly.%SPEECH_ON%I invested in a tracker who kept close to your company. He made it here before you did and you\'ve but confirmed what I already know. Hope you don\'t mind the measures taken.%SPEECH_OFF%Nodding, you think it a wise move and take your pay and go.}",
+			Title = "À votre retour...",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{%employer% vous souhaite la bienvenue. Vous lui tendez votre carte récemment illustrée et il la parcourt, en effaçant la tache du revers de sa main.%SPEECH_ON%Bien sûr, c'est là qu'il est !%SPEECH_OFF%Il sourit et vous paie ce qui vous est dû. | Vous arrivez dans la chambre de %employer%, une carte à la main. Il vous la prend et l'examine.%SPEECH_ON%Bon, alors. On pourrait penser que c'est un peu trop facile, mais un accord est un accord.%SPEECH_OFF%Il vous tend une sacoche chargée de ce qui vous est dû. | Vous vous présentez à %employer%, lui indiquant l'emplacement de %location%\ Il acquiesce et gribouille, copiant les notes de votre carte. Curieux, vous lui demandez comment il sait que vous ne mentez pas. L'homme s'assoit sur une chaise et se penche en arrière, en mettant ses mains sur son ventre.%SPEECH_ON%J'ai investi dans un traqueur qui est resté proche de votre compagnie. Il est arrivé ici avant vous et vous n'avez fait que confirmer ce que je savais déjà. J'espère que les mesures prises ne vous dérangent pas.%SPEECH_OFF%En hochant la tête, vous pensez que c'est une sage décision, vous prenez votre paie et vous partez.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Hired to find the " + this.Flags.get("Location"));
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Engagé pour trouver  " + this.Flags.get("Location"));
 						this.World.Contracts.finishActiveContract();
 						return 0;
 					}
@@ -582,7 +582,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
 				});
 			}
 

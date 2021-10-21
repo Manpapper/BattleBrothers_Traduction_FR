@@ -758,7 +758,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CampingTip",
-			Title = "Along the way...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_75.png[/img]%bro3% joins your side.%SPEECH_ON%Got a moment, cap\'n?%SPEECH_OFF%You nod for him to speak his mind.%SPEECH_ON%The battle has left some gear worse for wear and some men got a good nickin\', too. We can patch up both man and equipment while marching, but it\'s a lot faster to set down and do it. Of course, if we make camp we should be wary of ambushes. A campfire in these parts can be seen from every which way.%SPEECH_OFF%",
 			List = [],
 			Characters = [],

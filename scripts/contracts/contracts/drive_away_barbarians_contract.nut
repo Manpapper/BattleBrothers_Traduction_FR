@@ -569,7 +569,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Revenge1",
-			Title = "On your return...",
+			Title = "À votre retour...",
 			Text = "[img]gfx/ui/events/event_135.png[/img]{A man stands out into your path. He\'s an elder and not of southern reaches.%SPEECH_ON%Ah, the Outsiders. You come to our lands and ravage an undefended village.%SPEECH_OFF%You spit and nod. %randombrother% yells out that it\'s what the savages themselves do. The old man smiles.%SPEECH_ON%So we are in cycle, and through this violence we all shall regenerate, but violence there shall be. When we are through with you, %townname% will not be spared.%SPEECH_OFF%A line of strongmen get up out of the terrain where they were hiding. By the looks of it, this is the main war party of the village you burned down. They may have been out raiding when you sacked the place. Now here they are seeking barbarian retribution.}",
 			Image = "",
 			List = [],
