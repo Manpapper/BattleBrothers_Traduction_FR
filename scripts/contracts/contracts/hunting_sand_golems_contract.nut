@@ -247,7 +247,7 @@ this.hunting_sand_golems_contract <- this.inherit("scripts/contracts/contract", 
 		});
 		this.m.Screens.push({
 			ID = "Encounter",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_153.png[/img]{At first glance, it is a mirage. The desert shifts and blurs at distance, and to the unwitting or exhausted, these sights alter and change to be whatever one wishes them to be. It is when the Ifrit turns around and rips a human body in half and slings the parts across the sands that you realize this is not an imagined monstrosity at all. It is a hellish creature, a spinning cloud of sand with stones shifting about to give it some shape of what a man might be. And as it leans forward you realize if nothing else it does share a man\'s disposition toward armed strangers on its land: murderous rage. | The sand dunes ahead slip from top to bottom, the sands curling toward you like a sheet being pulled off a bed. But a stone appears unearthed and another and another, and when the first stone rises you realize it is an Ifrit. A growl scratches out, a deep bellow that is crackling with the clash of sandy winds. The Ifrit takes some sloping, disjointed shape of a man, stones for bones, and sands for flesh, and it charges forth. | You find the Ifrit holding a distended sense of an arm down toward the earth. Sand blows out of the arm and the grains press a dead body into the desert, the force ripping away the clothes, and then peppering open the flesh, then it is stripped to the bone entirely and when the Ifrit is done it turns to you and ferociously growls.}",
 			Image = "",
 			List = [],
@@ -265,7 +265,7 @@ this.hunting_sand_golems_contract <- this.inherit("scripts/contracts/contract", 
 		});
 		this.m.Screens.push({
 			ID = "Earthquake",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_160.png[/img]{As you reach the top of a sand dune, it immediately stretches away from your very feet. You find yourself sinking and roll out before the earth swallows you whole. As you tumble down the slopes, you find the adjacent dunes similarly receding, and in your belly there is a tremble, not of fear, but of the ground itself violently shaking. When it is over, you stand up and steady your feet. And Ifrits come to stand at the rim of the crater and look down at you. They scream at you, hissing ferocity scraping with the sound of sand crystalizing past one another. You are surrounded! | You pause and sigh. The desert just seems to go on and on, and just as you think that you find the view shrinking away. It takes a moment for you to realize the ground is shaking and as the sand shifts you are being sucked down. You roll away from danger and find yourself tumbling down the sand slopes. At the bottom you quickly jump to your feet and draw your weapon to face what you already know is there: the Ifrits. They stand at the rim of the dunes, staring down at you as though they trapped a rat. Their bodies are clouds of sand with floating stones to give a sort of staccato shape of what might be a man. They growl and descend downward!}",
 			Image = "",
 			List = [],

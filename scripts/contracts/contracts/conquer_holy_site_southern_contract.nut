@@ -489,7 +489,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		});
 		this.m.Screens.push({
 			ID = "Attacking",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{As the Vizier believed, the northerners have taken up positions in and around %holysite%. Most of the riffraff religious folk have long since departed, leaving only the %companyname% and the opposing force. You draw out your sword and order the men to make the attack.}",
 			Image = "",
 			List = [],

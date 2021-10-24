@@ -443,7 +443,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "SiegeEquipmentAhead",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_68.png[/img]{The greenskins have assembled some siege weaponry close by. You\'ll have to destroy them to help lift the siege! | Your men spot a few pieces of siege equipment nearby. The greenskins must have been preparing an assault! You will need to destroy them to help lift the siege!}",
 			Image = "",
 			List = [],
@@ -461,8 +461,8 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Shaman",
-			Title = "As you approach...",
-			Text = "[img]gfx/ui/events/event_48.png[/img]{As you approach the sieging goblins, you spot a rather unique silhouette standing amongst their ranks. It is that of a shaman. You tell your men to prepare themselves appropriately. | A rather unique profile stands tall amongst the goblins. You see it barking orders in that horrid tongue they think to be a language. The foul thing is wreathed in strange plants and what appears to be a necklace of animal bones.%SPEECH_ON%That\'s a shaman.%SPEECH_OFF%%randombrother% says as he joins our side.%SPEECH_ON%I\'ll alert the rest of the men.%SPEECH_OFF% | %randombrother% returns from scouting. He shares news that a goblin shaman is within the invading greenskins group. The man seems rather miffed.%SPEECH_ON%I love killing me some gobbos, but them pricks will give us a proper headache this time.%SPEECH_OFF%}",
+			Title = "En vous approchant...",
+			Text = "[img]gfx/ui/events/event_48.png[/img]{En vous approchant the sieging goblins, you spot a rather unique silhouette standing amongst their ranks. It is that of a shaman. You tell your men to prepare themselves appropriately. | A rather unique profile stands tall amongst the goblins. You see it barking orders in that horrid tongue they think to be a language. The foul thing is wreathed in strange plants and what appears to be a necklace of animal bones.%SPEECH_ON%That\'s a shaman.%SPEECH_OFF%%randombrother% says as he joins our side.%SPEECH_ON%I\'ll alert the rest of the men.%SPEECH_OFF% | %randombrother% returns from scouting. He shares news that a goblin shaman is within the invading greenskins group. The man seems rather miffed.%SPEECH_ON%I love killing me some gobbos, but them pricks will give us a proper headache this time.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
@@ -478,7 +478,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 		});
 		this.m.Screens.push({
 			ID = "Warlord",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_49.png[/img]{As you near the sieging greenskins, you identify something almost impossible to miss: the large and imposing figure of an orcish warlord. The foul thing\'s armor glints as it turns about to bark orders in its orcish tongue, spurring its fellow greenskins into a violent, frothing fervor. You tell %randombrother% to spread the news and prepare the men. | While approaching the sieging party, you recognize the tall, brutish silhouette of an orc warlord. Even at this distance you can hear him barking orders to his grunts. This fight just got a little more interesting. | You near the siege camp of greenskins only to hear the distinct growl of an orc warlord. He\'s belting out orders in their disgusting and quite loud language. His presence changes the task at hand just a little bit and you inform the men as much. | %randombrother% returns from scouting. He states that there is an orc warlord in the greenskins\' encampment. Bad news, but better knowing now and preparing then going in and being taken by surprise.}",
 			Image = "",
 			List = [],

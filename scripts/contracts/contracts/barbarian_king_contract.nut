@@ -387,7 +387,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Approach",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_135.png[/img]{The Barbarian King comes to the field with his warhost, a party of oversized miscreants, growling warriors, sheepish slaves, and howling women. It is the army of a man who has collected from the land every scrap of resource, every inch of advantage, and will surely collect civilization itself as surely as a simple snowball may become the avalanche. You prepare the men for battle. | The Barbarian King\'s warband trundles across the land with no hint of training or even semblance of formation. But you know that with the mere wave of the savage\'s hand he may set upon his enemies a horde of killers who have more than ample supply of carnage to overcome any lack of cohesion. You prepare the men for battle. | The warband of savages is like that of a fever dream, taking shape across the horizon like travelers from every corner of the earth, dressed not in any uniform or armor, but in mockeries of those they have conquered. Warriors with wedding dresses wrapped about their arms, long coats of royal color adorned upon men of no status, some wearing ribs and clattering bones as though they got the last of the pillaging. They were but farmers of horror, villages their crop, and war but a harvest for all seasons.\n\nYou shake your head at the sight and prepare the men for battle.}",
 			Image = "",
 			List = [],
@@ -431,7 +431,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AGreaterThreat1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_136.png[/img]{You find the Barbarian King, but a parlay is made. The Barbarian King and an elder step across the field to meet you personally. Against better judgment, you go out to see them. The Barbarian King speaks and the elder translates.%SPEECH_ON%We are not here to conquer, but to defeat the Great Untoward.%SPEECH_OFF%Suspecting a loss of translation, you ask them to explain. The King and elder continue.%SPEECH_ON%Death has left this land, and in its absence a man slain becomes lost between worlds and will rise again. A horde of Untoward, the Undead, are on the march. We are not here for you or your nobles. If you help us destroy them we will depart the land and trouble your people no more. Only the Untoward.%SPEECH_OFF%%randombrother% leans in and whispers.%SPEECH_ON%We could join them, sure, but we could also just go ahead and attack them now. They\'re clearly not at full strength and whatever they say here the fact is they\'ve been ravaging the lands anyway, because they\'re primitive savages, sir, and raping and pillaging is just what they got in their blood.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -460,7 +460,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AGreaterThreat2",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_136.png[/img]{You spit and nod toward the elder.%SPEECH_ON%We walked past burned homes, raped women, and slain men just to find your sorry lot, and now you want to band together? We ain\'t allies. We ain\'t friends. Tell your so-called \'King\' to pray to whatever shit gods you...%SPEECH_OFF%The elder holds his hand up and talks with the king in their native tongue. The two men nod, turn, and leave. %randombrother% laughs.%SPEECH_ON%Brevity is the soul of scorn, captain.%SPEECH_OFF%You tell the man to get back to the battle line and prepare for the fight ahead.}",
 			Image = "",
 			List = [],
@@ -483,7 +483,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AGreaterThreat3",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_136.png[/img]{You nod toward the elder.%SPEECH_ON%Alright, we\'ll work with you to see to this greater threat.%SPEECH_OFF%The elder smiles and rubs his thumbs together and speaks a few phrases in his native tongue. The Barbarian King slams his chest with his fist and then slugs you in the shoulder with it, before arcing the hand across the sky. Laughing, the elder explains.%SPEECH_ON%So we fight together, but if we shall fall, he will not fight with you as an undead. If slain, the King shall find Death himself and bring his scythe upon his own neck.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -530,7 +530,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AGreaterThreat4",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_73.png[/img]{The savages were not lying: the ancients have put forth an army. It is a warband of decayed faces and rusted armor, a host of groaning, moaning monsters upon which light falls and instantly seeps away. It is surely an army of darkness. Were you or the barbarians to fight it alone you would surely lose, but together you may have a chance yet!}",
 			Image = "",
 			List = [],

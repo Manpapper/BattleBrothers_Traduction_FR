@@ -325,7 +325,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "AttackGhouls",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_69.png[/img]{Crunching. Munching. The snicker-snacker of someone - or something - enjoying a good meal. As you step through the cemetery, you stumble upon a clearing filled with Nachzehrers. They\'re huddled over the remains of what appear to have been the graverobbers you were looking for. The hideous monsters slowly turn to you, their red eyes widening at the sight of fresh meat. | Tombstones fall over as a group of Nachzehrers clamber over them. They appear to have been having something of a feast, a few of them still gnawing on this arm or that leg, presumably the limbs of your supposed graverobbers. | You hear a shrill scream and quickly turn the corner of a mausoleum to find a Nachzehrer driving his teeth into the nape of a man\'s neck. The beast, blood filling his mouth so much as to pour from his nostrils, only glances up at you. Smaller Nachzehrers surround it, stepping forward to see to it that their next meal doesn\'t get away...}",
 			Image = "",
 			List = [],
@@ -361,7 +361,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "AttackUndead",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_57.png[/img]{The cemetery is layered in fog - that or a thick miasma given off by the dead. Wait... that IS the dead! To arms! | You eye a tombstone with a mound of soil unearthed at its base. Blots of mud lead away like a crumb trail. There are no shovels... no men... As you follow the lead, you come across a band of undead moaning and groaning... now staring at you with insatiable hunger... | A man lingers deep in the rows of tombstones. He seems to be wavering, as though ready to pass out. %randombrother% comes to your side and shakes his head.%SPEECH_ON%That\'s no man, sir. There\'s undead afoot.%SPEECH_OFF%Just as he finishes talking, the stranger in the distance slowly turns and there in the light reveals he\'s missing half his face. | You come to find many of the graves are emptied. Not just emptied, but unearthed from below. This is not the work of graverobbers...}",
 			Image = "",
 			List = [],
@@ -379,7 +379,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "MysteriousMap1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_57.png[/img]{You enter the graveyard to find the graverobbers right where %employer% thought they\'d be: knee deep in someone else\'s afterlife. Drawing your sword, you tell them to put down whatever jewelry they think they\'re going to make off with. One of the men stands up, arms raised, and makes his case.%SPEECH_ON%Before you kill us, can I just say something? We have a map... I know, it sounds like a lie, but just hear me out... We have a map that can lead to immense treasures. You let us go, and I\'ll give it to you. Kill us and well... you\'ll never see it. What do you say?%SPEECH_OFF% | Just as %employer% suspected, there are graverobbers trundling about the tombstones. You stop them mid-dig and ask them if they have any last words before they join their victims in the mud. One of the men pleads for mercy, stating he\'s got a treasure map he\'ll exchange for all their lives. | You stumble upon a few men trying to crack open a mausoleum door. Clinking your sword against your boot gets their attention.%SPEECH_ON%Evening gents. %employer% sent me.%SPEECH_OFF%One of the men drops his tools.%SPEECH_ON%Wait just one second! We have a map... yes, a map! And if you spare us, I will give it to you! But only if you spare us! If you don\'t... you\'ll never see that map, understand?%SPEECH_OFF% | You get the jump on the graverobbers, drawing swords as they slam shovels into the earth. One of the men, presumably sensing he\'s about to join the very grave he\'s got one foot already in, bargains with you. Apparently, the men have a map to a mysterious treasure. All you have to do is let them go and they\'ll let you have it. If you kill them, well, the \'map\' is hidden, too, and you\'ll never see sight of it nor the treasures it leads to.}",
 			Image = "",
 			List = [],
@@ -417,7 +417,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "MysteriousMap2",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_57.png[/img]{Maybe %employer% was just trying to kill people after some treasure? That... that makes sense, right? You decide to let the men go in exchange for a map that shows you the way to %treasure_location% %treasure_direction% from here. | %employer% didn\'t say anything about these men having a map... maybe he was trying to erase that knowledge? Who knows. But the temptation of treasure is too much for you and you decide to let the men go in exchange for the information. Their map reveals %treasure_location%. It lies %treasure_direction% from where you stand. | When you were a kid, you used to go on treasure hunts all the time. It\'s... oddly thrilling. You don\'t know why, but the allure of revisiting that old adventure has you letting the men go. In return, they show you the map which reveals %treasure_location%, the location of a hidden cache of... who knows? All you really know is that it is due %treasure_direction% from where you stand.}",
 			Image = "",
 			List = [],
@@ -524,7 +524,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "Necromancer2",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_57.png[/img]{The location is as gruesome as you imagined, an affair with the irreproachable, the acme of profligate putridity. You haven\'t yet spotted the necromancer so it\'d be best if you make your advance most carefully... | %necromancer_location% is right where %employer% said it would be. You find a trail of bones leading the way. Some of them are still ripe with flesh, perhaps half-borne necromantic mistakes that didn\'t quite make it from death to undeath. Ignoring the horrors, you begin planning your attack... | A place like %necromancer_location% is so overgrown with tall grass, weeds, and blackened trees that it needn\'t even have a \'keep out\' sign. But it does anyway. It comes in the form of a skeletonized puzzle, a horror of bones patched together from all manner of man and beast, glaring from a crucifix to ward off any would-be adventurers. Slugs crawl through its eye sockets and arteries of army ants pulsate along its limbs.\n\n %randombrother% walks up, a little perturbed at the sight, and asks how you wish to attack. | First you find a rodent, limbs splayed, each little hand or foot nailed with a pin to a wooden board. Then there\'s the dog, its head replaced by a cat\'s. You swear the monstrosity moved when you approached, but maybe you\'re just seeing things. And then... the people. You\'ve no words to describe what\'s happened to them, but it is a towering wonder of gore, an acme of atrocity.\n\n%randombrother% steps to your side.%SPEECH_ON%Let\'s put an end to this madman.%SPEECH_OFF%Aye, let\'s. The question is, how first to attack?}",
 			Image = "",
 			List = [],

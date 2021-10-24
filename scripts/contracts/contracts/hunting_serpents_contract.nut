@@ -309,7 +309,7 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Lindwurm",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_129.png[/img]You see the first serpent writhing about what looks like a fallen wetland tree. As you gain on the snake, you realize there are a few more sneaking about. And then you realize the tree they\'ve taken to is no tree at all: its girth shifts and rolls over, and you see the scales, fat as your own hand, glisten in the light, and the lindwurm rears its head and turns it round, its sharp eyes focusing with slimming blackness, and then it opens its maw and roars, the wetland water rippling as its growl sears across the surface.",
 			Image = "",
 			List = [],
@@ -331,7 +331,7 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Caravan1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_149.png[/img]{The wetlands are not ordinarily home to caravans, so it of some surprise that you find one with all its guards running about. You at first think they are unloading goods, that perhaps they\'re bandits who have arrived at their secret bolthole, but as you near you see one guard get wrapped up in a curling, murderous snake and fall down. Another guard turns around a serpent\'s maw claps over his head. The merchants are under attack!}",
 			Image = "",
 			List = [],

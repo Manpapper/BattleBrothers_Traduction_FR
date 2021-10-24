@@ -360,7 +360,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Bribe1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_41.png[/img]{While closing in on the caravan, one of the guards spots you and everyone draws their weapons. A man, shouting and running with his hands in the air, asks everyone to put their weapons down. He has a satchel in hand, heavy with %bribe% crowns, and says you can take it if you simply let them go. You wonder aloud why you would take the bribe when you could kill them all and take it anyway. The man shrugs.%SPEECH_ON%Well, it\'d certainly save you the trouble of \'killing\' us, seeing as how we\'re not gonna go down without a fight. Just take it and walk, sellsword.%SPEECH_OFF% | As your men approach the caravan, one of the guards spots you and blows a horn, alarming the rest to your presence. Soon, an entire armed guard stands before you, ready to fight. The head of the wagon train comes through their line, holding his hands up.%SPEECH_ON%Stay your weapons, men! Sellsword, I\'d like to make you an offer. You take this satchel of %bribe% crowns and walk and nobody has to die here.%SPEECH_OFF%You open your mouth to respond, but the man holds a finger up and keeps talking.%SPEECH_ON%Whoa, think carefully, mercenary. You no longer have the drop on us and I hired these men to protect these wagons for good reason - they\'re killers, just like you.%SPEECH_OFF% | With your men on the approach, the destruction of the caravan seems to be at hand. Unfortunately, you watch as one of the mercenaries missteps, sliding his foot on a rolling tree limb that sends him skittering and rolling down a small hillside. The disturbance is loud enough to alert the entire wagon train to your presence and you watch as armed guards stream out to meet you. Their lieutenant runs in between the two war bands, his arms in the air.%SPEECH_ON%Wait. Just wait. Before we commence the killin\' and slaughterin\', let\'s exchange a few words, shall we? I have here %bribe% crowns.%SPEECH_OFF%The man holds up a satchel and waves it toward you.%SPEECH_ON%You take this, walk, and we can all go on our ways. No need for men to be impasses upon one another, right? I\'d say it\'s a mighty fine deal, sellsword, seeing as how you ain\'t got your sneaking ways on your side anymore - it\'s gonna be man against man. So what say you?%SPEECH_OFF% | Just as you think your men are about to begin the assault on the caravan, a guard watching the wagons spots them. He hurries to an alarm bell, sounding it loudly just as %randombrother% caves his skull in. Unfortunately, a great number of the guard\'s compatriots fly out, weapons raised. Their leader is beside them, holding the order back for them to charge.%SPEECH_ON%Ho\', men! Not yet. Let us, perhaps, discuss a less... violent end to this here junction.%SPEECH_OFF%He glances at the stoved in head of the guard.%SPEECH_ON%Well, for the rest of us, anyway. I have here in my hand %bribe% crowns. It\'s yours, ambusher, assassin, whatever you call yourself, if you simply take it and walk. And I\'d suggest you do just that - you no longer have the drop on us and I paid good money for these men to watch my goods, understand?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -386,7 +386,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Bribe2",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_41.png[/img]{As you begin to leave, the caravan leader grabs you by the arm.%SPEECH_ON%Hey, I\'m curious about something, and I bet you got something to scratch that curiosity.%SPEECH_OFF%You angrily retrieve your arm from his grip. He apologizes, but quickly goes into his question.%SPEECH_ON%I\'d like to know just who sent you. How does %bribe2% more crowns sound to make my ears privy to such information?%SPEECH_OFF% | The caravan leader catches you before you can depart.%SPEECH_ON%I\'m wonderin\' something, sellsword, and I know you got the answer for me: who sent you?%SPEECH_OFF%You glance around. He laughs and then slaps you on the shoulder.%SPEECH_ON%Obviously I ain\'t gonna take an answer for free. How does %bribe2% more crowns in that there satchel sound? Just for a few words that shape to be what they call \'a name.\' So how about you give me that name, mercenary.%SPEECH_OFF% | The leader calls out to you before you can leave. He\'s got his arms crossed, his feet mindlessly kicking rocks.%SPEECH_ON%Ya know, I can\'t just let you leave quite yet. There\'s some rather pertinent information I\'d like to learn of and I\'m willing to drop %bribe2% crowns in that satchel there to learn said information.%SPEECH_OFF%You look around, making there isn\'t an ambush waiting for you. Then you turn back to the man and nod.%SPEECH_ON%You want to know who sent me.%SPEECH_OFF%The leader grins and clasps his hands together.%SPEECH_ON%Boy, you are certainly a quick learner! Why, yes! I do!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -423,7 +423,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Bribe3",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_41.png[/img]{You take the extra crowns, sacking them away, and then give the leader the name: %employer%. He bounces it on his tongue like some sort of poisoned nut.%SPEECH_ON%%employer%. %employer%! Yech, that name. %employer%, like some sort of... well, I won\'t bore you with my sudden urge to stoop my language into the pits. I thank you, sellsword, and bid you farewell.%SPEECH_OFF%You nod and make your leave. | Sacking the extra crowns, you tell the leader the word of the day: %employer%. The man laughs upon hearing it and nods repeatedly as though he expected it all along.%SPEECH_ON%You\'ve done good, sellsword. What a day though, right? First you come here to put a sword through me, but a few minutes later and we are leaving on such good terms. Truly you are a man of business. A shame you decided to put that skill behind a blade instead of a pen. Farewell and godspeed.%SPEECH_OFF% | {In for an ounce, in for a pound. | In for an inch, in for a mile.} You take the man\'s offer and spill the beans on %employer%\'s doings. The caravan leader nods solemnly.%SPEECH_ON%You know, we men of business don\'t wield weapons like you do, but trust me, it\'s just as cutthroat. Godspeed, sellsword.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -453,7 +453,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Bribe4",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_41.png[/img]{You tell the man to bugger off. He\'s already gotten lucky enough. The man nods, agreeing, though his narrowed face tells you all you need to know about your rejection. | You shake your head.%SPEECH_ON%I\'ll be letting you go, but I can\'t take it that far. I still need the employment %employer% offers, understand?%SPEECH_OFF%The man nods.%SPEECH_ON%A smart decision, though a poor one for me, obviously. But yes, I understand you, sellsword. May the old gods be with you in your travels. Shall we meet again, I hope it is under better terms!%SPEECH_OFF% | Betraying %employer% probably isn\'t the best of ideas and you tell the man as much. He nods, understanding.%SPEECH_ON%Well, alright then. I can\'t blame you for keeping those cards in your hand, but damned if I wish you\'d have shown them all the same. Godspeed, mercenary.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -471,7 +471,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Swordmaster",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_35.png[/img]{While preparing to assault the caravan, %randombrother% comes to your side and points to one of the men in the wagontrain.%SPEECH_ON%Know who that is?%SPEECH_OFF%You shake your head.%SPEECH_ON%That\'s %swordmaster%.%SPEECH_OFF%Slimming your eyes to get a clearer picture, all you see is an ordinary looking man. The mercenary explains that he\'s a renowned swordmaster who has killed untold numbers of men. He thumbs his nose and spits.%SPEECH_ON%Still want to attack?%SPEECH_OFF% | You glass the caravan with some spectacles and spot a familiar face: %swordmaster%. A man you saw compete in a jousting tournament in %randomtown% a few years back. If you recall correctly, he won with an arm tied behind his back. Anyone who met him off the horses was quickly slain as he displayed expert swordsmanship. This fellow is a dangerous one and should be approached carefully. | Scouting the wagontrain, you see a face that gives you\'ve seen before. %randombrother% joins you, picking his fingernails with a knife.%SPEECH_ON%That\'s %swordmaster%, the swordmaster. He\'s killed twenty men this year.%SPEECH_OFF%A voice barks from behind you.%SPEECH_ON%I heard fifty! Sixty maybe. Forty-five if we\'re being realistic...%SPEECH_OFF%Hmm, it appears there is a most dangerous opponent in that caravan\'s guard...}",
 			Image = "",
 			List = [],
@@ -492,7 +492,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "UndeadSurprise",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_29.png[/img]{Ordering the assault, your men launch across the grass. The caravan guards are already running your way, but they look scared. Behind them follow a throng of garish looking creatures. It\'s safe to say this is going to be the strangest of meetings... | As the %companyname% sprints toward the caravan, weapons drawn, a few men slow down to point out that there\'s an even larger party approaching the wagon train from the other side. Pausing to get a good eye at it, you realize that there is a horde of undead converging on this very spot! | Well, it looks like this won\'t be as easy as you\'d thought: as your men begin the attack on the caravan, %randombrother% spots a horde of ghastly undead approaching from the other side! Undead or soon-to-be-dead, it doesn\'t matter. You\'re here to do what %employer% paid you to do.}",
 			Image = "",
 			List = [],

@@ -256,7 +256,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Negotiations",
-			Text = "[img]gfx/ui/events/event_162.png[/img]{Normally surrounded by contemplative opulence, %employer% is in a whirlwind of advisers and fellow Viziers, each counseling the other with snaps of their fingers and aggressive points on a map. Despite all the frenzy, a small servant threads through the crowd and comes to you with a scroll. He deftly explains that indebted have overtaken their masters in %townname%\'s %location%.%SPEECH_ON%A Crownling\'s services are requested. If you wish to partake in the restoration of normative statuses for all parties involved, and for the betterment of indebted and master alike, please take this here pen and cross an X here on the scroll.%SPEECH_OFF%He stares at you and you at him. He sighs and taps the page.%SPEECH_ON%Your pay, if accepted, here. %reward% crowns.%SPEECH_OFF% | As you approach %employer%\'s rooms, a pair of guards move to stick you with the business ends of their halberds. This elicits shouting and hurried footsteps from down the hall as an interfering servant comes sprinting down.%SPEECH_ON%Guards! These sloppily dressed travelers are Crownlings. Apologies, Crownling, we are on edge for the very reason the Viziers may need your assistance: the indebted have overtaken the %location% in %townname%. The uprising may spread from there.%SPEECH_OFF%The servant produces a scroll and hands it over. It states that there are %reward% crowns awaiting those who squash the revolt of the indebted, and the scroll bears the sigil of %townname%\'s various Viziers. | The Viziers of %townname% are together in their war room and there is more tension than usual in the air. You are gated off from getting anywhere close to them. You\'re not sure how, but large golden bars have been brought down from the ceiling. They talk amongst themselves, nodding now and again, before handing a servant a scroll. You watch as the servant rushes to you. He hands it over, and then repeats its words from memory.%SPEECH_ON%The indebted have overrun their masters and thence taken over the %location%. %reward% crowns are available to dispatch to the coffers of the man or mans who will crush this band of upstarts.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_162.png[/img]{Normally surrounded by contemplative opulence, %employer% is in a whirlwind of advisers and fellow Viziers, each counseling the other with snaps of their fingers and aggressive points on a map. Despite all the frenzy, a small servant threads through the crowd and comes to you with a scroll. He deftly explains that indebted have overtaken their masters in %townname%\'s %location%.%SPEECH_ON%A Crownling\'s services are requested. If you wish to partake in the restoration of normative statuses for all parties involved, and for the betterment of indebted and master alike, please take this here pen and cross an X here on the scroll.%SPEECH_OFF%He stares at you and you at him. He sighs and taps the page.%SPEECH_ON%Your pay, if accepted, here. %reward% crowns.%SPEECH_OFF% | En vous approchant %employer%\'s rooms, a pair of guards move to stick you with the business ends of their halberds. This elicits shouting and hurried footsteps from down the hall as an interfering servant comes sprinting down.%SPEECH_ON%Guards! These sloppily dressed travelers are Crownlings. Apologies, Crownling, we are on edge for the very reason the Viziers may need your assistance: the indebted have overtaken the %location% in %townname%. The uprising may spread from there.%SPEECH_OFF%The servant produces a scroll and hands it over. It states that there are %reward% crowns awaiting those who squash the revolt of the indebted, and the scroll bears the sigil of %townname%\'s various Viziers. | The Viziers of %townname% are together in their war room and there is more tension than usual in the air. You are gated off from getting anywhere close to them. You\'re not sure how, but large golden bars have been brought down from the ceiling. They talk amongst themselves, nodding now and again, before handing a servant a scroll. You watch as the servant rushes to you. He hands it over, and then repeats its words from memory.%SPEECH_ON%The indebted have overrun their masters and thence taken over the %location%. %reward% crowns are available to dispatch to the coffers of the man or mans who will crush this band of upstarts.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
@@ -287,7 +287,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "FightingBack1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_71.png[/img]{The indebted at %location% see you coming and you hope the presence of your weapons will help deter them from continuing whatever freedom seeking they\'ve undertaken. Shockingly, they do not lay down their arms but merely come together to stand against you. They are a crude lot, an arrangement of those whom enforced labor and recruitment has put the number on. | You find the indebted and they stare back with a very clear understanding of why you are there. The arrangement of participants, yourself armed to the teeth, coming by way of town, the indebted, armed with whatever they scavenged, far from their chains. They are a motley, sad assembly, but you know well that whatever they lack in weaponry they more than make up for in desire. A taste of freedom is nothing if not a sharpening effect. | As described, the indebted have taken over the %location% and armed themselves with whatever they could find. Upon seeing you, they hurry to some notion of formation, but they lack training, discipline, food, and much else. What they have, though, is no desire to Retournez à whence they came which can be as sharp and dangerous a steel as any.}",
 			Image = "",
 			List = [],
@@ -337,7 +337,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Outlaws1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_176.png[/img]{You get to the %location% to find it burned to the ground and ransacked. A survivor stumbles out of the blackened ashes of a building. He explains the indebted set themselves upon everyone available, ravishing the women, killing children, stole everything of value and then split off into the hinterland. | The uprising of the indebted has long since departed %location%, leaving behind a wake of destruction and death. A number of survivors stumble about picking up their things. Those who can still speak talk of horrors, the indebted basically setting upon the area like savages, killing, ravishing, robbing. A man with rags over his eyes says he heard them talk about heading into the countryside and splitting up there.%SPEECH_ON%They\'re simple bandits now. Animals who have tasted the blood, for them there is no Retournez à the safety of the chain. They are lost.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -403,7 +403,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Spartacus1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_166.png[/img]{You find the indebted sitting amongst desert rocks and they do not rise to your arrival. Instead, one man comes to you. Despite his powerful build, you sense that he has come to barter, a diplomatic tongue bedded in all his muscle.%SPEECH_ON%Crownling, I figured you would come. My name is %spartacus%, the chosen leader of these freedom seekers, insofar as the open cage is the leader of the bird who wishes to fly. You arrive to us by way of the gilded road, lead by the chain of unseen gold, promises which you cannot guarantee to be kept, and it is upon these forgeries of agreement, these misunderstood arrangements, that you are to come and kill or capture us. Is that so?%SPEECH_OFF%You nod. %spartacus% nods back.%SPEECH_ON%So it is. Before we commit ourselves to our agreements, ourselves to be masters of our own hands, and yourself slave to the mighty crown, let me try and negotiate in a manner which you, Crownling, will find beneficial.%SPEECH_OFF%The man kneels.%SPEECH_ON%I am the scion to a lost family, to a lost heritage, to a lost estate. These people, these men, are my family now. But from my previous life I have something which you may find valuable.%SPEECH_OFF%He holds out a piece of paper.%SPEECH_ON%Let us go and I will write upon this paper here the location of treasures which you cannot find elsewhere. Attack us, and I shall take my family\'s final heirlooms to the grave, and gasp my final breath not in concern with such lost riches, but with to breathe the fierce fire of freedom itself, glistening in my lungs, the pain preferable to the comforts of any chain.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -428,7 +428,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Spartacus2",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_166.png[/img]{You stick your hand out. %spartacus% sticks out his. He speaks.%SPEECH_ON%So it is.%SPEECH_OFF%He holds up a pencil made of rock and some black powdery rock at its tip. He points at a far away stone.%SPEECH_ON%As we leave, I will write the location of my family\'s heirlooms there. Now I see upon your face the question of whether I am lying or not. Such uncertainty is the price of freedom, no? To be unsure of where you go, but to do so of your own mind. That is true freedom. The comfort of the cage is for birds who do not wish to fly, Crownling. May your travels upon the gilded road be as fruitful as our first steps.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -489,7 +489,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Spartacus3",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_166.png[/img]{%spartacus% sticks his hand out, but you do not stick out yours. Instead, you draw your sword. The rebellion\'s leader nods.%SPEECH_ON%Alright. You are forbidden to leave the cage of the crown, I see, and you are bidden to the glistening of the gilded road, so urgent your enslavement, so captured, that when the gate is open you do not open your wings, instead you settle for a mere hop to the master\'s finger. May battle treat us well, Crownling.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -539,7 +539,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Fleeing1",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_59.png[/img]{You find a pile of rankled shackles which are hot to the touch. An old man points his hand north.%SPEECH_ON%The freed men went that way.%SPEECH_OFF%Curious, you ask him why he\'d rat out the indebted. He smiles.%SPEECH_ON%I\'ve work that needs finishing and sometimes the Viziers lend me a few. Hard to get a good task done with just my own two hands.%SPEECH_OFF% | You come across a long trail of sand and dirt and scrub which has clearly suffered northbound disturbances. Amongst the littered path you find a shackle, the last bit of evidence needed. The indebted have turned in north and you\'ll have to hunt them down. | You find a shackle flailing from the bush of desert scrub. An old man sipping water from a mug grunts and points northward.%SPEECH_ON%The indebted rabbited that way. If you manage to gather them back to the Vizier, perhaps put in a good word for me. I could use a man or two around here to fetch water. No freedmen ever fetches me water.%SPEECH_OFF%You\'ll not be putting in a word for nobody, but thank him anyway and head north.}",
 			Image = "",
 			List = [],
@@ -599,7 +599,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Fleeing2",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_59.png[/img]{You finally catch up to the indebted. They\'re rough roaders by now, the bleak terrain which they have crossed having left its own marks upon them as they have upon it. But they\'ve not come this far to just to give up: the whole lot arm themselves at the very sight of you and make their own approach. | The indebted are found in a desperate state, insofar as the journey has given them free breath, they\'ve paid for it with mind and body alike. The sunburned, beleaguered and ragged men approach with eyes both wide and weary. You know by the wild stares that they\'ve no quit left in them. They\'ll be fighting it out on way or another.}",
 			Image = "",
 			List = [],

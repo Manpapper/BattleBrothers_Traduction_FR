@@ -319,12 +319,12 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "OldArmor",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_123.png[/img]{With the webknechts dispatched you have the company briefly search the creatures\' nest, though the mercenaries are ordered to never wander alone. You muck about as well, %randombrother% at your side. Together, you spot a tree that\'s remarkably untouched by the webs. As you circle around, you find a knight\'s corpse leaning against its trunk. His hand rests atop a broken sword\'s pommel, the other hand is missing altogether, nothing but sleeve at the wrist with the mutilated arm couched at his belly. The corpse rests in a nest of its own making, a thicket of what look like spoiled rhubarb stalks and decayed carapaces, the broken bodies caverned and smelling of poison. %randombrother% nods.%SPEECH_ON%That\'s a right shame. I\'d wager he would have made a sound addition to the %companyname%, whoever he was.%SPEECH_OFF%Indeed, it has all the look of a great fighter\'s end. You\'ve mind to bury him, but you\'ve no time. You tell %randombrother% to fetch what he can from the corpse and to ready a Retournez à %employer%.}",
+			Text = "[img]gfx/ui/events/event_123.png[/img]{Une fois les webknechts éliminés, vous demandez à la compagnie de fouiller brièvement le nid des créatures, bien que les mercenaires aient reçu l'ordre de ne jamais se promener seuls. Vous vous ne perdez pas de temps et rentrer dans le nid, %randombrother% à vos côtés. Ensemble, vous repérez un arbre qui est remarquablement épargné par les toiles. En faisant le tour, vous trouvez le cadavre d'un chevalier appuyé contre son tronc. Sa main repose sur le pommeau d'une épée brisée, l'autre main est complètement absente, rien d'autre qu'une manche au poignet, le bras mutilé étant posé sur son ventre. Le cadavre repose dans un nid de sa propre fabrication, un bosquet de ce qui ressemble à des tiges de rhubarbe gâtées et des carapaces décomposées, les corps brisés sont caverneux et sentent le poison. %randombrother% acquiesce.%SPEECH_ON%C'est vraiment dommage. Je parie qu'il aurait fait un bon ajout à %companyname%, qui qu'il soit.%SPEECH_OFF%En effet, cela ressemble à la fin d'un grand combattant. Vous avez envie de l'enterrer, mais vous n'avez pas le temps. Vous dites à %randombrother% de récupérer ce qu'il peut sur le cadavre et de se préparer pour retourner à %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Back to %townname%!",
+					Text = "Retour à %townname%!",
 					function getResult()
 					{
 						return 0;
@@ -350,7 +350,7 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain a " + item.getName()
+					text = "Vous avez reçu " + item.getName()
 				});
 			}
 
@@ -358,13 +358,13 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Survivor",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_123.png[/img]{The battle over, you find a man dangling by webbing attached to his feet. Half of his body is bound in the filaments and more dangle from his hip like a shredded dress. Seems the spiders deserted him upon the %companyname%\'s arrival. He smiles at the sight of you.%SPEECH_ON%Hey there. Mercenaries ain\'t ya? Yeah I see it. You\'ve no mind being here lest it was coin that brought ya, and you fought like bastards that\'d been bet on. Absolute savages.%SPEECH_OFF%You ask the man what you\'ll get for cutting him down. He turns his head up, his whole body then starting to swing about and at times twist him away from you entirely. He speaks, either to you or to whichever direction he\'s facing.%SPEECH_ON%Aye, good question! Well, you may not see it here and now, but I\'m a sellsword m\'self, and wouldn\'t you know that my company and its captain all been done stringed up and consumed whole by them spiders! Cut me down and I\'ve nowhere else better to go then your company. That is, if you\'d have me.%SPEECH_OFF%You have the man cut free and debate what to do before returning to %employer%.}",
+			Text = "[img]gfx/ui/events/event_123.png[/img]{La bataille terminée, vous trouvez un homme suspendu par des sangles attachées à ses pieds. La moitié de son corps est liée aux filaments et d'autres pendent de sa hanche comme une robe déchirée. Il semble que les araignées l'aient abandonné à l'arrivée de %companyname%. Il sourit en vous voyant.%SPEECH_ON%Hé là. Des mercenaires, c'est ça ? Ouais, je peux le voir. Vous ne vous souciez pas d'être ici, c'est l'argent qui vous a amené, et vous vous êtes battus comme des bâtards sur lesquels on avait parié. Des sauvages absolus.%SPEECH_OFF%Vous demandez à l'homme ce que vous obtiendrez pour le faire descendre. Il tourne la tête vers le haut, son corps entier commençant alors à se balancer et parfois à s'éloigner complètement de vous. Il parle, soit à vous, soit à quelque direction qu'il regarde.%SPEECH_ON%Oui, bonne question ! Eh bien, vous ne le voyez peut-être pas ici et maintenant, mais je suis un mercenaire moi-même, et vous ne savez pas que ma compagnie et son capitaine ont tous été pendus et entièrement dévorés par ces araignées ! Si vous me sauvez, je n'aurai pas d'autre endroit où aller que votre compagnie. Enfin, si vous voulez de moi.%SPEECH_OFF%Vous faites libérer l'homme et débattez de ce qu'il doit faire avant de retourner chez %employer%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome to the company!",
+					Text = "Bienvenue dans la compagnie !",
 					function getResult()
 					{
 						this.World.getPlayerRoster().add(this.Contract.m.Dude);
@@ -376,7 +376,7 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "You\'ll have to find your luck elsewhere.",
+					Text = "Tu vas devoir trouver ta chance ailleurs.",
 					function getResult()
 					{
 						this.World.getTemporaryRoster().clear();
@@ -400,10 +400,10 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 					this.Contract.m.Dude.getSkills().add(this.new("scripts/skills/traits/fear_beasts_trait"));
 				}
 
-				this.Contract.m.Dude.getBackground().m.RawDescription = "You found %name% dangling from a tree, the sellsword the last survivor of a mercenary band sent to kill webknechts. He joined the company after you rescued him.";
+				this.Contract.m.Dude.getBackground().m.RawDescription = "Vous avez trouvé %name% pendu à un arbre, le mercenaire, dernier survivant d'une bande de mercenaires envoyée pour tuer des webknechts. Il a rejoint la compagnie après que vous l'ayez sauvé.";
 				this.Contract.m.Dude.getBackground().buildDescription(true);
-				this.Contract.m.Dude.worsenMood(0.5, "Lost his previous company to webknechts");
-				this.Contract.m.Dude.worsenMood(0.5, "Almost consumed alive by webknechts");
+				this.Contract.m.Dude.worsenMood(0.5, "Il a perdu son ancienne compagnie aux Webknechts");
+				this.Contract.m.Dude.worsenMood(0.5, "Presque dévoré vivant par des webknechts");
 
 				if (this.Contract.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand) != null)
 				{
@@ -432,14 +432,14 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_85.png[/img]{%employer% meets you at the town entrance and there\'s a crowd of folks beside him. He welcomes you warmly, stating he had a scout following you who saw the whole battle unfold. After he hands you your reward, the townsfolk come forward one by one, many of them reluctant to stare a sellsword in the eyes, but they offer a few gifts as thanks for relieving them of the webknecht horrors. | You have to track down %employer%, ultimately finding the man in a stable livery with a peasant girl. He saws upward from the hay, startling the horses which whinny and stamp their feet. Half-dressed, the man states he already has your pay and forks it over. Eyeing you eyeing the girl, he then starts to grab whatever\'s in reach, including from the saddlebags of stabled mounts, and hands them over.%SPEECH_ON%The, uh, townsfolk also sought to pitch in. You know, as thanks.%SPEECH_OFF%Right. For further \'thanks\' you ask if he\'ll give you whatever\'s in a nearby satchel. | %employer% welcomes you back with a great clap and rub of his hands, as though you\'d just brought in a turkey and not the horrifying evidence of your victory. After paying you the agreed reward, you hear some surprising news. The mayor states that the estate of a lost townsman could not be properly divvied up and, as further thanks, you\'re free to take what\'s left of it.}",
+			Text = "[img]gfx/ui/events/event_85.png[/img]{%employer% vous rencontre à l'entrée de la ville et il y a une foule de gens à ses côtés. Il vous accueille chaleureusement, précisant qu'un éclaireur qui vous suivait a vu toute la bataille se dérouler. Après qu'il vous ait remis votre récompense, les habitants de la ville s'avancent un par un, beaucoup d'entre eux hésitant à regarder un mercenaire dans les yeux, mais ils offrent quelques cadeaux en remerciement de les avoir soulagés des horreurs qu'étaient les webknechts. | Vous devez retrouver %employer%, pour finalement trouver l'homme dans une écurie ayant une affaire avec une paysanne. Il se fraye un chemin dans le foin, faisant sursauter les chevaux qui hennissent et tapent du pied. À moitié habillé, l'homme déclare qu'il a déjà votre salaire et vous le donne. En vous regardant regarder la fille, il commence à prendre tout ce qui lui tombe sous la main, y compris les sacoches des chevaux à l'écurie, et les lui donne.%SPEECH_ON%Les, euh, habitants de la ville ont aussi cherché à participer. Vous savez, en guise de remerciement.%SPEECH_OFF%Bien. Pour vous remercier, vous lui demandez s'il peut vous donner ce qu'il y a dans une sacoche à proximité. | %employer% vous accueille en vous applaudissant et en se frottant les mains, comme si vous veniez apporter une dinde et non la preuve effrayante de votre victoire. Après vous avoir payé la récompense convenue, vous entendez des nouvelles surprenantes. Le maire déclare que les biens d'un citadin disparu n'ont pas pu être partagés convenablement et, en guise de remerciement, vous êtes libre de prendre ce qu'il en reste.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "A successful hunt.",
+					Text = "Une chasse réussie.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
@@ -456,7 +456,7 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
 				});
 				local food;
 				local r = this.Math.rand(1, 3);
@@ -478,7 +478,7 @@ this.hunting_webknechts_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain " + food.getName()
+					text = "Vous recevez " + food.getName()
 				});
 				this.Contract.m.SituationID = this.Contract.resolveSituation(this.Contract.m.SituationID, this.Contract.m.Home, this.List);
 			}

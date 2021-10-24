@@ -498,7 +498,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Attacking",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{The southerners have posted themselves in and around %holysite%. With time on their side, they\'ve erected a sturdy defense, but nothing the %companyname% can\'t handle. You draw out your sword and prepare your men for the attack.}",
 			Image = "",
 			List = [],

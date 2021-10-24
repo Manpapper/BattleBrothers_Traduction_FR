@@ -439,7 +439,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "InterceptParty",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_156.png[/img]{The southerners appear as though in geographic transition, half-dressed in their own clothes and that of northern garb, while also laden with chests of pillaged loot. One man playfully twirls around in a northern wedding dress. It would seem a friendly party on approach were they not also covered in blood and ash. To battle! | You find the raiding party of northbound southerners. Judging by the blood on them, you wager they\'ve already paved a road of chaos through the homesteaders in the hinterland. To battle!}",
 			Image = "",
 			List = [],
@@ -507,7 +507,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Assassins",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_165.png[/img]{You find a farmer dead in the road with a curved dagger in his back. Nobody leaves a dagger that nice behind, and just as you suspect his murderers are still here: a group of southern assassins. They shift around like shades, and their sharpened steel blade glint with every twist and turn. To battle! | A woman hurriedly rushes to you, her shredded dress flailing, arms swaying, eyes wide, the whites of them pitted in a sea of red blood like shells on a crimson beach. Before she can say a word she grunts and drops to the ground in an instant. A dagger is in the back of her skull, and further behind her a man in black stands with a company of assassins!}",
 			Image = "",
 			List = [],
@@ -529,7 +529,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Slavers",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_53.png[/img]{The southern raiding party looks a collective of all the world\'s men. It is upon closer inspection that you realize it is because they are slavers! The mishmash of masters and slaves moves on the %companyname%, a flailing formation of trained and untrained alike. You can see that there are northern faces amongst the crowd, but sadly they are a broken lot and will sooner raise arms against the company than fight for freedom. | You come across the southerners, but they are not raiders at all - they are slavers! They\'ve carts of women and children, and upon your discovering them the slavers hurriedly start decapitating any recently enslaved man who poses a threat while the rest of the group charges the %companyname%. With carnage in the air, you bear down on the group with impunity!}",
 			Image = "",
 			List = [],

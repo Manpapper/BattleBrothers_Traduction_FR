@@ -452,7 +452,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Arrive",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_167.png[/img]{The fortress is both familiar and unusual. Despite being broken apart and sliding into piles of rubble, you can\'t help but get a sense of eminence in its walls. Further inside, about the dilapidated armories and abandoned mess halls, there are more cursory constructs: hastily erected defenses, signs of last stands made far away from where they should be. There is no telling what happened here, or even when, but for now it will serve as the %companyname%\'s temporary home.\n\n You walk to the crenelated walls and look out. It seems you have taken the position just in time: the northerners are already on the approach, a line of silhouettes marching just over the horizon like ants to their hill. | The fortress being a lost vestige of an ancient empire seems right: its constructs are as familiar as they are alien. You understand what walls are for, but you\'re not sure what to make of some of the symbols carved into them. Even the architecture of some of the rooms, the way the corners sweep in incredible bricked swirls, is not like anything you\'ve seen. You\'re not sure if there is some tactical advantage there or perhaps its builders intended the designs to be of other import.\n\nBut there is no time to dally on the matter of its history, you\'re here to simply use it as a chokepoint. And it seems the time is at hand: a wave of northerners is crashing over the horizon and charging directly for you!}",
 			Image = "",
 			List = [],

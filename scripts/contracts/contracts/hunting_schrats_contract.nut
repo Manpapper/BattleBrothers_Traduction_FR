@@ -282,7 +282,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Encounter",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_107.png[/img]{While standing around getting a lay of the land, %randombrother% calls out that there\'s something moving in the distance. As you come to his side, he points a finger into the foliage and draws his sword. A great tree is marching toward you, shambling from side to side like an old man in a library\'s familiar corridors. You draw your own sword and order the men into formation. | %randombrother% is sitting on a fallen tree when he suddenly jumps up yelling and grabbing his weapon. You look over to see the tree itself rising up into the air, clumps of earth raining below and a great wet ditch left as though it had bedded there for eons. It leans against its healthier brethren like a drunkard would into a friend\'s shoulder. Slowly, it twists its body around, a pair of green eyes flared from somewhere deep in its trunk, and its sharp branches wheel around with it, splayed wide with their shadows falling over the company like a web. You grab your sword and order the men into formation.}",
 			Image = "",
 			List = [],
@@ -300,7 +300,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Direwolves",
-			Title = "As you approach...",
+			Title = "En vous approchant...",
 			Text = "[img]gfx/ui/events/event_118.png[/img]{You spot pairs of green eyes glowing in the distance. No doubt a sight of the schrats themselves, and so you order your men to clamber toward them quietly.\n\nCresting a hill you find the trunk of one tree is surrounded by direwolves. They\'re crouched beneath it like knights swearing fealty. Your arrival has not gone unnoticed as the schrat leans forward with a seemingly ancient crooning. The creatures at its roots growl and turn as though commanded. You\'re not sure what to make of such arboreal allegiance, but the %companyname% will break them all the same.}",
 			Image = "",
 			List = [],

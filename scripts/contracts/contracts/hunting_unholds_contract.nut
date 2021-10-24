@@ -13,7 +13,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.hunting_unholds";
-		this.m.Name = "Hunting Giants";
+		this.m.Name = "Chassez des Géeants";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -94,7 +94,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 					party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Beasts).spawnEntity(tile, "Unholds", false, this.Const.World.Spawn.Unhold, 100 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				}
 
-				party.setDescription("One or more lumbering giants.");
+				party.setDescription("Un ou plusieurs géants imposants.");
 				party.setFootprintType(this.Const.World.FootprintsType.Unholds);
 				party.setAttackableByAI(false);
 				party.setFootprintSizeOverride(0.75);
@@ -232,14 +232,14 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Negotiations",
-			Text = "[img]gfx/ui/events/event_79.png[/img]{When you enter %employer%\'s room you find the man stooped beside his window, looking out it with nearly conspiratorial flinching. His eyes slim and open wide and slim again. He snaps a curtain over the window and jerks his head to look at you.%SPEECH_ON%You didn\'t happen to see a very angry woman heading my way, did you? Ah, nevermind it. Look at this.%SPEECH_OFF%He tosses you a scroll which you unfurl. There\'s a crude drawing of what looks like a man hunched over an ant or some insect. You can\'t really tell. %employer% claps his hands.%SPEECH_ON%Local farmers are reporting missing livestock. All they found were footprints large enough for a man to lay a coffin in. Sounds like hearsay and rumormongering to me, could be rivals trying to hide their misdoings, but I\'ll leave you to it. Search the surrounding lands and see what you find. If you come upon an actual giant I think you know what do.%SPEECH_OFF% | You find %employer% sitting at his desk and seemingly in congress with half the village\'s farmers. They\'re hunched over scrolls and streaking lead prints over the papers, drawing up what look like giants or fat men with horns. One man is doodling a stick figure farking another stick figure. %employer% throws you a more prescient page upon which is the visage of a monster.%SPEECH_ON%These fine gentlemen tell me that a giant is afoot. I do not wish to doubt the concerns of my peers and so I request your services, sellsword. The money\'s on the table, all you need to do is search the area round %townname% and find this beast. What say you?%SPEECH_OFF% | You find %employer% staving off a throng of peasants. They\'ve entered his room with pitchforks and unlit torches, which he must constantly warn them not to light given the all-wood architecture. Seeing you, %employer% calls out like a drowning man yelling for a raft.%SPEECH_ON%Sellsword! By the gods get over here. These fine folks state that there is a beast afoot.%SPEECH_OFF%One of the peasants stomps his pitchfork into the ground.%SPEECH_ON%Naw, no ordinary beast, but a monster ya? A giant! A biggun. A big ol\' giant. Out there. Right out that way. I seen it.%SPEECH_OFF%With a sigh and a nod, %employer% butts back in.%SPEECH_ON%Right. So, I\'m willing to offer you payment to seek this giant out. Are you up to the task?%SPEECH_OFF% | %employer% is at his desk with his head in his hands. He\'s mumbling to himself.%SPEECH_ON%Monster this, beast that. \'Oh my chicken got taken\', oh maybe you should consider putting it in a pen you damned piece of - oh hi sellsword!%SPEECH_OFF%The man rises from his chair and throws you a piece of paper. There\'s a crude drawing of a large headed beast on it.%SPEECH_ON%Folks are reporting there\'s a giant roaming autour dese parts. I\'ll pay good money to see these reports investigated properly, and of course good money to see the beast slain properly as well. Are you up for it? Please say yes.%SPEECH_OFF% | %employer% reluctantly welcomes you into his room, pretending that he doesn\'t need your help, thought it\'s clear he\'d rather not want it at all.%SPEECH_ON%Ah, mercenary. It\'s not often a place such as %townname% would seek out men of your ilk, but I\'m afraid there have been sightings of unholds scouring these lands, stealing enough livestock that the townsfolk have put in the coin to fetch a man such as yourself. Are you interested in hunting down this foul creature?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_79.png[/img]{Lorsque vous entrez dans la chambre de %employer%, vous trouvez l'homme accroupi près de sa fenêtre, regardant par celle-ci avec un regard presque conspirateur. Ses yeux s'amincissent, s'ouvrent largement et s'amincissent à nouveau. Il fait claquer un rideau sur la fenêtre et secoue la tête pour vous regarder.%SPEECH_ON%Vous n'avez pas vu par hasard une femme très en colère se diriger vers moi, n'est-ce pas ? Ah, laissez tomber. Regardez ça.%SPEECH_OFF%Il vous lance un parchemin que vous dépliez. Il y a un dessin grossier de ce qui ressemble à un homme penché sur une fourmi ou un insecte quelconque. Vous ne pouvez pas vraiment dire. %employer% frappe dans ses mains.%SPEECH_ON%Les agriculteurs locaux signalent la disparition du bétail. Ils n'ont trouvé que des empreintes de pas assez grandes pour qu'un homme y dépose un cercueil. Ça ressemble à des ouï-dire et des rumeurs, ça pourrait être des rivaux qui essaient de cacher leurs méfaits, mais je vous laisse vous débrouiller. Fouillez les terres environnantes et voyez ce que vous trouvez. Si vous tombez sur un vrai géant, je pense que vous savez quoi faire.%SPEECH_OFF% | Vous trouvez %employer% assis à son bureau et apparemment en congrès avec la moitié des fermiers du village. Ils sont penchés sur des parchemins et laissent des traces de plomb sur les papiers, dessinant ce qui ressemble à des géants ou des gros hommes avec des cornes. Un homme gribouille un bonhomme de bois qui baise un autre bonhomme de bois. %employer% vous lance une page plus prémonitoire sur laquelle se trouve le visage d'un monstre.%SPEECH_ON%Ces messieurs me disent qu'un géant se cache. Je ne souhaite pas mettre en doute les inquiétudes de mes pairs et je demande donc vos services, mercenaire. L'argent est sur la table, tout ce que vous avez à faire est de fouiller les environs de %townname% et de trouver cette bête. Qu'en dites-vous ?%SPEECH_OFF% | Vous trouvez %employer% en train de repousser une foule de paysans. Ils sont entrés dans sa chambre avec des fourches et des torches non allumées, qu'il doit constamment les avertir de ne pas allumer étant donné l'architecture tout en bois. En vous voyant, %employer% vous appelle comme un homme qui se noie et réclame un radeau.%SPEECH_ON%Mercenaire ! Par les dieux, venez ici. Ces braves gens déclarent qu'il y a une bête en liberté.%SPEECH_OFF%Un des paysans plante sa fourche dans le sol.%SPEECH_ON%Non, pas une bête ordinaire, mais un monstre, hein ? Un géant ! Un gros. Un bon gros géant. Là-bas. Dans cette direction. Je l'ai vu.%SPEECH_OFF%Avec un soupir et un hochement de tête, %employer% revient à la charge.%SPEECH_ON%Bien. Donc, je suis prêt à vous offrir une rémunération pour rechercher ce géant. Etes-vous prêt pour cette tâche ?%SPEECH_OFF% | %employer% est à son bureau, la tête entre les mains. Il se marmonne à lui-même. %SPEECH_ON%Monstre par-ci, bête par-là. \"Oh mon poulet s'est fait prendre\", oh peut-être que tu devrais penser à le mettre dans un stylo, espèce mer - oh salut mercenaire !%SPEECH_OFF%L'homme se lève de sa chaise et vous lance un morceau de papier. Il y a un dessin grossier d'une grande bête dessus.%SPEECH_ON%Les gens disent qu'il y a un géant qui erre autour de ces régions. Je paierai cher pour que ces rapports soient examinés comme il se doit, et bien sûr pour que la bête soit abattue comme il se doit. Êtes-vous partant ? Dites oui, s'il vous plaît.%SPEECH_OFF% | %employer% vous accueille à contrecœur dans sa chambre, prétendant qu'il n'a pas besoin de votre aide, alors qu'il est clair qu'il préférerait ne pas en avoir besoin du tout.%SPEECH_ON%Ah, un mercenaire. Ce n'est pas souvent qu'un endroit comme %townname% recherche des hommes de votre trempe, mais j'ai bien peur qu'il y ait eu des apparitions d'unholds parcourant ces terres, volant suffisamment de bétail pour que les habitants de la ville mettent la main à la poche pour aller chercher un homme tel que vous. Êtes-vous intéressé à chasser cette créature immonde ?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Fighting giants won\'t come cheap. | The %companyname% can help for the right price. | Let\'s talk crowns.}",
+					Text = "{Combattre des géants n'est pas donné. | %companyname% peut aider pour le bon prix. | Parlons couronnes.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -247,7 +247,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | This won\'t be worth the risk.}",
+					Text = "{Ça ne ressemble pas à notre genre de travail. | Ça n'en vaut pas le coup.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -264,12 +264,12 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Banter",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{%randombrother% returns from his reconnoiter. He reports that a nearby farm has been destroyed, a hole blown through its roof likened to someone kicking an ant pile. You ask if there are survivors. He nods.%SPEECH_ON%Of a sort. A young lad who refuses to speak a word. A woman who kept yelling at me to git. That aside, no. They\'re survivors by circumstance and good luck. This world won\'t permit them being here much longer.%SPEECH_OFF%You tell the sellsword to keep the judgments to himself and get the company moving forward again. | You find a half a cow beside the path. It has not been butchered so much as pulled apart unevenly and with great violence. Much of its innards have slopped to the ground in a pile. Footprints the size of graves lead away. The trail of carnage goes through a fence which lays sundered and further down the way you can see the wreckage of a barn. %randombrother% laughs.%SPEECH_ON%All we\'re missing is a giant pile of shit.%SPEECH_OFF%You tell him to check his boot. | A few peasants on the road warn you off.%SPEECH_ON%Get on out of here! That armor won\'t save you from a single lick!%SPEECH_OFF%You ask them about the unhold and they garner up a great description of a monstrous giant which tore through the land not long ago. It appears you\'re on the right track. | The unhold has left a giant mess in its wake. Stomped livestock, others broke apart and slurped like honeysuckles. Chickens mill about pecking the ground, a farmer keeping watch of them. He nods.%SPEECH_ON%Just missed the show.%SPEECH_OFF%Looks like you\'re getting close.}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{%randombrother% revient de sa reconnaissance. Il rapporte qu'une ferme voisine a été détruite, un trou ayant traversé son toit, comme si on avait donné un coup de pied dans une fourmilière. Vous demandez s'il y a des survivants. Il acquiesce.%SPEECH_ON%En quelque sorte. Un jeune garçon qui refuse de dire un mot. Une femme qui n'arrêtait pas de me crier d'aller me faire voir. Cela mis à part, non. Ce sont des survivants par circonstance et par chance. Ce monde ne leur permettra pas de rester ici bien longtemps.%SPEECH_OFF%Vous dites au mercenaire de garder les jugements pour lui et de remettre la compagnie sur les rails. | Vous trouvez une demi-vache au bord du chemin. Elle n'a pas été dépecée, mais plutôt déchirée de manière inégale et avec une grande violence. La plupart de ses entrailles ont été jetées au sol en un tas. Des empreintes de la taille d'une tombe s'éloignent. La piste du carnage passe par une clôture qui a été coupée et, plus loin, on peut voir les restes d'une grange. %randombrother% rit.%SPEECH_ON%Tout ce qui nous manque, c'est un énorme tas de merde.%SPEECH_OFF%Vous lui dites de vérifier sa botte. | Quelques paysans sur la route vous mettent en garde.%SPEECH_ON%Partez d'ici ! Cette armure ne vous protégera pas d'un seul coup !%SPEECH_OFF%Vous les interrogez sur l'unhold et ils vous donnent une excellente description d'un géant monstrueux qui a déchiré la terre il n'y a pas longtemps. Il semble que vous êtes sur la bonne voie. | L'unhold a laissé un désordre géant dans son sillage. Le bétail a été piétiné, d'autres ont été brisés et ont été vidés. Les poulets picorent le sol, un fermier les surveille. Il hoche la tête.%SPEECH_ON%Vous avez ratez le spectacle.%SPEECH_OFF%On dirait que vous vous rapprochez.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "They can\'t be far.",
+					Text = "Ils ne peuvent pas être loin.",
 					function getResult()
 					{
 						return 0;
@@ -280,13 +280,13 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Encounter",
-			Title = "As you approach...",
-			Text = "[img]gfx/ui/events/event_104.png[/img]{The unholds in part remind you of any group of laborers, circled around a dead fire, rubbing their bellies and looking like boulders there hunched on the ground. Of course, your arrival brings them to their feet and destroys any notion that you\'ve anything resembling them at all, except maybe similarly sized third legs. The beasts growl and stomp, but they do not attack. They throw their hands out and try and shoo you away. But the %companyname% didn\'t come this far to quit. You draw your sword and lead the men forward. | Each unhold is enormous beyond measure. They\'re bewildered at the ants come to do battle with them. One scratches his head and blithely belches, freckling the company with bovine blood. They seem to recognize the steel of your drawn sword, though, and the flash of it wakes them from their satiated slumbers. After earthshaking stomps of their feet, they stride forward to run you from the land or into it. | The %companyname% stacked from leg to head still would not size up to a single unhold. Yet here you stand, waving a sword and ready to combat the tremendous monsters. They regard you with incredulous stares, not quite sure what to make of these tiny creatures so willing to confront them. One scratches his belly and flakes of molted skin the size of dogs come twirling down. Well, there\'s no point dwelling on it any longer. You order the company forward! | The unhold sniff you out and come charging across the land to meet the %companyname%. They look like toddlers the size of mountains, legs awkwardly trundling forward yet each step sends tremors through the earth, their maws agape and slobbering for a meal. You calmly draw out your sword and put the men into formation.}",
+			Title = "En vous approchant...",
+			Text = "[img]gfx/ui/events/event_104.png[/img]{Les unholds vous rappellent en partie n'importe quel groupe d'ouvriers, encerclés autour d'un feu mort, se frottant le ventre et ressemblant à des blocs de pierre là, courbés sur le sol. Bien sûr, votre arrivée les fait se lever et détruit toute idée que vous pourriez leur ressembler, à part peut-être des troisièmes jambes de taille similaire. Les bêtes grognent et piétinent, mais elles n'attaquent pas. Elles jettent leurs mains en l'air et essaient de vous faire fuir. Mais %companyname% n'est pas venu jusqu'ici pour abandonner. Vous tirez votre épée et faites avancer vos hommes. | Chaque Unhold est énorme, au-delà de toute mesure. Ils sont déconcertés par les fourmis qui viennent se battre avec eux. L'un d'eux se gratte la tête et rote allègrement, tachant la compagnie de sang bovin. Ils semblent cependant reconnaître l'acier de votre épée dégainée, et la lumière de celle-ci les réveille de leur sommeil réparateur. Après avoir fait trembler leurs pieds, ils s'avancent pour vous chasser de la terre ou pour y pénétrer. | Les hommes de %companyname% empilé les uns sur les autres n'atteindraient toujours pas la taille d'un seul unhold. Pourtant, vous êtes là, brandissant une épée et prêt à combattre les énormes monstres. Ils vous regardent d'un air incrédule, ne sachant pas trop quoi penser de ces minuscules créatures si disposées à les affronter. L'un d'eux se gratte le ventre et des flocons de peau mue de la taille d'un chien descendent en tournoyant. Bon, ça ne sert à rien de s'attarder plus longtemps. Vous ordonnez à la compagnie d'avancer ! | Les unhold vous reniflent et traversent le pays à la rencontre de %companyname%. Ils ressemblent à des bambins de la taille d'une montagne, les jambes avançant maladroitement, mais chaque pas fait trembler la terre, et leurs gueules sont ouvertes et bavent pour un repas. Vous dégainez calmement votre épée et mettez les hommes en formation.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Charge!",
+					Text = "Chargez !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onTargetAttacked(this.Contract.m.Target, this.Contract.m.IsPlayerAttacking);
@@ -298,14 +298,14 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "DriveThemOff",
-			Title = "As you approach...",
-			Text = "[img]gfx/ui/events/event_104.png[/img]{As you put the men into formation, %shouter% goes running by you and right toward the unholds. He\'s hooting and hollering, his arms flailing like a sea cretin drawn up by the hook. The unholds pause and stare amongst one another. You\'re not sure whether this should be allowed to continue...}",
+			Title = "En vous approchant...",
+			Text = "[img]gfx/ui/events/event_104.png[/img]{Alors que vous mettez les hommes en formation, %shouter% passe en courant devant vous et se dirige vers les unholds. Il hulule et hurle, les bras ballants comme un crétin des mers tiré par l'hameçon. Les unholds font une pause et se fixent les uns les autres. Vous n'êtes pas sûrs que cela doive continuer...}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Attack them!",
+					Text = "Attaquez-les !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onTargetAttacked(this.Contract.m.Target, this.Contract.m.IsPlayerAttacking);
@@ -314,7 +314,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "%shouter% knows what he\'s doing.",
+					Text = "%shouter% sait ce qu'il fait.",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 35)
@@ -337,14 +337,14 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "DriveThemOffSuccess",
-			Title = "As you approach...",
-			Text = "[img]gfx/ui/events/event_104.png[/img]{Against better judgment, you let %shouter% go. He doesn\'t stop for nothing, like he was chasing down a throng of beautiful women undressing just for him. Shockingly, the unholds take a step back. They start to retreat one by one until only a lone giant remains.\n\n%shouter% runs up to its feet like a yapping dog and lets forth some atavistic scream so hoarsely made that you wonder if every ancestor of the earth buried or otherwise had heard it. The unhold slings an arm before its face as though to shield it, then starts stepping back, further and further until it\'s gone! They\'re all gone!}",
+			Title = "En vous approchant...",
+			Text = "[img]gfx/ui/events/event_104.png[/img]{Contre tout jugement, vous laissez faire %shouter%. Il ne s'arrête pas, comme s'il poursuivait une foule de belles femmes qui se déshabillent juste pour lui. De manière choquante, les Unholds font un pas en arrière. Ils commencent à reculer un par un jusqu'à ce qu'il ne reste plus qu'un géant solitaire.\n\n%shouter% se lève comme un chien qui jappe et pousse un cri atavique si rauque qu'on se demande si tous les ancêtres de la terre, enterrés ou non, l'ont entendu. L'individu lève un bras devant son visage comme pour le protéger, puis commence à reculer, de plus en plus loin, jusqu'à ce qu'il ait disparu ! Ils sont tous partis !}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "And don\'t come back!",
+					Text = "Et ne revenez pas !",
 					function getResult()
 					{
 						this.Contract.m.Target.die();
@@ -358,7 +358,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 			function start()
 			{
 				this.Characters.push(this.Contract.m.Dude.getImagePath());
-				this.Contract.m.Dude.improveMood(3.0, "Managed to drive off unholds all by himself");
+				this.Contract.m.Dude.improveMood(3.0, "A réussi à chasser les unholds tout seul");
 
 				if (this.Contract.m.Dude.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -373,14 +373,14 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "DriveThemOffFailure",
-			Title = "As you approach...",
-			Text = "[img]gfx/ui/events/event_104.png[/img]{Against better judgment, you let %shouter% go. He doesn\'t stop for nothing, like he was chasing down a throng of beautiful women undressing just for him. Shockingly, the unholds take a step back. They start to retreat one by one until only a lone giant remains.\n\n%shouter% runs up to its feet like a yapping dog and lets forth some atavistic scream so hoarsely made that you wonder if every ancestor of the earth buried or otherwise had heard it. The unhold slings an arm before its face and then throws it down and swats %shouter% away. The man goes cartwheeling through the air and his screams go with him like a rabbit stolen up by a hawk. His shouts somersault back to earth in an echo of dizzying whoops and he lands with a hardy thud. The giant jiggles with an earthen chuckle. It\'s amusement catches the attention of the departed unholds who all turn around and start to return.}",
+			Title = "En vous approchant...",
+			Text = "[img]gfx/ui/events/event_104.png[/img]{Contre tout jugement, vous laissez faire %shouter%. Il ne s'arrête pas, comme s'il poursuivait une foule de belles femmes qui se déshabillent juste pour lui. De manière choquante, les Unholds font un pas en arrière. Ils commencent à reculer un par un jusqu'à ce qu'il ne reste plus qu'un géant solitaire.\n\n%shouter% se lève comme un chien qui jappe et pousse un cri atavique si rauque qu'on se demande si tous les ancêtres de la terre, enterrés ou non, l'ont entendu. L'homme lève un bras devant son visage, puis le jette à terre et repousse %shouter%. L'homme fait la roue dans les airs et ses cris l'accompagnent comme un lapin volé par un faucon. Ses cris retombent sur terre dans un écho de cris étourdissants et il atterrit avec un bruit sourd. Le géant se trémousse avec un gloussement terreux. Son amusement attire l'attention unholds qui étaient partis. Ils se retournent tous et commencent à revenir.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "So much for that.",
+					Text = "Tout ça pour ça",
 					function getResult()
 					{
 						this.Contract.getActiveState().onTargetAttacked(this.Contract.m.Target, false);
@@ -406,9 +406,9 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = this.Contract.m.Dude.getName() + " suffers " + injury.getNameOnly()
+					text = this.Contract.m.Dude.getName() + " souffre de " + injury.getNameOnly()
 				});
-				this.Contract.m.Dude.worsenMood(1.0, "Failed to drive off unholds all by himself");
+				this.Contract.m.Dude.worsenMood(1.0, "N'a pas réussi à chasser les unholds tout seul.");
 
 				if (this.Contract.m.Dude.getMoodState() <= this.Const.MoodState.Neutral)
 				{
@@ -424,12 +424,12 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Victory",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_113.png[/img]{The unholds slain, you order the men to take what trophies they can as proof of your work, and possibly as something to use for yourself. If man can make leather from a cow, surely there\'s something worthy of giants such as these? Either way, %employer% will be waiting. | With the giants slain to the last, %employer% should be awaiting your return now. His town will be forever safe now and no longer require the services of sellswords such as yourself. You dwell on the thought until you start a laughing fit to which none of your men understand. You tell them to ignore it and round them up for the return trip. | The ghastly monsters put up a hell of a fight, but they were no match for the collective strength, smarts, and sheer balls of the %companyname%. You tell the men to take what trophies they can and to prepare for the return march to %employer%. | With the last of the unholds slain, you round up the men. %randombrother% is found jumping on one\'s belly and seems disappointed when you tell him to quit it and get down. %employer% will be looking for killers and their trophies, not a bunch of children.}",
+			Text = "[img]gfx/ui/events/event_113.png[/img]{Les unholds tués, vous ordonnez aux hommes de prendre les trophées qu'ils peuvent comme preuve de votre travail, et peut-être comme quelque chose à utiliser pour vous-même. Si l'homme peut fabriquer du cuir à partir d'une vache, il y a sûrement quelque chose de digne de géants tels que ceux-ci ? Quoi qu'il en soit, %employer% vous attendra. | Les géants ayant été tués jusqu'au dernier, %employer% devrait attendre votre retour maintenant. Sa ville sera à jamais en sécurité et n'aura plus besoin des services de mercenaires tels que vous. Vous vous attardez sur cette pensée jusqu'à ce que vous déclenchiez une crise de rire qu'aucun de vos hommes ne comprend. Vous leur dites de l'ignorer et vous les rassemblez pour le voyage de retour. | Les horribles monstres se sont bien battus, mais ils n'ont pas fait le poids face à la force collective, à l'intelligence et aux couilles de %companyname%. Vous dites aux hommes de prendre les trophées qu'ils peuvent et de se préparer à la marche de retour vers %employer%. | Après avoir tué le dernier des unholds, vous rassemblez vos hommes. %randombrother% se retrouve à sauter sur le ventre de l'un d'eux et semble déçu lorsque vous lui dites d'arrêter et de descendre. %employeur% cherchera des tueurs et leurs trophées, pas une bande d'enfants.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Time to get paid.",
+					Text = "Il est temps d'être payé.",
 					function getResult()
 					{
 						return 0;
@@ -441,12 +441,12 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "SignsOfAFight",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_113.png[/img]{With the giants slain, you get the men ready for a Retournez à %employer%, but %randombrother% fetches your attention with a bit of quiver in his throat. You head on over to see him standing before one of the felled unholds. He points across its flesh which has been torn asunder in slices and hangs like the ears of a corn stalk. The damage is far beyond the ability of your own weaponry. The sellsword turns and looks past you with his eyes widening.%SPEECH_ON%What do you imagine did that?%SPEECH_OFF%Further along the skin are concave scars shaped like saucers with punctures rent right into the holes. You climb atop the unhold and crank your sword into one of these divots, wrenching free a tooth about the length of your forearm. Along its edges are barbs, teeth upon teeth it seems. The men see this and start muttering amongst themselves and you wished you\'d never saw it at all for you\'ve no sense to make of it.}",
+			Text = "[img]gfx/ui/events/event_113.png[/img]{Les géants tués, vous préparez les hommes pour retournez voir %employer%, mais %randombrother% attire votre attention avec un petit frémissement dans la gorge. Vous vous dirigez vers lui pour le voir debout devant l'un des unholds abattus. Il montre du doigt sa chair qui a été déchirée en tranches et pend comme les épis d'une tige de maïs. Les dégâts sont bien au-delà de la capacité de vos propres armes. Le mercenaire se retourne et regarde devant vous en écarquillant les yeux.%SPEECH_ON%Qu'est-ce qui a fait ça, selon vous ?%SPEECH_OFF%Plus loin sur la peau se trouvent des cicatrices concaves en forme de soucoupes avec des perforations en plein dans les trous. Vous grimpez sur le unhold et enfoncez votre épée dans l'un de ces trous, arrachant une dent de la longueur de votre avant-bras. Le long de ses bords se trouvent des barbes, des dents sur des dents, semble-t-il. Les hommes voient cela et commencent à murmurer entre eux et vous souhaiteriez ne jamais l'avoir vu car vous ne savez pas quoi en penser.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "The wilds are dark and full of terrors.",
+					Text = "Les régions sauvages sont sombres et pleines de terreurs.",
 					function getResult()
 					{
 						return 0;
@@ -462,14 +462,14 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_79.png[/img]{%employer% welcomes your return, almost immediately stating that he hasn\'t heard a single story of the unholds\' ravaging since you left. You nod and present evidence of the reason why, the slick remains of the slain giants sputtering as you bowl them across his floor. The wood is stained as though you\'d unfurled a carpet. The mayor purses his lips.%SPEECH_ON%What the hell, sellsword?%SPEECH_OFF%You cock your head and raise an eyebrow. The man lets his hands fall and he bows a bit.%SPEECH_ON%Ah, no worries! All is well! Here, your reward as promised!%SPEECH_OFF% | You Retournez à %employer% and find the man reading stories to children. He rends his hand through the air and growls like a beast. Knocking on the door, you intrude upon the theater.%SPEECH_ON%Aye, and then the ever honorable sellswords slew the monster!%SPEECH_OFF%The children cheer at your timely arrival. The mayor stands and gives you the promised reward, declaring he had a scout following your every move and he\'s already heard the reports of your success. He asks if you\'ll stick around and tell the tale for the kiddos. You tell him you don\'t work for free and leave the room. | You have to root about the town a while to find %employer%, the man himself found kept up in his room by a young lass who hides beneath the sheets you caught them in. The mayor gets dressed with no hesitation as to his own nakedness. He pitches a coin toward the girl and then speaks to you.%SPEECH_ON%Aye, sellsword, I\'ve been expecting you! Your reward, as promised!%SPEECH_OFF%He gives you the satchel, but a coin slips free and runs between the floorboards. The man purses his lips a moment then runs back to the girl and snatches the coin out of her hands and drops it in the satchel. | %employer% is found arguing with peasants about unpaid taxes and how the lords of the land will get their coin one way or another. The arrival of an armed fellow such as yourself is rather apropos and sends the peons scuttling for their coin purses. You tell them to quiet down and then address the mayor to get your money. He fetches it from a drawer, pausing only to fill it to the brim by taking a coin from a peasant, and then he hands it over to you.%SPEECH_ON%Appreciate your work, sellsword.%SPEECH_OFF% | You report to %employer% of your doings and he is, surprisingly not incredulous in the least.%SPEECH_ON%Aye, I had a scout tracking your company and he\'d beaten you back to town. Every word you say mirrors his. Your pay, as promised.%SPEECH_OFF%He hands you a satchel.}",
+			Text = "[img]gfx/ui/events/event_79.png[/img]{%employer% se réjouit de votre retour, déclarant presque immédiatement qu'il n'a pas entendu une seule histoire de ravage des unholds depuis votre départ. Vous hochez la tête et présentez la preuve de la raison pour laquelle, les restes gluants des géants tués crachotent alors que vous les écrasez sur son sol. Le bois est taché comme si vous aviez déroulé un tapis. Le maire pince les lèvres.%SPEECH_ON%C'est quoi ce bordel, mercenaire ?%SPEECH_OFF%Vous penchez la tête et levez un sourcil. L'homme laisse tomber ses mains et s'incline un peu.%SPEECH_ON%Ah, pas d'inquiétude ! Tout va bien ! Voici votre récompense comme promis !%SPEECH_OFF% | Vous retournez voir %employer% et trouvez l'homme qui lit des histoires aux enfants. Il brandit sa main en l'air et grogne comme une bête. En frappant à la porte, vous faites intrusion dans le théâtre.%SPEECH_ON%Oui, et alors les mercenaires toujours honorables ont tué le monstre !%SPEECH_OFF%Les enfants applaudissent à votre arrivée. Le maire se lève et vous donne la récompense promise, déclarant qu'il avait un éclaireur qui suivait tous vos mouvements et qu'il a déjà entendu les rapports sur votre succès. Il demande si vous allez rester dans les parages et raconter l'histoire aux enfants. Vous lui dites que vous ne travaillez pas gratuitement et vous quittez la pièce. | Il faut fouiller un moment dans la ville pour trouver %employer%, l'homme lui-même étant retenu dans sa chambre par une jeune fille qui se cache sous les draps dans lesquels vous les avez surpris. Le maire s'habille sans hésiter quant à sa propre nudité. Il lance une pièce à la jeune fille puis s'adresse à vous.%SPEECH_ON%Oui, mercenaire, je vous attendais ! Voilà votre récompense, comme promis !%SPEECH_OFF%Il vous donne la sacoche, mais une pièce de monnaie se détache et passe entre les lattes du plancher. L'homme pince les lèvres un instant, puis court vers la fille, lui arrache la pièce des mains et la dépose dans la sacoche. | %employer% se dispute avec les paysans au sujet des impôts impayés et de la façon dont les seigneurs de la terre obtiendront leur argent d'une manière ou d'une autre. L'arrivée d'un homme armé comme vous est plutôt opportune et fait fuir les paysans vers leurs porte-monnaie. Vous leur dites de se taire, puis vous vous adressez au maire pour obtenir votre argent. Il va le chercher dans un tiroir, ne s'arrêtant que pour le remplir à ras bord en prenant une pièce de monnaie à un paysan, puis il vous le remet.%SPEECH_ON%J'apprécie votre travail, mercenaire.%SPEECH_OFF% | Vous rendez compte à %employeur% de vos exploits et il n'est, étonnamment, pas incrédule le moins du monde.%SPEECH_ON%Oui, j'avais un éclaireur qui suivait votre compagnie et il vous a devancé en ville. Chaque mot que vous dites reflète le sien. Votre paye, comme promis.%SPEECH_OFF%Il vous tend une sacoche.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "A successful hunt.",
+					Text = "Une chasse réussie.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
@@ -486,7 +486,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
 				});
 				this.Contract.m.SituationID = this.Contract.resolveSituation(this.Contract.m.SituationID, this.Contract.m.Home, this.List);
 			}
@@ -495,14 +495,14 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "SuccessPeaceful",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_79.png[/img]{%employer% drives his fingers up to the corners of his eye then fans them forward.%SPEECH_ON%Let me get this straight, one of your sellswords shouted the giants into a retreat?%SPEECH_OFF%You nod and tell him the direction they went which is, rather importantly, away from %townname%. The mayor leans back in his chair.%SPEECH_ON%Well. Alright then. I guess it ain\'t my problem now. Dead or gone, all the same I suppose.%SPEECH_OFF%He hands you a satchel, but holds his hand on it a moment.%SPEECH_ON%You know if you\'re lying and they come back I\'ll send every messenger bird I got to speak of your honor.%SPEECH_OFF%You stand up, draw your sword, and tell him they\'ll have his skull to rest in when they get there. The man nods and lets the coin go.%SPEECH_ON%No bother, sellsword, only business.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_79.png[/img]{%employer% conduit ses doigts jusqu'au coin de l'œil puis les écarte vers l'avant.%SPEECH_ON%Si je comprends bien, un de vos mercenaires a poussé les géants à battre en retraite ?%SPEECH_OFF%Vous acquiescez et vous lui indiquez la direction qu'ils ont prise, c'est-à-dire, surtout, loin de %townname%. Le maire se penche en arrière sur sa chaise.%SPEECH_ON%Bien. Très bien alors. Je suppose que ce n'est plus mon problème maintenant. Mort ou disparu, c'est pareil, je suppose.%SPEECH_OFF%Il vous tend une sacoche, mais garde la main dessus un moment.%SPEECH_ON%Tu sais que si vous mentez et qu'ils reviennent, j'enverrai tous les messagers que j'ai pour parler de votre honneur.%SPEECH_OFF%Vous vous levez, dégainez votre épée, et lui dites qu'ils auront son crâne pour se reposer quand ils arriveront. L'homme hoche la tête et laisse la pièce partir.%SPEECH_ON%Pas de problème, mercenaire, que du business.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "A successful hunt.",
+					Text = "Une chasse réussie.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
@@ -519,7 +519,7 @@ this.hunting_unholds_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
 				});
 				this.Contract.m.SituationID = this.Contract.resolveSituation(this.Contract.m.SituationID, this.Contract.m.Home, this.List);
 			}
