@@ -271,7 +271,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | I don\'t think so. | We\'re not in the business of fighting former slaves.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Je ne pense pas. | We\'re not in the business of fighting former slaves.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

@@ -731,7 +731,7 @@ this.deliver_item_contract <- this.inherit("scripts/contracts/contract", {
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
@@ -780,7 +780,7 @@ this.deliver_item_contract <- this.inherit("scripts/contracts/contract", {
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);

@@ -593,7 +593,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractPoor);
@@ -631,7 +631,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);

@@ -207,7 +207,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

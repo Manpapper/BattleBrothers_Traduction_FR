@@ -245,7 +245,7 @@ this.hunting_lindwurms_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Sounds more like what you need are heroes and fools. | It\'s not worth the risk. | I don\'t think so.}",
+					Text = "{Sounds more like what you need are heroes and fools. | It\'s not worth the risk. | Je ne pense pas.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

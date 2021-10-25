@@ -797,7 +797,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);

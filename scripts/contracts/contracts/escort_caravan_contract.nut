@@ -592,7 +592,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			Banner = "",
 			Options = [
 				{
-					Text = "I don\'t think so. We\'ll defend it if need be.",
+					Text = "Je ne pense pas. We\'ll defend it if need be.",
 					function getResult()
 					{
 						return "StolenGoods2";
@@ -952,7 +952,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						local money = this.Contract.m.Payment.getOnCompletion() + this.Contract.m.Payment.getPerCount() * this.Flags.get("HeadsCollected");

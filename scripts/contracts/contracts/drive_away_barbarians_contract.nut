@@ -658,7 +658,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);

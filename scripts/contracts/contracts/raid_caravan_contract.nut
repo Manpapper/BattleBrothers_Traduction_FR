@@ -336,7 +336,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{What\'s this worth to you? | Let\'s talk pay.}",
+					Text = "{Qu'est-ce que ça vaut pour vous ? | Parlons salaire.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -344,7 +344,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | I don\'t think so.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Je ne pense pas.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -684,7 +684,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);

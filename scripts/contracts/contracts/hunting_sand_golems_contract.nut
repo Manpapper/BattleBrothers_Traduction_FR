@@ -214,7 +214,7 @@ this.hunting_sand_golems_contract <- this.inherit("scripts/contracts/contract", 
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | I won\'t lead the men on a wild goose chase through the desert. | I don\'t think so. | I say no. The men prefer known enemies of flesh and blood.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | I won\'t lead the men on a wild goose chase through the desert. | Je ne pense pas. | I say no. The men prefer known enemies of flesh and blood.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

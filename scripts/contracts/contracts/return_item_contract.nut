@@ -7,7 +7,7 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.return_item";
-		this.m.Name = "Return Item";
+		this.m.Name = "Retourner Objet";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -31,14 +31,14 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		}
 
 		local items = [
-			"Rare Coin Collection",
-			"Ceremonial Staff",
-			"Idol of Fertility",
-			"Golden Talisman",
-			"Tome of Arcane Knowledge",
-			"Lockbox",
-			"Demonic Statuette",
-			"Crystal Skull"
+			"Collection de Pièces Rares",
+			"Bâton de Cérémonie",
+			"Idole de la Fertilité",
+			"Talisman en Or",
+			"Tome de Connaissance des Arcanes",
+			"Coffre",
+			"Statuette Démoniaque",
+			"Crâne de Cristal"
 		];
 		local r = this.Math.rand(0, items.len() - 1);
 		this.m.Flags.set("Item", items[r]);
@@ -206,14 +206,14 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Negotiations",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{%employer% restlessly walks back and forth while explaining what troubles him.%SPEECH_ON%There has been an audacious act of thievery! The despicable brigands stole my %itemLower% which is of immeasurable value to me. I implore you to hunt down those thieves and return that item to me.%SPEECH_OFF%He lowers his voice to an insisting tone.%SPEECH_ON%Not only will you get paid handsomely, but you would also set the worried minds of the good people of %townname% to rest!%SPEECH_OFF% | %employer%\'s reading one of many scrolls. He angrily tosses it onto a pile of others.%SPEECH_ON%The people of %townname% are rightfully furious. Do you know a brigand, possibly in league with other vagabonds, managed to steal my %itemLower% from us? That artifact is of immeasurable value to me! And... to the people, of course.%SPEECH_OFF%You shrug.%SPEECH_ON%And you want me to get it back for you?%SPEECH_OFF%The man points a finger.%SPEECH_ON%Precisely, smart sellsword! That is exactly what I want you to do. Follow the footprints of thievery and Retournez à me the item which I... the town, rightfully owns!%SPEECH_OFF% | %employer%\'s turning an apple in hand. He seems frustrated with it, almost as if he wishes it were something else like a valuable trinket or perhaps just a tastier fruit.%SPEECH_ON%Have you ever lost something you loved?%SPEECH_OFF%You shrug and answer.%SPEECH_ON%There was this girl...%SPEECH_OFF%The man shakes his head.%SPEECH_ON%No, not some woman. More important. Because I have! Thieves stole my %itemLower%. How they managed to do get beyond my guards is, well, beyond me. But I know if I set you on them I\'ll be having what is rightfully mine back where it belongs. Isn\'t that right? Or have I been mislead as to the quality of your services?%SPEECH_OFF% | A dog is snoring at the feet of %employer%. He leans forward to gently pet the hound behind its ears.%SPEECH_ON%I hear you have a nose for finding people, sellsword. For... solving problems.%SPEECH_OFF%You nod. It is true, after all.%SPEECH_ON%Good... good... I have a task for you. A simple one. Something of great value to me has been stolen, my %itemLower%. I need you to track down those who stole it, kill them, obviously, and then bring back the item.%SPEECH_OFF% | A bird is perched on %employer%\'s window. The man, seated, points at it.%SPEECH_ON%I wonder if that\'s how they got in. The brigands, I mean. I think they must\'ve snuck through a window and then right back out. That\'s how they got away with my %itemLower%.%SPEECH_OFF%The man slowly rises and stalks across the room. He crouches, about ready to pounce on the bird, but the creature scatters before the man can so much as flinch.%SPEECH_ON%Damn.%SPEECH_OFF%He returns to his seat, wiping his hands as if he\'d worked up a sweat during his attempted avian ambush.%SPEECH_ON%My task is simple, sellsword. Bring my property back to me. Kill the brigands, too, if you wouldn\'t mind.%SPEECH_OFF% | Dust covers %employer%\'s table, but there is a spot oddly cleaner than the rest. He gestures to it.%SPEECH_ON%That\'s where my %itemLower% used to sit. If you couldn\'t tell, it\'s gone.%SPEECH_OFF%You nod. It does appear to be missing.%SPEECH_ON%The thieves who took it should be easy to track down. They\'re good thinkers in the night, those brigands, but they make mistakes aplenty during the day. Footprints, crowns ill-spent... you should be able to track them down with ease.%SPEECH_OFF%He looks at you with a stern eye.%SPEECH_ON%Do you understand, mercenary? I want you to get my property back. I want it placed right where it belongs. And... I want those thieves dead in the mud.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{%employeur% marche de long en large en expliquant ce qui le dérange.%SPEECH_ON%Il y a eu un acte de vol audacieux ! Les méprisables brigands ont volé mon %itemLower% qui a une valeur incommensurable pour moi. Je vous implore de traquer ces voleurs et de me rendre cet objet.%SPEECH_OFF%Il baisse la voix pour insister.%SPEECH_ON%Non seulement vous serez payé généreusement, mais vous rassurerez également les esprits inquiets des bonnes gens de %townname% !%SPEECH_OFF% | %employer% est en train de lire un de ses nombreux parchemins. Il le jette avec colère sur une pile d'autres.%SPEECH_ON%Les habitants de %townname% sont légitimement furieux. Savez-vous qu'un brigand, peut-être de mèche avec d'autres vagabonds, a réussi à nous dérober notre %itemLower% ? Cet artefact a une valeur incommensurable pour moi ! Et... pour le peuple, bien sûr.%SPEECH_OFF%Vous haussez les épaules.%SPEECH_ON%Et vous voulez que je le récupère pour vous ?%SPEECH_OFF%L'homme vous pointe du doigt.%SPEECH_ON%Précisément, mercenaire intelligent ! C'est exactement ce que je veux que vous fassiez. Suivez les traces du voleur et retournez-moi l'objet qui me revient de droit à m... la ville !%SPEECH_OFF% | %employer% tourne une pomme à la main. Il semble frustré par celle-ci, presque comme s'il souhaitait qu'elle soit autre chose, comme un bibelot de valeur ou peut-être simplement un fruit plus savoureux.%SPEECH_ON%Avez-vous déjà perdu quelque chose que vous aimiez ?%SPEECH_OFF%Vous haussez les épaules et répondez.%SPEECH_ON%Il y avait cette fille...%SPEECH_OFF%L'homme secoue la tête.%SPEECH_ON%Non, pas une femme. Plus important. Parce que c'est le cas ! Des voleurs ont volé  %itemLower%. Je ne sais pas comment ils ont réussi à passer mes gardes. Mais je sais que si je vous mets sur leur piste, je récupérerai ce qui me revient de droit. N'est-ce pas ? Ou ai-je été induit en erreur quant à la qualité de vos services ?%SPEECH_OFF% | Un chien ronfle aux pieds de %employer%. Il se penche en avant pour caresser doucement le chien derrière les oreilles.%SPEECH_ON%J'ai entendu dire que vous aviez le nez pour trouver des gens, mercenaire. Pour... résoudre les problèmes.%SPEECH_OFF%Vous acquiescez. C'est vrai, après tout.%SPEECH_ON%Bien... bien... J'ai une tâche pour vous. Une tâche simple. Un objet de grande valeur pour moi a été volé, %itemLower%. J'ai besoin que vous retrouviez ceux qui l'ont volé, que vous les tuiez, évidemment, et que vous rameniez l'objet.%SPEECH_OFF% | Un oiseau est perché sur la fenêtre de %employer%. L'homme, assis, le montre du doigt.%SPEECH_ON%Je me demande si c'est comme ça qu'ils sont entrés. Les brigands, je veux dire. Je pense qu'ils ont dû se faufiler par une fenêtre et ressortir aussitôt. C'est comme ça qu'ils sont partis avec %itemLower%.%SPEECH_OFF%L'homme se lève lentement et traverse la pièce à grands pas. Il s'accroupit, prêt à bondir sur l'oiseau, mais la créature se sauve avant que l'homme ne puisse broncher.%SPEECH_ON%Merde.%SPEECH_OFF%Il retourne à son siège, s'essuyant les mains comme s'il avait transpiré pendant sa tentative d'embuscade aviaire.%SPEECH_ON%Ma tâche est simple, mercenaire. Ramenez-moi mes biens. Tue les brigands, aussi, si ça ne vous dérange pas.%SPEECH_OFF% | La poussière recouvre la table de %employer%, mais il y a un endroit étrangement plus propre que le reste. Il y fait un geste.%SPEECH_ON%C'est là que se trouvait %itemLower%. Comme vous pouvez le constater, l'objet n'est plus là.%SPEECH_OFF%Vous acquiescez. Il semble bien que l'objet ait disparu.%SPEECH_ON%Les voleurs qui l'ont pris devraient être faciles à traquer. Ce sont de bons penseurs la nuit, ces brigands, mais ils font beaucoup d'erreurs le jour. Empreintes de pas, couronnes mal dépensées... vous devriez être capable de les retrouver facilement.%SPEECH_OFF%Il vous regarde d'un œil sévère.%SPEECH_ON%Vous comprenez, mercenaire ? Je veux que vous récupériez ma propriété. Je veux qu'elle soit placée là où elle doit être. Et... Je veux que ces voleurs soient morts dans la boue.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{What\'s this worth to you? | Let\'s talk pay.}",
+					Text = "{Qu'est-ce que ça vaut pour vous ? | Parlons salaire.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -221,7 +221,7 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | I don\'t think so.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Je ne pense pas.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -238,12 +238,12 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Bandits",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_80.png[/img]{Brigands! Just as your employer had thought. They look scared, presumably understanding that %employer%\'s well-paid wrath is about to descend upon them. | Ah, the thieves are quite human - a simple crew of vagabonds and brigands. They arm themselves as you order your men to attack. | You catch a group of brigands lugging your employer\'s property around. They seem shocked that you have found them here and no time is wasted trying to parlay - they arm themselves and you order the %companyname% to charge.}",
+			Text = "[img]gfx/ui/events/event_80.png[/img]{Brigands ! Comme l'avait pensé votre employeur. Ils ont l'air effrayés, comprenant sans doute que la colère bien payée de %employer% est sur le point de s'abattre sur eux. | Ah, les voleurs sont tout à fait humains - une simple équipe de vagabonds et de brigands. Ils s'arment alors que vous ordonnez à vos hommes d'attaquer. | Vous surprenez un groupe de brigands en train de trimballer les biens de votre employeur. Ils semblent choqués que vous les ayez trouvés ici et vous ne perdez pas de temps à essayer de parlementer - ils s'arment et vous ordonnez à %companyname% de charger.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To Arms!",
+					Text = "Aux Armes!",
 					function getResult()
 					{
 						this.Contract.getActiveState().onTargetAttacked(this.Contract.m.Target, true);
@@ -256,12 +256,12 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Necromancer",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_76.png[/img]{There\'s brigands here, just as expected, but they are handing the %itemLower% to a man in dark, ragged clothes. Your presence, unsurprisingly, brings a halt to the transaction and both the thugs and the ghoulish figure take up weapons. | You catch brigands trading %employer%\'s property to what appears to be a necromancer! Maybe he wanted it to cast some sort of vicious spell upon the house. In some light, the notion doesn\'t seem that bad... but, the man\'s paying you for a reason. Charge! | %employer%\'s property is being sold off by brigands to a pale man in black! He glares at you before anyone else, his beady black eyes narrowing on your company in an instant.}",
+			Text = "[img]gfx/ui/events/event_76.png[/img]{Les brigands sont là, comme prévu, mais ils remettent %itemLower% à un homme aux vêtements sombres et en lambeaux. Votre présence, sans surprise, met un terme à la transaction et tant les brigands que le personnage macabre prennent les armes. | Vous surprenez des brigands en train d'échanger la propriété de %employer% à ce qui semble être un nécromancien ! Peut-être qu'il le voulait pour jeter une sorte de sort vicieux sur la maison. D'un certain point de vue, l'idée ne semble pas si mauvaise... mais, l'homme vous paie pour une raison. Chargez ! | La propriété de %employer% est vendue par des brigands à un homme pâle en noir ! Il vous regarde avant tout le monde, ses yeux noirs et perçants se posent sur votre compagnie en un instant.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To Arms!",
+					Text = "Aux Armes!",
 					function getResult()
 					{
 						this.Const.World.Common.addTroop(this.Contract.m.Target, {
@@ -277,12 +277,12 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CounterOffer1",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_76.png[/img]{You clean the blood off your sword and then go to retrieve the item. As you bend over to pick it up, you spot a man watching you in the distance. He comes forth, his two hands totemed together with long sleeves.%SPEECH_ON%I see you\'ve killed my benefactor\'s men.%SPEECH_OFF%Sheathing your sword, you nod at the man. He continues.%SPEECH_ON%My benefactor paid good money for that artifact. It appears those he paid are no longer owed, so maybe I can speak to you directly. I will give you %bribe% crowns for the item.%SPEECH_OFF%That... is a good amount of money. %employer%, however, will not be happy if you decide to accept... | Après la bataille, a man emerges from a tree line, clapping his hands together.%SPEECH_ON%I paid those men a great deal of crowns, but it appears I should have paid you. And now that all these skeevy brigands are dead, I can!%SPEECH_OFF%You tell the man to get to the point before you run him through with a sword. He gestures toward the artifact.%SPEECH_ON%I\'ll pay you %bribe% crowns for the item. It was what was originally owed to these thieves, plus a little more. What do you say?%SPEECH_OFF%%employer% won\'t take kindly to your betrayal, but that is a good bit of money... | The battle over, you pick up the %itemLower% and look it over. Was this really worth the lives of so many people?%SPEECH_ON%I know what you\'re thinking, sellsword.%SPEECH_OFF%The voice breaks in. You draw your sword and aim it at a stranger who has seemingly appeared from nowhere.%SPEECH_ON%You\'re thinking, what if someone paid good money to steal that there artifact? What if that someone would pay me a good deal of money? Perhaps... more than the man who paid you to retrieve it in the first place.%SPEECH_OFF%You lower your weapon and nod.%SPEECH_ON%An interesting thought.%SPEECH_OFF%The man smiles.%SPEECH_ON%%bribe% crowns. That\'s how much I\'ll give you for it. That was the thieves\' share plus extra. A more than fair deal. Of course, your employer will be most unhappy, but... well, that\'s not my choice to make.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_76.png[/img]{Vous nettoyez le sang de votre épée et allez récupérer l'objet. Alors que vous vous penchez pour le ramasser, vous apercevez un homme qui vous observe au loin. Il s'avance, ses deux mains jointes par des manches longues.%SPEECH_ON%Je vois que vous avez tué les hommes de mon maître.%SPEECH_OFF%En rengainant votre épée, vous faites un signe de tête à l'homme. Il continue.%SPEECH_ON%Mon maître a payé cher pour cet artefact. Il semble que ceux qu'il a payés ne soient plus redevables, alors je peux peut-être vous parler directement. Je vous donnerai %bribe% couronnes pour l'objet.%SPEECH_OFF%C'est... une bonne somme d'argent. Cependant, %employer% ne sera pas content si vous décidez d'accepter... | Après la bataille, un homme émerge d'une ligne d'arbres, en frappant ses mains ensemble.%SPEECH_ON%J'ai payé ces hommes un grand nombre de couronnes, mais il semble que j'aurais dû vous payer. Et maintenant que tous ces brigands sont morts, je peux !%SPEECH_OFF%Vous dites à l'homme d'en venir au fait avant de le passer à l'épée. Il fait un geste vers l'artefact.%SPEECH_ON%Je vais vous payer %bribe% couronnes pour l'objet. C'est ce que je devais à ces voleurs, plus un peu plus. Qu'en dites-vous ?%SPEECH_OFF%%employer% ne va pas apprécier votre trahison, mais c'est une bonne somme d'argent... | La bataille terminée, vous ramassez %itemLower% et l'examinez. Cela valait-il vraiment la peine de sacrifier la vie de tant de personnes ?%SPEECH_ON%Je sais ce que vous pensez, mercenaire.%SPEECH_OFF%La voix vous interrompt. Vous tirez votre épée et la dirigez vers un étranger qui semble être apparu de nulle part.%SPEECH_ON%Tu te dis, et si quelqu'un payait cher pour voler cet artefact ? Et si ce quelqu'un me payait une bonne somme d'argent ? Peut-être... plus que l'homme qui vous a payé pour le récupérer en premier lieu.%SPEECH_OFF%Vous baissez votre arme et hochez la tête.%SPEECH_ON%Une pensée intéressante.%SPEECH_OFF%L'homme sourit.%SPEECH_ON%%bribe% couronnes. C'est le prix que je vous donnerai pour ça. C'était la part des voleurs, plus un supplément. Un accord des plus équitable. Bien sûr, votre employeur sera très mécontent, mais... ce n'est pas à moi de décider.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "I know a good deal when I see one. Hand over the crowns.",
+					Text = "Je sais reconnaître une bonne affaire quand j'en vois une. Donnez-moi les couronnes.",
 					function getResult()
 					{
 						this.updateAchievement("NeverTrustAMercenary", 1, 1);
@@ -291,7 +291,7 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "We\'re paid to return it, and that\'s what we\'ll do.",
+					Text = "Nous sommes payés pour le rendre, et c'est ce que nous ferons.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -304,17 +304,17 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CounterOffer2",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_76.png[/img]You hand over the %itemLower% and the stranger slips you a very heavy, very drooping satchel. The deal is done. It\'s safe to assume that %employer%, your employer, won\'t be happy about this.",
+			Text = "[img]gfx/ui/events/event_76.png[/img]Vous lui remettez %itemLower% et l'étranger vous glisse une sacoche très lourde et très tombante. L'affaire est conclue. On peut supposer que votre employeur ne sera pas content.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Good pay.",
+					Text = "Bon salaire.",
 					function getResult()
 					{
 						this.World.Assets.addMoney(this.Flags.get("Bribe"));
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractBetrayal);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "Failed to return stolen " + this.Flags.get("Item"));
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "Non retour du bien volé " + this.Flags.get("Item"));
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}
@@ -326,7 +326,7 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe") + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe") + "[/color] Couronnes"
 				});
 			}
 
@@ -334,12 +334,12 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "BattleDone",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_22.png[/img]{The battle over, you retrieve the %itemLower% from the wasted clutches of your enemies and prepare to Retournez à %employer%. He will surely be happy to see of your success! | Those who stole the %itemLower% are dead, and thankfully you were able to find the item itself. %employer% will be most pleased with your work here. | Well, you found those responsible for stealing the %itemLower% and put them to the sword. Now you just need to put the %itemLower% back into %employer%\'s hands and get your reward! | The battle is done and the %itemLower% was easy to find amongst the corpses of your enemies. You should probably return it to %employer% for your just reward!}",
+			Text = "[img]gfx/ui/events/event_22.png[/img]{La bataille terminée, vous récupérez %itemLower% des griffes décharnées de vos ennemis et vous vous préparez à retournez voir %employer%. Il sera sûrement heureux de voir votre succès ! | Ceux qui ont volé %itemLower% sont morts, et heureusement vous avez pu trouver l'objet lui-même. %employer% sera très heureux de votre travail ici. | Vous avez trouvé les responsables du vol de %itemLower% et les avez passés au fil de l'épée. Maintenant, il ne te reste plus qu'à remettre %itemLower% entre les mains de %employer% et obtenir votre récompense ! | La bataille est terminée et %itemLower% a été facile à trouver parmi les cadavres de vos ennemis. Vous devriez probablement le rendre à %employeur% pour votre juste récompense !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Let\'s collect our pay.",
+					Text = "Allons chercher notre paye.",
 					function getResult()
 					{
 						return 0;
@@ -351,19 +351,19 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% takes the %itemLower% from you, hugging it close as though he\'d retrieved a lost child. His eyes get a little teary just looking at his artifact.%SPEECH_ON%Thank you, sellsword. This means a lot to me... I mean, uh, the town. You have our gratitude!%SPEECH_OFF%He pauses as you stare at him. His eyes bounce to a corner of the room.%SPEECH_ON%Our... gratitude, sellsword...%SPEECH_OFF%A large wooden chest is opened by a guard. You count the crowns and go. | When you Retournez à %employer% he is playing with a bird in a cage.%SPEECH_ON%Ah, the sellsword returns... and?%SPEECH_OFF%You hold up the artifact and then set it on his desk. He takes it, turns it, nods, then puts it away.%SPEECH_ON%Excellent. And for your troubles...%SPEECH_OFF%He waves his hand to a wooden chest filled with crowns. | %employer%\'s resting his legs on two dogs, each one passed out atop the other.%SPEECH_ON%These beasts could rip my throat out, yet... look at them. How does that happen? I didn\'t even train them. Someone else did. I\'m a stranger to them yet there they are.%SPEECH_OFF%You place the artifact on the man\'s table and slide it across. He leans forward, takes it, then places it under his desk. When his hand returns, he\'s got a satchel in hand. He tosses it over.%SPEECH_ON%As promised. Good work, sellsword.%SPEECH_OFF% | When you enter %employer%\'s room, there are a host of guards surrounding him. For a second, you think you\'ve stumbled upon a coup, but the men clear out, leaving behind dice and cards. %employer% waves you in.%SPEECH_ON%Come, come. I just lost a good deal of crowns, sellsword. Perhaps you\'ve brought something to help ease my pains...?%SPEECH_OFF%You take out the %itemLower% and hold it in your hand. Rather gingerly, the man takes it.%SPEECH_ON%Good... very good... your pay, of course, is here.%SPEECH_OFF%He hands over a satchel of crowns before turning around in his chair. He seems too consumed by the artifact to say anything else. | %employer% grins as you enter.%SPEECH_ON%Sellsword, sellsword, will you sell me word of your success?%SPEECH_OFF%You take out the artifact and place it on his table.%SPEECH_ON%Sure.%SPEECH_OFF%The man jolts forward in his chair and takes the item away. He turns back to you, calming himself returning his composure.%SPEECH_ON%Good. You did good. Very good. %reward_completion% crowns, as promised.%SPEECH_OFF%He hands over a sack of coins.}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% vous prend %itemLower% et le serre dans ses bras comme s'il avait récupéré un enfant perdu. Ses yeux deviennent un peu larmoyants rien qu'en regardant son artefact.%SPEECH_ON%Merci, mercenaire. Ça signifie beaucoup pour moi... Je veux dire, euh, la ville. Vous avez notre gratitude !%SPEECH_OFF%Il s'arrête quand vous le fixez. Ses yeux se dirigent vers un coin de la pièce.%SPEECH_ON%Notre... gratitude, mercenaire...%SPEECH_OFF%Un grand coffre en bois est ouvert par un garde. Vous comptez les couronnes et vous partez. | Quand vous retournez voir %employer%, il joue avec un oiseau dans une cage.%SPEECH_ON%Ah, le retour du mercenaire... et ?%SPEECH_OFF%Vous montrez l'artefact et le posez sur son bureau. Il le prend, le tourne, hoche la tête, puis le range.%SPEECH_ON%Excellent. Et pour vos problèmes...%SPEECH_OFF%Il fait signe de la main vers un coffre en bois rempli de couronnes. | %employer% repose ses jambes sur deux chiens, chacun s'étant évanoui sur l'autre.%SPEECH_ON%Ces bêtes pourraient m'arracher la gorge, et pourtant... regardez-les. Comment est-ce possible ? Je ne les ai même pas entraînés. Quelqu'un d'autre l'a fait. Je suis un étranger pour eux et pourtant ils sont là.%SPEECH_OFF%Vous placez l'artefact sur la table de l'homme et le faites glisser. Il se penche en avant, le prend, puis le place sous son bureau. Quand sa main revient, il a une sacoche en main. Il la jette par-dessus.%SPEECH_ON%Comme promis. Bon travail, mercenaire.%SPEECH_OFF% | Lorsque vous entrez dans la chambre de %employer%, il y a une foule de gardes qui l'entourent. Pendant une seconde, vous pensez être tombé sur un coup d'État, mais les hommes s'en vont, laissant derrière eux des dés et des cartes. %employer% vous fait signe d'entrer.%SPEECH_ON%Entrez, entrez. Je viens de perdre un bon nombre de couronnes, mercenaire. Peut-être que vous avez apporté quelque chose pour aider à soulager mes douleurs... ?%SPEECH_OFF%Vous sortez %itemLower% et le tenez dans votre main. L'homme le prend avec précaution.%SPEECH_ON%Bien... très bien... votre paye, bien sûr, est ici.%SPEECH_OFF%Il remet une sacoche de couronnes avant de se retourner sur sa chaise. Il semble trop absorbé par l'artefact pour dire quoi que ce soit d'autre. | %employer% sourit en vous voyant entrer.%SPEECH_ON%Mercenaire, mercenaire, me ferez-vous part de votre succès ?%SPEECH_OFF%Vous sortez l'artefact et le posez sur sa table.%SPEECH_ON%Bien sûr.%SPEECH_OFF%L'homme fait un bond en avant sur sa chaise et prend l'objet. Il se retourne vers vous, se rassure pour retrouver son calme.%SPEECH_ON%Bien. Vous avez bien fait. Très bien. %reward_completion% couronnes, comme promis.%SPEECH_OFF%Il vous remet un sac de pièces.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns well deserved.",
+					Text = "Des couronnes bien méritées.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Returned stolen " + this.Flags.get("Item"));
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Objet volé retourné " + this.Flags.get("Item"));
 						this.World.Contracts.finishActiveContract();
 						return 0;
 					}
@@ -375,7 +375,7 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
 				});
 			}
 
@@ -383,18 +383,18 @@ this.return_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure1",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_75.png[/img]{You lower yourself to the earth, letting some dirt filter through your fingers. But it is only dirt - there are no footprints that have crossed its path. In fact, you haven\'t seen any footprints in a good while. %randombrother% joins you, crouching low and shrugging.%SPEECH_ON%Sir, I think we lost \'em.%SPEECH_OFF%You nod. %employer% won\'t be happy about this, but it is what it is. | You\'ve been following the trail of the stolen %itemLower% for a good while now, but the leads have dried up. The commoners you pass know nothing, and the earth shows no footprints with which to track. For all intents and purposes, the %itemLower% is gone. %employer% will not be pleased. | A footprint left long enough is soon stepped on by another. And another. And another. You spent so long catching up to the thieves who stole the %itemLower% that the circuitry of the world, ever busy, has covered their tracks. You\'ve no hope of finding them now and %employer% will be most displeased. | The tracks of the the %itemLower%\'s thieves have gone dry. The last set of footprints you followed took you to a homestead, and they didn\'t look like the thieving sort, nor did they know of any such fellows. %employer% won\'t be happy about the loss of his goods, but there\'s little you can do here now.}",
+			Text = "[img]gfx/ui/events/event_75.png[/img]{Vous vous abaissez, laissant un peu de terre passer entre vos doigts. Mais ce n'est que de la terre - il n'y a aucune trace de pas qui ait traversé son chemin. En fait, vous n'avez pas vu d'empreintes depuis un bon moment. %randombrother% vous rejoint, accroupi et haussant les épaules.%SPEECH_ON%Monsieur, je pense que nous les avons perdus.%SPEECH_OFF%Vous acquiescez. Ça ne va pas faire plaisir à %employer%, mais c'est comme ça. | Vous suivez la piste de %itemLower% volé depuis un bon moment maintenant, mais les pistes se sont taries. Les roturiers que vous croisez ne savent rien, et la terre ne montre aucune trace de pas qui puisse être suivie. A toutes fins utiles, %itemLower% a disparu. %employer% ne sera pas content. | Une empreinte laissée assez longtemps est vite piétinée par une autre. Et une autre. Et une autre. Vous avez passé tellement de temps à rattraper les voleurs de %itemLower% que les chemins du monde, toujours occupés, ont couvert leurs traces. Vous n'avez aucun espoir de les retrouver maintenant et %employer% sera très mécontent. | Les traces des voleurs de %itemLower% se sont taries. Les dernières traces de pas que vous avez suivies vous ont mené à une ferme, et ils n'avaient pas l'air d'être des voleurs, et ils n'en connaissaient pas non plus. %employer%  ne sera pas ravi de la perte de ses biens, mais il n'y a pas grand chose que vous puissiez faire maintenant.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Damn this contract!",
+					Text = "Au diable ce contrat !",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "Failed to return stolen " + this.Flags.get("Item"));
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "N'a pas réussi à retourner l'objet volé " + this.Flags.get("Item"));
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}

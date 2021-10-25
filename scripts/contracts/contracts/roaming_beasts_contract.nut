@@ -350,7 +350,7 @@ this.roaming_beasts_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{What\'s this worth to you? | What is %townname% prepared to pay? | Let\'s talk pay.}",
+					Text = "{Qu'est-ce que ça vaut pour vous ? | What is %townname% prepared to pay? | Parlons salaire.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -358,7 +358,7 @@ this.roaming_beasts_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

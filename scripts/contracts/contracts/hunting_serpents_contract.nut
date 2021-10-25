@@ -259,7 +259,7 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | That\'s not the kind of work we\'re looking for.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | That\'s not the kind of work we\'re looking for.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

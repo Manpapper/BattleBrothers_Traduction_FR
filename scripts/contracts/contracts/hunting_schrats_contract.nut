@@ -241,7 +241,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Interested for sure. | Let\'s talk pay. | Let\'s talk crowns. | This is going to cost you. | A wild chase through the forest, then? Count me in. | The %companyname% can help, for the right price.}",
+					Text = "{Interested for sure. | Parlons salaire. | Let\'s talk crowns. | This is going to cost you. | A wild chase through the forest, then? Count me in. | The %companyname% can help, for the right price.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -249,7 +249,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | I won\'t lead the men on a wild goose chase through the woods. | I don\'t think so. | I say no. The men prefer known enemies of flesh and blood.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | I won\'t lead the men on a wild goose chase through the woods. | Je ne pense pas. | I say no. The men prefer known enemies of flesh and blood.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

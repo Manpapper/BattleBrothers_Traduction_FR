@@ -172,7 +172,7 @@ this.hunting_alps_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How many crowns can you muster? | Let\'s talk pay. | Let\'s talk crowns. | We could look into this. For the right price.}",
+					Text = "{How many crowns can you muster? | Parlons salaire. | Let\'s talk crowns. | We could look into this. For the right price.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -180,7 +180,7 @@ this.hunting_alps_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like mercenary work. | This doesn\'t sound like our kind of work. | That\'s not the kind of work we\'re looking for.}",
+					Text = "{This doesn\'t sound like mercenary work. | Ça ne ressemble pas à notre type de travail. | That\'s not the kind of work we\'re looking for.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

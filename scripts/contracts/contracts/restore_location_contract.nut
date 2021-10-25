@@ -300,7 +300,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like our kind of work. | I don\'t think so.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Je ne pense pas.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
