@@ -516,7 +516,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Preparation1",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{You believe you have made a modest defense out of what positions %holysite% can give. With what little time remains, there\'s probably at least one serious task you can set the %companyname% to completing. It\'s just a question of what exactly would suit the company best.}",
 			Image = "",
 			List = [],
@@ -554,7 +554,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Preparation2",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{Looting the holy site itself, which you\'ll tell no one of your doing, and pilfering through the abandoned belongings of the faithful, you manage to scrap together enough wood to reinforce a set of walls that ring a corner of %holysite%. It is in your estimation the best spot for an attacker to come in, and thus the one you\'ll want to defend most.}",
 			Image = "",
 			List = [],
@@ -577,7 +577,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Preparation3",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{You have the men scour the area for battle supplies. A litany of items are pilfered and piled. Once the whole of %holysite% has been combed, you and the men spend a few minutes figuring out what would be of most use...}",
 			Image = "",
 			List = [],
@@ -675,7 +675,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Preparation4",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{What few faithful still linger autour de %holysite% must be the most fervid and zealous. Being that you are here representing the north, you have the men pick out a few hardy looking old gods zealots and ask that they fight for their gods. It is a convenient recruiting tool if there ever was one, and they are quick to arm themselves and undergo the shortest of training. You can only hope they are of any use in the actual battle to come.}",
 			Image = "",
 			List = [],
@@ -698,7 +698,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "TheEnemyAttacks",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_164.png[/img]{The southerners appear over the horizon. Followers of the Gilded One is an apt description for their armor glints and shines even at great distance. %randombrother% spits and looks over.%SPEECH_ON%They look far too dapper for a buncha dead men. You ever wonder if we just dressed ourselves like a buncha djinn and rode out with all the confidence of little devils them southerners would just up and leave?%SPEECH_OFF%Smiling, you draw out your sword and command the men to battle.}",
 			Image = "",
 			List = [],
@@ -719,7 +719,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Quartermaster",
-			Title = "At %townname%",
+			Title = "À %townname%",
 			Text = "[img]gfx/ui/events/event_158.png[/img]{Leaving %townname%, you\'re approached by a man flying %employerfaction%\'s banner off the back end of a wagon. He states that he is a quartermaster for your employer and he has a few supplies to offload.%SPEECH_ON%Got a couple of wardogs, nets and throwing spears. I\'ve been told you can have one or the other, but not all as there are plenty of fightin\' men in need around here.%SPEECH_OFF%}",
 			Image = "",
 			Banner = "",
@@ -796,7 +796,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SallyForth1",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_164.png[/img]{The southerners appear, but it is not in full force, and nor is it necessarily just their scouts. It seems they have spent little time keeping cohesion and have instead spread themselves out on the approach. If you were to sally forth and attack now, you\'d likely catch them with their drawers down.}",
 			Image = "",
 			List = [],
@@ -825,7 +825,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SallyForth2",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_50.png[/img]{%SPEECH_START%Good call.%SPEECH_OFF%The words of %randombrother% follow your order. Set to a fast pace, the %companyname% sets out to catch the southerners before they muster their full strength. You cross the field and before you know it are upon them. They\'re still offloading gear and equipment and at the very sight of you a few camp followers up and run for their lives. The rest of the soldiers hurry to collect their weapons.\n\nJudging by his shrill voice, the only commander in the area isn\'t trained for this sort of thing as his voice cracks with every barked order as some semblance of a formation tries to take shape. Wasting no more time, you charge into the fray!}",
 			Image = "",
 			List = [],
@@ -847,7 +847,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SallyForth3",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_90.png[/img]{You finish off the last of the soldiers, the look of surprise still grimly shaped across their faces.%SPEECH_ON%Captain, got the rest coming.%SPEECH_OFF%%randombrother% says, returning from a quick gaze of the horizon. Nodding, you order the men to get ready. This time, the southerners are making an approach in good formation, though it briefly waivers at the sight of you and the dead littered about your feet. Their banner rises into the sky and the southerners are revivified, charging forth with anger and energy. Shouts of \'for the Gilder!\' ripple through the air. You point your sword forward.%SPEECH_ON%Admirable in their faith they might be, no god shall find them here, only the %companyname% awaits and we\'ve but one prayer to offer.%SPEECH_OFF%The men roar as the battle hastens upon them.}",
 			Image = "",
 			List = [],
@@ -869,7 +869,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SallyForth4",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_164.png[/img]{%SPEECH_START%Good call.%SPEECH_OFF%The words of %randombrother% follow your order. Set to a fast pace, the %companyname% sets out to catch the southerners before they muster their full strength. You cross the field and before you know it are upon them. They\'re still offloading gear and equipment and at the very sight of you a few camp followers up and run for their lives. The rest of the soldiers hurry to collect their weapons. Just when you think you have the upper hand, another contingent arrives from the side.%SPEECH_ON%The Gilder smiles only upon those who deserve His gleam, Crownling!%SPEECH_OFF%The southern commander shouts mockingly. With the defenses too far, and the enemy too close, there\'s only one place to go now. You raise your sword and ready the men to charge.}",
 			Image = "",
 			List = [],
@@ -892,7 +892,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SallyForth5",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{You figure it\'s best to man the defenses. It might let an opportunity slip, but it is in part the safest of all available options.%SPEECH_ON%Shoulda went out. We missed something there on that one, captain.%SPEECH_OFF%Looking over you find %randombrother% shrugging. You tell him to mind his tongue, or he\'ll be missing something himself.}",
 			Image = "",
 			List = [],
@@ -915,7 +915,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AlliedSoldiers1",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_78.png[/img]{As you await the southerners, a troop of northerners arrives. Their lieutenant tips his helmet.%SPEECH_ON%When they told me to come out this way to aide a sellsword, I said they can go shit that command out their arse. But you know what convinced me? Knowing it was the %companyname%. You\'ve reputation, and I\'ve men to spare for this fight.%SPEECH_OFF%Judging by their equipment, they\'d be best used as a screening force to perhaps draw away elements of the oncoming enemy force. That, or perhaps it\'d be best to just fold them into the company, bolstering your ranks where you\'re already strongest.}",
 			Image = "",
 			Banner = "",
@@ -961,7 +961,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AlliedSoldiers2",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_78.png[/img]{You take out a long-glass and scope the battlefield ahead. The northern troop charge toward the enemy in a chevron formation, and then split off at the wings to run off in separate directions. It seems a suicidal charge, but much to your surprise they\'ve made a tasty retreat the southerners can\'t quite resist. You watch as the Gilder\'s followers don\'t keep their eye on the shine, instead depleting their ranks to chase down the feint.%SPEECH_ON%Worked like a charm, captain.%SPEECH_OFF%%randombrother% says.}",
 			Image = "",
 			Banner = "",
@@ -986,7 +986,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AlliedSoldiers3",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_78.png[/img]{You\'d rather the soldiers stay with you. The lieutenant nods.%SPEECH_ON%Yessir, captain, uh, what\'s your name?%SPEECH_OFF%Ignoring him, you tell %randombrother% to accommodate the northern troop to the defenses.%SPEECH_ON%Make sure they know it well, but not too well.%SPEECH_OFF%The sellsword leans in and whispers.%SPEECH_ON%Ah, if they\'re spies we don\'t want to give them too much detail, aye captain?%SPEECH_OFF%You lean in and whisper back.%SPEECH_ON%No. Put them where we are weakest. Hopefully they all eat shit on the frontline and then we\'ll have their belongings.%SPEECH_OFF%}",
 			Image = "",
 			List = [],

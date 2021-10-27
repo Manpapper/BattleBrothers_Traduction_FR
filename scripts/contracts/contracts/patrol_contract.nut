@@ -440,7 +440,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedA",
-			Title = "Along the road...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_02.png[/img]%randombrother% comes back to you with a scouting report.%SPEECH_ON%Some burned hamlets. A dead man cut in half at the belly. Legs missing. His dog was just laying there. Wouldn\'t leave. Couldn\'t coax it nowhere. Found a dead donkey up in some trees. The hawing end had a spear sticking out of it.%SPEECH_OFF%He pauses, thinks, then snaps his fingers.%SPEECH_ON%Oh! Almost forgot. There\'s a crucified man down the other side of that hill yonder. He was alive. Doing a bunch of screaming, but I stayed clear. A stranger\'s pain is tricky business.%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
@@ -472,7 +472,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedB",
-			Title = "Along the road...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_02.png[/img]You decide to venture down and see the crucified fella.\n\n You top a nearby hill and look down its slopes. It\'s pretty much as the sellsword put it. There\'s a crucified man down the end of the hillside. He\'s hanging limp, though even from here you can hear his occasional scream. %randombrother% asks what to do.",
 			Image = "",
 			Characters = [],
@@ -525,7 +525,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedC",
-			Title = "Along the road...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_02.png[/img]You\'re not sure you could sleep at night knowing you left this poor sod to such a horrid fate. You and the company start down the hillside. It\'s not an especially quick rescue as you\'re still worried about ambushes, but nothing does spring. The crucified man grins when you near.%SPEECH_ON%Lemme down and I\'ll fight for you to the end of my days, I promise it!%SPEECH_OFF%The sellswords leverage their weapons beneath the nails and wrench the man free. He slides down the wooden post into the arms of some mercenaries who gently lower him to the ground. In between sips of water, he talks.%SPEECH_ON%Greenskins did this to me. I was the last of my village and I guess they thought to have a bit of fun beyond just putting an axe in my face. I was beginning to prefer the latter until you came along. I\'m not in the best of shape, sir, but with time I\'ll recover and I swear by my name, which I am the last of, that I will fight for you until death or the last victory!%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
@@ -587,7 +587,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedD",
-			Title = "Along the road...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_67.png[/img]Sleeping at night would get a little harder if you left this poor sod behind. You lead the company down the hillside in part to save him and save your own sanity. The crucified fella begins to smile as you near.%SPEECH_ON%Thank you, stranger! Thank you thank you thank--%SPEECH_OFF%He\'s cut off by a sickening \'thunk\' of a javelin spearing his chest and into the wooden boards upon which he is crucified. You spin around in time to see greenskins rushing out of some nearby bushes. Goddammit, it was a trap all along! To arms!",
 			Image = "",
 			Characters = [],
@@ -622,7 +622,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedE",
-			Title = "Along the road...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_07.png[/img]You decide to wait it out. As you sit and listen the dying man\'s wails slowly quiet down into silence, %randombrother% grabs you by the shoulder and points a little ways off. There are some brigands coming toward the crucified fella. They get there and talk for a time. One man takes out a dagger and starts stabbing it into the dying man\'s toes. His wails aren\'t quiet any longer. One of the brigands turns around laughing. He stops. He says something. He points. You\'ve been seen! Before those arseholes can get into formation, you order the %companyname% to charge!",
 			Image = "",
 			Characters = [],
@@ -740,7 +740,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "CrucifiedF",
-			Title = "Along the road...",
+			Title = "Sur la route...",
 			Text = "[img]gfx/ui/events/event_02.png[/img]You decide to wait it out. The dying man keeps on dying. His cries get a little bit quieter, which is nice on the ears, but bad on the souls of the men. After a while, %randombrother% comes up and suggests that the company head on down. The likelihood that someone would stay around for an ambush now is very unlikely indeed. You and the company trot down the hillside and get to the crucified man. His chin is to his chest, his eyes half-opened, a froth of drool and blood dripping from his lips. With nothing on him worth taking, you order the %companyname% to get back on the path.",
 			Image = "",
 			Characters = [],
@@ -782,7 +782,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Success1",
-			Title = "At %location1%...",
+			Title = "À %location1%...",
 			Text = "[img]gfx/ui/events/event_45.png[/img]{You reach %location1% and have the men take a break. While they rest, you count supplies and make sure everything is in order. Soon enough, you get the company back to marching. | Stopping at %location1%, the first leg of the patrol, you have the men rest for a time. You\'ve more road ahead so you figure now is a good time as any to resupply. | The first leg of the patrol is finished. Now you\'ve to move on to the next one. You inform the men as much and they groan. You also inform them that you are not paying them to bitch, but they groan at that, too. | You reach the first point of patrol and order the men to take five while you count supplies. The patrol is only one third finished. You wonder if you should stock up on more equipment before heading back out. | You reach %location1% safe and for the most part sound.}",
 			Image = "",
 			Characters = [],
@@ -810,7 +810,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Success2",
-			Title = "At %location2%...",
+			Title = "À %location2%...",
 			Text = "[img]gfx/ui/events/event_45.png[/img]{%location2% is just where it was said to be. You have the men go for some rest and recuperation while you plan out the last leg of the patrol. | The patrol takes you to %location2% which receives you with the same guff and suspicion a mercenary is met with anywhere. You\'ve another leg of the journey to go, so perhaps gathering supplies here is a good idea. | The men fan out into %location2%\'s pubs. You simply take stock of your supplies and wonder if resupplying is a good idea. Glancing at the dim lights of a pub, you also wonder if a quick drink wouldn\'t hurt, either. | Reaching %location2%, %randombrother% suggests that the company should pick up some supplies for the journey back to %employer%. You\'ve already thought of this, but you give the sellsword the satisfaction of having come up with the idea himself.}",
 			Image = "",
 			Characters = [],

@@ -551,7 +551,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "ThankfulVillagers",
-			Title = "At %objective%",
+			Title = "À %objective%",
 			Text = "[img]gfx/ui/events/event_79.png[/img]{You put down the last of the southern raiders. As you order the company to collect what\'s of value, a couple of villagers come out with goods of their own.%SPEECH_ON%We thought it the end of the world, and yet here you are, our knights.%SPEECH_OFF%While you\'re not a knight, you\'re not averse to taking a knight\'s praise - and a knight\'s reward: the villagers give you gifts! | With the raiders dispatched, you find yourself slowly surrounded by villagers. They look haggard and afraid, yet they carry with them baskets of goods. You are offered these as rewards for saving them. They seem to confuse you for %employer%\'s own soldiers, but you don\'t even think to reveal that you are a mercenary. You take the offerings and even tip your hat and say it\'s just your job, which it is.}",
 			Image = "",
 			List = [],

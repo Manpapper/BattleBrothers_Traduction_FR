@@ -516,7 +516,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "AlliedArmy",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_78.png[/img]{%holysite% is already under siege by men carrying %employerfaction%\'s banner. As you come closer, a man meets you half way. He raises his hand and then puts it to his belt.%SPEECH_ON%I got word they were sending a mercenary and you appear to be it. The %companyname%, was it? Well, I am %commander%, a lieutenant of %employer%\'s. I will be joining you in rooting out these desert rats. I fear, as I\'m sure you do, that the old gods will be punish us all if we do not see to this task posthaste.%SPEECH_OFF%The lieutenant spits and runs a hand across his grizzled face.%SPEECH_ON%Well. Let the old gods see us as truly as we are, and we shall butcher these dune goons in a manner most righteous.%SPEECH_OFF% | %holysite% is already under siege by men carrying %employerfaction%\'s banner. The leader steps forward and speaks loudly.%SPEECH_ON%The %companyname%, my name is %commander%, lieutenant to %employer%\'s field army. I have come to join you, or shall I say you will be joining me, in going to %holysite% and ripping out those southern scum from every inch of the place. For the old gods watch over us all, even the likes of you sellswords, and failure today will surely doom us to every hell there is.%SPEECH_OFF%Right. You just want to be sure, help or not, that %employer% will pay you the full amount of that which will be owed. | %holysite% is already under siege by men carrying %employerfaction%\'s banner. It\'s seemingly a congress of holy men and soldiers alike, and the lieutenant leading the troop brandishes his sword before swiftly aiming it toward %holysite%.%SPEECH_ON%The southern lickspittles will either leave, or we will convert them to the hells of the old gods by the grace of our steel. There is no other choice in this matter. Come then, mercenaries!%SPEECH_OFF%It appears the %companyname% will have some help in this endeavor, though you fully expect to still see the entirety of the reward promised.}",
 			Image = "",
 			Banner = "",
@@ -540,7 +540,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SallyForth",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/%illustration%.png[/img]{%holysite%\'s defenders have received reinforcements! Thankfully, there is a silver lining: the additional arms has given them the confidence to leave the natural defenses of the holy site and to approach you in the open field. | You\'re surprised to see the defenders leaving %holysite% and trekking across the open field. A quick scouting report relays that they received reinforcements sometime in the past few days and are emboldened by numbers alone. On one hand, their deep ranks are a bit unsettling, but on the other hand facing them on even ground will be much easier. Though by your honest estimation it is their mistake to face the %companyname% at all.}",
 			Image = "",
 			List = [],
@@ -562,7 +562,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Mercenaries1",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_134.png[/img]{As %holysite% draws into view, a man who looks almost eerily similar to you approaches. He\'s got a paymaster and a couple of sellswords at his side.%SPEECH_ON%Evenin\', captain. I am %mercenary% of the %mercenarycompany%. I came to these lands in search of crown, just as you have. Now, I wager that fat nobleman wetted his pen in a mighty sound contract for you and your men, but what say you pay me %pay% crowns and I\'ll help you in this little endeavor? Unless, of course, you want me to offer my services to the other side over yonder.%SPEECH_OFF% | You are approached by a group of men, one of which whose gait and constitution alike seem strangely reminiscent to your own. He announces himself as %mercenary%, captain of the %mercenarycompany%.%SPEECH_ON%I thought %employer% might send his professional army to see to the holy site\'s change of hands. I will admit to you, captain, that I helped them dune loons take over this prestigious monument in the first place. However, for %pay% crowns, I\'m willing to help your side take it back. As a fellow mercenary, I\'m sure you can see how this would be a good deal for all involved.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -605,7 +605,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Mercenaries2",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_134.png[/img]{The captain grins and slaps your shoulder.%SPEECH_ON%Aaahhh, there it is! There it is, the noble sellsword spirit! Aye, commander of the %companyname%, let us venture forth, for a short time, and do battle together, also for a short time!%SPEECH_OFF% | With the deal made, the captain of the mercenary company sidles up next to you. Almost uncomfortably close, and assuredly within range of his breath, which is unappreciated.%SPEECH_ON%You know, men like us, fellas like us, pals, we\'re pals, right? Pals like us. We gotta stick together. And for this here battle, we\'ll be sticking together.%SPEECH_OFF%He nods and slugs one into your shoulder.%SPEECH_ON%After the fight, well, I hope we can be buddies again sometime, you know?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
@@ -634,7 +634,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Mercenaries3",
-			Title = "At %holysite%",
+			Title = "À %holysite%",
 			Text = "[img]gfx/ui/events/event_134.png[/img]{%SPEECH_START%That\'s a shame.%SPEECH_OFF%%mercenary% says as he quickly jaunts back to the ranks of the %mercenarycompany%. He keeps backing up right into the soldiers defending %holysite%. His arms are wide and fanning, as though he were swimming against a current.%SPEECH_ON%A damn shame, I say! Well, captain of the %companyname%, let us see which side purchased the finer sellsword, yeah?%SPEECH_OFF%The mercenary draws his weapon, as do the southern soldiers at %holysite% behind them. Naturally, you draw your weapon as well. It is time to fight. | %SPEECH_ON%Aye, aye, I see. Well. I didn\'t expect much. I am, after all, also a seller of the sword. And right now...%SPEECH_OFF%He paces backward to his company, and his company to the ranks of the southern soldiers protecting %holysite%.%SPEECH_ON%Right now, the south proves to be the highest bidder.%SPEECH_OFF%}",
 			Image = "",
 			List = [],

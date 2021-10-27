@@ -527,7 +527,7 @@ this.defend_settlement_greenskins_contract <- this.inherit("scripts/contracts/co
 		});
 		this.m.Screens.push({
 			ID = "Militia1",
-			Title = "At %townname%",
+			Title = "À %townname%",
 			Text = "[img]gfx/ui/events/event_80.png[/img]{While preparing to defend %townname%, the local militia has come to your side. They submit to your orders, only asking that you send them where you think they are most needed. | It appears the local militia have joined the battle! A ragtag group of men, but they\'ll be useful nonetheless. Now the question is, where to send them? | %townname%\'s militia has joined the fight! Although a shoddy band of poorly armed men, they are eager to defend home and hovel. They submit to your command, trusting that you will send them to where they are most needed. | You\'re not alone in this fight! %townname%\'s militia have joined you. They\'re eager to fight and ask you where they are needed most.}",
 			Image = "",
 			List = [],
@@ -605,7 +605,7 @@ this.defend_settlement_greenskins_contract <- this.inherit("scripts/contracts/co
 		});
 		this.m.Screens.push({
 			ID = "Militia2",
-			Title = "At %townname%",
+			Title = "À %townname%",
 			Text = "[img]gfx/ui/events/event_80.png[/img]Now that you\'ve decided to take some of the locals under your command, they ask how they should arm themselves for the battle to come.",
 			Image = "",
 			List = [],

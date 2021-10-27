@@ -635,7 +635,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.m.Screens.push({
 			ID = "Task",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "",
 			Image = "",
 			List = [],
@@ -709,7 +709,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Start",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "[img]gfx/ui/events/event_155.png[/img]{As you wait your turn, the crowd\'s bloodlust crawls through the dark, sheets of dust falling from above, the stomps of feet thunderous. They murmur in anticipation, and roar at killings. The quiet between battles is mere moments, and this silence is snatched away as the rusted gate lurches upward, chains rankling, the crowd abuzz once more. You step out into the light and so thunderous is the noise against your heart it could surely yet spur a dead man forth... | The arena\'s crowd is shoulder to shoulder, most blathering drunk. They scream and shout, their languages a mix of local and foreign, though the appeal to their bloodlust needs little articulation beyond their maddened faces and pumping fists. Now, the %companyname%\'s men will satiate these mad fools... | Cleaners hurry about the arena. They drag away the bodies, collect what\'s worth collecting, and occasionally throw a trophy into the crowds, eliciting a moblike rendition of the arena\'s battles in the stands themselves. The %companyname% is now a part of this affair. | The arena awaits, the crowd alight, and the %companyname%\'s turn to gain glory is at hand! | The crowd booms as the %companyname%\'s men stride into its bloody pit. Despite the mindless bloodlust of the peoples, you can\'t help but feel a beat of pride in your chest, knowing that it is your company ready to put on a show. | The gate rises. Nothing is heard save the rattle of chains, the creak of pulleys, the grunts of slaves at work. When the men of the %companyname% step out of the arena\'s bowels they can hear the crunch of sand underfoot until they come to stand in the center of the pit. A strange voice screams from the tops of the stadium, some lost language beyond your knowing, but the words echo just once before the crowd erupts with cheers and roaring. Now is the time your men shall prove themselves before the watchful eye of the commoner. | The %companyname%\'s business is rarely done before the eyes of those who would prefer themselves distantly separated from such violence. But in the arena, the commoner greedily awaits death and suffering, and it growls with bloodlust as your men enter the pits, and roars as the sellswords draw their weapons and ready for battle. | The arena is shaped like the pit of some sore, its ceiling torn away by the gods, revealing the vanity, bloodlust, and savagery of man. And it is man there, yelling and screaming, and if the blood sprays hit them, they wash their faces in the gore and grin at one another as though it were a joke. They fight one another for trophies and relish in the pain of others. And it is before these peoples that the %companyname% will fight, and for them they shall entertain and entertain well. | The arena\'s crowd is a mash of classes, rich and poor, for only the Viziers separate themselves out into stations above all. Briefly unified, the peoples of %townname% have graciously come together to watch men and monsters murder one another. With pleasure, the %companyname% seeks to do its part. | Boys sitting on the shoulders of fathers, young girls throwing flowers to the gladiators, women fanning themselves, men wondering if they could do it. These are the peoples of the arena - and the rest are all drunk out of their gourd and screaming nonsense. You hope the %companyname% can contribute to at least an hour or two to entertaining this mad lot. | The crowd roars as the %companyname%\'s men step into the pit. One would be dumb to confuse excitement for desire, for as soon as the applause ends there is a smattering of empty beer mugs and rotten tomatoes and the general giggling delight of those watching the matter. You wonder if the %companyname%\'s men are really best spent here, but then think hard on the gold and glory to be won, and that at the end of the day these mongrels in the stands will go home to their shit lives, and you\'ll go home to your shit life as well, but at least your pockets will be a bit deeper.}",
 			Image = "",
 			List = [],
@@ -740,7 +740,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Won2",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "[img]gfx/ui/events/event_147.png[/img]{The first of the three battles is over. You\'ll have to make a careful assessment of your men and if they can continue to the next round, which will only be harder than the last. Just as you\'ll find no pride in the grave, there\'s no shame in leaving. You\'d still get some coin, but you\'d also forfeit any chance to win the grand prize.}",
 			Image = "",
 			List = [],
@@ -788,7 +788,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Won3",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "[img]gfx/ui/events/event_147.png[/img]The penultimate battle is won, leaving you with the choice to drop out now or take on the final fight to win the grand prize.",
 			Image = "",
 			List = [],
@@ -830,7 +830,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Won4",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "[img]gfx/ui/events/event_147.png[/img]The combat is over, and the dull warbling in your ear is the roar of the crowd, overwhelming all senses in an explosion of celebratory ecstasy. You are but an avatar for the people, a totem through which they can vicariously electrify their own vanity and vacant heroism. Alongside the adoration of the mob, you are rewarded the grand prize: %prizename%!",
 			Image = "",
 			Characters = [],
@@ -874,7 +874,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "DropOut",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "[img]gfx/ui/events/event_147.png[/img]{You decide to depart the tournament and preserve your men to fight another day. No boos or hisses are heard as this is done in the belly of the arena. It is a bureaucratic affair at best, a small exchange of monetary compensation and you are sent on your way. No grief is given, especially not from fellow gladiators who understand the point of the decision better than anyone. And the crowd? They just want blood, they\'ll never even notice which bodies carrying it are gone.}",
 			Image = "",
 			Characters = [],
@@ -907,7 +907,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure1",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "[img]gfx/ui/events/event_147.png[/img]{The %companyname%\'s men have been defeated, either dead or, perhaps worse, badly mangled. At least the crowds are happy. In the pits, any showing, even that which ends in demise, is a good showing.}",
 			Image = "",
 			Characters = [],
@@ -941,7 +941,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure2",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "{[img]gfx/ui/events/event_155.png[/img]The time for your arena match has come and passed, but you didn\'t show up there. Perhaps something more important came up, or perhaps you\'ve just been hiding like cowards. Either way, your reputation will suffer because of this.",
 			Image = "",
 			Characters = [],
@@ -963,7 +963,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Collars",
-			Title = "At the Arena",
+			Title = "À the Arena",
 			Text = "{[img]gfx/ui/events/event_155.png[/img]The time for your arena match has come, but none of your men bear the arena collars, and so they aren\'t let in.\n\nYou should decide on who is to fight by equipping them with the arena collars that you\'ve been given, and the match will start once you enter the arena again.",
 			Image = "",
 			Characters = [],

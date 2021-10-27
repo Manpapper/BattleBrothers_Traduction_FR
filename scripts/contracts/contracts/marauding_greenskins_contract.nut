@@ -628,7 +628,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "Success2",
-			Title = "At %objective%...",
+			Title = "À %objective%...",
 			Text = "[img]gfx/ui/events/event_20.png[/img]{Having reached %objective% in safekeeping, the merchant turns \'round and thanks you. He hands over a satchel of crowns, just as promised, and quickly makes his way into the town. | %objective% is a sight for sore eyes, and merry merchants as well - the man you were escorting cries out, ecstatic to either be alive or about to make some money or whatever it is that gets men of business going. He runs to a nearby inn and quickly returns, a satchel of crowns in hand.%SPEECH_ON%As promised, sellsword. I owe you much more.%SPEECH_OFF%You slyly ask how much the man would pay. He laughs.%SPEECH_ON%I wouldn\'t dare price my own head for I guarantee someone out there would want to purchase it!%SPEECH_OFF%You nod, understanding, and being quite fine with the payment as is. | Having reached %objective%, the merchant pays you the amount you two agreed upon. He then quickly rushes off, going on about how he\'s going to make so many crowns and bed so many women. | You safely get the merchant to %objective%. He thanks you then hurries off to a nearby tavern. When he returns, he\'s lugging a satchel of crowns like a grapefruit in a sock. He heaves it toward you.%SPEECH_ON%Your payment, mercenary. You have my gratitude and, of course, my crowns. Now excuse me...%SPEECH_OFF%He straightens his shirt and trousers, and lifts his chin up.%SPEECH_ON%...for I have money to make.%SPEECH_OFF%He turns and marches off, a little bit of penny pinching pep in his step.}",
 			Image = "",
 			List = [],
