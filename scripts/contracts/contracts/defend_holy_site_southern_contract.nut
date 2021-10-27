@@ -437,7 +437,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 		this.importScreens(this.Const.Contracts.Overview);
 		this.m.Screens.push({
 			ID = "Task",
-			Title = "Negotiations",
+			Title = "Négociations",
 			Text = "{[img]gfx/ui/events/event_163.png[/img]%employer% is nowhere to be seen. Instead a man in clerical colors approaches with a lieutenant general at his side. They state that a contingent of northern soldiers is approaching %holysite% with the aim to take it wholly for the North. With the city-state\'s soldiers elsewhere, they will have to lean on you to hurry to the location and defend it. Their heavy-handed manner of speaking combined with a hint of anxiety no doubt makes this a potentially pocket-deepening payday. | [img]gfx/ui/events/event_162.png[/img]You are pushed into %employer%\'s room and the Vizier nods at you and claps.%SPEECH_ON%Finally, the little Crownling is here, ready to do big things for us all. Come, look at this map. Do you see where my men are? And do you see where %holysite% is? And here, the northern rats... They\'re near to the sacred grounds and my men far. You, however, are here, close indeed, no? For %reward% crowns I want you to Voyagez jusqu\'à %holysite% and defend it.%SPEECH_OFF%The Vizier stares at you with a warm smile as though this wasn\'t a question, but a request so weighted with gold it may as well have been an order.}",
 			Image = "",
 			List = [],

@@ -418,7 +418,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.importScreens(this.Const.Contracts.Overview);
 		this.m.Screens.push({
 			ID = "Task",
-			Title = "Negotiations",
+			Title = "Négociations",
 			Text = "[img]gfx/ui/events/event_45.png[/img]{%SPEECH_START%Dune rune bastards.%SPEECH_OFF%This is the first thing you hear upon entering %employer%\'s room. He begrudgingly waves you in.%SPEECH_ON%The war with the South continues, but they\'ve taken it upon themselves to break bonds of unspoken agreements: they\'re moving on %holysite% and I\'ve no means to protect it. I\'m not one to dally on how important the grounds are, but if I were to let it slide the public will undoubtedly clip my nuts. Being that I quite like my balls, I\'ll put %reward% crowns on the table for you to go there and defend %holysite%.%SPEECH_OFF% | You find %employer% trying to talk his way over a throng of peasants. It appears news has arrived that Southern soldiers are approaching %holysite%.%SPEECH_ON%We\'ve unspoken rules that these sacred grounds, they\'re, they\'re... they\'re sacred!%SPEECH_OFF%Seeing you, the nobleman clears a path, announcing you as brave warriors that he beckoned a week ago. When he gets near, however, he shelters his voice in a whisper.%SPEECH_ON%These idiots don\'t need to know you\'re sellswords. Look, the Southerners jammed a stick far up my ass on this one. The savages truly are making a move on %holysite% and I need you to get there and stop them. %reward% crowns should be sufficient for this task, yeah?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
