@@ -315,7 +315,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 					"Ramenez le marchand sain et sauf à %objective% %objectivedirection%"
 				];
 				this.Contract.m.BulletpointsPayment = [];
-				this.Contract.m.BulletpointsPayment.push("Recevez %reward_merchant% Couronnes en arrivant");
+				this.Contract.m.BulletpointsPayment.push("Vous recevez %reward_merchant% Couronnes en arrivant");
 			}
 
 			function update()
@@ -348,12 +348,12 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 
 				if (this.Contract.m.Payment.Advance != 0)
 				{
-					this.Contract.m.BulletpointsPayment.push("Recevez " + this.Contract.m.Payment.getInAdvance() + " Couronnes d\'avance");
+					this.Contract.m.BulletpointsPayment.push("Vous recevez " + this.Contract.m.Payment.getInAdvance() + " Couronnes d\'avance");
 				}
 
 				if (this.Contract.m.Payment.Completion != 0)
 				{
-					this.Contract.m.BulletpointsPayment.push("Recevez " + this.Contract.m.Payment.getOnCompletion() + " Couronnes à l\'achèvement du contrat");
+					this.Contract.m.BulletpointsPayment.push("Vous recevez " + this.Contract.m.Payment.getOnCompletion() + " Couronnes à l\'achèvement du contrat");
 				}
 
 				this.Contract.m.Home.getSprite("selection").Visible = true;
@@ -620,7 +620,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Couronnes"
 				});
 				this.Contract.m.SituationID = this.Contract.resolveSituation(this.Contract.m.SituationID, this.Contract.m.Origin, this.List);
 			}

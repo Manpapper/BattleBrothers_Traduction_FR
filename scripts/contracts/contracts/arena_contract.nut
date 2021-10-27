@@ -315,8 +315,8 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 			],
 			function start()
 			{
-				this.Text = "[img]gfx/ui/events/event_155.png[/img]Des dizaines d'hommes se déplacent à l'entrée de l'arène. Certains se tiennent stoïquement, ne souhaitant pas donner le moindre indice sur leurs capacités. D'autres, en revanche, se vantent et se vantent avec aplomb, soit sont sincèrement confiants dans leurs compétences martiales, d'autres espèrent que leur bravoure masque toute faille dans leur jeu.\n\n";
-				this.Text += "Un homme grisonnant, le maître de l'arène, brandit un parchemin et le tapote avec un crochet en guise de main.";
+				this.Text = "[img]gfx/ui/events/event_155.png[/img]Des dizaines d\'hommes se déplacent à l\'entrée de l\'arène. Certains se tiennent stoïquement, ne souhaitant pas donner le moindre indice sur leurs capacités. D\'autres, en revanche, se vantent et se vantent avec aplomb, soit sont sincèrement confiants dans leurs compétences martiales, d\'autres espèrent que leur bravoure masque toute faille dans leur jeu.\n\n";
+				this.Text += "Un homme grisonnant, le maître de l\'arène, brandit un parchemin et le tapote avec un crochet en guise de main.";
 				local baseDifficulty = 30;
 
 				if (this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon") > 0 && this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon") % 5 == 0)
@@ -339,7 +339,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre un Maître d\'Armes et %amount% pillards";
 					}
 
-					this.Text += "%SPEECH_ON%Ils ont mis une étoile à côté de son nom, la marque du doreur. Cela signifie que son chemin est doré. Ce que vous devez savoir, c'est qu'il est un maître d'armes. Vous pouvez trouver un certain réconfort dans le fait qu'il soit un homme âgé, mais vous ne seriez pas le premier à qui je le dis, compris ? Que votre chemin soit aussi doré, car celui de ce maître d'armes l'était certainement.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Ils ont mis une étoile à côté de son nom, la marque du doreur. Cela signifie que son chemin est doré. Ce que vous devez savoir, c\'est qu\'il est un maître d\'armes. Vous pouvez trouver un certain réconfort dans le fait qu\'il soit un homme âgé, mais vous ne seriez pas le premier à qui je le dis, compris ? Que votre chemin soit aussi doré, car celui de ce maître d\'armes l\'était certainement.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsHedgeKnight"))
 				{
@@ -354,7 +354,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre un Chevalier Errant et %amount% pillards";
 					}
 
-					this.Text += "%SPEECH_ON%Je crois que les gens du nord l'appellent un \"chevalier de la haine\". C'est peut-être une erreur. Ne dites pas aux autres maîtres de l'arène que j'ai dit ça à propos des ordures du nord, mais ce chevalier est l'un des hommes les plus dangereux que j'ai vu passer ici et si vous souhaitez que votre chemin continue d'être doré, je vous suggère de faire des préparations minutieuses et de bien vous reposer avant le combat.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Je crois que les gens du nord l\'appellent un \"chevalier de la haine\". C\'est peut-être une erreur. Ne dites pas aux autres maîtres de l\'arène que j\'ai dit ça à propos des ordures du nord, mais ce chevalier est l\'un des hommes les plus dangereux que j\'ai vu passer ici et si vous souhaitez que votre chemin continue d\'être doré, je vous suggère de faire des préparations minutieuses et de bien vous reposer avant le combat.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsDesertDevil"))
 				{
@@ -369,13 +369,13 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre un Danseur de Lames et %amount% nomades";
 					}
 
-					this.Text += "Le maître d'arène brandit un parchemin et le tapote avec un crochet en guise de main.%SPEECH_ON%Un danseur de lame des tribus nomades est sur la liste. Il a peut-être l'air un peu prétentieux, mais pour obtenir le titre de \"danseur de lames\", il faut être aussi habile avec les lames qu'un oiseau l'est avec le vent. L'expertise en danse est facultative, mais ils sont tous plutôt bons à ça aussi.%SPEECH_OFF%";
+					this.Text += "Le maître d\'arène brandit un parchemin et le tapote avec un crochet en guise de main.%SPEECH_ON%Un danseur de lame des tribus nomades est sur la liste. Il a peut-être l\'air un peu prétentieux, mais pour obtenir le titre de \"danseur de lames\", il faut être aussi habile avec les lames qu\'un oiseau l\'est avec le vent. L\'expertise en danse est facultative, mais ils sont tous plutôt bons à ça aussi.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsSandGolems"))
 				{
 					this.Flags.set("Number", this.Math.max(3, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.SandGolem, baseDifficulty, 3)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% ifrits";
-					this.Text += "%SPEECH_ON%Il n'y a rien de nouveau parce que je crains les foudres du désert si j'ose éclairer sa présence la plus féroce. Tu te bats contre %number% d'Ifrits. Je ne sais pas comment ils ont réussi à les amener ici, je sais juste que c'est l'oeuvre des alchimistes. Si tu veux mon avis, je préfère que ce soit vous qui les combattiez que moi.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Il n\'y a rien de nouveau parce que je crains les foudres du désert si j\'ose éclairer sa présence la plus féroce. Tu te bats contre %number% d\'Ifrits. Je ne sais pas comment ils ont réussi à les amener ici, je sais juste que c\'est l\'oeuvre des alchimistes. Si tu veux mon avis, je préfère que ce soit vous qui les combattiez que moi.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsGhouls"))
 				{
@@ -394,7 +394,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 
 					this.Flags.set("Number", num);
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% nachzehrers";
-					this.Text += "%SPEECH_ON%Les alchimistes les appellent, eh bien, je ne peux même pas le prononcer. Ma langue ne peut tout simplement pas s'adapter au mot, car il nécessite une lexicographie nordique spécialisée et je n'ai pas le temps de réduire le verbiage nordique à une question futile de minutie mondaine. Est-ce que je ressemble à un phonéticien pour vous ? Appelons-les simplement les \"gnashslashers\". Ce sont des crétins macabres, ils sont %number%, et je les ai vus manger des hommes vivants, alors vous feriez mieux d'espérer que le dompteur regarde - je ne pense pas qu'il ait de la lumière pour vous dans le ventre d'une de ces bêtes !%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Les alchimistes les appellent, eh bien, je ne peux même pas le prononcer. Ma langue ne peut tout simplement pas s\'adapter au mot, car il nécessite une lexicographie nordique spécialisée et je n\'ai pas le temps de réduire le verbiage nordique à une question futile de minutie mondaine. Est-ce que je ressemble à un phonéticien pour vous ? Appelons-les simplement les \"gnashslashers\". Ce sont des crétins macabres, ils sont %number%, et je les ai vus manger des hommes vivants, alors vous feriez mieux d\'espérer que le dompteur regarde - je ne pense pas qu\'il ait de la lumière pour vous dans le ventre d\'une de ces bêtes !%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsUnholds"))
 				{
@@ -773,13 +773,13 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "At the Arena",
-			Text = "[img]gfx/ui/events/event_147.png[/img]{Le maître de cérémonie parle comme s'il ne se souvenait pas de votre visage, mais il ne s'en souvient probablement pas.%SPEECH_ON%Voici votre dû, n'hésitez pas à revenir.%SPEECH_OFF%L'arène sera fermée pour la journée, mais vous pourrez revenir dès demain. | Sans même lever la tête d'un chiffon de papyrus, le maître de l'arène vous lance une bourse de pièces.%SPEECH_ON%J'ai entendu la foule, et voici donc vos couronnes. Puissiez-vous venir visiter les fosses à nouveau.%SPEECH_OFF%L'arène sera fermée pour la journée, mais vous pourrez revenir dès demain. | Le maître de l'arène vous attend.%SPEECH_ON%C'était un très bon spectacle, mon gars. Ça ne me dérangerait pas le moins du monde que vous reveniez.%SPEECH_OFF%L'arène sera fermée pour la journée, mais vous pourrez revenir dès demain.}",
+			Text = "[img]gfx/ui/events/event_147.png[/img]{Le maître de cérémonie parle comme s\'il ne se souvenait pas de votre visage, mais il ne s\'en souvient probablement pas.%SPEECH_ON%Voici votre dû, n\'hésitez pas à revenir.%SPEECH_OFF%L\'arène sera fermée pour la journée, mais vous pourrez revenir dès demain. | Sans même lever la tête d\'un chiffon de papyrus, le maître de l\'arène vous lance une bourse de pièces.%SPEECH_ON%J\'ai entendu la foule, et voici donc vos couronnes. Puissiez-vous venir visiter les fosses à nouveau.%SPEECH_OFF%L\'arène sera fermée pour la journée, mais vous pourrez revenir dès demain. | Le maître de l\'arène vous attend.%SPEECH_ON%C\'était un très bon spectacle, mon gars. Ça ne me dérangerait pas le moins du monde que vous reveniez.%SPEECH_OFF%L\'arène sera fermée pour la journée, mais vous pourrez revenir dès demain.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "{Victoire! | N'êtes vous pas assez divertis ? | On l'a tué. | Un spectacle sanglant.}",
+					Text = "{Victoire! | N\'êtes vous pas assez divertis ? | On l\'a tué. | Un spectacle sanglant.}",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
@@ -970,7 +970,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure2",
 			Title = "At the Arena",
-			Text = "{[img]gfx/ui/events/event_155.png[/img]L'heure de votre match d'arène est arrivée et passée, mais vous ne vous y êtes pas présentés. Peut-être que quelque chose de plus important s'est présenté, ou peut-être que vous vous êtes simplement cachés comme des lâches. Dans tous les cas, votre réputation en pâtira.",
+			Text = "{[img]gfx/ui/events/event_155.png[/img]L\'heure de votre match d\'arène est arrivée et passée, mais vous ne vous y êtes pas présentés. Peut-être que quelque chose de plus important s\'est présenté, ou peut-être que vous vous êtes simplement cachés comme des lâches. Dans tous les cas, votre réputation en pâtira.",
 			Image = "",
 			Characters = [],
 			List = [],
@@ -991,13 +991,13 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Collars",
 			Title = "At the Arena",
-			Text = "{[img]gfx/ui/events/event_155.png[/img]L'heure de votre match d'arène a sonné, mais aucun de vos hommes ne porte le collier d'arène et ils ne sont donc pas autorisés à entrer.\n\nVous devez décider qui va combattre en les équipant des colliers d'arène qui vous ont été donnés, et le match commencera dès que vous serez de nouveau dans l'arène.",
+			Text = "{[img]gfx/ui/events/event_155.png[/img]L\'heure de votre match d\'arène a sonné, mais aucun de vos hommes ne porte le collier d\'arène et ils ne sont donc pas autorisés à entrer.\n\nVous devez décider qui va combattre en les équipant des colliers d\'arène qui vous ont été donnés, et le match commencera dès que vous serez de nouveau dans l\'arène.",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Oh, c'est vrai!",
+					Text = "Oh, c\'est vrai!",
 					function getResult()
 					{
 						return 0;
@@ -1009,7 +1009,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Gladiators",
 			Title = "At the Arena",
-			Text = "{[img]gfx/ui/events/event_85.png[/img]Le combat terminé, vous trouvez quelques femmes qui se promènent vers vous et les gladiateurs. Elles sont pratiquement en pâmoison, les visages rougis, et les hommes s'occupent particulièrement d'elles. Un peu fatigué vous-même, vous demandez à l'un des fans de vous aider à compter l'inventaire. | [img]gfx/ui/events/event_147.png[/img]La bataille est terminée, mais une ombre traverse soudainement le sol. En un éclair, vous dégainez et fendez le ciel. Des pétales de fleurs arrosent votre corps scintillant et vous attrapez le reste du bouquet entre vos dents. Une femme se tient là, s'éventant.%SPEECH_ON%Je me demandais pourquoi vous ne vous étiez pas battus.%SPEECH_OFF%Dit-elle. Vous rengainez votre lame et attachez le bouquet à votre ceinture. Vous lui dites que si vous vous battiez, ce ne sera pas du tout un \"combat\". La femme a les genoux fragiles et trouve du réconfort sur le sol. Avant de partir, vous lui dites de boire beaucoup d'eau et de s'étirer le matin. | [img]gfx/ui/events/event_97.png[/img]%SPEECH_START%Puis-je apprendre à me battre comme vous, les hommes ?%SPEECH_OFF%Les voix vous prennent au dépourvu et avant que vous ne le sachiez, vous avez votre lame à quelques centimètres du visage d'un petit garçon. Ses yeux sont fermés, et il en ouvre lentement un. Vous rengainez l'épée et riez.%SPEECH_ON%Non. Ce que je fais ne peut pas être appris.%SPEECH_OFF%Vous utilisez un peu de cendre et de sang du champ pour signer la chemise du gamin, puis vous partez. | %SPEECH_START%Êtes-vous... êtes-vous des gladiateurs ?%SPEECH_OFF%Vous regardez pour voir un garçon qui se tient là, l'étonnement sur son visage. Il pleure presque, tellement il est content.%SPEECH_ON%Vous êtes incroyable!%SPEECH_OFF%Touchant les cheveux du garçon, vous lui dites merci et vous partez. | [img]gfx/ui/events/event_97.png[/img]%SPEECH_START%Comment êtes-vous devenu si bon ?%SPEECH_OFF%Vous vous retournez pour voir un garçon qui vous regarde nerveusement. En souriant, vous lui dites la vérité.%SPEECH_ON%Quand j'avais ton âge, je tuais des hommes de mon âge.%SPEECH_OFF%En souriant, il demande si, en y travaillant, il peut être comme vous. Vous répondez en hochant la tête.%SPEECH_ON%Tu ne peux pas savoir avant d'avoir essayé, petit. Maintenant, rentre à la maison.%SPEECH_OFF%Le garçon brandit un couteau à beurre et se retourne diaboliquement pour s'enfuir en courant. C'est un bon garçon.}",
+			Text = "{[img]gfx/ui/events/event_85.png[/img]Le combat terminé, vous trouvez quelques femmes qui se promènent vers vous et les gladiateurs. Elles sont pratiquement en pâmoison, les visages rougis, et les hommes s\'occupent particulièrement d\'elles. Un peu fatigué vous-même, vous demandez à l\'un des fans de vous aider à compter l\'inventaire. | [img]gfx/ui/events/event_147.png[/img]La bataille est terminée, mais une ombre traverse soudainement le sol. En un éclair, vous dégainez et fendez le ciel. Des pétales de fleurs arrosent votre corps scintillant et vous attrapez le reste du bouquet entre vos dents. Une femme se tient là, s\'éventant.%SPEECH_ON%Je me demandais pourquoi vous ne vous étiez pas battus.%SPEECH_OFF%Dit-elle. Vous rengainez votre lame et attachez le bouquet à votre ceinture. Vous lui dites que si vous vous battiez, ce ne sera pas du tout un \"combat\". La femme a les genoux fragiles et trouve du réconfort sur le sol. Avant de partir, vous lui dites de boire beaucoup d\'eau et de s\'étirer le matin. | [img]gfx/ui/events/event_97.png[/img]%SPEECH_START%Puis-je apprendre à me battre comme vous, les hommes ?%SPEECH_OFF%Les voix vous prennent au dépourvu et avant que vous ne le sachiez, vous avez votre lame à quelques centimètres du visage d\'un petit garçon. Ses yeux sont fermés, et il en ouvre lentement un. Vous rengainez l\'épée et riez.%SPEECH_ON%Non. Ce que je fais ne peut pas être appris.%SPEECH_OFF%Vous utilisez un peu de cendre et de sang du champ pour signer la chemise du gamin, puis vous partez. | %SPEECH_START%Êtes-vous... êtes-vous des gladiateurs ?%SPEECH_OFF%Vous regardez pour voir un garçon qui se tient là, l\'étonnement sur son visage. Il pleure presque, tellement il est content.%SPEECH_ON%Vous êtes incroyable!%SPEECH_OFF%Touchant les cheveux du garçon, vous lui dites merci et vous partez. | [img]gfx/ui/events/event_97.png[/img]%SPEECH_START%Comment êtes-vous devenu si bon ?%SPEECH_OFF%Vous vous retournez pour voir un garçon qui vous regarde nerveusement. En souriant, vous lui dites la vérité.%SPEECH_ON%Quand j\'avais ton âge, je tuais des hommes de mon âge.%SPEECH_OFF%En souriant, il demande si, en y travaillant, il peut être comme vous. Vous répondez en hochant la tête.%SPEECH_ON%Tu ne peux pas savoir avant d\'avoir essayé, petit. Maintenant, rentre à la maison.%SPEECH_OFF%Le garçon brandit un couteau à beurre et se retourne diaboliquement pour s\'enfuir en courant. C\'est un bon garçon.}",
 			Image = "",
 			Characters = [],
 			List = [],

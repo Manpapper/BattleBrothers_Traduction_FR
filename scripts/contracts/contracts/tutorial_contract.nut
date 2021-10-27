@@ -456,7 +456,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 					"Tuez %boss%"
 				];
 				this.Contract.m.BulletpointsPayment = [
-					"Recevez 400 Couronnes à l\'achèvement du contrat"
+					"Vous recevez 400 Couronnes à l\'achèvement du contrat"
 				];
 				this.World.State.getPlayer().setAttackable(false);
 			}

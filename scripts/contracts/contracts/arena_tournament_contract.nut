@@ -568,7 +568,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 					"Après chaque combat vous pouvez partir ou commencer le prochain combat dès maintenant"
 				];
 				this.Contract.m.BulletpointsPayment = [
-					"Recevez un %prizetype% réputé appelé %prizename% en gagnant les trois combat"
+					"Vous recevez un %prizetype% réputé appelé %prizename% en gagnant les trois combat"
 				];
 				this.Contract.setScreen("Task");
 			}
@@ -900,7 +900,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 			}
 

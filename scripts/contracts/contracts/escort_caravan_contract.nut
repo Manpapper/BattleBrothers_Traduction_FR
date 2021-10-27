@@ -10,7 +10,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.escort_caravan";
-		this.m.Name = "Escort Caravan";
+		this.m.Name = "Escorte de Caravane";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
 	}
@@ -492,7 +492,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 					"Raccompagnez %noble% sain et sauf à %noblesettlement% %nobledirection%"
 				];
 				this.Contract.m.BulletpointsPayment = [];
-				this.Contract.m.BulletpointsPayment.push("Recevez une récompense en arrivant");
+				this.Contract.m.BulletpointsPayment.push("Vous recevez une récompense en arrivant");
 			}
 
 			function update()
@@ -980,7 +980,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				this.Contract.addSituation(this.new("scripts/entity/world/settlements/situations/well_supplied_situation"), 3, this.Contract.m.Destination, this.List);
 			}
@@ -1026,7 +1026,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 			}
 
