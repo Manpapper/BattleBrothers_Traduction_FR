@@ -577,7 +577,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + item.getName()
+						text = "Vous recevez " + item.getName()
 					});
 				}
 			}

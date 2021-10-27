@@ -580,7 +580,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 

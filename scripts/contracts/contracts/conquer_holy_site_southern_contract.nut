@@ -618,7 +618,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("MercenaryPay") + "[/color] Crowns"
+					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("MercenaryPay") + "[/color] Couronnes"
 				});
 			}
 

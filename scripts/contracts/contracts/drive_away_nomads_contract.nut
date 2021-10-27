@@ -379,7 +379,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + item.getName()
+						text = "Vous recevez " + item.getName()
 					});
 				}
 			}

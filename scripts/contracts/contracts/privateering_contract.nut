@@ -682,7 +682,7 @@ this.privateering_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + this.Contract.m.Item.getIcon(),
-					text = "You gain " + this.Contract.m.Item.getName()
+					text = "Vous recevez " + this.Contract.m.Item.getName()
 				});
 			}
 

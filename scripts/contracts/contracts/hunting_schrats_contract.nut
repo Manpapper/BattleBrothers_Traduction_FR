@@ -368,14 +368,14 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				item = this.new("scripts/items/trade/quality_wood_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 
@@ -422,7 +422,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain a " + item.getName()
+					text = "Vous recevez a " + item.getName()
 				});
 			}
 

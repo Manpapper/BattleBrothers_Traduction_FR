@@ -785,7 +785,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + gems.getIcon(),
-						text = "You gain " + gems.getName()
+						text = "Vous recevez " + gems.getName()
 					});
 				}
 			}
@@ -877,7 +877,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You are rewarded with [color=" + this.Const.UI.Color.PositiveValue + "]3000[/color] Crowns"
+					text = "You are rewarded with [color=" + this.Const.UI.Color.PositiveValue + "]3000[/color] Couronnes"
 				});
 				this.List.push({
 					id = 10,

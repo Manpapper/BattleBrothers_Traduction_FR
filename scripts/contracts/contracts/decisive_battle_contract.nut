@@ -1185,7 +1185,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("RequisitionCost") + "[/color] Crowns"
+					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("RequisitionCost") + "[/color] Couronnes"
 				});
 			}
 
@@ -1448,7 +1448,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("Bribe") + "[/color] Crowns"
+					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("Bribe") + "[/color] Couronnes"
 				});
 			}
 

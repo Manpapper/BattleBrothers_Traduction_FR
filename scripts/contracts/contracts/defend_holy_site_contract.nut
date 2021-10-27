@@ -659,7 +659,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + item.getName()
+						text = "Vous recevez " + item.getName()
 					});
 				}
 
@@ -668,7 +668,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_supplies.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Tools and Supplies."
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Tools and Supplies."
 				});
 			}
 

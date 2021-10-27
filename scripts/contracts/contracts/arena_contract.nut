@@ -896,7 +896,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.List.push({
 							id = 12,
 							icon = "ui/items/armor_upgrades/upgrade_24.png",
-							text = "You gain a " + a.getName()
+							text = "Vous recevez a " + a.getName()
 						});
 						break;
 
@@ -907,7 +907,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.List.push({
 							id = 12,
 							icon = "ui/items/armor_upgrades/upgrade_25.png",
-							text = "You gain a " + a.getName()
+							text = "Vous recevez a " + a.getName()
 						});
 						break;
 
@@ -916,7 +916,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.List.push({
 							id = 12,
 							icon = "ui/items/" + a.getIcon(),
-							text = "You gain a " + a.getName()
+							text = "Vous recevez a " + a.getName()
 						});
 						break;
 					}

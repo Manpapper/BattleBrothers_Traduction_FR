@@ -305,7 +305,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "FoundIt",
-			Title = "At %location%",
+			Title = "À %location%",
 			Text = "[img]gfx/ui/events/event_57.png[/img]{Vous voyez %location% dans le verre de votre lunette et vous la marquez sur vos cartes. C'était assez facile. Il est temps de retournez auprès de %employer%. | Eh bien, il est déjà temps de auprès de %employer% car %location% a été plus facile à trouver que vous ne le pensiez. En le marquant sur votre carte, vous vous arrêtez, riez et secouez la tête. Quelle chance. |  %location% apparaît et il renaît immédiatement sur votre carte au mieux de vos capacités d'illustration. %randombrother% demande si c'est tout ce qu'il y avait à faire. Vous acquiescez. Que ce soit difficile ou facile, %employer% vous attendra pour vous payer.}",
 			Image = "",
 			List = [],
@@ -492,7 +492,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "AnotherParty4",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_51.png[/img]{Vous acceptez de vendre à l'homme les détails de votre expédition. Il est très heureux de l'affaire, mais %employeur% ne l'est pas. Apparemment, un petit enfant a vu cet échange et a rapporté votre trahison au chef de %townname%. Votre réputation ici a, sans doute, été un peu entachée. | D'un côté, vous avez épargné la supposée maison familiale de cet homme d'être détruite par les mains de ceux qui dirigent %townname%. D'autre part, ceux qui dirigent %townname% ont rapidement entendu parler de ce que vous aviez fait. Vous auriez dû prêter plus d'attention à la population d'une petite ville pour qu'elle se transforme en rumeurs extraordinaires.}",
+			Text = "[img]gfx/ui/events/event_51.png[/img]{Vous acceptez de vendre à l'homme les détails de votre expédition. Il est très heureux de l'affaire, mais %employer% ne l'est pas. Apparemment, un petit enfant a vu cet échange et a rapporté votre trahison au chef de %townname%. Votre réputation ici a, sans doute, été un peu entachée. | D'un côté, vous avez épargné la supposée maison familiale de cet homme d'être détruite par les mains de ceux qui dirigent %townname%. D'autre part, ceux qui dirigent %townname% ont rapidement entendu parler de ce que vous aviez fait. Vous auriez dû prêter plus d'attention à la population d'une petite ville pour qu'elle se transforme en rumeurs extraordinaires.}",
 			Image = "",
 			List = [],
 			Options = [

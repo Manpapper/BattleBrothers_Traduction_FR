@@ -678,7 +678,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + item.getName()
+						text = "Vous recevez " + item.getName()
 					});
 				}
 			}
@@ -821,7 +821,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain a " + item.getName()
+						text = "Vous recevez a " + item.getName()
 					});
 				}
 			}

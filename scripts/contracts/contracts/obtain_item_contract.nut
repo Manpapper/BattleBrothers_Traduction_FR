@@ -8,7 +8,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.obtain_item";
-		this.m.Name = "Obtain Artifact";
+		this.m.Name = "Obtention d'Artefact";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -23,25 +23,45 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Destination = this.WeakTableRef(camp);
 		this.m.Flags.set("DestinationName", camp.getName());
 		local items = [
-			"Fingerbone of Sir Gerhardt",
-			"Blood Vial of the Holy Mother",
-			"Shroud of the Founder",
-			"Elderstone",
-			"Staff of Foresight",
-			"Seal of the Sun",
-			"Starmap Disc",
-			"Forefathers\' Scroll",
-			"Petrified Almanach",
-			"Coat of Sir Istvan",
-			"Staff of Golden Harvests",
-			"Prophet\'s Pamphlets",
-			"Forefathers\' Standard",
-			"Seal of the False King",
-			"Flute of the Debaucher",
-			"Dice of Destiny",
-			"Fetish of Fertility"
+			"Doigt osseux de Sir Gerhardt",
+			"Fiole de Sang de la Sainte Mère",
+			"Linceul du Fondateur",
+			"Pierre de Sureau",
+			"Bâton de la Prévoyance",
+			"Sceau du soleil",
+			"Disque de la Carte Stellaire",
+			"Parchemin des Ancêtres",
+			"Almanach Pétrifié",
+			"Armoiries de Sir Istvan",
+			"Bâton des Moissons d'Or",
+			"Brochures du Prophète",
+			"Ecrit des Anciens",
+			"Sceau du Faux Roi",
+			"Flûte du Débauché",
+			"Dés de la destinée",
+			"Fétiche de la Fertilité"
+		];
+		local lesitems = [
+			"Le Doigt osseux de Sir Gerhardt",
+			"La Fiole de Sang de la Sainte Mère",
+			"Le Linceul du Fondateur",
+			"La Pierre de Sureau",
+			"Le Bâton de la Prévoyance",
+			"Le Sceau du soleil",
+			"Le Disque de la Carte Stellaire",
+			"Le Parchemin des Ancêtres",
+			"L'Almanach Pétrifié",
+			"Les Armoiries de Sir Istvan",
+			"Le Bâton des Moissons d'Or",
+			"Les Brochures du Prophète",
+			"Les Ecrits des Anciens",
+			"Le Sceau du Faux Roi",
+			"La Flûte du Débauché",
+			"Les Dés de la destinée",
+			"Le Fétiche de la Fertilité"
 		];
 		this.m.Flags.set("ItemName", items[this.Math.rand(0, items.len() - 1)]);
+		this.m.Flags.set("LeItemName", items[this.Math.rand(0, items.len() - 1)]);
 		this.m.Payment.Pool = 500 * this.getPaymentMult() * this.Math.pow(this.getDifficultyMult(), this.Const.World.Assets.ContractRewardPOW) * this.getReputationToPaymentMult();
 
 		if (this.Math.rand(1, 100) <= 33)
@@ -64,7 +84,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 			function start()
 			{
 				this.Contract.m.BulletpointsObjectives = [
-					"Obtenez %item% à %location%"
+					"Obtenez %leItem% à %location%"
 				];
 
 				if (this.Math.rand(1, 100) <= this.Const.Contracts.Settings.IntroChance)
@@ -138,7 +158,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 			function start()
 			{
 				this.Contract.m.BulletpointsObjectives = [
-					"Obtenez %item% à %location% %direction% de %origin%"
+					"Obtenez %leItem% à %location% %direction% de %origin%"
 				];
 
 				if (this.Contract.m.Destination != null && !this.Contract.m.Destination.isNull())
@@ -246,14 +266,14 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Negotiations",
-			Text = "{[img]gfx/ui/events/event_43.png[/img]%employer% welcomes you and walks you toward %townname%\'s square. There\'s a party of peasants milling about, but when they see you coming they shape up and start talking as though they\'d been expecting you all along. They mostly talk in descriptors: tall as any man! Armor like you\'d never seen before! Spears as sharp as a peddler\'s tongue! You hold your hand up and ask what it is they are talking about. %employer% laughs.%SPEECH_ON%The men here say they saw some oddities out in a spot by the name of %location% just %direction% of here. Naturally, they weren\'t out there for no reason. They were looking for something by the name of %item%, a relic dear to the town for through it we pray for food and shelter.%SPEECH_OFF%One of the peasants speak up.%SPEECH_ON%And we was lookin\' fer it at his behest!%SPEECH_OFF%%employer% nods.%SPEECH_ON%Of course. And where they failed, perhaps you can succeed? Get this relic for me and you\'ll be paid quite well for your services. Pay no mind to their fairy tales. I\'m sure there\'s nothing to worry about.%SPEECH_OFF% | [img]gfx/ui/events/event_62.png[/img]%employer% welcomes you into his room and pours you a mug of water. He hands it over with a sheepish smile.%SPEECH_ON%I\'d offer a bit of ale or wine if I had it on me, but you know how things are nowadays.%SPEECH_OFF%He takes a sip and clears his throat.%SPEECH_ON%Of course, what I\'m not short on are crowns, otherwise we wouldn\'t be having this conversation, right? I need you to go to a place by the name of %location% just %direction% of here and retrieve a relic by the name of %item%. Pretty simple, no?%SPEECH_OFF%You ask what this relic is good for. The man explains.%SPEECH_ON%Townsfolk pray to it. Through it they find peace, call for the rains, fark their goats, I don\'t care. They believe in it and it keeps them motivated. For that alone it\'s worth retrieving.%SPEECH_OFF% | [img]gfx/ui/events/event_62.png[/img]You step into %employer%\'s room to find the man staring at a map of the hinterlands. He shakes his head.%SPEECH_ON%See this spot right here? That\'s %location%. %townname% used to worship a relic by the name of %item%, but the townsfolk are saying it\'s gone missing and, well, for whatever reason they think it\'s there. I\'ve no men to hire and see, for the roads are dangerous and I can\'t afford to pay for failure, but you, sellsword, seem up to the task. Would you go there and find this %item% for us?%SPEECH_OFF% | [img]gfx/ui/events/event_43.png[/img]You find %employer% talking to a group of peasants. Seeing you, he quiets them all down.%SPEECH_ON%Shush, the lot of you. This man here can solve our problem.%SPEECH_OFF%The townsman takes you aside.%SPEECH_ON%Sellsword, we have a bit of a problem. There\'s a relic I need finding, some such thing by the name of %item%. I don\'t really give a good old gods damn about it, but these people worship it for spring rains and winter shelter. Naturally, it\'s gone missing. And for whatever reason folks think it\'s gone off to a place by the name of %location% all on its own. Nobody\'ll go there, but you will, yes? For the right price, of course.%SPEECH_OFF% | [img]gfx/ui/events/event_62.png[/img]You find %employer% talking to a druidic monk cloaked in shapes more familiar to beasts than man. Horns for a helmet, bearskin for armor, and the hooves of deer clattering around his chest in a brutish necklace. He\'s quite the sight. Seeing you, %employer% waves you in.%SPEECH_ON%Sellsword! It is good to see you--%SPEECH_OFF%The druid pushes the man out of the way mid-talk. He speaks with a wobble in his voice, as though he were speaking from the depths of a cavern.%SPEECH_ON%A mercenary, ha! Surely you are a man of faith, no? We of %townname% have lost the %item%. This relic is of great import to us, for through it we can speak to the old gods and have our prayers answered. It\'s been stolen away, in some manner or another, to the %location%. Go there and retrieve it.%SPEECH_OFF%You glance at %employer% who nods.%SPEECH_ON%Aye, what he said.%SPEECH_OFF%}",
+			Text = "{[img]gfx/ui/events/event_43.png[/img]%employer% vous accueille et vous accompagne vers la place de %townname%. Il y a un groupe de paysans qui s'agite, mais quand ils vous voient arriver, ils se mettent en rang et commencent à parler comme s'ils vous attendaient depuis le début. Ils parlent surtout en termes descriptifs : grand comme un homme ! Des armures comme vous n'en avez jamais vues auparavant ! Des lances aussi tranchantes que la langue d'un colporteur ! Vous levez la main et demandez de quoi ils parlent. %employer% rigole.%SPEECH_ON%Les hommes d'ici disent qu'ils ont vu des choses bizarres dans un endroit appelé %location%, juste %direction% d'ici. Naturellement, ils n'étaient pas là sans raison. Ils cherchaient quelque chose du nom de %item%, une relique précieuse pour la ville car c'est à travers elle que nous prions pour avoir de la nourriture et un abri.%SPEECH_OFF%Un des paysans prend la parole.%SPEECH_ON%Et nous l'avons cherché à sa demande !%SPEECH_OFF%%employer% hoche la tête.%SPEECH_ON%Bien sûr. Et là où ils ont échoué, peut-être pouvez-vous réussir ? Trouvez-moi cette relique et vous serez bien payé pour vos services. Ne faites pas attention à leurs contes de fées. Je suis sûr qu'il n'y a rien à craindre.%SPEECH_OFF% | [img]gfx/ui/events/event_62.png[/img]%employer% vous accueille dans sa chambre et vous verse une tasse d'eau. Il vous la tend avec un sourire penaud.%SPEECH_ON%Je vous proposerais bien un peu de bière ou de vin si j'en avais sur moi, mais vous savez comment sont les choses de nos jours.%SPEECH_OFF%Il prend une gorgée et se racle la gorge.%SPEECH_ON%Bien sûr, ce dont je ne manque pas, c'est de couronnes, sinon nous n'aurions pas cette conversation, non ? J'ai besoin que vous alliez à un endroit appelé %location% %direction% d'ici et que vous récupériez une relique appelée %leItem%. Plutôt simple, non ?%SPEECH_OFF%Vous demandez à quoi sert cette relique. L'homme explique.%SPEECH_ON%Les habitants de la ville le prient. Grâce à elle, ils trouvent la paix, appellent les pluies, baisent leurs chèvres, je m'en fiche. Ils y croient et ça les motive. Rien que pour ça, ça vaut la peine de le récupérer.%SPEECH_OFF% | [img]gfx/ui/events/event_62.png[/img]Vous entrez dans la chambre de %employer% et trouvez l'homme fixant une carte de l'arrière-pays. Il secoue la tête.%SPEECH_ON%Vous voyez cet endroit juste là ? C'est %location%. %townname% vénérait une relique du nom de %item%, mais les habitants disent qu'elle a disparu et, pour une raison quelconque, ils pensent qu'elle est là. Je n'ai pas d'hommes à engager pour aller voir, car les routes sont dangereuses et je ne peux pas me permettre de payer pour un échec, mais vous, mercenaire, semblez être à la hauteur de la tâche. Pourriez-vous aller là-bas et trouver cet objet pour nous ?%SPEECH_OFF% | [img]gfx/ui/events/event_43.png[/img]Vous trouvez %employer% qui parle à un groupe de paysans. En vous voyant, il les fait taire.%SPEECH_ON% Silence, vous tous. Cet homme là peut résoudre notre problème.%SPEECH_OFF% Le paysan vous prend à part.%SPEECH_ON%Mercenaire, nous avons un petit problème. Il y a une relique que je dois trouver, une chose du nom de %item%. Je m'en fous un peu, mais ces gens la vénèrent pour les pluies de printemps et les abris d'hiver. Naturellement, il a disparu. Et pour une raison quelconque, les gens pensent qu'il est parti tout seul dans un endroit appelé %location%. Personne n'ira là-bas, mais vous le ferez, non ? Pour le bon prix, bien sûr.%SPEECH_OFF% | [img]gfx/ui/events/event_62.png[/img]Vous trouvez %employer% en train de parler à un moine druidique vêtu de formes plus familières aux bêtes qu'aux hommes. Des cornes en guise de casque, une peau d'ours en guise d'armure, et des sabots de cerf s'entrechoquant autour de sa poitrine en un collier brutal. C'est un sacré spectacle. En vous voyant, %employer% vous fait signe d'entrer.%SPEECH_ON%Mercenaire ! C'est bon de vous voir...%SPEECH_OFF%Le druide pousse l'homme hors de son chemin à mi-parcours. Il parle avec un flottement dans la voix, comme s'il parlait depuis les profondeurs d'une caverne.%SPEECH_ON%Un mercenaire, ha ! Vous êtes sûrement un homme de foi, non ? Nous, de %townname%, avons perdu %leItem%. Cette relique est d'une grande importance pour nous, car elle nous permet de parler aux anciens dieux et d'obtenir des réponses à nos prières. Il a été volé, d'une manière ou d'une autre, à %location%. Allez-y et récupérez-la.%SPEECH_OFF%Vous jetez un coup d'œil à %employer% qui acquiesce.%SPEECH_ON%Oui, ce qu'il a dit.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{You did right by coming to us. Let\'s talk payment. | Parlons argent. | Sounds simple enough. What\'s the pay?}",
+					Text = "{Vous avez bien fait de venir nous voir. Parlons paiement. | Parlons argent. | Ça semble assez simple. Quel est le salaire ?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -277,13 +297,13 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SearchingTheLocation",
-			Title = "At %location%",
-			Text = "[img]gfx/ui/events/event_73.png[/img]{You don\'t step into the ruins so much as clamber, hobbling over the stoneworks like a bat trying to walk upright. Getting to the bottom of the descent, you find what looks like hundreds of clay pots, old chariots more mulch than wood, and metal water basins filled with rusted shields and spears. %randombrother% takes a torch and throws its glow toward the walls. Great murals run along the length of them, great artworks depicting battles you\'ve never heard of. Each step you take seems to unveil another ancient victory until, finally, you come to a giant painted map. There you see a continent overrun with the rule of an empire, gilded its belly, blackened its borders.\n\n %randombrother% walks over, the %item% in hand. You nod and tell him it\'s time to go. When the two of you turn around, there\'s a man standing there with a spear in one hand and a shield in the other. Another figure joins him, and another, their steps hitting the stone floor with metal malice. You yell at the mercenary to run and the both of you abandon the ruins in a hurry, the staccato clap of a death march on your heels.\n\n Outside you wheel around and order the men to get ready for a fight. Before the first sellsword can so much as draw his sword, a stream of armored soldiers emerge from the ruins, stack formation, and level their spears at you. Their lieutenant points a decayed finger and speaks with a voice so graveled the words weigh deep in your chest.%SPEECH_ON%The Empire rises. The False King must die.%SPEECH_OFF% | The hole into the ruins is big enough for only one man to get through. You\'re worried that if everyone goes in at once they\'ll get stuck and you\'ll have basically killed the %companyname% off like a bunch of rats in a tight tunnel. Instead, you send in only %randombrother%, who knows what he\'s after and who you trust can take care of himself were anything to happen.\n\n A few minutes later and you hear the man struggling to crawl back out - and he sounds to be in quite the rush. He yells for help and you and a few other mercenaries stick their hands into the hole. He grabs on and, together, you yank him out. He\'s got the %item%, but a horrified look on his face. He rolls over and gets up in a hurry.%SPEECH_ON%Hurry! To arms!%SPEECH_OFF%As the mercenaries look into the hole to see if something\'s coming out, you ask the brother what he saw. He shakes his head.%SPEECH_ON%I don\'t know, sir. It was a mausoleum for people I\'ve never seen before. There was armor and spears all over the place, and murals of a great empire that spanned the whole world over! Painted from floor to ceiling! And... and then they started coming out of the walls. I got out of there as fast I could and...%SPEECH_OFF%Before he can even finish, the rubble where the hole used to be begins to shift and move. Stones roll away and suddenly they all burst outward, a malevolent force standing there - armed and well armored men standing in formation, spears over shields, shuffling forward in uniform steps. Their leader points directly at you.%SPEECH_ON%The Empire rises. The False King must die.%SPEECH_OFF%You\'ve never heard surer fighting words and immediately prepare your men for combat. | You venture into the ruins with %randombrother% at your side. The %item% is easy enough to find, if not a little too easy, but something else catches your attention altogether. There are pots strewn all across the stone floor. Each piece of pottery is a reservoir for spears, and shields hang against the walls on hooks that seem far too ancient and rusted to hold up a cobweb much less a piece of metal. Suddenly, %randombrother% grabs your arm.%SPEECH_ON%Sir. Trouble.%SPEECH_OFF%He points down the halls and you see a man standing there, his movements janky and quick, as though he were breaking in his suit of armor. Suddenly, his head snaps up and stares at you. Despite the fact he\'s standing so far away, his voice carries as though he were speaking right next to you.%SPEECH_ON%The False King dare trespass here? The Empire will rise again, but first you must die.%SPEECH_OFF%These are fighting words, no doubt, and you grab the sellsword and make a quick escape. You don\'t get far outside before the mercenaries take up arms without your ordering so: following behind you is a formation of soldiers in armor you\'ve never seen before. They step forward in a formation like a turtle\'s shell, clasped together with their shields held up to provide protection for the whole unit. Based on the fellow in the ruins, you\'ve no doubt they have come to kill you and the rest of the company! | You enter the ruins and find the %item% easily enough. When you turn around, a tall man in rustic armor is standing there, spear in hand, with vacated eye sockets leering down at you. He swings the spear back.%SPEECH_ON%The False King must die.%SPEECH_OFF%The spear stabs forward. %randombrother% leaps over and deflects it to the ground, the spear tip crackling a couple of sparks off the stone floor. You look at the undead man, a worm coursing through its nose. It speaks again.%SPEECH_ON%The False King must...%SPEECH_OFF%With a quick draw, you unsheathe your sword and cut the ancient dead\'s head right off. The skull and helmet carrying it clatter and clank off the ground. Before you can investigate, %randombrother% grabs you and tells you to run: more undead figures are appearing out of the walls, shaking free of the granitic grip of a mausoleum\'s entombment.\n\n Once outside, you order the rest of the company to get into formation. | You send a few of the men into the ruins to find the %item%. All of them return in a hurry, which is unusual as they have a strong inclination to dawdle about to eat up sunlight and earn an easy day\'s salary. Thankfully, one of them has the relic in hand. Unfortunately, they all look like they\'ve seen a ghost. They need not explain the source of their horror as a group of skittering, armor-clanking undead emerge from the ruins and level their spears at your company. | Arriving at the ruins, you expected some bandits to be footing about. Instead, retrieving the %item% could not have been easier. At least, that\'s what you thought before a throng of armored undead emerged yelling about the \'False King\' and demanding your head on a platter. To arms! | Finding and bagging the %item% was easier than expected. Finding a group of undead men top-heavy with rustic armor and wielding spears in a tighter military formation than even the highest paid army in the realm... not so expected. To arms!}",
+			Title = "À %location%",
+			Text = "[img]gfx/ui/events/event_73.png[/img]{Vous n'entrez pas dans les ruines, vous grimpez plutôt, boitillant sur les pierres comme une chauve-souris essayant de marcher debout. Arrivé au bas de la pente, vous trouvez ce qui ressemble à des centaines de pots en argile, de vieux chariots plus en copeaux qu'en bois, et des bassins d'eau en métal remplis de boucliers et de lances rouillés. %randombrother% prend une torche et jette sa lueur vers les murs. De grandes peintures murales les longent, de grandes œuvres d'art dépeignant des batailles dont vous n'avez jamais entendu parler. Chaque pas que vous faites semble dévoiler une autre victoire ancienne jusqu'à ce que, finalement, vous arriviez à une carte géante peinte. Là, vous voyez un continent envahi par la domination d'un empire, qui a doré son ventre, noirci ses frontières...\n\n Le %randombrother% s'approche, avec %leItem% en main. Vous acquiescez et lui dites qu'il est temps de partir. Lorsque vous vous retournez tous les deux, il y a un homme debout, une lance dans une main et un bouclier dans l'autre. Une autre silhouette le rejoint, puis une autre, leurs pas frappant le sol de pierre avec une malice métallique. Vous criez au mercenaire de courir et vous abandonnez tous les deux les ruines en vitesse, le claquement d'une marche de la mort sur vos talons.\n\n Dehors, vous vous retournez et ordonnez aux hommes de se préparer à se battre. Avant même que le premier mercenaire ait pu dégainer son épée, un flot de soldats en armure émerge des ruines, s'empile et pointe leurs lances vers vous. Leur lieutenant pointe un doigt pourri et parle d'une voix si grave que les mots pèsent au fond de votre poitrine.%SPEECH_ON%L'Empire se lève. Le Faux Roi doit mourir.%SPEECH_OFF% | Le trou dans les ruines est assez grand pour qu'un seul homme puisse y passer. Vous avez peur que si tout le monde y va en même temps, ils restent coincés et que vous ayez tué %companyname% comme une bande de rats dans un tunnel étroit. Au lieu de cela, vous n'envoyez que %randombrother%, qui sait ce qu'il cherche et qui, vous en êtes sûr qu'il peut se débrouiller tout seul si quelque chose devait arriver.\n\n Quelques minutes plus tard, vous entendez l'homme se débattre pour sortir en rampant - et il semble être très pressé. Il crie à l'aide et vous et quelques autres mercenaires mettez vos mains dans le trou. Il s'accroche et, ensemble, vous le sortez du trou. Il a %leItem%, mais un regard horrifié sur son visage. Il se retourne et se relève précipitamment.%SPEECH_ON%Vite ! Aux armes !%SPEECH_OFF%Pendant que les mercenaires regardent dans le trou pour voir si quelque chose en sort, vous demandez au confrère ce qu'il a vu. Il secoue la tête.%SPEECH_ON%Je ne sais pas, monsieur. C'était un mausolée pour des gens que je n'avais jamais vus avant. Il y avait des armures et des lances partout, et des peintures murales d'un grand empire qui s'étendait sur le monde entier ! Peint du sol au plafond ! Et... et ensuite ils ont commencé à sortir des murs. Je suis sorti de là aussi vite que j'ai pu et...%SPEECH_OFF%Avant même qu'il ne puisse terminer, les décombres où se trouvait le trou commencent à se déplacer. Les pierres roulent et soudain elles éclatent toutes vers l'extérieur, une force malveillante se tenant là - des hommes armés et bien protégés se tenant en formation, les lances sur les boucliers, avançant à pas réguliers. Leur chef pointe directement vers vous.%SPEECH_ON%L'Empire se lève. Le Faux Roi doit mourir.%SPEECH_OFF%Vous n'avez jamais entendu de mots de combat si décidé et préparez immédiatement vos hommes au combat. | Vous vous aventurez dans les ruines avec %randombrother% à vos côtés. %leItem% est assez facile à trouver, si ce n'est un peu trop facile, mais quelque chose d'autre attire votre attention. Il y a des pots éparpillés sur le sol en pierre. Chaque pièce de poterie est un réservoir pour des lances, et des boucliers sont accrochés aux murs sur des crochets qui semblent bien trop anciens et rouillés pour supporter une toile d'araignée et encore moins une pièce de métal. Soudain, %randombrother% vous attrape le bras.%SPEECH_ON%Chef. Des problèmes.%SPEECH_OFF%Il vous montre du doigt les couloirs et vous voyez un homme qui se tient là, ses mouvements sont saccadés et rapides, comme s'il était en train d'enfiler son armure. Soudain, sa tête se lève et vous regarde fixement. Malgré le fait qu'il se tienne si loin, sa voix porte comme s'il parlait juste à côté de vous.%SPEECH_ON%Le Faux Roi ose s'introduire ici ? L'Empire se relèvera, mais vous devez d'abord mourir.%SPEECH_OFF%Ce sont des mots de combat, sans aucun doute, et vous attrapez le mercenaire et vous vous échappez rapidement. Vous n'êtes pas loin avant que les mercenaires ne prennent les armes sans que vous l'ayez ordonné : derrière vous se trouve une formation de soldats en armure que vous n'avez jamais vue auparavant. Ils s'avancent dans une formation ressemblant à une carapace de tortue, serrés les uns contre les autres avec leurs boucliers levés pour protéger l'ensemble de l'unité. D'après ce que vous avez vu dans les ruines, vous ne doutez pas qu'ils sont venus pour vous tuer, vous et le reste de la compagnie ! | Vous entrez dans les ruines et trouvez %leItem% assez facilement. Quand vous vous retournez, un grand homme en armure rustique se tient là, une lance à la main, les orbites vides vous regardant de haut. Il brandit sa lance.%SPEECH_ON%Le Faux Roi doit mourir.%SPEECH_OFF%La lance s'avance. Le %randombrother% bondit et la dévie vers le sol, la pointe de la lance faisant crépiter quelques étincelles sur le sol en pierre. Vous regardez l'homme mort-vivant, un ver qui coule dans son nez. Il parle à nouveau.%SPEECH_ON%Le Faux Roi doit...%SPEECH_OFF%D'un geste rapide, vous dégainez votre épée et coupez la tête de l'ancien mort. Le crâne et le casque qui le porte s'entrechoquent et claquent sur le sol. Avant que vous ne puissiez enquêter, %randombrother% vous attrape et vous dit de courir : d'autres morts-vivants surgissent des murs, se libérant de l'emprise de leur tombeau.\n\n Une fois dehors, vous ordonnez au reste de la compagnie de se mettre en formation. | Vous envoyez quelques hommes dans les ruines pour trouver %leItem%. Ils reviennent tous en vitesse, ce qui est inhabituel car ils ont une forte propension à lambiner et gagner un salaire facile . Heureusement, l'un d'entre eux a la relique en main. Malheureusement, ils ont tous l'air d'avoir vu un fantôme. Ils n'ont pas besoin d'expliquer la source de leur horreur lorsqu'un groupe de morts-vivants rampants et en armure émergent des ruines et pointent leurs lances sur votre compagnie. | En arrivant aux ruines, vous vous attendiez à voir des bandits dans les parages. Au lieu de cela, récupérer %leItem% n'aurait pas pu être plus facile. Du moins, c'est ce que vous pensiez avant qu'une foule de morts-vivants en armure n'émerge en hurlant des choses au sujet d'un \"Faux Roi\" et en demandant votre tête sur un plateau. Aux armes ! | Trouver et récupérer %leItem% était plus facile que prévu. Trouver un groupe de morts-vivants portant des armures rustiques et brandissant des lances dans une formation militaire plus serrée que l'armée la mieux payée du royaume... pas si facile. Aux armes !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux Armes",
 					function getResult()
 					{
 						this.TempFlags.set("GotTheItem", true);
@@ -297,12 +317,12 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "LocationDestroyed",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{The battle over, and the %item% obtained, you tell the men to prepare for a Retournez à %employer%. You\'re not entirely sure who or what just attacked you, but right now it\'s time to get paid. | With the fighting over, you look over your attackers. They\'re shelled within armor you don\'t recognize. %randombrother% tries to pry one of the corpses out of its helm but to no avail. He looks incredulously at the body.%SPEECH_ON%It\'s like it\'s just stuck there, or a part of him or something.%SPEECH_OFF%You tell the men to gear up and get ready for a Retournez à %employer%. No matter who these men are, you\'re out here to get the %item% and that part is done. Now it\'s time to get paid. | You\'ve gotten the %item%, but at the cost of running into a sort of evil you\'ve never seen before. Armored men, ostensibly dead, yet operating in tight formations. %randombrother% holds up the %item% and asks what to do next. You inform the men that it is time to Retournez à %employer%. | You take a look at the %item% and at the men who attacked you over it. Or, at least you think they attacked you over it. The enemy lieutenant seemed to have said something, but you can\'t remember what it was. Ah well, time to Retournez à %employer% and get paid. | You\'re not entirely sure what it was you ran into. %randombrother% asks if you know what they said.%SPEECH_ON%Seems like they were pointing you out specifically, sir.%SPEECH_OFF%Nodding, you tell the man you\'re not sure what the armored man said, but it matters not. You have the %item% and it\'s time to Retournez à %employer% for your pay. | The %item% is in hand, but at what cost? Strange men, if you can call them that, attacked the company and you swear one of them specifically pointed you out, as though you\'d committed a crime that went beyond space and time. Oh well. You\'re not the sort to dwell on these things. What you\'re here for is the relic, which you\'ve got, and for a good payday which awaits you with %employer%.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{La bataille terminée, et avec %leItem% entre vos mains, vous dites aux hommes de se préparer pour retourner voir %employer%. Vous ne savez pas exactement qui ou quoi vient de vous attaquer, mais pour l'instant, il est temps d'être payé. | Avec la fin du combat, vous regardez vos attaquants. Ils ont été enveloppés dans une armure que vous ne reconnaissez pas. %randombrother% essaie de faire sortir un des corps de son casque, mais en vain. Il regarde le corps avec incrédulité.%SPEECH_ON%C'est comme si c'était coincé là, ou une partie de lui ou quelque chose comme ça.%SPEECH_OFF%Vous dites aux hommes de s'équiper et de se préparer pour retournez voir %employer%. Peu importe qui sont ces hommes, vous êtes là pour récupérer l'objet et cette partie est terminée. Maintenant, il est temps d'être payé. | Vous avez obtenu %leItem%, mais au prix d'une confrontation avec un mal que vous n'avez jamais vu auparavant. Des hommes blindés, apparemment morts, mais opérant en formations serrées. %randombrother% montre %leItem% et demande ce qu'il faut faire ensuite. Vous informez les hommes qu'il est temps de retourner voir %employer%. | Vous regardez %leItem% et les hommes qui vous ont attaqué pour ça. Ou, du moins, vous pensez qu'ils vous ont attaqué pour ça. Le lieutenant ennemi semble avoir dit quelque chose, mais vous ne vous souvenez pas de ce que c'était. Hé bien, il est temps de retourner voir %employer% et d'être payé. | Vous n'êtes pas tout à fait sûr de ce que vous avez rencontré. %randombrother% vous demande si vous savez ce qu'ils ont dit.%SPEECH_ON%On dirait qu'ils vous désignaient spécifiquement, boss.%SPEECH_OFF%En hochant la tête, vous dites à l'homme que vous n'êtes pas sûr de ce que l'homme blindé a dit, mais cela n'a pas d'importance. Vous avez %leItem% et il est temps de retourner voir %employer% pour votre salaire. | %leItem% est en main, mais à quel prix ? Des hommes étranges, si on peut les appeler ainsi, ont attaqué la compagnie et vous jurez que l'un d'eux vous a spécifiquement désigné, comme si vous aviez commis un crime au-delà de l'espace et du temps. Mais bon. Vous n'êtes pas du genre à vous attarder sur ces choses. Ce que vous cherchez ici, c'est la relique, que vous avez, et un bon salaire qui vous attend chez %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Let\'s head back.",
+					Text = "Retournons rentre l'objet.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -314,13 +334,13 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "RiskReward",
-			Title = "At %location%",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{You step into %location% and take a good look around. It\'s not a moment later that %randombrother% points out the %item%, the relic sitting atop a stone podium that\'s covered in moss and cobwebs. He also points to something else sitting across the room: a very nice looking %risk% adorned to a tall statue\'s body.\n\nThe rest of the place is dilapidated and looking ready to crumble right on top of your heads. What the %risk% is doing there is definitely questionable. | The %item% is plain as day to see, but there\'s something else in the room that catches your attention. Sitting beside an enormous statue is a very unique looking %risk%. Of course, it begs the question, what in all the hells is it doing out there? While you think it\'s plain as day you should go and grab it, something tells you that might not be the wisest of decisions. | Well, you found the %item%. It was a lot easier than you\'d thought it would be. But there\'s something else here, too. You spot a glittering %risk% adorned to a tall statue of a man with a blank face. You\'re not sure what a statue is doing with such a thing, but there it is. And there it seems to always have been, which begs the question, why? | The %item% was easy enough to find, but as you prepare to go and grab the townsfolks\' relic, you spy a shiny %risk% adorning a tall and ominous statue of a man. Your first thought is to send a mercenary to go and grab it, but then you wonder what in all the hells it is doing there.} Perhaps the %companyname% should stick to what it was tasked to do?",
+			Title = "À %location%",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Vous entrez dans %location% et regardez bien autour de vous. Ce n'est que peu de temps après que %randombrother% vous indique l'objet, la relique assise sur un podium en pierre couvert de mousse et de toiles d'araignées. Il montre également quelque chose d'autre assis à l'autre bout de la pièce : un très beau %risk% orné au corps d'une statue.\n\nLe reste de l'endroit est délabré et semble prêt à s'effondrer juste au-dessus de vos têtes. Ce que %risk% fait là est définitivement discutable. | %leItem% est parfaitement visible, mais il y a autre chose dans la pièce qui retient l'attention. Assis à côté d'une énorme statue, il y a un %risk% très particulier. Bien sûr, on peut se demander ce qu'il fait là, bon sang ! Bien que vous pensiez que vous devriez aller l'attraper, quelque chose vous dit que ce n'est peut-être pas la plus sage des décisions. | Eh bien, vous avez trouvé %leItem%. C'était beaucoup plus facile que vous ne l'imaginiez. Mais il y a autre chose ici, aussi. Vous repérez un %risk% étincelant orné sur une grande statue d'un homme au visage vide. Vous ne savez pas trop ce que fait une statue avec un tel objet, mais il est là. Et il semble avoir toujours été là, ce qui soulève la question : pourquoi ? | %leItem% était facile à trouver, mais alors que vous vous apprêtez à aller chercher la relique des villageois, vous apercevez un %risk% brillant qui orne la statue d'un homme grand et inquiétant. Votre première pensée est d'envoyer un mercenaire pour s'en emparer, mais vous vous demandez ensuite ce qu'il peut bien faire là.} Peut-être que %companyname% devrait s'en tenir à ce qu'il a été chargé de faire ?",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Just take that %item%.",
+					Text = "Prendre juste %leItem%.",
 					function getResult()
 					{
 						return "TakeJustItem";
@@ -328,7 +348,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "We might as well take that %risk% while we\'re here.",
+					Text = "On pourrait aussi bien prendre ce %risk% vu qu'on est là.",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -346,13 +366,13 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "TakeJustItem",
-			Title = "At %location%",
-			Text = "[img]gfx/ui/events/event_57.png[/img]%employer% asked you to get the %item% and that\'s exactly what you\'re going to do. {%randombrother% agrees with this approach.%SPEECH_ON%I think we should leave that %risk% well enough alone. I\'ve never seen a clearer display of a trap than that.%SPEECH_OFF% | Shaking his head, %randombrother% laughs at your hesitancy.%SPEECH_ON%You scared of that big ol\' statue, huh? Though you\'d have had more guts than that, sir.%SPEECH_OFF% | After you grab the relic, %randombrother% barbs you with an elbow to the side.%SPEECH_ON%Is someone afraid of the big bad statue, huh? C\'mon, let me grab it. We can have it and be out the door in two seconds!%SPEECH_OFF%You kindly remind the mercenary who is in charge lest he \'joke\' around again. | The relic already in your hand, %randombrother% simply nods.%SPEECH_ON%Good on ya, sir. I say we leave that %risk% well enough alone. That there shining bauble ain\'t nothing but trouble. Going after it would be akin to a fool chasing a beautiful woman in the middle of all the ocean!%SPEECH_OFF% | %randombrother% glares at the %risk% and spits, clearing his throat and running a hand across hid disheveled face.%SPEECH_ON%Yeah. Let\'s leave it well enough alone. If I were to find a pile of gold in the middle of a forest, I think I\'d think twice about runnin\' fer it. Same notion here.%SPEECH_OFF% | %randombrother% agrees with your decision.%SPEECH_ON%Aye, let\'s leave that there %risk% alone. Nothing\'s free in this world, nothing. Certainly nothing with that sort of shine. No sir.%SPEECH_OFF%}",
+			Title = "À %location%",
+			Text = "[img]gfx/ui/events/event_57.png[/img]%employer% vous a juste demandé de récupérer %leItem% et c'est exactement ce que vous allez faire. {%randombrother% est d'accord avec cette approche.%SPEECH_ON%Je pense que nous devrions laisser %risk% bien tranquille. Je n'ai jamais vu une preuve plus claire d'un piège que celui-là.%SPEECH_OFF% | Secouant la tête, %randombrother% se moque de votre hésitation.%SPEECH_ON%Tu as peur de cette grosse statue, hein ? J'aurais pensé que vous auriez eu plus de cran que ça, capitaine.%SPEECH_OFF% | Après avoir pris la relique, %randombrother% vous donne un coup de coude sur le côté.%SPEECH_ON%Quelqu'un a peur de la grande méchante statue, hein ? Allez, laisse-moi l'attraper. On peut l'avoir et être dehors en deux secondes !%SPEECH_OFF%Vous rappelez gentiment au mercenaire qui est le responsable, de peur qu'il ne recommence à faire \"des blagues\". | La relique déjà dans votre main, %randombrother% acquiesce simplement.%SPEECH_ON%C'est bien, monsieur. Je dis qu'il faut laisser %risk% bien tranquille. Cette babiole brillante n'est rien d'autre que des ennuis. S'y attaquer reviendrait à courir après une belle femme au milieu de l'océan !%SPEECH_OFF% | %randombrother% jette un regard à %risk% et crache, se raclant la gorge et passant une main sur son visage ébouriffé.%SPEECH_ON%Ouais. Laissons ça tranquille. Si je devais trouver un tas d'or au milieu d'une forêt, je pense que j'y réfléchirais à deux fois avant de m'y précipiter. Même principe ici.%SPEECH_OFF% | %randombrother% est d'accord avec votre décision.%SPEECH_ON%Oui, laissons %risk% tranquille. Rien n'est gratuit dans ce monde, rien. Et certainement rien avec ce genre d'éclat. Non, monsieur.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "That was easy enough.",
+					Text = "C'était assez facile.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -368,13 +388,13 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "TakeRiskItemGood",
-			Title = "At %location%",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{With the %item% in hand, you figure you might as well grab the %risk%. %randombrother% goes and does it, carefully freeing the statue of the piece. Once the metal wriggles free, the man pauses, readied to get clobbered if the statue were to jump to life. Instead, nothing happens. He nervously laughs.%SPEECH_ON%E-easy-peasy!%SPEECH_OFF%As relief spreads over the men, you tell them to get ready to Retournez à %employer%. | As you grab the %item%, you glance at the %risk% and figure why not. You climb up the statue and stare into the face of the man it has taken its image from. Whoever it was, they had chiseled cheekbones and a jaw to hang a coat on. Looking past his features, you grab the %risk% and hold it out, waiting for something to happen. Nothing does. %randombrother% laughs.%SPEECH_ON%You gonna tell that statue \'welcome\' or not?%SPEECH_OFF%You pat the statue on the head and climb down. The company should head back to %employer% now.}",
+			Title = "À %location%",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Avec %leItem% en main, vous vous dites que vous pourriez aussi bien prendre %risk%. %randombrother% s'y met, libérant soigneusement la statue de la pièce. Une fois que le métal s'est dégagé, l'homme s'arrête, prêt à se faire démolir si la statue s'anime. Au lieu de cela, rien ne se passe. Il rit nerveusement. %SPEECH_ON%Un jeu d'enfant !%SPEECH_OFF%Alors que le soulagement gagne les hommes, vous leur dites de se préparer pour retournez voir %employer%. | En prenant %leItem%, vous regardez %risk% et vous vous dites pourquoi pas. Vous grimpez sur la statue et regardez fixement le visage de l'homme dont elle a pris l'image. Qui que ce soit, il avait des pommettes ciselées et une mâchoire à faire tomber un manteau. En regardant au-delà de ses traits, vous prenez %risk% et le serrez dans vos mains, attendant que quelque chose se passe. Rien ne se passe. %randombrother% rit.%SPEECH_ON%Vous allez dire à cette statue \"Au revoir\" ou non ?%SPEECH_OFF%Vous tapotez la statue sur la tête et descendez. La compagnie devrait retourner voir %employer% maintenant.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "That was easy enough.",
+					Text = "C'était assez facile.",
 					function getResult()
 					{
 						this.Contract.m.RiskItem = null;
@@ -390,20 +410,20 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + this.Contract.m.RiskItem.getIcon(),
-					text = "You gain " + this.Contract.m.RiskItem.getName()
+					text = "Vous recevez " + this.Contract.m.RiskItem.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "TakeRiskItemBad",
-			Title = "At %location%",
-			Text = "[img]gfx/ui/events/event_73.png[/img]{You send %randombrother% up the statue to retrieve the %risk%. While he\'s up there, you notice %employer%\'s lost bauble tottling about on the podium. Sticking your hand out, you hope to steady it, but instead of it going upright, it simply blows through your fingers like dust. The powdered remains stream around your arm like a snake made of fog. You leap away and the smoke shoots toward the statue, thrusting itself into the eyes which now turn a bright red. The stone cracks and crumbles. The sellsword jumps away. All autour dere are shapes emerging from the walls, statues breaking apart to give birth to strange looking men armor-clad and with spears yoked over their shoulders.\n\n You order everyone to prepare for battle! | There\'s no way you could turn down something like that %risk%. You climb up the statue\'s face and reach for it, but the second a bit of metal touches your finger there\'s a rumbling and the statue begins to shake. %randombrother% shouts and you turn around. He\'s pointing toward the %item% which is dissolving before your very eyes! It turns to powder and you can only watch as a stream of it, like a fog taken to life, swirls autour de room and zips right past your face and up the nose of the statue. Its eyes beam red and you immediately jump away. A sellsword comes to your side, his weapon already out.%SPEECH_ON%Sir, sir! Look!%SPEECH_OFF%There are shapes emerging from the walls! Statues that lurch forward like stringed puppets dangling from an old man\'s fingers. Slowly, each one discards its stony carapace and emerges as an odd looking, armor-clad and spear-wielding man. You quickly command your men into battle formation because whatever it is you have set free here isn\'t going to be friendly!}",
+			Title = "À %location%",
+			Text = "[img]gfx/ui/events/event_73.png[/img]{Vous envoyez %randombrother% en haut de la statue pour récupérer %risk%. Pendant qu'il est là-haut, vous remarquez que la babiole perdue de %employer%% vacille sur le podium. Vous tendez la main dans l'espoir de la stabiliser, mais au lieu de se redresser, elle s'envole entre vos doigts comme de la poussière. Les restes poudreux s'écoulent autour de votre bras comme un serpent fait de brouillard. Vous vous éloignez d'un bond et la fumée se dirige vers la statue, s'enfonçant dans les yeux qui deviennent d'un rouge vif. La pierre se fissure et s'effrite. Le mercenaire saute. Tout autour d'elle, des formes émergent des murs, des statues se brisent pour donner naissance à des hommes à l'allure étrange, vêtus d'armures et portant des lances sur leurs dos.\n\n Vous ordonnez à tout le monde de se préparer au combat ! | Il n'y a pas moyen de refuser quelque chose comme %risk%. Vous grimpez sur le visage de la statue et tendez la main pour l'attraper, mais à la seconde où un morceau de métal touche votre doigt, il y a un grondement et la statue se met à trembler. %randombrother% crie et vous vous retournez. Il pointe du doigt %leItem% qui est en train de se dissoudre sous vos yeux ! Il se transforme en poudre et vous ne pouvez que regarder le nuage de poudre, comme un brouillard qui prend vie, tourbillonner autour de la pièce et passer devant votre visage pour remonter le long du nez de la statue. Ses yeux sont rouges et vous vous éloignez immédiatement. Un mercenaire arrive à vos côtés, son arme déjà sortie.%SPEECH_ON%Capitaine, Capitaine! Regardez !%SPEECH_OFF%Il y a des formes qui émergent des murs ! Des statues qui s'avancent comme des marionnettes à des fils qui pendent des doigts d'un vieil homme. Lentement, chacune se débarrasse de sa carapace de pierre et émerge sous la forme d'un homme à l'allure étrange, en armure et armé d'une lance. Vous ordonnez rapidement à vos hommes de se mettre en formation de combat car ce que vous avez libéré ici ne va pas être amical !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Rally!",
+					Text = "Rassemblement !",
 					function getResult()
 					{
 						this.Contract.m.RiskItem = null;
@@ -420,7 +440,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + this.Contract.m.RiskItem.getIcon(),
-					text = "You gain " + this.Contract.m.RiskItem.getName()
+					text = "Vous recevez " + this.Contract.m.RiskItem.getName()
 				});
 			}
 
@@ -428,19 +448,19 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% meets you at the town square. You hand over the %item% and the man cradles it as if it were an infant he thought lost. After a moment of awkward embrace with the relic, he holds it up high, letting the townspeople see it. They cheer for a time. Too long, truly. You have to elbow %employer% to remind him to pay you. | You find %employer% mucking about in a pig pen. He\'s kicking the fat sows around, though they seem more focused on the feed than the leather toe tapping on their arse. You loudly clear your throat. %employer% wheels around and his eyes immediately go wide at the sight of the relic. He jumps over a pig and takes the %item%. He shouts to the townsfolk who gather around and pray to the gods for their mercy. Not a one thanks you, naturally. You have to remind %employer% of the crowns he owes you. It\'s paid and you make your leave as fast as you can. | You find %employer% sitting in the town square, his arms up to the skies, his eyes closed, his mouth murmuring prayers. The townsfolk are all around him, kneeling and doing the same. You pick up a rock and hurl at a weathervane, the clank and rustic spins drawing everyone\'s attention.\n\nYou hold the relic up so all can see. %employer% jumps to his feet and takes the %item%. The people roar with delight, speaking of good things to come. Your payment is handed to you which, truly, is what you would consider a \'good thing\'.}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% vient à votre rencontre sur la place du village. Vous lui remettez %leItem% et l'homme le berce comme s'il s'agissait d'un enfant qu'il croyait perdu. Après un moment d'étreinte maladroite avec la relique, il la brandit bien haut pour que les habitants de la ville la voient. Ils applaudissent pendant un moment. Trop longtemps, vraiment. Vous devez insister lourdement pour que %employer% revienne à lui pour lui rappeler de vous payer. | Vous trouvez %employer% en train de fouiller dans une porcherie. Il donne des coups de pied aux grosses truies, bien qu'elles semblent plus concentrées sur la nourriture que sur le tapotement de l'orteil en cuir sur leur cul. Vous vous raclez bruyamment la gorge. %employer% se retourne et ses yeux s'écarquillent immédiatement à la vue de la relique. Il saute par-dessus un cochon et prend %leItem%. Il crie aux habitants du village qui se rassemblent et prient les dieux pour leur pitié. Pas un seul ne vous remercie, bien sûr. Vous devez rappeler à %employer% les couronnes qu'il vous doit. Il vous paye et vous partez aussi vite que possible. | Vous trouvez %employer% assis sur la place de la ville, les bras levés vers le ciel, les yeux fermés, la bouche murmurant des prières. Les habitants de la ville sont tous autour de lui, agenouillés et faisant de même. Vous ramassez une pierre et la lancez sur une girouette, le cliquetis et les rotations rustiques attirant l'attention de tous.\n\nVous tenez la relique en l'air pour que tout le monde puisse la voir. %employer% se lève d'un bond et prend %leItem%. Le peuple hurle de joie, annonçant les bonnes choses à venir. On vous remet votre paiement, ce qui, en vérité, est ce que vous considérerez comme une \"bonne chose\".}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "The townsfolk seem to be in a good spirit now.",
+					Text = "Les habitants de la ville semblent être dans un bon esprit maintenant.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Obtained " + this.Flags.get("ItemName"));
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "A obtenu " + this.Flags.get("LeItemName"));
 						this.World.Contracts.finishActiveContract();
 
 						if (this.World.FactionManager.isUndeadScourge())
@@ -459,7 +479,7 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + reward + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + reward + "[/color] Couronnes"
 				});
 				this.Contract.addSituation(this.new("scripts/entity/world/settlements/situations/high_spirits_situation"), 3, this.Contract.m.Home, this.List);
 			}
@@ -468,14 +488,14 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_43.png[/img]{The townsfolk of %townname% are eagerly awaiting your return. A shame, because you don\'t have the relic that they so desperately need. %employer%, seeing your failure a step ahead of the laymen, meets you at the town entrance and talks to you in whispers.%SPEECH_ON%I take it you do not have the %item%.%SPEECH_OFF%You try to explain all that happened, but he does not seem to listen.%SPEECH_ON%It\'s no matter, mercenary. I can\'t pay you, obviously, and the townsfolk shan\'t hear of your shortcomings lest we have them lose their minds. They depend upon idols to find comfort in this world. I will have to come up with my own solution and, well, pray it works. Good day.%SPEECH_OFF% | %employer% meets you beside a host of geese. He\'s feeding them out of hand while, quite casually, a boy will occasionally come by and simply pick up one of the birds and go off with it for a slaughtering. The man smiles warmly at you, but his excitement quickly sours.%SPEECH_ON%I do not see the relic. Am I right to believe you do not have it?%SPEECH_OFF%A simple nod is all you give as an answer. He opens his arms, somewhat confused.%SPEECH_ON%Then why have you come? The townsfolk know you. They know you were out there looking for it. You should leave before they see you\'ve returned without their godly idol.%SPEECH_OFF% | You Retournez à %employer% emptyhanded. He takes you by the side and whispers.%SPEECH_ON%And why have you come at all? Do you not understand what import these townsfolk have put upon the idol? Without it to worship, they\'ll have nothing to believe in. Men of strong faith needs somewhere to put it. If he can\'t find it, all he finds is himself. And, like an ugly brute staring into a mirror, we needn\'t rush to see the anger and confusion in the reflection of the idol\'s absence. Leave, sellsword, before the people see you\'ve not returned with the %item%.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_43.png[/img]{Les habitants de %townname% attendent votre retour avec impatience. Dommage, car vous n'avez pas la relique dont ils ont tant besoin. %employer%, voyant votre échec en avance par rapport aux habitants, vous rencontre à l'entrée de la ville et vous parle à voix basse.%SPEECH_ON%Je suppose que vous n'avez pas %leItem%.%SPEECH_OFF%Vous essayez d'expliquer tout ce qui s'est passé, mais il ne semble pas écouter.%SPEECH_ON%Ce n'est pas grave, mercenaire. Je ne peux pas vous payer, évidemment, et les habitants de la ville ne doivent pas entendre parler de votre échec de peur qu'ils ne perdent la tête. Ils dépendent des idoles pour trouver du réconfort dans ce monde. Je vais devoir trouver ma propre solution et, eh bien, prier pour qu'elle fonctionne. Bonne journée à vous.%SPEECH_OFF% | %employer% vous rencontre à côté d'une foule d'oies. Il les nourrit à outrance tandis que, de manière tout à fait désinvolte, un garçon passe de temps en temps et prend simplement l'un des oiseaux pour aller l'abattre. L'homme vous sourit chaleureusement, mais son enthousiasme retombe rapidement.%SPEECH_ON%Je ne vois pas la relique. Ai-je raison de croire que vous ne l'avez pas ?%SPEECH_OFF%Un simple hochement de tête est tout ce que vous donnez comme réponse. Il ouvre les bras, un peu confus.%SPEECH_ON%Alors pourquoi êtes-vous venu ? Les habitants de la ville vous connaissent. Ils savent que vous étiez dehors à la chercher. Vous devriez partir avant qu'ils ne vous voient revenir sans leur idole divine.%SPEECH_OFF% | Vous retournez voir %employer% les mains vides. Il vous prend par le côté et vous murmure.%SPEECH_ON%Et pourquoi êtes-vous venu ? Ne comprenez-vous pas l'importance que ces villageois accordent à l'idole ? Sans elle à vénérer, ils n'ont rien en quoi croire. Les hommes à la foi forte ont besoin d'un endroit où la mettre. S'ils ne peuvent pas le trouver, tout ce qu'ils trouvent, c'est eux-mêmes. Et, comme une brute laide qui se regarde dans un miroir, nous ne devons pas nous précipiter pour voir la colère et la confusion dans le reflet de l'absence de l'idole. Partez, mercenaire, avant que les gens ne voient que vous n'êtes pas revenu avec %leItem%.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Oh well...",
+					Text = "Eh bien...",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
@@ -502,6 +522,10 @@ this.obtain_item_contract <- this.inherit("scripts/contracts/contract", {
 		_vars.push([
 			"item",
 			this.m.Flags.get("ItemName")
+		]);
+		_vars.push([
+			"leItem",
+			this.m.Flags.get("LeItemName")
 		]);
 		_vars.push([
 			"risk",

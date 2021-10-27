@@ -530,14 +530,14 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				item = this.new("scripts/items/accessory/wardog_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 

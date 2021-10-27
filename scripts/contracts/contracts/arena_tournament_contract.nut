@@ -866,7 +866,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 				this.List.push({
 					id = 12,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				this.Contract.updateTraits(this.List);
 			}
