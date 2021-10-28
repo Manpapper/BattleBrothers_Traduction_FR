@@ -3,7 +3,7 @@ this.surface_iron_vein_location <- this.inherit("scripts/entity/world/attached_l
 	function create()
 	{
 		this.attached_location.create();
-		this.m.Name = "Veine de Fer de surface";
+		this.m.Name = "Filon de Fer en surface";
 		this.m.ID = "attached_location.surface_iron_vein";
 		this.m.Description = "Ce filon de fer à la surface a attiré un petit camp minier qui recueille le précieux métal. L\'accès à cette ressource augmente le choix d\'armes disponibles dans la colonie la plus proche.";
 		this.m.Sprite = "world_iron_mine_01";
