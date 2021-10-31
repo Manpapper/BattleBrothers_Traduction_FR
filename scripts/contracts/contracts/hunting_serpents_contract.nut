@@ -8,7 +8,7 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.hunting_serpents";
-		this.m.Name = "Hunting Serpents";
+		this.m.Name = "Chasser des Serpents";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -244,14 +244,14 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_162.png[/img]{%employer% welcomes you into his room which is a space of ultimate luxury - there are numerous fineries ranging from silks, pelts, women, and gems. So many gems.%SPEECH_ON%Crownling, about time you\'d come here. We have an economic matter that needs settling. Serpents are nastily assailing the population near wetlands %direction% of here. But more importantly, we desire the scales of these serpents. They make the utmost...%SPEECH_OFF%The man kisses his fingers.%SPEECH_ON%Bags and shoes. Look at these women, do they not show their desire for said scales?%SPEECH_OFF%The women are staring at their hands or talking amongst themselves. The Vizier claps his hands.%SPEECH_ON%Handbags, my sweet, beautiful doves, handbags made from serpent scales! Yes, smile. There you go. See? How hard was that? Alright, Crownling. The offer to return these scales is %reward% crowns. For such a price do you agree to dispatch yourself upon this task?%SPEECH_OFF% | You find %employer% petting a wildly tall bird with pink feathers and long black legs. He is feeding it crickets, which the bird doesn\'t seem to much care for.%SPEECH_ON%Ahh, I have spoiled you, Little Doveling.%SPEECH_OFF%He begins to feed the strange creature long silvered fish which he pulls, alive, out of a golden bucket. He talks without looking at you as the bird gulps down fish after fish.%SPEECH_ON%We here have acquired knowledge that serpents are in the wetlands %direction% of here. The scales of said serpents is worth a considerable amount, not in gold, of course, but in our fine tastes. We desire that you head there and herd said scales into your backpacks and trot your little legs back here.%SPEECH_OFF%The man raises a finger, raises it even further, then points it at the tiles beneath his feet.%SPEECH_ON%And for that, we will pay you %reward% crowns.%SPEECH_OFF%The pink bird prunes itself and seemingly stares at you in the stead of its caretaker. | %employer% is setting on what seems like the ledge of a sauna, but his feet are buried in the hands of women laying in what is some sort of indoor aqueduct. They are using reeds to breathe, and from what you can tell they are massaging the man\'s feet. It is an absurd sight, but the Vizier pays it as much mind as he does you.%SPEECH_ON%Ah the Crownling arrives. We desire, as we always have desired, the scales of serpents for which we use to gild our luxuries. These scales can be found upon the serpents, who themselves, hmmm, yes, can be found %direction% of here. In the, ahhh, wetlands.%SPEECH_OFF%The man leans back and briefly raises his toes out of water. They wiggle as he stares at you.%SPEECH_ON%The offer is %reward% crowns, are you in agreement with such a fine, fair offer?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_162.png[/img]{%employer% vous accueille dans sa chambre qui est un espace de luxe ultime - il y a de nombreuses parures de soies, de peaux, de femmes et de pierres précieuses. Tant de pierres précieuses.%SPEECH_ON%Mercenaire, il était temps que vous veniez. Nous avons un problème économique qui doit être réglé. Des serpents s'attaquent méchamment à la population près des marécages %direction%  d'ici. Mais plus important encore, nous voulons les écailles de ces serpents. Elles font les meilleurs...%SPEECH_OFF%L'homme embrasse ses doigts.%SPEECH_ON%Sacs et chaussures. Regardez ces femmes, ne montrent-elles pas leur désir pour lesdites écailles ?%SPEECH_OFF%Les femmes regardent leurs mains ou parlent entre elles. Le Vizir frappe dans ses mains.%SPEECH_ON%Des sacs à main, mes douces et belles colombes, des sacs à main en écailles de serpent ! Oui, souriez. Et voilà. Vous voyez ? C'était pas difficile, hein ? Très bien, mercenaire. L'offre pour rapporter ces écailles est de %reward% couronnes. Pour un tel prix, acceptez-vous de vous atteler à cette tâche ?%SPEECH_OFF% | Vous trouvez %employer% en train de caresser un grand oiseau sauvage aux plumes roses et aux longues pattes noires. Il lui donne des grillons, dont l'oiseau ne semble pas très friand.%SPEECH_ON%Ahh, je t'ai trop gâté, petit Ronchon.%SPEECH_OFF%Il commence à nourrir l'étrange créature avec de longs poissons argentés qu'il sort, vivants, d'un seau doré. Il parle sans vous regarder tandis que l'oiseau engloutit poisson sur poisson.%SPEECH_ON%Nous avons appris que des serpents se trouvent dans les marécages %direction% d'ici. Les écailles desdits serpents ont une valeur considérable, pas en or, bien sûr, mais en termes de biens raffinés. Nous désirons que vous vous y rendiez, que vous mettiez ces écailles dans vos sacs à dos et que vous reveniez ici au trot de vos petites jambes.%SPEECH_OFF%L'homme lève un doigt, le lève encore plus, puis le pointe vers les carreaux sous ses pieds.%SPEECH_ON%Et pour cela, nous vous paierons %reward% couronnes.%SPEECH_OFF%L'oiseau rose se nettoie et semble vous regarder à la place de son gardien. | %employer% est installé sur ce qui semble être le rebord d'un sauna, mais ses pieds sont enfouis dans les mains de femmes allongées dans ce qui est une sorte d'aqueduc intérieur. Elles utilisent des roseaux pour respirer, et d'après ce que l'on peut voir, elles massent les pieds de l'homme. C'est un spectacle absurde, mais le vizir y prête autant d'attention qu'à vous.%SPEECH_ON%Ah, le mercenaire arrive. Nous désirons, comme nous l'avons toujours désiré, les écailles de serpents dont nous nous servons pour décorer nos richesses. Ces écailles peuvent être trouvées sur les serpents, qui eux-mêmes, hmmm, oui, peuvent être trouvés %direction% d'ici. Dans les, hmmm, marécages.%SPEECH_OFF%L'homme se penche en arrière et sort brièvement ses orteils de l'eau. Ils les remuent alors qu'il vous regarde fixement.%SPEECH_ON%L'offre est de %reward% couronnes, êtes-vous d'accord avec une offre aussi belle et équitable ?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{I\'m interested.}",
+					Text = "{Je suis intéressé.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -259,7 +259,7 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Ça ne ressemble pas à notre type de travail. | That\'s not the kind of work we\'re looking for.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Ce n'est pas le genre de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -276,12 +276,12 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Banter",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{You find a long sheath of dried scales, fat enough to stick your arm through, an unsettling sight as it is a feeling. The serpents are no doubt not far from these husks. | A man with green chew in his mouth stops you. He has a dagger sheathed in his belt, it has scales for a handle and there\'s a golden snake head for a pommel.%SPEECH_ON%Serpent hunters, are ya? I\'d do it myself, as you can tell my fascinating swagger and my delicious dagger, but alas, I now prefer to watch others at work. I\'ll say this much, they are quite close, these little snakes.%SPEECH_OFF%You bid the man farewell as fast as you can. | There\'s a few children playing in a swampy puddle, mud caked up to their knees and elbows alike. They look at you and ask what you\'re up to. When you state your business, the kids laugh.%SPEECH_ON%Serpents! They\'re small game! Nothing with which to concern yourself as far as I am concerned.%SPEECH_OFF% | You find a pile of snake skins wrapped around a wetland\'s tree trunk. The serpents no doubt used the trunk to shed the scales. And the size of the scales, each one far bigger than an arrowhead, are enough evidence you need that the serpents are close.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Vous trouvez une longue enveloppe d'écailles séchées, assez grosse pour y passer le bras, une vue aussi troublante que l'est la sensation de ces écailles. Les serpents ne sont sans doute pas loin de ces enveloppes. | Un homme avec de la chique verte dans la bouche vous arrête. Il a une dague à la ceinture, avec des écailles pour manche et une tête de serpent en or pour pommeau.%SPEECH_ON%Vous êtes des chasseurs de serpents ? Je le ferais bien moi-même, comme en témoignent ma fascinante démarche et ma délicieuse dague, mais hélas, je préfère maintenant regarder les autres travailler. Je dirai là-bas, ils sont assez proches, ces petits serpents.%SPEECH_OFF%Vous faites vos adieux à l'homme aussi vite que vous le pouvez. | Il y a quelques enfants qui jouent dans une flaque de boue, ils sont couverts de boue qu'il s'agisse de leurs genoux ou de leurs coudes. Ils vous regardent et vous demandent ce que vous faites. Quand vous leur dites ce que vous faites, les enfants rient.%SPEECH_ON%Des serpents ! C'est du petit gibier ! Rien qui ne doive vous préoccuper en ce qui me concerne.%SPEECH_OFF% | Vous trouvez un tas de peaux de serpent enroulées autour d'un tronc d'arbre d'une zone humide. Les serpents ont sans doute utilisé le tronc pour perdre leurs écailles. Et la taille des écailles, chacune bien plus grande qu'une pointe de flèche, est une preuve suffisante que les serpents sont proches.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Keep your eyes peeled.",
+					Text = "Gardez vos yeux ouverts.",
 					function getResult()
 					{
 						return 0;
@@ -293,12 +293,12 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Victory",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_169.png[/img]{The last of the serpents is dead. You step on its head, then raise your foot realizing it\'s actually the tail. You step along the length of the snake and get to its head and there chop it clean off. It\'s a lot easier now that it\'s not writhing and slipping about. %employer% will be wanting to see you return with the head and all the scales with it. | You go autour de field slinging snakes into a knapsack, the body of which bulges with their girth, and even in death they seem to writhe amongst each other in the sack. Having collected each serpent, you ready a Retournez à %employer%. | The serpents are all dead, strongly indicated by their unmoving status. Just to be sure, though, you go around chopping all their heads off. Sufficiently assured nothing can survive such strokes of damage, you sling the serpents into a knapsack and ready a Retournez à %employer%.}",
+			Text = "[img]gfx/ui/events/event_169.png[/img]{Le dernier des serpents est mort. Vous marchez sur sa tête, puis vous levez votre pied en réalisant que c'est en fait la queue. Vous marchez le long du serpent et vous arrivez à sa tête et là vous la coupez net. C'est beaucoup plus facile maintenant qu'il ne se tortille pas et ne glisse pas. %employer% voudra vous voir revenir avec les têtes et avec toutes les écailles . | Vous vous promenez dans les champs en jetant des serpents dans un sac à dos, et même dans la mort, ils semblent se tordre les uns les autres dans le sac. Après avoir ramassé chaque serpent, vous préparez pour retouner voie %employer%. | Les serpents sont tous morts, comme l'indique leur immobilité. Mais pour être sûr, vous allez leur couper la tête. Après vous être assuré que rien ne peut survivre à de tels dégâts, vous mettez les serpents dans un sac à dos et vous vous préparez à retourner voir %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Let\'s be done with this, we have crowns to collect.",
+					Text = "Finissons-en avec ça, nous avons des couronnes à collecter.",
 					function getResult()
 					{
 						return 0;
@@ -310,12 +310,12 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Lindwurm",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_129.png[/img]You see the first serpent writhing about what looks like a fallen wetland tree. As you gain on the snake, you realize there are a few more sneaking about. And then you realize the tree they\'ve taken to is no tree at all: its girth shifts and rolls over, and you see the scales, fat as your own hand, glisten in the light, and the lindwurm rears its head and turns it round, its sharp eyes focusing with slimming blackness, and then it opens its maw and roars, the wetland water rippling as its growl sears across the surface.",
+			Text = "[img]gfx/ui/events/event_129.png[/img]Vous voyez le premier serpent se tordre sur ce qui ressemble à un arbre tombé dans une zone humide. Alors que vous gagnez du terrain sur le serpent, vous réalisez qu'il y en a d'autres qui se faufilent. Puis vous réalisez que l'arbre où ils se sont réfugiés n'est pas un arbre du tout : sa circonférence se déplace et se retourne, et vous voyez les écailles, aussi grosses que votre propre main, scintiller dans la lumière, et le lindwurm relève la tête et la tourne, ses yeux acérés sont d'une noirceur impénétrable. Il ouvre sa gueule et rugit, l'eau des marécages ondules tandis que son grognement déchire la surface.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "A Lindwurm!",
+					Text = "Un Lindwurm!",
 					function getResult()
 					{
 						this.Contract.getActiveState().onTargetAttacked(this.Contract.m.Target, true);
@@ -332,12 +332,12 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Caravan1",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_149.png[/img]{The wetlands are not ordinarily home to caravans, so it of some surprise that you find one with all its guards running about. You at first think they are unloading goods, that perhaps they\'re bandits who have arrived at their secret bolthole, but as you near you see one guard get wrapped up in a curling, murderous snake and fall down. Another guard turns around a serpent\'s maw claps over his head. The merchants are under attack!}",
+			Text = "[img]gfx/ui/events/event_149.png[/img]{Les marécages n'abritent habituellement pas de caravanes, et c'est donc avec surprise que vous en trouvez une avec tous ses gardes courant dans tous les sens. Vous pensez d'abord qu'ils déchargent des marchandises, qu'il s'agit peut-être de bandits arrivés dans leur repaire secret, mais en vous approchant, vous voyez un garde se faire enrouler par un serpent meurtrier et tomber. Un autre garde se retourne et la gueule du serpent se referme sur sa tête. Les marchands sont attaqués !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Protect them!",
+					Text = "Protégez-les !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onTargetAttacked(this.Contract.m.Target, true);
@@ -354,12 +354,12 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Caravan2",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_169.png[/img]{The battle over, the head of the caravan comes to you personally.%SPEECH_ON%I thank you, Crownling. A slave to the coin you may be, but not without a chain or two adorned upon what we all wish we had, a sense of doing good.%SPEECH_OFF%Well, you were just here for the serpents and the caravan was but happenstance, a welcome supplement of live bait that kept the monsters off your own men. You\'re just about to tell him this, but he cuts you off with a bag of treasures in hand.%SPEECH_ON%As reward for your intervention, Crownling. May your road to the coin be ever more gilded.%SPEECH_OFF%Nodding, you shake his hand and then go about collecting the serpent scales. The merchant asks if he may have one, but with a hand on your sword you tell him this is not a trading post he has stopped at. He gets the message.}",
+			Text = "[img]gfx/ui/events/event_169.png[/img]{La bataille terminée, le chef de la caravane vient vous voir personnellement.%SPEECH_ON%Je vous remercie, Mercenaire. Esclave des curonnes, vous l'êtes peut-être, mais pas sans une ou deux chaînes ornées de ce que nous aimerions tous avoir, le sens du bien.%SPEECH_OFF%Vous n'étiez ici que pour les serpents et la caravane n'était qu'une coïncidence, un supplément bienvenu d'appât vivant qui éloignait les monstres de vos propres hommes. Vous êtes sur le point de lui dire, mais il vous interrompt avec un sac de trésors à la main.%SPEECH_ON%En récompense de votre intervention, Mercenaire. Que votre chemin vers les couronnes soit toujours plus doré.%SPEECH_OFF%En hochant la tête, vous lui serrez la main, puis vous vous mettez à collecter les écailles de serpent. Le marchand demande s'il peut en avoir une, mais d'une main sur votre épée, vous lui dites que ce n'est pas un comptoir commercial. Il a compris le message.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We move out!",
+					Text = "On bouge !",
 					function getResult()
 					{
 						return 0;
@@ -404,14 +404,14 @@ this.hunting_serpents_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_162.png[/img]{A flock of women rush you. There are far too many, and the door to %employer%\'s room appears and disappears, winking behind a flurry of silken scarves, flittering feathers, glistening jewelry, and the general swirling and throwing of hair finer than any you\'ve ever seen. There is also the noise which is of considerable distraction.\n\n You are practically robbed of the scales and, being in the Vizier\'s place, do not exactly resist the purloining. As the women scatter away giggling, a much older woman is left in the wake. She holds out a satchel of crowns, your payment.%SPEECH_ON%The Vizier does not wish to speak with you, Crownling. He thinks it beneath him.%SPEECH_OFF%You ask if it is beneath her to meet with you. She nods.%SPEECH_ON%It is, but I\'d rather find myself beneath a task, than beneath the Vizier himself. Have a fine day, Crownling, and may your road to the coin be gilded.%SPEECH_OFF% | You are relieved of the serpent scales by a horde of helpers. The Vizier is at their command, staring quite sternly from the rear of the room. As they depart, he raises his hands and claps. Four helpers come over carrying one satchel. You think you are being surprised with extra pay, but when they hand it off you can hold it just fine all by yourself. You look over the lid to see the Vizier grinning sheepishly. You take the %reward_completion% crowns and make your leave. | On the Vizier\'s grounds, the serpent scales do not stay in your hands for long. You find a series of helpers that all rush to his side to come and relieve you of the goods. The Vizier himself is nearby, you just know it, probably watching from a window of some sort or through a door portal. But you never really see him. You do see his coin, though, in a satchel of %reward_completion% crowns as given by a shy helper.%SPEECH_ON%From our grace, into your graces.%SPEECH_OFF%The servant says, and then he trots away and is gone just like that.}",
+			Text = "[img]gfx/ui/events/event_162.png[/img]{Un troupeau de femmes se précipite sur vous. Elles sont beaucoup trop nombreuses, et la porte de la chambre de %employer% apparaît et disparaît, clignant de l'œil derrière un tourbillon de foulards de soie, de plumes scintillantes, de bijoux étincelants, et le tourbillon général et le jet de cheveux plus fins que tout ce que vous avez jamais vu. Il y a aussi le bruit qui est une distraction considérable.\n\n On vous vole pratiquement les écailles et, étant chez le Vizir, vous ne résistez pas vraiment au vol. Alors que les femmes s'enfuient en riant, une femme beaucoup plus âgée reste dans le sillage. Elle vous tend une sacoche de couronnes, votre paiement.%SPEECH_ON%Le vizir ne souhaite pas vous parler, Mercenaire. Il pense que c'est indigne de lui.%SPEECH_OFF%Vous lui demandez si c'est indigne d'elle de vous rencontrez. Elle acquiesce.%SPEECH_ON%C'est vrai, mais je préfère me charger de cette tâche, plutôt que le Vizir lui-même s'en charge. Passez une bonne journée, Mercenaire, et que votre route vers les couronnes soit dorée.%SPEECH_OFF% | Vous êtes soulagé des écailles de serpent par une horde d'assistants. Le Vizir est à leurs ordres, et les regarde d'un air sévère depuis le fond de la pièce. Lorsqu'ils partent, il lève les mains et applaudit. Quatre assistants s'approchent, portant une sacoche. Vous pensez qu'on vous surprend avec un salaire supplémentaire, mais lorsqu'ils vous la remettent, vous pouvez très bien la tenir tout seul. Vous regardez par-dessus le couvercle pour voir le vizir sourire d'un air penaud. Vous prenez les %reward_completion% couronnes et vous partez. | Sur le domaine du Vizir, les écailles de serpent ne restent pas longtemps dans vos mains. Vous trouvez une série d'aides qui se précipitent tous à ses côtés pour venir vous soulager de la marchandise. Le Vizir lui-même est tout près, vous le savez, il vous observe probablement depuis une sorte de fenêtre ou à travers un portail. Mais vous ne le voyez jamais vraiment. Vous voyez cependant votre paiement, dans une sacoche de %reward_completion% couronnes donnée par un timide assistant.%SPEECH_ON%De notre grâce, pour vous.%SPEECH_OFF%Le serviteur dit, puis il part au trot et disparaît comme ça.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "A successful hunt.",
+					Text = "Une chasse réussie.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);

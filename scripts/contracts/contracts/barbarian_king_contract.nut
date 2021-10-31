@@ -321,7 +321,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{We\'re not about to engage an army. | That\'s not the kind of work we\'re looking for. | I won\'t risk the company against an enemy such as this.}",
+					Text = "{We\'re not about to engage an army. | Ce n'est pas le genre de travail que nous recherchons. | I won\'t risk the company against an enemy such as this.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
