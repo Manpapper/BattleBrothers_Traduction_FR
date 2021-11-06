@@ -180,7 +180,7 @@ this.hunting_alps_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This doesn\'t sound like mercenary work. | Ça ne ressemble pas à notre type de travail. | Ce n'est pas le genre de travail que nous recherchons.}",
+					Text = "{This doesn\'t sound like mercenary work. | Ça ne ressemble pas à notre type de travail. | Ce n\'est pas le genre de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

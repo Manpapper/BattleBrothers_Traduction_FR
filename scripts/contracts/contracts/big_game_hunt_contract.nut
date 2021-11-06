@@ -381,7 +381,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{That\'s too much walking for my taste. | We\'re not about to chase ghosts around %worldmapregion%. | Ce n'est pas le genre de travail que nous recherchons.}",
+					Text = "{That\'s too much walking for my taste. | We\'re not about to chase ghosts around %worldmapregion%. | Ce n\'est pas le genre de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -413,7 +413,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{That\'s too much walking for my taste. | We\'re not about to chase ghosts around %worldmapregion%. | Ce n'est pas le genre de travail que nous recherchons.}",
+					Text = "{That\'s too much walking for my taste. | We\'re not about to chase ghosts around %worldmapregion%. | Ce n\'est pas le genre de travail que nous recherchons.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -445,7 +445,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{We\'re not about to chase ghosts around %worldmapregion%. | Ce n'est pas le genre de travail que nous recherchons. | I won\'t risk the company against an enemy such as this.}",
+					Text = "{We\'re not about to chase ghosts around %worldmapregion%. | Ce n\'est pas le genre de travail que nous recherchons. | I won\'t risk the company against an enemy such as this.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);

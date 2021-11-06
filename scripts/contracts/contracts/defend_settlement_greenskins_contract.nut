@@ -396,7 +396,7 @@ this.defend_settlement_greenskins_contract <- this.inherit("scripts/contracts/co
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Combien est prêt à payer %townname% pour leur sécurité? | This should be worth a good amount of crowns to you, right? | Fighting greenskins won\'t come cheap.}",
+					Text = "{Combien est prêt à payer %townname% pour leur sécurité? | Ça devrait valoir une bonne quantité de couronnes pour vous, non ? | Fighting greenskins won\'t come cheap.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -404,7 +404,7 @@ this.defend_settlement_greenskins_contract <- this.inherit("scripts/contracts/co
 
 				},
 				{
-					Text = "{I\'m afraid you\'re on your own. | I\'m afraid this isn\'t worth it for the %companyname%. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
+					Text = "{J'ai bien peur que vous allez devoir vous débrouiller seul. | I\'m afraid this isn\'t worth it for the %companyname%. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 60)

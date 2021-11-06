@@ -8,7 +8,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 	{
 		this.contract.create();
 		this.m.Type = "contract.defend_settlement_bandits";
-		this.m.Name = "Defend Settlement";
+		this.m.Name = "Défendre la Colonie";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 5.0;
 		this.m.MakeAllSpawnsResetOrdersOnContractEnd = false;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
@@ -402,14 +402,14 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{%employer%\'s looking out the window. He waves you to join him.%SPEECH_ON%Look at those people.%SPEECH_OFF%There\'s a throng of people below, wailing about this or that.%SPEECH_ON%Brigands have been roaming these parts for awhile now and people believe that they are about to attack us in great numbers.%SPEECH_OFF%The man throws the curtains closed and goes to light a candle. He speaks over it, his breath flicking the flame.%SPEECH_ON%We need you to protect us, mercenary. If you can stop these brigands, you\'ll be paid handsomely. Are you interested?%SPEECH_OFF% | A few peasants are roaming outside the halls of the room. You can hear their shouting and it is of a nervous tone. %employer% pours a drink and sips it with a shaking hand.%SPEECH_ON%I\'ll just be clear with you, sellsword. We have many, many reports that brigands are about to attack this town. If you want to know, those reports came by way of dead women and children. Clearly, we\'ve no reason to doubt the seriousness of these reports. So, the question is, will you protect us?%SPEECH_OFF% | %employer%\'s looking at some papers on his desk. You take a seat and ask what it is he wants.%SPEECH_ON%Hello, sellsword. We have a problem I think you will... excel at taking care of.%SPEECH_OFF%You ask him to be straight with you and he jumps right to the point.%SPEECH_ON%Brigands have burned down some homes and hovels just outside town. News is that they are preparing a much larger, gustier attack. I need you here to stop them. Do you think you can handle this task?%SPEECH_OFF% | %employer%\'s staring at his bookshelf, his back to you. He talks somberly.%SPEECH_ON%It\'s a shame not many can read these. Maybe our issues would go away if they could. Or maybe they\'d just get worse.%SPEECH_OFF%He shakes his head and turns around.%SPEECH_ON%We\'ve got a gang of brigands soon to descend upon us. I need you, sellsword, to stop them. My books sure as hell won\'t. If the pay is right, which I promise it will be, are you in?%SPEECH_OFF% | %employer%\'s got two papers in hand. There are faces sketched onto them.%SPEECH_ON%We caught these two the other day. Hanged \'em, burned the remains.%SPEECH_OFF%You shrug.%SPEECH_ON%Congratulations?%SPEECH_OFF%The man is not very amused.%SPEECH_ON%Now we\'ve gotten word that their brigand friends are coming to exact revenge on us! And, yes, we need your help to fight them off. Are you interested?%SPEECH_OFF% | You settle into %employer%\'s room, taking a seat, rubbing your hands along the wooden frame. It\'s a good oak. A once-tree worth sitting in.%SPEECH_ON%Glad you\'re comfortable, sellsword, but I sure as hell ain\'t. We have many, many warnings that a large group of brigands are about to attack our town. We\'re quite short on defense, but not short on crowns. Obviously, that\'s where you come in. Are you interested?%SPEECH_OFF% | %employer% slams a cup against the wall. It scatters, turning and pinwheeling, flecks of wine dotting your cheek.%SPEECH_ON%Vagabonds! Brigands! Marauders! It never ends!%SPEECH_OFF%He absently hands you a napkin.%SPEECH_ON%Now I\'m getting news that a large group of these thugs are coming to burn this town to the ground! Well, I\'ve gotten something in store for them: you. What do you say, sellsword? Will you defend us?%SPEECH_OFF% | A few grieving women can be hear wailing just outside %employer%\'s room. He turns to you.%SPEECH_ON%Hear that? That\'s what happens when brigands come here. They steal, they rape, and they murder.%SPEECH_OFF%You nod. It is, after all, the way of the brigand.%SPEECH_ON%Now some peasants in the hinterland say the thugs are preparing for a massive assault on our village. You must do something to help us, sellsword. Heh, of course I say \'must\'. What I really mean is that we\'ll pay you to help us...%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{%employer% regarde par la fenêtre. Il vous fait signe de le rejoindre.%SPEECH_ON%Regardez ces gens.%SPEECH_OFF%Il y a une foule de gens en bas, qui se plaignent de ceci ou de cela.%SPEECH_ON%Des brigands parcourent ces régions depuis un certain temps maintenant et les gens pensent qu'ils sont sur le point de nous attaquer en grand nombre.%SPEECH_OFF%L'homme ferme les rideaux et va allumer une bougie. Il parle au-dessus d'elle, son souffle faisant vaciller la flamme.%SPEECH_ON%On a besoin de vous pour nous protéger, mercenaire. Si vous pouvez arrêter ces brigands, vous serez grassement payé. Êtes-vous intéressé ?%SPEECH_OFF% | Quelques paysans errent à l'extérieur des couloirs de la salle. On peut entendre leurs hurlements et ils sont d'un ton nerveux. %employer% se verse un verre et le sirote d'une main tremblante.%SPEECH_ON%Je vais être clair avec vous, mercenaire. Nous avons beaucoup, beaucoup de rapports indiquant que des brigands sont sur le point d'attaquer cette ville. Si vous voulez savoir, ces rapports sont arrivés par le biais de femmes et d'enfants morts. Clairement, nous n'avons aucune raison de douter du sérieux de ces rapports. Donc, la question est, allez-vous nous protéger ?%SPEECH_OFF% | %employer% regarde des papiers sur son bureau. Vous prenez un siège et demandez ce qu'il veut.%SPEECH_ON%Bonjour, mercenaire. Nous avons un problème dont je pense que vous allez... exceller à vous occuper.%SPEECH_OFF%Vous lui demandez d'être franc avec vous et il va droit au but.%SPEECH_ON%Des brigands ont brûlé quelques maisons et masures à l'extérieur de la ville. Les nouvelles disent qu'ils préparent une attaque plus importante et plus violente. J'ai besoin de vous ici pour les arrêter. Pensez-vous pouvoir accomplir cette tâche ?%SPEECH_OFF% | %employer% fixe son étagère, dos à vous. Il parle d'un ton sombre.%SPEECH_ON%C'est dommage que peu de gens puissent les lire. Peut-être que nos problèmes disparaîtraient s'ils le pouvaient. Ou peut-être qu'ils ne feraient qu'empirer.%SPEECH_OFF%Il secoue la tête et se retourne.%SPEECH_ON%Il y a une bande de brigands qui va bientôt nous attaquer. J'ai besoin de vous, mercenaire, pour les arrêter. Mes livres ne le feront pas. Si le salaire est bon, et je vous promets qu'il le sera, êtes-vous partant ?%SPEECH_OFF% | %employer% a deux papiers en main. Il y a des visages dessinés dessus.%SPEECH_ON%On a attrapé ces deux-là l'autre jour. On les a pendus et on a brûlé les restes.%SPEECH_OFF%Vous haussez les épaules.%SPEECH_ON%Félicitations ?%SPEECH_OFF%L'homme n'est pas très amusé.%SPEECH_ON%Maintenant, nous avons appris que leurs amis brigands viennent pour se venger ! Et, oui, nous avons besoin de votre aide pour les repousser. Êtes-vous intéressé ?%SPEECH_OFF% | Vous vous installez dans la chambre de %employer%, prenez un siège, frottez vos mains sur le cadre en bois. C'est un bon chêne. Un arbre qui vaut la peine de s'y asseoir.%SPEECH_ON%Content que vous soyez à l'aise, mercenaire, mais moi pas du tout. Nous avons beaucoup, beaucoup d'avertissements qu'un grand groupe de brigands est sur le point d'attaquer notre ville. Nous sommes à court de moyens de défense, mais pas à court de couronnes. Évidemment, c'est là que vous intervenez. Êtes-vous intéressé ?%SPEECH_OFF% | %employer% frappe une tasse contre le mur. Elle s'éparpille, tourne et virevolte, des taches de vin parsèment votre joue.%SPEECH_ON%Vagabonds ! Brigands ! Maraudeurs ! Ça n'en finit jamais !%SPEECH_OFF%Il vous tend distraitement une serviette.%SPEECH_ON%Maintenant, j'apprends qu'un grand groupe de ces voyous va venir brûler cette ville ! Eh bien, j'ai quelque chose en réserve pour eux : vous. Qu'en dites-vous, mercenaire ? Acceptez-vous de nous défendre ?%SPEECH_OFF% | On peut entendre quelques femmes en deuil gémir juste à l'extérieur de la chambre de %employer%. Il se tourne vers vous.%SPEECH_ON%Vous entendez ça ? C'est ce qui arrive quand les brigands viennent ici. Ils volent, ils violent, et ils assassinent.%SPEECH_OFF%Vous acquiescez. C'est, après tout, la façon de faire du brigand.%SPEECH_ON%Maintenant, certains paysans de l'arrière-pays disent que les voyous se préparent à un assaut massif sur notre village. Vous devez faire quelque chose pour nous aider, mercenaire. Heh, bien sûr quand je dis \"devez\". Ce que je veux vraiment dire, c'est que nous allons vous payer pour nous aider...%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Combien est prêt à payer %townname% pour leur sécurité? | This should be worth a good amount of crowns to you, right?}",
+					Text = "{Combien est prêt à payer %townname% pour leur sécurité? | Ça devrait valoir une bonne quantité de couronnes pour vous, non ?}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -417,7 +417,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "{I\'m afraid you\'re on your own. | Nous avons d\'autres importants problèmes à régler. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
+					Text = "{J'ai bien peur que vous allez devoir vous débrouiller seul. | Nous avons d\'autres importants problèmes à régler. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 60)
@@ -441,14 +441,14 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Plea",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_43.png[/img]{As you\'re leaving %employer% with a rejection, you come outside to find a throng of peasants standing around. Each is holding some sort of oddity, the sort of wealth that the laymen could scrounge together as best they could: chickens, cheap necklaces, worn clothes, rusted blacksmith gear, the list of belongings go on and on. One steps forward, a chicken tucked under each arm.%SPEECH_ON%Please! You can\'t leave! You have to help us!%SPEECH_OFF%%randombrother% laughs, but you have to admit that the poor folk do know how to pull a heartstring or two. Maybe you should stay and help after all? | When you leave %employer%, you come outside to find a woman standing there with a mob of her spawn running around and between her legs and a babe sucking her teat.%SPEECH_ON%Mercenary, please, you mustn\'t leave us like this! This town needs you! The children need you!%SPEECH_OFF%She pauses, then lowers the other side of her shirt, revealing a rather salacious and seductive temptation.%SPEECH_ON%I need you...%SPEECH_OFF%You hold a hand up, both to stop her and wipe your suddenly sweaty brow. Maybe helping this pair, uh, poor people out wouldn\'t be so bad after all? | Getting ready to leave %townname%, a small puppy runs up to you barking and licking your boots. An even smaller child is in chase, practically on the coattails of its literal tail. The kid falls to the mutt and wraps his arms around its nappy fur.%SPEECH_ON%Oh {Marley | Yeller | Jo-Jo}, I love you so much!%SPEECH_OFF%An image of brigands slaughtering the child and his pet runs across your mind. You\'ve better things to do than play sheriff and constable against common thieves, but the dog just keeps licking the boy\'s face and the kid just seems so happy.%SPEECH_ON%Haha! We\'re going to live forever and ever, aren\'t we? Forever and ever!%SPEECH_OFF%Goddammit. | A man walks up to you as you leave %employer%\'s abode.%SPEECH_ON%Sir, I heard you turn that man\'s offer down. It\'s a shame, that\'s all I wanted to say. I thought there were plenty of good men in this world, but I suppose I was wrong on that. Godspeed on your journey, and I do hope you pray for us in your travels.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_43.png[/img]{Alors que vous quittez %employer% avec un refus, vous sortez et trouvez une foule de paysans debout. Chacun d'entre eux tient dans ses mains une sorte de curiosité, le genre de richesse que les laïcs peuvent se procurer du mieux qu'ils peuvent : des poulets, des colliers bon marché, des vêtements usés, du matériel de forgeron rouillé, la liste des objets est longue. Une personne fait un pas en avant, un poulet sous chaque bras.%SPEECH_ON%S'il vous plaît ! Vous ne pouvez pas partir ! Vous devez nous aider !%SPEECH_OFF%%randombrother% rires, mais vous devez admettre que les pauvres gens savent comment tirer une corde sensible ou deux. Peut-être que vous devriez rester et aider après tout ? | Lorsque vous quittez %employer%, vous sortez pour trouver une femme debout avec sa progéniture courant autour et entre ses jambes et un bébé qui lui suce le téton.%SPEECH_ON%Mercenaire, s'il te plaît, vous ne devez pas nous laisser comme ça ! Cette ville a besoin de vous ! Les enfants ont besoin de vous !%SPEECH_OFF%Elle marque une pause, puis abaisse l'autre côté de sa chemise, révélant une tentation plutôt salace et séduisante.%SPEECH_ON%J'ai besoin de vous...%SPEECH_OFF%Vous levez la main, à la fois pour l'arrêter et pour essuyer votre front soudainement en sueur. Peut-être qu'aider ces deux, euh, pauvres gens ne serait pas si mal après tout ? | Alors que vous vous apprêtez à quitter %townname%, un petit chiot court vers vous en aboyant et en léchant vos bottes. Un enfant encore plus petit est à sa poursuite, pratiquement sur le bout de sa queue. L'enfant se jette sur le cabot et enroule ses bras autour de sa fourrure nappée.%SPEECH_ON%Oh {Marley | Yeller | Jo-Jo}, Je t'aime tellement !%SPEECH_OFF%Une image de brigands massacrant l'enfant et son animal de compagnie vous traverse l'esprit. Vous avez mieux à faire que de jouer au shérif et au gendarme contre de vulgaires voleurs, mais le chien continue de lécher le visage du garçon et l'enfant semble si heureux.%SPEECH_ON%Haha ! Nous allons vivre pour toujours et à jamais, n'est-ce pas ? Pour toujours et à jamais !%SPEECH_OFF%Bordel de merde. | Un homme s'approche de vous alors que vous quittez la maison de %employer%.%SPEECH_ON%Monsieur, j'ai entendu que vous avez refusé l'offre de cet homme. C'est une honte, c'est tout ce que je voulais dire. Je pensais qu'il y avait beaucoup d'hommes bons dans ce monde, mais je suppose que j'avais tort. Bonne chance pour votre voyage, et j'espère que vous prierez pour nous lors de vos déplacements.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = false,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Damn, we can\'t leave these people to die. | Fine, fine, we won\'t leave %townname%. Let\'s talk payment, at least.}",
+					Text = "{Merde, on ne peut pas laisser ces gens mourir. | Bien, bien, nous ne quitterons pas %townname%. Parlons du paiement, au moins.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -456,7 +456,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "{I\'m sure you\'ll pull through. Make way. | I won\'t risk the %companyname% to save some starved peasants.}",
+					Text = "{Je suis sûr que vous allez vous en sortir. Laissez nous passer. | Je ne vais pas risquer %companyname% pour sauver quelques paysans affamés.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -472,13 +472,13 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "UndeadAttack",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_29.png[/img]{While standing guard, a crazed peasant comes running up to you. He\'s slackjawed, out of breath. Hands on his knees, he damn near vomits out the words:%SPEECH_ON%The dead... they\'re coming!%SPEECH_OFF%Peering over him, you do indeed see a throng of rather pale creatures shuffling in the distance. | No brigands here, but undead! While waiting for the thugs and miscreants to come storming into the town, you instead spot a large throng of shambling creatures coming your way. Just because the target changes doesn\'t mean the contract does - prepare yourself! | Alarm bells sound off from the town chapel. You listen to them while eyeing the horizon. They keep ringing. A local stands by your side.%SPEECH_ON%One... two... three rings... four...%SPEECH_OFF%He begins to sweat. Then his eyes widen as the bells toll one final time.%SPEECH_ON%That\'s... that can\'t be.%SPEECH_OFF%You inquire as to what he\'s so scared of. He backs away.%SPEECH_ON%The dead walk the earth again!%SPEECH_OFF%Great, just when you thought a contract was going to be easy. | Groaning, moaning, the undead shuffle into view. There are no brigands here - maybe these foul creatures ate them - but the contract isn\'t null: protect the town!}",
+			Title = "Près de %townname%",
+			Text = "[img]gfx/ui/events/event_29.png[/img]{Alors que vous montez la garde, un paysan fou arrive en courant vers vous. Il est bouche bée, hors d'haleine. Les mains sur les genoux, il vomit presque les mots :%SPEECH_ON%Les morts... ils arrivent !%SPEECH_OFF%En regardant par-dessus lui, vous voyez en effet une foule de créatures plutôt pâles qui s'agitent au loin. | Pas de brigands ici, mais des morts-vivants ! Alors que vous attendez que les voyous et les mécréants déboulent dans la ville, vous apercevez au contraire une grande foule de créatures ambulantes qui se dirige vers vous. Ce n'est pas parce que la cible change que le contrat change aussi - préparez-vous ! | Les cloches d'alarme sonnent depuis la chapelle de la ville. Vous les écoutez en regardant l'horizon. Elles continuent à sonner. Un habitant se tient à vos côtés.%SPEECH_ON%Un... deux... trois... quatre...%SPEECH_OFF%Il commence à transpirer. Puis ses yeux s'écarquillent lorsque les cloches sonnent une dernière fois.%SPEECH_ON%C'est... c'est impossible.%SPEECH_OFF%Vous demandez de quoi il a peur. Il recule.%SPEECH_ON%Les morts marchent à nouveau sur la terre !%SPEECH_OFF%Super, juste quand vous pensiez qu'un contrat allait être facile. | Gémissant, grognant, les morts-vivants s'avancent. Il n'y a pas de brigands ici - peut-être que ces créatures immondes les ont mangés - mais le contrat n'est pas caduc : protéger la ville !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes!",
 					function getResult()
 					{
 						return 0;
@@ -489,13 +489,13 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "DefaultAttack",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_07.png[/img]The brigands are in sight! Prepare for battle and protect the town!",
+			Title = "Près de %townname%",
+			Text = "[img]gfx/ui/events/event_07.png[/img]Les brigands sont en vue ! Préparez-vous au combat et protégez la ville !",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes!",
 					function getResult()
 					{
 						return 0;
@@ -506,13 +506,13 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "ItsOver",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_22.png[/img]{The fighting is over and the men idle in a welcome respite. %employer% will be waiting for you back in town. | With the battle over, you survey the corpses littered across the field. It is a gruesome sight, yet for some reason it spurs you with energy. The ghastly hills of dead only remind you of the vitality you\'ve yet to yield to this horrid world. People like %employer% should come and see it, but he won\'t, so you\'ll have to go and see him instead. | Flesh and bone scattered across the field, hardly discernible from one owner to the next. Black buzzards cycle overhead, halos of chevron shadows rippling over the dead, the birds waiting for the mourners to clear out. %randombrother% comes to your side and asks if they should start the return trip to %employer%. You leave the sight of the battlefield behind and nod. | A peaceful sort of ruin is made of the dead. Like it was their natural state, stiffened and at a permanent loss, and their whole living was but a fleeting fit of an accident finally come to an end. %randombrother% comes up and asks if you\'re alright. You\'re not sure, to be honest, and simply answer that it is time to go see %employer%. | Misshapen men and crooked corpses litter the ground for battle gives the dead no sovereignty over how one comes to a final rest. The bodiless heads look at most peace, for in battle no man or beast has time to truly hack a neck away, it only comes by the quickest and sharpest of blade swings. A part of you hopes to go with such instant finality, but another part hopes you get the chance to take your killer down with you.\n\n %randombrother% comes to your side and asks for orders. You turn away from the field and tell the %companyname% to get ready to Retournez à %employer%.}",
+			Title = "Près de %townname%",
+			Text = "[img]gfx/ui/events/event_22.png[/img]{Le combat est terminé et les hommes se reposent dans un répit bienvenu. %employer%vous attendra en ville. | La bataille terminée, vous examinez les cadavres éparpillés sur le terrain. C'est un spectacle horrible, mais pour une raison quelconque, cela vous donne de l'énergie. Les affreuses monticules de morts ne font que vous rappeler la vitalité que vous devez encore céder à ce monde horrible. Des gens comme %employer% devraient venir voir ça, mais il ne le fera pas, alors vous devrez aller le voir à sa place. | La chair et les os sont éparpillés dans le champ, à peine discernables d'une personne à l'autre. Des buses noires tournent dans le ciel, des halos d'ombres en chevrons ondulant au-dessus des morts, les oiseaux attendant que les personnes en deuil aient quitté les lieux. %randombrother% vient à vos côtés et demande s'ils doivent entamer le voyage de retour pour aller voir %employer%. Vous laissez derrière vous la vue du champ de bataille et acquiescez. | Une sorte de ruine paisible est faite de morts. Comme si c'était leur état naturel, raidis et à jamais perdus, et que toute leur vie n'était qu'une crise fugace d'un accident finalement arrivé à son terme. %randombrother% s'approche et vous demande si vous allez bien. Vous n'êtes pas sûr, pour être honnête, et répondez simplement qu'il est temps d'aller voir %employer%. | Des hommes difformes et des cadavres tordus jonchent le sol, car la bataille ne donne aux morts aucune souveraineté sur la façon dont ils trouvent le repos final. Les têtes sans corps ont l'air plus paisibles, car dans la bataille, aucun homme ou bête n'a le temps de vraiment trancher un cou, cela ne vient que par le plus rapide et le plus tranchant des coups de lame. Une partie de vous espère partir avec de cette façon immédiate, mais une autre partie espère que vous aurez la chance de faire tomber votre tueur avec vous.\n\n %randombrother% vient à vos côtés et demande des ordres. Vous vous détournez du terrain et dites à  %companyname% de se préparer à retourner voir %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We head back to the townhall!",
+					Text = "Nous retournons à l'hôtel de ville !",
 					function getResult()
 					{
 						return 0;
@@ -523,13 +523,13 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "ItsOverDidNothing",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_30.png[/img]Smoke fills the air, smoke and the caustic smell of burning wood, burning livelihoods. %townname%\'s folk put all their hopes into hiring the %companyname%, a fatal mistake.",
+			Title = "Près de %townname%",
+			Text = "[img]gfx/ui/events/event_30.png[/img]De la fumée emplit l'air, de la fumée et l'odeur caustique du bois qui brûle, des réserves de nourriture qui brûlent. Les habitants de %townname% ont mis tous leurs espoirs dans l'embauche de %companyname%, une erreur fatale.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "That didn\'t go as planned...",
+					Text = "Ça ne s'est pas passé comme prévu...",
 					function getResult()
 					{
 						return 0;
@@ -541,12 +541,12 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Militia1",
 			Title = "À %townname%",
-			Text = "[img]gfx/ui/events/event_80.png[/img]{While preparing to defend %townname%, the local militia has come to your side. They submit to your orders, only asking that you send them where you think they are most needed. | It appears the local militia have joined the battle! A ragtag group of men, but they\'ll be useful nonetheless. Now the question is, where to send them? | %townname%\'s militia has joined the fight! Although a shoddy band of poorly armed men, they are eager to defend home and hovel. They submit to your command, trusting that you will send them to where they are most needed. | You\'re not alone in this fight! %townname%\'s militia have joined you. They\'re eager to fight and ask you where they are needed most.}",
+			Text = "[img]gfx/ui/events/event_80.png[/img]{Alors que vous vous préparez à défendre %townname%, la milice locale s'est ralliée à votre cause. Elle se soumet à vos ordres, demandant seulement que vous l'envoyiez là où vous pensez qu'elle sera la plus utile. | Il semble que la milice locale ait rejoint la bataille ! Un groupe d'hommes en loques, mais qui sera néanmoins utile. Maintenant la question est, où les envoyer ? | La milice de %townname% a rejoint le combat ! Bien qu'il s'agisse d'une bande d'hommes mal armés, ils sont impatients de défendre leur maison et leur taudis. Ils se soumettent à votre commandement, en espérant que vous les enverrez là où on a le plus besoin d'eux. | Vous n'êtes pas seul dans ce combat ! La milice de %townname% vous a rejoint. Ils sont impatients de se battre et vous demandent où ils seront le plus utiles.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Fall in line, you\'ll be under my command.",
+					Text = "Mettez-vous en ligne, vous serez sous mon commandement.",
 					function getResult()
 					{
 						return "Militia2";
@@ -554,13 +554,13 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "Go and defend the townhall of %townname%.",
+					Text = "Allez défendre l'hôtel de ville de %townname%.",
 					function getResult()
 					{
 						local home = this.Contract.m.Home;
 						local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(home.getTile(), home.getName() + " Militia", false, this.Const.World.Spawn.Militia, home.getResources() * 0.7);
 						party.getSprite("banner").setBrush(home.getBanner());
-						party.setDescription("Brave men defending their homes with their lives. Farmers, craftsmen, artisans - but not one real soldier.");
+						party.setDescription("Des hommes courageux qui défendent leur foyer au péril de leur vie. Des fermiers, des artisans, des ouvriers - mais pas un seul vrai soldat.");
 						party.setFootprintType(this.Const.World.FootprintsType.Militia);
 						this.Contract.m.Militia = this.WeakTableRef(party);
 						local c = party.getController();
@@ -581,7 +581,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 						local home = this.Contract.m.Home;
 						local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(home.getTile(), home.getName() + " Militia", false, this.Const.World.Spawn.Militia, home.getResources() * 0.7);
 						party.getSprite("banner").setBrush(home.getBanner());
-						party.setDescription("Brave men defending their homes with their lives. Farmers, craftsmen, artisans - but not one real soldier.");
+						party.setDescription("Des hommes courageux qui défendent leur foyer au péril de leur vie. Des fermiers, des artisans, des ouvriers - mais pas un seul vrai soldat.");
 						party.setFootprintType(this.Const.World.FootprintsType.Militia);
 						this.Contract.m.Militia = this.WeakTableRef(party);
 						local c = party.getController();
@@ -607,7 +607,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "Go hide somewhere and stay out of our way.",
+					Text = "Allez vous cacher quelque part et restez hors de notre chemin.",
 					function getResult()
 					{
 						return 0;
@@ -619,12 +619,12 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Militia2",
 			Title = "À %townname%",
-			Text = "[img]gfx/ui/events/event_80.png[/img]Now that you\'ve decided to take some of the locals under your command, they ask how they should arm themselves for the battle to come.",
+			Text = "[img]gfx/ui/events/event_80.png[/img]Maintenant que vous avez décidé de prendre certains des habitants sous votre commandement, ils vous demandent comment ils doivent s'armer pour la bataille à venir.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Take bows, you\'ll be shooting from the back.",
+					Text = "Prenez des arcs, vous tirerez depuis l'arrière.",
 					function getResult()
 					{
 						for( local i = 0; i != 4; i = ++i )
@@ -640,7 +640,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "Take sword and shield, you\'ll be fighting in the front.",
+					Text = "Prends une épée et un bouclier, vous allez vous battre au front.",
 					function getResult()
 					{
 						for( local i = 0; i != 4; i = ++i )
@@ -656,7 +656,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "Arm yourselves however you want.",
+					Text = "Armez-vous comme vous voulez.",
 					function getResult()
 					{
 						for( local i = 0; i != 4; i = ++i )
@@ -685,7 +685,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "MilitiaVolunteer",
-			Title = "Near %townname%",
+			Title = "Près de %townname%",
 			Text = "[img]gfx/ui/events/event_80.png[/img]{The fighting over, one of the militiamen that helped in the defense comes to you personally, bending low and offering his sword.%SPEECH_ON%Sir, my time with the town of %townname% is at an end. But the prowess of the %companyname% is truly an amazing sight. If you would permit it, sir, I would love to fight alongside you and your men.%SPEECH_OFF% | With the battle over, one of the militiamen from %townname% states that he will gladly come and fight for the %companyname%. Partly because he was most impressed with the mercenary band\'s fighting, and partly because being conscripted into the town\'s defense is neither financially or physically healthy.}",
 			Image = "",
 			List = [],
@@ -710,7 +710,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 		});
 		this.m.Screens.push({
 			ID = "Kidnapping1",
-			Title = "Near %townname%",
+			Title = "Près de %townname%",
 			Text = "[img]gfx/ui/events/event_30.png[/img]{While keeping watch for the brigands, a peasant comes up telling you that a group of the thugs attacked nearby, taking off with a group of hostages. You shake your head in disbelief. How were they able to sneak in and do this? The layman shakes his head, too.%SPEECH_ON%I thought y\'all were supposed to help us. Why didn\'t you do anything?%SPEECH_OFF%You ask if the brigands have gone far. The peasant shakes his head. Looks like you still have a shot to get them back. | A man wearing rags and carrying a broken pitchfork sprints up to your company. He drops and wails at your feet.%SPEECH_ON%The brigands attacked! Where were you? They killed people... burned some... and... and they took some prisoner! Please, go save them!%SPEECH_OFF%You eye %randombrother% and nod.%SPEECH_ON%Get the men ready. We need to chase these thugs down before they escape entirely.%SPEECH_OFF% | You have your eyes peeled to the horizons, looking for any sight or sound of vagabond or vagathief. Suddenly, %randombrother% comes to you with a woman by his side. She tells a story that the thugs have already attacked, killing a great number of peasants and those they didn\'t kill they made off with. The mercenary nods.%SPEECH_ON%Looks like they snuck past us, sir.%SPEECH_OFF%You\'ve only one choice now - go get those people back! | Stationing yourself close to %townname%, you anticipate the brigands\' attack. You thought this would be easy, but the sudden arrival of a crazed layman says otherwise. The peasant explains that the marauders have already ambushed the outskirts. They slaughtered everyone they could, then made off with a few men, women, and children. The man, either drunk or in shock, slurs his pleas.%SPEECH_ON%Get... get them back, would ya?%SPEECH_OFF% | Keeping watch, a few angry peasants take the roads, storming toward you in a swirl of mob anger.%SPEECH_ON%I thought we were paying you to protect us! Where were you!%SPEECH_OFF%They are covered in blood. Some are half-clothed. A woman hangs a breast, too angry to care about the indecency. You ask the group what it is they are talking about. A man, clutching a cane close to his chest, explains that the raiders and thugs had already attacked, taking to a nearby hamlet. They slaughtered everything in sight then, with their bloodlust satiated, took as many prisoners as they could.\n\nYou nod.%SPEECH_ON%We\'ll get them back.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
