@@ -404,7 +404,7 @@ this.defend_settlement_greenskins_contract <- this.inherit("scripts/contracts/co
 
 				},
 				{
-					Text = "{J'ai bien peur que vous allez devoir vous débrouiller seul. | I\'m afraid this isn\'t worth it for the %companyname%. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
+					Text = "{J\'ai bien peur que vous allez devoir vous débrouiller seul. | I\'m afraid this isn\'t worth it for the %companyname%. | Je vous souhaite bonne chance, mais nous ne participerons pas à cela.}",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 60)
