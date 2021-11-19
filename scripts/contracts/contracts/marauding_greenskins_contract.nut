@@ -512,7 +512,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "Warlord",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_49.png[/img]{En vous approchant the orcish warband, you spot the unmistakable silhouette of a brutish warlord. It appears your time with the greenskins will be more difficult than originally thought. | The orcs have a huge warlord in their midst. This changes nothing. Well, it changes things a little, but the end goal remains: kill them all. | What unfortunate news! An orcish warlord has been sighted standing tall amongst the orc ranks. Unfortunate for the warlord, that is. You\'re sure he worked hard to get where he is. A shame %companyname% is about to go and ruin that. | A warlord amongst the greenskins! His size and growl would be unmistakable - you\'d hear it even if a bear were grinning its way into your face! No matter, the greenskin shall die just like the rest. | A warlord. A lord of war. A fearsome orc. You\'ve heard them all. One such enormity stands about the greenskins\' camp. One of their leaders. One of their best fighters. What does it matter? It matters none at all. Of course not! None at all. Everything will go according to plan.}",
 			Image = "",
 			List = [],
@@ -529,7 +529,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "Shaman",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_48.png[/img]{While approaching, you spot a strange smoke clambering upward. It is not ashy or grey, but purple, with tendrils of seemingly living green slipping and looping through it. Goblins are here, and they have a shaman with them! | A shaman! You\'d recognize one of those crafty goblins anywhere - the bony jewelry, the sloped eyes, the sense of sapience usually unseen in a gobbo\'s dumb face. These are dangerous greenskins, be wary! | Oy, watch yer step. A goblin shaman is standing amongst the enemy ranks! This is a most dangerous enemy combatant! Do not take its small shape or size lightly... | You\'ve heard stories of some shamans being able to draw a man\'s dreams from his ears. You\'re not so sure if that\'s true, but you do know they make for crafty combatants, and you\'re about to face one! | A shamanistic goblin... you\'d know that bony garb anywhere, and the camouflaging cloak, too! Keep calm and carry on - killing all these greenskins, that is! | Shaman. One goblin shaman... You\'ve heard horror stories about their \'magicks\', but this isn\'t the time or place. Prepare the men to attack! | A goblin shaman. You\'ve heard stories of these foul gits being able to trick the minds of men. You now wonder if %employer%, your employer, was fooled into bringing you here.\n\n...nah. Surely not, right? | A goblin shaman! You\'ve heard stories of these nefarious things. One was that they feed wasps into the ears of their prisoners! One man, admittedly having a few drinks in his belly, told you that he watched bees turn a man\'s brains into a honeycomb! Bet that honey smarted the tongue!}",
 			Image = "",
 			List = [],

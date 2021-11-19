@@ -286,7 +286,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Treasure1",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_54.png[/img]{The nomads are surprisingly stationary and suprisingly many, but it appears there\'s a reason for that: you find the sand dwellers huddled around a hole in the ground. They\'ve constructed pullies around it and are working feverishly to drag up whatever it is they\'ve found in the desert. Based upon the grin of the man overseeing the operation, it is no doubt a trove of treasure.\n\nYou could attack now, and face more opposition, or you could wait until they\'re done and have left with whatever they\'re digging up.}",
 			Image = "",
 			List = [],
@@ -312,7 +312,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Treasure1A",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_54.png[/img]{You wait for the nomads to pull the treasure out. As expected, it is a chest. When they break it open there is a hint of satisfaction on their faces. And, as also expected, the nomads split off, with a contingent of their strongest men moving off with the treasure, presumably to sell it somewhere. The nomads\' camp is weaker now and far more vulnerable to attack...}",
 			Image = "",
 			List = [],
@@ -387,7 +387,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SandGolems",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_160.png[/img]{As you prepare to attack, a man suddenly rises up out of the sands. Startled, he jerks away and screams, rolling down the sand dune toward the nomads\' camp. You chase after him with a weapon out ready to kill. In your bouncing peripheral you can see the nomads clambering over one another and toppling tents to get to their weapons. When you look back at the spotter, he suddenly disappears in sandy clasp, and the arm attached to the dunes extends out of the earth and rises before you, dust and sand and earth falling off its shapes.\n\nYou\'re hardly able to understand what you\'re seeing, but the nomads all seem to be screaming the same thing: \'Ifrit! Ifrit! Ifrit!\' And this faceless, seemingly endless, \'Ifrit\' has no allegiances in the combat to come. | You charge down the dunes at the nomads. Startled, they bark out orders and run for their weapons. As you near the camp, a wave of sand blasts the corner of the camp and a few of the nomads go flying. One second later and a boulder comes sailing out of the dust cloud and pulverizes a nomad entirely. A huge, earthen creature bellows and stomps forward. \'Ifrit! Ifrit!\' the nomads scream, and you surmise that this \'Ifrit\' will be on no man\'s side.}",
 			Image = "",
 			List = [],
@@ -405,7 +405,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Assassins",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_165.png[/img]{You charge the camp just in time to see a man in black clothes step out of one of the tents. He is shaking hands with the nomads\' leader which is probably not the best sign. Both men pausing mid-handshake and staring at your attack is presumably just as sour a result. The nomad leader calls out, demanding his assassins earn their keep. The blackened killer nods and draws out a blade, and a troop of fellow assassins stream out of the tent in turn to join the nomads in the battle!}",
 			Image = "",
 			List = [],
@@ -423,7 +423,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Necromancer",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_161.png[/img]{Shredded tents. Baskets unwoven. Clothes rolling across the sands. And in the middle of it all sits a man in a black cloak, his ghastly face peering from its hooded shade.%SPEECH_ON%You are both late and right on time.%SPEECH_OFF%He says and gets to his feet. The tarps rustle, the baskets tilt, and the clothes jerk aside, the land riffling with liveliness. Suddenly, the sand slips into cavernous channels and inimical nomads empty from the earth, climbing out, some leaping forth as though to revivify themselves on fresh air, others tilting upward from heel to toe, bodies straight like flagpoles. They move unnervingly, stilted and tilted, and the man in black grins behind their shambling formation. He is no ordinary blaggard, but a necromancer!}",
 			Image = "",
 			List = [],

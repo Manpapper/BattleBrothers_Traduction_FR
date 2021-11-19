@@ -275,7 +275,7 @@ this.destroy_orc_camp_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "OrcsAgainstOrcs",
-			Title = "Before the attack...",
+			Title = "Avant l\'attaque...",
 			Text = "[img]gfx/ui/events/event_49.png[/img]{As you order your men to attack, they come across a number of orcs... fighting each other? The greenskins appear to be divided, and they are settling their differences by dividing one another in half. It\'s a gruesome display of violence. When you figure to let them fight it out, two of the orcs battle their way toward you, and soon enough every orc is staring at you. Well, no running now... to arms! | You order the %companyname% to attack, believing you\'ve gained the upperhand on the orcs. But they\'re already armed! And... fighting one another?\n\n One orc cleaves another orc in twine, and another crushes the head of another. This seems to be some sort of clan conflict. A shame you didn\'t wait a moment longer for these brutes to settle their differences, now it\'s a free for all! | The orcs are battling one another! It\'s some sort of greenskinned fracas which you\'ve made yourself a part of. Orc against orc against man, what a sight to behold! Get the men close together and you might just make it out of this goatfark alive. | By the gods, the orcs are greater numbers than you ever could have thought! Luckily, they seem to be murdering one another. You don\'t know if they\'re separate clans or if this is just greenskins\' version of a drunken brawl. Regardless, you\'re in the middle of it now!}",
 			Image = "",
 			List = [],
