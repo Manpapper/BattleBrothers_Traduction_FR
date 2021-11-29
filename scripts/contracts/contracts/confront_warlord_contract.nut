@@ -54,7 +54,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			function start()
 			{
 				this.Contract.m.BulletpointsObjectives = [
-					"Destruisez toutes les groupes de Peaux-Vertes et leurs camps pour attirer leur Chef de Guerre",
+					"Détruisez tous les groupes de Peaux-Vertes et leurs camps pour attirer leur Chef de Guerre",
 					"Tuez le Chef de Guerre Orc"
 				];
 

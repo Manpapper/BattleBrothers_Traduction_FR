@@ -13,7 +13,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 	{
 		this.contract.create();
 		this.m.Type = "contract.investigate_cemetery";
-		this.m.Name = "Secure Cemetery";
+		this.m.Name = "Sécuriser le Cimetière"; 
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -205,7 +205,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 				}
 
 				this.Contract.m.BulletpointsObjectives = [
-					"Destruisez " + this.Flags.get("DestinationName")
+					"Détruisez " + this.Flags.get("DestinationName")
 				];
 			}
 
@@ -294,7 +294,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{%employer% restlessly walks up and down while stopping now and then to address you.%SPEECH_ON%The folks are in turmoil! Graves in the cemetery have been found opened and raided. Some simpleton claims it to be the dead rising from the graves - superstitious nonsense. It\'s quite obviously some graverobbers audacious enough to come to %townname% and plague us with their greedy presence!%SPEECH_OFF%He bangs his fist on the table in anger.%SPEECH_ON%Go out to the cemetery and end this nuisance once and for all!%SPEECH_OFF% | %employer% settles down into his chair, laughing to himself as he does it.%SPEECH_ON%Don\'t be alarmed, sellsword, but they say ghosts are afoot! Yes, yes, the local peasants are poisoning my mornings with constant talk of ghosts and goblins. They say that these supposed creatures are turning the cemetery upside down, raiding the graves to enlarge their army or some such nonsense. Obviously, it\'s just the work of some spade-wielding men intent on robbing graves for jewelry. I\'ve seen it before.%SPEECH_OFF%He looks down at his hands, briefly chuckling.%SPEECH_ON%Anyway, I can\'t just let it rest because these peasants won\'t get off my back about it. So, to ease them, there\'s... you. I need you to go to the cemetery and clear out any troublemakers you find. How you do that is up to you, but I\'ll go ahead and suggest a good steel, if you know what I mean...%SPEECH_OFF% | %employer%\'s got a map of a cemetery on his desk. Half the plot squares appear to have been filled in with ink.%SPEECH_ON%Every square you see there has been robbed. Every night they come, and every night I can\'t quite seem to catch them. I\'m at my wit\'s end here so I\'ve decided to end this once and for all. I want you to go to that graveyard and kill every grave robbing fool you see. Got it?%SPEECH_OFF% | %employer%\'s standing by his window, peering out while nursing a mug of mead. He doesn\'t really seem to be focused on anything in particular and even talks as if he couldn\'t care less about the conversation.%SPEECH_ON%Graverobbers are plundering the cemetery. Again. I\'m not really asking much of you, sellsword, other than to go there and put an end to this foolish business. Go to that cemetery and kill every graverobber you see. Got it? Good.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{%employer% marche de long en large en s'arrêtant de temps en temps pour vous adresser la parole.%SPEECH_ON%Les gens sont dans la tourmente ! Des tombes du cimetière ont été découvertes ouvertes et fouillées. Un simplet prétend que ce sont les morts qui sortent des tombes - une absurdité superstitieuse. Il s'agit de toute évidence de pilleurs de tombes assez audacieux pour venir à %townname% et nous accablent de leur présence avide !%SPEECH_OFF%Il tape du poing sur la table en signe de colère.%SPEECH_ON%Allez au cimetière et mettez fin à ces nuisibles une fois pour toutes !%SPEECH_OFF% | %employer% s'installe dans son fauteuil, en riant tout seul.%SPEECH_ON%Ne vous alarmez pas, mercenaire, mais on dit qu'il y a des fantômes ! Oui, oui, les paysans du coin empoisonnent mes matinées en parlant constamment de fantômes et de gobelins. Ils disent que ces supposées créatures mettent le cimetière sens dessus dessous, qu'elles font des raids sur les tombes pour agrandir leur armée ou d'autres sornettes. De toute évidence, ce n'est que l'oeuvre d'hommes armés de bêches qui ont l'intention de piller les tombes pour des bijoux. J'ai déjà vu ça avant.%SPEECH_OFF%Il baisse les yeux sur ses mains, en gloussant brièvement.%SPEECH_ON%Bref, je ne peux pas laisser tomber parce que ces paysans ne me lâchent pas d'une semelle. Alors, pour les soulager, il y a... vous. J'ai besoin que vous alliez au cimetière et que vous éliminiez tous les fauteurs de troubles que vous trouverez. La façon de faire est à votre discrétion, mais je vais vous suggérer un bon acier, si vous voyez ce que je veux dire...%SPEECH_OFF% | %employer% a la carte d'un cimetière sur son bureau. La moitié des carrés de terrain semblent avoir été remplis d'encre.%SPEECH_ON%Chaque carré que vous voyez là a été pillé. Chaque nuit, ils viennent, et chaque nuit, je n'arrive pas à les attraper. Je suis à bout de nerfs, alors j'ai décidé d'en finir une fois pour toutes. Je veux que vous alliez dans ce cimetière et que vous tuiez tous les voleurs de tombes que vous voyez. C'est compris ?%SPEECH_OFF% | %employer% est debout près de sa fenêtre, regardant dehors tout en buvant une chope d'hydromel. Il ne semble pas vraiment concentré sur quelque chose en particulier et parle même comme s'il pouvait ne pas se soucier de la conversation.%SPEECH_ON%Les pilleurs de tombes pillent le cimetière. Encore une fois. Je ne vous demande pas grand-chose, mercenaire, si ce n'est d'aller là-bas et de mettre fin à cette affaire stupide. Allez dans ce cimetière et tuez tous les profanateurs que vous voyez. C'est compris ? Bien.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
@@ -326,12 +326,12 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		this.m.Screens.push({
 			ID = "AttackGhouls",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_69.png[/img]{Crunching. Munching. The snicker-snacker of someone - or something - enjoying a good meal. As you step through the cemetery, you stumble upon a clearing filled with Nachzehrers. They\'re huddled over the remains of what appear to have been the graverobbers you were looking for. The hideous monsters slowly turn to you, their red eyes widening at the sight of fresh meat. | Tombstones fall over as a group of Nachzehrers clamber over them. They appear to have been having something of a feast, a few of them still gnawing on this arm or that leg, presumably the limbs of your supposed graverobbers. | You hear a shrill scream and quickly turn the corner of a mausoleum to find a Nachzehrer driving his teeth into the nape of a man\'s neck. The beast, blood filling his mouth so much as to pour from his nostrils, only glances up at you. Smaller Nachzehrers surround it, stepping forward to see to it that their next meal doesn\'t get away...}",
+			Text = "[img]gfx/ui/events/event_69.png[/img]{Vous entendez des craquements. Des mâchouillements. Le ricanement de quelqu'un - ou de quelque chose - qui apprécie un bon repas. En traversant le cimetière, vous tombez sur une clairière remplie de Nachzehrers. Ils sont recroquevillés sur les restes de ce qui semble avoir été les pilleurs de tombes que vous recherchiez. Les monstres hideux se tournent lentement vers vous, leurs yeux rouges s'agrandissant à la vue de la viande fraîche. | Les pierres tombales s'écroulent lorsqu'un groupe de Nachzehrers les escalade. Ils semblent avoir fait une sorte de festin, quelques-uns d'entre eux rongeant encore un bras ou une jambe, vraisemblablement les membres de vos supposés pilleurs de tombes. | Vous entendez un cri strident et tournez rapidement au coin d'un mausolée pour trouver un Nachzehrer enfonçant ses dents dans la nuque d'un homme. La bête, dont la bouche est remplie de sang au point de s'écouler de ses narines, ne fait que lever les yeux vers vous. De plus petits Nachzehrer l'entourent, s'avançant pour s'assurer que leur prochain repas ne s'échappe pas...}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -343,13 +343,13 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		});
 		this.m.Screens.push({
 			ID = "AttackGraverobbers",
-			Title = "Approaching...",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{The graverobbers are here, just as promised. You catch them mid-dig, your brothers jumping over tombstones with their weapons raised. | Walking into the cemetery, you find the graverobbers just as %employer% thought they might be there. They spot you just as you do them. Your men fan out with weapons drawn to stop any escape. | As you step through the tombstones, a few voices murmur over the otherside of a mausoleum. When you turn the corner, you find a group of men standing over an emptied grave. They have an open coffin before them, a few of the men taking jewelry out of it. You order your men to charge. | %employer% was right: there have been graverobbers here. You spot a number of tombs turned over and their graves dug up. The mud trails lead you to find the diggers clambering around some new work.%SPEECH_ON%Don\'t mean to stop you boys, but %employer% is paying pretty well to make sure these people stay in the ground.%SPEECH_OFF%}",
+			Title = "En vous approchant...",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Les pilleurs de tombes sont là, comme prévu. Vous les surprenez en plein travail, vos frères d'armes sautent par-dessus les pierres tombales avec leurs armes brandi. | En entrant dans le cimetière, vous trouvez les pilleurs de tombes exactement comme %employer% le pensait. Ils vous repèrent tout comme vous les repérez. Vos hommes se déploient, armes dégainées, pour empêcher toute fuite. | Alors que vous passez entre les pierres tombales, quelques voix murmurent de l'autre côté d'un mausolée. Lorsque vous passez le coin, vous trouvez un groupe d'hommes debout au-dessus d'une tombe vide. Ils ont un cercueil ouvert devant eux, quelques-uns des hommes en retirant des bijoux. Vous ordonnez à vos hommes de charger. | %employer% avait raison : il y a eu des pilleurs de tombes ici. Vous repérez un certain nombre de tombes retournées et de tombes creusées. Les traces de boue vous conduisent à trouver les creuseurs en train de travailler sur un nouveau chantier.%SPEECH_ON%Je ne veux pas vous arrêter les gars, mais %employer% paie bien pour s'assurer que ces gens restent dans le sol.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -362,12 +362,12 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		this.m.Screens.push({
 			ID = "AttackUndead",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{The cemetery is layered in fog - that or a thick miasma given off by the dead. Wait... that IS the dead! To arms! | You eye a tombstone with a mound of soil unearthed at its base. Blots of mud lead away like a crumb trail. There are no shovels... no men... As you follow the lead, you come across a band of undead moaning and groaning... now staring at you with insatiable hunger... | A man lingers deep in the rows of tombstones. He seems to be wavering, as though ready to pass out. %randombrother% comes to your side and shakes his head.%SPEECH_ON%That\'s no man, sir. There\'s undead afoot.%SPEECH_OFF%Just as he finishes talking, the stranger in the distance slowly turns and there in the light reveals he\'s missing half his face. | You come to find many of the graves are emptied. Not just emptied, but unearthed from below. This is not the work of graverobbers...}",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Le cimetière est recouvert de brouillard - ou d'un épais miasme dégagé par les morts. Attendez... C'est les morts ! Aux armes ! | Vous regardez une pierre tombale avec un monticule de terre déterré à sa base. Des taches de boue s'éloignent comme une traînée de miettes. Il n'y a pas de pelles... pas d'hommes... En suivant la piste, vous tombez sur une bande de morts-vivants qui gémissent... et qui vous regardent maintenant avec une faim insatiable... | Un homme s'attarde au milieu des rangées de pierres tombales. Il semble vaciller, comme s'il était prêt à s'évanouir. %randombrother% vient à vos côtés et secoue la tête.%SPEECH_ON%Ce n'est pas un homme, monsieur. Il y a des morts-vivants dans la nature.%SPEECH_OFF%Au moment où il finit de parler, l'étranger au loin se tourne lentement et la lumière révèle qu'il lui manque la moitié du visage. | Vous découvrez que beaucoup de tombes ont été vidées. Pas seulement vidées, mais déterrées par en dessous. Ce n'est pas le travail de pilleurs de tombes...}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -380,12 +380,12 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 		this.m.Screens.push({
 			ID = "MysteriousMap1",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{You enter the graveyard to find the graverobbers right where %employer% thought they\'d be: knee deep in someone else\'s afterlife. Drawing your sword, you tell them to put down whatever jewelry they think they\'re going to make off with. One of the men stands up, arms raised, and makes his case.%SPEECH_ON%Before you kill us, can I just say something? We have a map... I know, it sounds like a lie, but just hear me out... We have a map that can lead to immense treasures. You let us go, and I\'ll give it to you. Kill us and well... you\'ll never see it. What do you say?%SPEECH_OFF% | Just as %employer% suspected, there are graverobbers trundling about the tombstones. You stop them mid-dig and ask them if they have any last words before they join their victims in the mud. One of the men pleads for mercy, stating he\'s got a treasure map he\'ll exchange for all their lives. | You stumble upon a few men trying to crack open a mausoleum door. Clinking your sword against your boot gets their attention.%SPEECH_ON%Evening gents. %employer% sent me.%SPEECH_OFF%One of the men drops his tools.%SPEECH_ON%Wait just one second! We have a map... yes, a map! And if you spare us, I will give it to you! But only if you spare us! If you don\'t... you\'ll never see that map, understand?%SPEECH_OFF% | You get the jump on the graverobbers, drawing swords as they slam shovels into the earth. One of the men, presumably sensing he\'s about to join the very grave he\'s got one foot already in, bargains with you. Apparently, the men have a map to a mysterious treasure. All you have to do is let them go and they\'ll let you have it. If you kill them, well, the \'map\' is hidden, too, and you\'ll never see sight of it nor the treasures it leads to.}",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Vous entrez dans le cimetière pour trouver les pilleurs de tombes là où %employer% pensait qu'ils seraient : à genoux dans l'au-delà de quelqu'un d'autre. Dégainant votre épée, vous leur dites de déposer les bijoux avec lesquels ils pensent pouvoir s'enfuir. L'un des hommes se lève, les bras levés, et plaide sa cause.%SPEECH_ON%Avant de nous tuer, je peux dire quelque chose ? Nous avons une carte... Je sais, ça ressemble à un mensonge, mais écoutez-moi... Nous avons une carte qui peut mener à d'immenses trésors. Vous nous laissez partir, et je vous la donne. Tuez-nous et... vous ne la verrez jamais. Qu'est-ce que vous en dites ?%SPEECH_OFF% | Comme %employer% le soupçonnait, il y a des pilleurs de tombes qui rôdent autour des pierres tombales. Vous les arrêtez à mi-chemin et leur demandez s'ils ont un dernier mot à dire avant de rejoindre leurs victimes dans la boue. L'un des hommes implore votre pitié, affirmant qu'il a une carte au trésor qu'il échangera contre toutes leurs vies. | Vous tombez sur des hommes qui essaient d'ouvrir la porte d'un mausolée. Le claquement de votre épée contre votre botte attire leur attention.%SPEECH_ON%Bonsoir Messieurs. %employer% m'envoie.%SPEECH_OFF%Un des hommes laisse tomber ses outils.%SPEECH_ON%Attendez juste une seconde ! Nous avons une carte... oui, une carte ! Et si vous nous épargnez, je vous la donnerai ! Mais seulement si vous nous épargnez ! Si vous ne le faites pas... vous ne verrez jamais cette carte, compris ?%SPEECH_OFF% | Vous prenez de vitesse les pilleurs de tombes, dégainant vos épées alors qu'ils enfoncent leurs pelles dans la terre. L'un des hommes, sentant probablement qu'il est sur le point de rejoindre la tombe dans laquelle il a déjà un pied, négocie avec vous. Apparemment, les hommes ont une carte menant à un mystérieux trésor. Tout ce que vous avez à faire est de les laisser partir et ils vous la donneront. Si vous les tuez, la carte étant cachée, vous ne la verrez jamais, ni les trésors auxquels elle mène.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Kill them all!",
+					Text = "Tuez-les tous!",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -394,7 +394,7 @@ this.investigate_cemetery_contract <- this.inherit("scripts/contracts/contract",
 
 				},
 				{
-					Text = "Very well, hand over the map and you may leave this place alive.",
+					Text = "Très bien, remettez la carte et vous pourrez quitter cet endroit vivant.",
 					function getResult()
 					{
 						this.updateAchievement("NeverTrustAMercenary", 1, 1);
