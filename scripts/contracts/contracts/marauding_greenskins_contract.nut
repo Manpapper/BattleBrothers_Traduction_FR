@@ -386,7 +386,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{We could hunt them down if the pay is right. | Fighting greenskins doesn\'t come cheap. | Let\'s talk crowns.}",
+					Text = "{We could hunt them down if the pay is right. | Fighting greenskins doesn\'t come cheap. | Parlons des couronnes.}",
 					function getResult()
 					{
 						return "Negotiation";

@@ -241,7 +241,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Interested for sure. | Parlons salaire. | Let\'s talk crowns. | This is going to cost you. | A wild chase through the forest, then? Count me in. | The %companyname% can help, for the right price.}",
+					Text = "{Interested for sure. | Parlons salaire. | Parlons des couronnes. | This is going to cost you. | A wild chase through the forest, then? Count me in. | The %companyname% can help, for the right price.}",
 					function getResult()
 					{
 						return "Negotiation";
