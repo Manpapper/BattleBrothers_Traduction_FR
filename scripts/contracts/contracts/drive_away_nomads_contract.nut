@@ -8,7 +8,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.drive_away_nomads";
-		this.m.Name = "Drive Off Nomads";
+		this.m.Name = "Repoussez les Nomades";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -255,14 +255,14 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{There are no horns, no confetti, no cheers, but there\'s still yet a certain level of pomp when you enter %employer%\'s room. It is so decorated with golds and silvers, intricate jewelries made by genuine craftsmen, and a harem of nothing but the most attractive women, that one can\'t help but be spurred to do whatever is asked if only to have a chance to partake in the seemingly day-to-day festivities. %employer% sits upon a pile of cushions.%SPEECH_ON%Ah, Crownling. I\'ve been expecting you. Please, come no closer, you will scare my attractions. I have a simple task for you. Nomads have been plundering my caravans, hereat, I am with fewer coins in my coffers. I\'m sure you understand what it is like to be deprived of in any manner, yes? Ah, you seem so dumb. So blank. So, well, involved with what you do. I need those nomads killed, and I\'m willing to pay %reward% crowns to have it done. Does this language please whatever resides between those ears?%SPEECH_OFF% | %employer% is partly sitting on a throne of silken cushions, and partly on the bodies of a harem of attractive women. He puts his hand up.%SPEECH_ON%If you step further, Crownling, then you will grow in sight but diminish in view, understand? A smart man knows his place. I have a simple task for your swordhand. Nomads outside %townname% have taken to thievery and thuggery. For a handsome handsel, I need you to annihilate these men who have made my life uncomfortable.%SPEECH_OFF% | You find %employer% feeding a bird in a cage. The bird is a collage of colors some of which you\'re not sure you have even seen before. Suspecting your presence, or perhaps smelling it, %employer% turns with a hint of disgust.%SPEECH_ON%You are scaring my bird, Crownling, so I will make this brief for her sake. There are nomads roaming the peripheral of my lands and I need them destroyed. I\'m sure a man of your, eh, station, would be willing to undertake such a simple, easy task?%SPEECH_OFF% | You enter %employer%\'s room. He\'s feeding on fruits and his lower half is submerged in a sea of flesh, a harem of caretakers who are noisily at work. Standing idly for far too long, you open your mouth but the man throws a hand up. He points at one of his servants and snaps his fingers. The servant skirts across the marble floor on sandals with silken soles. He presents to you a piece of paper. It reads:%SPEECH_ON%To Crownlings who are interested, nomads have taken to disturbing the peace around %townname%. They are to be dealt with posthaste for a reward of %reward% crowns. Uninterested parties are to leave immediately.%SPEECH_OFF%The servant looks at you for an answer. | %employer% sighs as you enter his room.%SPEECH_ON%Ah, a Crownling, I\'d almost forgotten I had requested your sort to come ruin my day.%SPEECH_OFF%You stare at the Vizier as he is far too belabored to extricate himself from a sea of cushions and the harem of women who are there to fluff each and every one.%SPEECH_ON%Well, I suppose I shall sully an hour if only to get this matter settled. Nomads are ravaging my caravans, as they are wont to do, and hereat my markets are deprived of certain goods which I wish to have. I offer %reward% crowns to find and destroy these sand ridden mites.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Il n\'y a pas de trompettes, pas de confettis, pas d\'acclamations, mais il y a quand même une certain cérémonie quand vous entrez dans le bureau de %employer%. Le bureau est tellement décorée d\'or et d\'argent, de bijoux complexes fabriqués par de véritables artisans, et d\'un harem composé uniquement des femmes les plus séduisantes, que n\'importe qui ne pourrait s\'empêcher de faire tout ce que l\'on demande, ne serait-ce que pour avoir la chance de participer à ces festivités apparemment quotidiennes. %employer% est assis sur une pile de coussins.%SPEECH_ON%Ah, Mercenaire. Je vous attendais. S\'il vous plaît, n\'approchez pas, vous allez effrayer mes invités. J\'ai une tâche simple pour vous. Des nomades ont pillé mes caravanes, et voilà que je me retrouve avec moins de pièces dans mes coffres. Je suis sûr que vous comprenez ce que c\'est que d\'être privé de quelque chose qui vous appartient, n\'est-ce pas? Ah, vous semblez si stupide. Si ignorant. Tellement, hum... impliqué dans ce que vous faites. Je veux que ces nomades soient tués, et je suis prêt à payer %reward% couronnes pour que ce soit fait. Ce langage plaît-il à ce qui réside entre vos oreilles ?%SPEECH_OFF% | %employer% est en partie assis sur un trône de coussins de soie, et en partie sur les corps d\'un harem de femmes séduisantes. Il lève la main.%SPEECH_ON%Si vous faites un pas de plus, Mercenaire, ce que vous verrez s\'aggrandira mais votre vision d\'ensemble diminuera, compris ? Un homme intelligent sait où est sa place. J\'ai une tâche simple pour votre main armée. Des nomades en dehors de %townname% ont pris goût au vol et à la violence. En échange d\'une bonne poignée de couronnes, j\'ai besoin que vous annihiliez ces hommes qui ont rendu ma vie inconfortable.%SPEECH_OFF% | Vous trouvez %employer% en train de nourrir un oiseau dans une cage. L\'oiseau est un mélange de couleurs et vous n\'êtes pas sûr d\'avoir déjà vu certaines. Suspectant votre présence, ou peut-être la sentant, %employer% se retourne avec un soupçon de dégoût.%SPEECH_ON%Vous effrayez mon oiseau, mercenaire, alors je vais être bref pour son bien. Il y a des nomades qui errent à la périphérie de mes terres et je dois les détruire. Je suis sûr qu\'un homme de votre, euh, rang, serait prêt à entreprendre une tâche aussi simple et facile ?%SPEECH_OFF% | Vous entrez dans le bureau de %employer%. Il se nourrit de fruits et sa moitié inférieure est immergée dans une mer de chair, un harem de soignants qui s\'affairent bruyamment. Resté inactif depuis bien trop longtemps, vous ouvrez la bouche mais l\'homme lève une main. Il désigne l\'un de ses serviteurs et claque des doigts. Le serviteur traverse le bureau sur des sandales à la semelle de soie. Il vous présente un morceau de papier. On y lit :%SPEECH_ON%Pour les mercenaires intéressés, des nomades ont commencé à troubler la paix dans la ville de %townname%. Ils doivent être éliminés en toute hâte pour une récompense de %reward% couronnes. Les personnes non intéressées doivent partir immédiatement.%SPEECH_OFF%Le serviteur vous regarde pour obtenir une réponse. | %employer% soupire en entrant dans sa chambre.%SPEECH_ON%Ah, un mercenaire, j\'avais presque oublié que j\'avais demandé à votre espèce de venir gâcher ma journée.%SPEECH_OFF%Vous fixez le Vizir qui est bien trop fatigué pour s\'extraire d\'une mer de coussins et du harem de femmes qui sont là pour les complémenter.%SPEECH_ON%Eh bien, je suppose que je vais gâcher une heure, ne serait-ce que pour régler cette affaire. Les nomades ravagent mes caravanes, comme ils ont l\'habitude de le faire, et voilà que mes marchés sont privés de certaines marchandises que je souhaite avoir. J\'offre %reward% couronnes pour trouver et détruire ces acariens du sable.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Let\'s talk some more about payment. | I can make this problem disappear.}",
+					Text = "{Parlons un peu du paiement. | Je peux faire disparaître ce problème.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -287,12 +287,12 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Treasure1",
 			Title = "Avant l\'attaque...",
-			Text = "[img]gfx/ui/events/event_54.png[/img]{The nomads are surprisingly stationary and suprisingly many, but it appears there\'s a reason for that: you find the sand dwellers huddled around a hole in the ground. They\'ve constructed pullies around it and are working feverishly to drag up whatever it is they\'ve found in the desert. Based upon the grin of the man overseeing the operation, it is no doubt a trove of treasure.\n\nYou could attack now, and face more opposition, or you could wait until they\'re done and have left with whatever they\'re digging up.}",
+			Text = "[img]gfx/ui/events/event_54.png[/img]{Les nomades sont étonnamment immobiles et étonnamment nombreux, mais il semble qu\'il y ait une raison à cela : vous trouvez les habitants du sable regroupés autour d\'un trou dans le sol. Ils ont construit des poulies autour et travaillent fébrilement pour remonter ce qu\'ils ont trouvé dans le désert. D\'après le sourire de l\'homme qui supervise l\'opération, il s\'agit sans aucun doute d\'un trésor. Vous pouvez attaquer maintenant, et faire face à plus d\'opposition, ou vous pouvez attendre qu\'ils aient fini et qu\'ils soient partis avec ce qu\'ils ont déterré.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We attack now!",
+					Text = "On attaque maintenant !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -301,7 +301,7 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "We\'ll wait until they\'re done and the camp is less well defended.",
+					Text = "Nous attendrons qu\'ils aient fini et que le camp soit moins bien défendu.",
 					function getResult()
 					{
 						return "Treasure1A";
@@ -313,12 +313,12 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Treasure1A",
 			Title = "Avant l\'attaque...",
-			Text = "[img]gfx/ui/events/event_54.png[/img]{You wait for the nomads to pull the treasure out. As expected, it is a chest. When they break it open there is a hint of satisfaction on their faces. And, as also expected, the nomads split off, with a contingent of their strongest men moving off with the treasure, presumably to sell it somewhere. The nomads\' camp is weaker now and far more vulnerable to attack...}",
+			Text = "[img]gfx/ui/events/event_54.png[/img]{Vous attendez que les nomades sortent le trésor. Comme prévu, c\'est un coffre. Lorsqu\'ils l\'ouvrent, un soupçon de satisfaction se lit sur leur visage. Et, comme prévu, les nomades se séparent, avec un contingent de leurs hommes les plus forts qui partent avec le trésor, sans doute pour le vendre quelque part. Le camp des nomades est maintenant plus faible et beaucoup plus vulnérable aux attaques...}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prepare the attack!",
+					Text = "Préparez-vous à l\'attaque !",
 					function getResult()
 					{
 						this.Flags.set("IsTreasure", false);
@@ -334,12 +334,12 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Treasure2",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_168.png[/img]{The nomads slain, you, naturally, go see what the hell they were digging out of the earth. You stand over the pulley they rigged up and stare into the hole. A chest can be seen with ropes already bound around it. You thank the dead nomads for all the work they\'ve done, then turn to easily pull the chest up and out of the ground. You open it to find...}",
+			Text = "[img]gfx/ui/events/event_168.png[/img]{Les nomades tués, vous allez voir ce qu\'ils creusaient dans la terre. Vous vous tenez au-dessus de la poulie qu\'ils ont installée et regardez fixement dans le trou. On peut voir un coffre avec des cordes déjà attachées autour. Vous remerciez les nomades morts pour tout le travail qu\'ils ont fait, puis vous vous retournez pour tirer facilement le coffre vers le haut et hors du sol. Vous l\'ouvrez pour trouver...}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Treasure!",
+					Text = "Trésor !",
 					function getResult()
 					{
 						return 0;
@@ -388,12 +388,12 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "SandGolems",
 			Title = "Avant l\'attaque...",
-			Text = "[img]gfx/ui/events/event_160.png[/img]{As you prepare to attack, a man suddenly rises up out of the sands. Startled, he jerks away and screams, rolling down the sand dune toward the nomads\' camp. You chase after him with a weapon out ready to kill. In your bouncing peripheral you can see the nomads clambering over one another and toppling tents to get to their weapons. When you look back at the spotter, he suddenly disappears in sandy clasp, and the arm attached to the dunes extends out of the earth and rises before you, dust and sand and earth falling off its shapes.\n\nYou\'re hardly able to understand what you\'re seeing, but the nomads all seem to be screaming the same thing: \'Ifrit! Ifrit! Ifrit!\' And this faceless, seemingly endless, \'Ifrit\' has no allegiances in the combat to come. | You charge down the dunes at the nomads. Startled, they bark out orders and run for their weapons. As you near the camp, a wave of sand blasts the corner of the camp and a few of the nomads go flying. One second later and a boulder comes sailing out of the dust cloud and pulverizes a nomad entirely. A huge, earthen creature bellows and stomps forward. \'Ifrit! Ifrit!\' the nomads scream, and you surmise that this \'Ifrit\' will be on no man\'s side.}",
+			Text = "[img]gfx/ui/events/event_160.png[/img]{Alors que vous vous préparez à attaquer, un homme surgit soudain du sabls. Surpris, il s\'éloigne en hurlant et dévale la dune en direction du camp des nomades. Vous le poursuivez, arme au poing, prêt à tuer. Dans votre périphérie, vous pouvez voir les nomades grimper les uns sur les autres et renverser les tentes pour atteindre leurs armes. Lorsque vous vous retournez vers le guetteur, il a disparu soudainement dans un amas de sable, et un bras de sable sort de la dune et s\'élève devant vous, la poussière, le sable et la terre renforce ses formes.\n\nVous êtes à peine capable de comprendre ce que vous voyez, mais les nomades semblent tous crier la même chose : \"Ifrit ! Ifrit ! Ifrit!\" Et cet \"Ifrit\" sans visage, n\'a aucune allégeance dans le combat à venir. | Vous foncez sur les nomades à travers les dunes. Surpris, ils aboient des ordres et courent chercher leurs armes. Alors que vous approchez du camp, une vague de sable souffle sur le coin du camp et quelques nomades volent. Une seconde plus tard, un rocher surgit du nuage de poussière et pulvérise entièrement un nomade. Une énorme créature terrestre s\'avance en mugissant et en trépignant. \"Ifrit ! Ifrit!\'\', crient les nomades, et vous supposez que cet \"Ifrit\" ne sera du côté d\'aucun homme.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes!",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -406,12 +406,12 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Assassins",
 			Title = "Avant l\'attaque...",
-			Text = "[img]gfx/ui/events/event_165.png[/img]{You charge the camp just in time to see a man in black clothes step out of one of the tents. He is shaking hands with the nomads\' leader which is probably not the best sign. Both men pausing mid-handshake and staring at your attack is presumably just as sour a result. The nomad leader calls out, demanding his assassins earn their keep. The blackened killer nods and draws out a blade, and a troop of fellow assassins stream out of the tent in turn to join the nomads in the battle!}",
+			Text = "[img]gfx/ui/events/event_165.png[/img]{Vous pénétrez dans le camp juste à temps pour voir un homme en noir sortir de l\'une des tentes. Il serre la main du chef des nomades, ce qui n\'est probablement pas le meilleur signe. Les deux hommes s\'arrêtent au milieu de la poignée de main et regardent fixement votre attaque, ce qui est probablement aussi mauvais signe. Le chef nomade crie, exigeant que les assassins méritent leur salaire. Le tueur au visage noirci acquiesce et sort une lame, et une troupe d\'autres assassins sortent de la tente à leur tour pour rejoindre les nomades dans la bataille !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Charge!",
+					Text = "Chargez !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -424,12 +424,12 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Necromancer",
 			Title = "Avant l\'attaque...",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{Shredded tents. Baskets unwoven. Clothes rolling across the sands. And in the middle of it all sits a man in a black cloak, his ghastly face peering from its hooded shade.%SPEECH_ON%You are both late and right on time.%SPEECH_OFF%He says and gets to his feet. The tarps rustle, the baskets tilt, and the clothes jerk aside, the land riffling with liveliness. Suddenly, the sand slips into cavernous channels and inimical nomads empty from the earth, climbing out, some leaping forth as though to revivify themselves on fresh air, others tilting upward from heel to toe, bodies straight like flagpoles. They move unnervingly, stilted and tilted, and the man in black grins behind their shambling formation. He is no ordinary blaggard, but a necromancer!}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Des tentes déchiquetées. Des paniers défaits. Des vêtements qui roulent sur le sable. Et au milieu de tout cela est assis un homme dans un manteau noir, son visage effroyable regardant à travers son capuchon.%SPEECH_ON%Vous êtes à la fois en retard et à l\'heure.%SPEECH_OFF%Il dit et se lève. Les toiles frémissent, les paniers basculent, les vêtements s\'écartent, la terre s\'anime. Soudain, le sable glisse dans des canaux caverneux et des nomades inamicaux sortent du sol, certains bondissent comme pour se revivifier à l\'air frais, d\'autres se redressent du talon à la pointe du pied, le corps droit comme un mât de drapeau. Ils se déplacent de façon troublante, guindés et inclinés, et l\'homme en noir sourit derrière leur formation ambulante. Ce n\'est pas un blagueur ordinaire, mais un nécromancien !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux Armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination, false);
@@ -442,19 +442,19 @@ this.drive_away_nomads_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{A servant heads you off from meeting %employer%. He hands you a scroll as well as a satchel. Despite having already handed you the paper, the servant puts his hands behind his back and looks at the ceiling as he recites.%SPEECH_ON%The Crownling is rewarded %reward_completion% crowns as per prior arrangements. Having taken his reward, he is dismissed from the property posthaste.%SPEECH_OFF%The servant looks down at you and nods.%SPEECH_ON%Leave.%SPEECH_OFF%He says. | You try to enter %employer%\'s room but a large, scarred guard lowers the business end of a polearm across the door.%SPEECH_ON%No visitors.%SPEECH_OFF%You state that you have business with the Vizier. The guard shakes his head. A servant comes up behind you and puts a satchel in your arms and then departs just as fast. The guard returns the polearm to his side.%SPEECH_ON%Your trivialities with the Vizier concluded when you first departed his presence. You are not to poison his mood any further. Leave. Now. Before you poison mine.%SPEECH_OFF% | En vous approchant %employer%\'s room, a woman claps from across the lobby. You look over and she\'s already far too close. Four birds perch upon her shoulders and they sway with her every step.%SPEECH_ON%Crownling.%SPEECH_OFF%She produces a satchel and hands it over.%SPEECH_ON%%employer% need not smell you once more, this far into his home is sufficient. Count it if you wish to insult us, leave if you wish to please us.%SPEECH_OFF%She turns on her heels and walks away, her otherworldly dress flowing side to side. One of the birds rotates on her shoulder and squawks at you.}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{Un serviteur vous empêche de rencontrer %employer%. Il vous remet un parchemin ainsi qu\'une sacoche. Bien qu\'il vous ait déjà remis le papier, le serviteur met ses mains derrière son dos et regarde le plafond en récitant.%SPEECH_ON%Le mercenaire est récompensé de %reward_completion% couronnes conformément aux arrangements préalables. Après avoir reçu sa récompense, il est renvoyé de la propriété en toute hâte.%SPEECH_OFF%Le serviteur vous regarde et hoche la tête.%SPEECH_ON%Partez.%SPEECH_OFF%Dit-il. | Vous essayez d\'entrer dans la chambre de %employer% mais un grand garde balafré abaisse le bout de son arme de poing pour bloquer l\'accès à la porte.%SPEECH_ON%Aucun visiteur.%SPEECH_OFF%Vous déclarez que vous avez affaire avec le Vizir. Le garde secoue la tête. Un serviteur arrive derrière vous et vous met une sacoche dans les bras, puis repart tout aussi vite. Le garde remet son arme à sa place d\'origine.%SPEECH_ON%Vos futilités avec le vizir ont pris fin lorsque vous avez quitté sa présence. Vous ne devez plus empoisonner son humeur. Partez. Maintenant. Avant d\'empoisonner la mienne.%SPEECH_OFF% | En vous approchant du bureau de %employer%, une femme applaudit depuis l\'autre côté du hall. Vous regardez et elle est déjà bien trop proche. Quatre oiseaux sont perchés sur ses épaules et ils se balancent à chacun de ses pas.%SPEECH_ON%Mercenaire.%SPEECH_OFF%Elle sort une sacoche et la tend.%SPEECH_ON%%employer% n\'a pas besoin de vous sentir encore une fois, être rentré aussi loin dans sa maison est déjà suffisant. Comptez si vous voulez nous insulter, partez si vous voulez nous faire plaisir.%SPEECH_OFF%Elle tourne sur ses talons et s\'éloigne, sa robe d\'un autre univers flottant d\'un côté à l\'autre. L\'un des oiseaux tourne sur son épaule et vous regarde en gloussant.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Well, we got paid.",
+					Text = "Eh bien, nous avons été payés.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Destroyed a nomad encampment");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Détruire un campement de nomades");
 						this.World.Contracts.finishActiveContract();
 						return 0;
 					}

@@ -474,7 +474,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{I trust you\'ll pay amply for an assault like this. | We\'re ready to do our part. | Let\'s talk some more about payment.}",
+					Text = "{Je vous fais confiance pour payer très cher une telle attaque. | Nous sommes prêts à faire notre part. | Parlons un peu du paiement.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -482,7 +482,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Ça ne vaut pas le coup. | It\'s too long a march. | We have more pressing business to attend to. | On est demandé autre part.}",
+					Text = "{Ça ne vaut pas le coup. | C\'est une trop longue marche. | Nous avons des affaires plus urgentes à régler. | On est demandé autre part.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
