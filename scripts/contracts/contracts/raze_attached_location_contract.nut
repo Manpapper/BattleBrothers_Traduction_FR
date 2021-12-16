@@ -284,7 +284,7 @@ this.raze_attached_location_contract <- this.inherit("scripts/contracts/contract
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | What will the pay be? | For the right price, everything can be done.}",
+					Text = "{Parlons argent. | De combien de Couronnes parle-t-on? | Quel sera le salaire ? | For the right price, everything can be done.}",
 					function getResult()
 					{
 						return "Negotiation";

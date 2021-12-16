@@ -373,7 +373,7 @@ this.last_stand_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How much is this worth to you? | We can defend %objective% for the right price...}",
+					Text = "{Combien cela vaut-il pour vous ? | We can defend %objective% for the right price...}",
 					function getResult()
 					{
 						return "Negotiation";
