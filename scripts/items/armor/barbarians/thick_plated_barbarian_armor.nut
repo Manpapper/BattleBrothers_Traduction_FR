@@ -4,8 +4,8 @@ this.thick_plated_barbarian_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.thick_plated_barbarian_armor";
-		this.m.Name = "Thick Plated Barbarian Armor";
-		this.m.Description = "A heavy armor that is made from mostly metal. Only one chosen by the ancestors will own a set like this.";
+		this.m.Name = "Armure barbare plaquée épaisse";
+		this.m.Description = "Une armure lourde composée principalement de métal. Un seul Elu par les ancêtres possédera un ensemble comme celui-ci.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

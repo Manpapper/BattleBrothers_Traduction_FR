@@ -4,7 +4,7 @@ this.unhold_armor_heavy <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.unhold_armor_heavy";
-		this.m.Name = "Armor";
+		this.m.Name = "Armure";
 		this.m.Description = "";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = false;

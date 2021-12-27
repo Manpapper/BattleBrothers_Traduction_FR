@@ -4,8 +4,8 @@ this.rugged_scale_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.rugged_scale_armor";
-		this.m.Name = "Rugged Scale Armor";
-		this.m.Description = "A heavy body armor made from thick iron scales.";
+		this.m.Name = "Armure d\'écailles robuste";
+		this.m.Description = "Armure lourde fabriquée à partir d\'écailles de fer épaisses.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

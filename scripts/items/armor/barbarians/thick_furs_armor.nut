@@ -4,8 +4,8 @@ this.thick_furs_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.thick_furs";
-		this.m.Name = "Thick Furs";
-		this.m.Description = "Thick furs that are crudely dried and tied together to protect from both the cold and any incoming blows.";
+		this.m.Name = "Fourrures épaisses";
+		this.m.Description = "Des fourrures épaisses qui sont grossièrement séchées et attachées ensemble pour protéger à la fois du froid et des coups entrants.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

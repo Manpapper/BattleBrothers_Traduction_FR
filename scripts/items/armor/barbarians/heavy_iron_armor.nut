@@ -4,8 +4,8 @@ this.heavy_iron_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.heavy_iron_armor";
-		this.m.Name = "Heavy Iron Armor";
-		this.m.Description = "This armor is made from heavy metal plates, scales and pieces of chainmal. The true armor of a northern warrior.";
+		this.m.Name = "Armure de fer lourde";
+		this.m.Description = "Cette armure est faite de plaques de métal lourd, d\'écailles et de morceaux de cotte de mailles. La véritable armure d'un guerrier du Nord.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

@@ -4,7 +4,7 @@ this.barbarian_ritual_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.barbarian_ritual";
-		this.m.Name = "Ritual Armor";
+		this.m.Name = "Armure rituelle";
 		this.m.Description = "";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = false;

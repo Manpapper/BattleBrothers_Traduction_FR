@@ -4,8 +4,8 @@ this.scrap_metal_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.scrap_metal_armor";
-		this.m.Name = "Scrap Metal Armor";
-		this.m.Description = "This armor is pieced together from scavenged metal parts that are fixed to a crude leather tunic.";
+		this.m.Name = "Armure de ferraille";
+		this.m.Description = "Cette armure est reconstituée à partir de pièces métalliques récupérées qui sont fixées à une tunique en cuir brut.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

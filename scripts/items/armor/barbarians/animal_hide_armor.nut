@@ -4,8 +4,8 @@ this.animal_hide_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.animal_hide_armor";
-		this.m.Name = "Animal Hide Armor";
-		this.m.Description = "Heavy hides patched together to create a decent makeshift armor.";
+		this.m.Name = "Armure en peau d\'animal";
+		this.m.Description = "Des peaux lourdes rapiécées ensemble pour créer une armure de fortune décente.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
