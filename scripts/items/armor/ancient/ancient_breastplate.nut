@@ -4,8 +4,8 @@ this.ancient_breastplate <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_breastplate";
-		this.m.Name = "Ancient Breastplate";
-		this.m.Description = "A tarnished thick breastplate of ancient origin.";
+		this.m.Name = "Plastron antique";
+		this.m.Description = "Un plastron épais terni d\'origine ancienne.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

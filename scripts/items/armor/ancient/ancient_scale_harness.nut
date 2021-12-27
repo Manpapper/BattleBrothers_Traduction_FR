@@ -4,8 +4,8 @@ this.ancient_scale_harness <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_scale_harness";
-		this.m.Name = "Ancient Scale Harness";
-		this.m.Description = "A sturdy, but heavy and partly decayed ancient scale harness.";
+		this.m.Name = "Harnais d\'écailles antiques";
+		this.m.Description = "Un robuste harnais d\'écailles anciennes, mais lourd et en partie pourri.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

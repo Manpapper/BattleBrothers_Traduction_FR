@@ -4,8 +4,8 @@ this.ancient_plate_harness <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_plate_harness";
-		this.m.Name = "Ancient Plate Harness";
-		this.m.Description = "Made of thick metal plates and mail, this heavy ancient armor still offers great protection after countless years. It\'s crusted and rotten in parts, however, severely limiting the mobility of the wearer.";
+		this.m.Name = "Harnais ancien en plaques";
+		this.m.Description = "Fabriquée à partir de plaques de métal épaisses et de mailles, cette lourde armure ancienne offre toujours une excellente protection après d\'innombrables années. Il est cependant croûteux et pourri par endroits, ce qui limite considérablement la mobilité du porteur.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

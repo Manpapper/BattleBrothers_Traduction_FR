@@ -4,8 +4,8 @@ this.ancient_double_layer_mail <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_double_layer_mail";
-		this.m.Name = "Ancient Double Layer Mail";
-		this.m.Description = "A heavy and rotten double-layered mail of ancient design. Not comfortable to wear but still useable.";
+		this.m.Name = "Cotte de mailles ancienne à double couche";
+		this.m.Description = "Une cotte de mailles à double couche lourde et pourrie de conception ancienne. Pas confortable à porter mais toujours utilisable.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

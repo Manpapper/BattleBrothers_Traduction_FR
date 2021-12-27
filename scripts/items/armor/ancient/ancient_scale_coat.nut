@@ -4,8 +4,8 @@ this.ancient_scale_coat <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_scale_coat";
-		this.m.Name = "Ancient Scale Coat";
-		this.m.Description = "A heavy and tarnished scale coat of ancient design that belongs in a collection, not on the battlefield.";
+		this.m.Name = "Manteau en écailles antiques";
+		this.m.Description = "Un manteau d\'écailles lourd et terni de conception ancienne qui appartient à une collection, pas au champ de bataille.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

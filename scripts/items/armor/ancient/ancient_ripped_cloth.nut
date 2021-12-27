@@ -4,7 +4,7 @@ this.ancient_ripped_cloth <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_ripped_cloth";
-		this.m.Name = "Ripped Cloth";
+		this.m.Name = "Habit déchiré";
 		this.m.Description = "";
 		this.m.IsDroppedAsLoot = false;
 		this.m.ShowOnCharacter = true;

@@ -4,7 +4,7 @@ this.ancient_priest_attire <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_priest_attire";
-		this.m.Name = "Ancient Priest Attire";
+		this.m.Name = "Tenue de prêtre antique";
 		this.m.Description = "";
 		this.m.IsDroppedAsLoot = false;
 		this.m.ShowOnCharacter = true;

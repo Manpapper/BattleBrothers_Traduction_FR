@@ -4,8 +4,8 @@ this.ancient_plated_scale_hauberk <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_plated_scale_hauberk";
-		this.m.Name = "Ancient Plated Scale Hauberk";
-		this.m.Description = "A heavy coat of scales, partly reinforced with a layer of plated metal on top. It\'s a massive armor of ancient origin that didn\'t age well.";
+		this.m.Name = "Haubert en écailles plaquées antiques";
+		this.m.Description = "Une épaisse couche d\'écailles, en partie renforcée d\'une couche de métal plaqué sur le dessus. C\'est une armure massive d\'origine ancienne qui n\'a pas bien vieilli.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

@@ -4,8 +4,8 @@ this.ancient_mail <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_mail";
-		this.m.Name = "Ancient Mail";
-		this.m.Description = "An old and crusted heavy mail of ancient design. Some parts are missing, but it still offers decent protection.";
+		this.m.Name = "Cotte de mailles ancienne";
+		this.m.Description = "Une cotte de mailles lourde et croûteuse de conception ancienne. Certaines pièces manquent, mais elle offre toujours une protection décente.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

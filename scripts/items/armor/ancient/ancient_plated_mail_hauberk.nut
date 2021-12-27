@@ -4,8 +4,8 @@ this.ancient_plated_mail_hauberk <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ancient_plated_mail_hauberk";
-		this.m.Name = "Ancient Plated Mail Hauberk";
-		this.m.Description = "An ancient mail armor with plated arm guards. Very heavy and severely limiting the mobility of the wearer.";
+		this.m.Name = "Haubert en maille plaquée antique";
+		this.m.Description = "Une ancienne armure de maille avec des protège-bras plaqués. Très lourd et limitant sévèrement la mobilité du porteur.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
