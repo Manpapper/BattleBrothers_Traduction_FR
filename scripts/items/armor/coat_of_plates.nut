@@ -4,8 +4,8 @@ this.coat_of_plates <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.coat_of_plates";
-		this.m.Name = "Coat of Plates";
-		this.m.Description = "One layer of padding, one layer of strong mail, and heavy metal plates riveted ontop. A very heavy armor that offers great protection.";
+		this.m.Name = "Manteau de plaques";
+		this.m.Description = "Une couche de rembourrage, une couche de mailles solide et des plaques de métal lourd rivetées sur le dessus. Une armure très lourde qui offre une grande protection.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

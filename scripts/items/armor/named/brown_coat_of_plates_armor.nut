@@ -4,7 +4,7 @@ this.brown_coat_of_plates_armor <- this.inherit("scripts/items/armor/named/named
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.brown_coat_of_plates";
-		this.m.Description = "A thick mail hauberk combined with sturdy metal plates. This armor will protect its wearer even in the fiercest of battles.";
+		this.m.Description = "Un haubert de mailles épais combiné avec des plaques de métal robustes. Cette armure protégera son porteur même dans les batailles les plus féroces.";
 		this.m.NameList = [
 			"Harness",
 			"Ward",

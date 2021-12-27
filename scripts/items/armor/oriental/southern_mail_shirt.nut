@@ -4,8 +4,8 @@ this.southern_mail_shirt <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.southern_mail_shirt";
-		this.m.Name = "Southern Mail Shirt";
-		this.m.Description = "A mail shirt fashioned from slightly thinner and lighter metal rings than those used in the north.";
+		this.m.Name = "Cotte de mailles du sud";
+		this.m.Description = "Une cotte de mailles confectionnée à partir d\'anneaux métalliques légèrement plus fins et plus légers que ceux utilisés dans le nord.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

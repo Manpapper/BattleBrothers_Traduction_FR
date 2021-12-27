@@ -4,8 +4,8 @@ this.gladiator_harness <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.gladiator_harness";
-		this.m.Name = "Gladiator Harness";
-		this.m.Description = "A leather harness commonly worn by pit fighters in arenas of the southern city states.";
+		this.m.Name = "Harnais de gladiateur";
+		this.m.Description = "Harnais en cuir couramment porté par les combattants des fosses dans les arènes des cités-États du sud.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

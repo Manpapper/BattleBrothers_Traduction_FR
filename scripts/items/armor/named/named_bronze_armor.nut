@@ -4,7 +4,7 @@ this.named_bronze_armor <- this.inherit("scripts/items/armor/named/named_armor",
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.named_bronze_armor";
-		this.m.Description = "This armor is composed of a strange alloy, and well crafted for barbarian standards. A truly rare and remarkable piece.";
+		this.m.Description = "Cette armure est composée d\'un alliage étrange et bien conçue pour les normes barbares. Une pièce vraiment rare et remarquable.";
 		this.m.NameList = [
 			"Tarnished Harness",
 			"Alloy Plate Armor",

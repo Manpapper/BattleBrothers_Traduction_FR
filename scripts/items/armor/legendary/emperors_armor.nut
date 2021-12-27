@@ -4,8 +4,8 @@ this.emperors_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.emperors_armor";
-		this.m.Name = "The Emperor\'s Armor";
-		this.m.Description = "A shining armor once worn by the emperor of an age long past, made from the most wondrous of materials, imbued with mystical energies. Light reflects easily off the polished armor, turning the wearer into a shimmering figure of light during the day.";
+		this.m.Name = "L\'armure de l\'empereur";
+		this.m.Description = "Une armure brillante autrefois portée par l\'empereur d\'une époque révolue, fabriquée à partir des matériaux les plus merveilleux, imprégnée d\'énergies mystiques. La lumière se reflète facilement sur l\'armure polie, transformant le porteur en une figure de lumière scintillante pendant la journée.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -28,7 +28,7 @@ this.emperors_armor <- this.inherit("scripts/items/armor/armor", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reflects [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] of damage taken in melee back to the attacker"
+			text = "Renvoie [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] des dégâts subis en mêlée à l\'attaquant"
 		});
 		return result;
 	}

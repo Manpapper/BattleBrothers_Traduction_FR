@@ -5,7 +5,7 @@ this.orc_warrior_light_armor <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.updateVariant();
 		this.m.ID = "armor.body.orc_warrior_light_armor";
-		this.m.Name = "Looted Scale Armor";
+		this.m.Name = "Armure d\'écailles pillée";
 		this.m.Description = "";
 		this.m.IconLarge = "";
 		this.m.Icon = "";

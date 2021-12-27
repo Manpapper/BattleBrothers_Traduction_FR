@@ -4,7 +4,7 @@ this.black_and_gold_armor <- this.inherit("scripts/items/armor/named/named_armor
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.black_and_gold";
-		this.m.Description = "Ancient knowledge has been used when smithing this unique set of armor. Its light mail overlapped with golden splints offers high protection with manageable encumberment.";
+		this.m.Description = "Des connaissances anciennes ont été utilisées pour forger cet ensemble d\'armures unique. Son maillage léger recouvert de lamelles dorées offre une haute protection avec un encombrement gérable.";
 		this.m.NameList = [
 			"Gilder\'s Shining Ward",
 			"Gilder\'s Skin",

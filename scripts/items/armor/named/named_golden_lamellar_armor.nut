@@ -4,7 +4,7 @@ this.named_golden_lamellar_armor <- this.inherit("scripts/items/armor/named/name
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.named_golden_lamellar_armor";
-		this.m.Description = "An extraordinarily well-crafted piece of lamellar armor. It is covered with beaten gold, which makes it truly stand out.";
+		this.m.Description = "Une pièce d\'armure lamellaire extraordinairement bien conçue. Il est recouvert d\'or battu, ce qui le fait vraiment ressortir.";
 		this.m.NameList = [
 			"Harness",
 			"Ward",

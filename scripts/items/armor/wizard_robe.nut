@@ -4,8 +4,8 @@ this.wizard_robe <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.wizard_robe";
-		this.m.Name = "Wizard\'s Robe";
-		this.m.Description = "A cloth robe coverd in all kinds of mystical ornaments and symbols.";
+		this.m.Name = "Robe de sorcier";
+		this.m.Description = "Une robe en tissu recouverte de toutes sortes d\'ornements et de symboles mystiques.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 12;

@@ -5,7 +5,7 @@ this.goblin_medium_armor <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.updateVariant();
 		this.m.ID = "armor.body.goblin_medium_armor";
-		this.m.Name = "Medium Armor";
+		this.m.Name = "Armure moyenne";
 		this.m.Description = "";
 		this.m.IconLarge = "";
 		this.m.Icon = "";

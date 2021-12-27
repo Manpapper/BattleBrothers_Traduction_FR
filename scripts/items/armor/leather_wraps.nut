@@ -4,8 +4,8 @@ this.leather_wraps <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.leather_wraps";
-		this.m.Name = "Leather Wraps";
-		this.m.Description = "Various patches of rough leather sewn together.";
+		this.m.Name = "Morceaux de cuir";
+		this.m.Description = "Diverses pièces de cuir rugueux cousues ensemble.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 18;

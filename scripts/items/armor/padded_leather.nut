@@ -4,8 +4,8 @@ this.padded_leather <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.padded_leather";
-		this.m.Name = "Padded Leather";
-		this.m.Description = "A padded tunic reinforced with leather fittings for added protection.";
+		this.m.Name = "Cuir rembourré";
+		this.m.Description = "Une tunique matelassée renforcée de garnitures en cuir pour une protection supplémentaire.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

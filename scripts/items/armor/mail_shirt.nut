@@ -4,8 +4,8 @@ this.mail_shirt <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.mail_shirt";
-		this.m.Name = "Mail Shirt";
-		this.m.Description = "A mail shirt with shoulder guards providing excellent protection against most weapons.";
+		this.m.Name = "Chemise de mailles";
+		this.m.Description = "Une chemise de maille avec des protège-épaules offrant une excellente protection contre la plupart des armes.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

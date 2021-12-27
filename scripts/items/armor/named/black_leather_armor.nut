@@ -4,7 +4,7 @@ this.black_leather_armor <- this.inherit("scripts/items/armor/named/named_armor"
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.black_leather";
-		this.m.Description = "A well-crafted and hardened leather armor supported by a padded gambeson and chainmail. Light to wear but very sturdy.";
+		this.m.Description = "Une armure en cuir bien conçue et durcie soutenue par un gambison rembourré et une cotte de mailles. Léger à porter mais très solide.";
 		this.m.NameList = [
 			"Leather Cuirass",
 			"Mail Shirt",

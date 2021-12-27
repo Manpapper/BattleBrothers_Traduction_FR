@@ -4,7 +4,7 @@ this.named_noble_mail_armor <- this.inherit("scripts/items/armor/named/named_arm
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.named_noble_mail_armor";
-		this.m.Description = "This piece of light mail armor was once the personal item of a well known fencing master. It is as light as a tunic, but protects all vital body parts.";
+		this.m.Description = "Cette pièce de cotte de mailles légère était autrefois l\'objet personnel d\'un maître d\'armes bien connu. Il est aussi léger qu\'une tunique, mais protège toutes les parties vitales du corps.";
 		this.m.NameList = [
 			"Reinforced Mail",
 			"Nightcloak",

@@ -4,8 +4,8 @@ this.stitched_nomad_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.stitched_nomad_armor";
-		this.m.Name = "Stitched Nomad Armor";
-		this.m.Description = "A leather nomad armor stitched together from various hides and scraps.";
+		this.m.Name = "Armure de nomade cousue";
+		this.m.Description = "Une armure nomade en cuir cousue ensemble à partir de divers cuirs et chutes.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

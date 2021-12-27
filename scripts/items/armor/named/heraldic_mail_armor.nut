@@ -4,7 +4,7 @@ this.heraldic_mail_armor <- this.inherit("scripts/items/armor/named/named_armor"
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.heraldic_mail";
-		this.m.Description = "Truly fit for a knight, this mail hauberk is made from the highest quality materials and boasts precious decorations and ornaments.";
+		this.m.Description = "Vraiment digne d\'un chevalier, ce haubert de courrier est fabriqué à partir de matériaux de la plus haute qualité et arbore des décorations et des ornements précieux.";
 		this.m.NameList = [
 			"Heraldic Mail",
 			"Splendor",

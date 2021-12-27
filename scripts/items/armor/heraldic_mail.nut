@@ -4,8 +4,8 @@ this.heraldic_mail <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.heraldic_mail";
-		this.m.Name = "Heraldic Mail";
-		this.m.Description = "A heavy and extraordinarily well crafted mail hauberk with added mail mittens and a padded undercoat. Only a true master could craft an armor like this.";
+		this.m.Name = "Cotte de mailles héraldique";
+		this.m.Description = "Un haubert de mailles lourd et extraordinairement bien conçu avec des mitaines de mailles ajoutées et une doublure rembourré. Seul un vrai maître pouvait fabriquer une armure comme celle-ci.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

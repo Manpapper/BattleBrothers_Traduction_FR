@@ -4,8 +4,8 @@ this.ijirok_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.ijirok_armor";
-		this.m.Name = "Armor of the Ijirok";
-		this.m.Description = "Once a barbarian armor broken in battle, this piece has been bathed in the blood of the legendary Ijirok. Powers beyond your understanding mended it whole again, and will likewise mend any wounds of the wearer as well.";
+		this.m.Name = "Armure du Ijirok";
+		this.m.Description = "Autrefois une armure barbare brisée au combat, cette pièce a été baignée dans le sang du légendaire Ijirok. Des pouvoirs au-delà de votre compréhension l\'ont à nouveau réparé et répareront également toutes les blessures du porteur.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -28,7 +28,7 @@ this.ijirok_armor <- this.inherit("scripts/items/armor/armor", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] hitpoints of the wearer each turn"
+			text = "Soigne [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] points de vie du porteur à chaque tour"
 		});
 		return result;
 	}

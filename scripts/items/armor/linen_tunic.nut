@@ -4,8 +4,8 @@ this.linen_tunic <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.linen_tunic";
-		this.m.Name = "Linen Tunic";
-		this.m.Description = "A simple cloth tunic. Fashionable but offering little in protection.";
+		this.m.Name = "Tunique en lin";
+		this.m.Description = "Une simple tunique en tissu. À la mode mais offrant peu de protection.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = this.Math.rand(3, 7);

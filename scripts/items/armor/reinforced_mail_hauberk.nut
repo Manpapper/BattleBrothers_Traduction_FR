@@ -4,8 +4,8 @@ this.reinforced_mail_hauberk <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.reinforced_mail_hauberk";
-		this.m.Name = "Reinforced Mail Hauberk";
-		this.m.Description = "A mail hauberk reinforced with shoulder pauldrons and a riveted leather armor for added protection.";
+		this.m.Name = "Haubert en mailles renforcées";
+		this.m.Description = "Un haubert en maille renforcé d\'épaulettes et d\'une armure de cuir rivetée pour une protection supplémentaire.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

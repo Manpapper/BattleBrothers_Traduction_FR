@@ -4,8 +4,8 @@ this.decayed_reinforced_mail_hauberk <- this.inherit("scripts/items/armor/armor"
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.decayed_reinforced_mail_hauberk";
-		this.m.Name = "Decayed Reinforced Mail Hauberk";
-		this.m.Description = "A long mail shirt in bad condition. Some rings are missing and it is covered in dirt and has an odd smell about it.";
+		this.m.Name = "Haubert en mailles renforcées pourris";
+		this.m.Description = "Une longue cotte de mailles en mauvais état. Certains anneaux manquent et il est couvert de saleté et a une odeur étrange à ce sujet.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

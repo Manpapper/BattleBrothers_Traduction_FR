@@ -4,8 +4,8 @@ this.ragged_surcoat <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.rugged_surcoat";
-		this.m.Name = "Rugged Surcoat";
-		this.m.Description = "A padded leather mantle stuffed for added protection. Usually worn under armor.";
+		this.m.Name = "Surcot robuste";
+		this.m.Description = "Un manteau en cuir rembourré pour une protection supplémentaire. Habituellement porté sous une armure.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 20;

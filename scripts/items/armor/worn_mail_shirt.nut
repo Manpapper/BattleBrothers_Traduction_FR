@@ -4,8 +4,8 @@ this.worn_mail_shirt <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.worn_mail_shirt";
-		this.m.Name = "Worn Mail Shirt";
-		this.m.Description = "A reinforced mail shirt that lost some parts over the years.";
+		this.m.Name = "Chemise en maille usée";
+		this.m.Description = "Une chemise de mailles renforcée qui a perdu certaines pièces au fil des ans.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

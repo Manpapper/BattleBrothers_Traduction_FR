@@ -4,8 +4,8 @@ this.basic_mail_shirt <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.basic_mail_shirt";
-		this.m.Name = "Basic Mail Shirt";
-		this.m.Description = "A basic and simple mail shirt. Offers decent and affordable protection against slashing and piercing attacks.";
+		this.m.Name = "Cotte de mailles basique";
+		this.m.Description = "Une cotte de mailles basique et simple. Offre une protection décente et abordable contre les attaques tranchantes et perforantes.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

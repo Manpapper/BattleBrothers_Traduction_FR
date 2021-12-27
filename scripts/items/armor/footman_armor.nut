@@ -4,8 +4,8 @@ this.footman_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.footman_armor";
-		this.m.Name = "Footman\'s Armor";
-		this.m.Description = "A transitional armor consisting of a long mail shirt and a rivetted leather gambeson.";
+		this.m.Name = "Armure de fantassin";
+		this.m.Description = "Une armure de transition composée d\'une longue chemise en cotte de mailles et d\'un gambison en cuir riveté.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 84;

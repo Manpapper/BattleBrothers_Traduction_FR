@@ -4,8 +4,8 @@ this.werewolf_mail_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.werewolf_mail";
-		this.m.Name = "Direwolf Mail Armor";
-		this.m.Description = "A skillfully crafted mail shirt with the pelt of a giant wolf ontop. Donning the skin of a beast like this can turn one into an imposing figure.";
+		this.m.Name = "Armure de mailles de loup-garou";
+		this.m.Description = "Une cotte de mailles habilement conçue avec la peau d\'un loup géant sur le dessus. Enfiler la peau d\'une bête comme celle-ci peut en faire une silhouette imposante.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

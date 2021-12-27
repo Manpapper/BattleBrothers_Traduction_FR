@@ -4,8 +4,8 @@ this.butcher_apron <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.butcher_apron";
-		this.m.Name = "Butcher\'s Apron";
-		this.m.Description = "A rugged apron worn by butchers to protect against accidental cuts.";
+		this.m.Name = "Tablier de boucher";
+		this.m.Description = "Un tablier robuste porté par les bouchers pour se protéger des coupures accidentelles.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 9;

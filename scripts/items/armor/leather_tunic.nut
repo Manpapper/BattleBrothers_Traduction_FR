@@ -4,8 +4,8 @@ this.leather_tunic <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.leather_tunic";
-		this.m.Name = "Leather Tunic";
-		this.m.Description = "A leather vest ontop of a cloth tunic for improved protection.";
+		this.m.Name = "Tunique en cuir";
+		this.m.Description = "Un gilet en cuir sur une tunique en tissu pour une meilleure protection.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 13;

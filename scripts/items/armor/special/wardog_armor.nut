@@ -5,7 +5,7 @@ this.wardog_armor <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.updateVariant();
 		this.m.ID = "armor.body.wardog_armor";
-		this.m.Name = "Wardog Armor";
+		this.m.Name = "Armure de chien de combat";
 		this.m.Description = "";
 		this.m.IconLarge = "";
 		this.m.Icon = "";

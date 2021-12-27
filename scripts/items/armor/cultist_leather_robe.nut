@@ -4,8 +4,8 @@ this.cultist_leather_robe <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.cultist_leather_robe";
-		this.m.Name = "Cultist Leather Robe";
-		this.m.Description = "A thick leather armor covered with additional leather patches and occult insignia.";
+		this.m.Name = "Robe de cultistes en cuir";
+		this.m.Description = "Une armure en cuir épais recouverte de patchs en cuir supplémentaires et d\'insignes occultes.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 106;

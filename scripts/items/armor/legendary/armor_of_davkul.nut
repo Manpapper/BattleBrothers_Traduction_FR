@@ -4,8 +4,8 @@ this.armor_of_davkul <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.armor_of_davkul";
-		this.m.Name = "Aspect of Davkul";
-		this.m.Description = "A grisly aspect of Davkul, an ancient power not from this world, and the last remnants of %sacrifice% from whose body it has been fashioned. It shall never break, but instead keep regrowing its scarred skin on the spot.";
+		this.m.Name = "Aspect de Davkul";
+		this.m.Description = "Un aspect macabre de Davkul, une puissance ancienne qui ne vient pas de ce monde, et les derniers vestiges de %sacrifice% à partir du corps duquel il a été façonné. Il ne se brisera jamais, mais continuera à repousser sa peau cicatrisée sur place.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -32,7 +32,7 @@ this.armor_of_davkul <- this.inherit("scripts/items/armor/armor", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Regenerates itself by [color=" + this.Const.UI.Color.PositiveValue + "]90[/color] points of durability each turn."
+			text = "Se régénère de [color=" + this.Const.UI.Color.PositiveValue + "]90[/color] points de durabilité chaque tour."
 		});
 		return result;
 	}

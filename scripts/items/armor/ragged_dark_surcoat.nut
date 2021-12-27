@@ -4,8 +4,8 @@ this.ragged_dark_surcoat <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.rugged_dark_surcoat";
-		this.m.Name = "Dark Rugged Surcoat";
-		this.m.Description = "A dark padded leather mantle, stuffed for added protection, with a pelt coat.";
+		this.m.Name = "Surcot robuste sombre";
+		this.m.Description = "Un manteau en cuir matelassé sombre, rembourré pour une protection supplémentaire, avec de la fourrure.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 61;

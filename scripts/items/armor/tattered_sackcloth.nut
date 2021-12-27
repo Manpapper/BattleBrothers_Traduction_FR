@@ -4,8 +4,8 @@ this.tattered_sackcloth <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.tattered_sackcloth";
-		this.m.Name = "Tattered Sackcloth";
-		this.m.Description = "Barely better than running naked.";
+		this.m.Name = "Sac en lambeaux";
+		this.m.Description = "À peine mieux que de courir nu.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 1;

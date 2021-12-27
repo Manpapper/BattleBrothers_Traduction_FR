@@ -4,7 +4,7 @@ this.blue_studded_mail_armor <- this.inherit("scripts/items/armor/named/named_ar
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.blue_studded_mail";
-		this.m.Description = "This particular mail shirt is combined with a gambeson and covered with a sturdy, riveted leather jacket for a light yet protective armor.";
+		this.m.Description = "Cette chemise de mailles particulière est combinée avec un gambison et recouverte d\'une veste en cuir robuste et rivetée pour une armure légère mais protectrice.";
 		this.m.NameList = [
 			"Padded Mail",
 			"Toadskin",

@@ -4,8 +4,8 @@ this.padded_surcoat <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.padded_surcoat";
-		this.m.Name = "Padded Surcoat";
-		this.m.Description = "A cloth mantle padded with woolen filling.";
+		this.m.Name = "Surcot rembourré";
+		this.m.Description = "Un manteau en tissu rembourré avec un rembourrage en laine.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

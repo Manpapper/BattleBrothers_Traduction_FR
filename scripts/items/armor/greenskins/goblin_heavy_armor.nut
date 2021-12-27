@@ -10,7 +10,7 @@ this.goblin_heavy_armor <- this.inherit("scripts/items/armor/armor", {
 		this.m.Variant = variants[this.Math.rand(0, variants.len() - 1)];
 		this.updateVariant();
 		this.m.ID = "armor.body.goblin_heavy_armor";
-		this.m.Name = "Heavy Armor";
+		this.m.Name = "Armure lourde";
 		this.m.Description = "";
 		this.m.IconLarge = "";
 		this.m.Icon = "";

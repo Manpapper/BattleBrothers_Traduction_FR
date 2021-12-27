@@ -4,8 +4,8 @@ this.plated_nomad_mail <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.plated_nomad_mail";
-		this.m.Name = "Plated Nomad Mail";
-		this.m.Description = "A slightly worn-down, thin and light mail with additional metal plates grafted onto it.";
+		this.m.Name = "Mailles nomades plaquées";
+		this.m.Description = "Une cotte de mailles légèrement usé, mince et légère avec des plaques métalliques supplémentaires greffées dessus.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

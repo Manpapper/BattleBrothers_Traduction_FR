@@ -4,7 +4,7 @@ this.named_sellswords_armor <- this.inherit("scripts/items/armor/named/named_arm
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.named_sellswords_armor";
-		this.m.Description = "This piece of layered armor belonged to a famed mercenary once. Its high resilience and flexibility make it a remarkable piece of craftsmanship. And it even comes with extra pockets!";
+		this.m.Description = "Cette pièce d\'armure superposée appartenait autrefois à un célèbre mercenaire. Sa grande résilience et sa flexibilité en font une pièce d\'artisanat remarquable. Et il est même livré avec des poches supplémentaires !";
 		this.m.NameList = [
 			"Mercenary Coat",
 			"Sellsword\'s Hide",

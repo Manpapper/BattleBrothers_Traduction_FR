@@ -4,7 +4,7 @@ this.lindwurm_armor <- this.inherit("scripts/items/armor/named/named_armor", {
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.lindwurm_armor";
-		this.m.Description = "The sturdy scales of a fierce Lindwurm sewn together ontop a heavy chainmail. Not only is it a trophy to a great hunter, but it also deflects the fiercest of blows, and the shimmering scales remain untouched by any corroding Lindwurm blood.";
+		this.m.Description = "Les écailles robustes d\'un féroce Lindwurm cousues ensemble sur une lourde cotte de mailles. Non seulement c\'est un trophée pour un grand chasseur, mais il dévie également les coups les plus féroces, et les écailles chatoyantes restent intactes par le sang corrodé de Lindwurm.";
 		this.m.NameList = [
 			"Lindwurm Scales",
 			"Dragon\'s Hide",
@@ -32,7 +32,7 @@ this.lindwurm_armor <- this.inherit("scripts/items/armor/named/named_armor", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Unaffected by acidic Lindwurm blood"
+			text = "Insensible au sang acide de Lindwurm"
 		});
 		return result;
 	}

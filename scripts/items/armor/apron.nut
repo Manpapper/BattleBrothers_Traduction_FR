@@ -4,8 +4,8 @@ this.apron <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.apron";
-		this.m.Name = "Apron";
-		this.m.Description = "A leather apron usually worn by apprentices and craftsmen.";
+		this.m.Name = "Tablier";
+		this.m.Description = "Un tablier en cuir généralement porté par les apprentis et les artisans.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 10;

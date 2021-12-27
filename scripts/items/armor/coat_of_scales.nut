@@ -4,8 +4,8 @@ this.coat_of_scales <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.coat_of_scales";
-		this.m.Name = "Coat of Scales";
-		this.m.Description = "A heavy armor made of thick, overlapping metal scales covering most of the body.";
+		this.m.Name = "Manteau d\'écailles";
+		this.m.Description = "Une armure lourde faite d\'écailles métalliques épaisses et superposées couvrant la majeure partie du corps.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

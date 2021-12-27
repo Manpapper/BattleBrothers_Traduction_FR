@@ -4,7 +4,7 @@ this.green_coat_of_plates_armor <- this.inherit("scripts/items/armor/named/named
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.green_coat_of_plates";
-		this.m.Description = "A rare coat of plates enhanced with chainmail and additional padding. A piece of true craftsmanship!";
+		this.m.Description = "Une rare couche de plaques rehaussée de cotte de mailles et de rembourrage supplémentaire. Une vraie pièce d\'artisanat !";
 		this.m.NameList = [
 			"Coat of Plates",
 			"Bulwark",

@@ -4,8 +4,8 @@ this.southern_long_mail_with_padding <- this.inherit("scripts/items/armor/armor"
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.southern_long_mail_with_padding";
-		this.m.Name = "Southern Long Mail Shirt with Padding";
-		this.m.Description = "A long and heavy mail shirt with a thickly padded coat.";
+		this.m.Name = "Chemise longue du sud en mailles avec rembourrage";
+		this.m.Description = "Une chemise de mailles longue et lourde avec un manteau épais rembourré.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

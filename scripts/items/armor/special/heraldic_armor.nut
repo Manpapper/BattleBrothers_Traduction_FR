@@ -6,8 +6,8 @@ this.heraldic_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.heraldic_armor";
-		this.m.Name = "Heraldic Hauberk";
-		this.m.Description = "A mail hauberk reinforced with shoulder pauldrons, additional metal plating and a riveted leather armor, covered with a tabbard in a noble houses\' colors.";
+		this.m.Name = "Haubert héraldique";
+		this.m.Description = "Un haubert en maille renforcé d\'épaulettes, d\'un placage métallique supplémentaire et d\'une armure de cuir rivetée, recouvert d\'un tabbard aux couleurs des maisons nobles.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

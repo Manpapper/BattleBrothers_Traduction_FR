@@ -4,8 +4,8 @@ this.mail_and_lamellar_plating <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.mail_and_lamellar_plating";
-		this.m.Name = "Mail with Lamellar Plating";
-		this.m.Description = "A lamellar shirt made from interlapping metal plates worn atop a mail shirt.";
+		this.m.Name = "Cotte de mailles avec placage lamellaire";
+		this.m.Description = "Une chemise lamellaire faite de plaques de métal imbriquées portées sur une cotte de mailles.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

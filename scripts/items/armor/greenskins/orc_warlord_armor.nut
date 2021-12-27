@@ -5,7 +5,7 @@ this.orc_warlord_armor <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.updateVariant();
 		this.m.ID = "armor.body.orc_warlord_armor";
-		this.m.Name = "Heavy Armor";
+		this.m.Name = "Armure lourde";
 		this.m.Description = "";
 		this.m.IconLarge = "";
 		this.m.Icon = "";

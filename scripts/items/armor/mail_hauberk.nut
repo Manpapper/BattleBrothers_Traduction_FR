@@ -4,8 +4,8 @@ this.mail_hauberk <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.mail_hauberk";
-		this.m.Name = "Mail Hauberk";
-		this.m.Description = "A long and heavy chainmail that offers good protection but is very fatiguing to wear.";
+		this.m.Name = "Haubert de mailles";
+		this.m.Description = "Une cotte de mailles longue et lourde qui offre une bonne protection mais est très fatigante à porter.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

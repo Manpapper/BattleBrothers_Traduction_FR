@@ -4,8 +4,8 @@ this.padded_vest <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.padded_vest";
-		this.m.Name = "Padded Vest";
-		this.m.Description = "A thick cloth vest padded with dense wool to protect against blunt hits.";
+		this.m.Name = "Gilet rembourré";
+		this.m.Description = "Un gilet en tissu épais rembourré de laine dense pour protéger contre les coups contondants.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

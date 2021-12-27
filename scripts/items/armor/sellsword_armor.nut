@@ -4,8 +4,8 @@ this.sellsword_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.sellsword_armor";
-		this.m.Name = "Sellsword\'s Armor";
-		this.m.Description = "A long leather coat reinforced with metal plates worn over a sturdy mail hauberk.";
+		this.m.Name = "Armure de mercenaire";
+		this.m.Description = "Un long manteau en cuir renforcé de plaques de métal porté sur un solide haubert de mailles.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 86;

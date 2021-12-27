@@ -4,8 +4,8 @@ this.decayed_coat_of_scales <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.decayed_coat_of_scales";
-		this.m.Name = "Decayed Coat of Scales";
-		this.m.Description = "This coat of scales is worn and parts have come lose or are missing. It still offers very good protection if you don\'t mind the smell.";
+		this.m.Name = "Manteau d\'écailles pourri";
+		this.m.Description = "Ce manteau d\'écailles est usé et des pièces se sont perdues ou sont manquantes. Il offre toujours une très bonne protection si l\'odeur ne vous dérange pas.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

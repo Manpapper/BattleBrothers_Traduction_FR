@@ -4,8 +4,8 @@ this.patched_mail_shirt <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.patched_mail_shirt";
-		this.m.Name = "Patched Mail Shirt";
-		this.m.Description = "This light mail shirt has seen better times but still grants decent protection.";
+		this.m.Name = "Chemise en maille à patchs";
+		this.m.Description = "Cette chemise en maille légère a connu des temps meilleurs mais offre toujours une protection décente.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

@@ -4,7 +4,7 @@ this.named_skull_and_chain_armor <- this.inherit("scripts/items/armor/named/name
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.named_skull_and_chain_armor";
-		this.m.Description = "A barbarian armor of crude making that has been adjusted to protect without being too cumbersome. It wears the typical markings of the northern barbarian tribes.";
+		this.m.Description = "Une armure barbare de fabrication grossière qui a été ajustée pour protéger sans être trop encombrante. Elle porte les marques typiques des tribus barbares du nord.";
 		this.m.NameList = [
 			"Tribal Hide",
 			"Barbarian Coat",

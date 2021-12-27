@@ -4,8 +4,8 @@ this.decayed_coat_of_plates <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.decaying_coat_of_plates";
-		this.m.Name = "Decayed Coat of Plates";
-		this.m.Description = "A somewhat decayed coat of plates with rusted metal and brittle leather parts. Has probably been laying in the open for a while.";
+		this.m.Name = "Manteau de plaques pourri";
+		this.m.Description = "Une couche de plaques quelque peu délabrée avec des pièces en métal rouillé et en cuir cassant. A probablement été à l\'air libre pendant un certain temps.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

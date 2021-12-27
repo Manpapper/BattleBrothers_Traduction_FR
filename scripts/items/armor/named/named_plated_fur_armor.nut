@@ -4,7 +4,7 @@ this.named_plated_fur_armor <- this.inherit("scripts/items/armor/named/named_arm
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.named_plated_fur_armor";
-		this.m.Description = "A simple fur and leather armor with thick layers of metal plates rivetted ontop. A very simple and heavy design, but quite effective in combat.";
+		this.m.Description = "Une simple armure de fourrure et de cuir avec d\'épaisses couches de plaques métalliques rivetées sur le dessus. Une conception très simple et lourde, mais assez efficace au combat.";
 		this.m.NameList = [
 			"Plated Fur Armor",
 			"Plate Harness",

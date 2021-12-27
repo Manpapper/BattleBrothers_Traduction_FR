@@ -4,7 +4,7 @@ this.golden_scale_armor <- this.inherit("scripts/items/armor/named/named_armor",
 	{
 		this.named_armor.create();
 		this.m.ID = "armor.body.golden_scale";
-		this.m.Description = "A scale armor made of small, interlocking metal scales. The style and craftsmanship hint at the armor coming from a far-away region.";
+		this.m.Description = "Une armure en écailles composée de petites écailles métalliques imbriquées. Le style et l\'artisanat font allusion à l\'armure provenant d\'une région lointaine.";
 		this.m.NameList = [
 			"Scale Shirt",
 			"Scale Armor",

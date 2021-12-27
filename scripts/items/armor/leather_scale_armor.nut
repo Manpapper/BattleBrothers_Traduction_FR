@@ -4,8 +4,8 @@ this.leather_scale_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.leather_scale";
-		this.m.Name = "Leather Scale Armor";
-		this.m.Description = "A mail shirt worn under a thick leather scale armor for added protection.";
+		this.m.Name = "Armure d\'écailles en cuir";
+		this.m.Description = "Une cotte de mailles portée sous une armure d\'écailles de cuir épais pour une protection supplémentaire.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 83;

@@ -4,8 +4,8 @@ this.thick_dark_tunic <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.thick_dark_tunic";
-		this.m.Name = "Dark Thick Tunic";
-		this.m.Description = "A dark and thick cloth tunic consisting of multiple layers to protect against weather and scratches.";
+		this.m.Name = "Tunique épaisse sombre";
+		this.m.Description = "Une tunique en tissu sombre et épais composée de plusieurs couches pour protéger contre les intempéries et les égratignures.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 60;

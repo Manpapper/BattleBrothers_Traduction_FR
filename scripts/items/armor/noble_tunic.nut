@@ -4,8 +4,8 @@ this.noble_tunic <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.noble_tunic";
-		this.m.Name = "Noble Tunic";
-		this.m.Description = "A fine linen tunic of exquisite material, embroided with pleasing patterns. Fashionable but offering little in protection.";
+		this.m.Name = "Tunique de noble";
+		this.m.Description = "Une tunique en lin fin d\'une matière exquise, brodée de motifs agréables. À la mode mais offrant peu de protection.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 8;

@@ -4,8 +4,8 @@ this.padded_mail_and_lamellar_hauberk <- this.inherit("scripts/items/armor/armor
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.padded_mail_and_lamellar_hauberk";
-		this.m.Name = "Padded Mail and Lamellar Hauberk";
-		this.m.Description = "A heavy composite armor consisting of mail coat, padding and lamellar elements.";
+		this.m.Name = "Mailles rembourrées et haubert lamellaire";
+		this.m.Description = "Une armure composite lourde composée d\'une cotte de mailles, d\'un rembourrage et d\'éléments lamellaires.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

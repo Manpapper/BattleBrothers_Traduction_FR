@@ -4,8 +4,8 @@ this.werewolf_hide_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.werewolf_hide";
-		this.m.Name = "Direwolf Hide Armor";
-		this.m.Description = "A thick leather armor skillfully crafted from the pelt of a giant wolf. Donning the skin of a beast like this can turn one into an imposing figure.";
+		this.m.Name = "Armure en peau de loup-garou";
+		this.m.Description = "Une armure de cuir épais habilement fabriquée à partir de la peau d'un loup géant. Enfiler la peau d\'une bête comme celle-ci peut en faire une silhouette imposante.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

@@ -4,8 +4,8 @@ this.assassin_robe <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.assassin_robe";
-		this.m.Name = "Assassin\'s Robe";
-		this.m.Description = "The dark robes of an assassin. Fine chainmail is tied and woven tightly into the fabric.";
+		this.m.Name = "Robe d\'assassin";
+		this.m.Description = "Les robes sombres d\'un assassin. Une cotte de mailles fine est attachée et tissée étroitement dans le tissu.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

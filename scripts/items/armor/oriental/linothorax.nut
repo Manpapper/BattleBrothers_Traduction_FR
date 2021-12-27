@@ -5,7 +5,7 @@ this.linothorax <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.m.ID = "armor.body.linothorax";
 		this.m.Name = "Linothorax";
-		this.m.Description = "A breastplate made of several layers of linen.";
+		this.m.Description = "Un plastron fait de plusieurs épaisseurs de lin.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

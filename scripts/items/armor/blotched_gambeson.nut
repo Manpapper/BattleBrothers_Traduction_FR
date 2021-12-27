@@ -4,8 +4,8 @@ this.blotched_gambeson <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.blotched_gambeson";
-		this.m.Name = "Blotched Gambeson";
-		this.m.Description = "A padded gambeson that has seen lots of patching and repairing.";
+		this.m.Name = "Gambison tacheté";
+		this.m.Description = "Un gambison rembourré qui a subi de nombreux correctifs et réparations.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 21;

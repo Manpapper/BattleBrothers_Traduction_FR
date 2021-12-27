@@ -173,7 +173,7 @@ this.armor <- this.inherit("scripts/items/item", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color] de Fatigue Maximum"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color] Fatigue Maximum "
 			});
 		}
 

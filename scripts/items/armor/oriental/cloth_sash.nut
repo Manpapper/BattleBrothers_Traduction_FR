@@ -4,8 +4,8 @@ this.cloth_sash <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.cloth_sash";
-		this.m.Name = "Cloth Sash";
-		this.m.Description = "A double sash made from thick cloth that is worn across the body.";
+		this.m.Name = "Écharpe en tissu";
+		this.m.Description = "Une double ceinture en tissu épais qui se porte en travers du corps.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

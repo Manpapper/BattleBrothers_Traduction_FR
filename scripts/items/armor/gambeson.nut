@@ -4,8 +4,8 @@ this.gambeson <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.gambeson";
-		this.m.Name = "Gambeson";
-		this.m.Description = "A sturdy and heavy padded tunic that offers decent protection.";
+		this.m.Name = "Gambison";
+		this.m.Description = "Une tunique rembourrée robuste et lourde qui offre une protection décente.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

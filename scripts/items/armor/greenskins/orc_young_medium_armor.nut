@@ -5,7 +5,7 @@ this.orc_young_medium_armor <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.updateVariant();
 		this.m.ID = "armor.body.orc_young_medium_armor";
-		this.m.Name = "Hide Armor";
+		this.m.Name = "Armure de peaux";
 		this.m.Description = "";
 		this.m.IconLarge = "";
 		this.m.Icon = "";

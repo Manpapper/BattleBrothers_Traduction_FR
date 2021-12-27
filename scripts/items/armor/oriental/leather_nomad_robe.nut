@@ -4,8 +4,8 @@ this.leather_nomad_robe <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.leather_nomad_robe";
-		this.m.Name = "Leather Nomad Robe";
-		this.m.Description = "A thick cloth robe with added leather parts for increased protection.";
+		this.m.Name = "Robe nomade en cuir";
+		this.m.Description = "Une robe en tissu épais avec des parties en cuir ajoutées pour une protection accrue.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.VariantString = "body_southern";

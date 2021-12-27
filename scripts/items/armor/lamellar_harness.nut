@@ -4,8 +4,8 @@ this.lamellar_harness <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.lamellar_harness";
-		this.m.Name = "Lamellar Harness";
-		this.m.Description = "A body armor made of thick overlapping metal plates that cover most of the upper body.";
+		this.m.Name = "Harnais Lamellaire";
+		this.m.Description = "Un gilet fait d\'épaisses plaques de métal superposées qui recouvrent la majeure partie du haut du corps.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

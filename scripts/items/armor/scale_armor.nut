@@ -4,8 +4,8 @@ this.scale_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.scale_armor";
-		this.m.Name = "Scale Armor";
-		this.m.Description = "A body vest with overlapping scales worn over a small mail shirt.";
+		this.m.Name = "Armure d\'écailles";
+		this.m.Description = "Un gilet de corps avec des écailles qui se chevauchent porté sur une petite chemise de mailles.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
