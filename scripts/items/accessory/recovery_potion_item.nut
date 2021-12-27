@@ -3,8 +3,8 @@ this.recovery_potion_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "accessory.recovery_potion";
-		this.m.Name = "Second Wind Potion";
-		this.m.Description = "A fatigued fighter is a dead fighter. This concoction of adrenaline and plant-based stimulants can be used to go the extra mile. Lasts for the next battle.";
+		this.m.Name = "Potion du deuxième vent";
+		this.m.Description = "Un combattant fatigué est un combattant mort. Cette concoction d\'adrénaline et de stimulants à base de plantes peut être utilisée pour faire un effort supplémentaire. Dure pour la prochaine bataille.";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
 		this.m.IsDroppedAsLoot = true;
@@ -57,18 +57,18 @@ this.recovery_potion_item <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Fatigue Recovery per turn"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Récupération de fatigue par tour"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Overindulgence may lead to sickness"
+			text = "L\'excès peut conduire à la maladie"
 		});
 		return result;
 	}

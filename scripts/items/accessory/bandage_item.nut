@@ -5,7 +5,7 @@ this.bandage_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.accessory.create();
 		this.m.ID = "accessory.bandage";
 		this.m.Name = "Bandages";
-		this.m.Description = "Clean bandages that can be used in combat to apply pressure to bleeding wounds and stop any hemorrhaging.";
+		this.m.Description = "Des bandages propres qui peuvent être utilisés au combat pour appliquer une pression sur les plaies saignantes et arrêter toute hémorragie.";
 		this.m.SlotType = this.Const.ItemSlot.Bag;
 		this.m.IsAllowedInBag = true;
 		this.m.IsDroppedAsLoot = true;

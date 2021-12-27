@@ -4,8 +4,8 @@ this.ghoul_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.ghoul_trophy";
-		this.m.Name = "Nachzehrer Trophy Necklace";
-		this.m.Description = "This necklace fashioned from trophies taken of various Nachzehrers declares the one wearing it a veteran of battle against feral beasts, and not easily daunted.";
+		this.m.Name = "Collier Trophée de Nachzehrer";
+		this.m.Description = "Ce collier fabriqué à partir de trophées prélevés sur divers Nachzehrers déclare que celui qui le porte est un vétéran de batailles contre les bêtes sauvages et qu\'il n\'est pas facile à intimider.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,7 +57,7 @@ this.ghoul_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Resolve"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+4[/color] Détermination"
 		});
 		return result;
 	}

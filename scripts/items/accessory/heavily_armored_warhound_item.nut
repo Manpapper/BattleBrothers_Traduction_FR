@@ -4,7 +4,7 @@ this.heavily_armored_warhound_item <- this.inherit("scripts/items/accessory/warh
 	{
 		this.warhound_item.create();
 		this.m.ID = "accessory.heavily_armored_warhound";
-		this.m.Description = "A strong and loyal northern hound bred for war. Can be unleashed in battle for scouting, tracking or running down routing enemies. This one wears a heavy hide coat for protection.";
+		this.m.Description = "Un chien du nord fort et loyal, élevé pour la guerre. Peut être déclenché au combat pour repérer, traquer ou chasser les ennemis en déroute. Celui-ci porte un épais manteau de peau pour se protéger.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = false;

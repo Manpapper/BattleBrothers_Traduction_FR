@@ -4,8 +4,8 @@ this.hexen_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.hexen_trophy";
-		this.m.Name = "Hexen Trophy Necklace";
-		this.m.Description = "This necklace fashioned from trophies taken of slain Hexen declares the one wearing it a veteran of battle against vile sorcery, and not easily daunted.";
+		this.m.Name = "Collier Trophée Hexen";
+		this.m.Description = "Ce collier fabriqué à partir de trophées récupérés sur des Hexen tuées déclare que celui qui le porte est un vétéran de batailles contre la vile sorcellerie et qu\'il n\'est pas facile à intimider.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,7 +57,7 @@ this.hexen_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+6[/color] Resolve"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+6[/color] Détermination"
 		});
 		return result;
 	}

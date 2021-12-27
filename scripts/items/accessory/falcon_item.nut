@@ -42,8 +42,8 @@ this.falcon_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.falcon";
-		this.m.Name = "Falcon";
-		this.m.Description = "A trained falcon. Can be released in battle to discover hidden prey.";
+		this.m.Name = "Faucon";
+		this.m.Description = "Un faucon dressé. Peut être relâché au combat pour découvrir des proies cachées.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = false;

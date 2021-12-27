@@ -4,8 +4,8 @@ this.goblin_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.goblin_trophy";
-		this.m.Name = "Goblin Trophy";
-		this.m.Description = "This necklace of goblin ears declares the one wearing it a veteran of many battles against the green menace, and not one to fall to their dirty little tricks anymore.";
+		this.m.Name = "Trophé Goblin";
+		this.m.Description = "Ce collier d\'oreilles de gobelin déclare celui qui le porte comme un vétéran de nombreuses batailles contre la menace verte, pas du genre à tomber dans leurs sales petits tours.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,7 +57,7 @@ this.goblin_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Grants immunity to being rooted by nets or grasping vines"
+			text = "Accorde l\'immunité contre les filets ou les vignes saisissantes"
 		});
 		return result;
 	}

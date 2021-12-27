@@ -4,8 +4,8 @@ this.sergeant_badge_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.sergeant_badge";
-		this.m.Name = "Sergeant\'s Sash";
-		this.m.Description = "A sash worn by the company\'s sergeant, your second-in-command on the battlefield.";
+		this.m.Name = "Echarpe de sergent";
+		this.m.Description = "Une écharpe portée par le sergent de la compagnie, votre commandant en second sur le champ de bataille.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,7 +57,7 @@ this.sergeant_badge_item <- this.inherit("scripts/items/accessory/accessory", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Resolve"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Détermination"
 		});
 		return result;
 	}

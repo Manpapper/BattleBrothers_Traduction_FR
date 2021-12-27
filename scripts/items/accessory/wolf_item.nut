@@ -38,7 +38,7 @@ this.wolf_item <- this.inherit("scripts/items/accessory/accessory", {
 		}
 		else
 		{
-			return "Wolf Collar";
+			return "Collier de loup";
 		}
 	}
 
@@ -50,7 +50,7 @@ this.wolf_item <- this.inherit("scripts/items/accessory/accessory", {
 		}
 		else
 		{
-			return "The collar of a wolf that has been unleashed onto the battlefield.";
+			return "Le collier d\'un loup qui a été lâché sur le champ de bataille.";
 		}
 	}
 
@@ -60,8 +60,8 @@ this.wolf_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.m.Variant = this.Math.rand(1, 4);
 		this.updateVariant();
 		this.m.ID = "accessory.warwolf";
-		this.m.Name = this.Const.Strings.WardogNames[this.Math.rand(0, this.Const.Strings.WardogNames.len() - 1)] + " the Wolf";
-		this.m.Description = "A strong and wild wolf, tamed to be a loyal companion in battle. Can be unleashed in battle for scouting, tracking or running down routing enemies.";
+		this.m.Name = this.Const.Strings.WardogNames[this.Math.rand(0, this.Const.Strings.WardogNames.len() - 1)] + " Le loup";
+		this.m.Description = "Un loup fort et sauvage, apprivoisé pour être un fidèle compagnon au combat. Peut être déclenché au combat pour repérer, traquer ou chasser les ennemis en déroute.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = false;

@@ -5,7 +5,7 @@ this.antidote_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.accessory.create();
 		this.m.ID = "accessory.antidote";
 		this.m.Name = "Antidote";
-		this.m.Description = "An antidote for various types of poisons. Tastes quite bitter.";
+		this.m.Description = "Un antidote pour divers types de poisons. Goût assez amer.";
 		this.m.SlotType = this.Const.ItemSlot.Bag;
 		this.m.IsAllowedInBag = true;
 		this.m.IsDroppedAsLoot = true;

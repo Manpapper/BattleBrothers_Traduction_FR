@@ -3,8 +3,8 @@ this.berserker_mushrooms_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "accessory.berserker_mushrooms";
-		this.m.Name = "Strange Mushrooms";
-		this.m.Description = "Strange mushrooms that have anyone chewing them enter a trance-like state of rage where they don\'t feel any pain and exhibit significantly increased aggression. Eat responsibly. Lasts for the next battle.";
+		this.m.Name = "Champignons étranges";
+		this.m.Description = "Les champignons étranges, si quelqu\'un les mâche il entre dans un état de rage semblable à la transe où il ne ressent aucune douleur et présente une agressivité considérablement accrue. Mangez de façon responsable. Dure pour la prochaine bataille.";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
 		this.m.IsDroppedAsLoot = true;
@@ -57,36 +57,36 @@ this.berserker_mushrooms_item <- this.inherit("scripts/items/item", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] Damage in Melee"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] Dégâts en mêlée"
 		});
 		result.push({
 			id = 11,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] Melee Defense"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] Défense de Mêlée"
 		});
 		result.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] Ranged Defense"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] Défense à Distance"
 		});
 		result.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/morale.png",
-			text = "No morale check triggered upon losing hitpoints"
+			text = "Aucun test de moral déclenché en cas de perte de points de vie"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to eat. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour manger. Cet article sera consommé au cours du processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Overindulgence may lead to sickness"
+			text = "L\'excès peut conduire à la maladie"
 		});
 		return result;
 	}

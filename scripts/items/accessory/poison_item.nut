@@ -4,8 +4,8 @@ this.poison_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.poison";
-		this.m.Name = "Goblin Poison";
-		this.m.Description = "A flask of spider poison used by goblins. Can be used to coat your weapons and arrowtips.";
+		this.m.Name = "Poison Goblin";
+		this.m.Description = "Flacon de poison d\'araignée utilisé par les gobelins. Peut être utilisé pour empoisonner vos armes et pointes de flèches.";
 		this.m.SlotType = this.Const.ItemSlot.Bag;
 		this.m.IsAllowedInBag = true;
 		this.m.IsDroppedAsLoot = true;
@@ -23,7 +23,7 @@ this.poison_item <- this.inherit("scripts/items/accessory/accessory", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is destroyed on use"
+			text = "Détruit à l\'usage"
 		});
 		return result;
 	}

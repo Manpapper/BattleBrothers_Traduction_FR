@@ -1,18 +1,18 @@
-this.orc_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
+this.slayer_necklace_item <- this.inherit("scripts/items/accessory/accessory", {
 	m = {},
 	function create()
 	{
 		this.accessory.create();
-		this.m.ID = "accessory.orc_trophy";
-		this.m.Name = "Trophée Orc";
-		this.m.Description = "Ce collier d\'os provenant d\'un orc berserker déclare que celui qui le porte est un vétéran de nombreuses batailles contre les bêtes vertes, et non un à être battu par leur force brute.";
+		this.m.ID = "accessory.slayer_necklace";
+		this.m.Name = "";
+		this.m.Description = "Un collier fait de ce qui semble être des os d\'orcs.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.IconLarge = "";
 		this.m.Icon = "accessory/orc_trophy.png";
 		this.m.Sprite = "orc_trophy";
-		this.m.Value = 500;
+		this.m.Value = 100;
 	}
 
 	function getTooltip()
@@ -53,19 +53,19 @@ this.orc_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			});
 		}
 
-		result.push({
-			id = 10,
-			type = "text",
-			icon = "ui/icons/special.png",
-			text = "Accorde l\'immunité à l\'étourdissement"
-		});
 		return result;
 	}
 
-	function onUpdateProperties( _properties )
+	function onSerialize( _out )
 	{
-		this.accessory.onUpdateProperties(_properties);
-		_properties.IsImmuneToStun = true;
+		this.accessory.onSerialize(_out);
+		_out.writeString(this.m.Name);
+	}
+
+	function onDeserialize( _in )
+	{
+		this.accessory.onDeserialize(_in);
+		this.m.Name = _in.readString();
 	}
 
 });

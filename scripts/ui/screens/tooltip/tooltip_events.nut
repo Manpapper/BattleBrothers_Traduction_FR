@@ -1449,7 +1449,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = " Points d\'Action"
+					text = "Points d\'Action"
 				},
 				{
 					id = 2,

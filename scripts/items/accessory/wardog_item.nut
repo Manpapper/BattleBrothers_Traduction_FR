@@ -39,7 +39,7 @@ this.wardog_item <- this.inherit("scripts/items/accessory/accessory", {
 		}
 		else
 		{
-			return "Wardog Collar";
+			return "Collier de chien de combat";
 		}
 	}
 
@@ -56,7 +56,7 @@ this.wardog_item <- this.inherit("scripts/items/accessory/accessory", {
 		}
 		else
 		{
-			return "The collar of a wardog that has been unleashed onto the battlefield.";
+			return "Le collier d\'un chien de combat qui a été lâché sur le champ de bataille.";
 		}
 	}
 
@@ -66,8 +66,8 @@ this.wardog_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.m.Variant = this.Math.rand(1, 4);
 		this.updateVariant();
 		this.m.ID = "accessory.wardog";
-		this.m.Name = this.Const.Strings.WardogNames[this.Math.rand(0, this.Const.Strings.WardogNames.len() - 1)] + " the Wardog";
-		this.m.Description = "A strong and loyal dog bred for war. Can be unleashed in battle for scouting, tracking or running down routing enemies.";
+		this.m.Name = this.Const.Strings.WardogNames[this.Math.rand(0, this.Const.Strings.WardogNames.len() - 1)] + " Le chien de combat";
+		this.m.Description = "Un chien fort et fidèle élevé pour la guerre. Peut être déclenché au combat pour repérer, traquer ou chasser les ennemis en déroute.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = false;

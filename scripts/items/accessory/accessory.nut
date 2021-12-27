@@ -42,7 +42,7 @@ this.accessory <- this.inherit("scripts/items/item", {
 			result.push({
 				id = 64,
 				type = "text",
-				text = "Worn in Accessory Slot"
+				text = "Porté dans l\'emplacement pour accessoire"
 			});
 		}
 		else
@@ -50,14 +50,14 @@ this.accessory <- this.inherit("scripts/items/item", {
 			result.push({
 				id = 64,
 				type = "text",
-				text = "Carried in Bag"
+				text = "Transporté dans un sac"
 			});
 		}
 
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Usable in Combat"
+			text = "Utilisable en combat"
 		});
 
 		if (this.getIconLarge() != null)
@@ -84,7 +84,7 @@ this.accessory <- this.inherit("scripts/items/item", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Maximum Fatigue [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color]"
+				text = "Fatigue maximale [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color]"
 			});
 		}
 

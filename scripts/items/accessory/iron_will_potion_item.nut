@@ -3,8 +3,8 @@ this.iron_will_potion_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "accessory.iron_will_potion";
-		this.m.Name = "Iron Will Potion";
-		this.m.Description = "A drink to numb the pain and get the juices flowing. Expect a major burning sensation in your throat. Drink responsibly. Lasts for the next battle.";
+		this.m.Name = "Potion de volonté de fer";
+		this.m.Description = "Une boisson pour engourdir la douleur. Attendez-vous à une sensation de brûlure importante dans votre gorge. Buvez de façon responsable. Dure pour la prochaine bataille.";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
 		this.m.IsDroppedAsLoot = true;
@@ -57,18 +57,18 @@ this.iron_will_potion_item <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Not affected by non-permanent injuries, new or old"
+			text = "Non affecté par les blessures non permanentes, nouvelles ou anciennes"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Overindulgence may lead to sickness"
+			text = "L\'excès peut conduire à la maladie"
 		});
 		return result;
 	}

@@ -3,8 +3,8 @@ this.lionheart_potion_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "accessory.lionheart_potion";
-		this.m.Name = "Lionheart Potion";
-		this.m.Description = "Be brave as a lion! This potion inhibits fear and promotes courage, up to and including the gross overestimation of one\'s own abilities. Drink responsibly. Lasts for the next battle.";
+		this.m.Name = "Potion Coeur de Lion";
+		this.m.Description = "Soyez courageux comme un lion ! Cette potion inhibe la peur et favorise le courage, jusqu\'à et y compris la surestimation grossière de ses propres capacités. Buvez de façon responsable. Dure pour la prochaine bataille.";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
 		this.m.IsDroppedAsLoot = true;
@@ -57,18 +57,18 @@ this.lionheart_potion_item <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Résolution"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Overindulgence may lead to sickness"
+			text = "L\'excès peut conduire à la maladie"
 		});
 		return result;
 	}

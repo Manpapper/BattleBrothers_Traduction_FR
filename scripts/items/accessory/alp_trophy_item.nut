@@ -4,8 +4,8 @@ this.alp_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.alp_trophy";
-		this.m.Name = "Alp Trophy Necklace";
-		this.m.Description = "This necklace fashioned from trophies taken of various Alps declares the one wearing it a veteran of battle against supernatural nocturnal predators, and not easily daunted.";
+		this.m.Name = "Collier Trophée d\'Alp";
+		this.m.Description = "Ce collier façonné à partir de trophées prélevés sur divers Alps déclare celui qui le porte comme un vétéran de batailles contre les prédateurs nocturnes surnaturels, et difficilement intimidable.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,7 +57,7 @@ this.alp_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Resolve"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Détermination"
 		});
 		return result;
 	}

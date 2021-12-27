@@ -4,7 +4,7 @@ this.heavily_armored_wardog_item <- this.inherit("scripts/items/accessory/wardog
 	{
 		this.wardog_item.create();
 		this.m.ID = "accessory.heavily_armored_wardog";
-		this.m.Description = "A strong and loyal dog bred for war. Can be unleashed in battle for scouting, tracking or running down routing enemies. This one wears a heavy hide coat for protection.";
+		this.m.Description = "Un chien fort et fidèle élevé pour la guerre. Peut être déclenché au combat pour repérer, traquer ou chasser les ennemis en déroute. Celui-ci porte un épais manteau de peau pour se protéger.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = false;

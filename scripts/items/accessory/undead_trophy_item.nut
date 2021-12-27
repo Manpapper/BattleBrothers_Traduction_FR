@@ -4,8 +4,8 @@ this.undead_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.undead_trophy";
-		this.m.Name = "Undead Trophy";
-		this.m.Description = "This ancient necklace taken from a pile of bones declares the one wearing it a veteran of many battles against the undead scourge, and one not to waver easily in the face of their horror.";
+		this.m.Name = "Trophée morts-vivant";
+		this.m.Description = "Cet ancien collier tiré d\'un tas d\'os déclare celui qui le porte un vétéran de nombreuses batailles contre le fléau morts-vivant, et un homme à ne pas faiblir facilement face à leur horreur.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,7 +57,7 @@ this.undead_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Doubles your Resolve if defending against fear and mind control abilities"
+			text = "Double votre résolution si vous vous défendez contre la peur et les capacités de contrôle mental"
 		});
 		return result;
 	}
