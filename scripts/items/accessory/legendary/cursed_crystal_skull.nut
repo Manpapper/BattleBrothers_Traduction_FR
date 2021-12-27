@@ -4,8 +4,8 @@ this.cursed_crystal_skull <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.cursed_crystal_skull";
-		this.m.Name = "Cursed Crystal Skull";
-		this.m.Description = "An eerie skull carved from a single large crystal. No scratch or other mark can be seen on its surface. Just being near it kills the fire of determination in almost any man, breaks hope and lets sprout doubts.";
+		this.m.Name = "Crâne de cristal maudit";
+		this.m.Description = "Un crâne étrange sculpté dans un seul grand cristal. Aucune rayure ou autre marque n\'est visible sur sa surface. Le simple fait d\'être près d\'elle tue le feu de la détermination chez presque n\'importe quel homme, brise l\'espoir et laisse germer les doutes.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,13 +57,13 @@ this.cursed_crystal_skull <- this.inherit("scripts/items/accessory/accessory", {
 			id = 15,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color]"
+			text = "Réduit la Résolution de tout adversaire engagé en mêlée de [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color]"
 		});
 		result.push({
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "User can never have [color=" + this.Const.UI.Color.NegativeValue + "]confident[/color] morale"
+			text = "L\'utilisateur ne peut jamais avoir un moral [color=" + this.Const.UI.Color.NegativeValue + "]confiant[/color]"
 		});
 		return result;
 	}

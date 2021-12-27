@@ -4,8 +4,8 @@ this.arena_collar_item <- this.inherit("scripts/items/accessory/accessory", {
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.arena_collar";
-		this.m.Name = "Arena Collar";
-		this.m.Description = "A collar worn by combatants in southern arenas.";
+		this.m.Name = "Collier d\'arène";
+		this.m.Description = "Un collier porté par les combattants dans les arènes du sud.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = false;
 		this.m.ShowOnCharacter = true;

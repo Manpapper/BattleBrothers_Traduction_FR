@@ -5,7 +5,7 @@ this.slayer_necklace_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.accessory.create();
 		this.m.ID = "accessory.slayer_necklace";
 		this.m.Name = "";
-		this.m.Description = "A necklace made out of what appear to be orc bones.";
+		this.m.Description = "Un collier fait de ce qui semble être des os d\'orcs.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
