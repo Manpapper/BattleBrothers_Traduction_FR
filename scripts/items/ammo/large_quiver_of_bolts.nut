@@ -3,8 +3,8 @@ this.large_quiver_of_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	function create()
 	{
 		this.m.ID = "ammo.bolts";
-		this.m.Name = "Large Quiver of Bolts";
-		this.m.Description = "A large quiver of bolts, required to use crossbows. Is automatically refilled after each battle if you have enough ammunition.";
+		this.m.Name = "Grand carquois de carreaux";
+		this.m.Description = "Un grand carquois de carreaux, nécessaire pour utiliser des arbalètes. Est automatiquement rechargé après chaque combat si vous avez suffisamment de munitions.";
 		this.m.Icon = "ammo/quiver_04.png";
 		this.m.IconEmpty = "ammo/quiver_04_empty.png";
 		this.m.SlotType = this.Const.ItemSlot.Ammo;
@@ -64,7 +64,7 @@ this.large_quiver_of_bolts <- this.inherit("scripts/items/ammo/ammo", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Contains [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Ammo + "[/color] bolts"
+				text = "Contient [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Ammo + "[/color] carreaux"
 			});
 		}
 		else
@@ -73,7 +73,7 @@ this.large_quiver_of_bolts <- this.inherit("scripts/items/ammo/ammo", {
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Is empty and useless[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Est vide et inutile[/color]"
 			});
 		}
 

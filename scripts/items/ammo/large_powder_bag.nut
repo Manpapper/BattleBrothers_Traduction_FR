@@ -3,8 +3,8 @@ this.large_powder_bag <- this.inherit("scripts/items/ammo/ammo", {
 	function create()
 	{
 		this.m.ID = "ammo.powder";
-		this.m.Name = "Large Powder Bag";
-		this.m.Description = "A large bag of black powder, used for arming exotic firearms. Is automatically refilled after each battle if you have enough ammunition.";
+		this.m.Name = "Grand sac de poudre noire";
+		this.m.Description = "Un grand sac de poudre noire, utilisé pour charger des armes à feu exotiques. Est automatiquement rechargé après chaque combat si vous avez suffisamment de munitions.";
 		this.m.Icon = "ammo/powder_bag_large.png";
 		this.m.IconEmpty = "ammo/powder_bag_large_empty.png";
 		this.m.SlotType = this.Const.ItemSlot.Ammo;
@@ -63,7 +63,7 @@ this.large_powder_bag <- this.inherit("scripts/items/ammo/ammo", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Contains powder for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Ammo + "[/color] uses"
+				text = "Contient de la poudre pour [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Ammo + "[/color] utilisations"
 			});
 		}
 		else
@@ -72,7 +72,7 @@ this.large_powder_bag <- this.inherit("scripts/items/ammo/ammo", {
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Is empty and useless[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Est vide et inutile[/color]"
 			});
 		}
 
