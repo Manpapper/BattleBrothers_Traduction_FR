@@ -4,8 +4,8 @@ this.craftable_lindwurm_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.craftable_lindwurm";
-		this.m.Name = "Lindwurm Shield";
-		this.m.Description = "This sturdy shield fashioned from the shimmering scales of a Lindwurm makes for protection nigh indestructible.";
+		this.m.Name = "Bouclier Lindwurm";
+		this.m.Description = "Ce bouclier robuste fabriqué à partir des écailles chatoyantes d\'un Lindwurm offre une protection presque indestructible.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 7;

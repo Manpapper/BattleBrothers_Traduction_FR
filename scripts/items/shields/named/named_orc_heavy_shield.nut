@@ -8,7 +8,7 @@ this.named_orc_heavy_shield <- this.inherit("scripts/items/shields/named/named_s
 		this.m.ID = "shield.named_orc_heavy_shield";
 		this.m.NameList = this.Const.Strings.ShieldNames;
 		this.m.UseRandomName = false;
-		this.m.Description = "A massive metal shield that is almost impossible to destroy but very heavy and fatiguing to wear for any human.";
+		this.m.Description = "Un bouclier métallique massif qui est presque impossible à détruire mais très lourd et fatiguant à porter pour tout humain.";
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;

@@ -4,8 +4,8 @@ this.metal_round_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.metal_round_shield";
-		this.m.Name = "Sipar Shield";
-		this.m.Description = "A full metal round shield of southern design. Quite heavy, but also durable.";
+		this.m.Name = "Bouclier Sipar";
+		this.m.Description = "Un bouclier rond entièrement en métal de conception méridionale. Assez lourd, mais aussi durable.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;

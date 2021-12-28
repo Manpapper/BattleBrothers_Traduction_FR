@@ -4,8 +4,8 @@ this.worn_heater_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.worn_heater_shield";
-		this.m.Name = "Decayed Heater Shield";
-		this.m.Description = "A rotten triangular wooden shield covered with leather, canvas and moss.";
+		this.m.Name = "Écu pourri";
+		this.m.Description = "Un bouclier en bois triangulaire pourri recouvert de cuir, de toile et de mousse.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = this.Math.rand(1, 5);

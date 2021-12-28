@@ -4,8 +4,8 @@ this.worn_kite_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.worn_kite_shield";
-		this.m.Name = "Worn Kite Shield";
-		this.m.Description = "An elongated wooden shield that offers good protection also to the lower body. Somewhat bulky to handle in close combat engagements.";
+		this.m.Name = "Bouclier normand usé";
+		this.m.Description = "Un bouclier en bois allongé qui offre une bonne protection également au bas du corps. Un peu encombrant à gérer dans les engagements de combat rapproché.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.updateVariant();

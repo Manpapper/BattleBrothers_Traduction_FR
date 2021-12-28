@@ -4,8 +4,8 @@ this.wooden_shield_old <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.wooden_shield_old";
-		this.m.Name = "Old Wooden Shield";
-		this.m.Description = "An old round wooden shield.";
+		this.m.Name = "Bouclier en bois ancien";
+		this.m.Description = "Un vieux bouclier rond en bois.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.updateVariant();

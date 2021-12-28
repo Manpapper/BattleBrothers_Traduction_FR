@@ -7,7 +7,7 @@ this.named_red_white_shield <- this.inherit("scripts/items/shields/named/named_s
 		this.updateVariant();
 		this.m.ID = "shield.named_red_white";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A large and thick wooden shield of foreign style. It offers great protection despite its peculiar form.";
+		this.m.Description = "Un grand et épais bouclier en bois de style étranger. Il offre une grande protection malgré sa forme particulière.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 800;

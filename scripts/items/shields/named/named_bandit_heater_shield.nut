@@ -7,7 +7,7 @@ this.named_bandit_heater_shield <- this.inherit("scripts/items/shields/named/nam
 		this.updateVariant();
 		this.m.ID = "shield.named_bandit_heater";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A sturdy triangular shield well suited for close combat. This one is an exceptionally well-crafted and balanced exemplar.";
+		this.m.Description = "Un bouclier triangulaire robuste bien adapté au combat rapproché. Celui-ci est un exemplaire exceptionnellement bien conçu et équilibré.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 600;

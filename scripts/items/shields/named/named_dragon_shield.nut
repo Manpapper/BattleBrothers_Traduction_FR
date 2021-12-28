@@ -7,7 +7,7 @@ this.named_dragon_shield <- this.inherit("scripts/items/shields/named/named_shie
 		this.updateVariant();
 		this.m.ID = "shield.named_dragon";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A large kite shield covered in drawings. Extraordinary craftsmanship went into making this piece.";
+		this.m.Description = "Un grand bouclier normand couvert de dessins. Un savoir-faire extraordinaire est entré dans la fabrication de cette pièce.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 800;

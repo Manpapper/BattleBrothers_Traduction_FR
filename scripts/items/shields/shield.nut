@@ -150,7 +150,7 @@ this.shield <- this.inherit("scripts/items/item", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Les compétences de bouclier produisent [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.FatigueOnSkillUse + "[/color] de Fatigue en plus"
+				text = "Les compétences de bouclier génèrent [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.FatigueOnSkillUse + "[/color] de Fatigue en plus"
 			});
 		}
 		else if (this.m.FatigueOnSkillUse < 0)
@@ -159,7 +159,7 @@ this.shield <- this.inherit("scripts/items/item", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Les compétences de bouclier produisent [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.FatigueOnSkillUse + "[/color] de Fatigue en moins"
+				text = "Les compétences de bouclier génèrent [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.FatigueOnSkillUse + "[/color] de Fatigue en moins"
 			});
 		}
 
@@ -169,7 +169,7 @@ this.shield <- this.inherit("scripts/items/item", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Cassé et inutilisable [/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Cassé et inutilisable[/color]"
 			});
 		}
 

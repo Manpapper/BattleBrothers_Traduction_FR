@@ -4,8 +4,8 @@ this.faction_wooden_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.faction_wooden_shield";
-		this.m.Name = "Wooden Shield";
-		this.m.Description = "A round wooden shield.";
+		this.m.Name = "Bouclier en bois";
+		this.m.Description = "Un bouclier rond en bois.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 1;

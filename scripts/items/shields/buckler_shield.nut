@@ -4,8 +4,8 @@ this.buckler_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.buckler";
-		this.m.Name = "Buckler";
-		this.m.Description = "A small but sturdy shield gripped in the fist. Offers poor protection against ranged attacks but can be useful in deflecting blows in melee.";
+		this.m.Name = "Bocle";
+		this.m.Description = "Un bouclier petit mais solide agrippé au poing. Offre une faible protection contre les attaques à distance mais peut être utile pour dévier les coups au corps à corps.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;

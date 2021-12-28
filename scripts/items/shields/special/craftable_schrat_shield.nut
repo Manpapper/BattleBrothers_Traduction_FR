@@ -4,8 +4,8 @@ this.craftable_schrat_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.craftable_schrat";
-		this.m.Name = "Living Tree Shield";
-		this.m.Description = "This shield carved out of the remains of a living tree slowly regrows if it sustains any damage. At a glance, it almost looks as if its grotesque face is still moving.";
+		this.m.Name = "Bouclier d'arbre vivant";
+		this.m.Description = "Ce bouclier taillé dans les restes d\'un arbre vivant repousse lentement s\'il subit des dommages. Au premier coup d\'oeil, on dirait presque que son visage grotesque bouge toujours.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 8;
@@ -34,7 +34,7 @@ this.craftable_schrat_shield <- this.inherit("scripts/items/shields/shield", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Regenerates itself by [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] points of durability each turn."
+			text = "Se régénère de [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] points de durabilité chaque tour."
 		});
 		return result;
 	}

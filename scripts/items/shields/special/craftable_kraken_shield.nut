@@ -4,8 +4,8 @@ this.craftable_kraken_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.craftable_kraken";
-		this.m.Name = "Kraken Shield";
-		this.m.Description = "This shield, carved out of a horn plate taken from a giant kraken, is stronger than any common shield.";
+		this.m.Name = "Bouclier Kraken";
+		this.m.Description = "Ce bouclier, taillé dans une plaque de corne provenant d\'un kraken géant, est plus fort que n\'importe quel bouclier commun.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 9;

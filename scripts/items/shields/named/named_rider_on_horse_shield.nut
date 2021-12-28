@@ -7,7 +7,7 @@ this.named_rider_on_horse_shield <- this.inherit("scripts/items/shields/named/na
 		this.updateVariant();
 		this.m.ID = "shield.named_rider_on_horse";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A relic heater shield covered in iconographic images. It seem to be old, yet is durable and well to handle.";
+		this.m.Description = "Un écu couvert d\'images iconographiques. Il semble être vieux, mais il est durable et bien maniable.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 1000;

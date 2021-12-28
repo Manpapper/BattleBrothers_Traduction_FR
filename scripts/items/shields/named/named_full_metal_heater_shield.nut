@@ -7,7 +7,7 @@ this.named_full_metal_heater_shield <- this.inherit("scripts/items/shields/named
 		this.updateVariant();
 		this.m.ID = "shield.named_full_metal_heater";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A finely crafted heater shield made almost entirely out of metal. Heavy and durable, yet lighter than it looks. The craftsmen who made this must have truly been a master of his trade.";
+		this.m.Description = "Un écu finement conçu presque entièrement en métal. Lourd et durable, mais plus léger qu'il n\'y paraît. L\'artisan qui l\'a fabriqué devait vraiment être un maître dans son domaine.";
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;

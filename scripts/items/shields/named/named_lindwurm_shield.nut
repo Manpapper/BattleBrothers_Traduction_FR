@@ -7,7 +7,7 @@ this.named_lindwurm_shield <- this.inherit("scripts/items/shields/named/named_sh
 		this.updateVariant();
 		this.m.ID = "shield.named_lindwurm";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A sturdy wooden frame lays the base for a shimmering heap of rare Lindwurm scales to form a shield impenetrable.";
+		this.m.Description = "Un cadre en bois robuste pose la base d'un tas chatoyant d'écailles de Lindwurm rares pour former un bouclier impénétrable.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 1300;

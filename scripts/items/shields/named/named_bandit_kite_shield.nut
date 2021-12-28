@@ -7,7 +7,7 @@ this.named_bandit_kite_shield <- this.inherit("scripts/items/shields/named/named
 		this.updateVariant();
 		this.m.ID = "shield.named_bandit_kite_shield";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A long, wooden shield covering the whole body for good protection against ranged attacks. This particular shield shows some unique craftsmanship and is a rare find.";
+		this.m.Description = "Un long bouclier en bois couvrant tout le corps pour une bonne protection contre les attaques à distance. Ce bouclier particulier montre un savoir-faire unique et est une trouvaille rare.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 700;

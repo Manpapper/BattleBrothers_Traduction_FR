@@ -4,8 +4,8 @@ this.southern_light_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.southern_light_shield";
-		this.m.Name = "Adarga Shield";
-		this.m.Description = "A light wooden shield with a metal frame, covered in leather. Offers good protection against ranged attacks due to its size, but is not very sturdy.";
+		this.m.Name = "Bouclier Adarga";
+		this.m.Description = "Un bouclier en bois clair avec une armature en métal, recouvert de cuir. Offre une bonne protection contre les attaques à distance en raison de sa taille, mais n\'est pas très robuste.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = this.Math.rand(1, 3);

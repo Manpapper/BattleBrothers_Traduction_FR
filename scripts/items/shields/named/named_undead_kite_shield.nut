@@ -7,7 +7,7 @@ this.named_undead_kite_shield <- this.inherit("scripts/items/shields/named/named
 		this.updateVariant();
 		this.m.ID = "shield.named_undead_kite_shield";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "An elongated wooden shield that offers good protection also to the lower body, despite its apparent age. Somewhat bulky to handle in close combat engagements.";
+		this.m.Description = "Un bouclier en bois allongé qui offre une bonne protection également au bas du corps, malgré son âge apparent. Un peu volumineux à gérer dans les engagements de combat rapproché.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 700;

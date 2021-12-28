@@ -7,7 +7,7 @@ this.named_sipar_shield <- this.inherit("scripts/items/shields/named/named_shiel
 		this.m.NameList = this.Const.Strings.ShieldNames;
 		this.m.PrefixList = this.Const.Strings.SouthernPrefix;
 		this.m.SuffixList = this.Const.Strings.SouthernSuffix;
-		this.m.Description = "A full metal round shield of southern design with elaborate ornaments. Quite heavy, but also durable.";
+		this.m.Description = "Un bouclier rond en métal de conception méridionale avec des ornements élaborés. Assez lourd, mais aussi durable.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;

@@ -7,7 +7,7 @@ this.named_wing_shield <- this.inherit("scripts/items/shields/named/named_shield
 		this.updateVariant();
 		this.m.ID = "shield.named_wing";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A reinforced wooden heater shield made from the finest materials and quite obviously crafted by a master shield maker.";
+		this.m.Description = "Un écu en bois renforcé fabriqué à partir des meilleurs matériaux et bien évidemment conçu par un maître fabricant de boucliers.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 1000;

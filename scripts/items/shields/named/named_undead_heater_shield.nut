@@ -7,7 +7,7 @@ this.named_undead_heater_shield <- this.inherit("scripts/items/shields/named/nam
 		this.updateVariant();
 		this.m.ID = "shield.named_undead_heater_shield";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "A triangular wooden shield covered with leather and canvas, old but very well balanced.";
+		this.m.Description = "Un bouclier triangulaire en bois recouvert de cuir et de toile, ancien mais très bien équilibré.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Value = 600;
