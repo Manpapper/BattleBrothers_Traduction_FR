@@ -4,8 +4,8 @@ this.nomad_head_wrap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nomad_head_wrap";
-		this.m.Name = "Nomad Head Wrap";
-		this.m.Description = "A nomad style head wrap suited to protect against sun and heat.";
+		this.m.Name = "Turban nomade";
+		this.m.Description = "Un turban de style nomade adapté pour se protéger du soleil et de la chaleur.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

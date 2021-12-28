@@ -4,8 +4,8 @@ this.bascinet_with_mail <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.bascinet_with_mail";
-		this.m.Name = "Bascinet with Mail";
-		this.m.Description = "A metal bascinet worn atop a thick mail coif.";
+		this.m.Name = "Bascinet avec mailles";
+		this.m.Description = "Un bascinet en métal porté au sommet d\'une épaisse coiffe de mailles.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

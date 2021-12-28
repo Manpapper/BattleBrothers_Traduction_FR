@@ -4,8 +4,8 @@ this.beastmasters_headpiece <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.beastmasters_headpiece";
-		this.m.Name = "Beastmaster\'s Headpiece";
-		this.m.Description = "A headpiece with long horns, fashioned in tradition of barbarian beastmasters for generations.";
+		this.m.Name = "Coiffe du maître des bêtes";
+		this.m.Description = "Un casque avec de longues cornes, façonné dans la tradition des maîtres-bêtes barbares depuis des générations.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

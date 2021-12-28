@@ -4,8 +4,8 @@ this.gunner_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.gunner_hat";
-		this.m.Name = "Gunner\'s Hat";
-		this.m.Description = "A finely wrapped cloth turban worn by those that practise the use of elaborate gunpowder weapons in armies of the city states.";
+		this.m.Name = "Chapeau de tireur";
+		this.m.Description = "Un turban en tissu finement enveloppé porté par ceux qui pratiquent l\'utilisation d\'armes à poudre élaborées dans les armées des cités-états.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

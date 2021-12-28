@@ -4,8 +4,8 @@ this.nasal_helmet_with_closed_mail <- this.inherit("scripts/items/helmets/helmet
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nasal_helmet_with_closed_mail";
-		this.m.Name = "Nasal Helmet with Closed Mail";
-		this.m.Description = "A metal helmet with a noseguard and a closed mail coif underneath.";
+		this.m.Name = "Casque nasal avec mailles fermé";
+		this.m.Description = "Un casque en métal avec un protège-nez et une coiffe fermée en dessous.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

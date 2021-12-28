@@ -4,8 +4,8 @@ this.heavy_lamellar_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.heavy_lamellar_helmet";
-		this.m.Name = "Heavy Lamellar Helmet";
-		this.m.Description = "A heavy helmet made from overlapping metal plates.";
+		this.m.Name = "Casque Lamellaire Lourd";
+		this.m.Description = "Un casque lourd fait de plaques de métal qui se chevauchent.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

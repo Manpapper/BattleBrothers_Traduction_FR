@@ -4,7 +4,7 @@ this.barbarian_ritual_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.barbarian_ritual_helmet";
-		this.m.Name = "Ritual Helmet";
+		this.m.Name = "Casque rituel";
 		this.m.Description = "";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = false;

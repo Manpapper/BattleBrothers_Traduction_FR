@@ -4,7 +4,7 @@ this.named_conic_helmet_with_faceguard <- this.inherit("scripts/items/helmets/na
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.named_conic_helmet_with_faceguard";
-		this.m.Description = "This conic helmet has a faceguard attached and finely fitted scales to protect the neck. The faceguard resembles a fearsome warrior that is about to strike his enemy.";
+		this.m.Description = "Ce casque conique a un protecteur facial attaché et des écailles finement ajustées pour protéger le cou. Le garde-visage ressemble à un redoutable guerrier qui est sur le point de frapper son ennemi.";
 		this.m.NameList = [
 			"Conic Feathered Helmet",
 			"Iron Mask",

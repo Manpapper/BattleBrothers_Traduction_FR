@@ -4,8 +4,8 @@ this.fangshire <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.fangshire";
-		this.m.Name = "The Fangshire";
-		this.m.Description = "The Fangshire is a northern tiger\'s skull that nestles the faces of men deeply and darkly behind two ferocious fangs. Originally worn by Bjarund the Beastman, a fierce northern raider, it instilled fear into the hearts of his enemies as he went on bloody raids and burned down many a village along the coastline. When Bjarund was finally slain, Fangshire was taken as a trophy and went further south. Rumors proclaim that its wearer\'s eyes glow a sharpened yellow, allowing them to see through the very night.";
+		this.m.Name = "Le Fangshire";
+		this.m.Description = "Le Fangshire est un crâne de tigre du nord qui se niche profondément et sombrement derrière deux crocs féroces. Porté à l\'origine par Bjarund l\'Homme-bête, un féroce pilleur du Nord, il a semé la peur dans le coeur de ses ennemis alors qu\'il effectuait des raids sanglants et incendiait de nombreux villages le long de la côte. Lorsque Bjarund a finalement été tué, Fangshire a été pris comme trophée et est allé plus au sud. Les rumeurs proclament que les yeux de son porteur brillent d\'un jaune aiguisé, leur permettant de voir à travers la nuit même.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;
@@ -30,7 +30,7 @@ this.fangshire <- this.inherit("scripts/items/helmets/helmet", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Allows the wearer to see at night and negates any penalties due to nighttime."
+			text = "Permet au porteur de voir la nuit et annule les pénalités dues à la nuit."
 		});
 		return result;
 	}

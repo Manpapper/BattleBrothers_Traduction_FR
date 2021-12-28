@@ -4,8 +4,8 @@ this.leather_head_wrap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.leather_head_wrap";
-		this.m.Name = "Leather Head Wrap";
-		this.m.Description = "A thick leather head wrap that protects against cuts and bruises.";
+		this.m.Name = "Bandeau en cuir épais";
+		this.m.Description = "Un bandeau en cuir épais qui protège contre les coupures et les ecchymoses.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

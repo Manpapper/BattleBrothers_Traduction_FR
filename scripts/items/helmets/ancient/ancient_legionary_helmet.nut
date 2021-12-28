@@ -4,8 +4,8 @@ this.ancient_legionary_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.ancient_legionary_helmet";
-		this.m.Name = "Ancient Legionary Helmet";
-		this.m.Description = "A well-crafted but partly decayed helmet of ancient design.";
+		this.m.Name = "Casque de légionnaire antique";
+		this.m.Description = "Un casque bien conçu mais en partie pourri de conception ancienne.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

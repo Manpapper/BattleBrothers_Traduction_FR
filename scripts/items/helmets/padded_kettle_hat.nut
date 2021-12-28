@@ -4,8 +4,8 @@ this.padded_kettle_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.padded_kettle_hat";
-		this.m.Name = "Padded Kettle hat";
-		this.m.Description = "A full-metal helmet with a broad rim and a padded coif underneath.";
+		this.m.Name = "Chapel de fer rembourré";
+		this.m.Description = "Un casque entièrement en métal avec un bord large et une coiffe rembourrée en dessous.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,8 +4,8 @@ this.feathered_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.feathered_hat";
-		this.m.Name = "Feathered Hat";
-		this.m.Description = "A fancy feathered hat usually worn by minstrels or nobles.";
+		this.m.Name = "Chapeau à plumes";
+		this.m.Description = "Un chapeau à plumes fantaisie généralement porté par les ménestrels ou les nobles.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

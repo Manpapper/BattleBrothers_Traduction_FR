@@ -4,8 +4,8 @@ this.closed_scrap_metal_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.closed_scrap_metal_helmet";
-		this.m.Name = "Closed Scrap Metal Helmet";
-		this.m.Description = "This heavy metal helmet also protects the wearer\'s face, albeit at the cost of visibility.";
+		this.m.Name = "Casque de ferraille fermé";
+		this.m.Description = "Ce casque en métal lourd protège également le visage du porteur, mais au détriment de la visibilité.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

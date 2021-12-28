@@ -4,7 +4,7 @@ this.named_steppe_helmet_with_mail <- this.inherit("scripts/items/helmets/named/
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.named_steppe_helmet_with_mail";
-		this.m.Description = "A masterfully crafted helmet in the fashion of the steppe folks. Decorated with gold applications and equipped with additional cheek guards.";
+		this.m.Description = "Un casque magistralement conçu à la mode des gens de la steppe. Décoré de motifs dorées et équipé de protège-joues supplémentaires.";
 		this.m.NameList = [
 			"Steppe Helmet",
 			"Decorated Nasal Helmet",

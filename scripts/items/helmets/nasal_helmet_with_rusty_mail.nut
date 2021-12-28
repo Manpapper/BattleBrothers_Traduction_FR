@@ -4,8 +4,8 @@ this.nasal_helmet_with_rusty_mail <- this.inherit("scripts/items/helmets/helmet"
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nasal_helmet_with_rusty_mail";
-		this.m.Name = "Nasal Helmet With Rusty Mail";
-		this.m.Description = "A worn and used helmet with a rusty mail coif.";
+		this.m.Name = "Casque nasal avec mailles rouillée";
+		this.m.Description = "Un casque usé et utilisé avec une coiffe de mailles rouillée.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

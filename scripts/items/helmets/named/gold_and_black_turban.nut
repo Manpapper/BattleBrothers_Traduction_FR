@@ -4,7 +4,7 @@ this.gold_and_black_turban <- this.inherit("scripts/items/helmets/named/named_he
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.gold_and_black_turban";
-		this.m.Description = "This southern style helmet is not only richly decorated, but also well balanced and made from materials of the highest quality.";
+		this.m.Description = "Ce casque de style méridional est non seulement richement décoré, mais aussi bien équilibré et fabriqué à partir de matériaux de la plus haute qualité.";
 		this.m.NameList = [
 			"Crown of the South",
 			"Desert Crest",

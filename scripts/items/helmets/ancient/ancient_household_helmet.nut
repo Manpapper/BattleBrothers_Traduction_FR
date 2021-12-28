@@ -4,8 +4,8 @@ this.ancient_household_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.ancient_household_helmet";
-		this.m.Name = "Ancient Household Helmet";
-		this.m.Description = "An ancient light helmet that time has taken a toll on over many years.";
+		this.m.Name = "Casque de gardien de maison ancien";
+		this.m.Description = "Un ancien casque léger sur lequel le temps a fait des ravages pendant de nombreuses années.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

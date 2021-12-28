@@ -4,8 +4,8 @@ this.gladiator_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.gladiator_helmet";
-		this.m.Name = "Gladiator Helmet";
-		this.m.Description = "An impressive metal helmet crafted to intimidate the opponents of pit fighters in arenas of the southern city states.";
+		this.m.Name = "Casque de gladiateur";
+		this.m.Description = "Un impressionnant casque en métal conçu pour intimider les adversaires des combattants des fosses dans les arènes des cités-États du sud.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideCharacterHead = true;

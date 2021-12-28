@@ -4,8 +4,8 @@ this.bear_headpiece <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.bear_headpiece";
-		this.m.Name = "Bear Headpiece";
-		this.m.Description = "The dried and prepped head of a large bear. Offers some protection, but is mostly donned for the looks.";
+		this.m.Name = "Coiffe d\'ours";
+		this.m.Description = "La tête séchée et préparée d'un gros ours. Offre une certaine protection, mais est surtout enfilé pour le look.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

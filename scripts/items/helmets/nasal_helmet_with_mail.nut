@@ -4,8 +4,8 @@ this.nasal_helmet_with_mail <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nasal_helmet_with_mail";
-		this.m.Name = "Nasal Helmet with Mail";
-		this.m.Description = "A metal helmet with added noseguard and a mail coif underneath.";
+		this.m.Name = "Casque nasal avec mailles";
+		this.m.Description = "Un casque en métal avec un protège-nez ajouté et une coiffe en dessous.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,8 +4,8 @@ this.open_leather_cap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.open_leather_cap";
-		this.m.Name = "Open Leather Cap";
-		this.m.Description = "A sturdy leather cap that is not covering the ears and neck.";
+		this.m.Name = "Casquette en cuir ouverte";
+		this.m.Description = "Une casquette en cuir robuste qui ne couvre pas les oreilles et le cou.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,8 +4,8 @@ this.decayed_full_helm <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.decayed_full_helm";
-		this.m.Name = "Decayed Full Helm";
-		this.m.Description = "This full helm suffers from rusty metal parts and brittle leather inlays but still offers good protection if you ignore its stench.";
+		this.m.Name = "Heaume complet pourri";
+		this.m.Description = "Ce casque complet souffre de pièces métalliques rouillées et d\'incrustations de cuir cassant mais offre toujours une bonne protection si vous ignorez sa puanteur.";
 		this.m.ShowOnCharacter = true;
 		this.m.HideCharacterHead = true;
 		this.m.HideCorpseHead = true;

@@ -4,8 +4,8 @@ this.cultist_leather_hood <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.cultist_leather_hood";
-		this.m.Name = "Cultist Leather Hood";
-		this.m.Description = "A thick leather hood that covers the head and neck but limits vision.";
+		this.m.Name = "Capuche en cuir de cultiste";
+		this.m.Description = "Une capuche en cuir épais qui couvre la tête et le cou mais limite la vision.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

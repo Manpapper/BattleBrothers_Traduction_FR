@@ -4,8 +4,8 @@ this.full_helm <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.full_helm";
-		this.m.Name = "Full Helm";
-		this.m.Description = "A closed metal helm with breathing holes. Great in the way of protection but hard to breathe in and limiting the field of view.";
+		this.m.Name = "Casque complet";
+		this.m.Description = "Un casque fermée avec des trous de respiration. Excellent en termes de protection mais difficile de respirer et limite le champ de vision.";
 		this.m.ShowOnCharacter = true;
 		this.m.HideCharacterHead = true;
 		this.m.HideCorpseHead = true;

@@ -4,8 +4,8 @@ this.spiked_skull_cap_with_mail <- this.inherit("scripts/items/helmets/helmet", 
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.spiked_skull_cap_with_mail";
-		this.m.Name = "Spiked Skull Cap with Mail";
-		this.m.Description = "A metal skull cap with a fashionable spike worn atop a mail coif.";
+		this.m.Name = "Calotte en métal avec une pointe";
+		this.m.Description = "Une calotte en métal avec une pointe à la mode portée sur une coiffe de mailles.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,7 +4,7 @@ this.named_nordic_helmet_with_closed_mail <- this.inherit("scripts/items/helmets
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.named_nordic_helmet_with_closed_mail";
-		this.m.Description = "This nordic helmet with faceguard is extraordinarly crafted, and as protective as it is impressive looking.";
+		this.m.Description = "Ce casque nordique avec protection faciale est extraordinairement conçu et aussi protecteur qu\'impressionnant.";
 		this.m.NameList = [
 			"Sea Raider Helmet",
 			"Owl Helmet",

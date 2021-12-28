@@ -4,8 +4,8 @@ this.jesters_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.jesters_hat";
-		this.m.Name = "Jester\'s Hat";
-		this.m.Description = "The colorful and iconic headpiece of jesters, entertainers and other traveling folk.";
+		this.m.Name = "Chapeau de bouffon";
+		this.m.Description = "Le chapeau coloré et emblématique des bouffons, artistes et autres gens du voyage.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

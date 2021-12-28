@@ -4,8 +4,8 @@ this.padded_nasal_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.padded_nasal_helmet";
-		this.m.Name = "Padded Nasal Helmet";
-		this.m.Description = "A metal helmet with added noseguard and a padded coif underneath.";
+		this.m.Name = "Casque nasal rembourré";
+		this.m.Description = "Un casque en métal avec un protège-nez ajouté et une coiffe rembourrée en dessous.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

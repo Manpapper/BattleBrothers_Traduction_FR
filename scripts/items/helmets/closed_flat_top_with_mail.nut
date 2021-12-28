@@ -4,8 +4,8 @@ this.closed_flat_top_with_mail <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.closed_flat_top_with_mail";
-		this.m.Name = "Closed Flat Top with Mail";
-		this.m.Description = "A closed helmet with complete faceguard and a mail coif covering the neck. Great in the way of protection but hard to breathe in and limiting the field of view.";
+		this.m.Name = "Casque plat fermé avec mailles";
+		this.m.Description = "Un casque fermé avec protection faciale complète et une coiffe en mailles couvrant le cou. Excellent en termes de protection mais difficile de respirer et limite le champ de vision.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

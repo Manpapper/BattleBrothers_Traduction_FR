@@ -4,8 +4,8 @@ this.padded_flat_top_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.padded_flat_top_helmet";
-		this.m.Name = "Padded Flat Top Helmet";
-		this.m.Description = "A flat full-metal helmet with noseguard and a padded coif underneath.";
+		this.m.Name = "Casque plat rembourré";
+		this.m.Description = "Un casque plat entièrement en métal avec protège-nez et une coiffe rembourrée en dessous.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

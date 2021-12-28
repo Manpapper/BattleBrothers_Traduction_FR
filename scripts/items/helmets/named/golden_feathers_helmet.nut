@@ -4,7 +4,7 @@ this.golden_feathers_helmet <- this.inherit("scripts/items/helmets/named/named_h
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.golden_feathers";
-		this.m.Description = "A sturdy alloy helmet of foreign design, combined with a full mail coif for excellent protection.";
+		this.m.Description = "Un casque en alliage robuste de conception étrangère, combiné à une coiffe de mailles complète pour une excellente protection.";
 		this.m.NameList = [
 			"Headpiece",
 			"Golden Skullcap",

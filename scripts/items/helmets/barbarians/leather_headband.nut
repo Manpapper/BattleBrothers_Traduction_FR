@@ -4,8 +4,8 @@ this.leather_headband <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.leather_headband";
-		this.m.Name = "Leather Headband";
-		this.m.Description = "A dried and folded leather headband designed to protect the forehead.";
+		this.m.Name = "Bandeau en cuir";
+		this.m.Description = "Un bandeau en cuir séché et plié conçu pour protéger le front.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = false;

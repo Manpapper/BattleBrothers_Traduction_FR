@@ -5,7 +5,7 @@ this.goblin_leader_helmet <- this.inherit("scripts/items/helmets/helmet", {
 		this.helmet.create();
 		this.updateVariant();
 		this.m.ID = "armor.head.goblin_leader_helmet";
-		this.m.Name = "Helmet";
+		this.m.Name = "Casque";
 		this.m.Description = "";
 		this.m.ShowOnCharacter = true;
 		this.m.IconLarge = "";

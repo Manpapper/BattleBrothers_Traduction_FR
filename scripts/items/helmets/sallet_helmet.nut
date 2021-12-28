@@ -4,8 +4,8 @@ this.sallet_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.sallet_helmet";
-		this.m.Name = "Sallet Helmet";
-		this.m.Description = "A metal sallet helmet with an extended neckguard, a design uncommon in these lands. It is well crafted to offer maximum protection with minimum weight, and without impairing vision.";
+		this.m.Name = "Casque Sallet";
+		this.m.Description = "Un casque sallet en métal avec un protège-cou allongé, un design peu commun dans ces contrées. Il est bien conçu pour offrir une protection maximale avec un poids minimal et sans altérer la vision.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

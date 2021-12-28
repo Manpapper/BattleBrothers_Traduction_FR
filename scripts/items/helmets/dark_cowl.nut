@@ -4,8 +4,8 @@ this.dark_cowl <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.dark_cowl";
-		this.m.Name = "Dark Cowl";
-		this.m.Description = "A sturdy hat and cowl made out of leather and cloth.";
+		this.m.Name = "Chapeau sombre";
+		this.m.Description = "Un chapeau et un capuchon robustes en cuir et en tissu.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

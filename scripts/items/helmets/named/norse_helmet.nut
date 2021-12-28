@@ -4,7 +4,7 @@ this.norse_helmet <- this.inherit("scripts/items/helmets/named/named_helmet", {
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.norse";
-		this.m.Description = "A richly ornated nordic helmet that must have belonged to a high ranking noble or exalted warrior.";
+		this.m.Description = "Un casque nordique richement orné qui doit avoir appartenu à un guerrier noble ou exalté de haut rang.";
 		this.m.NameList = [
 			"Clan Helmet",
 			"Highland Helm",

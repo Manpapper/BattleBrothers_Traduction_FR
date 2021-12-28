@@ -4,8 +4,8 @@ this.heavy_horned_plate_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.heavy_horned_plate_helmet";
-		this.m.Name = "Heavy Horned Plate Helmet";
-		this.m.Description = "This heavy helmet has ornamental horns attached. This is a sign of high standing and reputation within barbarian warbands.";
+		this.m.Name = "Casque en plaques à cornes lourdes";
+		this.m.Description = "Ce casque lourd a des cornes ornementales attachées. C'est un signe de haut rang et de réputation au sein des bandes de guerre barbares.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

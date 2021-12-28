@@ -4,8 +4,8 @@ this.conic_helmet_with_faceguard <- this.inherit("scripts/items/helmets/helmet",
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.conic_helmet_with_faceguard";
-		this.m.Name = "Conic Helmet with Faceguard";
-		this.m.Description = "This conic helmet with mail has an attached metal faceguard. It is heavy and hard to see through, but offers excellent protection.";
+		this.m.Name = "Casque conique avec protection faciale";
+		this.m.Description = "Ce casque conique avec cotte de mailles est muni d\'un masque facial en métal. Il est lourd et difficile pour voir, mais offre une excellente protection.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

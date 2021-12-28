@@ -4,8 +4,8 @@ this.faction_helm <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.faction_helm";
-		this.m.Name = "Decorated Full Helm";
-		this.m.Description = "A closed metal helm with breathing holes and intricate decoration ontop. Great in the way of protection, a piece of art to behold, but hard to breathe in and limiting the field of view.";
+		this.m.Name = "Heaume complet décoré";
+		this.m.Description = "Un casque en métal fermé avec des trous de respiration et une décoration complexe sur le dessus. Excellent en termes de protection, une œuvre d\'art à voir, mais difficile de respirer et limite le champ de vision.";
 		this.m.ShowOnCharacter = true;
 		this.m.HideCharacterHead = true;
 		this.m.HideCorpseHead = true;

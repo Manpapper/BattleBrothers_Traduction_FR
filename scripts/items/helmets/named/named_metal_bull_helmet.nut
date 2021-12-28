@@ -4,7 +4,7 @@ this.named_metal_bull_helmet <- this.inherit("scripts/items/helmets/named/named_
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.named_metal_bull_helmet";
-		this.m.Description = "A reinforced helmet made from an extremely sturdy alloy. It is richly decorated and heavy but offers extraordinary protection.";
+		this.m.Description = "Un casque renforcé fabriqué à partir d\'un alliage extrêmement robuste. Il est richement décoré et lourd mais offre une protection extraordinaire.";
 		this.m.NameList = [
 			"Horned Helmet",
 			"Alloy Headpiece",

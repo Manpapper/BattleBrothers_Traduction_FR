@@ -4,8 +4,8 @@ this.steppe_helmet_with_mail <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.steppe_helmet_with_mail";
-		this.m.Name = "Steppe Helmet with Mail";
-		this.m.Description = "A nasal helmet witch an attached mail neck guard fashioned in the way of the steppe folks.";
+		this.m.Name = "Casque de steppe avec mailles";
+		this.m.Description = "Un casque nasal avec un protège-nuque attaché à la manière des gens de la steppe.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,7 +4,7 @@ this.heraldic_mail_helmet <- this.inherit("scripts/items/helmets/named/named_hel
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.heraldic_mail";
-		this.m.Description = "A heavy bascinet with a moveable visor, worn over a mail coif. A showy piece befitting a true knight.";
+		this.m.Description = "Un bascinet lourd avec une visière mobile, porté sur une coiffe de mailles. Une pièce voyante digne d\'un vrai chevalier.";
 		this.m.NameList = [
 			"Bascinet with Mail",
 			"Knightly Bascinet",

@@ -4,8 +4,8 @@ this.decayed_closed_flat_top_with_sack <- this.inherit("scripts/items/helmets/he
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.decayed_closed_flat_top_with_sack";
-		this.m.Name = "Covered Decayed Closed Flat Top with Mail";
-		this.m.Description = "A worn and torn closed helmet with complete faceguard and a mail coif covering the neck, underneath a rotten cloth sack. It has obviously been lying outdoors for a while.";
+		this.m.Name = "Casque couvert plat fermé avec mailles pourri";
+		this.m.Description = "Un casque fermé usé et déchiré avec un masque facial complet et une coiffe de mailles couvrant le cou, sous un sac en tissu pourri. Il est visiblement resté à l\'extérieur pendant un certain temps.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

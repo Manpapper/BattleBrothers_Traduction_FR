@@ -4,7 +4,7 @@ this.red_and_gold_band_helmet <- this.inherit("scripts/items/helmets/named/named
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.red_and_gold_band_helmet";
-		this.m.Description = "This southern style helmet is not only richly decorated, but also well balanced and made from extremely high quality metals.";
+		this.m.Description = "Ce casque de style méridional est non seulement richement décoré, mais aussi bien équilibré et fabriqué à partir de métaux de très haute qualité.";
 		this.m.NameList = [
 			"Splinted Helmet",
 			"Segmented Helmet",

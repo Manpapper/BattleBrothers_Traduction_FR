@@ -4,8 +4,8 @@ this.wrapped_southern_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.wrapped_southern_helmet";
-		this.m.Name = "Wrapped Southern Helmet";
-		this.m.Description = "This metal helmet is wrapped in cloth to protect against the blazingly hot sun of the southern deserts.";
+		this.m.Name = "Casque du sud enveloppé";
+		this.m.Description = "Ce casque en métal est enveloppé dans un tissu pour se protéger du soleil brûlant des déserts du sud.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

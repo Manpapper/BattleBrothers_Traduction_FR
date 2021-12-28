@@ -4,8 +4,8 @@ this.nordic_helmet_with_closed_mail <- this.inherit("scripts/items/helmets/helme
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nordic_helmet_with_closed_mail";
-		this.m.Name = "Nordic Helmet with Closed Mail";
-		this.m.Description = "A metal nordic helmet with an attached closed mail neck guard.";
+		this.m.Name = "Casque nordique avec mailles fermé";
+		this.m.Description = "Un casque nordique en métal avec un protège-nuque fermé attaché.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

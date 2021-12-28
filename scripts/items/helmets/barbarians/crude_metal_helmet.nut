@@ -4,8 +4,8 @@ this.crude_metal_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.crude_metal_helmet";
-		this.m.Name = "Crude Metal Helmet";
-		this.m.Description = "Although crudely made and rusty, this metal helmet is a durable and sturdy piece of armor.";
+		this.m.Name = "Casque en métal brut";
+		this.m.Description = "Bien que grossièrement fabriqué et rouillé, ce casque en métal est une pièce d\'armure durable et robuste.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

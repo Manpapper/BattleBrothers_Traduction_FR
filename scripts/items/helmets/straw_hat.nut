@@ -4,8 +4,8 @@ this.straw_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.straw_hat";
-		this.m.Name = "Straw Hat";
-		this.m.Description = "A crude straw hat to protect against the sun.";
+		this.m.Name = "Chapeau de paille";
+		this.m.Description = "Un chapeau de paille brut pour se protéger du soleil.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

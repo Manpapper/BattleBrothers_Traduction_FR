@@ -4,8 +4,8 @@ this.dented_nasal_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.dented_nasal_helmet";
-		this.m.Name = "Padded Dented Nasal Helmet";
-		this.m.Description = "A dented metal nasal helmet that has seen some fighting.";
+		this.m.Name = "Casque nasal cabossé rembourré";
+		this.m.Description = "Un casque nasal en métal cabossé qui a vu des combats.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

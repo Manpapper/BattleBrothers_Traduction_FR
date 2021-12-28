@@ -4,7 +4,7 @@ this.named_metal_nose_horn_helmet <- this.inherit("scripts/items/helmets/named/n
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.named_metal_nose_horn_helmet";
-		this.m.Description = "This helmet must have belonged to a distinct warrior of the barbarians. Its size and design appear alien to all southern folks.";
+		this.m.Description = "Ce casque doit avoir appartenu à un guerrier distinct des barbares. Sa taille et sa conception semblent étrangères à tous les habitants du Sud.";
 		this.m.NameList = [
 			"Closed Helmet",
 			"Spiked Headpiece",

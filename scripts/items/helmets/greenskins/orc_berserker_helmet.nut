@@ -9,7 +9,7 @@ this.orc_berserker_helmet <- this.inherit("scripts/items/helmets/helmet", {
 		this.m.Variant = variants[this.Math.rand(0, variants.len() - 1)];
 		this.updateVariant();
 		this.m.ID = "armor.head.orc_berserker_helmet";
-		this.m.Name = "Bone Helmet";
+		this.m.Name = "Casque d\'os";
 		this.m.Description = "";
 		this.m.ShowOnCharacter = true;
 		this.m.IconLarge = "";

@@ -4,7 +4,7 @@ this.lindwurm_helmet <- this.inherit("scripts/items/helmets/named/named_helmet",
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.lindwurm_helmet";
-		this.m.Description = "This helmet must have once belonged to a daring and skilled hunter for it is covered in the scales of a dreaded Lindwurm. Not only do the scales deflect blows and hits, but they also remain unscathed by the acidic Lindwurm blood.";
+		this.m.Description = "Ce casque doit avoir appartenu à un chasseur audacieux et habile car il est recouvert des écailles d\'un redoutable Lindwurm. Non seulement les écailles dévient les coups, mais elles restent également indemnes du sang acide de Lindwurm.";
 		this.m.NameList = [
 			"Lindwurm\'s Head",
 			"Lizard Headpiece",
@@ -35,7 +35,7 @@ this.lindwurm_helmet <- this.inherit("scripts/items/helmets/named/named_helmet",
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Unaffected by acidic Lindwurm blood"
+			text = "Insensible au sang acide de Lindwurm"
 		});
 		return result;
 	}

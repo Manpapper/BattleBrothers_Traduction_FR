@@ -4,8 +4,8 @@ this.greatsword_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.greatsword_hat";
-		this.m.Name = "Duelist\'s Hat";
-		this.m.Description = "A thick leather hat with ornaments and feathers.";
+		this.m.Name = "Chapeau de Duelliste";
+		this.m.Description = "Un chapeau en cuir épais avec des ornements et des plumes.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

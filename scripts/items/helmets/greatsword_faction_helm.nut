@@ -4,8 +4,8 @@ this.greatsword_faction_helm <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.greatsword_faction_helm";
-		this.m.Name = "Zweihander\'s Helmet";
-		this.m.Description = "A sturdy metal helmet with added padding, covered with a large feathered hat.";
+		this.m.Name = "Casque de Zweihander";
+		this.m.Description = "Un casque en métal robuste avec rembourrage supplémentaire, recouvert d\'un grand chapeau à plumes.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

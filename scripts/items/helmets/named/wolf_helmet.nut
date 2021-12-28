@@ -4,7 +4,7 @@ this.wolf_helmet <- this.inherit("scripts/items/helmets/named/named_helmet", {
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.wolf";
-		this.m.Description = "A sturdy metal helmet with attached mail, covered with an impressive wolf head.";
+		this.m.Description = "Un casque en métal robuste avec une cotte de mailles attachée, recouvert d\'une impressionnante tête de loup.";
 		this.m.NameList = [
 			"Beast Cap",
 			"Helmet of the Wolf",

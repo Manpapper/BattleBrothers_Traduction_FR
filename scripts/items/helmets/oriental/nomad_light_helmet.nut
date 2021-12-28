@@ -4,8 +4,8 @@ this.nomad_light_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nomad_light_helmet";
-		this.m.Name = "Nomad Light Helmet";
-		this.m.Description = "A light helmet typical of the southern desert regions.";
+		this.m.Name = "Casque léger nomade";
+		this.m.Description = "Un casque léger typique des régions désertiques du sud.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

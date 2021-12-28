@@ -4,8 +4,8 @@ this.crude_faceguard_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.crude_faceguard_helmet";
-		this.m.Name = "Crude Faceguard Helmet";
-		this.m.Description = "A crude and rusty barbarian helmet. What it lacks in finesse it makes up for in thickness.";
+		this.m.Name = "Casque de garde-visage brut";
+		this.m.Description = "Un casque barbare brut et rouillé. Ce qui lui manque en finesse, il le rattrape en épaisseur.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

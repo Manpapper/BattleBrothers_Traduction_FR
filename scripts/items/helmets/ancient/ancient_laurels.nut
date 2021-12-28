@@ -4,7 +4,7 @@ this.ancient_laurels <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.ancient_laurels";
-		this.m.Name = "Ancient Laurels";
+		this.m.Name = "Lauriers antiques";
 		this.m.Description = "";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = false;

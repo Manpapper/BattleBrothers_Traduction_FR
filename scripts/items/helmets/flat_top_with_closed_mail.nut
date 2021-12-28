@@ -4,8 +4,8 @@ this.flat_top_with_closed_mail <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.flat_top_with_closed_mail";
-		this.m.Name = "Flat Top with Closed Mail";
-		this.m.Description = "A flat full-metal helmet with a mail coif covering the neck and face.";
+		this.m.Name = "Casque plat avec coiffe de mailles";
+		this.m.Description = "Un casque plat entièrement en métal avec une coiffe en maille couvrant le cou et le visage.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

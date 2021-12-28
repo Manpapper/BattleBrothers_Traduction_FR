@@ -4,8 +4,8 @@ this.decayed_great_helm <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.decayed_great_helm";
-		this.m.Name = "Decayed Great Helm";
-		this.m.Description = "A great helmet with torn off and rotten decorations. It must have once belonged to a renowned knight.";
+		this.m.Name = "Grand heaume pourri";
+		this.m.Description = "Un grand casque avec des décorations arrachées et pourries. Il doit avoir appartenu à un chevalier renommé.";
 		this.m.ShowOnCharacter = true;
 		this.m.HideCharacterHead = true;
 		this.m.HideCorpseHead = true;

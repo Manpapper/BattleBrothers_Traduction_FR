@@ -4,7 +4,7 @@ this.named_metal_skull_helmet <- this.inherit("scripts/items/helmets/named/named
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.named_metal_skull_helmet";
-		this.m.Description = "A heavy helmet typical of the northern barbarians with a skull-like facemask. This piece is as massive as it is impressive.";
+		this.m.Description = "Un casque lourd typique des barbares du nord avec un masque facial en forme de crâne. Cette pièce est aussi massive qu\'impressionnante.";
 		this.m.NameList = [
 			"Face of the North",
 			"Metal Skull",

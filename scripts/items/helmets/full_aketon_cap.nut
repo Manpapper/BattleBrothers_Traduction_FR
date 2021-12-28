@@ -4,8 +4,8 @@ this.full_aketon_cap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.full_aketon_cap";
-		this.m.Name = "Full Aketon Cap";
-		this.m.Description = "A large padded cloth cap also covering the neck.";
+		this.m.Name = "Aketon complète";
+		this.m.Description = "Un grand bonnet en tissu matelassé recouvrant également le cou.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

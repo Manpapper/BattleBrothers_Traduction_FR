@@ -4,8 +4,8 @@ this.witchhunter_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.witchhunter_hat";
-		this.m.Name = "Witchhunter\'s Hat";
-		this.m.Description = "A tough leather hat that provides decent protection against scratches.";
+		this.m.Name = "Chapeau de chasseur de sorcières";
+		this.m.Description = "Un chapeau en cuir résistant qui offre une protection décente contre les égratignures.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

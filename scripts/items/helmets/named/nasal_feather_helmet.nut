@@ -4,7 +4,7 @@ this.nasal_feather_helmet <- this.inherit("scripts/items/helmets/named/named_hel
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.nasal_feather";
-		this.m.Description = "A hardened nasal helmet with a unique neckguard made from leather scales.";
+		this.m.Description = "Un casque nasal durci avec un protège-nuque unique en écailles de cuir.";
 		this.m.NameList = [
 			"Feathered Nasal Helmet",
 			"Reinforced Helm",

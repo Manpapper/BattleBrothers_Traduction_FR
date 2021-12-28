@@ -4,8 +4,8 @@ this.cultist_hood <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.cultist_hood";
-		this.m.Name = "Cultist Hood";
-		this.m.Description = "A rough spun cloth bag with two holes in it.";
+		this.m.Name = "Capuche de cultiste";
+		this.m.Description = "Un sac en tissu filé rugueux avec deux trous dedans.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

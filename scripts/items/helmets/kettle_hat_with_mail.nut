@@ -4,8 +4,8 @@ this.kettle_hat_with_mail <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.kettle_hat_with_mail";
-		this.m.Name = "Kettle Hat with Mail";
-		this.m.Description = "A full-metal helmet with a broad rim and a mail coif underneath.";
+		this.m.Name = "Chapel de fer avec mailles";
+		this.m.Description = "Un casque entièrement en métal avec un large rebord et une coiffe de mailles en dessous.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

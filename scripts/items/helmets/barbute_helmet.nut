@@ -4,8 +4,8 @@ this.barbute_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.barbute_helmet";
-		this.m.Name = "Barbute Helmet";
-		this.m.Description = "A sturdy yet light barbute helmet, a design uncommon in these lands, made from especially light and durable steel.";
+		this.m.Name = "Casque Barbute";
+		this.m.Description = "Un casque dit barbute robuste mais léger, un design peu commun dans ces pays, fabriqué à partir d\'acier particulièrement léger et durable.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

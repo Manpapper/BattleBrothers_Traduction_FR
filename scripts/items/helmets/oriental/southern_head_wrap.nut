@@ -4,8 +4,8 @@ this.southern_head_wrap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.southern_head_wrap";
-		this.m.Name = "Southern Head Wrap";
-		this.m.Description = "A traditional southern head wrap suited for desert climate.";
+		this.m.Name = "Turban du sud";
+		this.m.Description = "Un turban traditionnel du sud adapté au climat désertique.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

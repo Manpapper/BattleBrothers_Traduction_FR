@@ -4,7 +4,7 @@ this.sallet_green_helmet <- this.inherit("scripts/items/helmets/named/named_helm
 	{
 		this.named_helmet.create();
 		this.m.ID = "armor.head.sallet_green";
-		this.m.Description = "A masterfully crafted sallet supported by a mail coif, crested with colored ribbons.";
+		this.m.Description = "Un casque sallet magistralement ouvragée soutenue par une coiffe de mailles, décoré de rubans colorés.";
 		this.m.NameList = [
 			"Decorated Sallet",
 			"Sallet with Mail",

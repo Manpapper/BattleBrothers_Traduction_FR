@@ -4,8 +4,8 @@ this.mask_of_davkul <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.mask_of_davkul";
-		this.m.Name = "Glimpse of Davkul";
-		this.m.Description = "The Glimpse of Davkul is a gift bestowed upon man by ancient and dark powers, a helmet merged with human skin and bones through the most unspeakable of rituals. A glimpse of a future where man shall become one with creations from a realm beyond. It shall never break, but instead keep regrowing its scarred skin on the spot.";
+		this.m.Name = "Aperçu de Davkul";
+		this.m.Description = "L\'aperçu de Davkul est un cadeau conféré à l'homme par des pouvoirs anciens et obscurs, un casque fusionné avec la peau et les os humains à travers le plus indicible des rituels. Un aperçu d\'un avenir où l\'homme ne fera qu\'un avec les créations d\'un royaume au-delà. Il ne se brisera jamais, mais continuera à faire repousser sa peau cicatrisée sur place.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;
@@ -34,7 +34,7 @@ this.mask_of_davkul <- this.inherit("scripts/items/helmets/helmet", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Regenerates itself by [color=" + this.Const.UI.Color.PositiveValue + "]90[/color] points of durability each turn."
+			text = "Se régénère de [color=" + this.Const.UI.Color.PositiveValue + "]90[/color] points de durabilité chaque tour."
 		});
 		return result;
 	}

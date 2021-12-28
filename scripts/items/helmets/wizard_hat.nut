@@ -4,8 +4,8 @@ this.wizard_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.wizard_hat";
-		this.m.Name = "Wizard\'s Hat";
-		this.m.Description = "A pointy hat with a broad rim.";
+		this.m.Name = "Chapeau de sorcier";
+		this.m.Description = "Un chapeau pointu à large bord.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

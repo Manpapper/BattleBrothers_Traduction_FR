@@ -11,7 +11,7 @@ this.goblin_light_helmet <- this.inherit("scripts/items/helmets/helmet", {
 		this.m.Variant = variants[this.Math.rand(0, variants.len() - 1)];
 		this.updateVariant();
 		this.m.ID = "armor.head.goblin_light_helmet";
-		this.m.Name = "Light Helmet";
+		this.m.Name = "Casque léger";
 		this.m.Description = "";
 		this.m.ShowOnCharacter = true;
 		this.m.IconLarge = "";

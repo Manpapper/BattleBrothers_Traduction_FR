@@ -4,8 +4,8 @@ this.desert_stalker_head_wrap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.desert_stalker_head_wrap";
-		this.m.Name = "Desert Stalker\'s Head Wrap";
-		this.m.Description = "A thick head wrap with small hidden leather strings for added protection, adorned with a bronze scorpion.";
+		this.m.Name = "Chèche de traqueur du désert";
+		this.m.Description = "Un couvre-chef épais avec de petites ficelles de cuir cachées pour une protection supplémentaire, orné d\'un scorpion en bronze.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

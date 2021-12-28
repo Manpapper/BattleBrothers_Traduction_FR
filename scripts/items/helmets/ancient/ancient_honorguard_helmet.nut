@@ -4,8 +4,8 @@ this.ancient_honorguard_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.ancient_honorguard_helmet";
-		this.m.Name = "Ancient Honor Guard Helmet";
-		this.m.Description = "An ancient heavy helmet with intricate decoration.";
+		this.m.Name = "Casque de garde d\'honneur antique";
+		this.m.Description = "Un ancien casque lourd avec une décoration complexe.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideCharacterHead = true;

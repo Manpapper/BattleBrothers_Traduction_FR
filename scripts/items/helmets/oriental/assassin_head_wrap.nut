@@ -4,8 +4,8 @@ this.assassin_head_wrap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.assassin_head_wrap";
-		this.m.Name = "Assassin\'s Head Wrap";
-		this.m.Description = "The dark head wrap of an assassin.";
+		this.m.Name = "Chèche d\'assassin";
+		this.m.Description = "Le sombre chèche d\'un assassin.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

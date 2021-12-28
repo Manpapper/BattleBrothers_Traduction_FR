@@ -4,8 +4,8 @@ this.ijirok_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.ijirok_helmet";
-		this.m.Name = "Helmet of the Ijirok";
-		this.m.Description = "Once a barbarian helmet broken in battle, this piece has been bathed in the blood of the legendary Ijirok. Powers beyond your understanding mended it whole again, and will likewise mend any wounds of the wearer as well.";
+		this.m.Name = "Casque du Ijirok";
+		this.m.Description = "Autrefois un casque barbare brisé au combat, cette pièce a été baignée dans le sang du légendaire Ijirok. Des pouvoirs au-delà de votre compréhension l\'ont entièrement réparé et répareront également toutes les blessures du porteur.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;
@@ -31,7 +31,7 @@ this.ijirok_helmet <- this.inherit("scripts/items/helmets/helmet", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] hitpoints of the wearer each turn"
+			text = "Soigne [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] points de vie du porteur à chaque tour"
 		});
 		return result;
 	}

@@ -4,8 +4,8 @@ this.southern_helmet_with_coif <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.southern_helmet_with_coif";
-		this.m.Name = "Southern Helmet with Coif";
-		this.m.Description = "A southern metal helmet with a mail coif to protect the neck.";
+		this.m.Name = "Casque du sud avec coiffe";
+		this.m.Description = "Un casque en métal du sud avec une coiffe en maille pour protéger le cou.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

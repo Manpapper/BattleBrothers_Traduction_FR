@@ -4,8 +4,8 @@ this.leather_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.leather_helmet";
-		this.m.Name = "Leather Helmet";
-		this.m.Description = "A thick leather helmet fashioned from cured hides. The animals these once belonged to were certainly dangerous game.";
+		this.m.Name = "Casque en cuir";
+		this.m.Description = "Un casque en cuir épais fabriqué à partir de peaux séchées. Les animaux auxquels ils appartenaient autrefois étaient certainement un gibier dangereux.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

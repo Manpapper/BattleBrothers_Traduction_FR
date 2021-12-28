@@ -4,8 +4,8 @@ this.turban_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.turban_helmet";
-		this.m.Name = "Turban Helmet";
-		this.m.Description = "A full helmet crafted from overlapping long metal splints in the shape of a traditional southern head wrap.";
+		this.m.Name = "Casque turban";
+		this.m.Description = "Un casque intégral fabriqué à partir de longues attelles métalliques qui se chevauchent en forme de turban traditionnel du sud.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideCharacterHead = true;

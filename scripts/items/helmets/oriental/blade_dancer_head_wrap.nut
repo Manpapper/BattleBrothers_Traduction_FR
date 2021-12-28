@@ -4,8 +4,8 @@ this.blade_dancer_head_wrap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.blade_dancer_head_wrap";
-		this.m.Name = "Blade Dancer\'s Head Wrap";
-		this.m.Description = "This distinct red and black head wrap is traditionally worn by the most skilled warriors of the nomad tribes.";
+		this.m.Name = "Chèche de danseur de lame";
+		this.m.Description = "Ce chèche rouge et noir distinctif est traditionnellement porté par les guerriers les plus qualifiés des tribus nomades.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

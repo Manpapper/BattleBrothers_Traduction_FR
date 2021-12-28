@@ -4,8 +4,8 @@ this.assassin_face_mask <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.assassin_face_mask";
-		this.m.Name = "Assassin\'s Face Mask";
-		this.m.Description = "An assassin\'s face mask and head wrap.";
+		this.m.Name = "Masque facial d\'assassin";
+		this.m.Description = "Un masque facial et un chèche d\'assassin.";
 		this.m.ShowOnCharacter = true;
 		this.m.HideCharacterHead = true;
 		this.m.HideCorpseHead = true;

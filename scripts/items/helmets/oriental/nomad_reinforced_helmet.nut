@@ -4,8 +4,8 @@ this.nomad_reinforced_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nomad_reinforced_helmet";
-		this.m.Name = "Nomad Reinforced Helmet";
-		this.m.Description = "A nomad helmet reinforced with mail.";
+		this.m.Name = "Casque Nomade Renforcé";
+		this.m.Description = "Un casque nomade renforcé de mailles.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

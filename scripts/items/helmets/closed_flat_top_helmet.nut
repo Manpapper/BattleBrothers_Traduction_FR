@@ -4,8 +4,8 @@ this.closed_flat_top_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.closed_flat_top_helmet";
-		this.m.Name = "Closed Flat Top Helmet";
-		this.m.Description = "A closed helmet with complete faceguard. Hard to breathe in and limiting the field of view.";
+		this.m.Name = "Casque plat fermé";
+		this.m.Description = "Un casque fermé avec protection faciale complète. Difficile de respirer et limite le champ de vision.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

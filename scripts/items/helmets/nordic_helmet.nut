@@ -4,8 +4,8 @@ this.nordic_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nordic_helmet";
-		this.m.Name = "Nordic Helmet";
-		this.m.Description = "A nordic helmet guarding face and neck with additional metal plates.";
+		this.m.Name = "Casque Nordique";
+		this.m.Description = "Un casque nordique protégeant le visage et le cou avec des plaques métalliques supplémentaires.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

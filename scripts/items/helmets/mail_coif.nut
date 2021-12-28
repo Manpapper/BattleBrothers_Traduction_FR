@@ -4,8 +4,8 @@ this.mail_coif <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.mail_coif";
-		this.m.Name = "Mail Coif";
-		this.m.Description = "A mail coif that also protects the neck.";
+		this.m.Name = "Coiffe de mailles";
+		this.m.Description = "Une coiffe en maille qui protège également le cou.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

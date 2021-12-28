@@ -4,8 +4,8 @@ this.full_leather_cap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.full_leather_cap";
-		this.m.Name = "Full Leather Cap";
-		this.m.Description = "A closed leather cap that protects the head and neck. Padded for extra protection.";
+		this.m.Name = "Casquette en cuir complète";
+		this.m.Description = "Une casquette en cuir fermée qui protège la tête et le cou. Rembourré pour une protection supplémentaire.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

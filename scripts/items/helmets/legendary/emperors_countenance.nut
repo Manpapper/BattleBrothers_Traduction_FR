@@ -4,8 +4,8 @@ this.emperors_countenance <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.emperors_countenance";
-		this.m.Name = "The Emperor\'s Countenance";
-		this.m.Description = "A golden helmet and facemask, showing the visage of an emperor from an age long past, imbued with mystical energies. When you hold it into the light, it almost looks as if the face were moving and making expressions of disgust.";
+		this.m.Name = "Le visage de l\'empereur";
+		this.m.Description = "Un casque et un masque d\'or, montrant le visage d\'un empereur d\'un passé lointain, imprégné d\'énergies mystiques. Lorsque vous le tenez dans la lumière, on dirait presque que le visage bouge et fait des expressions de dégoût.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;
@@ -31,7 +31,7 @@ this.emperors_countenance <- this.inherit("scripts/items/helmets/helmet", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reflects [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] of damage taken in melee back to the attacker"
+			text = "Renvoi [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] des dégâts subis en mêlée à l\'attaquant"
 		});
 		return result;
 	}

@@ -4,8 +4,8 @@ this.hunters_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.hunters_hat";
-		this.m.Name = "Hunter\'s Hat";
-		this.m.Description = "A thick felt hat decorated with feathers as a hunter\'s trophy.";
+		this.m.Name = "Chapeau de chasseur";
+		this.m.Description = "Un chapeau de feutre épais décoré de plumes en guise de trophée de chasseur.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,7 +4,7 @@ this.ancient_lich_headpiece <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.ancient_lich_headpiece";
-		this.m.Name = "Ancient Headpiece";
+		this.m.Name = "Coiffe antique";
 		this.m.Description = "";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = false;

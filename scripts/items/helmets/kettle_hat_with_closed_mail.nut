@@ -4,8 +4,8 @@ this.kettle_hat_with_closed_mail <- this.inherit("scripts/items/helmets/helmet",
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.kettle_hat_with_closed_mail";
-		this.m.Name = "Kettle Hat with Closed Mail";
-		this.m.Description = "A full-metal helmet with a broad rim and a mail coif covering the neck and face.";
+		this.m.Name = "Chapel de fer avec mailles fermées";
+		this.m.Description = "Un casque entièrement en métal avec un large rebord et une coiffe en maille couvrant le cou et le visage.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,8 +4,8 @@ this.nomad_leather_cap <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.nomad_leather_cap";
-		this.m.Name = "Nomad Leather Cap";
-		this.m.Description = "A light nomad leather cap.";
+		this.m.Name = "Chapeau en cuir nomade";
+		this.m.Description = "Un chapeau en cuir nomade léger.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

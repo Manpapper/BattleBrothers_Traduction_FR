@@ -5,7 +5,7 @@ this.goblin_shaman_helmet <- this.inherit("scripts/items/helmets/helmet", {
 		this.helmet.create();
 		this.updateVariant();
 		this.m.ID = "armor.head.goblin_shaman_helmet";
-		this.m.Name = "Ritual Headpiece";
+		this.m.Name = "Coiffe rituelle";
 		this.m.Description = "";
 		this.m.ShowOnCharacter = true;
 		this.m.IconLarge = "";

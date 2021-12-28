@@ -4,8 +4,8 @@ this.engineer_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.engineer_hat";
-		this.m.Name = "Engineer\'s Hat";
-		this.m.Description = "A finely wrapped cloth turban with insignia declaring the wearer a learned engineer from the city states.";
+		this.m.Name = "Chapeau d\'ingénieur";
+		this.m.Description = "Un turban en tissu finement enveloppé avec des insignes déclarant le porteur comme un ingénieur savant des cités-états.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

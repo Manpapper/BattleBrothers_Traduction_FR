@@ -4,8 +4,8 @@ this.rusty_mail_coif <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.rusty_mail_coif";
-		this.m.Name = "Rusty Mail Coif";
-		this.m.Description = "A rusty mail coif that still offers good protection - it leaves horrible stains though.";
+		this.m.Name = "Coiffe de mailles rouillé";
+		this.m.Description = "Une coiffe de mailles rouillée qui offre toujours une bonne protection - elle laisse cependant d\'horribles taches.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;
