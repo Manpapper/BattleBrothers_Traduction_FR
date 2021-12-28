@@ -5,7 +5,7 @@ this.hide_and_bone_armor <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.m.ID = "armor.body.hide_and_bone_armor";
 		this.m.Name = "Armure de peau et d\'os";
-		this.m.Description = "Le cuir et l\'\os sont des matériaux courants dans les régions du nord. Cette armure utilise les deux pour une protection décente.";
+		this.m.Description = "Le cuir et l\'os sont des matériaux courants dans les régions du nord. Cette armure utilise les deux pour une protection décente.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
