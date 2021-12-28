@@ -4,8 +4,8 @@ this.orc_light_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.orc_light_shield";
-		this.m.Name = "Feral Shield";
-		this.m.Description = "A light wooden shield covered in leather. Offers good protection against ranged attacks due to its size, but is quite fragile.";
+		this.m.Name = "Bouclier sauvage";
+		this.m.Description = "Un bouclier en bois clair recouvert de cuir. Offre une bonne protection contre les attaques à distance en raison de sa taille, mais est assez fragile.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.updateVariant();

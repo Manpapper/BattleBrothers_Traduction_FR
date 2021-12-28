@@ -4,8 +4,8 @@ this.coffin_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.coffin_shield";
-		this.m.Name = "Ancient Coffin Shield";
-		this.m.Description = "An octagonal shield made of wood and reinforced with bronze. Time has taken its toll and the wood has become brittle.";
+		this.m.Name = "Bouclier de cercueil antique";
+		this.m.Description = "Un bouclier octogonal en bois et renforcé de bronze. Le temps a fait son œuvre et le bois est devenu cassant.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = this.Math.rand(1, 4);

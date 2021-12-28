@@ -55,7 +55,7 @@ this.paint_remover_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Faites un clic droit ou faites glisser sur le casque porté par le personnage actuellement sélectionné afin d'enlever la peinture. Cet article sera consommé au cours du processus."
+			text = "Faites un clic droit ou faites glisser sur le casque porté par le personnage actuellement sélectionné afin d\'enlever la peinture. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

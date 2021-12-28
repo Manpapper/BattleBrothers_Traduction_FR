@@ -4,8 +4,8 @@ this.gilders_embrace_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.gilders_embrace";
-		this.m.Name = "Gilder\'s Embrace";
-		this.m.Description = "An ornate metal shield with a bright gilded shine that reflects even the tiniest ray of light with the power of the sun itself.";
+		this.m.Name = "L\'étreinte doré";
+		this.m.Description = "Un bouclier en métal orné avec un éclat doré brillant qui reflète même le plus petit rayon de lumière avec la puissance du soleil lui-même.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;
@@ -78,31 +78,31 @@ this.gilders_embrace_shield <- this.inherit("scripts/items/shields/shield", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "Melee Defense [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.MeleeDefense + "[/color]"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.MeleeDefense + "[/color] Défense de Mêlée"
 		});
 		result.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "Ranged Defense [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.RangedDefense + "[/color]"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.RangedDefense + "[/color] Défense à Distance"
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "Maximum Fatigue [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color]"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color] Fatigue Maximum"
 		});
 		result.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is indestructible"
+			text = "Est indestructible"
 		});
 		result.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Everyone striking this shield receives the \'Dazed\' effect"
+			text = "Quiconque frappe ce bouclier reçoit l\'effet \'Etourdi\' "
 		});
 		return result;
 	}
@@ -122,7 +122,7 @@ this.gilders_embrace_shield <- this.inherit("scripts/items/shields/shield", {
 
 			if (_attacker.getTile().IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_attacker) + " is dazed by the Gilder\'s Embrace");
+				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_attacker) + " est étourdi par l\'étreinte doré");
 			}
 		}
 	}

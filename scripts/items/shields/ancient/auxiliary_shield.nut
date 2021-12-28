@@ -4,8 +4,8 @@ this.auxiliary_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.auxiliary_shield";
-		this.m.Name = "Ancient Auxiliary Shield";
-		this.m.Description = "A wooden light shield in oval shape. The wood seems brittle and old, making it less durable.";
+		this.m.Name = "Bouclier auxiliaire antique";
+		this.m.Description = "Un bouclier léger en bois de forme ovale. Le bois semble fragile et vieux, ce qui le rend moins durable.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = this.Math.rand(1, 4);

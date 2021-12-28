@@ -4,8 +4,8 @@ this.tower_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.tower_shield";
-		this.m.Name = "Ancient Tower Shield";
-		this.m.Description = "A tall and heavy tower shield that offers good protection, but is very bulky to handle. It appears to be old and worn down.";
+		this.m.Name = "Bouclier de tour antique";
+		this.m.Description = "Un bouclier grand et lourd qui offre une bonne protection, mais est très volumineux à manipuler. Il semble être vieux et usé.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = this.Math.rand(1, 5);

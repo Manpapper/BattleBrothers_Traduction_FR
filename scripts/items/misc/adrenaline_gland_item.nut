@@ -3,8 +3,8 @@ this.adrenaline_gland_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.adrenaline_gland";
-		this.m.Name = "Glande d'adrénaline";
-		this.m.Description = "La frénésie et la soif de sang d\'un Direwolf peuvent être attribuées aux substances produites par cette glande. Quelqu\'un, quelque part, en aura probablement l'utilité.";
+		this.m.Name = "Glande d\'adrénaline";
+		this.m.Description = "La frénésie et la soif de sang d\'un Direwolf peuvent être attribuées aux substances produites par cette glande. Quelqu\'un, quelque part, en aura probablement l\'utilité.";
 		this.m.Icon = "misc/inventory_wolf_adrenaline.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

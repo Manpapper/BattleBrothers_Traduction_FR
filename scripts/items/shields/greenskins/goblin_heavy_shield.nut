@@ -4,8 +4,8 @@ this.goblin_heavy_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.goblin_heavy_shield";
-		this.m.Name = "Reinforced Skirmisher Shield";
-		this.m.Description = "A reinforced wooden shield made by goblins. Light but also small, offering little protection for a human using it.";
+		this.m.Name = "Bouclier de tirailleur renforcé";
+		this.m.Description = "Un bouclier en bois renforcé fabriqué par des gobelins. Léger mais aussi petit, offrant peu de protection pour un humain l\'utilisant.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = this.Math.rand(1, 2);
