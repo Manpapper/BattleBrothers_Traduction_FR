@@ -3,8 +3,8 @@ this.paint_remover_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.paint_remover";
-		this.m.Name = "Paint Remover";
-		this.m.Description = "A bucket of paint remover. Can be used to remove paint from many common helmets.";
+		this.m.Name = "Décapant";
+		this.m.Description = "Un seau de décapant. Peut être utilisé pour enlever la peinture de nombreux casques communs.";
 		this.m.Icon = "consumables/paint_remover.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -55,7 +55,7 @@ this.paint_remover_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto a helmet carried by the currently selected character in order to paint it. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le casque porté par le personnage actuellement sélectionné afin d'enlever la peinture. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

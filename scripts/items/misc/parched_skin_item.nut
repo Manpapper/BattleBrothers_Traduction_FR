@@ -3,8 +3,8 @@ this.parched_skin_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.parched_skin";
-		this.m.Name = "Parched Skin";
-		this.m.Description = "This skin taken from an Alp is paperthin and glitters in the sunlight.";
+		this.m.Name = "Peau desséchée";
+		this.m.Description = "Cette peau provenant d\'un alpage est aussi fine que comme du papier et brille au soleil.";
 		this.m.Icon = "misc/inventory_alp_skin.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

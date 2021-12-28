@@ -3,8 +3,8 @@ this.petrified_scream_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.petrified_scream";
-		this.m.Name = "Petrified Scream";
-		this.m.Description = "An eerie artifact found among the remains of an Alp. Carrying this around may cause bad dreams and bad night\'s rest.";
+		this.m.Name = "Cri pétrifié";
+		this.m.Description = "Un artefact étrange trouvé parmi les restes d\'un Alp. Transporter cela peut provoquer de mauvais rêves et de mauvais repos nocturnes.";
 		this.m.Icon = "misc/inventory_alp_scream.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

@@ -3,8 +3,8 @@ this.wardog_armor_upgrade_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.wardog_armor_upgrade";
-		this.m.Name = "Wardog Armor";
-		this.m.Description = "A simple leather coat that can be donned by any wardog to give it some protection in combat.";
+		this.m.Name = "Armure de chien de garde";
+		this.m.Description = "Un simple manteau de cuir qui peut être enfilé par n\'importe quel chien de garde pour lui donner une certaine protection au combat.";
 		this.m.Icon = "armor_upgrades/upgrade_21.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -55,7 +55,7 @@ this.wardog_armor_upgrade_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto a wardog equipped by the currently selected character in order to use. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur un chien de garde équipé par le personnage actuellement sélectionné pour l\'utiliser. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

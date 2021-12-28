@@ -3,8 +3,8 @@ this.glowing_resin_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.glowing_resin";
-		this.m.Name = "Glowing Resin";
-		this.m.Description = "These amber resin shards have a light orange hue to them. If melted, the material makes for a strong adhesive.";
+		this.m.Name = "Résine scintillante";
+		this.m.Description = "Ces éclats de résine ambrée ont une teinte orange clair. S\'il est fondu, le matériau constitue un adhésif puissant.";
 		this.m.Icon = "misc/inventory_schrat_resin.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

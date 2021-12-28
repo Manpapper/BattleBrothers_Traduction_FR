@@ -3,8 +3,8 @@ this.potion_of_knowledge_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.potion_of_knowledge";
-		this.m.Name = "Potion of Knowledge";
-		this.m.Description = "Knowledge of the world, arcane and mundane, is said to be distilled into this potion. Upon drinking it, lessons are more easily learned.";
+		this.m.Name = "Potion de connaissance";
+		this.m.Description = "On dit que la connaissance du monde est distillée dans cette potion. En la buvant, les leçons sont plus facilement apprises.";
 		this.m.Icon = "consumables/potion_05.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -61,7 +61,7 @@ this.potion_of_knowledge_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

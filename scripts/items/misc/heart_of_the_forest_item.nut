@@ -3,8 +3,8 @@ this.heart_of_the_forest_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.heart_of_the_forest";
-		this.m.Name = "Heart of the Forest";
-		this.m.Description = "A thorny plant part, resembling in shape a human heart.";
+		this.m.Name = "Cœur de la forêt";
+		this.m.Description = "Une partie de plante épineuse, ressemblant à un coeur humain.";
 		this.m.Icon = "misc/inventory_schrat_heart.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

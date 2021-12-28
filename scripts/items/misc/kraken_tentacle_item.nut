@@ -3,8 +3,8 @@ this.kraken_tentacle_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.kraken_tentacle";
-		this.m.Name = "Severed Tentacle";
-		this.m.Description = "The shriveled remains of a legendary kraken\'s tentacle, slimy and squishy but highly sought-after by alchemists for its supposed rare properties.";
+		this.m.Name = "Tentacule coupé";
+		this.m.Description = "Les restes ratatinés d\'un tentacule de kraken légendaire, visqueux et spongieux mais très recherché par les alchimistes pour ses prétendues propriétés rares.";
 		this.m.Icon = "misc/inventory_kraken_tentacle.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

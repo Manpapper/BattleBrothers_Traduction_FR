@@ -3,8 +3,8 @@ this.mysterious_herbs_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.mysterious_herbs";
-		this.m.Name = "Mysterious Herbs";
-		this.m.Description = "These herbs do not look or smell like any known to you. Their scent is intriguing and appalling at the same time.";
+		this.m.Name = "Herbes mystérieuses";
+		this.m.Description = "Ces herbes ne ressemblent ni ne sentent comme celles que vous connaissez. Leur odeur est à la fois intrigante et effrayante.";
 		this.m.Icon = "misc/inventory_hexe_herbs.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

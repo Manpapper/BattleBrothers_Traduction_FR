@@ -3,8 +3,8 @@ this.wardog_heavy_armor_upgrade_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.wardog_heavy_armor_upgrade";
-		this.m.Name = "Heavy Wardog Armor";
-		this.m.Description = "A heavy hide coat that can be donned by any wardog to give it protection in combat.";
+		this.m.Name = "Armure lourde de chien de garde";
+		this.m.Description = "Un manteau en cuir épais qui peut être enfilé par n\'importe quel chien de garde pour le protéger au combat.";
 		this.m.Icon = "armor_upgrades/upgrade_20.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -55,7 +55,7 @@ this.wardog_heavy_armor_upgrade_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto a wardog equipped by the currently selected character in order to use. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur un chien de garde équipé par le personnage actuellement sélectionné pour l\'utiliser. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

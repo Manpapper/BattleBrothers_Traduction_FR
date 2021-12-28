@@ -3,8 +3,8 @@ this.ancient_wood_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.ancient_wood";
-		this.m.Name = "Ancient Wood";
-		this.m.Description = "Ancient pieces of wood carved from the remains of a living tree.";
+		this.m.Name = "Bois ancien";
+		this.m.Description = "Anciens morceaux de bois sculptés dans les restes d\'un arbre vivant.";
 		this.m.Icon = "misc/inventory_schrat_wood.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

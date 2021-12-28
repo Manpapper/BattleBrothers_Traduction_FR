@@ -3,8 +3,8 @@ this.kraken_horn_plate_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.kraken_horn_plate";
-		this.m.Name = "Horn Plate";
-		this.m.Description = "Taken from the the head of the legendary kraken, this large and hard horn plate is a trophy few in this world can claim.";
+		this.m.Name = "Plaque de corne";
+		this.m.Description = "Tirée de la tête du légendaire kraken, cette grande et dure plaque en corne est un trophée que peu de gens dans ce monde peuvent revendiquer.";
 		this.m.Icon = "misc/inventory_kraken_plate.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

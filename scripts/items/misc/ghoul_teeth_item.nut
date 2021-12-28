@@ -3,8 +3,8 @@ this.ghoul_teeth_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.ghoul_teeth";
-		this.m.Name = "Jagged Fangs";
-		this.m.Description = "A handful of jagged fangs taken from a Nachzehrer. Infected with rot but hard enough to chew through any bone. Might fetch some coin from alchemists on the market place.";
+		this.m.Name = "Crocs déchiquetés";
+		this.m.Description = "Une poignée de crocs déchiquetés pris sur un Nachzehrer. Infecté par la pourriture mais assez dur pour mâcher n\'importe quel os. Vous pourriez les vendre aux alchimistes sur la place du marché.";
 		this.m.Icon = "misc/inventory_ghoul_teeth_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

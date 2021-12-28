@@ -3,8 +3,8 @@ this.snake_oil_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.snake_oil";
-		this.m.Name = "Snake Oil";
-		this.m.Description = "A mysterious concoction said to help against hair loss, syphilis, deafness, impotence, skin rash, pox and writer\'s block. A true miracle potion if only you believe in it. Can be sold everywhere for a tidy sum.";
+		this.m.Name = "Huile de serpent";
+		this.m.Description = "Une mystérieuse concoction qui aide à lutter contre la chute des cheveux, la syphilis, la surdité, l\'impuissance, les éruptions cutanées, la variole et le bloc de l\'écrivain. Une vraie potion miracle si seulement vous y croyez. Peut être vendu partout pour une jolie somme.";
 		this.m.Icon = "misc/inventory_snake_oil.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

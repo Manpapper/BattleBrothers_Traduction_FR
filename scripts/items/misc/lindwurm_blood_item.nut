@@ -3,8 +3,8 @@ this.lindwurm_blood_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.lindwurm_blood";
-		this.m.Name = "Lindwurm Blood";
-		this.m.Description = "The corroding blood of a Lindwurm that eats away at metal in no time. Luckily it can be safely transported in glass vials.";
+		this.m.Name = "Sang de Lindwurm";
+		this.m.Description = "Le sang corrosif d\'un Lindwurm qui ronge le métal en un rien de temps. Heureusement, il peut être transporté en toute sécurité dans des flacons en verre.";
 		this.m.Icon = "misc/inventory_lindwurm_blood.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

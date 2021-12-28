@@ -3,8 +3,8 @@ this.werewolf_pelt_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.werewolf_pelt";
-		this.m.Name = "Unusually Large Wolf Pelt";
-		this.m.Description = "A thick and unusually large wolf pelt that should fetch a decent price at the market.";
+		this.m.Name = "Peau de loup inhabituellement grande";
+		this.m.Description = "Une peau de loup épaisse et inhabituellement grande qui devrait se vendre à un prix décent sur le marché.";
 		this.m.Icon = "misc/inventory_wolfpelt_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

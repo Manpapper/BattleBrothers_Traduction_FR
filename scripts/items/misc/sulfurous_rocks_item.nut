@@ -3,8 +3,8 @@ this.sulfurous_rocks_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.sulfurous_rock";
-		this.m.Name = "Sulfurous Rocks";
-		this.m.Description = "An offensive stench is emitted by these brittle rocks, which are prized highly by alchemists.";
+		this.m.Name = "Roches sulfureuses";
+		this.m.Description = "Une odeur nauséabonde est émise par ces roches cassantes, très prisées des alchimistes.";
 		this.m.Icon = "loot/southern_11.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

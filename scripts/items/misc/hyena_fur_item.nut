@@ -3,8 +3,8 @@ this.hyena_fur_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.hyena_fur";
-		this.m.Name = "Raging Hyena Fur";
-		this.m.Description = "The colorful fur of a desert hyena makes for an impressive and exotic addition to any mercenary armor, if not a sophisticated one.";
+		this.m.Name = "Fourrure de hyène déchaînée";
+		this.m.Description = "La fourrure colorée d\'une hyène du désert constitue un ajout impressionnant et exotique à toute armure de mercenaire.";
 		this.m.Icon = "loot/southern_10.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

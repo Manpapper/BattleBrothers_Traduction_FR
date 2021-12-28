@@ -3,8 +3,8 @@ this.happy_powder_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.happy_powder";
-		this.m.Name = "Happy Powder";
-		this.m.Description = "This miraculous powder instantly turns a grumpy, ill-tempered mercenary into an happy and energetic one. Do not operate heavy machinery while under the influence.";
+		this.m.Name = "Poudre magique";
+		this.m.Description = "Cette poudre miraculeuse transforme instantanément un mercenaire grincheux et de mauvaise humeur en un mercenaire joyeux et énergique. Ne pas utiliser de machinerie lourde sous influence.";
 		this.m.Icon = "consumables/powder_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;

@@ -3,8 +3,8 @@ this.ghoul_horn_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.ghoul_horn";
-		this.m.Name = "Nachzehrer Horn";
-		this.m.Description = "Nachzehrers can grow impressive horns, and these in turn make for impressive trophies.";
+		this.m.Name = "Corne de Nachzehrer";
+		this.m.Description = "Les nachzehrers peuvent faire pousser des cornes impressionnantes, qui à leur tour font des trophées impressionnants.";
 		this.m.Icon = "misc/inventory_ghoul_horn.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

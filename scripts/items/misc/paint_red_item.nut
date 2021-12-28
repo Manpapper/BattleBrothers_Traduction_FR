@@ -3,8 +3,8 @@ this.paint_red_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.paint_red";
-		this.m.Name = "Red Paint";
-		this.m.Description = "A bucket of red paint. Can be used to paint many common helmets.";
+		this.m.Name = "Peinture rouge";
+		this.m.Description = "Un seau de peinture rouge. Peut être utilisé pour peindre de nombreux casques communs.";
 		this.m.Icon = "consumables/paint_red.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -55,7 +55,7 @@ this.paint_red_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto a helmet carried by the currently selected character in order to paint it. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le casque porté par le personnage actuellement sélectionné afin de le peindre. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

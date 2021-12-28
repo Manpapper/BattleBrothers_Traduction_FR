@@ -3,8 +3,8 @@ this.third_eye_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.third_eye";
-		this.m.Name = "Third Eye";
-		this.m.Description = "Alps have no eyes, yet this eye-like organ can be retrieved from inside their skulls.";
+		this.m.Name = "Troisième oeil";
+		this.m.Description = "Les Alps n\'ont pas d\'yeux, pourtant cet organe en forme d\'oeil peut être récupéré à l\'intérieur de leur crâne.";
 		this.m.Icon = "misc/inventory_alp_eye.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

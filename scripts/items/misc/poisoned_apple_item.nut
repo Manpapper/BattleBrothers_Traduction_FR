@@ -3,8 +3,8 @@ this.poisoned_apple_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.poisoned_apple";
-		this.m.Name = "Poisoned Apple";
-		this.m.Description = "Looks delicious!";
+		this.m.Name = "Pomme Empoisonnée";
+		this.m.Description = "Ça a l\'air délicieux!";
 		this.m.Icon = "misc/inventory_hexe_apple.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

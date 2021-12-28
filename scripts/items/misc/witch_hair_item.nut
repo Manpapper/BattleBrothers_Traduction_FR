@@ -3,8 +3,8 @@ this.witch_hair_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.witch_hair";
-		this.m.Name = "Witch Hair";
-		this.m.Description = "Long and brittle strands of greyish hair taken from a Hexe. Their hair is said to have powerful properties in creating potions and elixirs. But then again, it\'s also said that Hexen keep the genitals of their victims as pets, so information attained from the peasantry might not be especially reliable.";
+		this.m.Name = "Cheveux de sorcière";
+		this.m.Description = "Des mèches longues et cassantes de cheveux grisâtres provenant d\'une Hexen. On dit que leurs cheveux ont de puissantes propriétés pour créer des potions et des élixirs. Mais là encore, il est également dit que les Hexen gardent les organes génitaux de leurs victimes comme animaux de compagnie, donc les informations obtenues de la paysannerie pourraient ne pas être particulièrement fiables.";
 		this.m.Icon = "misc/inventory_hexe_hair.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

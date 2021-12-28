@@ -3,8 +3,8 @@ this.potion_of_oblivion_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.potion_of_oblivion";
-		this.m.Name = "Potion of Oblivion";
-		this.m.Description = "Better not ask how this concoction of the rarest and most bizarre ingredients tastes! Anybody who drinks this is said to be able to relive his life, changing the decisions he made along the way.";
+		this.m.Name = "Potion d\'Oblivion";
+		this.m.Description = "Mieux vaut ne pas demander quel goût a cette concoction d\'ingrédients les plus rares et les plus bizarres ! On dit que quiconque en boit est capable de revivre sa vie, en changeant les décisions qu\'il a prises en cours de route.";
 		this.m.Icon = "consumables/potion_08.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -55,7 +55,7 @@ this.potion_of_oblivion_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

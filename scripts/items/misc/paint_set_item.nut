@@ -3,8 +3,8 @@ this.paint_set_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.paint_set_shields";
-		this.m.Name = "Paint Set";
-		this.m.Description = "A palette of several vibrant colors and a set of brushes. Can be used to paint common shields in your company\'s colors.";
+		this.m.Name = "Ensemble de peinture";
+		this.m.Description = "Une palette de plusieurs couleurs vibrantes et un ensemble de pinceaux. Peut être utilisé pour peindre des boucliers communs aux couleurs de votre compagnie.";
 		this.m.Icon = "consumables/paint_set_shields.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -55,7 +55,7 @@ this.paint_set_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto a shield carried by the currently selected character in order to paint it. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur un bouclier porté par le personnage actuellement sélectionné afin de le peindre. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

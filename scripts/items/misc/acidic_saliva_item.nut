@@ -3,8 +3,8 @@ this.acidic_saliva_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.acidic_saliva";
-		this.m.Name = "Acidic Saliva";
-		this.m.Description = "The saliva of the wild desert hyenas is priced by southern alchemists for its unique properties.";
+		this.m.Name = "Salive acide";
+		this.m.Description = "La salive des hyènes sauvages du désert est recherché par les alchimistes du sud pour ses propriétés uniques.";
 		this.m.Icon = "loot/southern_12.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

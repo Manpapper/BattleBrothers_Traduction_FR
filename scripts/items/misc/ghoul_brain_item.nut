@@ -3,8 +3,8 @@ this.ghoul_brain_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.ghoul_brain";
-		this.m.Name = "Nachzehrer Brain";
-		this.m.Description = "The greasy brain of a slain Nachzehrer. What could you possibly want with this?";
+		this.m.Name = "Cerveau de Nachzehrer";
+		this.m.Description = "Le cerveau graisseux d\'un Nachzehrer mort. Que pourriez-vous bien vouloir faire avec ça ?";
 		this.m.Icon = "misc/inventory_ghoul_brain.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

@@ -3,8 +3,8 @@ this.glistening_scales_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.glistening_scales";
-		this.m.Name = "Glistening Scales";
-		this.m.Description = "These scales are shimmering and glistening beautifully in all the colors as you turn them towards the sun.";
+		this.m.Name = "Écailles scintillantes";
+		this.m.Description = "Ces écailles scintillent et brillent magnifiquement de toutes les couleurs lorsque vous les tournez vers le soleil.";
 		this.m.Icon = "loot/southern_14.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;
