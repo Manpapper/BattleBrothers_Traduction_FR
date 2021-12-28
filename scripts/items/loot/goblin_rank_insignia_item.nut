@@ -3,8 +3,8 @@ this.goblin_rank_insignia_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.goblin_rank_insignia";
-		this.m.Name = "Golden Rank Insignia";
-		this.m.Description = "Golden rank insignia like these are worn by high-ranking goblin officials. Should be worth something to a collector.";
+		this.m.Name = "Insigne de rang d\'or";
+		this.m.Description = "Les insignes de rang d\'or comme ceux-ci sont portés par des officiels gobelins de haut rang. Devrait valoir quelque chose pour un collectionneur.";
 		this.m.Icon = "loot/inventory_goblins_03.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

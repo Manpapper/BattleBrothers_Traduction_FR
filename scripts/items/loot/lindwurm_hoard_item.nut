@@ -3,8 +3,8 @@ this.lindwurm_hoard_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.lindwurm_hoard";
-		this.m.Name = "Lindwurm\'s Hoard";
-		this.m.Description = "A collection of shimmering valuables, covered in the innards of a Lindwurm.";
+		this.m.Name = "Le trésor d\'un Lindwurm";
+		this.m.Description = "Une collection d\'objets chatoyants de valeur, recouverts des entrailles d\'un Lindwurm.";
 		this.m.Icon = "loot/inventory_loot_10.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

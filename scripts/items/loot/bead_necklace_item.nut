@@ -3,8 +3,8 @@ this.bead_necklace_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.bead_necklace";
-		this.m.Name = "Bead Necklace";
-		this.m.Description = "A necklace made from various beads typical of northern barbarian tribes.";
+		this.m.Name = "Collier de perles";
+		this.m.Description = "Un collier fait de diverses perles typiques des tribus barbares du nord.";
 		this.m.Icon = "loot/wildmen_02.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

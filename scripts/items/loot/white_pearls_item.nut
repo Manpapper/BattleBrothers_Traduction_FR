@@ -3,8 +3,8 @@ this.white_pearls_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.white_pearls";
-		this.m.Name = "White Pearls";
-		this.m.Description = "Rare white pearls in various sizes. Should fetch a good price at the next city.";
+		this.m.Name = "Perles Blanches";
+		this.m.Description = "Des perles blanches rares de différentes tailles. Devrait aller chercher un bon prix dans la prochaine ville.";
 		this.m.Icon = "loot/inventory_loot_07.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

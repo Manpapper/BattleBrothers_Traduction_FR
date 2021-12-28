@@ -3,8 +3,8 @@ this.ornate_tome_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.ornate_tome";
-		this.m.Name = "Ornate Tome";
-		this.m.Description = "A well preserved tome with a massive golden book cover. Should fetch a good price from the kind of people that study dusty old tomes.";
+		this.m.Name = "Grimoire décoré";
+		this.m.Description = "Un grimoire bien conservé avec une couverture en or massif. Devrait rapporter un bon prix au genre de personnes qui étudient les vieux grimoires poussiéreux.";
 		this.m.Icon = "loot/inventory_loot_08.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

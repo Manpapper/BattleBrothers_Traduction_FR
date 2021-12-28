@@ -3,8 +3,8 @@ this.jade_broche_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.jade_broche";
-		this.m.Name = "Jade Brooch";
-		this.m.Description = "A finely crafted jade brooch that would surely make you a coin or two when sold.";
+		this.m.Name = "Broche de Jade";
+		this.m.Description = "Une broche en jade finement travaillée qui vous ferait sûrement une pièce ou deux une fois vendue.";
 		this.m.Icon = "loot/southern_07.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

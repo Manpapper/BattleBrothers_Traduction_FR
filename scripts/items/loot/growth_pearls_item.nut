@@ -3,8 +3,8 @@ this.growth_pearls_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.growth_pearls";
-		this.m.Name = "Growth Pearls";
-		this.m.Description = "The fast growth of Nachzehrer tissue sometimes engulfs small particles or debris and turns them into shimmering pearls that can be found within the creatures. Should fetch a good price at the next city.";
+		this.m.Name = "Perles chatoyantes";
+		this.m.Description = "La croissance rapide des tissus des Nachzehrer engloutit parfois de petites particules ou débris et les transforme en perles chatoyantes que l'on peut trouver dans ces créatures. Devrait aller chercher un bon prix à la prochaine ville.";
 		this.m.Icon = "loot/southern_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

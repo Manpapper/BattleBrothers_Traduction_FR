@@ -3,8 +3,8 @@ this.valuable_furs_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.valuable_furs";
-		this.m.Name = "Valuable Furs";
-		this.m.Description = "A pack of valuable furs and pelts from various small animals. A very sought-after commodity, especially in larger settlements.";
+		this.m.Name = "Fourrures de valeur";
+		this.m.Description = "Un paquet de fourrures et de peaux de valeur provenant de divers petits animaux. Un produit très recherché, surtout dans les grandes villes.";
 		this.m.Icon = "loot/wildmen_03.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

@@ -3,8 +3,8 @@ this.soul_splinter_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.soul_splinter";
-		this.m.Name = "Soul Splinter";
-		this.m.Description = "In the dusty remains of Alps sometimes these pitch black splinters can be found. It looks like the stars are shimmering deep within these stones.";
+		this.m.Name = "Éclat d\'âme";
+		this.m.Description = "Dans les restes poussiéreux des Alps, on peut parfois trouver ces éclats d'un noir absolu. On dirait que les étoiles scintillent au plus profond de ces pierres.";
 		this.m.Icon = "loot/southern_06.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

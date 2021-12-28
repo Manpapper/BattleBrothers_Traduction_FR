@@ -3,8 +3,8 @@ this.glittering_rock_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.glittering_rock";
-		this.m.Name = "Glittering Rock";
-		this.m.Description = "Among the scattered rocks that remain of a defeated Ifrit, sometimes a rock shimmering with gold can be found. It makes for a valuable trophy.";
+		this.m.Name = "Roche scintillante";
+		this.m.Description = "Parmi les rochers épars qui restent d\'un Ifrit vaincu, on trouve parfois un rocher scintillant d\'or. Cela fait un trophée précieux.";
 		this.m.Icon = "loot/southern_04.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

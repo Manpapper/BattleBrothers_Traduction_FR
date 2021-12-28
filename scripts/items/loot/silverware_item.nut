@@ -3,8 +3,8 @@ this.silverware_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.silverware";
-		this.m.Name = "Silverware";
-		this.m.Description = "An accumulation of silver cutlery. Should fetch a good price at the next city.";
+		this.m.Name = "Argenterie";
+		this.m.Description = "Une accumulation de couverts en argent. Devrait rapporter un bon prix dans la prochaine ville.";
 		this.m.Icon = "loot/inventory_loot_06.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

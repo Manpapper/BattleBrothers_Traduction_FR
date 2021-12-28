@@ -3,8 +3,8 @@ this.gemstones_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.gemstones";
-		this.m.Name = "Gemstones";
-		this.m.Description = "Cut gemstones of various sizes. Should be worth a lot if you can find a buyer.";
+		this.m.Name = "Pierres précieuses";
+		this.m.Description = "Des pierres précieuses taillés de différentes formes. Devrait valoir beaucoup si vous pouvez trouver un acheteur.";
 		this.m.Icon = "loot/inventory_loot_05.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

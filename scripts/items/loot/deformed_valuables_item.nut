@@ -3,8 +3,8 @@ this.deformed_valuables_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.deformed_valuables";
-		this.m.Name = "Deformed Valuables";
-		this.m.Description = "Unholds are clumsy but strong creatures, and they tend to crush and mash valuables they find into a handy, twisted ball.";
+		this.m.Name = "Objets de valeur déformés";
+		this.m.Description = "Les Unholds sont des créatures maladroites mais fortes, et ils ont tendance à écraser et à agglomérer les objets de valeur qu\'ils trouvent en une balle tordue et pratique.";
 		this.m.Icon = "loot/southern_05.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

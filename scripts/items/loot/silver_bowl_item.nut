@@ -3,8 +3,8 @@ this.silver_bowl_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.silver_bowl";
-		this.m.Name = "Silver Bowl";
-		this.m.Description = "A large silver bowl of remarkable weight. Should fetch a good price at the next city.";
+		this.m.Name = "Bol en argent";
+		this.m.Description = "Un grand bol en argent d\'un poids remarquable. Devrait aller chercher un bon prix dans la prochaine ville.";
 		this.m.Icon = "loot/inventory_loot_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

@@ -3,8 +3,8 @@ this.rainbow_scale_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.rainbow_scale";
-		this.m.Name = "Rainbow Scale";
-		this.m.Description = "Desert serpents sometimes have particularly colorful and shiny scales embedded in their shimmering skin. These are sought after by jewelers and trophy hunters around the lands.";
+		this.m.Name = "Écaille arc-en-ciel";
+		this.m.Description = "Les serpents du désert ont parfois des écailles particulièrement colorées et brillantes incrustées dans leur peau chatoyante. Celles-ci sont recherchés par les bijoutiers et les chasseurs de trophées.";
 		this.m.Icon = "loot/southern_03.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

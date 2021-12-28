@@ -3,8 +3,8 @@ this.jeweled_crown_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.jeweled_crown";
-		this.m.Name = "Jeweled Crown";
-		this.m.Description = "A finely crafted golden crown beset with jewels. Should be worth a fortune if you can find a buyer.";
+		this.m.Name = "Couronne ornée de joyaux";
+		this.m.Description = "Une couronne d\'or finement travaillée parsemée de bijoux. Devrait valoir une fortune si vous pouvez trouver un acheteur.";
 		this.m.Icon = "loot/inventory_loot_02.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

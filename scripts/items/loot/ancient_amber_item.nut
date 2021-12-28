@@ -3,8 +3,8 @@ this.ancient_amber_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.ancient_amber";
-		this.m.Name = "Ancient Amber";
-		this.m.Description = "Particularly old schrats grow small splinters of extremely pure amber on their bark. These sell for quite a price to a trader.";
+		this.m.Name = "Ambre antique";
+		this.m.Description = "Les schrats particulièrement âgés font pousser de petits éclats d\'ambre extrêmement pur sur leur écorce. Ceux-ci se vendent à un prix assez élevé à un commerçant.";
 		this.m.Icon = "loot/southern_09.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

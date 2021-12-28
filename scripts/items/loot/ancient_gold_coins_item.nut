@@ -3,8 +3,8 @@ this.ancient_gold_coins_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.ancient_gold_coins";
-		this.m.Name = "Ancient Gold Coins";
-		this.m.Description = "Thick gold coins with various ancient imprints. Should be worth a lot if you can find a buyer.";
+		this.m.Name = "Pièces d\'or anciennes";
+		this.m.Description = "Pièces d\'or épaisses avec diverses empreintes anciennes. Devrait valoir beaucoup si vous pouvez trouver un acheteur.";
 		this.m.Icon = "loot/inventory_loot_04.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

@@ -3,8 +3,8 @@ this.goblin_carved_ivory_iconographs_item <- this.inherit("scripts/items/item", 
 	function create()
 	{
 		this.m.ID = "misc.goblin_carved_ivory_iconographs";
-		this.m.Name = "Carved Ivory Iconographs";
-		this.m.Description = "Artfully carved ivory iconographs depicting revered members of goblin society.";
+		this.m.Name = "Iconographies en ivoire sculpté";
+		this.m.Description = "Iconographies en ivoire sculptées représentant des membres vénérés de la société des gobelins.";
 		this.m.Icon = "loot/inventory_goblins_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

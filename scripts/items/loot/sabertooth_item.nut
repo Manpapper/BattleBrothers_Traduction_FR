@@ -3,8 +3,8 @@ this.sabertooth_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.sabertooth";
-		this.m.Name = "Sabertooth";
-		this.m.Description = "An extraordinarily large tooth that can probably be sold for some crowns to people who\'d want to pretend that they hunted down a fearsome beast.";
+		this.m.Name = "Dent de sabre";
+		this.m.Description = "Une dent extraordinairement grande qui peut probablement être vendue contre quelques couronnes à des personnes qui voudraient prétendre avoir traqué une bête redoutable.";
 		this.m.Icon = "loot/southern_02.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

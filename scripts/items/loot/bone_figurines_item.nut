@@ -3,8 +3,8 @@ this.bone_figurines_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.bone_figurines";
-		this.m.Name = "Bone Figurines";
-		this.m.Description = "Small carved figurines made from various rare bones. A collector might pay decent coin for this.";
+		this.m.Name = "Figurines en os";
+		this.m.Description = "Petites figurines sculptées faites à partir de divers os rares. Un collectionneur pourrait payer une pièce décente pour cela.";
 		this.m.Icon = "loot/wildmen_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

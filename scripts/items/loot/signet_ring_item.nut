@@ -3,8 +3,8 @@ this.signet_ring_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.signet_ring";
-		this.m.Name = "Signet Ring";
-		this.m.Description = "A jeweled signet ring. Should fetch a good price at the next city.";
+		this.m.Name = "Chevalière";
+		this.m.Description = "Une chevalière. Devrait aller chercher un bon prix dans la prochaine ville.";
 		this.m.Icon = "loot/inventory_loot_09.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;

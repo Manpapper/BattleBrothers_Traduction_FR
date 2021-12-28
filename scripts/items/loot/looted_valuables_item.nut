@@ -3,8 +3,8 @@ this.looted_valuables_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.looted_valuables";
-		this.m.Name = "Looted Valuables";
-		this.m.Description = "A pillaged pile of valuables that have been looted by the Barbarians over the years. Many pieces are broken and bent but the materials are quite exquisite.";
+		this.m.Name = "Objets de valeur volés";
+		this.m.Description = "Un tas d\'objets de valeur pillés par les barbares au fil des ans. De nombreuses pièces sont cassées et pliées mais les matériaux sont assez exquis.";
 		this.m.Icon = "loot/wildmen_04.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Loot;
