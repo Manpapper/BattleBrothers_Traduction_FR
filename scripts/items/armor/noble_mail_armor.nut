@@ -5,7 +5,7 @@ this.noble_mail_armor <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.m.ID = "armor.body.noble_mail";
 		this.m.Name = "Cotte de mailles de noble";
-		this.m.Description = "Un ensemble d'armures de maille vraiment magistralement conçu. Très léger et flexible pour réduire l\'encombrement tout en offrant une bonne protection.";
+		this.m.Description = "Un ensemble d\'armures de maille vraiment magistralement conçu. Très léger et flexible pour réduire l\'encombrement tout en offrant une bonne protection.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 87;

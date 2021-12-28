@@ -3,7 +3,7 @@ this.goblin_minted_coins_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.goblin_minted_coins";
-		this.m.Name = "Pièces d'argent frappées";
+		this.m.Name = "Pièces d\'argent frappées";
 		this.m.Description = "Pièces d\'argent frappées que les gobelins utilisent comme monnaie.";
 		this.m.Icon = "loot/inventory_goblins_02.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
