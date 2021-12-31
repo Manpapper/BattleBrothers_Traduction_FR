@@ -3,8 +3,8 @@ this.fountain_of_youth_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.bodily_reward";
-		this.m.Name = "Water Skin";
-		this.m.Description = "A leather water skin filled up with the liquid from under a bizarre human-shaped tree. It whispered in your head that you should drink it to heal.";
+		this.m.Name = "Outre de jouvence";
+		this.m.Description = "Une outre en cuir remplie d\'un liquide sous un arbre étrange de forme humaine. Il a murmuré dans votre tête que vous devriez le boire pour guérir.";
 		this.m.Icon = "consumables/youth_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -56,12 +56,12 @@ this.fountain_of_youth_item <- this.inherit("scripts/items/item", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Will remove all temporary or permanent injuries, as well as the Old, Addicted, Exhausted and Hangover traits and status effects"
+			text = "Supprime toutes les blessures temporaires ou permanentes, ainsi que les traits et effets de statut Ancien, Accro, Épuisé et Gueule de bois"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

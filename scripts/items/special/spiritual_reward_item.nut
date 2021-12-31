@@ -3,8 +3,8 @@ this.spiritual_reward_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.spiritual_reward";
-		this.m.Name = "Blue Vial";
-		this.m.Description = "Traded for with a malevolent witch at the expense of another man\'s life, this mysterious concoction promises to be a magical drink for the spirit, and to grant wisdom and insight as if having fought a dozen battles.";
+		this.m.Name = "Fiole bleue";
+		this.m.Description = "Échangé avec une sorcière malveillante au détriment de la vie d\'un autre homme, cette mystérieuse concoction promet d\'être une boisson magique pour l\'esprit, et de donner sagesse et perspicacité comme si il avait livré une douzaine de batailles.";
 		this.m.Icon = "consumables/vial_blue_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -56,12 +56,12 @@ this.spiritual_reward_item <- this.inherit("scripts/items/item", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Grants a veteran level up"
+			text = "Accorde un niveau supérieur de vétéran"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}

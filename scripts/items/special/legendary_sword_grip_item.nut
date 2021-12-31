@@ -3,8 +3,8 @@ this.legendary_sword_grip_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.legendary_sword_grip";
-		this.m.Name = "Sword Grip";
-		this.m.Description = "A masterfully crafted sword grip covered in mysterious blue stones. The stones seem to have a glimmering light emerging from deep within. Perhaps the sword could be reforged if you had both parts.";
+		this.m.Name = "Pommeau d\'épée";
+		this.m.Description = "Une poignée d\'épée magistralement conçue recouverte de mystérieuses pierres bleues. Les pierres semblent avoir une lumière scintillante émergeant du plus profond de l\'intérieur. Peut-être que l\'épée pourrait être reforgée si vous aviez les deux parties.";
 		this.m.Icon = "misc/inventory_sword_hilt_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc;

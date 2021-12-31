@@ -3,8 +3,8 @@ this.golden_goose_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.golden_goose";
-		this.m.Name = "Golden Goose";
-		this.m.Description = "A small goose statue crafted from solid gold. A tiny golden egg mysteriously emerges from the statue once a day.";
+		this.m.Name = "L\'Oie d\'Or";
+		this.m.Description = "Une petite statue d\'oie en or massif. Un petit oeuf d\'or émerge mystérieusement de la statue une fois par jour.";
 		this.m.Icon = "loot/golden_goose.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Legendary;
@@ -56,7 +56,7 @@ this.golden_goose_item <- this.inherit("scripts/items/item", {
 			id = 15,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Generates [color=" + this.Const.UI.Color.PositiveValue + "]15[/color] crowns daily."
+			text = "Génère [color=" + this.Const.UI.Color.PositiveValue + "]15[/color] couronnes d\'or par jour."
 		});
 		return result;
 	}

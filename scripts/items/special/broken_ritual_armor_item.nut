@@ -3,8 +3,8 @@ this.broken_ritual_armor_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.broken_ritual_armor";
-		this.m.Name = "Broken Ritual Armor";
-		this.m.Description = "The broken remains of a heavy barbarian armor, covered in ritual runes. It\'s unusable like this, and yet you feel that there\'s something special about it. Perhaps there is some way to mend it?";
+		this.m.Name = "Armure rituelle brisée";
+		this.m.Description = "Les restes brisés d\'une lourde armure barbare, recouverts de runes rituelles. C\'est inutilisable comme ça, et pourtant on sent qu\'elle a quelque chose de spécial. Peut-être y a-t-il un moyen de la réparer?";
 		this.m.Icon = "misc/inventory_champion_armor_quest.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc;

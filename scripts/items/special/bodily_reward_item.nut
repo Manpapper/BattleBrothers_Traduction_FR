@@ -3,8 +3,8 @@ this.bodily_reward_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "misc.bodily_reward";
-		this.m.Name = "Green Vial";
-		this.m.Description = "Traded for with a malevolent witch at the expense of another man\'s life, this mysterious concoction promises to be a magical drink for the body, and to instantly heal any injury that would also heal on its own.";
+		this.m.Name = "Fiole verte";
+		this.m.Description = "Échangé avec une sorcière malveillante au détriment de la vie d\'un autre homme, cette mystérieuse concoction promet d\'être une boisson magique pour le corps et de guérir instantanément toute blessure temporaire.";
 		this.m.Icon = "consumables/vial_green_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -56,12 +56,12 @@ this.bodily_reward_item <- this.inherit("scripts/items/item", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Instantly heals all temporary injuries, as well as the Hangover and Exhausted status effects"
+			text = "Soigne instantanément toutes les blessures temporaires, ainsi que les effets de statut Gueule de bois et Épuisé"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet article sera consommé au cours du processus."
 		});
 		return result;
 	}
