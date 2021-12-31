@@ -84,9 +84,7 @@ this.holy_water_item <- this.inherit("scripts/items/weapons/weapon", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "A [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] de chance de toucher des adversaires adjacents au même niveau ou à un niveau inférieur.
-
-"
+			text = "A [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] de chance de toucher des adversaires adjacents au même niveau ou à un niveau inférieur."
 		});
 		result.push({
 			id = 6,
