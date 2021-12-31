@@ -4,8 +4,8 @@ this.throwing_net <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "tool.throwing_net";
-		this.m.Name = "Throwing Net";
-		this.m.Description = "A net used to throw over a target in order to hamper their ability to move and defend themself effectively.";
+		this.m.Name = "Filet de lancer";
+		this.m.Description = "Un filet utilisé pour jeter par-dessus une cible afin d\'entraver sa capacité à se déplacer et à se défendre efficacement.";
 		this.m.IconLarge = "tools/inventory_throwing_net.png";
 		this.m.Icon = "tools/throwing_net_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Offhand;
@@ -60,13 +60,13 @@ this.throwing_net <- this.inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 64,
 			type = "text",
-			text = "Worn in Offhand"
+			text = "Porté dans la main gauche"
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tiles"
+			text = "Porté de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tuiles"
 		});
 
 		if (this.m.StaminaModifier < 0)
@@ -75,7 +75,7 @@ this.throwing_net <- this.inherit("scripts/items/weapons/weapon", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Maximum Fatigue [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.StaminaModifier + "[/color] Fatigue Maximum"
 			});
 		}
 
@@ -83,13 +83,13 @@ this.throwing_net <- this.inherit("scripts/items/weapons/weapon", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Will root a target in place and reduce their defenses"
+			text = "Immobilisera une cible sur place et réduira ses défenses"
 		});
 		result.push({
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is destroyed on use"
+			text = "Est détruit à l\'utilisation"
 		});
 		return result;
 	}

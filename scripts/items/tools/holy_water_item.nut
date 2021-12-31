@@ -4,8 +4,8 @@ this.holy_water_item <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.holy Water";
-		this.m.Name = "Flask of Blessed Water";
-		this.m.Description = "A flask filled with water blessed by a man of the gods. Can be thrown at short ranges.";
+		this.m.Name = "Flacon d\'eau bénite";
+		this.m.Description = "Un flacon rempli d\'eau bénite par un homme de Dieu. Peut être lancé à courte distance.";
 		this.m.IconLarge = "tools/holy_water_01.png";
 		this.m.Icon = "tools/holy_water_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Offhand;
@@ -60,37 +60,39 @@ this.holy_water_item <- this.inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 64,
 			type = "text",
-			text = "Worn in Offhand"
+			text = "Porté dans la main gauche"
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tiles"
+			text = "Porté de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tuiles"
 		});
 		result.push({
 			id = 4,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Damage of [color=" + this.Const.UI.Color.DamageValue + "]20[/color] for [color=" + this.Const.UI.Color.DamageValue + "]3[/color] turns to any undead target hit"
+			text = "Dégats de [color=" + this.Const.UI.Color.DamageValue + "]20[/color] pour [color=" + this.Const.UI.Color.DamageValue + "]3[/color] contre n\'importe quelle cible mort-vivante touchée"
 		});
 		result.push({
 			id = 9,
 			type = "text",
 			icon = "ui/icons/direct_damage.png",
-			text = "[color=" + this.Const.UI.Color.DamageValue + "]100%[/color] of damage ignores armor"
+			text = "[color=" + this.Const.UI.Color.DamageValue + "]100%[/color] des dégâts ignore l\'armure"
 		});
 		result.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has a [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] chance to hit bystanders at the same or lower height level as well."
+			text = "A [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] de chance de toucher des adversaires adjacents au même niveau ou à un niveau inférieur.
+
+"
 		});
 		result.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is destroyed on use"
+			text = "Est détruit à l\'utilisation"
 		});
 		return result;
 	}

@@ -4,8 +4,8 @@ this.smoke_bomb_item <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.smoke_bomb";
-		this.m.Name = "Smoke Pot";
-		this.m.Description = "A small pot that quickly creates a dense smoke cloud when broken on the ground. Useful for covering movement.";
+		this.m.Name = "Pot à fumée";
+		this.m.Description = "Un petit pot qui crée rapidement un nuage de fumée dense lorsqu\'il est brisé sur le sol. Utile pour couvrir un mouvement.";
 		this.m.IconLarge = "tools/smoke_bomb_01.png";
 		this.m.Icon = "tools/smoke_bomb_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Offhand;
@@ -60,25 +60,25 @@ this.smoke_bomb_item <- this.inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 64,
 			type = "text",
-			text = "Worn in Offhand"
+			text = "Porté dasn la main gauche"
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tiles"
+			text = "Porté de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tuiles"
 		});
 		result.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Covers [color=" + this.Const.UI.Color.DamageValue + "]7[/color] tiles in smoke for one round, allowing anyone inside to move freely and ignore zones of control"
+			text = "Couvre [color=" + this.Const.UI.Color.DamageValue + "]7[/color] tuiles de fumée pendant un tour, permettant à quiconque à l\'intérieur de se déplacer librement et d\'ignorer les zones de contrôle"
 		});
 		result.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is destroyed on use"
+			text = "Est détruit à l\'utilisation"
 		});
 		return result;
 	}

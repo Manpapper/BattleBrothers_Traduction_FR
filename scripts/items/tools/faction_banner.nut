@@ -4,7 +4,7 @@ this.faction_banner <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.faction_banner";
-		this.m.Name = "Battle Standard";
+		this.m.Name = "Bannière";
 		this.m.Description = "";
 		this.m.IconLarge = "";
 		this.m.Icon = "";

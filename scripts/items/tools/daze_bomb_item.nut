@@ -4,8 +4,8 @@ this.daze_bomb_item <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.daze_bomb";
-		this.m.Name = "Flash Pot";
-		this.m.Description = "A throwable pot filled with mysterious powders that react violently on impact to create a bright flash and loud bang. Will daze anyone close by.";
+		this.m.Name = "Pot éclair";
+		this.m.Description = "Un pot jetable rempli de poudres mystérieuses qui réagissent violemment à l\'impact pour créer un flash lumineux et une forte détonation. Éblouira toute personne à proximité.";
 		this.m.IconLarge = "tools/daze_bomb_01.png";
 		this.m.Icon = "tools/daze_bomb_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Offhand;
@@ -60,25 +60,25 @@ this.daze_bomb_item <- this.inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 64,
 			type = "text",
-			text = "Worn in Offhand"
+			text = "Porté dans la main gauche"
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tiles"
+			text = "Porté de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tuiles"
 		});
 		result.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Will give up to [color=" + this.Const.UI.Color.DamageValue + "]7[/color] targets the Dazed status effect for 2 turns"
+			text = "Donnera jusqu\'à [color=" + this.Const.UI.Color.DamageValue + "]7[/color] cibles l\'effet de statut Étourdi pendant 2 tours"
 		});
 		result.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is destroyed on use"
+			text = "Est détruit à l\'utilisation"
 		});
 		return result;
 	}

@@ -4,8 +4,8 @@ this.fire_bomb_item <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.fire_bomb";
-		this.m.Name = "Fire Pot";
-		this.m.Description = "A pot filled with highly flammable liquid that will set an area ablaze with fire when thrown.";
+		this.m.Name = "Pot à feu";
+		this.m.Description = "Un pot rempli d\'un liquide hautement inflammable qui mettra le feu à une zone lorsqu\'il sera jeté.";
 		this.m.IconLarge = "tools/fire_pot_01.png";
 		this.m.Icon = "tools/fire_pot_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Offhand;
@@ -60,25 +60,25 @@ this.fire_bomb_item <- this.inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 64,
 			type = "text",
-			text = "Worn in Offhand"
+			text = "Porté dans la main gauche "
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tiles"
+			text = "Porté de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tuiles"
 		});
 		result.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Will set [color=" + this.Const.UI.Color.DamageValue + "]7[/color] tiles ablaze with burning fire for 2 rounds"
+			text = "Mettra [color=" + this.Const.UI.Color.DamageValue + "]7[/color] tuiles enflammé d\'un feu brûlant pendant 2 tours"
 		});
 		result.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is destroyed on use"
+			text = "Est détruit à l\'utilisation"
 		});
 		return result;
 	}

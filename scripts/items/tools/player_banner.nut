@@ -4,7 +4,7 @@ this.player_banner <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.player_banner";
-		this.m.Name = "Battle Standard";
+		this.m.Name = "Bannière";
 		this.m.Description = "A company standard to take into battle. Held high, allies will rally around it with renewed resolve, and enemies will know well who is about to crush them.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
@@ -46,7 +46,7 @@ this.player_banner <- this.inherit("scripts/items/weapons/weapon", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Allies at a range of 4 tiles or less receive [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] of the Resolve of the character holding this standard as a bonus, up to a maximum of the standard bearer\'s Resolve."
+			text = "Les alliés à une distance de 4 tuiles ou moins reçoivent [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] de la Détermination du personnage détenant cet étendard en bonus, jusqu\'à un maximum de la Détermination du porteur de l\'étendard."
 		});
 		return result;
 	}
