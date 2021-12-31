@@ -4,8 +4,8 @@ this.orc_metal_club <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.orc_metal_club";
-		this.m.Name = "Cudgel";
-		this.m.Description = "A massive wooden club studded with metal plates. Not made for human hands.";
+		this.m.Name = "Gourdin";
+		this.m.Description = "Un bâton en bois massif parsemé de plaques de métal. Pas fait pour les mains humaines.";
 		this.m.Categories = "Mace, One-Handed";
 		this.m.IconLarge = "weapons/melee/orc_club_02_140x70.png";
 		this.m.Icon = "weapons/melee/orc_club_02_70x70.png";

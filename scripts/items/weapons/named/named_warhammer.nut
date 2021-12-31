@@ -7,7 +7,7 @@ this.named_warhammer <- this.inherit("scripts/items/weapons/named/named_weapon",
 		this.updateVariant();
 		this.m.ID = "weapon.named_warhammer";
 		this.m.NameList = this.Const.Strings.HammerNames;
-		this.m.Description = "A well-crafted warhammer that easily batters through armor plates.";
+		this.m.Description = "Un marteau de guerre bien conçu qui frappe facilement à travers les plaques de blindage.";
 		this.m.Categories = "Hammer, One-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;

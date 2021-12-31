@@ -7,7 +7,7 @@ this.named_warbrand <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.updateVariant();
 		this.m.ID = "weapon.named_warbrand";
 		this.m.NameList = this.Const.Strings.WarbrandNames;
-		this.m.Description = "A masterfully crafted and somewhat uncommon variant of the sword with a long and thin blade, sharpened only on one side, and no crossguard. Can be used both for quick slashes and sweeping strikes.";
+		this.m.Description = "Une variante magistralement conçue et quelque peu rare de l\'épée avec une lame longue et fine, affûtée d\'un seul côté et sans garde-corps. Peut être utilisé à la fois pour des entailles rapides et des frappes rapides.";
 		this.m.Categories = "Sword, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

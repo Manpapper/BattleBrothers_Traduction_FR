@@ -5,7 +5,7 @@ this.polemace <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.polemace";
 		this.m.Name = "Polemace";
-		this.m.Description = "A long mace that can be used to deliver stunning blows over a distance.";
+		this.m.Description = "Une longue masse qui peut être utilisée pour délivrer des coups époustouflants à distance.";
 		this.m.Categories = "Mace, Two-Handed";
 		this.m.IconLarge = "weapons/melee/polemace_01.png";
 		this.m.Icon = "weapons/melee/polemace_01_70x70.png";

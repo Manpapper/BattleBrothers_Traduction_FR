@@ -4,8 +4,8 @@ this.firelance <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.firelance";
-		this.m.Name = "Fire Lance";
-		this.m.Description = "A spear of southern design with an explosive charge that will spew fire over two tiles when ignited. The charge is only usable once per battle, but automatically refilled after battle.";
+		this.m.Name = "Lance de feu";
+		this.m.Description = "Une lance de conception méridionale avec une charge explosive qui crachera du feu sur deux tuiles lorsqu\'elle est allumée. La charge n\'est utilisable qu\'une seule fois par bataille, mais automatiquement rechargée après la bataille.";
 		this.m.Categories = "Spear/Firearm, One-Handed";
 		this.m.IconLarge = "weapons/ranged/firelance_01.png";
 		this.m.Icon = "weapons/ranged/firelance_01_70x70.png";
@@ -48,14 +48,14 @@ this.firelance <- this.inherit("scripts/items/weapons/weapon", {
 
 		if (this.m.Ammo > 0)
 		{
-			this.m.Name = "Fire Lance";
+			this.m.Name = "Lance de feu";
 			this.m.IconLarge = "weapons/ranged/firelance_01.png";
 			this.m.Icon = "weapons/ranged/firelance_01_70x70.png";
 			this.m.ArmamentIcon = "icon_firelance_01";
 		}
 		else
 		{
-			this.m.Name = "Fire Lance (Spent)";
+			this.m.Name = "Lance de feu (Utilisé)";
 			this.m.IconLarge = "weapons/ranged/firelance_02.png";
 			this.m.Icon = "weapons/ranged/firelance_02_70x70.png";
 			this.m.ArmamentIcon = "icon_firelance_01_empty";

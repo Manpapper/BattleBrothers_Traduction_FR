@@ -7,7 +7,7 @@ this.named_billhook <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.updateVariant();
 		this.m.ID = "weapon.named_billhook";
 		this.m.NameList = this.Const.Strings.BillNames;
-		this.m.Description = "A pike-like weapon with a blade for striking over some distance and a hook attached for pulling in targets. The smith who forged this weapon certainly knew what he was doing.";
+		this.m.Description = "Une arme semblable à une pique avec une lame pour frapper sur une certaine distance et un crochet attaché pour tirer des cibles. Le forgeron qui a forgé cette arme savait certainement ce qu\'il faisait.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

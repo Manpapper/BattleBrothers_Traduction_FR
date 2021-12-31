@@ -6,8 +6,8 @@ this.goblin_staff <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.goblin_staff";
-		this.m.Name = "Gnarly Staff";
-		this.m.Description = "A gnarly staff carved from old and hard wood, adorned with bones and feathers. May be of interest to collectors.";
+		this.m.Name = "Bâton noueux";
+		this.m.Description = "Un bâton noueux sculpté dans du bois ancien et dur, orné d\'os et de plumes. Peut intéresser les collectionneurs.";
 		this.m.Categories = "Mace, One-Handed";
 		this.m.IconLarge = "weapons/melee/goblin_weapon_06.png";
 		this.m.Icon = "weapons/melee/goblin_weapon_06_70x70.png";

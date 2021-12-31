@@ -7,7 +7,7 @@ this.named_pike <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.updateVariant();
 		this.m.ID = "weapon.named_pike";
 		this.m.NameList = this.Const.Strings.PikeNames;
-		this.m.Description = "A long pike used for thrusting over some distance and keeping the enemy at bay. This particular pike is skillfully crafted from flexible wood that may bend but never snap, and the metal tip consists of an alloy rarely seen in these parts of the world.";
+		this.m.Description = "Une longue pique utilisée pour attaquer à distance ou tenir l\'ennemi au loin. Cette pique particulière est habilement fabriqué à partir de bois flexible qui peut se plier mais ne jamais se casser, et la pointe en métal se compose d\'un alliage rarement vu dans ces parties du monde.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

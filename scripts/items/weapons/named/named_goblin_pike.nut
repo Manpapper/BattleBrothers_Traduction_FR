@@ -9,7 +9,7 @@ this.named_goblin_pike <- this.inherit("scripts/items/weapons/named/named_weapon
 		this.m.NameList = this.Const.Strings.PikeNames;
 		this.m.PrefixList = this.Const.Strings.GoblinWeaponPrefix;
 		this.m.UseRandomName = false;
-		this.m.Description = "A goblin pike with its jagged tips can tear terrible, bleeding wounds. This piece is particularly well-crafted.";
+		this.m.Description = "Une pique gobeline avec ses pointes dentelées peut infliger des blessures saignantes terribles. Cette pièce est particulièrement bien travaillée.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

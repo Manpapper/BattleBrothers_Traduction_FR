@@ -4,8 +4,8 @@ this.goblin_falchion <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.goblin_falchion";
-		this.m.Name = "Cruel Falchion";
-		this.m.Description = "A lightweight goblin falchion made for cutting.";
+		this.m.Name = "Fauchon cruel";
+		this.m.Description = "Un fauchon gobelin léger fait pour la coupe.";
 		this.m.Categories = "Sword, One-Handed";
 		this.m.IconLarge = "weapons/melee/goblin_weapon_02.png";
 		this.m.Icon = "weapons/melee/goblin_weapon_02_70x70.png";

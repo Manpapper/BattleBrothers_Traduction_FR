@@ -4,8 +4,8 @@ this.ancient_spear <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ancient_spear";
-		this.m.Name = "Ancient Spear";
-		this.m.Description = "An ancient wooden spear of simple design. Time has taken its toll on this weapon.";
+		this.m.Name = "Lance ancienne";
+		this.m.Description = "Une ancienne lance en bois de conception simple. Le temps a fait des ravages sur cette arme.";
 		this.m.Categories = "Spear, One-Handed";
 		this.m.IconLarge = "weapons/melee/ancient_spear_01.png";
 		this.m.Icon = "weapons/melee/ancient_spear_01_70x70.png";

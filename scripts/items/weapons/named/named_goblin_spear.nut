@@ -9,7 +9,7 @@ this.named_goblin_spear <- this.inherit("scripts/items/weapons/named/named_weapo
 		this.m.NameList = this.Const.Strings.SpearNames;
 		this.m.PrefixList = this.Const.Strings.GoblinWeaponPrefix;
 		this.m.UseRandomName = false;
-		this.m.Description = "A masterfully crafted goblin spear. Accurate, fast and deadly in the hands of any skilled fighter.";
+		this.m.Description = "Une lance gobelin magistralement conçue. Précise, rapide et mortelle entre les mains de n\'importe quel combattant qualifié.";
 		this.m.Categories = "Spear, One-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded | this.Const.Items.ItemType.Defensive;

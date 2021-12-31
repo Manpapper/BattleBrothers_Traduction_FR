@@ -7,7 +7,7 @@ this.named_greataxe <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.updateVariant();
 		this.m.ID = "weapon.named_greataxe";
 		this.m.NameList = this.Const.Strings.AxeNames;
-		this.m.Description = "A long, two-handed axe designed for battle that bears down heavy with every swing and can easily cut a man in two.";
+		this.m.Description = "Une longue hache à deux mains conçue pour le combat qui pèse lourdement à chaque coup et peut facilement couper un homme en deux.";
 		this.m.Categories = "Axe, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

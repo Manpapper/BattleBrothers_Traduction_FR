@@ -4,8 +4,8 @@ this.composite_bow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.composite_bow";
-		this.m.Name = "Composite Bow";
-		this.m.Description = "A short bow made from composite layers for additional drawing power.";
+		this.m.Name = "Arc composite";
+		this.m.Description = "Un arc court fabriqué à partir de couches composites pour une puissance supplémentaire.";
 		this.m.Categories = "Bow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/composite_bow_01.png";
 		this.m.Icon = "weapons/ranged/composite_bow_01_70x70.png";

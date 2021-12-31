@@ -19,7 +19,7 @@ this.named_crossbow <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.updateVariant();
 		this.m.ID = "weapon.named_crossbow";
 		this.m.NameList = this.Const.Strings.CrossbowNames;
-		this.m.Description = "A pull-lever crossbow that can propel bolts over medium distances. Effective even in the hands of laymen, but requires almost a full turn to reload. Well balanced and with extraordinarily strong sinews, this weapon is truly the work of a master craftsman.";
+		this.m.Description = "Une arbalète à levier qui peut propulser des carreaux sur des distances moyennes. Efficace même entre les mains de profanes, mais nécessite presque un tour complet pour recharger. Bien équilibrée et dotée d\'une force extraordinaire, cette arme est véritablement l\'oeuvre d\'un maître artisan.";
 		this.m.Categories = "Crossbow, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
@@ -64,7 +64,7 @@ this.named_crossbow <- this.inherit("scripts/items/weapons/named/named_weapon", 
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Must be reloaded before firing again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être rechargé avant de tirer à nouveau[/color]"
 			});
 		}
 

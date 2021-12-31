@@ -6,8 +6,8 @@ this.claw_club <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.claw_club";
-		this.m.Name = "Claw Club";
-		this.m.Description = "The massive claws of some wild animal are fixed to this large club";
+		this.m.Name = "Bâton-Griffe";
+		this.m.Description = "Les griffes massives d\'un animal sauvage sont fixées à ce grand bâton";
 		this.m.Categories = "Mace, One-Handed";
 		this.m.IconLarge = "weapons/melee/wildmen_02.png";
 		this.m.Icon = "weapons/melee/wildmen_02_70x70.png";

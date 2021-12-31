@@ -10,7 +10,7 @@ this.named_rusty_warblade <- this.inherit("scripts/items/weapons/named/named_wea
 		this.m.PrefixList = this.Const.Strings.BarbarianPrefix;
 		this.m.SuffixList = this.Const.Strings.BarbarianSuffix;
 		this.m.UseRandomName = false;
-		this.m.Description = "This massive and exceptionally well-crafted warblade is covered with runes and decorations that are typical for the barbarian tribes of the north.";
+		this.m.Description = "Cette lame de guerre massive et exceptionnellement bien conçue est recouverte de runes et de décorations typiques des tribus barbares du nord.";
 		this.m.Categories = "Cleaver, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

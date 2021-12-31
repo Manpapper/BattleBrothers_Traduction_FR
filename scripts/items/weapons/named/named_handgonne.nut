@@ -32,7 +32,7 @@ this.named_handgonne <- this.inherit("scripts/items/weapons/named/named_weapon",
 		this.m.NameList = this.Const.Strings.HandgonneNames;
 		this.m.PrefixList = this.Const.Strings.SouthernPrefix;
 		this.m.SuffixList = this.Const.Strings.SouthernSuffix;
-		this.m.Description = "An expertly-cast iron barrel with a long wooden handle. It fires shrapnel in a cone and can hit multiple targets with one shot. Can not be used while engaged in melee.";
+		this.m.Description = "Un canon en fonte savamment moulé avec un long manche en bois. Il tire des éclats d\'obus dans un cône et peut toucher plusieurs cibles d\'un seul coup. Ne peut pas être utilisé en mêlée.";
 		this.m.Categories = "Firearm, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
@@ -84,7 +84,7 @@ this.named_handgonne <- this.inherit("scripts/items/weapons/named/named_weapon",
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Must be reloaded before firing again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être rechargé avant de tirer à nouveau[/color]"
 			});
 		}
 

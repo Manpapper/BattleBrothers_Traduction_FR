@@ -9,7 +9,7 @@ this.named_swordlance <- this.inherit("scripts/items/weapons/named/named_weapon"
 		this.m.NameList = this.Const.Strings.SwordlanceNames;
 		this.m.PrefixList = this.Const.Strings.SouthernPrefix;
 		this.m.SuffixList = this.Const.Strings.SouthernSuffix;
-		this.m.Description = "A long pole attached to a sharp and finely balanced curved blade, used to deliver deep sweeping strikes over some distance.";
+		this.m.Description = "Une longue perche attachée à une lame incurvée tranchante et finement équilibrée, utilisée pour effectuer des frappes profondes sur une certaine distance.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

@@ -8,7 +8,7 @@ this.named_orc_cleaver <- this.inherit("scripts/items/weapons/named/named_weapon
 		this.m.ID = "weapon.named_orc_cleaver";
 		this.m.NameList = this.Const.Strings.CleaverNames;
 		this.m.UseRandomName = false;
-		this.m.Description = "A sharp and crude shard of metal with a wrapped grip resembling a sword but a lot heavier. Not made for human hands.";
+		this.m.Description = "Un éclat de métal pointu et brut avec une poignée enveloppée ressemblant à une épée mais beaucoup plus lourde. Pas fait pour des mains humaines.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;

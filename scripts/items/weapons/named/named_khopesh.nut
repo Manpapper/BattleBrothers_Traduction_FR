@@ -9,7 +9,7 @@ this.named_khopesh <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.NameList = this.Const.Strings.CleaverNames;
 		this.m.PrefixList = this.Const.Strings.OldWeaponPrefix;
 		this.m.UseRandomName = false;
-		this.m.Description = "An elegant curved blade that is fitted on a richly ornated grip. Pieces like this have been lost for centuries and are said to date back to the height of the empire.";
+		this.m.Description = "Une lame incurvée élégante qui est montée sur une poignée richement ornée. Des pièces comme celle-ci ont été perdues pendant des siècles et remonteraient à l\'apogée de l\'empire.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;

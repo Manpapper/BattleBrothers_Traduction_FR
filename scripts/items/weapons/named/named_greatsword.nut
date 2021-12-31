@@ -9,7 +9,7 @@ this.named_greatsword <- this.inherit("scripts/items/weapons/named/named_weapon"
 		this.updateVariant();
 		this.m.ID = "weapon.named_greatsword";
 		this.m.NameList = this.Const.Strings.GreatswordNames;
-		this.m.Description = "This greatsword is a true masterpiece, with a blade that is both flexible yet extremely durable.";
+		this.m.Description = "Cette épée à deux mains est un véritable chef-d'oeuvre, avec une lame à la fois flexible et extrêmement résistante.";
 		this.m.Categories = "Sword, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

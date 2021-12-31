@@ -4,8 +4,8 @@ this.nomad_sling <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.nomad_sling";
-		this.m.Name = "Nomad Sling";
-		this.m.Description = "A leather sling on a metal-reinforced staff, used to hurl stones at the enemy. With stones abundant everywhere, it will never run out of ammunition.";
+		this.m.Name = "Fronde nomade";
+		this.m.Description = "Une fronde en cuir sur un bâton renforcé de métal, utilisée pour lancer des pierres sur l\'ennemi. Avec des pierres abondantes partout, il ne manquera jamais de munitions.";
 		this.m.Categories = "Throwing Weapon, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/warriors_sling_01.png";
 		this.m.Icon = "weapons/ranged/warriors_sling_01_70x70.png";

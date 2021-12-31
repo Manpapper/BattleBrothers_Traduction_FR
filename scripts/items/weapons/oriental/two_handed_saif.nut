@@ -4,8 +4,8 @@ this.two_handed_saif <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.two_handed_saif";
-		this.m.Name = "Two-Handed Saif";
-		this.m.Description = "A long version of the Saif wielded with both hands. The curved blade can cleave gruesome wounds.";
+		this.m.Name = "Saif à deux mains";
+		this.m.Description = "Une version longue du Saif maniée à deux mains. La lame incurvée provoque des blessures horribles.";
 		this.m.Categories = "Cleaver, Two-Handed";
 		this.m.IconLarge = "weapons/melee/two_handed_saif.png";
 		this.m.Icon = "weapons/melee/two_handed_saif_70x70.png";

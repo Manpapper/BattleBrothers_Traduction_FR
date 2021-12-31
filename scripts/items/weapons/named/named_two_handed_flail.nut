@@ -7,7 +7,7 @@ this.named_two_handed_flail <- this.inherit("scripts/items/weapons/named/named_w
 		this.updateVariant();
 		this.m.ID = "weapon.named_two_handed_flail";
 		this.m.NameList = this.Const.Strings.TwoHandedFlailNames;
-		this.m.Description = "This impressive two-handed flail has little left in common with the farming tool it originates from. It appears to have been designed by an experienced fighter and built by an extraordinarily skilled craftsman.";
+		this.m.Description = "Cet impressionnant fléau à deux mains n\'a plus grand-chose en commun avec l\'outil agricole dont il est issu. Il semble avoir été conçu par un combattant expérimenté et construit par un artisan extraordinairement qualifié.";
 		this.m.Categories = "Flail, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

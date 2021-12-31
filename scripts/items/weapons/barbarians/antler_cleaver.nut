@@ -4,8 +4,8 @@ this.antler_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.antler_cleaver";
-		this.m.Name = "Antler Cleaver";
-		this.m.Description = "A very crude cleaver crafted from a sharpened antler. Heavy and blunt, but still dangerous.";
+		this.m.Name = "Couperet de bois";
+		this.m.Description = "Un couperet très grossier fabriqué à partir d\'un bois aiguisé. Lourd et contondant, mais toujours dangereux.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.IconLarge = "weapons/melee/wildmen_01.png";
 		this.m.Icon = "weapons/melee/wildmen_01_70x70.png";

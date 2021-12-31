@@ -4,8 +4,8 @@ this.orc_axe <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.orc_axe";
-		this.m.Name = "Head Splitter";
-		this.m.Description = "A heavy piece of metal with a sharp head. Not made for human hands.";
+		this.m.Name = "Coupeur de tête";
+		this.m.Description = "Un lourd morceau de métal avec une tête pointue. Pas fait pour les mains humaines.";
 		this.m.Categories = "Axe, One-Handed";
 		this.m.IconLarge = "weapons/melee/orc_axe.png";
 		this.m.Icon = "weapons/melee/orc_axe_70x70.png";

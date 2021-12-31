@@ -4,8 +4,8 @@ this.goblin_spear <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.goblin_spear";
-		this.m.Name = "Goblin Skewer";
-		this.m.Description = "A long shaft with a sharp metal tip at the top.";
+		this.m.Name = "Lance gobline";
+		this.m.Description = "Une longue tige avec une pointe métallique au sommet.";
 		this.m.Categories = "Spear, One-Handed";
 		this.m.IconLarge = "weapons/melee/goblin_weapon_03.png";
 		this.m.Icon = "weapons/melee/goblin_weapon_03_70x70.png";

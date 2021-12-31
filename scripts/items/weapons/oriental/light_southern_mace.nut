@@ -6,8 +6,8 @@ this.light_southern_mace <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.light_southern_mace";
-		this.m.Name = "Light Southern Mace";
-		this.m.Description = "A metal mace with extended wings for added effectiveness against armor.";
+		this.m.Name = "Masse du Sud légère";
+		this.m.Description = "Une masse en métal avec des ailes étendues pour plus d\'efficacité contre les armures.";
 		this.m.Categories = "Mace, One-Handed";
 		this.m.IconLarge = "weapons/melee/light_southern_mace_01.png";
 		this.m.Icon = "weapons/melee/light_southern_mace_01_70x70.png";

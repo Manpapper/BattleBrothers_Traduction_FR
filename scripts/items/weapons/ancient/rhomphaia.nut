@@ -5,7 +5,7 @@ this.rhomphaia <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.rhomphaia";
 		this.m.Name = "Rhomphaia";
-		this.m.Description = "A long and curved blade, sharpened only on one side, on a large handle. Can be used both for quick slashes and sweeping strikes.";
+		this.m.Description = "Une lame longue et incurvée, affûtée d\'un seul côté, sur un large manche. Peut être utilisé à la fois pour des entailles rapides et des frappes rapides.";
 		this.m.Categories = "Sword, Two-Handed";
 		this.m.IconLarge = "weapons/melee/romphaia_01.png";
 		this.m.Icon = "weapons/melee/romphaia_01_70x70.png";

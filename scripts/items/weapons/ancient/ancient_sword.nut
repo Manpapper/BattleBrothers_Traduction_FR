@@ -4,8 +4,8 @@ this.ancient_sword <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ancient_sword";
-		this.m.Name = "Ancient Sword";
-		this.m.Description = "A straight blade of ancient origin. The grip is covered with strange ornamentations, which may make it valuable to historians and other scholarly-minded individuals.";
+		this.m.Name = "Épée ancienne";
+		this.m.Description = "Une lame droite d\'origine ancienne. La poignée est recouverte d\'ornements étranges, ce qui peut la rendre précieuse pour les historiens et autres personnes à l\'esprit érudit.";
 		this.m.Categories = "Sword, One-Handed";
 		this.m.IconLarge = "weapons/melee/ancient_sword_01.png";
 		this.m.Icon = "weapons/melee/ancient_sword_01_70x70.png";

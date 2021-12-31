@@ -7,7 +7,7 @@ this.named_longaxe <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.updateVariant();
 		this.m.ID = "weapon.named_longaxe";
 		this.m.NameList = this.Const.Strings.LongaxeNames;
-		this.m.Description = "A relatively thin blade on a very long shaft used for devastating cutting attacks over some distance, and to render shields unusable from behind the frontline. This longaxe must be the work of an extraordinary craftsman.";
+		this.m.Description = "Une lame relativement fine sur un manche très long utilisée pour des attaques coupantes dévastatrices sur une certaine distance et pour rendre les boucliers inutilisables derrière la ligne de front. Cette longue hache doit être l\'oeuvre d\'un artisan hors du commun.";
 		this.m.Categories = "Axe, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

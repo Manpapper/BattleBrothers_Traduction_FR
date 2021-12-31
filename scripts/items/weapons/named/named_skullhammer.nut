@@ -10,7 +10,7 @@ this.named_skullhammer <- this.inherit("scripts/items/weapons/named/named_weapon
 		this.m.PrefixList = this.Const.Strings.BarbarianPrefix;
 		this.m.SuffixList = this.Const.Strings.BarbarianSuffix;
 		this.m.UseRandomName = false;
-		this.m.Description = "This crude and heavy hammer is decorated with additional animals skulls as if not impressive enough already. Like a ram\'s head, it will crush its target.";
+		this.m.Description = "Ce marteau brut et lourd est décoré de crânes d\'animaux supplémentaires comme s\'il n'était pas déjà assez impressionnant. Comme une tête de bélier, il écrasera sa cible.";
 		this.m.Categories = "Hammer, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

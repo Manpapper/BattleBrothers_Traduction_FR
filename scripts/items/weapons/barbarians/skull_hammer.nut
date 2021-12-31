@@ -4,8 +4,8 @@ this.skull_hammer <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.skull_hammer";
-		this.m.Name = "Two-Handed Skull Hammer";
-		this.m.Description = "A crude metal hammer used with two hands to crush both armor and its wearer alike.";
+		this.m.Name = "Marteau crâne à deux mains";
+		this.m.Description = "Un marteau en métal brut utilisé à deux mains pour écraser à la fois l\'armure et son porteur.";
 		this.m.Categories = "Hammer, Two-Handed";
 		this.m.IconLarge = "weapons/melee/wildmen_07.png";
 		this.m.Icon = "weapons/melee/wildmen_07_70x70.png";

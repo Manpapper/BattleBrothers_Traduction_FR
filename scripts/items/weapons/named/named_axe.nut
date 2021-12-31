@@ -7,7 +7,7 @@ this.named_axe <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.updateVariant();
 		this.m.ID = "weapon.named_axe";
 		this.m.NameList = this.Const.Strings.AxeNames;
-		this.m.Description = "A well-crafted and rare variant of an axe explicitly designed for fighting armored opponents.";
+		this.m.Description = "Une variante rare et bien conçue d\'une hache explicitement conçue pour combattre des adversaires en armure.";
 		this.m.Categories = "Axe, One-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;

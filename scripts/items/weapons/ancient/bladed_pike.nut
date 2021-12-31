@@ -4,8 +4,8 @@ this.bladed_pike <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.bladed_pike";
-		this.m.Name = "Ancient Bladed Pike";
-		this.m.Description = "A long, ancient pike used to attack over some distance and keeping the enemy at bay.";
+		this.m.Name = "Pique à pointe antique";
+		this.m.Description = "Une longue et ancienne pique attaquant à une certaine distance et retenant l\'ennemi au loin.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.IconLarge = "weapons/melee/bladed_pike_01.png";
 		this.m.Icon = "weapons/melee/bladed_pike_01_70x70.png";

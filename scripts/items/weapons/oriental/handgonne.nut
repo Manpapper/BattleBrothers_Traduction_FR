@@ -27,8 +27,8 @@ this.handgonne <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.handgonne";
-		this.m.Name = "Handgonne";
-		this.m.Description = "An iron barrel with a long wooden handle. It fires shrapnel in a cone and can hit multiple targets with one shot. Can not be used while engaged in melee.";
+		this.m.Name = "Cannon à main";
+		this.m.Description = "Un tonneau en fer avec un long manche en bois. Il tire des éclats d\'obus dans un cône et peut toucher plusieurs cibles d\'un seul coup. Ne peut pas être utilisé en mêlée.";
 		this.m.Categories = "Firearm, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/handgonne_01.png";
 		this.m.Icon = "weapons/ranged/handgonne_01_70x70.png";
@@ -75,7 +75,7 @@ this.handgonne <- this.inherit("scripts/items/weapons/weapon", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Must be reloaded before firing again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être rechargé avant de tirer à nouveau[/color]"
 			});
 		}
 

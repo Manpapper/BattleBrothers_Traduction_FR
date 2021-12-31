@@ -4,8 +4,8 @@ this.rusty_warblade <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.rusty_warblade";
-		this.m.Name = "Rusty Warblade";
-		this.m.Description = "A heavy blade with a curved end combining sword and axe into a devastating two-handed cleaver.";
+		this.m.Name = "Épée de guerre rouillée";
+		this.m.Description = "Une lame lourde avec une extrémité incurvée combinant épée et hache dans un couperet à deux mains dévastateur.";
 		this.m.Categories = "Cleaver, Two-Handed";
 		this.m.IconLarge = "weapons/melee/wildmen_08.png";
 		this.m.Icon = "weapons/melee/wildmen_08_70x70.png";

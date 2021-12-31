@@ -7,7 +7,7 @@ this.named_spear <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.updateVariant();
 		this.m.ID = "weapon.named_spear";
 		this.m.NameList = this.Const.Strings.SpearNames;
-		this.m.Description = "A masterfully crafted spear that feels surprisingly light, yet sturdy.";
+		this.m.Description = "Une lance magistralement conçue qui est étonnamment légère, mais robuste.";
 		this.m.Categories = "Spear, One-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded | this.Const.Items.ItemType.Defensive;

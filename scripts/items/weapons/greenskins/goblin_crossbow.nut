@@ -16,8 +16,8 @@ this.goblin_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.goblin_crossbow";
-		this.m.Name = "Spiked Impaler";
-		this.m.Description = "A large and heavy crossbow with menacing spikes in front. More like a minitature ballista, it shoots stakes with enough force to knock back a target hit.";
+		this.m.Name = "Empaleur à pointes";
+		this.m.Description = "Une arbalète large et lourde avec des pointes menaçantes à l\'avant. Plus comme une baliste miniature, elle tire des piquets avec suffisamment de force pour repousser une cible touchée.";
 		this.m.Categories = "Crossbow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/crossbow_goblin_01.png";
 		this.m.Icon = "weapons/ranged/crossbow_goblin_01_70x70.png";
@@ -57,7 +57,7 @@ this.goblin_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Must be reloaded before firing again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être rechargé avant de tirer à nouveau[/color]"
 			});
 		}
 

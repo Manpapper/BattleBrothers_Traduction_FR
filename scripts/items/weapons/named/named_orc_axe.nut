@@ -8,7 +8,7 @@ this.named_orc_axe <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.ID = "weapon.named_orc_axe";
 		this.m.NameList = this.Const.Strings.AxeNames;
 		this.m.UseRandomName = false;
-		this.m.Description = "A heavy piece of metal with a sharp head. Not made for human hands.";
+		this.m.Description = "Un morceau de métal lourd avec une tête pointue. Pas fait pour les mains humaines.";
 		this.m.Categories = "Axe, One-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;

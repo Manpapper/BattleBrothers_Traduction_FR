@@ -14,8 +14,8 @@ this.heavy_javelin <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.heavy_javelin";
-		this.m.Name = "Bundle of Heavy Javelins";
-		this.m.Description = "A set of heavy, rugged-looking javelins. Harder to throw and hit with, but more impactful.";
+		this.m.Name = "Des javelots lourds";
+		this.m.Description = "Un ensemble de javelots lourds et robustes. Plus difficile à lancer, mais plus percutant.";
 		this.m.Categories = "Throwing Weapon, One-Handed";
 		this.m.IconLarge = "weapons/ranged/javelins_heavy_01.png";
 		this.m.Icon = "weapons/ranged/javelins_heavy_01_70x70.png";

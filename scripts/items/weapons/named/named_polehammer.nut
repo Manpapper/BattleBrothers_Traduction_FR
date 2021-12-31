@@ -7,7 +7,7 @@ this.named_polehammer <- this.inherit("scripts/items/weapons/named/named_weapon"
 		this.updateVariant();
 		this.m.ID = "weapon.named_polehammer";
 		this.m.NameList = this.Const.Strings.PolehammerNames;
-		this.m.Description = "A crude weapon like a polehammer can also be crafted with passion, skill and attention to detail, as this exemplar showcases impressively.";
+		this.m.Description = "Une arme grossière comme un marteau perforateur peut également être fabriquée avec passion, compétence et souci du détail, comme le montre cet exemplaire de manière impressionnante.";
 		this.m.Categories = "Hammer, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

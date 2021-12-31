@@ -4,8 +4,8 @@ this.obsidian_dagger <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.obsidian_dagger";
-		this.m.Name = "Obsidian Dagger";
-		this.m.Description = "A hermit witch gave you this stone dagger after tempering it with your blood. Reflections in its glass seem to move on their own, but this is clearly a trick of the eye. Very curiously, however, blood never seems to dry if it rests upon the obsidian.";
+		this.m.Name = "Dague d\'obsidienne";
+		this.m.Description = "Une sorcière ermite vous a donné ce poignard en pierre après l\'avoir trempé avec votre sang. Les reflets dans son verre semblent se déplacer d\'eux-mêmes, mais c\'est clairement un jeu de l\'oeil. Très curieusement, cependant, le sang ne semble jamais sécher s\'il repose sur l\'obsidienne.";
 		this.m.Categories = "Dagger, One-Handed";
 		this.m.IconLarge = "weapons/melee/obsidian_dagger_01.png";
 		this.m.Icon = "weapons/melee/obsidian_dagger_70x70.png";
@@ -32,7 +32,7 @@ this.obsidian_dagger <- this.inherit("scripts/items/weapons/weapon", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Resurrects any human killed with it as a Wiederganger fighting for you"
+			text = "Ressuscite tout humain tué avec comme Wiederganger combattant pour vous"
 		});
 		return result;
 	}

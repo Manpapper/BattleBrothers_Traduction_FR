@@ -7,7 +7,7 @@ this.named_two_handed_mace <- this.inherit("scripts/items/weapons/named/named_we
 		this.updateVariant();
 		this.m.ID = "weapon.named_two_handed_mace";
 		this.m.NameList = this.Const.Strings.TwoHandedMaceNames;
-		this.m.Description = "A large two-handed mace born in the fiery smithy of a true master. Despite its massive head, the weapon is well-balanced and reasonably easy to handle for an experienced individual.";
+		this.m.Description = "Une grande masse à deux mains née dans la forge fougueuse d\'un vrai maître. Malgré sa tête massive, l\'arme est bien équilibrée et relativement facile à manipuler pour un individu expérimenté.";
 		this.m.Categories = "Mace, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

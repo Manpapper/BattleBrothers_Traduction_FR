@@ -4,8 +4,8 @@ this.goblin_bow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.goblin_bow";
-		this.m.Name = "Boondock Bow";
-		this.m.Description = "A very light short bow used by Goblins.";
+		this.m.Name = "Arc de Boondock";
+		this.m.Description = "Un arc court très léger utilisé par les gobelins.";
 		this.m.Categories = "Bow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/bow_goblin_01.png";
 		this.m.Icon = "weapons/ranged/bow_goblin_01_70x70.png";

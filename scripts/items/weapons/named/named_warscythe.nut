@@ -9,7 +9,7 @@ this.named_warscythe <- this.inherit("scripts/items/weapons/named/named_weapon",
 		this.m.NameList = this.Const.Strings.WarscytheNames;
 		this.m.PrefixList = this.Const.Strings.OldWeaponPrefix;
 		this.m.UseRandomName = false;
-		this.m.Description = "A long pole attached to a sharp curved blade, used to deliver deep sweeping strikes over some distance. This exemplar is particularly well-crafted.";
+		this.m.Description = "Une longue perche attachée à une lame incurvée tranchante, utilisée pour effectuer des frappes profondes sur une certaine distance. Cet exemplaire est particulièrement bien conçu.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

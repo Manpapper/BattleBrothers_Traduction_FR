@@ -5,7 +5,7 @@ this.falx <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.falx";
 		this.m.Name = "Falx";
-		this.m.Description = "A short and heavy blade with a curved edge designed for hacking and ripping bleeding wounds. Dulled over the years.";
+		this.m.Description = "Une lame courte et lourde avec un bord incurvé conçue pour couper et déchirer. Émoussé au fil des ans.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.IconLarge = "weapons/melee/falx_01.png";
 		this.m.Icon = "weapons/melee/falx_01_70x70.png";

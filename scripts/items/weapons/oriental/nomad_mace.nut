@@ -6,8 +6,8 @@ this.nomad_mace <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.nomad_mace";
-		this.m.Name = "Nomad Mace";
-		this.m.Description = "A simple wooden mace with a metal head. Weapons like this are popular among the nomads of the deserts.";
+		this.m.Name = "Masse nomade";
+		this.m.Description = "Une simple masse en bois avec une tête en métal. Des armes comme celle-ci sont populaires parmi les nomades des déserts.";
 		this.m.Categories = "Mace, One-Handed";
 		this.m.IconLarge = "weapons/melee/wooden_nomad_mace_01.png";
 		this.m.Icon = "weapons/melee/wooden_nomad_mace_01_70x70.png";

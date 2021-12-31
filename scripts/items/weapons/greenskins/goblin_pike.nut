@@ -4,8 +4,8 @@ this.goblin_pike <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.goblin_pike";
-		this.m.Name = "Jagged Pike";
-		this.m.Description = "A long jagged pike that can tear bleeding wounds and keep enemies at bay with its long reach.";
+		this.m.Name = "Pique déchiqueté";
+		this.m.Description = "Une longue pique dentelé qui peut déchirer des blessures saignantes et tenir les ennemis à distance grâce à sa longue portée.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.IconLarge = "weapons/melee/goblin_weapon_04.png";
 		this.m.Icon = "weapons/melee/goblin_weapon_04_70x70.png";

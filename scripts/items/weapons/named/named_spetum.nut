@@ -7,7 +7,7 @@ this.named_spetum <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.updateVariant();
 		this.m.ID = "weapon.named_spetum";
 		this.m.NameList = this.Const.Strings.SpetumNames;
-		this.m.Description = "This Spetum is especially well-crafted, and its three tips have been honed into perfectly pointy spikes.";
+		this.m.Description = "Ce Spetum est particulièrement bien conçu et ses trois pointes ont été affûtées parfaitement.";
 		this.m.Categories = "Spear, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
