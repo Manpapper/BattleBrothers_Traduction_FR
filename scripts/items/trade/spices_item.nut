@@ -4,8 +4,8 @@ this.spices_item <- this.inherit("scripts/items/trade/trading_good_item", {
 	{
 		this.trading_good_item.create();
 		this.m.ID = "misc.spices";
-		this.m.Name = "Spices";
-		this.m.Description = "Various flavorful and rare spices heeding from the southern realms. These ingredients are highly sought after in the north.";
+		this.m.Name = "Épices";
+		this.m.Description = "Diverses épices savoureuses et rares venant des royaumes du sud. Ces ingrédients sont très recherchés dans le nord.";
 		this.m.Icon = "trade/inventory_trade_10.png";
 		this.m.Culture = this.Const.World.Culture.Southern;
 		this.m.ProducingBuildings = [

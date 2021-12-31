@@ -4,8 +4,8 @@ this.quality_wood_item <- this.inherit("scripts/items/trade/trading_good_item", 
 	{
 		this.trading_good_item.create();
 		this.m.ID = "misc.quality_wood";
-		this.m.Name = "Quality Wood";
-		this.m.Description = "High quality wood with no knotholes or other flaws. Traders will pay good coin for this.";
+		this.m.Name = "Bois de qualité";
+		this.m.Description = "Bois de haute qualité sans nœuds ni autres défauts. Les commerçants paieront une belle somme pour cela.";
 		this.m.Icon = "trade/inventory_trade_01.png";
 		this.m.Culture = this.Const.World.Culture.Neutral;
 		this.m.ProducingBuildings = [
