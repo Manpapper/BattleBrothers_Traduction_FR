@@ -141,14 +141,14 @@ this.food_item <- this.inherit("scripts/items/item", {
 			result.push({
 				id = 7,
 				type = "text",
-				text = "Bought for [img]gfx/ui/tooltips/money.png[/img]" + this.m.BoughtAtPrice
+				text = "Acheté pour [img]gfx/ui/tooltips/money.png[/img]" + this.m.BoughtAtPrice
 			});
 		}
 
 		result.push({
 			id = 67,
 			type = "text",
-			text = "Will spoil in [color=" + this.Const.UI.Color.NegativeValue + "]" + this.getSpoilInDays() + "[/color] days."
+			text = "Va se gâter dans [color=" + this.Const.UI.Color.NegativeValue + "]" + this.getSpoilInDays() + "[/color] jours."
 		});
 		return result;
 	}

@@ -4,8 +4,8 @@ this.dates_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.dates";
-		this.m.Name = "Dates";
-		this.m.Description = "Provisions. Dried dates are common in the south. These sweet, dried fruits are high energy and well preserved.";
+		this.m.Name = "Dattes";
+		this.m.Description = "Des provisions. Les dattes séchées sont courantes dans le sud. Ces fruits secs sucrés sont très énergétiques et bien conservés.";
 		this.m.Icon = "supplies/inventory_provisions_20.png";
 		this.m.Value = 80;
 		this.m.GoodForDays = 10;

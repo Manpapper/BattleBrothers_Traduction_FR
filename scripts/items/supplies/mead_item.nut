@@ -4,8 +4,8 @@ this.mead_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.mead";
-		this.m.Name = "Mead";
-		this.m.Description = "Provisions. An alcoholic beverage made from honey. Both durable and tasty while also being much safer to drink than unpurified water.";
+		this.m.Name = "Hydromel";
+		this.m.Description = "Des provisions. Boisson alcoolisée à base de miel. À la fois durable et savoureux tout en étant beaucoup plus sûr à boire que l\'eau non purifiée.";
 		this.m.Icon = "supplies/inventory_provisions_12.png";
 		this.m.Value = 90;
 		this.m.GoodForDays = 11;

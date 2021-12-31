@@ -4,8 +4,8 @@ this.dried_lamb_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.dried_lamb";
-		this.m.Name = "Dried Lamb";
-		this.m.Description = "Provisions. Dried Lamb is a speciality and a highy sought-after food in the south. A real treat for any hungry mercenary.";
+		this.m.Name = "Agneau séché";
+		this.m.Description = "Des provisions. L\'agneau séché est une spécialité et un aliment très recherché dans le sud. Un vrai régal pour tout mercenaire affamé.";
 		this.m.Icon = "supplies/inventory_provisions_22.png";
 		this.m.Value = 105;
 		this.m.GoodForDays = 13;

@@ -4,8 +4,8 @@ this.roots_and_berries_item <- this.inherit("scripts/items/supplies/food_item", 
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.roots_and_berries";
-		this.m.Name = "Roots and Berries";
-		this.m.Description = "Provisions. Dried roots and berries are not the most exciting of rations but easy to come by and durable.";
+		this.m.Name = "Racines et baies";
+		this.m.Description = "Des provisions. Les racines et les baies séchées ne sont pas les rations les plus excitantes, mais elles sont faciles à trouver et durables.";
 		this.m.Icon = "supplies/inventory_provisions_04.png";
 		this.m.Value = 60;
 		this.m.GoodForDays = 8;

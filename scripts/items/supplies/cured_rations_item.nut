@@ -4,8 +4,8 @@ this.cured_rations_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.cured_rations";
-		this.m.Name = "Masterfully Cured Rations";
-		this.m.Description = "Provisions. These rations consist of assorted, well cured meats and vegetables that are sealed in small boxes. The ideal provision to take with you on long journeys and expeditions.";
+		this.m.Name = "Rations parfaitement séchées";
+		this.m.Description = "Des provisions. Ces rations se composent d\'un assortiment de viandes et de légumes bien séchés, scellés dans de petites boîtes. La provision idéale à emporter avec vous lors de longs voyages et expéditions.";
 		this.m.Icon = "supplies/inventory_provisions_16.png";
 		this.m.Value = 150;
 		this.m.GoodForDays = 16;

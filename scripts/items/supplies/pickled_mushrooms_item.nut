@@ -4,8 +4,8 @@ this.pickled_mushrooms_item <- this.inherit("scripts/items/supplies/food_item", 
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.pickled_mushrooms";
-		this.m.Name = "Mushrooms";
-		this.m.Description = "Provisions. Swampy regions offer little food, but pickled mushrooms are a favoured provision for travelers in these areas.";
+		this.m.Name = "Champignons";
+		this.m.Description = "Des provisions. Les régions marécageuses offrent peu de nourriture, mais les champignons marinés sont une solution privilégiée pour les voyageurs dans ces régions.";
 		this.m.Icon = "supplies/inventory_provisions_07.png";
 		this.m.Value = 70;
 		this.m.GoodForDays = 9;

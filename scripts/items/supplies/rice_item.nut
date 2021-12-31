@@ -4,8 +4,8 @@ this.rice_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.rice";
-		this.m.Name = "Rice";
-		this.m.Description = "Provisions. Rice is cheap and readily available in the south. Spiced up with various herbs it becomes a tasty dish.";
+		this.m.Name = "Riz";
+		this.m.Description = "Des provisions. Le riz est bon marché et facilement disponible dans le sud. Rehaussé de diverses herbes, il devient un plat savoureux.";
 		this.m.Icon = "supplies/inventory_provisions_21.png";
 		this.m.Value = 60;
 		this.m.GoodForDays = 8;

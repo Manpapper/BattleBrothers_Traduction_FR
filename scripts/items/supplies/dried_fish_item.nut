@@ -4,8 +4,8 @@ this.dried_fish_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.dried_fish";
-		this.m.Name = "Dried Fish";
-		this.m.Description = "Provisions. Fish is a common and filling food in coastal regions. It is dried to preserve it.";
+		this.m.Name = "Poisson séché";
+		this.m.Description = "Des provisions. Le poisson est un aliment courant et copieux dans les régions côtières. Il est séché pour le conserver.";
 		this.m.Icon = "supplies/inventory_provisions_06.png";
 		this.m.Value = 70;
 		this.m.GoodForDays = 8;

@@ -25,7 +25,7 @@ this.ammo_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "supplies.ammo";
-		this.m.Name = "Ammunition";
+		this.m.Name = "Munitions";
 		this.m.Icon = "supplies/ammo.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Supply;
@@ -61,7 +61,7 @@ this.ammo_item <- this.inherit("scripts/items/item", {
 			{
 				id = 2,
 				type = "description",
-				text = "A good [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Amount + "[/color] units of assorted ammunition - arrows, bolts and javelins. Used to automatically refill your quivers after battle. Will be added to your global stock once you\'re back on the worldmap."
+				text = "Un assortiment de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Amount + "[/color] de munitions - flèches, boulons et javelots. Utilisé pour remplir automatiquement vos carquois après la bataille. Sera ajouté à votre stock une fois que vous serez de retour sur la carte du monde."
 			}
 		];
 

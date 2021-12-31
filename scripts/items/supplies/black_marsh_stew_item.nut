@@ -4,8 +4,8 @@ this.black_marsh_stew_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.black_marsh_stew";
-		this.m.Name = "Black Marsh Stew";
-		this.m.Description = "Provisions. Black as the marshes it hails from, this ghastly stew is far from delicious but takes ages to spoil. Possibly because it already is spoiled to begin with.";
+		this.m.Name = "Ragoût de marais noir";
+		this.m.Description = "Des provisions. Noir comme les marais dont il est originaire, ce ragoût horrible est loin d\'être délicieux mais prend des années à se gâter. Peut-être parce qu\'il est déjà gâté pour commencer.";
 		this.m.Icon = "supplies/inventory_provisions_17.png";
 		this.m.Value = 85;
 		this.m.GoodForDays = 12;

@@ -4,8 +4,8 @@ this.smoked_ham_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.smoked_ham";
-		this.m.Name = "Smoked Ham";
-		this.m.Description = "Provisions. There are many ways to preserve food. This piece of ham has been treated in a smoking hut.";
+		this.m.Name = "Jambon fumé";
+		this.m.Description = "Des provisions. Il existe de nombreuses façons de conserver les aliments. Ce morceau de jambon a été traité dans un fumoir.";
 		this.m.Icon = "supplies/inventory_provisions_11.png";
 		this.m.Value = 95;
 		this.m.GoodForDays = 12;

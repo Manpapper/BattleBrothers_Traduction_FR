@@ -4,8 +4,8 @@ this.fermented_unhold_heart_item <- this.inherit("scripts/items/supplies/food_it
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.fermented_unhold_heart";
-		this.m.Name = "Fermented Unhold Heart";
-		this.m.Description = "Provisions. Once a delicacy for barbarian kings of the north who wished to embolden their virility, fermented unhold heart tastes distinctively awful.";
+		this.m.Name = "Coeur d\'Unhold fermenté";
+		this.m.Description = "Des provisions. Autrefois un mets délicat pour les rois barbares du nord qui souhaitaient enhardir leur virilité, le coeur fermenté sans retenue a un goût typiquement affreux.";
 		this.m.Icon = "supplies/inventory_provisions_19.png";
 		this.m.Value = 150;
 		this.m.GoodForDays = 20;

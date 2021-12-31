@@ -26,7 +26,7 @@ this.money_item <- this.inherit("scripts/items/item", {
 	function create()
 	{
 		this.m.ID = "supplies.money";
-		this.m.Name = "Crowns";
+		this.m.Name = "Couronnes d\'or";
 		this.m.Icon = "supplies/money.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Supply;
@@ -46,7 +46,7 @@ this.money_item <- this.inherit("scripts/items/item", {
 			{
 				id = 2,
 				type = "description",
-				text = "The amount of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Amount + "[/color] crowns, the currency in these lands. Will be added to your global stock once you\'re back on the worldmap."
+				text = "Un montant de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Amount + "[/color] couronnes, la monnaie dans ces terres. Sera ajouté à votre total de couronnes une fois que vous serez de retour sur la carte du monde."
 			}
 		];
 

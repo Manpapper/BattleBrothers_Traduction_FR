@@ -4,8 +4,8 @@ this.cured_venison_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.cured_venison";
-		this.m.Name = "Cured Venison";
-		this.m.Description = "Provisions. A cured chunk of venison preserved by salt. Fine food for a travelling sellsword.";
+		this.m.Name = "Venaison séchée";
+		this.m.Description = "Des provisions. Un morceau de gibier séché conservé par le sel. Nourriture fine pour un mercenaire itinérant.";
 		this.m.Icon = "supplies/inventory_provisions_10.png";
 		this.m.Value = 95;
 		this.m.GoodForDays = 12;

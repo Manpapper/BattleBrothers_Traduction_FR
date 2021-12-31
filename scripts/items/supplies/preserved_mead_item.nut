@@ -4,8 +4,8 @@ this.preserved_mead_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.preserved_mead";
-		this.m.Name = "Preserved Mead";
-		this.m.Description = "Provisions. This ashen liquid has small sparkles of silver swirrling about. The taste is off, but it hardly ever spoils.";
+		this.m.Name = "Hydromel Conservé";
+		this.m.Description = "Des provisions. Ce liquide cendré a de petites étincelles d\'argent tourbillonnant. Le goût est éteint, mais il ne se gâte presque jamais.";
 		this.m.Icon = "supplies/inventory_provisions_18.png";
 		this.m.Value = 120;
 		this.m.GoodForDays = 15;

@@ -4,8 +4,8 @@ this.beer_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.beer";
-		this.m.Name = "Beer";
-		this.m.Description = "Provisions. This fermented hop or barley drink is more durable and safer to drink than plain water.";
+		this.m.Name = "Bière";
+		this.m.Description = "Des provisions. Cette boisson fermentée à base de houblon ou d\'orge est plus durable et plus sûre à boire que l\'eau ordinaire.";
 		this.m.Icon = "supplies/inventory_provisions_14.png";
 		this.m.Value = 75;
 		this.m.GoodForDays = 10;

@@ -4,8 +4,8 @@ this.ground_grains_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.ground_grains";
-		this.m.Name = "Ground Grains";
-		this.m.Description = "Provisions. Various kinds of grounded grain that will be cooked up with water or milk for a daily meal. It is satiating but tasteless.";
+		this.m.Name = "Céréales";
+		this.m.Description = "Des provisions. Différentes sortes de céréales moulues qui seront cuites avec de l\'eau ou du lait pour un repas quotidien. C\'est rassasiant mais sans saveur.";
 		this.m.Icon = "supplies/inventory_provisions_03.png";
 		this.m.Value = 50;
 		this.m.GoodForDays = 7;

@@ -4,8 +4,8 @@ this.goat_cheese_item <- this.inherit("scripts/items/supplies/food_item", {
 	{
 		this.food_item.create();
 		this.m.ID = "supplies.goat_cheese";
-		this.m.Name = "Goat Cheese";
-		this.m.Description = "Provisions. Goat cheese is a tasty and rich food that is common and popular especially in the colder regions of the north.";
+		this.m.Name = "Fromage de chèvre";
+		this.m.Description = "Des provisions. Le fromage de chèvre est un aliment savoureux et riche qui est courant et populaire surtout dans les régions les plus froides du nord.";
 		this.m.Icon = "supplies/inventory_provisions_09.png";
 		this.m.Value = 85;
 		this.m.GoodForDays = 11;
