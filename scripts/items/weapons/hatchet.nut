@@ -4,8 +4,8 @@ this.hatchet <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.hatchet";
-		this.m.Name = "Hatchet";
-		this.m.Description = "A crude axe with a short shaft and an iron head.";
+		this.m.Name = "Hachette";
+		this.m.Description = "Une hache grossière avec un manche court et une tête en fer.";
 		this.m.Categories = "Axe, One-Handed";
 		this.m.IconLarge = "weapons/melee/axe_01.png";
 		this.m.Icon = "weapons/melee/axe_01_70x70.png";

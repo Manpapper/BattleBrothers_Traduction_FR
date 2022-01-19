@@ -4,8 +4,8 @@ this.longaxe <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.longaxe";
-		this.m.Name = "Longaxe";
-		this.m.Description = "A relatively thin blade on a very long shaft used for devastating cutting attacks over some distance, and to render shields unusable from behind the frontline.";
+		this.m.Name = "Hache longue";
+		this.m.Description = "Une lame relativement fine sur un manche très long utilisée pour des attaques coupantes dévastatrices à distance et pour rendre les boucliers inutilisables de derrière la ligne de front.";
 		this.m.Categories = "Axe, Two-Handed";
 		this.m.IconLarge = "weapons/melee/longaxe_01.png";
 		this.m.Icon = "weapons/melee/longaxe_01_70x70.png";

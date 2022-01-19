@@ -4,8 +4,8 @@ this.two_handed_wooden_hammer <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.two_handed_wooden_hammer";
-		this.m.Name = "Two-Handed Mallet";
-		this.m.Description = "A large wooden mallet that is held with both hands. Can deal devastating blows that may knock even armored enemies away or to the ground.";
+		this.m.Name = "Maillet à deux mains";
+		this.m.Description = "Un grand maillet en bois qui se tient à deux mains. Peut infliger des coups dévastateurs qui peuvent repousser ou faire tomber au sol même les ennemis en armure.";
 		this.m.Categories = "Hammer, Two-Handed";
 		this.m.IconLarge = "weapons/melee/hammer_two_handed_02.png";
 		this.m.Icon = "weapons/melee/hammer_two_handed_02_70x70.png";

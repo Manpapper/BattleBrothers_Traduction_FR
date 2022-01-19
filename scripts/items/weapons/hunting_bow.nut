@@ -4,8 +4,8 @@ this.hunting_bow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.hunting_bow";
-		this.m.Name = "Hunting Bow";
-		this.m.Description = "A refined bow usually used for hunting down animals. Deadly against unarmored targets, but requires some expertise to use effectively.";
+		this.m.Name = "Arc de chasse";
+		this.m.Description = "Un arc raffiné généralement utilisé pour chasser les animaux. Mortel contre des cibles non blindées, mais nécessite une certaine expertise pour être utilisé efficacement.";
 		this.m.Categories = "Bow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/bow_01.png";
 		this.m.Icon = "weapons/ranged/bow_01_70x70.png";

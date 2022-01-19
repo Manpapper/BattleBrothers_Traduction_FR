@@ -4,8 +4,8 @@ this.fencing_sword <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.fencing_sword";
-		this.m.Name = "Fencing Sword";
-		this.m.Description = "A light and elegant blade, favoring a swift and mobile fighting style.";
+		this.m.Name = "Rapière";
+		this.m.Description = "Une lame légère et élégante, privilégiant un style de combat rapide et mobile.";
 		this.m.Categories = "Sword, One-Handed";
 		this.m.IconLarge = "weapons/melee/sword_fencing_01.png";
 		this.m.Icon = "weapons/melee/sword_fencing_01_70x70.png";

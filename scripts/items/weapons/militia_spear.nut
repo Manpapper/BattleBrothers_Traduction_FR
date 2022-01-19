@@ -4,8 +4,8 @@ this.militia_spear <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.militia_spear";
-		this.m.Name = "Militia Spear";
-		this.m.Description = "A simple wooden spear with a metal tip.";
+		this.m.Name = "Lance de la milice";
+		this.m.Description = "Une lance en bois simple avec une pointe en métal.";
 		this.m.Categories = "Spear, One-Handed";
 		this.m.IconLarge = "weapons/melee/spear_02.png";
 		this.m.Icon = "weapons/melee/spear_02_70x70.png";

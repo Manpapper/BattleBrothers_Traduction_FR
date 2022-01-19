@@ -4,8 +4,8 @@ this.battle_whip <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.battle_whip";
-		this.m.Name = "Battle Whip";
-		this.m.Description = "A long whip with a barbed tip that can tear terrible bleeding wounds over significant range, but is very inefficient against armor.";
+		this.m.Name = "Fouet de bataille";
+		this.m.Description = "Un long fouet avec une pointe barbelée qui peut provoquer de terribles blessures hémorragiques sur une distance importante, mais est inefficace contre les armures.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.IconLarge = "weapons/melee/whip_01.png";
 		this.m.Icon = "weapons/melee/whip_01_70x70.png";

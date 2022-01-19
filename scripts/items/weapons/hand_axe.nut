@@ -4,8 +4,8 @@ this.hand_axe <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.hand_axe";
-		this.m.Name = "Handaxe";
-		this.m.Description = "A one-handed axe with a medium long shaft and a refined head.";
+		this.m.Name = "Hache";
+		this.m.Description = "Une hache à une main avec un manche de longueur moyenne et une tête raffinée";
 		this.m.Categories = "Axe, One-Handed";
 		this.m.IconLarge = "weapons/melee/axe_02.png";
 		this.m.Icon = "weapons/melee/axe_02_70x70.png";

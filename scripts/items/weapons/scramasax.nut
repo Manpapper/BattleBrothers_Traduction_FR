@@ -4,8 +4,8 @@ this.scramasax <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.scramasax";
-		this.m.Name = "Scramasax";
-		this.m.Description = "A long and heavy knife with a one sided blade used more for hacking than slashing.";
+		this.m.Name = "Scramasaxe";
+		this.m.Description = "Un couteau long et lourd avec une lame unilatérale utilisé plus pour tailler que pour trancher.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.IconLarge = "weapons/melee/sax_01.png";
 		this.m.Icon = "weapons/melee/sax_01_70x70.png";

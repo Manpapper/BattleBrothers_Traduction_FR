@@ -14,8 +14,8 @@ this.javelin <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.javelin";
-		this.m.Name = "Bundle of Javelins";
-		this.m.Description = "A couple of light throwing spears usually carried by skirmishers. Have limited range and are exhausting to throw, but may inflict devastating injuries.";
+		this.m.Name = "Lot de javelots";
+		this.m.Description = "Quelques javelots généralement portées par les tirailleurs. Ils ont une portée limitée et sont épuisants à lancer, mais peuvent infliger des blessures dévastatrices.";
 		this.m.Categories = "Throwing Weapon, One-Handed";
 		this.m.IconLarge = "weapons/ranged/javelins_01.png";
 		this.m.Icon = "weapons/ranged/javelins_01_70x70.png";

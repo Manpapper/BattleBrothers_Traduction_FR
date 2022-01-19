@@ -4,8 +4,8 @@ this.greataxe <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.greataxe";
-		this.m.Name = "Greataxe";
-		this.m.Description = "A heavy and long two-handed axe designed for battle that bears down heavy with every swing and can easily cut a man in two.";
+		this.m.Name = "Grande Hache";
+		this.m.Description = "Une lourde et longue hache à deux mains conçue pour le combat qui pèse lourdement à chaque coup et peut facilement couper un homme en deux.";
 		this.m.Categories = "Axe, Two-Handed";
 		this.m.IconLarge = "weapons/melee/axe_two_handed_01.png";
 		this.m.Icon = "weapons/melee/axe_two_handed_01_70x70.png";

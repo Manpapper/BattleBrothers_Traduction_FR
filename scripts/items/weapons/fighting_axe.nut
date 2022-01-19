@@ -4,8 +4,8 @@ this.fighting_axe <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.fighting_axe";
-		this.m.Name = "Fighting Axe";
-		this.m.Description = "An axe explicitly designed for fighting armored opponents. Quite sturdy.";
+		this.m.Name = "Hache de combat";
+		this.m.Description = "Une hache explicitement conçue pour combattre des adversaires en armure. Assez robuste.";
 		this.m.Categories = "Axe, One-Handed";
 		this.m.IconLarge = "weapons/melee/axe_03.png";
 		this.m.Icon = "weapons/melee/axe_03_70x70.png";

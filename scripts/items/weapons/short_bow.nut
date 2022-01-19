@@ -4,8 +4,8 @@ this.short_bow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.short_bow";
-		this.m.Name = "Short Bow";
-		this.m.Description = "A simple wooden short bow with medium range. Requires some expertise to use effectively.";
+		this.m.Name = "Arc court";
+		this.m.Description = "Un arc court en bois simple avec une portée moyenne. Nécessite une certaine expertise pour être utilisé efficacement.";
 		this.m.Categories = "Bow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/bow_02.png";
 		this.m.Icon = "weapons/ranged/bow_02_70x70.png";

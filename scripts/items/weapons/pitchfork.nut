@@ -4,8 +4,8 @@ this.pitchfork <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.pitchfork";
-		this.m.Name = "Pitchfork";
-		this.m.Description = "An agricultural tool with a long handle and thick pointed tines used to lift and pitch straw. As an improvised weapon it can be used to keep an opponent at bay, but it won\'t inflict the deadliest of injuries and will perform poorly against armor.";
+		this.m.Name = "Fourche";
+		this.m.Description = "Un outil agricole avec un long manche et d\'épaisses dents pointues utilisées pour soulever et dresser la paille. En tant qu\'arme improvisée, elle peut être utilisée pour tenir un adversaire à distance, mais elle n\'infligera pas les blessures les plus mortelles et fonctionnera mal contre les armures.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.IconLarge = "weapons/melee/pitchfork_01.png";
 		this.m.Icon = "weapons/melee/pitchfork_01_70x70.png";

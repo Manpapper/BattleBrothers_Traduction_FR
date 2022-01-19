@@ -4,8 +4,8 @@ this.scimitar <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.scimitar";
-		this.m.Name = "Scimitar";
-		this.m.Description = "An exotic curved sword from the south that is excellent for slashing, but not for thrusting or penetrating armor.";
+		this.m.Name = "Cimeterre";
+		this.m.Description = "Une épée incurvée exotique du sud qui est excellente pour trancher, mais pas pour enfoncer ou pénétrer une armure.";
 		this.m.Categories = "Sword, One-Handed";
 		this.m.IconLarge = "weapons/melee/scimitar_02.png";
 		this.m.Icon = "weapons/melee/scimitar_02_70x70.png";

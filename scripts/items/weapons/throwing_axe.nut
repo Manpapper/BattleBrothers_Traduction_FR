@@ -14,8 +14,8 @@ this.throwing_axe <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.throwing_axe";
-		this.m.Name = "Bundle of Throwing Axes";
-		this.m.Description = "Small axes to be thrown in an overhand motion towards a target. Heavy enough to inflict serious damage to armor and shields from range.";
+		this.m.Name = "Lot de haches de lancer";
+		this.m.Description = "Petites haches à lancer vers une cible. Assez lourd pour infliger de sérieux dégâts aux armures et aux boucliers à distance.";
 		this.m.Categories = "Throwing Weapon, One-Handed";
 		this.m.IconLarge = "weapons/ranged/throwing_axes_01.png";
 		this.m.Icon = "weapons/ranged/throwing_axes_01_70x70.png";

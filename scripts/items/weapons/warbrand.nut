@@ -4,8 +4,8 @@ this.warbrand <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.warbrand";
-		this.m.Name = "Warbrand";
-		this.m.Description = "A two-handed variant of the sword with a long and thin blade, sharpened only on one side, and no crossguard. Can be used both for quick slashes and sweeping strikes.";
+		this.m.Name = "Faussart";
+		this.m.Description = "Une variante à deux mains de l'épée avec une lame longue et fine, affûtée d'un seul côté, et sans garde-main. Peut être utilisé à la fois pour des entailles et des frappes rapides.";
 		this.m.Categories = "Sword, Two-Handed";
 		this.m.IconLarge = "weapons/melee/warbrand_01.png";
 		this.m.Icon = "weapons/melee/warbrand_01_70x70.png";

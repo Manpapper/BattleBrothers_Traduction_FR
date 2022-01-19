@@ -4,8 +4,8 @@ this.two_handed_hammer <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.two_handed_hammer";
-		this.m.Name = "Two-Handed Hammer";
-		this.m.Description = "A large and heavy hammer held with both hands. What it lacks in grace, it makes up for in raw force as it is used to shatter even heavily-armored enemy lines by knocking people away or to the ground.";
+		this.m.Name = "Marteau de guerre à deux mains";
+		this.m.Description = "Un gros et lourd marteau tenu à deux mains. Ce qui lui manque en grâce, il le compense par sa force brute car il est utilisé pour briser même les lignes ennemies lourdement blindées en projetant les gens au loin ou au sol.";
 		this.m.Categories = "Hammer, Two-Handed";
 		this.m.IconLarge = "weapons/melee/hammer_two_handed_01.png";
 		this.m.Icon = "weapons/melee/hammer_two_handed_01_70x70.png";

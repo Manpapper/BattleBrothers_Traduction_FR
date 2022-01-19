@@ -4,8 +4,8 @@ this.boar_spear <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.boar_spear";
-		this.m.Name = "Boar Spear";
-		this.m.Description = "A short and heavy spear with two wings behind the bladed tip.";
+		this.m.Name = "Épieu de chasse";
+		this.m.Description = "Une lance courte et lourde avec deux ailes derrière la pointe de la lame.";
 		this.m.Categories = "Spear, One-Handed";
 		this.m.IconLarge = "weapons/melee/spear_01.png";
 		this.m.Icon = "weapons/melee/spear_01_70x70.png";

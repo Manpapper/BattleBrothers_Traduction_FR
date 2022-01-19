@@ -4,8 +4,8 @@ this.throwing_spear <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.throwing_spear";
-		this.m.Name = "Throwing Spear";
-		this.m.Description = "Lighter than a common spear, but heavier than a javelin, this weapon is intended to be thrown over short distances. The tip will bend on impact, potentially rendering shields unusable. Can be used against unshielded opponents as well for great effect.";
+		this.m.Name = "Harpon";
+		this.m.Description = "Plus légère qu\'une lance ordinaire, mais plus lourde qu\'un javelot, cette arme est destinée à être lancée sur de courtes distances. La pointe se pliera à l\'impact, rendant potentiellement les boucliers inutilisables. Peut également être utilisé contre des adversaires non protégés.";
 		this.m.Categories = "Throwing Weapon, One-Handed";
 		this.m.IconLarge = "weapons/ranged/throwing_spear_01.png";
 		this.m.Icon = "weapons/ranged/throwing_spear_01_70x70.png";
@@ -35,7 +35,7 @@ this.throwing_spear <- this.inherit("scripts/items/weapons/weapon", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is destroyed on use"
+			text = "Est détruit à l\'utilisation"
 		});
 		return result;
 	}

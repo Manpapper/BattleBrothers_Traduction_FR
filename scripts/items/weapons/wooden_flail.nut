@@ -4,8 +4,8 @@ this.wooden_flail <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.wooden_flail";
-		this.m.Name = "Wooden Flail";
-		this.m.Description = "Two large sticks attached with a short chain, the Wooden Flail is an agricultural tool used to strike piles of grain to loosen the husks. As an improvised weapon it\'s rather unpredictable but useful to strike over or around shield cover.";
+		this.m.Name = "Fléau en bois";
+		this.m.Description = "Deux gros bâtons attachés avec une chaîne courte, le fléau en bois est un outil agricole utilisé pour frapper des tas de céréales pour détacher les cosses. En tant qu\'arme improvisée, il est plutôt imprévisible mais utile de frapper sur ou autour de la couverture du bouclier.";
 		this.m.Categories = "Flail, One-Handed";
 		this.m.IconLarge = "weapons/melee/flail_02.png";
 		this.m.Icon = "weapons/melee/flail_02_70x70.png";

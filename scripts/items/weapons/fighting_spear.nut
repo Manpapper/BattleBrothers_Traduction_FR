@@ -4,8 +4,8 @@ this.fighting_spear <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.fighting_spear";
-		this.m.Name = "Fighting Spear";
-		this.m.Description = "A long and sturdy spear built for battle.";
+		this.m.Name = "Lance de combat";
+		this.m.Description = "Une lance longue et robuste conçue pour la bataille.";
 		this.m.Categories = "Spear, One-Handed";
 		this.m.IconLarge = "weapons/melee/spear_03.png";
 		this.m.Icon = "weapons/melee/spear_03_70x70.png";

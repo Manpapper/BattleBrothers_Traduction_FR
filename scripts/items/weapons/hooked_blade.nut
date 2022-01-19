@@ -4,8 +4,8 @@ this.hooked_blade <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.hooked_blade";
-		this.m.Name = "Hooked Blade";
-		this.m.Description = "An agricultural tool adapted for use in battle, this polearm has a hooked blade for striking over some distance and pulling in targets.";
+		this.m.Name = "Anicroche";
+		this.m.Description = "Outil agricole adapté à une utilisation au combat, cette arme d\'hast possède une lame crochue pour frapper à distance ou tirer des cibles.";
 		this.m.Categories = "Polearm, Two-Handed";
 		this.m.IconLarge = "weapons/melee/hooked_blade_01.png";
 		this.m.Icon = "weapons/melee/hooked_blade_01_70x70.png";

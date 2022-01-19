@@ -4,8 +4,8 @@ this.butchers_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.butchers_cleaver";
-		this.m.Name = "Butcher\'s Cleaver";
-		this.m.Description = "A tool with a thick rectangular blade used for hacking through meat and bone.";
+		this.m.Name = "Hachoir de boucher";
+		this.m.Description = "Un outil avec une lame rectangulaire épaisse utilisée pour couper la viande et les os.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.IconLarge = "weapons/melee/cleaver_02.png";
 		this.m.Icon = "weapons/melee/cleaver_02_70x70.png";

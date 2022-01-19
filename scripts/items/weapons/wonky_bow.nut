@@ -4,8 +4,8 @@ this.wonky_bow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.wonky_bow";
-		this.m.Name = "Wonky Bow";
-		this.m.Description = "An ill-conceived bow if you ever saw one. The wood cricks and cracks when bent, the string frizzes and goes wiry every time you draw it back.";
+		this.m.Name = "Arc bancal";
+		this.m.Description = "Un arc mal conçu si vous en avez déjà vu un. Le bois craque et se fissure lorsqu\'il est plié, la ficelle frise et se raidit à chaque fois que vous la retirez.";
 		this.m.Categories = "Bow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/bow_04.png";
 		this.m.Icon = "weapons/ranged/bow_04_70x70.png";

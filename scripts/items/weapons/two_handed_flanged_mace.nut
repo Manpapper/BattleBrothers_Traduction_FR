@@ -4,8 +4,8 @@ this.two_handed_flanged_mace <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.two_handed_flanged_mace";
-		this.m.Name = "Two-Handed Flanged Mace";
-		this.m.Description = "A large and heavy winged mace held with both hands. Receiving a blow from this weapon will leave anyone dazed and gasping for air, no matter their armor.";
+		this.m.Name = "Masse à ailettes à deux mains";
+		this.m.Description = "Une grande et lourde masse ailée tenue à deux mains. Recevoir un coup de cette arme laissera n\'importe qui étourdi et à bout de souffle, quelle que soit son armure.";
 		this.m.Categories = "Mace, Two-Handed";
 		this.m.IconLarge = "weapons/melee/mace_two_handed_02.png";
 		this.m.Icon = "weapons/melee/mace_two_handed_02_70x70.png";

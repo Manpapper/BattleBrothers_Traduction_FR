@@ -16,8 +16,8 @@ this.heavy_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.heavy_crossbow";
-		this.m.Name = "Heavy Crossbow";
-		this.m.Description = "A heavy crossbow with a crank that can propel bolts over medium distances and is effective even against heavily armored targets. Requires almost a full turn to reload.";
+		this.m.Name = "Arbalète lourde";
+		this.m.Description = "Une arbalète lourde avec une manivelle qui peut propulser des carreaux sur des distances moyennes et est efficace même contre des cibles lourdement blindées. Nécessite presque un tour complet pour recharger.";
 		this.m.Categories = "Crossbow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/crossbow_03.png";
 		this.m.Icon = "weapons/ranged/crossbow_03_70x70.png";
@@ -57,7 +57,7 @@ this.heavy_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Must be reloaded before firing again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être rechargé avant de tirer à nouveau[/color]"
 			});
 		}
 

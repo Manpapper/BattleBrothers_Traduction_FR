@@ -4,8 +4,8 @@ this.military_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.military_cleaver";
-		this.m.Name = "Military Cleaver";
-		this.m.Description = "A large, sharpened metal blade designed to deal devastating blows.";
+		this.m.Name = "Machette militaire";
+		this.m.Description = "Une grande lame en métal affûtée conçue pour infliger des coups dévastateurs.";
 		this.m.Categories = "Cleaver, One-Handed";
 		this.m.IconLarge = "weapons/melee/cleaver_01.png";
 		this.m.Icon = "weapons/melee/cleaver_01_70x70.png";

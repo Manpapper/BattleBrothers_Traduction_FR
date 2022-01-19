@@ -4,8 +4,8 @@ this.pickaxe <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.pickaxe";
-		this.m.Name = "Pickaxe";
-		this.m.Description = "A hard head made from metal attached to a wooden handle, the Pickaxe is a miner\'s tool used to break up rocks. As an improvised weapon it\'s unwieldy but can deliver fatal injuries even through armor.";
+		this.m.Name = "Pioche";
+		this.m.Description = "Une tête dure en métal attachée à un manche en bois, la pioche est un outil de mineur utilisé pour briser les roches. En tant qu\'arme improvisée, elle est difficile à manier mais peut causer des blessures mortelles même à travers une armure.";
 		this.m.Categories = "Hammer, One-Handed";
 		this.m.IconLarge = "weapons/melee/miners_pick_01.png";
 		this.m.Icon = "weapons/melee/miners_pick_01_70x70.png";

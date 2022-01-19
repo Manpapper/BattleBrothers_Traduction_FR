@@ -4,8 +4,8 @@ this.falchion <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.falchion";
-		this.m.Name = "Falchion";
-		this.m.Description = "A curved sword best suited for slashing and cutting unarmored opponents.";
+		this.m.Name = "Fauchon";
+		this.m.Description = "Une épée incurvée adaptée pour trancher et couper des adversaires sans armure.";
 		this.m.Categories = "Sword, One-Handed";
 		this.m.IconLarge = "weapons/melee/sword_04.png";
 		this.m.Icon = "weapons/melee/sword_04_70x70.png";

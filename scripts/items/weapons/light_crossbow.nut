@@ -16,8 +16,8 @@ this.light_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.light_crossbow";
-		this.m.Name = "Light Crossbow";
-		this.m.Description = "A lighter variant of a pull-lever crossbow that can propel bolts over medium distances. Effective even in the hands of laymen, but requires almost a full turn to reload.";
+		this.m.Name = "Arbalète légère";
+		this.m.Description = "Une variante plus légère d\'une arbalète à levier qui peut propulser des carreaux sur des distances moyennes. Efficace même entre les mains de profanes, mais nécessite presque un tour complet pour recharger.";
 		this.m.Categories = "Crossbow, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/crossbow_02.png";
 		this.m.Icon = "weapons/ranged/crossbow_02_70x70.png";
@@ -57,7 +57,7 @@ this.light_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Must be reloaded before firing again[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Doit être rechargé avant de tirer à nouveau[/color]"
 			});
 		}
 

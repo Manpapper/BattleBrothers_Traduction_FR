@@ -4,8 +4,8 @@ this.noble_sword <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.noble_sword";
-		this.m.Name = "Noble Sword";
-		this.m.Description = "A well-balanced long sword with a double-edged blade.";
+		this.m.Name = "Épée de noble";
+		this.m.Description = "Une épée longue bien équilibrée avec une lame à double tranchant.";
 		this.m.Categories = "Sword, One-Handed";
 		this.m.IconLarge = "weapons/melee/sword_03.png";
 		this.m.Icon = "weapons/melee/sword_03_70x70.png";

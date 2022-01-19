@@ -6,8 +6,8 @@ this.three_headed_flail <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.three_headed_flail";
-		this.m.Name = "Three-Headed Flail";
-		this.m.Description = "Three separate striking heads attached to a handle by chains. Each head can hit or miss a target separately and strike over or around shield cover.";
+		this.m.Name = "Fléau à trois têtes";
+		this.m.Description = "Trois têtes de frappe séparées attachées à une poignée par des chaînes. Chaque tête peut toucher ou manquer une cible séparément et frapper par-dessus ou autour du bouclier.";
 		this.m.Categories = "Flail, One-Handed";
 		this.m.IconLarge = "weapons/melee/flail_three_headed_01.png";
 		this.m.Icon = "weapons/melee/flail_three_headed_01_70x70.png";
