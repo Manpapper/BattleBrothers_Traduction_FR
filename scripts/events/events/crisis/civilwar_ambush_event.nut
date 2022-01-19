@@ -6,16 +6,16 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.civilwar_ambush";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Le long du chemin...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]Forests hide many things, being the natural resort of predators and men of wilder intents. But you know this well, and you know how to spot shadows most unnatural to this climate. It doesn\'t take you long to realize that there are more than just trees here, and with a quick punch into the thicket of a bush you pull out a young boy with a bow. He cries for help and the reinforcements arrive like songbirds to the prettiest of tunes: a dozen men emerge from the shadows, but the company is prepared, drawing their weapons and coming to stand on equal footing.\n\n An elderly man steps forth, holding his hands up.%SPEECH_ON%Wait, there is no need for violence here.%SPEECH_OFF%He comes to you personally and in a muted, scholarly tone explains what is happening. The small bunch of peasants are preparing to ambush a troop of %noblehouse% soldiers that will be coming this way any moment. He states you\'ll get a piece of the rewards if you help. If not, please get out of the way.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Les forêts cachent beaucoup de choses, étant le milieu naturel de prédateurs et d\'hommes aux intentions plus sauvages. Mais vous le savez bien, et vous savez repérer les ombres les moins naturelles à cet environement. Il ne vous faut pas longtemps pour réaliser qu\'il y a plus que des arbres ici, et d\'un coup de poing rapide dans le feuillage d\'un buisson, vous en sortez un jeune garçon avec un arc. Il crie au secours et les renforts arrivent tels des oiseaux chanteurs sur une jolie mélodie : une douzaine d\'hommes sortent de l\'ombre, mais la compagnie est préparée, dégainant leurs armes et venant se tenir sur un pied d\'égalité.\n\n Un homme âgé s\'avance , en levant les mains.%SPEECH_ON% Attendez, il n\'y a pas besoin de violence ici.%SPEECH_OFF% Il vient vous voir personnellement et d\'un ton assourdit et érudit vous explique ce qui se passe. Le petit groupe de paysans se prépare à tendre une embuscade à une troupe de soldats %noblehouse% qui viendront par ici à tout moment. Il déclare que vous obtiendrez une partie des récompenses si vous les aidez. Si ce n\'est pas le cas, veuillez vous écarter.",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s help these peasants.",
+					Text = "Aidons ces paysans.",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We have to warn the soldiers.",
+					Text = "Nous devons avertir les soldats.",
 					function getResult( _event )
 					{
 						return "D";
@@ -31,7 +31,7 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ve no time for any of this.",
+					Text = "Nous n\'avons pas le temps pour cela.",
 					function getResult( _event )
 					{
 						return 0;
@@ -47,13 +47,13 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_10.png[/img]They\'re peasants, scroungy and looking like they came here to find leaves to dress themselves. But flimsy bows like theirs come with hardened hands, well versed in getting arrows to targets they got no business finding. These are men of the forests. With confidence that this ambush will go right, you elect to join them.\n\n You don\'t have to wait long for the soldiers of %noblehouse% to start trundling there way over. They\'re loud, obnoxious, and some of them farting and complaining about mushrooms that they mistakenly ate.\n\n A kid about half your size releases the first shot. The arrow streaks between two branches and the lead scout drops to his knees. Leaves ruffle as though a great wind has come - arrows, sight unseen, zip into the soldiers\' column and they\'re so true in aim that their targets die silently. A few of the soldiers manage to close the distance, raising swords and shields, but here the %companyname% steps in and cuts them down. After but a minute, the entire troop has been slain.",
+			Text = "[img]gfx/ui/events/event_10.png[/img]Ce sont des paysans, grincheux et ayant l\'air de venir ici chercher des feuilles pour s\'habiller. Mais les arcs fragiles comme le leur sont livrés avec des mains endurcies, bien habituées à envoyer des flèches sans difficultés vers leurs cibles. Ce sont des hommes des forêts. Avec la certitude que cette embuscade se déroulera correctement, vous choisissez de les rejoindre.\n\n Vous n\'avez pas à attendre longtemps pour que les soldats de %noblehouse% commencent à se déplacer là-bas. Ils sont bruyants, odieux, et certains d\'entre eux pètent et se plaignent des champignons qu\'ils ont mangés par erreur.\n\n Un enfant d\'environ la moitié de votre taille lâche le premier coup. La flèche file entre deux branches et le premier éclaireur tombe à genoux. Les feuilles s\'agitent comme si un grand vent était venu - des flèches, invisible à l\'oeil, s\'infiltrent dans la colonne de soldats et elles sont si fidèles à leur objectif que leurs cibles meurent en silence. Quelques soldats parviennent à réduire la distance, levant des épées et des boucliers, mais les %companyname% intervient et les achèvent. Au bout d\'une minute, toute la patrouille a été tuée.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "That went well. Let\'s divide the goods.",
+					Text = "Cela s\'est bien passé. Partageons les marchandises.",
 					function getResult( _event )
 					{
 						return "C";
@@ -69,13 +69,13 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_87.png[/img]Your men go picking through the corpses, joined by the motley crew of killers. A scuffle breaks out over who should take a shield. You explain that the only reason the shield exists for the taking is because your men stepped forward to kill its owner. The leader of the group nods in agreement. He calls out that your company should take the heavier equipment as your men most certainly have better use for such things.\n\n As you divvy up the goods, one of the bowmen comes forward.%SPEECH_ON%I think one of them got away. There\'s tracks, but he must\'ve been a bit smarter than his dead brothers because he doubled back and covered them quite well.%SPEECH_OFF%Just when you thought you could get away with something...",
+			Text = "[img]gfx/ui/events/event_87.png[/img]Vos hommes vont ramasser les cadavres, rejoints par l\'équipe hétéroclite de tueurs. Une bagarre éclate pour savoir qui doit prendre un bouclier. Vous expliquez que la seule raison pour laquelle le bouclier existe pour le partage est parce que vos hommes se sont avancés pour tuer son propriétaire. Le chef du groupe acquiesce. Il demande à votre compagnie de prendre l\'équipement le plus lourd, car vos hommes sont certainement plus à l\'aise pour de telles choses.\n\n Pendant que vous répartissez les marchandises, l\'un des archers s\'avance.%SPEECH_ON%Je pense que l\'un d\'eux s\'est échappé. Il y a des traces, mais il devait être un peu plus intelligent que ses frères morts parce qu\'il les a assez bien couvertes. %SPEECH_OFF% Juste au moment où vous pensiez pouvoir vous en tirer avec quelque chose...",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Except for the guy who got away, that also went well.",
+					Text = "Sauf pour le gars qui s\'est enfui, ça s\'est plutôt bien passé.",
 					function getResult( _event )
 					{
 						return 0;
@@ -86,9 +86,9 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Banner = _event.m.NobleHouse.getUIBannerSmall();
-				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationOffense, "Ambushed some of their men");
+				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationOffense, "A tendu une embuscade à certains de leurs hommes");
 				this.World.Assets.addMoralReputation(-1);
-				_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationFavor, "Helped in an ambush against " + _event.m.NobleHouse.getName());
+				_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationFavor, "A aidé dans une embuscade contre" + _event.m.NobleHouse.getName());
 				local item;
 				local banner = _event.m.NobleHouse.getBanner();
 				local r;
@@ -115,7 +115,7 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous gagnez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				r = this.Math.rand(1, 4);
 
@@ -142,20 +142,20 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous gagnez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_94.png[/img]You tell the peasants you want no part of their war, but you\'ll stay out of it nonetheless.\n\n As soon as they\'re out of sight and sound, you find the soldiers of %noblehouse% and inform them of the troubles that are soon to come. The lieutenant doesn\'t believe you until you lead him to the peasants and point them out or, rather, their slim shadows sneakily lingering behind this branch or that one.\n\n Going back to the troop, you organize an assault. It\'s pretty simple - you go around the ambush and come up from behind. The old men, desperate men, and naive boys are all slain in turn. They did not see it coming, but in the thick of the chaos some almost certainly escaped and have told of your betrayal. You collect a few goods from the battlefield and a summation of goodwill from the %noblehouse% bannermen.",
+			Text = "[img]gfx/ui/events/event_94.png[/img]Vous dites aux paysans que vous ne voulez pas participer à leur guerre, mais vous en resterez néanmoins à l\'écart.\n\n Dès qu\'ils sont hors de vue, vous trouvez les soldats de %noblehouse% et les informez des ennuis qui vont arriver. Le lieutenant ne vous croit pas jusqu\'à ce que vous le meniez proche des paysans et que vous les désigniez ou, plutôt, leurs ombres minces s\'attardant sournoisement derrière telle ou telle branche.\n\n De retour à la troupe, vous organisez un assaut. C\'est assez simple - vous contournez l\'embuscade et remontez par derrière. Les vieillards, les désespérés et les garçons naïfs sont tour à tour tués. Ils ne l\'ont pas vu venir, mais au milieu du chaos, certains se sont presque certainement échappés et ont raconté votre trahison. Vous récupérez quelques marchandises sur le champ de bataille et une somme de bienveillance du lieutenant de %noblehouse%.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "So the locals may hear of this, what does it matter?",
+					Text = "Les locaux peuvent en entendre parler, quelle importance ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -166,14 +166,14 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Banner = _event.m.NobleHouse.getUIBannerSmall();
-				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationFavor, "Saved some of their men");
-				_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationOffense, "Killed some of their men");
+				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationFavor, "A sauvé certains de leurs hommes");
+				_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationOffense, "A tué certains de leurs hommes");
 				local money = this.Math.rand(200, 400);
 				this.World.Assets.addMoney(money);
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous gagnez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				local item;
 				local r = this.Math.rand(1, 5);
@@ -203,7 +203,7 @@ this.civilwar_ambush_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous gagnez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 

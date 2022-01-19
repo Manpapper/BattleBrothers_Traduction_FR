@@ -6,16 +6,16 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.civilwar_trapped_soldiers";
-		this.m.Title = "At %town%";
+		this.m.Title = "A %town%";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_43.png[/img]You come across a large throng of peasants in an uproar. Upon closer look, they\'ve surrounded a small band of soldiers carrying the banner of %noblehouse%, who this very village belongs to. Each man has his sword out, but they\'ve been back into a corner and completely outnumbered. The laymen shout and point.%SPEECH_ON%Murderers! Rapists! Arsonists!%SPEECH_OFF%Spitting and tomato throwing follow suit. %randombrother% comes to you and asks if the men should step in or stay out of it.",
+			Text = "[img]gfx/ui/events/event_43.png[/img]Vous croisez une grande foule de paysans en effervescence. En y regardant de plus près, ils ont encerclé un petit groupe de soldats portant la bannière de %noblehouse%, à qui appartient ce village. Chaque homme a sorti son épée, mais ils se sont retrouvés dans un coin et complètement en infériorité numérique. Les villageois crient et pointent du doigt.%SPEECH_ON%Meurtriers ! Violeurs ! Incendiaires !%SPEECH_OFF%Les crachats et les lancers de tomates suivent le mouvement. %randombrother% vient vers vous et vous demande si les hommes doivent intervenir ou rester en dehors.",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "We need to put a stop to this.",
+					Text = "Nous devons mettre un terme à cela.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -30,7 +30,7 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "This isn\'t our fight.",
+					Text = "Ce n\'est pas notre combat.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -53,13 +53,13 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_43.png[/img]No man, especially of the fighting stock, deserves to be lynched. You order you men to step in, barking the command loud enough to turn half the crowd around to see you. Gasps ripple through the throng, and you nod confidently.%SPEECH_ON%Step aside, peasants. These men might be deserving of many things, but your unruly justice is not one of them.%SPEECH_OFF%A scruffy layman cries out.%SPEECH_ON%But they\'re murderers and worse!%SPEECH_OFF%You throw a stern look.%SPEECH_ON%And so are my men. Now get out of the way.%SPEECH_OFF%The crowd does as told. The rescued soldiers tell you that %noblehouse% will hear of your deeds here.",
+			Text = "[img]gfx/ui/events/event_43.png[/img]Aucun homme, surtout un combattant, ne mérite d\'être lynché. Vous ordonnez à vos hommes d\'intervenir, en aboyant suffisamment fort pour que la moitié de la foule se retourne pour vous voir. Des chuchotements se répercutent dans la foule et vous acquiescez avec confiance.%SPEECH_ON%Écartez-vous, paysans. Ces hommes méritent peut-être beaucoup de choses, mais votre justice indisciplinée n\'en fait pas partie.%SPEECH_OFF%Un paysan débraillé crie.%SPEECH_ON%Mais ce sont des meurtriers et pire !%SPEECH_OFF%Vous lancez un regard sévère.% SPEECH_ON%Et mes hommes aussi. Maintenant, écartez-vous.%SPEECH_OFF%La foule fait ce qu\'on lui dit. Les soldats secourus vous disent que %noblehouse% entendra parler de vos actes ici.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "That went pretty well. ",
+					Text = "Cela s\'est plutôt bien passé. ",
 					function getResult( _event )
 					{
 						return 0;
@@ -70,7 +70,7 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Banner = _event.m.NobleHouse.getUIBannerSmall();
-				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationFavor, "Saved some of their men");
+				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationFavor, "A Sauvé certains de leurs hommes");
 				this.World.Assets.addMoralReputation(1);
 				_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationMinorOffense);
 			}
@@ -78,13 +78,13 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_43.png[/img]There\'s no reason soldiers should be lynched like this. Or, for some reason, the sudden pang of justice in your side says so. With a loud voice, you announce yourself as a neutral third party here to mediate the ongoings. The cordial proceedings last for all over one second before the peasants, more shrill and hysterical than ever, announce that you are but more soldiers from %noblehouse%. You raise your hands to explain, but a melee breaks out.\n\n You can only grimace as you watch your men cut the peasants down one by one, like strong-armed farmers scything through the freshest of wheat fields. It is a gruesome sight and a few bystanders look on in horror before running off, surely to tell others of what you have done here. The soldiers, conversely, thank your bloodied and gore covered men.",
+			Text = "[img]gfx/ui/events/event_43.png[/img]Il n\'y a aucune raison pour que les soldats soient lynchés comme ça. Ou, pour une raison quelconque, le pincement soudain de la justice à vos côtés le dit. D\'une voix forte, vous vous annoncez comme un tiers neutre ici pour arbitrer les événements. Les échanges cordiaux ne durent pas plus d\'une seconde avant que les paysans, plus stridents et hystériques que jamais, annoncent que vous n\'êtes que des soldats de %noblehouse%. Vous levez la main pour expliquer, mais une mêlée éclate.\n\n Vous ne pouvez que grimacer en regardant vos hommes abattre les paysans un par un, comme des fermiers puissants fauchant les champs de blé. C\'est un spectacle monstrueux et quelques passants regardent avec horreur avant de s\'enfuir, sûrement pour raconter aux autres ce que vous avez fait ici. Les soldats, à l\'inverse, remercient vos hommes ensanglantés et sanglants.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Not sure what I expected.",
+					Text = "Je ne sais pas ce que j\'attendais.",
 					function getResult( _event )
 					{
 						return 0;
@@ -95,9 +95,9 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Banner = _event.m.NobleHouse.getUIBannerSmall();
-				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Saved some of their men");
+				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "A Sauvé certains de leurs hommes");
 				this.World.Assets.addMoralReputation(-2);
-				_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationOffense, "Killed some of their men");
+				_event.m.Town.getFactionOfType(this.Const.FactionType.Settlement).addPlayerRelation(this.Const.World.Assets.RelationOffense, "A Tué certains de leurs hommes");
 				local brothers = this.World.getPlayerRoster().getAll();
 				local candidates = [];
 
@@ -120,7 +120,7 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = injury.getIcon(),
-						text = bro.getName() + " suffers " + injury.getNameOnly()
+						text = bro.getName() + " souffre " + injury.getNameOnly()
 					});
 				}
 			}
@@ -128,13 +128,13 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_43.png[/img]Getting involved might simply complicate matters - peasants are fickle and uneducated, seers of their own solitude, purveyors of bad luck and paranoia. You order your men not to just stand aside, but to make themselves small.\n\n A thrown rocks open up the attack, soon followed by a wall of pitchforks and machetes. The soldiers try and put up a fight, but the best summation of their defense is one of horrid screaming. One is dragged out of the pile, kicking and screaming, and the peasants stab him repeatedly until he stops. Another is roped and run up a tree, hanged by the pull of three angry men.\n\nSatiated, the crowd quiets down. Children dance around the dead man\'s feet. A poor and mumbling man lily hops around the corpses, picking through the pockets of each.",
+			Text = "[img]gfx/ui/events/event_43.png[/img]S\'impliquer pourrait simplement compliquer les choses - les paysans sont inconstants et sans instruction, voyants de leur propre solitude, pourvoyeurs de malchance et de paranoïa. Vous ordonnez à vos hommes de ne pas se contenter de se tenir à l\'écart, mais de se faire petits.\n\n Un jet de pierres ouvre l\'attaque, bientôt suivi d\'un mur de fourches et de machettes. Les soldats essaient de se battre, mais le meilleur résumé de leur défense est celui de cris horribles. L\'un est traîné hors du tas, donnant des coups de pied et criant, et les paysans le poignardent à plusieurs reprises jusqu\'à ce qu\'il s\'arrête. Un autre est encordé et hissé à un arbre, pendu par la force de trois hommes en colère.\n\nFatiguée, la foule se calme. Les enfants dansent autour des pieds du mort. Un pauvre homme marmonnant sautille autour des cadavres, fouillant dans les poches de chacun.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "The friction of war meets the madness of the layman.",
+					Text = "La friction de la guerre lorsqu\'elle rencontre la folie du profane.",
 					function getResult( _event )
 					{
 						return 0;
@@ -151,13 +151,13 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_43.png[/img]You decide to keep out of it. This isn\'t your fight and involving yourself will only complicate things. Standing back, you watch as the crowd collapses in on the soldiers. There\'s a scuffle, shrill voices pipe over the din of the chaos, squirming cries of those unprepared for such a brutal final moment. But one man pushes his way through the crowd, kicking people off his legs and daggering one man in the eye. He manages to sprint to a nearby horse, mount up, and spur it into a sprint. The man eyes the %companyname%\'s banner as he passes by. You can\'t help but think that %noblehouse% might hear of your neutrality on this day...",
+			Text = "[img]gfx/ui/events/event_43.png[/img]Vous décidez de vous tenir à l\'écart. Ce n\'est pas votre combat et vous impliquer ne fera que compliquer les choses. En vous reculant, vous regardez la foule se jeter sur les soldats. Il y a une bagarre, des voix stridentes par-dessus le vacarme du chaos, des cris agités de ceux qui ne sont pas préparés à un moment final aussi brutal. Mais un soldat se fraye un chemin à travers la foule, faisant tomber les gens de ses jambes et poignardant un homme dans les yeux. Il parvient à sprinter vers un cheval à proximité, à monter et à le pousser dans un galop. L\'homme regarde la bannière de %companyname%\ en passant. Vous ne pouvez pas vous empêcher de penser que %noblehouse% pourrait entendre parler de votre neutralité ce jour-là...",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "I\'m sure he won\'t say anything.",
+					Text = "Je suis sûr qu\'il ne dira rien.",
 					function getResult( _event )
 					{
 						return 0;
@@ -168,7 +168,7 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Banner = _event.m.NobleHouse.getUIBannerSmall();
-				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Refused to help their men");
+				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Refus d'aider leurs hommes");
 			}
 
 		});

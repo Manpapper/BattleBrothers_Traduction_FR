@@ -7,16 +7,16 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.civilwar_refugees";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur le chemin...";
 		this.m.Cooldown = 21.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_59.png[/img]{A true war has plenty of living amongst the casualties and this one is no different: going along a path, you find a large group of refugees huddling together. They were washing themselves in a creek when you discovered them, a party half-naked and half-washed and all-terrified. Mostly women and children, a few elders, and a few men who seem ready to lay down their lives for the rest, no matter how fruitless an effort their defense would be. One such man steps forward.%SPEECH_ON%What is it that you want?%SPEECH_OFF%%aggro_bro% approaches you.%SPEECH_ON%Sir, we could take everything they got, but I\'m sure they won\'t give it up willingly.%SPEECH_OFF%%injured_bro% shakes his head.%SPEECH_ON%I\'d say it ain\'t worth it. These people been through enough as it is and they\'ve little left to give the world.%SPEECH_OFF% | You come across a band of refugees. Women, children, elders, and a scattering of wide-eyed men. They\'ve little of value, but they still have things worth taking were you to put in the effort. | Refugees. A band of them stringed along the path in a long and filed row. At the sight of you, the head of the suffering centipede rears to a stop and all the bodies slowly shuffle together into a fearful blob. %aggro_bro% suggests killing them and taking what they got, although what they got doesn\'t appear to be much at all by your measurement.}",
+			Text = "[img]gfx/ui/events/event_59.png[/img]{Une vraie guerre a beaucoup de vie malgré les victimes et celle-ci n\'est pas différente : en suivant un chemin, vous trouvez un grand groupe de réfugiés blottis les uns contre les autres. Ils se lavaient dans un ruisseau quand vous les avez découverts, un groupe à moitié nu et à moitié lavé et tout terrifié. Surtout des femmes et des enfants, quelques vieillards et quelques hommes qui semblent prêts à donner leur vie pour le reste, peu importe à quel point leur défense serait infructueuse. Un de ces hommes s\'avance.%SPEECH_ON%Que voulez-vous ?%SPEECH_OFF%%aggro_bro% s\'approche de vous.%SPEECH_ON%Monsieur, nous pourrions prendre tout ce qu\'ils ont, mais je suis sûr qu\'ils ne les donneront pas volontairement.%SPEECH_OFF%%injured_bro% secoue la tête.%SPEECH_ON%Je dirais que ça n\'en vaut pas la peine. Ces gens ont assez vécu comme ça et ils n\'ont plus grand-chose à donner au monde.%SPEECH_OFF% | Vous tombez sur une bande de réfugiés. Des femmes, des enfants, des personnes âgées et une poignée d\'hommes aux yeux écarquillés. Ils ont peu de valeur, mais ils ont quand même des choses qui valent la peine d\'être prises si vous faites l\'effort. | Réfugiés. Une bande d\'entre eux s'\enchaînait le long du chemin en une longue rangée. À votre vue, la tête du mille-pattes souffrant s\'arrête et tous les corps se mélangent lentement en une tache effrayante. %aggro_bro% suggère de les tuer et de prendre ce qu\'ils ont, bien que ce qu\'ils ont ne semble pas être grand-chose d\'après vos estimations.}",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Leave those poor folk alone.",
+					Text = "Laissez ces pauvres gens tranquilles.",
 					function getResult( _event )
 					{
 						return 0;
@@ -31,7 +31,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 				if (food.len() > 2)
 				{
 					this.Options.push({
-						Text = "Share some of our provisions with those poor folk.",
+						Text = "Partagez quelques-unes de nos provisions avec ces pauvres gens.",
 						function getResult( _event )
 						{
 							return "D";
@@ -43,7 +43,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 				if (_event.m.RefugeeDude != null && food.len() > 1)
 				{
 					this.Options.push({
-						Text = "%refugee_bro%, you used to be a refugee. Talk to them?",
+						Text = "%refugee_bro%, vous étiez un réfugié. Parlez-leur?",
 						function getResult( _event )
 						{
 							return "E";
@@ -53,7 +53,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Search them for valuables!",
+					Text = "Cherchez des objets de valeur !",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(-3);
@@ -74,13 +74,13 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_59.png[/img]You order your men to take what they can. The refugees reel back in horror and some protest as your brothers file into their ranks. Suddenly, one of the refugees takes a large stone and bashes %injured_bro% over the head with it. Women and children scream and a few other men grab onto the mercenaries, fighting over weapons still sheathed. But the wandering souls haven\'t eaten in days and their weakened bodies are no match for your men. The %companyname% takes what it wants.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Vous ordonnez à vos hommes de prendre ce qu\'ils peuvent. Les réfugiés reculent d\'horreur et quelques protestations fusent alors que vos frères entrent dans leurs rangs. Soudain, l\'un des réfugiés prend une grosse pierre et frappe %injured_bro% sur la tête avec. Des femmes et des enfants crient et quelques autres hommes s\'agrippent aux mercenaires, se disputant des armes encore rengainées. Mais les âmes errantes n\'ont pas mangé depuis des jours et leurs corps affaiblis ne font pas le poids face à vos hommes. %companyname% prennent ce qu\'ils veullent.",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Know your place, you fools.",
+					Text = "Connaissez votre place, imbéciles.",
 					function getResult( _event )
 					{
 						return 0;
@@ -96,7 +96,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.InjuredDude.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.InjuredDude.getName() + " souffre " + injury.getNameOnly()
 					}
 				];
 				_event.addLoot(this.List);
@@ -105,13 +105,13 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_59.png[/img]You order your men to take what they can. The refugees reel back in horror. Women cry out, children, more confused than understanding, do the same. Some tearful men beg that you simply leave. Unfortunately for this band of useless tramps, the %companyname% takes what it wants. Your men freely sift through the crowds, eventually returning with their hauls.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Vous ordonnez à vos hommes de prendre ce qu\'ils peuvent. Les réfugiés reculent d\'horreur. Les femmes crient, les enfants, plus confus que compréhensifs, font de même. Certains hommes en larmes vous demandent simplement de partir. Malheureusement pour cette bande de vagabonds inutiles, la %companyname% prend ce qu\'elle veut. Vos hommes passent librement au crible la foule et finissent par revenir avec leurs prises.",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "They know better than to resist.",
+					Text = "Ils ne savent pas résister.",
 					function getResult( _event )
 					{
 						return 0;
@@ -127,13 +127,13 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_59.png[/img]{You tell %randombrother% to give the refugees some food. The disconcerted group stares at you incredulously as they\'re handed some bread and a carboy of water. An elderly fellow walks up and shakenly gets to his knees to kiss your feet. You lift the man back up and tell him there is no need for such theatrics. A few of the mercenaries snicker and call you the \'The Dough of Doughs, the Stale Bread King.\' | These people would be easily robbed, but you get the feeling such news wouldn\'t sit kindly when word of it spread about the region. Instead, you order %randombrother% to start handing out food and water. The refugees are annoyingly happy, glomming onto you as though you were a god throwing mana out of your hands. You\'ve just some old food to get rid of. Then again, some say that when the old gods were more human, the men were more divine.}",
+			Text = "[img]gfx/ui/events/event_59.png[/img]{Vous dites à %randombrother% de donner de la nourriture aux réfugiés. Le groupe déconcerté vous regarde avec incrédulité tandis qu\'on leur tend du pain et une bonbonne d\'eau. Un vieil homme s\'approche et se met à genoux en tremblant pour vous embrasser les pieds. Vous relevez l\'homme et lui dites qu\'il n'y a pas besoin d\'un tel spectacle. Quelques-uns des mercenaires ricanent et vous appellent \'La pâte des pâtes, le roi du pain rassis.\' | Ces personnes se feraient facilement voler, mais vous avez l\'impression que de telles actes ne seraient pas bien accueillies lorsque la nouvelle se répandrait dans la région. Au lieu de cela, vous ordonnez à %randombrother% de commencer à distribuer de la nourriture et de l\'eau. Les réfugiés sont d\'une joie agaçante, vous regardant comme si vous étiez un dieu. Vous avez juste de la vieille nourriture à vous débarrasser. Là encore, certains disent que lorsque les anciens dieux étaient plus humains, les hommes étaient plus divins.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Travel safely.",
+					Text = "Voyager en toute sécurité.",
 					function getResult( _event )
 					{
 						return 0;
@@ -153,7 +153,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You lose " + item.getName()
+						text = "Vous donnez " + item.getName()
 					});
 					this.World.Assets.getStash().remove(item);
 					food.remove(idx);
@@ -165,13 +165,13 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_59.png[/img]You decide to weigh on a man who has personal experience as a refugee: %refugee_bro%.\n\nThe mercenary heads into the sobbing and praying mass of weary travelers. He talks with them for a time and shares some food, his friendly gesticulations and tales of his own past gradually bringing the crowd to his side. You watch as an old man hands him something wrapped in sheepskin with leather thongs swooping beneath. The sellsword bows, shakes the man\'s hand, and returns.\n\nHe throws the sheepskin back to unveil a sword that glints in the light about as sharply as you can imagine it cuts. %refugee_bro% smiles.%SPEECH_ON%Like me mum always said, a bit of friendliness never hurt nobody, but this sword sure will!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Vous décidez de compter sur un homme qui a une expérience personnelle en tant que réfugié : %refugee_bro%.\n\nLe mercenaire se dirige vers la masse sanglotante et priante des voyageurs fatigués. Il discute un moment avec eux et partage de la nourriture, ses gesticulations amicales et les récits de son propre passé amenant peu à peu la foule à ses côtés. Vous regardez un vieil homme lui tendre quelque chose enveloppé dans de la peau de mouton avec des lanières de cuir en dessous. Le mercenaire s\'incline, serre la main de l\'homme et revient.\n\nIl jette la peau de mouton pour dévoiler une épée qui brille dans la lumière aussi fortement que vous pouvez imaginer qu\'elle coupe. %refugee_bro% sourit.%SPEECH_ON%Comme ma mère l\'a toujours dit, un peu d\'amitié ne fait jamais de mal à personne, mais cette épée le fera certainement !%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Nice work with the niceties.",
+					Text = "Beau travail avec les subtilités.",
 					function getResult( _event )
 					{
 						return 0;
@@ -188,7 +188,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You lose " + item.getName()
+					text = "Vous donnez " + item.getName()
 				});
 				this.World.Assets.getStash().remove(item);
 				this.World.Assets.updateFood();
@@ -207,7 +207,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + sword.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(sword.getName()) + sword.getName()
+					text = "Vous gagnez " + this.Const.Strings.getArticle(sword.getName()) + sword.getName()
 				});
 				this.World.Assets.getStash().add(sword);
 			}
@@ -236,7 +236,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 		_list.push({
 			id = 10,
 			icon = "ui/items/" + food.getIcon(),
-			text = "You gain " + food.getName()
+			text = "Vous gagnez " + food.getName()
 		});
 		this.World.Assets.getStash().add(food);
 		this.World.Assets.updateFood();
@@ -291,7 +291,7 @@ this.civilwar_refugees_event <- this.inherit("scripts/events/event", {
 			_list.push({
 				id = 10,
 				icon = "ui/items/" + item.getIcon(),
-				text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+				text = "Vous gagnez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 			});
 		}
 	}

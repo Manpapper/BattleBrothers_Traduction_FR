@@ -5,16 +5,16 @@ this.civilwar_dead_knight_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.civilwar_dead_knight";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Le long de la route...";
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_97.png[/img]You happen across a throng of kids scrambling around something in the grass like flies on a shitpile. %randombrother% starts booting them away.%SPEECH_ON%Scamper you larks. Scamper! Oh, damn. Sir, come take a look!%SPEECH_OFF%A fat-faced chubster of a kid yells at you.%SPEECH_ON%I found it first! It\'s mine!%SPEECH_OFF%You effortlessly palm him out of the way and get a look. There\'s a dead knight in the grass and he\'s no doubt been there for a while. A soft tik-tik-tik noise emits from his armor as ants crawl all over it. A little girl holds her nose with a pinch. Somewhat nasally and high-pitched, she tries her hand at some astute diplomacy.%SPEECH_ON%Let \'em have it, Robbie! These men are dangerous! Aren\'t ya? Aren\'t ya some dangerous men?%SPEECH_OFF%%randombrother% unsheathes his weapon and dramatically flashes it around.%SPEECH_ON%The tiny wench is right! Y\'all best git before we put ya in the dirt just like we did this here knight! That\'s right, we are his murderers and we\'ve come back to see our handiwork!%SPEECH_OFF%Screaming and crying, the kids are scattered like birds from a bush. Robbie remains behind, leering over a bush at his lost treasures. You tell the mercenary he didn\'t need to scare them so badly. He shrugs and starts collecting the knight\'s gear.",
+			Text = "[img]gfx/ui/events/event_97.png[/img]Vous rencontrez une foule d\'enfants qui se bousculent autour de quelque chose dans l\'herbe comme des mouches sur un tas de merde. %randombrother% commence à les disperser.%SPEECH_ON%Bande de garnements et vos blagues, décampez ! Oh putain. Monsieur, venez jeter un oeil !%SPEECH_OFF%Un gros gamin au visage gras vous crie dessus.%SPEECH_ON%Je l\'ai trouvé le premier ! C\'est à moi !%SPEECH_OFF%Vous l\'écartez sans effort et jetez un oeil. Il y a un chevalier mort dans l\'herbe et il est sans doute là depuis un moment. Un doux bruit sort de son armure alors que les fourmis rampent dessus. Une petite fille se tient le nez pincée. La voie un peu nasillarde et aiguë, elle s\'essaye à une diplomatie astucieuse.%SPEECH_ON%Laissez-les faire, Robbie ! Ces hommes sont dangereux ! N\'êtes-ce pas ? N\'êtes-vous pas des hommes dangereux ?%SPEECH_OFF%%randombrother% dégaine son arme et la fait tourner de façon spectaculaire.%SPEECH_ON%La gamine a raison ! Vous êtes tous les meilleurs connards avant de vous étaler dans la boue comme ce chevalier ! C\'est vrai, nous sommes ses assassins et nous sommes revenus pour voir notre travail!%SPEECH_OFF%Criant et pleurant, les enfants sont dispersés comme des oiseaux sur un arbre. Robbie reste derrière, regardant par-dessus un buisson ses trésors perdus. Vous dites au mercenaire qu\'il n\'avait pas besoin de les effrayer autant. Il hausse les épaules et commence à ramasser l\'équipement du chevalier.",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Still useful.",
+					Text = "Toujours utile.",
 					function getResult( _event )
 					{
 						if (_event.m.Thief != null)
@@ -37,20 +37,20 @@ this.civilwar_dead_knight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous récupérez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "Thief",
-			Text = "[img]gfx/ui/events/event_97.png[/img]%thief% eyes Robbie who you notice is beginning to sweat. The sellsword points a finger.%SPEECH_ON%You\'re not just a fat piece of shit, kid. What are you hiding under your shirt? You won\'t fool a thief, c\'mon, show it!%SPEECH_OFF%Sighing, Robbie lifts his shirt and a bunch of crowns go clattering into the grass. The man nods.%SPEECH_ON%That\'s what I thought. Now git.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_97.png[/img]%thief% Vous surveillez Robbie et vous remarquez qu\'il commence à transpirer. Le mercenaire le pointe du doigt.%SPEECH_ON%Tu n\'es pas qu\'une grosse merde, gamin. Que caches-tu sous ta chemise ? Tu ne tromperas pas un voleur, allez, montrez-le!%SPEECH_OFF%En soupirant, Robbie soulève sa chemise et un tas de couronnes vont claquer dans l\'herbe. L\'homme hoche la tête.%SPEECH_ON%C\'est ce que je pensais. Maintenant dégage.%SPEECH_OFF%",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Good eye.",
+					Text = "Bonne vue",
 					function getResult( _event )
 					{
 						return 0;
@@ -66,7 +66,7 @@ this.civilwar_dead_knight_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous ramassez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 			}
 

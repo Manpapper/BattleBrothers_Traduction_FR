@@ -5,18 +5,18 @@ this.civilwar_town_conquered_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.civilwar_town_conquered";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur le chemin...";
 		this.m.Cooldown = 1.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{News on the wind has it that %conqueror% has taken %city% from %defeated%! | Messengers on the road say that %conqueror% is the new ruler of %city%, having taken it from %defeated% after a gruesome battle. | Redraw the maps! Refugees, messengers, and traders on the road are reporting that %city% now belongs to %conqueror%!}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{Les nouvelles disent que %conqueror% a pris %city% à %defeated% ! | Les messagers sur la route disent que %conqueror% est le nouveau dirigeant de %city%, après l\'avoir pris à %defeated% après une horrible bataille. | Redessinez les cartes ! Des réfugiés, des messagers et des commerçants sur la route signalent que %city% appartient désormais à %conqueror% !}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The board has changed.",
+					Text = "Le tableau a changé.",
 					function getResult( _event )
 					{
 						return 0;
