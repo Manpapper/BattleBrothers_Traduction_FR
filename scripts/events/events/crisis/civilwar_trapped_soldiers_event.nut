@@ -151,7 +151,7 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_43.png[/img]Vous décidez de vous tenir à l\'écart. Ce n\'est pas votre combat et vous impliquer ne fera que compliquer les choses. En vous reculant, vous regardez la foule se jeter sur les soldats. Il y a une bagarre, des voix stridentes par-dessus le vacarme du chaos, des cris agités de ceux qui ne sont pas préparés à un moment final aussi brutal. Mais un soldat se fraye un chemin à travers la foule, faisant tomber les gens de ses jambes et poignardant un homme dans les yeux. Il parvient à sprinter vers un cheval à proximité, à monter et à le pousser dans un galop. L\'homme regarde la bannière de %companyname%\ en passant. Vous ne pouvez pas vous empêcher de penser que %noblehouse% pourrait entendre parler de votre neutralité ce jour-là...",
+			Text = "[img]gfx/ui/events/event_43.png[/img]Vous décidez de vous tenir à l\'écart. Ce n\'est pas votre combat et vous impliquer ne fera que compliquer les choses. En vous reculant, vous regardez la foule se jeter sur les soldats. Il y a une bagarre, des voix stridentes par-dessus le vacarme du chaos, des cris agités de ceux qui ne sont pas préparés à un moment final aussi brutal. Mais un soldat se fraye un chemin à travers la foule, faisant tomber les gens de ses jambes et poignardant un homme dans les yeux. Il parvient à sprinter vers un cheval à proximité, à monter et à le pousser dans un galop. L\'homme regarde la bannière de %companyname% en passant. Vous ne pouvez pas vous empêcher de penser que %noblehouse% pourrait entendre parler de votre neutralité ce jour-là...",
 			Banner = "",
 			Characters = [],
 			List = [],
@@ -168,7 +168,7 @@ this.civilwar_trapped_soldiers_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Banner = _event.m.NobleHouse.getUIBannerSmall();
-				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Refus d'aider leurs hommes");
+				_event.m.NobleHouse.addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Refus d\'aider leurs hommes");
 			}
 
 		});
