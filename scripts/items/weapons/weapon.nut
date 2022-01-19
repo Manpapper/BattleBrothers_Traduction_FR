@@ -293,7 +293,7 @@ this.weapon <- this.inherit("scripts/items/item", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/chance_to_hit_head.png",
-				text = "Chance de toucher la tête [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.ChanceToHitHead + "%[/color]"
+				text = "Chance de frapper la tête [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.ChanceToHitHead + "%[/color]"
 			});
 		}
 
