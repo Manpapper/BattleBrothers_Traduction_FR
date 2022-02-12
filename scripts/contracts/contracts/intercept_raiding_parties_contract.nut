@@ -8,7 +8,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 	{
 		this.contract.create();
 		this.m.Type = "contract.intercept_raiding_parties";
-		this.m.Name = "Intercept Raiding Parties";
+		this.m.Name = "Arrêter les groupes de pillard";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
 		this.m.MakeAllSpawnsResetOrdersOnContractEnd = false;
@@ -387,14 +387,14 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{%employer%\'s room is dark and quiet. It would be black and silent were it not for a few candles flickering and birds chirping. Standing in the shadows, the nobleman speaks.%SPEECH_ON%The southern shits have been sending raiding parties north. It is a troublesome affair, you know, to have a couple of bronzed looking mutts mucking around, looting, pillaging, killing, raping. They wish to have me draw my main forces to the rear, but I won\'t have it. That is why you are here, sellsword. I need you to seek out these interloping saboteurs and kill them all. There\'s %reward% crowns awaiting you if you\'re up to the task.%SPEECH_OFF% | You find %employer% in talk with his lieutenants. He has two stack of chips, one much higher than the other. He takes from the taller stack and puts it upon the smaller.%SPEECH_ON%And if I allotted this many?%SPEECH_OFF%The lieutenants shake their heads.%SPEECH_ON%That is precisely what the southerners want. If we draw men from the frontline, then they will surely know and use it as the time to attack.%SPEECH_OFF%All the men suddenly look up at you. %employer% grins.%SPEECH_ON%Ah-ha, it seems our savior is none other than a mercenary! Oh, I dare say a sellsword may take care of this for us. You there, captain, I need fighters to stay around %townname% and defend it from southern saboteurs and raiders. You\'ll have %reward% crowns waiting a proper completion of this task!%SPEECH_OFF%The army lieutenants look hesitant to make this offer to a mercenary such as yourself, but you get the feeling times are grim. | You are directed to %employer%\'s library where you find him reading over scrolls. He holds one up.%SPEECH_ON%During times such as these, what is it that you think I am reading about?%SPEECH_OFF%You guess military matters. The man shakes his head.%SPEECH_ON%Agrarianism. You see, I am currently in a war. But wars are not just fought with men, but with supply chains, logistics, food. And it is all these things which the homefront provides. The southern mutts understand this concept as well as we do, and they have sent raiders and infiltrators to destroy the homefront. To distract me, to distract my soldiers. I need you to root out these bastards and protect our homes, our shops, our farms. For proper completion, I will offer you %reward% crowns.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{Le bureau de %employer% est sombre et silencieux. Enfin, il serait noir et silencieux s\'il n\'y avait pas quelques bougies qui brûlent et des oiseaux qui piaillent. Debout dans l\'ombre, le noble parle.%SPEECH_ON%Les merdes du sud ont envoyé des raids vers le nord. C\'est une affaire gênante, vous savez, d\'avoir une paire de bâtards à la peau bronzée qui se baladent, pillant, tuant et violant. Ils veulent que je retire mes forces principales à l\'arrière, mais je ne veux pas. C\'est pourquoi vous êtes ici, mercenaire. J\'ai besoin que vous recherchiez ces parasites et que vous les tuiez tous. Il y a %reward% couronnes qui vous attendent si vous êtes à la hauteur de la tâche.%SPEECH_OFF% | Vous trouvez %employer% en pleine discussion avec ses lieutenants. Il a deux piles de jetons, l\'une beaucoup plus haute que l\'autre. Il prend dans la pile la plus haute et la met sur la plus petite.%SPEECH_ON%Et si j\'en affectais encore autant?%SPEECH_OFF%Les lieutenants secouent la tête.%SPEECH_ON%C\'est précisément ce que veulent les sudistes. Si nous retirons des hommes de la ligne de front, ils le sauront sûrement et en profiteront pour attaquer.%SPEECH_OFF%Tous les hommes lèvent soudain les yeux vers vous. %employer% sourit.%SPEECH_ON%Ah-ha, il semble que notre sauveur ne soit autre qu\'un mercenaire ! Oh, j\'ose dire qu\'un mercenaire peut s\'occuper de ça pour nous. Vous ici, capitaine, j\'ai besoin de combattants pour rester dans les environs de %townname% et la défendre contre les saboteurs et les pilleurs du sud. Vous aurez %reward% couronnes en échange de la bonne exécution de cette tâche !%SPEECH_OFF%Les lieutenants de l\'armée semblent hésiter à faire cette offre à un mercenaire tel que vous, mais vous avez le sentiment que les temps sont durs et qu\'ils n\'ont pas vraiment d\'autres alternatives. | Vous êtes conduit à la bibliothèque de %employer% où vous le trouvez en train de lire des parchemins. Il en brandit un.%SPEECH_ON%Dans des moments comme celui-ci, que pensez-vous que je lise ?%SPEECH_OFF%Vous supposez que les problèmes sont d\'ordre militaire. L\'homme secoue la tête.%SPEECH_ON%Agrarisme. Vous voyez, je suis actuellement en guerre. Mais les guerres ne sont pas seulement menées avec des hommes, mais avec des chaînes d\'approvisionnement, de la logistique, de la nourriture. Et ce sont toutes ces choses que le front intérieur fournit. Les bâtards du sud comprennent ce concept aussi bien que nous, et ils ont envoyé des pilleurs et des infiltrateurs pour nous détruire de l\'intérieur. Pour me distraire, pour distraire mes soldats. J\'ai besoin de vous pour extirper ces bâtards et protéger nos maisons, nos magasins, nos fermes. Si vous réussissez, je vous offrirai %reward% couronnes en récompense.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{This may just be the right kind of work for us. | Repel invaders from the south? This here company answers the call! | Very well. Let\'s discuss payment further.}",
+					Text = "{C\'est peut-être le bon type de travail pour nous. | Repousser les envahisseurs du sud ? Notre compagnie répond à l\'appel ! | Très bien. Discutons davantage du paiement.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -402,7 +402,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 
 				},
 				{
-					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | This will take too much of our time.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | Cela va prendre trop de notre temps.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -419,12 +419,12 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "LocationDestroyed",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_30.png[/img]{Smoke rises in the distance. Screams beneath the clouds, and flighty silhouettes in the fires that produced them. It is the %location% at %objective%, and it has no doubt been destroyed.}",
+			Text = "[img]gfx/ui/events/event_30.png[/img]{La fumée s\'élève au loin. Des cris sous les nuages, et des silhouettes fugaces dans les feux qui les ont produits. C\'est %location% à %objectif%, et elle a sans doute été détruite.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We need to stop this before it\'s too late.",
+					Text = "Nous devons arrêter ça avant qu\'il ne soit trop tard.",
 					function getResult()
 					{
 						return 0;
@@ -440,12 +440,12 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "InterceptParty",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_156.png[/img]{The southerners appear as though in geographic transition, half-dressed in their own clothes and that of northern garb, while also laden with chests of pillaged loot. One man playfully twirls around in a northern wedding dress. It would seem a friendly party on approach were they not also covered in blood and ash. To battle! | You find the raiding party of northbound southerners. Judging by the blood on them, you wager they\'ve already paved a road of chaos through the homesteaders in the hinterland. To battle!}",
+			Text = "[img]gfx/ui/events/event_156.png[/img]{Les habitants du sud apparaissent devant vous en pleine transition vestimentaire, à moitié vêtus de leurs propres vêtements et de ceux du nord, mais aussi chargés de coffres remplis de butins pillés. Un homme s\'amuse à virevolter dans une robe de mariée nordique. On pourrait croire à une fête amicale en les approchant s\'ils n\'étaient pas aussi couverts de sang et de cendres. Au combat ! | Vous trouvez le groupe de Sudistes qui se dirige vers le nord. A en juger par le sang sur eux, vous pariez qu\'ils ont déjà pavé une route de chaos à travers les fermiers de l\'arrière-pays. Au combat !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prepare to engage them.",
+					Text = "Préparez-vous à les engager.",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination, this.Contract.m.IsPlayerAttacking);
@@ -462,12 +462,12 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "PartiesDefeated",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_87.png[/img]{You find the last breathing southerner and grab him by his hair and hold him up for all to see. Peasants and farmers alike watch as you cut from throat to neck until his body falls free and his head holds high in your hands. The crowd cheers.%SPEECH_ON%Our savior!%SPEECH_OFF%No doubt %employer% will be happy to hear of your work. | The southerners are slain, and any who survived their injuries are set upon by the locals. It is a torturous affair, with plenty of skin flaying, cock cutting, and general bloody creativity. But you\'ve no sympathy for the outlanders. %employer%\'s awaiting payment, however, does garner a bit of interest for you. | With the last of the southerners put to the grave, you know %employer% will be more than happy to pay you what you\'re worth. As you depart, you find a few of the locals mutilating the corpses of the raiders, as is tradition in this part and all other parts of this world. | With a terrifying cry betraying his former sense of control in this world, the last raider is put to the blade and ended. His fellow brothers in arms are dragged about by the locals, the corpses either chopped to pieces or set afire. You watch for a time, but ultimately move on, knowing that %employer% is going to be waiting. | Luckiest amongst the raiders are the dead, for the gravely wounded are shown no mercy. The locals and homesteaders file into the battlefield to claim their victims, some even exchanging crowns for it, and the selected raiders are then defiled, mutilated, and tortured. You don\'t see any outright killed, and in fact in one case a healer seems to be present just to extend the suffering. It\'s quite the sight, but an even better one would be %employer% dropping a large reward in your coffers.}",
+			Text = "[img]gfx/ui/events/event_87.png[/img]{Vous trouvez le dernier Sudiste qui respire et le saisissez par les cheveux pour le montrer à tous. Les paysans et les fermiers vous regardent lui couper la gorge jusqu\'à ce que son corps se libère et que sa tête tienne bien haut dans vos mains. La foule applaudit.%SPEECH_ON%Notre sauveur !%SPEECH_OFF%Nul doute que %employer% sera heureux d\'entendre parler de votre travail. | Les sudistes sont tués, et ceux qui ont survécu à leurs blessures sont attaqués par les locaux. C\'est une affaire de torture, avec beaucoup d\'écorchement, de coupe de bite, et de créativité sanglante. Mais vous n\'avez aucune sympathie pour les pilleurs. L\'attente du paiement de %employer%, cependant, suscite un peu d\'intérêt pour vous. | Les derniers Sudistes ayant été mis à mort, vous savez que %employer% sera plus qu\'heureux de vous payer ce que vous valez. En partant, vous trouvez quelques locaux en train de mutiler les cadavres des pilleurs, comme le veut la tradition dans cette région et dans toutes les autres parties de ce monde. | Avec un cri terrifiant trahissant son ancien sentiment de contrôle sur ce monde, le dernier pillard est mis à mort. Ses frères d\'armes sont traînés par les habitants, les cadavres sont découpés en morceaux ou brûlés. Vous regardez pendant un moment, mais vous finissez par avancer, sachant que %employer% vous attendra. | Les plus chanceux parmi les pillards sont les morts, car les blessés graves ne bénéficient d\'aucune pitié. Les habitants et les paysans se pressent sur le champ de bataille pour réclamer leurs victimes, certains d\'entre eux échangeant même des couronnes pour cela, et les pillards sélectionnés sont ensuite souillés, mutilés et torturés. Aucun n\'est tué et, en fait, dans un cas, un guérisseur semble être présent juste pour prolonger la souffrance. C\'est un beau spectacle, mais un spectacle encore plus beau serait que %employer% dépose une grosse récompense dans vos coffres.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Get the men ready to move out.",
+					Text = "Préparez les hommes à partir.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -484,16 +484,16 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Lost",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_94.png[/img]{The enemy is gone, but their work is finished. Smoke lingers around buildings burned to the ground, and those who haven\'t been taken as indebted to be sold down south lie dead in the streets.\n\nThere is little point in you returning to your employer, for you stand little chance to get paid for failure. Best to look for new work elsewhere.}",
+			Text = "[img]gfx/ui/events/event_94.png[/img]{L\'ennemi est parti, mais leur oeuvre est terminée. La fumée flotte autour des bâtiments incendiés, et les habitants qui n\'ont pas été pris comme esclaves pour être vendus dans le sud gisent morts dans les rues.\n\nIl est inutile que vous retourniez voir votre employeur, car vous avez peu de chances d\'être payé pour un échec. Mieux vaut chercher un nouveau travail ailleurs.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We failed.",
+					Text = "Nous avons échoué.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Failed to defend " + this.Contract.m.Destination.getName() + " from southern raiders");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "N\'a pas réussi à défendre " + this.Contract.m.Destination.getName() + " des pillards du sud");
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}
@@ -508,12 +508,12 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Assassins",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_165.png[/img]{You find a farmer dead in the road with a curved dagger in his back. Nobody leaves a dagger that nice behind, and just as you suspect his murderers are still here: a group of southern assassins. They shift around like shades, and their sharpened steel blade glint with every twist and turn. To battle! | A woman hurriedly rushes to you, her shredded dress flailing, arms swaying, eyes wide, the whites of them pitted in a sea of red blood like shells on a crimson beach. Before she can say a word she grunts and drops to the ground in an instant. A dagger is in the back of her skull, and further behind her a man in black stands with a company of assassins!}",
+			Text = "[img]gfx/ui/events/event_165.png[/img]{Vous trouvez un fermier mort sur la route avec une dague incurvée dans le dos. Personne ne laisse une si belle dague derrière soi, et au moment où vous vous en doutez, ses meurtriers sont toujours là : un groupe d\'assassins du Sud. Ils se déplacent comme des ombres, et leurs lames d\'acier aiguisées brillent à chaque mouvement. Au combat ! | Une femme se précipite vers vous, sa robe en lambeaux s\'agite, ses bras se balancent, ses yeux sont écarquillés, le blanc des yeux se fond dans une mer de sang rouge comme des coquillages sur une plage cramoisie. Avant qu\'elle ne puisse dire un mot, elle grogne et tombe au sol en un instant. Une dague est plantée à l\'arrière de son crâne, et plus loin derrière elle, un homme en noir se tient accompagné d\'un groupe d\'assassins !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination, this.Contract.m.IsPlayerAttacking);
@@ -530,12 +530,12 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Slavers",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_53.png[/img]{The southern raiding party looks a collective of all the world\'s men. It is upon closer inspection that you realize it is because they are slavers! The mishmash of masters and slaves moves on the %companyname%, a flailing formation of trained and untrained alike. You can see that there are northern faces amongst the crowd, but sadly they are a broken lot and will sooner raise arms against the company than fight for freedom. | You come across the southerners, but they are not raiders at all - they are slavers! They\'ve carts of women and children, and upon your discovering them the slavers hurriedly start decapitating any recently enslaved man who poses a threat while the rest of the group charges the %companyname%. With carnage in the air, you bear down on the group with impunity!}",
+			Text = "[img]gfx/ui/events/event_53.png[/img]{Le groupe de pilleurs du sud ressemble à un groupe d\'hommes comme on en verrait partout dans le monde. C\'est en regardant de plus près que vous réalisez qu\'ils sont des esclavagistes ! Le mélange de maîtres et d\'esclaves se déplace vers %companyname%, une formation agitée de personnes entraînées et non entraînées. Vous pouvez voir qu\'il y a des visages nordiques parmi la foule, mais malheureusement, ils sont brisés et préfèrent lever les armes contre la compagnie plutôt que de se battre pour la liberté. | Vous tombez sur les sudistes, mais ce ne sont pas du tout des pillards, ce sont des esclavagistes ! Ils ont des charrettes de femmes et d\'enfants, et lorsque vous les découvrez, les esclavagistes se dépêchent de décapiter tout homme récemment asservi qui représente une menace, tandis que le reste du groupe charge %companyname%. Avec le carnage dans l\'air, vous foncez sur le groupe en toute impunité !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination, this.Contract.m.IsPlayerAttacking);
@@ -552,12 +552,12 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "ThankfulVillagers",
 			Title = "À %objective%",
-			Text = "[img]gfx/ui/events/event_79.png[/img]{You put down the last of the southern raiders. As you order the company to collect what\'s of value, a couple of villagers come out with goods of their own.%SPEECH_ON%We thought it the end of the world, and yet here you are, our knights.%SPEECH_OFF%While you\'re not a knight, you\'re not averse to taking a knight\'s praise - and a knight\'s reward: the villagers give you gifts! | With the raiders dispatched, you find yourself slowly surrounded by villagers. They look haggard and afraid, yet they carry with them baskets of goods. You are offered these as rewards for saving them. They seem to confuse you for %employer%\'s own soldiers, but you don\'t even think to reveal that you are a mercenary. You take the offerings and even tip your hat and say it\'s just your job, which it is.}",
+			Text = "[img]gfx/ui/events/event_79.png[/img]{Vous avez mis à terre les derniers pillards du sud. Alors que vous ordonnez à la compagnie de collecter tout ce qui a de la valeur, un couple de villageois sort avec ses propres biens.%SPEECH_ON%Nous pensions que c\'était la fin du monde, et pourtant vous êtes là, nos chevaliers.%SPEECH_OFF%Bien que vous ne soyez pas un chevalier, vous n\'hésitez pas à accepter les louanges d\'un chevalier - et la récompense d\'un chevalier : les villageois vous offrent des cadeaux ! | Les pillards ayant été éliminés, vous vous retrouvez lentement entouré de villageois. Ils ont l\'air hagards et effrayés, mais ils apportent avec eux des paniers de marchandises. On vous les offre comme récompense pour les avoir sauvés. Ils semblent vous confondre avec les soldats de %employer%, mais vous ne pensez même pas à révéler que vous êtes un mercenaire. Vous acceptez les offrandes, vous tirez même votre chapeau et vous dites que c\'est juste votre travail, ce qui est le cas.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "It\'s nice to be appreciated.",
+					Text = "C\'est agréable d\'être apprécié.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -586,7 +586,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% waves you in, though it isn\'t as beaming a welcoming as you\'d hope. His tone is somewhere in the realm of fatherly disappointment.%SPEECH_ON%You got a couple of the southern brigandines. Not great, but not terrible either. I\'ll pay you per each party stopped, but I\'d only wished you\'d done better.%SPEECH_OFF%You almost want to apologize, but you know any sign of weakness are your end might result in some shortchanging and keep it to yourself. He pays the %reward% as earned. | %employer% has a few guards with him when you enter, though there are some faces missing amongst the crowd. The man speaks somberly.%SPEECH_ON%You did what you could, sellsword. It wasn\'t likely that you could have gotten all the raiders. That I realize now. I am, of course, offering a bit of rational respite for you here. For all I know I hired the wrong man, but I will not decide that this day. There is too much to rebuild. You %reward%, as agreed upon per raiding party destroyed.%SPEECH_OFF% |  You enter %employer%\'s room to find your reward of %reward% crowns already accounted for and on the table. He points at it with a flippant turn of his hand.%SPEECH_ON%The raiders came, a few you took care of, the rest pillaged and looted and murdered. So. Take your pay of %reward% crowns, sellsword. It is in accordance to the quality of your work, so please do not be surprised if you find the crowns stacked a little short.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% vous salue, bien que ce ne soit pas un accueil aussi radieux que vous l\'auriez espéré. Son ton est quelque part dans le domaine de la déception paternelle.%SPEECH_ON%Vous avez un couple de pillard du sud. Pas génial, mais pas terrible non plus. Je vous paierai pour chaque groupe éliminé, mais j\'aurais aimé que vous fassiez mieux.%SPEECH_OFF%Vous avez presque envie de vous excuser, mais vous savez que tout signe de faiblesse de votre part pourrait entraîner un manque à gagner et vous gardez cela pour vous. Il vous paie les %reward% couronnes qui vous reviennent. | %employer% a quelques gardes avec lui quand vous entrez, bien qu\'il y ait quelques visages manquants dans la foule. L\'homme parle sombrement.%SPEECH_ON%Vous avez fait ce que vous pouviez, mercenaire. Il était peu probable que vous puissiez attraper tous les pillards. Je m\'en rends compte maintenant. Je vous offre, bien sûr, un peu de répit. Pour ce que j\'en sais, j\'ai engagé le mauvais homme, mais je ne le déciderai pas aujourd\'hui. Il y a trop de choses à reconstruire. Vous recevrez %reward% de récompense, comme convenu, pour chaque groupe d\'assaillants éliminé.%SPEECH_OFF% |  Vous entrez dans la chambre de %employer% pour trouver votre récompense de %reward% couronnes déjà calculée et sur la table. Il la désigne d\'un geste désinvolte de la main.%SPEECH_ON%Les pillards sont venus, vous vous êtes occupés de quelques-uns, les autres ont pillé et assassiné. Donc. Prenez votre paie de %reward% couronnes, mercenaire. C\'est en accord avec la qualité de votre travail, alors ne soyez pas surpris si vous trouvez que les couronnes sont un peu insuffisantes.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
 			List = [],
@@ -598,7 +598,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractPoor);
 						this.World.Assets.addMoney(this.Math.round(this.Contract.m.Payment.getOnCompletion() / 2));
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractPoor, "Defended " + this.Contract.m.Destination.getName() + " from southern raiders");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractPoor, "A défendu " + this.Contract.m.Destination.getName() + " des pillards du sud");
 						this.World.Contracts.finishActiveContract();
 
 						if (this.World.FactionManager.isHolyWar())
@@ -624,7 +624,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "Success2",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{You find %employer% not in his war room, but in his side office with a number of ladies milling about. They\'re attending to the cobwebs amongst the corners, filing scrolls into a bookshelf, or dusting the furniture. And they\'re all naked, naturally. The man opens his arms.%SPEECH_ON%I thought it well that I should celebrate, for %townname% has been saved, saved by the likes of you, sellsword!%SPEECH_OFF%He is drunk, and the women gently move out of his way as he veers about the room.%SPEECH_ON%Now... now -hic- now I assure you, that, that I did not take a loan from you %reward% crowns. It is all there -hic- there as promised. The peasantry is pleased, and I am pleased. Most pleased.%SPEECH_OFF%He gives one of the women a squeeze and she responds about as lively as a mottled rug. You grab the purse and go and a few of the lasses slip out the door with you as %employer% falls into a mumbling stupor. | You find %employer% outside his war room and in his library of which there are perhaps more shelves than books. But he seems impressed with himself all the same.%SPEECH_ON%Your work out there was splendid, sellsword. Absolutely splendid. Of course, there were casualties, but in the whole all things are where they should be and them southern shits have been sent running. With your help, our frontlines did not have to slacken to tend to the homes. Here, your %reward% crowns as promised.%SPEECH_OFF%When the man moves out of the way, you see he has stocked a freshly slickened skull on the shelf. He points at it with childish charm.%SPEECH_ON%It\'s one of their skulls. I\'m going to drink wine out of it, or piss into it. Haven\'t decided yet.%SPEECH_OFF% | %employer% is sitting at his desk with a pyramid of three skulls. His hand rests atop it as though one would be patting the head of a dog. You notice that there are still strips of flesh and even hair on them, the bleaching process presumably hurried. The man speaks happily.%SPEECH_ON%My soldiers may stay upon the frontlines because of you, sellsword. Having handled these raiders not only saved the lives of many here, but perhaps prevented the fall of the first domino in a series of many. Without your help, the fathers and brothers and sons on the front may have fallen back to tend to their families and this whole war would have gone all fucked.%SPEECH_OFF%With his free hand, he pushes forward a purse.%SPEECH_ON%Your %reward% crowns. A well earned weight of coin, I\'d say.%SPEECH_OFF%He smiles grimly and cocks his head at the skulls.%SPEECH_ON%I\'d think they would agree, though I must say that in this affair I will be speaking for them.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{Vous trouvez %employer% non pas dans sa salle de guerre, mais dans son bureau annexe avec un certain nombre de dames qui s\'agitent. Elles s\'occupent des toiles d\'araignée dans les coins, classent des parchemins dans une étagère ou dépoussièrent les meubles. Et elles sont toutes nues, bien sûr. L\'homme ouvre ses bras.%SPEECH_ON%J\'ai pensé qu\'il fallait fêter ça, car %townname% a été sauvé, sauvé par des gens comme toi, mercenaire !%SPEECH_OFF%Il est ivre, et les femmes s\'écartent doucement de son chemin lorsqu\'il déambule dans la pièce.%SPEECH_ON%Maintenant... maintenant -hic- maintenant je vous assure, que je n\'ai pas pioché dans vos %reward% couronnes. Tout est là -hic- là comme promis. La populace est satisfaite, et je suis satisfait. Très satisfait.%SPEECH_OFF%Il serre l\'une des femmes et elle réagit avec autant de vivacité qu\'un tapis tacheté. Vous prenez la bourse et partez, et quelques jeunes filles vous accompagnent tandis que %employer% tombe dans une stupeur muette. | Vous trouvez %employer% à l\'extérieur de sa salle de guerre  dans sa bibliothèque dont il y a peut-être plus d\'étagères que de livres. Mais il semble tout de même impressionné.%SPEECH_ON%Votre travail là-bas était splendide, mercenaire. Absolument splendide. Bien sûr, il y a eu des pertes, mais dans l\'ensemble les choses sont là où elles devraient être et ces merdes du sud ont été chassées. Avec votre aide, nos lignes de front n\'ont pas eu à se relâcher pour s\'occuper des foyers. Voici vos %reward% couronnes comme promis.%SPEECH_OFF%Lorsque l\'homme s\'écarte du chemin, vous voyez qu\'il a stocké un crâne fraîchement lustré sur l\'étagère. Il le montre du doigt avec un petit sourire enfantin.%SPEECH_ON%C\'est un de leurs crânes. Je vais y boire du vin, ou pisser dedans. Je n\'ai pas encore décidé.%SPEECH_OFF% | %employer% est assis à son bureau avec une pyramide de trois crânes. Sa main est posée dessus comme si l\'on caressait la tête d\'un chien. Vous remarquez qu\'il y a encore des lambeaux de chair et même des cheveux sur ces crânes. L\'homme parle joyeusement.%SPEECH_ON%Mes soldats peuvent rester en première ligne grâce à vous, mercenaire. Avoir géré ces pillards n\'a pas seulement sauvé la vie de beaucoup ici, mais a peut-être empêché la chute du premier domino d\'une série de nombreux autres. Sans votre aide, les pères, les frères et les fils sur le front auraient pu se replier pour s\'occuper de leurs familles et toute cette guerre aurait été foutue.%SPEECH_OFF%De sa main libre, il pousse en avant une bourse.%SPEECH_ON%Vos %reward% couronnes. Un paquet de pièces bien mérité, je dirais.%SPEECH_OFF%Il sourit sinistrement et tourne la tête vers les crânes.%SPEECH_ON%Je pense qu\'ils seraient d\'accord, mais je dois dire que dans cette affaire, je parlerai pour eux.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
 			List = [],
@@ -636,7 +636,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Defended " + this.Contract.m.Destination.getName() + " from southern raiders");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "A défendu " + this.Contract.m.Destination.getName() + " des pillards du sud");
 						this.World.Contracts.finishActiveContract();
 
 						if (this.World.FactionManager.isHolyWar())
