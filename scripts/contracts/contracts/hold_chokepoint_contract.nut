@@ -8,7 +8,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.hold_chokepoint";
-		this.m.Name = "Hold Fortress";
+		this.m.Name = "Tenir la forteresse";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -421,14 +421,14 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_162.png[/img]{%employer% is surrounded by his military men. They\'re wearing a great deal of pompous clothes that make you think they\'re a little outside their element taking on war. However, despite the rather feathery appearance, one of the commanders takes you aside with a map and speaks clearly.%SPEECH_ON%Crownling, we need you to Voyagez jusqu\'à an abandoned fortress %direction% from here. We have a wing of soldiers marching to the location, but they will not beat the northern savages to it. Of anyone within reach, you are the closest. Go there and defend until our soldiers show. The fortification is decrepit, but I believe a man of your conniving nature can make do with a bit of rubble if he needs to. %reward% crowns will wait upÀ votre retour, and your success, of course.%SPEECH_OFF% | %employer% sits on a pillow with a huge rug spread out before him. Well-dressed lieutenants sit autour de corners, each armed with a long wooden stick to push pieces around. And at the length of the rug are a few carpetmakers still adding to the map - as far as you can tell they are adding sections of the north. The Vizier sees you and speaks from a distance.%SPEECH_ON%Crownling, there lies a fort %direction% of here. It is a fallen fortress, made of little more than rubble some say, but the ancients built it there for good reason: it is of great strategic importance. While I have soldiers moving swiftly to its location, they will not arrive before a contingent of northerners do. Unclean savages they are, you have to respect their wile in advancing rapidly. So, I need you to occupy the fortress and hold off the northerners until my armies there.%SPEECH_OFF%He holds up a piece of paper with a number you can understand easily: %reward% crowns. | A very tall man in military garb heads you off from entering %employer%\'s room. The Vizier can be heard mingling with his harem, but that\'s not your business. The lieutenant presses a scroll into your chest.%SPEECH_ON%The ancients built a fortress %direction% from here. It has since fallen apart, weak as all things are to the passage of time, but its location still proves strategic. We are currently moving a troop of soldiers to the location, but our scouts have relayed that the northern dogs are as aware of its import and will beat us there. That is where you come in. %reward% crowns to commandeer the fort and hold it until help arrives. Once relieved, you Retournez à us and earn a good little Crowling\'s pay.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_162.png[/img]{%employer% est entouré de ses hommes. Ils portent des vêtements pompeux qui vous font penser qu'ils ne sont pas dans leur élément. Cependant, malgré leur apparence plutôt pompeuse, l'un des commandants vous prend à part avec une carte et vous parle clairement.%SPEECH_ON%Mercenaire, nous avons besoin de vous pour voyager jusqu'à une forteresse abandonnée %direction% d'ici. Nous avons une unité de soldats qui marchent vers l'endroit, mais ils n'y arriveront pas avant les sauvages du nord. De tous ceux qui sont disponible, vous êtes le plus proche. Allez-y et défendez jusqu'à ce que nos soldats arrivent. La fortification est délabrée, mais je crois qu'un homme de votre nature peut se contenter de quelques décombres s'il le faut. %reward% couronnes attendront votre retour, et votre succès, bien sûr.%SPEECH_OFF% | %employer% est assis sur un coussin avec un énorme carte en tissu étalé devant lui. Des lieutenants bien habillés sont assis un peu partout autour de la carte, chacun équipé d'un long bâton en bois pour pousser les pièces. Et au bout de la carte se trouve quelques artisans qui continuent à ajouter des pièces à la carte - pour autant que vous puissiez en juger, ils ajoutent des sections du nord. Le Vizir vous voit et vous parle.%SPEECH_ON%Mercenaire, il y a un fort %direction% d'ici. C'est une forteresse tombée en ruine, composé uniquement de décombres selon certains, mais les anciens l'ont construite pour une bonne raison : elle est d'une grande importance stratégique. Bien que j'ai des soldats qui se déplacent rapidement vers son emplacement, ils n'arriveront pas avant un contingent de Nordistes. Ce sont des sauvages impurs, mais il faut respecter leur volonté d'avancer rapidement. Donc, j'ai besoin que vous occupiez la forteresse et que vous reteniez les nordistes jusqu'à ce que mes armées arrivent.%SPEECH_OFF%Il brandit un morceau de papier avec un chiffre que vous comprenez facilement : %reward% couronnes. | Un homme très grand en tenue militaire vous empêche d'entrer dans la chambre de %employer%. On peut entendre le Vizir se mêler à son harem, mais ce n'est pas votre affaire. Le lieutenant enfonce un parchemin dans votre poitrine.%SPEECH_ON%Les anciens ont construit une forteresse %direction% d'ici. Elle s'est effondrée depuis, affaiblie comme toute chose par le passage du temps, mais son emplacement s'avère toujours stratégique. Nous sommes en train de déplacer une troupe de soldats vers l'endroit, mais nos éclaireurs ont rapporté que ces chiens du nord sont aussi conscients de son importance et nous devanceront. C'est là que vous intervenez. %reward% couronnes pour réquisitionner le fort et le tenir jusqu'à l'arrivée des renforts. Une fois libéré, vous nous reviendrez et gagnerez le salaire d'un bon petit mercenaire.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Sounds like something the %companyname% can do. | Let\'s talk some more about what we\'re paid for this. | We can hold the fortress against heathen invaders.}",
+					Text = "{Ça ressemble à quelque chose que %companyname% peut faire. | Parlons un peu plus de ce que nous sommes payés pour ça. | Nous pouvons tenir la forteresse contre les invasions païennes.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -436,7 +436,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | I won\'t risk the company to hold some ruins.}",
+					Text = "{Ça ne vaut pas le coup. | On est demandé autre part. | Je ne veux pas risquer la compagnie pour garder des ruines.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -453,12 +453,12 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Arrive",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_167.png[/img]{The fortress is both familiar and unusual. Despite being broken apart and sliding into piles of rubble, you can\'t help but get a sense of eminence in its walls. Further inside, about the dilapidated armories and abandoned mess halls, there are more cursory constructs: hastily erected defenses, signs of last stands made far away from where they should be. There is no telling what happened here, or even when, but for now it will serve as the %companyname%\'s temporary home.\n\n You walk to the crenelated walls and look out. It seems you have taken the position just in time: the northerners are already on the approach, a line of silhouettes marching just over the horizon like ants to their hill. | The fortress being a lost vestige of an ancient empire seems right: its constructs are as familiar as they are alien. You understand what walls are for, but you\'re not sure what to make of some of the symbols carved into them. Even the architecture of some of the rooms, the way the corners sweep in incredible bricked swirls, is not like anything you\'ve seen. You\'re not sure if there is some tactical advantage there or perhaps its builders intended the designs to be of other import.\n\nBut there is no time to dally on the matter of its history, you\'re here to simply use it as a chokepoint. And it seems the time is at hand: a wave of northerners is crashing over the horizon and charging directly for you!}",
+			Text = "[img]gfx/ui/events/event_167.png[/img]{La forteresse est à la fois familière et inhabituelle. Bien qu'elle soit brisée et qu'elle soit réduite en tas de décombres, on ne peut s'empêcher de ressentir un sentiment de grandeur dans ses murs. Plus loin à l'intérieur, autour des armureries délabrées et des salles à manger abandonnées, on trouve des constructions plus sommaires : des défenses érigées à la hâte, des signes de dernières résistances faites loin de là où elles devraient être. Il est impossible de dire ce qui s'est passé ici, ni même quand, mais pour l'instant, elle servira de maison temporaire à %companyname%.\n\n Vous marchez jusqu'aux murs crénelés et regardez dehors. Il semble que vous ayez pris position juste à temps : les Nordistes sont déjà en approche, une ligne de silhouettes marchant juste au-dessus de l'horizon comme des fourmis vers leur colline. | La forteresse étant un vestige perdu d'un ancien empire vous semble cohérent : ses constructions sont aussi familières qu'elles sont étrangères. Vous comprenez à quoi servent les murs, mais vous ne savez pas trop quoi penser de certains des symboles qui y sont gravés. Même l'architecture de certaines pièces, la façon dont les angles se transforment en d'incroyables tourbillons de briques, ne ressemble à rien de ce que vous avez vu. Vous ne savez pas s'il s'agit d'un avantage tactique ou si les constructeurs ont voulu que les dessins soient d'une autre ampleur.\n\nMais il n'y a pas de temps à perdre avec son histoire, vous êtes ici pour l'utiliser comme un point d'étranglement. Et il semble que le moment soit venu : une vague de nordiques déferle sur l'horizon et vous fonce dessus !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Everyone, get ready!",
+					Text = "Tout le monde, préparez-vous !",
 					function getResult()
 					{
 						this.Flags.set("WaitUntil", this.Time.getVirtualTimeF() + this.Math.rand(5, 8));
@@ -475,13 +475,13 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Wave1",
-			Title = "Before the battle...",
-			Text = "[img]gfx/ui/events/event_90.png[/img]{The northern vanguard is here. You jump to the walls and shout at the %companyname% to ready themselves for battle. The sellswords jump to action, taking up positions and readying their weapons. All the while, the chink-and-chunk of northern arm claps loudly as they draw near. The first arrow sails harmlessly into the fort, a meek sign that an ugly battle is about to take place.}",
+			Title = "Avant la bataille...",
+			Text = "[img]gfx/ui/events/event_90.png[/img]{L'avant-garde du Nord est là. Vous sautez sur les murs et criez à %companyname% de se préparer au combat. Les mercenaires se mettent en action, prennent position et préparent leurs armes. Pendant ce temps, les armures des hommes nord font de plsu en plus de bruit à mesure qu'ils s'approchent. La première flèche se dirige inoffensivement vers le fort, un doux signe qu'une vilaine bataille est sur le point de se dérouler.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Target, this.Contract.m.IsPlayerAttacking);
@@ -497,13 +497,13 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Wave2",
-			Title = "Before the battle...",
-			Text = "[img]gfx/ui/events/event_78.png[/img]{%randombrother% yells out and you rush to the walls. Arrayed across the field is a contingent of heavily armed northerners. Perhaps they have learned that is the %companyname% standing before them and they wish to take the matter a mite more seriously. Not that extra caution will save them. There\'s only one result of facing down the %companyname% and you can\'t help but offer an inviting grin at the approaching assault.}",
+			Title = "Avant la bataille...",
+			Text = "[img]gfx/ui/events/event_78.png[/img]{%randombrother% crie et vous vous précipitez vers les murs. Un contingent de nordistes lourdement armés est aligné sur le terrain. Peut-être ont-ils appris que c'est %companyname% qui se tient devant eux et ils souhaitent prendre l'affaire un peu plus au sérieux. Non pas que la prudence supplémentaire les sauvera. Il n'y a qu'un seul résultat à affronter %companyname% et vous ne pouvez vous empêcher de faire un sourire à l'approche de l'assaut.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Target, this.Contract.m.IsPlayerAttacking);
@@ -519,13 +519,13 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Wave3",
-			Title = "Before the battle...",
-			Text = "[img]gfx/ui/events/event_78.png[/img]{The northerners approach once more. They march through the corpses like bream through brine, a dark knot of men and material, darkly and silhouetted in the bloody mud which you\'ve made of the earth they dare trespass over. Rats already pecking at the dead scatter every which way and the buzzards take flight. You raise your arm and order the men to prepare for what is hopefully the final battle.}",
+			Title = "Avant la bataille...",
+			Text = "[img]gfx/ui/events/event_78.png[/img]{Les nordiques approchent une fois de plus. Ils marchent à travers les cadavres pour se frayer un chemin dans la boue ensanglantée. Les rats qui se nourrissent déjà des morts se dispersent dans tous les sens et les vautours s'envolent. Vous levez le bras et ordonnez aux hommes de se préparer pour ce qui est, espérons-le, la bataille finale.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Target, this.Contract.m.IsPlayerAttacking);
@@ -542,12 +542,12 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Waiting1",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_167.png[/img]{The first attack has been repelled. You briefly consider using the corpses to plug holes in the walls, but you\'ve no interest inviting rats and their pestilence to the field. With a snap order, you have the bodies heaped in a pile outside the walls and then have the men prepare for the next assault.}",
+			Text = "[img]gfx/ui/events/event_167.png[/img]{La première attaque a été repoussée. Vous envisagez brièvement d'utiliser les cadavres pour boucher les trous dans les murs, mais vous n'avez aucun intérêt à inviter les rats et leur pestilence sur le champ de bataille. D'un ordre rapide, vous faites entasser les corps à l'extérieur des murs et vous demandez aux hommes de se préparer pour le prochain assaut.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Get ready for their next assault!",
+					Text = "Préparez-vous à leur prochain assaut !",
 					function getResult()
 					{
 						return 0;
@@ -563,12 +563,12 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Waiting2",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_167.png[/img]{The %companyname% are almost starting to look like the men they were when you first hired them: downtrodden and beaten by the world. But all this time with the company has made them better men. Despite the exhaustion, there is no tiring out training, there is no wearing down prestige, there is no taxing renown. When it comes, the %companyname% will be ready for the next assault.}",
+			Text = "[img]gfx/ui/events/event_167.png[/img]{%companyname% commence presque à ressembler aux hommes qu'ils étaient lorsque vous les avez embauchés pour la première fois : abattus et battus par le monde. Mais tout ce temps passé dans la compagnie a fait d'eux des hommes meilleurs. Malgré l'épuisement, il n'y a pas d'usure de l'entraînement, il n'y a pas d'usure du prestige, il n'y a pas d'usure de la renommée. Quand elle viendra, %companyname% sera prête pour le prochain assaut.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "There may be more coming still.",
+					Text = "Il y en aura peut-être d'autres.",
 					function getResult()
 					{
 						return 0;
@@ -584,16 +584,16 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_87.png[/img]{You\'ve seen enough of this. The Vizier tasked the company with holding for a period of time, not to sit here and commit suicide.}",
+			Text = "[img]gfx/ui/events/event_87.png[/img]{Vous en avez assez vu. Le vizir a chargé la compagnie de tenir pendant un certain temps, pas de rester assis ici et de se suicider.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "This is not worth losing the company over...",
+					Text = "Cela ne vaut pas la peine de perdre la compagnie pour...",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Failed to hold a fortification against northern invaders");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "N'a pas réussi à tenir une fortification contre les envahisseurs du Nord.");
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}
@@ -608,12 +608,12 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "EnemyRetreats",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_168.png[/img]{With bodies piling up, flies buzzing about, and buzzards circling the air in great black clouds, it appears the northerners have had enough. A horn sounds off with a defeated pitter-patter of bleats and the men lower their arms and turn back from whence they came. At the same time, a scout arrives from the south saying that %employer%\'s troops will soon arrive. It seems you are safe to Retournez à your employer.}",
+			Text = "[img]gfx/ui/events/event_168.png[/img]{Avec les corps qui s'amoncellent, les mouches qui bourdonnent et les vautours qui tournent dans l'air dans de grands nuages noirs, il semble que les Nordistes en aient assez. Un klaxon retentit, accompagné de beuglements vaincus, et les hommes du nord baissent les bras et retournent d'où ils viennent. Au même moment, un éclaireur arrive du sud et annonce l'arrivée imminente des troupes de %employer%. Il semble que vous soyez en sécurité pour retourner auprès de votre employeur.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We made it!",
+					Text = "Nous avons réussi !",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -631,12 +631,12 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Reinforcements",
 			Title = "Before the battle...",
-			Text = "[img]gfx/ui/events/event_164.png[/img]{The northerners approach once more. They march through the corpses like bream through brine, a dark knot of men and material, darkly and silhouetted in the bloody mud which you\'ve made of the earth they dared trespass over. Just as you raise your arms to give your men command, more men appear on the horizon. Your heart sinks for a moment, until you realize they are flying %employer%\'s colors! The Vizier\'s men have arrived!}",
+			Text = "[img]gfx/ui/events/event_164.png[/img]{Les nordiques approchent une fois de plus. Ils marchent parmi les cadavres pour se frayer un chemin jusqu'à vous. Au moment où vous levez les bras pour donner l'ordre à vos hommes, d'autres hommes apparaissent à l'horizon. Votre coeur se serre pendant un moment, jusqu'à ce que vous réalisiez qu'ils portent les couleurs de %employer% ! Les hommes du Vizir sont arrivés !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Finally, some help!",
+					Text = "Enfin de l'aide !",
 					function getResult()
 					{
 						this.Flags.set("IsAlliedReinforcements", true);
@@ -654,13 +654,13 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Ultimatum1",
-			Title = "As you wait...",
-			Text = "[img]gfx/ui/events/event_90.png[/img]{A blaring horn catches your attention. You go to the top of your defenses and look down to find a herald flying noble colors. He\'s alone, though his voice easily accounts for a full company.%SPEECH_ON%Doth thee gentle sellsword seek clemency? Doth thee gentle sellsword seek to have another \'morrow, perhaps another winter and spring? Doth thee gentle sellsword wish to liveth, so that his...%SPEECH_OFF%You yell back at him to get to the point. The man clears his throat.%SPEECH_ON%The nobles are willing to make a deal. Depart these premises at once and you will be let go without hounding. Not only this, we submit that your tablet is of wax, and to leave here is to melt its slate clean. All hostilities between the %companyname% and the North will be set aside by northern writ. That is, of course, only if you accept the offer.%SPEECH_OFF%}",
+			Title = "Pendant que vous attendez...",
+			Text = "[img]gfx/ui/events/event_90.png[/img]{Une corne retentissante attire votre attention. Vous vous rendez au sommet de vos défenses et regardez en bas pour trouver un héraut portant de nobles couleurs. Il est seul, bien que sa voix représente facilement une compagnie entière. %SPEECH_ON%Est-ce que le gentil mercenaire demande la clémence ? Est-ce que le gentil mercenaire cherche à avoir un autre lendemain, peut-être un autre hiver et un autre printemps ? Est-ce que le gentil mercenaire souhaite vivre, pour que son...%SPEECH_OFF%Vous lui criez d'aller droit au but. L'homme s'éclaircit la gorge.%SPEECH_ON%Les nobles sont prêts à faire un deal. Quittez ce lieux sur-le-champ et nous vous laisserons partir sans vous traquer. Toutes les hostilités entre %companyname% et le Nord seront annulées par décret du Nord. Bien sûr, seulement si vous acceptez l'offre.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Your offer is acceptable.",
+					Text = "Votre offre est acceptable.",
 					function getResult()
 					{
 						return "Ultimatum2";
@@ -668,7 +668,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "To hell with you and your wax!",
+					Text = "Au diable vous et votre offre !",
 					function getResult()
 					{
 						return "Ultimatum3";
@@ -684,23 +684,23 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Ultimatum2",
-			Title = "As you wait...",
-			Text = "[img]gfx/ui/events/event_90.png[/img]{You take the deal. A few of the men grouse, others are relieved, though the hint of one or the other is kept very well hidden to not rouse your own suspicions no doubt. The %companyname% \'lawfully\' absconds this site, and the northerners take control. You are given a number of formal scripts which carry every signature of note that could be drawn out of the northern families, and their formal stamps as well. It will carry you peacefully through northern territories, though you\'ve no doubt earned that right with the forfeiture of good will in the south.}",
+			Title = "Pendant que vous attendez...",
+			Text = "[img]gfx/ui/events/event_90.png[/img]{Vous acceptez le marché. Quelques hommes râlent, d'autres sont soulagés, bien que les avis des uns et des autres soient très bien cachés pour ne pas éveiller vos propres soupçons, sans doute.%companyname% quitte \"légalement\" ce site et les nordistes prennent le contrôle. On vous remet un certain nombre de scripts officiels portant toutes les signatures des familles du Nord, ainsi que leurs cachets officiels. Il vous permettra de traverser pacifiquement les territoires du nord, bien que vous ayez sans doute gagné ce droit avec la perte de la bonne volonté dans le sud.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "It\'s best for the company this way.",
+					Text = "C'est mieux pour la compagnie.",
 					function getResult()
 					{
 						local f = this.World.FactionManager.getFaction(this.Contract.getFaction());
-						f.addPlayerRelation(-f.getPlayerRelation(), "Changed sides in the war");
+						f.addPlayerRelation(-f.getPlayerRelation(), "Changement de camp pendant la guerre");
 						f.getFlags().set("Betrayed", true);
 						local nobles = this.World.FactionManager.getFactionsOfType(this.Const.FactionType.NobleHouse);
 
 						foreach( n in nobles )
 						{
-							n.addPlayerRelationEx(50.0 - n.getPlayerRelation(), "Changed sides in the war");
+							n.addPlayerRelationEx(50.0 - n.getPlayerRelation(), "Changement de camp pendant la guerre");
 							n.makeSettlementsFriendlyToPlayer();
 						}
 
@@ -718,13 +718,13 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Ultimatum3",
-			Title = "As you wait...",
-			Text = "[img]gfx/ui/events/event_90.png[/img]{You tell the herald to Retournez à his commander. He nods.%SPEECH_ON%May thine fortitude impress the old gods, for it will not impress the might of the North.%SPEECH_OFF%The herald bows and makes his leave.}",
+			Title = "Pendant que vous attendez...",
+			Text = "[img]gfx/ui/events/event_90.png[/img]{Vous dites au héraut de retournez à son commandant. Il acquiesce.%SPEECH_ON%Que votre force d'âme impressionne les anciens dieux, car elle n'impressionnera pas les puissances du Nord.%SPEECH_OFF%Le héraut s'incline et part.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Get ready for their next attack.",
+					Text = "Préparez-vous à leur prochaine attaque.",
 					function getResult()
 					{
 						this.Flags.set("IsUltimatum", false);
@@ -742,13 +742,13 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Victory",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_168.png[/img]{Corpses litter the field, sometimes piled three or four high. The men of the %companyname% walk between the bodies to loot what they can, and joining their looting are crows, buzzards, rats, mice, cats, roaming dogs, a wolf, a wildman who is too dangerous to approach, and a flock of geese who apparently found the spot warm enough to stop a seasonal migration. The Vizier\'s men are also here and taking over, so you yourself will need to migrate back to %employer% for your pay. | There is damp stagnation in the air with a pungent smell of copper. So thorough has the slaughter been that the earth here has turned into a swamp of blood and gore. Bodies are twisted up every which way, sometimes stacked upon each other. Sometimes you hear someone moaning, but so plentiful are the dead that it would be a waste of time to try and find the survivor. %employer%\'s men will soon take over your duties, which means it is a good time to Retournez à the Vizier for your pay.}",
+			Text = "[img]gfx/ui/events/event_168.png[/img]{Les cadavres jonchent le champ de bataille, parfois empilés par trois ou quatre. Les hommes de %companyname% marchent entre les corps pour piller ce qu'ils peuvent, et se joignent à leur pillage des corbeaux, des buses, des rats, des souris, des chats, des chiens errants, un loup, un sauvage trop dangereux pour être approché, et un troupeau d'oies qui a apparemment trouvé l'endroit assez chaud pour arrêter une migration saisonnière. Les hommes du vizir sont également ici et prennent la relève, vous devrez donc vous-même migrer vers %employer% pour votre salaire. | Il y a une humidité stagnante dans l'air avec une odeur âcre de cuivre. Le massacre a été si important que la terre ici s'est transformée en un marécage de sang. Les corps sont tordus dans tous les sens, parfois empilés les uns sur les autres. Parfois, on entend quelqu'un gémir, mais les morts sont si nombreux que ce serait une perte de temps d'essayer de trouver le survivant. %employer%. Les hommes du Vizir vont bientôt vous remplacer, ce qui signifie que c'est le bon moment pour retournez au Vizir pour votre salaire.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "We made it!",
+					Text = "On a réussi !",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -766,7 +766,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% stops you at a good stone\'s throw from his throne. He snaps his fingers and a servant comes forward, but the Vizier laughs and holds up his hand.%SPEECH_ON%No wait. Have one of the women do it. Her. The ugliest one.%SPEECH_OFF%He points at his harem, and the ladies separate out until a woman is isolated from the group. She is a creature so lithe you\'d imagine she would fetch a castle in the north. She takes a purse of crowns from the servant and prostrates herself before you. %employer% smirks.%SPEECH_ON%You were to hold the fort until my men arrived. Instead, you took to the feminine nature and ran at the sight of danger. Thankfully for you, my men, the real men, came to capture the fort back from the northerners and have established it as a chokepoint. Stop staring at the concubine, Crownling! Your eyes may set upon the ground or upon your pay. I suggest you take your coin and leave my sight before the Gilder\'s shine lights a fire beneath your very feet.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% vous arrête à bonne distance de son trône. Il claque des doigts et un serviteur s'avance, mais le Vizir rit et lève la main.%SPEECH_ON%Non, attendez. Demandez à l'une des femmes de le faire. Elle. La plus laide.%SPEECH_OFF%Il désigne son harem, et les dames se séparent jusqu'à ce qu'une femme soit isolée du groupe. C'est une créature si légère qu'on l'imaginerait dans un château du nord. Elle prend une bourse de couronnes au serviteur et se prosterne devant vous. %employer% sourit.%SPEECH_ON%Vous deviez tenir le fort jusqu'à l'arrivée de mes hommes. Au lieu de cela, vous avez adopté la nature des femmes et avez fui à la vue du danger. Heureusement pour vous, mes hommes, des vrais hommes, sont venus reprendre le fort aux nordistes et l'ont établi comme un point d'étranglement. Arrêtez de fixer la concubine, Mercenaire ! Vos yeux peuvent se poser sur le sol ou sur votre paie. Je vous suggère de prendre votre argent et de quitter mon champ de vision avant que l'on n'allume un feu sous vos pieds.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
 			List = [],
@@ -778,7 +778,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Held a fort against northerners");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "A tenu un fort contre les nordistes");
 						this.World.Contracts.finishActiveContract();
 
 						if (this.World.FactionManager.isHolyWar())
@@ -804,7 +804,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success2",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{You report to %employer% everything which occurred. A smile slowly goes across the Vizier\'s face.%SPEECH_ON%Goodness, my lieutenants sent you there? That fort is worth nothing. Who would play such a trick? I\'d have the notion to behead the man responsible, but alas, what was it, %reward% crowns? It means nothing to me. I\'ve paid more for a northern jester\'s jake to be told to me in person, and their sense of humor is impoverished at best. Take your gold and depart my premises, Crownling.%SPEECH_OFF% | When you Retournez à %employer%, the Vizier is nowhere to be found. Instead, one of his lieutenants takes you aside and thanks you for your service.%SPEECH_ON%Between us and the mice, and let it be known these words were never spoken, and that there are no mice in these halls, that if I were to have men like you in my ranks I would have temptations of conquests in my heart. Alas, I am given troops as useful to me as the single grains of sand are to the desert. Here is your pay, Crown-, soldier.%SPEECH_OFF%He hands over a purse of %reward% crowns. Another lieutenant starts down the hallway, and the man before you slaps you on the shoulder, his face suddenly without humor or congeniality.%SPEECH_ON%Get out of here, Crownling, that is your pay and we will not hear so much as a single syllable from a haggler\'s tongue!%SPEECH_OFF% | You enter the Vizier\'s halls only to find a lone man sweeping the marbled floors. His broom\'s bristles scratch to a stop on your boot and he looks up.%SPEECH_ON%Ah. They told me a man of your stature would be here.%SPEECH_OFF%He sets the broom down, its handle possibly thicker than his frail frame. He walks over to a table and opens a chest filled with trays of %reward% crowns. You ask how the Viziers would ever trust him with so much coin. The man picks up his broom and laughs.%SPEECH_ON%Were I to steal the crowns for myself, how far would I get? It is heavy. I cannot carry it all. So can I take a little? No. I\'m a man of no material presence. As surely as the Gilder\'s eye blossoms the flower, gold in my palm illuminates me as a thief. I would never get far. This here is my station, and this is yours.%SPEECH_OFF%You take the coin, but then ask how he knows you\'re the right sellsword. His broom scratches to a stop again, and a bead of sweat slowly goes down his cheek. Before he answers, you take the crowns and go. | %employer% is found amongst his council. The rarely seen knot of silk-wearing, beard stroking peoples regard you with contempt. You state loudly that the fort has been held and taken by the southern soldiers. All noise is ceased and your words echo about the marbled halls and every servant stops and the council pauses. %employer% stands up.%SPEECH_ON%Servants, fetch this wagging tongue his coin.%SPEECH_OFF%One of the councilmen spits, which a collared child quickly cleans up.%SPEECH_ON%Should have remitted his pay while he was at the fort. How dare he so much as breathe in this room.%SPEECH_OFF%Servants rush to your side with purses of %reward% crowns. The Vizier waves his hand.%SPEECH_ON%Begone, Crownling. I\'ve persons I hire to dally, and you are not one of them.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{Vous rapporterez à %employer% tout ce qui s'est passé. Un sourire se dessine lentement sur le visage du Vizir.%SPEECH_ON%Mon Dieu, mes lieutenants vous ont envoyé là-bas ? Ce fort ne vaut rien. Qui voudrait jouer un tel tour ? J'aurais bien eu l'idée de décapiter le responsable, mais hélas, qu'est-ce que c'était déjà, %reward% couronnes ? Cela ne signifie rien pour moi. J'ai payé plus cher pour qu'un bouffon du nord me raconte une blague en personne, et leur sens de l'humour est au mieux médiocre. Prenez votre or et quittez les lieux, Mercenaire.%SPEECH_OFF% | Lorsque vous retournez voir %employer%, le Vizir est introuvable. A la place, un de ses lieutenants vous prend à part et vous remercie pour vos services.%SPEECH_ON%Que ça reste entre nous et les souris, et sachez que ces paroles n'ont jamais été prononcées, et qu'il n'y a pas de souris dans ces murs, que si j'avais dans mes rangs des hommes comme vous, j'aurais dans mon cœur des tentations de conquêtes. Hélas, on me donne des troupes aussi utiles pour moi que les simples grains de sable le sont pour le désert. Voici votre paie, merce... soldat.%SPEECH_OFF%Il vous remet une bourse de %reward% couronnes. Un autre lieutenant se dirige dans le couloir, et l'homme qui vous précède vous tape sur l'épaule, le visage soudain sans humour ni amabilité.%SPEECH_ON%Sortez d'ici, Mercenaire, c'est votre salaire et nous n'entendrons pas une seule syllabe de la langue de quelqu'un qui négocie sa paie !%SPEECH_OFF% | Vous entrez dans les salles du Vizir et trouvez un homme seul qui balaie les sols marbrés. Les poils de son balai s'arrêtent sur votre botte et il lève les yeux.%SPEECH_ON%Ah. Ils m'ont dit qu'un homme de votre stature serait ici.%SPEECH_OFF%Il pose le balai, dont le manche est probablement plus épais que sa frêle silhouette. Il se dirige vers une table et ouvre un coffre rempli de sacs de %reward% couronnes. Vous demandez comment les Vizirs ont pu lui confier autant d'argent. L'homme ramasse son balai et rit.%SPEECH_ON%Si je volais les couronnes pour moi-même, jusqu'où irais-je ? C'est lourd. Je ne peux pas tout porter. Alors puis-je en prendre qu-un peu ? Non. Je suis un homme sans aucune présence. Je n'irais jamais bien loin. Voici mon trésor, et voici le vôtre.%SPEECH_OFF%Vous prenez les pièces, mais demandez ensuite comment il sait que vous êtes le bon mercenaire. Son balai s'arrête à nouveau, et une perle de sueur coule lentement sur sa joue. Avant qu'il ne réponde, vous prenez les couronnes et partez. | %employer% se trouve parmi son conseil. Le groupe rare de personnes portant la soie et la barbe vous regarde avec mépris. Vous déclarez à voix haute que le fort a été tenu et pris par les soldats du sud. Tout bruit cesse et vos paroles résonnent dans les salles marbrées, chaque serviteur s'arrête et le conseil fait une pause. %employer% se lève.%SPEECH_ON%Serviteurs, allez chercher les pièces de cette langue remuante.%SPEECH_OFF%L'un des conseillers crache, ce qu'un enfant à collier nettoie rapidement.%SPEECH_ON%Ils auraient dû lui remettre sa paie pendant qu'il était au fort. Comment ose-t-il ne serait-ce que respirer dans cette pièce ?%SPEECH_OFF%Les serviteurs se précipitent à vos côtés avec des bourses contenant %reward% couronnes. Le Vizir fait un signe de la main.%SPEECH_ON%Allez-vous-en, Mercenaire. J'ai des gens que j'engage pour lambiner, et vous n'en faites pas partie.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
 			List = [],
@@ -816,7 +816,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Held a fort against northerners");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "A tenu un fort contre les nordistes");
 						this.World.Contracts.finishActiveContract();
 
 						if (this.World.FactionManager.isHolyWar())
