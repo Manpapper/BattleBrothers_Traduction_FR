@@ -5,17 +5,17 @@ this.greenskins_outro_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.greenskins_outro";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 1.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]You come across a handful of soldiers from %randomnoblehouse%. They tilt their caps at you.%SPEECH_ON%Evening, mercenaries.%SPEECH_OFF%Not sure if they\'re about to attack, you make a subtle nod toward %dude%. He puts his weapon within hand\'s reach and nods back. You return your attention to the soldiers, giving them a friendly wave. Their lieutenant steps forward, grinning.%SPEECH_ON%Oy\' mercenary, we\'ve little use for you in this world now.%SPEECH_OFF%Slowly, you lower your hand, hovering it above the pommel of your sword. You ask what the man means by that. He laughs.%SPEECH_ON%You haven\'t heard? War\'s over. The greenskins were routed from %randomtown% just a few days ago. Scouts report seeing them bastards running for the hills every which way, fighting amongst themselves, the orcs killing the goblins, goblins killing the orcs, just a full on rout. So, yeah, noble houses need not pay your sorry arse for nothing now because us real soldiers got it under control. Now why don\'t you and your pathetic lot clear out of the way. Us fighters got places to be, understand?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Vous rencontrez une poignée de soldats de %randomnoblehouse%. Ils inclinent leurs casques vers vous.%SPEECH_ON%Soir, mercenaires.%SPEECH_OFF%Vous ne savez pas s\'ils sont hostile, vous faites un signe de tête subtil vers %dude%. Il met son arme à portée de main et acquiesce en retour. Vous reportez votre attention sur les soldats en leur adressant un signe amical. Leur lieutenant s\'avance en souriant.%SPEECH_ON%Oy mercenaire, vous ne nous servez plus à rien dans ce monde maintenant.%SPEECH_OFF%Lentement, vous baissez la main, la faisant planer au-dessus du pommeau de votre épée. Vous demandez ce que l\'homme veut dire par là. Il rit.%SPEECH_ON%Vous n\'avez pas entendu ? La guerre est finie. Les peaux vertes ont été vaincus depuis %randomtown% il y a quelques jours à peine. Les éclaireurs rapportent avoir vus ces bâtards courir vers les collines dans tous les sens, se battre entre eux, les orcs tuant les gobelins, les gobelins tuant les orcs, juste une déroute complète. Donc, oui, les maisons nobles n\'ont pas besoin de payer votre cul pour rien maintenant parce que nous, les vrais soldats, nous avons tout sous contrôle. Maintenant, pourquoi vous et votre lot pathétique ne dégagez-vous pas le chemin. Nous, les combattants, avons des endroits où rentrer, tu comprends ?%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s move to let these heroes of the realm pass.",
+					Text = "Bougeons pour laisser passer ces héros du royaume.",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.greenskins_outro_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You handle him, %dude%.",
+					Text = "Tu t\'occupes de lui, %dude%.",
 					function getResult( _event )
 					{
 						return "C";
@@ -57,12 +57,12 @@ this.greenskins_outro_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%dude% reaches for his weapon, but you shake your head. The lieutenant nods toward the mercenary.%SPEECH_ON%Best keep that dog on its leash, aye?%SPEECH_OFF%You fan your arm out, inviting the soldiers a \'passage\' they knew they already had. The soldiers gear up and the lieutenant smirks.%SPEECH_ON%I knew you\'d make the right choice. We\'re just \'aving a bit of fun, yeah? You ladies stay tight.%SPEECH_OFF%The man blows a kiss as he walks by. %dude% stands up looking like someone just socked his mother. You tell him to sit back down and he begrudgingly does so. It\'s all bullshit, these theatrics, but you\'re not one to lose your temper and get people killed over it.\n\nThe incident does make you wonder if maybe it\'s time to turn it all in. The greenskins are beaten back and you\'ve made enough money to leave the life for good, but then again you\'d hate to live out the rest of your days wondering \'what if\'...\n\n%OOC%You\'ve won! Battle Brothers is designed for replayability and for campaigns to be played until you\'ve beaten one or two late game crises. Starting a new campaign will allow you to try out different things in a different world.\n\nYou can also choose to continue your campaign for as long as you want. Just be aware that campaigns are not intended to last forever and you\'re likely to run out of challenges eventually.%OOC_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%dude% attrape son arme, mais vous secouez la tête. Le lieutenant fait un signe de tête vers le mercenaire.%SPEECH_ON%Mieux vaut garder ce chien en laisse, d\'accord ?%SPEECH_OFF%Vous étendez votre bras, invitant les soldats à un \"passage\" qu\'ils savaient déjà avoir. Les soldats se préparent et le lieutenant sourit.%SPEECH_ON%Je savais que vous feriez le bon choix. On s\'amuse juste un peu, hein ? Mesdames, restez serrées.%SPEECH_OFF%L\'homme envoie un baiser en passant. %dude% se lève comme si quelqu\'un venait de frapper sa mère. Vous lui dites de se rasseoir et il le fait à contrecœur. Ce ne sont que des conneries, ces pièces de théâtre, mais vous n\'êtes pas du genre à perdre votre sang-froid et à faire tuer vos hommes.\n\nL\'incident vous fait vous demander s\'il est peut-être temps de raccrocher. Les peaux vertes sont repoussées et vous avez gagné assez d\'argent pour quitter la vie de mercenaire pour de bon, mais encore une fois, vous détesteriez passer le reste de vos jours à vous demander \'et si\'...\n\n %OOC%Vous avez gagné ! Battle Brothers est conçu pour la rejouabilité et pour que les campagnes soient jouées jusqu\'à ce que vous ayez vaincu une ou deux crises de fin de partie. Lancer une nouvelle campagne vous permettra d\'essayer différentes choses dans un monde différent.\n\nVous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas destinées à durer éternellement et que vous finirez probablement par manquer de défis.%OOC_OFF%",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "The %companyname% needs their commander!",
+					Text = " %companyname% ont besoin de leur commandant!",
 					function getResult( _event )
 					{
 						return 0;
@@ -70,7 +70,7 @@ this.greenskins_outro_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s time to retire from mercenary life. (End Campaign)",
+					Text = "Il est temps de se retirer de la vie de mercenaire. (Fin de campagne)",
 					function getResult( _event )
 					{
 						this.World.State.getMenuStack().pop(true);
@@ -88,12 +88,12 @@ this.greenskins_outro_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]The soldiers\' lieutenant glares at you.%SPEECH_ON%Do as I said, sellsword, or there will be trouble.%SPEECH_OFF%Ignoring him, you give another nod to %dude%. He gets up, the blade of his weapon loudly scraping off the dirt. The soldiers turn to the mercenary. He hefts his weapon into both hands and stares back. As the lieutenant starts to talk, %dude% bluntly interrupts.%SPEECH_ON%Shush, little man. I see softness in your skin. Not a scar to be seen. Eyes as fresh as the day they were born. Hands as smooth as untouched candles. If you was of the fightin\' sort, you\'d be out there in those battles you speak of, not out here pissing into the wind. I\'ll give you two options because I\'m feeling nice. First option, are you listening? First option is this. Go where you are going and don\'t say another goddam word.%SPEECH_OFF%He pauses to hold up two fingers.%SPEECH_ON%Option two is a mystery. Speak and ye shall learn of it.%SPEECH_OFF%The lieutenant\'s eyes have gotten a little wider, and his mouth infinitely quieter. He glances at you, but all you can do is shrug. After another moment, the soldiers hurry away with determined silence.\n\n%dude% laughs it up, but the incident has you wondering if perhaps it is finally the time to retire. How many more of these cockups are in your future? How many more battles? How many more dead men will you have to bury? The company would do well standing on the foundations you\'ve built for it. But on the other hand, if you retired now, what adventures would you miss out on?\n\n%OOC%You\'ve won! Battle Brothers is designed for replayability and for campaigns to be played until you\'ve beaten one or two late game crises. Starting a new campaign will allow you to try out different things in a different world.\n\nYou can also choose to continue your campaign for as long as you want. Just be aware that campaigns are not intended to last forever and you\'re likely to run out of challenges eventually.%OOC_OFF%",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Le lieutenant des soldats vous lance un regard noir.%SPEECH_ON%Faites ce que j\'ai dit, mercenaire, ou il y aura des problèmes.%SPEECH_OFF%En l\'ignorant, vous faites un autre signe de tête à %dude%. Il se lève, la lame de son arme raclant bruyamment la terre. Les soldats se tournent vers le mercenaire. Il prend son arme à deux mains et regarde en arrière. Alors que le lieutenant commence à parler, %dude% l\'interrompt brutalement.%SPEECH_ON%Chut, petit homme. Je vois de la douceur dans ta peau. Pas une cicatrice à voir. Des yeux aussi frais que le jour de leur naissance. Des mains aussi douces que des bougies intactes. Si vous étiez du genre à vous battre, vous seriez là-bas dans ces batailles dont vous parlez, pas ici à pisser dans le vent. Je vais vous donner deux options parce que je me sens bien. Première option, écoutez-vous ? La première option est celle-ci. Allez où vous voulez et ne dites plus un putain de mot.%SPEECH_OFF%Il marque une pause pour lever deux doigts.%SPEECH_ON%La deuxième option est un mystère. Parlez et vous l\'apprendrez.%SPEECH_OFF%Les yeux du lieutenant se sont un peu élargis et sa bouche est infiniment plus silencieuse. Il vous regarde, mais tout ce que vous pouvez faire, c\'est hausser les épaules. Après un long moment, les soldats se détournent avec un silence déterminé.\n\n%dude% rigole, mais l\'incident vous fait vous demander s\'il est peut-être enfin temps de prendre votre retraite. Combien y a-t-il d\'autres de ces situations sur le fil dans votre avenir ? Combien de combats encore ? Combien d\'autres morts devrez-vous enterrer ? La compagnie ferait bien de s\'appuyer sur les fondations que vous avez construites pour elle. Mais d\'autre part, si vous vous retiriez maintenant, quelles aventures rateriez-vous ?\n\n%OOC%Vous avez gagné ! Battle Brothers est conçu pour la rejouabilité et pour que les campagnes soient jouées jusqu\'à ce que vous ayez vaincu une ou deux crises de fin de partie. Lancer une nouvelle campagne vous permettra d\'essayer différentes choses dans un monde différent.\n\nVous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas destinées à durer éternellement et que vous finirez probablement par manquer de défis.%OOC_OFF%",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "The %companyname% needs their commander!",
+					Text = " %companyname% ont besoin de leur commandant!",
 					function getResult( _event )
 					{
 						return 0;
@@ -101,7 +101,7 @@ this.greenskins_outro_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s time to retire from mercenary life. (End Campaign)",
+					Text = "Il est temps de se retirer de la vie de mercenaire. (Fin de campagne)",
 					function getResult( _event )
 					{
 						this.World.State.getMenuStack().pop(true);

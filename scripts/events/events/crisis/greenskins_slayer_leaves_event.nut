@@ -5,16 +5,16 @@ this.greenskins_slayer_leaves_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.greenskins_slayer_leaves";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_35.png[/img]%orcslayer% the orcslayer walks up to you.%SPEECH_ON%Well, I guess that\'s it then. There ain\'t as many orcs and goblins around to kill. I bid you farewell, sellsword.%SPEECH_OFF%You ask what he\'s going to do. He takes off his armor and puts it on the ground before you.%SPEECH_ON%My family has been avenged.%SPEECH_OFF%You nod and wish him well now that his apparent demons have been put to rest. He laughs.%SPEECH_ON%Just kidding. I don\'t have no family. I killed them bastards because I enjoyed spilling their guts, but my heart isn\'t in it anymore. Send the rest of the men my regards.%SPEECH_OFF%And with that the orcslayer, or former-orcslayer, departs the company.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]%orcslayer% le tueur d\'orcs s\'approche de vous.%SPEECH_ON%Eh bien, je suppose que c\'est tout alors. Il n\'y a plus autant d\'orcs et de gobelins à tuer. Je te dis adieu, mercenaire.%SPEECH_OFF%Vous demandez ce qu\'il va faire. Il enlève son armure et la pose par terre devant vous.%SPEECH_ON%Ma famille a été vengée.%SPEECH_OFF%Vous hochez la tête et lui souhaitez bonne chance maintenant que ses démons intérieurs ont été apaisés. Il rit.%SPEECH_ON%Je plaisante. Je n\'ai pas de famille. J\'ai tué ces salauds parce que j\'aimais leur vider les tripes, mais mon cœur n\'y est plus. Envoyez mes salutations au reste des hommes.%SPEECH_OFF%Et sur ce, le tueur d\'orcs, ou l\'ancien tueur d\'orcs, quitta la compagnie.",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Farewell!",
+					Text = "Adieu!",
 					function getResult( _event )
 					{
 						_event.m.Dude.getItems().transferToStash(this.World.Assets.getStash());
@@ -31,7 +31,7 @@ this.greenskins_slayer_leaves_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 13,
 					icon = "ui/icons/kills.png",
-					text = _event.m.Dude.getName() + " leaves the " + this.World.Assets.getName()
+					text = _event.m.Dude.getName() + " quitte " + this.World.Assets.getName()
 				});
 			}
 

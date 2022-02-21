@@ -3,16 +3,16 @@ this.greenskins_trapped_goblin_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.greenskins_trapped_goblin";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]The company steps through some brush and into a clearing where they find a goblin squatting. It turns toward the company, its breath labored, its eyes somber. You see that there\'s a large bear trap tightly clenching its lower thigh. The greenskin tries a growl, but only manages to cough some blood.\n\n Beside the dying goblin is a man face down in the grass. There\'s something shiny attached to his hip, but you can\'t quite tell what it is. %randombrother% comes to your side.%SPEECH_ON%Could be a trap. A trap within a trap. The rest of his buddies are probably not far. Then again, if we leave, he might get free and tell everyone we were here. What should we do?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_25.png[/img]La compagnie traverse des broussailles et pénètre dans une clairière où elle trouve un gobelin accroupi. Il se tourne vers vous, son souffle laborieux, ses yeux sombres. Vous voyez qu\'il y a un grand piège à ours serrant fermement sa cuisse. Le Peau-Verte essaie de grogner, mais ne parvient qu\'à cracher du sang.\n\n À côté du gobelin mourant se trouve un homme face contre terre dans l\'herbe. Il y a quelque chose de brillant attaché à sa hanche, mais vous ne pouvez pas vraiment dire ce que c\'est. %randombrother% vient à vos côtés.%SPEECH_ON%Cela pourrait être un piège. Un piège dans un piège. Le reste de ses copains ne sont probablement pas loin. Là encore, si nous partons, il pourrait se libérer et dire à tout le monde que nous étions ici. Que devons-nous faire ?%SPEECH_OFF%",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Kill it.",
+					Text = "Tue le.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -27,7 +27,7 @@ this.greenskins_trapped_goblin_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Leave it.",
+					Text = "Laisse le.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 70)
@@ -49,13 +49,13 @@ this.greenskins_trapped_goblin_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_25.png[/img]One way or another, the goblin cannot be allowed to live. You step into the clearing to put it out of its misery and, perhaps, get a glimpse at what treasures the corpse might carry. The greenskin shrinks at the sight of you, snarling and rearing up, the trap wrinkling the chains to which it is attached. %randombrother%, weapon in hand, carefully gets near to the beast and then kills it with a single blow.\n\n With the threat taken care of, you roll the dead man\'s body over and loot everything worth taking.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]D\'une manière ou d\'une autre, le gobelin ne peut pas être laissé en vie. Vous entrez dans la clairière pour le sortir de sa misère et, peut-être, avoir un aperçu des trésors que le cadavre pourrait transporter. Le peau verte se recroqueville à votre vue, grondant et crachant, le piège agitant les chaînes auxquelles il est attaché. %randombrother%, arme à la main, s\'approche prudemment de la bête puis la tue d\'un seul coup.\n\n Une fois la menace géré, vous faites rouler le corps du mort et pillez tout ce qui vaut la peine d\'être pris. ",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "One goblin less to worry about. ",
+					Text = "Un gobelin de moins à s\'occuper. ",
 					function getResult( _event )
 					{
 						return 0;
@@ -98,20 +98,20 @@ this.greenskins_trapped_goblin_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_69.png[/img]This is a war of annihilation and no greenskin can be allowed to live. You step into the field and slay the foul thing. With it out of the way, you roll the dead man\'s body over and loot all that\'s worth taking. Just as you get ready to leave, a gargling growl rumbles from the treeline. %randombrother% takes out his weapon and points.%SPEECH_ON%Nachzehrers!%SPEECH_OFF%Damn! They must have smelled the dying goblin and came to feast. Some of them are already picking their teeth with orc bones...",
+			Text = "[img]gfx/ui/events/event_69.png[/img]C\'est une guerre d\'anéantissement et aucun Peau-Verte ne peut être autorisé à vivre. Vous entrez sur le terrain et tuez la chose immonde. Puis vous roulez le corps du mort et pillez tout ce qui vaut la peine d\'être pris. Juste au moment où vous vous apprêtez à partir, un grognement gronde depuis la limite des arbres. %randombrother% sort son arme et pointe.%SPEECH_ON%Nachzehrers !%SPEECH_OFF%Merde ! Ils ont dû sentir le gobelin mourant et sont venus se régaler. Certains d\'entre eux se curent déjà les dents avec des os d\'orc...",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "A bit messier than expected...",
+					Text = "Un peu plus brouillon que prévu...",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -161,20 +161,20 @@ this.greenskins_trapped_goblin_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You\'re not going to risk the company over a single measly goblin and a dead man who may or may not have anything valuable. The company gives a wide berth to the clearing and continue on through the forest without any issue.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous n\'allez pas risquer la compagnie pour un seul gobelin misérable et un homme mort qui peut ou non avoir quelque chose de précieux. La compagnie contourne largement la clairière et continue sa route à travers la forêt sans encombre.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Best keep the company in shape for bigger threats.",
+					Text = "Mieux vaut garder la compagnie en forme pour des menaces plus importantes.",
 					function getResult( _event )
 					{
 						return 0;
@@ -189,13 +189,13 @@ this.greenskins_trapped_goblin_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_48.png[/img]You\'re not going to risk the company over a single measly goblin and a dead man who may or may not have anything valuable. The company gives a wide berth to the clearing and continue on through the forest.\n\n No more than five minutes down the road do you hear a thundering of footsteps coming up from the rear. Loud and burly enough that whoever is making it has no fear of being heard. You duck and wait and, unsurprisingly, orcs and goblins come through the trees. One of them is the bastard you\'d left to the bear trap, his leg hurriedly wrapped in linens and leaves.",
+			Text = "[img]gfx/ui/events/event_48.png[/img]Vous n\'allez pas risquer la compagnie pour un seul gobelin misérable et un homme mort qui peut ou non avoir quelque chose de précieux. La compagnie contourne largement la clairière et continue à travers la forêt.\n\n Pas plus de cinq minutes plus tard sur la route vous entendez un tonnerre de pas venant de l\'arrière. Ce qui en est la cause n\'a pas peur d\'être entendu. Vous vous cachez et attendez et, sans surprise, des orcs et des gobelins traversent les arbres. L\'un d\'eux est le bâtard que vous avez laissé au piège à ours, sa jambe enveloppée à la hâte dans des draps et des feuilles.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Damn, the little runt found us!",
+					Text = "Merde, le petit avorton nous cherche !",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());

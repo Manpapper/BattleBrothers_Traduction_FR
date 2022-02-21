@@ -5,16 +5,16 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.greenskins_pet_goblin";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 80.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]While walking through the forest, you come into a clearing where a small little hut sits. There are bear traps hanging from its walls, squirrel pelts from the eaves, and the windows are dressed with wet leaves in their corners. An old man is on the porch, rocking in his chair. He has a crossbow aimed at you.%SPEECH_ON%This is my property.%SPEECH_OFF%There\'s a chain running from the arm of his chair to a hatch on the bottom of the cabin door. It moves slightly to the man\'s speaking and he turns and butts the crossbow against the door.%SPEECH_ON%Hush, you! Now you, man with the sword, and all yer friends, get going. Another the step the wrong way, which would be my way, and I\'ll put a bolt up yer arse.%SPEECH_OFF%%randombrother% eases up to your side.%SPEECH_ON%What should we do, sir?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_25.png[/img]En marchant dans la forêt, vous arrivez dans une clairière où se trouve une petite cabane. Il y a des pièges à ours suspendus à ses murs, des peaux d\'écureuil aux avant-toits et les fenêtres sont habillées de feuilles mouillées dans leurs coins. Un vieil homme est sur le porche, se balançant sur sa chaise. Il a une arbalète braquée sur vous.%SPEECH_ON%C\'est ma propriété.%SPEECH_OFF%Il y a une chaîne allant du bras de sa chaise à une trappe au bas de la porte de la cabane. Il se déplace légèrement vers vous puis se retourne et appuie l\'arbalète contre la porte.%SPEECH_ON%Hush, toi! l\'homme à l\'épée, et tous tes amis, allez-y. Un autre pas dans le mauvais sens, sur ma propriété, et je vais te foutre ce carreau dans le cul.%SPEECH_OFF%%randombrother% se met à tes côtés.%SPEECH_ON%Que devons-nous faire, monsieur ?%SPEECH_OFF% ",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s take a closer look.",
+					Text = "Regardons-y de plus près.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -29,7 +29,7 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ve got no time for crazies.",
+					Text = "Nous n\'avons pas le temps pour les fous.",
 					function getResult( _event )
 					{
 						return "B";
@@ -44,13 +44,13 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You\'ve no reason to further transgress upon this old man\'s day, and so you tell the company to give him and his hut a wide berth. The elder eyes you suspiciously every step of the way.%SPEECH_ON%Mmhmm, y\'all have a good day now.%SPEECH_OFF%You nod and respond.%SPEECH_ON%Yeah, you too.%SPEECH_OFF%The chain moves again and is met with another hushing. Who knows what the hell was going on here, but the company has places to be.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous n\'avez aucune raison de déranger davantage la journée de ce vieil homme, et vous dites donc à la compagnie de lui donner, ainsi qu\'à sa hutte, une large place. L\'aîné vous regarde avec méfiance à chaque étape du chemin.%SPEECH_ON%Mmhmm, passez une bonne journée maintenant.%SPEECH_OFF%Vous hochez la tête et répondez.%SPEECH_ON%Oui, vous aussi.%SPEECH_OFF%La chaîne bouge à nouveau et se heurte à un autre silence. Qui sait ce qui se passait ici, mais la compagnie est attendu ailleurs",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Have a nice day. ",
+					Text = "Bonne journée. ",
 					function getResult( _event )
 					{
 						return 0;
@@ -65,13 +65,13 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You take a step forward. The old man springs off his chair and spits.%SPEECH_ON%Sonuvabitch.%SPEECH_OFF%He lifts the crossbow and shoots it from the hip. The shot goes wide and into the trees where it clacks and clatters off branches and shrubs. %randombrother% rushes the porch and tackles the man to the ground.%SPEECH_ON%Get your whoremongering hands off me you, you, you whoremonger!%SPEECH_OFF%While the man spits and kicks, you calmly walk up to the porch and open the door to his hut. The chain shoots across the floorboards and goes taut. A dark shape takes to the corner, scuttling up its walls trying to get further than its shackles will allow. You take a torch and wave it into the darkness. There you see the prisoner. The old man shouts from the porch.%SPEECH_ON%You leave us alone! Go on now, you leave us alone!%SPEECH_OFF%There, shrinking away from your torch, is a goblin.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous faites un pas en avant. Le vieil homme saute de sa chaise et crache.%SPEECH_ON%fils d\'pute%SPEECH_OFF%Il soulève l\'arbalète et la déclenche de la hanche. Le tir va large dans les arbres où il claque des branches et des feuillages. %randombrother% se précipite vers le porche et plaque l\'homme au sol.%SPEECH_ON%Enleve tes mains de putain, toi, toi, putain !%SPEECH_OFF%Pendant que l\'homme crache et donne des coups de pied, tu marches calmement vers le porche et ouvre le porte de sa hutte. La chaîne tire sur le plancher et se tend. Une forme sombre se dirige vers le coin, escaladant les murs en essayant d\'aller plus loin que ses chaînes ne le permettent. Vous prenez une torche et l\'agitez dans l\'obscurité. Là, vous voyez le prisonnier. Le vieil homme crie depuis le porche.%SPEECH_ON%Vous nous laissez seuls ! Allez-y maintenant, vous nous laissez tranquilles !%SPEECH_OFF%Là, s\'éloignant de votre torche, se trouve un gobelin.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Why would you keep a goblin chained up here?",
+					Text = "Pourquoi voudriez-vous garder un gobelin enchaîné ici ?",
 					function getResult( _event )
 					{
 						return "F";
@@ -79,7 +79,7 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Better to kill that thing now.",
+					Text = "Mieux vaut tuer cette chose maintenant.",
 					function getResult( _event )
 					{
 						return "E";
@@ -94,13 +94,13 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You take a step forward. The old man springs off his chair and spits.%SPEECH_ON%Sonsabitches, I warned ye! I warned ye good and clear!%SPEECH_OFF%He lifts the crossbow and shoots it from the hip. The shot sails over your shoulder and shoots clear through %hurtbro%\'s arm. The sellsword looks down, a feather of a shot teetering from one end of the hole, a bloodied shaft wiggling from the other. He takes a seat.%SPEECH_ON%Well fark me.%SPEECH_OFF%%randombrother% screams and rushes ahead. As the old man tries to reload, the mercenary kicks the crossbow away and throws the shooter to the ground. You tell the sellsword to keep the man alive. While the man spits and kicks, you calmly walk up to the porch and open the door to his hut. As the door swings wide, the chain shoots across the floorboards and goes taut. A dark shape takes to the corner, scuttling up its walls trying to go further than its shackles will allow. You take a torch and wave it into the darkness. There you see the prisoner. The old man shouts from the porch.%SPEECH_ON%You leave us alone! Go on now, you leave us alone!%SPEECH_OFF%There, shrinking away from your torch, is a goblin.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous faites un pas en avant. Le vieil homme saute de sa chaise et crache.%SPEECH_ON%filsdpute!, je vous avais prévenu ! Je vous ai clairement averti !%SPEECH_OFF%Il soulève l\'arbalète et la tire de la hanche. Le tir passe par-dessus votre épaule et passe à travers le bras de %hurtbro%. Le mercenaire regarde vers son bras, une plume vacillant d\'un bout du trou, un bout de manche ensanglanté se tortillant de l\'autre. Il s\'assied.%SPEECH_ON%Eh bien, amusez-vous.%SPEECH_OFF%%randombrother% crie et se précipite. Alors que le vieil homme essaie de recharger, le mercenaire repousse l\'arbalète et jette le tireur au sol. Vous dites au mercenaire de garder l\'homme en vie. Pendant que l\'homme crache et donne des coups de pied, vous marchez calmement jusqu\'au porche et ouvrez la porte de sa hutte. Lorsque la porte s\'ouvre en grand, la chaîne traverse le plancher et se tend. Une forme sombre se dirige vers le coin, escaladant ses murs en essayant d\'aller plus loin que ses chaînes ne le permettent. Vous prenez une torche et l\'agitez dans l\'obscurité. Là, vous voyez le prisonnier. Le vieil homme crie depuis le porche.%SPEECH_ON%Vous nous laissez seuls ! Partez maintenant, laissez nous tranquilles !%SPEECH_OFF%Là, s\'éloignant de votre torche, se trouve un gobelin.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Why would you keep a goblin chained up here?",
+					Text = "Pourquoi voudriez-vous garder un gobelin enchaîné ici ?",
 					function getResult( _event )
 					{
 						return "F";
@@ -108,7 +108,7 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Better to kill that thing now.",
+					Text = "Mieux vaut tuer cette chose maintenant.",
 					function getResult( _event )
 					{
 						return "E";
@@ -124,7 +124,7 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.HurtBro.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.HurtBro.getName() + " souffre " + injury.getNameOnly()
 					}
 				];
 			}
@@ -132,13 +132,13 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You take out your sword and step into the cabin. The old man calls out to you. All the threat and posturing is gone. He\'s almost manically pleading for you to not hurt the goblin. But you do just that, thrusting a blade through the greenskin\'s chest. It heaves against the metal, gripping it with its slimy, disgusting fingers. Its grip weakens as the light leaves its eyes. You draw out the blade and wipe the blood on your pants. As though grief renewed him with unseen power, the old man cries out and manages to wrestle to his feet. He draws a dagger and comes after you, but %randombrother% stops him with a dagger of his own, bedding the blade just beneath the man\'s breast. Blood spews over the hilt as his heart rapidly beats the last of its life. The old man\'s knees buckle and slides down, clutching at his killer\'s arms.%SPEECH_ON%Cruel creatures... cruel...%SPEECH_OFF%He collapses onto the floorboard. You tell the company to search the cabin and take what they can.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous sortez votre épée et entrez dans la cabine. Le vieil homme vous appelle. Toutes les menaces et les postures ont disparu. Il vous supplie presque maniaquement de ne pas blesser le gobelin. Mais vous faites exactement cela, enfonçant une lame dans la poitrine du peau verte. Il se soulève contre le métal, l\'agrippant de ses doigts visqueux et dégoûtants. Sa poigne s\'affaiblit à mesure que la lumière quitte ses yeux. Vous sortez la lame et essuyez le sang sur votre pantalon. Comme si le chagrin le renouvelait avec une puissance invisible, le vieil homme crie et parvient à se relever. Il sort un poignard et vient après vous, mais %randombrother% l\'arrête avec son propre dague, plantant la lame juste sous la poitrine de l\'homme. Le sang coule sur la poignée alors que son coeur bat rapidement les dernier instants de sa vie. Les genoux du vieil homme fléchissent et glissent vers le bas, agrippant les bras de son assassin.%SPEECH_ON%Créatures cruelles... cruelles...%SPEECH_OFF%Il s\'effondre sur le plancher. Vous dites à la compagnie de fouiller la cabine et de prendre ce qu\'elle peut.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Rest in peace, hermit.",
+					Text = "Repose en paix, ermite.",
 					function getResult( _event )
 					{
 						return 0;
@@ -154,34 +154,34 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
 				item = this.new("scripts/items/weapons/dagger");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous obtenez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				item = this.new("scripts/items/supplies/roots_and_berries_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_25.png[/img]Keeping the goblin in sight at all times, you ask the man why he has a greenskin tied up in his cabin. The hermit cries into the floorboards.%SPEECH_ON%He\'s a friend! My only friend!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_25.png[/img]En gardant le gobelin en vue à tout moment, vous demandez à l\'homme pourquoi il a un peau-verte attachée dans sa cabine. L\'ermite pleure sur le plancher.%SPEECH_ON%C\'est un ami ! Mon seul ami !%SPEECH_OFF%",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "You\'ve gone mad, hermit. Mad!",
+					Text = "Tu es devenu fou, ermite. Fou!",
 					function getResult( _event )
 					{
 						return "G";
@@ -189,7 +189,7 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Who chains up a friend?",
+					Text = "Qui enchaîne un ami ?",
 					function getResult( _event )
 					{
 						return "H";
@@ -197,7 +197,7 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "That goblin will only get free and report to its true friends!",
+					Text = "Ce gobelin s\'il est libéré ne rendra compte qu\'à ses vrais amis !",
 					function getResult( _event )
 					{
 						return "I";
@@ -212,13 +212,13 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You retreat from the cabin and crouch before the old man. He wriggles and begs.%SPEECH_ON%Please, don\'t kill \'im!%SPEECH_OFF%The man has gone mad and you tell him as much. He sobs into the porch floorboards, his breath powdering sawdust into the air. Finally, he eases his breathing and calms down.%SPEECH_ON%Yer right. I\'m not all there in the head. I found the goblin in a trap a few days ago and took him in, healed him. I\'ve no company in these parts. It gets lonely, you understand.%SPEECH_OFF%You take and reload the crossbow and then offer it to the old man.%SPEECH_ON%Can you do it?%SPEECH_OFF%The old man stares at the crossbow. He blinks a number of times and nods. Your sellswords let him up. He takes the crossbow and steps into the cabin. His aim is shaky and he\'s muttering apologies under his breath. The goblin is curled into a ball, shielding itself with its sickly hands.%SPEECH_ON%I\'m so sorry. So very sorry.%SPEECH_OFF%The old man readies the crossbow\'s release, slides his finger over the trigger, and then puts the bolt beneath his chin and fires. He buckles to the floor, the shot twanging as it slams into the ceiling, scant blood dripping off its feathers. You shake your head and step into the cabin and kill the goblin off yourself. Finished, you tell the men to search the hut and take what they can.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous sortez de la cabane et vous vous accroupissez devant le vieil homme. Il se tortille et supplie.%SPEECH_ON%S\'il vous plaît, ne le tuez pas !%SPEECH_OFF%L\'homme est devenu fou et vous le lui dites. Il sanglote sur le plancher du porche, son souffle projetant de la sciure de bois dans l\'air. Enfin, il reprend sa respiration et se calme.%SPEECH_ON%Vous avez raison. Je n\'est pas toute ma tête. J\'ai trouvé le gobelin dans un piège il y a quelques jours et je l\'ai recueilli, je l\'ai soigné. Je n\'ai pas de compagnie dans ces régions. On se sent seul, vous comprenez.%SPEECH_OFF%Vous ramassez et rechargez l\'arbalète, puis vous l\'offrez au vieil homme.%SPEECH_ON%Pouvez-vous le faire ?%SPEECH_OFF%Le vieil homme fixe l\'arbalète. Il cligne des yeux plusieurs fois et acquiesce. Il prend l\'arbalète et entre dans la cabine. Son esprit est fragile et il marmonne des excuses dans sa barbe. Le gobelin est recroquevillé, se protégeant de ses mains maladives.%SPEECH_ON%Je suis vraiment désolé. Tellement désolé.%SPEECH_OFF%Le vieil homme prépare l\'arbalète, glisse son doigt sur la gâchette, puis place le carreau sous son menton et tire. Il s\'effondre au sol, le coup retentit alors qu\'il claque dans le plafond, un peu de sang dégoulinant de ses plumes. Vous secouez la tête, entrez dans la cabine et tuez vous-même le gobelin. Terminé, vous dites aux hommes de fouiller la hutte et de prendre ce qu\'ils peuvent.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Goddammit.",
+					Text = "Nom de Dieu.",
 					function getResult( _event )
 					{
 						return 0;
@@ -233,27 +233,27 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous obtenez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				item = this.new("scripts/items/supplies/roots_and_berries_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "H",
-			Text = "[img]gfx/ui/events/event_25.png[/img]Cautiously, you go back to the old man. You pick up the chain and rankle it, asking the man.%SPEECH_ON%A friend you keep shackled? If it were your true friend, you wouldn\'t need the chains, no?%SPEECH_OFF%The hermit shrugs.%SPEECH_ON%Yer right. Lemme go and I\'ll prove to you he\'s a real friend.%SPEECH_OFF%You let the man up and tell him to \'prove\' it. He pats the dust off his clothes and steps into the cabin. The chain slackens a bit as the goblin takes a step away from the fall. Crouching before the greenskin, the hermit extends a hand.%SPEECH_ON%Hey there, buddy.%SPEECH_OFF%As he reaches to unshackle the greenskin, the goblin growls and launches forward, sinking its teeth into the man\'s face. You rush into the cabin and kick the goblin back. It lands against the corner, flesh and blood hanging from its lips. %randombrother% stabs a sword through the creature\'s face. The old man cries out, his face a visage of gore.%SPEECH_ON%You were right, I knew it true, but my heart... it\'s in so much pain.%SPEECH_OFF%Getting a better look, you now see a seeping crimson chasm where his nose should be. As the hermit crawls into a ball, he points across the cabin.%SPEECH_ON%Beneath the floorboards there, where the dust is unsettled. I\'ve no use for it anymore.%SPEECH_OFF%You nod and tell %randombrother% to fix the man up. The rest of the company starts ripping out the floorboards to look beneath the crawlspace. After getting what they need, you tell the men it\'s time to leave. The hermit returns to his rocking chair and takes a seat. He\'s got his hands face up on his knees, blood running down the lengths of the fingers, and more blood dripping from a wound that is sure to fester. You can hear the blood choking him on every breath.%SPEECH_ON%I should\'ve hidden away. That\'s what I always do. Why didn\'t I hide?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Prudemment, vous retournez vers le vieil homme. Vous ramassez la chaîne et l\'agitez en demandant à l\'homme.%SPEECH_ON%Un ami que vous gardez enchaîné ? Si c\'était votre véritable ami, vous n\'auriez pas besoin de chaînes, non ?%SPEECH_OFF%L\'ermite hausse les épaules.%SPEECH_ON%Vous avez raison. Laisse-moi y aller et je vais vous prouver qu\'il est un vrai ami.%SPEECH_OFF%Tu laisses l\'homme se lever et lui dis de le \"prouver\". Il essuie la poussière de ses vêtements et rentre dans la cabine. Accroupi devant la peau verte, l\'ermite tend la main.%SPEECH_ON%Salut, mon pote.%SPEECH_OFF%Alors qu\'il tend la main pour libérer le peau verte, le gobelin grogne et se lance en avant, enfonçant ses dents dans le visage de l\'homme. Vous vous précipitez dans la cabine et donnez un coup de pied au gobelin. Il atterrit contre le coin, de la chair et du sang suspendus à ses lèvres. %randombrother% transperce le visage de la créature avec une épée. Le vieil homme crie, son visage est sanglant.%SPEECH_ON%Tu avais raison, je savais que c\'était vrai, mais mon coeur... il souffre tellement.%SPEECH_OFF%Vous le regardez mieux, vous voyez un gouffre cramoisi suintant là où son nez devrait être. Alors que l\'ermite se met en boule, il montre du doigt la cabine.%SPEECH_ON%Sous les planches là-bas. Je n\'en ai plus l\'utilité.%SPEECH_OFF%Vous hochez la tête et dites à %randombrother% de soigner l\'homme. Le reste de la compagnie commence à arracher les planches pour regarder sous le sol. Après avoir obtenu ce dont ils ont besoin, vous dites aux hommes qu\'il est temps de partir. L\'ermite retourne à son rocking-chair et prend un verre. Il a les mains tournées vers le haut sur ses genoux, du sang sèche le long de ses doigts et plus de sang coule d\'une blessure qui ne manquera pas de s\'infecter. Vous pouvez entendre le sang l\'étouffer à chaque respiration.%SPEECH_ON%J\'aurais dû me cacher. C\'est ce que je fais toujours. Pourquoi ne me suis-je pas caché ?%SPEECH_OFF%",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Take it easy.",
+					Text = "Allez-y doucement.",
 					function getResult( _event )
 					{
 						return 0;
@@ -269,7 +269,7 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_medicine.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-2[/color] Medical Supplies."
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]-2[/color] Materiel médical."
 					});
 				}
 
@@ -298,20 +298,20 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "I",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You back out of the cabin and yell at the man.%SPEECH_ON%What in the old hells do you think you\'re doing? If that thing gets loose, it will run to the nearest greenskin encampment and bring their wrath upon this land!%SPEECH_OFF%The old man nods toward the chain.%SPEECH_ON%My very good friend is very safe, stranger, you shouldn\'t worry. You know nothing about who he is or his character!%SPEECH_OFF%You knock down the man with a punch and crouch low so he hears you good and proper.%SPEECH_ON%That thing is not your friend. It is a danger.%SPEECH_OFF%You nod to %randombrother% who promptly enters the cabin and kills the goblin with a quick stab. The old man cries out, blood already clotting between his teeth like crimson rinds.%SPEECH_ON%But why? What did he ever do to you? Have you no honor, killing a creature such as he?%SPEECH_OFF%You shake your head at the madman and order the rest of the company to fan out and search for items. When they\'re done, you leave the old man to his cabin and dead friend.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous sortez de la cabine et criez après l\'homme.%SPEECH_ON%Qu\'est-ce que vous pensez faire ? Si cette chose se détache, elle courra vers le campement des peaux vertes le plus proche et apportera leur colère sur cette terre !%SPEECH_OFF%Le vieil homme fait un signe de tête vers la chaîne.%SPEECH_ON%Mon très bon ami est en sécurité, étranger, tu ne devrais pas t\'inquiétez. Vous ne savez rien de qui il est ou de son caractère !%SPEECH_OFF%Vous renversez l\'homme avec un coup de poing et vous vous accroupissez pour qu\'il vous entende bien.%SPEECH_ON%Cette chose n\'est pas votre amie. C\'est un danger.%SPEECH_OFF%Vous faites un signe de tête à %randombrother% qui entre rapidement dans la cabine et tue le gobelin d\'un coup de couteau rapide. Le vieil homme crie, le sang coagule déjà entre ses dents comme des écorces cramoisies.%SPEECH_ON%Mais pourquoi ? Qu\'est-ce qu\'il t\'a fait ? N\'avez-vous aucun honneur à tuer une créature telle que lui ?%SPEECH_OFF%Vous secouez la tête en direction du fou et ordonnez au reste de la compagnie de se déployer et de rechercher des objets. Quand ils ont fini, vous laissez le vieil homme dans sa cabane avec son ami mort.",
 			Banner = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "What a madman.",
+					Text = "Quel fou!",
 					function getResult( _event )
 					{
 						return 0;
@@ -326,21 +326,21 @@ this.greenskins_pet_goblin_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous obtenez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				item = this.new("scripts/items/weapons/knife");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous obtenez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				item = this.new("scripts/items/supplies/roots_and_berries_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
 			}
 
