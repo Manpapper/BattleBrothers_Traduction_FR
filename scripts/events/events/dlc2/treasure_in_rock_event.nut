@@ -7,7 +7,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.treasure_in_rock";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 120.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -93,14 +93,14 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				item = this.new("scripts/items/trade/uncut_gems_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				_event.m.Miner.improveMood(2.0, "Used his mining experience to benefit the company");
 
@@ -139,14 +139,14 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain an " + item.getName()
+					text = "Vous recevez an " + item.getName()
 				});
 				item = this.new("scripts/items/weapons/ancient/ancient_sword");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain an " + item.getName()
+					text = "Vous recevez an " + item.getName()
 				});
 				_event.m.Tiny.improveMood(2.0, "Used his unique stature to benefit the company");
 
@@ -184,14 +184,14 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_supplies.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies."
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies."
 				});
 				local item = this.new("scripts/items/loot/golden_chalice_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 
@@ -220,7 +220,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_supplies.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies."
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies."
 				});
 				local injury = _event.m.Other.addInjury(this.Const.Injury.Accident3);
 				this.List.push({

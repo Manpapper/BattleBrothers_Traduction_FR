@@ -7,7 +7,7 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.hedge_knight_vs_refugee";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

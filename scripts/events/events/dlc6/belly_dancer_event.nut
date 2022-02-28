@@ -6,7 +6,7 @@ this.belly_dancer_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.belly_dancer";
-		this.m.Title = "At %townname%";
+		this.m.Title = "A %townname%";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

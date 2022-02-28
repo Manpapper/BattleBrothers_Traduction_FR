@@ -5,7 +5,7 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.trade_black_book";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -115,14 +115,14 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + book.getIcon(),
-					text = "You lose " + book.getName()
+					text = "Vous perdez " + book.getName()
 				});
 				local item = this.new("scripts/items/shields/legendary/gilders_embrace_shield");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain the " + item.getName()
+					text = "Vous recevez the " + item.getName()
 				});
 			}
 
@@ -160,7 +160,7 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + book.getIcon(),
-					text = "You lose " + book.getName()
+					text = "Vous perdez " + book.getName()
 				});
 				this.World.Assets.getStash().makeEmptySlots(1);
 				local item = this.new("scripts/items/special/trade_jug_01_item");
@@ -168,14 +168,14 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain a " + item.getName()
+					text = "Vous recevez a " + item.getName()
 				});
 				item = this.new("scripts/items/special/trade_jug_02_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain a " + item.getName()
+					text = "Vous recevez a " + item.getName()
 				});
 			}
 
@@ -213,13 +213,13 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + book.getIcon(),
-					text = "You lose " + book.getName()
+					text = "Vous perdez " + book.getName()
 				});
 				this.World.Assets.addMoney(50000);
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]50,000[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50,000[/color] Crowns"
 				});
 			}
 

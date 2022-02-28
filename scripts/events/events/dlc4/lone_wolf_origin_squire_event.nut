@@ -6,7 +6,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.lone_wolf_origin_squire";
-		this.m.Title = "At %townname%";
+		this.m.Title = "A %townname%";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

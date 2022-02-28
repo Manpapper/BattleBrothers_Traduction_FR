@@ -141,7 +141,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 					});
 				}
 			}
@@ -180,7 +180,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "You lose " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+							text = "Vous perdez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 						});
 						items[i] = null;
 						num = ++num;
@@ -228,7 +228,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 					});
 				}
 			}

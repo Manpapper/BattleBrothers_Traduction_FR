@@ -5,17 +5,17 @@ this.cultist_origin_armor_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.cultist_origin_armor";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 15.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_03.png[/img]{An urgency takes %randomcultist%. He stands, removes himself from the party\'s campfire, strides across the campground and retires to his tent. It is there that you see him at work, his silhouette and shadows moving frenetically. And there\'s more than just him in there: curves of unknown come and go beside him, reaching up in poles of black, tendrils of darkness, whipping and flailing to match the energy of his own procession. And then he is done, his silhouette falling forward before yanking something to the light.\n\n He leaves his tent with the sort of hurry with which he entered, but this time he has a piece of leather chest armor in hand. He drops it to the ground.%SPEECH_ON%He awaits us all, brothers.%SPEECH_OFF%The chest armor is patterned with unique cuts which are arranged in strips that, to the unbelieving eye, would be meaningless. To you, it is but a language of Davkul.}",
+			Text = "[img]gfx/ui/events/event_03.png[/img]{Une urgence prend %randomcultist%. Il se lève, s'éloigne de la fête du feu de camp, traverse à grands pas le terrain de camping et se retire dans sa tente. C'est là qu'on le voit à l'oeuvre, sa silhouette et ses ombres bougeant frénétiquement. Et il n'y a pas que lui là-dedans : des courbes inconnues vont et viennent à ses côtés, s'élevant en perches de noir, en vrilles de ténèbres, fouettant et s'agitant à la mesure de l'énergie de sa propre procession. Et puis il a fini, sa silhouette tombe en avant avant de faire apparaître quelque chose dans la lumière.\n\nIl sort de sa tente avec la même hâte qu'il y est entré, mais cette fois, il a une pièce d'armure de poitrine en cuir à la main. Il la laisse tomber sur le sol.%SPEECH_ON%Il nous attend tous, mes frères.%SPEECH_OFF%L'armure du torse est ornée de découpes uniques disposées en bandes qui, pour un œil incrédule, n'ont aucun sens. Pour vous, ce n'est qu'un langage de Davkul.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Davkul awaits.",
+					Text = "Davkul attend.",
 					function getResult( _event )
 					{
 						return 0;
@@ -36,7 +36,7 @@ this.cultist_origin_armor_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "You lose " + item.getName()
+							text = "Vous perdez " + item.getName()
 						});
 						break;
 					}
@@ -47,7 +47,7 @@ this.cultist_origin_armor_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 

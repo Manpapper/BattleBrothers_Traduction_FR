@@ -101,14 +101,14 @@ this.gunpowder_wagon_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 					});
 					item = this.new("scripts/items/ammo/powder_bag");
 					this.World.Assets.getStash().add(item);
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 					});
 					this.World.Assets.addMoney(-2500);
 					this.List.push({
@@ -124,7 +124,7 @@ this.gunpowder_wagon_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 					});
 					this.World.Assets.addMoney(-500);
 					this.List.push({

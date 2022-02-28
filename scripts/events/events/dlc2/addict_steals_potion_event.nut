@@ -7,7 +7,7 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.addict_steals_potion";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -47,7 +47,7 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + _event.m.Item.getIcon(),
-					text = "You lose " + this.Const.Strings.getArticle(_event.m.Item.getName()) + _event.m.Item.getName()
+					text = "Vous perdez " + this.Const.Strings.getArticle(_event.m.Item.getName()) + _event.m.Item.getName()
 				});
 				local items = this.World.Assets.getStash().getItems();
 
@@ -203,7 +203,7 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + items[i].getIcon(),
-						text = "You lose " + items[i].getName()
+						text = "Vous perdez " + items[i].getName()
 					});
 					items[i] = null;
 				}

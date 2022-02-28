@@ -153,7 +153,7 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "You lose a " + item.getName()
+							text = "Vous perdez  a " + item.getName()
 						});
 						break;
 					}

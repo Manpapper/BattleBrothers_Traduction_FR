@@ -6,7 +6,7 @@ this.rangers_origin_hunt_food_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.rangers_origin_hunt_food";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 7.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -73,14 +73,14 @@ this.rangers_origin_hunt_food_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain Venison"
+					text = "Vous recevez Venison"
 				});
 				local item = this.new("scripts/items/loot/valuable_furs_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 
@@ -108,7 +108,7 @@ this.rangers_origin_hunt_food_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + food.getIcon(),
-					text = "You gain Venison"
+					text = "Vous recevez Venison"
 				});
 			}
 

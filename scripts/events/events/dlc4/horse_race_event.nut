@@ -99,7 +99,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -150,7 +150,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
 				});
 				_event.m.Athletic.getBaseProperties().Stamina += 1;
 				_event.m.Athletic.getSkills().update();
@@ -208,7 +208,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
 				});
 				_event.m.Fat.getBaseProperties().Bravery += 1;
 				_event.m.Fat.getSkills().update();
@@ -266,7 +266,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + _event.m.Reward * 3 + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + _event.m.Reward * 3 + "[/color] Crowns"
 				});
 				local injury = _event.m.Dumb.addInjury(this.Const.Injury.Concussion);
 				this.List.push({

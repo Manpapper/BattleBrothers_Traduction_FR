@@ -296,7 +296,7 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				this.World.Flags.set("IsLorekeeperDefeated", true);
 				this.updateAchievement("Lorekeeper", 1, 1);

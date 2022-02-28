@@ -3,7 +3,7 @@ this.encounter_gnomes_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.encounter_gnomes";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 200.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

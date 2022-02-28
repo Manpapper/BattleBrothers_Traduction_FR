@@ -5,7 +5,7 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.cultish_arrangement";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -73,7 +73,7 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
 					}
 				];
 			}
@@ -103,7 +103,7 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain a " + item.getName()
+					text = "Vous recevez a " + item.getName()
 				});
 				_event.m.Cultist.improveMood(1.0, "Had an understanding with his brothers in faith");
 

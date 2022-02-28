@@ -5,17 +5,17 @@ this.barbarian_tells_story_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.barbarian_tells_story";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%barbarian% shares tales around the campfire of northern heroics and monsters. There can\'t be much said of his dialogue, given that he isn\'t the most eloquent, but he does a great job of it through miming and drawing in the ground. {One tale seems to be that of a huge warrior defeating a much larger warrior, or perhaps even defeating an ogre. It\'s hard to tell, but the barbarian makes a fascinating display of combat which the men applaud. | One tale is of two lovers, and with great use of his hands, makes a riveting show of what it is to plough and be ploughed. And, apparently, what it is to be betrayed and stabbed in the back. You\'re not sure who is stabbing whom, nor when or in what sense, but the tale has the men on the edges of their seats and ends with applause. | One tale speaks to a friendly unhold. The men gasp at the very notion of it, but the barbarian slaps his wrists and wags his finger. This, you assume, is his way of telling you it\'s all true, every word or grunt. The idea of a friendly monster unsettles the men initially, but by the end of the story they clap and nod as though they wish it really were the truth.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%barbare% partage autour du feu de camp des récits d'héroïsme et de monstres nordiques. Il n'y a pas grand-chose à dire sur ses dialogues, puisqu'il n'est pas des plus éloquents, mais il s'en sort très bien en mimant et en dessinant dans le sol. {L'une des histoires semble être celle d'un énorme guerrier battant un guerrier encore plus grand, ou peut-être même un ogre. C'est difficile à dire, mais le barbare fait une fascinante démonstration de combat que les hommes applaudissent. | L'un des récits est celui de deux amants, et avec une grande utilisation de ses mains, il fait une démonstration fascinante de ce que c'est que de labourer et d'être labouré. Et, apparemment, ce que c'est que d'être trahi et poignardé dans le dos. On ne sait pas exactement qui poignarde qui, ni quand, ni dans quel sens, mais l'histoire tient les hommes en haleine et se termine par des applaudissements. | Un conte parle d'un unhold amical. Les hommes halètent à cette idée, mais le barbare se tape les poignets et agite le doigt. Vous supposez que c'est sa façon de vous dire que tout est vrai, chaque mot ou grognement. L'idée d'un monstre amical déstabilise les hommes au début, mais à la fin de l'histoire, ils applaudissent et hochent la tête comme s'ils souhaitaient que ce soit vraiment la vérité.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Captivating.",
+					Text = "Captivant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -32,7 +32,7 @@ this.barbarian_tells_story_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 25)
 					{
-						bro.improveMood(1.0, "Felt entertained");
+						bro.improveMood(1.0, "S'est amusé");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{

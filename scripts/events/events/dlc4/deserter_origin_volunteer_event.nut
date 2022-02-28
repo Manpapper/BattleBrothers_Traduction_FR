@@ -123,7 +123,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + food.getIcon(),
-						text = "You lose " + food.getName()
+						text = "Vous perdez " + food.getName()
 					});
 				}
 				else if (r == 2)
@@ -133,7 +133,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_ammo.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Ammunition"
+						text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Ammunition"
 					});
 				}
 				else if (r == 3)
@@ -143,7 +143,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_supplies.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies"
+						text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Tools and Supplies"
 					});
 				}
 				else if (r == 4)
@@ -153,7 +153,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_medicine.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies"
+						text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies"
 					});
 				}
 

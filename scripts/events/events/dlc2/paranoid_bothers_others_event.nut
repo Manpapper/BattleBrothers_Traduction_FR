@@ -5,7 +5,7 @@ this.paranoid_bothers_others_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.paranoid_bothers_others";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 35.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

@@ -5,7 +5,7 @@ this.retinue_slot_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.retinue_slot";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Screens.push({
 			ID = "A",
 			Text = "[img]gfx/ui/events/event_26.png[/img]{Le prestige et la renommée de %companyname% ne cessent de croître. Partout où vous allez, des gens cherchent à vous rejoindre - et pas seulement des mercenaires, mais des adeptes qui peuvent être d\'une autre utilité ! | A chaque bataille de vos mercenaires, la renommée de la compagnie grandit. Au fur et à mesure que cette renommée augmente, de plus en plus de personnes, et pas seulement des mercenaires, chercheront à rejoindre  %companyname%. Peut-être est-il temps que la compagnie prenne un autre compagnon non-combattant ? | Les compagnons de %companyname% ne doivent pas être uniquement des combattants - il semble qu\'avec la renommée et le prestige croissants de la compagnie, d\'autres personnes soient prêtes à suivre le mouvement. Ces compagnons pourraient être d\'une grande utilité pour la compagnie, même s\'ils ne contribuent pas sur le champ de bataille.}",

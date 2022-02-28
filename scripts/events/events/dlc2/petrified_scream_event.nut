@@ -3,7 +3,7 @@ this.petrified_scream_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.petrified_scream";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

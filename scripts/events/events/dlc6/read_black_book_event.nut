@@ -6,7 +6,7 @@ this.read_black_book_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.read_black_book";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 20.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

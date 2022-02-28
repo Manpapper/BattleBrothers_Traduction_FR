@@ -10,7 +10,7 @@ this.dismiss_legend_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.dismiss_legend";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",

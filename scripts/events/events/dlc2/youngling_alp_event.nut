@@ -8,7 +8,7 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.youngling_alp";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

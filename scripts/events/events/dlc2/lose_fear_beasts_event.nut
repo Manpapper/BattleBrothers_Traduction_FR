@@ -5,7 +5,7 @@ this.lose_fear_beasts_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.lose_fear_beasts";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

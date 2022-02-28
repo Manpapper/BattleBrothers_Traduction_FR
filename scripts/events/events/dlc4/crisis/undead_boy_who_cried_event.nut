@@ -6,7 +6,7 @@ this.undead_boy_who_cried_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.undead_boy_who_cried";
-		this.m.Title = "At %townname%";
+		this.m.Title = "A %townname%";
 		this.m.Cooldown = 140.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -113,7 +113,7 @@ this.undead_boy_who_cried_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 
@@ -170,7 +170,7 @@ this.undead_boy_who_cried_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 10 + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 10 + "[/color] Crowns"
 				});
 			}
 
@@ -198,7 +198,7 @@ this.undead_boy_who_cried_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 25 + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 25 + "[/color] Crowns"
 				});
 			}
 

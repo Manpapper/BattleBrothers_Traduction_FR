@@ -6,7 +6,7 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.cultist_origin_finale";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -104,7 +104,7 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain the " + item.getName()
+					text = "Vous recevez the " + item.getName()
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 

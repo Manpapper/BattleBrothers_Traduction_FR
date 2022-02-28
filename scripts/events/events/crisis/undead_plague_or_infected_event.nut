@@ -110,7 +110,7 @@ this.undead_plague_or_infected_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You lose " + item.getName()
+						text = "Vous perdez " + item.getName()
 					});
 					this.World.Assets.getStash().remove(item);
 					food.remove(idx);

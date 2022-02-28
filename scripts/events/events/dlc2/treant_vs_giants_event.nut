@@ -3,7 +3,7 @@ this.treant_vs_giants_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.treant_vs_giants";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 150.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

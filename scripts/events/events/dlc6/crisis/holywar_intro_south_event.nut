@@ -5,7 +5,7 @@ this.holywar_intro_south_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.holywar_intro_south";
-		this.m.Title = "At %townname%";
+		this.m.Title = "A %townname%";
 		this.m.Cooldown = 1.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({

@@ -3,17 +3,17 @@ this.ijirok_3_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.ijirok_3";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_76.png[/img]{While camping in the northern wastes, a silhouette approaches, a flat black whose appearance was seemingly cut out of the thin air itself. As it nears, an orange glow blossoms from a horn of fire. The company draw their weapons for what shadowy figure could possibly be out here in all this nothing? What \'something\' crosses such a wretched land? But you find it is just elderly man with a bald pate and bulbous, red nose. If the snow could carve man from granite, this would be the look of its creation. The stranger passes through the camp with the company turning to him and yelling out, but not one sellsword goes near him. He finally leans down and puts the horn to the ground and the snow extinguishes its fire. Then he gets up and keeps going and soon disappears into the fog of night.\n\n  %randombrother% picks up the horn and tips it over. A rose falls out and its clear even in the dark that the petals are soft, but already curling to the brutal cold. You look around for the old man and see his tracks still fresh in the powder.}",
+			Text = "[img]gfx/ui/events/event_76.png[/img]{Alors que vous campez dans le désert du nord, une silhouette s'approche, un noir plat dont l'apparence semble avoir été taillée dans l'air même. Alors qu'elle s'approche, une lueur orange jaillit d'une corne de feu. Les membres de la compagnie sortent leurs armes, car quelle ombre pourrait bien se trouver ici, dans tout ce néant ? Quelle \"chose\" traverse une terre aussi misérable ? Mais on découvre que ce n'est qu'un vieil homme au crâne chauve et au nez rouge et bulbeux. Si la neige pouvait sculpter l'homme dans le granit, ce serait l'aspect de sa création. L'étranger traverse le camp, la compagnie se tourne vers lui et crie, mais pas un seul mercenaire ne s'approche de lui. Il finit par se pencher et poser sa corne sur le sol et la neige éteint son feu. Puis il se lève et continue sa route et disparaît bientôt dans le brouillard de la nuit.\n\n%randombrother% ramasse la corne et la renverse. Une rose en tombe et il est clair, même dans l'obscurité, que les pétales sont douces, mais déjà recroquevillés par le froid brutal. Vous regardez autour de vous à la recherche du vieil homme et voyez ses traces encore fraîches dans la poudreuse.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "All sorts of strange in these wastes.",
+					Text = "Toutes sortes de choses étranges dans ces régions désolées.",
 					function getResult( _event )
 					{
 						this.World.Flags.set("IjirokStage", 3);

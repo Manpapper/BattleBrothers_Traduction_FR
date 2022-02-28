@@ -67,7 +67,7 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-2000[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-2000[/color] Crowns"
 				});
 				_event.m.NobleHouse.addPlayerRelation(20.0, "Was bribed to have dealings with you");
 				this.List.push({

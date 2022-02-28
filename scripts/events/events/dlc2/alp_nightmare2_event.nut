@@ -7,7 +7,7 @@ this.alp_nightmare2_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.alp_nightmare2";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -47,7 +47,7 @@ this.alp_nightmare2_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + _event.m.Item.getIcon(),
-					text = "You lose " + this.Const.Strings.getArticle(_event.m.Item.getName()) + _event.m.Item.getName()
+					text = "Vous perdez " + this.Const.Strings.getArticle(_event.m.Item.getName()) + _event.m.Item.getName()
 				});
 			}
 

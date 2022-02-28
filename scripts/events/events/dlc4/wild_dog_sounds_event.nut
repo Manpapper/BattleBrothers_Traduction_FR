@@ -7,7 +7,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.wild_dog_sounds";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -164,7 +164,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 				_event.m.Hunter.getBaseProperties().Bravery += 1;
 				_event.m.Hunter.getSkills().update();
@@ -310,7 +310,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + items.getItemAtSlot(this.Const.ItemSlot.Mainhand).getIcon(),
-						text = "You lose " + this.Const.Strings.getArticle(items.getItemAtSlot(this.Const.ItemSlot.Mainhand).getName()) + items.getItemAtSlot(this.Const.ItemSlot.Mainhand).getName()
+						text = "Vous perdez " + this.Const.Strings.getArticle(items.getItemAtSlot(this.Const.ItemSlot.Mainhand).getName()) + items.getItemAtSlot(this.Const.ItemSlot.Mainhand).getName()
 					});
 					items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 				}

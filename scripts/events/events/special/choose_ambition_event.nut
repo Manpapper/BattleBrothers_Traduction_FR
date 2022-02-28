@@ -3,7 +3,7 @@ this.choose_ambition_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.choose_ambition";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.HasBigButtons = true;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({

@@ -109,7 +109,7 @@ this.march_wear_and_tear_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_medicine.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies."
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies."
 				});
 			}
 
@@ -150,7 +150,7 @@ this.march_wear_and_tear_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_medicine.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Medical Supplies."
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Medical Supplies."
 				});
 			}
 
@@ -210,7 +210,7 @@ this.march_wear_and_tear_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_medicine.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies."
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] Medical Supplies."
 				});
 			}
 
@@ -239,7 +239,7 @@ this.march_wear_and_tear_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_medicine.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]-" + amount + "[/color] Medical Supplies."
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]-" + amount + "[/color] Medical Supplies."
 				});
 			}
 

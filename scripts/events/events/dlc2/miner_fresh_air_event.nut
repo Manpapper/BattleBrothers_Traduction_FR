@@ -5,7 +5,7 @@ this.miner_fresh_air_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.miner_fresh_air";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

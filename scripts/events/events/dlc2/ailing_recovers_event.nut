@@ -6,7 +6,7 @@ this.ailing_recovers_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.miner_fresh_air";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 75.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",

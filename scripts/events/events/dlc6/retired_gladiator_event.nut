@@ -102,14 +102,14 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 12,
 					icon = "ui/items/armor_upgrades/upgrade_25.png",
-					text = "You gain a " + a.getName()
+					text = "Vous recevez a " + a.getName()
 				});
 				this.World.Assets.getStash().add(a);
 				this.World.Assets.addMoney(-1000);
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]1,000[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]1,000[/color] Crowns"
 				});
 			}
 

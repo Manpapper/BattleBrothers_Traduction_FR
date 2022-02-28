@@ -6,7 +6,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.sword_eater";
-		this.m.Title = "At %townname%";
+		this.m.Title = "A %townname%";
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -113,7 +113,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 				_event.m.Town.getOwner().addPlayerRelation(-10.0, "Rumor is that a local entertainer was killed by one of your men");
 				this.World.Flags.set("IsSwordEaterWildmanDone", true);

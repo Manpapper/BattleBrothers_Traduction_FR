@@ -5,17 +5,17 @@ this.cultist_origin_hood_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.cultist_origin_hood";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 15.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_03.png[/img]{%randomcultist%, one your followers, enters your tent and then just as soon leaves. You stand to see where he\'s gone, but come to find a leather half-helm sitting atop your table. The leather is stitched with hairs of unknown origin and pinched together by what look like hooks and fingernails. The holes of the helm are a pitch black, and you get the sense that even if you filled them the darkness would never depart. It is then, staring into those emptied sockets, that you know something is staring back. You nod approvingly.}",
+			Text = "[img]gfx/ui/events/event_03.png[/img]{%randomcultist%, un de vos disciples, entre dans votre tente et en ressort aussitôt. Vous vous levez pour voir où il est allé, mais vous découvrez un demi-casque en cuir posé sur votre table. Le cuir est cousu avec des poils d'origine inconnue et pincé par ce qui ressemble à des crochets et des ongles. Les trous du casque sont d'un noir absolu, et vous avez l'impression que même si vous les remplissiez, les ténèbres ne partiraient jamais. C'est alors, en regardant fixement dans ces orbites vides, que vous savez que quelque chose vous regarde en retour. Vous faites un signe de tête approbateur.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Davkul awaits.",
+					Text = "Davkul attend.",
 					function getResult( _event )
 					{
 						return 0;
@@ -36,7 +36,7 @@ this.cultist_origin_hood_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "You lose " + item.getName()
+							text = "Vous perdez " + item.getName()
 						});
 						break;
 					}
@@ -47,7 +47,7 @@ this.cultist_origin_hood_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 

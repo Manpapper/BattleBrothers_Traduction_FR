@@ -3,17 +3,17 @@ this.ijirok_2_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.ijirok_2";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_143.png[/img]{A blotch in the snowy wastes catches your eye. With a couple of scouts you go out to see what it is, suspecting little more than perhaps an animal carcass or abandoned camp. Instead, you find a party of naked corpses with their bodies crouched as though they were sitting upon chairs. They\'re in a close-knit circle, all facing inward, some with their hands out as if warming them at a fire. You push one of the corpses. As it tips back, the body sitting opposite raises up. %randombrother% jumps away.%SPEECH_ON%By the old gods!%SPEECH_OFF%A rim of flesh runs just beneath the powdered snow, and the ring connects one corpse to the other, a shared desecration beyond your understanding. The skin runs inward, meeting at a fleshen fulcrum which rises out of the snow shaped like some macabre flower pot. Nothing is inside. One of the scouts demands a return to the safety of the company and you very much agree with him.}",
+			Text = "[img]gfx/ui/events/event_143.png[/img]{Une tache dans les étendues enneigées attire votre attention. Avec quelques éclaireurs, vous sortez pour voir ce que c'est, ne soupçonnant rien de plus qu'une carcasse d'animal ou un camp abandonné. Au lieu de cela, vous trouvez un groupe de cadavres nus, les corps accroupis comme s'ils étaient assis sur des chaises. Ils forment un cercle étroit, sont tous tournés vers l'intérieur, certains ont les mains tendues comme s'ils se réchauffaient au feu. Vous poussez l'un des cadavres. Lorsqu'il bascule en arrière, le corps assis en face se soulève. %randombrother% saute en arrière.%SPEECH_ON%Par les anciens dieux !%SPEECH_OFF%Un rebord de chair court juste sous la neige poudreuse, et l'anneau relie un cadavre à l'autre, une profanation partagée au-delà de votre compréhension. La peau s'étend vers l'intérieur, se rejoignant sur un point d'appui charnu qui émerge de la neige en forme de pot de fleurs macabre. Il n'y a rien à l'intérieur. L'un des éclaireurs exige de retourner à la sécurité de la compagnie et vous êtes tout à fait d'accord avec lui.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Keep this between us.",
+					Text = "Gardons ça entre nous.",
 					function getResult( _event )
 					{
 						this.World.Flags.set("IjirokStage", 2);

@@ -3,17 +3,17 @@ this.ijirok_1_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.ijirok_1";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_143.png[/img]%randombrother% hails you down and says that there\'s something you should come take a look at. Surely something that\'s out in all this ice and nothingness is worth seeing.\n\n The sellsword brings you to a cavernous hole in the ground. He lights a torch and steps into and you follow. There at the bottom you find a few more of your men. They\'re standing around what looks like a sarcophagus made of ice, except there\'s no lid. A frozen blackness cakes the edges of the container. In the corner of the room is an icy corpse stuck to the wall. His hands are at his sides and icicles of blood run from his wrists. Adjacent to it is a pair of clothes hanging from icehooks, but there is no body attached. A trail of blood leads from the clothes to the other man, then back out the cave.%SPEECH_ON%I don\'t know what to make of this sir.%SPEECH_OFF%One mercenary says. You ask the men if they\'ve seen anything in their scouting, and you mean damn near anything. But they all shake their heads no. If something was in that box then it is surely out now. You tell the men to get on out of the cave and back to camp.",
+			Text = "[img]gfx/ui/events/event_143.png[/img]%randombrother% vous appelle et dit qu'il y a quelque chose que vous devriez venir voir. Il y a sûrement quelque chose qui vaut la peine d'être vu dans toute cette glace et ce néant.\n\n Le mercenaire vous amène à un trou caverneux dans le sol. Il allume une torche et y entre et vous suivez. Là, au fond, vous trouvez quelques autres de vos hommes. Ils sont debout autour de ce qui ressemble à un sarcophage fait de glace, sauf qu'il n'y a pas de couvercle. Une noirceur gelée recouvre les bords du conteneur. Dans le coin de la pièce se trouve un cadavre glacé collé au mur. Ses mains sont à ses côtés et des stalactites de sang coulent de ses poignets. À côté de lui, une paire de vêtements est suspendue à des crochets de glace, mais aucun corps n'y est attaché. Une traînée de sang mène des vêtements à l'autre homme, puis ressort de la grotte.%SPEECH_ON%Je ne sais pas quoi faire de ça monsieur.%SPEECH_OFF%Dit un mercenaire. Vous demandez aux hommes s'ils ont vu quelque chose pendant leurs recherches, et vous voulez dire presque n'importe quoi. Mais ils secouent tous la tête, non. Si quelque chose était dans cette boîte, il est sûrement sorti maintenant. Vous dites aux hommes de sortir de la grotte et de retourner au camp.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "And keep your wits about you.",
+					Text = "Et gardez vos esprits.",
 					function getResult( _event )
 					{
 						this.World.Flags.set("IjirokStage", 1);

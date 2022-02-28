@@ -5,17 +5,17 @@ this.lone_wolf_origin_depressing_lady_event <- this.inherit("scripts/events/even
 	function create()
 	{
 		this.m.ID = "event.lone_wolf_origin_depressing_lady";
-		this.m.Title = "At %townname%";
+		this.m.Title = "A %townname%";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_91.png[/img]{You come across an old woman outside of the home of a nobleman. She sizes you up as though she were looking into her own past. Amused, you ask her what it is she wants. The lady smiles.%SPEECH_ON%What is it you think you\'re doing, exactly? Wandering the land as a hedge knight, killing and slaying and farkin\' the ladies now and again?%SPEECH_OFF%Politely, you inform her that you are in fact not just some tournament hopper, but a bonafide sellsword. She shrugs and throws her hand to a nobleman\'s house.%SPEECH_ON%And what of it? They\'ll never accept you. You\'ll be a fighter. You\'re out here, forever. You only go inside when they let you. This is not a world you can improve yourself in. You are what you are born as.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_91.png[/img]{Vous croisez une vieille femme devant la maison d'un noble. Elle vous regarde comme si elle se penchait sur son propre passé. Amusé, vous lui demandez ce qu'elle veut. La dame sourit.%SPEECH_ON%Qu'est-ce que vous pensez faire, exactement ? Vous errez dans le pays en tant que chevalier errant, tuant, massacrant et baisant les femmes de temps en temps ?%SPEECH_OFF%Poliment, vous l'informez que vous n'êtes pas un simple participant à un tournoi, mais un véritable mercenaire. Elle hausse les épaules et lance la main vers la maison d'un noble.%SPEECH_ON%Et alors ? Ils ne vous accepteront jamais. Vous serez un combattant. Vous serez dehors, pour toujours. Vous n'entrez que lorsqu'ils vous laissent entrer. Ce n'est pas un monde dans lequel vous pouvez vous améliorer. Vous êtes ce que vous êtes à votre naissance.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This world is what I make of it.",
+					Text = "Ce monde est ce que j'en fais.",
 					function getResult( _event )
 					{
 						return 0;

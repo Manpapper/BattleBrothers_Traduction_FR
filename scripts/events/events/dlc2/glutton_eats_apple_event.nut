@@ -6,7 +6,7 @@ this.glutton_eats_apple_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.glutton_eats_apple";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -37,7 +37,7 @@ this.glutton_eats_apple_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "You lose " + item.getName()
+							text = "Vous perdez " + item.getName()
 						});
 						break;
 					}
