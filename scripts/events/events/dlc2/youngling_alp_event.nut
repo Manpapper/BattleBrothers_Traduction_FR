@@ -89,7 +89,7 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/xp_received.png",
-					text = _event.m.Callbrother.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
+					text = _event.m.Callbrother.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
 				});
 				_event.m.Callbrother.worsenMood(0.75, "Had an alp invade his mind");
 
@@ -105,7 +105,7 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/xp_received.png",
-					text = _event.m.Other.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
+					text = _event.m.Other.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
 				});
 				_event.m.Other.worsenMood(0.75, "Had an alp invade his mind");
 
@@ -227,13 +227,13 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Flagellant.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Flagellant.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/health.png",
-					text = _event.m.Flagellant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + hitpoints + "[/color] Hitpoints"
+					text = _event.m.Flagellant.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + hitpoints + "[/color] Hitpoints"
 				});
 			}
 

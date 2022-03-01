@@ -5,7 +5,7 @@ this.alp_captured_in_hole_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.alp_captured_in_hole";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 170.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -67,7 +67,7 @@ this.alp_captured_in_hole_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + money + "[/color] Couronnes"
 				});
 			}
 
@@ -135,7 +135,7 @@ this.alp_captured_in_hole_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -217,7 +217,7 @@ this.alp_captured_in_hole_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				local item = this.new("scripts/items/misc/parched_skin_item");
 				this.World.Assets.getStash().add(item);

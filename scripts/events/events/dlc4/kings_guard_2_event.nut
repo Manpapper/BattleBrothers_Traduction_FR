@@ -5,17 +5,17 @@ this.kings_guard_2_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.kings_guard_2";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_82.png[/img]{You find %guard% stretching about with surprising limberness. He looks nothing at all like the freezing, frigid man you found abandoned in the ice by those barbarians. Spotting you, he nods and comes over with a quiet voice.%SPEECH_ON%I\'m glad you trusted in me, captain. Perhaps you did it out of the kindness of your heart, but I need to show you something.%SPEECH_OFF%He flashes an emblem you have heard referenced many times, but have never seen: it carries the sigil of the King\'s Guard and its pristineness is such that there is no way it could have been a farce. The man smiles at you.%SPEECH_ON%I think I am in good health and ready to serve you as I did my liege.%SPEECH_OFF%The kings of these lands have long since fallen, replaced by squabbling lords and nobles. If this man can fight for you as he did for the kings, then the %companyname% has brighter days ahead surely.}",
+			Text = "[img]gfx/ui/events/event_82.png[/img]{Vous trouvez %guard% qui s'étire avec une étonnante souplesse. Il ne ressemble en rien à l'homme glacial et frigide que vous avez trouvé abandonné dans la glace par ces barbares. Vous repérant, il hoche la tête et s'approche d'une voix calme.%SPEECH_ON%Je suis heureux que vous ayez eu confiance en moi, capitaine. Peut-être l'avez-vous fait par bonté d'âme, mais je dois vous montrer quelque chose.%SPEECH_OFF%Il brandit un emblème dont vous avez souvent entendu parler, mais que vous n'avez jamais vu : il porte le sigle de la Garde du Roi et sa brillance est telle qu'il est impossible que ce soit une farce. L'homme vous sourit.%SPEECH_ON%Je pense être en bonne santé et prêt à vous servir comme je l'ai fait pour mon souverain.%SPEECH_OFF%Les rois de ces terres sont tombés depuis longtemps, remplacés par des seigneurs et des nobles qui se chamaillent. Si cet homme peut se battre pour vous comme il l'a fait pour les rois, alors %companyname% aura sûrement des jours meilleurs devant eux.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'m glad we found you on that fateful day.",
+					Text = "Je suis heureux que nous vous ayons trouvé en ce jour fatidique.",
 					function getResult( _event )
 					{
 						return 0;
@@ -30,7 +30,7 @@ this.kings_guard_2_event <- this.inherit("scripts/events/event", {
 				bg.m.IsNew = false;
 				_event.m.Dude.getSkills().removeByID("background.cripple");
 				_event.m.Dude.getSkills().add(bg);
-				_event.m.Dude.getBackground().m.RawDescription = "You found %name% frozen half to death in the north. With your help, the former King\'s Guard regained his strength and now fights for you.";
+				_event.m.Dude.getBackground().m.RawDescription = "Vous avez trouvé %nom% à moitié gelé dans le nord. Avec votre aide, l'ancien garde du Roi a retrouvé ses forces et se bat maintenant pour vous.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.improveMood(1.0, "Is his former self again");
 
@@ -53,32 +53,32 @@ this.kings_guard_2_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/melee_defense.png",
-					text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+7[/color] Melee Defense"
+					text = _event.m.Dude.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+7[/color] de Défense en Mêlée"
 				});
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/ranged_defense.png",
-					text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+7[/color] Ranged Defense"
+					text = _event.m.Dude.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+7[/color] de Défense à distance"
 				});
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/melee_skill.png",
-					text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+12[/color] Melee Skill"
+					text = _event.m.Dude.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+12[/color] de Compétence au corps à corps"
 				});
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/fatigue.png",
-					text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+10[/color] Max Fatigue"
+					text = _event.m.Dude.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+10[/color] de Fatigue Maximum"
 				});
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/initiative.png",
-					text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+10[/color] Initiative"
+					text = _event.m.Dude.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+10[/color] d'Initiative"
 				});
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/health.png",
-					text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+15[/color] Hitpoints"
+					text = _event.m.Dude.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+15[/color] de Points de Vie"
 				});
 			}
 

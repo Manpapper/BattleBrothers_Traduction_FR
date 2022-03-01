@@ -9,7 +9,7 @@ this.cultist_origin_hood_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 15.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_03.png[/img]{%randomcultist%, un de vos disciples, entre dans votre tente et en ressort aussitôt. Vous vous levez pour voir où il est allé, mais vous découvrez un demi-casque en cuir posé sur votre table. Le cuir est cousu avec des poils d'origine inconnue et pincé par ce qui ressemble à des crochets et des ongles. Les trous du casque sont d'un noir absolu, et vous avez l'impression que même si vous les remplissiez, les ténèbres ne partiraient jamais. C'est alors, en regardant fixement dans ces orbites vides, que vous savez que quelque chose vous regarde en retour. Vous faites un signe de tête approbateur.}",
+			Text = "[img]gfx/ui/events/event_03.png[/img]{%randomcultist%, un de vos disciples, entre dans votre tente et en ressort aussitôt. Vous vous levez pour voir où il est allé, mais vous découvrez un demi-casque en cuir posé sur votre table. Le cuir est cousu avec des poils d\'origine inconnue et pincé par ce qui ressemble à des crochets et des ongles. Les trous du casque sont d\'un noir absolu, et vous avez l\'impression que même si vous les remplissiez, les ténèbres ne partiraient jamais. C\'est alors, en regardant fixement dans ces orbites vides, que vous savez que quelque chose vous regarde en retour. Vous faites un signe de tête approbateur.}",
 			Image = "",
 			List = [],
 			Characters = [],

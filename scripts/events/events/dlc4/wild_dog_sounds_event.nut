@@ -171,7 +171,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Hunter.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
+					text = _event.m.Hunter.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -290,7 +290,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/xp_received.png",
-					text = _event.m.Expendable.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
+					text = _event.m.Expendable.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
 				});
 				_event.m.Expendable.improveMood(3.0, "Had an excellent adventure");
 

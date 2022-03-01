@@ -74,7 +74,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 					}
 				];
 			}
@@ -111,7 +111,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Dude.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Dude.getName() + " souffre de " + injury.getNameOnly()
 				});
 				local effect = this.new("scripts/skills/injury/sickness_injury");
 				_event.m.Dude.getSkills().add(effect);
@@ -157,7 +157,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 					}
 				];
 				local item = this.new("scripts/items/accessory/antidote_item");

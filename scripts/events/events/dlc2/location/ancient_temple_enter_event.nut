@@ -280,7 +280,7 @@ this.ancient_temple_enter_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Volunteer.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Volunteer.getName() + " souffre de " + injury.getNameOnly()
 				});
 				_event.m.Volunteer.worsenMood(1.0, "Got injured navigating an ancient mausoleum");
 				this.World.Assets.getStash().makeEmptySlots(1);

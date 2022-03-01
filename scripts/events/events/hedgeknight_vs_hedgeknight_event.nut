@@ -284,7 +284,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]2000[/color] Crowns"
+						text = "Vous perdez [color=" + this.Const.UI.Color.NegativeEventValue + "]2000[/color] Couronnes"
 					}
 				];
 				local brothers = this.World.getPlayerRoster().getAll();

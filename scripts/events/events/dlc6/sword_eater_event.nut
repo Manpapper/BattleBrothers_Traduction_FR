@@ -72,7 +72,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Crowns"
+						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Couronnes"
 					}
 				];
 				_event.m.Town.getOwner().addPlayerRelation(5.0, "Local entertainers spread the word about you");
@@ -104,7 +104,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Crowns"
+						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Couronnes"
 					}
 				];
 				local item = this.new("scripts/items/weapons/fencing_sword");

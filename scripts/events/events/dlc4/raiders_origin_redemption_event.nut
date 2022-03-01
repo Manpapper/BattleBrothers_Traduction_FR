@@ -6,18 +6,18 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.raiders_origin_redemption_";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{%monk% is a monk who, by this point, is very, very far from his home. The days on the road alone are hard enough, and the days off it being filled with violence and pillaging even worse so. It\'s no surprise that he has come to you with an offer. Despite being with your company for some time now, it is clear that he is still a man of civilization.\n\n He explains an old law: as a raider you are persona non grata, but as a raider with a lot of money there is a chance you can buy your way back into dealing with the nobles of this land. The monk says he knows whose palms to cross. Apparently, %noblehouse% is interested in \'opening channels\', and they would just appreciate %crowns% crowns to settle into new affairs. Civilized indeed.}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{%monk% est un moine qui, à ce moment, est très, très loin de chez lui. Les jours passés sur la route sont déjà assez difficiles, et les jours de repos, remplis de violence et de pillage, le sont encore plus. Il n'est pas surprenant qu'il soit venu vous voir avec une offre. Bien qu'il soit dans votre compagnie depuis un certain temps, il est clair qu'il est toujours un homme de la civilisation.\n\nIl explique une vieille loi : en tant que pillard, vous êtes persona non grata, mais en tant que pillard avec beaucoup d'argent, il y a une chance que vous puissiez racheter le droit de traiter avec les nobles de ce pays. Le moine dit qu'il sait à qui s'adresser. Apparemment, %noblehouse% est intéressé par l'ouverture de canaux, et ils apprécieraient %crowns% couronnes pour installer de nouvelles affaires. Civilisé en effet.}",
 			Banner = "",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Make it happen.",
+					Text = "Faites en sorte que cela se produise.",
 					function getResult( _event )
 					{
 						return "B";
@@ -25,7 +25,7 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We have no need for this.",
+					Text = "Nous n'avons pas besoin de ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -42,14 +42,14 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_31.png[/img]{You agree to the monk\'s notions. Together, you meet with an intermediary and one of the nobles himself. The meeting takes place in secret and at first there is a lot of dramatic cloak and dagger nonsense. Men wearing black and keeping their hands to their weapons, nobles whispering to one another, but after it\'s all said and done... you have a good long drink together. In the future, %noblehouse% will be more open to dealings.}",
+			Text = "[img]gfx/ui/events/event_31.png[/img]{Vous acceptez les propositions du moine. Ensemble, vous rencontrez un intermédiaire et un des nobles lui-même. La réunion a lieu en secret et, au début, il y a beaucoup d'absurdités dramatiques de cape et d'épée. Des hommes vêtus de noir et gardant les mains sur leurs armes, des nobles qui chuchotent entre eux, mais une fois que tout est dit et fait... vous prenez un long verre ensemble. À l'avenir, %noblehouse% sera plus ouvert aux transactions.}",
 			Banner = "",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Doing mercenary work for them would further mend relations.",
+					Text = "Faire du travail de mercenaire pour eux permettrait d'améliorer les relations.",
 					function getResult( _event )
 					{
 						return 0;
@@ -67,13 +67,13 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-2000[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-2000[/color] Couronnes"
 				});
-				_event.m.NobleHouse.addPlayerRelation(20.0, "Was bribed to have dealings with you");
+				_event.m.NobleHouse.addPlayerRelation(20.0, "A été soudoyé pour avoir des relations avec vous");
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/relations.png",
-					text = "Your relations to " + _event.m.NobleHouse.getName() + " improve"
+					text = "Vos relations avec " + _event.m.NobleHouse.getName() + " s'améliorent"
 				});
 			}
 

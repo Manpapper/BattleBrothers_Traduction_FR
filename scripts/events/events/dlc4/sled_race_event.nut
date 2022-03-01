@@ -86,7 +86,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/initiative.png",
-					text = _event.m.Sledder.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Initiative"
+					text = _event.m.Sledder.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Initiative"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -132,7 +132,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Sledder.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Sledder.getName() + " souffre de " + injury.getNameOnly()
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -183,7 +183,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Fat.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Fat.getName() + " souffre de " + injury.getNameOnly()
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -234,7 +234,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Blind.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Blind.getName() + " souffre de " + injury.getNameOnly()
 				});
 				local item = this.new("scripts/items/loot/ancient_gold_coins_item");
 				this.World.Assets.getStash().add(item);

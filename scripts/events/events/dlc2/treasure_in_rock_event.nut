@@ -226,7 +226,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Other.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Other.getName() + " souffre de " + injury.getNameOnly()
 				});
 			}
 

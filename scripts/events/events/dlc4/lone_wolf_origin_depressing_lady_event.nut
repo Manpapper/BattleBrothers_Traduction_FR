@@ -9,13 +9,13 @@ this.lone_wolf_origin_depressing_lady_event <- this.inherit("scripts/events/even
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_91.png[/img]{Vous croisez une vieille femme devant la maison d'un noble. Elle vous regarde comme si elle se penchait sur son propre passé. Amusé, vous lui demandez ce qu'elle veut. La dame sourit.%SPEECH_ON%Qu'est-ce que vous pensez faire, exactement ? Vous errez dans le pays en tant que chevalier errant, tuant, massacrant et baisant les femmes de temps en temps ?%SPEECH_OFF%Poliment, vous l'informez que vous n'êtes pas un simple participant à un tournoi, mais un véritable mercenaire. Elle hausse les épaules et lance la main vers la maison d'un noble.%SPEECH_ON%Et alors ? Ils ne vous accepteront jamais. Vous serez un combattant. Vous serez dehors, pour toujours. Vous n'entrez que lorsqu'ils vous laissent entrer. Ce n'est pas un monde dans lequel vous pouvez vous améliorer. Vous êtes ce que vous êtes à votre naissance.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_91.png[/img]{Vous croisez une vieille femme devant la maison d\'un noble. Elle vous regarde comme si elle se penchait sur son propre passé. Amusé, vous lui demandez ce qu\'elle veut. La dame sourit.%SPEECH_ON%Qu\'est-ce que vous pensez faire, exactement ? Vous errez dans le pays en tant que chevalier errant, tuant, massacrant et baisant les femmes de temps en temps ?%SPEECH_OFF%Poliment, vous l\'informez que vous n\'êtes pas un simple participant à un tournoi, mais un véritable mercenaire. Elle hausse les épaules et lance la main vers la maison d\'un noble.%SPEECH_ON%Et alors ? Ils ne vous accepteront jamais. Vous serez un combattant. Vous serez dehors, pour toujours. Vous n\'entrez que lorsqu\'ils vous laissent entrer. Ce n\'est pas un monde dans lequel vous pouvez vous améliorer. Vous êtes ce que vous êtes à votre naissance.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Ce monde est ce que j'en fais.",
+					Text = "Ce monde est ce que j\'en fais.",
 					function getResult( _event )
 					{
 						return 0;

@@ -5,7 +5,7 @@ this.gunpowder_wagon_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.gunpowder_wagon";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -114,7 +114,7 @@ this.gunpowder_wagon_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]2500[/color] Crowns"
+						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]2500[/color] Couronnes"
 					});
 					break;
 
@@ -130,7 +130,7 @@ this.gunpowder_wagon_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
+						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Couronnes"
 					});
 					break;
 				}

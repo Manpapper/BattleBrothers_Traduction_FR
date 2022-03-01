@@ -116,7 +116,7 @@ this.undead_frozen_pond_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.Other.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.Other.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 				local effect = this.new("scripts/skills/injury/sickness_injury");

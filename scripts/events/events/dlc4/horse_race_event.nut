@@ -9,7 +9,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.horse_race";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -99,7 +99,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Couronnes"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -150,14 +150,14 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Couronnes"
 				});
 				_event.m.Athletic.getBaseProperties().Stamina += 1;
 				_event.m.Athletic.getSkills().update();
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/fatigue.png",
-					text = _event.m.Athletic.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Max Fatigue"
+					text = _event.m.Athletic.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Fatigue Maximum"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -208,14 +208,14 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
+					text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Couronnes"
 				});
 				_event.m.Fat.getBaseProperties().Bravery += 1;
 				_event.m.Fat.getSkills().update();
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Fat.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
+					text = _event.m.Fat.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -266,13 +266,13 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + _event.m.Reward * 3 + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + _event.m.Reward * 3 + "[/color] Couronnes"
 				});
 				local injury = _event.m.Dumb.addInjury(this.Const.Injury.Concussion);
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Dumb.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Dumb.getName() + " souffre de " + injury.getNameOnly()
 				});
 			}
 

@@ -10,13 +10,13 @@ this.lone_wolf_origin_another_squire_event <- this.inherit("scripts/events/event
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{%squire% s'approche de vous en se grattant l'arrière de la tête. On dirait qu'il a quelque chose en tête, et vous l'incitez à le dire. En soupirant, il demande pourquoi %squire2% a été engagé dans la compagnie.%SPEECH_ON%Il est écuyer, je suis écuyer, sommes-nous tous deux vos écuyers ?%SPEECH_OFF%Vous informez le garçon que %squire2% était l'écuyer d'un autre homme, mais que les choses ont changé dans sa vie pour le conduire ici. À toutes fins utiles, il est maintenant un mercenaire et %squire% est toujours votre écuyer. %squire% s'illumine d'un sourire, mais il se dégrade rapidement.%SPEECH_ON%Attends, ça veut dire que je suis plus mercenaire qu'écuyer ?%SPEECH_OFF%Vous enfoncez un carnet dans la poitrine du gamin et lui dites d'aller compter l'inventaire.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{%squire% s\'approche de vous en se grattant l\'arrière de la tête. On dirait qu\'il a quelque chose en tête, et vous l\'incitez à le dire. En soupirant, il demande pourquoi %squire2% a été engagé dans la compagnie.%SPEECH_ON%Il est écuyer, je suis écuyer, sommes-nous tous deux vos écuyers ?%SPEECH_OFF%Vous informez le garçon que %squire2% était l\'écuyer d\'un autre homme, mais que les choses ont changé dans sa vie pour le conduire ici. À toutes fins utiles, il est maintenant un mercenaire et %squire% est toujours votre écuyer. %squire% s\'illumine d\'un sourire, mais il se dégrade rapidement.%SPEECH_ON%Attends, ça veut dire que je suis plus mercenaire qu\'écuyer ?%SPEECH_OFF%Vous enfoncez un carnet dans la poitrine du gamin et lui dites d\'aller compter l\'inventaire.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Et dire que j'avais l'habitude de parcourir ces terres seul...",
+					Text = "Et dire que j\'avais l\'habitude de parcourir ces terres seul...",
 					function getResult( _event )
 					{
 						return 0;
@@ -27,7 +27,7 @@ this.lone_wolf_origin_another_squire_event <- this.inherit("scripts/events/event
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Dude.getImagePath());
-				_event.m.Dude.worsenMood(0.5, "Confus quant à son rôle d'écuyer");
+				_event.m.Dude.worsenMood(0.5, "Confus quant à son rôle d\'écuyer");
 			}
 
 		});

@@ -191,7 +191,7 @@ this.belly_dancer_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.PositiveEventValue + "]500[/color] Crowns"
+						text = "You spend [color=" + this.Const.UI.Color.PositiveEventValue + "]500[/color] Couronnes"
 					}
 				];
 			}

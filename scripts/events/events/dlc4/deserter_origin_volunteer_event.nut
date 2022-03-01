@@ -7,7 +7,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.deserter_origin_volunteer";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -111,7 +111,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Victim.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Victim.getName() + " souffre de " + injury.getNameOnly()
 				});
 				local r = this.Math.rand(1, 4);
 

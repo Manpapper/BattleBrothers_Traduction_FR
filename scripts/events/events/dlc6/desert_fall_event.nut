@@ -37,7 +37,7 @@ this.desert_fall_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = injury.getIcon(),
-						text = _event.m.SomeGuy.getName() + " suffers " + injury.getNameOnly()
+						text = _event.m.SomeGuy.getName() + " souffre de " + injury.getNameOnly()
 					}
 				];
 				this.Characters.push(_event.m.SomeGuy.getImagePath());

@@ -8,7 +8,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.drunk_nobleman";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 80.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
@@ -95,7 +95,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				local item = this.new("scripts/items/loot/signet_ring_item");
 				this.World.Assets.getStash().add(item);
@@ -187,7 +187,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				local item = this.new("scripts/items/loot/signet_ring_item");
 				this.World.Assets.getStash().add(item);
@@ -229,7 +229,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = injury.getIcon(),
-					text = _event.m.Other.getName() + " suffers " + injury.getNameOnly()
+					text = _event.m.Other.getName() + " souffre de " + injury.getNameOnly()
 				});
 				local item = this.new("scripts/items/loot/signet_ring_item");
 				this.World.Assets.getStash().add(item);
@@ -273,7 +273,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/bravery.png",
-					text = _event.m.Servant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Resolve"
+					text = _event.m.Servant.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Resolve"
 				});
 				local item = this.new("scripts/items/loot/signet_ring_item");
 				this.World.Assets.getStash().add(item);
@@ -309,7 +309,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
+					text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Couronnes"
 				});
 				local item;
 				item = this.new("scripts/items/loot/signet_ring_item");
