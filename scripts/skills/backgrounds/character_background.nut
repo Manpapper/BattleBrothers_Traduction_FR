@@ -306,6 +306,11 @@ this.character_background <- this.inherit("scripts/skills/skill", {
 				_properties.DailyWage += previous * this.Math.pow(1.03, level - 1 - 10) - previous;
 			}
 		}
+
+		if (("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin() != null && this.World.Assets.getOrigin().getID() == "scenario.manhunters" && this.getID() != "background.slave")
+		{
+			_properties.XPGainMult *= 0.9;
+		}
 	}
 
 	function adjustHiringCostBasedOnEquipment()

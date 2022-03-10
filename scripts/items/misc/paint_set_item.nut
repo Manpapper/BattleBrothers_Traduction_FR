@@ -2,6 +2,7 @@ this.paint_set_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.paint_set_shields";
 		this.m.Name = "Ensemble de peinture";
 		this.m.Description = "Une palette de plusieurs couleurs vibrantes et un ensemble de pinceaux. Peut être utilisé pour peindre des boucliers communs aux couleurs de votre compagnie.";
@@ -11,7 +12,7 @@ this.paint_set_item <- this.inherit("scripts/items/item", {
 		this.m.IsDroppedAsLoot = true;
 		this.m.IsAllowedInBag = false;
 		this.m.IsUsable = true;
-		this.m.Value = 120;
+		this.m.Value = 75;
 	}
 
 	function getTooltip()

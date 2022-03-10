@@ -49,7 +49,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 		local damage_regular_max = this.Math.floor(p.DamageRegularMax * p.DamageRegularMult * p.DamageTotalMult * p.MeleeDamageMult);
 		local damage_Armor_min = this.Math.floor(p.DamageRegularMin * p.DamageArmorMult * p.DamageTotalMult * p.MeleeDamageMult);
 		local damage_Armor_max = this.Math.floor(p.DamageRegularMax * p.DamageArmorMult * p.DamageTotalMult * p.MeleeDamageMult);
-		local damage_direct_max = this.Math.floor(damage_regular_max * (this.m.DirectDamageMult + p.DamageDirectAdd));
+		local damage_direct_max = this.Math.floor(damage_regular_max * (this.m.DirectDamageMult + p.DamageDirectAdd + p.DamageDirectMeleeAdd));
 		local ret = [
 			{
 				id = 1,
@@ -84,14 +84,33 @@ this.pound <- this.inherit("scripts/skills/skill", {
 			});
 		}
 
+		if (p.IsSpecializedInFlails)
+		{
+			ret.push({
+				id = 5,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "Hits to the head ignore an additional [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] of armor"
+			});
+		}
+		else
+		{
+			ret.push({
+				id = 5,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "Hits to the head ignore an additional [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] of armor"
+			});
+		}
+
 		ret.push({
-			id = 6,
+			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
 			text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] chance to stun on a hit"
 		});
 		ret.push({
-			id = 7,
+			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
 			text = "Ignores the bonus to Melee Defense granted by shields"
@@ -125,6 +144,21 @@ this.pound <- this.inherit("scripts/skills/skill", {
 		}
 
 		return success;
+	}
+
+	function onBeforeTargetHit( _skill, _targetEntity, _hitInfo )
+	{
+		if (_skill == this && _hitInfo.BodyPart == this.Const.BodyPart.Head)
+		{
+			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInFlails)
+			{
+				_hitInfo.DamageDirect += 0.2;
+			}
+			else
+			{
+				_hitInfo.DamageDirect += 0.1;
+			}
+		}
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )

@@ -2,6 +2,7 @@ this.golden_goose_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.golden_goose";
 		this.m.Name = "L\'Oie d\'Or";
 		this.m.Description = "Une petite statue d\'oie en or massif. Un petit oeuf d\'or émerge mystérieusement de la statue une fois par jour.";

@@ -2,7 +2,8 @@ this.miracle_drug_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "misc.miracle_drug_";
+		this.item.create();
+		this.m.ID = "misc.miracle_drug";
 		this.m.Name = "Miracle de l\'apothicaire";
 		this.m.Description = "Un remède puissant contre de nombreuses maladies et maux courants, pour réduire l\'inflammation et favoriser la guérison naturelle du corps.\n\nLes personnages traités avec ce médicament se remettront plus rapidement des blessures, tout comme s\'ils avaient été traités à un temple.";
 		this.m.Icon = "consumables/pills_01.png";

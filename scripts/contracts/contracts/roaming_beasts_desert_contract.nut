@@ -50,7 +50,7 @@ this.roaming_beasts_desert_contract <- this.inherit("scripts/contracts/contract"
 				this.World.Assets.addMoney(this.Contract.m.Payment.getInAdvance());
 				local r = this.Math.rand(1, 100);
 
-				if (r <= 40)
+				if (r <= 40 || this.World.getTime().Days <= 15 && r <= 80)
 				{
 					this.Flags.set("IsHyenas", true);
 				}

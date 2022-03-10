@@ -82,10 +82,5 @@ this.cursed_crystal_skull <- this.inherit("scripts/items/accessory/accessory", {
 		}
 	}
 
-	function onCombatStarted()
-	{
-		this.getContainer().getActor().setMaxMoraleState(this.Const.MoraleState.Steady);
-	}
-
 });
 

@@ -2,6 +2,7 @@ this.glowing_resin_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.glowing_resin";
 		this.m.Name = "Résine scintillante";
 		this.m.Description = "Ces éclats de résine ambrée ont une teinte orange clair. S\'il est fondu, le matériau constitue un adhésif puissant.";

@@ -9,7 +9,8 @@ this.negotiator_follower <- this.inherit("scripts/retinue/follower", {
 		this.m.Image = "ui/campfire/negotiator_01";
 		this.m.Cost = 3000;
 		this.m.Effects = [
-			"Permet de faire plus de cycles de négociations avec vos employeurs potentiels avant qu\'ils abandonnent, et ce sans nuire aux relations."
+			"Permet de faire plus de cycles de négociations avec vos employeurs potentiels avant qu\'ils abandonnent, et ce sans nuire aux relations.",
+			"Permet aux mauvaises relations de se stabiliser plus vite et aux bonnes relations de se dégrader moins vite"
 		];
 		this.m.Requirements = [
 			{
@@ -23,6 +24,8 @@ this.negotiator_follower <- this.inherit("scripts/retinue/follower", {
 	{
 		this.World.Assets.m.NegotiationAnnoyanceMult = 0.5;
 		this.World.Assets.m.AdvancePaymentCap = 0.75;
+		this.World.Assets.m.RelationDecayGoodMult = 0.9;
+		this.World.Assets.m.RelationDecayBadMult = 1.1;
 	}
 
 	function onNewDay()

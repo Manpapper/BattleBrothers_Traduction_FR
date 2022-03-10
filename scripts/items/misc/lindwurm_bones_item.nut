@@ -2,6 +2,7 @@ this.lindwurm_bones_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.lindwurm_bones";
 		this.m.Name = "Os de Lindwurm";
 		this.m.Description = "Les os du Lindwurm sont pour la plupart creux à l\'intérieur, ce qui en fait un trophée facile à transporter malgré leur taille.";

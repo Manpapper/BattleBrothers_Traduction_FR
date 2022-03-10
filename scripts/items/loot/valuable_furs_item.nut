@@ -2,6 +2,7 @@ this.valuable_furs_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.valuable_furs";
 		this.m.Name = "Fourrures de valeur";
 		this.m.Description = "Un paquet de fourrures et de peaux de valeur provenant de divers petits animaux. Un produit très recherché, surtout dans les grandes villes.";

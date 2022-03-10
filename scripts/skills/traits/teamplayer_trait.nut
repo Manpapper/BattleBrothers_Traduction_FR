@@ -34,7 +34,7 @@ this.teamplayer_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] de probabilité en moins de toucher un allié"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] de probabilité en moins de toucher un allié"
 			}
 		];
 	}

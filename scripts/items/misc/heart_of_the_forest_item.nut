@@ -2,6 +2,7 @@ this.heart_of_the_forest_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.heart_of_the_forest";
 		this.m.Name = "Cœur de la forêt";
 		this.m.Description = "Une partie de plante épineuse, ressemblant à un coeur humain.";

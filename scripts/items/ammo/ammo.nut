@@ -67,6 +67,7 @@ this.ammo <- this.inherit("scripts/items/item", {
 
 	function create()
 	{
+		this.item.create();
 		this.m.SlotType = this.Const.ItemSlot.Ammo;
 	}
 

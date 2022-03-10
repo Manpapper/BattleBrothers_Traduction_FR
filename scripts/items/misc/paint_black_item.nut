@@ -2,6 +2,7 @@ this.paint_black_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.paint_black";
 		this.m.Name = "Peinture noire";
 		this.m.Description = "Un seau de peinture noire. Peut être utilisé pour peindre de nombreux casques communs.";
@@ -11,7 +12,7 @@ this.paint_black_item <- this.inherit("scripts/items/item", {
 		this.m.IsDroppedAsLoot = true;
 		this.m.IsAllowedInBag = false;
 		this.m.IsUsable = true;
-		this.m.Value = 120;
+		this.m.Value = 75;
 	}
 
 	function getTooltip()

@@ -2,6 +2,7 @@ this.fountain_of_youth_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.bodily_reward";
 		this.m.Name = "Outre de jouvence";
 		this.m.Description = "Une outre en cuir remplie d\'un liquide sous un arbre étrange de forme humaine. Il a murmuré dans votre tête que vous devriez le boire pour guérir.";

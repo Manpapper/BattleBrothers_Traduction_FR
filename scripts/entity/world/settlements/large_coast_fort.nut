@@ -60,7 +60,8 @@ this.large_coast_fort <- this.inherit("scripts/entity/world/settlement", {
 			"squire_background",
 			"swordmaster_background",
 			"cripple_background",
-			"eunuch_background"
+			"eunuch_background",
+			"paladin_background"
 		];
 		this.m.UIDescription = "Cette citadelle massive protège un port de guerre et les routes commerciales environnantes";
 		this.m.Description = "Cette citadelle massive protège un port de guerre et les routes commerciales environnantes. C\'est un siège de pouvoir pour la noblesse et le foyer d\'une grande garnison.";

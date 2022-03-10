@@ -165,19 +165,19 @@ this.undead_outro_event <- this.inherit("scripts/events/event", {
 		if (this.World.Statistics.hasNews("crisis_undead_end"))
 		{
 			local brothers = this.World.getPlayerRoster().getAll();
-			local highest_hiretime = -9000.0;
-			local highest_hiretime_bro;
+			local most_days_with_company = -9000.0;
+			local most_days_with_company_bro;
 
 			foreach( bro in brothers )
 			{
-				if (bro.getHireTime() > highest_hiretime)
+				if (bro.getDaysWithCompany() > most_days_with_company)
 				{
-					highest_hiretime = bro.getHireTime();
-					highest_hiretime_bro = bro;
+					most_days_with_company = bro.getDaysWithCompany();
+					most_days_with_company_bro = bro;
 				}
 			}
 
-			this.m.Dude = highest_hiretime_bro;
+			this.m.Dude = most_days_with_company_bro;
 			this.m.Score = 6000;
 		}
 	}

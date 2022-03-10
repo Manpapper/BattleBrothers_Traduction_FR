@@ -2,6 +2,7 @@ this.legendary_sword_grip_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.legendary_sword_grip";
 		this.m.Name = "Pommeau d\'épée";
 		this.m.Description = "Une poignée d\'épée magistralement conçue recouverte de mystérieuses pierres bleues. Les pierres semblent avoir une lumière scintillante émergeant du plus profond de l\'intérieur. Peut-être que l\'épée pourrait être reforgée si vous aviez les deux parties.";

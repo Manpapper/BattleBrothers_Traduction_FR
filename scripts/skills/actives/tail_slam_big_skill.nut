@@ -90,7 +90,7 @@ this.tail_slam_big_skill <- this.inherit("scripts/skills/skill", {
 
 		if (applyEffect == 1)
 		{
-			if (_target.isNonCombatant())
+			if (_target.isNonCombatant() || _target.getCurrentProperties().IsImmuneToDaze)
 			{
 				return;
 			}

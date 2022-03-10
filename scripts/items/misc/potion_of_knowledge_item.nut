@@ -2,6 +2,7 @@ this.potion_of_knowledge_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.potion_of_knowledge";
 		this.m.Name = "Potion de connaissance";
 		this.m.Description = "On dit que la connaissance du monde est distillée dans cette potion. En la buvant, les leçons sont plus facilement apprises.";

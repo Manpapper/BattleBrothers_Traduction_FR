@@ -74,6 +74,11 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 	{
 		return this.m.Level;
 	}
+	
+	function setPerkPoints( _value )
+	{
+		this.m.PerkPoints = _value;
+	}
 
 	function getPerkPoints()
 	{
@@ -721,16 +726,9 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 			this.improveMood(1.5, "A rejoint une compagnie de mercenaire");
 		}
 
-		if (("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin().getID() == "scenario.manhunters")
+		if (("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin() != null)
 		{
-			if (this.getBackground().getID() != "background.slave")
-			{
-				this.getSkills().add(this.new("scripts/skills/actives/whip_slave_skill"));
-			}
-			else
-			{
-				this.getSprite("miniboss").setBrush("bust_miniboss_indebted");
-			}
+			this.World.Assets.getOrigin().onHired(this);
 		}
 
 		if (this.World.getPlayerRoster().getSize() >= 12)
@@ -759,6 +757,7 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 		this.m.CombatStats.Kills = 0;
 		this.m.CombatStats.XPGained = 0;
 		this.m.Skills.onCombatStarted();
+		this.m.Items.onCombatStarted();
 		this.m.Skills.update();
 		this.getAIAgent().getProperties().BehaviorMult[this.Const.AI.Behavior.ID.Retreat] = 0.0;
 	}
@@ -1179,12 +1178,22 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 
 		if (brothers.len() == 1)
 		{
+			if (this.getSkills().hasSkill("trait.oath_of_distinction"))
+			{
+				return;
+			}
+			
 			this.addXP(XPgroup);
 		}
 		else
 		{
 			foreach( bro in brothers )
 			{
+				if (bro.getSkills().hasSkill("trait.oath_of_distinction"))
+				{
+					return;
+				}
+				
 				bro.addXP(this.Math.max(1, this.Math.floor(XPgroup / brothers.len())));
 			}
 		}
@@ -1196,6 +1205,26 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 		{
 			return;
 		}
+		
+		if (_m == this.Const.MoraleState.Confident && ("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin().getID() == "scenario.anatomists")
+		{
+			return;
+		}
+
+		if (_m == this.Const.MoraleState.Fleeing && this.m.Skills.hasSkill("effects.ancient_priest_potion"))
+		{
+			return;
+		}
+
+		if (_m == this.Const.MoraleState.Fleeing && this.m.Skills.hasSkill("trait.oath_of_valor"))
+		{
+			return;
+		}
+
+		if (_m == this.Const.MoraleState.Confident && this.getMoraleState() != this.Const.MoraleState.Confident && this.isPlacedOnMap() && this.Time.getRound() >= 1 && ("State" in this.World) && this.World.State != null && this.World.Ambitions.hasActiveAmbition() && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_camaraderie")
+		{
+			this.World.Statistics.getFlags().increment("OathtakersBrosConfident");
+		}
 
 		this.actor.setMoraleState(_m);
 	}
@@ -1203,6 +1232,21 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 	function checkMorale( _change, _difficulty, _type = this.Const.MoraleCheckType.Default, _showIconBeforeMoraleIcon = "", _noNewLine = false )
 	{
 		if (_change > 0 && this.m.MoraleState == this.Const.MoraleState.Steady && this.m.Skills.hasSkill("trait.insecure"))
+		{
+			return false;
+		}
+		
+		if (_change > 0 && this.m.MoraleState == this.Const.MoraleState.Steady && ("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin().getID() == "scenario.anatomists")
+		{
+			return false;
+		}
+
+		if (_change < 0 && this.m.MoraleState == this.Const.MoraleState.Breaking && this.m.Skills.hasSkill("effects.ancient_priest_potion"))
+		{
+			return false;
+		}
+
+		if (_change < 0 && this.m.MoraleState == this.Const.MoraleState.Breaking && this.m.Skills.hasSkill("trait.oath_of_valor"))
 		{
 			return false;
 		}
@@ -1326,9 +1370,14 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new(perk.Script));
 		this.m.Skills.update();
 
-		if ((this.m.Level >= 11 || this.m.Level >= 7 && this.World.Assets.getOrigin().getID() == "scenario.manhunters" && this.getBackground().getID() == "background.slave") && _id == "perk.student")
+		if (this.m.Level >= 11 && _id == "perk.student")
 		{
 			++this.m.PerkPoints;
+		}
+		
+		if (("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin() != null)
+		{
+			this.World.Assets.getOrigin().onUnlockPerk(this, _id);
 		}
 
 		return true;
@@ -1390,9 +1439,14 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 				++this.m.PerkPoints;
 			}
 
-			if ((this.m.Level == 11 || this.m.Level == 7 && this.World.Assets.getOrigin().getID() == "scenario.manhunters" && this.getBackground().getID() == "background.slave") && this.m.Skills.hasSkill("perk.student"))
+			if (this.m.Level == 11 && this.m.Skills.hasSkill("perk.student"))
 			{
 				++this.m.PerkPoints;
+			}
+			
+			if (("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin() != null)
+			{
+				this.World.Assets.getOrigin().onUpdateLevel(this);
 			}
 
 			if (this.m.Level == 11)

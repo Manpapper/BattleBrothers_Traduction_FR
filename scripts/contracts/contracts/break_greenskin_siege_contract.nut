@@ -137,6 +137,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 
 				local c = party.getController();
 				c.getBehavior(this.Const.World.AI.Behavior.ID.Flee).setEnabled(false);
+				c.getBehavior(this.Const.World.AI.Behavior.ID.Attack).setEnabled(false);
 				local move = this.new("scripts/ai/world/orders/move_order");
 				move.setDestination(this.Contract.getOrigin().getTile());
 				c.addOrder(move);
@@ -215,6 +216,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 					}
 					else
 					{
+						this.Contract.m.Troops.getController().getBehavior(this.Const.World.AI.Behavior.ID.Attack).setEnabled(true);
 						this.Contract.setScreen("ArrivingAtTheSiege");
 						this.World.Contracts.showActiveContract();
 					}

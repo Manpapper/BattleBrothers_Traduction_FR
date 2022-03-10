@@ -63,7 +63,8 @@ this.medium_swamp_village <- this.inherit("scripts/entity/world/settlement", {
 			"witchhunter_background",
 			"adventurous_noble_background",
 			"disowned_noble_background",
-			"cripple_background"
+			"cripple_background",
+			"anatomist_background"
 		];
 
 		if (this.Const.DLC.Unhold)

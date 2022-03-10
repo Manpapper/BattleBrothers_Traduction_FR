@@ -85,7 +85,9 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 				this.Characters.push(_event.m.Callbrother.getImagePath());
 				this.Characters.push(_event.m.Other.getImagePath());
 				_event.m.Callbrother.addXP(200, false);
+				_event.m.Callbrother.updateLevel();
 				_event.m.Other.addXP(200, false);
+				_event.m.Other.updateLevel();
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/xp_received.png",

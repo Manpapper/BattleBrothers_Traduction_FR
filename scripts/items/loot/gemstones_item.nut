@@ -2,6 +2,7 @@ this.gemstones_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.gemstones";
 		this.m.Name = "Pierres précieuses";
 		this.m.Description = "Des pierres précieuses taillés de différentes formes. Devrait valoir beaucoup si vous pouvez trouver un acheteur.";

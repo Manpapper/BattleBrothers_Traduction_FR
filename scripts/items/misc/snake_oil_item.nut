@@ -2,6 +2,7 @@ this.snake_oil_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.snake_oil";
 		this.m.Name = "Huile de serpent";
 		this.m.Description = "Une mystérieuse concoction qui aide à lutter contre la chute des cheveux, la syphilis, la surdité, l\'impuissance, les éruptions cutanées, la variole et le bloc de l\'écrivain. Une vraie potion miracle si seulement vous y croyez. Peut être vendu partout pour une jolie somme.";

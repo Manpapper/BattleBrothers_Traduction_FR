@@ -2,6 +2,7 @@ this.ghoul_teeth_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.ghoul_teeth";
 		this.m.Name = "Crocs déchiquetés";
 		this.m.Description = "Une poignée de crocs déchiquetés pris sur un Nachzehrer. Infecté par la pourriture mais assez dur pour mâcher n\'importe quel os. Vous pourriez les vendre aux alchimistes sur la place du marché.";

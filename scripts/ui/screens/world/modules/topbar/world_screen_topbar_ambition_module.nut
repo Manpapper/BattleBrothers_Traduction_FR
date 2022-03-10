@@ -27,6 +27,11 @@ this.world_screen_topbar_ambition_module <- this.inherit("scripts/ui/screens/ui_
 		{
 			return;
 		}
+		
+		if (!this.World.Ambitions.getActiveAmbition().isCancelable())
+		{
+			return;
+		}
 
 		this.World.State.showDialogPopup("Annuler Ambition", "Annuler une ambition vous permettra d\'en choisir une nouvelle, mais votre estime en tant que chef en prendra un coup ce qui laissera vos hommes désappointés.\n\nÊtes vous sûr de vouloir annuler l\'ambition?", this.onCancelAmbition.bindenv(this), null);
 	}

@@ -129,6 +129,16 @@ this.charm_skill <- this.inherit("scripts/skills/skill", {
 				return false;
 			}
 
+			if (target.getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 50)
+			{
+				if (!_user.isHiddenToPlayer() && !target.isHiddenToPlayer())
+				{
+					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " resists being charmed thanks to his unnatural physiology");
+				}
+
+				return false;
+			}
+			
 			this.m.Slaves.push(target.getID());
 			local charmed = this.new("scripts/skills/effects/charmed_effect");
 			charmed.setMasterFaction(_user.getFaction() == this.Const.Faction.Player ? this.Const.Faction.PlayerAnimals : _user.getFaction());
@@ -144,7 +154,7 @@ this.charm_skill <- this.inherit("scripts/skills/skill", {
 		}.bindenv(this), this);
 	}
 
-	function onDeath()
+	function onDeath( _fatalityType )
 	{
 		foreach( id in this.m.Slaves )
 		{

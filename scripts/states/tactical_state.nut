@@ -41,6 +41,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 		StrategicProperties = null,
 		CombatResultRoster = null,
 		CombatResultLoot = null,
+		MaxPlayers = 0,
 		MaxHostiles = 0,
 		IsGameFinishable = null
 	},
@@ -590,7 +591,8 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 				}
 			}
 		}
-
+		
+		loot.extend(this.m.CombatResultLoot.getItems());
 		this.m.CombatResultLoot.assign(loot);
 		this.m.CombatResultLoot.sort();
 	}
@@ -1615,7 +1617,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 			}
 		}
 
-		if (this.m.LastTileHovered == null || this.m.LastTileHovered.ID != hoveredTile.ID && !this.isInCameraMovementMode())
+		if ((this.m.LastTileHovered == null || this.m.LastTileHovered.ID != hoveredTile.ID) && !this.isInCameraMovementMode())
 		{
 			this.Tactical.TurnSequenceBar.deselectEntity();
 
@@ -1877,6 +1879,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 				this.World.Contracts.onCombatVictory(this.m.StrategicProperties != null ? this.m.StrategicProperties.CombatID : "");
 				this.World.Events.onCombatVictory(this.m.StrategicProperties != null ? this.m.StrategicProperties.CombatID : "");
+				this.World.Statistics.getFlags().set("LastPlayersAtBattleStartCount", this.m.MaxPlayers);
 				this.World.Statistics.getFlags().set("LastEnemiesDefeatedCount", this.m.MaxHostiles);
 				this.World.Statistics.getFlags().set("LastCombatResult", 1);
 
@@ -1884,13 +1887,15 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 				{
 					this.World.Statistics.getFlags().increment("BeastsDefeated");
 				}
-
+				
+				this.World.Assets.getOrigin().onBattleWon(this.m.CombatResultLoot);
 				local playerRoster = this.World.getPlayerRoster().getAll();
 
 				foreach( bro in playerRoster )
 				{
 					if (bro.getPlaceInFormation() <= 17 && !bro.isPlacedOnMap() && bro.getFlags().get("Devoured") == true)
 					{
+						bro.getSkills().onDeath(this.Const.FatalityType.Devoured);
 						bro.onDeath(null, null, null, this.Const.FatalityType.Devoured);
 						this.World.getPlayerRoster().remove(bro);
 					}
@@ -1940,7 +1945,8 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 					if (bro.getPlaceInFormation() <= 17 && !bro.isPlacedOnMap() && bro.getFlags().get("Devoured") == true)
 					{
 						if (bro.isAlive())
-						{
+						{							
+							bro.getSkills().onDeath(this.Const.FatalityType.Devoured);
 							bro.onDeath(null, null, null, this.Const.FatalityType.Devoured);
 							this.World.getPlayerRoster().remove(bro);
 						}
@@ -2256,7 +2262,8 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 		{
 			hero.updateVisibilityForFaction();
 		}
-
+		
+		this.m.MaxPlayers = this.Math.max(this.m.MaxPlayers, heroes.len());
 		local pets = this.Tactical.Entities.getInstancesOfFaction(this.Const.Faction.PlayerAnimals);
 
 		foreach( pet in pets )
@@ -2659,8 +2666,6 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 	function main_menu_module_onFleePressed()
 	{
-		this.Time.clearEvents();
-
 		if (this.isScenarioMode() || this.m.StrategicProperties != null && this.m.StrategicProperties.IsFleeingProhibited)
 		{
 			this.Time.scheduleEvent(this.TimeUnit.Real, 300, this.flee.bindenv(this), null);

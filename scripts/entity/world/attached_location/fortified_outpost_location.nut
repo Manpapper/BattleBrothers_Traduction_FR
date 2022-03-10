@@ -121,6 +121,7 @@ this.fortified_outpost_location <- this.inherit("scripts/entity/world/attached_l
 		_list.push("deserter_background");
 		_list.push("sellsword_background");
 		_list.push("hedge_knight_background");
+		_list.push("paladin_background");
 	}
 
 	function onUpdateShopList( _id, _list )

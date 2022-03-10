@@ -2,6 +2,7 @@ this.petrified_scream_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.petrified_scream";
 		this.m.Name = "Cri pétrifié";
 		this.m.Description = "Un artefact étrange trouvé parmi les restes d\'un Alp. Transporter cela peut provoquer de mauvais rêves et de mauvais repos nocturnes.";

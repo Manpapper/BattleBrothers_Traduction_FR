@@ -128,7 +128,7 @@ this.cultist_background <- this.inherit("scripts/skills/backgrounds/character_ba
 
 		if (this.Math.rand(1, 100) <= 50)
 		{
-			tattoo_head.setBrush("tattoo_head_01");
+			tattoo_head.setBrush("tattoo_01_head");
 			tattoo_head.Visible = true;
 		}
 	}

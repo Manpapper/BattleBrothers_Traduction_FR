@@ -2,6 +2,7 @@ this.vampire_dust_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.vampire_dust";
 		this.m.Name = "Cendres chatoyantes";
 		this.m.Description = "Un petit tas de cendres chatoyant dans de nombreuses facettes de bleu. Il s\'agirait vraisemblablement des restes d\'une puissante créature mort-vivante, mais peu de gens croiraient une affirmation comme celle-ci.";

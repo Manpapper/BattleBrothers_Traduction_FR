@@ -236,8 +236,8 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		}
 
 		local currentTile = this.World.State.getPlayer().getTile();
-
-		if (this.World.Assets.getStash().getNumberOfEmptySlots() < 1)
+		
+		if (!this.World.Assets.getStash().hasEmptySlot())
 		{
 			return;
 		}

@@ -2,6 +2,7 @@ this.rainbow_scale_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.rainbow_scale";
 		this.m.Name = "Écaille arc-en-ciel";
 		this.m.Description = "Les serpents du désert ont parfois des écailles particulièrement colorées et brillantes incrustées dans leur peau chatoyante. Celles-ci sont recherchés par les bijoutiers et les chasseurs de trophées.";

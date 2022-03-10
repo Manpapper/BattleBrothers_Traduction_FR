@@ -186,7 +186,7 @@ this.sling_stone_skill <- this.inherit("scripts/skills/skill", {
 			local targetTile = _targetEntity.getTile();
 			local user = this.getContainer().getActor();
 
-			if (_bodyPart == this.Const.BodyPart.Head)
+			if (_bodyPart == this.Const.BodyPart.Head && !_targetEntity.getCurrentProperties().IsImmuneToDaze)
 			{
 				_targetEntity.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
 

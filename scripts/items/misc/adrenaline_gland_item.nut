@@ -2,6 +2,7 @@ this.adrenaline_gland_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.adrenaline_gland";
 		this.m.Name = "Glande d\'adrénaline";
 		this.m.Description = "La frénésie et la soif de sang d\'un Direwolf peuvent être attribuées aux substances produites par cette glande. Quelqu\'un, quelque part, en aura probablement l\'utilité.";

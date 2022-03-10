@@ -68,7 +68,8 @@ this.large_forest_fort <- this.inherit("scripts/entity/world/settlement", {
 			"squire_background",
 			"squire_background",
 			"swordmaster_background",
-			"cripple_background"
+			"cripple_background",
+			"paladin_background"
 		];
 
 		if (this.Const.DLC.Unhold)

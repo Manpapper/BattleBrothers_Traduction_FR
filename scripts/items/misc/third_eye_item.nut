@@ -2,6 +2,7 @@ this.third_eye_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.third_eye";
 		this.m.Name = "Troisième oeil";
 		this.m.Description = "Les Alps n\'ont pas d\'yeux, pourtant cet organe en forme d\'oeil peut être récupéré à l\'intérieur de leur crâne.";

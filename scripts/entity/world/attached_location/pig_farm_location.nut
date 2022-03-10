@@ -71,6 +71,7 @@ this.pig_farm_location <- this.inherit("scripts/entity/world/attached_location",
 		_list.push("farmhand_background");
 		_list.push("farmhand_background");
 		_list.push("farmhand_background");
+		_list.push("anatomist_background");
 	}
 
 	function onUpdateShopList( _id, _list )

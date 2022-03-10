@@ -43,6 +43,7 @@ this.skill <- {
 		IsStacking = false,
 		IsAttack = false,
 		IsWeaponSkill = false,
+		IsOffensiveToolSkill = false,
 		IsTargetingActor = true,
 		IsVisibleTileNeeded = true,
 		IsRanged = false,
@@ -410,8 +411,8 @@ this.skill <- {
 		];
 		local damage_regular_min = this.Math.floor(p.DamageRegularMin * p.DamageRegularMult * p.DamageTotalMult * (this.m.IsRanged ? p.RangedDamageMult : p.MeleeDamageMult) * p.DamageTooltipMinMult);
 		local damage_regular_max = this.Math.floor(p.DamageRegularMax * p.DamageRegularMult * p.DamageTotalMult * (this.m.IsRanged ? p.RangedDamageMult : p.MeleeDamageMult) * p.DamageTooltipMaxMult);
-		local damage_direct_min = this.Math.floor(damage_regular_min * this.Math.minf(1.0, p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd)));
-		local damage_direct_max = this.Math.floor(damage_regular_max * this.Math.minf(1.0, p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd)));
+		local damage_direct_min = this.Math.floor(damage_regular_min * this.Math.minf(1.0, p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd + (this.m.IsRanged ? p.DamageDirectRangedAdd : p.DamageDirectMeleeAdd))));
+		local damage_direct_max = this.Math.floor(damage_regular_max * this.Math.minf(1.0, p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd + (this.m.IsRanged ? p.DamageDirectRangedAdd : p.DamageDirectMeleeAdd))));
 		local damage_armor_min = this.Math.floor(p.DamageRegularMin * p.DamageArmorMult * p.DamageTotalMult * (this.m.IsRanged ? p.RangedDamageMult : p.MeleeDamageMult) * p.DamageTooltipMinMult);
 		local damage_armor_max = this.Math.floor(p.DamageRegularMax * p.DamageArmorMult * p.DamageTotalMult * (this.m.IsRanged ? p.RangedDamageMult : p.MeleeDamageMult) * p.DamageTooltipMaxMult);
 
@@ -421,7 +422,7 @@ this.skill <- {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] damage that ignores armor"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] de dégats qui ignore l'armure"
 			});
 		}
 		else if (this.m.DirectDamageMult > 0.0)
@@ -430,7 +431,7 @@ this.skill <- {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] damage to hitpoints, of which [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] can ignore armor"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] de dégats, desquels [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] peuvent ignorer l'armure"
 			});
 		}
 		else
@@ -439,7 +440,7 @@ this.skill <- {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + " damage to hitpoints[/color]"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + " de dégats[/color]"
 			});
 		}
 
@@ -449,7 +450,17 @@ this.skill <- {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_max + "[/color] damage to armor"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_max + "[/color] de dégats à l'armure"
+			});
+		}
+		
+		if (this.m.Container.getActor().getSkills().hasSkill("trait.oath_of_honor") && (this.m.IsWeaponSkill && this.m.IsRanged || this.m.IsOffensiveToolSkill))
+		{
+			ret.push({
+				id = 9,
+				type = "hint",
+				icon = "ui/tooltips/warning.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut être utilisé car ce personnage a prêté un serment interdisant l'utilisation d'armes ou d'outils.[/color]"
 			});
 		}
 
@@ -475,7 +486,7 @@ this.skill <- {
 
 	function isUsable()
 	{
-		return this.m.IsUsable && this.m.Container.getActor().getCurrentProperties().IsAbleToUseSkills && (!this.m.IsWeaponSkill || this.m.Container.getActor().getCurrentProperties().IsAbleToUseWeaponSkills) && !this.isHidden();
+		return this.m.IsUsable && this.m.Container.getActor().getCurrentProperties().IsAbleToUseSkills && (!this.m.IsWeaponSkill || this.m.Container.getActor().getCurrentProperties().IsAbleToUseWeaponSkills) && !this.isHidden() && !(this.m.Container.getActor().getSkills().hasSkill("trait.oath_of_honor") && (this.m.IsWeaponSkill && this.m.IsRanged || this.m.IsOffensiveToolSkill));
 	}
 
 	function isAffordable()
@@ -678,7 +689,7 @@ this.skill <- {
 		local critical = 1.0 + p.getHitchance(this.Const.BodyPart.Head) / 100.0 * (p.DamageAgainstMult[this.Const.BodyPart.Head] - 1.0);
 		local armor = _target.getArmor(this.Const.BodyPart.Head) * (p.getHitchance(this.Const.BodyPart.Head) / 100.0) + _target.getArmor(this.Const.BodyPart.Body) * (this.Math.max(0, p.getHitchance(this.Const.BodyPart.Body)) / 100.0);
 		local armorDamage = this.Math.min(armor, p.getArmorDamageAverage());
-		local directDamage = this.Math.max(0, p.getRegularDamageAverage() * (p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd)) * critical - (p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd) < 1.0 ? (armor - armorDamage) * this.Const.Combat.ArmorDirectDamageMitigationMult : 0));
+		local directDamage = this.Math.max(0, p.getRegularDamageAverage() * (p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd + (this.m.IsRanged ? p.DamageDirectRangedAdd : p.DamageDirectMeleeAdd))) * critical - (p.DamageDirectMult * (this.m.DirectDamageMult + p.DamageDirectAdd + (this.m.IsRanged ? p.DamageDirectRangedAdd : p.DamageDirectMeleeAdd)) < 1.0 ? (armor - armorDamage) * this.Const.Combat.ArmorDirectDamageMitigationMult : 0));
 		local hitpointDamage = this.Math.max(0, p.getRegularDamageAverage() * critical - directDamage - armorDamage);
 		armorDamage = armorDamage * (d.DamageReceivedArmorMult * d.DamageReceivedTotalMult);
 		directDamage = directDamage * (d.DamageReceivedDirectMult * d.DamageReceivedTotalMult);
@@ -770,7 +781,11 @@ this.skill <- {
 	{
 	}
 
-	function onDeath()
+	function onDeath( _fatalityType )
+	{
+	}
+
+	function onDismiss()
 	{
 	}
 
@@ -998,7 +1013,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/positive.png",
-				text = "Surrounded"
+				text = "Entouré"
 			});
 		}
 
@@ -1006,7 +1021,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/positive.png",
-				text = "Height advantage"
+				text = "Avantage de la hauteur"
 			});
 		}
 
@@ -1014,7 +1029,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/positive.png",
-				text = "Target on bad terrain"
+				text = "Cible sur un terrain défavorable"
 			});
 		}
 
@@ -1026,8 +1041,23 @@ this.skill <- {
 			{
 				ret.push({
 					icon = "ui/tooltips/positive.png",
-					text = "Fast Adaption"
+					text = "Adaptation Rapide"
 				});
+			}
+
+			local oath = this.m.Container.getSkillByID("trait.oath_of_wrath");
+
+			if (oath != null)
+			{
+				local main = user.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
+
+				if (main != null && main.isItemType(this.Const.Items.ItemType.MeleeWeapon) && main.isItemType(this.Const.Items.ItemType.TwoHanded || user.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand) == null && !user.getItem().hasBlockedSlot(this.Const.ItemSlot.Offhand)))
+				{
+					ret.push({
+						icon = "ui/tooltips/positive.png",
+						text = "Serment de la colère"
+					});
+				}
 			}
 		}
 
@@ -1035,7 +1065,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Too close"
+				text = "Trop proche"
 			});
 		}
 		else if (this.m.HitChanceBonus < 0)
@@ -1050,7 +1080,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Height disadvantage"
+				text = "Désavantage de la hauteur"
 			});
 		}
 
@@ -1058,7 +1088,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "On bad terrain"
+				text = "Sur un terrain défavorable"
 			});
 		}
 
@@ -1068,7 +1098,7 @@ this.skill <- {
 			{
 				ret.push({
 					icon = "ui/tooltips/negative.png",
-					text = "Armed with shield"
+					text = "Armé d'un bouclier"
 				});
 			}
 		}
@@ -1079,7 +1109,7 @@ this.skill <- {
 			{
 				ret.push({
 					icon = "ui/tooltips/negative.png",
-					text = "Shieldwall"
+					text = "Mur de Bouclier"
 				});
 			}
 		}
@@ -1098,7 +1128,7 @@ this.skill <- {
 			{
 				ret.push({
 					icon = "ui/tooltips/negative.png",
-					text = "Distance of " + _targetTile.getDistanceTo(user.getTile())
+					text = "Distance de " + _targetTile.getDistanceTo(user.getTile())
 				});
 			}
 
@@ -1110,26 +1140,26 @@ this.skill <- {
 				{
 					ret.push({
 						icon = "ui/tooltips/negative.png",
-						text = "Line of fire blocked"
+						text = "Ligne de tir bloquée"
 					});
 				}
 			}
 		}
 
-		if (this.m.IsAttack && _targetTile.IsOccupiedByActor && (targetEntity.getFlags().has("skeleton") || targetEntity.getSkills().hasSkill("racial.golem")))
+		if (this.m.IsAttack && _targetTile.IsOccupiedByActor && targetEntity.getFlags().has("skeleton"))
 		{
 			if (this.m.IsRanged)
 			{
 				ret.push({
 					icon = "ui/tooltips/negative.png",
-					text = "Resistance against ranged weapons"
+					text = "Résistance aux armes à distance"
 				});
 			}
 			else if (this.m.ID == "actives.puncture" || this.m.ID == "actives.thrust" || this.m.ID == "actives.stab" || this.m.ID == "actives.deathblow" || this.m.ID == "actives.impale" || this.m.ID == "actives.rupture" || this.m.ID == "actives.prong" || this.m.ID == "actives.lunge")
 			{
 				ret.push({
 					icon = "ui/tooltips/negative.png",
-					text = "Resistance against piercing attacks"
+					text = "Résistance aux attaques perforantes"
 				});
 			}
 		}
@@ -1138,7 +1168,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Immune to stun"
+				text = "Immunisé contre les étourdissements"
 			});
 		}
 
@@ -1146,7 +1176,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Immune to being rooted"
+				text = "Immunisé contre l'enracinement"
 			});
 		}
 
@@ -1154,7 +1184,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Immune to being disarmed"
+				text = "Immunisé contre le désarmement"
 			});
 		}
 
@@ -1162,7 +1192,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Immune to being knocked back or hooked"
+				text = "Immunisé contre les renversements ou les crochets."
 			});
 		}
 
@@ -1170,7 +1200,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Nighttime"
+				text = "La nuit"
 			});
 		}
 
@@ -1717,7 +1747,7 @@ this.skill <- {
 		local damageArmor = this.Math.rand(_info.Properties.DamageRegularMin, _info.Properties.DamageRegularMax) * _info.Properties.DamageArmorMult;
 		damageRegular = this.Math.max(0, damageRegular + _info.DistanceToTarget * _info.Properties.DamageAdditionalWithEachTile);
 		damageArmor = this.Math.max(0, damageArmor + _info.DistanceToTarget * _info.Properties.DamageAdditionalWithEachTile);
-		local damageDirect = this.Math.minf(1.0, _info.Properties.DamageDirectMult * (this.m.DirectDamageMult + _info.Properties.DamageDirectAdd));
+		local damageDirect = this.Math.minf(1.0, _info.Properties.DamageDirectMult * (this.m.DirectDamageMult + _info.Properties.DamageDirectAdd + (this.m.IsRanged ? _info.Properties.DamageDirectRangedAdd : _info.Properties.DamageDirectMeleeAdd)));
 		local injuries;
 
 		if (this.m.InjuriesOnBody != null && bodyPart == this.Const.BodyPart.Body)

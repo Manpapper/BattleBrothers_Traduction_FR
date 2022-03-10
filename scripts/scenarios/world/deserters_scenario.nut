@@ -226,5 +226,15 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		}, null);
 	}
 
+	function onGetBackgroundTooltip( _background, _tooltip )
+	{
+		_tooltip.push({
+			id = 16,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = "Agit toujours en premier lors du tout premier tour du combat."
+		});
+	}
+
 });
 

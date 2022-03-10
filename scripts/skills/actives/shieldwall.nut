@@ -79,6 +79,11 @@ this.shieldwall <- this.inherit("scripts/skills/skill", {
 		return this.skill.isUsable() && !this.getContainer().hasSkill("effects.shieldwall");
 	}
 
+	function onAfterUpdate( _properties )
+	{
+		this.m.FatigueCostMult = _properties.IsProficientWithShieldWall || _properties.IsProficientWithShieldSkills ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+	}
+
 	function onVerifyTarget( _originTile, _targetTile )
 	{
 		return true;

@@ -2,6 +2,7 @@ this.ancient_amber_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.ancient_amber";
 		this.m.Name = "Ambre antique";
 		this.m.Description = "Les schrats particulièrement âgés font pousser de petits éclats d\'ambre extrêmement pur sur leur écorce. Ceux-ci se vendent à un prix assez élevé à un commerçant.";

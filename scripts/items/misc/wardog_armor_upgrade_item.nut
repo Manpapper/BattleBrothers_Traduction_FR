@@ -2,6 +2,7 @@ this.wardog_armor_upgrade_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.wardog_armor_upgrade";
 		this.m.Name = "Armure de chien de garde";
 		this.m.Description = "Un simple manteau de cuir qui peut être enfilé par n\'importe quel chien de garde pour lui donner une certaine protection au combat.";

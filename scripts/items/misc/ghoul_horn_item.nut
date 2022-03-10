@@ -2,6 +2,7 @@ this.ghoul_horn_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.ghoul_horn";
 		this.m.Name = "Corne de Nachzehrer";
 		this.m.Description = "Les nachzehrers peuvent faire pousser des cornes impressionnantes, qui à leur tour font des trophées impressionnants.";

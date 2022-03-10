@@ -926,7 +926,14 @@ this.tooltip_events <- {
 
 			if (statusEffect != null)
 			{
-				return statusEffect.getTooltip();
+				local ret = statusEffect.getTooltip();
+
+				if (statusEffect.isType(this.Const.SkillType.Background) && ("State" in this.World) && this.World.State != null)
+				{
+					this.World.Assets.getOrigin().onGetBackgroundTooltip(statusEffect, ret);
+				}
+
+				return ret;
 			}
 		}
 
@@ -1378,12 +1385,17 @@ this.tooltip_events <- {
 			if (this.World.Ambitions.hasActiveAmbition())
 			{
 				local ret = this.World.Ambitions.getActiveAmbition().getButtonTooltip();
-				ret.push({
-					id = 10,
-					type = "hint",
-					icon = "ui/icons/mouse_right_button.png",
-					text = "Annuler l\'Ambition"
-				});
+
+				if (this.World.Ambitions.getActiveAmbition().isCancelable())
+				{
+					ret.push({
+						id = 10,
+						type = "hint",
+						icon = "ui/icons/mouse_right_button.png",
+						text = "Annuler AMbition"
+					});
+				}
+
 				return ret;
 			}
 			else
@@ -2562,7 +2574,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Attendre le tour (Spacebar)"
+					text = "Attendre le tour (Espace, FIN)"
 				},
 				{
 					id = 2,
@@ -3961,6 +3973,38 @@ this.tooltip_events <- {
 			{
 				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]This DLC is missing. It\'s available for purchase on Steam and GOG![/color]";
 			}
+			
+			ret.push({
+				id = 1,
+				type = "hint",
+				icon = "ui/icons/mouse_left_button.png",
+				text = "Open store page in browser"
+			});
+			return ret;
+
+		case "dlc_8":
+			local ret = [
+				{
+					id = 1,
+					type = "title",
+					text = "Of Flesh and Faith"
+				},
+				{
+					id = 2,
+					type = "description",
+					text = "The free Of Flesh and Faith DLC adds two new and very unique origins for you to play as: The Anatomists and the Oathtakers. In addition, there\'s two new banners, new equipment, new backgrounds to hire and lots of new events."
+				}
+			];
+
+			if (this.Const.DLC.Paladins == true)
+			{
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]This DLC has been installed.[/color]";
+			}
+			else
+			{
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]This DLC is missing. It\'s available for free on Steam and GOG![/color]";
+			}
+
 
 			ret.push({
 				id = 1,

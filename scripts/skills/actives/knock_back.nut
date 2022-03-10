@@ -72,6 +72,16 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 			});
 		}
 
+		if (this.getContainer().getActor().getSkills().hasSkill("trait.oath_of_fortification"))
+		{
+			ret.push({
+				id = 7,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] possibilité de tituber sur en touchant"
+			});
+		}
+
 		return ret;
 	}
 
@@ -114,6 +124,11 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 		}
 
 		return null;
+	}
+
+	function onAfterUpdate( _properties )
+	{
+		this.m.FatigueCostMult = _properties.IsProficientWithShieldSkills ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 	}
 
 	function onVerifyTarget( _originTile, _targetTile )
@@ -169,6 +184,16 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 		skills.removeByID("effects.shieldwall");
 		skills.removeByID("effects.spearwall");
 		skills.removeByID("effects.riposte");
+
+		if (_user.getSkills().hasSkill("trait.oath_of_fortification") && _targetTile.IsOccupiedByActor && !target.isNonCombatant())
+		{
+			target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+
+			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
+			{
+				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has staggered " + this.Const.UI.getColorizedEntityName(target) + " for one turn");
+			}
+		}
 
 		if (this.m.SoundOnHit.len() != 0)
 		{

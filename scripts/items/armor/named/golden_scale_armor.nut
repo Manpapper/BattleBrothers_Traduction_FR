@@ -22,9 +22,9 @@ this.golden_scale_armor <- this.inherit("scripts/items/armor/named/named_armor",
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.Value = 8000;
-		this.m.Condition = 230;
-		this.m.ConditionMax = 230;
-		this.m.StaminaModifier = -30;
+		this.m.Condition = 240;
+		this.m.ConditionMax = 240;
+		this.m.StaminaModifier = -28;
 		this.randomizeValues();
 	}
 

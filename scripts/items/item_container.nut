@@ -965,6 +965,27 @@ this.item_container <- {
 
 		this.m.IsUpdating = false;
 	}
+	
+	function onCombatStarted()
+	{
+		this.m.IsUpdating = true;
+
+		for( local i = 0; i < this.Const.ItemSlot.COUNT; i = ++i )
+		{
+			for( local j = 0; j < this.m.Items[i].len(); j = ++j )
+			{
+				if (this.m.Items[i][j] == null || this.m.Items[i][j] == -1)
+				{
+				}
+				else
+				{
+					this.m.Items[i][j].onCombatStarted();
+				}
+			}
+		}
+
+		this.m.IsUpdating = false;
+	}
 
 	function onCombatFinished()
 	{

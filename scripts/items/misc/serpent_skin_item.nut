@@ -2,6 +2,7 @@ this.serpent_skin_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.serpent_skin";
 		this.m.Name = "Peau de serpent";
 		this.m.Description = "La peau écailleuse d\'un grand serpent. Un artisan qualifié pourrait en faire quelque chose d\'utile.";

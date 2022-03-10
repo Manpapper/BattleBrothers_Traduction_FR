@@ -64,7 +64,8 @@ this.large_tundra_village <- this.inherit("scripts/entity/world/settlement", {
 			"disowned_noble_background",
 			"raider_background",
 			"sellsword_background",
-			"swordmaster_background"
+			"swordmaster_background",
+			"anatomist_background"
 		];
 		this.m.UIDescription = "Une grande ville et un centre commercial entourés de la toundra stérile";
 		this.m.Description = "Entourée de toundra stérile, cette grande ville a perduré en tant que centre commercial important et foyer de penseurs et de beaux-arts.";

@@ -72,7 +72,8 @@ this.large_farming_village <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background",
 			"sellsword_background",
 			"squire_background",
-			"swordmaster_background"
+			"swordmaster_background",
+			"anatomist_background"
 		];
 		this.m.UIDescription = "Une grande ville prospère grâce au commerce et à l\'agriculture.";
 		this.m.Description = "Une grande ville entourée de prairies, de vergers et de champs verdoyants. Les stocks de nourriture sont généralement remplis à ras bord.";

@@ -7,15 +7,6 @@ this.starting_scenario <- {
 		Order = 0,
 		IsFixedLook = false
 	},
-	function isFixedLook()
-	{
-		return this.m.IsFixedLook;
-	}
-
-	function isDroppedAsLoot( _item )
-	{
-		return false;
-	}
 
 	function getID()
 	{
@@ -36,6 +27,21 @@ this.starting_scenario <- {
 	{
 		return this.m.Difficulty;
 	}
+	
+	function getOrder()
+	{
+		return this.m.Order;
+	}
+
+	function isFixedLook()
+	{
+		return this.m.IsFixedLook;
+	}
+
+	function isDroppedAsLoot( _item )
+	{
+		return false;
+	}
 
 	function getDifficultyForUI()
 	{
@@ -52,11 +58,6 @@ this.starting_scenario <- {
 		}
 
 		return "difficulty_unknown";
-	}
-
-	function getOrder()
-	{
-		return this.m.Order;
 	}
 
 	function isValid()
@@ -83,10 +84,38 @@ this.starting_scenario <- {
 	function onUpdateDraftList( _list )
 	{
 	}
+	
+	function onHired( _bro )
+	{
+	}
+
+	function onActorKilled( _actor, _killer, _combatID )
+	{
+	}
+
+	function onBattleWon( _combatLoot )
+	{
+	}
 
 	function onCombatFinished()
 	{
 		return true;
+	}
+	
+	function onContractFinished( _contractType, _cancelled )
+	{
+	}
+
+	function onUnlockPerk( _bro, _perkID )
+	{
+	}
+
+	function onUpdateLevel( _bro )
+	{
+	}
+
+	function onGetBackgroundTooltip( _background, _tooltip )
+	{
 	}
 
 };

@@ -79,11 +79,23 @@ this.injury <- this.inherit("scripts/skills/skill", {
 			mint = this.Math.max(1, mint - 1);
 			maxt = this.Math.max(1, maxt - 1);
 		}
+		
+		if (this.getContainer().getActor().getSkills().hasSkill("effects.nachzehrer_potion"))
+		{
+			mint = this.Math.max(1, mint - 1);
+			maxt = this.Math.max(1, maxt - 1);
+		}
 
 		return {
 			Min = mint,
 			Max = maxt
 		};
+	}
+
+	function addHealingTime( days )
+	{
+		this.m.HealingTimeMin = this.Math.max(1, this.m.HealingTimeMin + days);
+		this.m.HealingTimeMax = this.Math.max(this.m.HealingTimeMin + 1, this.m.HealingTimeMax + days);
 	}
 
 	function create()
@@ -144,6 +156,15 @@ this.injury <- this.inherit("scripts/skills/skill", {
 				type = "hint",
 				icon = "ui/icons/warning.png",
 				text = "Ne se soigenra pas car vous n\'avez plus de ressources médicales"
+			});
+		}
+		else if (this.getContainer().getActor().getSkills().hasSkill("trait.oath_of_sacrifice") && this.m.IsHealingMentioned)
+		{
+			_tooltip.push({
+				id = 7,
+				type = "hint",
+				icon = "ui/icons/warning.png",
+				text = "Ne guérira pas parce que ce personnage a prêté un serment de sacrifice."
 			});
 		}
 		else
@@ -243,7 +264,7 @@ this.injury <- this.inherit("scripts/skills/skill", {
 
 	function onNewDay()
 	{
-		if (this.World.Assets.getMedicine() >= this.Const.World.Assets.MedicinePerInjuryDay || !this.m.IsHealingMentioned)
+		if (!(this.getContainer().getActor().getSkills().hasSkill("trait.oath_of_sacrifice") && this.m.IsTreatable) && (this.World.Assets.getMedicine() >= this.Const.World.Assets.MedicinePerInjuryDay || !this.m.IsHealingMentioned))
 		{
 			if (this.m.IsHealingMentioned)
 			{
@@ -256,6 +277,12 @@ this.injury <- this.inherit("scripts/skills/skill", {
 			local maxTime = this.m.HealingTimeMax * (this.m.IsTreated ? 0.5 : 1.0);
 
 			if (this.World.Retinue.hasFollower("follower.surgeon"))
+			{
+				minTime = this.Math.max(1, minTime - 1);
+				maxTime = this.Math.max(1, maxTime - 1);
+			}
+			
+			if (this.getContainer().getActor().getSkills().hasSkill("effects.nachzehrer_potion"))
 			{
 				minTime = this.Math.max(1, minTime - 1);
 				maxTime = this.Math.max(1, maxTime - 1);
@@ -342,6 +369,8 @@ this.injury <- this.inherit("scripts/skills/skill", {
 	{
 		_out.writeF32(this.m.TimeApplied);
 		_out.writeBool(this.m.IsTreated);
+		_out.writeU32(this.m.HealingTimeMin);
+		_out.writeU32(this.m.HealingTimeMax);
 		_out.writeBool(false);
 	}
 
@@ -351,6 +380,13 @@ this.injury <- this.inherit("scripts/skills/skill", {
 		this.m.IsShownOutOfCombat = true;
 		this.m.TimeApplied = _in.readF32();
 		this.m.IsTreated = _in.readBool();
+		
+		if (_in.getMetaData().getVersion() >= 64)
+		{
+			this.m.HealingTimeMin = _in.readU32();
+			this.m.HealingTimeMax = _in.readU32();
+		}
+
 		_in.readBool();
 	}
 

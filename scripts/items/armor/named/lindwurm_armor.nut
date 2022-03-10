@@ -14,14 +14,14 @@ this.lindwurm_armor <- this.inherit("scripts/items/armor/named/named_armor", {
 			"Wurmscales",
 			"Coat of the Lindwurm"
 		];
-		this.m.Variant = 82;
+		this.m.Variant = 113;
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.Value = 7500;
-		this.m.Condition = 300;
-		this.m.ConditionMax = 300;
-		this.m.StaminaModifier = -36;
+		this.m.Condition = 210;
+		this.m.ConditionMax = 210;
+		this.m.StaminaModifier = -26;
 		this.randomizeValues();
 	}
 

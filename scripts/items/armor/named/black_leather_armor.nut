@@ -22,9 +22,9 @@ this.black_leather_armor <- this.inherit("scripts/items/armor/named/named_armor"
 		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.InventorySound = this.Const.Sound.ClothEquip;
 		this.m.Value = 2000;
-		this.m.Condition = 110;
-		this.m.ConditionMax = 110;
-		this.m.StaminaModifier = -11;
+		this.m.Condition = 115;
+		this.m.ConditionMax = 115;
+		this.m.StaminaModifier = -12;
 		this.randomizeValues();
 	}
 

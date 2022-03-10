@@ -222,11 +222,6 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		return this.Math.round(this.m.CurrentProperties.Initiative * (this.m.CurrentProperties.InitiativeMult >= 0 ? this.m.CurrentProperties.InitiativeMult : 1.0 / this.m.CurrentProperties.InitiativeMult) - this.m.Fatigue * this.m.CurrentProperties.FatigueToInitiativeRate - this.Math.max(0, this.m.BaseProperties.Stamina - this.m.CurrentProperties.Stamina));
 	}
 
-	function getTurnOrderInitiative()
-	{
-		return (this.getInitiative() + this.getCurrentProperties().InitiativeForTurnOrderAdditional) * this.getCurrentProperties().InitiativeForTurnOrderMult * (this.isWaitActionSpent() ? this.getCurrentProperties().InitiativeAfterWaitMult : 1.0);
-	}
-
 	function getXPValue()
 	{
 		return this.m.XP;
@@ -235,6 +230,11 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 	function getLevel()
 	{
 		return 1;
+	}
+	
+	function addXP( _xp )
+	{
+		this.m.XP += _xp;
 	}
 
 	function getHitpointsState()
@@ -645,6 +645,18 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 			arrow.fadeOutAndHide(100);
 		}
 	}
+	
+	function getTurnOrderInitiative()
+	{
+		local ret = (this.getInitiative() + this.getCurrentProperties().InitiativeForTurnOrderAdditional) * this.getCurrentProperties().InitiativeForTurnOrderMult;
+
+		if (this.isWaitActionSpent())
+		{
+			ret = ret * (ret >= 0 ? this.getCurrentProperties().InitiativeAfterWaitMult : 1.0 / this.getCurrentProperties().InitiativeAfterWaitMult);
+		}
+
+		return this.Math.floor(ret);
+	}
 
 	function raiseRootsFromGround( _frontBrush, _backBrush )
 	{
@@ -857,6 +869,11 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 	function updateVisibilityForFaction()
 	{
+		if (!this.isAlive())
+		{
+			return;
+		}
+		
 		this.updateVisibility(this.getTile(), this.m.CurrentProperties.getVision(), this.getFaction());
 
 		if (this.getFaction() == this.Const.Faction.PlayerAnimals)
@@ -896,7 +913,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 		if (!this.m.CurrentProperties.IsImmuneToSurrounding)
 		{
-			malus = _attackingEntity != null ? this.Math.max(0, _attackingEntity.getCurrentProperties().SurroundedBonus - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount() : this.Math.max(0, 5 - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount();
+			malus = _attackingEntity != null ? this.Math.max(0, _attackingEntity.getCurrentProperties().SurroundedBonus * _attackingEntity.getCurrentProperties().SurroundedBonusMult - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount() : this.Math.max(0, 5 - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount();
 		}
 
 		if (_skill.isRanged())
@@ -1413,7 +1430,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 		if (_skill != null && !_skill.isRanged())
 		{
-			this.m.Fatigue = this.Math.min(this.getFatigueMax(), this.Math.round(this.m.Fatigue + this.Const.Combat.FatigueLossOnBeingMissed * this.m.CurrentProperties.FatigueEffectMult));
+			this.m.Fatigue = this.Math.min(this.getFatigueMax(), this.Math.round(this.m.Fatigue + this.Const.Combat.FatigueLossOnBeingMissed * this.m.CurrentProperties.FatigueEffectMult * this.m.CurrentProperties.FatigueLossOnAnyAttackMult));
 		}
 
 		this.m.Skills.onMissed(_attacker, _skill);
@@ -1456,7 +1473,9 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		{
 			dmgMult = dmgMult * (_skill.isRanged() ? p.DamageReceivedRangedMult : p.DamageReceivedMeleeMult);
 		}
-
+		
+		_hitInfo.DamageRegular -= p.DamageRegularReduction;
+		_hitInfo.DamageArmor -= p.DamageArmorReduction;
 		_hitInfo.DamageRegular *= p.DamageReceivedRegularMult * dmgMult;
 		_hitInfo.DamageArmor *= p.DamageReceivedArmorMult * dmgMult;
 		local armor = 0;
@@ -1471,7 +1490,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		}
 
 		_hitInfo.DamageFatigue *= p.FatigueEffectMult;
-		this.m.Fatigue = this.Math.min(this.getFatigueMax(), this.Math.round(this.m.Fatigue + _hitInfo.DamageFatigue * p.FatigueReceivedPerHitMult));
+		this.m.Fatigue = this.Math.min(this.getFatigueMax(), this.Math.round(this.m.Fatigue + _hitInfo.DamageFatigue * p.FatigueReceivedPerHitMult * this.m.CurrentProperties.FatigueLossOnAnyAttackMult));
 		local damage = 0;
 		damage = damage + this.Math.maxf(0.0, _hitInfo.DamageRegular * _hitInfo.DamageDirect * p.DamageReceivedDirectMult - armor * this.Const.Combat.ArmorDirectDamageMitigationMult);
 
@@ -1514,14 +1533,26 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 		if (this.m.Hitpoints <= 0)
 		{
-			local skill = this.m.Skills.getSkillByID("perk.nine_lives");
+			local lorekeeperPotionEffect = this.m.Skills.getSkillByID("effects.lorekeeper_potion");
 
-			if (skill != null && (!skill.isSpent() || skill.getLastFrameUsed() == this.Time.getFrame()))
+			if (lorekeeperPotionEffect != null && (!lorekeeperPotionEffect.isSpent() || lorekeeperPotionEffect.getLastFrameUsed() == this.Time.getFrame()))
 			{
 				this.getSkills().removeByType(this.Const.SkillType.DamageOverTime);
-				this.m.Hitpoints = this.Math.rand(5, 10);
-				skill.setSpent(true);
-				this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + " a neuf vies !");
+				this.m.Hitpoints = this.getHitpointsMax();
+				lorekeeperPotionEffect.setSpent(true);
+				this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + " renaît par le pouvoir du Lorekeeper!");
+			}
+			else
+			{
+				local nineLivesSkill = this.m.Skills.getSkillByID("perk.nine_lives");
+
+				if (nineLivesSkill != null && (!nineLivesSkill.isSpent() || nineLivesSkill.getLastFrameUsed() == this.Time.getFrame()))
+				{
+					this.getSkills().removeByType(this.Const.SkillType.DamageOverTime);
+					this.m.Hitpoints = this.Math.rand(11, 15);
+					nineLivesSkill.setSpent(true);
+					this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + " a neuf vies!");
+				}
 			}
 		}
 
@@ -1647,6 +1678,11 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 						if (this.isPlayerControlled() && this.isKindOf(this, "player"))
 						{
 							this.worsenMood(this.Const.MoodChange.Injury, "A subi une blessure");
+							
+							if (("State" in this.World) && this.World.State != null && this.World.Ambitions.hasActiveAmbition() && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_sacrifice")
+							{
+								this.World.Statistics.getFlags().increment("OathtakersInjuriesSuffered");
+							}
 						}
 
 						if (this.isPlayerControlled() || !this.isHiddenToPlayer())
@@ -1676,7 +1712,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 				this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + "\'s " + this.Const.Strings.BodyPartName[_hitInfo.BodyPart] + " is hit for [b]" + this.Math.floor(damage) + "[/b] damage");
 			}
 
-			if (this.m.MoraleState != this.Const.MoraleState.Ignore && damage > this.Const.Morale.OnHitMinDamage && this.getCurrentProperties().IsAffectedByLosingHitpoints)
+			if (this.m.MoraleState != this.Const.MoraleState.Ignore && damage >= this.Const.Morale.OnHitMinDamage && this.getCurrentProperties().IsAffectedByLosingHitpoints)
 			{
 				if (!this.isPlayerControlled() || !this.m.Skills.hasSkill("effects.berserker_mushrooms"))
 				{
@@ -2908,6 +2944,11 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		local oldMoraleState = this.m.MoraleState;
 		this.m.MoraleState = this.Math.min(this.Const.MoraleState.Confident, this.Math.max(0, this.m.MoraleState + _change));
 		this.m.FleeingRounds = 0;
+		
+		if (this.m.MoraleState == this.Const.MoraleState.Confident && oldMoraleState != this.Const.MoraleState.Confident && ("State" in this.World) && this.World.State != null && this.World.Ambitions.hasActiveAmbition() && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_camaraderie")
+		{
+			this.World.Statistics.getFlags().increment("OathtakersBrosConfident");
+		}
 
 		if (oldMoraleState == this.Const.MoraleState.Fleeing && this.m.IsActingEachTurn)
 		{
@@ -3302,7 +3343,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 		local myTile = this.isPlacedOnMap() ? this.getTile() : null;
 		local tile = this.findTileToSpawnCorpse(_killer);
-		this.m.Skills.onDeath();
+		this.m.Skills.onDeath(_fatalityType);
 		this.onDeath(_killer, _skill, tile, _fatalityType);
 
 		if (!this.Tactical.State.isFleeing() && _killer != null)
@@ -3394,7 +3435,8 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		{
 			this.World.Contracts.onActorKilled(this, _killer, this.Tactical.State.getStrategicProperties().CombatID);
 			this.World.Events.onActorKilled(this, _killer, this.Tactical.State.getStrategicProperties().CombatID);
-
+			this.World.Assets.getOrigin().onActorKilled(this, _killer, this.Tactical.State.getStrategicProperties().CombatID);
+			
 			if (this.Tactical.State.getStrategicProperties() != null && this.Tactical.State.getStrategicProperties().IsArenaMode)
 			{
 				if (_killer == null || _killer.getID() == this.getID())

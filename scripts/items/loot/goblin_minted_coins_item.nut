@@ -2,6 +2,7 @@ this.goblin_minted_coins_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.goblin_minted_coins";
 		this.m.Name = "Pièces d\'argent frappées";
 		this.m.Description = "Pièces d\'argent frappées que les gobelins utilisent comme monnaie.";

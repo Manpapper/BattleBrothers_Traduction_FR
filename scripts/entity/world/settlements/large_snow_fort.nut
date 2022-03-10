@@ -71,7 +71,8 @@ this.large_snow_fort <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background",
 			"sellsword_background",
 			"squire_background",
-			"cripple_background"
+			"cripple_background",
+			"paladin_background"
 		];
 
 		if (this.Const.DLC.Unhold)

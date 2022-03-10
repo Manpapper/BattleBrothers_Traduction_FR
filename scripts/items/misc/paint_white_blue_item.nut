@@ -2,6 +2,7 @@ this.paint_white_blue_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.paint_white_blue";
 		this.m.Name = "Peinture blanche et bleue";
 		this.m.Description = "Seaux de peinture blanche et bleue. Peut être utilisé pour peindre de nombreux casques communs.";
@@ -11,7 +12,7 @@ this.paint_white_blue_item <- this.inherit("scripts/items/item", {
 		this.m.IsDroppedAsLoot = true;
 		this.m.IsAllowedInBag = false;
 		this.m.IsUsable = true;
-		this.m.Value = 120;
+		this.m.Value = 75;
 	}
 
 	function getTooltip()

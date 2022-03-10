@@ -20,7 +20,7 @@ this.three_headed_flail <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_flail_three_headed_01";
-		this.m.Value = 1600;
+		this.m.Value = 1500;
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 60.0;
 		this.m.ConditionMax = 60.0;

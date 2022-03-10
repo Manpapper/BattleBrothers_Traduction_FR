@@ -20,7 +20,7 @@ this.longsword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_longsword_01";
-		this.m.Value = 1600;
+		this.m.Value = 1700;
 		this.m.ShieldDamage = 12;
 		this.m.Condition = 60.0;
 		this.m.ConditionMax = 60.0;

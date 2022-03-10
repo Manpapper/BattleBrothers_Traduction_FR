@@ -2,6 +2,7 @@ this.black_book_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.black_book";
 		this.m.Name = "Le livre noir";
 		this.m.Description = "Un étrange et vieux grimoire avec une couverture charnue. Ses pages sont remplies d\'écritures impénétrables et de dessins mystérieux que vous ne pouvez pas commencer à comprendre. Plus vous regardez le livre, plus vous vous sentez mal à l\'aise. Peut-être que quelqu\'un avec plus de connaissances dans les langues anciennes pourrait y trouver un sens.";

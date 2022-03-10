@@ -75,7 +75,7 @@ this.cudgel_skill <- this.inherit("scripts/skills/skill", {
 			return success;
 		}
 
-		if (success && target.isAlive())
+		if (success && target.isAlive() && !target.getCurrentProperties().IsImmuneToDaze)
 		{
 			target.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
 

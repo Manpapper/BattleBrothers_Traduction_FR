@@ -187,6 +187,11 @@ this.shoot_stake <- this.inherit("scripts/skills/skill", {
 		{
 			_properties.RangedSkill += 10 + this.m.AdditionalAccuracy;
 			_properties.HitChanceAdditionalWithEachTile -= 3 + this.m.AdditionalHitChance;
+			
+			if (_properties.IsSharpshooter)
+			{
+				_properties.DamageDirectMult += 0.05;
+			}
 		}
 	}
 

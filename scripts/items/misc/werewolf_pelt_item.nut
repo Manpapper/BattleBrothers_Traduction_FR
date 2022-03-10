@@ -2,6 +2,7 @@ this.werewolf_pelt_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.werewolf_pelt";
 		this.m.Name = "Peau de loup inhabituellement grande";
 		this.m.Description = "Une peau de loup épaisse et inhabituellement grande qui devrait se vendre à un prix décent sur le marché.";

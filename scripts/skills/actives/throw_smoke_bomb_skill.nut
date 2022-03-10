@@ -28,6 +28,7 @@ this.throw_smoke_bomb_skill <- this.inherit("scripts/skills/skill", {
 		this.m.IsTargetingActor = false;
 		this.m.IsStacking = false;
 		this.m.IsAttack = true;
+		this.m.IsOffensiveToolSkill = true;
 		this.m.IsRanged = false;
 		this.m.IsIgnoredAsAOO = true;
 		this.m.IsShowingProjectile = true;

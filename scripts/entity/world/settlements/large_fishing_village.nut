@@ -68,7 +68,8 @@ this.large_fishing_village <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"retired_soldier_background",
 			"sellsword_background",
-			"swordmaster_background"
+			"swordmaster_background",
+			"anatomist_background"
 		];
 		this.m.UIDescription = "Une grande ville côtière et un centre commercial";
 		this.m.Description = "Une grande ville portuaire reposant sur le commerce et la pêche, et une importante plaque tournante pour les voyageurs arrivant ou partant par bateau.";

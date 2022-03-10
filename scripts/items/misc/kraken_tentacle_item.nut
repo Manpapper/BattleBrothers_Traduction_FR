@@ -2,6 +2,7 @@ this.kraken_tentacle_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.kraken_tentacle";
 		this.m.Name = "Tentacule coupé";
 		this.m.Description = "Les restes ratatinés d\'un tentacule de kraken légendaire, visqueux et spongieux mais très recherché par les alchimistes pour ses prétendues propriétés rares.";

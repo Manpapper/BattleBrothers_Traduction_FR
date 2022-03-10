@@ -2,6 +2,7 @@ this.lindwurm_hoard_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.lindwurm_hoard";
 		this.m.Name = "Le trésor d\'un Lindwurm";
 		this.m.Description = "Une collection d\'objets chatoyants de valeur, recouverts des entrailles d\'un Lindwurm.";

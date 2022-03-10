@@ -73,29 +73,6 @@ this.slave_background <- this.inherit("scripts/skills/backgrounds/character_back
 				text = this.getDescription()
 			}
 		];
-
-		if (("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin().getID() == "scenario.manhunters")
-		{
-			ret.push({
-				id = 16,
-				type = "text",
-				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] Experience Gain"
-			});
-			ret.push({
-				id = 17,
-				type = "text",
-				icon = "ui/icons/xp_received.png",
-				text = "Limited to character level 7"
-			});
-			ret.push({
-				id = 18,
-				type = "text",
-				icon = "ui/icons/days_wounded.png",
-				text = "Is permanently dead if struck down and will not survive with a permanent injury"
-			});
-		}
-
 		ret.push({
 			id = 19,
 			type = "text",
@@ -196,7 +173,7 @@ this.slave_background <- this.inherit("scripts/skills/backgrounds/character_back
 
 		if (("State" in this.World) && this.World.State != null && this.World.Assets.getOrigin() != null && this.World.Assets.getOrigin().getID() == "scenario.manhunters")
 		{
-			_properties.XPGainMult *= 0.75;
+			_properties.XPGainMult *= 1.1;
 			_properties.SurviveWithInjuryChanceMult = 0.0;
 		}
 	}

@@ -18,7 +18,7 @@ this.warbrand <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_scythe_01";
-		this.m.Value = 1800;
+		this.m.Value = 1600;
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 64.0;
 		this.m.ConditionMax = 64.0;

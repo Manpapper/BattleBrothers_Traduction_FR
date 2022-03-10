@@ -2,6 +2,7 @@ this.paint_orange_red_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.paint_orange_red";
 		this.m.Name = "Peinture orange et rouge";
 		this.m.Description = "Un seau de peinture jaune et rouge. Peut être utilisé pour peindre de nombreux casques communs.";
@@ -11,7 +12,7 @@ this.paint_orange_red_item <- this.inherit("scripts/items/item", {
 		this.m.IsDroppedAsLoot = true;
 		this.m.IsAllowedInBag = false;
 		this.m.IsUsable = true;
-		this.m.Value = 120;
+		this.m.Value = 75;
 	}
 
 	function getTooltip()

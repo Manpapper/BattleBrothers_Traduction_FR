@@ -2,6 +2,7 @@ this.white_pearls_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.white_pearls";
 		this.m.Name = "Perles Blanches";
 		this.m.Description = "Des perles blanches rares de différentes tailles. Devrait aller chercher un bon prix dans la prochaine ville.";

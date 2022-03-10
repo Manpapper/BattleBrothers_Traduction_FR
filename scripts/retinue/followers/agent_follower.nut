@@ -5,12 +5,11 @@ this.agent_follower <- this.inherit("scripts/retinue/follower", {
 		this.follower.create();
 		this.m.ID = "follower.agent";
 		this.m.Name = "L\'Agent";
-		this.m.Description = "L\'agent a des yeux et des oreilles partout et saura où aller pour un contrat bien rémunéré. Elle sait aussi entretenir de bonnes relations avec les personnes importantes du pays.";
+		this.m.Description = "L'Agen a des yeux et des oreilles partout et sait ce qu'il se passe dans les villes et les villages ainsi que els contrats juteux qui s'y trouvent.";
 		this.m.Image = "ui/campfire/agent_01";
 		this.m.Cost = 4000;
 		this.m.Effects = [
-			"Révèle les contrats disponibles dans l\'infobulle des colonies, où que vous soyez",
-			"Les bonnes relations avec une faction se dégradent plus lentement et les mauvaises relations se rétablissent plus rapidement"
+			"Révèle les contrats disponible ets les situations dans les info-bulles des villes et villages peu importe où vous êtes"		
 		];
 		this.m.Requirements = [
 			{
@@ -22,8 +21,6 @@ this.agent_follower <- this.inherit("scripts/retinue/follower", {
 
 	function onUpdate()
 	{
-		this.World.Assets.m.RelationDecayGoodMult = 0.9;
-		this.World.Assets.m.RelationDecayBadMult = 1.1;
 	}
 
 	function onEvaluate()

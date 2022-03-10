@@ -56,7 +56,8 @@ this.medium_coast_fort <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"retired_soldier_background",
 			"sellsword_background",
-			"swordmaster_background"
+			"swordmaster_background",
+			"paladin_background"
 		];
 		this.m.UIDescription = "Un donjon en pierre qui contrôle un port d\'importance stratégique et protège les routes commerciales voisines";
 		this.m.Description = "Ce donjon en pierre contrôle un accès maritime d\'importance stratégique et protège les routes commerciales voisines.";

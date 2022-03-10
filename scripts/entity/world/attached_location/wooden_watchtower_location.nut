@@ -69,6 +69,7 @@ this.wooden_watchtower_location <- this.inherit("scripts/entity/world/attached_l
 		}
 
 		_list.push("militia_background");
+		_list.push("paladin_background");
 	}
 
 	function onUpdateShopList( _id, _list )

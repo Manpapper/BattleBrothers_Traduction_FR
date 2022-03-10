@@ -2,6 +2,7 @@ this.golden_chalice_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.golden_chalice";
 		this.m.Name = "Calice d\'or";
 		this.m.Description = "Un gobelet en or massif. Devrait valoir beaucoup si vous pouvez trouver un acheteur.";

@@ -2,6 +2,7 @@ this.silverware_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.silverware";
 		this.m.Name = "Argenterie";
 		this.m.Description = "Une accumulation de couverts en argent. Devrait rapporter un bon prix dans la prochaine ville.";

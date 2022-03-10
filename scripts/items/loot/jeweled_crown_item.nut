@@ -2,6 +2,7 @@ this.jeweled_crown_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.jeweled_crown";
 		this.m.Name = "Couronne ornée de joyaux";
 		this.m.Description = "Une couronne d\'or finement travaillée parsemée de bijoux. Devrait valoir une fortune si vous pouvez trouver un acheteur.";

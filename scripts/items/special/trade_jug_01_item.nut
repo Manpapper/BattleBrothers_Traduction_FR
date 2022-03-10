@@ -2,6 +2,7 @@ this.trade_jug_01_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.trade_jug";
 		this.m.Name = "Cruche mystérieuse";
 		this.m.Description = "Échangé avec un mystérieux voyageur nommé Yuchi, le contenu de cette cruche promet d\'être une boisson magique qui confère une force au-delà de l\'imagination.";

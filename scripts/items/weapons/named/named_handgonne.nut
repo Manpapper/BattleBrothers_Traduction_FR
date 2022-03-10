@@ -51,7 +51,7 @@ this.named_handgonne <- this.inherit("scripts/items/weapons/named/named_weapon",
 		this.m.ConditionMax = 60.0;
 		this.m.RegularDamage = 35;
 		this.m.RegularDamageMax = 75;
-		this.m.ArmorDamageMult = 1.0;
+		this.m.ArmorDamageMult = 0.9;
 		this.m.DirectDamageMult = 0.25;
 		this.m.IsEnforcingRangeLimit = true;
 		this.randomizeValues();

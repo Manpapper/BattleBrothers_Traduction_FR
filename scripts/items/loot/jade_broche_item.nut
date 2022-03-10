@@ -2,6 +2,7 @@ this.jade_broche_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.jade_broche";
 		this.m.Name = "Broche de Jade";
 		this.m.Description = "Une broche en jade finement travaillée qui vous ferait sûrement une pièce ou deux une fois vendue.";

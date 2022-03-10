@@ -2,6 +2,7 @@ this.unhold_hide_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.unhold_hide";
 		this.m.Name = "Peau d\'Unhold";
 		this.m.Description = "La peau est la base de la plupart des armures, cette épaisse peau provenant d\'un Unhold est particulièrement robuste.";

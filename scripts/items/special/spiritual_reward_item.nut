@@ -2,6 +2,7 @@ this.spiritual_reward_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.spiritual_reward";
 		this.m.Name = "Fiole bleue";
 		this.m.Description = "Échangé avec une sorcière malveillante au détriment de la vie d\'un autre homme, cette mystérieuse concoction promet d\'être une boisson magique pour l\'esprit, et de donner sagesse et perspicacité comme si il avait livré une douzaine de batailles.";

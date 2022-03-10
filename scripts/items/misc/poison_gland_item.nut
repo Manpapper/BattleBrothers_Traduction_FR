@@ -2,6 +2,7 @@ this.poison_gland_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.poison_gland";
 		this.m.Name = "Glande empoisonnée";
 		this.m.Description = "La glande venimeuse d\'une Webknecht. Ne doit pas être porté à proximité de nourriture ou de boisson.";

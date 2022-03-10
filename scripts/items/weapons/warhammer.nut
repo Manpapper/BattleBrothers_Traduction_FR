@@ -16,7 +16,7 @@ this.warhammer <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_warhammer_01";
-		this.m.Value = 2500;
+		this.m.Value = 2300;
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 100.0;
 		this.m.ConditionMax = 100.0;

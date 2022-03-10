@@ -17,7 +17,7 @@ this.two_handed_saif <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_two_handed_saif_01";
-		this.m.Value = 2000;
+		this.m.Value = 1800;
 		this.m.Condition = 54.0;
 		this.m.ConditionMax = 54.0;
 		this.m.StaminaModifier = -10;

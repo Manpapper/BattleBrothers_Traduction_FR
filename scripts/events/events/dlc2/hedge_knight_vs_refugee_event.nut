@@ -153,7 +153,7 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "What were were fighting about again?",
+					Text = "What were we fighting about again?",
 					function getResult( _event )
 					{
 						return 0;

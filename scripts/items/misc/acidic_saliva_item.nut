@@ -2,6 +2,7 @@ this.acidic_saliva_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.acidic_saliva";
 		this.m.Name = "Salive acide";
 		this.m.Description = "La salive des hyènes sauvages du désert est recherché par les alchimistes du sud pour ses propriétés uniques.";

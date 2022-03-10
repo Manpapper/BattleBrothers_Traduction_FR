@@ -77,7 +77,8 @@ this.large_tundra_fort <- this.inherit("scripts/entity/world/settlement", {
 			"cripple_background",
 			"eunuch_background",
 			"hedge_knight_background",
-			"hedge_knight_background"
+			"hedge_knight_background",
+			"paladin_background"
 		];
 		this.m.UIDescription = "Une grande citadelle dominant la toundra environnante";
 		this.m.Description = "Une grande citadelle surplombant la toundra environnante et sécurisant la région vaste et ouverte. Beaucoup viennent ici pour se réapprovisionner, faire des réparations et se reposer avant de s\'aventurer sur la route.";

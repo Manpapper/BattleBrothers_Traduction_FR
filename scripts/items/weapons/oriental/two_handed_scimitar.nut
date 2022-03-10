@@ -17,7 +17,7 @@ this.two_handed_scimitar <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_two_handed_scimitar_01";
-		this.m.Value = 2600;
+		this.m.Value = 2400;
 		this.m.ShieldDamage = 16;
 		this.m.Condition = 64.0;
 		this.m.ConditionMax = 64.0;

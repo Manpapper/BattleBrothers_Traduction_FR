@@ -15,7 +15,10 @@ this.ambition <- {
 		IsDone = false,
 		IsShowingMood = true,
 		IsGrantingRenown = true,
-		Score = 0
+		IsCancelable = true,
+		IsRepeatable = false,
+		Score = 0,
+		TimesSkipped = 0
 	},
 	function getID()
 	{
@@ -27,11 +30,19 @@ this.ambition <- {
 		return this.m.Score;
 	}
 
+	function getTimesSkipped()
+	{
+		return this.m.TimesSkipped;
+	}
 	function getButtonText()
 	{
 		return this.m.ButtonText;
 	}
 
+	function getRewardTooltip()
+	{
+		return this.m.RewardTooltip;
+	}
 	function getUIText()
 	{
 		return this.m.UIText;
@@ -72,6 +83,15 @@ this.ambition <- {
 		return this.m.IsGrantingRenown;
 	}
 
+	function isCancelable()
+	{
+		return this.m.IsCancelable;
+	}
+
+	function isRepeatable()
+	{
+		return this.m.IsRepeatable;
+	}
 	function setDone( _d )
 	{
 		this.m.IsDone = _d;
@@ -115,6 +135,11 @@ this.ambition <- {
 		});
 		return ret;
 	}
+	
+	function getRenownOnSuccess()
+	{
+		return this.Const.World.Assets.ReputationOnAmbition;
+	}
 
 	function create()
 	{
@@ -124,7 +149,7 @@ this.ambition <- {
 	{
 		this.clear();
 
-		if (this.m.IsDone || this.Time.getVirtualTimeF() < this.m.CooldownUntil)
+		if (this.m.IsDone && !this.m.IsRepeatable || this.Time.getVirtualTimeF() < this.m.CooldownUntil)
 		{
 			return;
 		}
@@ -152,7 +177,7 @@ this.ambition <- {
 
 		if (this.m.IsGrantingRenown)
 		{
-			this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnAmbition);
+			this.World.Assets.addBusinessReputation(this.getRenownOnSuccess());
 		}
 
 		this.onReward();
@@ -169,6 +194,11 @@ this.ambition <- {
 		this.m.StartTime = this.Time.getVirtualTimeF();
 		this.onStart();
 	}
+	
+	function skip()
+	{
+		this.m.TimesSkipped++;
+	}
 
 	function isSuccess()
 	{
@@ -181,6 +211,10 @@ this.ambition <- {
 	}
 
 	function onUpdateScore()
+	{
+	}
+	
+	function onUpdateEffect()
 	{
 	}
 
@@ -227,14 +261,23 @@ this.ambition <- {
 		_out.writeF32(this.m.StartTime);
 		_out.writeF32(this.m.CooldownUntil);
 		_out.writeBool(this.m.IsDone);
+		_out.writeBool(this.m.IsCancelable);
+		_out.writeBool(this.m.IsRepeatable);
+		_out.writeU32(this.m.TimesSkipped);
 	}
-
+	
 	function onDeserialize( _in )
 	{
 		this.m.StartTime = _in.readF32();
 		this.m.CooldownUntil = _in.readF32();
 		this.m.IsDone = _in.readBool();
-	}
 
+		if (_in.getMetaData().getVersion() >= 64)
+		{
+			this.m.IsCancelable = _in.readBool();
+			this.m.IsRepeatable = _in.readBool();
+			this.m.TimesSkipped = _in.readU32();
+		}
+	}
 };
 

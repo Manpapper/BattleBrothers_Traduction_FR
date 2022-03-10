@@ -28,6 +28,7 @@ this.throw_holy_water <- this.inherit("scripts/skills/skill", {
 		this.m.IsTargeted = true;
 		this.m.IsStacking = false;
 		this.m.IsAttack = true;
+		this.m.IsOffensiveToolSkill = true;
 		this.m.IsRanged = false;
 		this.m.IsIgnoredAsAOO = true;
 		this.m.IsShowingProjectile = true;

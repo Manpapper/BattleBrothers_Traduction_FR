@@ -2,6 +2,7 @@ this.ornate_tome_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.ornate_tome";
 		this.m.Name = "Grimoire décoré";
 		this.m.Description = "Un grimoire bien conservé avec une couverture en or massif. Devrait rapporter un bon prix au genre de personnes qui étudient les vieux grimoires poussiéreux.";

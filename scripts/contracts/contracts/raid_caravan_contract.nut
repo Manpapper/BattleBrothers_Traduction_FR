@@ -306,7 +306,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 						this.Contract.setScreen("Success1");
 						this.World.Contracts.showActiveContract();
 					}
-					else if (this.Math.rand(1, 100) < this.Flags.get("Survivors") * 15)
+					else if (this.Math.rand(1, 100) > this.Flags.get("Survivors") * 15)
 					{
 						this.Contract.setScreen("Failure1");
 						this.World.Contracts.showActiveContract();

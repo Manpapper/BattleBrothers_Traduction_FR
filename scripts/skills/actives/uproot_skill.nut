@@ -47,11 +47,6 @@ this.uproot_skill <- this.inherit("scripts/skills/skill", {
 
 	function applyEffectToTarget( _user, _target, _targetTile )
 	{
-		if (_target.isNonCombatant())
-		{
-			return;
-		}
-
 		_target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
 
 		if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)

@@ -2,6 +2,7 @@ this.ghoul_brain_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.ghoul_brain";
 		this.m.Name = "Cerveau de Nachzehrer";
 		this.m.Description = "Le cerveau graisseux d\'un Nachzehrer mort. Que pourriez-vous bien vouloir faire avec ça ?";

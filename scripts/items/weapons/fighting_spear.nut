@@ -16,7 +16,7 @@ this.fighting_spear <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_spear_03";
-		this.m.Value = 2500;
+		this.m.Value = 2250;
 		this.m.Condition = 72.0;
 		this.m.ConditionMax = 72.0;
 		this.m.StaminaModifier = -10;

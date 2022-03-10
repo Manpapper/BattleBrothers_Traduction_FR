@@ -2,6 +2,7 @@ this.sulfurous_rocks_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.sulfurous_rock";
 		this.m.Name = "Roches sulfureuses";
 		this.m.Description = "Une odeur nauséabonde est émise par ces roches cassantes, très prisées des alchimistes.";

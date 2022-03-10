@@ -198,8 +198,15 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 				this.Contract.m.BulletpointsObjectives.clear();
 
 				if (this.Contract.m.Size == 0)
-				{
-					this.Contract.m.BulletpointsObjectives.push("Chassez des Loups-Garous, des Webknechts et des Nachzehrers");
+				{									if (this.Const.DLC.Desert)
+					{
+						this.Contract.m.BulletpointsObjectives.push("Chassez des Loups-Garous, des Webknechts, des Nachzehrers, des Hyènes et des Serpents");
+					}
+					else
+					{
+						this.Contract.m.BulletpointsObjectives.push("Chassez des Loups-Garous, des Webknechts et des Nachzehrers");
+					}
+					
 				}
 				else if (this.Contract.m.Size == 1)
 				{
@@ -257,6 +264,9 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 							local party = action.getFaction().getUnits()[action.getFaction().getUnits().len() - 1];
 							party.setAttackableByAI(false);
 							this.Contract.m.UnitsSpawned.push(party.getID());
+							local wait = this.new("scripts/ai/world/orders/wait_order");
+							wait.setTime(15.0);
+							party.getController().addOrderInFront(wait);
 							local footPrintsOrigin = this.Contract.getTileToSpawnLocation(nearTile, 4, 8);
 							this.Const.World.Common.addFootprintsFromTo(footPrintsOrigin, party.getTile(), this.Const.BeastFootprints, party.getFootprintType(), party.getFootprintsSize(), 1.1);
 							break;
@@ -277,7 +287,14 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 
 				if (this.Contract.m.Size == 0)
 				{
-					this.Contract.m.BulletpointsObjectives.push("Chassez des Loups-Garous, des Webknechts et des Nachzehrers autour de %regiontype% région de %worldmapregion% (%killcount%/%maxcount%)");
+					if (this.Const.DLC.Desert)
+					{
+						this.Contract.m.BulletpointsObjectives.push("Chassez des Loups-Garous, des Webknechts, des Nachzehrers, des Hyènes et des serpents autour de %regiontype% région de %worldmapregion% (%killcount%/%maxcount%)");
+					}
+					else
+					{
+						this.Contract.m.BulletpointsObjectives.push("Chassez des Loups-Garous, des Webknechts et des Nachzehrers autour de %regiontype% région de %worldmapregion% (%killcount%/%maxcount%)");
+					}
 				}
 				else if (this.Contract.m.Size == 1)
 				{
@@ -326,7 +343,7 @@ this.big_game_hunt_contract <- this.inherit("scripts/contracts/contract", {
 
 				if (this.Contract.m.Size == 0)
 				{
-					if (_actor.getType() == this.Const.EntityType.Ghoul || _actor.getType() == this.Const.EntityType.Direwolf || _actor.getType() == this.Const.EntityType.Spider)
+					if (_actor.getType() == this.Const.EntityType.Ghoul || _actor.getType() == this.Const.EntityType.Direwolf || _actor.getType() == this.Const.EntityType.Spider || _actor.getType() == this.Const.EntityType.Hyena || _actor.getType() == this.Const.EntityType.Serpent)
 					{
 						this.Flags.set("HeadsCollected", this.Flags.get("HeadsCollected") + 1);
 					}

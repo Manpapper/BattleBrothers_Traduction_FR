@@ -2,6 +2,7 @@ this.glittering_rock_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.glittering_rock";
 		this.m.Name = "Roche scintillante";
 		this.m.Description = "Parmi les rochers épars qui restent d\'un Ifrit vaincu, on trouve parfois un rocher scintillant d\'or. Cela fait un trophée précieux.";

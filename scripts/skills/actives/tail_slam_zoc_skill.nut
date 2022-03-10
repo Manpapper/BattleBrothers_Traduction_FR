@@ -61,7 +61,7 @@ this.tail_slam_zoc_skill <- this.inherit("scripts/skills/skill", {
 		}
 		else
 		{
-			if (_target.isNonCombatant())
+			if (_target.isNonCombatant() || _target.getCurrentProperties().IsImmuneToDaze)
 			{
 				return;
 			}

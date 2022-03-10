@@ -2,6 +2,7 @@ this.hyena_fur_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.hyena_fur";
 		this.m.Name = "Fourrure de hyène déchaînée";
 		this.m.Description = "La fourrure colorée d\'une hyène du désert constitue un ajout impressionnant et exotique à toute armure de mercenaire.";

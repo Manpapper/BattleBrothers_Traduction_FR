@@ -170,6 +170,11 @@ this.shoot_bolt <- this.inherit("scripts/skills/skill", {
 		{
 			_properties.RangedSkill += 15 + this.m.AdditionalAccuracy;
 			_properties.HitChanceAdditionalWithEachTile -= 3 + this.m.AdditionalHitChance;
+			
+			if (_properties.IsSharpshooter)
+			{
+				_properties.DamageDirectMult += 0.05;
+			}
 		}
 	}
 

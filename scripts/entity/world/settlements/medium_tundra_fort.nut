@@ -60,7 +60,8 @@ this.medium_tundra_fort <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"retired_soldier_background",
 			"retired_soldier_background",
-			"sellsword_background"
+			"sellsword_background",
+			"paladin_background"
 		];
 		this.m.UIDescription = "Un donjon de pierre sécurisant la toundra environnante";
 		this.m.Description = "Un donjon de pierre qui est le siège du pouvoir dans la toundra environnante. Il sert de base d\'opérations pour une garnison de taille raisonnable.";

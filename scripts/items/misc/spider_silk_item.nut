@@ -2,6 +2,7 @@ this.spider_silk_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.spider_silk";
 		this.m.Name = "Toile de Webnecht";
 		this.m.Description = "Toile recueilli des restes d\'une Webknecht. Léger et solide, elle est supérieure à la plupart des matériaux courants. Si seulement ce n\'était pas si collant...";

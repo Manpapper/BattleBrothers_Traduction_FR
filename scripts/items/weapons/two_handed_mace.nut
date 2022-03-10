@@ -18,7 +18,7 @@ this.two_handed_mace <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_mace_two_handed_01";
-		this.m.Value = 1000;
+		this.m.Value = 1100;
 		this.m.ShieldDamage = 20;
 		this.m.Condition = 80.0;
 		this.m.ConditionMax = 80.0;

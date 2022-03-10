@@ -77,7 +77,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 
 				foreach( bro in brothers )
 				{
-					bro.worsenMood(0.5, "Enjoyed the hospitality of nomads");
+					bro.improveMood(0.5, "Enjoyed the hospitality of nomads");
 
 					if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 					{
@@ -184,7 +184,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 
 				foreach( bro in brothers )
 				{
-					bro.worsenMood(0.5, "Enjoyed the hospitality of nomads");
+					bro.improveMood(0.5, "Enjoyed the hospitality of nomads");
 
 					if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 					{

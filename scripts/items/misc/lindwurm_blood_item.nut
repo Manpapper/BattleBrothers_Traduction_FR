@@ -2,6 +2,7 @@ this.lindwurm_blood_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.lindwurm_blood";
 		this.m.Name = "Sang de Lindwurm";
 		this.m.Description = "Le sang corrosif d\'un Lindwurm qui ronge le métal en un rien de temps. Heureusement, il peut être transporté en toute sécurité dans des flacons en verre.";

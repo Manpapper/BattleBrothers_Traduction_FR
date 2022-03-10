@@ -9,7 +9,7 @@ this.deserter_background <- this.inherit("scripts/skills/backgrounds/character_b
 		this.m.BackgroundDescription = "Deserters have received some martial training, but usually aren\'t eager to put it to use.";
 		this.m.GoodEnding = "%name% the deserter continued fighting for the %companyname%, ever striving to redeem his name. Word has it that during a brutal fight with orcs, he dove headfirst into a crowd of greenskins, surfing across the top of their shocked heads. His heroism rallied the men to an incredible victory and he lives out his days getting toasted in every bar he enters.";
 		this.m.BadEnding = "You heard %name% the deserter actually renewed his title and fled a battle the %companyname% had with some greenskins. Goblins caught him out in the woods and turned his head into a goblet for an orc warlord.";
-		this.m.HiringCost = 100;
+		this.m.HiringCost = 85;
 		this.m.DailyCost = 11;
 		this.m.Excluded = [
 			"trait.teamplayer",

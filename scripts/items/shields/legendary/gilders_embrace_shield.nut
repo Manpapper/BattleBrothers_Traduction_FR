@@ -116,7 +116,7 @@ this.gilders_embrace_shield <- this.inherit("scripts/items/shields/shield", {
 
 	function onShieldHit( _attacker, _skill )
 	{
-		if (_attacker != null && _attacker.isAlive() && !_attacker.isDying())
+		if (_attacker != null && _attacker.isAlive() && !_attacker.isDying() && !_attacker.getCurrentProperties().IsImmuneToDaze)
 		{
 			_attacker.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
 

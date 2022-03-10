@@ -2,6 +2,7 @@ this.happy_powder_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.happy_powder";
 		this.m.Name = "Poudre magique";
 		this.m.Description = "Cette poudre miraculeuse transforme instantanément un mercenaire grincheux et de mauvaise humeur en un mercenaire joyeux et énergique. Ne pas utiliser de machinerie lourde sous influence.";

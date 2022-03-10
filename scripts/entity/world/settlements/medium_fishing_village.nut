@@ -66,7 +66,8 @@ this.medium_fishing_village <- this.inherit("scripts/entity/world/settlement", {
 			"vagabond_background",
 			"cripple_background",
 			"eunuch_background",
-			"sellsword_background"
+			"sellsword_background",
+			"anatomist_background"
 		];
 		this.m.UIDescription = "Un village plus étendu qui dépend de la pêche et d\'un peu de commerce";
 		this.m.Description = "Un village plus étendu qui dépend de la pêche et d\'un peu de commerce.";

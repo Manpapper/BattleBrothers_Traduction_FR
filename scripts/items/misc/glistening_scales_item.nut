@@ -2,6 +2,7 @@ this.glistening_scales_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.glistening_scales";
 		this.m.Name = "Ecailles scintillantes";
 		this.m.Description = "Ces écailles scintillent et brillent magnifiquement de toutes les couleurs lorsque vous les tournez vers le soleil.";

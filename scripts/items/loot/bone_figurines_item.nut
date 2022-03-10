@@ -1,7 +1,8 @@
 this.bone_figurines_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
-	{
+	{		
+		this.item.create();
 		this.m.ID = "misc.bone_figurines";
 		this.m.Name = "Figurines en os";
 		this.m.Description = "Petites figurines sculptées faites à partir de divers os rares. Un collectionneur pourrait payer une pièce décente pour cela.";

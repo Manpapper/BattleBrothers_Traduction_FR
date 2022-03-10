@@ -29,6 +29,7 @@ this.throw_daze_bomb_skill <- this.inherit("scripts/skills/skill", {
 		this.m.IsTargetingActor = false;
 		this.m.IsStacking = false;
 		this.m.IsAttack = true;
+		this.m.IsOffensiveToolSkill = true;
 		this.m.IsRanged = false;
 		this.m.IsIgnoredAsAOO = true;
 		this.m.IsShowingProjectile = true;
@@ -147,7 +148,7 @@ this.throw_daze_bomb_skill <- this.inherit("scripts/skills/skill", {
 				this.Tactical.spawnParticleEffect(false, this.Const.Tactical.DazeParticles[i].Brushes, tile, this.Const.Tactical.DazeParticles[i].Delay, this.Const.Tactical.DazeParticles[i].Quantity, this.Const.Tactical.DazeParticles[i].LifeTimeQuantity, this.Const.Tactical.DazeParticles[i].SpawnRate, this.Const.Tactical.DazeParticles[i].Stages);
 			}
 
-			if (tile.IsOccupiedByActor)
+			if (tile.IsOccupiedByActor && !tile.getEntity().getCurrentProperties().IsImmuneToDaze)
 			{
 				tile.getEntity().getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
 			}

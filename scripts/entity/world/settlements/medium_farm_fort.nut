@@ -53,7 +53,8 @@ this.medium_farm_fort <- this.inherit("scripts/entity/world/settlement", {
 			"sellsword_background",
 			"squire_background",
 			"squire_background",
-			"cripple_background"
+			"cripple_background",
+			"paladin_background"
 		];
 		this.m.UIDescription = "Un donjon de pierre entouré de terres fertiles";
 		this.m.Description = "Un donjon de pierre entouré de terres fertiles et servant de point fort et de base d\'opérations dans la région.";

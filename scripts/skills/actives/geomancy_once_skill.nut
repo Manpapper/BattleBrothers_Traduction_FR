@@ -121,7 +121,7 @@ this.geomancy_once_skill <- this.inherit("scripts/skills/skill", {
 		return true;
 	}
 
-	function onDeath()
+	function onDeath( _fatalityType )
 	{
 		this.updateTiles();
 	}

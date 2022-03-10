@@ -64,6 +64,16 @@ this.rotation <- this.inherit("scripts/skills/skill", {
 	{
 		return this.Const.UI.Cursor.Rotation;
 	}
+	
+	function onAfterUpdate( _properties )
+	{
+		this.m.FatigueCostMult = _properties.IsFleetfooted ? 0.5 : 1.0;
+
+		if (this.getContainer().getActor().getSkills().hasSkill("effects.goblin_grunt_potion"))
+		{
+			this.m.ActionPointCost = 2;
+		}
+	}
 
 	function isUsable()
 	{

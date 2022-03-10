@@ -2,6 +2,7 @@ this.paint_remover_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.paint_remover";
 		this.m.Name = "Décapant";
 		this.m.Description = "Un seau de décapant. Peut être utilisé pour enlever la peinture de nombreux casques communs.";

@@ -2,6 +2,7 @@ this.looted_valuables_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.looted_valuables";
 		this.m.Name = "Objets de valeur volés";
 		this.m.Description = "Un tas d\'objets de valeur pillés par les barbares au fil des ans. De nombreuses pièces sont cassées et pliées mais les matériaux sont assez exquis.";

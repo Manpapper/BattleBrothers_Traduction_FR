@@ -254,7 +254,7 @@ this.deliver_item_contract <- this.inherit("scripts/contracts/contract", {
 						this.World.Contracts.showActiveContract();
 						this.Flags.set("IsEvilArtifact", false);
 					}
-					else if (this.Flags.get("IsThieves") && !this.Flags.get("IsStolenByThieves") && (this.World.Assets.isCamping() || !this.World.getTime().IsDaytime) && this.Math.rand(1, 100) <= 3)
+					else if (this.Flags.get("IsThieves") && !this.Flags.get("IsStolenByThieves") && this.World.State.getPlayer().getTile().Type != this.Const.World.TerrainType.Desert && (this.World.Assets.isCamping() || !this.World.getTime().IsDaytime) && this.Math.rand(1, 100) <= 3)
 					{
 						local tile = this.Contract.getTileToSpawnLocation(this.World.State.getPlayer().getTile(), 5, 10, [
 							this.Const.World.TerrainType.Shore,

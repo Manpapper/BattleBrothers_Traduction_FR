@@ -2,6 +2,7 @@ this.parched_skin_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.parched_skin";
 		this.m.Name = "Peau desséchée";
 		this.m.Description = "Cette peau provenant d\'un alpage est aussi fine que comme du papier et brille au soleil.";

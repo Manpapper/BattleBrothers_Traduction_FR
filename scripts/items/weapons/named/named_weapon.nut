@@ -128,7 +128,7 @@ this.named_weapon <- this.inherit("scripts/items/weapons/weapon", {
 		{
 			available.push(function ( _i )
 			{
-				_i.m.ShieldDamage = this.Math.round(_i.m.ShieldDamage * this.Math.rand(133, 180) * 0.01);
+				_i.m.ShieldDamage = this.Math.round(_i.m.ShieldDamage * this.Math.rand(150, 200) * 0.01);
 			});
 		}
 
@@ -172,7 +172,7 @@ this.named_weapon <- this.inherit("scripts/items/weapons/weapon", {
 		_out.writeF32(this.m.ArmorDamageMult);
 		_out.writeU8(this.m.ChanceToHitHead);
 		_out.writeU16(this.m.ShieldDamage);
-		_out.writeU16(this.m.AdditionalAccuracy);
+		_out.writeI16(this.m.AdditionalAccuracy);
 		_out.writeF32(this.m.DirectDamageAdd);
 		_out.writeI16(this.m.FatigueOnSkillUse);
 		_out.writeU16(this.m.AmmoMax);
@@ -190,7 +190,7 @@ this.named_weapon <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ArmorDamageMult = _in.readF32();
 		this.m.ChanceToHitHead = _in.readU8();
 		this.m.ShieldDamage = _in.readU16();
-		this.m.AdditionalAccuracy = _in.readU16();
+		this.m.AdditionalAccuracy = this.Const.Serialization.Version <= 63 ? _in.readU16() : _in.readI16();
 		this.m.DirectDamageAdd = _in.readF32();
 		this.m.FatigueOnSkillUse = _in.readI16();
 		this.m.AmmoMax = _in.readU16();

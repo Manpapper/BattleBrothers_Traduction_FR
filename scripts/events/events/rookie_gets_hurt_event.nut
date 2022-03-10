@@ -212,7 +212,7 @@ this.rookie_gets_hurt_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() == 1 && !bro.getBackground().getID() == "background.slave" && !bro.getBackground().isCombatBackground() && bro.getPlaceInFormation() <= 17 && bro.getLifetimeStats().Battles >= 1)
+			if (bro.getLevel() == 1 && bro.getBackground().getID() != "background.slave" && !bro.getBackground().isCombatBackground() && bro.getPlaceInFormation() <= 17 && bro.getLifetimeStats().Battles >= 1)
 			{
 				candidates.push(bro);
 			}

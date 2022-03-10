@@ -2,6 +2,7 @@ this.kraken_horn_plate_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.kraken_horn_plate";
 		this.m.Name = "Plaque de corne";
 		this.m.Description = "Tirée de la tête du légendaire kraken, cette grande et dure plaque en corne est un trophée que peu de gens dans ce monde peuvent revendiquer.";

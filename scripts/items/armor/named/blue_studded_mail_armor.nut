@@ -17,9 +17,9 @@ this.blue_studded_mail_armor <- this.inherit("scripts/items/armor/named/named_ar
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.Value = 4000;
-		this.m.Condition = 150;
-		this.m.ConditionMax = 150;
-		this.m.StaminaModifier = -18;
+		this.m.Condition = 140;
+		this.m.ConditionMax = 140;
+		this.m.StaminaModifier = -16;
 		this.randomizeValues();
 	}
 

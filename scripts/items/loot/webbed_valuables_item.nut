@@ -2,6 +2,7 @@ this.webbed_valuables_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "misc.webbed_valuables";
 		this.m.Name = "Objets de valeur collants";
 		this.m.Description = "Dans les épaisses toiles de Webknechts, on peut parfois découvrir des objets de valeur ayant appartenu à leurs malheureuses victimes - si l\'on est assez courageux pour chercher à travers les pièges mortels collants.";
