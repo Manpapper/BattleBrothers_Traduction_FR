@@ -10,7 +10,7 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{%monk% est un moine qui, à ce moment, est très, très loin de chez lui. Les jours passés sur la route sont déjà assez difficiles, et les jours de repos, remplis de violence et de pillage, le sont encore plus. Il n'est pas surprenant qu'il soit venu vous voir avec une offre. Bien qu'il soit dans votre compagnie depuis un certain temps, il est clair qu'il est toujours un homme de la civilisation.\n\nIl explique une vieille loi : en tant que pillard, vous êtes persona non grata, mais en tant que pillard avec beaucoup d'argent, il y a une chance que vous puissiez racheter le droit de traiter avec les nobles de ce pays. Le moine dit qu'il sait à qui s'adresser. Apparemment, %noblehouse% est intéressé par l'ouverture de canaux, et ils apprécieraient %crowns% couronnes pour installer de nouvelles affaires. Civilisé en effet.}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{%monk% est un moine qui, à ce moment, est très, très loin de chez lui. Les jours passés sur la route sont déjà assez difficiles, et les jours de repos, remplis de violence et de pillage, le sont encore plus. Il n\'est pas surprenant qu\'il soit venu vous voir avec une offre. Bien qu\'il soit dans votre compagnie depuis un certain temps, il est clair qu\'il est toujours un homme de la civilisation.\n\nIl explique une vieille loi : en tant que pillard, vous êtes persona non grata, mais en tant que pillard avec beaucoup d\'argent, il y a une chance que vous puissiez racheter le droit de traiter avec les nobles de ce pays. Le moine dit qu\'il sait à qui s\'adresser. Apparemment, %noblehouse% est intéressé par l\'ouverture de canaux, et ils apprécieraient %crowns% couronnes pour installer de nouvelles affaires. Civilisé en effet.}",
 			Banner = "",
 			Image = "",
 			List = [],
@@ -25,7 +25,7 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Nous n'avons pas besoin de ça.",
+					Text = "Nous n\'avons pas besoin de ça.",
 					function getResult( _event )
 					{
 						return 0;
@@ -42,14 +42,14 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_31.png[/img]{Vous acceptez les propositions du moine. Ensemble, vous rencontrez un intermédiaire et un des nobles lui-même. La réunion a lieu en secret et, au début, il y a beaucoup d'absurdités dramatiques de cape et d'épée. Des hommes vêtus de noir et gardant les mains sur leurs armes, des nobles qui chuchotent entre eux, mais une fois que tout est dit et fait... vous prenez un long verre ensemble. À l'avenir, %noblehouse% sera plus ouvert aux transactions.}",
+			Text = "[img]gfx/ui/events/event_31.png[/img]{Vous acceptez les propositions du moine. Ensemble, vous rencontrez un intermédiaire et un des nobles lui-même. La réunion a lieu en secret et, au début, il y a beaucoup d\'absurdités dramatiques de cape et d\'épée. Des hommes vêtus de noir et gardant les mains sur leurs armes, des nobles qui chuchotent entre eux, mais une fois que tout est dit et fait... vous prenez un long verre ensemble. À l\'avenir, %noblehouse% sera plus ouvert aux transactions.}",
 			Banner = "",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Faire du travail de mercenaire pour eux permettrait d'améliorer les relations.",
+					Text = "Faire du travail de mercenaire pour eux permettrait d\'améliorer les relations.",
 					function getResult( _event )
 					{
 						return 0;
@@ -73,7 +73,7 @@ this.raiders_origin_redemption_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/relations.png",
-					text = "Vos relations avec " + _event.m.NobleHouse.getName() + " s'améliorent"
+					text = "Vos relations avec " + _event.m.NobleHouse.getName() + " s\'améliorent"
 				});
 			}
 

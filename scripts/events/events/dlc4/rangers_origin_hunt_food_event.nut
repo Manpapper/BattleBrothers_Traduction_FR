@@ -10,7 +10,7 @@ this.rangers_origin_hunt_food_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 7.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_10.png[/img]{En tant que communauté de chasseurs, il est évident que vous êtes entrés sur un bon terrain de chasse. %randombrother% suggère que la compagnie parte à la chasse, mais il prévient que le groupe doit faire attention à ce qu'il prélève dans ces généreuses étendues.}",
+			Text = "[img]gfx/ui/events/event_10.png[/img]{En tant que communauté de chasseurs, il est évident que vous êtes entrés sur un bon terrain de chasse. %randombrother% suggère que la compagnie parte à la chasse, mais il prévient que le groupe doit faire attention à ce qu\'il prélève dans ces généreuses étendues.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -52,7 +52,7 @@ this.rangers_origin_hunt_food_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_10.png[/img]{Les hommes reçoivent l'ordre de partir à la chasse et ils prennent un pouce par mille ! Ils tirent, dépouillent et massacrent à peu près tous les animaux qui respirent à leur portée. Vous craignez que cela n'attire l'attention des nobles locaux, mais ils ne se doutent de rien. Les magasins d'inventaire vont déborder !}",
+			Text = "[img]gfx/ui/events/event_10.png[/img]{Les hommes reçoivent l\'ordre de partir à la chasse et ils prennent un pouce par mille ! Ils tirent, dépouillent et massacrent à peu près tous les animaux qui respirent à leur portée. Vous craignez que cela n\'attire l\'attention des nobles locaux, mais ils ne se doutent de rien. Les magasins d\'inventaire vont déborder !}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -87,7 +87,7 @@ this.rangers_origin_hunt_food_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_10.png[/img]{Quelques hommes partent à la chasse et reviennent avec quelques animaux tués. Vous leur demandez s'ils ont eu des problèmes et ils répondent par la négative. On dirait que l'inventaire va connaître quelques ajouts savoureux et aucun noble ne sera plus sage !}",
+			Text = "[img]gfx/ui/events/event_10.png[/img]{Quelques hommes partent à la chasse et reviennent avec quelques animaux tués. Vous leur demandez s\'ils ont eu des problèmes et ils répondent par la négative. On dirait que l\'inventaire va connaître quelques ajouts savoureux et aucun noble ne sera plus sage !}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -115,7 +115,7 @@ this.rangers_origin_hunt_food_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "%terrainImage%{Une heure environ après avoir envoyé les hommes à la chasse, ils reviennent. Sauf qu'ils ramènent au camp %bearbrother% ensanglanté et déchiqueté. Ils rapportent que le groupe a croisé le chemin d'une maman ours brun. Elle s'est battue comme une folle et n'a cessé de déchiqueter le braconnier blessé que parce que l'un des hommes a menacé ses petits avec une torche. Vous êtes heureux que les hommes soient tous en vie, même si %bearbrother% aura besoin de beaucoup de temps pour se remettre.}",
+			Text = "%terrainImage%{Une heure environ après avoir envoyé les hommes à la chasse, ils reviennent. Sauf qu\'ils ramènent au camp %bearbrother% ensanglanté et déchiqueté. Ils rapportent que le groupe a croisé le chemin d\'une maman ours brun. Elle s\'est battue comme une folle et n\'a cessé de déchiqueter le braconnier blessé que parce que l\'un des hommes a menacé ses petits avec une torche. Vous êtes heureux que les hommes soient tous en vie, même si %bearbrother% aura besoin de beaucoup de temps pour se remettre.}",
 			Image = "",
 			List = [],
 			Characters = [],

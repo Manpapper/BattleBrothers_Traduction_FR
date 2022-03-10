@@ -9,13 +9,13 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 120.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{You come across a caldera the bottom of which you find a few sheep nuzzling something. As you draw close, you see that there is an enormous hound there, its fur matted with blood, its collar shredded, and its paws wiry where the claws have come apart. It regards you with a growl, but can\'t maintain it for long as it simply puts its head down with an exhausted huff. The sheep depart and beyond them you find a man leaning against a rock. His chest has been ripped open and whatever killed him did it with such force as to spray his innards all along the rocks. Following the trail, you do find a monstrous Nachzehrer whose throat has been ripped out. %randombrother% nods.%SPEECH_ON%I think that pup might be worth having in the company.%SPEECH_OFF%}",
+			Text = "%terrainImage%{Vous tombez sur une caldeira au fond de laquelle vous trouvez quelques moutons en train de câliner quelque chose. En vous approchant, vous voyez qu\'il y a là un énorme molosse, à la fourrure emmêlée de sang, au col déchiqueté et aux pattes déchiquetées là où les griffes se sont détachées. Il vous regarde avec un grognement, mais ne peut le maintenir longtemps car il baisse simplement la tête avec un souffle épuisé. Les moutons partent et derrière eux, vous trouvez un homme appuyé contre un rocher. Sa poitrine a été déchirée et ce qui l\'a tué l\'a fait avec une telle force que ses entrailles ont été projetées sur les rochers. En suivant la piste, vous trouvez un monstrueux Nachzehrer dont la gorge a été arrachée. %randombrother% hoche la tête.%SPEECH_ON%Je pense que ce chiot pourrait être utile dans la compagnie.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "He\'ll fit right in with us.",
+					Text = "Il s\'adaptera parfaitement à nous.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 70 ? "B" : "C";
@@ -28,7 +28,7 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Houndmaster != null)
 				{
 					this.Options.push({
-						Text = "%houndman%, you\'ve dealt with hounds before, right?",
+						Text = "%houndman%, vous avez déjà eu affaire à des chiens de chasse, non ?",
 						function getResult( _event )
 						{
 							return "D";
@@ -38,7 +38,7 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Just put it out of its misery.",
+					Text = "Mettez fin à ses souffrances.",
 					function getResult( _event )
 					{
 						return 0;
@@ -50,13 +50,13 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "%terrainImage%{You reach out to the hound and it lifts it head to you as though you were another threat. Its eyes peer blackly from a long-matted mane that still drips with blood. The sheep, having seen what carnage this beast has already wrought, bay nervously as they watch you. But you won\'t be deterred. You put your hand forth, palm supinated, and the weary dog slowly lowers into it. You nod.%SPEECH_ON%There\'s more fight in you yet, friend.%SPEECH_OFF%}",
+			Text = "%terrainImage%{Vous tendez la main au molosse et il lève la tête vers vous comme si vous étiez une autre menace. Ses yeux sont noirs et brillent dans une longue crinière qui dégouline encore de sang. Les moutons, qui ont vu le carnage que cette bête a déjà fait, s\'agitent nerveusement en vous regardant. Mais vous ne vous laissez pas décourager. Vous avancez votre main, paume en avant, et le chien fatigué s\'y abaisse lentement. Vous hochez la tête.%SPEECH_ON%Il y a encore du courage en toi, mon ami.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll call you \'Warrior\'.",
+					Text = "Je t\'appellerai \"Guerrier\".",
 					function getResult( _event )
 					{
 						return 0;
@@ -67,7 +67,7 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				local item = this.new("scripts/items/accessory/warhound_item");
-				item.m.Name = "Warrior the Warhound";
+				item.m.Name = "Guerrier le chien de guerre";
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
@@ -79,13 +79,13 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "%terrainImage%{You move to take the hound, but as you crouch down one of the sheep bays and charges, knocking you over. The men laugh and by the time you get to your knees another sheep crushes you from behind to many cheers. Drawing out your sword emits a sharp twang that sends the sheep scurrying. When you look back at the hound its nose is to the dirt and its eyes peerless. It has died and the sheep slowly collect around it bleating and crying out. You sheathe your sword and tell the company to move on.}",
+			Text = "%terrainImage%{Vous vous déplacez pour prendre le chien, mais alors que vous vous accroupissez, l\'un des moutons s\'approche et vous charge, vous renversant. Les hommes rient et le temps que vous vous mettiez à genoux, un autre mouton vous écrase par derrière sous les acclamations. En sortant votre épée, vous émettez un son aigu qui fait fuir le mouton. Quand vous vous retournez vers le chien, son nez est dans la terre et ses yeux sont sans égal. Il est mort et les moutons se rassemblent lentement autour de lui en bêlant et en criant. Vous rengainez votre épée et dites à la compagnie d\'avancer.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Brave little guy.",
+					Text = "Un petit gars courageux.",
 					function getResult( _event )
 					{
 						return 0;
@@ -100,13 +100,13 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "%terrainImage%{%houndman% steps forward.%SPEECH_ON%I know this breed. It is of northern stock, a sturdy creature. There is one thing it shall respect in a man and it is strength.%SPEECH_OFF%The sellsword crouches before the dog and without pause puts its hands around the scuff of its neck and starts to scratch. Despite the sudden movements, the dog responds positively and when the man stops scratching the dog lifts up off the ground and lopes forward and follows the man. %houndman% stares back at you as he roughs the dog up with some heavy petting.%SPEECH_ON%Yeah he\'ll fight for us. Fightin\' is what he\'s made for. He just needed someone to watch him rip and tear.%SPEECH_OFF%What a lovely creature this is. And the dog is fine, too.}",
+			Text = "%terrainImage%{%houndman% s\'avance.%SPEECH_ON%Je connais cette race. Elle est de souche nordique, une créature robuste. Il y a une chose qu\'elle respecte chez un homme, c\'est la force.%SPEECH_OFF%Le mercenaire s\'accroupit devant le chien et, sans pause, met ses mains autour de l\'éraflure de son cou et commence à le gratter. Malgré les mouvements brusques, le chien réagit positivement et, lorsque l\'homme cesse de le gratter, il se soulève du sol et s\'avance à grands pas pour suivre l\'homme. %houndman% vous regarde fixement tandis qu\'il malmène le chien en le caressant fortement.%SPEECH_ON%Oui, il se battra pour nous. Il est fait pour se battre. Il avait juste besoin de quelqu\'un pour le regarder déchirer et arracher.%SPEECH_OFF%Quelle charmante créature. Et le chien est bien, aussi.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Lets call him \'Warrior\' then.",
+					Text = "Appelons-le \"Guerrier\" alors.",
 					function getResult( _event )
 					{
 						return 0;
@@ -118,7 +118,7 @@ this.adopt_warhound_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Houndmaster.getImagePath());
 				local item = this.new("scripts/items/accessory/warhound_item");
-				item.m.Name = "Warrior the Warhound";
+				item.m.Name = "Guerrier le chien de guerre";
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
