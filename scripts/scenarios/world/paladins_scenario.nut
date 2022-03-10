@@ -4,7 +4,7 @@ this.paladins_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 	{
 		this.m.ID = "scenario.paladins";
 		this.m.Name = "Prêteurs de Serments";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_180.png[/img][/p][p]Les Prêteurs de Serments sont des guerriers chevaleresques redevables non pas aux seigneurs, mais aux idéaux et aux enseignements de leur fondateur, le Jeune Anselm. L\'ordre se trouve maintenant dans une situation difficile, et ils se sont tournés vers vous pour changer leur destin. Pouvez-vous apprendre à ces fanatiques à devenir de bons mercenaires ?\n\n[color=#bcad8c]Paladins:[/color] Commencez avec deux guerriers aguerris et un bon équipement.\n[color=#bcad8c]Prêteurs de Serments:[/color] En prêtant serment aux enseignements du jeune Anselm, vous devez faire des serments qui confèrent divers avantages et désavantages jusqu\'à ce qu\'ils soient accomplis.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_180.png[/img][/p][p]Les Prêteurs de Serments sont des guerriers chevaleresques redevables non pas aux seigneurs, mais aux idéaux et aux enseignements de leur fondateur, le Jeune Anselm. L\'ordre se trouve maintenant dans une situation difficile, et ils se sont tournés vers vous pour changer leur destin. Pouvez-vous apprendre à ces fanatiques à devenir de bons mercenaires ?\n[color=#bcad8c]Paladins:[/color] Commencez avec deux guerriers aguerris et un bon équipement.\n[color=#bcad8c]Prêteurs de Serments:[/color] En prêtant serment aux enseignements du jeune Anselm, vous devez choisir des serments qui confèrent divers avantages et désavantages jusqu\'à ce qu\'ils soient accomplis.[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 40;
 		this.m.IsFixedLook = true;
