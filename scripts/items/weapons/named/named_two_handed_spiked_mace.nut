@@ -10,7 +10,7 @@ this.named_two_handed_spiked_mace <- this.inherit("scripts/items/weapons/named/n
 		this.m.PrefixList = this.Const.Strings.BarbarianPrefix;
 		this.m.SuffixList = this.Const.Strings.BarbarianSuffix;
 		this.m.UseRandomName = false;
-		this.m.Description = "Une lourde masse à pointes conçue pour ressembler à un crâne humain. Malgré son apparence grossière, c'est une arme bien équilibrée et mortelle.";
+		this.m.Description = "Une lourde masse à pointes conçue pour ressembler à un crâne humain. Malgré son apparence grossière, c\'est une arme bien équilibrée et mortelle.";
 		this.m.Categories = "Mace, Two-Handed";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;

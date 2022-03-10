@@ -422,7 +422,7 @@ this.skill <- {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] de dégats qui ignore l'armure"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] de dégats qui ignore l\'armure"
 			});
 		}
 		else if (this.m.DirectDamageMult > 0.0)
@@ -431,7 +431,7 @@ this.skill <- {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] de dégats, desquels [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] peuvent ignorer l'armure"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] de dégats, desquels [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] peuvent ignorer l\'armure"
 			});
 		}
 		else
@@ -450,7 +450,7 @@ this.skill <- {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_max + "[/color] de dégats à l'armure"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_armor_max + "[/color] de dégats à l\'armure"
 			});
 		}
 		
@@ -460,7 +460,7 @@ this.skill <- {
 				id = 9,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut être utilisé car ce personnage a prêté un serment interdisant l'utilisation d'armes ou d'outils.[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut être utilisé car ce personnage a prêté un serment interdisant l\'utilisation d\'armes ou d\'outils.[/color]"
 			});
 		}
 
@@ -1098,7 +1098,7 @@ this.skill <- {
 			{
 				ret.push({
 					icon = "ui/tooltips/negative.png",
-					text = "Armé d'un bouclier"
+					text = "Armé d\'un bouclier"
 				});
 			}
 		}
@@ -1176,7 +1176,7 @@ this.skill <- {
 		{
 			ret.push({
 				icon = "ui/tooltips/negative.png",
-				text = "Immunisé contre l'enracinement"
+				text = "Immunisé contre l\'enracinement"
 			});
 		}
 

@@ -7,7 +7,7 @@ this.named_golden_round_shield <- this.inherit("scripts/items/shields/named/name
 		this.updateVariant();
 		this.m.ID = "shield.named_golden_round";
 		this.m.NameList = this.Const.Strings.ShieldNames;
-		this.m.Description = "Un bouclier rond entièrement en métal d\'une qualité extraordinaire. Cela devait être la fierté de tout guerrier qui s'en vantait.";
+		this.m.Description = "Un bouclier rond entièrement en métal d\'une qualité extraordinaire. Cela devait être la fierté de tout guerrier qui s\'en vantait.";
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;

@@ -4,7 +4,7 @@ this.orc_wooden_club <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.orc_wooden_club";
-		this.m.Name = "Branche d'arbre";
+		this.m.Name = "Branche d\'arbre";
 		this.m.Description = "Une grosse et lourde branche arrachée à un arbre. Pas bien adapté pour les mains humaines.";
 		this.m.Categories = "Mace, One-Handed";
 		this.m.IconLarge = "weapons/melee/orc_club_01_140x70.png";

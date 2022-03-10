@@ -423,12 +423,12 @@ gt.Const.Strings.ShipNames <- [
 	"Sombre Présage",
 	"Concorde",
 	"Albatros",
-	"Cheval d'Or",
+	"Cheval d\'Or",
 	"Nymphe des Mers",
 	"Destinée Tordue",
 	"Prime du Roi",
 	"Moine Chauve",
-	"Soleil d'Or",
+	"Soleil d\'Or",
 	"Vanité",
 	"L\'Effronté",
 	"Griffe du Tigre",
@@ -493,8 +493,8 @@ gt.Const.Strings.MercenaryCompanyNames <- [
 	"Pacte de Fer",
 	"Sang-Liés",
 	"Rempart",
-	"Marche de l'Aube",
-	"Fils de l'Hiver",
+	"Marche de l\'Aube",
+	"Fils de l\'Hiver",
 	"Compagnie de la Maison de la River",
 	"Compagnie de la Comète Enflammée",
 	"Grande Compagnie",
@@ -834,7 +834,7 @@ gt.Const.Strings.TerrainRegionNames <- [
 		"Vallee des Mousses",
 		"Vaste-Arpent",
 		"Fleur du Sud",
-		"Terre d'Aurore",
+		"Terre d\'Aurore",
 		"Pres du Bois de Chêne",
 		"Arpent du Vent du Sud",
 		"Pre de la Crique",
@@ -1388,7 +1388,7 @@ gt.Const.Strings.PerkDescription <- {
 	SpecPolearm = "Maîtrisez les armes d\'hast et gardez l\'ennemi à distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes Armes d\'hast ont leur coup en Point d\'action réduit à [color=" + this.Const.UI.Color.NegativeValue + "]5[/color], et n\'ont plus de pénalité en attaquant les cibles au contact.",
 	SpecHammer = "Maîtrisez les marteaux et combattez les ennemis en armure lourde. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Détruire l\'Armure\' et \'Destruction d\'Armure\' infligent [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] de dégâts en plus contre l\'armure.\n\n\'Fracasser\' gagne [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance de toucher.\n\nLe Polehammer n\'a plus de pénalité en attaquant les cibles au contact.",
 	SpecMace = "Maîtrisez les massues et soumettez vos ennemis par les coups, qu\'ils soient en armure ou non. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Assomer\', \'Renverser\' et \'Frappe Descendante\' ont [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance d\'étourdir la cible si elle n\'est pas immunisé.\n\nLa Polemace n\'a plus de pénalité en attaquant les cibles au contact.",
-	SpecFlail = "Maîtrisez les fléaux et contournez le bouclier de vos ennemis. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Coup à la Tête\' et \'Avalanche de Coups à la Tête\' ignorent le bonus de défense des boucliers.\n\nPound ignore [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] d'armure en plus quand vous touchez la tête.\n\n\'Faucher\' gagne [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance de toucher."
+	SpecFlail = "Maîtrisez les fléaux et contournez le bouclier de vos ennemis. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Coup à la Tête\' et \'Avalanche de Coups à la Tête\' ignorent le bonus de défense des boucliers.\n\nPound ignore [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] d\'armure en plus quand vous touchez la tête.\n\n\'Faucher\' gagne [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance de toucher."
 };
 gt.Const.Strings.Tooltip <- {
 	World = {

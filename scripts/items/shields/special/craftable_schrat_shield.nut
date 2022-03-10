@@ -4,7 +4,7 @@ this.craftable_schrat_shield <- this.inherit("scripts/items/shields/shield", {
 	{
 		this.shield.create();
 		this.m.ID = "shield.craftable_schrat";
-		this.m.Name = "Bouclier d'arbre vivant";
+		this.m.Name = "Bouclier d\'arbre vivant";
 		this.m.Description = "Ce bouclier taillé dans les restes d\'un arbre vivant repousse lentement s\'il subit des dommages. Au premier coup d\'oeil, on dirait presque que son visage grotesque bouge toujours.";
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;

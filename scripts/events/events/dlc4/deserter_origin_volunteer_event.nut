@@ -11,7 +11,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_88.png[/img]{Deux hommes à l'air ébouriffé et fatigué sortent des buissons au bord de la route. Ils lèvent les mains comme s'ils venaient se rendre.%SPEECH_ON%Êtes-vous %companyname% ? On nous a dit que vous étiez une bande de déserteurs. Et je ne dis pas ça comme une insulte. Nous sommes aussi des fuyards, mais nous n'avons nulle part où aller. Partout où nous allons, il y a des chasseurs de primes et des bourreaux. Laissez-nous nous battre pour vous. Ce n'est pas le combat qui nous a fait peur, on le jure.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_88.png[/img]{Deux hommes à l\'air ébouriffé et fatigué sortent des buissons au bord de la route. Ils lèvent les mains comme s\'ils venaient se rendre.%SPEECH_ON%Êtes-vous %companyname% ? On nous a dit que vous étiez une bande de déserteurs. Et je ne dis pas ça comme une insulte. Nous sommes aussi des fuyards, mais nous n\'avons nulle part où aller. Partout où nous allons, il y a des chasseurs de primes et des bourreaux. Laissez-nous nous battre pour vous. Ce n\'est pas le combat qui nous a fait peur, on le jure.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -25,7 +25,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Nous n'avons pas besoin de vous.",
+					Text = "Nous n\'avons pas besoin de vous.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -49,7 +49,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude2.setStartValuesEx([
 					"deserter_background"
 				]);
-				_event.m.Dude2.getBackground().m.RawDescription = "%name% a déserté un régiment de l'armée avec " + _event.m.Dude1.getNameOnly() + " avant qu'il ne demande de vous rejoindre.";
+				_event.m.Dude2.getBackground().m.RawDescription = "%name% a déserté un régiment de l\'armée avec " + _event.m.Dude1.getNameOnly() + " avant qu\'il ne demande de vous rejoindre.";
 				_event.m.Dude2.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude1.getImagePath());
 				this.Characters.push(_event.m.Dude2.getImagePath());
@@ -58,7 +58,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_88.png[/img]{Il serait presque satisfaisant et ironique de pendre ces hommes pour ce qu'ils ont fait, mais vous n'êtes pas prêt à donner ce message à la compagnie. Vous les accueillez dans le groupe et les envoyez à l'inventaire. %victim% garde un œil sur eux pendant un certain temps, mais il rapporte que les hommes sont fidèles à leur parole et vont se battre.}",
+			Text = "[img]gfx/ui/events/event_88.png[/img]{Il serait presque satisfaisant et ironique de pendre ces hommes pour ce qu\'ils ont fait, mais vous n\'êtes pas prêt à donner ce message à la compagnie. Vous les accueillez dans le groupe et les envoyez à l\'inventaire. %victim% garde un œil sur eux pendant un certain temps, mais il rapporte que les hommes sont fidèles à leur parole et vont se battre.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -88,7 +88,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{Il serait presque satisfaisant et ironique de pendre ces hommes pour ce qu'ils ont fait, mais vous n'êtes pas prêt à donner ce message à la compagnie. Vous les accueillez dans le groupe, les envoyant à l'inventaire avec %victim% qui garde un œil sur eux. Sauf que vous ne voyez pas votre mercenaire pendant un laps de temps. Lorsque vous partez à sa recherche, il est retrouvé assommé sur le sol et l'inventaire saccagé. Les deux hommes sont introuvables !}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Il serait presque satisfaisant et ironique de pendre ces hommes pour ce qu\'ils ont fait, mais vous n\'êtes pas prêt à donner ce message à la compagnie. Vous les accueillez dans le groupe, les envoyant à l\'inventaire avec %victim% qui garde un œil sur eux. Sauf que vous ne voyez pas votre mercenaire pendant un laps de temps. Lorsque vous partez à sa recherche, il est retrouvé assommé sur le sol et l\'inventaire saccagé. Les deux hommes sont introuvables !}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -143,7 +143,7 @@ this.deserter_origin_volunteer_event <- this.inherit("scripts/events/event", {
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_supplies.png",
-						text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] d'Outils"
+						text = "Vous perdez  [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + amount + "[/color] d\'Outils"
 					});
 				}
 				else if (r == 4)

@@ -253,7 +253,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] de Gain d'experience"
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] de Gain d\'experience"
 				});
 			}
 			else if (_background.getID() == "background.apprentice")
@@ -267,7 +267,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de Gain d'experience"
+					text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de Gain d\'experience"
 				});
 			}
 			else
@@ -276,7 +276,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] de Gain d'experience"
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] de Gain d\'experience"
 				});
 			}
 		}
@@ -286,7 +286,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 				id = 16,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de Gain d'experience"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de Gain d\'experience"
 			});
 			_tooltip.push({
 				id = 17,
@@ -298,7 +298,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 				id = 18,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Est définitivement mort s'il est abattu et ne survivra pas à une blessure permanente."
+				text = "Est définitivement mort s\'il est abattu et ne survivra pas à une blessure permanente."
 			});
 		}
 	}

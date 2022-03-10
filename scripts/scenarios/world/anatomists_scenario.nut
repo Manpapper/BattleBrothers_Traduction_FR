@@ -3,8 +3,8 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 	function create()
 	{
 		this.m.ID = "scenario.anatomists";
-		this.m.Name = "Anatomists";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Fueled by an unquenchable thirst for knowledge, the Anatomists have spent years dissecting the exotic and the alien. With social mores dogging their research, however, they\'ve turned to you to form a mercenary company and provide them a new source of fresh specimens.\n\n[color=#bcad8c]Anatomists:[/color] Start with three men and high funds.\n[color=#bcad8c]Researchers:[/color] Research the corpses of your fallen foes and gain knowledge to empower your men.\n[color=#bcad8c]Not Fighters:[/color] Your men will never be of Confident morale.[/p]";
+		this.m.Name = "Anatomistes";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Animés par une soif inextinguible de connaissances, les Anatomistes ont passé des années à disséquer l\'exotique et le fantastique. Mais les mœurs sociales entravant leurs recherches, ils se sont tournés vers vous pour former une compagnie de mercenaires et leur fournir une nouvelle source de spécimens frais.\n\n[color=#bcad8c]Anatomists:[/color] Commencez avec trois hommes et des fonds élevés.\n[color=#bcad8c]Chercheurs:[/color] Recherchez les cadavres de vos ennemis tombés au combat et acquérez des connaissances pour renforcer vos hommes.\n[color=#bcad8c]Non combattants:[/color] Vos hommes n\'auront jamais un moral \"Confiant\".[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 70;
 		this.m.IsFixedLook = true;
@@ -31,7 +31,7 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		bros[0].setStartValuesEx([
 			"anatomist_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "{Captain? Is it alright if I call you captain? Ah, of course it is. What? No, we were not calling you by another name. Yers is a smooth costard, good sir, and we would not be of such derring-do to refer to you as a sellsword who is as ordinary as any of our coetaneous clodpolls, or state that we were in some sense importuning commerce by conducting business with a man of your particular skills. No sir, we would not. We are not children of perdition, sir.}";
+		bros[0].getBackground().m.RawDescription = "{Capitaine ? C\'est bon si je vous appelle capitaine ? Ah, bien sûr que ça l\'est. Quoi ? Non, nous ne vous appellerons pas par un autre nom. Yers est un costard doux, mon bon monsieur, et nous n\'aurions pas eu le culot de vous appeler comme un mercenaire aussi ordinaire que n\'importe quel autre, ou pour affirmer que nous étions en quelque sorte en train de solliciter un homme de vos compétences. Non, monsieur, nous ne le ferions pas. Nous ne sommes pas des enfants, monsieur.}";
 		bros[0].setPlaceInFormation(3);
 		bros[0].m.Talents = [];
 		local talents = bros[0].getTalents();
@@ -49,7 +49,7 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		bros[1].setStartValuesEx([
 			"anatomist_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "{Despite others\' hesitancies, I\'ve no qualms calling you a javel, sir. You are, after all, a javel. A scapegrace. Some sellsword or another, yes? I think only a man who trucks cowardice would avoid calling you what you are. That someone disrespects your intelligence, thinking you yourself know not yourself. Even I see that in you accepting who you are, you are quite a good specimen. I mean, sellsword.}";
+		bros[1].getBackground().m.RawDescription = "{Malgré les hésitations des autres, je n\'ai aucun scrupule à vous appeler un mercenaire, monsieur. Vous êtes, après tout, un mercenaire. Un chercheur d\'or. Un mercenaire comme un autre, n\'est-ce pas ? Je pense que seul un homme lache éviterait de vous appeler pour que vous êtes. Ce quelqu\'un manque de respect à votre intelligence, pensant que vous ne vous connaissez pas vous-même. Même moi, je vois qu\'en acceptant qui vous êtes, vous êtes un bon spécimen. Je veux dire, un mercenaire.}";
 		bros[1].setPlaceInFormation(4);
 		bros[1].m.Talents = [];
 		talents = bros[1].getTalents();
@@ -68,7 +68,7 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		bros[2].setStartValuesEx([
 			"anatomist_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "{Though our quotidian dialogues are no doubt drollery, beneath the banausic surface I must admit I feel a touch of serotinous savagery lurking within you, coming to the fore as if my words be fire. Even our most desultory talks has me on edge, the way you stare at me with such hateful eyes. Well, know this, bounty hunter, I am no casuist, I speak in earnest. You are too fine a specimen-I mean captain to be lofting some sapskull\'s brickbats at. Understand?}";
+		bros[2].getBackground().m.RawDescription = "{Bien que nos dialogues quotidiens soient sans aucun doute amusants, sous la surface banale, je dois admettre que je sens une touche de sauvagerie tapie en vous.. Même nos discussions les plus désordonnées me mettent sur les nerfs, la façon dont vous me fixez avec des yeux si haineux. Eh bien, sachez, mercenaire, que je ne suis pas un spécialiste. Vous êtes un trop bon spécimen, je veux dire capitaine, pour qu\'on vous lance des piques à la figure. Vous comprenez ?}";
 		bros[2].setPlaceInFormation(5);
 		bros[2].m.Talents = [];
 		talents = bros[2].getTalents();
@@ -566,7 +566,7 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			id = 16,
 			type = "text",
 			icon = "ui/icons/morale.png",
-			text = "Will never be of confident morale"
+			text = "Ne sera jamais d\'un moral \"Confiant\""
 		});
 	}
 
