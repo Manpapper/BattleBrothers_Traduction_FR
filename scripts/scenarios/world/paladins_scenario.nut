@@ -238,7 +238,7 @@ this.paladins_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 			return;
 		}
 
-		if (_killer != null && _killer.getFaction() != this.Const.Faction.Player && _killer.getFaction() != this.Const.Faction.PlayerAnimals)
+		if (_killer != null && (_killer.getFaction() != this.Const.Faction.Player && _killer.getFaction() != this.Const.Faction.PlayerAnimals) && _actor.isPlayerControlled())
 		{
 			if (_actor.isPlayerControlled && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_fortification")
 			{

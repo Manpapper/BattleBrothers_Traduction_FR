@@ -92,10 +92,10 @@ this.injury <- this.inherit("scripts/skills/skill", {
 		};
 	}
 
-	function addHealingTime( days )
+	function addHealingTime( _days )
 	{
-		this.m.HealingTimeMin = this.Math.max(1, this.m.HealingTimeMin + days);
-		this.m.HealingTimeMax = this.Math.max(this.m.HealingTimeMin + 1, this.m.HealingTimeMax + days);
+		this.m.HealingTimeMin = this.Math.max(1, this.m.HealingTimeMin + _days);
+		this.m.HealingTimeMax = this.Math.max(this.m.HealingTimeMin + 1, this.m.HealingTimeMax + _days);
 	}
 
 	function create()

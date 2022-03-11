@@ -37,6 +37,20 @@ this.oathtaker_joins_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"paladin_background"
 				]);
+				local dudeItems = _event.m.Dude.getItems();
+
+				if (dudeItems.getItemAtSlot(this.Const.ItemSlot.Head) != null && dudeItems.getItemAtSlot(this.Const.ItemSlot.Head).getID() == "armor.head.adorned_full_helm")
+				{
+					dudeItems.unequip(dudeItems.getItemAtSlot(this.Const.ItemSlot.Head));
+					dudeItems.equip(this.new("scripts/items/helmets/adorned_closed_flat_top_with_mail"));
+				}
+
+				if (dudeItems.getItemAtSlot(this.Const.ItemSlot.Body) != null && dudeItems.getItemAtSlot(this.Const.ItemSlot.Body).getID() == "armor.body.adorned_heavy_mail_hauberk")
+				{
+					dudeItems.unequip(dudeItems.getItemAtSlot(this.Const.ItemSlot.Body));
+					dudeItems.equip(this.new("scripts/items/armor/adorned_warriors_armor"));
+				}
+
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}
 
@@ -102,6 +116,11 @@ this.oathtaker_joins_event <- this.inherit("scripts/events/event", {
 		}
 
 		if (this.World.getPlayerRoster().getSize() >= this.World.Assets.getBrothersMax())
+		{
+			return;
+		}
+
+		if (this.World.getTime().Days <= 30)
 		{
 			return;
 		}

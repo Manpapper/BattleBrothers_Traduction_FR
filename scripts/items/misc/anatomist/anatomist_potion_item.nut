@@ -27,7 +27,7 @@ this.anatomist_potion_item <- this.inherit("scripts/items/item", {
 			_actor.getSkills().add(this.new("scripts/skills/injury/sickness_injury"));
 		}
 
-		_actor.getSkills().getSkillByID("injury.sickness").addHealingTime(_actor.getFlags().getAsInt("ActiveMutations") - 1);
+		_actor.getSkills().getSkillByID("injury.sickness").addHealingTime(_actor.getFlags().getAsInt("ActiveMutations"));
 		_actor.getFlags().increment("ActiveMutations");
 		local time = 0.0;
 

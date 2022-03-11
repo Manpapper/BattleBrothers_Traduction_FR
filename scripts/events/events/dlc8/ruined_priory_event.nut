@@ -1,5 +1,7 @@
 this.ruined_priory_event <- this.inherit("scripts/events/event", {
-	m = {},
+	m = {
+		InjuryBro = null
+	},
 	function create()
 	{
 		this.m.ID = "event.ruined_priory";
@@ -207,7 +209,7 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{You grab the monk and pull him to his feet. You tell him that the %companyname% will repair the priory. He is tearful and happy, though warns that it might be beyond saving. Smiling, you tell him nothing is too great a task for the Oathtakers. A moment later, %randombrother% pushes on the busted wall only for the bottom half to spill inward and the top parts to spill out, promptly burying him in a pile of rubble. The company shouts in horror and goes to pull him out, and as they do the rest of the building collapses, folding unto itself in a stream of powdered stone. %randombrother% is rescued from the debris, albeit with a fair share of injuries.%SPEECH_ON%Well, I suppose it\'s the thought that counts.%SPEECH_OFF%The monk says, scratching the back of his head.%SPEECH_ON%Perhaps the old gods truly did seek to punish us here. But no matter, I think you still did right, and there is dignity in the attempt, is there not? I shall speak well of you, %companyname%.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{You grab the monk and pull him to his feet. You tell him that the %companyname% will repair the priory. He is tearful and happy, though warns that it might be beyond saving. Smiling, you tell him nothing is too great a task for the Oathtakers. A moment later, %injurybro% pushes on the busted wall only for the bottom half to spill inward and the top parts to spill out, promptly burying him in a pile of rubble. The company shouts in horror and goes to pull him out, and as they do the rest of the building collapses, folding unto itself in a stream of powdered stone. %injurybro% is rescued from the debris, albeit with a fair share of injuries.%SPEECH_ON%Well, I suppose it\'s the thought that counts.%SPEECH_OFF%The monk says, scratching the back of his head.%SPEECH_ON%Perhaps the old gods truly did seek to punish us here. But no matter, I think you still did right, and there is dignity in the attempt, is there not? I shall speak well of you, %companyname%.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -225,13 +227,16 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 			{
 				this.World.Assets.addMoralReputation(3);
 				this.World.Assets.addBusinessReputation(35);
-				local brothers = this.World.getPlayerRoster().getAll();
-				local injuredBro = brothers[this.Math.rand(0, brothers.len() - 1)];
-				injuredBro.addHeavyInjury();
+				this.List.push({
+					id = 10,
+					icon = "ui/icons/special.png",
+					text = "The company gained renown"
+				});
+				_event.m.InjuryBro.addHeavyInjury();
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = injuredBro.getName() + " suffers heavy wounds"
+					text = _event.m.InjuryBro.getName() + " suffers heavy wounds"
 				});
 			}
 
@@ -308,6 +313,8 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
+		local brothers = this.World.getPlayerRoster().getAll();
+		this.m.InjuryBro = brothers[this.Math.rand(0, brothers.len() - 1)];
 		this.m.Score = 5;
 	}
 
@@ -317,10 +324,15 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 
 	function onPrepareVariables( _vars )
 	{
+		_vars.push([
+			"injurybro",
+			this.m.InjuryBro.getName()
+		]);
 	}
 
 	function onClear()
 	{
+		this.m.InjuryBro = null;
 	}
 
 });

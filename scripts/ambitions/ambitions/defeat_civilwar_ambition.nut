@@ -71,7 +71,7 @@ this.defeat_civilwar_ambition <- this.inherit("scripts/ambitions/ambition", {
 	function onPrepareVariables( _vars )
 	{
 		local allies = this.World.FactionManager.getAlliedFactions(this.Const.Faction.Player);
-		local bestRelations = 0.0;
+		local bestRelations = -1.0;
 		local best;
 
 		foreach( a in allies )
@@ -83,6 +83,11 @@ this.defeat_civilwar_ambition <- this.inherit("scripts/ambitions/ambition", {
 				bestRelations = f.getPlayerRelation();
 				best = f;
 			}
+		}
+		
+		if (best == null)
+		{
+			return;
 		}
 
 		_vars.push([

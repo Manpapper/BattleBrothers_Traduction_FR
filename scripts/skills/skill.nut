@@ -1049,9 +1049,10 @@ this.skill <- {
 
 			if (oath != null)
 			{
-				local main = user.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
+				local items = user.getItems();
+				local main = items.getItemAtSlot(this.Const.ItemSlot.Mainhand);
 
-				if (main != null && main.isItemType(this.Const.Items.ItemType.MeleeWeapon) && main.isItemType(this.Const.Items.ItemType.TwoHanded || user.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand) == null && !user.getItem().hasBlockedSlot(this.Const.ItemSlot.Offhand)))
+				if (main != null && main.isItemType(this.Const.Items.ItemType.MeleeWeapon) && (main.isItemType(this.Const.Items.ItemType.TwoHanded) || items.getItemAtSlot(this.Const.ItemSlot.Offhand) == null && !items.hasBlockedSlot(this.Const.ItemSlot.Offhand)))
 				{
 					ret.push({
 						icon = "ui/tooltips/positive.png",
