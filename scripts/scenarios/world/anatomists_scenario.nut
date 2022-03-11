@@ -4,7 +4,7 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 	{
 		this.m.ID = "scenario.anatomists";
 		this.m.Name = "Anatomistes";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Animés par une soif inextinguible de connaissances, les Anatomistes ont passé des années à disséquer l\'exotique et le fantastique. Mais les mœurs sociales entravant leurs recherches, ils se sont tournés vers vous pour former une compagnie de mercenaires et leur fournir une nouvelle source de spécimens frais.\n\n[color=#bcad8c]Anatomists:[/color] Commencez avec trois hommes et des fonds élevés.\n[color=#bcad8c]Chercheurs:[/color] Recherchez les cadavres de vos ennemis tombés au combat et acquérez des connaissances pour renforcer vos hommes.\n[color=#bcad8c]Non combattants:[/color] Vos hommes n\'auront jamais un moral \"Confiant\".[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Animés par une soif inextinguible de connaissances, les Anatomistes ont passé des années à disséquer l\'exotique et le fantastique. Mais les mœurs sociales entravant leurs recherches, ils se sont tournés vers vous pour former une compagnie de mercenaires et leur fournir une nouvelle source de spécimens frais.\n[color=#bcad8c]Anatomists:[/color] Commencez avec trois hommes et des fonds élevés.\n[color=#bcad8c]Chercheurs:[/color] Recherchez les cadavres de vos ennemis tombés au combat et acquérez des connaissances pour renforcer vos hommes.\n[color=#bcad8c]Non combattants:[/color] Vos hommes n\'auront jamais un moral \"Confiant\".[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 70;
 		this.m.IsFixedLook = true;
