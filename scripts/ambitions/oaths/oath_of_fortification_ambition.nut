@@ -5,13 +5,13 @@ this.oath_of_fortification_ambition <- this.inherit("scripts/ambitions/oaths/oat
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_fortification";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Evil-doers skulk and hide away from the walls of the just.\nLet us take an Oath of Fortification and bring those walls to them!";
-		this.m.TooltipText = "\"Trust your shields as you would put faith in the old gods, for the contribution of the trees and the earth shall not be wasted on the nervous hinge of a coward\'s arm.\" - Young Anselm";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Texts of the Ancient Empire tell of military formations so tightly knit and compact that they were like roving castles on legs: hundreds of shields held together like the scales of a snake or the shell of a tortoise. The %companyname% tried its best to replicate these theories. It always took a few moments to piece the elements together, but you never intended for it to be an exercise in excellence. The ancients had an empire for a reason, and you\'re a company of misfits and Oathtakers. But by your estimation, which mostly starts and ends on whether or not the company still has a pulse, this oath was an outstanding success.\n\nNow it is time to lower the shields and the Ancient Empire-fervor and take on a new Oath!}";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
-		this.m.OathName = "Oath of Fortification";
-		this.m.OathBoonText = "Your men build up [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] less Fatigue when using shield skills. The \'Knock Back\' skill now staggers targets on hit.";
-		this.m.OathBurdenText = "Your men cannot move in the first round of combat.";
+		this.m.ButtonText = "Les méchants se tapissent et se cachent loin des murs des justes.\nFaisons un serment de fortification et apportons ces murs à eux !";
+		this.m.TooltipText = "\"Faites confiance à vos boucliers comme vous feriez confiance aux anciens dieux, car la contribution des arbres et de la terre ne sera pas gaspillée sur le bras d\'un lâche.\" - Jeune Anselm";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Les textes de l\'Ancien Empire parlent de formations militaires si serrées et compactes qu\'elles ressemblaient à des châteaux ambulants sur pattes : des centaines de boucliers tenus ensemble comme les écailles d\'un serpent ou la carapace d\'une tortue. %companyname% s\'efforçait de reproduire ces théories. Il fallait toujours quelques instants pour assembler les éléments, mais vous n\'avez jamais voulu que ce soit un exercice d\'excellence. Les anciens avaient un empire pour une raison, et vous êtes une compagnie de marginaux et de Prêteurs de Serments. Mais d\'après votre estimation, ce serment a été un succès remarquable.\n\nIl est maintenant temps de baisser les boucliers et la ferveur de l\'Ancien Empire et de prononcer un nouveau serment !}";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
+		this.m.OathName = "Serment de Fortification";
+		this.m.OathBoonText = "Vos hommes accumulent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins quand ils utilisent des compétences de bouclier. La compétence \'Renverser\' étourdit maintenant la cible lorsqu\'elle est touchée";
+		this.m.OathBurdenText = "Vos hommes ne peuvent pas bouger lors du premier tour du combat.";
 	}
 
 	function getRenownOnSuccess()
@@ -22,7 +22,7 @@ this.oath_of_fortification_ambition <- this.inherit("scripts/ambitions/oaths/oat
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown if none of your men die during the Oath (" + this.getBonusObjectiveProgress() + " dead so far).";
+		return "Vous gagnez de la renommée supplémentaire si aucun de vos hommes ne meurt pendant le serment (" + this.getBonusObjectiveProgress() + " morts jusqu\'à maintenant).";
 	}
 
 	function getBonusObjectiveProgress()

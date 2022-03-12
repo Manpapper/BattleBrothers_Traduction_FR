@@ -5,14 +5,14 @@ this.oath_of_righteousness_ambition <- this.inherit("scripts/ambitions/oaths/oat
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_righteousness";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Few aberrations are as repugnant as the undead.\nLet us take an Oath of Righteousness and strike down these mockeries of life!";
-		this.m.TooltipText = "\"Beware the evil which has stolen into this realm. Set aside the worldly matters and dedicate oneself to putting our dead to rest once and for all. No man deserves to walk twice across this darkened land.\" - Young Anselm";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]When you walk the earth, one can\'t help but wonder who came before, and who or what comes after. So the sight of the dead walking again is such a disturbing answer to this inquiry that most would rather run from it than seek confirmation, and in that confirmation: confrontation. But it is these godless cretins which the %companyname% sought, taking an oath to vanquish them wherever found. It was a righteous affair requiring great mettle and stupendous courage, and upon completion there\'s little doubt that the men of the %companyname% have been spurred with a sense of accomplishment that few who walk this earth, dead or alive, shall ever feel.\n\nWith veins aflame with righteousness, the %companyname% is ready to take on its next Oath!";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
+		this.m.ButtonText = "Peu d\'aberrations sont aussi répugnantes que les morts-vivants.\nFaisons le serment de la justice et détruisons ces moqueries de la vie !";
+		this.m.TooltipText = "\"Méfiez-vous du mal qui a envahi ce royaume. Mettez de côté les affaires mondaines et consacrez-vous à faire reposer nos morts une fois pour toutes. Aucun homme ne mérite de marcher deux fois sur cette terre sombre.\" - Jeune Anselm";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]Quand on parcourt la terre, on ne peut s\'empêcher de se demander qui est venu avant, et qui ou quoi vient après. Ainsi, la vue des morts marchant à nouveau est une réponse si troublante à cette question que la plupart préfèrent la fuir plutôt que de chercher une confirmation, et dans cette confirmation : la confrontation. Mais ce sont ces crétins impies que %companyname% recherchait, faisant le serment de les vaincre où qu\'ils se trouvent. C\'était une affaire juste qui nécessitait un grand courage, et à son terme, il ne fait aucun doute que les hommes de la compagnie %companyname% ont été animés d\'un sentiment d\'accomplissement que peu de personnes sur cette terre, morts ou vivants, ressentiront jamais.\n\nLes veines embrasées par la droiture, %companyname% est prêt à prononcer son prochain serment !";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
 		this.m.RewardTooltip = "";
-		this.m.OathName = "Oath of Righteousness";
-		this.m.OathBoonText = "Your men have [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Resolve and [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee and Ranged Defense when fighting the undead.";
-		this.m.OathBurdenText = "Your men have [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve and [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Defense when fighting any other foe.";
+		this.m.OathName = "Serment de Justice";
+		this.m.OathBoonText = "Vos hommes ont [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] de Détermination et [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Compétence en Mêlée et à distance, et [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] de Défense en Mêlée et à distance s\'ils se battent contre des morts vivants.";
+		this.m.OathBurdenText = "Vos hommes ont [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination et [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Compétence en Mêlée et à distance, et [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Défense en Mêlée et à distance s\'ils se battent contre n\'importe quel autre ennemi.";
 	}
 
 	function getRenownOnSuccess()
@@ -23,7 +23,7 @@ this.oath_of_righteousness_ambition <- this.inherit("scripts/ambitions/oaths/oat
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown for slaying the undead (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire en tuant des morts-vivants (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()

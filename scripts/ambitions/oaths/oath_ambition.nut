@@ -34,7 +34,7 @@ this.oath_ambition <- this.inherit("scripts/ambitions/ambition", {
 		ret.push({
 			id = 4,
 			type = "header",
-			text = "Oath Boon"
+			text = "Avantage du Serment"
 		});
 		ret.push({
 			id = 5,
@@ -50,7 +50,7 @@ this.oath_ambition <- this.inherit("scripts/ambitions/ambition", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/ambition_tooltip.png",
-				text = "Your Renown will increase, which means higher pay for contracts and potentially unlocking new types of contracts." + (reward_tooltip == "" ? "\n\n" : "")
+				text = "Votre Renommée augmentera, ce qui implique une rémunération plus élevée pour les contrats et le déblocage potentiel de nouveaux types de contrats." + (reward_tooltip == "" ? "\n\n" : "")
 			});
 		}
 
@@ -67,7 +67,7 @@ this.oath_ambition <- this.inherit("scripts/ambitions/ambition", {
 		ret.push({
 			id = 7,
 			type = "header",
-			text = "Oath Burden"
+			text = "Fardeau du Serment"
 		});
 		ret.push({
 			id = 8,
@@ -81,7 +81,7 @@ this.oath_ambition <- this.inherit("scripts/ambitions/ambition", {
 	function getUIText()
 	{
 		local timeRemaining = this.m.OathDuration - this.Math.floor((this.Time.getVirtualTimeF() - this.m.StartTime) / this.World.getTime().SecondsPerDay);
-		return "Uphold an " + this.m.OathName + " for " + (timeRemaining > 1 ? "another " + timeRemaining + " days" : "1 more day");
+		return "Maintenir un " + this.m.OathName + " pendant " + (timeRemaining > 1 ? "encore " + timeRemaining + " jours" : "1 journée");
 	}
 
 	function getRenownOnSuccess()

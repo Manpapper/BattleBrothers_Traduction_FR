@@ -5,14 +5,14 @@ this.oath_of_vengeance_ambition <- this.inherit("scripts/ambitions/oaths/oath_am
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_vengeance";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "For too long have greenskins plagued our lands.\nLet us take an Oath of Vengeance and strike back at this menace!";
-		this.m.TooltipText = "Young Anselm\'s family was killed by orcs during the Battle of Many Names. When he himself faced greenskins, it is said he seemed an unstoppable warrior and his followers seek to emulate this vengeful surge of martial prowess.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]Greenskins have long plagued the land of man. Despite their everlasting threat, very few would ever take up an oath to destroy the creatures. They are a plague precisely because they are so dangerous, and because they are so dangerous most would rather look the other way than dare confront the beasts. However, the men of the %companyname% decided to take an oath against the orcs and goblins alike, and venture far to find them and hunt them down. Having followed through, a sense of accomplishment washes over the company.\n\nThe men are already chomping at the bit: which Oath should be undertaken next?";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
+		this.m.ButtonText = "Pendant trop longtemps, les peaux vertes ont infesté nos terres.\nFaisons le serment de vengeance et eradiquons cette menace !";
+		this.m.TooltipText = "La famille du jeune Anselm a été tuée par des orcs lors d\'une bataille connue dous de multiple noms. Lorsqu\'il a lui-même affronté les peaux-vertes, on dit qu\'il semblait être un guerrier invincible et ses disciples cherchent à imiter cet élan vengeur de prouesses martiales.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]Les peaux vertes sont depuis longtemps un fléau pour la terre des hommes. Malgré leur menace permanente, rares sont ceux qui prêtent serment de détruire ces créatures. Ils sont un fléau précisément parce qu\'ils sont si dangereux, et parce qu\'ils sont si dangereux, la plupart préfèrent détourner le regard plutôt que d\'oser affronter les bêtes. Cependant, les hommes de %companyname% ont décidé de prêter serment contre les orcs et les gobelins, et de s\'aventurer loin pour les trouver et les chasser. Après être allés jusqu\'au bout, un sentiment d\'accomplissement envahit la compagnie.\n\nLes hommes sont déjà en train de se ronger les sangs : quel sera le prochain serment à prononcer ?";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
 		this.m.RewardTooltip = "";
-		this.m.OathName = "Oath of Vengeance";
-		this.m.OathBoonText = "Your men have [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Resolve, [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee and Ranged Defense when fighting orcs or goblins.";
-		this.m.OathBurdenText = "Your men have [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve, [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Defense when fighting any other foe.";
+		this.m.OathName = "Serment de Vengeance";
+		this.m.OathBoonText = "Vos hommes ont [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] de Détermination, [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Compétence en Mêlée et à distance, et [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] de Défense en Mêlée et à distance s\'ils se battent contre des Orcs ou des Gobelins.";
+		this.m.OathBurdenText = "Vos hommes ont [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination, [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Compétence en Mêlée et à distance, et [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Défense en Mêlée et à distance s\'ils se battent contre n\'importe quel autre ennemi.";
 	}
 
 	function getRenownOnSuccess()
@@ -23,7 +23,7 @@ this.oath_of_vengeance_ambition <- this.inherit("scripts/ambitions/oaths/oath_am
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown for slaying greenskins (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire en tuant des peaux vertes (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()

@@ -5,14 +5,14 @@ this.oath_of_dominion_ambition <- this.inherit("scripts/ambitions/oaths/oath_amb
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_dominion";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Beasts have always threatened civilization.\nLet us take an Oath of Dominion and stake our claim against the tides of nature!";
-		this.m.TooltipText = "\"We are from the beasts, but the beasts wish to have us back. Distance oneself from nature\'s primitiveness, prove your worth over Her such that your humanity be held in the grip of your own hands and seen through thine own eyes.\" - Young Anselm";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]There is no more common a menace in this world than that of the common beast. And yet, despite this rampant disease of creatures, very few men are willing to take up arms and go seeking their vanquishment. It is only you all, the %companyname%, who swore an oath to slay the monsters, and slay them you did. With steady hands and stilled hearts, you kept to that Oath.\n\nTriumphant over beasts and monsters, the men are ready to take on whatever\'s next!";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
+		this.m.ButtonText = "Les bêtes ont toujours menacé la civilisation.\nFaisons le serment de domination et revendiquons nos droits contre les marées de la nature !";
+		this.m.TooltipText = "\"Nous venons des bêtes, mais les bêtes veulent nous reprendre. Prenez vos distances par rapport à la primitivité de la nature, prouvez votre valeur par rapport à elle de manière à ce que votre humanité soit tenue en main et vue à travers vos propres yeux.\" - Jeune Anselm";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]Il n\'y a pas de menace plus courante dans ce monde que celle de la bête ordinaire. Et pourtant, malgré cette maladie rampante des créatures, très peu d\'hommes sont prêts à prendre les armes et à chercher à les vaincre. Il n\'y a que vous tous, %companyname%, qui avez fait le serment de tuer les monstres, et vous les avez tués. Avec des mains fermes et des coeurs calmes, vous avez respecté ce serment.\n\nTriomphant des bêtes et des monstres, les hommes sont prêts à affronter tout ce qui peut arriver !";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
 		this.m.RewardTooltip = "";
-		this.m.OathName = "Oath of Dominion";
-		this.m.OathBoonText = "Your men have [color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve and [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee and Ranged Skill when fighting beasts.";
-		this.m.OathBurdenText = "Your men have [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve and [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Skill when fighting any other foe.";
+		this.m.OathName = "Serment de Domination";
+		this.m.OathBoonText = "Vos hommes ont [color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] de Détermination et [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Compétence en Mêlée et à distance s\'ils se battent contre des bêtes.";
+		this.m.OathBurdenText = "Vos hommes ont [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination et [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Compétence en Mêlée et à distance s\'ils se battent contre n\'importe quel autre ennemi.";
 	}
 
 	function getRenownOnSuccess()
@@ -23,7 +23,7 @@ this.oath_of_dominion_ambition <- this.inherit("scripts/ambitions/oaths/oath_amb
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown for slaying beasts (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire en tuant des bêtes (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()

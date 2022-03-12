@@ -10,13 +10,13 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_20.png[/img]The pub is full of drunk denizens sloshing about, cheering, singing, carousing with the womenfolk of either wench or wife or whore. A man with a lute dances and plays and another with metal cymbals crashes overhead while a fat man booms with songs of battles or love, and whether a tale of victory or defeat they provoke rounds of ale and more merriment all the same.\n\n You leave the pub and enter the next building over. The wind whistles down a pew filled nave as you stand at the door. A man sweeping the stone floor looks up for a time then continues with his work. Another man cheerfully crosses the room and asks if you\'d like to pray. You decline and he purses his lips and crosses his arms. The crowd next door roars with drunken delight as though to make a mockery of you both and then he moves on. You stay for a moment longer and then leave and go back out to the town center and squat on a series of steps. It seems there used to be a statue at the top of those steps, but vandals and raiders alike have made short work of another\'s artisanry. You fall asleep there at the foot of impermanence. \n\n Waking from a nap, you find a young man at the bottom of the steps. He says he knows you\'re a knight and he\'s come to offer his services as a squire.",
+			Text = "[img]gfx/ui/events/event_20.png[/img]Le pub est rempli d\'ivrognes qui s\'agitent, applaudissent, chantent, s\'amusent avec les femmes, qu\'il s\'agisse de gueuse, d\'épouse ou de putain. Un homme avec un luth danse et joue, un autre avec des cymbales en métal frappe au-dessus de sa tête tandis qu\'un gros homme entonne des chansons de batailles ou d\'amour, et qu\'il s\'agisse d\'une histoire de victoire ou de défaite, elles provoquent des rondes de bière et plus de joie encore.\n\nVous quittez le pub et entrez dans le bâtiment voisin. Le vent siffle dans une grande église remplie de bancs alors que vous vous tenez sur le seuil de la porte. Un homme qui balaie le sol en pierre lève les yeux pendant un moment puis continue son travail. Un autre homme traverse joyeusement la pièce et vous demande si vous voulez prier. Vous refusez, il pince les lèvres et croise les bras. La foule d\'à côté hurle de plaisir, comme pour se moquer de vous deux, puis il s\'en va. Vous restez un moment de plus, puis vous partez et retournez au centre ville et vous vous accroupissez sur une série de marches. Il semble qu\'il y avait autrefois une statue en haut de ces marches, mais les voyous et les pillards n\'ont fait qu\'une bouchée de cette œuvre artisanale. Vous vous endormez là, au pied où il y avait autrefois une statue.\n\nEn vous réveillant de votre sieste, vous trouvez un jeune homme en bas des marches. Il dit qu\'il sait que vous êtes un chevalier et qu\'il est venu vous offrir ses services en tant qu\'écuyer.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Have you killed anyone?",
+					Text = "As-tu déjà tué quelqu\'un ?",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "What can you do?",
+					Text = "Qu\'est-ce que tu peux faire ?",
 					function getResult( _event )
 					{
 						return "C";
@@ -32,7 +32,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I take you as my squire.",
+					Text = "Je te prends comme écuyer.",
 					function getResult( _event )
 					{
 						return "D";
@@ -40,7 +40,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I work alone.",
+					Text = "Je travaille seul.",
 					function getResult( _event )
 					{
 						return "E";
@@ -55,7 +55,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"squire_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "You met %name% in " + _event.m.Town.getName() + " where he volunteered to be your squire. He probably had no idea what he was getting into back then.";
+				_event.m.Dude.getBackground().m.RawDescription = "Vous avez rencontré %name% à " + _event.m.Town.getName() + " où il s\'est porté volontaire pour être votre écuyer. Il n\'avait probablement aucune idée de ce dans quoi il s\'engageait à l\'époque.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand));
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand));
@@ -69,13 +69,13 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{The man shakes his head no.%SPEECH_ON%Ain\'t never killed no one, sir.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{L\'homme secoue la tête pour dire non.%SPEECH_ON%Je n\'ai jamais tué personne, monsieur.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What can you do?",
+					Text = "Qu\'est-ce que tu peux faire ?",
 					function getResult( _event )
 					{
 						return "C";
@@ -83,7 +83,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I take you as my squire.",
+					Text = "Je te prends comme écuyer.",
 					function getResult( _event )
 					{
 						return "D";
@@ -91,7 +91,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I work alone.",
+					Text = "Je travaille seul.",
 					function getResult( _event )
 					{
 						return "E";
@@ -107,13 +107,13 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{The man stands up straight.%SPEECH_ON%I know how to sharpen steel and mend leather. I can disassemble and reassemble heavy and light armors both, no matter how complex or simple, and I can do it fast. If we have a horse.%SPEECH_OFF%You interrupt.%SPEECH_ON%I walk.%SPEECH_OFF%Shifting uneasily on his feet, the man continues.%SPEECH_ON%Alright. Well I can cook. I can cook a fine meal whether I got the ingredients or not. I make do. And. And. That\'s. That\'s about it. But I\'m willing to learn!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{L\'homme se tient droit.%SPEECH_ON%Je sais comment aiguiser l\'acier et réparer le cuir. Je peux démonter et remonter des armures lourdes et légères, qu\'elles soient simples ou complexes, et je peux le faire rapidement. Si nous avons un cheval...%SPEECH_OFF%Vous l\'interrompez.%SPEECH_ON%Je marche.%SPEECH_OFF%L\'homme continue en bougeant de manière incertaine sur ses pieds.%SPEECH_ON%Très bien. Eh bien, je sais cuisiner. Je peux cuisiner un bon repas, que j\'ai les ingrédients ou pas. Je fais avec. Et. Et. C\'est tout. C\'est à peu près tout. Mais je suis prêt à apprendre !%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Have you killed anyone?",
+					Text = "As-tu déjà tué quelqu\'un ?",
 					function getResult( _event )
 					{
 						return "B";
@@ -121,7 +121,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I take you as my squire.",
+					Text = "Je te prends comme écuyer.",
 					function getResult( _event )
 					{
 						return "D";
@@ -129,7 +129,7 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I work alone.",
+					Text = "Je travaille seul.",
 					function getResult( _event )
 					{
 						return "E";
@@ -145,20 +145,20 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{You ask the man his name. He swallows nervously.%SPEECH_ON%%squire%, sir.%SPEECH_OFF%You nod.%SPEECH_ON%Well alright then. I\'ll take ya with me.%SPEECH_OFF%He smiles.%SPEECH_ON%That\'s. That\'s it?%SPEECH_OFF%You nod.%SPEECH_ON%Yeah. That\'s it.%SPEECH_OFF%%squire% looks around.%SPEECH_ON%Well. Alright. What now?%SPEECH_OFF%You lean back against the stone steps.%SPEECH_ON%You follow me. Right now I\'m gonna take another nap. If yer still around when I wake, well, then you\'ve passed your first test. Defeating boredom.%SPEECH_OFF%The squire is grinning ear to ear. He\'s still there when you wake.}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{Vous demandez à l\'homme son nom. Il déglutit nerveusement.%SPEECH_ON%%squire%, monsieur.%SPEECH_OFF%Vous acquiescez.%SPEECH_ON%Bon, d\'accord. Je t\'emmène avec moi.%SPEECH_OFF%Il sourit.%SPEECH_ON%C\'est. C\'est vrai ?%SPEECH_OFF%Vous acquiescez.%SPEECH_ON%Ouais. C\'est vrai.%SPEECH_OFF%%squire% regarde autour de lui.%SPEECH_ON%Bien. Très bien. Et maintenant ?%SPEECH_OFF%Vous vous appuyez sur les marches en pierre.%SPEECH_ON%Suis-moi. Là, je vais faire une autre sieste. Si tu es toujours là à mon réveil, alors tu auras réussi ton premier test. Vaincre l\'ennui.%SPEECH_OFF%Le écuyer sourit jusqu\'aux oreilles. Il est toujours là quand vous vous réveillez.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Now I need a drink.",
+					Text = "Maintenant, j\'ai besoin d\'un verre.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						_event.m.Dude.m.MoodChanges = [];
-						_event.m.Dude.improveMood(1.0, "Has become a squire to a knight");
+						_event.m.Dude.improveMood(1.0, "Est devenu l\'écuyer d\'un chevalier");
 						_event.m.Dude.getFlags().set("IsLoneWolfSquire", true);
 						_event.m.Dude = null;
 						return 0;
@@ -174,13 +174,13 @@ this.lone_wolf_origin_squire_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{You look at the would-be squire long and hard and then tell him no. He shrugs.%SPEECH_ON%Just so you know, you ain\'t gotta be alone in this world. Loneliness has no presence. It is not a place. It is not a being. It is action!%SPEECH_OFF%Spitting, you wipe your face and laugh.%SPEECH_ON%Is that what you tell yourself every morning? Get out of here.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{Vous regardez le prétendu écuyer longuement et fermement et vous lui dites non. Il hausse les épaules.%SPEECH_ON%Juste pour que tu saches, tu n\'as pas à être seul dans ce monde. La solitude n\'a pas de visage. Ce n\'est pas un lieu. Ce n\'est pas un être. C\'est une action !%SPEECH_OFF%En crachant, vous vous essuyez le visage et vous riez.%SPEECH_ON%C\'est ce que tu te dis tous les matins ? Va-t\'en.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I need a drink.",
+					Text = "J\'ai besoin d\'un verre.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();

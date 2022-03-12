@@ -5,13 +5,13 @@ this.oath_of_distinction_ambition <- this.inherit("scripts/ambitions/oaths/oath_
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_distinction";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "Truly distinguished are those who can follow Young Anselm\'s teachings.\nLet us take an Oath of Distinction and prove ourselves worthy to walk in his path!";
-		this.m.TooltipText = "Young Anselm frequently pursued solitude, sometimes even on the battlefield. \"Prove yourself worthy in such a manner that not even the old gods may claim their eyes have erred in what glories they have seen.\"";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Many swordmasters practice solitude. The thought is that they are not fighting the men in front of them, they are fighting for the spaces in between. While you cannot possibly understand the small nuances which differentiate a swordmaster from a would be sellsword hacking at air, you realize the kernel of truth in the axiom. Oathtakers, though honorable and diligent, are still at heart brutally courageous and absurdly overconfident. The Oath of Distinction followed the swordmaster\'s art in spirit, and the Oathtaker\'s in mind. Standing out on their own, each man sought to prove himself to his own accord and prove himself worthy of others\' praise. And if any unbiased laity happened to be watching, then it\'d be damn impossible to say the %companyname% did not distinguish itself as a fine outfit.\n\nBut distinction be damned. We can\'t be glory hogging for all our days! Onto the next Oath!}";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
-		this.m.OathName = "Oath of Distinction";
-		this.m.OathBoonText = "Your men gain [color=" + this.Const.UI.Color.PositiveValue + "]40%[/color] more experience. Additionally, they get [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Resolve, [color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] Fatigue Recovery per turn, and deal [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] damage if there are no allies on adjacent tiles.";
-		this.m.OathBurdenText = "Your men gain no experience for allied kills.";
+		this.m.ButtonText = "Ceux qui peuvent suivre les enseignements du jeune Anselm sont vraiment distingués.\nFaisons serment de distinction et prouvons que nous sommes dignes de suivre ses traces !";
+		this.m.TooltipText = "Le jeune Anselm recherchait fréquemment la solitude, parfois même sur le champ de bataille. \"Prouve-toi digne de telle sorte que même les anciens dieux ne puissent prétendre que leurs yeux se sont trompés dans les gloires qu\'ils ont vues.\"";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Beaucoup de maîtres d\'épée pratiquent la solitude. L\'idée est qu\'ils ne se battent pas contre les hommes qui se trouvent devant eux, mais qu\'ils se battent pour les espaces entre eux. Bien que vous ne puissiez pas comprendre les petites nuances qui différencient un maître d\'armes d\'un mercenaire en train de taper dans le vide, vous réalisez le fond de vérité de cet axiome. Les Prêteurs de Serments, bien qu\'honorables et diligents, sont toujours, au fond, brutalement courageux et absurdement trop sûrs d\'eux. Le Serment de la Distinction a suivi l\'art du Maître d\'épée dans l\'esprit, et celui du Prêteur de Serments dans la pensée. Se démarquant par ses propres moyens, chaque homme cherchait à faire ses preuves et à se montrer digne des louanges des autres. Et si des personnes impartiales se trouvaient à regarder, il serait impossible de dire que  %companyname% ne s\'est pas distinguée par son excellence.\n\nMais que la distinction soit damnée. Nous ne pouvons pas être en quête de gloire toute notre vie ! Au prochain serment !}";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
+		this.m.OathName = "Serment de Distinction";
+		this.m.OathBoonText = "Vos hommes gagnent [color=" + this.Const.UI.Color.PositiveValue + "]40%[/color] plus d\'expérience. En outre, ils obtiennent [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Détermination, [color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] de Récupération de Fatigue par tour, et font [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de dégats s\'ils n\'ont pas d\'alliés sur les tuiles adjacentes.";
+		this.m.OathBurdenText = "Vos hommes ne gagnent pas d\'expérience pour les ennemis qui n\'ont pas été tués par eux-mêmes.";
 	}
 
 	function getRenownOnSuccess()
@@ -22,7 +22,7 @@ this.oath_of_distinction_ambition <- this.inherit("scripts/ambitions/oaths/oath_
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown if one of your men levels up " + this.getBonusObjectiveGoal() + " times (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire si l\'un de vos hommes monte en grade " + this.getBonusObjectiveGoal() + " fois (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()

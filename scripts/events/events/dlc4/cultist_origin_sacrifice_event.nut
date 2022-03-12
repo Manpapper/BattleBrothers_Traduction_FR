@@ -12,13 +12,13 @@ this.cultist_origin_sacrifice_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 21.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_140.png[/img]{Most would consider the dream to have been a nightmare: the darkness surrounded you, a black so flat you could reach out and touch it. The voice spoke a language you\'d never heard before, and yet you understood it nonetheless. Two faces emerged for the infinite shade: %sac1% and %sac2%. The men seemed so close, yet when you reached out they shrank, as though your fingers stretched infinitely into the void.\n\n Upon waking, you knew what must be done. But a trust had been put in you here, a trust by Davkul. A trust to do what few men can: make a choice. | Davkul\'s presence arrived during a campfire. The rest of the men faded into the aether of infinite black, and a strange entity replaced them. An entity which you could not see, but whose presence was but a penumbra of crossing shadows. It requested a sacrifice, not by speaking to you, but by showing: %sac1% and %sac2%. First one melted away before revivifying, then the other repeated the process until both existed with their hands out and eyes closed. It was clear that Davkul was trusting you with a choice. \n\n When the shadows snapped away, the campfire was blinding. %sac1% and %sac2% were staring at you.%SPEECH_ON%Is all alright, sir?%SPEECH_OFF% | You traveled to the place. You knew you were sleeping, but you knew damn well you traveled there nonetheless, shifting beyond your mind, beyond your body, coursing over the earth, over its rivers, across its dry earth, and past the mountains which would crumble. There you found Davkul, the immutable darkness, the inviting shade.\n\n %sac1% and %sac2% were already there, standing closest to you and Davkul\'s shape shifted restlessly behind their images. A black hand of fog pushed one man forward and then yanked him back, then repeated it with the other man. You nodded in understanding. A sacrifice was required and you were to choose.}",
+			Text = "[img]gfx/ui/events/event_140.png[/img]{La plupart des gens considéreraient ce rêve comme un cauchemar : l\'obscurité vous entourait, un noir si épais que vous pourriez l\'atteindre et le toucher. La voix parlait une langue que vous n\'aviez jamais entendue auparavant, mais que vous compreniez néanmoins. Deux visages émergeaient de l\'ombre infinie : %sac1% et %sac2%. Les hommes semblaient si proches, mais lorsque vous tendiez la main, ils se s\'éloignaient, comme si vos doigts s\'étendaient à l\'infini dans le vide.\n\n À votre réveil, vous saviez ce qui devait être fait. Mais Davkul vous a accordé sa confiance. Une confiance pour faire ce que peu d\'hommes peuvent faire : faire un choix. | La présence de Davkul s\'est fait sentir pendant un feu de camp. Le reste des hommes s\'est fondu dans l\'éther du noir infini, et une étrange entité les a remplacés. Une entité que vous ne pouviez pas voir, mais dont la présence n\'était qu\'une pénombre traversée d\'ombres. Elle a demandé un sacrifice, non pas en vous parlant, mais en vous montrant : %sac1% et %sac2%. L\'un d\'eux a d\'abord fondu avant de se revivifier, puis l\'autre a répété le processus jusqu\'à ce que tous deux existent avec les mains tendues et les yeux fermés. Il était clair que Davkul vous laissait le choix. \n\n Quand les ombres se sont dissipées, le feu de camp était éblouissant. %sac1% et %sac2% vous regardaient fixement.%SPEECH_ON%Tout va bien, monsieur ?%SPEECH_OFF% | You traveled to the place. Vous saviez que vous dormiez, mais vous saviez pertinemment que vous vous y rendiez néanmoins, vous déplaçant au-delà de votre esprit, au-delà de votre corps, courant sur la terre, sur ses rivières, sur sa terre sèche, et au-delà des montagnes qui s\'effondreraient. Là, vous avez trouvé Davkul, l\'obscurité immuable, l\'ombre invitante.\n\n %sac1% et %sac2% étaient déjà là, se tenant au plus près de toi et la forme de Davkul se déplaçait sans cesse derrière leurs images. Une main noir de brouillard a poussé un homme en avant puis l\'a tiré en arrière, puis a répété l\'opération avec l\'autre homme. Vous avez hoché la tête en signe de compréhension. Un sacrifice était nécessaire et vous deviez choisir.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "%sac1% will have the honor to meet Davkul.",
+					Text = "%sac1% aura l\'honneur de rencontrer Davkul.",
 					function getResult( _event )
 					{
 						_event.m.Sacrifice = _event.m.Sacrifice1;
@@ -27,7 +27,7 @@ this.cultist_origin_sacrifice_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "%sac2% will have the honor to meet Davkul.",
+					Text = "%sac2% aura l\'honneur de rencontrer Davkul.",
 					function getResult( _event )
 					{
 						_event.m.Sacrifice = _event.m.Sacrifice2;
@@ -45,13 +45,13 @@ this.cultist_origin_sacrifice_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_140.png[/img]{%sacrifice% is bound and put to the fire. The smell of burnt pork fills the air and the men around you rejoice with tears in their eyes. You see a face twisting in the smoke of the sacrifice, a knowing visage that approves. The men are emboldened. | %sacrifice% is chopped to pieces until he is but a torso and head. The blood has emptied across the ground and yet there\'s still light in his eyes and a perverse smile upon his face. You take an axehead and run it into his throat until he is no more. Every bodypart is separated and put upon a pole, caked in grease, and lit aflame. You and the men dance beneath the pyres as the night comes and the night goes. | The procession is such: %sacrifice% is flayed alive and pierced with sharpened sticks through each limb and held aloft, spread-eagled over a fire which cooks him until death. The men watch his passing in silence, but as soon as one of his charred limbs breaks and collapses his corpse into the flames the men cheer and hoot and holler, some pray, others roll around in the ashes of %sacrifice%, some licking it off their fingertips like it were sweets. It is a good night. | A long stick is pierced through %sacrifice% from posterior to out the side of his neck. He is tilted up into the sky and held there by one man while others use long spears to stab him through until his corpse is the apex of an uncovered tent. The conical corpse is then covered with grass and mud until there stands a tipi, a torso and head of %sacrifice% all that remains above, and should you enter the tent you would find his legs dangling from its ceiling. The monument should stand as an omen for those to come, and a sign that they should come to accept that which awaits us all.}",
+			Text = "[img]gfx/ui/events/event_140.png[/img]{Le %sacrifice% est lié et mis au feu. L\'odeur de porc brûlé emplit l\'air et les hommes qui vous entourent se réjouissent, les larmes aux yeux. Vous voyez un visage se tordre dans la fumée du sacrifice, un visage complice qui approuve. Les hommes sont enhardis. | %sacrifice% est découpé en morceaux jusqu\'à ce qu\'il ne reste qu\'un torse et une tête. Le sang s\'est répandu sur le sol, mais il y a encore de la lumière dans ses yeux et un sourire pervers sur son visage. Vous prenez un manche de hache et l\'enfoncez dans sa gorge jusqu\'à ce qu\'il ne soit plus. Chaque partie du corps est séparée et mise sur un poteau, recouverte de graisse, et enflammée. Vous et les hommes dansez sous les bûchers alors que la nuit vient et que la nuit passe. | La procédure est la suivante : Le %sacrifice% est écorché vif et transpercé de bâtons aiguisés à travers chaque membre et maintenu en l\'air, les jambes écartées, au-dessus d\'un feu qui le cuit jusqu\'à la mort. Les hommes assistent à son décès en silence, mais dès qu\'un de ses membres carbonisés se brise et que son cadavre s\'effondre dans les flammes, les hommes applaudissent et hurlent, certains prient, d\'autres se roulent dans les cendres de %sacrifice%, certains les lèchent du bout des doigts comme si c\'était des bonbons. C\'est une bonne nuit. | Un long bâton est enfoncé dans %sacrifice% de son postérieure à la latérale de son cou. Il est incliné vers le ciel et maintenu là par un homme tandis que d\'autres utilisent de longues lances pour le transpercer jusqu\'à ce que son cadavre soit le sommet d\'une tente découverte. Le cadavre conique est alors recouvert d\'herbe et de boue jusqu\'à ce qu\'il reste que le torse et la tête de %sacrifice%, et si vous entrez dans la tente, vous trouverez ses jambes qui pendent de son plafond. Le monument doit être un présage pour ceux qui viendront, et un signe qu\'ils doivent accepter de ce qui nous attend tous.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A reminder for us all.",
+					Text = "Un rappel pour nous tous.",
 					function getResult( _event )
 					{
 						return 0;
@@ -76,7 +76,7 @@ this.cultist_origin_sacrifice_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 13,
 					icon = "ui/icons/kills.png",
-					text = _event.m.Sacrifice.getName() + " has died"
+					text = _event.m.Sacrifice.getName() + " est mort"
 				});
 				_event.m.Sacrifice.getItems().transferToStash(this.World.Assets.getStash());
 				this.World.getPlayerRoster().remove(_event.m.Sacrifice);
@@ -168,13 +168,13 @@ this.cultist_origin_sacrifice_event <- this.inherit("scripts/events/event", {
 							this.List.push({
 								id = 10,
 								icon = skill.getIcon(),
-								text = bro.getName() + " is now " + this.Const.Strings.getArticle(skill.getName()) + skill.getName()
+								text = bro.getName() + " est maintenant " + this.Const.Strings.getArticle(skill.getName()) + skill.getName()
 							});
 						}
 					}
 					else if (!bro.getSkills().hasSkill("trait.mad"))
 					{
-						bro.worsenMood(4.0, "Horrified by the sacrifice of " + _event.m.Sacrifice.getName());
+						bro.worsenMood(4.0, "Horrifié par le sacrifice de " + _event.m.Sacrifice.getName());
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{

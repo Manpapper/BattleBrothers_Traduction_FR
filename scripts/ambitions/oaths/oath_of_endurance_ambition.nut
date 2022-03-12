@@ -5,13 +5,13 @@ this.oath_of_endurance_ambition <- this.inherit("scripts/ambitions/oaths/oath_am
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_endurance";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "To uphold Young Anselm\'s Oaths is to take on a duty without end.\nLet us take an Oath of Endurance and prepare ourselves for the tasks to come!";
-		this.m.TooltipText = "\"Thrice times thrice to climb, endurance they did find.\" It is said that when Young Anselm ascended the highest peak of the Higgarian mountain range, he took nine of his worthiest followers with him.";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{When asked what army he would wish to see deployed before him, a famous general remarked: \'one that does not need to breathe.\' No matter how skilled a man is, if he does not have the energy to fight, then all his abilities are reduced to nothing but wheezes of air, and in such a state even a swordmaster may find himself only as dangerous as a dram wench. A good breath taken now is a well-placed sword swing later. The %companyname% has followed that axiom to its fullest!\n\nNow that the company has filled its lungs of proper fire, it is ready to accept another Oath!}";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
-		this.m.OathName = "Oath of Endurance";
-		this.m.OathBoonText = "Your men recover [color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] Fatigue per turn.";
-		this.m.OathBurdenText = "You can only take up to [color=" + this.Const.UI.Color.NegativeValue + "]10[/color] men into battle.";
+		this.m.ButtonText = "Respecter les serments du Jeune Anselm, c\'est assumer un devoir sans fin.\nFaisons le serment d\'endurance et préparons-nous pour les tâches à venir !";
+		this.m.TooltipText = "\"Trois fois ils ont grimpé, l\'endurance ils l\'ont trouvée.\" On raconte que lorsque le jeune Anselm a gravi le plus haut sommet de la chaîne de montagnes Higgarian, il a emmené avec lui neuf de ses plus valeureux disciples.";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Lorsqu\'on lui a demandé quelle armée il souhaitait voir déployée avec lui, un célèbre général a fait la remarque suivante : \'une qui n\'a pas besoin de respirer.\' Quelle que soit l\'habileté d\'un homme, s\'il n\'a pas l\'énergie nécessaire pour se battre, toutes ses capacités ne sont rien d\'autre que des sifflements d\'air, et dans un tel état, même un maître d\'épée peut se trouver aussi dangereux qu\'une fille de joie. Une bonne respiration prise maintenant est un coup d\'épée bien placé plus tard. %companyname% a suivi cet axiome à la lettre !\n\nMaintenant que la compagnie a rempli ses poumons, elle est prête à accepter un autre serment !}";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
+		this.m.OathName = "Serment d\'Endurance";
+		this.m.OathBoonText = "Vos hommes récupèrent [color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] de Fatigue par tour.";
+		this.m.OathBurdenText = "Vous pouvez seulement prendre jusqu\'à [color=" + this.Const.UI.Color.NegativeValue + "]10[/color] hommes au combat.";
 	}
 
 	function getRenownOnSuccess()
@@ -22,7 +22,7 @@ this.oath_of_endurance_ambition <- this.inherit("scripts/ambitions/oaths/oath_am
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown for winning many battles (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire en gagnant de nombreuses batailles (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()

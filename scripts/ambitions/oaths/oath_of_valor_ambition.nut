@@ -5,13 +5,13 @@ this.oath_of_valor_ambition <- this.inherit("scripts/ambitions/oaths/oath_ambiti
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_valor";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "We must have the courage to face down any challenge, no matter how daunting.\nLet us take an Oath of Valor and prove our bravery to all!";
-		this.m.TooltipText = "\"Remember in times of peril that courage can overcome skill. While little can be learned through bravery alone, sheer determination shall keep you alive and that is well enough as any conclusion to the lessons of battle.\" - Young Anselm";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{A man cannot thrive merely on skill and capability. Many know how to swing a sword, heft an axe, or loose an arrow. It is not in martial matters where man is molded, but within himself, within the corridors of his own heart. The steel forged there can\'t ever be defeated, for even a felled man of valor shall find himself eternal in the tomes of this world, celebrated in awe, and his name carried on the lips of those like him.\n\nNow that the company has proven itself of the firmest element, it is ready to accept another Oath!}";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
-		this.m.OathName = "Oath of Valor";
-		this.m.OathBoonText = "Your men will never flee while in battle.";
-		this.m.OathBurdenText = "Your men gain [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] less experience.";
+		this.m.ButtonText = "Nous devons avoir le courage de relever n\'importe quel défi, aussi décourageant soit-il.\nFaisons serment de courage et prouvons notre bravoure à tous !";
+		this.m.TooltipText = "\"Rappelez-vous en temps de péril que le courage peut vaincre l\'habileté. Bien que peu de choses puissent être apprises par la bravoure seule, la détermination pure et simple vous gardera en vie et c\'est une conclusion suffisante aux leçons de la bataille.\" - Jeune Anselm";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Un homme ne peut pas prospérer uniquement grâce à ses compétences et ses capacités. Beaucoup savent manier l\'épée, manier la hache ou décocher une flèche. Ce n\'est pas dans les affaires martiales que l\'homme est façonné, mais en lui-même, dans les couloirs de son propre cœur. Cet acier forgé là ne peut jamais être vaincu, car même un homme valeureux abattu se retrouvera éternellement dans les tomes de ce monde, célébré dans l\'admiration, et son nom porté sur les lèvres de ceux qui lui ressemblent.\n\nMaintenant que la compagnie a prouvé sa solidité, elle est prête à accepter un autre serment !}";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
+		this.m.OathName = "Serment de Courage";
+		this.m.OathBoonText = "Vos hommes ne fuiront jamais pendant la bataille.";
+		this.m.OathBurdenText = "Vos hommes gagnent [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] d\'Expérience en moins.";
 	}
 
 	function getRenownOnSuccess()
@@ -22,7 +22,7 @@ this.oath_of_valor_ambition <- this.inherit("scripts/ambitions/oaths/oath_ambiti
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown for winning battles where you are outnumbered (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire en gagnant des batailles où vous êtes en infériorité numérique (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()

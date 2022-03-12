@@ -7,13 +7,13 @@ this.oath_of_camaraderie_ambition <- this.inherit("scripts/ambitions/oaths/oath_
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_camaraderie";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "No single Oathtaker can face all the evils of the world alone.\nLet us take an Oath of Camaraderie, lest we lose sight of our true allies!";
-		this.m.TooltipText = "Young Anselm believed that, on occasion, it was right to bring as many to a battle as one could muster, even if the great throngs did threaten the chain of command. Indeed, \"All men deserve to stand by their brothers.\"";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Power in numbers, camaraderie in brotherhood. While fielding additional men encumbered your ability to command, over the course of every battle the %companyname% quickly realized that the chaos of combat could be overcome by standing shoulder to shoulder with the man beside you, trusting him to do his job and him trusting that you do yours. The experience has hardened the company to the havocs of war.\n\nNow that the company knows it can confront its enemies by trusting its own members, it is ready to take on another Oath!}";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
-		this.m.OathName = "Oath of Camaraderie";
-		this.m.OathBoonText = "You can take up to [color=" + this.Const.UI.Color.PositiveValue + "]14[/color] men into battle.";
-		this.m.OathBurdenText = "Your men always start battle randomly at Wavering or Breaking morale.";
+		this.m.ButtonText = "Aucun Prêteur de Serments ne peut affronter seul tous les maux du monde.\nPrêtons le serment de Camaraderie, de peur de perdre de vue nos véritables alliés !";
+		this.m.TooltipText = "Le jeune Anselm pensait que parfois, il était bon d\'amener le plus grand nombre possible de personnes à une bataille, même si la foule menaçait la chaîne de commandement. En effet, \"Tous les hommes méritent d\'être aux côtés de leurs frères.\"";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{La force du nombre, la camaraderie dans la fraternité. Bien que le fait de mobiliser des hommes supplémentaires réduise votre capacité de commandement, au cours de chaque bataille, %companyname% a rapidement compris que le chaos du combat pouvait être surmonté en se tenant côte à côte avec les homme à vos côtés, en leur faisant confiance pour faire leur travail et qu\'ils vous fasse confiance pour faire le votre. Cette expérience a endurci la compagnie aux ravages de la guerre.\n\nMaintenant que la compagnie sait qu\'elle peut affronter ses ennemis en faisant confiance à ses propres membres, elle est prête à prononcer un autre serment.!}";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
+		this.m.OathName = "Serment de Camaraderie";
+		this.m.OathBoonText = "Vous pouvez prendre jusqu\'à [color=" + this.Const.UI.Color.PositiveValue + "]14[/color] hommes dans la bataille.";
+		this.m.OathBurdenText = "Vos hommes commencent toujours la bataille au hasard avec un moral chancelant ou défaillant.";
 	}
 
 	function getRenownOnSuccess()
@@ -24,7 +24,7 @@ this.oath_of_camaraderie_ambition <- this.inherit("scripts/ambitions/oaths/oath_
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown if your men become confident in battle enough times (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire si vos hommes deviennent confiants au combat suffisamment de fois. (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()

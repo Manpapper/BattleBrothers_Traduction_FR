@@ -5,13 +5,13 @@ this.oath_of_sacrifice_ambition <- this.inherit("scripts/ambitions/oaths/oath_am
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_sacrifice";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "We cannot live up to Young Anselm\'s example if we obsess over worldly matters.\nLet us take an Oath of Sacrifice and hone our purpose to its sharpest point.";
-		this.m.TooltipText = "\"If all is within the realm of the old gods\' gifts, then pain itself shall be their bitterest fruit. But an offering it is, nonetheless, and so our battle against pain is one of great selfishness. Abscise from the healer\'s mend, and equally so from the merchant\'s lend.\" - Young Anselm";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{The priory monks will go days without water, weeks without food, and forever without sex. It is believed that sacrifice is the \'salt of all things\', and is so powerful an element that in the ashes of those who have willingly suffered one finds the residue of endurance itself. Now, having undertaken a similar oath, you understand why the holy men handle the ashen remains of their brethren with a sort of maternal care. For the %companyname%, this everlasting strength was spread across the company, for misery is a terrible thing, but shared misery, taken head on and shoulder to shoulder with your brothers in arms, is a poignant elixir, one that narrows the mind unto that which needs to be done, and eschews all earthly matters.\n\nNow the men shall heal up and their minds return to the tethers which keep them grounded. Leave it to the monks to sacrifice for the long haul, they are of stronger intellects and faiths, ones to look to, not foolishly follow feeling you may do the same as them.\n\nAs for the future, it is time the Oathtakers take on another Oath!}";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
-		this.m.OathName = "Oath of Sacrifice";
-		this.m.OathBoonText = "None of your men take any crowns as wage.";
-		this.m.OathBurdenText = "Your men do not heal injuries.";
+		this.m.ButtonText = "Nous ne pouvons pas être à la hauteur de l\'exemple du jeune Anselm si nous sommes obsédés par les affaires du monde.\nFaisons le serment du sacrifice et aiguisons notre but jusqu\'au bout.";
+		this.m.TooltipText = "\"Si tout est dans le domaine des dons des anciens dieux, alors la douleur elle-même sera leur fruit le plus amer. Mais c\'est une offrande, néanmoins, et donc notre combat contre la douleur est celui d\'un grand altruisme. Abstenez-vous de la réparation du guérisseur, et tout autant du prêt du marchand.\" - Jeune Anselm";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]{Les moines du couvent passeront des jours sans eau, des semaines sans nourriture et une éternité sans sexe. On croit que le sacrifice est le \'piment de toute chose\', et c\'est un élément si puissant que l\'on trouve dans les cendres de ceux qui ont volontairement souffert le résidu de l\'endurance elle-même. Maintenant, ayant fait un serment similaire, vous comprenez pourquoi les hommes saints manipulent les restes cendrés de leurs frères avec une sorte de soin maternel. Pour %companyname%, cette force éternelle a été répandue à travers la compagnie, car la misère est une chose terrible, mais la misère partagée, prise de front et épaule contre épaule avec vos frères d\'armes, est un élixir poignant, un élixir qui réduit l\'esprit à ce qui doit être fait, et évite toutes les questions terrestres.\n\nMaintenant, les hommes vont guérir et leurs esprits vont retrouver les attaches qui les maintiennent à la terre. Laissez aux moines le soin de se sacrifier pour le long terme, ils sont d\'une intelligence et d\'une foi plus fortes, ceux qu\'il faut regarder, et non suivre bêtement en pensant que vous pourriez faire la même chose qu\'eux.\n\nQuant à l\'avenir, il est temps que les Prêteurs de Serments prêtent un autre serment !}";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
+		this.m.OathName = "Serment de Sacrifice";
+		this.m.OathBoonText = "Aucun de vos hommes ne prend de couronne comme salaire.";
+		this.m.OathBurdenText = "Vos hommes ne guérissent pas de leurs blessures.";
 	}
 
 	function getRenownOnSuccess()
@@ -22,7 +22,7 @@ this.oath_of_sacrifice_ambition <- this.inherit("scripts/ambitions/oaths/oath_am
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown for suffering no more than " + this.getBonusObjectiveGoal() + " combat injuries (" + this.getBonusObjectiveProgress() + (this.getBonusObjectiveProgress() == 1 ? " injury" : " injuries") + " taken so far).";
+		return "Vous gagnez de la renommée supplémentaire en ne subissant pas plus de " + this.getBonusObjectiveGoal() + " blessures au combat (" + this.getBonusObjectiveProgress() + (this.getBonusObjectiveProgress() == 1 ? " blessure reçue" : " blessures reçues") + "  jusqu\'à maintenant).";
 	}
 
 	function getBonusObjectiveProgress()

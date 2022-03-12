@@ -5,13 +5,13 @@ this.oath_of_honor_ambition <- this.inherit("scripts/ambitions/oaths/oath_ambiti
 		this.oath_ambition.create();
 		this.m.ID = "ambition.oath_of_honor";
 		this.m.Duration = 99999.0 * this.World.getTime().SecondsPerDay;
-		this.m.ButtonText = "As warriors, we must never lose sight of true honor.\nLet us take an Oath of Honor and meet our opponents in melee!";
-		this.m.TooltipText = "\"While the arrow is nocked, the mind turns. While the sword swings, all is where it should be. Set aside the craft of archery and go unto the melee, trusting that what your steel seeks, it shall find.\" - Young Anselm";
-		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]No matter what the bow users wish to say, when it comes down to it there is no greater honor than meeting a man face to face, each of you with sword in hand, locking eyes between crossed steel, in this clash finding a brief respite before one finds their demise. Even in the tournaments, the grand event is not some ridiculous affair like shooting apples off heads or birds out of the sky. No, it is the joust! Martial combat! The greatest honor in battle undertaken by the greatest company in the %companyname%.\n\nNow that the company is of sturdy might and main, it is ready to accept its next Oath!";
-		this.m.SuccessButtonText = "{For Young Anselm! | As Oathtakers! | And death to the Oathbringers!}";
-		this.m.OathName = "Oath of Honor";
-		this.m.OathBoonText = "Your men start battle at Confident morale.";
-		this.m.OathBurdenText = "Your men cannot use ranged weapons.";
+		this.m.ButtonText = "En tant que guerriers, nous ne devons jamais perdre de vue le véritable honneur.\nFaisons le serment d\'honneur et rencontrons nos adversaires en mêlée !";
+		this.m.TooltipText = "\"Pendant que la flèche est encochée, l\'esprit tourne. Pendant que l\'épée se balance, tout est là où il devrait être. Mettez de côté l\'art du tir à l\'arc et allez dans la mêlée, confiant que ce que votre acier cherche, il le trouvera.\" - Young Anselm";
+		this.m.SuccessText = "[img]gfx/ui/events/event_180.png[/img]Quoi qu\'en disent les utilisateurs d\'arcs, il n\'y a pas de plus grand honneur que de rencontrer un homme face à face, chacun d\'entre vous, l\'épée à la main, croisant le regard entre deux aciers croisés, et trouvant dans cet affrontement un bref répit avant de trouver la mort. Même dans les tournois, le grand événement n\'est pas une affaire ridicule comme tirer des pommes sur des têtes ou des oiseaux dans le ciel. Non, c\'est la joute ! Un combat martial ! Le plus grand honneur de la bataille entrepris par la plus grande compagnie %companyname%.\n\nMaintenant que la compagnie est forte et solide, elle est prête à accepter son prochain serment !";
+		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
+		this.m.OathName = "Serment d\'Honneur";
+		this.m.OathBoonText = "Vos hommes commencent la bataille avec un moral Confiant.";
+		this.m.OathBurdenText = "Vos hommes ne peuvent pas utiliser d\'armes à distance.";
 	}
 
 	function getRenownOnSuccess()
@@ -22,7 +22,7 @@ this.oath_of_honor_ambition <- this.inherit("scripts/ambitions/oaths/oath_ambiti
 
 	function getRewardTooltip()
 	{
-		return "You gain extra Renown for defeating enemies without them being engaged by other combatants (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez des renommées supplémentaires pour vaincre des ennemis sans qu\'ils soient engagés par d\'autres combattants (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()
