@@ -23,7 +23,7 @@ this.orc_flail_2h <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.Condition = 64.0;
 		this.m.ConditionMax = 64.0;
 		this.m.StaminaModifier = -30;
-		this.m.RegularDamage = 40;
+		this.m.RegularDamage = 50;
 		this.m.RegularDamageMax = 100;
 		this.m.ArmorDamageMult = 1.25;
 		this.m.DirectDamageMult = 0.3;

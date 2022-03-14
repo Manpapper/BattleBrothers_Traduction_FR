@@ -207,7 +207,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
-		this.m.Score = 15;
+		this.m.Score = 5;
 	}
 
 	function onPrepare()

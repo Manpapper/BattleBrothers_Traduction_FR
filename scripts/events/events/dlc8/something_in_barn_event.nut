@@ -201,7 +201,7 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 				if (this.Const.DLC.Unhold)
 				{
 					twoHanders.extend([
-						"weapons/two_handed_wooden_mallet",
+						"weapons/two_handed_wooden_hammer",
 						"weapons/two_handed_wooden_flail",
 						"weapons/spetum",
 						"weapons/goedendag"

@@ -127,7 +127,7 @@ this.lindwurm_slayer_background <- this.inherit("scripts/skills/backgrounds/char
 		{
 			armor.extend([
 				"armor/leather_scale_armor",
-				"armor/noble_mail",
+				"armor/noble_mail_armor",
 				"armor/light_scale_armor",
 				"armor/footman_armor"
 			]);

@@ -222,25 +222,6 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				local brothers = this.World.getPlayerRoster().getAll();
-
-				foreach( bro in brothers )
-				{
-					if (this.Math.rand(1, 100) <= 75 || bro.getBackground().getID() == "background.paladin")
-					{
-						bro.improveMood(1.5, "The company lost to Oathbringers");
-
-						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
-						{
-							this.List.push({
-								id = 10,
-								icon = this.Const.MoodStateIcon[bro.getMoodState()],
-								text = bro.getName() + this.Const.MoodStateEvent[bro.getMoodState()]
-							});
-						}
-					}
-				}
-
-				local brothers = this.World.getPlayerRoster().getAll();
 				local found_skull = false;
 
 				foreach( bro in brothers )

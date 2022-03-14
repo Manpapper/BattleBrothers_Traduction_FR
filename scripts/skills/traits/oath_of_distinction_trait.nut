@@ -60,7 +60,8 @@ this.oath_of_distinction_trait <- this.inherit("scripts/skills/traits/character_
 	function onUpdate( _properties )
 	{
 		_properties.XPGainMult *= 1.4;
-
+		_properties.IsAllyXPBlocked = true;
+		
 		if (!this.getContainer().getActor().isPlacedOnMap())
 		{
 			return;

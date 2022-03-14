@@ -28,13 +28,12 @@ this.anatomist_vs_splinter_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Anatomist.getImagePath());
 				this.Characters.push(_event.m.SplinterBro.getImagePath());
-				local defenseBoost = this.Math.rand(1, 3);
-				_event.m.SplinterBro.getBaseProperties().MeleeDefense += defenseBoost;
+				_event.m.SplinterBro.getBaseProperties().MeleeDefense += 1;
 				_event.m.SplinterBro.getSkills().update();
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/melee_defense.png",
-					text = _event.m.SplinterBro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + defenseBoost + "[/color] Melee Defense"
+					text = _event.m.SplinterBro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Melee Defense"
 				});
 			}
 

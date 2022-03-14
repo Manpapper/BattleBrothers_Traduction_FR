@@ -1189,7 +1189,7 @@ this.player <- this.inherit("scripts/entity/tactical/human", {
 		{
 			foreach( bro in brothers )
 			{
-				if (bro.getSkills().hasSkill("trait.oath_of_distinction"))
+				if (bro.getCurrentProperties().IsAllyXPBlocked)
 				{
 					return;
 				}

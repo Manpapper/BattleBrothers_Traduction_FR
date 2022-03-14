@@ -10,7 +10,7 @@ this.adopt_wardog_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 120.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_27.png[/img]Vous ave remarqué le cabot quelques kilomètres de distance, que ce soit à l\'avant ou à l\'arrière, il est toujours là, à rentrer et sortir de votre champ de vision.\n\nUn cabot comme ça ne suis pas un groupe dangereuses personnes dans raisons - peut-être que quelqu\'un le nourrit?",
+			Text = "[img]gfx/ui/events/event_27.png[/img]Vous avez remarqué le cabot quelques kilomètres de distance, que ce soit à l\'avant ou à l\'arrière, il est toujours là, à rentrer et sortir de votre champ de vision.\n\nUn cabot comme ça, ne suis pas un groupe de dangereuses personnes sans raisons - peut-être que quelqu\'un le nourrit?",
 			Image = "",
 			List = [],
 			Characters = [],
