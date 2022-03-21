@@ -14,7 +14,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.contract.create();
 		this.m.DifficultyMult = this.Math.rand(70, 90) * 0.01;
 		this.m.Type = "contract.restore_location";
-		this.m.Name = "Rebuilding Effort";
+		this.m.Name = "Effort de reconstruction";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
