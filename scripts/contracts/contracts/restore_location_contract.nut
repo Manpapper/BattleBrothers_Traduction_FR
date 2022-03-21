@@ -477,12 +477,12 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "RebuildingLocation",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{You Retournez à %location% and watch the workers fan out to the buildings. They get to work, piling slats of wood, putting up support beams, and one group is digging themselves a well. Looks like you can Retournez à %employer% now. | The builders thank you for getting them to the %location% safe and sound. They then turn and begin work, spreading out amongst the location and turning their hands to what tools are about them. The snicker-snacker and snoring haw of hammers and saws echo behind you as you leave to Retournez à %employer%. | Most of the builders head into %location% and begin preparations for its rebuilding. The foreman thanks you for getting them there safely as he knows the dangers of the world. He also thanks you for not betraying them all into an early grave. You take this gratitude with a smirk before starting the return journey to %employer%. | Well, the workers are here safe and sound. You turn back, returning to %employer% to get the pay you\'ve rightly earned. | It\'s been a long journey, there and back and there again, but it seems %location% is now about to get its legs underneath itself again. After making sure the workers are safe, you start the return trip to %employer% for your pay.}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{Vous retournez à %location% et regardez les ouvriers se disperser vers les bâtiments. Ils se mettent au travail, empilent des lattes de bois, mettent en place des poutres de soutien, et un groupe se creuse un puits. On dirait que vous pouvez retournez voir %employer% maintenant. | Les constructeurs vous remercient de les avoir amenés à %location% sains et saufs. Ils se retournent ensuite et commencent à travailler, se répartissant sur le site et mettant la main à tous les outils à leur disposition. Le ricanement et le grondement des marteaux et des scies résonnent derrière vous alors que vous partez pour aller voir %employer%. | La plupart des constructeurs se rendent à %location% et commencent à préparer la reconstruction. Le contremaître vous remercie de les avoir amenés en toute sécurité, car il connaît les dangers du monde. Il vous remercie également de ne pas les avoir tous trahis. Vous acceptez cette gratitude avec un sourire en coin avant d'entamer le voyage de retour vers %employer%. | Les travailleurs sont ici sains et saufs. Vous faites demi-tour et retournez voir%employer% pour recevoir la paie que vous avez méritée. | Le voyage a été long, aller-retour puis aller de nouveau, mais il semble que %location% soit sur le point de retrouver ses marques. Après vous être assuré que les travailleurs sont en sécurité, vous entamez le voyage de retour vers %employer% pour recevoir votre salaire.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Time to get paid.",
+					Text = "Il est temps d'être payé.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -495,14 +495,14 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_98.png[/img]{%employer% glances at you as enter.%SPEECH_ON%So is it clear?%SPEECH_OFF%You nod. %employer% gets up and gives you instructions: you\'re to take a troop of builders back to the %location% so that they can rebuild it. | %employer% listens to your report and nods.%SPEECH_ON%I have a group of men going back to the %location% so that they can rebuild it. I need you to escort them. Got it? Good.%SPEECH_OFF% | Rolling up some scrolls, %employer% gives you your next instruction.%SPEECH_ON%I\'ve got a gang of men going back there to rebuild the place. A lot of crowns are involved here, so I need you to make sure those men get there in one piece. After that, come back and get your pay.%SPEECH_OFF% | %employer% sits back after listening to your report. He\'s sipping a goblet of cobra wine.%SPEECH_ON%News?%SPEECH_OFF%You tell him that the area has been cleared out. The man swigs the rest of the drink in one go and sets the cup down.%SPEECH_ON%Good... good. Now take a gang of my workers back there to help rebuild. Once they are finished, come back for your payday.%SPEECH_OFF% | %employer% sits back as you enter.%SPEECH_ON%I take it by your return that the %location% has been cleared, yes?%SPEECH_OFF%You confirm what the man wants to hear. He seems happy, though your job is not yet finished: %employer% wants you to take a gang of workers back to the area to help rebuild and resettle it. Once they\'re there safe and sound, Retournez à him for payment.}",
+			Text = "[img]gfx/ui/events/event_98.png[/img]{%employer% vous regarde en entrant.%SPEECH_ON%Alors, c'est bon ?%SPEECH_OFF%Vous acquiescez. %employer% se lève et vous donne des instructions : vous devez ramener une troupe de bâtisseurs à %location% pour qu'ils la reconstruisent. | %employer% écoute votre rapport et acquiesce.%SPEECH_ON%J'ai un groupe d'hommes qui retourne à %location% pour la reconstruire. J'ai besoin que vous les escortiez. C'est compris ? Bien.%SPEECH_OFF% | Enroulant quelques parchemins, %employer% vous donne votre prochaine directive.%SPEECH_ON%J'ai une équipe d'hommes qui y retourne pour reconstruire l'endroit. Il y a beaucoup de couronnes en jeu, alors assurez-vous que ces hommes arrivent en un seul morceau. Après ça, revenez chercher votre paie.%SPEECH_OFF% | %employer% s'assoit après avoir écouté votre rapport. Il sirote un gobelet de vin de cobra.%SPEECH_ON%Des nouvelles ?%SPEECH_OFF%Vous lui dites que la zone a été nettoyée. L'homme boit le reste de la boisson d'un trait et pose la tasse.%SPEECH_ON%Bien... bien. Maintenant, emmenez une équipe de mes ouvriers là-bas pour aider à reconstruire. Une fois qu'ils auront fini, revenez pour votre paie.%SPEECH_OFF% | %employer% se rassoit quand vous entrez.%SPEECH_ON%J'en déduis par votre retour que %location% a été nettoyé, n'est-ce pas ?%SPEECH_OFF%Vous confirmez ce que l'homme veut entendre. Il semble heureux, bien que votre travail ne soit pas encore terminé : %employer% veut que vous rameniez une équipe de travailleurs dans la zone pour aider à la reconstruire et à la réinstaller. Une fois qu'ils seront arrivés sains et saufs, retournez lui demander votre paiement.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "This shouldn\'t take long.",
+					Text = "Ça ne devrait pas prendre longtemps.",
 					function getResult()
 					{
 						this.Contract.spawnCaravan();
@@ -516,20 +516,20 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success2",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_63.png[/img]{%employer% welcomes your return with a satchel heavy with crowns. He waves you off, hardly even thanking you for your work. Although, screw him and screw the formalities. A bag of crowns is thanks enough. | You enter %employer%\'s abode and he waves you in. One of his men hands you a large satchel of crowns. You look at the man.%SPEECH_ON%How did you know they made it?%SPEECH_OFF%%employer% smiles sheepishly.%SPEECH_ON%I have many eyes and ears in these parts. Even the birds talk to me...%SPEECH_OFF%That explanation\'s good enough. | Returning to %employer%, you explain that the %location% is well underway to restoration. He thanks you.%SPEECH_ON%Well, would you look at that? A mercenary who keeps his word and gets his work done. A rarity. Here is your pay.%SPEECH_OFF%One of his men hands you a burlap sack heavy and sharpened by crowns. %employer% tips a hand.%SPEECH_ON%Be seeing you, sellsword.%SPEECH_OFF% | %employer% is in his study when you return. He shows a scroll to you and asks if you know what it is. You shrug.%SPEECH_ON%I\'m not a learned man. Not of the written word, anyway.%SPEECH_OFF%%employer% returns the shrug.%SPEECH_ON%What a shame. But you are a man of the spoken word. You\'ve owned up to your promises and, believe me, that is rare to see. Your pay is in the corner.%SPEECH_OFF%The pay is right where he says it is. You spend little time dawdling on ceremony and take it and make your leave. | %employer% sits back, seemingly smug with himself.%SPEECH_ON%I know how to pick \'em. Sellswords, that is. Most of my compatriots hire folks like you, but it goes tits up because they don\'t know how to spot a good man from the wag of a dead dog\'s tail. But you... I knew you were good on your word the second I saw you. Your pay, mercenary...%SPEECH_OFF%He slams a satchel of crowns on his desk.%SPEECH_ON%It\'s all there, but I understand if you want to count it.%SPEECH_OFF%You do count it - and it\'s all there.}",
+			Text = "[img]gfx/ui/events/event_63.png[/img]{%employer% accueille votre retour avec une sacoche lourde de couronnes. Il vous fait signe de partir, sans même vous remercier pour votre travail. Qu'il aille se faire foutre, lui et les formalités. Un sac de couronnes est un remerciement suffisant. | Vous entrez dans la demeure de %employer% et il vous fait signe d'entrer. Un de ses hommes vous tend une grande sacoche de couronnes. Vous regardez l'homme.%SPEECH_ON%Comment savez-vous qu'ils ont survécu ?%SPEECH_OFF%%employer% sourit d'un air penaud.%SPEECH_ON%J'ai beaucoup d'yeux et d'oreilles par ici. Même les oiseaux me parlent...%SPEECH_OFF%Cette explication est suffisante. | En retournant chez %employer%, vous lui expliquez que la restauration de %location% est en bonne voie. Il vous remercie.%SPEECH_ON%Eh bien, regardez-moi ça. Un mercenaire qui tient sa parole et fait son travail. Une rareté. Voici votre paye.%SPEECH_OFF%Un de ses hommes vous tend un sac en toile de jute lourd à cause des couronnes. %employer% fait un geste de la main.%SPEECH_ON%A bientôt, mercenaire.%SPEECH_OFF% | %employer% est dans son bureau à votre retour. Il vous montre un parchemin et vous demande si vous savez ce que c'est. Vous haussez les épaules.%SPEECH_ON%Je ne suis pas un homme cultivé. Pas de l'écrit, en tout cas.%SPEECH_OFF%%employer% répond par un haussement d'épaules.%SPEECH_ON%Quel dommage. Mais vous êtes un homme de parole. Vous avez tenu vos promesses et, croyez-moi, c'est rare de voir ça. Votre salaire est dans le coin.%SPEECH_OFF%Le salaire est juste là où il le dit. Vous passez peu de temps à lambiner en cérémonie, vous la prenez et vous partez. | %employer% s'assied, apparemment content de lui.%SPEECH_ON%Je sais comment les choisir. Les mercenaires, bien sûr. La plupart de mes compatriotes embauchent des gens comme vous, mais ça foire parce qu'ils ne savent pas reconnaître un homme bon d'un bandit. Mais vous... J'ai su que vous étiez fidèle à votre parole à la seconde où je vous ai vu. Votre salaire, mercenaire...%SPEECH_OFF%Il fait claquer une sacoche de couronnes sur son bureau.%SPEECH_ON%Tout est là, mais je comprendrais que vous vouliez compter.%SPEECH_OFF%Vous comptez - et tout y est.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Easy crowns.",
+					Text = "Des couronnes faciles.",
 					function getResult()
 					{
 						this.Contract.m.Location.setActive(true);
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Helped rebuild a " + this.Contract.m.Location.getRealName());
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "A aidé à reconstruire " + this.Contract.m.Location.getRealName());
 						this.World.Contracts.finishActiveContract();
 						return 0;
 					}
@@ -549,18 +549,18 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure1",
 			Title = "Après la bataille",
-			Text = "[img]gfx/ui/events/event_60.png[/img]{The building trek is in ruin and any hope to salvage %location% is lost. At least for the time being.}",
+			Text = "[img]gfx/ui/events/event_60.png[/img]{La caravane de construction est en ruine et tout espoir de sauver %location% est perdu. Du moins pour l'instant.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Darn it!",
+					Text = "Bon sang !",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "Failed to protect a building trek");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "N'a pas réussi à protéger une caravane de construction");
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}
@@ -571,18 +571,18 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure2",
 			Title = "Après la bataille",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{Your men failed to secure the %location% and so you shouldn\'t expect any pay.}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{Vos hommes n'ont pas réussi à sécuriser %location% et vous ne devriez donc pas vous attendre à être payés.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Darn it!",
+					Text = "Bon sang !",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "Failed to secure the " + this.Contract.m.Location.getName());
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractFail, "N'a pas réussi à sécuriser " + this.Contract.m.Location.getName());
 						this.World.Contracts.finishActiveContract(true);
 						return 0;
 					}
