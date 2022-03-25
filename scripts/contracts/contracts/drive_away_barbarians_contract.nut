@@ -491,12 +491,12 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		this.m.Screens.push({
 			ID = "Survivor2",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_145.png[/img]{You unsheathe your sword and lower the blade toward the man, the corpses in the tent blurring along its metal curvature, and the surviving barbarian\'s face blobbing at the tip. He grins and grips the edges, sheathing it in his huge hands. Blood drips steadily from his palms.%SPEECH_ON%Death, killing, no dishonor. For us both. Yes?%SPEECH_OFF%Nodding, you push the blade into his chest and sink him back to the floor. The weight of him on the sword is like a stone and when you unstick him the corpse claps back against the pile of corpses. Sheathing the sword, you tell the company to round up what goods they can and to ready a Retournez à %employer%.}",
+			Text = "[img]gfx/ui/events/event_145.png[/img]{Vous rengainez votre épée et abaissez la lame vers l'homme, les cadavres dans la tente se reflétant dans le métal de la lame, et le visage du barbare survivant apparaissant au bout de la lame. Il sourit et saisit les bords, la serrant dans ses énormes mains. Le sang s'écoule constamment de ses paumes.%SPEECH_ON%La mort, le meurtre, pas de déshonneur. Pour nous deux. N'est-ce pas?%SPEECH_OFF%En hochant la tête, vous enfoncez la lame dans sa poitrine et le poussez vers le sol. Le poids de son corps sur l'épée est comme une pierre et lorsque vous retirez votre épée, le cadavre tombe contre la pile de cadavres. Rengainant l'épée, vous dites à la compagnie de rassembler les marchandises qu'elle peut et de se préparer à retourner voir %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Time to get paid.",
+					Text = "Il est temps d'être payé.",
 					function getResult()
 					{
 						return 0;
@@ -508,12 +508,12 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		this.m.Screens.push({
 			ID = "Survivor3",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_145.png[/img]{You unsheathe your blade halfway, hold it long enough that the savage sees it, then you slam it back into the scabbard. Nodding, you ask.%SPEECH_ON%Understand?%SPEECH_OFF%The barbarian stands up, briefly slumping against the tent\'s post. You turn and hold your hand out to the tent flap. He nods.%SPEECH_ON%Aye, I know.%SPEECH_OFF%He stumbles out and into the light and away into the northern wastes, his shape tottering side to side, shrinking, and is then gone. You tell the company to get ready to Retournez à %employer% for some well-earned pay.}",
+			Text = "[img]gfx/ui/events/event_145.png[/img]{Vous dégainez votre lame à moitié, la tenez assez longtemps pour que le sauvage la voit, puis vous la remettez dans le fourreau. En hochant la tête, vous demandez.%SPEECH_ON%Vous comprenez ?%SPEECH_OFF%Le barbare se lève, s'affaissant brièvement contre le poteau de la tente. Vous vous retournez et tendez la main vers le rabat de la tente. Il acquiesce.%SPEECH_ON%Oui, je comprends.%SPEECH_OFF%Il sort en titubant, pénètre dans la lumière et s'éloigne dans les étendues du nord, sa silhouette vacillant d'un côté à l'autre, rapetissant, puis il disparaît. Vous dites à la compagnie de se préparer à retourner voir %employer% pour un salaire bien mérité.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Time to get paid.",
+					Text = "Il est temps d'être payé.",
 					function getResult()
 					{
 						return 0;
@@ -525,18 +525,18 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 		this.m.Screens.push({
 			ID = "Survivor4",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_145.png[/img]{You stare at the man, then take out your dagger and slice the inside of your palm. Squeezing the blood, you toss the dagger to the barbarian and then hold your hand out, the blood dripping steadily. The savage takes the blade and cuts himself in turn. He stands and puts his hand out and you shake. He nods.%SPEECH_ON%Honor, always. With you, the only way, all the way.%SPEECH_OFF%The man stumbles out of the tent. You tell the men to not kill him, but instead to arm him which raises some eyebrows. His addition to the company is unforeseen, but useful. The southern sellswords will get used to it in time, but for now the %companyname% needs to Retournez à %employer%.}",
+			Text = "[img]gfx/ui/events/event_145.png[/img]{Vous fixez l'homme, puis vous sortez votre dague et vous vous tranchez l'intérieur de la paume. Pressant le sang, vous lancez la dague au barbare, puis vous tendez la main, le sang coulant régulièrement. Le sauvage prend la lame et se coupe à son tour. Il se lève, tend sa main et vous vous serrez les mains. Il fait un signe de tête.%SPEECH_ON%L'honneur, toujours. Avec vous, le seul chemin, jusqu'au bout.%SPEECH_OFF%L'homme sort en titubant de la tente. Vous dites aux hommes de ne pas le tuer, mais plutôt de l'armer, ce qui fait sourciller certains. Son ajout à la compagnie est imprévu, mais utile. Les mercenaires du sud s'y habitueront avec le temps, mais pour l'instant %companyname% a besoin de retourner voir %employer%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome to the %companyname%.",
+					Text = "Bienvenue dans %companyname%.",
 					function getResult()
 					{
 						this.World.getPlayerRoster().add(this.Contract.m.Dude);
 						this.World.getTemporaryRoster().clear();
-						this.Contract.m.Dude.worsenMood(1.0, "Has seen his village being slaughtered");
+						this.Contract.m.Dude.worsenMood(1.0, "A vu son village se faire massacrer");
 						this.Contract.m.Dude.onHired();
 						this.Contract.m.Dude = null;
 						return 0;
