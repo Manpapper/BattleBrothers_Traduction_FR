@@ -9,7 +9,7 @@ this.runaway_laborers_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_59.png[/img]Alors que vous marchez le long des routes, une foule d\'hommes à l\'air dépenaillé vous dépasse à toute vitesse. Ils quittent le chemin, sautent dans un talus et se cachent derrière un mur de buissons.\n\nAlors que les buissons se balancent encore, un autre groupe d\'hommes apparaît bientôt. Avant même que le premier homme ne parle, vous savez déjà ce qui va se passer. Apparemment, certains ouvriers se sont mis d\'accord pour abandonner un projet à cause de ce que les surveillants qui les poursuivent qualifient de \"problèmes\". Ils vous demandent si vous avez déjà vu ces puits à ciel ouvert.",
+			Text = "[img]gfx/ui/events/event_59.png[/img]Alors que vous marchez le long des routes, une foule d\'hommes à l\'air dépenaillé vous dépasse à toute vitesse. Ils quittent le chemin, sautent dans un talus et se cachent derrière un mur de buissons.\n\nAlors que les buissons se balancent encore, un autre groupe d\'hommes apparaît bientôt. Avant même que le premier homme ne parle, vous savez déjà ce qui va se passer. Apparemment, certains ouvriers se sont mis d\'accord pour abandonner un projet à cause de ce que les surveillants qui les poursuivent qualifient de \"petits problèmes\". Ils vous demandent si vous avez vu ces ouvriers passer.",
 			Image = "",
 			List = [],
 			Options = [

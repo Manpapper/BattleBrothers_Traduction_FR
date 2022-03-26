@@ -573,7 +573,7 @@ gt.Const.Strings.BusinessReputation <- [
 	"Reconnu",
 	"Fiable",
 	"Compétent",
-	"Professionel",
+	"Professionnel",
 	"Réputé",
 	"Fameux",
 	"Génial",
