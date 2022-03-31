@@ -6,17 +6,17 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.undead_zombie_in_granary";
-		this.m.Title = "At %town%...";
+		this.m.Title = "À %town%...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_79.png[/img]You come across a man hollering for help, so hysterical that he seems to pay no mind to gaining the attention of armed sellswords who have no allegiance to any house or their laws.%SPEECH_ON%Please! Help me! There\'s a... a corpse! In the granary!%SPEECH_OFF%He thumbs over his shoulder to a large, wooden building. Its front door rattles almost as if on cue. The man loses his mind.%SPEECH_ON%That\'s it! That\'s the monster! Please, go in there and kill it! We can\'t afford to lose all the food in there!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous tombez sur un homme qui crie à l\'aide, tellement hystérique qu\'il semble ne pas se soucier d\'attirer l\'attention de mercenaires qui n\'ont aucune allégeance à une maison ou à leurs lois.%SPEECH_ON%S\'il vous plaît ! Aide-moi! Il y a un... un cadavre ! Dans le grenier !%SPEECH_OFF%Il passe le pouce par-dessus son épaule en direction d\'un grand bâtiment en bois. Sa porte d\'entrée claque au bon moment. L\'homme perd la tête.%SPEECH_ON%C\'est lui ! C\'est le monstre ! S\'il vous plaît, allez-y et tuez-le ! Nous ne pouvons pas nous permettre de perdre toute la nourriture qui s\'y trouve !%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s best to burn that granary down.",
+					Text = "Il vaut mieux brûler ce grenier.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -31,7 +31,7 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "One of my men will go in and handle this.",
+					Text = "Un de mes hommes entrera et s\'occupera de ça.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -46,7 +46,7 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We don\'t have time for this.",
+					Text = "Nous n\'avons pas le temps pour cela.",
 					function getResult( _event )
 					{
 						return 0;
@@ -61,13 +61,13 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_30.png[/img]You grab the man by the shoulders and stare at him as you talk.%SPEECH_ON%We are going to burn down the granary. What food that is in there, are you listening? Listen carefully to what I\'m going to say. The food in there is diseased and should not be eaten. There is nothing to save.%SPEECH_OFF%The peasant, his body shaking as though with a cold, steps out of the way. He squishes his face behind both hands, barely able to watch as two of your sellswords step forward, torches in hand, and set the granary ablaze.\n\nThe door stops rattling for a moment, then picks back up, nearly breaking its hinges. As smoke streams out from its bottom, someone begins crying out.%SPEECH_ON%A joke! A joke! Please, let me out! Aaah, AAAHH!%SPEECH_OFF%%dude% rushes to the door and breaks it down. A little boy runs out, a body for a torch, limbs flailing arches of flame. He settles down on the ground where the mercenaries try to cover him, but it\'s too late. He\'s a smoldering ruin by the time the fire is put out. The peasant man looks absolutely horrified.%SPEECH_ON%I... I had no idea, I thought it... he kept making growling noises.%SPEECH_OFF%You shake your head and tell the company to quickly get back on the road.",
+			Text = "[img]gfx/ui/events/event_30.png[/img]Vous attrapez l\'homme par les épaules et le fixez pendant que vous parlez.%SPEECH_ON%Nous allons brûler le grenier. Sauvez de la nourriture, écoutez-vous! Écoutez attentivement ce que je vais dire. La nourriture qui s\'y trouve est malade et ne doit pas être consommée. Il n\'y a rien à sauver.%SPEECH_OFF%Le paysan, le corps tremblant comme de froid, s\'écarte. Il écrase son visage entre ses deux mains, à peine capable de regarder deux de vos mercenaires s\'avancer, torches à la main, et mettre le feu au grenier.\n\nLa porte s\'arrête de cliqueter pendant un moment, puis se relève, brisant presque ses gonds . Alors que de la fumée s\'échappe du fond, quelqu\'un commence à crier.%SPEECH_ON%Une blague ! Une blague! S\'il vous plaît, laissez-moi sortir! Aaah, AAAHH !%SPEECH_OFF%%dude% se précipite vers la porte et la défonce. Un petit garçon s\'épuise, son corps comme une torche, des membres agitant des arcs de flammes. Il s\'installe au sol où les mercenaires tentent de le couvrir, mais il est trop tard. Il est une ruine fumante au moment où le feu est éteint. Le paysan a l\'air absolument horrifié.%SPEECH_ON%Je... Je n\'en avais aucune idée, je le pensais... il n\'arrêtait pas de faire des grognements.%SPEECH_OFF%Vous secouez la tête et dites à la compagnie de reprendre rapidement la route. ",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well, shite.",
+					Text = "Eh bien, merde.",
 					function getResult( _event )
 					{
 						return 0;
@@ -83,7 +83,7 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getBackground().isOffendedByViolence() && this.Math.rand(1, 100) <= 50)
 					{
-						bro.worsenMood(0.5, "You had a boy burned by accident");
+						bro.worsenMood(0.5, "Vous avez fait brûlé un garçon par accident");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -100,13 +100,13 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_30.png[/img]The food is no doubt lost to the diseases by now, and the entire building might be infected with evils beyond human measure. Slowly, you explain to the man that you will burn his granary down. He doesn\'t refuse, only hurriedly nods his head.%SPEECH_ON%I know. I didn\'t want to do it myself, I suppose, maybe hanging onto the idea that someone would come along and tell me what I wanted to hear, not what needed to be done.%SPEECH_OFF%A few sellswords set torches to the corners of the granary and it doesn\'t take long at all for the fires to crawl up its walls and roof. But a minute later the entire structure is blazing. When the front door breaks apart, a wiederganger shuffles through the gap, its entire body curling with fire and smoke. It\'s all but blackened bones by now, skin dripping off its skeleton in great, gooey gobs. %dude% cuts its head off with a swift blow. The peasant watches the rest of his building collapse, the glow of the fire shining the tears on his cheek.%SPEECH_ON%Well, I guess that\'s it then. Thank you, sellsword.%SPEECH_OFF%He offers you a modest sum of crowns which you are more than happy to take for your \'services.\'",
+			Text = "[img]gfx/ui/events/event_30.png[/img]La nourriture est sans aucun doute perdue pour les maladies maintenant, et tout le bâtiment pourrait être infecté par des maux au-delà de la mesure humaine. Lentement, vous expliquez à l\'homme que vous allez brûler son grenier. Il ne refuse pas, se contente de hocher la tête rapidement.%SPEECH_ON%Je sais. Je ne voulais pas le faire moi-même, je suppose, peut-être m\'accrocher à l\'idée que quelqu\'un viendrait me dire ce que je voulais entendre, pas ce qu\'il fallait faire. Vous allumez un coin du grenier et il ne faut pas longtemps pour que les incendies se propagent sur ses murs et son toit. Une minute plus tard, toute la structure flamboie. Lorsque la porte d\'entrée s\'effondre, un wiederganger se faufile à travers l\'espace, tout son corps se tordant de feu et de fumée. Ce n\'est plus que des os noircis maintenant, la peau dégoulinant de son squelette en grosses gouttes gluantes. %dude% lui coupe la tête d\'un coup rapide. Le paysan regarde le reste de son silo s\'effondrer, la lueur du feu faisant briller les larmes sur sa joue.%SPEECH_ON%Eh bien, je suppose que c\'est tout alors. Merci, mercenaire.%SPEECH_OFF%Il vous offre une modeste somme de couronnes que vous êtes plus qu\'heureux de prendre pour vos \'services\'",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Gross.",
+					Text = "Efficace",
 					function getResult( _event )
 					{
 						return 0;
@@ -122,7 +122,7 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Couronnes"
+						text = "Vous obtenez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Couronnes"
 					}
 				];
 			}
@@ -130,13 +130,13 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_79.png[/img]You decide to solve this wiederganger problem as though it were facing you in the field. %dude% kicks the front door down and stabs the first thing he sees. The undead corpse lurches, the momentum bending its body over the blade. And then you see it: blood slowly running down the metal. As the mercenary steps back, the light reveals that the corpse is not an undead body, but a simple boy. He\'s gargling, eyes wide, hands shaking against his wound.%SPEECH_ON%I... I was just playing...%SPEECH_OFF%The sellsword wrenches an arm back and withdraws his weapon. The boy collapses. You turn to the peasant man. He holds his hands up.%SPEECH_ON%I had... I had no idea! He was making noises! He kept, I heard... growling! There was so much growling, I don\'t...%SPEECH_OFF%The man falls to his knees. You look at the boy who is beyond help, his skin going paler by the second as ropes of crimson splurge from his wounds. You shake your head and tell the men to get back on the road before anything bad comes of the scene.",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous décidez de résoudre ce problème de wiederganger. %dude% défonce la porte d\'entrée et poignarde la première chose qu\'il voit. Le cadavre du mort-vivant vacille, l\'élan faisant plier son corps sur la lame. Et puis vous le voyez : le sang coule lentement sur le métal. Alors que le mercenaire recule, la lumière révèle que le cadavre n\'est pas un mort-vivant, mais un simple garçon. Il se gargarise, les yeux écarquillés, les mains tremblantes contre sa blessure.%SPEECH_ON%Je... Je jouais juste...%SPEECH_OFF%Le mercenaire écarte un bras et retire son arme. Le garçon s\'effondre. Vous vous tournez vers le paysan. Il lève les mains.%SPEECH_ON%J\'avais... Je n\'en avais aucune idée ! Il faisait du bruit ! Il a fait du bruit, j\'ai entendu... grogner ! Il y avait tellement de grognements, je ne...%SPEECH_OFF%L\'homme tombe à genoux. Vous regardez le garçon qui est au-delà de toute aide, sa peau devenant plus pâle à la seconde alors que des cordes de cramoisi jaillissent de ses blessures. Vous secouez la tête et dites aux hommes de reprendre la route avant que quelque chose de mauvais n\'arrive.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Farking hell.",
+					Text = "Putain d\'Enfer",
 					function getResult( _event )
 					{
 						return 0;
@@ -147,7 +147,7 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Dude.getImagePath());
-				_event.m.Dude.worsenMood(2.0, "Killed a little boy by accident");
+				_event.m.Dude.worsenMood(2.0, "Tué un petit garçon par accident");
 
 				if (_event.m.Dude.getMoodState() < this.Const.MoodState.Neutral)
 				{
@@ -162,13 +162,13 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_79.png[/img]You send %dude% into the granary to handle it. He claps his shoulders to loosen up.%SPEECH_ON%One dead wiederganger coming right up.%SPEECH_OFF%The sellsword kicks the door in and rushes through. There\'s the din of fighting and a flash of light hits the metal of the mercenary\'s weapon as he works through the darkness and evil. A moment later, he steps back out, wiping sweat from his forehead.%SPEECH_ON%Done. Blood on some of the food, but you can just eat around that.%SPEECH_OFF%You turn to the peasant and hold your hand out. He begrudgingly hands you a small purse of crowns.%SPEECH_ON%Thank you... mercenary.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_79.png[/img]Vous envoyez %dude% dans le grenier pour le gérer. Il étire ses épaules pour se détendre.%SPEECH_ON%Un wiederganger arrive tout droit.%SPEECH_OFF%Le mercenaire défonce la porte et se précipite. Il y a le vacarme des combats et un éclair de lumière frappe le métal de l\'arme du mercenaire alors qu\'il travaille à travers les ténèbres et le mal. Un instant plus tard, il recule, essuyant la sueur de son front.%SPEECH_ON%Terminé. Du sang sur une partie de la nourriture, mais vous pouvez juste manger autour de ça.%SPEECH_OFF%Vous vous tournez vers le paysan et lui tendez la main. Il vous tend à contrecœur une petite bourse de couronnes.%SPEECH_ON%Merci... mercenaire.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good job.",
+					Text = "Bon travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -184,10 +184,10 @@ this.undead_zombie_in_granary_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "Vous recevez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Couronnes"
+						text = "Vous obtenez [color=" + this.Const.UI.Color.PositiveEventValue + "]50[/color] Couronnes"
 					}
 				];
-				_event.m.Dude.improveMood(0.25, "Saved a peasant");
+				_event.m.Dude.improveMood(0.25, "Sauvé un paysan");
 
 				if (_event.m.Dude.getMoodState() >= this.Const.MoodState.Neutral)
 				{

@@ -1212,7 +1212,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus surdes terrain accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez pratiquement plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
+						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez pratiquement plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
 					}
 				];
 			}
@@ -1227,7 +1227,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus surdes terrain accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
+						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
 					}
 				];
 			}

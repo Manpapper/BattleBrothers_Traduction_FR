@@ -110,7 +110,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 			function start()
 			{
 				this.Contract.m.BulletpointsObjectives = [
-					"Kill marauding greenskins around %origin%"
+					"Tuez les peaux vertes en maraude autour de %origin%"
 				];
 
 				if (this.Math.rand(1, 100) <= this.Const.Contracts.Settings.IntroChance)
@@ -151,7 +151,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 				if (this.Flags.get("IsOrcs"))
 				{
 					party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Orc Marauders", false, this.Const.World.Spawn.OrcRaiders, 110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-					party.setDescription("A band of menacing orcs, greenskinned and towering any man.");
+					party.setDescription("Une bande d\'orcs menaçants, à la peau verte et dépassant n\'importe quel homme.");
 					party.getLoot().ArmorParts = this.Math.rand(0, 25);
 					party.getLoot().Ammo = this.Math.rand(0, 10);
 					party.addToInventory("supplies/strange_meat_item");
@@ -161,7 +161,7 @@ this.marauding_greenskins_contract <- this.inherit("scripts/contracts/contract",
 				else
 				{
 					party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(tile, "Goblin Raiders", false, this.Const.World.Spawn.GoblinRaiders, 110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-					party.setDescription("A band of mischievous goblins, small but cunning and not to be underestimated.");
+					party.setDescription("Une bande de gobelins malicieux, petits mais rusés et à ne pas sous-estimer.");
 					party.getLoot().ArmorParts = this.Math.rand(0, 10);
 					party.getLoot().Medicine = this.Math.rand(0, 2);
 					party.getLoot().Ammo = this.Math.rand(0, 30);

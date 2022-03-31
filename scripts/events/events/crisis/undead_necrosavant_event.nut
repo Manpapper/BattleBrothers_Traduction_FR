@@ -9,13 +9,13 @@ this.undead_necrosavant_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_76.png[/img]A pile of rubble stands off the side of the path. There before it is a studious greybeard looking keenly at the stones. He\'s so deep in thought he probably wouldn\'t notice if you simply walked on.",
+			Text = "[img]gfx/ui/events/event_76.png[/img]Un tas de gravats se dresse sur le côté du chemin. Là, devant elle, un barbu studieux regarde attentivement les pierres. Il est tellement plongé dans ses pensées qu\'il ne le remarquerait probablement pas si vous continuiez simplement à marcher.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see what he\'s up to.",
+					Text = "Voyons ce qu\'il fait.",
 					function getResult( _event )
 					{
 						if (_event.m.Witchhunter != null)
@@ -41,7 +41,7 @@ this.undead_necrosavant_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let\'s keep moving.",
+					Text = "Continuons d\'avancer.",
 					function getResult( _event )
 					{
 						return 0;
@@ -56,13 +56,13 @@ this.undead_necrosavant_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_17.png[/img]You\'re not about to leave this poor old sod out here by himself. You sidle over to him and ask what he\'s up to. He looks over at you, what must be at least seventy winters having weathered his skin into a leathery and permanent wince. He laughs.%SPEECH_ON%Trying to make sense of it all. The dead are rising up out of the earth and, seeing as how I\'m about to shuffle off to a grave of my own any day now, I figured why not be sure I\'m not one to join their ranks? This here was a temple where I was offered purgation as a child. I was also wedded here and saw my only son wedded here as well.%SPEECH_OFF%Curious, you ask what destroyed the building. The man laughs again.%SPEECH_ON%People came here asking the same questions I did. Godly questions in a world where the earth has manifested itself deific and rebirthed the dead. Violence was the answer they found - and so they decided to dismantle it stone by stone. I\'d admonish them for that, but it\'d be a ruse. I\'d probably do the same as they did had I the means, but, you know, I\'m old as shite and can\'t do much beyond lifting my own fingers. It\'s quite easy to be the pacifist when even a fly can lick your nose free of punishment.%SPEECH_OFF%His hearty laugh returns. He offers you a silver bowl.%SPEECH_ON%Found this in my search. Monks used to splash water in it to cleanse the sick. It ain\'t the answer I was looking for, but here, take it. I\'ve no use for such things. Not now. Not in any sense. Good luck out there and if you, you know, see me again like \'that\', please put me out of my misery.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_17.png[/img]Vous n\'allez pas laisser ce pauvre vieux con ici tout seul. Vous vous approchez de lui et lui demandez ce qu\'il fait. Il vous regarde, ce qui doit être au moins soixante-dix hivers ayant altéré sa peau en une grimace coriace et permanente. Il rit.%SPEECH_ON%Essayer de donner un sens à tout cela. Les morts se lèvent de la terre et, vu que je suis sur le point de me traîner vers ma propre tombe d\'un jour à l\'autre, je me suis dit pourquoi ne pas être sûr que je ne suis pas du genre à rejoindre leurs rangs ? C\'était ici un temple où l\'on m\'a offert la purgation quand j\'étais enfant. J\'ais été également marié ici et j\'ai vu mon fils unique se marier ici aussi.%SPEECH_OFF%Curieux, vous demandez ce qui a détruit le temple. L\'homme rit à nouveau.%SPEECH_ON%Les gens sont venus ici poser les mêmes questions que moi. Des questions divines dans un monde où la terre s\'est manifestée divinisée et a fait renaître les morts. La violence était la réponse qu\'ils ont trouvée - et ils ont donc décidé de la démanteler pierre par pierre. Je les admonesterais pour ça, mais ce serait une ruse. Je ferais probablement la même chose qu\'eux si j\'en avais les moyens, mais, vous savez, je suis vieux, je ne peux pas faire grand-chose à part lever mes propres doigts. C\'est assez facile d\'être le pacifiste quand même une mouche peut vous lécher le nez sans punition.%SPEECH_OFF%Son rire chaleureux revient. Il vous offre un bol en argent.%SPEECH_ON%J\'ai trouvé ceci dans mes recherche. Les moines y mettaient de l\'eau pour purifier les malades. Ce n\'est pas la réponse que je cherchais, mais tenez, prenez-le. Je n\'ai aucune utilité pour de telles choses. Pas maintenant. En aucun cas. Bonne chance là-bas et si vous, vous savez, me revoyez comme \'ça\', s\'il vous plaît, sortez-moi de ma misère.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Godspeed, stranger.",
+					Text = "Bonne chance, étranger.",
 					function getResult( _event )
 					{
 						return 0;
@@ -77,20 +77,20 @@ this.undead_necrosavant_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = "Vous obtenez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_29.png[/img]These are dangerous times for even men of strong stock, it sure as hell isn\'t safe for an old fart who has probably lost a couple of marbles. You go over and call out to him. Instantly, he jerks his head around, eyes flared, the pupils bloated to make his sight a starless abyss. He points a finger right at you.%SPEECH_ON%Your blood. Give it to me.%SPEECH_OFF%The stranger slowly rises to his feet. His cloak falls off his body, revealing a naked skeleton with only the thinnest veneer of flesh. He shambles toward you. His mouth is open, but there are no articulations. He seems to be speaking from some other world entirely.%SPEECH_ON%My reckoning, your crimson, my reckoning, your crimson.%SPEECH_OFF%%randombrother% jumps forward, weapon in hand.%SPEECH_ON%He\'s a sorcerer!%SPEECH_OFF%The men arm themselves as the necromancer leans back, his cloak lifting up off the ground and clothing him as though the wind itself were at his beck and call. Suddenly, bodies emerge from the earth, growling and mewling. He stares at you from beneath the rim of hat slowly lowering over his eyes.%SPEECH_ON%So be it.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_29.png[/img]Ce sont des temps dangereux, même pour les hommes solides, ce n\'est certainement pas sûr pour un vieux con qui a probablement perdu quelques billes. Tu t\'approches et tu l\'appelles. Instantanément, il secoue la tête, les yeux écarquillés, les pupilles gonflées pour faire de sa vue un abîme sans étoiles. Il pointe un doigt vers vous.%SPEECH_ON%Votre sang. Donnez-le-moi.%SPEECH_OFF%L\'inconnu se lève lentement. Son manteau tombe de son corps, révélant un squelette nu avec seulement le placage de chair le plus fin. Il fonce vers vous. Sa bouche est ouverte, mais il n\'y a pas d\'articulations. Il semble parler entièrement d\'un autre monde.%SPEECH_ON%Mon calcul, ton cramoisi, mon calcul, ton cramoisi.%SPEECH_OFF%%randombrother% saute en avant, arme à la main.%SPEECH_ON%C\'est un sorcier !%SPEECH_OFF Les hommes s\'arment alors que le nécromancien se penche en arrière, sa cape se soulevant du sol et l\'habillant comme si le vent lui-même était à son entière disposition. Soudain, des corps sortent de terre en grognant et en miaulant. Il vous regarde de dessous le bord du chapeau qui s\'abaisse lentement sur ses yeux.%SPEECH_ON%Ainsi soit-il.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes!",
 					function getResult( _event )
 					{
 						if (this.World.FactionManager.isUndeadScourge())
@@ -125,7 +125,7 @@ this.undead_necrosavant_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_76.png[/img]Suddenly, a crossbow aims over your shoulder and fires so closely you can feel the air rushing past the twang of its rope. The bolt pierces the old man\'s skull and he tips forward, head to the mud, arse in the air, hands still beside himself in dispirited supination.\n\nYou turn to see %witchhunter% the witch hunter standing behind you. He lowers the crossbow and walks over to the corpse, grabbing it by the nape of the neck and putting a stake through its back. The body wretches with a shriek and the clothing bloats as the body implodes, a swirling dust hurriedly exiting out the cloak as though it had been caught impersonating a man.\n\n The witch hunter turns to you.%SPEECH_ON%Necrosavant. Rare. Extremely dangerous.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_76.png[/img]Soudain, une arbalète pointe par-dessus votre épaule et tire si près que vous pouvez sentir l\'air se précipiter au-delà du bruit de sa corde. L\'éclair transperce le crâne du vieil homme et il penche en avant, la tête dans la boue, les fesses en l\'air, les mains toujours à côté de lui dans une supination découragée.\n\nVous vous retournez pour voir %witchhunter% le chasseur de sorcières debout derrière vous. Il abaisse l\'arbalète et se dirige vers le cadavre, le saisit par la nuque et lui enfonce un pieu dans le dos. Le corps hurle et les vêtements gonflent alors que le corps implose, une poussière tourbillonnante sortant précipitamment de la cape comme si elle avait été surprise en train de se faire passer pour un homme.\n\n Le chasseur de sorcières se tourne vers vous.%SPEECH_ON%Necrosavant. Peu fréquent. Extrêmement dangereux.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -147,9 +147,9 @@ this.undead_necrosavant_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "Vous recevez " + item.getName()
+					text = "Vous obtenez " + item.getName()
 				});
-				_event.m.Witchhunter.improveMood(1.0, "Killed a Necrosavant on the road");
+				_event.m.Witchhunter.improveMood(1.0, "A tué un Nécrosavant sur la route");
 
 				if (_event.m.Witchhunter.getMoodState() >= this.Const.MoodState.Neutral)
 				{
