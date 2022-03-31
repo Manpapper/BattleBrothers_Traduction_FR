@@ -61,7 +61,7 @@ this.undead_hoggart_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Ce n\ \'est plus notre problème.",
+					Text = "Ce n\'est plus notre problème.",
 					function getResult( _event )
 					{
 						return "D";
