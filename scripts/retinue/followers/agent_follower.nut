@@ -5,11 +5,11 @@ this.agent_follower <- this.inherit("scripts/retinue/follower", {
 		this.follower.create();
 		this.m.ID = "follower.agent";
 		this.m.Name = "L\'Agent";
-		this.m.Description = "L\'Agen a des yeux et des oreilles partout et sait ce qu\'il se passe dans les villes et les villages ainsi que els contrats juteux qui s\'y trouvent.";
+		this.m.Description = "L\'Agent a des yeux et des oreilles partout et sait ce qu\'il se passe dans les villes et les villages ainsi que les contrats juteux qui s\'y trouvent.";
 		this.m.Image = "ui/campfire/agent_01";
 		this.m.Cost = 4000;
 		this.m.Effects = [
-			"Révèle les contrats disponible ets les situations dans les info-bulles des villes et villages peu importe où vous êtes"		
+			"Révèle les contrats disponible et les situations dans les info-bulles des villes et villages peu importe où vous êtes"		
 		];
 		this.m.Requirements = [
 			{
