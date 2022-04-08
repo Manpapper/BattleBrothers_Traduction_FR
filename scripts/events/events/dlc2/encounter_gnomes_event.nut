@@ -7,13 +7,13 @@ this.encounter_gnomes_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 200.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You give the men a break and decide to scout the forest ahead yourself. Not more than five minutes out you hear the steady hum of chanting. Drawing your sword, you crest an embarkment of fallen trees and look over the side. There you see a dozen of what look like miniature men dancing in a circle. Half or whistling lowly while the rest keep repeating some word you\'ve never heard before. In the center of the nonsense is a mushroom and a very bored looking toad which, occasionally, one mini man will run up and touch before sprinting back to the circle grinning as though he got away with some roguish crime.\n\n This is too much. You crawl forward to get a better look only to have a branch snap under your weight. The little men stop instantly and look toward you like a herd of prey. One yells in gibberish and the lot of them skip and hop away, diving into tree holes or into bushes. When you go down to see them out, you find nothing. They\'ve vanished entirely. You go to the stump and find the toad impaled to the hilt by a dagger and the mushroom gone.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous donnez une pause aux hommes et décidez de partir vous-même en reconnaissance dans la forêt. À moins de cinq minutes, vous entendez le murmure régulier de chants. Dégainant votre épée, vous grimpez sur un d'arbre tombé et regardez par-dessus. Vous y voyez une douzaine de ce qui ressemble à des hommes miniatures dansant en cercle. La moitié d'entre eux sifflent à voix basse tandis que les autres répètent sans cesse un mot que vous n'avez jamais entendu auparavant. Au centre de l'absurdité se trouve un champignon et un crapaud à l'air très ennuyé que, de temps en temps, un homme miniature se précipite et le touche avant de revenir en courant vers le cercle en souriant comme s'il s'était échappé d'un crime coquin.\n\n C'est trop. Vous avancez en rampant pour mieux voir, mais une branche se casse sous votre poids. Les petits hommes s'arrêtent instantanément et regardent vers vous comme un troupeau de proies. L'un d'eux hurle un charabia et tous s'éloignent en sautillant, plongeant dans des trous d'arbres ou dans des buissons. Quand vous rapprochez pour les voir, vous ne trouvez rien. Ils ont complètement disparu. Vous vous rendez à la souche et trouvez le crapaud empalé par une dague et le champignon disparu.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Strange.",
+					Text = "Etrange.",
 					function getResult( _event )
 					{
 						return 0;

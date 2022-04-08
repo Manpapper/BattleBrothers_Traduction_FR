@@ -9,13 +9,13 @@ this.lose_fear_beasts_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{The company is gathered around the campfire enjoying rest and a meal when %fearful% stands up. Given that everyone else is sitting, he seems to have taken the \'floor\' so to speak and uses his newfound privilege.%SPEECH_ON%If men were to be fearful of beasts, then men would be the beasts! But we\'re the ones with the homes and the fire and the trade and the money! Us! Not them! They sleep where they shit, what are they good for, really?%SPEECH_OFF%Despite the bizarre outburst, a few of the men raise their mugs and give a hearty \'hear hear.\'}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{La compagnie est réunie autour du feu de camp, profitant du repos et d'un repas, lorsque %fearful% se lève. Étant donné que tous les autres sont assis, il semble avoir pris la \"parole\" pour ainsi dire et utilise son nouveau privilège.%SPEECH_ON%Si les hommes ont peur des bêtes, alors les hommes n'ont qu'à devenir des bêtes ! Mais c'est nous qui avons les maisons, le feu, le commerce et l'argent ! Nous ! Pas eux ! Ils dorment où ils chient, à quoi servent-ils, vraiment ?%SPEECH_OFF%Malgré ce discours bizarre, quelques hommes lèvent leur chope et lancent un chaleureux \"Bravo, bravo\".}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Hear, hear!",
+					Text = "Ecoutez, écoutez !",
 					function getResult( _event )
 					{
 						return 0;
@@ -30,7 +30,7 @@ this.lose_fear_beasts_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.Casualty.getName() + " no longer fears beasts"
+					text = _event.m.Casualty.getName() + " ne craint plus les bêtes"
 				});
 				_event.m.Casualty.getSkills().remove(trait);
 			}

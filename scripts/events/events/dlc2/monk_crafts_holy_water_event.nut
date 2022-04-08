@@ -9,13 +9,13 @@ this.monk_crafts_holy_water_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{%monk% the modest monk enters your tent with a vial in hand. The flask is topped with a bark stopper and a wreath of greenery with berries hanging beneath the leaves. Inside the vial is a goldish liquid sloshing about. Whatever it is, it catches any glimpse of light and seems to capture it and swirl it around. He holds it out.%SPEECH_ON%Blessed water, sir, to fight the dead that walk again.%SPEECH_OFF%You ask if it\'s a gift from the old gods. He nods. You ask if it\'s really a gift from the old gods, though. He purses his lips.%SPEECH_ON%No, not exactly. The monasteries know how to make it, but it is an ancient recipe protected under penalty of death.%SPEECH_OFF%Of course. You thank the man for taking such a risk to contribute and tell him to put it in the inventory.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{%monk% le modeste moine entre dans votre tente avec une fiole à la main. La fiole est fermée par un bouchon d'écorce et d'une couronne de verdure avec des baies accrochées sous les feuilles. À l'intérieur de la fiole se trouve un liquide doré qui s'agite. Quoi qu'il en soit, le liquide attrape la moindre lueur et semble la capturer et la faire tourbillonner. Il vous la tend.%SPEECH_ON%De l'eau bénite, capitaine, pour combattre les morts qui marchent à nouveau.%SPEECH_OFF%Vous demandez si c'est un cadeau des anciens dieux. Il acquiesce. Vous demandez si c'est vraiment un cadeau des anciens dieux, cependant. Il se mordille les lèvres.%SPEECH_ON%Non, pas vraiment. Les monastères savent le faire, mais c'est une recette ancienne protégée sous peine de mort.%SPEECH_OFF%Bien sûr. Vous remerciez l'homme d'avoir pris le risque de contribuer et lui dites de mettre à jour l'inventaire.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Even holy men have tricks of the trade.",
+					Text = "Même les saints hommes ont des astuces.",
 					function getResult( _event )
 					{
 						return 0;

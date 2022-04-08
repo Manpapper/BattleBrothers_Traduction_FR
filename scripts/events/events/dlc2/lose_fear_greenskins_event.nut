@@ -9,13 +9,13 @@ this.lose_fear_greenskins_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%fearful% is staring into the campfire and nodding as he mumbles to himself. It\'s a worrisome sight, but almost on cue of that thought he speaks up.%SPEECH_ON%You know what? The greenskins ain\'t shit.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%fearful% regarde fixement le feu de camp et hoche la tête en marmonnant à lui-même. C'est une vision inquiétante, mais presque à l'instant même où cette pensée se fait entendre, il prend la parole.%SPEECH_ON%Vous savez quoi ? Les peaux vertes sont des merdes.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "If it bleeds, we can kill it.",
+					Text = "Si ça saigne, on peut le tuer.",
 					function getResult( _event )
 					{
 						return 0;
@@ -30,7 +30,7 @@ this.lose_fear_greenskins_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.Casualty.getName() + " no longer fears greenskins"
+					text = _event.m.Casualty.getName() + " ne craint plus les peaux vertes"
 				});
 				_event.m.Casualty.getSkills().remove(trait);
 			}

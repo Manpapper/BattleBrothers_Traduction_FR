@@ -7,13 +7,13 @@ this.brawl_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{You go out for a piss and find yourself midstream when the din of combat erupts behind you. Pinching it off, you fix your drawers and head back for the encampment. There you find the whole company engaged in battle not with any particular foe, but with itself. Sellswords are clambering over equipment and the campfire and each other to swing fists and spin elbows and wrestle one another around or tackle each other to the ground. Anyone who falls gets their ass kicked, literally, until someone else comes along to distract the ones doing the kicking, then the one who had fallen jumps to their feet and throws themselves back into the fray. The ol\' fracas eases as the men slowly realize you\'re there and they shape up and line up as though a swift reorganization would be a suitable resolution for their churlish behavior.\n\n Shaking your head, you ask what sparked it. The men shrug. Not a one can remember. You do a role call to make sure nobody\'s dead. You then tell them all to shake hands, keeping an eye on them as they do so. No bad blood to sniff out. Seems like this was just a bit of a fun tussle and wrassle, that\'s all.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous sortez pour pisser et vous êtes en train de vous soulager quand le vacarme du combat éclate derrière vous. Vous arrangez vos culottes et retournez au campement. Là, vous trouvez toute la compagnie engagée dans une bataille non pas contre un ennemi particulier, mais contre elle-même. Les mercenaires enjambent l'équipement, le feu de camp et les autres pour se frapper avec leurs poings et leurs coudes, se battre les uns contre les autres ou se plaquer au sol. Quiconque tombe se fait botter le cul, littéralement, jusqu'à ce que quelqu'un d'autre vienne distraire ceux qui donnent les coups de pied, puis celui qui était tombé se relève d'un bond et se jette à nouveau dans la mêlée. La bagarre s'apaise au fur et à mesure que les hommes réalisent que vous êtes là et qu'ils se mettent en rang comme si une réorganisation rapide serait une solution appropriée à leur comportement grossier.\n\n Secouant la tête, vous demandez ce qui l'a déclenché. Les hommes haussent les épaules. Aucun ne s'en souvient. Vous faites l'appel pour vous assurer que personne n'est mort. Vous leur dites ensuite de se serrer la main, en gardant un œil sur eux pendant qu'ils le font. Pas de mauvais sang. Il semble que c'était juste une petite dispute amusante, c'est tout.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nothing like a good brawl, eh?",
+					Text = "Rien de tel qu'une bonne bagarre, hein ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -29,7 +29,7 @@ this.brawl_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(0.5, "Had a good brawl");
+						bro.improveMood(0.5, "Il y a eu une bonne bagarre");
 
 						if (bro.getMoodState() > this.Const.MoodState.Neutral)
 						{
@@ -47,7 +47,7 @@ this.brawl_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/icons/days_wounded.png",
-							text = bro.getName() + " suffers light wounds"
+							text = bro.getName() + " souffre de blessures légères"
 						});
 					}
 				}

@@ -9,13 +9,13 @@ this.paranoid_bothers_others_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 35.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{You hear a commotion and go to find %paranoid% waving a weapon at his fellow sellswords.%SPEECH_ON%I know who you is, and I know who you ain\'t, and what you ain\'t are friends of mine!%SPEECH_OFF%%randombrother% looks over and shrugs.%SPEECH_ON%Never said you was my friend.%SPEECH_OFF%The paranoid mercenary barks on anyway, demanding everyone keep a good distance away or he\'ll cut them. You manage to calm the man down, mostly by explaining what his daily rate is and how he\'ll struggle without it, but it\'s no doubt a short term solution. | You find %paranoid% the increasingly paranoid sellsword huddled by himself with his hands around his knees. Despite the infantile posture, his eyes are steeled and he\'s keeping careful watch of everything. When you ask him how he\'s doing, he simply laughs.%SPEECH_ON%I dunno, sir, just surrounded by a mob of money-driven assholes who will stab me in the back whenever it suits them.%SPEECH_OFF%In a way, you understand where he\'s coming from, but you hope this mood is not contagious with the rest of the company.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{Vous entendez une agitation et vous allez trouver %paranoid% qui brandit une arme sur ses compagnons d'armes.%SPEECH_ON%Je sais qui vous êtes, et je sais qui vous n'êtes pas, et ce que vous n'êtes pas, ce sont des amis à moi !%SPEECH_OFF%%randombrother% vous regarde et hausse les épaules.%SPEECH_ON%Je n'ai jamais dit que tu étais mon ami.%SPEECH_OFF%Le mercenaire paranoïaque aboie quand même, exigeant que tout le monde se tienne à bonne distance ou il va les couper. Vous parvenez à le calmer, principalement en lui rappelant son salaire journalier et à quel point il aura du mal à s'en passer, mais c'est sans doute une solution à court terme. | Vous trouvez %paranoid%, le mercenaire de plus en plus paranoïaque, recroquevillé sur lui-même, les mains autour des genoux. Malgré cette posture infantile, ses yeux sont d'acier et il surveille tout avec attention. Lorsque vous lui demandez comment il va, il se contente de rire.%SPEECH_ON%Je ne sais pas, monsieur, je suis juste entouré d'une foule de connards motivés par l'argent qui pourrait me poignarder dans le dos quand ça les arrange.%SPEECH_OFF%D'une certaine manière, vous comprenez ce qu'il veut dire, mais vous espérez que cette attitude n'est pas contagieuse pour le reste de la compagnie.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Stop being so paranoid.",
+					Text = "Arrêtez d'être si paranoïaque.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.paranoid_bothers_others_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Paranoid.getImagePath());
-				_event.m.Paranoid.worsenMood(0.5, "Is paranoid about his comrades");
+				_event.m.Paranoid.worsenMood(0.5, "Est paranoïaque à propos de ses camarades");
 
 				if (_event.m.Paranoid.getMoodState() < this.Const.MoodState.Neutral)
 				{

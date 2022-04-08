@@ -9,13 +9,13 @@ this.miner_fresh_air_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{%miner% the miner sucks in great gulps of breath and then lets them out in long, albeit a little wheezy exhales. He nods to himself as though satisfied by something everyone does. It seems some folks are easily pleased. But he does explain himself.%SPEECH_ON%You know I spent years in the dank and dark of the mines, breathing in the dust and the metals. I think being surface side this long has been a fortune of its own, a treasure I didn\'t know was out here for the taking. Thank you, captain, cause I wouldn\'t be here right now if it weren\'t for you.%SPEECH_OFF%You nod and thank him for the kind words.}",
+			Text = "%terrainImage%{%miner% le mineur aspire de grandes bouffées d'air et les relâche dans de longues expirations un peu sifflantes. Il acquiesce de la tête, comme s'il était satisfait de ce que tout le monde fait. Il semble que certaines personnes soient facilement satisfaites. Mais il s'explique.%SPEECH_ON%Vous savez que j'ai passé des années dans l'obscurité des mines, à respirer la poussière et les métaux. Je pense qu'avoir retrouver la surface après si longtemps a été une fortune en soi, un trésor dont je ne savais pas qu'il était là à porter de main. Merci, capitaine, parce que je ne serais pas ici en ce moment si ce n'était pas grâce à vous.%SPEECH_OFF%Vous acquiescez et le remerciez pour ses bonnes paroles.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "There\'s a fresh breeze coming from the sea.",
+					Text = "Il y a une brise fraîche qui vient de la mer.",
 					function getResult( _event )
 					{
 						return 0;
@@ -26,7 +26,7 @@ this.miner_fresh_air_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Miner.getImagePath());
-				_event.m.Miner.improveMood(1.0, "Happy to have a new life surface-side");
+				_event.m.Miner.improveMood(1.0, "Heureux d'avoir une nouvelle vie à la surface");
 
 				if (_event.m.Miner.getMoodState() >= this.Const.MoodState.Neutral)
 				{
