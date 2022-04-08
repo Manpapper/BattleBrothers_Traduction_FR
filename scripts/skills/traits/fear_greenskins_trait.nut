@@ -46,7 +46,19 @@ this.fear_greenskins_trait <- this.inherit("scripts/skills/traits/character_trai
 			return;
 		}
 
-		if (this.Tactical.Entities.getInstancesNum(this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).getID()) != 0 || this.Tactical.Entities.getInstancesNum(this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).getID()) != 0)
+				local fightingGreenskins = false;
+		local enemies = this.Tactical.Entities.getAllHostilesAsArray();
+
+		foreach( enemy in enemies )
+		{
+			if (this.Const.EntityType.getDefaultFaction(enemy.getType()) == this.Const.FactionType.Orcs || this.Const.EntityType.getDefaultFaction(enemy.getType()) == this.Const.FactionType.Goblins)
+			{
+				fightingGreenskins = true;
+				break;
+			}
+		}
+
+		if (fightingGreenskins)
 		{
 			_properties.Bravery -= 10;
 		}
