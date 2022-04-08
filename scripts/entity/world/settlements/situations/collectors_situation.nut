@@ -5,12 +5,12 @@ this.collectors_situation <- this.inherit("scripts/entity/world/settlements/situ
 		this.situation.create();
 		this.m.ID = "situation.collectors";
 		this.m.Name = "Collectionneurs";
-		this.m.Description = "Plusieurs collectionneurs de curiosités exotiques sont venus en ville. Il y a de l'argent à gagner en vendant des trophées de bêtes et autres ici.";
+		this.m.Description = "Plusieurs collectionneurs de curiosités exotiques sont venus en ville. Il y a de l\'argent à gagner en vendant des trophées de bêtes et autres ici.";
 		this.m.Icon = "ui/settlement_status/settlement_effect_46.png";
 		this.m.Rumors = [
-			"Êtes-vous des chasseurs de bêtes rares ? J'ai entendu dire que d'étranges personnages sont apparus à %settlement% et achètent tous les trophées de monstres exotiques qu'ils peuvent trouver.",
-			"Vous voyez cette dent de chien ? J'ai l'intention de la vendre à %settlement%, j'ai entendu dire qu'ils payaient bien les parties de bêtes là-bas.",
-			"Il semble que toutes sortes de tueurs de bêtes et de ramasseurs de cadavres se rassemblent à %settlement%. J'ai entendu parler de la vente de trophées de bêtes. Ça ressemble à de la sorcellerie pour moi."
+			"Êtes-vous des chasseurs de bêtes rares ? J\'ai entendu dire que d\'étranges personnages sont apparus à %settlement% et achètent tous les trophées de monstres exotiques qu\'ils peuvent trouver.",
+			"Vous voyez cette dent de chien ? J\'ai l\'intention de la vendre à %settlement%, j\'ai entendu dire qu\'ils payaient bien les parties de bêtes là-bas.",
+			"Il semble que toutes sortes de tueurs de bêtes et de ramasseurs de cadavres se rassemblent à %settlement%. J\'ai entendu parler de la vente de trophées de bêtes. Ça ressemble à de la sorcellerie pour moi."
 		];
 		this.m.IsStacking = false;
 		this.m.ValidDays = 3;

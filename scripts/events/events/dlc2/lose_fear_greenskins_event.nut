@@ -9,7 +9,7 @@ this.lose_fear_greenskins_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%fearful% regarde fixement le feu de camp et hoche la tête en marmonnant à lui-même. C'est une vision inquiétante, mais presque à l'instant même où cette pensée se fait entendre, il prend la parole.%SPEECH_ON%Vous savez quoi ? Les peaux vertes sont des merdes.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%fearful% regarde fixement le feu de camp et hoche la tête en marmonnant à lui-même. C\'est une vision inquiétante, mais presque à l\'instant même où cette pensée se fait entendre, il prend la parole.%SPEECH_ON%Vous savez quoi ? Les peaux vertes sont des merdes.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],

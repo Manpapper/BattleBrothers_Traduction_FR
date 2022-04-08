@@ -9,7 +9,7 @@ this.miner_fresh_air_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{%miner% le mineur aspire de grandes bouffées d'air et les relâche dans de longues expirations un peu sifflantes. Il acquiesce de la tête, comme s'il était satisfait de ce que tout le monde fait. Il semble que certaines personnes soient facilement satisfaites. Mais il s'explique.%SPEECH_ON%Vous savez que j'ai passé des années dans l'obscurité des mines, à respirer la poussière et les métaux. Je pense qu'avoir retrouver la surface après si longtemps a été une fortune en soi, un trésor dont je ne savais pas qu'il était là à porter de main. Merci, capitaine, parce que je ne serais pas ici en ce moment si ce n'était pas grâce à vous.%SPEECH_OFF%Vous acquiescez et le remerciez pour ses bonnes paroles.}",
+			Text = "%terrainImage%{%miner% le mineur aspire de grandes bouffées d\'air et les relâche dans de longues expirations un peu sifflantes. Il acquiesce de la tête, comme s\'il était satisfait de ce que tout le monde fait. Il semble que certaines personnes soient facilement satisfaites. Mais il s\'explique.%SPEECH_ON%Vous savez que j\'ai passé des années dans l\'obscurité des mines, à respirer la poussière et les métaux. Je pense qu\'avoir retrouver la surface après si longtemps a été une fortune en soi, un trésor dont je ne savais pas qu\'il était là à porter de main. Merci, capitaine, parce que je ne serais pas ici en ce moment si ce n\'était pas grâce à vous.%SPEECH_OFF%Vous acquiescez et le remerciez pour ses bonnes paroles.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -26,7 +26,7 @@ this.miner_fresh_air_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Miner.getImagePath());
-				_event.m.Miner.improveMood(1.0, "Heureux d'avoir une nouvelle vie à la surface");
+				_event.m.Miner.improveMood(1.0, "Heureux d\'avoir une nouvelle vie à la surface");
 
 				if (_event.m.Miner.getMoodState() >= this.Const.MoodState.Neutral)
 				{

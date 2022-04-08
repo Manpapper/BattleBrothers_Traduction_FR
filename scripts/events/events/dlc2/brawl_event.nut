@@ -7,13 +7,13 @@ this.brawl_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous sortez pour pisser et vous êtes en train de vous soulager quand le vacarme du combat éclate derrière vous. Vous arrangez vos culottes et retournez au campement. Là, vous trouvez toute la compagnie engagée dans une bataille non pas contre un ennemi particulier, mais contre elle-même. Les mercenaires enjambent l'équipement, le feu de camp et les autres pour se frapper avec leurs poings et leurs coudes, se battre les uns contre les autres ou se plaquer au sol. Quiconque tombe se fait botter le cul, littéralement, jusqu'à ce que quelqu'un d'autre vienne distraire ceux qui donnent les coups de pied, puis celui qui était tombé se relève d'un bond et se jette à nouveau dans la mêlée. La bagarre s'apaise au fur et à mesure que les hommes réalisent que vous êtes là et qu'ils se mettent en rang comme si une réorganisation rapide serait une solution appropriée à leur comportement grossier.\n\n Secouant la tête, vous demandez ce qui l'a déclenché. Les hommes haussent les épaules. Aucun ne s'en souvient. Vous faites l'appel pour vous assurer que personne n'est mort. Vous leur dites ensuite de se serrer la main, en gardant un œil sur eux pendant qu'ils le font. Pas de mauvais sang. Il semble que c'était juste une petite dispute amusante, c'est tout.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous sortez pour pisser et vous êtes en train de vous soulager quand le vacarme du combat éclate derrière vous. Vous arrangez vos culottes et retournez au campement. Là, vous trouvez toute la compagnie engagée dans une bataille non pas contre un ennemi particulier, mais contre elle-même. Les mercenaires enjambent l\'équipement, le feu de camp et les autres pour se frapper avec leurs poings et leurs coudes, se battre les uns contre les autres ou se plaquer au sol. Quiconque tombe se fait botter le cul, littéralement, jusqu\'à ce que quelqu\'un d\'autre vienne distraire ceux qui donnent les coups de pied, puis celui qui était tombé se relève d\'un bond et se jette à nouveau dans la mêlée. La bagarre s\'apaise au fur et à mesure que les hommes réalisent que vous êtes là et qu\'ils se mettent en rang comme si une réorganisation rapide serait une solution appropriée à leur comportement grossier.\n\n Secouant la tête, vous demandez ce qui l\'a déclenché. Les hommes haussent les épaules. Aucun ne s\'en souvient. Vous faites l\'appel pour vous assurer que personne n\'est mort. Vous leur dites ensuite de se serrer la main, en gardant un œil sur eux pendant qu\'ils le font. Pas de mauvais sang. Il semble que c\'était juste une petite dispute amusante, c\'est tout.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Rien de tel qu'une bonne bagarre, hein ?",
+					Text = "Rien de tel qu\'une bonne bagarre, hein ?",
 					function getResult( _event )
 					{
 						return 0;

@@ -9,7 +9,7 @@ this.lose_fear_beasts_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{La compagnie est réunie autour du feu de camp, profitant du repos et d'un repas, lorsque %fearful% se lève. Étant donné que tous les autres sont assis, il semble avoir pris la \"parole\" pour ainsi dire et utilise son nouveau privilège.%SPEECH_ON%Si les hommes ont peur des bêtes, alors les hommes n'ont qu'à devenir des bêtes ! Mais c'est nous qui avons les maisons, le feu, le commerce et l'argent ! Nous ! Pas eux ! Ils dorment où ils chient, à quoi servent-ils, vraiment ?%SPEECH_OFF%Malgré ce discours bizarre, quelques hommes lèvent leur chope et lancent un chaleureux \"Bravo, bravo\".}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{La compagnie est réunie autour du feu de camp, profitant du repos et d\'un repas, lorsque %fearful% se lève. Étant donné que tous les autres sont assis, il semble avoir pris la \"parole\" pour ainsi dire et utilise son nouveau privilège.%SPEECH_ON%Si les hommes ont peur des bêtes, alors les hommes n\'ont qu\'à devenir des bêtes ! Mais c\'est nous qui avons les maisons, le feu, le commerce et l\'argent ! Nous ! Pas eux ! Ils dorment où ils chient, à quoi servent-ils, vraiment ?%SPEECH_OFF%Malgré ce discours bizarre, quelques hommes lèvent leur chope et lancent un chaleureux \"Bravo, bravo\".}",
 			Image = "",
 			List = [],
 			Characters = [],
