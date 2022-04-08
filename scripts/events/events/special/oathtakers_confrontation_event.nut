@@ -58,10 +58,9 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 						}
 
 					});
-					  // [054]  OP_CLOSE          0      5    0    0
 				}
 
-				$[stack offset 0].Options.push({
+				this.Options.push({
 					Text = "We can\'t win this. No fight.",
 					function getResult( _event )
 					{
@@ -181,10 +180,9 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 						}
 
 					});
-					  // [145]  OP_CLOSE          0      6    0    0
 				}
 
-				$[stack offset 0].Options.push({
+				this.Options.push({
 					Text = "I\'ve selected everyone I wish to. Now defeat those Oathbringers!",
 					function getResult( _event )
 					{
