@@ -34,10 +34,16 @@ this.oath_of_fortification_trait <- this.inherit("scripts/skills/traits/characte
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The \'Knock Back\' shield skill has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance to Stagger on hits."
+				text = "The \'Shield Wall\' shield skill has grants an additional [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Defense and [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Ranged Defense."
 			},
 			{
 				id = 13,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "The \'Knock Back\' shield skill has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance to Stagger on hits."
+			},
+			{
+				id = 14,
 				type = "hint",
 				icon = "ui/icons/warning.png",
 				text = "Is focused on defense, and cannot move in the first round of combat"

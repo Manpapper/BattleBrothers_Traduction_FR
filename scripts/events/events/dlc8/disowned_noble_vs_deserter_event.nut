@@ -114,11 +114,11 @@ this.disowned_noble_vs_deserter_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"deserter",
-			this.m.Deserter.getName()
+			this.m.Deserter.getNameOnly()
 		]);
 		_vars.push([
 			"disowned",
-			this.m.Disowned.getName()
+			this.m.Disowned.getNameOnly()
 		]);
 	}
 

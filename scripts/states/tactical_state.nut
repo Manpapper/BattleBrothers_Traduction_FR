@@ -655,6 +655,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 					Expendable = bro.getBackground().getID() == "background.slave"
 				};
 				this.World.Statistics.addFallen(fallen);
+				bro.getSkills().onDeath(this.Const.FatalityType.None);
 				this.World.getPlayerRoster().remove(bro);
 				bro.die();
 			}

@@ -68,7 +68,7 @@ this.anatomist_vs_dog_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Anatomist.getImagePath());
-				_event.m.Anatomist.addXP(this.Const.LevelXP[_event.m.Anatomist.m.Level] - this.Const.LevelXP[_event.m.Anatomist.m.Level - 1], false);
+				_event.m.Anatomist.m.XP = this.Const.LevelXP[_event.m.Anatomist.getLevel()];
 				_event.m.Anatomist.updateLevel();
 				this.List.push({
 					id = 16,
@@ -314,7 +314,7 @@ this.anatomist_vs_dog_event <- this.inherit("scripts/events/event", {
 		}
 
 		this.m.Anatomist = anatomistCandidates[this.Math.rand(0, anatomistCandidates.len() - 1)];
-		this.m.Score = 10;
+		this.m.Score = 8;
 	}
 
 	function onPrepare()
@@ -325,7 +325,7 @@ this.anatomist_vs_dog_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"houndmaster",

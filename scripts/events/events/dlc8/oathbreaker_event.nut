@@ -134,6 +134,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 					"paladin_background"
 				]);
 				_event.m.Dude.setTitle("the Oathbreaker");
+				_event.m.Dude.getBackground().m.RawDescription = "Like many men, %name% was found in squalor. Ale on his lips, grime in his ears, piss and shit at least somewhere on his person. But he was an Oathtaker at heart, and by the providence of Young Anselm it was certainly no ordinary circumstance which brought him back into the faith. Of course, he\'ll still yet pair beer with belief, but now and again one must allow a man his vices, particularly if said man shares an interest in slaying Oathbringers.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.m.PerkPoints = 0;
 				_event.m.Dude.m.LevelUps = 0;

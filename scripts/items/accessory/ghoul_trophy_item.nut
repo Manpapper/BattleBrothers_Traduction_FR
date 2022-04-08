@@ -62,6 +62,16 @@ this.ghoul_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 		return result;
 	}
 
+	function getSellPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
+
+	function getBuyPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
+
 	function onUpdateProperties( _properties )
 	{
 		this.accessory.onUpdateProperties(_properties);

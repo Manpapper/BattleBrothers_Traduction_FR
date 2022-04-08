@@ -15,12 +15,12 @@ this.snake_oil_item <- this.inherit("scripts/items/item", {
 
 	function getBuyPrice()
 	{
-		return this.m.Value;
+		return this.m.Value * this.World.State.getCurrentTown().getBeastPartsPriceMult();
 	}
 
 	function getSellPrice()
 	{
-		return this.m.Value;
+		return this.m.Value * this.World.State.getCurrentTown().getBeastPartsPriceMult();
 	}
 
 	function getTooltip()

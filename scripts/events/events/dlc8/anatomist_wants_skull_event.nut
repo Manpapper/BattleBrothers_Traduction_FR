@@ -351,46 +351,46 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 		}
 
 		local brothers = this.World.getPlayerRoster().getAll();
-		local anatomistCandidates = [];
-		local thiefCandidates = [];
-		local wildmanCandidates = [];
+		local anatomist_candidates = [];
+		local thief_candidates = [];
+		local wildman_candidates = [];
 
 		foreach( bro in brothers )
 		{
 			if (bro.getBackground().getID() == "background.anatomist")
 			{
-				anatomistCandidates.push(bro);
+				anatomist_candidates.push(bro);
 			}
 			else if (bro.getBackground().getID() == "background.thief")
 			{
-				thiefCandidates.push(bro);
+				thief_candidates.push(bro);
 			}
 			else if (bro.getBackground().getID() == "background.wildman")
 			{
-				wildmanCandidates.push(bro);
+				wildman_candidates.push(bro);
 			}
 		}
 
-		if (thiefCandidates.len() > 0)
+		if (thief_candidates.len() > 0)
 		{
-			this.m.Thief = thiefCandidates[this.Math.rand(0, thiefCandidates.len() - 1)];
+			this.m.Thief = thief_candidates[this.Math.rand(0, thief_candidates.len() - 1)];
 		}
 
-		if (wildmanCandidates.len() > 0)
+		if (wildman_candidates.len() > 0)
 		{
-			this.m.Wildman = wildmanCandidates[this.Math.rand(0, wildmanCandidates.len() - 1)];
+			this.m.Wildman = wildman_candidates[this.Math.rand(0, wildman_candidates.len() - 1)];
 		}
 
-		if (anatomistCandidates.len() > 0)
+		if (anatomist_candidates.len() > 0)
 		{
-			this.m.Anatomist = anatomistCandidates[this.Math.rand(0, anatomistCandidates.len() - 1)];
+			this.m.Anatomist = anatomist_candidates[this.Math.rand(0, anatomist_candidates.len() - 1)];
 		}
 		else
 		{
 			return;
 		}
 
-		this.m.Score = 10;
+		this.m.Score = 5 + anatomist_candidates.len();
 	}
 
 	function onPrepare()
@@ -405,11 +405,11 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 		]);
 		_vars.push([
 			"thief",
-			this.m.Thief != null ? this.m.Thief.getName() : ""
+			this.m.Thief != null ? this.m.Thief.getNameOnly() : ""
 		]);
 		_vars.push([
 			"wildman",
-			this.m.Wildman != null ? this.m.Wildman.getName() : ""
+			this.m.Wildman != null ? this.m.Wildman.getNameOnly() : ""
 		]);
 	}
 

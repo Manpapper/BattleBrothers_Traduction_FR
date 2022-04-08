@@ -12,7 +12,7 @@ this.hexen_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.m.IconLarge = "";
 		this.m.Icon = "accessory/hexe_trophy.png";
 		this.m.Sprite = "hexe_trophy";
-		this.m.Value = 250;
+		this.m.Value = 550;
 	}
 
 	function getTooltip()
@@ -60,6 +60,16 @@ this.hexen_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+6[/color] Détermination"
 		});
 		return result;
+	}
+
+	function getSellPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
+
+	function getBuyPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
 	}
 
 	function onUpdateProperties( _properties )

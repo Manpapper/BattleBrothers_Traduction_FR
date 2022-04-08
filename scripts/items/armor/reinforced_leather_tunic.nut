@@ -12,7 +12,7 @@ this.reinforced_leather_tunic <- this.inherit("scripts/items/armor/armor", {
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.InventorySound = this.Const.Sound.ClothEquip;
-		this.m.Value = 410;
+		this.m.Value = 500;
 		this.m.Condition = 100;
 		this.m.ConditionMax = 100;
 		this.m.StaminaModifier = -9;

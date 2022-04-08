@@ -9,7 +9,7 @@ this.oathtaker_happy_with_company_event <- this.inherit("scripts/events/event", 
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "{[img]gfx/ui/events/event_183.png[/img]{%oathtaker% the Oathtaker joins you by the campfire. He nods.%SPEECH_ON%Respectfully, captain, I can say that it is a big ask to require a man to be of genuine goodness. When I first knew ya, I didn\'t think you had the chops for such an undertaking. I thought this world\'s creeping darkness would wither you away, grind you down like sand to a stone. But here you are. Stalwart. Keeping to the Oaths, one after the other. Good on ya. I think Young Anselm would be proud.%SPEECH_OFF%You thank the Oathtaker for the kind words.}",
+			Text = "{[img]gfx/ui/events/event_183.png[/img]{%oathtaker% the oathtaker joins you by the campfire. He nods.%SPEECH_ON%Respectfully, captain, I can say that it is a big ask to require a man to be of genuine goodness. When I first knew ya, I didn\'t think you had the chops for such an undertaking. I thought this world\'s creeping darkness would wither you away, grind you down like sand to a stone. But here you are. Stalwart. Keeping to the Oaths, one after the other. Good on ya. I think Young Anselm would be proud.%SPEECH_OFF%You thank the Oathtaker for the kind words.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -92,7 +92,7 @@ this.oathtaker_happy_with_company_event <- this.inherit("scripts/events/event", 
 	{
 		_vars.push([
 			"oathtaker",
-			this.m.Oathtaker.getName()
+			this.m.Oathtaker.getNameOnly()
 		]);
 	}
 

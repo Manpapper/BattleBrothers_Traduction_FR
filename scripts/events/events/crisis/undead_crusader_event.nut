@@ -18,6 +18,7 @@ this.undead_crusader_event <- this.inherit("scripts/events/event", {
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
+						_event.m.Dude.getSkills().onDeath(this.Const.FatalityType.None);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						return 0;

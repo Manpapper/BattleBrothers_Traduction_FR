@@ -329,6 +329,40 @@ this.tactical_entity_manager <- {
 
 		return n;
 	}
+	
+	function getAllHostilesAsArray()
+	{
+		local ret = [];
+
+		if (this.Tactical.State.isScenarioMode())
+		{
+			for( local i = this.Const.Faction.Player + 1; i != this.Const.Faction.COUNT; i = ++i )
+			{
+				if (this.Const.FactionAlliance[i].find(this.Const.Faction.Player) == null)
+				{
+					for( local j = 0; j != this.m.Instances[i].len(); j = ++j )
+					{
+						ret.push(this.m.Instances[i][j]);
+					}
+				}
+			}
+		}
+		else
+		{
+			for( local i = 0; i != this.World.FactionManager.getFactions().len(); i = ++i )
+			{
+				if (!this.World.FactionManager.isAlliedWithPlayer(i))
+				{
+					for( local j = 0; j != this.m.Instances[i].len(); j = ++j )
+					{
+						ret.push(this.m.Instances[i][j]);
+					}
+				}
+			}
+		}
+
+		return ret;
+	}
 
 	function getHostilesNum()
 	{

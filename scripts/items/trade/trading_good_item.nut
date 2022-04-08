@@ -133,16 +133,6 @@ this.trading_good_item <- this.inherit("scripts/items/item", {
 		return this.item.getSellPrice();
 	}
 
-	function getSellPriceMult()
-	{
-		return 1.0;
-	}
-
-	function getBuyPriceMult()
-	{
-		return 1.0;
-	}
-
 	function onSerialize( _out )
 	{
 		this.item.onSerialize(_out);

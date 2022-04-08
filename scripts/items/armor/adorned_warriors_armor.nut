@@ -13,7 +13,7 @@ this.adorned_warriors_armor <- this.inherit("scripts/items/armor/armor", {
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorChainmailImpact;
-		this.m.Value = 1700;
+		this.m.Value = 1600;
 		this.m.Condition = 200;
 		this.m.ConditionMax = 200;
 		this.m.StaminaModifier = -22;

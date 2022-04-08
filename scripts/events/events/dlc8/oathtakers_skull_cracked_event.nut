@@ -117,7 +117,7 @@ this.oathtakers_skull_cracked_event <- this.inherit("scripts/events/event", {
 							});
 						}
 
-						if (bro.getSkills().hasSkill("trait.deathwish") && this.Math.rand(1, 100) <= 20)
+						if (this.Math.rand(1, 100) <= 20 && !bro.getSkills().hasSkill("trait.deathwish"))
 						{
 							local trait = this.new("scripts/skills/traits/deathwish_trait");
 							bro.getSkills().add(trait);

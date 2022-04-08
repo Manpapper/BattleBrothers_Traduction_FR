@@ -298,7 +298,7 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 		}
 
 		this.m.Anatomist = anatomist_candidates[this.Math.rand(0, anatomist_candidates.len() - 1)];
-		this.m.Score = 10;
+		this.m.Score = 5 + anatomist_candidates.len();
 	}
 
 	function onPrepare()
@@ -309,7 +309,7 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"noble",

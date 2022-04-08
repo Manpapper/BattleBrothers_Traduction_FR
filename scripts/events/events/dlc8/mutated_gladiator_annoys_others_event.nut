@@ -128,7 +128,7 @@ this.mutated_gladiator_annoys_others_event <- this.inherit("scripts/events/event
 	{
 		_vars.push([
 			"gladiator",
-			this.m.Gladiator.getName()
+			this.m.Gladiator.getNameOnly()
 		]);
 	}
 

@@ -258,127 +258,33 @@ this.paladins_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 			return;
 		}
 
-		switch(_actor.getType())
+		local actorFaction = this.Const.EntityType.getDefaultFaction(_actor.getType());
+
+		if (actorFaction == this.Const.FactionType.Zombies || actorFaction == this.Const.FactionType.Undead)
 		{
-		case this.Const.EntityType.Necromancer:
-		case this.Const.EntityType.Zombie:
-		case this.Const.EntityType.ZombieYeoman:
-		case this.Const.EntityType.ZombieKnight:
-		case this.Const.EntityType.ZombieBetrayer:
-		case this.Const.EntityType.Ghost:
-		case this.Const.EntityType.ZombieBoss:
-		case this.Const.EntityType.SkeletonLight:
-		case this.Const.EntityType.SkeletonMedium:
-		case this.Const.EntityType.SkeletonHeavy:
-		case this.Const.EntityType.SkeletonPriest:
-		case this.Const.EntityType.SkeletonBoss:
-		case this.Const.EntityType.Vampire:
-		case this.Const.EntityType.SkeletonLich:
 			if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_righteousness")
 			{
 				this.World.Statistics.getFlags().increment("OathtakersUndeadSlain");
 			}
-			else if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_wrath")
-			{
-				this.World.Statistics.getFlags().increment("OathtakersWrathSlain");
-			}
-
-			break;
-
-		case this.Const.EntityType.OrcYoung:
-		case this.Const.EntityType.OrcWarrior:
-		case this.Const.EntityType.OrcBerserker:
-		case this.Const.EntityType.OrcWarlord:
-		case this.Const.EntityType.GoblinAmbusher:
-		case this.Const.EntityType.GoblinFighter:
-		case this.Const.EntityType.GoblinWolfrider:
-		case this.Const.EntityType.GoblinLeader:
-		case this.Const.EntityType.GoblinShaman:
+		}
+		else if (actorFaction == this.Const.FactionType.Goblins || actorFaction == this.Const.FactionType.Orcs)
+		{
 			if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_vengeance")
 			{
 				this.World.Statistics.getFlags().increment("OathtakersGreenskinsSlain");
 			}
-			else if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_wrath")
-			{
-				this.World.Statistics.getFlags().increment("OathtakersWrathSlain");
-			}
-
-			break;
-
-		case this.Const.EntityType.Direwolf:
-		case this.Const.EntityType.Lindwurm:
-		case this.Const.EntityType.Unhold:
-		case this.Const.EntityType.UnholdFrost:
-		case this.Const.EntityType.UnholdBog:
-		case this.Const.EntityType.BarbarianUnhold:
-		case this.Const.EntityType.BarbarianUnholdFrost:
-		case this.Const.EntityType.Spider:
-		case this.Const.EntityType.Ghoul:
-		case this.Const.EntityType.Alp:
-		case this.Const.EntityType.Hexe:
-		case this.Const.EntityType.Schrat:
-		case this.Const.EntityType.Kraken:
-		case this.Const.EntityType.TricksterGod:
-		case this.Const.EntityType.Serpent:
-		case this.Const.EntityType.SandGolem:
-		case this.Const.EntityType.Hyena:
+		}
+		else if (actorFaction == this.Const.FactionType.Beasts || _actor.getType() == this.Const.EntityType.BarbarianUnhold || _actor.getType() == this.Const.EntityType.BarbarianUnholdFrost)
+		{
 			if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_dominion")
 			{
 				this.World.Statistics.getFlags().increment("OathtakersBeastsSlain");
 			}
-			else if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_wrath")
-			{
-				this.World.Statistics.getFlags().increment("OathtakersWrathSlain");
-			}
-
-			break;
-
-		case this.Const.EntityType.BountyHunter:
-		case this.Const.EntityType.Mercenary:
-		case this.Const.EntityType.Swordmaster:
-		case this.Const.EntityType.HedgeKnight:
-		case this.Const.EntityType.MasterArcher:
-		case this.Const.EntityType.Cultist:
-		case this.Const.EntityType.Footman:
-		case this.Const.EntityType.Greatsword:
-		case this.Const.EntityType.Billman:
-		case this.Const.EntityType.Arbalester:
-		case this.Const.EntityType.StandardBearer:
-		case this.Const.EntityType.Sergeant:
-		case this.Const.EntityType.Knight:
-		case this.Const.EntityType.BanditThug:
-		case this.Const.EntityType.BanditRaider:
-		case this.Const.EntityType.BanditPoacher:
-		case this.Const.EntityType.BanditMarksman:
-		case this.Const.EntityType.BanditLeader:
-		case this.Const.EntityType.BarbarianThrall:
-		case this.Const.EntityType.BarbarianMarauder:
-		case this.Const.EntityType.BarbarianChampion:
-		case this.Const.EntityType.BarbarianChosen:
-		case this.Const.EntityType.BarbarianDrummer:
-		case this.Const.EntityType.BarbarianBeastmaster:
-		case this.Const.EntityType.NomadCutthroat:
-		case this.Const.EntityType.NomadOutlaw:
-		case this.Const.EntityType.NomadSlinger:
-		case this.Const.EntityType.NomadArcher:
-		case this.Const.EntityType.NomadLeader:
-		case this.Const.EntityType.DesertDevil:
-		case this.Const.EntityType.Executioner:
-		case this.Const.EntityType.DesertStalker:
-		case this.Const.EntityType.Slave:
-		case this.Const.EntityType.Conscript:
-		case this.Const.EntityType.Officer:
-		case this.Const.EntityType.Gunner:
-		case this.Const.EntityType.Engineer:
-		case this.Const.EntityType.Gladiator:
-		case this.Const.EntityType.Assassin:
-		case this.Const.EntityType.Oathbringer:
-			if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_wrath")
-			{
-				this.World.Statistics.getFlags().increment("OathtakersWrathSlain");
-			}
-
-			break;
+		}
+		
+		if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_wrath")
+		{
+			this.World.Statistics.getFlags().increment("OathtakersWrathSlain");
 		}
 	}
 

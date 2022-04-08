@@ -46,12 +46,6 @@ this.oath_of_distinction_trait <- this.inherit("scripts/skills/traits/character_
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+40%[/color] Experience Gain"
-			},
-			{
-				id = 11,
-				type = "text",
-				icon = "ui/icons/xp_received.png",
 				text = "[color=" + this.Const.UI.Color.NegativeValue + "]0%[/color] Experience Gain for allied kills"
 			}
 		];
@@ -59,9 +53,9 @@ this.oath_of_distinction_trait <- this.inherit("scripts/skills/traits/character_
 
 	function onUpdate( _properties )
 	{
-		_properties.XPGainMult *= 1.4;
+		_properties.XPGainMult *= 1.5;
 		_properties.IsAllyXPBlocked = true;
-		
+
 		if (!this.getContainer().getActor().isPlacedOnMap())
 		{
 			return;

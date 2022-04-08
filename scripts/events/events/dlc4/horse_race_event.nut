@@ -319,7 +319,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 			{
 				candidates_athletic.push(bro);
 			}
-			else if (bro.getSkills().hasSkill("trait.dumb"))
+			else if (bro.getSkills().hasSkill("trait.dumb") && !bro.getSkills().hasSkill("injury.severe_concussion"))
 			{
 				candidates_dumb.push(bro);
 			}

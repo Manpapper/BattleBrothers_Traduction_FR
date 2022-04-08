@@ -83,7 +83,7 @@ this.anatomist_ok_with_mutations_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 	}
 

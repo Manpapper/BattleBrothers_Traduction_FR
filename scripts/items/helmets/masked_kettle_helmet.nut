@@ -14,7 +14,7 @@ this.masked_kettle_helmet <- this.inherit("scripts/items/helmets/helmet", {
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.InventorySound = this.Const.Sound.ClothEquip;
-		this.m.Value = 450;
+		this.m.Value = 550;
 		this.m.Condition = 120;
 		this.m.ConditionMax = 120;
 		this.m.StaminaModifier = -6;

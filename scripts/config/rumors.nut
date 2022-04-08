@@ -200,7 +200,7 @@ gt.Const.Strings.RumorsItemsGoblins <- [
 	],
 	[
 		"Word has it that some overpriced and overvalued piece of armor  was stolen from the guardhouse by some small devil creatures that hauled it to the %direction%. %randomname% said it must\'ve been goblins, but no one here really knows what they look like.",
-		"It\'s said that kobolds and goblins take a special interest in everything shiny. I never believed this to be true myself, but I repeatedly saw something glissening in the sun %terrain% %direction% from here and heard strange stories about short and stubby creatures roaming that area.",
+		"It\'s said that kobolds and goblins take a special interest in everything shiny. I never believed this to be true myself, but I repeatedly saw something glistening in the sun %terrain% %direction% from here and heard strange stories about short and stubby creatures roaming that area.",
 		"You may be interested to learn that our old herbalist outside of town got robbed last night just as a wealthy knight payed him a visit. The assailants, he claims it was small creatures looking like deformed kids, killed the knight and made off to %terrain% in the %direction%."
 	]
 ];
@@ -291,7 +291,7 @@ gt.Const.Strings.RumorsGreaterEvil <- [
 		"The nobles are on their back foot, and nobody knows how to stop the undead menace coming for us. I have to keep my mind off of it - inkeeper! Another!",
 		"Maybe I should just hang myself, get it over with and join the ranks of the marching dead. This waiting is driving me insane!",
 		"A man was found dead on the road. He sat upright on a donkey cart, all dried up, like a puppet of skin, tendrils, and bone. The donkey too. \'Tis like the blood was sucked right out of \'em.",
-		"Ghastly ghosts, empty graves, otherworldly mindless slaves\nHave a glass, find a wench before your teeth will clench!\nKill the can, don\'t stay dry, three days until we die!",
+		"Ghastly ghosts, empty graves, otherworldly mindless slaves!\nHave a glass, find a wench before your teeth will clench!\nKill the can, don\'t stay dry, three days until we die!",
 		"%randomnoble% had his lunch come back from the dead. Was about to take a healthy bite of stuffed goose when the thing jumped from his plate and started flapping in circles. Sprayed baked apples across the living quarters. Must\'ve been a sight to remember."
 	],
 	[

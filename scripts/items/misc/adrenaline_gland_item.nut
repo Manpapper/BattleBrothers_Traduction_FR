@@ -17,6 +17,16 @@ this.adrenaline_gland_item <- this.inherit("scripts/items/item", {
 	{
 		this.Sound.play("sounds/combat/cleave_hit_hitpoints_01.wav", this.Const.Sound.Volume.Inventory);
 	}
+	
+	function getSellPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
+
+	function getBuyPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
 
 });
 

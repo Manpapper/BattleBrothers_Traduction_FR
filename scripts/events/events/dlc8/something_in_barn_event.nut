@@ -339,15 +339,15 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"beastslayer",
-			this.m.BeastSlayer != null ? this.m.BeastSlayer.getName() : ""
+			this.m.BeastSlayer != null ? this.m.BeastSlayer.getNameOnly() : ""
 		]);
 		_vars.push([
 			"farmer",
-			this.m.Farmer != null ? this.m.Farmer.getName() : ""
+			this.m.Farmer != null ? this.m.Farmer.getNameOnly() : ""
 		]);
 	}
 

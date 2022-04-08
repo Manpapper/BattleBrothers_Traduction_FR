@@ -83,7 +83,7 @@ this.anatomist_bummed_at_mutations_event <- this.inherit("scripts/events/event",
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 	}
 

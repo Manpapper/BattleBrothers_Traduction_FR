@@ -46,7 +46,19 @@ this.fear_undead_trait <- this.inherit("scripts/skills/traits/character_trait", 
 			return;
 		}
 
-		if (this.Tactical.Entities.getInstancesNum(this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).getID()) != 0 || this.Tactical.Entities.getInstancesNum(this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).getID()) != 0)
+				local fightingUndead = false;
+		local enemies = this.Tactical.Entities.getAllHostilesAsArray();
+
+		foreach( enemy in enemies )
+		{
+			if (this.Const.EntityType.getDefaultFaction(enemy.getType()) == this.Const.FactionType.Zombies || this.Const.EntityType.getDefaultFaction(enemy.getType()) == this.Const.FactionType.Undead)
+			{
+				fightingUndead = true;
+				break;
+			}
+		}
+
+		if (fightingUndead)
 		{
 			_properties.Bravery -= 10;
 		}

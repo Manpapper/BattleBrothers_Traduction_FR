@@ -127,7 +127,7 @@ this.anatomist_helps_blighted_guy_2_event <- this.inherit("scripts/events/event"
 		}
 
 		this.m.MilitiaCaptain = candidate;
-		this.m.Score = 25;
+		this.m.Score = 20;
 	}
 
 	function onPrepare()

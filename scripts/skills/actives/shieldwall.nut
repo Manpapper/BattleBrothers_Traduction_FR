@@ -31,10 +31,16 @@ this.shieldwall <- this.inherit("scripts/skills/skill", {
 		local p = this.getContainer().getActor().getCurrentProperties();
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local mult = 1.0;
+		local proficiencyBonus = 0;
 
 		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInShields)
 		{
 			mult = mult * 1.25;
+		}
+		
+		if (this.getContainer().getActor().getCurrentProperties().IsProficientWithShieldSkills)
+		{
+			proficiencyBonus = 5;
 		}
 
 		return [
@@ -57,13 +63,13 @@ this.shieldwall <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getMeleeDefense() * mult) + "[/color] à la Défense de Mêlée pour un tour"
+				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getMeleeDefense() * mult + proficiencyBonu) + "[/color] à la Défense de Mêlée pour un tour"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getRangedDefense() * mult) + "[/color] à la Défense à Distance pour un tour"
+				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getRangedDefense() * mult + proficiencyBonu) + "[/color] à la Défense à Distance pour un tour"
 			},
 			{
 				id = 6,

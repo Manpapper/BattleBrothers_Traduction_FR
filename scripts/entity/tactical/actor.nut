@@ -172,7 +172,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getActionPointsMax()
 	{
-		return this.m.CurrentProperties.ActionPoints * this.m.CurrentProperties.ActionPointsMult;
+		return this.Math.floor(this.m.CurrentProperties.ActionPoints * this.m.CurrentProperties.ActionPointsMult);
 	}
 
 	function setActionPoints( _a )

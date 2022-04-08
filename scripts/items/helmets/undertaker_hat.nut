@@ -14,7 +14,7 @@ this.undertaker_hat <- this.inherit("scripts/items/helmets/helmet", {
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.InventorySound = this.Const.Sound.ClothEquip;
-		this.m.Value = 100;
+		this.m.Value = 120;
 		this.m.Condition = 40;
 		this.m.ConditionMax = 40;
 		this.m.StaminaModifier = 0;

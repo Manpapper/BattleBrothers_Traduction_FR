@@ -53,7 +53,7 @@ this.ifrit_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 11,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "Turns skin hard and stone-like, granting [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] points of natural armor"
+			text = "Turns skin hard and stone-like, granting [color=" + this.Const.UI.Color.PositiveValue + "]25[/color] points of natural armor"
 		});
 		result.push({
 			id = 65,

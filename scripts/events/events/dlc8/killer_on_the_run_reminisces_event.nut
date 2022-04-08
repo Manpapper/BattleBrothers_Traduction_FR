@@ -25,25 +25,16 @@ this.killer_on_the_run_reminisces_event <- this.inherit("scripts/events/event", 
 			],
 			function start( _event )
 			{
-				local brothers = this.World.getPlayerRoster().getAll();
-
-				foreach( bro in brothers )
-				{
-					if (bro.getBackground().getID() == "background.anatomist")
-					{
-						local resolveBoost = 1;
-						bro.getBaseProperties().Bravery += resolveBoost;
-						bro.getSkills().update();
-						this.List.push({
-							id = 16,
-							icon = "ui/icons/bravery.png",
-							text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
-						});
-					}
-				}
-
 				this.Characters.push(_event.m.Killer.getImagePath());
 				_event.m.Killer.improveMood(1.0, "Reminisced about an old kill");
+				local resolveBoost = this.Math.rand(1, 3);
+				_event.m.Killer.getBaseProperties().Bravery += resolveBoost;
+				_event.m.Killer.getSkills().update();
+				this.List.push({
+					id = 16,
+					icon = "ui/icons/bravery.png",
+					text = _event.m.Killer.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
+				});
 
 				if (_event.m.Killer.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -52,6 +43,32 @@ this.killer_on_the_run_reminisces_event <- this.inherit("scripts/events/event", 
 						icon = this.Const.MoodStateIcon[_event.m.Killer.getMoodState()],
 						text = _event.m.Killer.getName() + this.Const.MoodStateEvent[_event.m.Killer.getMoodState()]
 					});
+				}
+
+				local brothers = this.World.getPlayerRoster().getAll();
+
+				foreach( bro in brothers )
+				{
+					if (bro.getBackground().getID() == "background.anatomist")
+					{
+						bro.addXP(50, false);
+						bro.updateLevel();
+						this.List.push({
+							id = 16,
+							icon = "ui/icons/xp_received.png",
+							text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+50[/color] Experience"
+						});
+						bro.improveMood(1.0, "Got to examine an interesting blighted cadaver");
+
+						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
+						{
+							this.List.push({
+								id = 10,
+								icon = this.Const.MoodStateIcon[bro.getMoodState()],
+								text = bro.getName() + this.Const.MoodStateEvent[bro.getMoodState()]
+							});
+						}
+					}
 				}
 			}
 
@@ -71,26 +88,28 @@ this.killer_on_the_run_reminisces_event <- this.inherit("scripts/events/event", 
 		}
 
 		local brothers = this.World.getPlayerRoster().getAll();
-		local killerCandidates = [];
-		local numAnatomists = 0;
+		local killer_candidates = [];
+		local anatomist_candidates = [];
 
 		foreach( bro in brothers )
 		{
 			if (bro.getBackground().getID() == "background.killer_on_the_run")
 			{
-				killerCandidates.push(bro);
+				killer_candidates.push(bro);
 			}
 			else if (bro.getBackground().getID() == "background.anatomist")
 			{
-				numAnatomists++;
+				anatomist_candidates.push(bro);
 			}
 		}
 
-		if (killerCandidates.len() > 0 && numAnatomists > 1)
+		if (killer_candidates.len() == 0 || anatomist_candidates.len() <= 1)
 		{
-			this.m.Killer = killerCandidates[this.Math.rand(0, killerCandidates.len() - 1)];
-			this.m.Score = killerCandidates.len() * 10;
+			return;
 		}
+
+		this.m.Killer = killer_candidates[this.Math.rand(0, killer_candidates.len() - 1)];
+		this.m.Score = killer_candidates.len() * 1000;
 	}
 
 	function onPrepare()

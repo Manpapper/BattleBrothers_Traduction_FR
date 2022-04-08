@@ -28,7 +28,7 @@ this.oath_of_honor_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Starts combat at Confident morale"
+				text = "Starts combat at Confident morale if permitted by mood"
 			},
 			{
 				id = 11,

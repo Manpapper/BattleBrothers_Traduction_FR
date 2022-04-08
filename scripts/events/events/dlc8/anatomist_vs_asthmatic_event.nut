@@ -298,7 +298,7 @@ this.anatomist_vs_asthmatic_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"asthmatic",

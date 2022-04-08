@@ -103,6 +103,7 @@ this.lawmen_after_criminal_event <- this.inherit("scripts/events/event", {
 					text = _event.m.Criminal.getName() + " a quitté la compagnie"
 				});
 				_event.m.Criminal.getItems().transferToStash(this.World.Assets.getStash());
+				_event.m.Criminal.getSkills().onDeath(this.Const.FatalityType.None);
 				this.World.getPlayerRoster().remove(_event.m.Criminal);
 				this.World.Assets.addMoney(100);
 				this.List.push({

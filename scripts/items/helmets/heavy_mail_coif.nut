@@ -14,7 +14,7 @@ this.heavy_mail_coif <- this.inherit("scripts/items/helmets/helmet", {
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorChainmailImpact;
-		this.m.Value = 400;
+		this.m.Value = 375;
 		this.m.Condition = 110;
 		this.m.ConditionMax = 110;
 		this.m.StaminaModifier = -5;

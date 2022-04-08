@@ -91,7 +91,7 @@ this.anatomist_reflects_on_webknechts_event <- this.inherit("scripts/events/even
 
 		this.m.Anatomist = anatomist_candidates[this.Math.rand(0, anatomist_candidates.len() - 1)];
 		this.m.OtherBro = other_candidates[this.Math.rand(0, other_candidates.len() - 1)];
-		this.m.Score = 3 * anatomist_candidates.len();
+		this.m.Score = 2 * anatomist_candidates.len();
 	}
 
 	function onPrepare()

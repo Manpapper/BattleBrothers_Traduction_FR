@@ -132,7 +132,7 @@ this.anatomist_old_patient_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"townname",

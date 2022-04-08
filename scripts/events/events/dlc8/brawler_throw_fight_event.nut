@@ -375,7 +375,7 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.brawler")
+			if (bro.getBackground().getID() == "background.brawler" && !bro.getSkills().hasSkill("injury.severe_concussion") && !bro.getSkills().hasSkill("injury.broken_knee"))
 			{
 				brawler_candidates.push(bro);
 			}

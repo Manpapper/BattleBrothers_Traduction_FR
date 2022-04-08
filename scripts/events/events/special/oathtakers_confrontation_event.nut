@@ -11,13 +11,22 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_180.png[/img]{\'We\'ll be seeing you someday,\' they said, spoken softly like old friends, but they meant it, meant it in only the way enemies can. Them. The Oathbringers. Now standing before you in glinting steel, chins up and weapons readied, a salient of hate, manifest from the untimely demise of Young Anselm. You thought you would find them in much larger number, but now only two stand wishing to confront the %companyname%. One steps forward. You see Young Anselm\'s jawbone dangling from his neck. The Oathbringer nods.%SPEECH_ON%I knew it the day we departed that it were only a matter of time until we saw each other again. I can see you have been fighting many a battle, as have we. It is clear that Young Anselm\'s prophecies bore such weight that this world would see us brought together one final time, not robbed of the ceremony on account of some brigand or greenskin. You and I both have been shielded by fate, clothed in the invincibility of one very certain inevitability. Oathtakers. Oathbringers. Let us settle this schism once and for all. As Young Anselm decreed, choose your finest fighters, and we shall see which of us are most deserving of upholding the Oaths!%SPEECH_OFF%}",
+			Text = "",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [],
 			function start( _event )
 			{
+				if (this.World.Statistics.getFlags().getAsInt("OathbringerConfrontationTimesDelayed") > 0)
+				{
+					this.Text = "[img]gfx/ui/events/event_180.png[/img]{The Oathbringers are back. One grins wildly as he steps forward.%SPEECH_ON%Shall we see through Young Anselm\'s visions, or will you drop trou and shit on divine providence once again, Oathtaker?%SPEECH_OFF%You look at your men and decide...}";
+				}
+				else
+				{
+					this.Text = "[img]gfx/ui/events/event_180.png[/img]{\'We\'ll be seeing you someday,\' they said, spoken softly like old friends, but they meant it, meant it in only the way enemies can. Them. The Oathbringers. Now standing before you in glinting steel, chins up and weapons readied, a salient of hate, manifest from the untimely demise of Young Anselm. You thought you would find them in much larger number, but now only two stand wishing to confront the %companyname%. One steps forward. You see Young Anselm\'s jawbone dangling from his neck. The Oathbringer nods.%SPEECH_ON%I knew it the day we departed that it were only a matter of time until we saw each other again. I can see you have been fighting many a battle, as have we. It is clear that Young Anselm\'s prophecies bore such weight that this world would see us brought together one final time, not robbed of the ceremony on account of some brigand or greenskin. You and I both have been shielded by fate, clothed in the invincibility of one very certain inevitability. Oathtakers. Oathbringers. Let us settle this schism once and for all. As Young Anselm decreed, choose your finest fighters, and we shall see which of us are most deserving of upholding the Oaths!%SPEECH_OFF%}";
+				}
+
 				local roster = this.World.getPlayerRoster().getAll();
 				roster.sort(function ( _a, _b )
 				{
@@ -49,7 +58,24 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 						}
 
 					});
+					  // [054]  OP_CLOSE          0      5    0    0
 				}
+
+				$[stack offset 0].Options.push({
+					Text = "We can\'t win this. No fight.",
+					function getResult( _event )
+					{
+						if (this.World.Statistics.getFlags().getAsInt("OathbringerConfrontationTimesDelayed") > 0)
+						{
+							return "FightAvoided2";
+						}
+						else
+						{
+							return "FightAvoided1";
+						}
+					}
+
+				});
 			}
 
 		});
@@ -155,9 +181,10 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 						}
 
 					});
+					  // [145]  OP_CLOSE          0      6    0    0
 				}
 
-				this.Options.push({
+				$[stack offset 0].Options.push({
 					Text = "I\'ve selected everyone I wish to. Now defeat those Oathbringers!",
 					function getResult( _event )
 					{
@@ -205,7 +232,7 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Text = "[img]gfx/ui/events/event_87.png[/img]{Two bodies on the ground, and a weight off your shoulders. But… you thought it would be different. Not that you are displeased with the results, such that the Oathbringers are no more, but there\'s something amiss. It is almost as if you put out a fire that threatened your home, only to realize those flames were the only warmth you had in a world of cold.%SPEECH_ON%Good riddance.%SPEECH_OFF%One of your men says and spits on the corpses. Staring at the dead, you realize you had become addicted to the hunt, addicted to the challenge, addicted to being strong. You weren\'t encumbered by a threat. You were weighted with purpose, and now it is gone. %randombrother% leans down and picks up Young Anselm\'s jawbone and hands it over. You take it and piece it to Young Anselm\'s skull. It fits with ease, almost as if even in its decay it had no reason to separate. The men cheer. They cheer the Oathtakers. They cheer your name. And they cheer for Young Anselm who in death has finally been made whole again. You take one last look at the Oathbringers and nod. They had a purpose, sure, but now it is fulfilled. May the old gods have mercy on their heathen souls.}",
+			Text = "[img]gfx/ui/events/event_87.png[/img]{Two bodies on the ground, and a weight off your shoulders. But...you thought it would be different. Not that you are displeased with the results, such that the Oathbringers are no more, but there\'s something amiss. It is almost as if you put out a fire that threatened your home, only to realize those flames were the only warmth you had in a world of cold.%SPEECH_ON%Good riddance.%SPEECH_OFF%One of your men says and spits on the corpses. Staring at the dead, you realize you had become addicted to the hunt, addicted to the challenge, addicted to being strong. You weren\'t encumbered by a threat. You were weighted with purpose, and now it is gone. %randombrother% leans down and picks up Young Anselm\'s jawbone and hands it over. You take it and piece it to Young Anselm\'s skull. It fits with ease, almost as if even in its decay it had no reason to separate. The men cheer. They cheer the Oathtakers. They cheer your name. And they cheer for Young Anselm who in death has finally been made whole again. You take one last look at the Oathbringers and nod. They had a purpose, sure, but now it is fulfilled. May the old gods have mercy on their heathen souls.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -274,6 +301,7 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 					}
 				}
 
+				this.World.Assets.getStash().makeEmptySlots(1);
 				local item = this.new("scripts/items/accessory/oathtaker_skull_02_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
@@ -323,6 +351,88 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.World.Statistics.getFlags().set("OathbringerConfrontationTriggered", true);
+			}
+
+		});
+		this.m.Screens.push({
+			ID = "FightAvoided1",
+			Text = "[img]gfx/ui/events/event_180.png[/img]{Against every fiber of your being, you turn the fight down. The reality is simple: the %companyname% is not ready for this battle. Unsurprisingly, the Oathtakers are not especially happy about this, and in fact show considerable concern that you would take a rare opportunity at slaying Oathbringers and piss all over it. As for the Oathbringers themselves, they laugh and crow at you as you leave.%SPEECH_ON%Young Anselm saw nothing good in you, Oathtakers! Your visions of him are a lie! Your whole existence is a lie! I\'d say join us while you can, but we want nothing to do with you worms!%SPEECH_OFF%You pray that in the coming days you will be able to prove to your men that you made the right decision here.}",
+			Image = "",
+			List = [],
+			Characters = [],
+			Options = [
+				{
+					Text = "It had to be this way.",
+					function getResult( _event )
+					{
+						return 0;
+					}
+
+				}
+			],
+			function start( _event )
+			{
+				local brothers = this.World.getPlayerRoster().getAll();
+
+				foreach( bro in brothers )
+				{
+					if (this.Math.rand(1, 100) <= 25 || bro.getBackground().getID() == "background.paladin")
+					{
+						bro.worsenMood(2.0, "You refused to fight Oathbringers, given the chance");
+
+						if (bro.getMoodState() < this.Const.MoodState.Neutral)
+						{
+							this.List.push({
+								id = 10,
+								icon = this.Const.MoodStateIcon[bro.getMoodState()],
+								text = bro.getName() + this.Const.MoodStateEvent[bro.getMoodState()]
+							});
+						}
+					}
+				}
+
+				this.World.Statistics.getFlags().increment("OathbringerConfrontationTimesDelayed");
+			}
+
+		});
+		this.m.Screens.push({
+			ID = "FightAvoided2",
+			Text = "[img]gfx/ui/events/event_180.png[/img]{The company is still not ready. You are worried that they will leave you entirely, infuriated as they are, but you\'d rather they be pissed than flat dead in the ground. With the decision weighing on your heart, and the Oathbringers screaming insults into your ear, you have the company once again march from the fight.}",
+			Image = "",
+			List = [],
+			Characters = [],
+			Options = [
+				{
+					Text = "You\'re still not ready!",
+					function getResult( _event )
+					{
+						return 0;
+					}
+
+				}
+			],
+			function start( _event )
+			{
+				local brothers = this.World.getPlayerRoster().getAll();
+
+				foreach( bro in brothers )
+				{
+					if (this.Math.rand(1, 100) <= 50 || bro.getBackground().getID() == "background.paladin")
+					{
+						bro.worsenMood(2.5, "You refused to fight Oathbringers, given multiple chances");
+
+						if (bro.getMoodState() < this.Const.MoodState.Neutral)
+						{
+							this.List.push({
+								id = 10,
+								icon = this.Const.MoodStateIcon[bro.getMoodState()],
+								text = bro.getName() + this.Const.MoodStateEvent[bro.getMoodState()]
+							});
+						}
+					}
+				}
+
+				this.World.Statistics.getFlags().increment("OathbringerConfrontationTimesDelayed");
 			}
 
 		});
@@ -394,7 +504,23 @@ this.oathtakers_confrontation_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
-		if (!(this.World.Assets.getCombatDifficulty() >= this.Const.Difficulty.Hard && this.World.Statistics.getFlags().getAsInt("OathsCompleted") >= 7 || this.World.Assets.getCombatDifficulty() >= this.Const.Difficulty.Normal && this.World.Statistics.getFlags().getAsInt("OathsCompleted") >= 8 || this.World.Statistics.getFlags().getAsInt("OathsCompleted") >= 9))
+		if (this.World.Ambitions.hasActiveAmbition() && (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_camaraderie" || this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_dominion" || this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_righteousness" || this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_vengeance"))
+		{
+			return;
+		}
+
+		local oathTimer = 6 + this.World.Statistics.getFlags().getAsInt("OathbringerConfrontationTimesDelayed") * 2;
+
+		if (this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Normal)
+		{
+			oathTimer = oathTimer + 1;
+		}
+		else if (this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Easy)
+		{
+			oathTimer = oathTimer + 3;
+		}
+
+		if (oathTimer > this.World.Statistics.getFlags().getAsInt("OathsCompleted"))
 		{
 			return;
 		}

@@ -18,5 +18,15 @@ this.acidic_saliva_item <- this.inherit("scripts/items/item", {
 		this.Sound.play("sounds/bottle_01.wav", this.Const.Sound.Volume.Inventory);
 	}
 
+	function getSellPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
+
+	function getBuyPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
+
 });
 

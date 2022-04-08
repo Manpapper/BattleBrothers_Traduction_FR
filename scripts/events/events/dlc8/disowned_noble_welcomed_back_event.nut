@@ -155,6 +155,7 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 					text = _event.m.Disowned.getName() + " leaves the " + this.World.Assets.getName()
 				});
 				_event.m.Disowned.getItems().transferToStash(this.World.Assets.getStash());
+				_event.m.Disowned.getSkills().onDeath(this.Const.FatalityType.None);
 				this.World.getPlayerRoster().remove(_event.m.Disowned);
 				this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnAmbition);
 				this.List.insert(0, {
@@ -280,7 +281,7 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 
 		this.m.Disowned = disowned_candidates[this.Math.rand(0, disowned_candidates.len() - 1)];
 		this.m.Town = town;
-		this.m.Score = 5 * disowned_candidates.len();
+		this.m.Score = 4 * disowned_candidates.len();
 	}
 
 	function onPrepare()

@@ -66,53 +66,71 @@ this.research_notes_beasts_item <- this.inherit("scripts/items/item", {
 				flag = "isNachzehrerPotionDiscovered",
 				creatureName = "Nachzehrer",
 				potionName = "Potion of Flesh Knitting"
-			},
-			{
-				flag = "isLindwurmPotionDiscovered",
-				creatureName = "Lindwurm",
-				potionName = "Tincture of Emberblood"
-			},
-			{
-				flag = "isHyenaPotionDiscovered",
-				creatureName = "Hyena",
-				potionName = "Bloodgate Brew"
-			},
-			{
-				flag = "isSerpentPotionDiscovered",
-				creatureName = "Serpent",
-				potionName = "Quickfang Potion"
-			},
-			{
-				flag = "isIfritPotionDiscovered",
-				creatureName = "Ifrit",
-				potionName = "Potion of Stoneskin"
-			},
-			{
-				flag = "isAlpPotionDiscovered",
-				creatureName = "Alp",
-				potionName = "Nightking\'s Draft"
-			},
-			{
-				flag = "isHexePotionDiscovered",
-				creatureName = "Hexe",
-				potionName = "Potion of Malevolence"
-			},
-			{
-				flag = "isSchratPotionDiscovered",
-				creatureName = "Schrat",
-				potionName = "Draught of Godtree Roots"
-			},
-			{
-				flag = "isUnholdPotionDiscovered",
-				creatureName = "Unhold",
-				potionName = "Fool\'s Treasure Potion"
-			},
-			{
-				flag = "isWebknechtPotionDiscovered",
-				creatureName = "Webknecht",
-				potionName = "Venomblood Potion"
 			}
 		];
+
+		if (this.Const.DLC.Lindwurm)
+		{
+			buffAcquisitions.extend([
+				{
+					flag = "isLindwurmPotionDiscovered",
+					creatureName = "Lindwurm",
+					potionName = "Tincture of Emberblood"
+				}
+			]);
+		}
+
+		if (this.Const.DLC.Unhold)
+		{
+			buffAcquisitions.extend([
+				{
+					flag = "isAlpPotionDiscovered",
+					creatureName = "Alp",
+					potionName = "Nightking\'s Draft"
+				},
+				{
+					flag = "isHexePotionDiscovered",
+					creatureName = "Hexe",
+					potionName = "Potion of Malevolence"
+				},
+				{
+					flag = "isSchratPotionDiscovered",
+					creatureName = "Schrat",
+					potionName = "Draught of Godtree Roots"
+				},
+				{
+					flag = "isUnholdPotionDiscovered",
+					creatureName = "Unhold",
+					potionName = "Fool\'s Treasure Potion"
+				},
+				{
+					flag = "isWebknechtPotionDiscovered",
+					creatureName = "Webknecht",
+					potionName = "Venomblood Potion"
+				}
+			]);
+		}
+
+		if (this.Const.DLC.Desert)
+		{
+			buffAcquisitions.extend([
+				{
+					flag = "isHyenaPotionDiscovered",
+					creatureName = "Hyena",
+					potionName = "Bloodgate Brew"
+				},
+				{
+					flag = "isSerpentPotionDiscovered",
+					creatureName = "Serpent",
+					potionName = "Quickfang Potion"
+				},
+				{
+					flag = "isIfritPotionDiscovered",
+					creatureName = "Ifrit",
+					potionName = "Potion of Stoneskin"
+				}
+			]);
+		}
 
 		foreach( buff in buffAcquisitions )
 		{
@@ -123,6 +141,15 @@ this.research_notes_beasts_item <- this.inherit("scripts/items/item", {
 					type = "text",
 					icon = "ui/icons/special.png",
 					text = "" + buff.creatureName + ": " + buff.potionName
+				});
+			}
+			else
+			{
+				result.push({
+					id = 15,
+					type = "text",
+					icon = "ui/icons/special.png",
+					text = "" + buff.creatureName + ": " + "???"
 				});
 			}
 		}

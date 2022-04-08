@@ -12,7 +12,7 @@ this.alp_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.m.IconLarge = "";
 		this.m.Icon = "accessory/alp_trophy.png";
 		this.m.Sprite = "alp_trophy";
-		this.m.Value = 250;
+		this.m.Value = 400;
 	}
 
 	function getTooltip()
@@ -60,6 +60,16 @@ this.alp_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Détermination"
 		});
 		return result;
+	}
+	
+	function getSellPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
+	}
+
+	function getBuyPriceMult()
+	{
+		return this.World.State.getCurrentTown().getBeastPartsPriceMult();
 	}
 
 	function onUpdateProperties( _properties )

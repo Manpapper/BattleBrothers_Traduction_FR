@@ -101,7 +101,7 @@ this.volunteers_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
-		if (this.World.getPlayerRoster().getSize() >= this.World.Assets.getBrothersMax() + 3)
+		if (this.World.getPlayerRoster().getSize() + 3 >= this.World.Assets.getBrothersMax())
 		{
 			return;
 		}

@@ -397,11 +397,11 @@ this.strange_scribe_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"minstrel",
-			this.m.Minstrel != null ? this.m.Minstrel.getName() : ""
+			this.m.Minstrel != null ? this.m.Minstrel.getNameOnly() : ""
 		]);
 		_vars.push([
 			"killer",

@@ -105,6 +105,15 @@ this.research_notes_greenskins_item <- this.inherit("scripts/items/item", {
 					text = "" + buff.creatureName + ": " + buff.potionName
 				});
 			}
+			else
+			{
+				result.push({
+					id = 15,
+					type = "text",
+					icon = "ui/icons/special.png",
+					text = "" + buff.creatureName + ": ???"
+				});
+			}
 		}
 
 		return result;

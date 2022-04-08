@@ -128,7 +128,7 @@ this.anatomist_vs_historian_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"historian",
-			this.m.Historian.getName()
+			this.m.Historian.getNameOnly()
 		]);
 	}
 

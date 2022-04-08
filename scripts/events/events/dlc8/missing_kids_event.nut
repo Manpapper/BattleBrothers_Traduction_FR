@@ -284,54 +284,54 @@ this.missing_kids_event <- this.inherit("scripts/events/event", {
 		}
 
 		local brothers = this.World.getPlayerRoster().getAll();
-		local anatomistCandidates = [];
-		local cultistCandidates = [];
-		local hedgeCandidates = [];
-		local killerCandidates = [];
+		local anatomist_candidates = [];
+		local cultist_candidates = [];
+		local hedge_candidates = [];
+		local killer_candidates = [];
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.anatomist")
+			if (bro.getBackground().getID() == "background.anatomist" && !bro.getSkills().hasSkill("injury.broken_nose"))
 			{
-				anatomistCandidates.push(bro);
+				anatomist_candidates.push(bro);
 			}
 			else if (bro.getBackground().getID() == "background.cultist" || bro.getBackground().getID() == "background.converted_cultist")
 			{
-				cultistCandidates.push(bro);
+				cultist_candidates.push(bro);
 			}
 			else if (bro.getBackground().getID() == "background.hedge_knight")
 			{
-				hedgeCandidates.push(bro);
+				hedge_candidates.push(bro);
 			}
 			else if (bro.getBackground().getID() == "background.killer_on_the_run")
 			{
-				killerCandidates.push(bro);
+				this.killerCandidates.push(bro);
 			}
 		}
 
-		if (cultistCandidates.len() > 0)
+		if (cultist_candidates.len() > 0)
 		{
-			this.m.Cultist = cultistCandidates[this.Math.rand(0, cultistCandidates.len() - 1)];
+			this.m.Cultist = cultist_candidates[this.Math.rand(0, cultist_candidates.len() - 1)];
 		}
 
-		if (hedgeCandidates.len() > 0)
+		if (hedge_candidates.len() > 0)
 		{
-			this.m.Hedge = hedgeCandidates[this.Math.rand(0, hedgeCandidates.len() - 1)];
+			this.m.Hedge = hedge_candidates[this.Math.rand(0, hedge_candidates.len() - 1)];
 		}
 
-		if (killerCandidates.len() > 0)
+		if (killer_candidates.len() > 0)
 		{
-			this.m.Killer = killerCandidates[this.Math.rand(0, killerCandidates.len() - 1)];
+			this.m.Killer = killer_candidates[this.Math.rand(0, killer_candidates.len() - 1)];
 		}
 
-		if (anatomistCandidates.len() == 0)
+		if (anatomist_candidates.len() == 0)
 		{
 			return;
 		}
 
-		this.m.Anatomist = anatomistCandidates[this.Math.rand(0, anatomistCandidates.len() - 1)];
+		this.m.Anatomist = anatomist_candidates[this.Math.rand(0, anatomist_candidates.len() - 1)];
 		this.m.Town = town;
-		this.m.Score = 15;
+		this.m.Score = 8 + anatomist_candidates.len();
 	}
 
 	function onPrepare()
@@ -342,7 +342,7 @@ this.missing_kids_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"blackmail",
@@ -350,15 +350,15 @@ this.missing_kids_event <- this.inherit("scripts/events/event", {
 		]);
 		_vars.push([
 			"cultist",
-			this.m.Cultist != null ? this.m.Cultist.getName() : ""
+			this.m.Cultist != null ? this.m.Cultist.getNameOnly() : ""
 		]);
 		_vars.push([
 			"hedgeknight",
-			this.m.Hedge != null ? this.m.Hedge.getName() : ""
+			this.m.Hedge != null ? this.m.Hedge.getNameOnly() : ""
 		]);
 		_vars.push([
 			"killer",
-			this.m.Killer != null ? this.m.Killer.getName() : ""
+			this.m.Killer != null ? this.m.Killer.getNameOnly() : ""
 		]);
 		_vars.push([
 			"townname",

@@ -263,29 +263,29 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 		}
 
 		local brothers = this.World.getPlayerRoster().getAll();
-		local graverCandidates = [];
-		local anatomistCandidates = [];
+		local graver_candidates = [];
+		local anatomist_candidates = [];
 
 		foreach( bro in brothers )
 		{
 			if (bro.getBackground().getID() == "background.graverobber")
 			{
-				graverCandidates.push(bro);
+				graver_candidates.push(bro);
 			}
 			else if (bro.getBackground().getID() == "background.anatomist")
 			{
-				anatomistCandidates.push(bro);
+				anatomist_candidates.push(bro);
 			}
 		}
 
-		if (graverCandidates.len() > 0)
+		if (graver_candidates.len() > 0)
 		{
-			this.m.Graver = graverCandidates[this.Math.rand(0, graverCandidates.len() - 1)];
+			this.m.Graver = graver_candidates[this.Math.rand(0, graver_candidates.len() - 1)];
 		}
 
-		if (anatomistCandidates.len() > 1)
+		if (anatomist_candidates.len() > 1)
 		{
-			this.m.Anatomist = anatomistCandidates[this.Math.rand(0, anatomistCandidates.len() - 1)];
+			this.m.Anatomist = anatomist_candidates[this.Math.rand(0, anatomist_candidates.len() - 1)];
 		}
 		else
 		{
@@ -293,7 +293,7 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 		}
 
 		this.m.Town = town;
-		this.m.Score = 15;
+		this.m.Score = 10 + anatomist_candidates.len();
 	}
 
 	function onPrepare()

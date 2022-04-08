@@ -124,7 +124,8 @@ this.bastard_assassin_event <- this.inherit("scripts/events/event", {
 						this.World.getPlayerRoster().add(_event.m.Assassin);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Assassin.onHired();
-						_event.m.Bastard.getItems().transferToStash(this.World.Assets.getStash());
+						_event.m.Bastard.getItems().transferToStash(this.World.Assets.getStash());						
+						_event.m.Bastard.getSkills().onDeath(this.Const.FatalityType.None);
 						this.World.getPlayerRoster().remove(_event.m.Bastard);
 						_event.m.Bastard = null;
 						return 0;

@@ -14,7 +14,7 @@ this.adorned_closed_flat_top_with_mail <- this.inherit("scripts/items/helmets/he
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;
-		this.m.Value = 2300;
+		this.m.Value = 2000;
 		this.m.Condition = 250;
 		this.m.ConditionMax = 250;
 		this.m.StaminaModifier = -15;

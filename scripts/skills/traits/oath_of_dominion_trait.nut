@@ -1,6 +1,6 @@
 this.oath_of_dominion_trait <- this.inherit("scripts/skills/traits/character_trait", {
 	m = {
-		applyEffect = true
+		ApplyEffect = true
 	},
 	function create()
 	{
@@ -67,17 +67,17 @@ this.oath_of_dominion_trait <- this.inherit("scripts/skills/traits/character_tra
 
 	function onCombatStarted()
 	{
-		this.m.applyEffect = true;
+		this.m.ApplyEffect = true;
 	}
 
 	function onCombatFinished()
 	{
-		this.m.applyEffect = false;
+		this.m.ApplyEffect = false;
 	}
 
 	function onUpdate( _properties )
 	{
-		if (!this.m.applyEffect)
+		if (!this.m.ApplyEffect)
 		{
 			return;
 		}
@@ -87,7 +87,19 @@ this.oath_of_dominion_trait <- this.inherit("scripts/skills/traits/character_tra
 			return;
 		}
 
-		if (this.Tactical.Entities.getInstancesNum(this.World.FactionManager.getFactionOfType(this.Const.FactionType.Beasts).getID()) != 0)
+		local fightingBeasts = false;
+		local enemies = this.Tactical.Entities.getAllHostilesAsArray();
+
+		foreach( enemy in enemies )
+		{
+			if (this.Const.EntityType.getDefaultFaction(enemy.getType()) == this.Const.FactionType.Beasts || enemy.getType() == this.Const.EntityType.BarbarianUnhold || enemy.getType() == this.Const.EntityType.BarbarianUnholdFrost)
+			{
+				fightingBeasts = true;
+				break;
+			}
+		}
+
+		if (fightingBeasts)
 		{
 			_properties.Bravery += 20;
 			_properties.MeleeSkill += 10;

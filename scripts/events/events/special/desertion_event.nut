@@ -44,6 +44,7 @@ this.desertion_event <- this.inherit("scripts/events/event", {
 							_event.m.Deserter.getItems().transferToStash(this.World.Assets.getStash());
 						}
 
+						_event.m.Deserter.getSkills().onDeath(this.Const.FatalityType.None);
 						this.World.getPlayerRoster().remove(_event.m.Deserter);
 						_event.m.Deserter = null;
 						_event.m.Other = null;

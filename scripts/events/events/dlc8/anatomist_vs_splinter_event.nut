@@ -10,7 +10,7 @@ this.anatomist_vs_splinter_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 110.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{You find %anatomist% holding up the barefoot of %splinterbro%. Naturally, you inquire just what they\'re doing. The anatomist straightens up with a tweezer in hand and pinched between its prongs is a huge splinter. %splinterbro% wiggles his toes then gets to his feet. He walks around, then quickly plants his foot and pivots and walks backwards and forwards.%SPEECH_ON%I\'ll be damned. I thought I\'d just busted my foot or somethin\', turns out I\'d just been walking around with a huge arsed splinter for years! This feels great!%SPEECH_OFF%Instead of throwing the splinter away, %anatomist% confines it to a wooden box where other medical oddities are rolling around.}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{You find %anatomist% holding up the bare foot of %splinterbro%. Naturally, you inquire just what they\'re doing. The anatomist straightens up with a tweezer in hand and pinched between its prongs is a huge splinter. %splinterbro% wiggles his toes then gets to his feet. He walks around, then quickly plants his foot and pivots and walks backwards and forwards.%SPEECH_ON%I\'ll be damned. I thought I\'d just busted my foot or somethin\', turns out I\'d just been walking around with a huge arsed splinter for years! This feels great!%SPEECH_OFF%Instead of throwing the splinter away, %anatomist% confines it to a wooden box where other medical oddities are rolling around.}",
 			Image = "",
 			List = [],
 			Characters = [],

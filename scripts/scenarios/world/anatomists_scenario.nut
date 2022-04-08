@@ -121,7 +121,7 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		this.World.Statistics.getFlags().set("isIjirokPotionAcquired", false);
 		this.World.Statistics.getFlags().set("isIfritPotionAcquired", false);
 		this.World.Statistics.getFlags().set("isHyenaPotionAcquired", false);
-		this.World.Assets.m.Money = this.World.Assets.m.Money + 600;
+		this.World.Assets.m.Money = this.World.Assets.m.Money + 700;
 	}
 
 	function onSpawnPlayer()
@@ -556,7 +556,10 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		this.World.Statistics.getFlags().set("shouldDropSchratPotion", false);
 		this.World.Statistics.getFlags().set("shouldDropHyenaPotion", false);
 		this.World.Statistics.getFlags().set("shouldDropSerpentPotion", false);
+		this.World.Statistics.getFlags().set("shouldDropKrakenPotion", false);
+		this.World.Statistics.getFlags().set("shouldDropIjirokPotion", false);
 		this.World.Statistics.getFlags().set("shouldDropIfritPotion", false);
+		this.World.Statistics.getFlags().set("shouldDropHyenaPotion", false);
 		return true;
 	}
 

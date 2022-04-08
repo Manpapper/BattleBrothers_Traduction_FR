@@ -220,26 +220,26 @@ this.anatomist_helps_blighted_guy_1_event <- this.inherit("scripts/events/event"
 		}
 
 		local brothers = this.World.getPlayerRoster().getAll();
-		local anatomistCandidates = [];
+		local anatomist_candidates = [];
 
 		foreach( bro in brothers )
 		{
 			if (bro.getBackground().getID() == "background.anatomist")
 			{
-				anatomistCandidates.push(bro);
+				anatomist_candidates.push(bro);
 			}
 		}
 
-		if (anatomistCandidates.len() > 0)
+		if (anatomist_candidates.len() > 0)
 		{
-			this.m.Anatomist = anatomistCandidates[this.Math.rand(0, anatomistCandidates.len() - 1)];
+			this.m.Anatomist = anatomist_candidates[this.Math.rand(0, anatomist_candidates.len() - 1)];
 		}
 		else
 		{
 			return;
 		}
 
-		this.m.Score = 10;
+		this.m.Score = 5 + anatomist_candidates.len();
 	}
 
 	function onPrepare()

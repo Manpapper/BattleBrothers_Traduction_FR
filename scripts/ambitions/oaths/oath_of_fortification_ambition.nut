@@ -11,6 +11,7 @@ this.oath_of_fortification_ambition <- this.inherit("scripts/ambitions/oaths/oat
 		this.m.SuccessButtonText = "{Pour le jeune Anselm ! | Prêteurs de Serments ! | Et mort aux Briseurs de Serments !}";
 		this.m.OathName = "Serment de Fortification";
 		this.m.OathBoonText = "Vos hommes accumulent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins quand ils utilisent des compétences de bouclier. La compétence \'Renverser\' étourdit maintenant la cible lorsqu\'elle est touchée";
+		this.m.OathBoonText = "Vos hommes accumulent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins quand ils utilisent des compétences de bouclier. La compétence \'Mur de bouclier\' ajoute un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] de Défense de Mêlée et [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] de Défense à Distance. La compétence \'Renverser\' étourdit maintenant la cible lorsqu\'elle est touchée";	
 		this.m.OathBurdenText = "Vos hommes ne peuvent pas bouger lors du premier tour du combat.";
 	}
 

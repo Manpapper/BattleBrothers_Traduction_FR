@@ -11,7 +11,7 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{You come into %townname% to find a white bearded and eloquent elder helping a family with their ill child. To you, this sight isn\'t anything unusual. To %anatomist% the Anatomist, however, some great offense is at hand. So quick is his walk across the road to the elder that you jump in front of him, sensing that whatever it is he aims to do might reflect poorly on the %companyname% as a whole. %anatomist% stands up straight.%SPEECH_ON%Excuse me, this man is dispensing poor medical advice. He needs to be corrected.%SPEECH_OFF%Mindful of the natives, you warn him that it can be unwise to try and wedge yourself in on local customs, of which an elder is almost assuredly the spearpoint of. He might be and likely is of even greater import as well, such as overseeing the local militia. The anatomist, however, is rather diligent about the task, and seeks to weaponize his own knowledge and use it even if it tears the local politic apart.}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{You come into %townname% to find a white bearded and eloquent elder helping a family with their ill child. To you, this sight isn\'t anything unusual. To %anatomist% the anatomist, however, some great offense is at hand. So quick is his walk across the road to the elder that you jump in front of him, sensing that whatever it is he aims to do might reflect poorly on the %companyname% as a whole. %anatomist% stands up straight.%SPEECH_ON%Excuse me, this man is dispensing poor medical advice. He needs to be corrected.%SPEECH_OFF%Mindful of the natives, you warn him that it can be unwise to try and wedge yourself in on local customs, of which an elder is almost assuredly the spearpoint of. He might be and likely is of even greater import as well, such as overseeing the local militia. The anatomist, however, is rather diligent about the task, and seeks to weaponize his own knowledge and use it even if it tears the local politic apart.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -348,11 +348,11 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"anatomist",
-			this.m.Anatomist.getName()
+			this.m.Anatomist.getNameOnly()
 		]);
 		_vars.push([
 			"monk",
-			this.m.Monk.getName()
+			this.m.Monk.getNameOnly()
 		]);
 		_vars.push([
 			"townname",

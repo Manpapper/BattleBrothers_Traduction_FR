@@ -10,11 +10,12 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.GoodEnding = "Out of all the men you came to know in the %companyname%, it was %name% the anatomist who is perhaps the most difficult to forget. An unending stream of letters only helps ensure you never will. You skim over his latest, one-sided correspondence: \"Captain! I\'ve managed to...\" skimming, skimming, \"...the greatest invention! The most...\" skimming, skimming. \"I\'m going to be famous! My brain will be studied for its weight is surely...\" Nothing new, it seems, though you are glad he\'s still in good health, albeit perhaps more so in body than mind.";
 		this.m.BadEnding = "Having fled the %companyname%, %name% the anatomist continued his studies elsewhere. He was admonished by his peers for venturing out in such an uncouth manner and found himself suffering in intellectual mediocrity. Some years later, he made a small contribution to the study of beetles after which he promptly threw himself off a seaside cliff, donating his brain to the rocks and his body to the ocean.";
 		this.m.HiringCost = 130;
-		this.m.DailyCost = 8;
+		this.m.DailyCost = 12;
 		this.m.Excluded = [
 			"trait.ailing",
 			"trait.asthmatic",
 			"trait.bleeder",
+			"trait.craven",
 			"trait.huge",
 			"trait.determined",
 			"trait.fear_beasts",
@@ -31,7 +32,6 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 			"trait.athletic",
 			"trait.brute",
 			"trait.fragile",
-			"trait.fainthearted",
 			"trait.iron_lungs",
 			"trait.irrational",
 			"trait.cocky",
@@ -121,7 +121,7 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 	{
 		local items = this.getContainer().getActor().getItems();
 		local r;
-		r = this.Math.rand(0, 4);
+		r = this.Math.rand(0, 3);
 
 		if (r == 0)
 		{
