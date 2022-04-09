@@ -7,20 +7,20 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Warmonger,
 				this.Const.FactionTrait.ManOfThePeople
 			],
-			Description = "The house of %noblehousename% revolves around a religious cult that teaches compassion towards their own but turned them zealous and unforgiving towards their foes. Generations ago, a large orc invasion pillaged and destroyed most of what belonged to the family, and it never fully recovered. Since then, the house started many a crusade and punitive expedition deep into orc lands but never managed to drive the greenskins off for good.",
+			Description = "La maison de %noblehousename% tourne autour d\'un culte religieux qui enseigne la compassion envers les siens mais les a rendus zélés et impitoyables envers leurs ennemis. Il y a des générations, une grande invasion orque a pillé et détruit la plupart des biens de la famille, qui ne s\'en est jamais vraiment remise. Depuis lors, la maison a lancé de nombreuses croisades et expéditions punitives dans les terres orques, mais n\'a jamais réussi à chasser définitivement les peaux vertes",
 			Mottos = [
-				"Virtue is the only nobility",
-				"In defence of the distressed",
-				"Zeal and honour",
-				"Noble in anger",
-				"Cleansed by the flame",
-				"Peace is obtained by war",
-				"While we have breath we hope",
-				"Boldly and honourably",
-				"We scorn to change or to fear",
-				"Victory is in truth",
-				"Light in Darkness",
-				"One heart, one way"
+				"La vertu est la seule noblesse",
+				"Pour la défense des personnes en détresse",
+				"Zèle et honneur",
+				"Noble dans la colère",
+				"Purifié par la flamme",
+				"La paix est obtenue par la guerre",
+				"Tant que nous avons le souffle, nous espérons",
+				"Audacieusement et honorablement",
+				"Nous méprisons le changement et la peur",
+				"La victoire est dans la vérité",
+				"La lumière dans les ténèbres",
+				"Un cœur, une voie"
 			]
 		},
 		{
@@ -29,22 +29,22 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Sheriff,
 				this.Const.FactionTrait.ManOfThePeople
 			],
-			Description = "The house of %noblehousename% holds high the principles of justice and honor, and without irrational rulings their region has prospered. Their reputation may be peaceful, but %noblehousename% knights are battle-hardened and their troops will ferociously fight anyone threatening their realm, subordinates or principles. Many nobles envy their wealth and ridicule their principles; house %othernoblehouse% especially holds a more or less overt grudge against those of %noblehousename%.",
+			Description = "La maison %noblehousename% défend les principes de justice et d\'honneur, et sans décisions irrationnelles, sa région a prospéré. Leur réputation peut être pacifique, mais les chevaliers de %noblehousename% sont aguerris au combat et leurs troupes combattent férocement toute personne menaçant leur royaume, leurs subordonnés ou leurs principes. De nombreux nobles envient leurs richesses et se moquent de leurs principes ; la maison %othernoblehouse% a notamment une rancune plus ou moins ouverte envers ceux de %noblehousename%.",
 			Mottos = [
-				"Live that you may live",
-				"Friendship without deceit",
-				"Dare to be wise",
-				"The brave always show mercy",
-				"A friend to a friend",
-				"This hand is hostile to tyrants",
-				"Irritate not the lion",
-				"An oak in aged strength",
-				"With heart and hand",
-				"Always watchful",
-				"Glory to the father",
-				"Virtue under strength",
-				"Prepared in either case",
-				"Not for ourselves alone"
+				"Vivez pour que vous puissiez vivre",
+				"L\'amitié sans tromperie",
+				"Ose être sage",
+				"Les braves font toujours preuve de clémence",
+				"Un ami pour un ami",
+				"Cette main est hostile aux tyrans",
+				"N\'irritez pas le lion",
+				"Un chêne à la force vieillie",
+				"Avec le coeur et la main",
+				"Toujours vigilant",
+				"Gloire au père",
+				"La vertu sous la force",
+				"Préparé dans tous les cas",
+				"Pas seulement pour nous-mêmes"
 			]
 		},
 		{
@@ -53,15 +53,15 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Sheriff,
 				this.Const.FactionTrait.Collector
 			],
-			Description = "Wealth is sought by many, but the highly reputable traders of house %noblehousename% are the best when it comes to striking profitable bargains. Bound by ancestral ties to the renown of their forefathers they uphold honesty and integrity as their family values.",
+			Description = "Nombreux sont ceux qui recherchent la richesse, mais les négociants très réputés de la maison %noblehousename% sont les meilleurs lorsqu\'il s\'agit de conclure des affaires profitables. Liés par des liens ancestraux à la renommée de leurs ancêtres, ils font de l\'honnêteté et de l\'intégrité leurs valeurs familiales",
 			Mottos = [
-				"Reason is the guide of life",
-				"Firmly in act and gently in manner",
-				"Let us be viewed by our actions",
-				"Strive without reproach",
-				"The sun rises after clouds",
-				"Courage in difficulties",
-				"Plenty is caused by dilligence"
+				"La raison est le guide de la vie",
+				"Fermement dans l\'action et doucement dans la manière",
+				"Soyons vus par nos actions",
+				"S\'efforcer sans reproche",
+				"Le soleil se lève après les nuages",
+				"Courage dans les difficultés",
+				"L\'abondance est causée par la dilligence"
 			]
 		}
 	],
@@ -72,19 +72,19 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Warmonger,
 				this.Const.FactionTrait.Tyrant
 			],
-			Description = "The noble house of %noblehousename% is a proud and unrelenting family with a long and bloodstained history of conquest. Seated in their fortress of %factionfortressname%, they take with arms what they consider theirs by right. An ancestral feud with house %othernoblehouse% provides never ending reasons to keep both hate in the hearts and ore smelters burning.",
+			Description = "La maison noble de %noblehousename% est une famille fière et implacable avec une longue et sanglante histoire de conquête. Assis dans leur forteresse de %factionfortressname%, ils prennent par les armes ce qu\'ils considèrent comme leur appartenant de droit. Un fief ancestral avec la maison %othernoblehouse% fournit des raisons sans fin pour maintenir la haine dans les cœurs et les fonderies de minerai en feu.",
 			Mottos = [
-				"He stands by his own powers",
-				"He conquers who endures",
-				"Boldly and rightly",
-				"Under this sign thou shalt conquer",
-				"He dies not whose fame survives",
-				"No steps backwards",
-				"Through arrows and enemies",
-				"Nothing resists valour and arms",
-				"Such is the way to immortality",
-				"And we also have hurled our javelins",
-				"The heron seeks high places"
+				"Il se tient debout par ses propres pouvoirs",
+				"Il conquiert qui endure",
+				"Avec audace et droiture",
+				"Sous ce signe, tu vas conquérir",
+				"Il ne meurt pas dont la renommée survit",
+				"Aucun pas en arrière",
+				"A travers les flèches et les ennemis",
+				"Rien ne résiste à la bravoure et aux armes",
+				"Telle est la voie de l\'immortalité",
+				"Et nous avons aussi lancé nos javelots",
+				"Le héron cherche les lieux élevés"
 			]
 		},
 		{
@@ -93,17 +93,17 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Warmonger,
 				this.Const.FactionTrait.Marauder
 			],
-			Description = "Disdained for their ruthlessness, brutality and greed, house %noblehousename% has little interaction with other noble families. Their captains and soldiers are known for raiding trade caravans, outlying farms and small settlements from their fortress of %factionfortressname%. A life is not worth much in the realm of house %noblehousename% and many a mercenary on the look for a quick coin only found a quick end here.",
+			Description = "Dédaignée pour son impitoyabilité, sa brutalité et sa cupidité, la maison %noblehousename% a peu d\'interaction avec les autres familles nobles. Leurs capitaines et soldats sont connus pour leurs raids sur les caravanes commerciales, les fermes périphériques et les petits villages depuis leur forteresse de %factionfortressname%. Une vie ne vaut pas grand chose dans le royaume de la maison %noblehousename% et plus d\'un mercenaire à la recherche d\'une pièce de monnaie n\'a trouvé qu\'une fin rapide ici.",
 			Mottos = [
-				"Whatever grows perishes in ashes",
-				"We trample it under our feet",
-				"For me and for mine",
-				"The eagle catches not flies",
-				"Deeds not words",
-				"The gods feed the ravens",
-				"Always thirsty",
-				"Sons of hounds come here and get flesh",
-				"Not without booty"
+				"Tout ce qui pousse périt dans les cendres",
+				"Nous le piétinons sous nos pieds",
+				"Pour moi et pour les miens",
+				"L\'aigle n\'attrape pas les mouches",
+				"Des actes, pas des mots",
+				"Les dieux nourrissent les corbeaux",
+				"Toujours assoiffés",
+				"Les fils de chiens viennent ici et prennent de la chair",
+				"Pas sans butin"
 			]
 		},
 		{
@@ -112,19 +112,19 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Schemer,
 				this.Const.FactionTrait.Tyrant
 			],
-			Description = "House %noblehousename% is hated by many but feared by even more. A number of small and big uprisings have been put down with fire and sword and the %noblehousename% henchmen are known to have eyes in every shady corner and ears in every wall. The family\'s ancestral home of %factionfortressname% is swarming with armed guards, sniffing wardogs and bulky mercenaries to protect their paranoid leaders.",
+			Description = "La maison %noblehousename% est détestée par beaucoup mais crainte par encore plus de monde. Un certain nombre de soulèvements, petits et grands, ont été réprimés par le feu et l\'épée et les sbires de %noblehousename% sont connus pour avoir des yeux dans tous les coins sombres et des oreilles dans tous les murs. La maison ancestrale de la famille, %factionfortressname%, fourmille de gardes armés, de chiens de garde renifleurs et de mercenaires imposant pour protéger leurs dirigeants paranoïaques.",
 			Mottos = [
-				"A knife in the dark",
-				"Cutting causes growth",
-				"Always ready",
-				"The sentinel sleeps not",
-				"Arms maintain peace",
-				"Innocent as doves",
-				"Firm of purpose",
-				"Obey",
-				"By laws and arms",
-				"Learn to endure what must be borne",
-				"The wrath of the lion is noble"
+				"Un couteau dans l\'obscurité",
+				"Couper provoque la croissance",
+				"Toujours prêt",
+				"La sentinelle ne dort pas",
+				"Les armes maintiennent la paix",
+				"Innocents comme des colombes",
+				"Fermement décidé",
+				"Obéir",
+				"Par les lois et les armes",
+				"Apprendre à supporter ce qui doit être supporté",
+				"La colère du lion est noble"
 			]
 		},
 		{
@@ -133,17 +133,17 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Marauder,
 				this.Const.FactionTrait.Tyrant
 			],
-			Description = "The house of %noblehousename% is well known for its lavish lifestyle and bacchanal festivities. The price has to be paid by someone, so half-starved cattle, empty granaries and desperate townsfolk are a common sight where house %noblehousename% rules. Although other noble houses may look down on such brutality and depletion they are at the same time desperately awaiting their invitation to the next feast.",
+			Description = "La maison %noblehousename% est bien connue pour son style de vie fastueux et ses débauche bruyante. Le prix doit être payé par quelqu\'un, donc le bétail à moitié affamé, les greniers vides et les citadins désespérés sont un spectacle commun où la maison %noblehousename% règne. Bien que d\'autres maisons nobles puissent mépriser une telle brutalité et un tel épuisement, elles attendent en même temps désespérément leur invitation au prochain festin",
 			Mottos = [
-				"Unconquered",
-				"Cruel rumor, be still",
-				"I soar",
-				"With good right",
-				"I despise",
-				"Sheep, ye bear the wool",
-				"Spare not",
-				"Profit is gained by danger",
-				"Remember that thou must die"
+				"Inconquise",
+				"Cruelle rumeur, sois tranquille",
+				"Je m\'élève",
+				"Avec bon droit",
+				"Je méprise",
+				"Moutons, vous portez la laine",
+				"N\'épargnez pas",
+				"Le profit est acquis par le danger",
+				"Souviens-toi que tu dois mourir"
 			]
 		}
 	],
@@ -154,14 +154,14 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Schemer,
 				this.Const.FactionTrait.Collector
 			],
-			Description = "Trading and haggling can be just as fierce as fighting a war, and the house of %noblehousename% is a true master of cunning bargains. Rumor has it that many a profitable deal made by house %noblehousename% is not only based on honest trading but also bribery, extortion and deception. The family resides in the pompous region capitol of %factionfortressname%, but despite their unmeasurable riches they are known to be notoriously close-fisted.",
+			Description = "Le commerce et le marchandage peuvent être tout aussi féroces que la guerre, et la maison %noblehousename% est un véritable maître des négociations rusées. La rumeur veut que de nombreuses affaires profitables conclues par la maison %noblehousename% ne soient pas seulement basées sur un commerce honnête mais aussi sur la corruption, l\'extorsion et la tromperie. La famille réside dans la pompeuse capitale régionale de %factionfortressname%, mais malgré ses richesses incommensurables, elle est connue pour être notoirement avare.",
 			Mottos = [
-				"To live without a wish concealed",
-				"Fortune favours the bold",
-				"The world does not suffice",
-				"Separate the honest from the useful",
-				"Our harvest will also arrive",
-				"I gain by hazard"
+				"Vivre sans un souhait caché",
+				"La fortune favorise les audacieux",
+				"Le monde ne suffit pas",
+				"Séparer l\'honnête de l\'utile",
+				"Notre récolte arrivera aussi",
+				"Je gagne au hasard"
 			]
 		},
 		{
@@ -170,17 +170,17 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.ManOfThePeople,
 				this.Const.FactionTrait.Collector
 			],
-			Description = "House %noblehousename% claims to have roots in the time when man first claimed this land, and the first king ruled all men. They are but one of many noble houses now, but proud of their long history and with ambitions to continue writing history. As their renown and their resources dwindle in the now, they are said to finance expeditions in an attempt to unearth long lost treasures from the past, in sunken cities and places long forgotten.",
+			Description = "La maison %noblehousename% prétend avoir ses racines à l\'époque où l\'homme a revendiqué cette terre pour la première fois et où le premier roi a régné sur tous les hommes. Elle n\'est plus qu\'une des nombreuses maisons nobles, mais elle est fière de sa longue histoire et a l\'ambition de continuer à écrire l\'histoire. Alors que leur renommée et leurs ressources s\'amenuisent aujourd\'hui, on dit qu\'ils financent des expéditions dans le but de déterrer les trésors perdus du passé, dans des villes englouties et des lieux oubliés depuis longtemps",
 			Mottos = [
-				"He lives twice who lives well",
-				"Wealth to him who knows how to use it",
-				"Things locked up are safe",
-				"Once and always",
-				"Gauge and measure",
-				"Safe on the waves",
-				"Each his share",
-				"With sail and oars",
-				"Among the first"
+				"Il vit deux fois qui vit bien",
+				"La richesse pour celui qui sait l\'utiliser",
+				"Les choses enfermées sont en sécurité",
+				"Une fois et toujours",
+				"Jauge et mesure",
+				"En sécurité sur les vagues",
+				"Chacun sa part",
+				"Avec voile et rames",
+				"Parmi les premiers"
 			]
 		},
 		{
@@ -189,16 +189,16 @@ gt.Const.FactionArchetypes <- [
 				this.Const.FactionTrait.Marauder,
 				this.Const.FactionTrait.Schemer
 			],
-			Description = "Most members of the house of %noblehousename% live secluded behind thick doors and barred windows and some of them have not been seen for years. Rumor has it that their noble blood is plagued with madness and insanity but no ordinary man dares to utter such claims in fear of their vengeance. Other noble houses mainly avoid contact to house %noblehousename% as guests may be greeted with open arms as well as crossbow bolts.",
+			Description = "La plupart des membres de la maison %noblehousename% vivent reclus derrière d\'épaisses portes et des fenêtres à barreaux et certains d\'entre eux n\'ont pas été vus depuis des années. La rumeur veut que leur sang noble soit en proie à la folie et à la démence, mais aucun homme ordinaire n\'ose prononcer de telles affirmations par crainte de leur vengeance. Les autres maisons nobles évitent principalement le contact avec la maison %noblehousename% car les invités peuvent être accueillis à bras ouverts ainsi qu\'avec des carreaux d\'arbalète.",
 			Mottos = [
-				"Nothing in life is permanent",
-				"Consider the end",
-				"We neither despise nor fear",
-				"Judge not",
-				"All things change",
-				"Every man for himself",
-				"All things are thus unstable",
-				"Beware the wolf"
+				"Rien dans la vie n\'est permanent",
+				"Considère la fin",
+				"Nous ne méprisons ni ne craignons rien",
+				"Ne jugez pas",
+				"Toutes les choses changent",
+				"Chacun pour soi",
+				"Toutes les choses sont donc instables",
+				"Méfiez-vous du loup"
 			]
 		}
 	]
@@ -208,40 +208,40 @@ gt.Const.CityStateArchetypes <- [
 		Traits = [
 			this.Const.FactionTrait.OrientalCityState
 		],
-		Description = "A wealthy and independent city state focused mostly on trade and acquiring further wealth.",
+		Description = "Une ville-état riche et indépendante, principalement axée sur le commerce et l\'acquisition de nouvelles richesses",
 		Mottos = [
-			"He lives well who lives peacefully",
-			"Wealth is my arrow",
-			"Wealth is our sword",
-			"Golden towers in the distance",
-			"A gift returned",
-			"One giveth, one taketh"
+			"Il vit bien qui vit paisiblement",
+			"La richesse est ma flèche",
+			"La richesse est notre épée",
+			"Les tours d\'or au loin",
+			"Un cadeau rendu",
+			"On donne, on prend"
 		]
 	},
 	{
 		Traits = [
 			this.Const.FactionTrait.OrientalCityState
 		],
-		Description = "A city state dedicated to acquiring knowledge above all - even if it comes at the cost of doing autopsies, reading forbidden tomes or engaging with sinister powers not of this world.",
+		Description = "Une ville-état dédiée à l\'acquisition de connaissances par-dessus tout - même si cela doit se faire au prix d\'autopsies, de lecture de tomes interdits ou d\'engagement avec des pouvoirs sinistres qui ne sont pas de ce monde",
 		Mottos = [
-			"Dare to be wise",
-			"Wisdom the conqueror of fortune",
-			"Read and learn",
-			"The castle of wisdom",
-			"Knowledge at last"
+			"Osez la sagesse",
+			"La sagesse, conquérante de la fortune",
+			"Lire et apprendre",
+			"Le château de la sagesse",
+			"La connaissance enfin"
 		]
 	},
 	{
 		Traits = [
 			this.Const.FactionTrait.OrientalCityState
 		],
-		Description = "A city state ruled by a ruthless council that is out to achieve power by all means. Many an untimely death is rumored to have been an assassination ordered by the viziers of %citystatename%.",
+		Description = "Une ville-état dirigée par un conseil impitoyable qui cherche à atteindre le pouvoir par tous les moyens. De nombreuses morts prématurées sont dues, selon la rumeur, à un assassinat commandité par les vizirs de %citystatename%.",
 		Mottos = [
-			"A snake in the grass",
-			"From the shadows",
-			"By all means",
-			"The hawk catcheth not flies"
-		]
+			"Un serpent dans l\'herbe",
+			"De l\'ombre",
+			"Par tous les moyens",
+			"Le faucon n\'attrape pas les mouches"
+    	]
 	}
 ];
 

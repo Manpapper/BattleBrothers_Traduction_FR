@@ -293,7 +293,7 @@ this.tavern_building <- this.inherit("scripts/entity/world/settlements/buildings
 			}
 			else
 			{
-				rumor = rumor + "The patrons talk about this and that.";
+				rumor = rumor + "Les clients parlent de ceci et de cela.";
 			}
 
 			local candidates = [];
