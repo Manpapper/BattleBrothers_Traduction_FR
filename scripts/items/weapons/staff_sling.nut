@@ -4,8 +4,8 @@ this.staff_sling <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.staff_sling";
-		this.m.Name = "Fronde";
-		this.m.Description = "Une fronde en cuir sur un bâton, utilisée pour lancer des pierres sur l\'ennemi. Avec des pierres abondantes partout, il ne manquera jamais de munitions.";
+		this.m.Name = "Fustibale";
+		this.m.Description = "Une fronde en cuir sur un bâton, utilisée pour lancer des pierres sur l\'ennemi. Avec des pierres partout, il ne manquera jamais de munitions.";
 		this.m.Categories = "Throwing Weapon, Two-Handed";
 		this.m.IconLarge = "weapons/ranged/sling_01.png";
 		this.m.Icon = "weapons/ranged/sling_01_70x70.png";
