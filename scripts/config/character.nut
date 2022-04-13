@@ -282,15 +282,15 @@ gt.Const.MoraleStateBrush <- [
 	""
 ];
 gt.Const.MoraleStateName <- [
-	"Fleeing",
-	"Breaking",
-	"Wavering",
-	"Steady",
-	"Confident",
-	"Unbreakable"
+	"Fuyant",
+	"Brisé",
+	"Vacillant",
+	"Stable",
+	"Confiant",
+	"Incassable"
 ];
 gt.Const.MoraleStateEvent <- [
-	" s'enfuit",
+	" s\'enfuit",
 	" se brise",
 	" est vacillant",
 	" est maintenant stable",
