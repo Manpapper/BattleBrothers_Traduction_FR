@@ -9,7 +9,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 200.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_170.png[/img]{You come across a band of nomads. Despite the severity of a war going on, they do not treat you as a threat. One welcomes you with a drink and the shade of an umbrella which you accept.%SPEECH_ON%I hope your travels have been kind, Crownling. You share a similarity with us dune runners, that of the interloper. The grievances between the north and south need not concern us.%SPEECH_OFF%He sips his own drink and nods.%SPEECH_ON%Though I suspect you have made a great deal of coin in the conflict. Some of my countrymen would consider you most faithful to the Gilder because of it.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_170.png[/img]{Vous rencontrez une bande de nomades. Malgré la gravité de la guerre en cours, ils ne vous traitent pas comme une menace. L'un d'entre eux vous accueille avec une boisson et l'ombre d'une ombrelle que vous acceptez.%SPEECH_ON% J'espère que vos voyages ont été agréables, Crownling. Vous partagez une similitude avec nous, coureurs des dunes, celle de l'intrus. Les griefs entre le nord et le sud n'ont pas à nous concerner.%SPEECH_OFF%Il boit une gorgée de sa propre boisson et hoche la tête.%SPEECH_ON%Je soupçonne que vous avez gagné beaucoup d'argent dans le conflit. Certains de mes compatriotes vous considèrent comme le plus fidèle au doreur à cause de cela.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -17,7 +17,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Options.push({
-					Text = "You don\'t follow the beliefs of your countrymen?",
+					Text = "Vous ne suivez pas les croyances de vos compatriotes?",
 					function getResult( _event )
 					{
 						return "B";
@@ -28,7 +28,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Wildman != null)
 				{
 					this.Options.push({
-						Text = "What is %wildmanfull% doing over there?",
+						Text = "Que fait %wildmanfull% là-bas?",
 						function getResult( _event )
 						{
 							return "D";
@@ -38,7 +38,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "And I\'m about to make even more after you\'re dead.",
+					Text = "Et je suis sur le point d'en faire encore plus après ta mort.",
 					function getResult( _event )
 					{
 						return "C";
@@ -50,13 +50,13 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_170.png[/img]{The nomad laughs.%SPEECH_ON%In matters of faith, why would anyone think alike?%SPEECH_OFF%He gathers up his rugs and umbrellas.%SPEECH_ON%I have heard in the north that there are wildmen like us.%SPEECH_OFF%You purse your lips, holding back a laugh.%SPEECH_ON%We\'ve men of the forest who have absconded civilization, aye. But they\'re a more... peculiar sort compared to you and yours. They are not so much like you.%SPEECH_OFF%Nodding, the nomad gives you a gift.%SPEECH_ON%But maybe they are and you just have not been listening to them.%SPEECH_OFF%He touches his chest with a fist then the nomads continue on their journey.}",
+			Text = "[img]gfx/ui/events/event_170.png[/img]{Le nomade rit.%SPEECH_ON%En matière de foi, pourquoi quelqu'un penserait de la même façon?%SPEECH_OFF%Il rassemble ses tapis et ses ombrelles.%SPEECH_ON%J'ai entendu dire dans le nord qu'il y a des hommes sauvages comme nous.%SPEECH_OFF%Vous pincez les lèvres, retenu un rire.%SPEECH_ON%Nous avons des hommes de la forêt qui ont fui la civilisation, oui. Mais ils sont d'une espèce plus... particulière que vous et les vôtres. Ils ne sont pas tellement comme toi.%SPEECH_OFF%En hochant la tête, le nomade te donne un cadeau.%SPEECH_ON%Mais peut-être qu'ils le sont et que tu ne les as pas écoutés.%SPEECH_OFF%Il se touche la poitrine avec un poing puis les nomades continuent leur voyage.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Thank you for your hospitality.",
+					Text = "Merci pour votre hospitalité.",
 					function getResult( _event )
 					{
 						return 0;
@@ -77,7 +77,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 
 				foreach( bro in brothers )
 				{
-					bro.improveMood(0.5, "Enjoyed the hospitality of nomads");
+					bro.improveMood(0.5, "Apprécié l'hospitalité des nomades");
 
 					if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 					{
@@ -93,13 +93,13 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_170.png[/img]{You finish your drink and tell the man your time with him was all very interesting. He goes to shake your hand at which point you put the sword through him. The rest of the company joins in and the battle is as short-lived as your sense of hospitality. The nomads have little worthwhile in their holding, but no one will know of what you\'ve done here, though it\'s unlike they would care anyway.}",
+			Text = "[img]gfx/ui/events/event_170.png[/img]{Vous finissez votre verre et dites à l'homme que le temps passé avec lui était très intéressant. Il va vous serrer la main et vous lui transpercez de votre l'épée. Le reste de la compagnie se joint à vous et la bataille est aussi brève que votre sens de l'hospitalité. Les nomades n'ont pas grand-chose de valable dans leur propriété, mais personne ne saura ce que vous avez fait ici, bien qu'il soit peu probable qu'ils s'en soucient de toute façon.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take anything we can use.",
+					Text = "Prenez tout ce que nous pouvons utiliser",
 					function getResult( _event )
 					{
 						return 0;
@@ -139,7 +139,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 				{
 					if (bro.getBackground().isOffendedByViolence() && this.Math.rand(1, 100) <= 75)
 					{
-						bro.worsenMood(0.75, "Disliked that you killed and robbed your hosts");
+						bro.worsenMood(0.75, "Je n'ai pas aimé que vous ayez tué et volé vos hôtes.");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -156,13 +156,13 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_170.png[/img]{%wildman% the wildman steps beneath the umbrella. The nomad stares at him, and the wildman at the nomad. You ask if they know each other. The nomad smiles.%SPEECH_ON%No, but yes. We\'ve kindred spirits. I can see it in his eyes.%SPEECH_OFF%The wildman hoots and grunts, then turns and leaves. When you return your gaze to the nomad he is holding out a gilded dagger.%SPEECH_ON%Treasures, golds, those things which shine and catch a man\'s eye, they carry little value to me. I found this upon one of the Vizier\'s guards. We had slain him and his caravan for their food and water, the things which I believe most important. You may have the dagger, as nothing more than a gift.%SPEECH_OFF%You take it, but warn him that if he ambushes you the way he did the Vizier\'s men that you will perhaps use the very same dagger against him. The nomad nods.%SPEECH_ON%And yet it is still my gift. I would find the occasion to be of such irony that it could only be a pleasure to die in such a manner. There are worse ways to go here in the desert, friend.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_170.png[/img]{%wildman% le sauvageon s'avance sous l'ombrelle. Le nomade le regarde, et le sauvageon regarde le nomade. Vous demandez s'ils se connaissent. Le nomade sourit. %SPEECH_ON%Non, mais oui. Nous sommes des âmes sœurs. Je peux le voir dans ses yeux.%SPEECH_OFF% Le sauvageon hulule et grogne, puis se retourne et part. Quand tu retournes ton regard vers le nomade, il te tend une dague dorée.%SPEECH_ON%Les trésors, l'or, ces choses qui brillent et attirent l'œil de l'homme, ils ont peu de valeur pour moi. Je l'ai trouvé sur l'un des gardes du Vizir. Nous les avions tués, lui et sa caravane, pour leur nourriture et leur eau, les choses qui me semblent les plus importantes. Tu peux avoir la dague, ce n'est rien de plus qu'un cadeau. %SPEECH_OFF% Tu la prends, et le previens que s'il te tend une embuscade comme il l'a fait avec les hommes du Vizir, tu utiliseras peut-être cette même dague contre lui. Le nomade hoche la tête. %SPEECH_ON%Et pourtant c'est toujours mon cadeau. Je trouverais l'occasion si ironique que ce ne pourrait être qu'un plaisir de mourir de cette manière. Il y a de pires façons de mourir dans le désert, mon ami.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Thank you for your generosity.",
+					Text = "Merci pour votre générosité.",
 					function getResult( _event )
 					{
 						return 0;
@@ -184,7 +184,7 @@ this.holywar_neutral_nomads_event <- this.inherit("scripts/events/event", {
 
 				foreach( bro in brothers )
 				{
-					bro.improveMood(0.5, "Enjoyed the hospitality of nomads");
+					bro.improveMood(0.5, "Apprécié l'hospitalité des nomades");
 
 					if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 					{

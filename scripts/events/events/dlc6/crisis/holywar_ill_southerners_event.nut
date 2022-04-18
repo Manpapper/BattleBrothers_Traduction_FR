@@ -7,13 +7,13 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{You come across a homestead and think to pass it but all of a sudden the door swings open and a man falls out, legs scissoring across the porch until he falls flat in the front yard. Drawing your sword, you investigate him. Turning him over reveals a green and purple face, a mouth caked with vomit and dried blood, and hair falling out of his head. You leave the body and enter the homestead where you find more men like him. They\'re all southerners and seem to have come down with some northern illness that they are perhaps uninitiated to. Judging by the slovenly state of their equipment, they\'ve been holed up here for quite some time.\n\n One of the southerners reaches out to you with a decrepit hand.%SPEECH_ON%Please, send us to the Gilder. The light of this world is no more.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{Vous croisez une ferme et pensez passer devant, mais tout à coup, la porte s'ouvre et un homme en tombe, les jambes se balançant sur le porche jusqu'à ce qu'il tombe à plat dans le jardin. Dégainant votre épée, vous l'examinez. En le retournant, vous découvrez un visage vert et violet, une bouche recouverte de vomi et de sang séché, et des cheveux tombant de sa tête. Vous laissez le corps et entrez dans la ferme où vous trouvez d'autres hommes comme lui. Ce sont tous des sudistes qui semblent avoir contracté une maladie nordique à laquelle ils ne sont peut-être pas immunisé. À en juger par l'état négligé de leur équipement, ils sont terrés ici depuis un certain temps. L'un des sudistes vous tend une main décrépite. S'il vous plaît, envoyez-nous au doreur. La lumière de ce monde n'est plus.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let us end them with dignity",
+					Text = "Terminons-les avec dignité",
 					function getResult( _event )
 					{
 						return "B";
@@ -21,7 +21,7 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "May the flies feast upon your decrepit flesh.",
+					Text = "Que les mouches festoient sur votre chair décrépite.",
 					function getResult( _event )
 					{
 						return "C";
@@ -36,13 +36,13 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{The southerners are killed with dignity, or at least as much dignity a sword can afford. Of course, you kill them at length, not daring to lay a hand on their diseased bodies. After each is laid to rest, you take a look around the homestead. To your luck, and probably because the material was rubbing their skins raw, the sickly had lain some equipment off to the side. You have the brothers scrub it clean and take it with you onto the road. While leaving, there\'s some grousing about how maybe these men deserved worse, but others are quite fine with the mercy killings.}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{Les Sudistes sont tués avec dignité, ou du moins autant de dignité qu'une épée peut le permettre. Bien sûr, vous les tuez longuement, sans oser poser la main sur leurs corps malades. Après les avoir enterrés, vous jetez un coup d'oeil à la propriété. Par chance, et probablement parce que le matériau frottait leurs peaux à vif, les malades avaient déposé du matériel sur le côté. Vous demandez aux frères de le nettoyer et vous l'emportez avec vous sur la route. En partant, il y a quelques râleurs qui disent que ces hommes méritaient peut-être pire, mais d'autres sont tout à fait d'accord avec les meurtres par pitié.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Better they don\'t suffer any longer.",
+					Text = "Il vaut mieux qu'ils ne souffrent pas plus longtemps.",
 					function getResult( _event )
 					{
 						return 0;
@@ -70,7 +70,7 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getEthnicity() == 1 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.improveMood(1.0, "Approved of your decision to end the suffering of fellow Gilded");
+						bro.improveMood(1.0, "J'approuve votre décision de mettre fin aux souffrances de mes camarades dorés.");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -83,7 +83,7 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getEthnicity() == 0 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.worsenMood(0.75, "Disliked that you ended the suffering of southern invaders");
+						bro.worsenMood(0.75, "Je n'ai pas aimé que vous mettiez fin aux souffrances des envahisseurs du Sud");
 
 						if (bro.getMoodState() > this.Const.MoodState.Neutral)
 						{
@@ -100,13 +100,13 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{Some of the southerners\' gear has been taken off and placed about the room. You have the sellswords take these and scrub them clean. Going to the front door, you light a torch and tell them the Gilder shall be seeing them in his true self real soon. The soldiers beg for mercy, a writhing mass of silhouettes crawling toward you, groaning in weakness and fear. You close the door and set the rooftop alight before pitching the torch through a window.\n\nYou\'ve taught your men well to not take it personal on these sorts of decisions, but you suspect some in the %companyname% might not care for this one.}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{Une partie de l'équipement des sudistes a été enlevée et placée dans la pièce. Vous demandez aux mercenaires de les prendre et de les nettoyer. Vous vous rendez à la porte d'entrée, allumez une torche et dites-leur que le doreur les verra bientôt sous son vrai jour. Les soldats implorent la pitié, une masse de silhouettes se tordant en rampant vers vous, gémissant de faiblesse et de peur. Vous fermez la porte et mettez le feu au toit avant de lancer la torche à travers une fenêtre. Vous avez bien appris à vos hommes à ne pas prendre personnellement ce genre de décisions, mais vous pensez que certains membres du %companyname% pourraient ne pas apprécier celle-ci.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "They have no place invading the north.",
+					Text = "Ils n'ont pas à envahir le nord.",
 					function getResult( _event )
 					{
 						return 0;
@@ -135,7 +135,7 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getEthnicity() == 1 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.worsenMood(1.0, "Disliked that you left fellow Gilded to suffer a slow death");
+						bro.worsenMood(1.0, "Je n'ai pas aimé que vous laissiez le camarade Gilded souffrir d'une mort lente.");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -148,7 +148,7 @@ this.holywar_ill_southerners_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getEthnicity() == 0 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.improveMood(0.75, "Approved of your decision to leave southern invaders to die");
+						bro.improveMood(0.75, "Approuvé votre décision de laisser mourir les envahisseurs du Sud.");
 
 						if (bro.getMoodState() > this.Const.MoodState.Neutral)
 						{

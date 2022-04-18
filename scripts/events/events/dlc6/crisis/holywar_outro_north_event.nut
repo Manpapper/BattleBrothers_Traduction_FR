@@ -8,12 +8,12 @@ this.holywar_outro_north_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_84.png[/img]{Faith placed in the old gods has been rewarded: the holy war is over, and the northerners stand victorious. Songs fill the air as crowds move as a mob, fists pumping, flags flying, becoming briefly uniform in a shared sense of piety. You stand by the wayside, your shoulders already wreathed in adornments, beads, necklaces, things of no material value, and yet they bear some weight which the wearer can only find by looking into the eyes of those who hand them out.\n\n Of course, certain dignities go unrealized in the celebration: the bodies of the defeated are put on display, thrashed in ways meant to satisfy the old gods that are watching, and holy totems of the Gilder are mocked, desecrated, and ultimately burned. And it is indeed certain that not a joyful soul will recognize you as a force in this cheerful culmination. You\'ve merely slipped right into the background once more, sellsword, crownling, interloper. But the %companyname% made a small fortune in the religious endeavors. Despite the smiles and laughs, you know that strife such as this is buried in the mind, not in the earth, and someday someone or something will come and resurrect it, and there the company will await another glorious payday. Or perhaps now would be a good time to put up the sword and enjoy your crowns?\n\n%OOC%You\'ve won! Battle Brothers is designed for replayability and for campaigns to be played until you\'ve beaten one or two late game crises. Starting a new campaign will allow you to try out different things in a different world.\n\nYou can also choose to continue your campaign for as long as you want. Just be aware that campaigns are not intended to last forever and you\'re likely to run out of challenges eventually.%OOC_OFF%}",
+			Text = "[img]gfx/ui/events/event_84.png[/img]{La foi placée dans les anciens dieux a été récompensée : la guerre sainte est terminée, et les Nordistes sont victorieux. Des chants emplissent l'air tandis que la foule se déplace, poings levés, drapeaux flottants, s'uniformisant brièvement dans un sentiment de piété partagé. Vous vous tenez sur le bord du chemin, les épaules déjà parées d'ornements, de perles, de colliers, d'objets sans valeur matérielle, et pourtant ils ont un poids que celui qui les porte ne peut trouver qu'en regardant dans les yeux de ceux qui les distribuent. Bien sûr, certaines dignités ne sont pas respectées lors de la célébration : les corps des vaincus sont exposés, battus de manière à satisfaire les anciens dieux qui veillent, et les totems sacrés des doreur sont moqués, profanés, et finalement brûlés. Et il est en effet certain qu'aucune âme joyeuse ne vous reconnaîtra comme une force dans cet heureux aboutissement. Vous vous êtes simplement glissé dans l'ombre une fois de plus, vendeur, couronné, intrus. Mais le %companyname% a fait une petite fortune dans les entreprises religieuses. Malgré les sourires et les rires, vous savez que de telles querelles sont enfouies dans l'esprit, pas dans la terre, et qu'un jour quelqu'un ou quelque chose viendra les ressusciter, et là, la compagnie attendra un autre glorieux jour de paie. Ou peut-être serait-ce le moment de retirer l'épée et de profiter de vos couronnes ? Vous avez gagné ! Battle Brothers a été conçu pour être rejouable et pour que les campagnes soient jouées jusqu'à ce que vous ayez surmonté une ou deux crises de fin de partie. Commencer une nouvelle campagne vous permettra d'essayer différentes choses dans un monde différent. Vous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas conçues pour durer éternellement et qu'il est probable que vous finissiez par manquer de défis.%OOC_OFF%}",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "The %companyname% needs their commander!",
+					Text = "Le %companyname% a besoin de son commandant!",
 					function getResult( _event )
 					{
 						return 0;
@@ -21,7 +21,7 @@ this.holywar_outro_north_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s time to retire from mercenary life. (End Campaign)",
+					Text = "Il est temps de se retirer de la vie de mercenaire. (End Campaign)",
 					function getResult( _event )
 					{
 						this.World.State.getMenuStack().pop(true);
@@ -59,12 +59,24 @@ this.holywar_outro_north_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_84.png[/img]{Uttering their name is to draw words from tongue to intemporal: the old gods. They are beyond time, and their vast number invoke awe over specificity. Endearing as this is to any listener familiar or not with the faith, it also brings greater weight to any defeat of those who follow these unbranded beings. The crusades are over, and the northerners have lost.\n\n You watch as the northerners try and explain it to one another how it came to pass. It was not a terrestrial defeat here, nor even a victory by the southerners - no, this was punishment. Northerners have grazed far from the holy lands, they have meadowed in the material world, priories and churches dot the realm, empty and hollow for far too long. Naturally, inquiries about the nature of this southern \'Gilder\' have also come, but they quickly pass. To even dwell on Him is to invite doubt, and right now doubt is as dangerous as any poison. Of course, the %companyname% stays at a distance. Sellswords that you are, you put faith in your sword and in the purse, and both got their dues in this war. The only philosophizing you\'ll be doing in the days to come is pondering just how soon the north and south will resume stating their differences. Perhaps now would be a good time to put up the sword and enjoy your crowns?\n\n%OOC%You\'ve won! Battle Brothers is designed for replayability and for campaigns to be played until you\'ve beaten one or two late game crises. Starting a new campaign will allow you to try out different things in a different world.\n\nYou can also choose to continue your campaign for as long as you want. Just be aware that campaigns are not intended to last forever and you\'re likely to run out of challenges eventually.%OOC_OFF%}",
+			Text = "[img]gfx/ui/events/event_84.png[/img]{Tous
+Actualités
+Shopping
+Vidéos
+Images
+Plus
+Outils
+
+Environ 2 300 000 000 résultats (0,33 secondes) 
+Anglais
+Français
+
+Prononcer leur nom, c'est tirer des mots de la langue vers l'intemporel : les anciens dieux. Ils sont au-delà du temps, et leur grand nombre suscite la crainte de la spécificité. Aussi attachant que cela soit pour tout auditeur familier ou non avec la foi, cela donne également plus de poids à toute défaite de ceux qui suivent ces êtres sans marque. Les croisades sont terminées et les nordistes ont perdu.\n\n Vous regardez les nordistes essayer d'expliquer les uns aux autres comment cela s'est passé. Ce n'était pas une défaite terrestre ici, ni même une victoire des sudistes - non, c'était une punition. Les habitants du Nord ont pâturé loin des terres saintes, ils ont pâturé dans le monde matériel, les prieurés et les églises parsèment le royaume, vides et creux depuis bien trop longtemps. Naturellement, des demandes de renseignements sur la nature de ce doreur du sud sont également venues, mais elles passent rapidement. Ne serait-ce que s'attarder sur Lui, c'est inviter au doute, et en ce moment, le doute est aussi dangereux que n'importe quel poison. Bien entendu, la %companyname% reste à distance. Vendswords que vous êtes, vous avez mis la foi dans votre épée et dans la bourse, et les deux ont obtenu leur dû dans cette guerre. La seule philosophie que vous ferez dans les jours à venir est de vous demander à quel moment le nord et le sud recommenceront à énoncer leurs différences. Ce serait peut-être le bon moment pour lever l'épée et profiter de vos couronnes ? Vous avez gagné ! Battle Brothers est conçu pour être rejouable et pour que les campagnes soient jouées jusqu'à ce que vous ayez surmonté une ou deux crises de fin de partie. Commencer une nouvelle campagne vous permettra d'essayer différentes choses dans un monde différent. Vous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas conçues pour durer éternellement et qu'il est probable que vous finissiez par manquer de défis.%OOC_OFF%}",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "The %companyname% needs their commander!",
+					Text = "la %companyname% a besoin de leur commandant!",
 					function getResult( _event )
 					{
 						return 0;
@@ -72,7 +84,7 @@ this.holywar_outro_north_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s time to retire from mercenary life. (End Campaign)",
+					Text = "Il est temps de se retirer de la vie de mercenaire. (End Campaign)",
 					function getResult( _event )
 					{
 						this.World.State.getMenuStack().pop(true);

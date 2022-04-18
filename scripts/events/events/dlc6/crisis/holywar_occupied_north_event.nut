@@ -10,13 +10,13 @@ this.holywar_occupied_north_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_%image%.png[/img]{News travels fast with a bit of religious spurring: %holysite% has been taken by northern crusaders! | Crusaders from the north have taken %holysite%. You\'re not sure if this means the war is soon to be at an end. It would be a shame if that were the case as all this strife has made for such great opportunities. | %holysite% has fallen under the banner of northern crusaders! While the old gods no doubt rejoice, the followers of the Gilder will presumably seek to have it taken back. This may present opportunities for the %companyname%.}",
+			Text = "[img]gfx/ui/events/event_%image%.png[/img]{Les nouvelles vont vite avec un peu d'élan religieux : %holysite% a été prise par les croisés du nord ! | Les croisés du nord ont pris %holysite%. Vous ne savez pas si cela signifie que la guerre est bientôt terminée. Il serait dommage que ce soit le cas, car toutes ces querelles ont créé de belles opportunités. | La %holysite% est tombée sous la bannière des croisés du Nord ! Alors que les anciens dieux se réjouissent sans doute, les adeptes du doreur chercheront sans doute à le récupérer. Cela peut présenter des opportunités pour le %companyname%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The fires of religious turmoil burn bright.",
+					Text = "Les feux de l'agitation religieuse brûlent.",
 					function getResult( _event )
 					{
 						return 0;

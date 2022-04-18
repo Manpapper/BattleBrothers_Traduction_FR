@@ -7,13 +7,13 @@ this.holywar_flavor_south_settlement_event <- this.inherit("scripts/events/event
 		this.m.Cooldown = 20.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "{[img]gfx/ui/events/event_97.png[/img]Children peep their heads over a sand dune, just missing another group of children hiding in the shade of a defilade. When the first troop come over the top, the ambushing kids jump out and stab them with sticks and slay them down.%SPEECH_ON%Death to the northerners, may the Gilder\'s gaze shine upon us!%SPEECH_OFF%The slain kids slide down the dune, limp and lifeless, before jolting back to their feet and arguing that it is their turn to play the \'good guys.\' It seems the holy war has already invigorated the next generation to be ready when their time comes. | [img]gfx/ui/events/event_166.png[/img]Rows and rows of the faithful bend to the sands to give their prayers to the Gilder. All manner of men and women and children alike, and dissimilar, being that there were wealthy merchants beside impoverished beggars. The only real standouts are the Vizier and the councilmen, who all pray beside the priests at the head of the procession. That is if these men are praying at all: as far as you can tell, the council is whispering amongst themselves, some not paying the slightest bit of attention to the ceremony.}",
+			Text = "{[img]gfx/ui/events/event_97.png[/img]Des enfants passent la tête par-dessus une dune de sable, manquant de peu un autre groupe d'enfants cachés à l'ombre d'une défilade. Quand la première troupe arrive par le haut, les enfants en embuscade sautent et les poignardent avec des bâtons et les tuent.%SPEECH_ON%Mort aux nordiques, que le regard du doreur nous éclaire!%SPEECH_OFF%Les enfants tués glissent le long de la dune, mous et sans vie, avant de se remettre sur leurs pieds et de dire que c'est leur tour de jouer les gentils. Il semble que la guerre sainte ait déjà revigoré la prochaine génération pour qu'elle soit prête quand son heure viendra. | [img]gfx/ui/events/event_166.png[/img]Des rangées et des rangées de fidèles se penchent sur le sable pour offrir leurs prières au Gilder. Toutes sortes d'hommes, de femmes et d'enfants, semblables ou non, puisqu'il y a de riches marchands à côté de mendiants appauvris. Les seules exceptions sont le vizir et les conseillers, qui prient tous aux côtés des prêtres en tête de la procession. Si tant est que ces hommes prient : pour autant que l'on puisse en juger, les membres du conseil chuchotent entre eux, certains ne prêtant pas la moindre attention à la cérémonie.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A strange time.",
+					Text = "Une époque étrange.",
 					function getResult( _event )
 					{
 						return 0;

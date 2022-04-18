@@ -10,13 +10,13 @@ this.holywar_occupied_south_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_%image%.png[/img]{News is coming that the Gilded ones have conquered %holysite%. What they plan to do with it, who knows. Maybe put up a gold-plated fence to keep the northerners out? You\'re mostly concerned the fighting might be nearing an end, and with it all the sweet religious honey the %companyname% has been eating up. | The Gilder\'s gleam must be brighter than ever now: %holysite% has fallen under control of the southerners. Perhaps the Gilded folk will ask the %companyname% to help defend it, or maybe the old gods will need a bit of proper gumption in taking it back. Either way, the %companyname% is still on the catbird seat for fattening its purse.}",
+			Text = "[img]gfx/ui/events/event_%image%.png[/img]{La nouvelle arrive que les dorés ont conquis la %holysite%. Ce qu'ils prévoient d'en faire, qui sait. Peut-être installer une barrière dorée pour empêcher les gens du nord d'entrer ? Vous êtes surtout inquiets que les combats touchent à leur fin, et avec eux tout le doux miel religieux que le %companyname% a mangé. | La lueur du Doreur doit être plus brillante que jamais maintenant : %holysite% est tombé sous le contrôle des sudistes. Peut-être que le peuple doré demandera au %companyname% d'aider à le défendre, ou peut-être que les anciens dieux auront besoin d'un peu de jugeote pour le reprendre. Quoi qu'il en soit, le %companyname% est toujours bien placé pour engraisser sa bourse.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The fires of religious turmoil burn bright.",
+					Text = "Les feux de l'agitation religieuse brûlent.",
 					function getResult( _event )
 					{
 						return 0;
