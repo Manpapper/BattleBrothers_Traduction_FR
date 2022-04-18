@@ -59,24 +59,12 @@ this.holywar_outro_north_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_84.png[/img]{Tous
-Actualités
-Shopping
-Vidéos
-Images
-Plus
-Outils
-
-Environ 2 300 000 000 résultats (0,33 secondes) 
-Anglais
-Français
-
-Prononcer leur nom, c\'est tirer des mots de la langue vers l\'intemporel : les anciens dieux. Ils sont au-delà du temps, et leur grand nombre suscite la crainte de la spécificité. Aussi attachant que cela soit pour tout auditeur familier ou non avec la foi, cela donne également plus de poids à toute défaite de ceux qui suivent ces êtres sans marque. Les croisades sont terminées et les nordistes ont perdu.\n\n Vous regardez les nordistes essayer d\'expliquer les uns aux autres comment cela s\'est passé. Ce n\'était pas une défaite terrestre ici, ni même une victoire des sudistes - non, c\'était une punition. Les habitants du Nord ont pâturé loin des terres saintes, ils ont pâturé dans le monde matériel, les prieurés et les églises parsèment le royaume, vides et creux depuis bien trop longtemps. Naturellement, des demandes de renseignements sur la nature de ce doreur du sud sont également venues, mais elles passent rapidement. Ne serait-ce que s\'attarder sur Lui, c\'est inviter au doute, et en ce moment, le doute est aussi dangereux que n\'importe quel poison. Bien entendu, la %companyname% reste à distance. Vendswords que vous êtes, vous avez mis la foi dans votre épée et dans la bourse, et les deux ont obtenu leur dû dans cette guerre. La seule philosophie que vous ferez dans les jours à venir est de vous demander à quel moment le nord et le sud recommenceront à énoncer leurs différences. Ce serait peut-être le bon moment pour lever l\'épée et profiter de vos couronnes ? Vous avez gagné ! Battle Brothers est conçu pour être rejouable et pour que les campagnes soient jouées jusqu\'à ce que vous ayez surmonté une ou deux crises de fin de partie. Commencer une nouvelle campagne vous permettra d\'essayer différentes choses dans un monde différent. Vous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas conçues pour durer éternellement et qu\'il est probable que vous finissiez par manquer de défis.%OOC_OFF%}",
+			Text = "[img]gfx/ui/events/event_84.png[/img]{Prononcer leur nom, c\'est tirer des mots de la langue vers l\'intemporel : les anciens dieux. Ils sont au-delà du temps, et leur grand nombre suscite la crainte de la spécificité. Aussi attachant que cela soit pour tout auditeur familier ou non avec la foi, cela donne également plus de poids à toute défaite de ceux qui suivent ces êtres sans marque. Les croisades sont terminées et les nordistes ont perdu.\n\n Vous regardez les nordistes essayer d\'expliquer les uns aux autres comment cela s\'est passé. Ce n\'était pas une défaite terrestre ici, ni même une victoire des sudistes - non, c\'était une punition. Les habitants du Nord ont pâturé loin des terres saintes, ils ont pâturé dans le monde matériel, les prieurés et les églises parsèment le royaume, vides et creux depuis bien trop longtemps. Naturellement, des demandes de renseignements sur la nature de ce doreur du sud sont également venues, mais elles passent rapidement. Ne serait-ce que s\'attarder sur Lui, c\'est inviter au doute, et en ce moment, le doute est aussi dangereux que n\'importe quel poison. Bien entendu, la %companyname% reste à distance. Vendswords que vous êtes, vous avez mis la foi dans votre épée et dans la bourse, et les deux ont obtenu leur dû dans cette guerre. La seule philosophie que vous ferez dans les jours à venir est de vous demander à quel moment le nord et le sud recommenceront à énoncer leurs différences. Ce serait peut-être le bon moment pour lever l\'épée et profiter de vos couronnes ? Vous avez gagné ! Battle Brothers est conçu pour être rejouable et pour que les campagnes soient jouées jusqu\'à ce que vous ayez surmonté une ou deux crises de fin de partie. Commencer une nouvelle campagne vous permettra d\'essayer différentes choses dans un monde différent. Vous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas conçues pour durer éternellement et qu\'il est probable que vous finissiez par manquer de défis.%OOC_OFF%}",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "la %companyname% a besoin de leur commandant!",
+					Text = "La %companyname% a besoin de leur commandant!",
 					function getResult( _event )
 					{
 						return 0;

@@ -86,9 +86,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Voyages en toute sécurité.
-
-",
+					Text = "Voyages en toute sécurité.",
 					function getResult( _event )
 					{
 						return 0;
