@@ -30,10 +30,10 @@ gt.Const.Strings.RumorsLocation <- [
 	"Il y a un endroit appelé %location% %terrain% à la %direction% d\'ici. La plupart des gens le connaissent, je pense, mais peu s\'y aventureraient.",
 	"%randomname% m\'a parlé de %location% l\'autre jour. Plein de trésors, il a dit, à %distance% %direction% d\'ici. Ou peut-être que je m\'en souviens mal.",
 	"Si c\'est l\'aventure que tu cherches, il y a un endroit appelé %location% %terrain% %direction% d\'ici. Je ne sais pas qui y vit de nos jours, par contre.",
-	"Tu as entendu parler de %location% ? Les gens disent que c\'est hanté, avec les morts qui marchent et tout ça. Quelque part à %direction% d\'ici. Peut-être que quelqu\'un d\'autre à %nom de la ville% pourra vous en dire plus...",
+	"Tu as entendu parler de %location% ? Les gens disent que c\'est hanté, avec les morts qui marchent et tout ça. Quelque part à %direction% d\'ici. Peut-être que quelqu\'un d\'autre à %townname% pourra vous en dire plus...",
 	"Vous connaissez... Bon sang, comment ça s\'appelle déjà ? Dans la %direction% %distance% d\'ici, %terrain%. Je n\'arrive pas à me rappeler comment on l\'appelait avant...",
 	"Vous avez croisé %location% en venant ici ? Pourquoi, c\'est %terrain% dans la %direction%. Quelqu\'un devrait vous engager pour brûler cette chose. Rien de bon ne vient de là, ça c\'est sûr.",
-	"Nous avons repéré quelque chose en venant ici, caché loin de la route, %terrain% %distance% %direction% de %nom de la ville%. Je ne sais pas comment les gens du coin l\'appellent, ni même s\'ils le connaissent, mais ça pourrait valoir le coup d\'y retourner."
+	"Nous avons repéré quelque chose en venant ici, caché loin de la route, %terrain% %distance% %direction% de %townname%. Je ne sais pas comment les gens du coin l\'appellent, ni même s\'ils le connaissent, mais ça pourrait valoir le coup d\'y retourner."
 ];
 gt.Const.Strings.RumorsContract <- [
 	"J\'ai entendu dire que le conseil de %settlement% cherche à engager des mercenaires. Je ne sais pas pour quoi faire.",
@@ -105,7 +105,7 @@ gt.Const.Strings.RumorsMilitary <- [
 	"Quatorze. C\'est le nombre d\'hommes que j\'ai tués. Les femmes, je compte en plus, trois jusqu\'à présent. Et vous ?",
 	"Je fais habituellement la surveillance sur le corps de garde. Pour être honnête, cracher sur des voyageurs est le seul plaisir que j\'ai de la journée.",
 	"L\'ambiance au sein de la garnison est plutôt mauvaise. Ils disent que le paiement a été retardé plusieurs fois déjà et tout le monde commence à perdre patience.",
-	"Quand j\'ai été transféré à %nom de la ville%, je n\'aurais jamais imaginé que la vie ici serait si terne et si dure. Mais c\'est toujours mieux que de travailler dans les champs jusqu\'à ce que ton dos se brise, je suppose...",
+	"Quand j\'ai été transféré à %townname%, je n\'aurais jamais imaginé que la vie ici serait si terne et si dure. Mais c\'est toujours mieux que de travailler dans les champs jusqu\'à ce que ton dos se brise, je suppose...",
 	"Je préfère me battre avec mon fléau. C\'est difficile de se défendre et peu importe s\'ils ont un bouclier, je le contourne et je réduis leur tête en bouillie !",
 	"C\'est presque impossible de trouver un bouclier fiable par ici, ces satanés trucs se cassent en deux. J\'en garde un de rechange sur moi maintenant, juste au cas où. Je devrais faire payer plus cher les hommes qui se battent à la hache, ha !",
 	"Un jour, je serai le porte-drapeau de la compagnie. Il n\'y a que les plus courageux d\'entre nous et ils sont dans la compagnie depuis des années et des années, vous savez, mais c\'est le plus grand honneur pour un homme de sang commun. J\'ai même vu un chevalier serrer la main des nôtres une fois.",
@@ -156,7 +156,7 @@ gt.Const.Strings.RumorsSteppeSettlement <- [
 	"Laissez-moi vous dire que le vin du sud est le meilleur que vous puissiez trouver dans toutes les terres. Mais tu ferais mieux de commencer à frapper quelques têtes ou d\'autres moyen pour pouvoir t\'offrir le bon vin, parce qu\'il n\'est pas bon marché.",
 	"Un commerçant du nord s\'est perdu dans la steppe l\'autre semaine. Il est revenu mais n\'a pas cessé de fantasmer sur un lac qu\'il aurait découvert entouré de plantes luxuriantes et d\'animaux étranges.",
 	"Dites à vos hommes de ne pas toucher à la fille de l\'aubergiste. Le dernier amoureux qui a tenté quelque chose a eu le nez coupé.",
-	"Je suis originaire du nord, j\'ai déménagé à %nom de la ville% il y a quelques années. Je n\'ai jamais pu supporter le froid, la neige et le vent, jour après jour. Alors un jour, je me suis dit, %randomname%, j\'ai dit, va là où le soleil réchauffe la terre et où tu ne trembles pas à chaque fois que tu vas chercher du bois pour le feu. Et c\'est ce que j\'ai fait. Je ne l\'ai pas regretté depuis."
+	"Je suis originaire du nord, j\'ai déménagé à %townname% il y a quelques années. Je n\'ai jamais pu supporter le froid, la neige et le vent, jour après jour. Alors un jour, je me suis dit, %randomname%, j\'ai dit, va là où le soleil réchauffe la terre et où tu ne trembles pas à chaque fois que tu vas chercher du bois pour le feu. Et c\'est ce que j\'ai fait. Je ne l\'ai pas regretté depuis."
 ];
 gt.Const.Strings.RumorsSwampSettlement <- [
 	"Vous aimez les champignons ? Eh bien, je les déteste ! Mais il n\'y a pas grand chose d\'autre à trouver dans ce marécage puant à part des moucherons et des araignées.",
@@ -234,7 +234,7 @@ gt.Const.Strings.RumorsItemsUndead <- [
 	],
 	[
 		"Donc %terrain% %direction% d\'ici est supposé être le dernier lieu de repos d\'une pièce d\'armure mystique. Je ne connais pas le nom moi-même, je sais juste que beaucoup d\'aventuriers y vont et ne reviennent pas. Je ne sais pas pourquoi je vous en ai parlé, vraiment. J\'aime vos affaires.",
-		"Vous avez entendu parler de %location% ? Demandez à n\'importe qui par ici, elle hante %nom de la ville% depuis avant ma naissance. Les gens disent qu\'une armure des dieux y est scellée à jamais, depuis l\'époque où l\'homme s\'est installé ici. "
+		"Vous avez entendu parler de %location% ? Demandez à n\'importe qui par ici, elle hante %townname% depuis avant ma naissance. Les gens disent qu\'une armure des dieux y est scellée à jamais, depuis l\'époque où l\'homme s\'est installé ici. "
 	]
 ];
 gt.Const.Strings.RumorsItemsBarbarians <- [
