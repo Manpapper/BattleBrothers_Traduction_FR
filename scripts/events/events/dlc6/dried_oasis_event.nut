@@ -10,7 +10,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 120.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{Le désert est si semblable que la vue d'un peu de verdure attire immédiatement le regard. Tel est le magnétisme d'une oasis. Vous l'apercevez de loin, et en vous approchant, vous réalisez que le vert n'est pas du tout un arbre, mais une bannière qui s'envole de la prise d'un arbre mort et séché. Autour de lui, il y a d'autres arbres morts, dont certains se sont écrasés dans les sables qui les rongent de toutes parts. Et au milieu de cette oasis disparue se trouve un squelette, la tête en bas, dans une petite cuvette de terre où, peut-être, il y avait de l'eau autrefois. À côté du squelette se trouve un tas de trésors. Toutes les couronnes du monde, mais pas une seule goutte d'eau pour les dépenser. Tu te diriges vers l'or, mais les pièces bougent avec toi, s'écartant les unes des autres tandis qu'un serpent noir s'élève et te siffle dessus. Du poisons verts s'écoulent de ses crocs.}",
+			Text = "%terrainImage%{Le désert est si semblable que la vue d\'un peu de verdure attire immédiatement le regard. Tel est le magnétisme d\'une oasis. Vous l\'apercevez de loin, et en vous approchant, vous réalisez que le vert n\'est pas du tout un arbre, mais une bannière qui s\'envole de la prise d\'un arbre mort et séché. Autour de lui, il y a d\'autres arbres morts, dont certains se sont écrasés dans les sables qui les rongent de toutes parts. Et au milieu de cette oasis disparue se trouve un squelette, la tête en bas, dans une petite cuvette de terre où, peut-être, il y avait de l\'eau autrefois. À côté du squelette se trouve un tas de trésors. Toutes les couronnes du monde, mais pas une seule goutte d\'eau pour les dépenser. Tu te diriges vers l\'or, mais les pièces bougent avec toi, s\'écartant les unes des autres tandis qu\'un serpent noir s\'élève et te siffle dessus. Du poisons verts s\'écoulent de ses crocs.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -18,7 +18,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Options.push({
-					Text = "Que quelqu'un aille le chercher !",
+					Text = "Que quelqu\'un aille le chercher !",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -39,7 +39,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Cela ne vaut pas la peine de s'inquiéter.",
+					Text = "Cela ne vaut pas la peine de s\'inquiéter.",
 					function getResult( _event )
 					{
 						return "E";
@@ -51,7 +51,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "%terrainImage%{%brother% s'avance avec son arme à la main. Le serpent se cabre et l'homme le transperce de part en part, tuant instantanément la créature. Il la tient au bout de son acier, faisant frétiller sa chair avant de la jeter de côté.%SPEECH_ON%Paiement le plus facile que j'ai jamais eu.%SPEECH_OFF%Il dit alors que le trésor est pris dans l'inventaire de la compagnie.}",
+			Text = "%terrainImage%{%brother% s\'avance avec son arme à la main. Le serpent se cabre et l\'homme le transperce de part en part, tuant instantanément la créature. Il la tient au bout de son acier, faisant frétiller sa chair avant de la jeter de côté.%SPEECH_ON%Paiement le plus facile que j\'ai jamais eu.%SPEECH_OFF%Il dit alors que le trésor est pris dans l\'inventaire de la compagnie.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -82,7 +82,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "%terrainImage%{%brother% s'avance avec son arme à la main. Le serpent se cabre, l'homme rit et attaque avec son arme. Le serpent contourne habilement l'acier et frappe le long de l'arbre, entaillant l'homme au niveau des articulations. En hurlant, il tombe à la renverse, les hommes le ramassent et le traînent. Bientôt, il est pris de convulsions et d'écume et toute sa main se bombe et crache du pus. Vous pensez qu'il survivra, mais il faudra beaucoup de temps avant qu'il ne soit prêt à se battre à nouveau. Quant au trésor, il se déplace dans les sables et vous ne pouvez que le regarder glisser lentement dans la dune elle-même, comme un bateau qui s'enfonce dans l'eau. Lorsque vous vous penchez pour le voir partir, d'autres serpents noirs émergent comme pour vous avertir à qui il appartient : c'est le trésor du désert, maintenant et pour toujours.}",
+			Text = "%terrainImage%{%brother% s\'avance avec son arme à la main. Le serpent se cabre, l\'homme rit et attaque avec son arme. Le serpent contourne habilement l\'acier et frappe le long de l\'arbre, entaillant l\'homme au niveau des articulations. En hurlant, il tombe à la renverse, les hommes le ramassent et le traînent. Bientôt, il est pris de convulsions et d\'écume et toute sa main se bombe et crache du pus. Vous pensez qu\'il survivra, mais il faudra beaucoup de temps avant qu\'il ne soit prêt à se battre à nouveau. Quant au trésor, il se déplace dans les sables et vous ne pouvez que le regarder glisser lentement dans la dune elle-même, comme un bateau qui s\'enfonce dans l\'eau. Lorsque vous vous penchez pour le voir partir, d\'autres serpents noirs émergent comme pour vous avertir à qui il appartient : c\'est le trésor du désert, maintenant et pour toujours.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -134,7 +134,7 @@ this.dried_oasis_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "%terrainImage%{%beastslayer% regarde le serpent. Il hoche la tête comme s'il se souvenait d'une vieille leçon.%SPEECH_ON% On ne les voit que dans les dunes. Très venimeux. %SPEECH_OFF%Le serpent lui siffle dessus. L'homme acquiesce avant de tendre une main et d'attraper le serpent par la tête.%SPEECH_ON% Ton venin commence et finit dans ta bouche, petit, mais je peux l'utiliser partout. J'espère que tu comprendras le marché.%SPEECH_OFF%L'homme fait craquer la tête du serpent avant de la couper net avec une petite lame et il pince son doigt sur le cadavre filandreux du reptile. Il hoche à nouveau la tête. %SPEECH_ON%Je vais me servir du serpent, et je fais confiance à votre capitaine pour se servir du trésor.%SPEECH_OFF%}",
+			Text = "%terrainImage%{%beastslayer% regarde le serpent. Il hoche la tête comme s\'il se souvenait d\'une vieille leçon.%SPEECH_ON% On ne les voit que dans les dunes. Très venimeux. %SPEECH_OFF%Le serpent lui siffle dessus. L\'homme acquiesce avant de tendre une main et d\'attraper le serpent par la tête.%SPEECH_ON% Ton venin commence et finit dans ta bouche, petit, mais je peux l\'utiliser partout. J\'espère que tu comprendras le marché.%SPEECH_OFF%L\'homme fait craquer la tête du serpent avant de la couper net avec une petite lame et il pince son doigt sur le cadavre filandreux du reptile. Il hoche à nouveau la tête. %SPEECH_ON%Je vais me servir du serpent, et je fais confiance à votre capitaine pour se servir du trésor.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],

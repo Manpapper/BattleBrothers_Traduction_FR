@@ -9,7 +9,7 @@ this.desert_heat_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{%heatbro% Il s'affaisse dans le sable, un genou se déforme, et dès qu'il se redresse, l'autre se déforme à son tour. Vous vous retournez juste à temps pour voir ses yeux se retourner dans sa tête et il s'effondre. La compagnie se précipite à son secours, lui apportant de l'eau et de l'ombre. Il se débat pour revenir à la vie, mais la chaleur accablante a déjà fait ses dégâts.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{%heatbro% Il s\'affaisse dans le sable, un genou se déforme, et dès qu\'il se redresse, l\'autre se déforme à son tour. Vous vous retournez juste à temps pour voir ses yeux se retourner dans sa tête et il s\'effondre. La compagnie se précipite à son secours, lui apportant de l\'eau et de l\'ombre. Il se débat pour revenir à la vie, mais la chaleur accablante a déjà fait ses dégâts.}",
 			Image = "",
 			List = [],
 			Characters = [],

@@ -12,7 +12,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous croisez un vieil homme dans la rue. Il ne serait pas particulièrement remarquable, si ce n'est qu'il est propriétaire d'un équipement particulièrement beau. Un peu usé et déchiré, mais sympa. Et, bien sûr, le fait qu'il soit un ancien et qu'on ne lui ait pas volé ces objets est la preuve qu'il se passe quelque chose d'autre ici.%SPEECH_ON% Le mercenaire regarde, le mercenaire s'interroge.%SPEECH_OFF% L'homme dit en mordant dans une miche de pain. Il lève les yeux vers toi.%SPEECH_ON%Mon nom est %retired%. J'ai déjà combattu dans les arènes, mais je me suis retiré il y a cinq ans. Pas par choix, d'ailleurs. On m'a chargé de truquer un match, mais à la place j'ai coupé la tête de l'adversaire. Cet adversaire était le fils d'un vizir. Ce détail particulier n'a pas été partagé avec moi à l'époque. Ces cinq années dont j'ai parlé ? Je les ai passées dans un donjon.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous croisez un vieil homme dans la rue. Il ne serait pas particulièrement remarquable, si ce n\'est qu\'il est propriétaire d\'un équipement particulièrement beau. Un peu usé et déchiré, mais sympa. Et, bien sûr, le fait qu\'il soit un ancien et qu\'on ne lui ait pas volé ces objets est la preuve qu\'il se passe quelque chose d\'autre ici.%SPEECH_ON% Le mercenaire regarde, le mercenaire s\'interroge.%SPEECH_OFF% L\'homme dit en mordant dans une miche de pain. Il lève les yeux vers toi.%SPEECH_ON%Mon nom est %retired%. J\'ai déjà combattu dans les arènes, mais je me suis retiré il y a cinq ans. Pas par choix, d\'ailleurs. On m\'a chargé de truquer un match, mais à la place j\'ai coupé la tête de l\'adversaire. Cet adversaire était le fils d\'un vizir. Ce détail particulier n\'a pas été partagé avec moi à l\'époque. Ces cinq années dont j\'ai parlé ? Je les ai passées dans un donjon.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
@@ -40,13 +40,13 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous lui dites que vous auriez besoin de lui dans le %companyname%. Il rit.%SPEECH_ON%Les jours de combat me dépassent un peu. Je cherche à vendre cette armure au prix coûtant et à quitter cette ville pour toujours. %SPEECH_OFF%Il incline l'armure vers l'avant. %SPEECH_ON%Vous ne trouverez nulle part un tel équipement. Tout ce que je demande, c'est 1 000 couronnes, un harnais de gladiateur tel que vous aurez du mal à en trouver dans n'importe quelle boutique de forgeron.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous lui dites que vous auriez besoin de lui dans le %companyname%. Il rit.%SPEECH_ON%Les jours de combat me dépassent un peu. Je cherche à vendre cette armure au prix coûtant et à quitter cette ville pour toujours. %SPEECH_OFF%Il incline l\'armure vers l\'avant. %SPEECH_ON%Vous ne trouverez nulle part un tel équipement. Tout ce que je demande, c\'est 1 000 couronnes, un harnais de gladiateur tel que vous aurez du mal à en trouver dans n\'importe quelle boutique de forgeron.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nous prenons l'armure pour 1 000 couronnes.",
+					Text = "Nous prenons l\'armure pour 1 000 couronnes.",
 					function getResult( _event )
 					{
 						return "BuyArmor";
@@ -54,7 +54,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Non, merci, c'est bon.",
+					Text = "Non, merci, c\'est bon.",
 					function getResult( _event )
 					{
 						return 0;
@@ -80,7 +80,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "BuyArmor",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous lui donnez l'or et il vous donne l'armure. Il pèse la bourse de couronnes. Je suppose que cela suffira pour ma retraite. Il vaut mieux me laisser les armes. Ce n'est pas une terre particulièrement sûre, après tout, et même un vieil homme aussi dangereux que moi pourrait avoir besoin de protection.%SPEECH_OFF%Il a raison sur ce point. Vous lui souhaitez bonne chance et mettez l'armure dans l'inventaire.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous lui donnez l\'or et il vous donne l\'armure. Il pèse la bourse de couronnes. Je suppose que cela suffira pour ma retraite. Il vaut mieux me laisser les armes. Ce n\'est pas une terre particulièrement sûre, après tout, et même un vieil homme aussi dangereux que moi pourrait avoir besoin de protection.%SPEECH_OFF%Il a raison sur ce point. Vous lui souhaitez bonne chance et mettez l\'armure dans l\'inventaire.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -118,7 +118,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Gladiator",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{%gladiator% laughs.%SPEECH_ON%Friend, J'étais autrefois un gladiateur. Viens avec nous et traite le monde entier comme ton arène. Je sais que ça te démange. Je sais que c'est quelque part là-dedans. Trouve-la. Cette joie de tuer. Cette énergie de la victoire. Partage-la avec nous, une bande de frères de bataille. L'ancien gladiateur regarde son équipement. Son reflet le regarde en retour, bien que brouillé et déformé par la saleté et les bosses. Il hoche la tête. %SPEECH_ON%Vous avez raison. Mais à quoi je pense, nom d'une pipe ? J'ai été pauvre, énervé et énervé pendant trop longtemps. Si votre compagnie veut de moi, alors je finirai mes jours comme je les ai vécus : en tuant !%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{%gladiator% laughs.%SPEECH_ON%Friend, J\'étais autrefois un gladiateur. Viens avec nous et traite le monde entier comme ton arène. Je sais que ça te démange. Je sais que c\'est quelque part là-dedans. Trouve-la. Cette joie de tuer. Cette énergie de la victoire. Partage-la avec nous, une bande de frères de bataille. L\'ancien gladiateur regarde son équipement. Son reflet le regarde en retour, bien que brouillé et déformé par la saleté et les bosses. Il hoche la tête. %SPEECH_ON%Vous avez raison. Mais à quoi je pense, nom d\'une pipe ? J\'ai été pauvre, énervé et énervé pendant trop longtemps. Si votre compagnie veut de moi, alors je finirai mes jours comme je les ai vécus : en tuant !%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -148,13 +148,13 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Recruit",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{Accueillez l'homme à bord. Il se lève. J'aimerais me battre avec mon propre matériel, mais je n'ai pas de préférence. Après tout, j'essayais juste de le vendre, non ? Donnez-moi ce que vous pensez être le meilleur et dirigez-moi dans la bonne direction. Je vais leur montrer ce que le loup de l'allée des arènes a à leur offrir !%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Accueillez l\'homme à bord. Il se lève. J\'aimerais me battre avec mon propre matériel, mais je n\'ai pas de préférence. Après tout, j\'essayais juste de le vendre, non ? Donnez-moi ce que vous pensez être le meilleur et dirigez-moi dans la bonne direction. Je vais leur montrer ce que le loup de l\'allée des arènes a à leur offrir !%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Le loup de l'allée des arènes ? Ah, d'accord.",
+					Text = "Le loup de l\'allée des arènes ? Ah, d\'accord.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
@@ -175,7 +175,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 					"old_gladiator_background"
 				]);
 				_event.m.Dude.setTitle("the Wolf");
-				_event.m.Dude.getBackground().m.RawDescription = "%name%, également connu sous le nom de Le loup de l'allée des arènes, est un gladiateur à la retraite, mais un mercenaire actif. Il gagne des couronnes en tuant depuis longtemps, et cela se voit tant dans son expérience que dans son âge.";
+				_event.m.Dude.getBackground().m.RawDescription = "%name%, également connu sous le nom de Le loup de l\'allée des arènes, est un gladiateur à la retraite, mais un mercenaire actif. Il gagne des couronnes en tuant depuis longtemps, et cela se voit tant dans son expérience que dans son âge.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				local trait = this.new("scripts/skills/traits/old_trait");
 				_event.m.Dude.getSkills().add(trait);
@@ -185,7 +185,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Deny",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{Le gladiateur se rassoit.%SPEECH_ON%Et bien, à quoi a servi ce grand discours de bravade ? %SPEECH_OFF%%gladiateur% s'excuse, vous jetant un regard entre les mots tandis que le reste de la compagnie rit.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Le gladiateur se rassoit.%SPEECH_ON%Et bien, à quoi a servi ce grand discours de bravade ? %SPEECH_OFF%%gladiateur% s\'excuse, vous jetant un regard entre les mots tandis que le reste de la compagnie rit.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -208,7 +208,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 50)
 					{
-						bro.improveMood(0.5, "J'ai bien ri d'un gladiateur à la retraite.");
+						bro.improveMood(0.5, "J\'ai bien ri d\'un gladiateur à la retraite.");
 
 						if (bro.getMoodState() > this.Const.MoodState.Neutral)
 						{

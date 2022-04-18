@@ -7,7 +7,7 @@ this.desert_sand_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{Un désert est une terre hostile aux intrus. Même si votre équipement supporte le poids de cette hostilité naturelle : une partie du matériel a été usée par les sables eux-mêmes. Un nettoyage et un affûtage seront nécessaires pour maintenir la qualité de l'équipement du %companyname%.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Un désert est une terre hostile aux intrus. Même si votre équipement supporte le poids de cette hostilité naturelle : une partie du matériel a été usée par les sables eux-mêmes. Un nettoyage et un affûtage seront nécessaires pour maintenir la qualité de l\'équipement du %companyname%.}",
 			Image = "",
 			List = [],
 			Characters = [],

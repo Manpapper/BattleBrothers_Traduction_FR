@@ -7,7 +7,7 @@ this.desert_feet_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 80.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{Marcher à travers les dunes de sable pendant des jours a accumulé beaucoup de sable dans les bottes. Quelques-uns font une pause, vidant leurs chaussures, tandis que d'autres révèlent que leurs pieds ont été broyés à vif. C'est un paysage infernal, il semble, peu importe si c'est le soleil au-dessus ou les sables en dessous, tout est là pour vous avoir.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Marcher à travers les dunes de sable pendant des jours a accumulé beaucoup de sable dans les bottes. Quelques-uns font une pause, vidant leurs chaussures, tandis que d\'autres révèlent que leurs pieds ont été broyés à vif. C\'est un paysage infernal, il semble, peu importe si c\'est le soleil au-dessus ou les sables en dessous, tout est là pour vous avoir.}",
 			Image = "",
 			List = [],
 			Characters = [],

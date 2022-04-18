@@ -9,7 +9,7 @@ this.desert_bugbite_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{Alors qu'il est en train de regarder des cartes et de faire son inventaire, %bitbro% crie soudainement et tombe dans le sable. Il se tape sur les jambes et un scorpion noir s'envole. Un autre mercenaire hurle et coupe l'insecte en deux avec une férocité que vous ne lui avez jamais vue utiliser sur le champ de bataille. %bitbro% serre les dents en enlevant ses bottes. On dirait que quelqu'un a enfoncé un clou dans sa cheville. Il dit qu'il se sent étourdi, mais que ce n'est pas trop grave.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Alors qu\'il est en train de regarder des cartes et de faire son inventaire, %bitbro% crie soudainement et tombe dans le sable. Il se tape sur les jambes et un scorpion noir s\'envole. Un autre mercenaire hurle et coupe l\'insecte en deux avec une férocité que vous ne lui avez jamais vue utiliser sur le champ de bataille. %bitbro% serre les dents en enlevant ses bottes. On dirait que quelqu\'un a enfoncé un clou dans sa cheville. Il dit qu\'il se sent étourdi, mais que ce n\'est pas trop grave.}",
 			Image = "",
 			List = [],
 			Characters = [],

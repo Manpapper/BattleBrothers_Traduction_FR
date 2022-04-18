@@ -9,7 +9,7 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_03.png[/img]{Vous passez par-dessus une dune de sable pour voir une demi-douzaine d'hommes. Ils portent des capes noires et leurs mains gainées de manches se tiennent les unes aux autres pour former un cercle complet. Bien qu'ils aient tous la tête baissée, ils semblent sentir votre présence et se tournent pour vous fixer. Un homme lâche ses mains et s'avance.%SPEECH_ON%Davkul nous attend tous, voyageur, même le chemin doré permet sa patience.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_03.png[/img]{Vous passez par-dessus une dune de sable pour voir une demi-douzaine d\'hommes. Ils portent des capes noires et leurs mains gainées de manches se tiennent les unes aux autres pour former un cercle complet. Bien qu\'ils aient tous la tête baissée, ils semblent sentir votre présence et se tournent pour vous fixer. Un homme lâche ses mains et s\'avance.%SPEECH_ON%Davkul nous attend tous, voyageur, même le chemin doré permet sa patience.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -50,7 +50,7 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_12.png[/img]{Vous dégainez votre épée et ordonnez à la compagnie de s'occuper rapidement des cultistes. Ils sont attaqués avec facilité, les cultistes ne lèvent même pas la main pour résister à leur propre mort. Un survivant tousse en laissant saigner une blessure ouverte. Il tend la main comme pour vous montrer votre travail.%SPEECH_ON% Malgré tout votre travail, vous ne pouvez pas gagner du temps, Mercenaire. Davkul nous attend tous.%SPEECH_OFF%Tu sors ta dague et tu achèves l'homme. Vous donnez un coup de pied à son corps et le pillez, ainsi que les autres cadavres, bien qu'il n'y ait pas grand chose à trouver.}",
+			Text = "[img]gfx/ui/events/event_12.png[/img]{Vous dégainez votre épée et ordonnez à la compagnie de s\'occuper rapidement des cultistes. Ils sont attaqués avec facilité, les cultistes ne lèvent même pas la main pour résister à leur propre mort. Un survivant tousse en laissant saigner une blessure ouverte. Il tend la main comme pour vous montrer votre travail.%SPEECH_ON% Malgré tout votre travail, vous ne pouvez pas gagner du temps, Mercenaire. Davkul nous attend tous.%SPEECH_OFF%Tu sors ta dague et tu achèves l\'homme. Vous donnez un coup de pied à son corps et le pillez, ainsi que les autres cadavres, bien qu\'il n\'y ait pas grand chose à trouver.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -81,13 +81,13 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_03.png[/img]{%cultist% s'avance, brandissant sa tête balafrée pour que tous les étrangers puissent la voir. Ils hochent la tête et s'inclinent, et leur chef parle en regardant le sables. %SPEECH_ON%Davkul a parlé.%SPEECH_OFF%Hochant la tête, %cultist% répond.%SPEECH_ON%Et à chaque mot j'écoute.%SPEECH_OFF%Le chef récupère une étrange lame apparemment sortie de nulle part et la passe entre ses doigts. Il parle à nouveau sans lever les yeux.%SPEECH_ON% Alors faites ce qu'il demande.%SPEECH_OFF% %cultist% prend la lame et hoche la tête.%SPEECH_ON%Davkul nous attend tous.%SPEECH_OFF%Les hommes étranges s'effondrent sur le sol et mettent leur visage dans le sable. Leurs poitrines se soulèvent et s'abaissent, tremblent, puis ils ne bougent plus. Ils se sont noyés dans le désert lui-même. L'%cultist% revient en emportant une étrange dague.}",
+			Text = "[img]gfx/ui/events/event_03.png[/img]{%cultist% s\'avance, brandissant sa tête balafrée pour que tous les étrangers puissent la voir. Ils hochent la tête et s\'inclinent, et leur chef parle en regardant le sables. %SPEECH_ON%Davkul a parlé.%SPEECH_OFF%Hochant la tête, %cultist% répond.%SPEECH_ON%Et à chaque mot j\'écoute.%SPEECH_OFF%Le chef récupère une étrange lame apparemment sortie de nulle part et la passe entre ses doigts. Il parle à nouveau sans lever les yeux.%SPEECH_ON% Alors faites ce qu\'il demande.%SPEECH_OFF% %cultist% prend la lame et hoche la tête.%SPEECH_ON%Davkul nous attend tous.%SPEECH_OFF%Les hommes étranges s\'effondrent sur le sol et mettent leur visage dans le sable. Leurs poitrines se soulèvent et s\'abaissent, tremblent, puis ils ne bougent plus. Ils se sont noyés dans le désert lui-même. L\'%cultist% revient en emportant une étrange dague.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "D'accord...",
+					Text = "D\'accord...",
 					function getResult( _event )
 					{
 						return 0;
@@ -105,7 +105,7 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 					icon = "ui/items/" + item.getIcon(),
 					text = "Vous recevez a " + item.getName()
 				});
-				_event.m.Cultist.improveMood(1.0, "Il s'entendait avec ses frères dans la foi");
+				_event.m.Cultist.improveMood(1.0, "Il s\'entendait avec ses frères dans la foi");
 
 				if (_event.m.Cultist.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -120,7 +120,7 @@ this.cultish_arrangement_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_03.png[/img]{Vous offrez un modeste bonjour et un au revoir aux manteaux noirs, puis vous partez. Ils ne vous résistent pas et ne vous interpellent pas de quelque manière que ce soit. La dernière fois que vous les avez vus, ils se tenaient à nouveau par la main, la tête penchée en avant et le regard fixé sur les sables. Il n'y a pas une seule cruche d'eau ou un seul panier de nourriture. S'ils ne sont pas venus ici pour mourir, qu'est-ce qui pourrait bien les sauver ?}",
+			Text = "[img]gfx/ui/events/event_03.png[/img]{Vous offrez un modeste bonjour et un au revoir aux manteaux noirs, puis vous partez. Ils ne vous résistent pas et ne vous interpellent pas de quelque manière que ce soit. La dernière fois que vous les avez vus, ils se tenaient à nouveau par la main, la tête penchée en avant et le regard fixé sur les sables. Il n\'y a pas une seule cruche d\'eau ou un seul panier de nourriture. S\'ils ne sont pas venus ici pour mourir, qu\'est-ce qui pourrait bien les sauver ?}",
 			Image = "",
 			List = [],
 			Characters = [],

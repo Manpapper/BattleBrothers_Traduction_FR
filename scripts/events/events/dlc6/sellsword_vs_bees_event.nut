@@ -10,7 +10,7 @@ this.sellsword_vs_bees_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{Le désert n'abrite pas grand-chose en dehors du sable. Il est donc assez particulier de tomber sur un arbre isolé qui se dresse tout seul, et encore plus étrange que, accrochée à une branche, se trouve une grosse ruche avec une nuée d'ouvrières grouillant autour de sa forme bulbeuse. Même à quelque distance, on peut voir scintiller la braise dorée de leur miel...}",
+			Text = "%terrainImage%{Le désert n\'abrite pas grand-chose en dehors du sable. Il est donc assez particulier de tomber sur un arbre isolé qui se dresse tout seul, et encore plus étrange que, accrochée à une branche, se trouve une grosse ruche avec une nuée d\'ouvrières grouillant autour de sa forme bulbeuse. Même à quelque distance, on peut voir scintiller la braise dorée de leur miel...}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -18,7 +18,7 @@ this.sellsword_vs_bees_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Options.push({
-					Text = "Que quelqu'un aille le chercher !",
+					Text = "Que quelqu\'un aille le chercher !",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "Good" : "Fail";
@@ -51,7 +51,7 @@ this.sellsword_vs_bees_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Good",
-			Text = "%terrainImage%{%chosen% s'avance avec assurance vers l'arbre et les abeilles semblent repoussées par sa seule présence. Le bruit de leurs battements s'épaissit avec des vibrations de colère, mais autrement elles ne s'offensent pas plus. Il dépose avec précaution une partie du miel dans un pot, puis se retire et s'éloigne. Il retourne vers la compagnie.%SPEECH_ON%C'est facile, c'est facile de presser une ruche, les gars.%SPEECH_OFF%}",
+			Text = "%terrainImage%{%chosen% s\'avance avec assurance vers l\'arbre et les abeilles semblent repoussées par sa seule présence. Le bruit de leurs battements s\'épaissit avec des vibrations de colère, mais autrement elles ne s\'offensent pas plus. Il dépose avec précaution une partie du miel dans un pot, puis se retire et s\'éloigne. Il retourne vers la compagnie.%SPEECH_ON%C\'est facile, c\'est facile de presser une ruche, les gars.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -91,7 +91,7 @@ this.sellsword_vs_bees_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Fail",
-			Text = "%terrainImage%{%chosen% Il lace ses doigts et fait craquer ses articulations en s'étirant longuement.%SPEECH_ON%Comme si on volait des bonbons à un bébé.%SPEECH_OFF%Il marche jusqu'à l'arbre et se tient sous la ruche. Il prend la pose et la montre du doigt, rit, puis tourne ses mains vers le haut et - à la grande surprise de tous - attrape la ruche entière. Les abeilles envahissent instantanément le vendeur, qui laisse tomber la ruche et s'enfuit en courant, un nuage de bourdonnements furieux le poursuivant sur une dune de sable. Il roule et roule, ses cris retentissant à chaque fois qu'il s'envole hors du sable, puis il atterrit en bas et une vague de sable le recouvre et l'épargne de nouvelles piqûres d'abeilles. Vous attendez un moment avant de le récupérer, de peur que les abeilles ne sachent que vous avez participé à cette tentative de vol.}",
+			Text = "%terrainImage%{%chosen% Il lace ses doigts et fait craquer ses articulations en s\'étirant longuement.%SPEECH_ON%Comme si on volait des bonbons à un bébé.%SPEECH_OFF%Il marche jusqu\'à l\'arbre et se tient sous la ruche. Il prend la pose et la montre du doigt, rit, puis tourne ses mains vers le haut et - à la grande surprise de tous - attrape la ruche entière. Les abeilles envahissent instantanément le vendeur, qui laisse tomber la ruche et s\'enfuit en courant, un nuage de bourdonnements furieux le poursuivant sur une dune de sable. Il roule et roule, ses cris retentissant à chaque fois qu\'il s\'envole hors du sable, puis il atterrit en bas et une vague de sable le recouvre et l\'épargne de nouvelles piqûres d\'abeilles. Vous attendez un moment avant de le récupérer, de peur que les abeilles ne sachent que vous avez participé à cette tentative de vol.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -129,7 +129,7 @@ this.sellsword_vs_bees_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Wildman",
-			Text = "%terrainImage%{Tu es sûr que %wildman% le sauvage a vu une ruche ou deux depuis qu'il s'est retiré dans les forêts. Il grogne et désigne la ruche, puis lui-même. Vous acquiescez. Il grogne à nouveau et monte sur la dune de sable jusqu'à l'arbre pendant que vous observez à une distance sûre. Lorsqu'il se trouve sous la ruche, il hulule à nouveau, mettant sa main sur sa bouche pour s'assurer que vous l'entendez. Il pointe la ruche du doigt. Vous hochez à nouveau la tête et pointez agressivement la ruche. C'est la seule ruche à des kilomètres à la ronde, qu'est-ce qui pourrait bien être si déroutant dans tout ça ? Le sauvageon se tourne vers la ruche. Il met un bras en arrière. Ce... ce n'est pas ce que vous vouliez voir. Il jauge la ruche, la langue sortie, les yeux bridés. Vous vous précipitez en avant, en lui criant dessus, mais il est déjà dans la ligne de mire. Il lance son poing et anéantit les abeilles. Les rayons de miel s'agitent autour de son poignet comme si son bras poilu était un mât de mai improvisé. Le Wildman retourne tranquillement en bas de la dune de sable. Alors qu'il s'approche, vous voyez les abeilles ramper sur son visage et le piquer comme les sauvages enragés qu'elles sont, mais il ne semble même pas sentir leur présence. Il tend les restes croustillants de sa démolition mielleuse comme s'il tenait le cœur d'une bête féroce.}",
+			Text = "%terrainImage%{Tu es sûr que %wildman% le sauvage a vu une ruche ou deux depuis qu\'il s\'est retiré dans les forêts. Il grogne et désigne la ruche, puis lui-même. Vous acquiescez. Il grogne à nouveau et monte sur la dune de sable jusqu\'à l\'arbre pendant que vous observez à une distance sûre. Lorsqu\'il se trouve sous la ruche, il hulule à nouveau, mettant sa main sur sa bouche pour s\'assurer que vous l\'entendez. Il pointe la ruche du doigt. Vous hochez à nouveau la tête et pointez agressivement la ruche. C\'est la seule ruche à des kilomètres à la ronde, qu\'est-ce qui pourrait bien être si déroutant dans tout ça ? Le sauvageon se tourne vers la ruche. Il met un bras en arrière. Ce... ce n\'est pas ce que vous vouliez voir. Il jauge la ruche, la langue sortie, les yeux bridés. Vous vous précipitez en avant, en lui criant dessus, mais il est déjà dans la ligne de mire. Il lance son poing et anéantit les abeilles. Les rayons de miel s\'agitent autour de son poignet comme si son bras poilu était un mât de mai improvisé. Le Wildman retourne tranquillement en bas de la dune de sable. Alors qu\'il s\'approche, vous voyez les abeilles ramper sur son visage et le piquer comme les sauvages enragés qu\'elles sont, mais il ne semble même pas sentir leur présence. Il tend les restes croustillants de sa démolition mielleuse comme s\'il tenait le cœur d\'une bête féroce.}",
 			Image = "",
 			List = [],
 			Characters = [],
