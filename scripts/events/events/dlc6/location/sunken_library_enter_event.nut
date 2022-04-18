@@ -8,13 +8,13 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_173.png[/img]{The shine and shimmer is so bright you almost think the Gilder Himself has ordained you a proper visit - unfortunately or fortunately, what you\'ve stumbled across is actually a great gilded dome protruding ever so slightly from the sands. Immediately, you test if you can pull some of the gold away, but it has no give. %randombrother% calls you over to a slab of stone which is gapped. Perhaps a belltower at one point? Light fades quick and you can see very little inside. Above the entryway a relief depicts men pulling carts of scrolls.\n\n There\'s a set of words repeatedly scrawled across the relief. None of the languages look remotely familiar to anything you\'ve ever heard or seen. It takes a bit of time until you can find a hurriedly etched translation left by someone approximal to your era: \'the Library, the Labyrinth of the Night, the Labyrinth of the Mind, Leave here as you would Leave a Dream, Tread here as you would Tread a Dream, Leave to Dwell upon the Horror of not Knowing, Enter to be One with Knowing, and in Knowing the Dream, Know the Nightmare\'.%SPEECH_ON%Fair bit ominous, captain, but if you wanna go down in there we got the rope and torches to see to it.%SPEECH_OFF%%randombrother% tells you this, and the look on his face suggests he\'s hoping you decline the proposition.}",
+			Text = "[img]gfx/ui/events/event_173.png[/img]{L'éclat et la brillance sont tels que vous avez presque l'impression que le doreur lui-même vous a rendu visite. Malheureusement ou heureusement, ce sur quoi vous êtes tombé est en fait un grand dôme doré qui dépasse très légèrement des sables. Immédiatement, vous essayez d'arracher un peu d'or, mais il ne cède pas. Le %randombrother% vous appelle vers une dalle de pierre qui a une ouverture. Peut-être un clocher à un moment donné ? La lumière s'estompe rapidement et vous ne pouvez pas voir grand chose à l'intérieur. Au-dessus de l'entrée, un relief représente des hommes tirant des chariots de parchemins. Il y a un ensemble de mots griffonnés à plusieurs reprises sur le relief. Aucune de ces langues ne ressemble de près ou de loin à ce que tu as déjà vu ou entendu. Il te faut un peu de temps pour trouver une traduction gravée à la hâte par quelqu'un de ton époque : La bibliothèque, le labyrinthe de la nuit, le labyrinthe de l'esprit, sortez d'ici comme vous sortiriez d'un rêve, marchez ici comme vous marcheriez dans un rêve, sortez pour vous attarder sur l'horreur de ne pas savoir, entrez pour ne faire qu'un avec le savoir, et en connaissant le rêve, connaissez le cauchemar.%SPEECH_OFF% %randombrother% vous le dit, et l'expression de son visage suggère qu'il espère que vous refuserez la proposition.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Rappel down into the dark!",
+					Text = "Descendre en rappel dans l'obscurité!",
 					function getResult( _event )
 					{
 						return "B";
@@ -22,7 +22,7 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let\'s not disturb what rests here.",
+					Text = "Ne dérangeons pas ce qui repose ici..",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -42,13 +42,13 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_89.png[/img]{The climb down is a perilous one, the dark so thick you can\'t even see your own boots. But eventually you hit a marbled floor and quickly light up some torches. You find yourself in a massive hall around which spiral rows and rows of bookcases. Every shelf is adorned with piles of scrolls, many dwelling within glass enclosures. The shelves are stacked upon each other and seem to ascend to the very ceiling from which you descended. Rolling ladders rest at each level, but even further up runs a floating mezzanine with metal chutes stationed here and there. It seems as though once upon a time one was meant to pass these scrolls up and down, though now everything is rusted, and the mezzanine has collapsed in parts.\n\n %randombrother% calls your attention. He points to an enormous scroll flattened behind a sheet of glass. Drawings sprawl over the paper, and upon closer inspection it appears they are blueprints for seemingly everything: the human body, the bodies of many animals, castles, towers, windmills, ships, weapons and armor, boots and gloves, alignments of the stars, and a great number of drawings of things which you have never seen before, things which don\'t make sense.%SPEECH_ON%Captain, this place is not meant for us. The languages, the halls, we should go.%SPEECH_OFF%One of the sellswords expresses the mood in the air. You have absolutely trespassed to a place few have gone before. And if they have gone before, where are they? A place like this surely can\'t stay hidden, right?}",
+			Text = "[img]gfx/ui/events/event_89.png[/img]{La descente est périlleuse, l'obscurité est si épaisse que vous ne pouvez même pas voir vos propres bottes. Mais vous finissez par atteindre un sol marbré et allumez rapidement quelques torches. Vous vous retrouvez dans un hall massif autour duquel s'enroulent des rangées et des rangées de bibliothèques. Chaque étagère est ornée de piles de parchemins, dont beaucoup sont enfermés dans des vitrines. Les étagères sont empilées les unes sur les autres et semblent monter jusqu'au plafond d'où vous êtes descendu. Des échelles roulantes se trouvent à chaque niveau, mais plus haut encore, il y a une mezzanine flottante avec des glissières métalliques disposées ici et là. Il semble qu'il fut un temps où l'on devait faire passer ces parchemins de haut en bas, bien que maintenant tout soit rouillé et que la mezzanine se soit effondrée par endroits. Il vous montre un énorme parchemin aplati derrière une vitre. Des dessins s'étalent sur le papier, et en y regardant de plus près, il apparaît qu'il s'agit de plans pour apparemment tout : le corps humain, le corps de nombreux animaux, des châteaux, des tours, des moulins à vent, des bateaux, des armes et des armures, des bottes et des gants, des alignements d'étoiles, et un grand nombre de dessins de choses que vous n'avez jamais vues auparavant, des choses qui n'ont pas de sens.%SPEECH_ON%Capitaine, cet endroit n'est pas fait pour nous. Les langues, les salles, nous devrions partir.%SPEECH_OFF%Un des compagnons souligne la tension palpable dans l'air. Vous avez absolument pénétré dans un endroit où peu sont allés auparavant. Et s'ils y sont allés avant, où sont-ils ? Un endroit comme celui-ci ne peut pas rester caché, n'est-ce pas ?}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What was that noise?",
+					Text = "Quel était ce bruit ??",
 					function getResult( _event )
 					{
 						return "C";
@@ -63,13 +63,13 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_89.png[/img]{%SPEECH_START%Interlopers in the Library.%SPEECH_OFF%The voice scratches along the marbled floor and rises up to meet your ears and continues on, the word \'Libraryyy\' slithering into the dark behind you. Suddenly, a number of the glass cases begin to glow, the phylacteries holding some sort of ethereal energy, and as the light widens it unveils the torso of a black skeleton, its body captured in air. The ribcage holds a book, hooked into place by the sickly folds of its own ribs as a spider would clutch a meal. The skull of the creature stares at you with peerless sockets.%SPEECH_ON%Your kind has already stolen from me, now you dare profane these halls again?%SPEECH_OFF%The phylacteries grow brighter and in turn the skeleton\'s torso grows flesh, weeds of vein and the pulp of skin blossoming outward to cover bone. But it is only the torso which is ensconced. You stare at the phylacteries and they are brimming with energy now, and in staring you can see the ghostly faces smearing along the glass like streaks of rain. You hear a loud clap and turn back to see the Loremaster in full, its eyes aflame with white fire, its limbs skinny yet with smoky muscles winding around its frame, and its lower half is pluming with black ash as it glides forward. The brighter the glass bulbs get, the stronger and faster it becomes!}",
+			Text = "[img]gfx/ui/events/event_89.png[/img]{%SPEECH_START%Des intrus dans la bibliothèque. La voix gratte le sol marbré et s'élève jusqu'à vos oreilles et continue, le mot bibliothèque se glissant dans l'obscurité derrière vous. Soudain, un certain nombre de vitrines se mettent à briller, les phylactères renfermant une sorte d'énergie éthérée, et lorsque la lumière s'élargit, elle dévoile le torse d'un squelette noir, le corps capturé dans l'air. La cage thoracique contient un livre, accroché par les plis maladifs de ses propres côtes comme une araignée s'accrocherait à son repas. Le crâne de la créature vous regarde avec des orbites sans pareilles. %SPEECH_ON%Votre espèce m'a déjà volé, maintenant vous osez profaner ces salles encore une fois?%SPEECH_OFF%Les phylactères deviennent plus brillants et à son tour le torse du squelette devient chair, les mauvaises herbes des veines et la pulpe de la peau s'épanouissent pour couvrir l'os. Mais c'est seulement le torse qui est encastré. Vous fixez les phylactères et ils débordent d'énergie maintenant, et en les fixant, vous pouvez voir les visages fantômes s'étaler sur le verre comme des filets de pluie. Vous entendez un grand claquement et vous vous retournez pour voir Le Gardien des Lieux au complet, ses yeux enflammés de feu blanc, ses membres maigres mais avec des muscles fumants qui s'enroulent autour de sa structure, et sa moitié inférieure se couvre de cendres noires alors qu'il glisse vers l'avant. Plus les ampoules de verre sont brillantes, plus il devient fort et rapide !}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Fight for your lives! Fight like you\'ve never fought before!",
+					Text = "Battez-vous pour vos vies ! Combattez comme vous ne l'avez jamais fait auparavant !",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -267,13 +267,13 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Victory",
-			Text = "[img]gfx/ui/events/event_89.png[/img]{The Lorekeeper collapses onto the ground a pile of ash and the phylacteries slowly fade back to dark. You walk over with torch in hand. Its black skull resides atop the book that once dwelled in its chest.%SPEECH_ON%Captain, I don\'t think we should be touching anything here.%SPEECH_OFF%You ignore one of your men and pick the book up. Its leather covering is stitched together, and as you look closer you can see the flesh of ears and noses encompassing the cover. Immediately, the bones of the slain undead scratch across the marbled floor. One zips between your legs and flies into the pile of ash. A dull white fire alights inside the socket of the skull. That\'s more than enough for you: with a quick command, you get the men to climb back up the rope, yourself the last to leave. As you near the light of the earth above, you take one moment to stare back down and - the black skull is already in your face! It floats alone, eyes burning white, capturing your sight in a cone of fire you cannot understand, and as you stare into it you can hear the voices of your men fade away. The skull floats alone, and you almost feel the urge to let the rope go. The skull speaks to your mind:%SPEECH_ON%It is but one of its gifts, Interloper, and you are not the first to have it. There is many who have taken it, and in the many there is but one end, the one who awaits us all!%SPEECH_OFF%The skull\'s fire snuffs out and it drops away into the dark where you hear a brief clatter. The voices of your men rush back in, louder than ever and you look up to see %randombrother%\'s hand. Grabbing hold, they pull you out. As you exit, the entrance sinks into the sand, and all you have of the place is a strange, fleshen book filled with writings you cannot ever hope to decipher.}",
+			Text = "[img]gfx/ui/events/event_89.png[/img]{Le Gardien des Lieux s'effondre sur le sol en un tas de cendres et les phylactères s'effacent lentement pour redevenir sombres. Vous vous approchez, une torche à la main. Son crâne noir repose sur le livre qui se trouvait autrefois dans sa poitrine.%SPEECH_ON%Capitaine, je ne pense pas que nous devrions toucher quoi que ce soit ici.%SPEECH_OFF%Vous ignorez un de vos hommes et prenez le livre. Sa couverture en cuir est cousue ensemble, et en regardant de plus près, vous pouvez voir la chair des oreilles et des nez entourant la couverture. Immédiatement, les os des morts-vivants tués griffent le sol marbré. L'un d'eux passe entre vos jambes et s'envole dans le tas de cendres. Un feu blanc terne s'allume dans la cavité du crâne. C'est plus que suffisant pour vous : d'un ordre rapide, vous faites remonter les hommes sur la corde, vous êtes le dernier à partir. Alors que vous vous approchez de la lumière de la terre au-dessus, vous prenez un moment pour regarder vers le bas et - le crâne noir est déjà dans votre visage ! Il flotte seul, les yeux blancs brûlants, capturant votre vue dans un cône de feu que vous ne pouvez pas comprendre, et tandis que vous le fixez, vous pouvez entendre les voix de vos hommes s'éteindre. Le crâne flotte seul, et vous ressentez presque l'envie de lâcher la corde. Le crâne parle à votre esprit:%SPEECH_ON%Ce n'est qu'un de ses cadeaux, intrus et vous n'êtes pas le premier à l'avoir. Il y en a beaucoup qui l'ont pris, et dans la multitude il n'y a qu'une seule fin, celle qui nous attend tous!%SPEECH_OFF%Le feu du crâne s'éteint et il tombe dans l'obscurité où vous entendez un bref cliquetis. Les voix de vos hommes reviennent, plus fortes que jamais, et vous levez les yeux pour voir la main de %randombrother%. Ils s'y accrochent et vous tirent vers l'extérieur. Lorsque vous sortez, l'entrée s'enfonce dans le sable, et tout ce qui vous reste de l'endroit est un livre étrange, charnu, rempli d'écritures que vous ne pourrez jamais espérer déchiffrer.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What did I just take?",
+					Text = "Qu'est-ce que je viens de prendre?",
 					function getResult( _event )
 					{
 						return 0;
@@ -283,7 +283,7 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 			],
 			function start( _event )
 			{
-				_event.m.Title = "After the battle...";
+				_event.m.Title = "Après la bataille...";
 
 				if (this.World.State.getLastLocation() != null)
 				{
@@ -305,13 +305,13 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Defeat",
-			Text = "[img]gfx/ui/events/event_173.png[/img]The men run and hastily climb up again.%SPEECH_ON%Perhaps another time?%SPEECH_OFF%One sellsword says. %randombrother% nods.%SPEECH_ON%Another time, aye. Maybe a time far away from now, when I\'m out retired and farkin\' whoors, then y\'all can dip down into the darkness and go gallivanting with dead wizards. Does that time work for y\'all?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_173.png[/img]Les hommes courent et se hâtent de remonter.%SPEECH_ON%Peut-être une autre fois?%SPEECH_OFF%Un soldat dit. %randombrother% hoche la tête. %SPEECH_ON%Une autre fois, oui. Peut-être un temps très lointain, quand je serai à la retraite et que j'aurai fait le tapin, alors vous pourrez tous plonger dans les ténèbres et vous promener avec des sorciers morts. Ce moment vous convient-il ?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Perhaps one day...",
+					Text = "Peut-être qu'un jour...",
 					function getResult( _event )
 					{
 						return 0;
@@ -321,7 +321,7 @@ this.sunken_library_enter_event <- this.inherit("scripts/events/event", {
 			],
 			function start( _event )
 			{
-				_event.m.Title = "After the battle...";
+				_event.m.Title = "Après la bataille...";
 
 				if (this.World.State.getLastLocation() != null)
 				{
