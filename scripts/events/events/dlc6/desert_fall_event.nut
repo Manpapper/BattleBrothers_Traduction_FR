@@ -9,13 +9,13 @@ this.desert_fall_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{As you tread down the slope of a dune, %fallbro% loses his footing and starts to slide down. He yells out for help, flailing as he tumbles downward. Each tumble gains speed and air, every roll of the limbs seemingly arcing him higher into the air than the last. Despite the silky, slipperiness of the dune\'s slope, the bottom of its valley is a hard firmament and the sellsword grinds across it until he comes to a complete stop. He\'s not dead but comes away a little banged up, with scrapes, bruises, burns, and a hint of embarrassment.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Alors que vous descendez la pente d'une dune, %fallbro% perd pied et commence à glisser vers le bas. Il crie à l'aide et se débat en dégringolant. Chaque culbute prend de la vitesse et d'amplitude, chaque roulement des membres semble l'élever plus haut dans les airs que la précédente. Malgré le caractère soyeux et glissant de la pente de la dune, le fond de sa vallée est un firmament dur et l'épée s'écrase dessus jusqu'à ce qu'il s'arrête complètement. Il n'est pas mort mais s'en sort un peu amoché, avec des éraflures, des bleus, des brûlures et un soupçon d'embarras.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Careful!",
+					Text = "Attention!",
 					function getResult( _event )
 					{
 						return 0;
@@ -25,7 +25,7 @@ this.desert_fall_event <- this.inherit("scripts/events/event", {
 			],
 			function start( _event )
 			{
-				_event.m.SomeGuy.worsenMood(1.0, "Bruised his leg when sliding down a sand dune");
+				_event.m.SomeGuy.worsenMood(1.0, "Il s'est blessé à la jambe en glissant sur une dune de sable.");
 				local injury = _event.m.SomeGuy.addInjury([
 					{
 						ID = "injury.bruised_leg",

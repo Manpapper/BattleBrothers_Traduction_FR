@@ -7,13 +7,13 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_171.png[/img]{A lone merchant approaches with a wagon pulled by a camel. Large jugs rattle against one another in the bed of his cart, with ropes of dried moss hanging between the lids of each one. He rears up on the camel and swings his legs to one side of the animal\'s withers, tapping his own boot with a jockey switch.%SPEECH_ON%Hello there, travelers, I pray that your road to the coin has been gilded well. Mine has, though I\'m afraid we have seemingly crossed paths at a time when my peculiar shines rank in rare number. I\'ve but a few goods left, all of the drinking sort. 50 crowns per jug. Interested?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_171.png[/img]{Un marchand solitaire s'approche avec un chariot tiré par un chameau. De grandes cruches cliquettent les unes contre les autres dans le lit de son chariot, des cordes de mousse séchée étant suspendues entre les couvercles de chacune d'elles. Il se redresse sur le chameau et balance ses jambes d'un côté du garrot de l'animal, en tapant sur sa propre botte avec un interrupteur de jockey.%SPEECH_ON%Bonjour, voyageurs, je prie pour que votre route vers la pièce ait été bien dorée. La mienne l'a été, bien que je craigne que nos chemins se soient apparemment croisés à un moment où ma spécialitée brille en nombre rare. Il ne me reste que quelques marchandises, toutes à boire. 50 couronnes par cruche. Intéressé?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll take all the jugs for 150 crowns.",
+					Text = "Nous prenons toutes les cruches pour 150 couronnes.",
 					function getResult( _event )
 					{
 						return "B";
@@ -21,7 +21,7 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "For 50 crowns, we\'ll just take one.",
+					Text = "Pour 50 couronnes, nous n'en prendrons qu'une.",
 					function getResult( _event )
 					{
 						return "C";
@@ -29,7 +29,7 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'re good.",
+					Text = "Nous sommes bons.",
 					function getResult( _event )
 					{
 						return 0;
@@ -44,13 +44,13 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_171.png[/img]{You exchange for everything he\'s got to which the merchant happily obliges. When he leaves, his camels are barren and seem to have a skip in their step after carrying a load for so long. The drink in the jugs is a mixture of water and other additives which will ensure good, long lasting taste. A refreshing beverage to have in an otherwise hellish wasteland.}",
+			Text = "[img]gfx/ui/events/event_171.png[/img]{Vous lui demandez tout ce qu'il a, ce que le marchand fait avec plaisir. Lorsqu'il part, ses chameaux sont vides et semblent plus léger après avoir porté une charge pendant si longtemps. La boisson contenue dans les cruches est un mélange d'eau et d'autres additifs qui garantissent un goût bon et durable. Une boisson rafraîchissante à déguster dans un désert infernal.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "How refreshing!",
+					Text = "Comme c'est rafraîchissant !",
 					function getResult( _event )
 					{
 						return 0;
@@ -64,7 +64,7 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]150[/color] Couronnes"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]150[/color] Couronnes"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -74,7 +74,7 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 					{
 						if (this.Math.rand(1, 100) <= 33)
 						{
-							bro.improveMood(1.0, "Had a most refreshing drink");
+							bro.improveMood(1.0, "J'ai bu une boisson très rafraîchissante");
 
 							if (bro.getMoodState() > this.Const.MoodState.Neutral)
 							{
@@ -92,13 +92,13 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_171.png[/img]{The merchant nods and you exchange crowns for one of the jugs. Despite only having a single jug of the drink, it will provide a refreshing respite from the hellish heat of the desert.}",
+			Text = "[img]gfx/ui/events/event_171.png[/img]{Le marchand acquiesce et vous échangez des couronnes contre l'une des cruches. Bien que vous n'ayez qu'une seule cruche de cette boisson, elle vous apportera un répit rafraîchissant dans la chaleur infernale du désert.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "How refreshing!",
+					Text = "Comme c'est rafraîchissant !",
 					function getResult( _event )
 					{
 						return 0;
@@ -112,7 +112,7 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]50[/color] Couronnes"
+					text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]50[/color] Couronnes"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -120,7 +120,7 @@ this.merchant_of_jugs_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 33)
 					{
-						bro.improveMood(1.0, "Had a most refreshing drink");
+						bro.improveMood(1.0, "J'ai bu une boisson très rafraîchissante");
 
 						if (bro.getMoodState() > this.Const.MoodState.Neutral)
 						{

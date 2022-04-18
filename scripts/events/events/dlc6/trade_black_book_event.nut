@@ -9,13 +9,13 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_174.png[/img]{A man has approached the camp. You leave your tent to find him standing with his hands atop a golden spear, the shaft of which branches out with sharpened points. As threatening as the weapon looks, a pair of water jugs and golden curios have weighted it with other purposes. The man himself throws back a cloak to reveal a very peculiar and pale face that has not a single hair upon the flesh. He introduces himself with flawless articulation.%SPEECH_ON%Hello stranger, my name is Yuchi Eveohtse. I\'m looking for two things in these lands, one of which I\'ve come to understand is in your possession. It is a profound text on the nature, no, the existence of death. I believe one of your men has already unlocked a partial set of its mysteries and, at this point, it is of little further use to you.%SPEECH_OFF%%translator% nods, stating that as long as he stares at the pages, he can make nothing more of it and doubts anyone can. Yuchi whistles and you look back at him. The man holds out three fingers.%SPEECH_ON%In exchange for the book, I\'ve one of these to offer: either a golden shield the faithful of these lands call the Gilder\'s Embrace, my two jugs which, when imbibed, will strengthen a man in ways beyond your imagining, or, being that you are mercenaries, a sum of 50,000 crowns.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_174.png[/img]{Un homme s'est approché du camp. Vous quittez votre tente pour le trouver debout, les mains sur une lance en or, dont la hampe se ramifie en pointes aiguisées. Aussi menaçante que l'arme puisse paraître, une paire de cruches à eau et des bibelots en or l'ont alourdie à d'autres fins. L'homme lui-même rejette un manteau pour révéler un visage très particulier et pâle qui n'a pas un seul poil sur la chair. Il se présente avec une articulation sans faille.%SPEECH_ON%Bonjour étranger, je m'appelle Yuchi Eveohtse. Je suis à la recherche de deux choses dans ces terres, et j'ai compris que l'une d'entre elles est en votre possession. C'est un texte profond sur la nature, non, l'existence de la mort. Je crois que l'un de vos hommes a déjà percé une partie de ses mystères et, pour l'instant, il ne vous est plus d'aucune utilité.%SPEECH_OFF%%traducteur% hoche la tête, affirmant que tant qu'il fixera les pages, il ne pourra rien en tirer de plus et doute que quiconque le puisse. Yuchi siffle et vous vous retournez vers lui. L'homme tend trois doigts. %SPEECH_ON%En échange du livre, j'ai l'un de ces objets à offrir : soit un bouclier d'or que les fidèles de ces terres appellent l'étreinte du doreur, mes deux cruches qui, une fois bues, renforceront un homme au-delà de votre imagination, ou, puisque vous êtes des mercenaires, une somme de 50 000 couronnes.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We trade the book for the golden shield.",
+					Text = "On échange le livre contre le bouclier d'or.",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We trade the book for the two jugs.",
+					Text = "On échange le livre contre les deux cruches.",
 					function getResult( _event )
 					{
 						return "C";
@@ -31,7 +31,7 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We trade the book for 50,000 crowns.",
+					Text = "On échange le livre contre 50 000 couronnes.",
 					function getResult( _event )
 					{
 						return "D";
@@ -47,13 +47,13 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "A2",
-			Text = "[img]gfx/ui/events/event_174.png[/img]{A man has approached the camp. You leave your tent to find him standing with his hands atop a golden spear, the shaft of which branches out with sharpened points. As threatening as the weapon looks, a pair of water jugs and golden curios have weighted it with other purposes. The man himself throws back a cloak to reveal a very peculiar and pale face that has not a single hair upon the flesh. He introduces himself with flawless articulation.%SPEECH_ON%Hello stranger, my name is Yuchi Eveohtse. I\'m looking for two things in these lands, one of which I\'ve come to understand is in your possession. It is a profound text on the nature, no, the existence of death.%SPEECH_OFF%The man holds out three fingers.%SPEECH_ON%In exchange for the book, I\'ve one of these to offer: either a golden shield the faithful of these lands call the Gilder\'s Embrace, my two jugs which, when imbibed, will strengthen a man in ways beyond your imagining, or, being that you are mercenaries, a sum of 50,000 crowns.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_174.png[/img]{Un homme s'est approché du camp. Vous quittez votre tente pour le trouver debout, les mains sur une lance en or, dont la hampe se ramifie en pointes aiguisées. Aussi menaçante que l'arme puisse paraître, une paire de cruches à eau et des bibelots en or l'ont alourdie à d'autres fins. L'homme lui-même rejette un manteau pour révéler un visage très particulier et pâle qui n'a pas un seul poil sur la chair. Il se présente avec une articulation sans faille.%SPEECH_ON%Hello étranger, je m'appelle Yuchi Eveohtse. Je suis à la recherche de deux choses dans ces terres, et j'ai compris que l'une d'entre elles est en votre possession. Il s'agit d'un texte profond sur la nature, non, l'existence de la mort.%SPEECH_OFF%L'homme tend trois doigts.%SPEECH_ON%En échange du livre, j'ai l'une de ces choses à offrir : soit un bouclier d'or que les fidèles de ces terres appellent l'étreinte du Doreur, mes deux cruches qui, une fois bues, renforceront un homme au-delà de votre imagination, ou, étant donné que vous êtes des mercenaires, une somme de 50 000 couronnes.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We trade the book for the golden shield.",
+					Text = "On échange le livre contre le bouclier d'or.",
 					function getResult( _event )
 					{
 						return "B";
@@ -61,7 +61,7 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We trade the book for the two jugs.",
+					Text = "On échange le livre contre les deux cruches.",
 					function getResult( _event )
 					{
 						return "C";
@@ -69,7 +69,7 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We trade the book for 50,000 crowns.",
+					Text = "On échange le livre contre 50 000 couronnes.",
 					function getResult( _event )
 					{
 						return "D";
@@ -84,13 +84,13 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi bows for the briefest moment and when he stands he is holding a shield. At first glance, it appears to be nothing more than steel with ornate gildings around the edges, but suddenly an orb of yellow light cycles around the outer rim, dancing around and around.%SPEECH_ON%They call it the Gilder\'s Embrace for the God\'s very divinity is said to be partitioned within its framing. See, if you were to turn this against your enemies, the light would grow to such blinding rays that your foes shall not see. And as you can tell, the light now is dull, for we are not enemies, stranger.%SPEECH_OFF%The man holds out his hand. You give him the book, and he gives you the shield. He does not even stare at the book, simply stows it away and gathers up his spear. You ask him what he intends to do with the text. He smiles.%SPEECH_ON%Who knows. Maybe I will simply return it, hm? Or maybe not.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi s'incline un bref instant et quand il se lève, il tient un bouclier. Au premier coup d'œil, il semble n'être rien de plus que de l'acier avec des dorures ornées autour des bords, mais soudainement une orbe de lumière jaune tourne autour du bord extérieur, dansant autour et autour. Voyez, si vous deviez tourner cela contre vos ennemis, la lumière deviendrait si aveuglante que vos ennemis ne verraient rien. Et comme vous pouvez le voir, la lumière est maintenant terne, car nous ne sommes pas des ennemis, étranger.%SPEECH_OFF%L'homme tend la main. Vous lui donnez le livre, et il vous donne le bouclier. Il ne regarde même pas le livre, il le range simplement et ramasse sa lance. Vous lui demandez ce qu'il compte faire avec le texte. Il sourit. %SPEECH_ON%Qui sait. Peut-être que je vais simplement le rendre, hm ? Ou peut-être pas.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What was the second thing you came for?",
+					Text = "Quelle est la deuxième chose pour laquelle vous êtes venu ?",
 					function getResult( _event )
 					{
 						return "E";
@@ -129,13 +129,13 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi tips his gilded spear forward. It sharpness is incredible, like something a blacksmith may dream of but never manifest by any mortal hand. The pair of jugs slide off and he catches them by their straps and holds them out. You give him the book and he lets go of the jugs. Not wanting to be poisoned, you ask that he take a drink of both jugs which he does so willingly. Wiping his mouth, he nods.%SPEECH_ON%I\'m quite partial to its flavors and its effects, please do not waste anymore of it on your suspicions and hesitancies.%SPEECH_OFF%The man stows the book somewhere into his cloak, picks up his gear, and begins to walk away. You ask what he plans to do with the text. He smiles.%SPEECH_ON%Who knows. Maybe I will simply return it, hm? Or maybe not.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi pointe sa lance dorée en avant. Elle est incroyablement tranchante, comme quelque chose dont un forgeron pourrait rêver mais qu'aucun mortel ne pourra jamais réaliser. La paire de cruches glisse et il les attrape par leurs sangles et les tend. Vous lui donnez le livre et il lâche les cruches. Ne voulant pas être empoisonné, vous lui demandez de prendre un verre des deux cruches, ce qu'il fait volontiers. S'essuyant la bouche, il hoche la tête.%SPEECH_ON%Je suis assez sensible à ses saveurs et ses effets, s'il vous plaît ne gaspillez pas plus sur vos suspicions et hésitations.%SPEECH_OFF%L'homme range le livre quelque part dans sa cape, ramasse son équipement et commence à s'éloigner. Vous lui demandez ce qu'il compte faire avec le texte. Il sourit. %SPEECH_ON%Qui sait. Peut-être que je vais simplement le rendre, hm ? Ou peut-être pas.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What was the second thing you came for?",
+					Text = "Quelle est la deuxième chose pour laquelle vous êtes venu ?",
 					function getResult( _event )
 					{
 						return "E";
@@ -182,13 +182,13 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi nods.%SPEECH_ON%Give me the book and bring me your warchest.%SPEECH_OFF%You throw him the text and then have the company\'s treasury brought before the man. He holds out both arms of his cloaks and slowly tips them forward. Crowns stream out of the sleeves seemingly without end and then on an instant the man tips both arms up.%SPEECH_ON%Your %reward% crowns should be there.%SPEECH_OFF%You have the coin counted and it is the exact amount. You look up to say he\'s quite lucky, but the man is already picking up his things and preparing to leave.%SPEECH_ON%Take care, stranger.%SPEECH_OFF%Before he goes, you ask what he plans to do with the text. He smiles.%SPEECH_ON%Who knows. Maybe I will simply return it, hm? Or maybe not.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi hoche la tête. %SPEECH_ON%Donne moi le livre et apporte moi ton trésor de guerre.%SPEECH_OFF%Tu lui jette le texte et fait amener le trésor de la compagnie devant l'homme. Il tend les deux bras de ses manteaux et les fait lentement basculer vers l'avant. Les couronnes s'échappent des manches apparemment sans fin et puis en un instant l'homme lève les deux bras.%SPEECH_ON%Votre %récompense% couronnes devrait être là.%SPEECH_OFF%Vous faites compter les pièces et c'est le montant exact. Tu lèves la tête pour dire qu'il a de la chance, mais l'homme est déjà en train de ramasser ses affaires et de se préparer à partir.%SPEECH_ON% Prends soin de toi, étranger.%SPEECH_OFF%Avant qu'il parte, tu lui demandes ce qu'il compte faire avec le texte. Il sourit. %SPEECH_ON%Qui sait. Peut-être que je vais simplement le rendre, hm ? Ou peut-être pas.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What was the second thing you came for?",
+					Text = "Quelle est la deuxième chose pour laquelle vous êtes venu ?",
 					function getResult( _event )
 					{
 						return "E";
@@ -226,13 +226,13 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi turns around.%SPEECH_ON%Hm?%SPEECH_OFF%You explain that he said he had come to these lands looking for two things. One was the book, what was the other? He smiles.%SPEECH_ON%There is a town in these parts by the name of Dagentear. The town is no more, but something that lived there still wanders. A being they call the \'Wight.\' I wish to find it and speak with it.%SPEECH_OFF%When you ask for more information he simply parts with a graceful bow.%SPEECH_ON%Thank you for your gentle dealings, stranger.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_174.png[/img]{Yuchi se retourne. %SPEECH_ON%Hm?%SPEECH_OFF%Vous expliquez qu'il a dit qu'il était venu sur ces terres pour chercher deux choses. L'une était le livre, quelle était l'autre ? Il sourit. %SPEECH_ON%Il y a une ville dans ces régions qui s'appelle Dagentear. La ville n'existe plus, mais quelque chose qui y vivait erre toujours. Un être qu'on appelle le Wight. Je souhaite le trouver et lui parler.%SPEECH_OFF%Quand vous lui demandez plus d'informations, il s'en va simplement en s'inclinant gracieusement.%SPEECH_ON%Merci pour ta gentillesse, étranger. %SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I hope we did the right thing giving him that book...",
+					Text = "J'espère que nous avons fait le bon choix en lui donnant ce livre...",
 					function getResult( _event )
 					{
 						return 0;

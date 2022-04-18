@@ -10,27 +10,27 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "Nobles",
-			Text = "[img]gfx/ui/events/event_53.png[/img]{The surviving man scrambles away from you. He\'s muttering something. You can\'t hear it, but the language is clear nonetheless: he knows who you are, and what you are. | The battle over, you find one survivor in the field. He\'s a little scraped up but could be of use. | %SPEECH_ON%Slaving shit, do your worst.%SPEECH_OFF%Despite being the last man standing, the northerner\'s still got some fight in him. He may do well in the %companyname%. | You find the last man standing, hurt but alive. He\'s a northerner and would look good in chains. Perhaps fetch a solid price in the south, or serve as fodder on the frontlines? | The northern troop has been cut down to its last, a pale man who seems to not dwell long in defeat.%SPEECH_ON%Southern shits, your \'Gilder\' can suck my balls. C\'mon, give me a weapon, I\'ll show you how a northerner dies!%SPEECH_OFF%You can\'t help but like his gusto. Instead of serving worms in the grave, perhaps he could serve the company as one of the indebted?}",
+			Text = "[img]gfx/ui/events/event_53.png[/img]{L'homme survivant s'éloigne de vous en courant. Il marmonne quelque chose. Vous ne pouvez pas l'entendre, mais le langage est clair : il sait qui vous êtes, et ce que vous êtes. | La bataille terminée, vous trouvez un survivant dans le champ. Il est un peu écorché mais pourrait être utile. | Malgré le fait qu'il soit le dernier homme debout, le nordiste a encore de la volonté. Il pourrait bien entrer dans la %companyname%. | Tu trouves le dernier homme debout, blessé mais vivant. C'est un nordiste et il serait bien enchaîné. Il pourrait rapporter un bon prix dans le sud, ou servir de chair à canon sur les lignes de front ? | La troupe du nord a été abattue jusqu'au dernier, un homme pâle qui semble ne pas s'attarder dans la défaite. Merde du sud, ton doreur peut me sucer les couilles. Allez, donnez-moi une arme, je vais vous montrer comment meurt un nordiste!%SPEECH_OFF% On ne peut s'empêcher d'aimer son enthousiasme. Au lieu de servir les vers dans la tombe, peut-être pourrait-il servir la compagnie en tant qu'endetté ?}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take him as an indebted to the Gilder so that he may earn his salvation.",
+					Text = "Prenez-le comme débiteur du Doreur pour qu'il puisse gagner son salut.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						_event.m.Dude.m.MoodChanges = [];
-						_event.m.Dude.worsenMood(2.0, "Lost a battle and was taken a captive");
+						_event.m.Dude.worsenMood(2.0, "Il a perdu une bataille et a été fait prisonnier");
 						_event.m.Dude = null;
 						return 0;
 					}
 
 				},
 				{
-					Text = "We have no use for him.",
+					Text = "Nous n'avons pas besoin de lui.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -47,7 +47,7 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 				_event.m.Dude.setStartValuesEx([
 					"slave_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "Formerly a soldier loyal to noble lords, his company was slaughtered by your men and %name% was taken as an indebted. It didn\'t take much to break his spirit and force him to fight for you.";
+				_event.m.Dude.getBackground().m.RawDescription = "Ancien soldat fidèle aux nobles seigneurs, sa compagnie a été massacrée par vos hommes et %name% a été pris comme débiteur. Il n'en fallait pas plus pour briser son esprit et le forcer à se battre pour vous.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}
@@ -55,20 +55,20 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 		});
 		this.m.Screens.push({
 			ID = "Civilians",
-			Text = "[img]gfx/ui/events/event_53.png[/img]{The surviving man scrambles away from you. He\'s muttering something. You can\'t hear it, but the language is clear nonetheless: he knows who you are, and what you are. | The battle over, you find one survivor in the field. He\'s a little scraped up but could be of use.}",
+			Text = "[img]gfx/ui/events/event_53.png[/img]{L'homme survivant s'éloigne de vous en courant. Il marmonne quelque chose. Vous ne pouvez pas l'entendre, mais le langage est clair : il sait qui vous êtes, et ce que vous êtes. La bataille terminée, vous trouvez un survivant dans le champ. Il est un peu écorché, mais il pourrait vous être utile.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take him as an indebted to the Gilder so that he may earn his salvation.",
+					Text = "Prenez-le comme débiteur du Donneur pour qu'il puisse gagner son salut.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						_event.m.Dude.m.MoodChanges = [];
-						_event.m.Dude.worsenMood(2.0, "Lost a battle and was taken a captive");
+						_event.m.Dude.worsenMood(2.0, "Il a perdu une bataille et a été fait prisonnier");
 						_event.m.Dude = null;
 						return 0;
 					}
@@ -92,7 +92,7 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 				_event.m.Dude.setStartValuesEx([
 					"slave_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "%name% was taken as an indebted after barely surviving a battle against your men. His spirit was broken and he was forced to fight for you, so that he may pay his debt to the Gilder.";
+				_event.m.Dude.getBackground().m.RawDescription = "%name% a été pris comme débiteur après avoir survécu de justesse à une bataille contre vos hommes. Son esprit a été brisé et il a été forcé de se battre pour vous, afin qu'il puisse payer sa dette au Doreur.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}
@@ -100,27 +100,27 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 		});
 		this.m.Screens.push({
 			ID = "Bandits",
-			Text = "[img]gfx/ui/events/event_53.png[/img]{The surviving man scrambles away from you. He\'s muttering something. You can\'t hear it, but the language is clear nonetheless: he knows who you are, and what you are. | The battle over, you find one survivor in the field. He\'s a little scraped up but could be of use. | The lone bandit survivor yells out for the old gods as you weigh a chain in your hand, wondering how it will fit around his neck. | %SPEECH_ON%Is this the penalty for banditry?%SPEECH_OFF%The northerner asks as you weigh a chain in your hand. You\'re still not sure yet of how you\'ll handle him, but answer anyway.%SPEECH_ON%This isn\'t punitive at all, it\'s merely business.%SPEECH_OFF% | The bandit tries to hide, but as the last survivor he\'s about as easy to spot as a white rabbit on a bloodslaked battlefield. He yells out that the old gods wouldn\'t abide by men such as yourself. You shrug.%SPEECH_ON%The old gods aren\'t standing where I am, now are they?%SPEECH_OFF%And you hold out the chain, sizing it with his neck.%SPEECH_ON%But I wonder, how much would you give up, to swap spots with one of your gods, hm?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_53.png[/img]{L'homme survivant s'éloigne de vous en courant. Il marmonne quelque chose. Vous ne pouvez pas l'entendre, mais le langage est clair : il sait qui vous êtes, et ce que vous êtes. | La bataille terminée, vous trouvez un survivant dans le champ. Il est un peu écorché mais il pourrait être utile. | Le seul survivant bandit hurle pour les anciens dieux tandis que vous soupesez une chaîne dans votre main, vous demandant comment elle s'adaptera à son cou. | Le nordique demande alors que vous pesez une chaîne dans votre main. Tu n'es pas encore sûr de la façon dont tu vas le traiter, mais tu réponds quand même.%SPEECH_ON% Ce n'est pas du tout une punition, c'est simplement une question d'affaires.%SPEECH_OFF% Le bandit essaie de se cacher, mais en tant que dernier survivant, il est aussi facile à repérer qu'un lapin blanc sur un champ de bataille ensanglanté. Il crie que les anciens dieux ne supporteraient pas des hommes comme toi. Vous haussez les épaules. %SPEECH_ON% Les anciens dieux ne sont pas là où je suis, n'est-ce pas ? %SPEECH_OFF% Et vous tendez la chaîne, la mesurant à son cou. %SPEECH_ON% Mais je me demande, de  quoi renoncerais-tu, pour échanger ta place avec un de tes dieux, hm ?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take him as an indebted to the Gilder so that he may earn his salvation.",
+					Text = "Prenez-le comme débiteur du Doreur pour qu'il puisse gagner son salut.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						_event.m.Dude.m.MoodChanges = [];
-						_event.m.Dude.worsenMood(2.0, "Lost a battle and was taken a captive");
+						_event.m.Dude.worsenMood(2.0, "Il a perdu une bataille et a été fait prisonnier");
 						_event.m.Dude = null;
 						return 0;
 					}
 
 				},
 				{
-					Text = "We have no use for him.",
+					Text = "Nous n'avons pas besoin de lui.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -137,7 +137,7 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 				_event.m.Dude.setStartValuesEx([
 					"slave_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "%name% was taken as an indebted after barely surviving a battle against your men. His spirit was broken and he was forced to fight for you, so that he may pay his debt to the Gilder.";
+				_event.m.Dude.getBackground().m.RawDescription = "%name% a été pris comme débiteur après avoir survécu de justesse à une bataille contre vos hommes. Son esprit a été brisé et il a été forcé de se battre pour vous, afin qu'il puisse payer sa dette au Doreur";
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}
@@ -145,20 +145,20 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 		});
 		this.m.Screens.push({
 			ID = "Nomads",
-			Text = "[img]gfx/ui/events/event_172.png[/img]{The surviving man scrambles away from you. He\'s muttering something. You can\'t hear it, but the language is clear nonetheless: he knows who you are, and what you are. | The battle over, you find one survivor in the field. He\'s a little scraped up but could be of use. | You hold the chain out to the nomad, sizing his head from a distance in the swing of its closed gate.%SPEECH_ON%Sometimes in the sands, a man may come across those he should not have trifled with. Sometimes he walks away.%SPEECH_OFF%You grasp the chain firmly.%SPEECH_ON%Sometimes he just walks.%SPEECH_OFF% | The sands shift and slide as the wounded nomad tries to escape. You easily put a boot on him and hold him down, your other hand sizing up his neck with the slave chain. | The nomad prays for forgiveness.%SPEECH_ON%By parting our shadows, the shine of the Gilder brighten the both of us!%SPEECH_OFF%You hold up a chain and tell him not every shadow is born a part of us.}",
+			Text = "[img]gfx/ui/events/event_172.png[/img]{L'homme survivant s'éloigne de vous en courant. Il marmonne quelque chose. Vous ne pouvez pas l'entendre, mais le langage est clair : il sait qui vous êtes, et ce que vous êtes. | La bataille terminée, vous trouvez un survivant dans le champ. Il est un peu écorché mais pourrait être utile. | Vous tendez la chaîne au nomade, mesurant de loin sa tête dans le balancement de son visage fermé. Parfois, dans les sables, un homme peut rencontrer ceux avec qui il n'aurait pas dû badiner. Parfois il s'éloigne.%SPEECH_OFF% Tu saisis fermement la chaîne.%SPEECH_ON% Parfois il marche tout simplement.%SPEECH_OFF% | Les sables bougent et glissent alors que le nomade blessé tente de s'échapper. Tu lui mets facilement une botte et le maintiens au sol, ton autre main mesurant son cou avec la chaîne d'esclave. | Le nomade prie pour le pardon.%SPEECH_ON% En séparant nos ombres, l'éclat du Doreur nous illumine tous les deux!%SPEECH_OFF% Tu lui tends une chaîne et lui dit que toutes les ombres ne naissent pas de nous.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take him as an indebted to the Gilder so that he may earn his salvation.",
+					Text = "Prenez-le comme débiteur du Doreur pour qu'il puisse gagner son salut.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						_event.m.Dude.m.MoodChanges = [];
-						_event.m.Dude.worsenMood(2.0, "Lost a battle and was taken a captive");
+						_event.m.Dude.worsenMood(2.0, "Il a perdu une bataille et a été fait prisonnier");
 						_event.m.Dude = null;
 						return 0;
 					}
@@ -182,7 +182,7 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 				_event.m.Dude.setStartValuesEx([
 					"slave_southern_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "%name% was taken as an indebted after barely surviving a battle against your men. His spirit was broken and he was forced to fight for you, so that he may pay his debt to the Gilder.";
+				_event.m.Dude.getBackground().m.RawDescription = "%name% a été pris comme débiteur après avoir survécu de justesse à une bataille contre vos hommes. Son esprit a été brisé et il a été forcé de se battre pour vous, afin qu'il puisse payer sa dette au Doreur.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}
@@ -190,20 +190,20 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 		});
 		this.m.Screens.push({
 			ID = "CityState",
-			Text = "[img]gfx/ui/events/event_172.png[/img]{The surviving man scrambles away from you. He\'s muttering something. You can\'t hear it, but the language is clear nonetheless: he knows who you are, and what you are. | The battle over, you find one survivor in the field. He\'s a little scraped up but could be of use. | %SPEECH_ON%The Gilder wouldn\'t have it.%SPEECH_OFF%He is the last of the southern troop, a wounded pitiful man begging for his life. You hold up the chain.%SPEECH_ON%Just because this is on you does not mean your path is shadowed, fellow traveler. Just means mine is a little bit brighter.%SPEECH_OFF% | %SPEECH_ON%Ah, please don\'t!%SPEECH_OFF%You have your boot on the last of the southern troop, and you are sizing him up to join the indebted. He begs for his life, or for freedom, and eventually to simply die free. You shake your head.%SPEECH_ON%Gold cannot live or die, traveler, it is merely weighed. Heavy. Or light. My considerations do not concern you. You beg about something you lost the moment you crossed paths with me.%SPEECH_OFF% | The last of the southern troop is at your feet. He\'s praying to the Gilder to bring light to his path. Unfortunately, the only one with say here is yourself, and you\'ve got a spot in chains for the man if you wish him to \'join\' the %companyname%.}",
+			Text = "[img]gfx/ui/events/event_172.png[/img]{L'homme survivant s'éloigne de vous en courant. Il marmonne quelque chose. Vous ne pouvez pas l'entendre, mais le langage est clair : il sait qui vous êtes, et ce que vous êtes. | La bataille terminée, vous trouvez un survivant dans le champ. Il est un peu écorché mais pourrait être utile. | C'est le dernier de la troupe du sud, un homme blessé et pitoyable qui supplie pour sa vie. Tu tiens la chaine.%SPEECH_ON%Ce n'est pas parce que c'est sur toi que ton chemin est ombragé, compagnon de route. Ca veut juste dire que le mien est un peu plus lumineux.%SPEECH_OFF% | %SPEECH_ON%Ah, s'il te plait non!%SPEECH_OFF%Tu as ta botte sur le dernier de la troupe du sud, et tu le jauge pour rejoindre les endettés. Il supplie pour sa vie, ou pour la liberté, et finalement pour mourir libre. Vous secouez la tête. L'or ne peut ni vivre ni mourir, voyageur, il est simplement pesé. Lourd. Ou léger. Mes considérations ne vous concernent pas. Tu mendies pour quelque chose que tu as perdu au moment où tu m'as croisé.%SPEECH_OFF% | Le dernier de la troupe du sud est à tes pieds. Il prie le doreur d'apporter la lumière sur son chemin. Malheureusement, le seul à pouvoir s'exprimer ici est vous-même, et vous avez une place dans les chaînes pour l'homme si vous souhaitez qu'il rejoigne le %companyname%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take him as an indebted to the Gilder so that he may earn his salvation.",
+					Text = "Prenez-le comme débiteur du Doreur pour qu'il puisse gagner son salut.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						_event.m.Dude.m.MoodChanges = [];
-						_event.m.Dude.worsenMood(2.0, "Lost a battle and was taken a captive");
+						_event.m.Dude.worsenMood(2.0, "Il a perdu une bataille et a été fait prisonnier");
 						_event.m.Dude = null;
 						return 0;
 					}
@@ -227,7 +227,7 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 				_event.m.Dude.setStartValuesEx([
 					"slave_southern_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "%name% was taken as an indebted after barely surviving a battle against your men. His spirit was broken and he was forced to fight for you, so that he may pay his debt to the Gilder.";
+				_event.m.Dude.getBackground().m.RawDescription = "%name% a été pris comme débiteur après avoir survécu de justesse à une bataille contre vos hommes. Son esprit a été brisé et il a été forcé de se battre pour vous, afin qu'il puisse payer sa dette au Doreur.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}
@@ -235,27 +235,27 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 		});
 		this.m.Screens.push({
 			ID = "Barbarians",
-			Text = "[img]gfx/ui/events/event_145.png[/img]{The surviving man scrambles away from you. He\'s muttering something. You can\'t hear it, but the language is clear nonetheless: he knows who you are, and what you are. | The battle over, you find one survivor in the field. He\'s a little scraped up but could be of use. | Ah, the last survivor. He\'s a large man, the barbarian, and could perhaps do well for you. In chains, of course. | The %companyname% rarely comes across stock such as these northern barbarians. With one last survivor left on the field, you ponder if taking him as an indebted would be to your benefit. | The last barbarian standing. He speaks to you in a language you\'d never have the time to learn. Grunts, growls, things which other languages would take for threats, but here you know he is articulating something of import. But, all you have to respond with is the chain, and this barbarian might just make a very good indebted for the %companyname%.}",
+			Text = "[img]gfx/ui/events/event_145.png[/img]{L'homme survivant s'éloigne de vous en courant. Il marmonne quelque chose. Vous ne pouvez pas l'entendre, mais le langage est clair : il sait qui vous êtes, et ce que vous êtes. | La bataille terminée, vous trouvez un survivant dans le champ. Il est un peu écorché mais pourrait être utile. | Ah, le dernier survivant. C'est un homme de grande taille, ue barbare, et il pourrait peut-être vous être utile. Enchaîné, bien sûr. |Le %companyname% a rarement rencontré des costauds tels que ces barbares du nord. Avec un dernier survivant sur le terrain, tu te demandes si le prendre comme débiteur serait à ton avantage. | Le dernier barbare debout. Il te parle dans une langue que tu n'auras jamais le temps d'apprendre. Il grogne, il grogne, des choses que d'autres langues prendraient pour des menaces, mais ici vous savez qu'il articule quelque chose d'important. Mais, tout ce que vous avez à répondre, c'est la chaîne, et ce barbare pourrait bien faire un très bon endetté pour le %companyname%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take him as an indebted to the Gilder so that he may earn his salvation.",
+					Text = "Prenez-le comme débiteur du Doreur pour qu'il puisse gagner son salut.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
 						this.World.getTemporaryRoster().clear();
 						_event.m.Dude.onHired();
 						_event.m.Dude.m.MoodChanges = [];
-						_event.m.Dude.worsenMood(2.0, "Lost a battle and was taken a captive");
+						_event.m.Dude.worsenMood(2.0, "Il a perdu une bataille et a été fait prisonnier");
 						_event.m.Dude = null;
 						return 0;
 					}
 
 				},
 				{
-					Text = "We have no use for him.",
+					Text = "Nous n'avons pas besoin de lui.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -272,7 +272,7 @@ this.manhunters_origin_capture_prisoner_event <- this.inherit("scripts/events/ev
 				_event.m.Dude.setStartValuesEx([
 					"slave_barbarian_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "%name% was taken as an indebted after barely surviving a battle against your men. His spirit was broken and he was forced to fight for you, so that he may pay his debt to the Gilder.";
+				_event.m.Dude.getBackground().m.RawDescription = "%name% a été pris comme débiteur après avoir survécu de justesse à une bataille contre vos hommes. Son esprit a été brisé et il a été forcé de se battre pour vous, afin qu'il puisse payer sa dette au Doreur.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Dude.getImagePath());
 			}

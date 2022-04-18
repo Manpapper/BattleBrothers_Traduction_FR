@@ -7,13 +7,13 @@ this.desert_sand_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{A desert is unfriendly land to interlopers. Even if your equipment bears the weight of this natural hostility: some of the gear has been worn down by the sands themselves. Cleaning and sharpening will be needed to maintain to the quality of the %companyname%\'s equipment.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Un désert est une terre hostile aux intrus. Même si votre équipement supporte le poids de cette hostilité naturelle : une partie du matériel a été usée par les sables eux-mêmes. Un nettoyage et un affûtage seront nécessaires pour maintenir la qualité de l'équipement du %companyname%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This place truly hates everything.",
+					Text = "Cet endroit déteste vraiment tout.",
 					function getResult( _event )
 					{
 						return 0;

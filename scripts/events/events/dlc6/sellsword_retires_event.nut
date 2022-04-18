@@ -9,12 +9,12 @@ this.sellsword_retires_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{While on the path, you come across a man sitting beside the path. He\'s clad in some beaten armor and there\'s an even more beaten weapon in his lap. He regards you with the limpest of waves.%SPEECH_ON%Evening. If you ain\'t sellswords, then I never set my pa\'s pants afire.%SPEECH_OFF%That seems to be an interesting tale in and of itself, but you instead ask the man what he\'s doing in the middle of the road. More important, you ask this rather able-bodied fella if he\'s looking for work.%SPEECH_ON%A job? No. I don\'t need one. I already done that sword-selling bit and I\'m done with it. You know what, here.%SPEECH_OFF%He starts undoing his armor and throws it on the ground before you.%SPEECH_ON%Take it. I\'ve no need for that life anymore. Take the weapon, too. I\'m leaving all this shite behind. You should, too, but I knew ya won\'t. Not before it\'s too late, anyway. I\'m walking the earth until my feet are ground into nubs. As for yourself, godspeed.%SPEECH_OFF%And just like that, the stranger goes.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{Alors que vous êtes sur le chemin, vous rencontrez un homme assis à côté du chemin. Il est vêtu d'une armure usée et une arme encore plus usée est posée sur ses genoux. Il vous regarde avec le plus mou des saluts.%SPEECH_ON%bonsoir. Si vous n'êtes pas des mercenaires, alors je n'ai jamais mis le feu au pantalon de mon père.%SPEECH_OFF%Cela semble être une histoire intéressante en soi, mais vous demandez plutôt à l'homme ce qu'il fait au milieu de la route. Plus important encore, vous demandez à cet homme plutôt bien portant s'il cherche du travail.%SPEECH_ON% Un travail ? Non. Je n'en ai pas besoin. J'ai déjà fait le coup de l'épée et j'en ai fini avec ça. Tu sais quoi, tiens.%SPEECH_OFF%Il commence à défaire son armure et la jette sur le sol devant toi.%SPEECH_ON%Prends la. Je n'ai plus besoin de cette vie. Prends l'arme, aussi. Je laisse toute cette merde derrière moi. Tu devrais, aussi, mais je sais que tu ne le feras pas. Pas avant qu'il ne soit trop tard, en tout cas. Je vais parcourir la terre jusqu'à ce que mes pieds soient réduits en bouillie. Quant à toi, bon vent. Et juste comme ça, l'étranger s'en va.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Good luck.",
+					Text = "Bonne chance.",
 					function getResult( _event )
 					{
 						if (_event.m.Peddler != null)
@@ -54,13 +54,13 @@ this.sellsword_retires_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{%peddler% the peddler, always having a good nose for gold, asks if the man earned any crowns while working as a sellsword. When the stranger nods, the peddler notes that if that\'s true then he can always \'buy\' his way back into the life. The sellsword thinks for a minute, then nods again.%SPEECH_ON%You know what? That\'s right. So long as I\'ve got the crowns, I\'ve still got a lifeline back to that damned business. Here, take it.%SPEECH_OFF%The retiring, and ostensibly soon-to-be-hermit, fishes into his pockets and happily throws you a sack of crowns like a man ridding himself of an old burden.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{%peddler% Le colporteur, qui a toujours un bon flair pour l'or, demande à l'homme s'il a gagné des couronnes en travaillant comme mercenaire. Lorsque l'étranger acquiesce, le colporteur fait remarquer que si c'est vrai, il peut toujours acheter son retour dans la vie. Le mercenaire réfléchit une minute, puis hoche à nouveau la tête.%SPEECH_ON%Vous savez quoi ? C'est vrai. Tant que j'ai les couronnes, j'ai toujours un moyen de revenir à ce maudit business. Tiens, prends-le.%SPEECH_OFF%Le retraité, et apparemment futur héritier, fouille dans ses poches et te lance joyeusement un sac de couronnes comme un homme qui se débarrasse d'un vieux fardeau.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll put these to good use.",
+					Text = "Nous en ferons bon usage.",
 					function getResult( _event )
 					{
 						return 0;

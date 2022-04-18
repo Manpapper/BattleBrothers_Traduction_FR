@@ -7,13 +7,13 @@ this.desert_feet_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 80.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{Marching through sand dunes for days has built up a lot of grit in the boots of the men. A few take pause, emptying out their shoes, while others reveal that their feet have been ground raw. This is a hellish landscape, it seems, no matter if it\'s the sun above or the sands below, it\'s all out to get you.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Marcher à travers les dunes de sable pendant des jours a accumulé beaucoup de sable dans les bottes. Quelques-uns font une pause, vidant leurs chaussures, tandis que d'autres révèlent que leurs pieds ont été broyés à vif. C'est un paysage infernal, il semble, peu importe si c'est le soleil au-dessus ou les sables en dessous, tout est là pour vous avoir.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Are those vultures circling above?",
+					Text = "Ce sont des vautours qui tournent au-dessus ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -34,7 +34,7 @@ this.desert_feet_event <- this.inherit("scripts/events/event", {
 
 					if (this.Math.rand(1, 100) <= 50)
 					{
-						bro.worsenMood(0.75, "Had his feet ground raw by desert sand");
+						bro.worsenMood(0.75, "Avait ses pieds broyés par le sable du désert");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{

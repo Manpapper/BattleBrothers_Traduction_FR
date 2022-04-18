@@ -10,7 +10,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{A sword eater is dancing around a plaza of %townname%. He holds out a blade about as thick as your pinky.%SPEECH_ON%As the Gilder sees me, I will eat this steel!%SPEECH_OFF%The man announces his intent, and follows through promptly: he arches his back, pinches the blade, and glides it into his mouth and onward and inward, his mouth puckering around the steel as though he were slurping noodles. The crowd at first gasps, but then the swallower gives two thumbs up and the onlookers cheer.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Un mangeur d'épée danse autour d'une place de %townname%. Il tend une lame à peu près aussi épaisse que votre petit doigt.%SPEECH_ON%Comme le Doreur me voit, je vais manger cet acier!%SPEECH_OFF%L'homme annonce son intention et s'exécute promptement : il se cambre, pince la lame, et la fait glisser dans sa bouche et ainsi de suite, sa bouche se plissant autour de l'acier comme s'il avalait des nouilles. La foule est d'abord surprise, puis l'avaleur fait deux pouces en l'air et les spectateurs applaudissent.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -18,7 +18,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Options.push({
-					Text = "Bravo! Here\'s a few coins for you.",
+					Text = "Bravo ! Voici quelques pièces pour vous.",
 					function getResult( _event )
 					{
 						return "B";
@@ -29,7 +29,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Wildman != null)
 				{
 					this.Options.push({
-						Text = "Bravo! Give that guy a few coins from me, %wildman%.",
+						Text = "Bravo ! Donnez à ce gars quelques pièces de ma part, %wildman%.",
 						function getResult( _event )
 						{
 							return "C";
@@ -39,7 +39,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Interesting way to earn a living.",
+					Text = "Une façon intéressante de gagner sa vie.",
 					function getResult( _event )
 					{
 						return 0;
@@ -51,13 +51,13 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{You toss the man a few crowns. He pulls out his sword and places its tip upon his pate. The crowd cheers again. Grinning, the man talks as he balances the sword.%SPEECH_ON%I see your banner, Crownling. I\'m no warrior, but I am a traveler and well enough speaker. Though I seek to impress for personal gain, I will on occasion make sure to put in a kind word for your company of coin-seeking misfits.%SPEECH_OFF%The swallower throws his arms wide and nods quickly. The blade plummets from his skull and falls deftly into his sheathe at his hip. Again, the crowd roars with delight and you can\'t help but think this entertainer is a man of his word.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous lancez quelques couronnes à l'homme. Il sort son épée et place sa pointe sur son crâne. La foule applaudit à nouveau. L'homme sourit et parle en équilibrant son épée. Je vois votre bannière, Mercenaire. Je ne suis pas un guerrier, mais je suis un voyageur et un bon orateur. Bien que je cherche à impressionner pour un gain personnel, je m'assurerai à l'occasion d'avoir un mot gentil pour votre compagnie de marginaux à la recherche d'argent.%SPEECH_OFF%L'avaleur écarte les bras et hoche rapidement la tête. La lame s'échappe de son crâne et tombe habilement dans son fourreau à la hanche. Une fois encore, la foule hurle de joie et on ne peut s'empêcher de penser que cet artiste est un homme de parole.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "My sword is not so sharp, yet the ladies can\'t even do that?",
+					Text = "Mon épée n'est pas si tranchante, mais les dames ne peuvent même pas faire ça ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -72,23 +72,23 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Couronnes"
+						text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Couronnes"
 					}
 				];
-				_event.m.Town.getOwner().addPlayerRelation(5.0, "Local entertainers spread the word about you");
+				_event.m.Town.getOwner().addPlayerRelation(5.0, "Des artistes locaux font parler de vous");
 				this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{You hand %wildman% a few crowns and tell him to tip the entertainer. He grunts and heads over, then you realize that wasn\'t just any sellsword you beckoned, but %wildman% the wildman! Before you can stop him, he pushes the sword swallower over. There are cries, screams, and blood gargling death throes, but the crowd sweeps in front of the action and blocks the view. The way it is relayed to you is that the blade came out the swallower\'s front with straps of esophagus or stomach hanging off it. You know this, because the wildman made sure to bring back the sword himself and you had to have it cleaned.\n\n How exactly he retrieved the blade during those moments of carnage is beyond you, though you imagine he escaped the ferocity of the crowd by sheer will, determination, and complete absence of moral judgments which frightens men of normal sensibilities. You ask a few of the sellswords to hide the wildman away as he\'ll need to lay low for a while.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous tendez quelques couronnes à %wildman% et lui dites de donner un pourboire à l'artiste. Il grogne et se dirige vers vous, puis vous réalisez que ce n'est pas n'importe quel compagnon que vous avez appelé, mais %wildman% le sauvageon ! Avant que vous ne puissiez l'arrêter, il pousse l'avaleur de sabres. Il y a des cris, des hurlements et des gargouillis de sang, mais la foule s'avance devant l'action et bloque la vue. On vous dit que la lame est sortie par le devant de l'avaleur avec des morceaux d'œsophage ou d'estomac accrochés. Vous le savez, car le sauvageon s'est assuré de rapporter l'épée lui-même et vous avez dû la faire nettoyer. Comment exactement il a récupéré la lame pendant ces moments de carnage vous échappe, bien que vous imaginiez qu'il a échappé à la férocité de la foule par sa seule volonté, sa détermination et son absence totale de jugements moraux qui effraient les hommes de sensibilité normale. Vous demandez à quelques mercenaires de cacher l'homme sauvage car il aura besoin de faire profil bas pendant un certain temps.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good job, but also bad job.",
+					Text = "Bon travail, mais aussi mauvais travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -104,7 +104,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Couronnes"
+						text = "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]5[/color] Couronnes"
 					}
 				];
 				local item = this.new("scripts/items/weapons/fencing_sword");
@@ -115,7 +115,7 @@ this.sword_eater_event <- this.inherit("scripts/events/event", {
 					icon = "ui/items/" + item.getIcon(),
 					text = "Vous recevez " + this.Const.Strings.getArticle(item.getName()) + item.getName()
 				});
-				_event.m.Town.getOwner().addPlayerRelation(-10.0, "Rumor is that a local entertainer was killed by one of your men");
+				_event.m.Town.getOwner().addPlayerRelation(-10.0, "La rumeur dit qu'un artiste local a été tué par un de vos hommes.");
 				this.World.Flags.set("IsSwordEaterWildmanDone", true);
 			}
 

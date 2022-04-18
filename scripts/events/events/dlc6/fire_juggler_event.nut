@@ -11,13 +11,13 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 160.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{A fire juggler has the eyes of everyone in a plaza of %townname%. He\'s got a trip-set of torches with bronze handles. His routine goes fairly well, but he does drop a torch at one point which raises some jeers in return. The next act he is to place a board over an open barrel of oil and then juggle the torches, arms out at his sides, except now with five torches instead of three.\n\nIn summary, his next act seems to be one of suicide and he unsurprisingly looks reluctant to follow through with it. But the crowed continues to cheer and jeer, no doubt snorting and huffing like a wolf pressing a deer to the cliffside, and the juggler, wide-eyed looks around for some form of escape.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Un jongleur de feu a les yeux de tous sur la place de %townname%. Il a un jeu de torches avec des poignées en bronze. Son numéro se déroule plutôt bien, mais il fait tomber une torche à un moment donné, ce qui soulève quelques huées en retour. Le numéro suivant consiste à placer une planche au-dessus d'un baril de pétrole ouvert et à jongler avec les torches, les bras le long du corps, mais avec cinq torches au lieu de trois. Mais la foule continue à l'acclamer et à le railler, sans doute en reniflant et en soufflant comme un loup qui presse un cerf sur le bord de la falaise, et le jongleur, les yeux écarquillés, cherche une forme d'échappatoire.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see how he does it.",
+					Text = "Voyons comment il s'y prend.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "C" : "D";
@@ -25,7 +25,7 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We need to help him!",
+					Text = "Nous devons l'aider !",
 					function getResult( _event )
 					{
 						return "B";
@@ -38,7 +38,7 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Juggler != null && this.World.getPlayerRoster().getSize() < this.World.Assets.getBrothersMax())
 				{
 					this.Options.push({
-						Text = "%juggler%, you can juggle, can\'t you help him?",
+						Text = "%juggler%, tu sais jongler, tu ne peux pas l'aider ?",
 						function getResult( _event )
 						{
 							return "E";
@@ -51,13 +51,13 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{You sigh and step forward, yelling loudly at the juggler, feigning as though you are his manager, telling him he is not to give away the big show quite yet. The crowd quiets down, confused, then jeers at you. A draw of half your sword quiets them, and others murmur word of \'Crownling\', manifesting a series of hisses and boos. But they ultimately disperse. The fire juggler steps down from his theater piece and thanks you repeatedly.%SPEECH_ON%I am not ready, I am not ready, and this you see with an eagle\'s eye, kind stranger! Here, my day\'s earnings, have all of it, for none of it would have meant a crown to me were I to step up there and die!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous soupirez et vous vous avancez, criant fort au jongleur, faisant semblant d'être son manager, lui disant qu'il ne doit pas encore dévoiler le grand spectacle. La foule se calme, confuse, puis se moque de vous. Un tirage de la moitié de votre épée les calme, et d'autres murmurent des mots de mercenaires, manifestant une série de sifflements et de huées. Mais ils finissent par se disperser. Le jongleur de feu descend de sa pièce de théâtre et vous remercie à plusieurs reprises.%SPEECH_ON%Je ne suis pas prêt, je ne suis pas prêt, et cela vous le voyez avec un œil d'aigle, gentil étranger ! Tenez, mes gains du jour, prenez-les tous, car rien de tout cela n'aurait signifié une couronne pour moi si j'avais dû monter là-haut et mourir !%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take care.",
+					Text = "Prenez soin de vous.",
 					function getResult( _event )
 					{
 						return 0;
@@ -81,7 +81,7 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{You cross your arms and await the show. The fire juggler swallows hard and gets up on the barrel. He lowers a torch down and one of the villagers lights it, but when the jester pulls the torch up the villager pretends to throw their own fire into the vat of oil. The juggler jerks away momentarily and the crowd laughs as the bemused jester laughs.\n\n But the jester nails the act. All five torches whirl and twirl and a couple of times an ember sputters down and hits the rim of the oil barrel, but he is in control, and the crowd\'s jeers turn to cheers and when he is done they clap and then slowly disperse, going on to the next form of entertainment. One man drops a few crowns in the juggler\'s hands and that\'s that.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous croisez les bras et attendez le spectacle. Le jongleur de feu monte sur le tonneau. Il abaisse une torche et l'un des villageois l'allume, mais lorsque le bouffon remonte la torche, le villageois fait mine de jeter son propre feu dans la cuve d'huile. Le jongleur s'éloigne momentanément et la foule rit tandis que le bouffon, déconcerté, s'esclaffe. Mais le bouffon réussit son numéro. Les cinq torches tournent et virevoltent et, à quelques reprises, une braise s'échappe et touche le bord du baril d'huile, mais il maîtrise la situation et les huées de la foule se transforment en acclamations et, lorsqu'il a terminé, les gens applaudissent puis se dispersent lentement, passant à la prochaine forme de divertissement. Un homme dépose quelques couronnes dans les mains du jongleur et c'est tout.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -103,7 +103,7 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 				{
 					if (this.Math.rand(1, 100) <= 75)
 					{
-						bro.improveMood(0.5, "Was entertained by a fire juggler");
+						bro.improveMood(0.5, "A été diverti par un jongleur de feu");
 
 						if (bro.getMoodState() >= this.Const.MoodState.Neutral)
 						{
@@ -120,13 +120,13 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{You cross your arms and await the show. The fire juggler swallows hard and gets up on the barrel. He lowers a torch down and one of the villagers lights it, but when the jester pulls the torch up the villager pretends to throw their own fire into the vat of oil. The juggler jerks away momentarily and the crowd laughs as the bemused jester laughs.\n\n When the jester starts his act, he begins with setting himself on fire. Literally the first torch slips his hand and goes right into the vat which launches a plume of flame from which there is no discerning between man and fire aside from the hellish screams. He scrambles off the \'stage\' and the crowd only rears back to point and laugh. When he is dead, his crowns are taken by one of the residents. They lift the gold to the sky, make a passing mention of the Gilded one, then dump the crowns into the flames. His body is left for the dogs. After all is said and done, you kick around in the ashes and find a plate of melted gold. Not exactly of much value, but it\'s gotta be worth something and you take it when no one - not even the dogs - are looking.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous croisez les bras et attendez le spectacle. Le jongleur de feu monte sur le tonneau. Il abaisse une torche et l'un des villageois l'allume, mais lorsque le bouffon remonte la torche, le villageois fait mine de jeter son propre feu dans la cuve d'huile. Le jongleur s'éloigne momentanément et la foule rit tandis que le bouffon, déconcerté, s'esclaffe. Quand le bouffon commence son numéro, il commence par s'immoler par le feu. Littéralement, la première torche lui glisse entre les mains et va droit dans la cuve qui lance un panache de flammes dont on ne distingue pas l'homme du feu, à part les cris d'enfer. Il se précipite hors de la scène et la foule ne fait que se retourner pour le montrer du doigt et rire. Quand il est mort, ses couronnes sont prises par l'un des résidents. Ils lèvent l'or vers le ciel, mentionnent en passant le Doreur, puis jettent les couronnes dans les flammes. Son corps est laissé aux chiens. Une fois que tout est dit et fait, vous fouillez dans les cendres et trouvez une plaque d'or fondu. Pas vraiment de grande valeur, mais ça doit bien valoir quelque chose et vous la prenez quand personne - pas même les chiens - ne regarde.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Gold is gold.",
+					Text = "L'or est de l'or.",
 					function getResult( _event )
 					{
 						return 0;
@@ -150,13 +150,13 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{%juggler%, the company\'s own former juggler, steps forward. He walks up on the \'stage\' which precariously hangs over the vat of oil. The two exchange words, then %juggler% is the one left standing. He performs the act - one he has neither practiced nor seen before - and completes it without issue. The crowd is silent, though. They merely watch, only occasionally glancing at you and the company. When %juggler% finishes he opens his arms wide, but there is no applause.%SPEECH_ON%The Gilded spits on Crownlings, interloper, you dance for no one. And you, fire juggler, what do you have to say for yourself?%SPEECH_OFF%%townname%\'s fire juggler thinks, then turns to you.%SPEECH_ON%I say I am tired of this nonsense, and if the Gilded one so despises us, then I\'ll have him despise me between the ranks of this here company. What say you, captain of the Crownlings, will you take me aboard?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{%juggler%, l'ancien jongleur de la compagnie, s'avance. Il s'approche de la scène qui est suspendue de façon précaire au-dessus de la cuve d'huile. Les deux échangent des mots, puis %juggler% est le seul à rester debout. Il exécute le numéro - qu'il n'a ni pratiqué ni vu auparavant - et le termine sans problème. La foule est silencieuse, cependant. Ils se contentent de regarder, ne jetant qu'un coup d'œil occasionnel à vous et à la compagnie. Lorsque %juggler% termine, il ouvre grand les bras, mais il n'y a pas d'applaudissements.%SPEECH_ON%Le doreur crache sur toi mercenaires, intrus, tu ne danses pour personne. Et toi, jongleur de feu, qu'as-tu à dire pour ta défense ? %SPEECH_OFF%%nom du village%% le jongleur de feu réfléchit, puis se tourne vers toi. %SPEECH_ON% Je dis que je suis fatigué de ces bêtises, et si le Doreur nous méprise tant, alors je vais le faire me mépriser entre les rangs de cette compagnie. Qu'en dites-vous, capitaine des Mercenaires, vous me prenez à bord ?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome to the %companyname%.",
+					Text = "Bienvenue au %companyname%",
 					function getResult( _event )
 					{
 						return "F";
@@ -164,7 +164,7 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "This is no place for you.",
+					Text = "Ce n'est pas un endroit pour toi.",
 					function getResult( _event )
 					{
 						return "G";
@@ -181,7 +181,7 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 					"juggler_southern_background"
 				]);
 				_event.m.Dude.setTitle("the Fire Juggler");
-				_event.m.Dude.getBackground().m.RawDescription = "You found %name% on the streets of " + _event.m.Town.getName() + ", ready to put on fiery display of record-breaking fire juggling that could have well cost him his life. Luckily, " + _event.m.Juggler.getName() + " jumped in to perform the act with him, possibly saving his life. Afterwards, %name% finally had enough of his trade and volunteered to join your company.";
+				_event.m.Dude.getBackground().m.RawDescription = "Vous avez trouvé %name% dans les rues de " + _event.m.Town.getName() + ", prêt à faire une démonstration enflammée de jonglage de feu qui aurait pu lui coûter la vie. Heureusement, " + _event.m.Juggler.getName() + " a sauté sur l'occasion pour exécuter le numéro avec lui, lui sauvant peut-être la vie. Par la suite, %name% en a eu assez de son métier et s'est porté volontaire pour rejoindre votre compagnie.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				local trait = this.new("scripts/skills/traits/fearless_trait");
 
@@ -200,13 +200,13 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{You nod.%SPEECH_ON%Fireling, Crownling, whatever. You\'re with the %companyname%.%SPEECH_OFF%The crowd hisses again, but you tell them to fuck off, peppering the threat with a flash of your sword just in case they had any problems understanding. %firejuggler%, the fire juggler, thanks you profusely and quickly goes to your ranks where the company welcomes him about as begrudgingly as they do any new recruit. As for %townname%\'s people, they quickly tire of the drama and move on with their lives.}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Tu hoches la tête. %SPEECH_ON%Cracheur de feu, mercenaire, peu importe. Vous êtes avec la %companyname%.%SPEECH_OFF%La foule siffle à nouveau, mais vous leur dites d'aller se faire foutre, en assaisonnant la menace d'un éclair de votre épée juste au cas où ils auraient des problèmes de compréhension. %firejuggler%, le jongleur de feu, vous remercie abondamment et rejoint rapidement vos rangs où la compagnie l'accueille avec autant de réticence que n'importe quelle nouvelle recrue. Quant aux gens de %townname%, ils se lassent rapidement du drame et poursuivent leur vie.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Show\'s over, folks.",
+					Text = "Le spectacle est terminé, les amis.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
@@ -225,7 +225,7 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 				local meleeSkill = this.Math.rand(1, 3);
 				_event.m.Juggler.getBaseProperties().MeleeSkill += meleeSkill;
 				_event.m.Juggler.getSkills().update();
-				_event.m.Juggler.improveMood(1.0, "Put on a great display of fire juggling");
+				_event.m.Juggler.improveMood(1.0, "Faire une grande démonstration de jonglage de feu");
 				this.List.push({
 					id = 16,
 					icon = "ui/icons/melee_skill.png",
@@ -245,13 +245,13 @@ this.fire_juggler_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{You shake your head. The fire juggler lowers his.%SPEECH_ON%Oh. I thought we had a thing here.%SPEECH_OFF%Pursing your lips, you shake your head again.%SPEECH_ON%No...there is no \'thing\' here. I just don\'t want you in my company, no hard feelings. Keep, uh, practicing. You know, with the fire, and the sticks, you\'ll get it someday I\'m sure.%SPEECH_OFF%The fire juggler nods.%SPEECH_ON%Of course. And though you have rejected me, I believe the Gilder has us both just where we are meant to be, and that His intention was not for our paths to cross fruitlessly. I will be sure to speak highly of your company wherever I go!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous secouez la tête. Le jongleur de feu baisse la sienne.%SPEECH_ON%Oh. Je croyais qu'il y avait un truc entre nous.%SPEECH_OFF%Prétrisant vos lèvres, vous secouez à nouveau la tête.%SPEECH_ON%Non...il n'y a pas de truc entre nous. Je ne veux simplement pas de toi dans ma compagnie, sans rancune. Continuez, euh, à vous entraîner. Tu sais, avec le feu et les bâtons, tu y arriveras un jour, j'en suis sûr. Le jongleur de feu hoche la tête. Bien sûr. Et bien que vous m'ayez rejeté, je crois que le Doreur nous a placé tous les deux exactement là où nous devions être, et que son intention n'était pas que nos chemins se croisent inutilement. Je ne manquerai pas de parler en bien de votre compagnie où que j'aille !%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "May the Gilder\'s path for us both be as good as you hope.",
+					Text = "Que la voie du doreur pour nous deux soit aussi bonne que tu l'espères.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();

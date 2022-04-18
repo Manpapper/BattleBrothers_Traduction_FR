@@ -10,13 +10,13 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{You come to a watering hole. The well\'s walled exterior is embroidered with animal skulls and similarly stitched with their ribs. As you draw near, there\'s a faint hiss from the depths. Staring in, you see a tiny orange glow snaking left to right.%SPEECH_ON%You might want to try not looking down there.%SPEECH_OFF%You turn around to see a man dressed in rags. His hair is spiked backwards in black chevrons. Dark splotches pepper his face and he\'s got bruises on every fingernail and a tarred smile.%SPEECH_ON%It\'s about to blow.%SPEECH_OFF%}",
+			Text = "%terrainImage%{Vous arrivez à un abreuvoir. Les murs extérieurs du puits sont brodés de crânes d'animaux et leurs côtes sont cousues de façon similaire. Alors que vous vous approchez, il y a un léger sifflement provenant des profondeurs. En regardant à l'intérieur, vous voyez une petite lueur orange qui serpente de gauche à droite.%SPEECH_ON%Vous devriez essayer de ne pas regarder en bas.%SPEECH_OFF%Vous vous retournez pour voir un homme habillé en haillons. Ses cheveux sont hérissés en arrière par des chevrons noirs. Des taches sombres parsèment son visage et il a des bleus sur chaque ongle et un sourire goudronné..%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What\'s about to blow?",
+					Text = "Qu'est-ce qui est sur le point d'exploser ?",
 					function getResult( _event )
 					{
 						return "B";
@@ -31,13 +31,13 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "%terrainImage%{The man nods.%SPEECH_ON%That ain\'t no watering hole, that\'s a cannon. I got a pile of fire powder in the bottom. The chute is armed with buckets, and fishing rods, all manner of cutlery, some soldier\'s metal boots, a broken sword, couple of scabbards, I think a few animals fell in but they no doubt dead now, if not they\'re going for a ride.%SPEECH_OFF%}",
+			Text = "%terrainImage%{L'homme hoche la tête. C'est pas un trou d'eau, c'est un canon. J'ai un tas de poudre à feu au fond. La chute est armée de seaux, de cannes à pêche, de toutes sortes de couverts, de bottes en métal de soldat, d'une épée cassée, de deux fourreaux, je pense que quelques animaux sont tombés dedans mais ils sont sans doute morts maintenant, sinon ils vont faire un tour.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Oh no, don\'t do that!",
+					Text = "Oh non, ne faites pas ça !",
 					function getResult( _event )
 					{
 						return "C";
@@ -50,7 +50,7 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Monk != null)
 				{
 					this.Options.push({
-						Text = "The gods talk to you, %monk%, now you talk to him!",
+						Text = "Les dieux te parlent, %monk%, maintenant tu lui parles !",
 						function getResult( _event )
 						{
 							return "D";
@@ -63,13 +63,13 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "%terrainImage%{The man grins.%SPEECH_ON%You don\'t know a damn thing about me, stranger. Maybe I aim to kill myself cause I done a terrible crime. I mean, I haven\'t, but what\'re you doing going off about \'don\'t do it\'? You\'ve seen my preparation, were I of the mind to pause wouldn\'t I have done it at any prior moment? Now you set back there and watch this.%SPEECH_OFF%He turns and leaps into the hole. There\'s a clatter of his crashing, some murmuring about how there\'s more debris than he remembers. When you look down he yells at you to clear out and the orange glow zips into a hole. The man bows.%SPEECH_ON%I bid you good stranger, a strange farewe-%SPEECH_OFF% The explosion blows out your ears and puts you on the ground. The earth rolls beneath you in tremble that can be felt through the deafness which you are now submerged. A pluming cloud of fire spears into the sky and growls with the clinking and clanking of metals and the dull plops of leather and other goods, and you roll to your belly and cover your head as it all comes down like the scraps of some god\'s hellstorm.\n\n Absolutely none of the debris is of any use. As for the man himself, well, he got his wish. He no doubt died in the blink of an eye, all that remains are charred chunks here and there and broiled lungs and seared strips of sinews and more. You check to make sure your eyebrows are still there and, satisfied, prepare to move on.}",
+			Text = "%terrainImage%{L'homme sourit. Tu ne sais rien de moi, étranger. Peut-être que je vise à me suicider parce que j'ai commis un crime terrible.  Je veux dire, je ne l'ai pas fait, mais qu'est-ce qui vous prend de dire de ne pas le faire ? Vous avez vu ma préparation, si j'avais eu l'intention de faire une pause, ne l'aurais-je pas fait à un moment donné ? Maintenant tu restes là et tu regardes ça. Il se retourne et saute dans le trou. Il y a un bruit de chute, un murmure sur le fait qu'il y a plus de débris que ce dont il se souvient. Quand vous regardez en bas, il vous crie de dégager et la lueur orange s'engouffre dans un trou. L'homme s'incline. %SPEECH_ON%Je te souhaite un bon voyage, étranger, un étrange voyage.%SPEECH_OFF% L'explosion vous souffle les oreilles et vous met à terre. La terre roule sous vous dans un tremblement que vous pouvez ressentir à travers la surdité dans laquelle vous êtes maintenant plongé. Un nuage de feu s'élève dans le ciel et gronde avec le tintement et le cliquetis des métaux et le bruit sourd du cuir et d'autres marchandises, et vous roulez sur le ventre et vous couvrez votre tête alors que tout tombe comme les débris d'une tempête infernale. Quant à l'homme lui-même, eh bien, il a eu ce qu'il voulait. Il est sans doute mort en un clin d'œil, il ne reste que des morceaux carbonisés ici et là, des poumons grillés, des morceaux de tendons brûlés et bien d'autres choses encore. Vous vérifiez que vos sourcils sont toujours là et, satisfait, vous vous préparez à avancer.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Sometimes you wish these things were just mirages.",
+					Text = "Parfois, on souhaite que ces choses ne soient que des mirages.",
 					function getResult( _event )
 					{
 						return 0;
@@ -84,13 +84,13 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "%terrainImage%{%monk% the monk steps forward.%SPEECH_ON%That\'s a lotta work to end yourself, friend.%SPEECH_OFF%The man shrugs.%SPEECH_ON%I\'m not really your friend.%SPEECH_OFF%The monk nods.%SPEECH_ON%Turn of phrase, nothing more. In truth I know nothing about you. In truth you likely have a good reason to be doing this. How much time have you spent putting this together?%SPEECH_OFF%The strange man thinks for a time, then says he thinks it\'s been months. %monk% smiles.%SPEECH_ON%Now that\'s good, hard work.%SPEECH_OFF%The man says.%SPEECH_ON%You trying to coddle me?%SPEECH_OFF%The monk shakes his head.%SPEECH_ON%No Sir.%SPEECH_OFF%The man slims his eyes and stares incredulously.%SPEECH_ON%Sounds to me like motherly talk. Like you\'re trying to sweet talk me into not killing myself. Well I won\'t have it!%SPEECH_OFF%%monk% shrugs.%SPEECH_ON%Again, no sir. You go on and end yourself if that\'s what you wish. Today or later, the old gods will be waiting.%SPEECH_OFF%The man turns and spits.%SPEECH_ON%No old gods down here. Only the Gilder\'s gleam and glow.%SPEECH_OFF%%monk% nods then turns to look at you.%SPEECH_ON%To be frank, captain, I really only got one thing left to say. Can I say it? I just wanna tell it to the stranger, tell it to him straight.%SPEECH_OFF%}",
+			Text = "%terrainImage%{%monk% le moine s'avance.%SPEECH_ON%C'est beaucoup de travail pour en finir avec soi-même, mon ami.%SPEECH_OFF%L'homme hausse les épaules.%SPEECH_ON%Je ne suis pas vraiment votre ami.%SPEECH_OFF%Le moine acquiesce.%SPEECH_ON%Tournure de phrase, rien de plus. En vérité, je ne sais rien de vous. En vérité, vous avez probablement une bonne raison de faire cela. Combien de temps avez-vous passé à mettre tout cela sur pied ? %SPEECH_OFF%L'homme étrange réfléchit un moment, puis dit qu'il pense que cela fait des mois. Le moine sourit. %SPEECH_ON% C'est du bon travail. %SPEECH_OFF% L'homme dit.%SPEECH_ON% Tu essaies de me dorloter ? %SPEECH_OFF% Le moine secoue la tête. %SPEECH_ON% Non Monsieur.%SPEECH_OFF% L'homme ferme les yeux et regarde incrédule. %SPEECH_ON% Ça ressemble à des paroles maternelles. Comme si tu essayais de me convaincre de ne pas me tuer. Et bien je ne veux pas!%SPEECH_OFF%%monk% hausse les épaules.%SPEECH_ON%Encore, non monsieur. Allez-y et mettez fin à vos jours si c'est ce que vous souhaitez. Aujourd'hui ou plus tard, les vieux dieux t'attendront.%SPEECH_OFF%L'homme se retourne et crache.%SPEECH_ON%Pas de vieux dieux ici. Il n'y a que la lueur et l'éclat du doreur. Le moine hoche la tête et se tourne vers vous. Pour être franc, capitaine, je n'ai plus qu'une chose à dire. Je peux le dire ? Je veux juste le dire à l'étranger, le lui dire directement..%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Go on ahead.",
+					Text = "Allez-y.",
 					function getResult( _event )
 					{
 						return "E";
@@ -98,7 +98,7 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let him end himself if that\'s what he wants.",
+					Text = "Laissez-le se tuer si c'est ce qu'il veut.",
 					function getResult( _event )
 					{
 						return "F";
@@ -114,13 +114,13 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "%terrainImage%{The monk nods with your approval then suddenly swings around and cold cocks the stranger. He falls off the well wall and collapses into the dirt, staring up with his eyes wonked.%SPEECH_ON%What\'d you go and do that for?%SPEECH_OFF%He asks, touching his lip. %monk% crouches down.%SPEECH_ON%How\'s that feel?%SPEECH_OFF%The stranger sneers and spits blood. He says it hurts. The monk nods.%SPEECH_ON%Feel alive?%SPEECH_OFF%The stranger gets to his feet and dusts himself off. He nods.%SPEECH_ON%A little, yeah.%SPEECH_OFF%The two talk for a time and when it is over the man is willing to join the company free of charge. He also says that there are a number of goods in the well if they want to be used, though to be mindful to not drop any fire in there cause it\'ll blow sky high.}",
+			Text = "%terrainImage%{Le moine hoche la tête en signe d'approbation, puis se retourne soudainement et assomme l'étranger. Il tombe de la paroi du puits et s'effondre dans la terre, regardant vers le haut avec ses yeux déformés. L'homme s'accroupit. %SPEECH_ON% C'est comment ? %SPEECH_OFF% L'étranger ricane et crache du sang. Il dit que ça fait mal. Le moine hoche la tête. %SPEECH_ON%Se sentir vivant?%SPEECH_OFF%L'étranger se lève et s'époussette. Il hoche la tête. %SPEECH_ON%Un peu, ouais.%SPEECH_OFF%Les deux parlent un moment et quand c'est fini l'homme est prêt à rejoindre la compagnie gratuitement. Il dit aussi qu'il y a un certain nombre de biens dans le puits s'ils veulent les utilisés, mais qu'il faut faire attention à ne pas y jeter du feu parce que ça va exploser en plein ciel.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome aboard, I suppose.",
+					Text = "Bienvenue à bord, je suppose.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
@@ -140,7 +140,7 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"peddler_southern_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "A string of bad fortune led the former arms-peddler %name% to attempt to end his life by blowing himself up, but " + _event.m.Monk.getName() + " intervened and convinced him to join your company instead to make a new life for himself.";
+				_event.m.Dude.getBackground().m.RawDescription = "Une série de malchances a conduit l'ancien trafiquant d'armes %name% à tenter de mettre fin à sa vie en se faisant exploser, mais " + _event.m.Monk.getName() + " est intervenu et l'a convaincu de rejoindre votre compagnie pour refaire sa vie.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				local trait = this.new("scripts/skills/traits/deathwish_trait");
 
@@ -152,7 +152,7 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.getSkills().add(trait);
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand));
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand));
-				_event.m.Dude.worsenMood(2.5, "Had a string of bad fortune and lost everything");
+				_event.m.Dude.worsenMood(2.5, "Il a eu une série de malchance et a tout perdu");
 				this.Characters.push(_event.m.Dude.getImagePath());
 				local item = this.new("scripts/items/loot/silverware_item");
 				this.World.Assets.getStash().add(item);
@@ -166,13 +166,13 @@ this.desert_well_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "%terrainImage%{You tell the monk to stand down. He shrugs and returns to your side. When you look back at the man you realize he\'s lit a fire and watch just as he leaps into the well.\n\n The explosion blows out your ears and puts you on the ground. The earth rolls beneath you in tremble that can be felt through the deafness which you are now submerged. A pluming cloud of fire spears into the sky and growls with the clinking and clanking of metals and the dull plops of leather and other goods, and you roll to your belly and cover your head as it all comes down like the scraps of some god\'s hellstorm.\n\n Absolutely none of the debris is of any use. As for the man himself, well, he got his wish. He no doubt died in the blink of an eye, all that remains are charred chunks here and there and broiled lungs and seared strips of sinews and more. You check to make sure your eyebrows are still there and, satisfied, prepare to move on.}",
+			Text = "%terrainImage%{Vous dites au moine de se retirer. Il hausse les épaules et retourne à vos côtés. Lorsque vous regardez à nouveau l'homme, vous réalisez qu'il a allumé un feu et vous le regardez sauter dans le puits. L'explosion vous souffle les oreilles et vous met à terre. La terre roule sous vous dans un tremblement que vous pouvez ressentir à travers la surdité dans laquelle vous êtes maintenant plongé. Un nuage de feu s'élève dans le ciel et gronde avec le tintement et le cliquetis des métaux et le bruit sourd du cuir et d'autres marchandises, et vous vous retournez sur le ventre et vous couvrez votre tête alors que tout tombe comme les débris d'une tempête infernale. Quant à l'homme lui-même, eh bien, son souhait a été exaucé. Il est sans doute mort en un clin d'œil, il ne reste que des morceaux carbonisés ici et là, des poumons grillés, des morceaux de tendons brûlés et bien d'autres choses encore. Vous vérifiez que vos sourcils sont toujours là et, satisfait, vous vous préparez à avancer.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Sometimes you wish these things were just mirages.",
+					Text = "Parfois, on souhaite que ces choses ne soient que des mirages.",
 					function getResult( _event )
 					{
 						return 0;

@@ -9,13 +9,13 @@ this.desert_bugbite_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{While standing around looking at maps and taking inventory, %bitbro% suddenly yells out and falls over in the sand. He slaps at his legs and a black scorpion goes soaring. Another sellsword screams and chops the bug in half with the sort of ferocity you\'ve never even seen him use on the battlefield. %bitbro% clenches his teeth as he takes off his boots. It looks like someone jammed a nail into his ankle. He says he\'s feeling woozy, but it\'s not too serious.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Alors qu'il est en train de regarder des cartes et de faire son inventaire, %bitbro% crie soudainement et tombe dans le sable. Il se tape sur les jambes et un scorpion noir s'envole. Un autre mercenaire hurle et coupe l'insecte en deux avec une férocité que vous ne lui avez jamais vue utiliser sur le champ de bataille. %bitbro% serre les dents en enlevant ses bottes. On dirait que quelqu'un a enfoncé un clou dans sa cheville. Il dit qu'il se sent étourdi, mais que ce n'est pas trop grave.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Watch where you step.",
+					Text = "Regardez où vous mettez les pieds.",
 					function getResult( _event )
 					{
 						return 0;
