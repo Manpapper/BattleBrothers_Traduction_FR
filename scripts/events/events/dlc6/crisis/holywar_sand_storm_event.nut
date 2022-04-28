@@ -7,13 +7,13 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{You come across a troop of men half-buried in sand. Northerners caught in a sandstorm over night. They\'re writhing in pain, the ones alive at least. Some have had their flesh rent from bone, and others are already being picked at by scorpions and buzzards. It seems some have killed themselves. Not one of the souls can be saved, they\'re just clinging on to the end.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Vous tombez sur une troupe d'hommes à moitié enterrés dans le sable. Des Nordistes pris dans une tempête de sable pendant la nuit. Ils se tordent de douleur, du moins ceux qui sont en vie. Certains ont eu la chair arrachée à l'os, d'autres sont déjà dévorés par les scorpions et les buses. Il semble que certains se soient suicidés. Aucune de ces âmes ne peut être sauvée, elles s'accrochent juste à la fin.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Kill them with dignity.",
+					Text = "Tuez-les avec dignité.",
 					function getResult( _event )
 					{
 						return "B";
@@ -21,7 +21,7 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Leave them to the sands.",
+					Text = "Laissez-les aux sables.",
 					function getResult( _event )
 					{
 						return "C";
@@ -36,13 +36,13 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{Drawing your sword, you ask the men if they will accept the dignity of a swift death by your steel. They\'re too parched and starved to speak, but a few nod. One dies before he can even answer. You go to each, crouch, wish them well, and push the sword in. The skin cracks beneath the blade, and the dying men are briefly revivified by the piercing pain, and then they are relinquished from this world. A few in the company have varying opinions about this matter.\n\nYou have the sellsword pick up what things they can, though much of the equipment has been laid to waste by the fury of the desert.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Dégainant votre épée, vous demandez aux hommes s'ils acceptent la dignité d'une mort rapide par votre acier. Ils sont trop assoiffés et affamés pour parler, mais quelques-uns hochent la tête. L'un d'eux meurt avant même d'avoir pu répondre. Vous allez vers chacun d'eux, vous vous accroupissez, leur souhaitez bonne chance, et enfoncez l'épée. La peau craque sous la lame, et les hommes mourants sont brièvement revivifiés par la douleur perçante, puis ils quittent ce monde. Quelques-uns des membres de la compagnie ont des opinions différentes à ce sujet. Vous demandez à l'épée de ramasser ce qu'elle peut, bien que la plupart des équipements aient été détruits par la furie du désert.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Better they don\'t suffer any longer.",
+					Text = "Il vaut mieux qu'ils ne souffrent pas plus longtemps.",
 					function getResult( _event )
 					{
 						return 0;
@@ -70,7 +70,7 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getEthnicity() == 0 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.improveMood(1.0, "Approved of your decision to end the suffering of fellow northerners");
+						bro.improveMood(1.0, "Approuvé votre décision de mettre fin aux souffrances de vos compatriotes du Nord.");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -83,7 +83,7 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getEthnicity() == 1 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.worsenMood(0.75, "Disliked that you ended the suffering of northern invaders");
+						bro.worsenMood(0.75, "Je n'ai pas aimé que vous mettiez fin aux souffrances des envahisseurs du Nord");
 
 						if (bro.getMoodState() > this.Const.MoodState.Neutral)
 						{
@@ -100,13 +100,13 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_161.png[/img]{You order the sellswords to strip the dying men of any useful gear. The crusaders can only mumble and groan as they are stripped of arms and armor. Their naked bodies are left to the burning sands, and as you depart with whatever scraps of useful gear the animals of the waste already begin to move in and feed. Mixed feelings run through the %companyname% about this decision, but ultimately contentions or support alike stay quiet.}",
+			Text = "[img]gfx/ui/events/event_161.png[/img]{Vous ordonnez aux mercenaires de dépouiller les hommes mourants de tout équipement utile. Les croisés ne peuvent que marmonner et gémir lorsqu'ils sont dépouillés de leurs armes et armures. Leurs corps nus sont abandonnés aux sables brûlants, et tandis que vous partez avec les restes d'équipement utile, les animaux du désert commencent déjà à s'installer et à se nourrir. Des sentiments mitigés traversent %companyname% à propos de cette décision, mais en fin de compte les contestations ou le soutien restent silencieux.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The Gilder has judged them.",
+					Text = "Le Doreur les a jugés.",
 					function getResult( _event )
 					{
 						return 0;
@@ -135,7 +135,7 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getEthnicity() == 0 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.worsenMood(1.0, "Disliked that you left fellow northerners to suffer a slow death");
+						bro.worsenMood(1.0, "Je n'ai pas aimé que vous laissiez vos compatriotes du Nord souffrir d'une mort lente");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -148,7 +148,7 @@ this.holywar_sand_storm_event <- this.inherit("scripts/events/event", {
 					}
 					else if (bro.getEthnicity() == 1 && this.Math.rand(1, 100) <= 66)
 					{
-						bro.improveMood(0.75, "Approved of your decision to leave northern invaders judged by the Gilder");
+						bro.improveMood(0.75, "Approuvé votre décision de laisser les envahisseurs du Nord jugés par le Doreur");
 
 						if (bro.getMoodState() > this.Const.MoodState.Neutral)
 						{

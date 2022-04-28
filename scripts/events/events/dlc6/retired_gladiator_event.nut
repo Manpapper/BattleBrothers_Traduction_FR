@@ -40,7 +40,7 @@ this.retired_gladiator_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous lui dites que vous auriez besoin de lui dans le %companyname%. Il rit.%SPEECH_ON%Les jours de combat me dépassent un peu. Je cherche à vendre cette armure au prix coûtant et à quitter cette ville pour toujours. %SPEECH_OFF%Il incline l\'armure vers l\'avant. %SPEECH_ON%Vous ne trouverez nulle part un tel équipement. Tout ce que je demande, c\'est 1 000 couronnes, un harnais de gladiateur tel que vous aurez du mal à en trouver dans n\'importe quelle boutique de forgeron.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_163.png[/img]{Vous lui dites que vous auriez besoin de lui dans %companyname%. Il rit.%SPEECH_ON%Les jours de combat me dépassent un peu. Je cherche à vendre cette armure au prix coûtant et à quitter cette ville pour toujours. %SPEECH_OFF%Il incline l\'armure vers l\'avant. %SPEECH_ON%Vous ne trouverez nulle part un tel équipement. Tout ce que je demande, c\'est 1 000 couronnes, un harnais de gladiateur tel que vous aurez du mal à en trouver dans n\'importe quelle boutique de forgeron.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],

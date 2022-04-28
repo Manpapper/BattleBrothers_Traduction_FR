@@ -8,12 +8,12 @@ this.holywar_outro_south_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_84.png[/img]{You recall the followers of the Gilder to once be united in their pursuit of leveling the old gods. Some misplaced notion that, were they to satisfy their God enough, He would put his powerful eye upon all enemies of His faithful and obliterate them. Instead, the Gilded find their resolve greatly tested: they have lost the holy war. Cities and towns have been burned, holy totems desecrated, and sacred grounds looted.\n\n Crowds of people listlessly shift about in the streets, wailing now and again, not with purpose, but as though they\'ve lost all language to articulate the pain they must now endure. On occasion, a body will plummet from above, or you find the guards pulling corpses out of the well only for an onlooker to pitch herself in. A few prostrate themselves before golden relics, letting themselves cook in the sun struck glare of the shiny emblems, the grief stricken crawling beneath the simmering reflections until their skins turn to crust and their throats choke on their own flesh, and as the sun comes and goes, bodies lay in the wake of its stare. As for the %companyname%, you\'ve put yourself to one side or the other, and regardless of winners or losers, you made a small fortune. For the future you need not wish to have the opportunity again, either: if there\'s one thing you know about a man of faith it\'s that defeat is only but one strike upon the hardening iron. With all that you\'ve achieved, perhaps now would be a good time to put up the sword and enjoy your crowns?\n\n%OOC%You\'ve won! Battle Brothers is designed for replayability and for campaigns to be played until you\'ve beaten one or two late game crises. Starting a new campaign will allow you to try out different things in a different world.\n\nYou can also choose to continue your campaign for as long as you want. Just be aware that campaigns are not intended to last forever and you\'re likely to run out of challenges eventually.%OOC_OFF%}",
+			Text = "[img]gfx/ui/events/event_84.png[/img]{Vous vous souvenez que les adeptes du Gilder étaient autrefois unis dans leur quête d'éradication des anciens dieux. Une idée déplacée selon laquelle, s'ils satisfaisaient suffisamment leur Dieu, il poserait son œil puissant sur tous les ennemis de ses fidèles et les anéantirait. Au lieu de cela, le Gilded voient leur détermination mise à rude épreuve : ils ont perdu la guerre sainte. Des villes et des villages ont été brûlés, des totems sacrés profanés et des lieux sacrés pillés. Des foules de gens se déplacent dans les rues, se lamentant de temps à autre, sans intention précise, mais comme s'ils avaient perdu tout langage pour exprimer la douleur qu'ils doivent maintenant endurer. À l'occasion, un corps tombe d'en haut, ou bien les gardes sortent les cadavres du puits pour qu'un spectateur s'y jette. Quelques-uns se prosternent devant des reliques d'or, se laissant cuire sous l'éclat du soleil et des emblèmes brillants, les personnes en deuil rampant sous les reflets frémissants jusqu'à ce que leur peau se transforme en croûte et que leur gorge s'étouffe dans leur propre chair, et alors que le soleil va et vient, des corps gisent dans le sillage de son regard. Quant au %companyname%, vous vous êtes mis d'un côté ou de l'autre, et indépendamment des gagnants ou des perdants, vous avez fait une petite fortune. Pour l'avenir, vous ne devez pas non plus souhaiter que l'occasion se représente : s'il y a une chose que l'on sait d'un homme de foi, c'est que la défaite n'est qu'un coup sur le fer trempé. Avec tout ce que vous avez accompli, peut-être serait-il temps de retirer l'épée et de profiter de vos couronnes... Vous avez gagné ! Battle Brothers a été conçu pour être rejouable et pour que les campagnes soient jouées jusqu'à ce que vous ayez surmonté une ou deux crises de fin de partie. Commencer une nouvelle campagne vous permettra d'essayer différentes choses dans un monde différent. Vous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas conçues pour durer éternellement et qu'il est probable que vous finissiez par manquer de défis.%OOC_OFF%}",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "The %companyname% needs their commander!",
+					Text = "%companyname% a besoin de son commandant!",
 					function getResult( _event )
 					{
 						return 0;
@@ -21,7 +21,7 @@ this.holywar_outro_south_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s time to retire from mercenary life. (End Campaign)",
+					Text = "Il est temps de se retirer de la vie de mercenaire. (End Campaign)",
 					function getResult( _event )
 					{
 						this.World.State.getMenuStack().pop(true);
@@ -59,12 +59,12 @@ this.holywar_outro_south_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_84.png[/img]{Faith placed in the Gilder has been rewarded: the holy war is over, and the southerners stand victorious. The Vizier, councilmen, and clergy alike are found in the streets, each riding great wagons which, in place of wheels, are lofted on the backs of slaves. Northern slaves, particularly, indebted to the Gilder for their crimes. You can hardly see the men, just their legs black in shadow as though a procession of swaying beetles was on the go. The wealthy and profligate men take great chalices and hurl what looks like golden water upon the cheering faithful. You yourself lean into one of these splashes, but find it is merely just tinted water.\n\n While the faux fortunes served only to slake your thirst, the very real war between the followers of the old gods and the Gilded themselves served to fill the %companyname%\'s treasury. As a Crownling, you\'ll never find the respect of bared heads and bowed bodies, nor the prostrations of peasants, nor the gleam of gold too heavy for any one man to carry. That is the reality for you, but that won\'t stop the company from being ready the next time the pious wanna have a squabble over righteousness. Or perhaps now would be a good time to put up the sword and enjoy your crowns?\n\n%OOC%You\'ve won! Battle Brothers is designed for replayability and for campaigns to be played until you\'ve beaten one or two late game crises. Starting a new campaign will allow you to try out different things in a different world.\n\nYou can also choose to continue your campaign for as long as you want. Just be aware that campaigns are not intended to last forever and you\'re likely to run out of challenges eventually.%OOC_OFF%}",
+			Text = "[img]gfx/ui/events/event_84.png[/img]{La foi placée dans le Gilder a été récompensée : la guerre sainte est terminée, et les sudistes sont victorieux. Le vizir, les conseillers et le clergé se retrouvent dans les rues, chacun chevauchant de grands chariots qui, à la place des roues, sont hissés sur le dos des esclaves. Des esclaves du Nord, en particulier, redevables au doreur pour leurs crimes. On voit à peine les hommes, juste leurs jambes noires d'ombre comme si un cortège de scarabées se balançait. Les hommes riches et prodigues prennent de grands calices et lancent ce qui ressemble à de l'eau dorée sur les fidèles en liesse. Tu te penches toi-même vers l'une de ces éclaboussures, mais tu t'aperçois que ce n'est que de l'eau teintée. Alors que les fausses fortunes ne servaient qu'à étancher ta soif, la guerre bien réelle entre les fidèles des anciens dieux et les Dorés eux-mêmes servait à remplir le trésor du %companyname%. En tant que Crownling, vous ne trouverez jamais le respect des têtes nues et des corps courbés, ni les prosternations des paysans, ni l'éclat de l'or trop lourd à porter pour un seul homme. Telle est la réalité pour vous, mais cela n'empêchera pas la compagnie d'être prête la prochaine fois que les pieux voudront se chamailler sur la droiture. Ou peut-être est-ce le bon moment pour rengainer votre épée et profiter de vos couronnes ? Vous avez gagné ! Battle Brothers a été conçu pour être rejouable et pour que les campagnes soient jouées jusqu'à ce que vous ayez surmonté une ou deux crises de fin de partie. Commencer une nouvelle campagne vous permettra d'essayer différentes choses dans un monde différent. Vous pouvez également choisir de poursuivre votre campagne aussi longtemps que vous le souhaitez. Sachez simplement que les campagnes ne sont pas conçues pour durer éternellement et qu'il est probable que vous finissiez par manquer de défis.%OOC_OFF%}",
 			Image = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "The %companyname% needs their commander!",
+					Text = "%companyname% a besoin de son commandant!",
 					function getResult( _event )
 					{
 						return 0;
@@ -72,7 +72,7 @@ this.holywar_outro_south_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s time to retire from mercenary life. (End Campaign)",
+					Text = "Il est temps de se retirer de la vie de mercenaire. (End Campaign)",
 					function getResult( _event )
 					{
 						this.World.State.getMenuStack().pop(true);

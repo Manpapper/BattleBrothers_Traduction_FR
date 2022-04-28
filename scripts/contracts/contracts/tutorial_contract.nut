@@ -7,7 +7,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.tutorial";
-		this.m.Name = "The %companyname%";
+		this.m.Name = "%companyname%";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + 9000.0;
 	}
 
@@ -366,7 +366,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 				this.Contract.m.Home.getSprite("selection").Visible = true;
 				this.Contract.m.BigCity.getSprite("selection").Visible = false;
 				this.Contract.m.BulletpointsObjectives = [
-					"Retournez à %employer% in %townname%"
+					"Retournez voir %employer% à %townname%"
 				];
 				this.World.State.getPlayer().setAttackable(false);
 			}
@@ -527,7 +527,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 				this.Contract.m.Home.getSprite("selection").Visible = true;
 				this.Contract.m.BigCity.getSprite("selection").Visible = false;
 				this.Contract.m.BulletpointsObjectives = [
-					"Retournez à %employer% in %townname% to get paid"
+					"Retournez voir %employer% dans %townname% pour être payé"
 				];
 				this.World.State.getPlayer().setAttackable(false);
 			}
@@ -622,7 +622,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 			function start()
 			{
 				this.World.Assets.addMoney(400);
-				this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Killed Hoggart\'s men");
+				this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "A tué les hommes de Hoggart");
 			}
 
 		});
@@ -710,13 +710,13 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Briefing",
-			Title = "Unfinished Business",
-			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% est en train de faire les cent pas quand vous le trouvez. Le guerisseur qui vous a presque tué avec la barre de métal en fusion se tient pas très loin. Il est en train de retirer des morceaux de sang coincés sous ses ongles. %employer% frappe dans ses mains.%SPEECH_ON%Enfin, vous êtes là. I have good news! We got hold of one of Hoggart\'s former men! My good friend here had a nice little talk with the man and now I know where Hoggart\'s licking his wounds.%SPEECH_OFF%The healer clears his throat, splaying his fingers out like a maiden looking to paint them. He speaks as though he\'s identifying a disease he is about to excise.%SPEECH_ON%The brigand known as Hoggart is hiding in a small hut %terrain% to the %direction% of here. Based upon my most civil discussion with one of his men, Hoggart knows the  %companyname% is on his heels and will have gathered more men since the last time you met him.%SPEECH_OFF%Nodding, %employer% waves you off.%SPEECH_ON%Good luck, sellsword.%SPEECH_OFF%",
+			Title = "Affaires inachevées",
+			Text = "[img]gfx/ui/events/event_79.png[/img]%employer% est en train de faire les cents pas quand vous le trouvez. Le guerisseur qui vous a presque tué avec la barre de métal en fusion se tient pas très loin. Il est en train de retirer des morceaux de sang coincés sous ses ongles. %employer% frappe dans ses mains.%SPEECH_ON%Enfin, vous êtes là. J'ai de bonnes nouvelles ! Nous avons mis la main sur l'un des anciens hommes de Hoggart ! Mon ami ici présent a eu une petite discussion avec l'homme et maintenant je sais où Hoggart panse ses blessures.%SPEECH_OFF%Le guérisseur s'éclaircit la gorge, écartant ses doigts comme une jeune fille qui cherche à se mettre du vernis. Il parle comme s'il identifiait une maladie qu'il est sur le point d'extirper.%SPEECH_ON%Le brigand connu sous le nom de Hoggart se cache dans une petite hutte %terrain% %direction% d'ici. D'après la discussion que j'ai eu avec l'un de ses hommes, Hoggart sait que %companyname% est sur ses talons et que vous aurez rassemblé plus d'hommes depuis la dernière fois que vous l'avez rencontré.%SPEECH_OFF%En hochant la tête, %employer% vous fait signe de partir.%SPEECH_ON%Bonne chance, mercenaire.%SPEECH_OFF%",
 			ShowEmployer = true,
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll return with his head!",
+					Text = "Nous reviendrons avec sa tête !",
 					function getResult()
 					{
 						this.Contract.setState("Finale");
@@ -783,7 +783,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Success",
-			Title = "The Retournez à %townname%",
+			Title = "Retourner à %townname%",
 			Text = "[img]gfx/ui/events/event_24.png[/img]The company returns to %townname% as victors, their heads held much higher this time. The %companyname% are not the size that they once were, but they\'re still a force to be reckoned with as Hoggart learned in his final moments.\n\nYou carry his head in a sack that you empty in front of %employer%\'s feet. He jumps back, but the healer quickly picks the head up, stares at it, and nods. %employer% approaches the brigand\'s bloodied face and eyes it carefully.%SPEECH_ON%Yes, yes... that\'s his ugly mug alright. Servants! Pay this man his money!%SPEECH_OFF%Coin in hand, you raise your voice to the men.%SPEECH_ON%As long as there is blood coursing through our veins, as long as we can hold sword and shield, there shall stand our company. All through the realm people will know the %companyname%!%SPEECH_OFF%The men cheer. %bro1% puts his hand on your shoulder.%SPEECH_ON%You did well, captain. No matter where you lead us, the men will follow you as brothers in battle.%SPEECH_OFF%",
 			ShowEmployer = true,
 			Image = "",

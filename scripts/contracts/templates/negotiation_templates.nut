@@ -753,7 +753,7 @@ gt.Const.Contracts.NegotiationPerHeadAtDestination <- [
 
 			if (this.Contract.m.Payment.Completion != 0 && this.Contract.m.Payment.Advance == 0 && this.Contract.m.Payment.Count == 0)
 			{
-				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnez quand le travail est fait.%SPEECH_OFF%";
+				this.Text += " {Vous aurez | Vous recevrez | Vous serez payé | C\'est} %reward_completion% Couronnes quand le travail est fait.%SPEECH_OFF%";
 			}
 			else if (this.Contract.m.Payment.Completion == 0 && this.Contract.m.Payment.Advance != 0 && this.Contract.m.Payment.Count == 0)
 			{

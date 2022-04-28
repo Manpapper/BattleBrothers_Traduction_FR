@@ -5,7 +5,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		this.contract.create();
 		this.m.DifficultyMult = 1.0;
 		this.m.Type = "contract.arena";
-		this.m.Name = "The Arena";
+		this.m.Name = "L'arène";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 1.0;
 	}
 
@@ -196,7 +196,6 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 			{
 				this.m.Flags.set(t.F, true);
 				pay = pay + t.P;
-				  // [460]  OP_JMP            0      5    0    0
 			}
 			else
 			{
@@ -288,7 +287,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.m.Screens.push({
 			ID = "Task",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "",
 			Image = "",
 			List = [],
@@ -509,7 +508,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Overview",
 			Title = "Overview",
-			Text = "This arena fight works as follows. Do you agree to the terms?",
+			Text = "Cette d'arène fonctionne comme cela. Acceptez-vous les conditions ?",
 			Image = "",
 			List = [],
 			Options = [
@@ -526,7 +525,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "I\'ll have to think it over.",
+					Text = "Je vais devoir y réfléchir.",
 					function getResult()
 					{
 						return 0;
@@ -544,7 +543,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Start",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "[img]gfx/ui/events/event_155.png[/img]{As you wait your turn, the crowd\'s bloodlust crawls through the dark, sheets of dust falling from above, the stomps of feet thunderous. They murmur in anticipation, and roar at killings. The quiet between battles is mere moments, and this silence is snatched away as the rusted gate lurches upward, chains rankling, the crowd abuzz once more. You step out into the light and so thunderous is the noise against your heart it could surely yet spur a dead man forth... | The arena\'s crowd is shoulder to shoulder, most blathering drunk. They scream and shout, their languages a mix of local and foreign, though the appeal to their bloodlust needs little articulation beyond their maddened faces and pumping fists. Now, the %companyname%\'s men will satiate these mad fools... | Cleaners hurry about the arena. They drag away the bodies, collect what\'s worth collecting, and occasionally throw a trophy into the crowds, eliciting a moblike rendition of the arena\'s battles in the stands themselves. The %companyname% is now a part of this affair. | The arena awaits, the crowd alight, and the %companyname%\'s turn to gain glory is at hand! | The crowd booms as the %companyname%\'s men stride into its bloody pit. Despite the mindless bloodlust of the peoples, you can\'t help but feel a beat of pride in your chest, knowing that it is your company ready to put on a show. | The gate rises. Nothing is heard save the rattle of chains, the creak of pulleys, the grunts of slaves at work. When the men of the %companyname% step out of the arena\'s bowels they can hear the crunch of sand underfoot until they come to stand in the center of the pit. A strange voice screams from the tops of the stadium, some lost language beyond your knowing, but the words echo just once before the crowd erupts with cheers and roaring. Now is the time your men shall prove themselves before the watchful eye of the commoner. | The %companyname%\'s business is rarely done before the eyes of those who would prefer themselves distantly separated from such violence. But in the arena, the commoner greedily awaits death and suffering, and it growls with bloodlust as your men enter the pits, and roars as the sellswords draw their weapons and ready for battle. | The arena is shaped like the pit of some sore, its ceiling torn away by the gods, revealing the vanity, bloodlust, and savagery of man. And it is man there, yelling and screaming, and if the blood sprays hit them, they wash their faces in the gore and grin at one another as though it were a joke. They fight one another for trophies and relish in the pain of others. And it is before these peoples that the %companyname% will fight, and for them they shall entertain and entertain well. | The arena\'s crowd is a mash of classes, rich and poor, for only the Viziers separate themselves out into stations above all. Briefly unified, the peoples of %townname% have graciously come together to watch men and monsters murder one another. With pleasure, the %companyname% seeks to do its part. | Boys sitting on the shoulders of fathers, young girls throwing flowers to the gladiators, women fanning themselves, men wondering if they could do it. These are the peoples of the arena - and the rest are all drunk out of their gourd and screaming nonsense. You hope the %companyname% can contribute to at least an hour or two to entertaining this mad lot. | The crowd roars as the %companyname%\'s men step into the pit. One would be dumb to confuse excitement for desire, for as soon as the applause ends there is a smattering of empty beer mugs and rotten tomatoes and the general giggling delight of those watching the matter. You wonder if the %companyname%\'s men are really best spent here, but then think hard on the gold and glory to be won, and that at the end of the day these mongrels in the stands will go home to their shit lives, and you\'ll go home to your shit life as well, but at least your pockets will be a bit deeper.}",
 			Image = "",
 			List = [],
@@ -772,7 +771,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Success",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "[img]gfx/ui/events/event_147.png[/img]{Le maître de cérémonie parle comme s\'il ne se souvenait pas de votre visage, mais il ne s\'en souvient probablement pas.%SPEECH_ON%Voici votre dû, n\'hésitez pas à revenir.%SPEECH_OFF%L\'arène sera fermée pour la journée, mais vous pourrez revenir dès demain. | Sans même lever la tête d\'un chiffon de papyrus, le maître de l\'arène vous lance une bourse de pièces.%SPEECH_ON%J\'ai entendu la foule, et voici donc vos couronnes. Puissiez-vous venir visiter les fosses à nouveau.%SPEECH_OFF%L\'arène sera fermée pour la journée, mais vous pourrez revenir dès demain. | Le maître de l\'arène vous attend.%SPEECH_ON%C\'était un très bon spectacle, mon gars. Ça ne me dérangerait pas le moins du monde que vous reveniez.%SPEECH_OFF%L\'arène sera fermée pour la journée, mais vous pourrez revenir dès demain.}",
 			Image = "",
 			Characters = [],
@@ -929,7 +928,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure1",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "[img]gfx/ui/events/event_147.png[/img]{Les hommes de %companyname% ont été vaincus, morts ou, peut-être pire, mutilés. Au moins, les foules sont heureuses. Dans les stands, toute démonstration, même celle qui se termine par une défaite, est une bonne démonstration.}",
 			Image = "",
 			Characters = [],
@@ -969,7 +968,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure2",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "{[img]gfx/ui/events/event_155.png[/img]L\'heure de votre match d\'arène est arrivée et passée, mais vous ne vous y êtes pas présentés. Peut-être que quelque chose de plus important s\'est présenté, ou peut-être que vous vous êtes simplement cachés comme des lâches. Dans tous les cas, votre réputation en pâtira.",
 			Image = "",
 			Characters = [],
@@ -990,7 +989,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Collars",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "{[img]gfx/ui/events/event_155.png[/img]L\'heure de votre match d\'arène a sonné, mais aucun de vos hommes ne porte le collier d\'arène et ils ne sont donc pas autorisés à entrer.\n\nVous devez décider qui va combattre en les équipant des colliers d\'arène qui vous ont été donnés, et le match commencera dès que vous serez de nouveau dans l\'arène.",
 			Image = "",
 			Characters = [],
@@ -1008,7 +1007,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Gladiators",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "{[img]gfx/ui/events/event_85.png[/img]Le combat terminé, vous trouvez quelques femmes qui se promènent vers vous et les gladiateurs. Elles sont pratiquement en pâmoison, les visages rougis, et les hommes s\'occupent particulièrement d\'elles. Un peu fatigué vous-même, vous demandez à l\'un des fans de vous aider à compter l\'inventaire. | [img]gfx/ui/events/event_147.png[/img]La bataille est terminée, mais une ombre traverse soudainement le sol. En un éclair, vous dégainez et fendez le ciel. Des pétales de fleurs arrosent votre corps scintillant et vous attrapez le reste du bouquet entre vos dents. Une femme se tient là, s\'éventant.%SPEECH_ON%Je me demandais pourquoi vous ne vous étiez pas battus.%SPEECH_OFF%Dit-elle. Vous rengainez votre lame et attachez le bouquet à votre ceinture. Vous lui dites que si vous vous battiez, ce ne sera pas du tout un \"combat\". La femme a les genoux fragiles et trouve du réconfort sur le sol. Avant de partir, vous lui dites de boire beaucoup d\'eau et de s\'étirer le matin. | [img]gfx/ui/events/event_97.png[/img]%SPEECH_START%Puis-je apprendre à me battre comme vous, les hommes ?%SPEECH_OFF%Les voix vous prennent au dépourvu et avant que vous ne le sachiez, vous avez votre lame à quelques centimètres du visage d\'un petit garçon. Ses yeux sont fermés, et il en ouvre lentement un. Vous rengainez l\'épée et riez.%SPEECH_ON%Non. Ce que je fais ne peut pas être appris.%SPEECH_OFF%Vous utilisez un peu de cendre et de sang du champ pour signer la chemise du gamin, puis vous partez. | %SPEECH_START%Êtes-vous... êtes-vous des gladiateurs ?%SPEECH_OFF%Vous regardez pour voir un garçon qui se tient là, l\'étonnement sur son visage. Il pleure presque, tellement il est content.%SPEECH_ON%Vous êtes incroyable!%SPEECH_OFF%Touchant les cheveux du garçon, vous lui dites merci et vous partez. | [img]gfx/ui/events/event_97.png[/img]%SPEECH_START%Comment êtes-vous devenu si bon ?%SPEECH_OFF%Vous vous retournez pour voir un garçon qui vous regarde nerveusement. En souriant, vous lui dites la vérité.%SPEECH_ON%Quand j\'avais ton âge, je tuais des hommes de mon âge.%SPEECH_OFF%En souriant, il demande si, en y travaillant, il peut être comme vous. Vous répondez en hochant la tête.%SPEECH_ON%Tu ne peux pas savoir avant d\'avoir essayé, petit. Maintenant, rentre à la maison.%SPEECH_OFF%Le garçon brandit un couteau à beurre et se retourne diaboliquement pour s\'enfuir en courant. C\'est un bon garçon.}",
 			Image = "",
 			Characters = [],

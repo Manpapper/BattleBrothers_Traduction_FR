@@ -20,7 +20,7 @@ this.privateering_contract <- this.inherit("scripts/contracts/contract", {
 		}
 
 		this.m.Type = "contract.privateering";
-		this.m.Name = "Privateering";
+		this.m.Name = "Déléguer";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
 	}
@@ -110,7 +110,7 @@ this.privateering_contract <- this.inherit("scripts/contracts/contract", {
 			{
 				this.World.Assets.addMoney(this.Contract.m.Payment.getInAdvance());
 				local f = this.World.FactionManager.getFaction(this.Flags.get("FeudingHouseID"));
-				f.addPlayerRelation(-99.0, "Took sides in the war");
+				f.addPlayerRelation(-99.0, "A pris parti dans la guerre");
 				this.Flags.set("StartDay", this.World.getTime().Days);
 				local nonIsolatedSettlements = [];
 
@@ -803,12 +803,12 @@ this.privateering_contract <- this.inherit("scripts/contracts/contract", {
 		]);
 		_vars.push([
 			"maxdays",
-			"five days"
+			"cinq jours"
 		]);
 		local days = 5 - (this.World.getTime().Days - this.m.Flags.get("StartDay"));
 		_vars.push([
 			"days",
-			days > 1 ? "" + days + " days" : "1 day"
+			days > 1 ? "" + days + " jours" : "1 jour"
 		]);
 
 		if (this.m.Item != null)

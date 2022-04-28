@@ -306,7 +306,7 @@ this.discover_location_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "FoundIt",
 			Title = "À %location%",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{Vous voyez %location% dans le verre de votre lunette et vous la marquez sur vos cartes. C\'était assez facile. Il est temps de retournez auprès de %employer%. | Eh bien, il est déjà temps de auprès de %employer% car %location% a été plus facile à trouver que vous ne le pensiez. En le marquant sur votre carte, vous vous arrêtez, riez et secouez la tête. Quelle chance. |  %location% apparaît et il renaît immédiatement sur votre carte au mieux de vos capacités d\'illustration. %randombrother% demande si c\'est tout ce qu\'il y avait à faire. Vous acquiescez. Que ce soit difficile ou facile, %employer% vous attendra pour vous payer.}",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Vous voyez %location% dans le verre de votre lunette et vous la marquez sur vos cartes. C\'était assez facile. Il est temps de retournez auprès de %employer%. | Eh bien, il est déjà temps de retourner auprès de %employer% car %location% a été plus facile à trouver que vous ne le pensiez. En le marquant sur votre carte, vous vous arrêtez, riez et secouez la tête. Quelle chance. |  %location% apparaît et il renaît immédiatement sur votre carte au mieux de vos capacités d\'illustration. %randombrother% demande si c\'est tout ce qu\'il y avait à faire. Vous acquiescez. Que ce soit difficile ou facile, %employer% vous attendra pour vous payer.}",
 			Image = "",
 			List = [],
 			Options = [
