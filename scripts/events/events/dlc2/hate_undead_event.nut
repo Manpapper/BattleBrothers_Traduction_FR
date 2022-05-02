@@ -10,13 +10,13 @@ this.hate_undead_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%image%{%brother% spits and runs his hand under his nose. His face scowls and he seems to be talking to himself as others look on.%SPEECH_ON%The old gods will have our arses if we permit the dead to walk again! You fellas can go to the hereafter thinking you did right in this world, but I ain\'t following the idle road cause by my sum that road goes straight to the hells. I\'ll see to it that I meet a righteous end, and I\'ll see to that by felling every godforsaken undead fark I see!%SPEECH_OFF%}",
+			Text = "%image%{%%brother% crache et passe sa main sous son nez. Son visage se renfrogne et il semble se parler à lui-même sous le regard des autres.%SPEECH_ON%Les vieux dieux auront nos culs si nous permettons aux morts de marcher à nouveau ! Vous pouvez aller dans l\'au-delà en pensant avoir fait le bien dans ce monde, mais je ne suivrai pas la route de l\'oisiveté, car à mon avis, cette route mène droit aux enfers. Je veillerai à ce que ma fin soit juste, et je le ferai en tuant tous les morts-vivants que je verrai !%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That\'s the spirit!",
+					Text = "C\'est ça l\'esprit !",
 					function getResult( _event )
 					{
 						return 0;
@@ -32,7 +32,7 @@ this.hate_undead_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.Casualty.getName() + " now hates the undead"
+					text = _event.m.Casualty.getName() + " déteste maintenant les morts-vivants"
 				});
 			}
 

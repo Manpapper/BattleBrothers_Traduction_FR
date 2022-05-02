@@ -9,13 +9,13 @@ this.fear_beasts_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%brother% is carving a rabbit into a piece of bark. It\'s shaping up nicely until he angrily throws the whole thing into the campfire.%SPEECH_ON%Oh who the fark am I kidding? I wish I was out here hunting game! But this ain\'t game, these are monsters! Creatures of the night! Bullshit, all of it, where\'d they even come from? Well I tell you what, I ain\'t gonna be killed by one of them things! Not a farking chance!%SPEECH_OFF%The rest of the company stares at him as he comes down from the outburst. He quietly watches the rabbit carving churn and burn.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%%brother% sculpte un lapin dans un morceau d\'écorce. Tout se passe bien jusqu\'à ce qu\'il jette rageusement le tout dans le feu de camp.%SPEECH_ON%Oh, de qui je me moque ? J\'aimerais être ici pour chasser du gibier ! Mais ce n\'est pas du gibier, ce sont des monstres ! Des créatures de la nuit ! Des conneries, tout ça, d\'où est-ce qu\'ils viennent ? Eh bien je vais vous dire, je ne vais pas me faire tuer par une de ces choses ! Pas la moindre chance !%SPEECH_OFF%Le reste de la compagnie le dévisage alors qu\'il se remet de son accès de colère. Il regarde tranquillement le lapin sculpter se brûler et se consummer.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This is taking a toll on the men.",
+					Text = "Cela a des conséquences sur les hommes.",
 					function getResult( _event )
 					{
 						return 0;
@@ -31,7 +31,7 @@ this.fear_beasts_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.Casualty.getName() + " now fears beasts"
+					text = _event.m.Casualty.getName() + " a maintenant peur des bêtes"
 				});
 			}
 

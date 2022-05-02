@@ -580,7 +580,7 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "IntroAftermath",
-			Title = "The Aftermath",
+			Title = "La suite",
 			Text = "[img]gfx/ui/events/event_22.png[/img]Vous êtes en vie. Vous avez gagné.\n\nEn sentant l\'adrénaline disparaître vous vous alongez par terre. En serrant les dents, vous cassez le manche de la flèche. Votre torse se soulève, vous éprouvez de la douleur en respirant, tout se trouble.\n\nLa companie a été dévastée, réduite à seulement quelques hommes. Et ce connard d\'Hoggart a rendu justice à son nom, en fuyant tel la fouine qu\'il est.%SPEECH_ON%Et maintenant, capitaine?%SPEECH_OFF%Une voix dit derrière vous. C\'est %bro2% qui s\'asseoit à côté de vous, posant sa hâche ensanglanté sur ses jambes. Vous vous tournez vers lui et lui répondez, mais avant que vous puissiez répondre il continu.%SPEECH_ON%Bernhard est mort. Ils lui ont tranché la gorge. Il était un bon homme et un très bon capitaine, mais il n\'aura fallu qu\'une seule erreur. Ce qui fait de toi celui aux commandes maintenant, n\'est-ce pas?%SPEECH_OFF%%bro3% se joint à vous deux, toujours en respirant lourdement. Puis %bro1%.%SPEECH_ON%Gardez la cérémonie et les onctions pour un autre jour. Donnons une bonne sépulture à nos camarades et retournons à %townname% récupérer notre paie. Les hommes de la fouine sont mort après tout. Et puis, capitaine, on devrait regarder cette blessure avant que nous vous perdions aussi. On voudrait pas laisser %bro3% aux commandes, pas vrai?%SPEECH_OFF%",
 			List = [],
 			Characters = [],

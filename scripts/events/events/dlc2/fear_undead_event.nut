@@ -9,13 +9,13 @@ this.fear_undead_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%brother% looks around at the men around the campfire. He then looks at the ground for a few minutes before exploding.%SPEECH_ON%Am I the only one here who is sane? How is no one else losing their farking minds over the dead walking the earth again? What the hell, where are the old gods in all this, they just farking gonna watch this shitshow?%SPEECH_OFF%The company tries to temper his fears, but he goes back to a ponderous silence of a man with too much to think about and no one willing, or wanting, to truly listen.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%brother% regarde les hommes autour du feu de camp. Il regarde ensuite le sol pendant quelques minutes avant d\'exploser.%SPEECH_ON%Suis-je le seul ici à être sain d\'esprit ? Comment se fait-il que personne d\'autre ne perde la tête à cause des morts qui reviennent sur terre ? Bon sang, où sont les vieux dieux dans tout ça, ils vont juste regarder ce spectacle de merde ?%SPEECH_OFF%La compagnie tente de tempérer ses craintes, mais il retourne au silence pesant d\'un homme qui a trop de choses à penser et dont personne ne veut, ou ne veut, vraiment écouter.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This is taking a toll on the men.",
+					Text = "Cela a des conséquences sur les hommes.",
 					function getResult( _event )
 					{
 						return 0;
@@ -31,7 +31,7 @@ this.fear_undead_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.Casualty.getName() + " now fears the undead"
+					text = _event.m.Casualty.getName() + " a maintenant peur des morts-vivants"
 				});
 			}
 

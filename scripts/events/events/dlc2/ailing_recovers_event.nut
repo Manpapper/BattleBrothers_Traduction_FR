@@ -10,7 +10,7 @@ this.ailing_recovers_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 75.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{%ailing% is walking around camp with his hands out and his fingers stretched as though he were balancing across a rope. He nods to himself as he turns around, foot placed before foot, marching his way back across.%SPEECH_ON%For the first time in a long time I actually feel quite alright. Thanks, %healer%!%SPEECH_OFF%It seems %healer% knew of a couple means to rid what ailed %ailing%.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{%ailing% se promène dans le camp les mains tendues, les doigts serrés comme s\'il tenait une corde pour survivre. Il fait un signe de tête en faisant demi-tour, pied devant pied, pour retraverser le camp.%SPEECH_ON%Pour la première fois depuis longtemps, je me sens vraiment bien. Merci, %healer% !%SPEECH_OFF%Il semble que %healer% connaissait quelques moyens de se débarrasser de ce dont %ailing% souffrait.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -28,7 +28,7 @@ this.ailing_recovers_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Ailing.getImagePath());
 				this.Characters.push(_event.m.Healer.getImagePath());
-				_event.m.Ailing.improveMood(1.5, "Feels the best he did in a long time");
+				_event.m.Ailing.improveMood(1.5, "Ne s\'est jamais senti aussi bien depuis longtemps.");
 
 				if (_event.m.Ailing.getMoodState() >= this.Const.MoodState.Neutral)
 				{
@@ -43,7 +43,7 @@ this.ailing_recovers_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/traits/trait_icon_59.png",
-					text = _event.m.Ailing.getName() + " is no longer ailing"
+					text = _event.m.Ailing.getName() + " n\'est plus souffrant"
 				});
 			}
 

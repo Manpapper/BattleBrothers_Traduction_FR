@@ -7,13 +7,13 @@ this.petrified_scream_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_12.png[/img]{A few of the men run into your tent, each of them wide-eyed and sweating. They absentmindedly shrink from each other\'s touch or violently push back. You ask what is the problem and they explain as a mob like birds crowing at someone hiding a piece of bread from them. It takes some parsing, but it sounds as though the artifact superstitiously called the \'petrified scream\' has been giving the men nightmares. You tell the men the item is in the inventory and is of no harm. The men quietly leave.\n\n You return to your map only to see something black hidden under the paper. Lifting the page, you find the alp\'s death mask there, maw open in grisly black permanence. You stare at the mask, you can hear something within it, something clattering its teeth like thrown dice, and the sides of it seem to be vibrating, giving its flesh a bubbling look. With a shrug and laugh you throw it on top of the map as a paperweight. Damn thing is gonna get lost if the men keep moving it around like this.}",
+			Text = "[img]gfx/ui/events/event_12.png[/img]{Quelques hommes se précipitent dans votre tente, les yeux écarquillés et en sueur. Ils se dérobent distraitement au contact des autres ou les repoussent violemment. Vous demandez quel est le problème et ils vous expliquent comme un groupe d\'oiseau que vous souhaiteriez nourrir. Il faut un peu d\'analyse, mais il semble que l\'artefact appelé par superstition le \"cri pétrifié\" ait donné des cauchemars aux hommes. Vous dites aux hommes que l\'objet est dans l\'inventaire et qu\'il n\'est pas dangereux. Les hommes partent tranquillement.\n\n Vous retournez à votre carte pour voir quelque chose de noir caché sous le papier. En soulevant la page, vous trouvez le masque de l\'alp mort, la gueule ouverte dans une permanence noire et macabre. Vous fixez le masque, vous pouvez entendre quelque chose à l\'intérieur, quelque chose qui fait claquer ses dents comme des dés lancés, et les côtés du masque semblent vibrer, donnant à sa chair un aspect bouillonnant. Avec un haussement d\'épaules et un rire, vous le jetez sur la carte comme presse-papier. Cette satanée chose va se perdre si les hommes continuent à la déplacer comme ça.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "How do you keep misplacing that?",
+					Text = "Comment faites-vous pour continuer à égarer ça ?",
 					function getResult( _event )
 					{
 						return 0;
@@ -34,7 +34,7 @@ this.petrified_scream_event <- this.inherit("scripts/events/event", {
 
 					if (bro.getSkills().hasSkill("trait.superstitious") || bro.getSkills().hasSkill("trait.paranoid") || bro.getSkills().hasSkill("trait.dastard") || bro.getSkills().hasSkill("trait.craven") || bro.getSkills().hasSkill("trait.mad") || this.Math.rand(1, 100) <= 33)
 					{
-						bro.worsenMood(0.75, "Concerned about carrying around a Petrified Scream artifact");
+						bro.worsenMood(0.75, "Inquiet de transporter un artefact de cri pétrifié.");
 
 						if (bro.getMoodState() <= this.Const.MoodState.Neutral)
 						{

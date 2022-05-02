@@ -9,13 +9,13 @@ this.teamplayer_is_bro_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_65.png[/img]{%teamplayer%, always the sort to take one for the company, seems to have singlehandedly helped the resolve of the men. As one sellsword explains it.%SPEECH_ON%I dunno how to explain it.%SPEECH_OFF%As another more articulate mercenary says.%SPEECH_ON%It\'s like he\'s more than just a sword for hire, you know? He\'s someone we can depend on. Like a brother. But not a whole brother, obviously. More like a halfbrother. A bro, if you will.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_65.png[/img]{%teamplayer% a toujours été du genre à aider la compagnie, semble avoir aidé tout seul la détermination des hommes. Comme l\'explique un mercenaire.%SPEECH_ON%Je ne sais pas comment l\'expliquer.%SPEECH_OFF%Comme le dit un autre mercenaire plus articulé.%SPEECH_ON%C\'est comme si c\'était plus qu\'une simple épée à louer, vous voyez ? C\'est quelqu\'un sur qui on peut compter. Comme un frère. Mais pas un frère à part entière, évidemment. Plus comme un demi-frère. Un frangin, si vous voulez.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "%teamplayer% is the best.",
+					Text = "%teamplayer% est le meilleur.",
 					function getResult( _event )
 					{
 						return 0;
@@ -43,11 +43,11 @@ this.teamplayer_is_bro_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 16,
 							icon = "ui/icons/bravery.png",
-							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
+							text = bro.getName() + " gagne [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] de Détermination"
 						});
 					}
 
-					bro.improveMood(0.5, "Happy to have a bro in " + _event.m.Teamplayer.getName());
+					bro.improveMood(0.5, "Heureux d\'avoir un frère dans " + _event.m.Teamplayer.getName());
 
 					if (bro.getMoodState() > this.Const.MoodState.Neutral)
 					{
