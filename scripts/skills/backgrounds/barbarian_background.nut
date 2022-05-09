@@ -6,9 +6,9 @@ this.barbarian_background <- this.inherit("scripts/skills/backgrounds/character_
 	{
 		this.character_background.create();
 		this.m.ID = "background.barbarian";
-		this.m.Name = "Barbarian";
+		this.m.Name = "Barbare";
 		this.m.Icon = "ui/backgrounds/background_58.png";
-		this.m.BackgroundDescription = "";
+		this.m.BackgroundDescription = "Barbare a besoin de description";
 		this.m.GoodEnding = "%name% the barbarian took all the coin he earned with the company and ventured north. With his money, he gathered a band of warriors and conquered so many tribes that, last you heard, he had been ordained \'king of the north\'.";
 		this.m.BadEnding = "With things the way they were, %name% departed. Last you heard he was traveling north. Penniless with little to his name but an axe, and not looking anything like the natives or speaking their tongue, you figure the barbarian did not get far. Based upon what you\'ve seen happen to his ilk, he\'s either been killed already or captured as a slave.";
 		this.m.HiringCost = 200;
@@ -59,7 +59,7 @@ this.barbarian_background <- this.inherit("scripts/skills/backgrounds/character_
 
 	function onBuildDescription()
 	{
-		return "{%name% survived the battle between yourself and his own tribe of warriors. He offered himself to your company or to your sword. Impressed by his bravery, you chose to take him in. A foreign brute, he hardly speaks your native tongue and he is not well liked by the rest of the company. But if anything can bond two men it is fighting beside one another, killing when it counts, and drinking the night away at the tavern.}";
+		return "{%name% a survécu à la bataille entre vous et sa propre tribu de guerriers. Il s\'est offert à votre compagnie ou à votre épée. Impressionné par sa bravoure, vous avez choisi de l\'accueillir. Une brute étrangère, il parle à peine votre langue maternelle et il n\'est pas apprécié par le reste de la compagnie. Mais si quelque chose peut lier deux hommes, c\'est de se battre l\'un contre l\'autre, de tuer quand il le faut et de boire toute la nuit à la taverne.}";
 	}
 
 	function onAdded()

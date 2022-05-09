@@ -4,7 +4,7 @@ this.companion_1h_background <- this.inherit("scripts/skills/backgrounds/charact
 	{
 		this.character_background.create();
 		this.m.ID = "background.companion";
-		this.m.Name = "Companion";
+		this.m.Name = "Compagnon";
 		this.m.Icon = "ui/traits/trait_icon_32.png";
 		this.m.HiringCost = 0;
 		this.m.DailyCost = 14;
@@ -41,7 +41,7 @@ this.companion_1h_background <- this.inherit("scripts/skills/backgrounds/charact
 		this.m.ExcludedTalents = [
 			this.Const.Attributes.RangedSkill
 		];
-		this.m.GoodEnding = "He was with you from the start, %name%, and he was with you in retirement, leaving the company not long after you did. But he wasn\'t yet done with the fighting life and took up fighting for another company - his own. Having learned so much from your leadership, he is making you about as proud as any son could. Ironically, he hates the notion of you being a father figure to him, and you always tell him you\'d never father a son so ugly to begin with. You keep in touch to this day.";
+		this.m.GoodEnding = "He was with you from the start, %name%, and he was with you in retirement, leaving the company not long after you did. But he wasn\'t yet done with the fighting life and took up fighting for another company - his own. Having learned so much from your leadership, he is making you about as proud as any son could. Ironically, he hates the notion of you being a father figure to him, and you always tell him you\'d never father a son so ugly to begin with. You keep in touch to this. day.";
 		this.m.BadEnding = "With you from the start, %name% was as loyal as he was talented. He stayed with the company for a time before eventually leaving to forge out a path for himself. The other day, you received a letter from the mercenary stating that he had started his own company and was in dire need of help. Unfortunately, the message was dated to nearly a full year ago. When you investigated the existence of his company, you learned that it had been completely annihilated in a battle between nobles.";
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.AllMale;
@@ -70,7 +70,7 @@ this.companion_1h_background <- this.inherit("scripts/skills/backgrounds/charact
 
 	function onBuildDescription()
 	{
-		return "%name% is not known to be a big talker, but he has every right to be. {He\'s saved the lives of both %2h% and %ranged%. | He once spared you from an orc\'s wicked chain. | An assassin would have killed you in a pub were it not for this man. | A misfired crossbow nearly took out your eye - hadn\'t %name%\'s shield been there to stop it. | He once pushed two men off a cliff using only his shield and two strong legs. | He learned how to fight from his father, a vanguard at the Battle of Many Names. | Sacrificing his family\'s heirloom - an old shield of wood and studded iron - he saved your life. | A man of rather consistent heroism, he pulled a drunken %2h% from a pub fire. | Faced with a horde of goblins, he used his shield and strength to push a hole in their lines, opening the way for %2h% and %ranged% to kill them all.} With quick whirls and whips of his shield, the man\'s deflected all manner of mortal danger. Although rather quiet, you\'ve found %name%\'s place in a shield-wall to be rather indispensable.";
+		return "%name% n\'est pas connu pour être un grand parleur, mais il a tous les droits de l\'être. {Il a sauvé la vie de %2h% et de %ranged%. |Il t\'a une fois épargné de la chaîne maléfique d\'un orc. | Un assassin t\'aurait tué dans un pub si cet homme n\'avait pas été là. | Une arbalète mal tirée a failli t\'arracher un œil - si le bouclier de %nom% n\'avait pas été là pour l\'arrêter. | Il a un jour poussé deux hommes d\'une falaise en utilisant uniquement son bouclier et ses deux solides jambes. | Il a appris à se battre grâce à son père, qui était à l\'avant-garde lors de la bataille de Many Names. | En sacrifiant l\'héritage de sa famille - un vieux bouclier de bois et de fer clouté - il t\'a sauvé la vie. | Un homme à l\'héroïsme constant, il a tiré un %2h% ivre de l\'incendie d\'un pub. | Face à une horde de gobelins, il a utilisé son bouclier et sa force pour faire un trou dans leurs lignes, ouvrant la voie à %2h% et %ranged% pour les tuer tous.} En faisant tournoyer son bouclier, l\'homme a dévié toute sorte de danger mortel. Bien qu\'il soit plutôt discret, vous avez trouvé que la place de %name% dans un mur de boucliers était plutôt indispensable.";
 	}
 
 	function onPrepareVariables( _vars )

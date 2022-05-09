@@ -4,18 +4,17 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 	{
 		this.character_background.create();
 		this.m.ID = "background.anatomist";
-		this.m.Name = "Anatomist";
+		this.m.Name = "Anatomiste";
 		this.m.Icon = "ui/backgrounds/background_70.png";
-		this.m.BackgroundDescription = "Part scientist and part surgeon, Anatomists are unaccustomed to battle but well served by steady hands.";
+		this.m.BackgroundDescription = "En partie scientifiques et en partie chirurgiens, les anatomistes ne sont pas spécialement taillés pour le combat mais on peut toujours compter sur leurs mains expertes.";
 		this.m.GoodEnding = "Out of all the men you came to know in the %companyname%, it was %name% the anatomist who is perhaps the most difficult to forget. An unending stream of letters only helps ensure you never will. You skim over his latest, one-sided correspondence: \"Captain! I\'ve managed to...\" skimming, skimming, \"...the greatest invention! The most...\" skimming, skimming. \"I\'m going to be famous! My brain will be studied for its weight is surely...\" Nothing new, it seems, though you are glad he\'s still in good health, albeit perhaps more so in body than mind.";
 		this.m.BadEnding = "Having fled the %companyname%, %name% the anatomist continued his studies elsewhere. He was admonished by his peers for venturing out in such an uncouth manner and found himself suffering in intellectual mediocrity. Some years later, he made a small contribution to the study of beetles after which he promptly threw himself off a seaside cliff, donating his brain to the rocks and his body to the ocean.";
 		this.m.HiringCost = 130;
-		this.m.DailyCost = 12;
+		this.m.DailyCost = 8;
 		this.m.Excluded = [
 			"trait.ailing",
 			"trait.asthmatic",
 			"trait.bleeder",
-			"trait.craven",
 			"trait.huge",
 			"trait.determined",
 			"trait.fear_beasts",
@@ -32,6 +31,7 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 			"trait.athletic",
 			"trait.brute",
 			"trait.fragile",
+			"trait.fainthearted",
 			"trait.iron_lungs",
 			"trait.irrational",
 			"trait.cocky",
@@ -75,7 +75,7 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 
 	function onBuildDescription()
 	{
-		return "{%name% is a sharp man with a complexion wrecked by constant and virulent testing. You hope that his methodologies may be better applied to his enemies rather than his own self. | Rumors about %name% suggest he tried to figure out how to fly. Not by machine, rather, but by growing wings. How exactly he intended to do that, or what became of his experiments, is unknown. Yet, here he is, rather shrewdly grounded and looking over his shoulders. | Like many anatomists, %name% went out on his own into the world. Of course, also like many, he was quickly chewed up by the hungriness of those to whom science means nothing. For now, he will fight alongside sellswords, if only to buy himself extra time to truly get to his studies. | %name% is cynical to the world, upset that some of his peers could see to their education in full, while he must earn coin just to support his studies. May his anger present itself on the battlefield. | One would expect a man like %name% to appear after a battle, not actually participate in it. The fact such an intelligent, albeit bizarre figure would still need a sellsword\'s earnings has you wondering if your own prospects of getting anywhere in this world are even worse than you realized. | One cannot overstate %name%\'s intellect. He is a wicked smart man, the sort who can make you question why the gods bothered to give you a mind of your own if it is to be so dwarfed. But, in sellsword matters, he would be just another fighter. Hopefully his martial skills are as sharp as his wits. | You can never know for certain if it were hard times which forced %name% into sellswording, or if he\'s merely pursuing scientific inquiries by another, far crueler path. That he spends evenings dissecting wagon-crushed dogs and wingless butterflies makes you ponder a lot of things about the curious fellow. | Curiosity, not coin, brought %name% to sellswording. He has a keen interest in discovering the creatures of the world, and what they look like on the inside. So long as he makes said insides visible, you could care less what else he does with them.}";
+		return "{%name% était un homme vif au teint ravagé par les virulentes expériences qu\'il mena maintes années durant. Le scrutant, vous espérez que ses méthodologies s\'appliqueront mieux à vos ennemis qu\'à lui-même... | Des rumeurs couraient sur %name% ... On raconte qu\'autrefois, il multiplia les tentatives afin de percer le secret pour s\'envoler vers les cieux. Non pas avec une machine, mais plutôt en essayant de se faire pousser des ailes. Personne ne vit jamais le fruit de ses recherches, ni ce qu\'il advint de ses expérimentations ... Mais, à présent, il est bien là, les deux pieds sur le plancher des vaches ! | Comme de nombreux anatomistes, %name% s\'était aventuré seul dans le monde. Bien sûr, comme beaucoup, il fût rapidement dévoré par la convoitise de ceux pour qui la science ne signifiait rien. À présent, il se battra aux côtés de mercenaires, ne serait-ce que pour gagner du temps et se consacrer à ses études. | %name% faisait preuve de beaucoup de cynisme. En effet, contrarié par le fait que certains de ses pairs pouvaient s\'adonner à leurs études sans soucis, pendant lui devait gagner de l\'argent juste pour financer les siennes. Bien. Espérons que sa colère ruminante se manifeste sur le champ de bataille. | On s\'attendrait à ce qu\'un homme comme %name% apparaisse après une bataille, et non qu\'il y participe. Le fait qu\'un personnage aussi intelligent, bien qu\'étrange, ait encore besoin de l\'argent d\'un maître d\'hôtel vous amène à vous demander si vos propres chances d\'arriver à quelque chose dans ce monde ne sont pas pires que vous ne le pensiez. | On ne peut pas surestimer l\'intelligence de %nom%. C\'est un homme méchamment intelligent, du genre à vous faire vous demander pourquoi les dieux ont pris la peine de vous donner un esprit propre s\'il doit être à ce point éclipsé. Mais, en matière d\'épée, il serait juste un autre combattant. Espérons que ses compétences martiales soient aussi aiguisées que son esprit. | On ne peut jamais savoir avec certitude si ce sont des temps difficiles qui ont poussé %nom% à se lancer dans la vente d\'armes, ou s\'il ne fait que poursuivre des recherches scientifiques par un autre chemin, bien plus cruel. Le fait qu\'il passe ses soirées à disséquer des chiens écrasés par un wagon et des papillons sans ailes vous fait réfléchir à beaucoup de choses sur ce curieux personnage. | C\'est la curiosité, et non l\'argent, qui amena %name% à la vente de mots. En effent, Il avait un vif intérêt pour la découverte des créatures peuplant le monde, et de ce à quoi elles ressemblaient à l\'intérieur. Eh bien ... Tant qu\'il rendra ces entrailles visibles, vous ne vous soucierez pas de ce qu\'il en fera}.";
 	}
 
 	function onChangeAttributes()
@@ -121,7 +121,7 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 	{
 		local items = this.getContainer().getActor().getItems();
 		local r;
-		r = this.Math.rand(0, 3);
+		r = this.Math.rand(0, 4);
 
 		if (r == 0)
 		{

@@ -4,7 +4,7 @@ this.belly_dancer_background <- this.inherit("scripts/skills/backgrounds/charact
 	{
 		this.character_background.create();
 		this.m.ID = "background.belly_dancer";
-		this.m.Name = "Belly Dancer";
+		this.m.Name = "Danseur du ventre";
 		this.m.Icon = "ui/backgrounds/background_64.png";
 		this.m.BackgroundDescription = "";
 		this.m.GoodEnding = "%name% the southern belly dancer left the company in good time. While his... particularities made him an excellent soldier, it was not his life\'s passion. To entertain, through rhythmic, confusingly erotic motions, that is what he\'s wanted. The last you heard, he was in the court of a Vizier where he serves not only as an entertainer, but, thanks to his time with the %companyname%, also as an adviser on marital matters.";

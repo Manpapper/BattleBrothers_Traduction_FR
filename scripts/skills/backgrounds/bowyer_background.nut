@@ -4,11 +4,11 @@ this.bowyer_background <- this.inherit("scripts/skills/backgrounds/character_bac
 	{
 		this.character_background.create();
 		this.m.ID = "background.bowyer";
-		this.m.Name = "Bowyer";
+		this.m.Name = "Archer";
 		this.m.Icon = "ui/backgrounds/background_29.png";
-		this.m.BackgroundDescription = "Bowyers tend to have some knowledge about how to use the ranged weaponry they used to craft.";
+		this.m.BackgroundDescription = "Les archers ont tendance à avoir quelques connaissances sur l\'utilisation des armes à distance qu\'ils fabriquent.";
 		this.m.GoodEnding = "While at a jousting tournament, a young boy was using an oddly shaped, yet perfectly crafted bow. His aiming hand was shaky, yet the arrows did not wobble upon being loosed. After he won the competition, you inquired about where the boy had gotten such an incredible bow. He stated that a bowyer by the name of %name% had crafted it. Apparently, he\'s known for making the finest bows in all the land!";
-		this.m.BadEnding = "After you left the %companyname%, you sent a letter inquiring about the status of %name% the bowyer. You got word that he had discovered a way to craft the finest bow possible and, instead of giving this secret to the company, he departed to start his own business. He did not get far: whatever he had learned about his trade died with him on a muddy road out {north | south | west | east} of here, his body ironically skewered with what is said to have been a dozen arrows.";
+		this.m.BadEnding = "After you left the %companyname%, you sent a letter inquiring about the status of %name% the bowyer. You got word that he had discovered a way to craft the finest bow possible and, instead of giving this. secret to the company, he departed to start his own business. He did not get far: whatever he had learned about his trade died with him on a muddy road out {north | south | west | east} of here, his body ironically skewered with what is said to have been a dozen arrows.";
 		this.m.HiringCost = 80;
 		this.m.DailyCost = 8;
 		this.m.Excluded = [
@@ -62,7 +62,7 @@ this.bowyer_background <- this.inherit("scripts/skills/backgrounds/character_bac
 
 	function onBuildDescription()
 	{
-		return "{With calloused hands and an eye for thin strings, | Born to a blacksmith, it\'s definitely somewhat curious that | Picking up his trade from a long lineage of strong-sighted forefathers,} %name% is a fletcher and bowyer. {Plying his trade for royalty, his career came to an end when a bowstring snapped, cutting off the finger of a promising heir. | Unfortunately, war destroyed the forests from which he used to draw the finest wood. | Sadly, he sold a bow to a young boy which led to a horrible, arrow-related accident. After much debate, he was no longer wanted in town. | But after so many years of making weapons for others, he began to wonder what else there was to life besides wood and string.} {Now, %name% seeks a different path. If he can\'t sell bows, maybe he can use them. | Now %name% rests in the company of the very men he used to supply. | With his interest in bowmaking gone, can the former bowyer shoot arrows as well as he makes them?}";
+		return "{Avec ses mains calleuses et son œil pour les cordes fines, étrange que | Né d\'un forgeron, il est certainement quelque peu curieux que | Prendre son métier d\'une longue lignée d\'ancêtres clairvoyants,} %name% soit un ajusteur et un archer. {Il a exercé son métier pour la royauté, mais sa carrière s\'est terminée lorsqu\'une corde d\'arc a cassé, coupant le doigt d\'un héritier prometteur. | Malheureusement, la guerre a détruit les forêts d\'où il tirait le meilleur bois. | Malheureusement, il a vendu un arc à un jeune garçon, ce qui a conduit à un horrible accident lié à une flèche. Après de nombreux débats, il n\'était plus désiré en ville. | Mais après tant d\'années à fabriquer des armes pour les autres, il a commencé à se demander ce qu\'il y avait d\'autre dans la vie que le bois et la corde.} {Maintenant, %name% cherche une autre voie. S\'il ne peut pas vendre d\'arcs, il peut peut-être les utiliser. | Maintenant, %name% se repose en compagnie des hommes qu\'il fournissait. | Avec la disparition de son intérêt pour la fabrication d\'arcs, l\'ancien archetier peut-il tirer des flèches aussi bien qu\'il les fabrique ?}";
 	}
 
 	function onChangeAttributes()

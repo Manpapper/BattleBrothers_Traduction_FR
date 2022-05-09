@@ -4,7 +4,7 @@ this.companion_ranged_background <- this.inherit("scripts/skills/backgrounds/cha
 	{
 		this.character_background.create();
 		this.m.ID = "background.companion";
-		this.m.Name = "Companion";
+		this.m.Name = "Compagnon";
 		this.m.Icon = "ui/traits/trait_icon_32.png";
 		this.m.HiringCost = 0;
 		this.m.DailyCost = 14;
@@ -41,7 +41,7 @@ this.companion_ranged_background <- this.inherit("scripts/skills/backgrounds/cha
 			this.Const.Attributes.MeleeSkill,
 			this.Const.Attributes.MeleeDefense
 		];
-		this.m.GoodEnding = "He was with you from the start, %name%, and he was with you in retirement, leaving the company not long after you did. But he wasn\'t yet done with the fighting life and took up fighting for another company - his own. Having learned so much from your leadership, he is making you about as proud as any son could. Ironically, he hates the notion of you being a father figure to him, and you always tell him you\'d never father a son so ugly to begin with. You keep in touch to this day.";
+		this.m.GoodEnding = "He was with you from the start, %name%, and he was with you in retirement, leaving the company not long after you did. But he wasn\'t yet done with the fighting life and took up fighting for another company - his own. Having learned so much from your leadership, he is making you about as proud as any son could. Ironically, he hates the notion of you being a father figure to him, and you always tell him you\'d never father a son so ugly to begin with. You keep in touch to this. day.";
 		this.m.BadEnding = "With you from the start, %name% was as loyal as he was talented. He stayed with the company for a time before eventually leaving to forge out a path for himself. The other day, you received a letter from the mercenary stating that he had started his own company and was in dire need of help. Unfortunately, the message was dated to nearly a full year ago. When you investigated the existence of his company, you learned that it had been completely annihilated in a battle between nobles.";
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.AllMale;
@@ -70,7 +70,7 @@ this.companion_ranged_background <- this.inherit("scripts/skills/backgrounds/cha
 
 	function onBuildDescription()
 	{
-		return "%name% is one of the more talented marksman you\'ve encountered in your travels. {After he saved your life with an arrow into the heart of a would-be assassin, you hired the man on the spot. | Learning of the man was easy - you just had to find the winner of a local shooting competition. | He once won an archery contest that had over a hundred participants from all the lands. | It is said that he can split an arrow - mid-flight. | You found the man on a farm where, obviously, you thought his shooting talents were going to waste. | A poacher, a bowyer, an archer, the man\'s skills have gotten plenty of use. You suspect he readily accepted your offer for mercenary work just to say \'he\'s done it all\'. | You once saw him shoot the moon, but that may have been some sort of trick. | A clever bowman, he once loosed two arrows simultaneously to kill a charging set of brigands.} While he has a fondness for killing from afar, %name%\'s no slouch in close-quarters combat.";
+		return "%name% est l\'un des tireurs d\'élite les plus talentueux que vous ayez rencontrés dans vos voyages. {Après qu\'il vous ait sauvé la vie en décochant une flèche dans le cœur d\'un aspirant assassin, vous l\'avez engagé sur-le-champ. | Il était facile d\'apprendre à connaître cet homme - il suffisait de trouver le vainqueur d\'une compétition de tir locale. | Il a une fois gagné un concours de tir à l\'arc qui comptait plus de cent participants de toutes les terres. | On dit qu\'il peut fendre une flèche - en plein vol. | Vous avez trouvé l\'homme dans une ferme où, de toute évidence, vous pensiez que ses talents de tireur allaient être gaspillés. | Un braconnier, un archer, un archer, les compétences de l\'homme ont été largement utilisées. Vous pensez qu\'il a accepté votre offre de travail de mercenaire juste pour dire qu\'il a tout fait. | Vous l\'avez vu une fois tirer sur la lune, mais c\'était peut-être une sorte de ruse. | Habile archer, il a une fois décoché deux flèches simultanément pour tuer un groupe de brigands en train de charger.} Bien qu\'il aime tuer de loin, il n\'est pas mauvais en combat rapproché.";
 	}
 
 	function onPrepareVariables( _vars )
