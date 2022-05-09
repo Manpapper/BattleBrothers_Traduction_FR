@@ -10,13 +10,13 @@ this.glutton_eats_apple_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_18.png[/img]{You come to a commotion between %glutton% the glutton and a bucket. He\'s heaving into it so hard his back lurches like a cat and his hurls sound like an undead cow giving birth. When he lifts his head his face looks like a gourd, cheeks ballooned, his mouth still all agargle. %otherbrother% comes over.%SPEECH_ON%He ate the witch\'s apple.%SPEECH_OFF%Raising an eyebrow, you ask the glutton why he would do such a thing. Vomit strings wriggle from his wrist as he wipes his eyes.%SPEECH_ON%{Cause I\'m always hungr-hurgh, uh, hungregghhh! | I don\'t rightfully know sir can\'t I just be in pain without having to validate my actiiiherrrghh! | Would I have to explain myself if I wasn\'t losing my gouerrrghhhh! | Cause you told me to eat healthy and it was an apperrrghghh!}%SPEECH_OFF%He pitches his head back into the bucket like a man who dropped a million crowns down a well. You tell the mercenaries to keep an eye on him until it\'s all out of his system, that is if it ever will be.}",
+			Text = "[img]gfx/ui/events/event_18.png[/img]{Vous arrivez au milieu d'une dispute entre %glutton% le glouton et un seau. Il s'enfonce dans le seau avec tant de force que son dos s'agite comme un chat et que ses hurlements ressemblent à ceux d'une vache mort-vivante qui met bas. Lorsqu'il relève la tête, son visage ressemble à une citrouille, les joues gonflées, la bouche encore toute gonflée. %otherbrother% s'approche.%SPEECH_ON%Il a mangé la pomme de sorcière.%SPEECH_OFF%Levant un sourcil, vous demandez au glouton pourquoi il fait une telle chose. Des filaments de vomi se détachent de son poignet tandis qu'il s'essuie les yeux.%SPEECH_ON%{Parce que j'ai toujours faim... beuargh ! | Je ne sais pas, monsieur. Ne puis-je pas simplement souffrir sans avoir à valider mon ges-beuargh ? | Est-ce que je devrais m'expliquer si je ne perdais pas la bou-beuargh ? | Car tu m'as dit de manger sainement et c'était un frurrghghh !}%SPEECH_OFF%Il se jette la tête dans le seau comme un homme qui a laissé tomber un million de couronnes dans un puits. Vous dites aux mercenaires de garder un oeil sur lui jusqu'à ce que tout soit sorti de son système, si cela arrive un jour.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Why...?",
+					Text = "Pourquoi...?",
 					function getResult( _event )
 					{
 						return 0;
@@ -48,7 +48,7 @@ this.glutton_eats_apple_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = effect.getIcon(),
-					text = _event.m.Glutton.getName() + " is sick"
+					text = _event.m.Glutton.getName() + " est malade"
 				});
 			}
 
