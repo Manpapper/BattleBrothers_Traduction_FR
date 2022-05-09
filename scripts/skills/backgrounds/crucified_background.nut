@@ -4,7 +4,7 @@ this.crucified_background <- this.inherit("scripts/skills/backgrounds/character_
 	{
 		this.character_background.create();
 		this.m.ID = "background.crucified";
-		this.m.Name = "Converted Crusader";
+		this.m.Name = "Croisé Converti";
 		this.m.Icon = "ui/backgrounds/background_65.png";
 		this.m.DailyCost = 30;
 		this.m.Excluded = [

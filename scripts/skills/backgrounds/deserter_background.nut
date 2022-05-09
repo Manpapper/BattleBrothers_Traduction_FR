@@ -4,11 +4,11 @@ this.deserter_background <- this.inherit("scripts/skills/backgrounds/character_b
 	{
 		this.character_background.create();
 		this.m.ID = "background.deserter";
-		this.m.Name = "Deserter";
+		this.m.Name = "Déserteur";
 		this.m.Icon = "ui/backgrounds/background_07.png";
-		this.m.BackgroundDescription = "Deserters have received some martial training, but usually aren\'t eager to put it to use.";
-		this.m.GoodEnding = "%name% the deserter continued fighting for the %companyname%, ever striving to redeem his name. Word has it that during a brutal fight with orcs, he dove headfirst into a crowd of greenskins, surfing across the top of their shocked heads. His heroism rallied the men to an incredible victory and he lives out his days getting toasted in every bar he enters.";
-		this.m.BadEnding = "You heard %name% the deserter actually renewed his title and fled a battle the %companyname% had with some greenskins. Goblins caught him out in the woods and turned his head into a goblet for an orc warlord.";
+		this.m.BackgroundDescription = "Les déserteurs ont reçu une certaine formation militaire, mais ne sont généralement pas désireux de la mettre en pratique.";
+		this.m.GoodEnding = "%name% le Déserteur continued fighting for the %companyname%, ever striving to redeem his name. Word has it that during a brutal fight with orcs, he dove headfirst into a crowd of greenskins, surfing across the top of their shocked heads. His heroism rallied the men to an incredible victory and he lives out his days getting toasted in every bar he enters.";
+		this.m.BadEnding = "You heard %name% le Déserteur actually renewed his title and fled a battle the %companyname% had with some greenskins. Goblins caught him out in the woods and turned his head into a goblet for an orc warlord.";
 		this.m.HiringCost = 85;
 		this.m.DailyCost = 11;
 		this.m.Excluded = [
@@ -30,12 +30,11 @@ this.deserter_background <- this.inherit("scripts/skills/backgrounds/character_b
 			this.Const.Attributes.Bravery
 		];
 		this.m.Titles = [
-			"the Deserter",
-			"Turncloak",
-			"the Betrayer",
-			"the Runner",
-			"the Dog",
-			"the Worm"
+			"le Déserteur",
+			"le Traître",
+			"le Coureur",
+			"le chien",
+			"le Ver"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;
@@ -64,14 +63,14 @@ this.deserter_background <- this.inherit("scripts/skills/backgrounds/character_b
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is always content with being in reserve"
+				text = "Sera toujours satisfait d\'être en réserve"
 			}
 		];
 	}
 
 	function onBuildDescription()
 	{
-		return "{%name% used to be a common soldier in a lord\'s army, but suffering loss after loss, | Once a watchman on the outskirts of %randomtown%, %name% watched all his friends die to the beasts that lurk there. After so many losses | When two lords quarreled over a petty matter of who owned a local pond, %name% was conscripted to help settle the matter. Being a nobody, it was clear his life was of little value. One slaughter later, | While employed in a lord\'s professional army, a horrible disease fell upon %name% and his comrades. Fearing its wrath, | While on a lengthy military campaign, %name% felt that there was too much marching and too little spoils to be had. So} he {stuck his weapons in the ground and walked off. | waited until night to desert his outfit. | and several others disbanded in protest. | volunteered for a patrol and, at the first opening, abandoned his soldiering career.} {It is no secret that deserters are widely despised - and %name% keeps his head hung low to stay out of others\' eyes. | Most deserters spend the rest of their days avoiding the noose, and %name% is no different. | Donning the garb of the everyman, %name% has, for a time, avoided the deserter\'s punishment. | By total luck, %name% has, thus far, gotten away with his crime.} {But now broke and penniless, he seeks a return to his former field. | Perhaps compelled by lawmen closing in, he now finds himself joining another fighting force. | Unfortunately, he is not a smart man. Lacking the imagination to pursue a safer career, %name% once again returns to fighting. | Feeling guilty about deserting his brothers in the field, he now seeks redemption in fighting for another outfit. But who is to say he won\'t flee again? | With an empty coin purse from drinking his memories away, he now considers any opportunity to make a living.}";
+		return "{%name% qui était un simple soldat dans l'armée d'un seigneur, mais qui subissait perte après perte, | Autrefois gardien à la périphérie de %randomtown%, %name% a vu tous ses amis mourir à cause des bêtes qui s'y cachent. Après tant de pertes | Lorsque deux seigneurs se sont disputés pour savoir qui était propriétaire d'un étang local, %nom% a été enrôlé pour aider à régler l'affaire. N'étant personne, il était clair que sa vie n'avait que peu de valeur. Un massacre plus tard, | Alors qu'il était employé dans l'armée d'un seigneur, une horrible maladie s'est abattue sur %name% et ses camarades. Craignant sa colère, | Lors d'une longue campagne militaire, %name% a estimé qu'il y avait trop de marche et trop peu de butin à récolter. Alors} il {a planté ses armes dans le sol et est parti. | a attendu la nuit pour déserter. | a décidé avec plusieurs autres de se séparer en signe de protestation. | s'est porté volontaire pour une patrouille et, à la première occasion, a abandonné sa carrière de soldat.} {Ce n'est pas un secret que les déserteurs sont largement méprisés - et %name% garde la tête basse pour éviter le regard des autres. | La plupart des déserteurs passent le reste de leur vie à éviter la corde, et %name% n'est pas différent. | En endossant le costume de monsieur tout le monde, %name% a, pour un temps, évité le châtiment des déserteurs. | Par chance, %name% s'en est sorti jusqu'à présent.} {Mais maintenant qu'il est fauché et sans argent, il cherche à revenir vers son ancien métier. | Peut-être contraint par les hommes de loi qui se rapprochent, il se retrouve maintenant à rejoindre une autre force de combat. | Malheureusement, ce n'est pas un homme intelligent. Manquant d'imagination pour poursuivre une carrière plus sûre, %name% retourne une fois de plus au combat. | Se sentant coupable d'avoir abandonné ses frères sur le terrain, il cherche maintenant à se racheter en combattant pour une autre équipe. Mais qui peut dire qu'il ne fuira pas à nouveau ? | Avec un porte-monnaie vide après avoir bu au point d'en perdre ses souvenirs, il considère maintenant toute opportunité de gagner sa vie.}";
 	}
 
 	function onChangeAttributes()

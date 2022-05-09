@@ -4,11 +4,11 @@ this.cultist_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	{
 		this.character_background.create();
 		this.m.ID = "background.cultist";
-		this.m.Name = "Cultist";
+		this.m.Name = "Cultiste";
 		this.m.Icon = "ui/backgrounds/background_34.png";
-		this.m.BackgroundDescription = "Cultists have a resolve to spread further their cult that is second to few.";
-		this.m.GoodEnding = "The cultist, %name%, left the company with a band of cloaked converts. You know not what became of him, but every so often you have dreams in which he appears. He\'s often standing by himself in a great void and there is always someone, or something, lingering in the black beyond. Every night, this image gets a little more clear, and each night you find yourself staying up later and later just to avoid dreaming at all.";
-		this.m.BadEnding = "You heard that %name%, the cultist, left the company at some juncture and went out to spread his faith. There\'s no telling what became of him, but there was a recent inquisition against unholy faiths and hundreds of \'men in dark cloaks with even darker intentions\' were burned at the stake across the realm.";
+		this.m.BackgroundDescription = "Les cultistes ont une détermination à propager leur culte qui n\'a d\'égal que celle de peu de personnes.";
+		this.m.GoodEnding = "le Cultiste, %name%, left the company with a band of cloaked converts. You know not what became of him, but every so often you have dreams in which he appears. He\'s often standing by himself in a great void and there is always someone, or something, lingering in the black beyond. Every night, this image gets a little more clear, and each night you find yourself staying up later and later just to avoid dreaming at all.";
+		this.m.BadEnding = "You heard that %name%, le Cultiste, left the company at some juncture and went out to spread his faith. There\'s no telling what became of him, but there was a recent inquisition against unholy faiths and hundreds of \'men in dark cloaks with even darker intentions\' were burned at the stake across the realm.";
 		this.m.HiringCost = 50;
 		this.m.DailyCost = 6;
 		this.m.Excluded = [
@@ -34,17 +34,16 @@ this.cultist_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.fainthearted"
 		];
 		this.m.Titles = [
-			"the Cultist",
-			"the Mad",
-			"the Believer",
-			"the Occultist",
-			"the Insane",
-			"the Follower",
-			"the Lost",
-			"the Odd",
-			"the Misguided",
-			"the Fanatic",
-			"the Zealot"
+			"le Cultiste",
+			"le Fou",
+			"le Croyant",
+			"l\'Occultiste",
+			"l\'Adepte",
+			"le Perdu",
+			"l\'étrange",
+			"l\'égaré",
+			"le Fanatique",
+			"le Zélote"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.UntidyMale;
@@ -71,7 +70,7 @@ this.cultist_background <- this.inherit("scripts/skills/backgrounds/character_ba
 
 	function onBuildDescription()
 	{
-		return "{The man stands with a placard hanging from his neck. | The man\'s face is wreathed in garish tattoos. He carries a note. | The man hides his face inside a deep cowl, an islanded tip of a nose all that you see in the darkness. He carries a placard around his neck. | Clothed in rags, it is strange the man neither sweats nor shakes in heat or cold. He clutches a scroll as if it protects him from the very elements. | Scripture is written across his arm in scars, the coda of madness. | The stranger writes in the dirt as quick as a man who has done it a thousand times. His message is clear to see. | The man stands with a tome nestled behind a crooked arm. He hands it to you. Opening it, the leather feels like none you\'ve ever touched before. There is only one passage inside, written over and over.} It reads: \"Ph\'nglui mglw\'nafh Davkul R\'lyeh wgah\'nagl fhtagn. Nn\'nilgh\'ri, nn\'nglui. Sgn\'wahl sll\'ha ep\'shogg.\" Hmm... quaint.";
+		return "{L\'homme se tient debout avec une pancarte accrochée à son cou. | Le visage de l\'homme est couvert de tatouages voyants. Il porte une note. | L\'homme cache son visage à l\'intérieur d\'une profonde cagoule, un bout de nez est tout ce que l\'on voit dans l\'obscurité. Il porte une pancarte autour du cou. | Vêtu de haillons, il est étrange que cet homme ne transpire ni ne tremble dans la chaleur ou le froid. Il s\'accroche à un parchemin comme si celui-ci le protégeait des éléments. | Les textes sacrés sont écrits en cicatrices sur son bras, la codification de la folie. | L\'étranger écrit dans la poussière aussi rapidement qu\'un homme qui l\'a fait des milliers de fois. Son message est clair comme de l\'eau de roche. | L\'homme se tient debout avec un tome niché derrière un bras crochu. Il vous le tend. En l\'ouvrant, vous sentez le cuir comme vous ne l\'avez jamais touché auparavant. Il n\'y a qu\'un seul passage à l\'intérieur, écrit encore et encore.} On y lit: \"Ph\'nglui mglw\'nafh Davkul R\'lyeh wgah\'nagl fhtagn. Nn\'nilgh\'ri, nn\'nglui. Sgn\'wahl sll\'ha ep\'shogg.\" Hmm... pittoresque.";
 	}
 
 	function onChangeAttributes()

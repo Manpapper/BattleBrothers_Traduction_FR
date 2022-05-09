@@ -13,7 +13,7 @@ this.paladin_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.DailyCost = 22;
 		this.m.Titles = [
 			"the Crusader",
-			"the Zealot",
+			"le zélote",
 			"the Pious",
 			"the Devoted",
 			"the Paladin",

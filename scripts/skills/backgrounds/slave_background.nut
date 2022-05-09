@@ -83,7 +83,7 @@ this.slave_background <- this.inherit("scripts/skills/backgrounds/character_back
 			id = 20,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Is always content with being in reserve"
+			text = "Sera toujours satisfait d\'être en réserve"
 		});
 		return ret;
 	}

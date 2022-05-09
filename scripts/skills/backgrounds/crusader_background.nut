@@ -4,7 +4,7 @@ this.crusader_background <- this.inherit("scripts/skills/backgrounds/character_b
 	{
 		this.character_background.create();
 		this.m.ID = "background.crusader";
-		this.m.Name = "Crusader";
+		this.m.Name = "Croisé";
 		this.m.Icon = "ui/backgrounds/background_54.png";
 		this.m.HiringCost = 200;
 		this.m.DailyCost = 25;
@@ -69,7 +69,7 @@ this.crusader_background <- this.inherit("scripts/skills/backgrounds/character_b
 
 	function onBuildDescription()
 	{
-		return "%name% joined your party during the undead scourge. Little is known about him and he almost never talks save for the occasional grunt while swinging his sword. His language seems to be codified into one simple structure: killing creatures of evil.";
+		return "%name% a rejoint votre groupe pendant le fléau des morts-vivants. On sait peu de choses sur lui et il ne parle presque jamais, si ce n\'est un grognement occasionnel lorsqu\'il manie son épée. Son langage semble être codifié en une structure simple : tuer les créatures du mal.";
 	}
 
 	function onSetAppearance()
@@ -147,7 +147,7 @@ this.crusader_background <- this.inherit("scripts/skills/backgrounds/character_b
 	{
 		this.character_background.onAdded();
 		local actor = this.getContainer().getActor();
-		actor.setTitle("the Crusader");
+		actor.setTitle("le Croisé");
 	}
 
 	function onAddEquipment()

@@ -4,9 +4,9 @@ this.daytaler_background <- this.inherit("scripts/skills/backgrounds/character_b
 	{
 		this.character_background.create();
 		this.m.ID = "background.daytaler";
-		this.m.Name = "Daytaler";
+		this.m.Name = "Travailleur Journalier";
 		this.m.Icon = "ui/backgrounds/background_36.png";
-		this.m.BackgroundDescription = "Daytalers are used to all kinds of physical work, but don\'t excel in any.";
+		this.m.BackgroundDescription = "Les travailleurs journaliers sont habitués à toutes sortes de travaux physiques, mais n\'excellent dans aucun d\'entre eux.";
 		this.m.GoodEnding = "%name% the daytaler retired from fighting and, well, he keeps working with his hands. Now he\'s back to laying bricks and carrying hay instead of slaying beasts and crushing heads. He took all his mercenary money to purchase a bit of land and settle down. While not the richest man, word has it that there is hardly a happier man in the realm.";
 		this.m.BadEnding = "%name% retired from fighting while he still had most of his fingers and toes intact. He went back to working for the nobility. Last you heard he was out {south | north | east | west} building a great tower for some nobleman. Sadly, you also heard that tower collapsed halfway through its construction with many workers going down with it.";
 		this.m.HiringCost = 60;
@@ -27,7 +27,7 @@ this.daytaler_background <- this.inherit("scripts/skills/backgrounds/character_b
 
 	function onBuildDescription()
 	{
-		return "{Working here and there | With no steady work | Working on and off | Doing this and that | Having learned no craft}, %name% is known as a daytaler, someone to ask whenever an extra hand is needed. {Work had been sparse for a while now, so | There was little work to be a had these past weeks, so | %name% wanted to do something he had not done before, so | Despite having no experience in battle, staring too deep into the bottle made him believe that | %name% considered the fighting profession one that doesn\'t run out of work these days, so | %name% lost his loved one to sickness, as befalls so many these days, and broke down. After weeks blurred by drinking his sorrows away,} a travelling mercenary company seemed a good opportunity {to stay with for a while | to earn some coin | to see a bit of the world | to clear his head | to get him to the next village while filling his pockets}.";
+		return "{Travailler ici et là | Sans travail stable | Travailler et s\'arrêter | Faire ceci et cela | N\'ayant appris aucun métier}, %name% est connu comme un \"Travailleur Journalier\", quelqu\'un à qui l\'on demande un coup de main supplémentaire quand on en a besoin. {Le travail a été rare pendant un certain temps maintenant, alors | Il y avait peu de travail à faire ces dernières semaines, alors | %name% voulait faire quelque chose qu\'il n\'avait jamais fait auparavant, alors | Bien qu\'il n\'ait aucune expérience de la bataille, regarder trop profondément dans la bouteille lui a fait croire que | %name% considère que la profession de combattant est une profession qui ne manque pas de travail de nos jours, alors | %name% a perdu l\'être aimé à cause de la maladie, comme c\'est souvent le cas de nos jours, et a craqué. Après des semaines passées à boire pour oublier son chagrin,} une compagnie de mercenaires itinérants semblait être une bonne opportunité {pour rester avec eux pendant un certain temps | pour gagner quelques pièces | pour voir un peu le monde | pour se vider la tête | pour l\'amener au prochain village tout en remplissant ses poches.}.";
 	}
 
 	function onChangeAttributes()
