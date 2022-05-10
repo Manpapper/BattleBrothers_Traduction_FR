@@ -4,9 +4,9 @@ this.fisherman_background <- this.inherit("scripts/skills/backgrounds/character_
 	{
 		this.character_background.create();
 		this.m.ID = "background.fisherman";
-		this.m.Name = "Fisherman";
+		this.m.Name = "Pêcheur";
 		this.m.Icon = "ui/backgrounds/background_15.png";
-		this.m.BackgroundDescription = "Fishermen are used to physical labor.";
+		this.m.BackgroundDescription = "Les pêcheurs sont habitués au travail physique.";
 		this.m.GoodEnding = "%name% retired from fighting and returned to his fishing ventures. A huge storm ran up the shores, destroying every skiff and drifter - except that wily fisherman\'s! The only boat afloat, %name%\'s business boomed. He lives a comfortable life waking up to a nice beachfront view every morning.";
 		this.m.BadEnding = "With the fighting career going so poorly, %name% decided to retire from the field and return to fishing. He went missing at sea after an enormous storm wrecked the shorelines.";
 		this.m.HiringCost = 65;
@@ -21,8 +21,8 @@ this.fisherman_background <- this.inherit("scripts/skills/backgrounds/character_
 			"trait.fat"
 		];
 		this.m.Titles = [
-			"the Fisherman",
-			"the Fisher"
+			"le Pêcheur",
+			"le Poissonnier"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;
@@ -34,7 +34,7 @@ this.fisherman_background <- this.inherit("scripts/skills/backgrounds/character_
 
 	function onBuildDescription()
 	{
-		return "{%name% loved the sea and the serenity of fishing alone on the water | Ironically, %name% always hated the water, but became a fisherman after his father and his father\'s father | %name% was a strong and able fisherman | %name% was content with being a fisherman | %name% always had a lucky hand in finding the best fishing grounds and catching the fattest fish}. As long as there was no storm, he was out there, fishing, day in and out. {Sadly, his fishing cabin burned to the ground while he was out at sea. | But disaster struck as he lost his best friend at sea when a storm suddenly came up, leaving him with a badly damaged boat and no one to sail out with. | But disaster struck when his wife died during childbirth, shattering all what he held dear. | After being unable pay his debts for some time, however, his boat was taken from him by a merciless loan shark. | It was after he strangled his wife in a fit of rage that he lost all interest in the fishing trade. | Much to his dismay, for almost a whole summer most of the fish he caught was already dead and rotten inside. | It was after a priest of the gods told %name% that the life of a fisherman was not what they desired of him, but that they wished for him to spill blood in their name, that he would set his eyes on another trade.} Visiting the tavern one evening, a new opportunity presented itself with the promise of coin for dangerous work.";
+		return "{%name% aimait la mer et la sérénité de la pêche en solitaire sur l'eau | Ironiquement, %name% a toujours détesté l'eau, mais il est devenu pêcheur après son père et le père de son père.. | %name% était un pêcheur fort et compétent | %name% se contentait d'être un pêcheur | %name% a toujours eu la chance de trouver les meilleurs lieux de pêche et d'attraper les plus gros poissons}. Tant qu'il n'y avait pas de tempête, il était là, à pêcher, jour après jour. {Malheureusement, sa cabane de pêcheur a été réduite en cendres alors qu'il était en mer. | Mais le désastre survient lorsqu'il perd son meilleur ami en mer lors d'une tempête soudaine, le laissant avec un bateau gravement endommagé et personne avec qui naviguer. | Mais le désastre survient lorsque sa femme meurt pendant l'accouchement, bouleversant tout ce qui lui était cher. | Cependant, après avoir été incapable de payer ses dettes pendant un certain temps, son bateau lui a été enlevé par un usurier sans pitié. | C'est après avoir étranglé sa femme dans un accès de rage qu'il a perdu tout intérêt pour le métier de pêcheur. | À son grand désarroi, pendant presque tout un été, la plupart des poissons qu'il attrapait étaient déjà morts et pourris à l'intérieur. | C'est après qu'un prêtre des dieux ait dit à %name% que la vie de pêcheur n'était pas ce qu'ils souhaitaient de lui, mais qu'ils souhaitaient qu'il fasse couler le sang en leur nom, qu'il s'est tourné vers un autre métier.} En visitant la taverne un soir, une nouvelle opportunité s'est présentée avec la promesse d'argent pour un travail dangereux.";
 	}
 
 	function onChangeAttributes()

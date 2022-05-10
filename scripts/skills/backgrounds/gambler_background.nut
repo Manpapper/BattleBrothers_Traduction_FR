@@ -4,9 +4,9 @@ this.gambler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	{
 		this.character_background.create();
 		this.m.ID = "background.gambler";
-		this.m.Name = "Gambler";
+		this.m.Name = "Parieur";
 		this.m.Icon = "ui/backgrounds/background_20.png";
-		this.m.BackgroundDescription = "Gamblers tend to have quick reflexes and a higher resolve than their opponents at the card table.";
+		this.m.BackgroundDescription = "Les parieurs ont tendance à avoir des réflexes rapides et une plus grande détermination que leurs adversaires à la table de jeu.";
 		this.m.GoodEnding = "It was perhaps a risk to take a gambler like %name% into your ranks. Now, many days later it\'s obvious you made the right choice. Last you heard, he was still with the company and uses his earnings to enrich his habits. Rumor has it that, through all his winnings, he\'s secretly become one of the richest men in all the land. You think it\'s a bunch of hogwash, but a surprising number of mayors have become suddenly lax on gaming...";
 		this.m.BadEnding = "%name% the gambler retired from the declining company and returned to his gambling ways. He quickly acquired great debts he could not pay. You saw him begging on a street corner with one of his hands missing and gaps in his teeth. You dropped a few crowns into his tin and said a few words, but he did not recognize you.";
 		this.m.HiringCost = 60;
@@ -34,12 +34,11 @@ this.gambler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"Deuces",
-			"the Wild Card",
-			"the Luck Maker",
-			"the Lucky",
-			"the Cardsharper",
-			"the Gambler"
+			"le Joker",
+			"le Faiseur de Chance",
+			"le Chanceux",
+			"le Tricheur",
+			"le Parieur"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;
@@ -66,7 +65,7 @@ this.gambler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 
 	function onBuildDescription()
 	{
-		return "{They say luck is the devil, so just how long can a gambler like %name% play with it? | Everyone gambles, so %name% figured why not do it for money? | Dice, cards, marbles - there are a lot of ways to take a man\'s money, and %name% knows all of them. | %name%\'s got the eyes of a desert snake - and shaping cards is his rattle. | In a world of life or death, taking risks is %name%\'s game. | A man like %name% sees everything coming, especially the next card in the deck.} {He supported himself by playing cards from town to town, only leaving after he\'d cleaned out their pockets. | But it is a mystery as to how a man decides to take up cards as a lifestyle. | The constant coming and going of mercenaries made for easy targets - until one sore loser ran him off with a bastard sword. | Orphaned by his own birth, he\'s always scrounged up a living by gambling with others. | When he was a kid, a trickster\'s cup-game showed him the value in hustling. | When his father fell into gambling debts, he figured the best way to pay them back was to become an even better hustler himself. | After taking all their crowns, towns across the land banned %name% from hustling in a fit of so-called \'religious revival.\'} {Now, the gambler seeks to throw his dice into the wind - as well as the mud, taking rank with any outfit that pays. | One has to wonder what a cardplayer is doing not playing cards. Then again, maybe it\'s good that he sees your group as a smart gamble. | Perhaps years of scamming mercenaries has given him the notion that he could just as easily be one. | Clever and quick-thinking, the cardshaper survives by moving before anyone else does, a skill as useful as any other in this world. | Ironically, a bad play put him into enormous debt with a baron. Now he has to find another way to pay it back. | Wars have sapped most of the fish from his cards games. Instead of waiting around he figured he\'d just go ahead and follow them.}";
+		return "{On dit que la chance est le diable, alors combien de temps un joueur comme %name% peut-il jouer avec elle ? | Tout le monde joue, alors %name% s'est dit pourquoi ne pas le faire pour de l'argent ? | Dés, cartes, billes - il y a beaucoup de façons de prendre l'argent d'un homme, et %name% les connaît toutes. | %name% a les yeux d'un serpent du désert et des cartes cachés sous sa manche. | Dans un monde de vie ou de mort, prendre des risques est le jeu de %name%. | Un homme comme %name% voit tout venir, surtout la prochaine carte du jeu.} {Il a subvenu à ses besoins en jouant aux cartes de ville en ville, ne partant que lorsqu'il avait vidé leurs poches. | Mais c'est un mystère de savoir comment un homme décide de prendre les cartes comme style de vie. | Le va-et-vient constant des mercenaires en faisait des cibles faciles - jusqu'à ce qu'un mauvais perdant le fasse fuir avec une épée bâtarde. | Orphelin de naissance, il a toujours cherché à gagner sa vie en jouant avec les autres. | Quand il était enfant, un jeu de gobelets lui a montré la valeur de l'arnaque. | Lorsque son père a contracté des dettes de jeu, il s'est dit que la meilleure façon de les rembourser était de devenir lui-même un meilleur escroc. | Après avoir pris toutes leurs couronnes, les villes de tout le pays ont interdit à %name% de faire la manche dans un accès de soi-disant \"renouveau religieux\".} {Maintenant, le parieur cherche à jeter ses dés dans le vent - ainsi que dans la boue, en rejoignant n'importe quelle groupe qui paie. | On peut se demander ce qu'un joueur de cartes fait sans jouer aux cartes. Mais peut-être que c'est bien qu'il voit votre groupe comme un pari qui vaut le coup d'être testé. | Peut-être que des années à arnaquer des mercenaires lui ont donné l'idée qu'il pourrait tout aussi bien en être un. | Intelligent et vif, le parieur survit en se déplaçant avant tout le monde, une compétence aussi utile que n'importe quelle autre dans ce monde. | Ironiquement, une mauvaise pièce de théâtre lui a fait contracter une énorme dette auprès d'un baron. Maintenant, il doit trouver un autre moyen de le rembourser. | Les guerres ont fait disparaître la plupart des gros poissons de ses jeux de cartes. Au lieu d'attendre, il s'est dit qu'il allait les suivre.}";
 	}
 
 	function onChangeAttributes()
