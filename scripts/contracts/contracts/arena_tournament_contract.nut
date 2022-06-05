@@ -5,7 +5,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		this.contract.create();
 		this.m.DifficultyMult = 1.3;
 		this.m.Type = "contract.arena_tournament";
-		this.m.Name = "The Arena Tournament";
+		this.m.Name = "Le tournoi d\'arène";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 1.0;
 	}
 
@@ -635,14 +635,14 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.m.Screens.push({
 			ID = "Task",
-			Title = "À the Arena",
+			Title = "À l'arène",
 			Text = "",
 			Image = "",
 			List = [],
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{We shall win the grand prize!}",
+					Text = "{Nous gagnerons le grand prix !}",
 					function getResult()
 					{
 						return "Overview";
@@ -650,7 +650,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{We are not ready for this.}",
+					Text = "{Nous ne sommes pas prêts pour ça.}",
 					function getResult()
 					{
 						this.Contract.getHome().removeSituationByID("situation.arena_tournament");
@@ -663,21 +663,21 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 			],
 			function start()
 			{
-				this.Text = "[img]gfx/ui/events/event_155.png[/img]Dozens of men mingle about the arena\'s entrance. Some stand stoically, not wishing to give any hint of their capabilities. Others, however, boast and brag with aplomb, either sincerely confident in their martial skills or hoping their bravado masks any holes in their game.\n\n";
-				this.Text += "The arena master, typically the most disinterested man you\'ve ever met to have an interesting job, is actually rather lively today. He presents you with a scroll in one hand and three fingers held up in the other.%SPEECH_ON%Three rounds! Three rounds, one after the other and each harder than the last. Win all three with the same five men to earn the grand prize of a famed %prizetype% called %prizename%! It\'sahtournamentah! You want in or not-ah?%SPEECH_OFF%";
-				this.Text += "The arena master continues.%SPEECH_ON%When you\'re ready, have the men who\'ll be doing the fighting put on the arena collars we\'ll give you.%SPEECH_OFF%";
+				this.Text = "[img]gfx/ui/events/event_155.png[/img]Des dizaines d'hommes se mêlent à l'entrée de l\'arène. Certains se tiennent stoïquement, ne souhaitant pas donner le moindre indice sur leurs capacités. D'autres, en revanche, se vantent sans cesse avec aplomb, soit sincèrement confiants dans leurs compétences martiales, soit espérant que leur bravade masque toute leurs failles. \n\n";
+				this.Text += "Le maître d\'arène; sans doutes; l'homme le plus désintéressé par son travail que vous ayez jamais rencontré , il semble étonnamment vif aujourd'hui. Il vous présente un parchemin dans une main et trois doigts levés dans l'autre.%SPEECH_ON%Trois rounds ! Trois rounds, l\'un après l'autre et chacun plus difficile que le précédent. Gagnez les trois avec les cinq mêmes  hommes pour gagner le grand prix, célèbre  %prizetype% nommé %prizename% ! C'est le sahtournoimentah ! Vous voulez en être ou pas, ah ?%SPEECH_OFF%";
+				this.Text += "Le maître de l\'arène continue.%SPEECH_ON%Quand vous serez prêts, demandez aux hommes qui vont se battre de s\'équiper des colliers d'arène que nous vous donnerons.%SPEECH_OFF%.";
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "Overview",
-			Title = "Overview",
-			Text = "This arena tournament works as follows. Do you agree to the terms?",
+			Title = "Vue d\'ensemble",
+			Text = "Ce tournoi d\'arène fonctionne ainsi. En Acceptez-vous les termes ?",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We enter the tournament!",
+					Text = "Nous participons au tournoi !",
 					function getResult()
 					{
 						for( local i = 0; i < 5; i = ++i )
@@ -691,7 +691,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "I\'ll have to think it over.",
+					Text = "Je vais devoir y réfléchir.",
 					function getResult()
 					{
 						return 0;
@@ -710,12 +710,12 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Start",
 			Title = "À the Arena",
-			Text = "[img]gfx/ui/events/event_155.png[/img]{As you wait your turn, the crowd\'s bloodlust crawls through the dark, sheets of dust falling from above, the stomps of feet thunderous. They murmur in anticipation, and roar at killings. The quiet between battles is mere moments, and this silence is snatched away as the rusted gate lurches upward, chains rankling, the crowd abuzz once more. You step out into the light and so thunderous is the noise against your heart it could surely yet spur a dead man forth... | The arena\'s crowd is shoulder to shoulder, most blathering drunk. They scream and shout, their languages a mix of local and foreign, though the appeal to their bloodlust needs little articulation beyond their maddened faces and pumping fists. Now, the %companyname%\'s men will satiate these mad fools... | Cleaners hurry about the arena. They drag away the bodies, collect what\'s worth collecting, and occasionally throw a trophy into the crowds, eliciting a moblike rendition of the arena\'s battles in the stands themselves. The %companyname% is now a part of this affair. | The arena awaits, the crowd alight, and the %companyname%\'s turn to gain glory is at hand! | The crowd booms as the %companyname%\'s men stride into its bloody pit. Despite the mindless bloodlust of the peoples, you can\'t help but feel a beat of pride in your chest, knowing that it is your company ready to put on a show. | The gate rises. Nothing is heard save the rattle of chains, the creak of pulleys, the grunts of slaves at work. When the men of the %companyname% step out of the arena\'s bowels they can hear the crunch of sand underfoot until they come to stand in the center of the pit. A strange voice screams from the tops of the stadium, some lost language beyond your knowing, but the words echo just once before the crowd erupts with cheers and roaring. Now is the time your men shall prove themselves before the watchful eye of the commoner. | The %companyname%\'s business is rarely done before the eyes of those who would prefer themselves distantly separated from such violence. But in the arena, the commoner greedily awaits death and suffering, and it growls with bloodlust as your men enter the pits, and roars as the sellswords draw their weapons and ready for battle. | The arena is shaped like the pit of some sore, its ceiling torn away by the gods, revealing the vanity, bloodlust, and savagery of man. And it is man there, yelling and screaming, and if the blood sprays hit them, they wash their faces in the gore and grin at one another as though it were a joke. They fight one another for trophies and relish in the pain of others. And it is before these peoples that the %companyname% will fight, and for them they shall entertain and entertain well. | The arena\'s crowd is a mash of classes, rich and poor, for only the Viziers separate themselves out into stations above all. Briefly unified, the peoples of %townname% have graciously come together to watch men and monsters murder one another. With pleasure, the %companyname% seeks to do its part. | Boys sitting on the shoulders of fathers, young girls throwing flowers to the gladiators, women fanning themselves, men wondering if they could do it. These are the peoples of the arena - and the rest are all drunk out of their gourd and screaming nonsense. You hope the %companyname% can contribute to at least an hour or two to entertaining this mad lot. | The crowd roars as the %companyname%\'s men step into the pit. One would be dumb to confuse excitement for desire, for as soon as the applause ends there is a smattering of empty beer mugs and rotten tomatoes and the general giggling delight of those watching the matter. You wonder if the %companyname%\'s men are really best spent here, but then think hard on the gold and glory to be won, and that at the end of the day these mongrels in the stands will go home to their shit lives, and you\'ll go home to your shit life as well, but at least your pockets will be a bit deeper.}",
+			Text = "[img]gfx/ui/events/event_155.png[/img]{Tandis que vous attendez votre tour, la soif de sang de la foule rampe dans l\'obscurité, des traînées de poussière tombent d\'en haut, les bruits de pas résonnent. Ils murmurent dans l\'attente, et rugissent lors des tueries. Le calme entre les batailles ne dure que quelques instants , et ce silence s\'envole lorsque la porte rouillée se soulève, les chaînes s'entrechoquent, la foule s\'agite à nouveau. Vous sortez dans la lumière et le bruit de votre cœur est si tonitruant qu\'il pourrait sûrement pousser même un homme mort à avancer...| La foule de l\'arène est très dense, la plupart des gens sont ivres. Ils crient et hurlent, leur langage est un mélange de patois locales et de dialectes étrangers, mais leur soif de sang n\'a pas besoin d\'être exprimé autrement que par leurs visages enragés et leurs poings levés. Maintenant, les hommes de %companyname% vont rassasier ces fous furieux... | Les nettoyeurs se pressent dans l\'arène. Ils traînent les cadavres, ramassent ce qui vaut la peine d\'être ramassé et, de temps en temps, lancent un trophée dans la foule, ce qui suscite dans les gradins l\'effervescence pour le prochain combat. Les %companyname% font maintenant partie de celui-ci. |L\'arène attend, la foule s'enflamme, et la gloire des %companyname% est à portée de main ! | La foule hurle alors que les hommes des %companyname% s\'avancent dans la fosse sanglante. Malgré la soif de sang des gens, vous ne pouvez vous empêcher de ressentir un sentiment de fierté dans votre cœur, sachant que c'est votre compagnie qui est prête à faire le spectacle. | La porte se lève. On n\'entend que le cliquetis des chaînes, le grincement des poulies et les grognements des esclaves au travail. Lorsque les hommes des %compagnie% sortent des entrailles de l'arène pour se rendre en son centre, ils peuvent entendre le sable crisser sous leurs pieds. Une voix étrange hurle dans une langue inconnue depuis les sommets du stade, mais les mots ne résonnent qu'une fois avant que la foule n\'éclate en acclamations et en rugissements. Le moment est venu pour vos hommes de faire leurs preuves devant les yeux attentifs des roturiers.| Les affaires des %companyname% sont rarement exposées sous les yeux de ceux qui préfèrent se tenir éloignés de la violence. Mais dans l\'arène, le commun des mortels attend avidement la mort et la souffrance, et il grogne de soif de sang lorsque vos hommes entrent dans les fosses, et rugit lorsque les mercenaires sortent leurs armes se préparant au combat.| L\'arène a la forme d'une grotte en souffrance, son sommet a été arraché par les dieux, révélant la vanité, la soif de sang et la sauvagerie de l'homme. Et ces hommes qui sont là, crient et hurlent, si des éclaboussures de sang les atteignent, ils s\'en baignent le visage et se sourient les uns aux autres comme s\'il s'agissait d'une blague. Ils se battent entre eux pour des trophées et se délectent de la douleur des autres. C'est devant ces gens que les %companyname% se battront, et ils les divertiront et les divertiront bien. | La foule de l\'arène est un mélange de classes, de riches et de pauvres, seuls les vizirs se distinguent de la populace par des places à l\'écart. Brièvement unifiés, les habitants de %townname% se sont généreusement réunis pour regarder hommes et monstres se massacrer les uns les autres. Avec enthousiasme, les %companyname% cherchent à faire leur part. | Des garçons assis sur les épaules de leurs pères, des jeunes filles jetant des fleurs aux gladiateurs, des femmes s\'éventant, des hommes se demandant s'ils pourraient le faire. Ce sont les personnes de l\'arène - et les autres sont tous ivres et crient n\'importe quoi. Vous espérez que les %companyname% pourront contribuer au moins une heure ou deux à divertir ce peuple de cinglés.| La foule rugit lorsque les hommes des %companyname% avancent dans la fosse. Il serait stupide de confondre excitation et enthousiasme, car dès que les applaudissements cessent, les chopes de bière vides et les tomates pourries s\'entrechoquent et les spectateurs ricanent de plaisir. On se demande si les hommes des %companyname% sont vraiment les mieux placés ici, mais on pense ensuite à l\'or et à la gloire qui sera gagné, et qu\'à la fin de la journée, ces bâtards dans les gradins rentreront chez eux dans leur vie de merde, et vous; vous  retournerez dans votre vie de merde aussi, mais au moins vos poches seront un peu plus profondes.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Let\'s win us that prize!",
+					Text = "Gagnons ce prix!",
 					function getResult()
 					{
 						this.Contract.startTournamentRound();
@@ -724,7 +724,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "We\'re not doing this. I don\'t want to die!",
+					Text = "On ne va pas faire ça. Je ne veux pas mourir !",
 					function getResult()
 					{
 						this.Contract.getHome().removeSituationByID("situation.arena_tournament");
@@ -740,13 +740,13 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Won2",
-			Title = "À the Arena",
-			Text = "[img]gfx/ui/events/event_147.png[/img]{The first of the three battles is over. You\'ll have to make a careful assessment of your men and if they can continue to the next round, which will only be harder than the last. Just as you\'ll find no pride in the grave, there\'s no shame in leaving. You\'d still get some coin, but you\'d also forfeit any chance to win the grand prize.}",
+			Title = "À l\'arène",
+			Text = "[img]gfx/ui/events/event_147.png[/img]{La première des trois batailles est terminée. Vous devrez faire une évaluation attentive de vos hommes et déterminer s\'ils peuvent continuer jusqu\'au prochain round, qui ne sera que plus ardu que le précédent. Tout comme vous ne trouverez aucune fierté dans la tombe, il n\'y a aucune honte à vous en aller. Vous obtiendrez toujours quelques pièces, mais vous perdrez aussi toute chance de gagner le grand prix.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll win the next round as well!",
+					Text = "Nous gagnerons aussi le prochain tour !",
 					function getResult()
 					{
 						this.Contract.startTournamentRound();
@@ -755,7 +755,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "Time for us to drop out of this tournament.",
+					Text = "Il est temps pour nous d\'abandonner ce tournoi.",
 					function getResult()
 					{
 						return "DropOut";
@@ -788,13 +788,13 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Won3",
-			Title = "À the Arena",
-			Text = "[img]gfx/ui/events/event_147.png[/img]The penultimate battle is won, leaving you with the choice to drop out now or take on the final fight to win the grand prize.",
+			Title = "À l\'arène",
+			Text = "[img]gfx/ui/events/event_147.png[/img]L'avant-dernière bataille est gagnée, ce qui vous laisse le choix d\'abandonner maintenant ou de vous lancer dans le combat final pour gagner le grand prix.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "On to the final round!",
+					Text = "On passe à la ronde finale !",
 					function getResult()
 					{
 						this.Contract.startTournamentRound();
@@ -803,7 +803,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "Time for us to drop out of this tournament.",
+					Text = "Il est temps pour nous d\'abandonner ce tournoi.",
 					function getResult()
 					{
 						return "DropOut";
@@ -830,14 +830,14 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Won4",
-			Title = "À the Arena",
-			Text = "[img]gfx/ui/events/event_147.png[/img]The combat is over, and the dull warbling in your ear is the roar of the crowd, overwhelming all senses in an explosion of celebratory ecstasy. You are but an avatar for the people, a totem through which they can vicariously electrify their own vanity and vacant heroism. Alongside the adoration of the mob, you are rewarded the grand prize: %prizename%!",
+			Title = "À l\'arène",
+			Text = "[img]gfx/ui/events/event_147.png[/img]Le combat est terminé, et le bourdonnement sourd dans vos oreilles est le rugissement de la foule, submergeant tous les sens dans une explosion d\'extase festive. Vous n\'êtes qu'un avatar pour le peuple, un totem à travers lequel il peut ,par procuration, galvaniser sa propre vanité et son héroïsme vacant. En plus de l\'adoration de la foule, vous êtes récompensé par le grand prix : %prizename% !",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Victory!",
+					Text = "Victoire !",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess * 2);
@@ -874,14 +874,14 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "DropOut",
-			Title = "À the Arena",
-			Text = "[img]gfx/ui/events/event_147.png[/img]{You decide to depart the tournament and preserve your men to fight another day. No boos or hisses are heard as this is done in the belly of the arena. It is a bureaucratic affair at best, a small exchange of monetary compensation and you are sent on your way. No grief is given, especially not from fellow gladiators who understand the point of the decision better than anyone. And the crowd? They just want blood, they\'ll never even notice which bodies carrying it are gone.}",
+			Title = "Dans l\'Arène",
+			Text = "[img]gfx/ui/events/event_147.png[/img]{Vous décidez de quitter le tournoi et de préserver vos hommes pour combattre un autre jour. Aucun huée ou sifflement n\'est entendu, car cela se fait dans le ventre de l\'arène. C'est une question de procédure, au mieux, un petit échange de compensation monétaire et vous êtes renvoyé sur votre chemin. Aucun reproche n\'est fait, surtout pas de la part des autres gladiateurs qui comprennent mieux que quiconque le sens de cette décision. Et la foule ? Ils veulent juste du sang, ils ne remarqueront même pas que les personnes qu\'ils acclamaient ont disparus.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Maybe next time.",
+					Text = "Peut-être la prochaine fois.",
 					function getResult()
 					{
 						this.Contract.getHome().removeSituationByID("situation.arena_tournament");
@@ -907,14 +907,14 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure1",
-			Title = "À the Arena",
-			Text = "[img]gfx/ui/events/event_147.png[/img]{The %companyname%\'s men have been defeated, either dead or, perhaps worse, badly mangled. At least the crowds are happy. In the pits, any showing, even that which ends in demise, is a good showing.}",
+			Title = "Dans l\'Arène",
+			Text = "[img]gfx/ui/events/event_147.png[/img]{Les hommes des %companyname% ont été vaincus, morts ou, peut-être pire, mutilés. Au moins, la foule est heureuse. Dans les gradins, toute démonstration, même celle qui se termine par une défaite, est une bonne démonstration.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Disaster!",
+					Text = "Catastrophe!",
 					function getResult()
 					{
 						local roster = this.World.getPlayerRoster().getAll();
@@ -941,14 +941,14 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure2",
-			Title = "À the Arena",
-			Text = "{[img]gfx/ui/events/event_155.png[/img]The time for your arena match has come and passed, but you didn\'t show up there. Perhaps something more important came up, or perhaps you\'ve just been hiding like cowards. Either way, your reputation will suffer because of this.",
+			Title = "Dans l\'Arène"",
+			Text = "{[img]gfx/ui/events/event_155.png[/img]L\'heure de votre combat d'arène est passée, mais vous ne vous y êtes pas présentés. Peut-être que quelque chose de plus important s\'est présenté, ou peut-être que vous vous êtes simplement cachés comme des lâches. Quoi qu\'il en soit, votre réputation va en souffrir.",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "But...",
+					Text = "Mais...",
 					function getResult()
 					{
 						this.Contract.getHome().removeSituationByID("situation.arena_tournament");
@@ -963,14 +963,14 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Collars",
-			Title = "À the Arena",
-			Text = "{[img]gfx/ui/events/event_155.png[/img]The time for your arena match has come, but none of your men bear the arena collars, and so they aren\'t let in.\n\nYou should decide on who is to fight by equipping them with the arena collars that you\'ve been given, and the match will start once you enter the arena again.",
+			Title = "Dans l\'Arène",
+			Text = "{[img]gfx/ui/events/event_155.png[/img]L\'heure de votre match d'arène a sonné, mais aucun de vos hommes ne porte le collier d\'arène et ils ne sont donc pas autorisés à entrer. Vous devez décider qui va combattre en les équipant des colliers d\'arène qui vous ont été donnés, et le match commencera dès que vous serez de nouveau dans l\'arène.",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Oh, right!",
+					Text = "Oh, c\'est vrai !",
 					function getResult()
 					{
 						return 0;
