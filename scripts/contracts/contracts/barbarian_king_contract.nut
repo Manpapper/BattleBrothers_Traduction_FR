@@ -21,7 +21,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		}
 
 		this.m.Type = "contract.barbarian_king";
-		this.m.Name = "The Barbarian King";
+		this.m.Name = "Le Roi Barbare";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 5.0;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
 	}
@@ -56,7 +56,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 			{
 				this.Contract.m.BulletpointsObjectives = [
 					"Chassez le Roi Barbare et ses généraux",
-					"Il a été aperçu pour la dernière dans la région de %region%, %direction% de vous"
+					"Il a été aperçu pour la dernière dans la région %region%, %direction% de vous"
 				];
 
 				if (this.Math.rand(1, 100) <= this.Const.Contracts.Settings.IntroChance)
@@ -75,7 +75,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 				local f = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians);
 				local nearest_base = f.getNearestSettlement(this.World.State.getPlayer().getTile());
 				local party = f.spawnEntity(nearest_base.getTile(), "Barbarian King", false, this.Const.World.Spawn.Barbarians, 125 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				party.setDescription("A mighty warhost of barbarian tribes, united by a self-proclaimed barbarian king.");
+				party.setDescription("Une puissante armée de tribus barbares, unies par un roi barbare autoproclamé.");
 				party.getSprite("body").setBrush("figure_wildman_04");
 				party.setVisibilityMult(2.0);
 				this.Contract.addUnitsToEntity(party, this.Const.World.Spawn.BarbarianKing, 100);
@@ -116,7 +116,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 				this.Contract.m.BulletpointsObjectives.clear();
 				this.Contract.m.BulletpointsObjectives = [
 					"Chassez le Roi Barbare et ses généraux",
-					"Ses généraux ont été aperçu pourla dernière fois aux alentours de %region%, %terrain% %direction% de vous, à proximité %nearest_town%"
+					"Ses généraux ont été aperçu pour la dernière fois aux alentours de %region%, %terrain% direction %direction% de vous, à proximité %nearest_town%"
 				];
 
 				if (this.Contract.m.Destination != null && !this.Contract.m.Destination.isNull())
@@ -306,14 +306,14 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{%employer% is swinging a thin crown around his finger. It is a cheap looking piece of metal, but no doubt a crown from somewhere. He looks you up and down as the tin scrapes and skitters over his fingernail and back again.%SPEECH_ON%I suspect I should have seen this coming. Men seek power, and those cut from the barbarian cloth are no different.%SPEECH_OFF%He lets the crown slide down to his knuckles where it hangs limply.%SPEECH_ON%The barbarians to the %direction% in the région de %region% are uniting under a so-called king. A savage so strong and nasty he threatens to get a horde and after that, well, I suspect he\'ll want to expand his realm south. I need you to go to this region, find this man, and cut him down.%SPEECH_OFF% | One of %employer%\'s servants fetches you to a garden where you find the man tending to a tomato plant. He\'s pruning it with goat shears and nodding to his own handiwork. He talks loosely.%SPEECH_ON%My scouts tell me that a northern savage in %region% is gathering an army. A gathering of idiots is not too out of the ordinary for those primitives, but I do believe this one is proclaiming himself king. And kings, well, they wish to be suzerain over more than just what they got. They want what everyone else has got. What I got.%SPEECH_OFF%The man pauses and nods to you.%SPEECH_ON%I need you to go to the région de %region%, find this so-called savage king, and kill him. It will not be easy, but you will be paid quite well.%SPEECH_OFF% | %employer% is surrounded by his lieutenants. They regard you with sneers, but %employer% ignores their judgments and makes his own.%SPEECH_ON%Ah, sellsword, I do believe a man of your chops is just the one I\'m looking for. A barbarian in %region% has ordained himself king. He even wears a crown of some sort, probably of bone and antler, but it is the shape and purpose that matters. Not only matters to him, but to us. We can\'t allow him to live. I need you to go find this primitive and end him before he gathers an army too big for my fellow lieutenants here to deal with.%SPEECH_OFF% | %employer% welcomes you with a mug of ale. He himself enjoys a goblet of wine.%SPEECH_ON%I\'ve brought you here because there is a certain primitive in the région de %region% that I need killing. He is calling himself king, heh, suzerain over the savages. Well, while I don\'t respect his royal authority in the slightest, I know a budding threat when I see one. I can\'t wait around for this barbarian to round up the villages and gather an army. I need you to find him and kill him. It won\'t be easy, but you\'ll be paid well.%SPEECH_OFF%You now wonder if he\'s slipping you ale to loosen you into accepting this absurd task. | %employer% is holding a pair of deer antlers with the crown still at the base. When he puts it on his desk it stands upright as though still attached to its authorship.%SPEECH_ON%Word on the wind is that a savage in %region% is gathering an army. He is proclaiming himself king and if he can wrangle those primitives under his banner then that no doubt makes him a strong sonuvabitch. It also means we may be in a heap of shit here real soon if he isn\'t taken care of.%SPEECH_OFF%The man knocks the antlers over and they fall upon their tips with hollow clacks.%SPEECH_ON%So that\'s what you\'re here for, sellsword. I need you to find this barbarian and put an end to him before he gets any wise ideas about what he is and isn\'t suzerain over.%SPEECH_OFF% | %employer%\'s sitting in his chair with pursed lips. He\'s thumbing a dagger around, the tip of it auguring a divot into his desk.%SPEECH_ON%My scouts to the %direction% started disappearing a little while ago. And then the survivors trickled in and with them tales of a barbarian proclaiming himself king of %region%. Now, do I need to conjure what the issue is with a savage ordaining himself ruler of a horde of primitives?%SPEECH_OFF%You tell him you can imagine it keeps him up at night. %employer% grins.%SPEECH_ON%Aye, that it does. So I need a man such as yourself, a strapping, nice, civilized sellsword. I need you to go and find this so-called king and kill him before he\'s got all those damn idiots marching under his banner.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{%employer% fait tourner une fine couronne autour de son doigt. C\'est un morceau de métal bon marché, mais c\'est sans doute une couronne qui vient de quelque part. Il vous regarde de haut en bas, tandis que l\'étain passe et repasse sur ses doigt.%SPEECH_ON% Je crois que j\'aurais dû le voir venir. Les hommes cherchent le pouvoir, et ceux qui sont taillés dans le bois barbare ne sont pas différents.%SPEECH_OFF%Il laisse la couronne glisser jusqu\'à ses jointures où elle pend mollement.%SPEECH_ON%Les barbares direction %direction% dans la région de %region% s\'unissent sous un soi-disant roi. Un sauvage si fort et si méchant qu\'il menace de constituer une horde et après ça, eh bien, je pense qu\'il voudra étendre son royaume au sud. J\'ai besoin que vous alliez dans cette région, que vous trouviez cet homme et que vous l\'abattiez.%SPEECH_OFF% | L\'un des serviteurs de %employer% vous amène dans un jardin où vous trouvez l\'homme s\'occupant d\'un plant de tomates. Il le taille à l\'aide d\'une cisailles et salue de la tête son propre travail. Il parle à bâtons rompus.%SPEECH_ON% Mes éclaireurs me disent qu\'un sauvage du nord dans la %region% est en train de rassembler une armée. Un rassemblement de débiles ne sort pas trop de l\'ordinaire pour ces primitifs, mais je crois que l\'un d\'eux s\'est proclamé roi. Et les rois, eh bien, ils veulent être suzerains de toujours plus de terres. Ils veulent ce que tout les autres ont. Ce que j\'ai...%SPEECH_OFF% L\'homme fait une pause et vous fait un signe de tête.%SPEECH_ON% J\'ai besoin que vous alliez dans la région de %region%, que vous trouviez ce soi-disant roi sauvage, et que vous le supprimiez. Ce ne sera pas facile, mais vous serez très bien payé.%SPEECH_OFF%.| %employer% est entouré de ses lieutenants. Ils vous regardent en ricanant, mais %employer% ignore leurs jugements et fait le sien. %SPEECH_ON%Ah, mercenaire, je crois qu\'un homme de votre trempe est exactement ce dont j\'ai besoin. Un barbare dans la %region% s\'est autoproclamé roi. Il porte même une sorte de couronne, probablement en os et en bois, mais c\'est la forme et le but qui comptent. Pas seulement pour lui, mais pour nous. Nous ne pouvons pas le laisser vivre. J\'ai besoin que vous trouviez ce primitif et que vous l\'éliminiez avant qu\'il ne rassemble une armée trop importante et que mes lieutenants ne puissent s\'en occuper. %SPEECH_OFF% | %employer% vous accueille avec une chope de bière. Lui-même déguste un gobelet de vin.%SPEECH_ON%IJe vous ai fait venir car il y a un certain primitif dans la région de %region% qu\'il faut tuer. Il se dit roi, suzerain des sauvages. Bien que je ne respecte pas du tout son autorité royale, je sais reconnaître une menace naissante quand j\'en vois une. Je ne peux pas attendre que ce barbare réunisse les hordes de villageois et rassemble une armée. J\'ai besoin de vous pour le trouver et le tuer. Ce ne sera pas facile, mais tu seras bien payé.%SPEECH_OFF%Vous vous demandez maintenant s\'il ne vous glisse pas de la bière pour vous amadouer et vous faire accepter cette tâche insensée. | %employer% tient une paire de bois de cerf dont la couronne est toujours à la base. Lorsqu\'il la pose sur son bureau, elle se tient debout, comme si elle était toujours attachée à son propriétaire.%SPEECH_ON%Le bruit court qu\'un sauvage de la %region% rassemble une armée. Il se proclame roi et s\'il peut rallier ces sauvages à sa bannière, cela fera sans doute de lui un puissant fils de pute. Ca veut aussi dire qu\'on risque de se retrouver dans la merde très bientôt si on ne s\'occupe pas de lui.%SPEECH_OFF% L\'homme renverse les bois et ils tombent sur leurs pointes avec des craquements secs.%SPEECH_ON% Alors c\'est pour ça que tu es là mercenaire. J\'ai besoin que tu trouves ce barbare et que tu en finisses avec lui avant qu\'il ne se fasse des idées sur ce qu\'est ou n\'est pas être suzerain. .%SPEECH_OFF% | %employer% est assis sur sa chaise, les lèvres pincées. Il manipule une dague, dont la pointe creuse une entaille dans son bureau. %SPEECH_ON% Mes éclaireurs direction %direction% ont commencé à disparaître il y a quelques temps. Et puis les survivants ont afflué et avec eux des histoires d\'un barbare qui s\'est proclamé roi de la %region%. Dois-je vous expliquer quel est le problème d\'un sauvage qui se proclame chef d\'une horde de primitifs ? %SPEECH_OFF%  Vous lui dites que vous imaginez que cela l\'empêche de dormir la nuit. %employer% sourit. %SPEECH_ON% Oui, c\'est vrai. Donc j\'ai besoin de quelqu\'un comme toi, un honnête soldat, charmant et civilisé. J\'ai besoin que tu ailles trouver ce soi-disant roi et que tu le tues avant qu\'il n\'ait fait se rallier tous ces abrutis à sa bannière..%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{De combien de Couronnes parlent-on ici? | Ce n\'est pas une tâche facile à demander. | Je pourrais être persuadé pour le bon prix. | Pour une tâche pareil la paie à intérêt à bien payer.}",
+					Text = "{De combien de Couronnes parlent-on ici? | Ce n\'est pas une tâche facile que vous demander. | Je pourrais être persuadé pour un bon prix. | Pour une tâche pareil la paie à intérêt à être en conséquence.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -321,7 +321,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{We\'re not about to engage an army. | Ce n\'est pas le genre de travail que nous recherchons. | I won\'t risk the company against an enemy such as this.}",
+					Text = "{Nous ne nous engageons pas dans une guerre. | Ce n\'est pas le genre de travail que nous recherchons. | Je ne veux pas risquer la compagnie contre un ennemi tel que celui-ci.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -338,12 +338,13 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Directions",
 			Title = "Sur la route...",
-			Text = "{[img]gfx/ui/events/event_59.png[/img]A throng of refugees passes the company by. Rumors abound that the barbarian king is %distance% to the %direction%. Many of the people on the road are from %nearest_town% and seem to have no interest in waiting around for a sea of savages to descend upon them. | [img]gfx/ui/events/event_41.png[/img]A trader with an empty merchant cart crosses paths with the company. Though he has nothing to peddle, he does state that the roads are flowing with rumors of a savage calling himself king. He states that the barbarian is somewhere %direction% of where you stand, around %region%. He regards the path of your journey with a nod.%SPEECH_ON%If you\'re keen on going that way, well, give them primitive bastards all the hell they deserve.%SPEECH_OFF% | [img]gfx/ui/events/event_94.png[/img]A half-naked man is found sitting cross-legged to the side of the road. He states that a primitive with an army burned his farmstead, wronged the women, and slew every swinging dick.%SPEECH_ON%I survived hiding in a brush pile with my hands wrapped over my mouth.%SPEECH_OFF%The man wipes his nose.%SPEECH_ON%I seen you with your weapons. If you seek this barbarian then I can tell ya it seemed they was heading %direction% of here, down %terrain% %distance% aways to %region%.%SPEECH_OFF% | [img]gfx/ui/events/event_94.png[/img]You find the burnt remains of a small hamlet. A few of its survivors linger, their shapes about as present as the smoke drifting off their destroyed homes. One states that a man posturing like a king came and killed everyone they got their hands on before heading %direction%. | [img]gfx/ui/events/event_60.png[/img]You\'ve come across a number of flipped carts or burning wagons. They\'re barren, all the goods gone, only the corpses of their owners remain. A few children are picking through the rubble of one such ruin. When you ask them who did this, a cheeky boy speaks up.%SPEECH_ON%Savages from the north, but they headin\' %direction% now. I seen them. They is %terrain%, %distance% I wager. %SPEECH_OFF%He picks his nose.%SPEECH_ON%They is killers, by the way. Kinda look your sort, but larger. Probably stronger.%SPEECH_OFF% | [img]gfx/ui/events/event_76.png[/img]A scout of %employer% meets you on the road. He reports that the barbarian king was sighted around %region% to the %direction% %terrain%. He is %distance%. You ask the scout if he\'d join you for the fight and the man laughs.%SPEECH_ON%No sir, I\'m quite alright. I run about, see things, and report them. In between I fark a whore or two. It\'s a good life and I don\'t need your sellsword ways ruinin\' it!%SPEECH_OFF%Fair enough. | [img]gfx/ui/events/event_132.png[/img]%randombrother% spots them first. Signs of a skirmish, charred corpses, faded footprints and wagon tracks, so many that it is clear an army passed through here.%SPEECH_ON%Looks like they was headin\' %direction% Après la bataille, captain.%SPEECH_OFF%}",
+			Text = "{[img]gfx/ui/events/event_59.png[/img]Une foule de réfugiés passe devant la compagnie. Les rumeurs courent que le roi barbare est à %distance% direction %direction%. Beaucoup de gens sur la route viennent de %nearest_town% et ne semblent pas avoir envie d\'attendre qu\'une marée de sauvages s\'abatte sur eux.|"+
+			"[img]gfx/ui/events/event_41.png[/img]Un commerçant avec une charrette vide croise la route de la compagnie. Bien qu\'il n\'ait rien à colporter, il déclare que les routes sont agitées par les rumeurs d\'un sauvage qui se fait appeler roi. Il affirme que le barbare se trouve quelque part dans la direction %direction% d\'où vous vous trouvez, autour de la %region%. Il regarde le trajet de votre périple avec un hochement de tête. %SPEECH_ON%Si vous tenez à aller par là, eh bien, donnez à ces bâtards primitifs toute la douleur qu\'ils méritent. %SPEECH_OFF%. |[img]gfx/ui/events/event_94.png[/img]Un homme à moitié nu est trouvé assis en tailleur sur le bord de la route. Il déclare qu\'un primitif et son armée ont brûlé sa ferme, maltraité les femmes et tué tous ses gars.%SPEECH_ON% J\'ai survécu en me cachant dans un tas de broussailles avec mes mains sur la bouche.%SPEECH_OFF% L\'homme s\'essuie le nez.%SPEECH_ON% Je vous ai vu avec vos armes. Si vous cherchez ce barbare, je peux vous dire qu\'il semblait se diriger en direction %direction% d\'ici, en bas %terrain% %distance% vers %region%. %SPEECH_OFF% |[img]gfx/ui/events/event_94.png[/img]Vous trouvez les restes brûlés d\'un petit hameau. Quelques survivants s\'y attardent, leurs silhouettes se mêlent à la fumée qui s\'échappe de leurs maisons en ruines. L\'un d\'entre eux déclare qu\'un homme se targuant d\'être un roi est venu et a tué tout le monde avant de prendre la direction %direction%. |[img]gfx/ui/events/event_60.png[/img]Vous avez croisé un certain nombre de charrettes retournées ou de chariots en feu. Toutes sont vides, et leurs marchandises ont disparu, il ne reste que les cadavres de leurs propriétaires. Quelques enfants sont en train de fouiller dans les décombres d\'une de ces charrettes. Quand vous leur demandez qui a fait ça, un garçon effronté prend la parole.%SPEECH_ON% Des sauvages du nord, mais ils vont dans la %direction% maintenant. Je les ai vus. Ils sont %terrain%, %distance% je parie.%SPEECH_OFF% Il se cure le nez.%SPEECH_ON%  C\'est des tueurs, au fait. Ils ressemblent un peu à votre genre, mais en plus grand. Probablement plus forts.%SPEECH_OFF%.|[img]gfx/ui/events/event_76.png[/img]Un éclaireur de %employer% vous rencontre sur la route. Il rapporte que le roi barbare a été aperçu aux alentours de %region% à la direction %direction% %terrain%. Il est à %distance%. Vous demandez à l\'éclaireur s\'il se joindra à vous pour le combat ce qui fit rire l\'homme.%SPEECH_ON%Non monsieur, je vais très bien. Je cours partout, je vois des choses et je les rapporte. Entre temps, je baise une ou deux putes. C\'est une bonne vie et je n\'ai pas envie de périr comme un mercenaire!%SPEECH_OFF% C\'est entendu. |[img]gfx/ui/events/event_132.png[/img]%randombrother% les repère en premier. Les signes d\'une escarmouche, des cadavres calcinés, des empreintes de pas effacées et des traces de chariots, si nombreuses qu\'il est clair qu\'une armée est passée par ici.%SPEECH_ON%On dirait qu\'ils se dirigé vers la direction %direction% après la bataille, capitaine.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'re on his trail.",
+					Text = "Nous sommes sur sa piste.",
 					function getResult()
 					{
 						this.Flags.increment("HelpReceived", 1);
@@ -362,12 +363,12 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "GiveUp",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{There\'s no doubt now. With all the signs you\'ve encountered, and all the reports that people have given you, you finally know exactly where the Barbarian King and his warhost is headed. The only thing left is to confront him.}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{Il n\'y a plus de doute maintenant. Avec tous les signes que vous avez rencontrés, et tous les rapports que les gens vous ont donnés, vous savez enfin exactement où le Roi barbare et son armée se dirigent. La seule chose qui reste à faire est de l\'affronter.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We should make haste.",
+					Text = "Nous devrions nous hâter.",
 					function getResult()
 					{
 						this.Flags.increment("HelpReceived", 1);
@@ -388,12 +389,12 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Approach",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_135.png[/img]{The Barbarian King comes to the field with his warhost, a party of oversized miscreants, growling warriors, sheepish slaves, and howling women. It is the army of a man who has collected from the land every scrap of resource, every inch of advantage, and will surely collect civilization itself as surely as a simple snowball may become the avalanche. You prepare the men for battle. | The Barbarian King\'s warband trundles across the land with no hint of training or even semblance of formation. But you know that with the mere wave of the savage\'s hand he may set upon his enemies a horde of killers who have more than ample supply of carnage to overcome any lack of cohesion. You prepare the men for battle. | The warband of savages is like that of a fever dream, taking shape across the horizon like travelers from every corner of the earth, dressed not in any uniform or armor, but in mockeries of those they have conquered. Warriors with wedding dresses wrapped about their arms, long coats of royal color adorned upon men of no status, some wearing ribs and clattering bones as though they got the last of the pillaging. They were but farmers of horror, villages their crop, and war but a harvest for all seasons.\n\nYou shake your head at the sight and prepare the men for battle.}",
+			Text = "[img]gfx/ui/events/event_135.png[/img]{Le roi barbare arrive sur le terrain avec son armée de combattants, un groupe de scélérats démesurés, de guerriers bruyants, d\'esclaves craintifs et de femmes criardes. C\'est l\'armée d\'un homme qui a exploité la terre jusqu\'à la moindre ressource, jusqu\'au moindre petit bénéfice, et qui exploitera la civilisation de la même façon aussi sûrement qu\'une simple boule de neige peut devenir une avalanche. Vous préparez les hommes pour la bataille. |La troupe du Roi Barbare traverse le pays sans aucun entraînement ni même un semblant de structure. Mais vous savez qu\'avec un simple geste de sa main de sauvage, il peut envoyer sur ses ennemis une horde de tueurs qui ont commis suffisamment de carnages pour surmonter tout manque de cohésion. Vous préparez les hommes pour la bataille. | La bande de sauvages est comme un cauchemar, elle se dessine à l\'horizon comme des migrants venus de tous les coins de la terre, vêtus non pas d\'un uniforme ou d\'une armure, mais de la parodie des tenues de ceux qu\'ils ont conquis. Des guerriers aux robes de mariée enroulées autour de leurs bras, de longs manteaux de couleur royale ornant des hommes sans statut, certains portant des côtes d\'os s\'entrechoquant comme s\'ils avaient eu les dernières part du pillage. Ils n\'étaient que des fermiers de l\'horreur, les villageois leur récolte, et la guerre une moisson pour toutes les saisons. \n\nVous secouez la tête à cette vue et préparez les hommes au combat. }",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onCombatWithKing(this.Contract.m.Destination, this.Contract.m.IsPlayerAttacking);
@@ -408,14 +409,14 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 
 		});
 		this.m.Screens.push({
-			ID = "Victory",
+			ID = "Victoire",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_145.png[/img]{The Barbarian King is dead. Though he adorned himself the title of royalty, he lies amongst the dead like any other of his people. A savage. A primitive. With a slightly hardier body and some accoutrements native to his warring and pillaging and ravaging. Little else distinguishes him. You chop into his neck with your sword and put your boot to his face as you cut him clean off the shoulders. %randombrother% 2takes the heavy head and drops it into a knapsack. You order the men to scavenge what they can before preparing a Retournez à %employer%.}",
+			Text = "[img]gfx/ui/events/event_145.png[/img]{Le roi barbare est mort. Bien qu\'il se soit affublé d\'un titre royal, il repose parmi les morts comme n\'importe quel autre membre de son peuple. Ce n\'est qu\'un sauvage. Un primitif. Avec un corps un peu plus robuste et quelques accoutrements issus de ses guerres, pillages et ravages. Peu d\'autres choses le distinguent. Vous maintenez sa tête contre le sol avec votre botte, puis vous lui entaillez le cou avec votre épée, la tête se détache de ses épaules. %randombrother% prend la lourde tête et la jette dans un sac. Vous ordonnez aux hommes de récupérer ce qu\'ils peuvent avant de vous préparer a retourner voir  %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "{The %companyname% prevailed! | Victory!}",
+					Text = "{Les %companyname% l\'a emporté! | Victoire!}",
 					function getResult()
 					{
 						return 0;
@@ -432,12 +433,12 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "AGreaterThreat1",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_136.png[/img]{You find the Barbarian King, but a parlay is made. The Barbarian King and an elder step across the field to meet you personally. Against better judgment, you go out to see them. The Barbarian King speaks and the elder translates.%SPEECH_ON%We are not here to conquer, but to defeat the Great Untoward.%SPEECH_OFF%Suspecting a loss of translation, you ask them to explain. The King and elder continue.%SPEECH_ON%Death has left this land, and in its absence a man slain becomes lost between worlds and will rise again. A horde of Untoward, the Undead, are on the march. We are not here for you or your nobles. If you help us destroy them we will depart the land and trouble your people no more. Only the Untoward.%SPEECH_OFF%%randombrother% leans in and whispers.%SPEECH_ON%We could join them, sure, but we could also just go ahead and attack them now. They\'re clearly not at full strength and whatever they say here the fact is they\'ve been ravaging the lands anyway, because they\'re primitive savages, sir, and raping and pillaging is just what they got in their blood.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_136.png[/img]{Vous trouvez le roi barbare, mais un pourparler est organisé. Le roi barbare et un ancien traversent le champ pour vous rencontrer personnellement. En dépit de votre bon sens, vous allez les voir. Le roi barbare parle et l\'aîné traduit.%SPEECH_ON% Nous ne sommes pas ici pour conquérir, mais pour vaincre le Grand Malin.%SPEECH_OFF%Suspectant une erreur de traduction, vous leur demandez d\'expliquer. Le Roi et l\'aîné continuent.%SPEECH_ON%La mort a quitté cette terre, et en son absence un homme tué se perd entre les mondes et ressuscite. Une horde d\'indésirables, les morts-vivants, est en marche. Nous ne sommes pas ici pour vous ou vos seigneurs. Si vous nous aidez à les détruire, nous quitterons le pays et ne troublerons plus votre peuple. Seulement les Morts-Vivants.%SPEECH_OFF%%randombrother% se penche et murmure.%SPEECH_ON% On pourrait les rejoindre, bien sûr, mais on pourrait aussi les attaquer maintenant. Ils ne sont clairement pas au complet et quoi qu\'ils disent ici, le fait est qu\'ils ont ravagé les terres de toute façon, parce que ce sont des sauvageons primitifs, monsieur, et le viol et le pillage sont tout ce qu\'ils ont dans le sang.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll attack them and rid the north of this so-called king.",
+					Text = "Nous allons les attaquer et débarrasser le nord de ce soi-disant roi.",
 					function getResult()
 					{
 						return "AGreaterThreat2";
@@ -445,7 +446,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "We will join with them to march against the Untoward.",
+					Text = "Nous nous joindrons à eux pour marcher contre le Malin.",
 					function getResult()
 					{
 						return "AGreaterThreat3";
@@ -461,12 +462,12 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "AGreaterThreat2",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_136.png[/img]{You spit and nod toward the elder.%SPEECH_ON%We walked past burned homes, raped women, and slain men just to find your sorry lot, and now you want to band together? We ain\'t allies. We ain\'t friends. Tell your so-called \'King\' to pray to whatever shit gods you...%SPEECH_OFF%The elder holds his hand up and talks with the king in their native tongue. The two men nod, turn, and leave. %randombrother% laughs.%SPEECH_ON%Brevity is the soul of scorn, captain.%SPEECH_OFF%You tell the man to get back to the battle line and prepare for the fight ahead.}",
+			Text = "[img]gfx/ui/events/event_136.png[/img]{Vous crachez et pointez du doigt l\'aîné.%SPEECH_ON% Nous sommes passés devant des maisons brûlées, des femmes violées et des hommes massacrés pour vous retrouver dans votre triste sort, et maintenant vous voulez vous allier ? Nous ne sommes pas des alliés. Nous ne sommes pas des amis. Dites à votre soi-disant Roi de prier n\'importe quel dieu de merde que vous... %SPEECH_OFF%L\'ancien lève la main et parle avec le roi dans leur langue maternelle. Les deux hommes acquiescent, se tournent et partent. Vous dites à votre homme de retourner à la ligne de bataille et de se préparer pour le combat à venir.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prepare for battle.",
+					Text = "Préparez-vous au combat.",
 					function getResult()
 					{
 						this.Flags.set("IsAGreaterThreat", false);
@@ -484,12 +485,12 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "AGreaterThreat3",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_136.png[/img]{You nod toward the elder.%SPEECH_ON%Alright, we\'ll work with you to see to this greater threat.%SPEECH_OFF%The elder smiles and rubs his thumbs together and speaks a few phrases in his native tongue. The Barbarian King slams his chest with his fist and then slugs you in the shoulder with it, before arcing the hand across the sky. Laughing, the elder explains.%SPEECH_ON%So we fight together, but if we shall fall, he will not fight with you as an undead. If slain, the King shall find Death himself and bring his scythe upon his own neck.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_136.png[/img]{Vous faites un signe de tête vers l\'ancien.%SPEECH_ON%D\'accord, nous allons coopérer avec vous pour faire face à cette plus grande menace.%SPEECH_OFF%L\'ancien sourit, se frotte les pouces et dit quelques phrases dans sa langue maternelle. Le roi barbare se frappe la poitrine avec son poing, puis vous frappe l\'épaule avec celui-ci, avant de lever la main vers le ciel. En riant, l\'ancien explique : %SPEECH_ON% Nous combattons donc ensemble, mais si nous tombons, nous ne nous battrons pas à vos côtés en tant que mort-vivant. Si nous sommes tués, le Roi trouvera la la faucheuse lui même et lui offrira sa tête.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prepare to march.",
+					Text = "Préparez-vous à marcher.",
 					function getResult()
 					{
 						return 0;
@@ -504,7 +505,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 				local tile = this.Contract.getTileToSpawnLocation(playerTile, 9, 15);
 				local party = this.World.FactionManager.getFaction(nearest_undead.getFaction()).spawnEntity(tile, "The Untoward", false, this.Const.World.Spawn.UndeadArmy, 260 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				party.getSprite("banner").setBrush(nearest_undead.getBanner());
-				party.setDescription("A legion of walking dead, back to claim from the living what was once theirs.");
+				party.setDescription("Une légion de morts-vivants, revenus réclamer aux vivants ce qui autrefois leur appartenait.");
 				party.setSlowerAtNight(false);
 				party.setUsingGlobalVision(false);
 				party.setLooting(false);
@@ -531,7 +532,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "AGreaterThreat4",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_73.png[/img]{The savages were not lying: the ancients have put forth an army. It is a warband of decayed faces and rusted armor, a host of groaning, moaning monsters upon which light falls and instantly seeps away. It is surely an army of darkness. Were you or the barbarians to fight it alone you would surely lose, but together you may have a chance yet!}",
+			Text = "[img]gfx/ui/events/event_73.png[/img]{Les sauvages ne mentaient pas : les anciens ont mis sur pied une armée. C\'est une armée de gueules décomposées et d\'armures rouillées, une foule de créatures gémissantes sur lesquelles la lumière tombe et s\'évanouit instantanément. C\'est assurément une armée des ténèbres. Si vous ou les barbares la combattez seuls, vous perdrez à coup sûr, mais ensemble, vous avez peut-être une chance...!}",
 			Image = "",
 			List = [],
 			Options = [
@@ -553,12 +554,12 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "AGreaterThreat5",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_136.png[/img]{The ancient dead have been slain to the last. As your men and the primitives pick the field, the Barbarian King and the elder come to you. The large warrior nods and grunts, and the elder translates.%SPEECH_ON%He says you did well, very well, and that he wishes men such as yourself and your company would fight alongside him, but he understand that cannot happen. We live in a maze of many worlds and in that maze we all shall stay, lost, sometimes hearing one another\'s shouts, never having enough time to know each other. He says thanks. And he wishes you well.%SPEECH_OFF%You turn to the elder and ask if he got all that from a simple grunt. The elder smiles.%SPEECH_ON%A grunt, aye, and a lifelong friendship. Travel well, man of the sword.%SPEECH_OFF%The elder hands you a horned helmet, the very one you\'d seen the Barbarian King himself wearing at times. He says nothing, only hits his chest and points to the sky and that\'s all there is.}",
+			Text = "[img]gfx/ui/events/event_136.png[/img]{Les morts anciens ont été tués jusqu\'au dernier. Alors que vos hommes et les primitifs récupèrent sur le champs de bataille, le roi barbare et l\'ancien viennent vous voir. Le grand guerrier hoche la tête et grogne, et l\'ancien traduit. %SPEECH_ON% Il dit que vous avez fait du bon, très bon travail, et qu\'il aimerait que des hommes comme vous et votre compagnie se battent à ses côtés, mais il comprend que cela ne puisse pas arriver. Nous sommes dans un labyrinthe de plusieurs mondes et dans ce labyrinthe nous demeurerons tous, perdus, entendant parfois les hurlements des uns et des autres, sans jamais avoir assez de temps pour nous connaître. Il vous remercie. Et il vous souhaite bonne chance.%SPEECH_OFF%Vous vous tournez vers l\'aîné et lui demandez s\'il a compris tout cela à partir d\'un simple grognement. L\'ancien sourit. %SPEECH_ON% Un grognement, oui, et une amitié de toute une vie. Bon voyage mercenaire.%SPEECH_OFF%L\'ancien te tend un casque à cornes, celui-là même que le Roi Barbare portait parfois. Il ne dit rien, il se frappe la poitrine et montre le ciel, comme s\'il n\'y avait que ça..}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Farewell, king.",
+					Text = "Adieu, roi.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -588,13 +589,13 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% takes the Barbarian King\'s head and rolls it out of the sack. It tumbles freely, knocking over a tray of goblets which go scattering and clattering about. Even in death the savage is a purveyor of chaos.%SPEECH_ON%Thank you, sellsword.%SPEECH_OFF%Your employer says, nodding to himself as he rights the head and tilts it onto the flap of neck.%SPEECH_ON%He is an ugly mutt, isn\'t he? Look at those teeth. Look at them! There\'s holes in those teeth. Absolutely disgusting.%SPEECH_OFF%You tell the man to pay you and he does so as agreed. But he keeps shaking his head and he bares his own teeth and mimics picking at them.%SPEECH_ON%How do you clean teeth like that? With a rope?%SPEECH_OFF%Shrugging, you head out the door, not bothering to tell %employer% that the first thing your men did to that godforsaken head is knife the gold out of its mouth. | You dump the Barbarian King\'s head onto %employer%\'s table. He stares at it, then at you.%SPEECH_ON%That\'s the biggest fucking head I\'ve ever seen.%SPEECH_OFF%Nodding, you ask for your pay and it is delivered in appropriate sum. Your employer starts pushing the savage\'s face around, as though he were a sorcerer looking to steal its secrets.%SPEECH_ON%I\'d wager this is where tales of ogres come from, yeah? Like a child sees this ugly thing and there it is, his imagination is set alight, and so the monster is born.%SPEECH_OFF%If only things were that simple. | Even without its massive body the head of the Barbarian King makes quite the splash when shown to %employer%. A host of nobles and servants ooh and ahh at the size of it. A man in a black robe is quick to pay you what you\'re owed. %employer% himself picks the head up and tosses it into the air as to weigh it.%SPEECH_ON%By the old gods, it is truly heavy! Oy %randomname%.%SPEECH_OFF%A servant steps forward. Your employer grins.%SPEECH_ON%Fetch me a pike. We\'re going to hoist this horror head high into the heavens.%SPEECH_OFF%A suitable stop for a savage. | Mere moments after giving %employer% the head of the Barbarian King it is being used as a plaything. Children of noblemen roll it back and forth across the stone floor, the savage\'s head knocking over walls of goblets and fortresses of dinner trays. A dog barks as it tracks the head back and forth. %employer% claps you on the shoulder.%SPEECH_ON%Outstanding work, sellsword. Truly. My scouts tell me it was a hell of a fight, that you were almost like a primitive yourself. But I suppose that\'s what it had to take, right? A savage to fight a savage? Spirit of such primacy can\'t be contained by our civilized ways!%SPEECH_OFF%One of the kids kicks the King in the face, breaking its jaw and cutting the child\'s foot on the teeth. The kid screams for help and, perhaps defending its owner, the dog sets upon the head and starts dragging it around by the flap of neck. %employer% smiles again.%SPEECH_ON%Your pay is waiting for you outside. It is in full, as promised.%SPEECH_OFF% | A man in knight\'s armor takes the Barbarian King\'s head from you. Immediately, you draw your sword, but %employer% leaps in to end any start to violence.%SPEECH_ON%Oy, sellsword, it is quite alright. Your pay, as promised.%SPEECH_OFF%The man hands you a satchel of crowns, but behind him you see the head being given to a man in a black cloak. You nod and ask what they intend to do with it. %employer% grins.%SPEECH_ON%Frankly, steins await me, sellsword, and I\'m quite thirsty.%SPEECH_OFF%The man quickly walks past you. You do not see any ale, or any drink at all, he simply follows the man in the cloak. | %employer% stares at the Barbarian King\'s head like a cat would meanly stare at anything not its own self.%SPEECH_ON%Interesting. I think I\'ll have it stuffed and put upon my mantle.%SPEECH_OFF%Speaking slightly out of turn, you remind your employer that it is the head of a man he is referring to. %employer% shrugs.%SPEECH_ON%So? It is a monstrosity. There cannot be coexistence between the civilized and the savage. By having it properly taken care of I will ruminate on that reality. What will you do? Advise me again?%SPEECH_OFF%Pursing your lips, you ask for your pay. The man points toward the corner.%SPEECH_ON%In the satchel there. You did well, sellsword, but don\'t speak to me in such a manner again. Good day.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% prend la tête du Roi barbare et la fait rouler hors du sac. Elle tombe librement, renversant un plateau de gobelets qui s\'éparpillent et s\'entrechoquent. Même dans la mort, le sauvage est un pourvoyeur de chaos.%SPEECH_ON% Merci, mercenaire. %SPEECH_OFF% Votre employeur dit, en acquiesçant pour lui-même, alors qu\'il redresse la tête et l\'incline sur son cou.%SPEECH_ON% C\'est un affreux bâtard, n\'est-ce pas ? Regardez ces dents. Regardez les ! Il y a des trous dans ces dents. Absolument dégoûtant.%SPEECH_OFF% Vous dites à l\'homme de vous payer et il le fait comme convenu. Mais il continue à secouer la tête et il montre ses propres dents et imite le fait de les curer.%SPEECH_ON% Comment on nettoie des dents comme ça ? Avec une corde?%SPEECH_OFF% En haussant les épaules, vous partez, sans prendre la peine de dire à %employer% que la première chose que vos hommes ont fait de cette tête perdue est de lui arracher son or avec un couteau.|Vous jetez la tête du Roi Barbare sur la table de l\'employeur. Il la regarde, puis vous regarde.%SPEECH_ON%C\'est la plus grosse tête que j\'ai jamais vue.%SPEECH_OFF%En acquiesçant, vous demandez votre salaire et on vous le remet en bonne et due forme. Votre employeur commence à repousser le visage du sauvage, comme s\'il s\'agissait d\'un sorcier cherchant à voler ses secrets.%SPEECH_ON%Je parie que c\'est de là que viennent les contes d\'ogres, hein ? un enfant voit cette chose hideuse et voilà, son imagination s\'enflamme, et ainsi nait un véritable monstre.%SPEECH_OFF%Si seulement les choses étaient aussi simples.| Même sans son corps massif, la tête du roi barbare fait sensation lorsqu\'on la montre à %employer%. Une foule de nobles et de serviteurs s\'extasient devant sa taille. Un homme en robe noire s\'empresse de vous payer ce qui vous est dû. Le %employer% lui-même ramasse la tête et la balance dans les airs pour la soupeser.%SPEECH_ON%Par les vieux dieux, elle est vraiment lourde ! Oy %randomname%.%SPEECH_OFF%Un serviteur s\'avance. Votre employeur sourit.%SPEECH_ON%Allez me chercher une pique. Nous allons hisser cette épouvante tête haute dans les cieux. %SPEECH_OFF Un passage approprié pour un sauvage.| Quelques instants à peine après avoir donné à %employer% la tête du roi barbare, elle est utilisée comme un jouet. Des enfants de nobles la font rouler sur le sol de pierre, la tête du sauvage renversant des murs de gobelets et des forteresses de plateaux de repas. Un chien aboie en suivant la tête dans tous les sens. L\'employeur vous tape sur l\'épaule. %SPEECH_ON% Travail remarquable, mercenaire. C\'est vrai. Mes éclaireurs m\'ont dit que c\'était un sacré combat, que vous étiez presque un sauvage vous-même. Mais je suppose que c\'est ce qu\'il fallait faire, non ? Un sauvage pour combattre un sauvage ? Un esprit d\'une telle puissance ne peut être contenu par nos manières civilisées!%SPEECH_OFF%Un des enfants donne un coup de pied au visage du Roi, lui cassant la mâchoire et celle-ci lui entaillant le pied avec ses dents. Le gamin crie à l\'aide et, peut-être pour défendre son maître, le chien se pose sur la tête et commence à la traîner par le lambeau du cou. L\'employeur sourit à nouveau.%SPEECH_ON%Votre paie vous attend dehors. Elle est complète, comme promis.%SPEECH_OFF%. | Un homme en armure de chevalier vous arrache la tête du roi barbare. Vous tirez immédiatement votre épée, mais %employer% intervient pour mettre fin à tout début de violence.%SPEECH_ON%Oy, mercenaire, tout va bien. Ton salaire, comme promis.%SPEECH_OFF%L\'homme te tend une sacoche de couronnes, mais derrière lui vous voyez que la tête est confiée à un homme en cape noire. Vous acquiescez et demandez ce qu\'ils ont l\'intention d\'en faire. Employeur% sourit. %SPEECH_ON%Franchement, des bières m\'attendent, mercenaire, et j\'ai bien soif. %SPEECH_OFF%L\'homme passe rapidement devant vous. Vous ne voyez pas de bière ou de boisson, il se contente de suivre l\'homme au manteau. | %employer% fixe la tête du Roi Barbare comme un chat fixerait méchamment tout ce qui n\'est pas lui même. %SPEECH_ON%Intéressant. Je pense que je vais la faire empailler et la mettre sur ma cheminée. %SPEECH_OFF%Parlant un peu à tort et à travers, vous rappelez à votre employeur que c\'est la tête d\'un homme à laquelle il fait référence. %employer% hausse les épaules.%SPEECH_ON%Et alors ? C\'est une monstruosité. Il ne peut y avoir de coexistence entre le civilisé et le sauvage. Et en m\'en occupant correctement, je vais rappeler cette réalité. Et vous, qu\'allez-vous faire ? Me conseiller à nouveau ? %SPEECH_OFF% En serrant les lèvres, vous demandez votre salaire. L\'homme montre le coin. %SPEECH_ON% Dans la sacoche, là. Tu as bien travaillé mercenaire, mais ne me parle plus jamais de cette façon. Bonne journée. %SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Well deserved.",
+					Text = "Bien mérité.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
@@ -620,13 +621,13 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success2",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% welcomes you reluctantly.%SPEECH_ON%You realize I have scouts and spies everywhere, don\'t you?%SPEECH_OFF%Holding up your empty hands, you tell him you had no intent on lying. The \'barbarian king\' will bother the lands no more. Your employer taps his fingers together a few times then nods.%SPEECH_ON%Your honesty is refreshing, though I must say it is quite unfortunate the man and his warband still live. That said, all reports suggest they are moving away so I suppose your work is done all the same, a fat pagan head or not. Your pay, as agreed upon.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% vous accueille à contrecœur. Vous savez que j\'ai des éclaireurs et des espions partout, n\'est-ce pas ? En levant vos mains vides, vous lui dites que vous n\'aviez pas l\'intention de mentir. Le "roi barbare" ne dérangera plus ces terres. Votre employeur tapote ses index l\'un contre l\'autre plusieurs fois puis hoche la tête. %SPEECH_ON%Votre honnêteté est rafraîchissante, bien que je doive avouer qu\'il est assez malheureux que cet homme et sa bande vivent encore. Cela dit, tous les rapports suggèrent qu\'ils s\'en vont, donc je suppose que votre travail est accompli malgré tout, grosse tête de païen ou pas. Votre salaire, comme convenu.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Well deserved.",
+					Text = "Bien mérité.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
