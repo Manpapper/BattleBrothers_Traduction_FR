@@ -733,12 +733,12 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "AfterFinale",
 			Title = "Après la bataille",
-			Text = "[img]gfx/ui/events/event_87.png[/img]Hoggart lies dead in a pool of his own blood, skewered into a grotesque and panicked pose. He didn\'t weasel his way out of this one. You put a boot on his corpse and look to your men.%SPEECH_ON%For the company. For all the men who\'ve fallen.%SPEECH_OFF%%bro3% spits on the dead man\'s face.%SPEECH_ON%Let\'s take this bastard\'s head and get back to %townname%%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_87.png[/img]Hoggart gît mort dans une mare de son propre sang, embroché dans une pose grotesque et paniquée. Il n\'a pas réussi à s\'en sortir. Vous posez une botte sur son cadavre et regardez vos hommes.%SPEECH_ON%Pour la compagnie. Pour tous les hommes qui sont tombés.%SPEECH_OFF%%bro3% crache sur le visage de l\'homme mort.%SPEECH_ON%Prenons la tête de ce bâtard et retournons à %townname%%SPEECH_OFF%",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Time to get paid.",
+					Text = "Il est temps d\'être payé.",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -759,12 +759,12 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CampingTip",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_75.png[/img]%bro3% joins your side.%SPEECH_ON%Got a moment, cap\'n?%SPEECH_OFF%You nod for him to speak his mind.%SPEECH_ON%The battle has left some gear worse for wear and some men got a good nickin\', too. We can patch up both man and equipment while marching, but it\'s a lot faster to set down and do it. Of course, if we make camp we should be wary of ambushes. A campfire in these parts can be seen from every which way.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_75.png[/img]%bro3% rejoint votre équipe.%SPEECH_ON%Vous avez un moment, capitaine ?%SPEECH_OFF%Vous acquiescez pour qu\'il dise ce qu\'il pense.%SPEECH_ON%La bataille a laissé des équipements en mauvais état et certains hommes ont reçu une bonne raclée. Nous pouvons soigner les hommes et réparer l\'équipement tout en marchant, mais c\'est beaucoup plus rapide si on s\'arrête pour le faire. Bien sûr, si nous montons le camp, nous devons nous méfier des embuscades. Un feu de camp dans ces régions peut être vu de très loin.%SPEECH_OFF%",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll keep it in mind.",
+					Text = "Je vais garder ça en tête.",
 					function getResult()
 					{
 						return 0;
@@ -784,13 +784,13 @@ this.tutorial_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "Retourner à %townname%",
-			Text = "[img]gfx/ui/events/event_24.png[/img]The company returns to %townname% as victors, their heads held much higher this time. The %companyname% are not the size that they once were, but they\'re still a force to be reckoned with as Hoggart learned in his final moments.\n\nYou carry his head in a sack that you empty in front of %employer%\'s feet. He jumps back, but the healer quickly picks the head up, stares at it, and nods. %employer% approaches the brigand\'s bloodied face and eyes it carefully.%SPEECH_ON%Yes, yes... that\'s his ugly mug alright. Servants! Pay this man his money!%SPEECH_OFF%Coin in hand, you raise your voice to the men.%SPEECH_ON%As long as there is blood coursing through our veins, as long as we can hold sword and shield, there shall stand our company. All through the realm people will know the %companyname%!%SPEECH_OFF%The men cheer. %bro1% puts his hand on your shoulder.%SPEECH_ON%You did well, captain. No matter where you lead us, the men will follow you as brothers in battle.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_24.png[/img]L\'équipe revient à %townname% en vainqueur, la tête bien plus haute cette fois-ci. Les %companyname% n\'ont plus l\'aura qu\'elles avaient autrefois, mais ils sont toujours une force avec laquelle il faut compter, comme Hoggart l\'a appris dans ses derniers moments.\n\nVous portez sa tête dans un sac que vous videz devant les pieds de %employer%. Il sursaute, mais le guérisseur ramasse rapidement la tête, la fixe et acquiesce. %employer% s\'approche du visage ensanglanté du brigand et le regarde attentivement.%SPEECH_ON%Oui, oui... C\'est bien sa sale gueule. Serviteurs ! Payez son argent à cet homme!%SPEECH_OFF%L\'argent en poche, vous élevez la voix vers les hommes.%SPEECH_ON%Tant que le sang coule dans nos veines, tant que nous pouvons tenir l\'épée et le bouclier, notre compagnie sera là. Partout dans le royaume, les gens connaîtront  %companyname%!%SPEECH_OFF%Les hommes applaudissent. %bro1% pose sa main sur votre épaule.%SPEECH_ON%Vous avez bien fait, capitaine. Où que vous nous meniez, les hommes vous suivront comme des frères de bataille.%SPEECH_OFF%",
 			ShowEmployer = true,
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "As brothers!",
+					Text = "Comme des frères!",
 					function getResult()
 					{
 						this.World.Flags.set("IsHoggartDead", true);
