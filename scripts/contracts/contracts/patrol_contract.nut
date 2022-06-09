@@ -9,7 +9,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.patrol";
-		this.m.Name = "Patrol";
+		this.m.Name = "Patrouille";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 5.0;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
 		this.m.MakeAllSpawnsResetOrdersOnceDiscovered = true;
@@ -145,7 +145,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				if (this.Contract.m.Payment.Count != 0)
 				{
-					this.Contract.m.BulletpointsObjectives.push("Soyez payé pour chaque tête que vous récupérez sur la route(%killcount%/%maxcount%)");
+					this.Contract.m.BulletpointsObjectives.push("Soyez payé pour chaque tête que vous récupérez sur la route (%killcount%/%maxcount%)");
 				}
 
 				this.Contract.m.BulletpointsObjectives.push("Revenez dans les %days% prochains jours");
@@ -214,7 +214,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				if (this.Contract.m.Payment.Count != 0)
 				{
-					this.Contract.m.BulletpointsObjectives.push("Soyez payé pour chaque tête que vous récupérez sur la route(%killcount%/%maxcount%)");
+					this.Contract.m.BulletpointsObjectives.push("Soyez payé pour chaque tête que vous récupérez sur la route (%killcount%/%maxcount%)");
 				}
 
 				this.Contract.m.BulletpointsObjectives.push("Revenez dans les %days% prochains jours");
@@ -310,7 +310,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				if (this.Contract.m.Payment.Count != 0)
 				{
-					this.Contract.m.BulletpointsObjectives.push("Soyez payé pour chaque tête que vous récupérez sur la route(%killcount%/%maxcount%)");
+					this.Contract.m.BulletpointsObjectives.push("Soyez payé pour chaque tête que vous récupérez sur la route (%killcount%/%maxcount%)");
 				}
 
 				this.Contract.m.BulletpointsObjectives.push("Revenez dans les %days% prochains jours");
@@ -409,14 +409,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{%employer% offers a stern hand to one of his chairs. You take a seat.%SPEECH_ON%The region is not safe. Traders are complaining about brigands and other threats along the road.%SPEECH_OFF%He looks down, massaging his temples.%SPEECH_ON%As all my men are currently tied up, I need you to patrol the area. Voyagez jusqu\'à %location1%, continue to %location2% and then return here within %days% days. If you encounter any threats, make sure to take care of them. I won\'t be paying you for a stroll through the woods, mercenary. Payment will be granted per head you bring me.%SPEECH_OFF% | %employer%\'s crooning over a map, his eyes darting like that of a hawk over a field of scurrying mice. He seems unable to focus.%SPEECH_ON%All over the place, that\'s where my men are. Here. There. Over there. This part of the map? Doesn\'t even have a name, but they\'re there, too. Where they\'re not is here, and here. And that\'s where you come in, mercenary.%SPEECH_OFF%He pauses to look up at you.%SPEECH_ON%I need you to patrol the territories to %location1% and then to %location2%. Kill anything or anyone that thinks the road belongs to them. I\'m sure you know that type. But I\'m not paying you to take a walk, sellsword. Bring me every head you collect within %days% days and I\'ll pay you for each.%SPEECH_OFF% | %employer% takes a swig of wine and burps. He seems rather annoyed.%SPEECH_ON%I don\'t ordinarily ask mercenaries to do patrols for me, but most of my men are currently tied up elsewhere. It\'s a pretty simple task: just go to %location1% then to %location2%, then return here within %days% days. Sur la route, slay every man or beast that\'d be a danger to the people of these lands. But do be sure to collect their heads: I\'ll be paying you by the trophy, not by how many miles you walked.%SPEECH_OFF% | %employer% grins slyly.%SPEECH_ON%What say I give you a task where you\'re not paid just for doing it, but paid for how many heads you can collect? Does that prospect interest you? Because right now I need the lands to %location1% and %location2% patrolled. You take a stroll, kill things here and there, and then Retournez à me within %days% days with whatever heads you\'ve collected.\n\nI will pay you for those you kill. Let me know what you think.%SPEECH_OFF% | %employer% puts a finger to a map.%SPEECH_ON%I need you to go here.%SPEECH_OFF%He trails the finger to another location.%SPEECH_ON%And then to here. One long patrol. You kill anything that thinks it owns the roads that doesn\'t carry the %noblehousename% name. Do be sure to take their heads, though. I will not be paying you to take a vacation. I\'ll be paying you for each trophy you bring me À votre retour within %days% days.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{%employer% tend une main ferme vers une de ses chaises. Vous prenez place.%SPEECH_ON% La région n\'est pas sûre. Les commerçants se plaignent de brigands et d\'autres menaces le long de la route.%SPEECH_OFF%Il baisse les yeux, se massant les tempes.%SPEECH_ON%Comme tous mes hommes sont actuellement occupés, j\'ai besoin de vous pour patrouiller la région. Voyagez jusqu\'à %location1%, continuez jusqu\'à %location2% et revenez ici dans les %days%jours. Si vous rencontrez des menaces, assurez-vous de vous en occuper. Je ne vais pas vous payer pour une balade dans les bois, mercenaire. Le paiement sera accordé par tête que vous me rapporterez.%SPEECH_OFF% |%employer% chantonne au-dessus d\'une carte, ses yeux papillonnent comme ceux d\'un faucon au-dessus de souris en fuite. Il semble incapable de se concentrer. %SPEECH_ON% C\'est là que se trouvent mes hommes. Ici. Là. Là-bas. Cette partie de la carte ? Elle n\'a même pas de nom, mais ils sont là aussi. Là où ils ne sont pas, c\'est ici, et ici. Et c\'est là que tu interviens, mercenaire. %SPEECH_OFF%Il fait une pause pour vous regarder. %SPEECH_ON% J\'ai besoin que vous patrouilliez les territoires vers %location1% et ensuite vers %location2%. Tuez tout ceux qui pensent que la route leur appartient. Je suis sûr que vous connaissez bien ce genre de personnes. Mais je ne te paie pas pour te promener, mercenaire. Rapporte-moi toutes les têtes que tu ramasseras dans les  %days% jours qui suivent et je te paierai pour chacune.%SPEECH_OFF% | %employer% prend une gorgée de vin et rote. %SPEECH_ON%Je n\'ai pas l\'habitude de demander à des mercenaires de faire des patrouilles pour moi, mais la plupart de mes hommes sont actuellement occupés ailleurs. C\'est une tâche assez simple : il suffit d\'aller à %location1% puis à %location2%, et de revenir ici dans %days%jours. Sur la route, tuez tout homme ou bête qui pourrait représenter un danger pour les habitants de ces contrées. Mais n\'oubliez pas de récupérer leurs têtes : Je vous paierai au trophée, pas au nombre de kilomètres parcourus.%SPEECH_OFF% | %employer% sourit sournoisement. %SPEECH_ON%Et si je vous donnais une tâche où vous n\'êtes pas seulement payé pour la réaliser, mais aussi pour le nombre de têtes que vous pouvez collecter ? Cette perspective vous intéresse-t-elle ? Parce qu\'en ce moment, j\'ai besoin que les terres à %location1% et %location2% soient surveillées. Vous vous promenez, abattez des choses par-ci par-là, puis revenez me voir dans les %days% jours avec les têtes que vous aurez collectées. Je vous paierai pour celles que vous aurez récoltées. Fais-moi savoir ce que tu en penses.%SPEECH_OFF% | L\'employeur pose un doigt sur une carte.%SPEECH_ON% J\'ai besoin que tu ailles ici.%SPEECH_OFF% Il traîne le doigt vers un autre endroit.%SPEECH_ON% Et puis ici. Une longue patrouille. Tuez tout ceux qui pensent posséder les routes et qui ne portent pas le nom de %noblehousename%. Assurez-vous de prendre leurs têtes, cependant. Je ne vous paierai pas pour prendre des vacances. Je vous paierai pour chaque trophée que vous me rapporterez à votre retour dans les %days% jours.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "How much are we talking about?",
+					Text = "De combien parle-t-on ?",
 					function getResult()
 					{
 						return "Negotiation";
@@ -424,7 +424,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "That\'s too much walking for my taste.",
+					Text = "C\'est trop de marche à mon goût.",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -441,14 +441,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedA",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_02.png[/img]%randombrother% comes back to you with a scouting report.%SPEECH_ON%Some burned hamlets. A dead man cut in half at the belly. Legs missing. His dog was just laying there. Wouldn\'t leave. Couldn\'t coax it nowhere. Found a dead donkey up in some trees. The hawing end had a spear sticking out of it.%SPEECH_OFF%He pauses, thinks, then snaps his fingers.%SPEECH_ON%Oh! Almost forgot. There\'s a crucified man down the other side of that hill yonder. He was alive. Doing a bunch of screaming, but I stayed clear. A stranger\'s pain is tricky business.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_02.png[/img]%randombrother% revient vers vous avec un rapport de reconnaissance. %SPEECH_ON%Des hameaux brûlés. Un homme mort coupé en deux au niveau du ventre. Les jambes manquantes. Son chien était juste étendu là. Il ne voulait pas partir. Impossible de l\'emmener nulle part. On a trouvé un âne mort dans les arbres. Une lance sortait du sabot.%SPEECH_OFF%Il fait une pause, réfléchit, puis claque des doigts.%SPEECH_ON%Oh ! J\'allais oublier. Il y a un homme crucifié de l\'autre côté de la colline, là-bas. Mais il était vivant. Il criait beaucoup, mais je suis resté à l\'écart. La douleur d\'un inconnu est une affaire délicate.%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Yes. Let\'s go see this crucified fellow.",
+					Text = "Oui. Allons voir ce crucifié.",
 					function getResult()
 					{
 						return "CrucifiedB";
@@ -456,7 +456,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "Nothing actionable. Good report.",
+					Text = "Rien d\'exploitable. Bon rapport.",
 					function getResult()
 					{
 						return 0;
@@ -473,14 +473,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedB",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_02.png[/img]You decide to venture down and see the crucified fella.\n\n You top a nearby hill and look down its slopes. It\'s pretty much as the sellsword put it. There\'s a crucified man down the end of the hillside. He\'s hanging limp, though even from here you can hear his occasional scream. %randombrother% asks what to do.",
+			Text = "[img]gfx/ui/events/event_02.png[/img]Vous décidez de vous aventurer en bas et de voir le crucifié. Vous êtes au sommet d\'une colline voisine et vous regardez ses versants. C\'est à peu près ce que disait le mercenaire. Il y a un homme crucifié en bas de la colline. Il est suspendu et faible, mais même d\'ici vous pouvez entendre ses cris qui résonnent de temps en temps. %randombrother% demande ce qu\'il faut faire.",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Let\'s cut him down.",
+					Text = "On va le descendre.",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 50 && this.World.getPlayerRoster().getSize() < this.World.Assets.getBrothersMax())
@@ -495,7 +495,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "This is clearly a trap. Let\'s wait.",
+					Text = "C\'est clairement un piège. Attendons.",
 					function getResult()
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -510,7 +510,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "Let\'s leave. Something is off about this.",
+					Text = "On s\'en va. Il y a quelque chose qui cloche.",
 					function getResult()
 					{
 						return 0;
@@ -526,14 +526,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedC",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_02.png[/img]You\'re not sure you could sleep at night knowing you left this poor sod to such a horrid fate. You and the company start down the hillside. It\'s not an especially quick rescue as you\'re still worried about ambushes, but nothing does spring. The crucified man grins when you near.%SPEECH_ON%Lemme down and I\'ll fight for you to the end of my days, I promise it!%SPEECH_OFF%The sellswords leverage their weapons beneath the nails and wrench the man free. He slides down the wooden post into the arms of some mercenaries who gently lower him to the ground. In between sips of water, he talks.%SPEECH_ON%Greenskins did this to me. I was the last of my village and I guess they thought to have a bit of fun beyond just putting an axe in my face. I was beginning to prefer the latter until you came along. I\'m not in the best of shape, sir, but with time I\'ll recover and I swear by my name, which I am the last of, that I will fight for you until death or the last victory!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_02.png[/img]Vous n\'êtes pas sûr de pouvoir dormir la nuit en sachant que vous avez laissé ce pauvre bougre à un destin aussi horrible. Vous et la compagnie commencez à descendre la colline. Ce n\'est pas un sauvetage particulièrement rapide car vous êtes toujours inquiet des embuscades, mais rien ne se passe. L\'homme crucifié sourit quand vous vous approchez. %SPEECH_ON% Descendez moi et je me battrai pour vous jusqu\'à la fin de mes jours, je vous le promets!%SPEECH_OFF%Les mercenaires font levier avec leurs armes sous les clous et dégagent l\'homme. Il glisse le long du poteau de bois dans les bras de quelques mercenaires qui le déposent doucement au sol. Entre deux gorgées d\'eau, il parle.%SPEECH_ON%Les peaux vertes m\'ont fait ça. J\'étais le dernier de mon village et je suppose qu\'ils ont pensé à s\'amuser un peu plutôt que de me planter une hache dans la tête. Je commençais à préférer cette dernière solution jusqu\'à ce que vous arriviez. Je ne suis pas au mieux de ma forme, monsieur, mais avec le temps je me remettrai et je jure par mon nom, dont je suis le tout dernier, que je me battrai pour vous jusqu\'à la mort ou la dernière victoire !%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Few men could survive such horrors. Welcome to the company.",
+					Text = "Peu d\'hommes ont pu survivre à de telles horreurs. Bienvenue dans la compagnie.",
 					function getResult()
 					{
 						this.World.getPlayerRoster().add(this.Contract.m.Dude);
@@ -545,7 +545,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "This company is no place for you.",
+					Text = "Cette compagnie n\'a pas de place pour vous.",
 					function getResult()
 					{
 						this.World.getTemporaryRoster().clear();
@@ -560,7 +560,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 				local roster = this.World.getTemporaryRoster();
 				this.Contract.m.Dude = roster.create("scripts/entity/tactical/player");
 				this.Contract.m.Dude.setStartValuesEx(this.Const.CharacterVillageBackgrounds);
-				this.Contract.m.Dude.getBackground().m.RawDescription = "You pulled the crucified %name% down off the means to his execution just in time. He has pledged allegiance to your side until the end of his days or the last of your victories.";
+				this.Contract.m.Dude.getBackground().m.RawDescription = "Vous avez descendu %name% le crucifié du support de son exécution juste à temps. Il a prêté allégeance à votre camp jusqu\'à la fin de ses jours ou jusqu\'à la dernière de vos victoires.";
 				this.Contract.m.Dude.getBackground().buildDescription(true);
 				this.Contract.m.Dude.getSkills().removeByID("trait.disloyal");
 				this.Contract.m.Dude.getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
@@ -588,14 +588,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedD",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_67.png[/img]Sleeping at night would get a little harder if you left this poor sod behind. You lead the company down the hillside in part to save him and save your own sanity. The crucified fella begins to smile as you near.%SPEECH_ON%Thank you, stranger! Thank you thank you thank--%SPEECH_OFF%He\'s cut off by a sickening \'thunk\' of a javelin spearing his chest and into the wooden boards upon which he is crucified. You spin around in time to see greenskins rushing out of some nearby bushes. Goddammit, it was a trap all along! To arms!",
+			Text = "[img]gfx/ui/events/event_67.png[/img]Dormir la nuit serait un peu moins difficile si vous laissiez ce pauvre bougre derrière vous. Vous dirigez la compagnie vers le bas de la colline, en partie pour le sauver et pour préserver votre santé mentale. Le crucifié commence à esquisser un sourire à votre approche.%SPEECH_ON%Merci, étranger ! Merci merci merci merci... %SPEECH_OFF%Il est interrompu par le \'thunk\' écœurant d\'un javelot qui perfore sa poitrine et s\'enfonce dans les planches de bois sur lesquelles il est crucifié. Vous vous retournez à temps pour voir des peaux vertes se précipiter hors des buissons voisins. Bon sang, c\'était un piège depuis le début ! Aux armes !",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes!",
 					function getResult()
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -623,14 +623,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedE",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_07.png[/img]You decide to wait it out. As you sit and listen the dying man\'s wails slowly quiet down into silence, %randombrother% grabs you by the shoulder and points a little ways off. There are some brigands coming toward the crucified fella. They get there and talk for a time. One man takes out a dagger and starts stabbing it into the dying man\'s toes. His wails aren\'t quiet any longer. One of the brigands turns around laughing. He stops. He says something. He points. You\'ve been seen! Before those arseholes can get into formation, you order the %companyname% to charge!",
+			Text = "[img]gfx/ui/events/event_07.png[/img]Vous décidez d\'attendre. Alors que vous êtes assis et que vous écoutez les gémissements de l\'homme mourant se calmer lentement dans le silence, %randombrother% vous attrape par l\'épaule et vous indique un peu plus loin. Il y a des brigands qui se dirigent vers le crucifié. Ils arrivent et discutent un moment. Un homme sort un poignard et commence à le planter dans les orteils de l\'homme mourant. Ses gémissements ne sont plus silencieux. Un des brigands se retourne en riant. Il s\'arrête. Il dit quelque chose. Il vous pointe du doigt. On vous a vu ! Avant que ces trous du cul puissent se mettre en formation, vous ordonnez au %companyname% de charger !",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -656,14 +656,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedE_AftermathGood",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_22.png[/img]Shockingly, the crucified man is still alive Après la bataille. He calls to you with a raspy voice that carries no words, but a simple tone of \'please help\'. You have the brothers cut him down. He passes out the second he hits the ground, then jolts awakes and grabs you by the hand.%SPEECH_ON%Thank you, stranger. Thank you so much. The orcs... they came... and then brigands to pillage the remains... but you, you\'re different. Thank you! I\'ve nothing left in this world but to fight against those who took everything from me. I am %crucifiedman%, the last of my name, and if you give me the honor, I pledge you my sword until the day I die or you see your last victory.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_22.png[/img]De façon surprenante, l\'homme crucifié est toujours vivant. Après la bataille. Il vous appelle d\'une voix rauque qui ne transmet aucun mot, mais un simple gémissement signifiant : \"S\'il vous plaît, aidez-moi\". Les frères le descendent. Il s\'évanouit à la seconde où il touche le sol, puis se réveille en sursaut et vous attrape par la main.%SPEECH_ON%Merci, étranger. Merci beaucoup. Les orcs... ils sont venus... et puis des brigands ont pillé les restes... mais vous, vous êtes différent. Merci ! Je n\'ai rien d\'autre à faire dans ce monde que de me battre contre ceux qui m\'ont tout pris. Je suis %crucifiedman%, le dernier de mon nom, et si vous m\'en faites l\'honneur, je vous promets mon épée jusqu\'au jour de ma mort ou de votre dernière victoire.%SPEECH_OFF%",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Few men could survive such horrors. Welcome to the company.",
+					Text = "Peu d\'hommes ont pu survivre à de telles horreurs. Bienvenue dans l\'entreprise.",
 					function getResult()
 					{
 						this.World.getPlayerRoster().add(this.Contract.m.Dude);
@@ -675,7 +675,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "This company is no place for you.",
+					Text = " Cette compagnie n\'est pas un refuge pour vous.",
 					function getResult()
 					{
 						this.World.getTemporaryRoster().clear();
@@ -690,7 +690,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 				local roster = this.World.getTemporaryRoster();
 				this.Contract.m.Dude = roster.create("scripts/entity/tactical/player");
 				this.Contract.m.Dude.setStartValuesEx(this.Const.CharacterVillageBackgrounds);
-				this.Contract.m.Dude.getBackground().m.RawDescription = "You pulled the crucified %name% down off the means to his execution just in time. He has pledged allegiance to your side until the end of his days or the last of your victories.";
+				this.Contract.m.Dude.getBackground().m.RawDescription = "Vous avez descendu %name% le crucifié du support de son exécution juste à temps. Il a prêté allégeance à votre camp jusqu\'à la fin de ses jours ou jusqu\'à la dernière de vos victoires..";
 				this.Contract.m.Dude.getBackground().buildDescription(true);
 				this.Contract.m.Dude.getSkills().removeByID("trait.disloyal");
 				this.Contract.m.Dude.getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
@@ -718,14 +718,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedE_AftermathBad",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_22.png[/img]The brigands taken care of, you go to see if the crucified man is still alive. He did not survive. With nothing on his body worth taking, you loot the brigands and get the %companyname% back on the path.",
+			Text = "[img]gfx/ui/events/event_22.png[/img]Les brigands éliminés, vous allez voir si le crucifié est encore en vie. Il n\'a pas survécu. N\'ayant rien sur son corps qui vaille la peine d\'être pris, vous pillez les brigands et remettez le %companyname% sur le chemin.",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Rest in peace.",
+					Text = "Repose en paix.",
 					function getResult()
 					{
 						return 0;
@@ -741,14 +741,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "CrucifiedF",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_02.png[/img]You decide to wait it out. The dying man keeps on dying. His cries get a little bit quieter, which is nice on the ears, but bad on the souls of the men. After a while, %randombrother% comes up and suggests that the company head on down. The likelihood that someone would stay around for an ambush now is very unlikely indeed. You and the company trot down the hillside and get to the crucified man. His chin is to his chest, his eyes half-opened, a froth of drool and blood dripping from his lips. With nothing on him worth taking, you order the %companyname% to get back on the path.",
+			Text = "[img]gfx/ui/events/event_02.png[/img]Vous décidez d\'attendre. Le mourant continue de se consumer. Ses cris deviennent un peu plus silencieux, ce qui est agréable pour les oreilles, mais mauvais pour l\'âme des hommes. Au bout d\'un moment, %randombrother% se lève et suggère que la compagnie descende. La probabilité que quelqu\'un reste dans les parages pour une embuscade est en effet assez faible. Vous et la compagnie descendez la colline au pas de course et arrivez à l\'homme crucifié. Il a le menton sur la poitrine, les yeux entrouverts, une écume de salive et de sang s\'écoulant de ses lèvres. N\'ayant rien sur lui qui vaille la peine d\'être pris, vous ordonnez au %companyname% de reprendre le chemin.",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Rest in peace.",
+					Text = "Repose en paix.",
 					function getResult()
 					{
 						this.World.Assets.addMoralReputation(-1);
@@ -765,7 +765,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 				{
 					if (bro.getBackground().isOffendedByViolence() && !bro.getBackground().isCombatBackground())
 					{
-						bro.worsenMood(0.5, "You let a crucified man die a slow death");
+						bro.worsenMood(0.5, "Vous avez laissé un homme crucifié mourir d\'une mort lente.");
 
 						if (bro.getMoodState() < this.Const.MoodState.Neutral)
 						{
@@ -783,14 +783,14 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success1",
 			Title = "À %location1%...",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{You reach %location1% and have the men take a break. While they rest, you count supplies and make sure everything is in order. Soon enough, you get the company back to marching. | Stopping at %location1%, the first leg of the patrol, you have the men rest for a time. You\'ve more road ahead so you figure now is a good time as any to resupply. | The first leg of the patrol is finished. Now you\'ve to move on to the next one. You inform the men as much and they groan. You also inform them that you are not paying them to bitch, but they groan at that, too. | You reach the first point of patrol and order the men to take five while you count supplies. The patrol is only one third finished. You wonder if you should stock up on more equipment before heading back out. | You reach %location1% safe and for the most part sound.}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{Vous atteignez %location1% et demandez aux hommes de faire une pause. Pendant qu\'ils se reposent, vous comptez les provisions et vous assurez que tout est en ordre. Assez rapidement, vous remettez la compagnie en marche. | Vous vous arrêtez à %location1%, la première étape de la patrouille, et vous permettez aux hommes de se reposer un moment. Vous avez encore de la route devant vous, vous estimez que c\'est le bon moment pour vous de vous réapprovisionner. | La première étape de la patrouille est terminée. Vous devez maintenant passer à la suivante. Vous en informez les hommes et ils gémissent. Vous les informez également que vous ne les payez pas pour râler, mais ils grognent tout autant. | Vous atteignez le premier point de la patrouille et ordonnez aux hommes de prendre cinq minutes pendant que vous comptez les provisions. La patrouille n\'est terminée qu\'au tiers. Vous vous demandez si vous ne devriez pas faire le plein d\'équipement avant de repartir. | Vous atteignez %location1% sain et sauf pour l\'essentiel.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "We move on.",
+					Text = "On continue.",
 					function getResult()
 					{
 						this.Contract.setState("Location2");
@@ -811,7 +811,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success2",
 			Title = "À %location2%...",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{%location2% is just where it was said to be. You have the men go for some rest and recuperation while you plan out the last leg of the patrol. | The patrol takes you to %location2% which receives you with the same guff and suspicion a mercenary is met with anywhere. You\'ve another leg of the journey to go, so perhaps gathering supplies here is a good idea. | The men fan out into %location2%\'s pubs. You simply take stock of your supplies and wonder if resupplying is a good idea. Glancing at the dim lights of a pub, you also wonder if a quick drink wouldn\'t hurt, either. | Reaching %location2%, %randombrother% suggests that the company should pick up some supplies for the journey back to %employer%. You\'ve already thought of this, but you give the sellsword the satisfaction of having come up with the idea himself.}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{%location2% est juste là où elle était censée être. Vous demandez aux hommes de se reposer et de récupérer pendant que vous préparez la dernière étape de la patrouille. | La patrouille vous conduit à la %location2% qui vous reçoit avec le même mépris et la même suspicion, qu\'on donne à n\'importe quel mercenaire. Il vous reste encore une étape du voyage à parcourir, alors peut-être qu\'il serait bon de vous approvisionner ici. | Les hommes se répartissent dans les tavernes de %location2%. Vous faites simplement le point sur vos provisions et vous vous demandez si se réapprovisionner est une bonne idée. En jetant un coup d\'œil aux lumières tamisées d\'un établissement, vous vous demandez également si un petit verre ne ferait pas de mal non plus. | En arrivant à %location2%, %randombrother% suggère que la compagnie prenne quelques provisions pour le voyage de retour vers %employeur%. Tu y avais déjà pensé, mais tu laisses au mercenaire la satisfaction d\'avoir eu l\'idée lui-même.}",
 			Image = "",
 			Characters = [],
 			List = [],
@@ -839,13 +839,13 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success3",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{Your Retournez à %employer% is met with curiosity. He\'s counting crowns but, before giving you any, asks you how many \'heads\' you collected in your journey. After reporting %killcount% kills, he purses his lips and nods.%SPEECH_ON%Good enough.%SPEECH_OFF%The man spills some crowns into a satchel and hands it over. | Returning to %employer%, you find the man sitting deeply into an enormous chair, as if he needed all that space to support his nobility, opulence, and pride.\n\nYou talk about the patrol, how you killed %killcount% while on the road. Your emphasis is on the kills, as that is what you\'re being paid for. %employer% nods and has one of his men throw crowns into a satchel and hand it over. | %employer% stands by a window, drinking wine and seeming to ogle a few women gardening below. Without turning to face you, he asks how many you killed on your journey.%SPEECH_ON%%killcount%.%SPEECH_OFF%The nobleman chuckles.%SPEECH_ON%You make it seem so easy.%SPEECH_OFF%Again without looking, he snaps his fingers. A man appears from the side with a satchel in hand. You take it, then take your leave. | %employer% is reading scrolls of papers as he welcomes you in. He\'s curious as to how many kills you racked up on patrol. You report %killcount%, to which he hums and makes a small note on one of the papers. Nodding his head, he kicks open a chest next to him and starts scooping crowns into a satchel. He hands it over and then, without even looking up, tells you to get out. | There\'s a party going on at %employer%\'s abode. You weave through the crowd drunken opulence to get to the man. He shouts over the music and noise, asking how many you cut down on your patrol. It\'s odd, but shouting that you killed %killcount% seems to have no effect on the partygoers. Shrugging, %employer% turns and leaves, slipping into the crowd of attendees. You try to chase, but a man cuts you off, slamming a satchel into your chest.%SPEECH_ON%Your payment, mercenary. Now, please, see to the door. People are beginning to notice you and they did not come here to feel uncomfortable.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{Votre Retournez chez %employer% qui vous accueille avec curiosité. Il compte les couronnes mais, avant de vous les donner, il vous demande combien de "têtes" vous avez collectées pendant votre voyage. Après avoir indiqué %killcount% de tués, il pince les lèvres et hoche la tête.%SPEECH_ON% C\'est satisfaisant.%SPEECH_OFF% L\'homme verse quelques couronnes dans une sacoche et vous  la remet. | En retournant chez %employer%, vous trouvez l\'homme assis confortablement dans un énorme fauteuil, comme s\'il avait besoin de tout cet espace pour asseoir sa noblesse, son opulence et sa fierté.\n\n Vous parlez de la patrouille, comment vous avez tué %killcount% fois sur la route. Vous mettez l\'accent sur les meurtres, car c\'est pour cela que vous êtes payé. %employer% acquiesce et demande à un de ses hommes de jeter des couronnes dans une sacoche et de vous la remettre. | %employer% se tient près d\'une fenêtre, buvant du vin et semblant reluquer quelques femmes qui jardinent en bas. Sans se tourner vers vous, il vous demande combien de personnes vous avez tué pendant votre voyage.%SPEECH_ON%%killcount%.%SPEECH_OFF% Le noble glousse.%SPEECH_ON%Vous donnez l\'impression que c\'est si facile.%SPEECH_OFF%Encore sans regarder, il claque des doigts. Un homme apparaît sur le côté avec une sacoche à la main. Vous la prenez avant de partir. | L\'employeur lit des papiers en vous accueillant. Il est curieux de savoir combien de victimes vous avez abattues pendant votre patrouille. Vous indiquez %killcount%, ce à quoi il répond en fredonnant et en prenant une petite note sur l\'un des papiers. Il hoche la tête, ouvre d\'un coup de pied un coffre à côté de lui et commence à mettre des couronnes dans une bourse. Il vous la remet, puis, sans même lever les yeux, vous demande de sortir. |Il y a une fête à la demeure de %employer%. Vous vous faufilez dans la foule ivre d\'opulence pour atteindre l\'homme. Il crie par-dessus la musique et le bruit, demandant combien vous en avez abattu pendant votre patrouille. C\'est étrange, mais crier que vous avez tué %killcount% ne semble avoir aucun effet sur les fêtards. Haussant les épaules, %employer% se retourne et part, se glissant dans la foule des participants. Vous essayez de le poursuivre, mais un homme vous coupe la route en vous écrasant une sacoche sur la poitrine.%SPEECH_ON%Votre paiement, mercenaire. Maintenant, s\'il vous plaît, allez à la porte. Les gens commencent à vous remarquer et ils ne sont pas venus ici pour se sentir mal à l\'aise.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Enough marching for today.",
+					Text = "Assez de marche pour aujourd\'hui.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
@@ -877,13 +877,13 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success4",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{You return %employer% emptyhanded. He sizes you up, notably eyeing your lack of scalps.%SPEECH_ON%Really? No trouble at all?%SPEECH_OFF%You don\'t move. The man purses his lips and shrugs.%SPEECH_ON%Ah hell, well...%SPEECH_OFF%He looks at you and almost gags on a chuckle.%SPEECH_ON%Interesting, I guess.%SPEECH_OFF% | %employer% looks you up and down.%SPEECH_ON%Where are the heads, sellsword? Surely you didn\'t forget to collect those...?%SPEECH_OFF%You explain that you didn\'t run into anything on the patrol. The man raises an eyebrow.%SPEECH_ON%No shit? Hell... well... bye.%SPEECH_OFF% | You Retournez à %employer% emptyhanded. He stares at your lack of... wares.%SPEECH_ON%What\'s this? Where the hell are the heads I was gonna pay you for?%SPEECH_OFF%Shrugging, you explain that there was no trouble on the patrol. %employer%\'s taking a sip of wine and almost chokes on it at this news.%SPEECH_ON%Wait, really? I mean, I guess that\'s good and all, but damned... didn\'t expect that. I, uh, suppose you didn\'t either.%SPEECH_OFF%You stare at each other. A bird coos to fill the silence. The man sips his wine and glances out his window.%SPEECH_ON%So... interesting weather today, yeah?%SPEECH_OFF%You roll your eyes.}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{Vous revenez chez %employer% les mains vides. Il te jauge, observant tout particulièrement ton manque de scalps.%SPEECH_ON%Vraiment ? Pas de problème du tout ? %SPEECH_OFF% Tu ne bouges pas. L\'homme pince les lèvres et hausse les épaules.%SPEECH_ON%Ah merde, bien...%SPEECH_OFF% Il te regarde et manque de s\'étouffer de rire.%SPEECH_ON%Intéressant, je suppose.%SPEECH_OFF% | %employer% te regarde de haut en bas.%SPEECH_ON% Où sont les têtes, mercenaire ? Tu n\'as sûrement pas oublié de les ramasser...?%SPEECH_OFF% Tu expliques que tu n\'as rien trouvé pendant la patrouille. L\'homme lève un sourcil.%SPEECH_ON% Rien du tout ? Bon sang... et bien... au revoir.%SPEECH_OFF%. |Vous Retournez chez %employer% les mains vides. Il regarde votre manque de... marchandise.%SPEECH_ON%C\'est quoi ça ? Où sont les têtes que je devrais vous payer ? %SPEECH_OFF%Haussant les épaules, vous expliquez qu\'il n\'y a pas eu de problème pendant la patrouille. %employer%qui prenait une gorgée de vin manque de s\'étouffer en entendant cette nouvelle.%SPEECH_ON%Attendez, vraiment ? Je veux dire, je suppose que c\'est bien et tout, mais bon sang... je ne m\'attendais pas à ça. Je, euh, suppose que toi non plus.%SPEECH_OFF%Vous vous regardez fixement. Un oiseau roucoule pour combler le silence. L\'homme boit son vin à petites gorgées et regarde par la fenêtre. %SPEECH_ON%So... temps intéressant aujourd\'hui, hein ? %SPEECH_OFF%Vous roulez les yeux.}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Enough marching for today.",
+					Text = "Assez de marche pour aujourd\'hui.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnVictory);
@@ -911,13 +911,13 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure1",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_45.png[/img]{You took far too long to complete the patrol you\'ve been tasked with. Consider the contract failed. | A man in the employ of %employer% approaches with a notice. It states that your patrol was meant to be quick, not a merry little walk for yourself. Consider the contract failed. | What were you trying to do, collect as many heads as possible? It\'s doubtful that your employer, %employer%, would buy such a ruse. There\'s a reason he only gave you a few days to complete this task. Consider it failed.}",
+			Text = "[img]gfx/ui/events/event_45.png[/img]{Vous avez pris beaucoup trop de temps pour terminer la patrouille dont vous aviez la charge. Considérez que le contrat a échoué. | Un homme au service de %employer% s\'approche avec un document. Il indique que votre patrouille devait être rapide, et non une joyeuse petite promenade pour vous-même. Considérez que le contrat a échoué. | Qu\'essayiez-vous de faire, collecter autant de têtes que possible ? Il est douteux que votre employeur  %employer% croit à une telle supercherie. Il y a une raison pour laquelle il ne vous a donné que quelques jours pour accomplir cette tâche. Considérez-la comme ratée.}",
 			Image = "",
 			List = [],
 			ShowEmployer = false,
 			Options = [
 				{
-					Text = "Damn this contract!",
+					Text = "Maudit soit ce contrat!",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
@@ -987,7 +987,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 
 			if (nearest_bandits == null && nearest_goblins == null && nearest_orcs == null && nearest_barbarians == null && nearest_nomads == null)
 			{
-				this.logInfo("no enemy base found");
+				this.logInfo("aucune base ennemie trouvée");
 				return false;
 			}
 
@@ -1010,7 +1010,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 					party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(tile, "Brigand Hunters", false, this.Const.World.Spawn.BanditRoamers, 80 * this.getDifficultyMult() * this.getScaledDifficultyMult());
 				}
 
-				party.setDescription("A rough and tough band of brigands preying on the weak.");
+				party.setDescription("Une bande de brigands rudes et coriaces s\'attaquant aux faibles.");
 				party.setFootprintType(this.Const.World.FootprintsType.Brigands);
 				party.getLoot().Money = this.Math.rand(50, 100);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1052,7 +1052,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 					party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(tile, "Goblin Scouts", false, this.Const.World.Spawn.GoblinScouts, 80 * this.getDifficultyMult() * this.getScaledDifficultyMult());
 				}
 
-				party.setDescription("A band of mischievous goblins, small but cunning and not to be underestimated.");
+				party.setDescription("Une bande de gobelins malicieux, petits mais rusés et à ne pas sous-estimer.");
 				party.setFootprintType(this.Const.World.FootprintsType.Goblins);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
 				party.getLoot().Medicine = this.Math.rand(0, 2);
@@ -1083,7 +1083,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 			else if (barbarians_dist <= goblins_dist && barbarians_dist <= bandits_dist && barbarians_dist <= orcs_dist && barbarians_dist <= nomads_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians).spawnEntity(tile, "Barbarians", false, this.Const.World.Spawn.Barbarians, 110 * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("A warband of barbarian tribals.");
+				party.setDescription("Une bande de barbare tribales.");
 				party.setFootprintType(this.Const.World.FootprintsType.Barbarians);
 				party.getLoot().Money = this.Math.rand(0, 50);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1124,7 +1124,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 			else if (nomads_dist <= barbarians_dist && nomads_dist <= goblins_dist && nomads_dist <= bandits_dist && nomads_dist <= orcs_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).spawnEntity(tile, "Nomads", false, this.Const.World.Spawn.NomadRaiders, 110 * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("A band of desert raiders preying on anyone trying to cross the seas of sand.");
+				party.setDescription("Une bande de pillards du désert s\'attaquant à tous ceux qui tentent de traverser les mers de sable.");
 				party.setFootprintType(this.Const.World.FootprintsType.Nomads);
 				party.getLoot().Money = this.Math.rand(50, 200);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1162,7 +1162,7 @@ this.patrol_contract <- this.inherit("scripts/contracts/contract", {
 					party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Orc Scouts", false, this.Const.World.Spawn.OrcScouts, 80 * this.getDifficultyMult() * this.getScaledDifficultyMult());
 				}
 
-				party.setDescription("A band of menacing orcs, greenskinned and towering any man.");
+				party.setDescription("Une bande d\'orcs menaçants, à la peau verte et dépassant n\'importe quel homme.");
 				party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 				party.getLoot().ArmorParts = this.Math.rand(0, 25);
 				party.getLoot().Ammo = this.Math.rand(0, 10);
