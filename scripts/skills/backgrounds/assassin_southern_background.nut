@@ -7,8 +7,8 @@ this.assassin_southern_background <- this.inherit("scripts/skills/backgrounds/ch
 		this.m.Name = "Tueur";
 		this.m.Icon = "ui/backgrounds/background_53.png";
 		this.m.BackgroundDescription = "Un assassin doit être agile et habile dans l\'utilisation des armes.";
-		this.m.GoodEnding = "%name% the assassin departed the %companyname% with a large chest of gold and traveled far away. From what rumors you\'ve heard, he built a castle in the mountains east of the southern kingdoms. You\'re not sure if it\'s true, but there\'s been a steady increase in dead viziers and lords alike as of late.";
-		this.m.BadEnding = "%name% disappeared not long after your retirement from the %companyname%. The assassin presumably does not want to be found and there\'s no telling where he is. In moments of honesty, you tell others you wished you never hired him at all. You just can\'t shake the terror that it is you he is stalking and hunting, and you spend many nights with one eye open, looking for the man in black with the crooked dagger.";
+		this.m.GoodEnding = "%name% l\'assassin a quitté la	compagnie %companyname% avec un grand coffre d\'or et a voyagé très loin. D\'après les rumeurs que vous avez entendues, il a construit un château dans les montagnes à l\'est des royaumes du sud. Vous ne savez pas si c\'est vrai, mais il y a eu une augmentation constante des morts chez les vizirs et les seigneurs ces derniers temps.";
+		this.m.BadEnding = "%name% a disparu peu de temps après votre retraite de %companyname%. L\'assassin ne veut probablement pas être trouvé et on ne peut pas savoir où il est. Dans des moments d\'honnêteté, vous dites aux autres que vous auriez préféré ne pas l\'avoir engagé du tout. Il vous traque et vous chasse, cette terreur ne vous quitte plus, et vous passez de nombreuses nuits avec un seul œil ouvert, à la recherche de l\'homme en noir avec la dague tordue.";
 		this.m.HiringCost = 800;
 		this.m.DailyCost = 25;
 		this.m.Excluded = [

@@ -7,8 +7,8 @@ this.cripple_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.Name = "Estropié";
 		this.m.Icon = "ui/backgrounds/background_51.png";
 		this.m.BackgroundDescription = "La seule chose rapide à propos d\'un estropié est sa mort inévitable dans une vraie bataille.";
-		this.m.GoodEnding = "It\'s shocking that a man of %name%\'s stature survived at all, but L\'Estropié did retire from the %companyname% with a sizeable stack of crowns. He runs an orphanage these days, spending his crowns to help the world\'s broken and abandoned children. That, or it\'s just a front for cheap labor. Can\'t be too sure these days.";
-		this.m.BadEnding = "When you left the %companyname%, there was one thing you were almost certain of: that damned cripple, %name%, wouldn\'t last long. Despite all odds, he did survive. Long enough in fact to retire himself, albeit departing with about as many crowns as he had when he joined up. You\'ve no idea what became of him, but surely he\'s dead by now. Surely, right?";
+		this.m.GoodEnding = "C\'est choquant qu\'un homme de la stature de %name% ait survécu, mais L\'Estropié s\'est retiré de la compagnie %companyname% avec un gros paquet de couronnes. Il dirige aujourd\'hui un orphelinat, dépensant ses couronnes pour aider les enfants brisés et abandonnés du monde... ou alors, c\'est juste une façade pour une main d\'oeuvre bon marché. On ne peut pas être trop sûr de nos jours.";
+		this.m.BadEnding = "Quand vous avez quitté la compagnie %companyname%, il y avait une chose dont vous étiez presque certain: ce maudit infirme, %name%, ne durera pas longtemps. Malgré tout, il a survécu. Assez longtemps pour prendre sa retraite, bien qu\'il parte avec autant de couronnes que lorsqu\'il s\'est engagé. Vous n\'avez aucune idée de ce qu\'il est devenu, mais il est sûrement mort maintenant. Sûrement, n\'est-ce pas ?";
 		this.m.HiringCost = 30;
 		this.m.DailyCost = 3;
 		this.m.Excluded = [

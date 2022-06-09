@@ -7,8 +7,8 @@ this.caravan_hand_background <- this.inherit("scripts/skills/backgrounds/charact
 		this.m.Name = "Aide-caravanier";
 		this.m.Icon = "ui/backgrounds/background_12.png";
 		this.m.BackgroundDescription = "Les Aide-caravaniers sont habitués à des voyages longs et épuisants.";
-		this.m.GoodEnding = "%name% the once-caravan hand retired from fighting. He used his mercenary money to start a trade-guarding business that specializes in transporting goods through dangerous lands.";
-		this.m.BadEnding = "%name% the caravan hand retired back into guarding trade wagons. He died when defending against an ambush by brigands. They took his shirt and left his body in a ditch.";
+		this.m.GoodEnding = "%name% l\'aide caravanier s\'est retirée du combat. Il a utilisé l\'argent de ses mercenaires pour lancer une entreprise de surveillance destinée au commerce spécialisé dans le transport de marchandises en terre hostile.";
+		this.m.BadEnding = "%name% l\'aide caravanier s\'est retiré pour garder les wagons commerciaux. Il est mort en se défendant contre une embuscade de brigands. Ils ont pris sa chemise et laissé son corps dans un fossé.";
 		this.m.HiringCost = 75;
 		this.m.DailyCost = 8;
 		this.m.Excluded = [

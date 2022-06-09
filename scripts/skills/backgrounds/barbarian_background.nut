@@ -9,8 +9,8 @@ this.barbarian_background <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.Name = "Barbare";
 		this.m.Icon = "ui/backgrounds/background_58.png";
 		this.m.BackgroundDescription = "Barbare a besoin de description";
-		this.m.GoodEnding = "%name% the barbarian took all the coin he earned with the company and ventured north. With his money, he gathered a band of warriors and conquered so many tribes that, last you heard, he had been ordained \'king of the north\'.";
-		this.m.BadEnding = "With things the way they were, %name% departed. Last you heard he was traveling north. Penniless with little to his name but an axe, and not looking anything like the natives or speaking their tongue, you figure the barbarian did not get far. Based upon what you\'ve seen happen to his ilk, he\'s either been killed already or captured as a slave.";
+		this.m.GoodEnding = "%name% le barbare a pris tout l\'argent qu\'il a gagné avec la compagnie et s\'est aventuré au nord. Avec son argent, il a rassemblé une bande de guerriers et conquis tant de tribus qu\'aux dernières nouvelles, il avait été nommé \'Roi du nord\'.";
+		this.m.BadEnding = "Les choses étant ce qu\'elles étaient, %name% est parti. Aux dernières nouvelles, il voyageait vers le nord. Sans le sou, avec pour seul bagage une hache, sans ressembler aux indigènes et sans parler leur langue, le barbare n\'est pas allé bien loin. Comme vous avez déjà vu ce qui est arrivé à ses semblables, il a soit déjà été tué, soit capturé comme esclave.";
 		this.m.HiringCost = 200;
 		this.m.DailyCost = 20;
 		this.m.Excluded = [

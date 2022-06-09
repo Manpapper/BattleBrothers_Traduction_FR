@@ -7,8 +7,8 @@ this.beggar_background <- this.inherit("scripts/skills/backgrounds/character_bac
 		this.m.Name = "Mendiant";
 		this.m.Icon = "ui/backgrounds/background_18.png";
 		this.m.BackgroundDescription = "Les mendiants ne sont pas les personnes les plus déterminées, et vivre dans la rue à tendance à être préjudiciable à leur santé.";
-		this.m.GoodEnding = "Having enough of all the fighting, %name% the once-beggar retired from the %companyname%. You know the man made a pretty crown in his time with the mercenary company, yet the other day you saw him out begging again. You asked if he\'d wasted all his money and he laughed. He said he\'d purchased land and was doing just fine. Then he held out his little tin and asked for a crown. You gave him two.";
-		this.m.BadEnding = "The fighting life is a rough one, and %name% the once-beggar saw fit to retire from it before it became a deadly one. Unfortunately, he went back to beggaring. Word has it that a nobleman cleaned a city of riff-raff and sent them marching north despite it being winter. Cold and hungry, %name% died on the side of a road, a tin cup frozen to his finger.";
+		this.m.GoodEnding = "Lassé de tous ces combats, %name% l\'ancien mendiant se retira de la %companyname%. Vous savez que l\'homme s\'est fait une jolie couronne pendant son temps avec la compagnie de mercenaires, et pourtant l\'autre jour vous l\'avez vu mendier encore. Vous lui avez demandé s\'il avait gaspillé tout son argent et il a ri. Il a dit qu\'il avait acheté un terrain et qu\'il se débrouillait bien. Puis il a tendu sa petite boîte et a demandé une couronne. Vous lui en avez donné deux.";
+		this.m.BadEnding = "La vie de combattant est rude, et %name% l\'ancien mendiant a jugé bon de s\'en retirer avant qu\'elle ne devienne mortelle. Malheureusement, il est retourné à la mendicité. On raconte qu\'un noble a nettoyé une ville de sa racaille et l\'a fait marcher vers le nord malgré l\'hiver. Frigorifié et affamé, %name% est mort sur le bord d\'une route, une tasse en fer blanc gelée à son doigt.";
 		this.m.HiringCost = 30;
 		this.m.DailyCost = 3;
 		this.m.Excluded = [

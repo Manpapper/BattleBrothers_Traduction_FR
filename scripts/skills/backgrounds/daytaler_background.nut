@@ -7,8 +7,8 @@ this.daytaler_background <- this.inherit("scripts/skills/backgrounds/character_b
 		this.m.Name = "Travailleur Journalier";
 		this.m.Icon = "ui/backgrounds/background_36.png";
 		this.m.BackgroundDescription = "Les travailleurs journaliers sont habitués à toutes sortes de travaux physiques, mais n\'excellent dans aucun d\'entre eux.";
-		this.m.GoodEnding = "%name% the daytaler retired from fighting and, well, he keeps working with his hands. Now he\'s back to laying bricks and carrying hay instead of slaying beasts and crushing heads. He took all his mercenary money to purchase a bit of land and settle down. While not the richest man, word has it that there is hardly a happier man in the realm.";
-		this.m.BadEnding = "%name% retired from fighting while he still had most of his fingers and toes intact. He went back to working for the nobility. Last you heard he was out {south | north | east | west} building a great tower for some nobleman. Sadly, you also heard that tower collapsed halfway through its construction with many workers going down with it.";
+		this.m.GoodEnding = "%name% le travailleur journalier s\'est retiré des combats et il continue à travailler avec ses mains. Maintenant, il est de retour pour poser des briques et transporter du foin au lieu de tuer des bêtes et écraser des têtes. Il a pris tout son argent de mercenaire pour acheter un peu de terre et s\'installer. Bien qu\'il ne soit pas le plus riche, on dit qu\'il n\'y a pas d\'homme plus heureux dans le royaume.";
+		this.m.BadEnding = "%name% s\'est retiré du combat alors qu\'il avait encore la plupart de ses doigts et orteils intacts. Il est retourné travailler pour la noblesse. Aux dernières nouvelles, il était parti vers {le sud | le nord | l\'est | l\'ouest} pour construire une grande tour pour un noble. Malheureusement, vous avez également appris que la tour s\'est effondrée à mi-chemin de sa construction, entraînant dans sa chute de nombreux ouvriers.";
 		this.m.HiringCost = 60;
 		this.m.DailyCost = 6;
 		this.m.Excluded = [

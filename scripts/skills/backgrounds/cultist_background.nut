@@ -7,8 +7,8 @@ this.cultist_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.Name = "Cultiste";
 		this.m.Icon = "ui/backgrounds/background_34.png";
 		this.m.BackgroundDescription = "Les cultistes ont une détermination à propager leur culte qui n\'a d\'égal que celle de peu de personnes.";
-		this.m.GoodEnding = "le Cultiste, %name%, left the company with a band of cloaked converts. You know not what became of him, but every so often you have dreams in which he appears. He\'s often standing by himself in a great void and there is always someone, or something, lingering in the black beyond. Every night, this image gets a little more clear, and each night you find yourself staying up later and later just to avoid dreaming at all.";
-		this.m.BadEnding = "You heard that %name%, le Cultiste, left the company at some juncture and went out to spread his faith. There\'s no telling what became of him, but there was a recent inquisition against unholy faiths and hundreds of \'men in dark cloaks with even darker intentions\' were burned at the stake across the realm.";
+		this.m.GoodEnding = "Le Cultiste, %name%, a quitté la compagnie avec une bande de convertis cagoulés. Vous ne savez pas ce qu\'il est devenu, mais de temps en temps, vous faites des rêves dans lesquels il apparaît. Il se tient souvent seul dans un grand vide et il y a toujours quelqu\'un, ou quelque chose, qui s\'attarde dans l\'au-delà noir. Chaque nuit, cette image se précise un peu plus, et chaque nuit, vous vous retrouvez à veiller de plus en plus tard pour ne pas rêver du tout.";
+		this.m.BadEnding = "Vous avez entendu dire que %name%, le Cultiste, a quitté la compagnie à un moment donné et est parti répandre sa foi. On ne sait pas ce qu\'il est devenu, mais il y a eu une récente inquisition contre les croyances impies et des centaines d\'hommes en cape sombre avec des intentions encore plus sombres ont été brûlés sur le bûcher à travers le royaume";
 		this.m.HiringCost = 50;
 		this.m.DailyCost = 6;
 		this.m.Excluded = [
