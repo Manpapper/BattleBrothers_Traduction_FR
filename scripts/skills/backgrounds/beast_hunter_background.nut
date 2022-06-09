@@ -7,8 +7,8 @@ this.beast_hunter_background <- this.inherit("scripts/skills/backgrounds/charact
 		this.m.Name = "Tueur de Bêtes";
 		this.m.Icon = "ui/backgrounds/background_57.png";
 		this.m.BackgroundDescription = "Les chasseurs de bêtes sont utilisés pour chasser de manière experte les bêtes monstrueuses où qu\'elles soient.";
-		this.m.GoodEnding = "%name% a pris sa retraite de la compagnie et a acheté l\'acte d'un château abandonné. Il y commande une troupe de tueurs de bêtes qui parcourent le pays pour le protéger des monstres. La dernière fois que vous lui avez parlé, il avait une amie aux cheveux noirs qui n\'a pas apprécié votre présence, ni celle de quiconque d'ailleurs. Vous êtes sûr qu\'il est heureux.";
-		this.m.BadEnding = "Après avoir quitté la compagnie %companyname%, %name% s\'est retiré de la chasse aux bêtes et aux dernières nouvelles, il a engendré une fille albinos. Malheureusement, des rumeurs se sont rapidement répandues sur les pouvoirs surnaturels de la jeune fille et sa mère a été exécutée par le feu. Le père et l\'enfant n'ont jamais été attrapés ni revus.";
+		this.m.GoodEnding = "%name% a pris sa retraite de la compagnie et a acheté l\'acte d\'un château abandonné. Il y commande une troupe de tueurs de bêtes qui parcourent le pays pour le protéger des monstres. La dernière fois que vous lui avez parlé, il avait une amie aux cheveux noirs qui n\'a pas apprécié votre présence, ni celle de quiconque d\'ailleurs. Vous êtes sûr qu\'il est heureux.";
+		this.m.BadEnding = "Après avoir quitté la compagnie %companyname%, %name% s\'est retiré de la chasse aux bêtes et aux dernières nouvelles, il a engendré une fille albinos. Malheureusement, des rumeurs se sont rapidement répandues sur les pouvoirs surnaturels de la jeune fille et sa mère a été exécutée par le feu. Le père et l\'enfant n\'ont jamais été attrapés ni revus.";
 		this.m.HiringCost = 150;
 		this.m.DailyCost = 15;
 		this.m.Excluded = [

@@ -7,7 +7,7 @@ this.belly_dancer_background <- this.inherit("scripts/skills/backgrounds/charact
 		this.m.Name = "Danseur du ventre";
 		this.m.Icon = "ui/backgrounds/background_64.png";
 		this.m.BackgroundDescription = "";
-		this.m.GoodEnding = "%name% la danseuse du ventre du sud a quitté la compagnie à temps. Si ses... particularités faisaient de lui un excellent soldat, ce n\'était pas la passion de sa vie. Divertir, par des mouvements rythmés, confus et érotiques, c'est ce qu\'il voulait. Aux dernières nouvelles, il était à la cour d\'un Vizir où il sert non seulement d\'amuseur, mais, grâce à son séjour avec la compagnie %companyname%, également de conseiller en matière de mariage.";
+		this.m.GoodEnding = "%name% la danseuse du ventre du sud a quitté la compagnie à temps. Si ses... particularités faisaient de lui un excellent soldat, ce n\'était pas la passion de sa vie. Divertir, par des mouvements rythmés, confus et érotiques, c\'est ce qu\'il voulait. Aux dernières nouvelles, il était à la cour d\'un Vizir où il sert non seulement d\'amuseur, mais, grâce à son séjour avec la compagnie %companyname%, également de conseiller en matière de mariage.";
 		this.m.BadEnding = "Comme la compagnie n\'a pas eu le succès que vous espériez, beaucoup ont quitté ses rangs. La danseuse du ventre du sud %name% les a rejoints. Malheureusement, il a cherché à exercer son métier dans le nord, pensant qu\'il pourrait y répandre sa culture. La population indigène l\'a rapidement accusé de "sorcellerie corporelle non réglementée" et l\'a brûlé sur le bûcher.";
 		this.m.HiringCost = 0;
 		this.m.DailyCost = 20;
