@@ -621,7 +621,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success2",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% vous accueille à contrecœur. Vous savez que j\'ai des éclaireurs et des espions partout, n\'est-ce pas ? En levant vos mains vides, vous lui dites que vous n\'aviez pas l\'intention de mentir. Le "roi barbare" ne dérangera plus ces terres. Votre employeur tapote ses index l\'un contre l\'autre plusieurs fois puis hoche la tête. %SPEECH_ON%Votre honnêteté est rafraîchissante, bien que je doive avouer qu\'il est assez malheureux que cet homme et sa bande vivent encore. Cela dit, tous les rapports suggèrent qu\'ils s\'en vont, donc je suppose que votre travail est accompli malgré tout, grosse tête de païen ou pas. Votre salaire, comme convenu.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% vous accueille à contrecœur. Vous savez que j\'ai des éclaireurs et des espions partout, n\'est-ce pas ? En levant vos mains vides, vous lui dites que vous n\'aviez pas l\'intention de mentir. Le \"roi barbare\" ne dérangera plus ces terres. Votre employeur tapote ses index l\'un contre l\'autre plusieurs fois puis hoche la tête. %SPEECH_ON%Votre honnêteté est rafraîchissante, bien que je doive avouer qu\'il est assez malheureux que cet homme et sa bande vivent encore. Cela dit, tous les rapports suggèrent qu\'ils s\'en vont, donc je suppose que votre travail est accompli malgré tout, grosse tête de païen ou pas. Votre salaire, comme convenu.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,

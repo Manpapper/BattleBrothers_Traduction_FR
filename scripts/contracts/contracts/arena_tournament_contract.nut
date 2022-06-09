@@ -941,7 +941,7 @@ this.arena_tournament_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Failure2",
-			Title = "Dans l\'Arène"",
+			Title = "Dans l\'Arène",
 			Text = "{[img]gfx/ui/events/event_155.png[/img]L\'heure de votre combat d\'arène est passée, mais vous ne vous y êtes pas présentés. Peut-être que quelque chose de plus important s\'est présenté, ou peut-être que vous vous êtes simplement cachés comme des lâches. Quoi qu\'il en soit, votre réputation va en souffrir.",
 			Image = "",
 			Characters = [],
