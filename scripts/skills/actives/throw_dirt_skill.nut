@@ -161,7 +161,7 @@ this.throw_dirt_skill <- this.inherit("scripts/skills/skill", {
 		_targetTile.getEntity().getSkills().add(s);
 		this.Tactical.getShaker().shake(_targetTile.getEntity(), _user.getTile(), 4);
 
-		if (!_user.isHiddenToPlayer() && (_targetTile.IsVisibleForPlayer || this.knockToTile.IsVisibleForPlayer))
+		if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 		{
 			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " lance de la terre à la figure de " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " pour le distraire");
 		}

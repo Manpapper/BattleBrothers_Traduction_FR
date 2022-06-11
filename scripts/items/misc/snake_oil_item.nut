@@ -15,12 +15,36 @@ this.snake_oil_item <- this.inherit("scripts/items/item", {
 
 	function getBuyPrice()
 	{
-		return this.m.Value * this.World.State.getCurrentTown().getBeastPartsPriceMult();
+		if (this.m.IsSold)
+		{
+			return this.getSellPrice();
+		}
+
+		if (("State" in this.World) && this.World.State != null && this.World.State.getCurrentTown() != null)
+		{
+			return this.Math.max(this.getSellPrice(), this.Math.ceil(this.getValue() * this.World.State.getCurrentTown().getBeastPartsPriceMult()));
+		}
+		else
+		{
+			return this.Math.ceil(this.getValue());
+		}
 	}
 
 	function getSellPrice()
 	{
-		return this.m.Value * this.World.State.getCurrentTown().getBeastPartsPriceMult();
+		if (this.m.IsBought)
+		{
+			return this.getBuyPrice();
+		}
+
+		if (("State" in this.World) && this.World.State != null && this.World.State.getCurrentTown() != null)
+		{
+			return this.Math.floor(this.getValue() * this.World.State.getCurrentTown().getBeastPartsPriceMult());
+		}
+		else
+		{
+			return this.Math.floor(this.getValue());
+		}
 	}
 
 	function getTooltip()

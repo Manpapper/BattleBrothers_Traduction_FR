@@ -1,6 +1,6 @@
 this.oath_of_vengeance_trait <- this.inherit("scripts/skills/traits/character_trait", {
 	m = {
-		applyEffect = true
+		ApplyEffect = true
 	},
 	function create()
 	{
@@ -91,17 +91,17 @@ this.oath_of_vengeance_trait <- this.inherit("scripts/skills/traits/character_tr
 
 	function onCombatStarted()
 	{
-		this.m.applyEffect = true;
+		this.m.ApplyEffect = true;
 	}
 
 	function onCombatFinished()
 	{
-		this.m.applyEffect = false;
+		this.m.ApplyEffect = false;
 	}
 
 	function onUpdate( _properties )
 	{
-		if (!this.m.applyEffect)
+		if (!this.m.ApplyEffect)
 		{
 			return;
 		}

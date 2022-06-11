@@ -27,7 +27,7 @@ this.oath_of_distinction_trait <- this.inherit("scripts/skills/traits/character_
 			{
 				id = 10,
 				type = "text",
-				icon = "ui/icons/morale.png",
+				icon = "ui/icons/bravery.png",
 				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Resolve if there are no allies in adjacent tiles"
 			},
 			{
@@ -55,13 +55,13 @@ this.oath_of_distinction_trait <- this.inherit("scripts/skills/traits/character_
 	{
 		_properties.XPGainMult *= 1.5;
 		_properties.IsAllyXPBlocked = true;
+		local actor = this.getContainer().getActor();
 
-		if (!this.getContainer().getActor().isPlacedOnMap())
+		if (!actor.isPlacedOnMap())
 		{
 			return;
 		}
 
-		local actor = this.getContainer().getActor();
 		local myTile = actor.getTile();
 		local allies = this.Tactical.Entities.getInstancesOfFaction(actor.getFaction());
 		local isAlone = true;

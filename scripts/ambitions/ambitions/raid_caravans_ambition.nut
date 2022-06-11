@@ -16,8 +16,6 @@ this.raid_caravans_ambition <- this.inherit("scripts/ambitions/ambition", {
 
 	function getUIText()
 	{
-		this.logInfo("to raid: " + this.m.RaidsToComplete);
-		this.logInfo("raided: " + this.World.Statistics.getFlags().getAsInt("CaravansRaided"));
 		local d = 4 - (this.m.RaidsToComplete - this.World.Statistics.getFlags().getAsInt("CaravansRaided"));
 		return this.m.UIText + " (" + this.Math.min(4, d) + "/4)";
 	}

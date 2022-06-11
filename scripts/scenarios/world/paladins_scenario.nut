@@ -80,7 +80,7 @@ this.paladins_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 		shield.onPaintInCompanyColors();
 		items.equip(shield);
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
-		this.World.Assets.m.MoralReputation = 60.0;
+		this.World.Assets.addMoralReputation(10.0);
 
 		if (!this.Const.DLC.Desert)
 		{
@@ -238,9 +238,9 @@ this.paladins_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 			return;
 		}
 
-		if (_killer != null && (_killer.getFaction() != this.Const.Faction.Player && _killer.getFaction() != this.Const.Faction.PlayerAnimals) && _actor.isPlayerControlled())
+		if (_killer == null || _killer.getFaction() != this.Const.Faction.Player && _killer.getFaction() != this.Const.Faction.PlayerAnimals)
 		{
-			if (_actor.isPlayerControlled && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_fortification")
+			if (_actor.isPlayerControlled() && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_fortification")
 			{
 				this.World.Statistics.getFlags().increment("OathtakersBrosDead");
 			}
@@ -250,7 +250,7 @@ this.paladins_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 
 		if (this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_honor")
 		{
-			if (_actor.getTile().getZoneOfControlCountOtherThan(_actor.getAlliedFactions()) == 1)
+			if (_actor.getTile().getZoneOfControlCountOtherThan(_actor.getAlliedFactions()) <= 1)
 			{
 				this.World.Statistics.getFlags().increment("OathtakersSoloKills");
 			}

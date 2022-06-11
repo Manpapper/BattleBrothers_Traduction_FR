@@ -352,7 +352,7 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 		]);
 		_vars.push([
 			"monk",
-			this.m.Monk.getNameOnly()
+			this.m.Monk != null ? this.m.Monk.getNameOnly() : ""
 		]);
 		_vars.push([
 			"townname",

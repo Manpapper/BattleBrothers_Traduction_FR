@@ -138,6 +138,7 @@ this.raid_caravan_contract <- this.inherit("scripts/contracts/contract", {
 				party.setDiscovered(true);
 				party.setDescription("A caravan with armed escorts transporting something worth protecting between settlements.");
 				party.setFootprintType(this.Const.World.FootprintsType.Caravan);
+				party.getFlags().set("IsCaravan", true);
 				party.setAttackableByAI(false);
 				party.getFlags().add("ContractCaravan");
 				this.Contract.m.Target = this.WeakTableRef(party);

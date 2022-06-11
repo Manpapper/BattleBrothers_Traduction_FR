@@ -1245,6 +1245,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 				party.setDiscovered(true);
 				party.setDescription("A caravan with armed escorts transporting provisions, supplies and equipment between settlements.");
 				party.setFootprintType(this.Const.World.FootprintsType.Caravan);
+				party.getFlags().set("IsCaravan", true);
 				party.setAttackableByAI(false);
 				party.getFlags().add("ContractSupplies");
 				this.Contract.m.Destination = this.WeakTableRef(party);

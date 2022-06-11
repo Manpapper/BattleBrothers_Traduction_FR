@@ -30,37 +30,37 @@ this.oath_of_dominion_trait <- this.inherit("scripts/skills/traits/character_tra
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve when fighting Beasts"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve when fighting beasts"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Skill when fighting Beasts"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Skill when fighting beasts"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Skill when fighting Beasts"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Skill when fighting beasts"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve when not fighting Beasts"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve when not fighting beasts"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee Skill when not fighting Beasts"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee Skill when not fighting beasts"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Ranged Skill when not fighting Beasts"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Ranged Skill when not fighting beasts"
 			}
 		];
 	}

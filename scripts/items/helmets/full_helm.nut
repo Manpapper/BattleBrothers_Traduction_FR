@@ -37,6 +37,11 @@ this.full_helm <- this.inherit("scripts/items/helmets/helmet", {
 		this.m.Vision = -3;
 	}
 
+	function setPlainVariant()
+	{
+		this.setVariant(4);
+	}
+
 	function onPaint( _color )
 	{
 		switch(_color)

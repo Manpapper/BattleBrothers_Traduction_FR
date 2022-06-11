@@ -124,7 +124,7 @@ this.glutton_eats_apple_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"glutton",
-			this.m.Glutton.getName()
+			this.m.Glutton.getNameOnly()
 		]);
 		_vars.push([
 			"otherbrother",

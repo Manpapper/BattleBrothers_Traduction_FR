@@ -940,7 +940,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 							{
 								if (this.m.Player.getDistanceTo(entity) <= this.Const.World.CombatSettings.CombatPlayerDistance)
 								{
-									if (forceAttack)
+									if (forceAttack && entity.isAlliedWith(this.m.Player))
 									{
 										local f = this.World.FactionManager.getFaction(entity.getFaction());
 										f.addPlayerRelation(-f.getPlayerRelation(), "Attacked them");
@@ -3320,6 +3320,11 @@ this.world_state <- this.inherit("scripts/states/state", {
 			switch(_key.getKey())
 			{
 			case 41:
+				if (this.m.WorldMenuScreen.isAnimating())
+				{
+					return false;
+				}
+
 				if (this.toggleMenuScreen())
 				{
 					return true;

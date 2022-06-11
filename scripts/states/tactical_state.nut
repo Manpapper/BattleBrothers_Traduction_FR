@@ -3539,6 +3539,11 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 				{
 					if (!this.m.MenuStack.hasBacksteps() || this.m.TacticalMenuScreen.isVisible())
 					{
+						if (this.m.TacticalMenuScreen.isAnimating())
+						{
+							return false;
+						}
+
 						if (this.toggleMenuScreen())
 						{
 							return true;

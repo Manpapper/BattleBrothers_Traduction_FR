@@ -449,7 +449,10 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 				if (_combatID == "NighttimeEncounter")
 				{
 					this.Flags.set("IsNighttimeEncounter", false);
-					this.Flags.set("IsNighttimeEncounterAfermath", true);
+					if (!this.Flags.get("IsNighttimeEncounterLost"))
+					{
+						this.Flags.set("IsNighttimeEncounterAfermath", true);
+					}
 				}
 			}
 
@@ -1168,6 +1171,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 					Text = "Damn it!",
 					function getResult()
 					{
+						this.Flags.set("IsNighttimeEncounterLost", false);
 						this.Flags.set("IsNighttimeEncounter", false);
 						this.Flags.set("IsReliefAttack", true);
 						this.Flags.set("WaitUntil", this.Time.getVirtualTimeF() + this.Math.rand(15, 30));

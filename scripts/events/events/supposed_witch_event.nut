@@ -399,6 +399,11 @@ this.supposed_witch_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
+		if (this.Const.DLC.Desert && currentTile.SquareCoords.Y <= this.World.getMapSize().Y * 0.2)
+		{
+			return;
+		}
+
 		local brothers = this.World.getPlayerRoster().getAll();
 		local candidate_witchhunter = [];
 		local candidate_monk = [];
