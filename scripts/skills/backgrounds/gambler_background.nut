@@ -7,8 +7,8 @@ this.gambler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.Name = "Parieur";
 		this.m.Icon = "ui/backgrounds/background_20.png";
 		this.m.BackgroundDescription = "Les parieurs ont tendance à avoir des réflexes rapides et une plus grande détermination que leurs adversaires à la table de jeu.";
-		this.m.GoodEnding = "It was perhaps a risk to take a gambler like %name% into your ranks. Now, many days later it\'s obvious you made the right choice. Last you heard, he was still with the company and uses his earnings to enrich his habits. Rumor has it that, through all his winnings, he\'s secretly become one of the richest men in all the land. You think it\'s a bunch of hogwash, but a surprising number of mayors have become suddenly lax on gaming...";
-		this.m.BadEnding = "%name% the gambler retired from the declining company and returned to his gambling ways. He quickly acquired great debts he could not pay. You saw him begging on a street corner with one of his hands missing and gaps in his teeth. You dropped a few crowns into his tin and said a few words, but he did not recognize you.";
+		this.m.GoodEnding = "C\'était peut-être un risque de prendre un joueur comme %name% dans vos rangs. Mais avec le recul, il est évident que vous avez fait le bon choix. Aux dernières nouvelles, il est toujours dans la compagnie et utilise ses gains pour s\'enrichir. La rumeur dit que, grâce à ses gains, il est devenu secrètement l\'un des hommes les plus riches du pays. Vous pensez que c\'est un tas de conneries, mais un nombre surprenant de maires sont devenus soudainement laxistes sur les jeux...";
+		this.m.BadEnding = "%name% le parieur s\'est retiré de la société en déclin et a repris ses habitudes de jeu. Il a rapidement acquis de grandes dettes qu\'il ne pouvait pas payer. Vous l\'avez vu mendier au coin d\'une rue avec une main en moins et des trous à la place des dents. Vous avez déposé quelques couronnes dans sa boîte et dit quelques mots, mais il ne vous a pas reconnu.";
 		this.m.HiringCost = 60;
 		this.m.DailyCost = 6;
 		this.m.Excluded = [

@@ -4,7 +4,7 @@ this.pimp_background <- this.inherit("scripts/skills/backgrounds/character_backg
 	{
 		this.character_background.create();
 		this.m.ID = "background.pimp";
-		this.m.Name = "Pimp";
+		this.m.Name = "Proxénète";
 		this.m.Icon = "ui/backgrounds/background_56.png";
 		this.m.HiringCost = 60;
 		this.m.DailyCost = 6;

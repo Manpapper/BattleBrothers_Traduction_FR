@@ -7,8 +7,8 @@ this.fisherman_background <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.Name = "Pêcheur";
 		this.m.Icon = "ui/backgrounds/background_15.png";
 		this.m.BackgroundDescription = "Les pêcheurs sont habitués au travail physique.";
-		this.m.GoodEnding = "%name% retired from fighting and returned to his fishing ventures. A huge storm ran up the shores, destroying every skiff and drifter - except that wily fisherman\'s! The only boat afloat, %name%\'s business boomed. He lives a comfortable life waking up to a nice beachfront view every morning.";
-		this.m.BadEnding = "With the fighting career going so poorly, %name% decided to retire from the field and return to fishing. He went missing at sea after an enormous storm wrecked the shorelines.";
+		this.m.GoodEnding = "%name% s\'est retiré des combats et est retourné à ses activités de pêche. Une énorme tempête s\'est abattue sur les côtes, détruisant toutes les embarcations, sauf celle de ce pêcheur rusé! Seul bateau à flot, les affaires de %name% ont explosé. Il vit une vie confortable en se réveillant chaque matin avec une belle vue sur la plage.";
+		this.m.BadEnding = "La carrière de combattant se déroulant si mal, %name% décide de se retirer du terrain et de retourner à la pêche. Il a disparu en mer après qu\'une énorme tempête ait ravagé les rivages.";
 		this.m.HiringCost = 65;
 		this.m.DailyCost = 7;
 		this.m.Excluded = [

@@ -4,7 +4,7 @@ this.orc_slayer_background <- this.inherit("scripts/skills/backgrounds/character
 	{
 		this.character_background.create();
 		this.m.ID = "background.orc_slayer";
-		this.m.Name = "Orc Slayer";
+		this.m.Name = "Tueur d\'orcs";
 		this.m.Icon = "ui/backgrounds/background_55.png";
 		this.m.HiringCost = 200;
 		this.m.DailyCost = 25;
@@ -69,7 +69,7 @@ this.orc_slayer_background <- this.inherit("scripts/skills/backgrounds/character
 
 	function onBuildDescription()
 	{
-		return "%name% doesn\'t talk much about himself. He just wants to kill orcs and goblins which, given the state of things, makes him a perfect fit for the company. If he\'s true to his word, he\'ll leave as soon as the invasion is taken care of.";
+		return "%name% ne parle pas beaucoup de lui. Il veut juste tuer des orcs et des gobelins, ce qui, vu l\'état des choses, fait de lui le candidat idéal pour la compagnie. S\'il est fidèle à sa parole, il partira dès que l\'invasion sera terminée.";
 	}
 
 	function onSetAppearance()

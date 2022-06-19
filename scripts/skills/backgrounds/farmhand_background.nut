@@ -7,8 +7,8 @@ this.farmhand_background <- this.inherit("scripts/skills/backgrounds/character_b
 		this.m.Name = "Fermier";
 		this.m.Icon = "ui/backgrounds/background_09.png";
 		this.m.BackgroundDescription = "Les fermiers sont habitués à un travail physique difficile.";
-		this.m.GoodEnding = "The former farmhand, %name%, retired from the %companyname%. The money he made was put toward purchasing a bit of land. He spends the rest of his days happily farming and starting a family with way too many children.";
-		this.m.BadEnding = "The former farmhand, %name%, soon left the %companyname%. He purchased a bit of land out {south | north | east | west} and was doing quite well for himself - until noble soldiers hanged him from a tree for refusing to hand over all his crops.";
+		this.m.GoodEnding = "L\'ancien fermier, %name%, a pris sa retraite de la compagnie %companyname%. L\'argent qu\'il a gagné a servi à acheter un bout de terrain. Il passe le reste de ses jours à cultiver et à fonder une famille avec beaucoup trop d\'enfants.";
+		this.m.BadEnding = "L\'ancien fermier, %name%, a rapidement quitté la compagnie %companyname%. Il a acheté un peu de terre { au sud | au nord | à l\'est | à l\'ouest} et s\'en sortait plutôt bien - jusqu\'à ce que des soldats nobles le pendent à un arbre pour avoir refusé de remettre toutes ses récoltes.";
 		this.m.HiringCost = 90;
 		this.m.DailyCost = 10;
 		this.m.Excluded = [

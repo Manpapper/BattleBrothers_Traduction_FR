@@ -4,11 +4,11 @@ this.kings_guard_background <- this.inherit("scripts/skills/backgrounds/characte
 	{
 		this.character_background.create();
 		this.m.ID = "background.kings_guard";
-		this.m.Name = "King\'s Guard";
+		this.m.Name = "Guarde du Roi";
 		this.m.Icon = "ui/backgrounds/background_59.png";
 		this.m.BackgroundDescription = "";
-		this.m.GoodEnding = "You thought %name% a simple peasant when you found him freezing in the wastes of the north. As it turned out, he was very much a King\'s Guard, not only in title but in action. He fought like a man protecting his liege from the world at large. Thankfully, for a time, that \'liege\' happened to be you. Last you heard he traveled to the southern realms and is protecting an upstart nomad king trying to overthrow the local Viziers.";
-		this.m.BadEnding = "You never truly found out which king %name% supposedly \'guarded\' in his days before joining the %companyname%, but it matters not now. After your abrupt retirement, the King\'s Guard took himself to the southern deserts. He served a Vizier for a time but failed to protect the royal from a concubine\'s poison. For punishment, %name%\'s equipment was melted into a pot and poured down his throat.";
+		this.m.GoodEnding = "Vous pensiez que %name% était un simple paysan quand vous l\'avez trouvé gelé dans les plaines du nord. Il s\'est avéré qu\'il était bien un Garde du Roi, non seulement via son titre mais aussi sur le terrain. Il s\'est battu comme un homme protégeant son seigneur contre le monde qui l\'entoure. Heureusement, pendant un temps, ce \"mensonge\" s\'est avéré être vous. Aux dernières nouvelles, il a voyagé dans les royaumes du sud et protège un roi nomade arriviste qui tente de renverser les Vizirs locaux.";
+		this.m.BadEnding = "En son temps, vous n\'avez jamais vraiment su quel roi %name% avait soi-disant \"gardé\" avant de rejoindre la compagnie %companyname%, mais ça n\'a pas d\'importance maintenant. Après votre retraite abrupte, le garde du roi s\'est rendu dans les déserts du sud. Un vizir à été empoisonné par sa concubine, malheureusement et en tant que garde, il n\'a pas réussi à le protéger. Pour le punir, tout l\'équipement de %name% a été fondu dans un pot et versé dans sa gorge.";
 		this.m.HiringCost = 0;
 		this.m.DailyCost = 30;
 	}

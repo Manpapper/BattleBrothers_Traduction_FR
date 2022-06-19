@@ -4,7 +4,7 @@ this.lindwurm_slayer_background <- this.inherit("scripts/skills/backgrounds/char
 	{
 		this.character_background.create();
 		this.m.ID = "background.lindwurm_slayer";
-		this.m.Name = "Lindwurm Slayer";
+		this.m.Name = "Tueur de Lindwurm";
 		this.m.Icon = "ui/backgrounds/background_71.png";
 		this.m.DailyCost = 28;
 		this.m.Excluded = [

@@ -4,7 +4,7 @@ this.pacified_flagellant_background <- this.inherit("scripts/skills/backgrounds/
 	{
 		this.character_background.create();
 		this.m.ID = "background.pacified_flagellant";
-		this.m.Name = "Pacified Flagellant";
+		this.m.Name = "Flagellant apaisé";
 		this.m.Icon = "ui/backgrounds/background_13.png";
 		this.m.HiringCost = 60;
 		this.m.DailyCost = 5;
@@ -31,7 +31,7 @@ this.pacified_flagellant_background <- this.inherit("scripts/skills/backgrounds/
 
 	function onBuildDescription()
 	{
-		return "After a long talk with a monk, %name% was converted to a more peaceful means of expressing his faith. Now when he picks up a weapon you can be assured it will only be pointed at someone other than himself.";
+		return "Après une longue discussion avec un moine, %name% s\'est converti à un moyen plus pacifique d\'exprimer sa foi. Désormais, lorsqu\'il prend une arme, vous pouvez être sûr qu\'elle ne sera pointée que sur quelqu\'un d\'autre que lui.";
 	}
 
 	function onAddEquipment()

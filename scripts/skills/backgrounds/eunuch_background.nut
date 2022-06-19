@@ -7,8 +7,8 @@ this.eunuch_background <- this.inherit("scripts/skills/backgrounds/character_bac
 		this.m.Name = "Eunuque";
 		this.m.Icon = "ui/backgrounds/background_52.png";
 		this.m.BackgroundDescription = "Le fait que les eunuques ne puissent pas engendrer d\'enfants est probablement une préoccupation secondaire pour une compagnie de mercenaires.";
-		this.m.GoodEnding = "For %name%, some things would just always come up a little short. But that didn\'t stop the eunuch from enjoying himself. Retiring from the %companyname% with a large pile of crowns, and completely devoid of the allures of women, the man went on to live a wonderful, extremely focused life.";
-		this.m.BadEnding = "It\'s said that %name% the eunuch departed from the company shortly after you did. He traveled the lands, broke and broken, wasting his scant crowns on ale and wenches. Insulted by a whore for his cockless nature, the drunken and enraged eunuch stabbed the woman in the eye with a goat horn. Still inebriated when the constable found him, the confused and bewildered eunuch was stripped, hanged, and mutilated by the townspeople before having his body fed to pigs.";
+		this.m.GoodEnding = "Pour %name%, il y a toujours des choses qui manquent un peu. Mais cela n\'a pas empêché l\'eunuque de s\'amuser. S\'étant éloigné de la compagnie %companyname% avec un gros tas de couronnes, et étant complètement dépourvu de l\'attrait des femmes, l\'homme a continué à vivre une vie merveilleuse et extrêmement intense.";
+		this.m.BadEnding = "Il se dit que %name% l\'eunuque a quitté la compagnie peu de temps après vous. Il a parcouru le pays, fauché et brisé, gaspillant ses maigres couronnes en bière et en femmes. Insulté par une prostituée pour son manque d\'assurance, l\'eunuque ivre et furieux a poignardé la femme dans l\'œil avec une corne de chèvre. Encore en état d\'ébriété lorsque la garde l\'a trouvé, l\'eunuque, confus et désorienté, a été dépouillé, pendu et mutilé par les habitants de la ville avant d\'être donné en pâture aux porcs.";
 		this.m.HiringCost = 60;
 		this.m.DailyCost = 6;
 		this.m.Excluded = [

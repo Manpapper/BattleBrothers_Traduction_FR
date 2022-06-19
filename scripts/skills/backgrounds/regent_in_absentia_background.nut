@@ -4,7 +4,7 @@ this.regent_in_absentia_background <- this.inherit("scripts/skills/backgrounds/c
 	{
 		this.character_background.create();
 		this.m.ID = "background.regent_in_absentia";
-		this.m.Name = "Regent in Absenta";
+		this.m.Name = "Régent d\'Absenta";
 		this.m.Icon = "ui/backgrounds/background_06.png";
 		this.m.HiringCost = 135;
 		this.m.DailyCost = 17;
@@ -41,7 +41,7 @@ this.regent_in_absentia_background <- this.inherit("scripts/skills/backgrounds/c
 
 	function onBuildDescription()
 	{
-		return "{%name% is no longer disowned by his royal family, yet his allegiance is now with the %companyname%. Despite not returning home to his lineage, you know that deep down he is emboldened by the fact that he is back in his natural bloodline.}";
+		return "{%name% n\'est plus désavoué par sa famille royale, mais son allégeance va désormais à la compagnie %companyname%. Bien qu\'il ne soit pas retourné dans sa famille royale, vous savez qu\'au fond de lui, il appartiendra toujours à sa lignée.}";
 	}
 
 	function onAddEquipment()

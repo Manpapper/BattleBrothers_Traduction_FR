@@ -7,8 +7,8 @@ this.gravedigger_background <- this.inherit("scripts/skills/backgrounds/characte
 		this.m.Name = "Fossoyeur";
 		this.m.Icon = "ui/backgrounds/background_28.png";
 		this.m.BackgroundDescription = "Les fossoyeurs sont habitués au travail physique et à manipuler les morts.";
-		this.m.GoodEnding = "With the great successes of the %companyname%, %name% the gravedigger got continued practice in his trade. As the crowns began to stack, he eventually left the company and returned to the graveyards. Last you heard, he had retired to digging holes again and was happily raising a family of sextons.";
-		this.m.BadEnding = "The way you heard things, %name% the gravedigger was one of the last men to leave the %companyname%. With hardly a crown to his name, he slipped hard into drinking and last you heard his body was found in a muddied gully.";
+		this.m.GoodEnding = "Grâce aux nombreux succès de la compagnie %companyname%, %name% le fossoyeur a pu continuer à pratiquer son métier. Comme les couronnes ont commencé à s\'empiler, il a fini par quitter la compagnie et est retourné aux cimetières. Aux dernières nouvelles, il s\'était remis à creuser des trous et élevait joyeusement une famille de sacristains.";
+		this.m.BadEnding = "D\'après ce que tu as entendu, %name% le fossoyeur était l\'un des derniers hommes à quitter la compagnie %companyname%. Avec à peine une couronne en poche, il a sombré dans la boisson et aux dernières nouvelles, son corps a été retrouvé dans un ravin boueux.";
 		this.m.HiringCost = 50;
 		this.m.DailyCost = 5;
 		this.m.Excluded = [

@@ -4,7 +4,7 @@ this.monk_turned_flagellant_background <- this.inherit("scripts/skills/backgroun
 	{
 		this.character_background.create();
 		this.m.ID = "background.monk_turned_flagellant";
-		this.m.Name = "Monk turned Flagellant";
+		this.m.Name = "Moine devenu Flagellant";
 		this.m.Icon = "ui/backgrounds/background_26.png";
 		this.m.HiringCost = 60;
 		this.m.DailyCost = 5;
@@ -31,7 +31,7 @@ this.monk_turned_flagellant_background <- this.inherit("scripts/skills/backgroun
 
 	function onBuildDescription()
 	{
-		return "The world was too dark for %name% to continue his ways. A talk with a flagellant showed him that the old gods are not happy with man\'s pursuits of justice through reasonable means. Now the once-monk can be found whipping himself, bleeding righteousness into the world one strike at a time.";
+		return "Le monde était trop sombre pour que %name% poursuive sa route. Ayant toujours appliqué la justice par des moyens raisonnables, une discussion avec un flagellant lui a révélé que les anciens dieux ne sont pas satisfaits. Aujourd\'hui, on peut trouver l\'ancien moine en train de se fouetter lui-même, répandant la justice dans le monde, coup après coup.";
 	}
 
 	function onAdded()

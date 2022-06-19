@@ -7,8 +7,8 @@ this.disowned_noble_background <- this.inherit("scripts/skills/backgrounds/chara
 		this.m.Name = "Noble Déshérité";
 		this.m.Icon = "ui/backgrounds/background_08.png";
 		this.m.BackgroundDescription = "Les nobles déshérités ont souvent bénéficié d\'un entraînement au combat au corps à corps à la cour.";
-		this.m.GoodEnding = "A noble at heart, the disowned nobleman %name% returned to his family. Word has it he kicked in the doors and demanded a royal seat. An usurper challenged him in combat and, well, %name% learned a lot in his days with the %companyname% and he now sits on a very, very comfortable throne.";
-		this.m.BadEnding = "A man of nobility at heart, %name% the disowned noble returned to his family home. Word has it an usurper arrested him at the gates. His head currently rests on a pike with crows for a crown.";
+		this.m.GoodEnding = "Un noble de cœur, le noble désavoué %name% est retourné dans sa famille. On dit qu\'il a défoncé les portes et exigé un siège royal. Un usurpateur l\'a défié au combat mais %name% avait beaucoup appris pendant ses jours avec la compagnie %companyname% et il est maintenant assis sur un trône très, très confortable.";
+		this.m.BadEnding = "Un homme de cœur et de noblesse, %name% le noble désavoué est retourné dans sa maison familiale. On dit qu\'un usurpateur l\'a arrêté aux portes. Sa tête repose actuellement sur une pique avec des corbeaux en guise de couronne.";
 		this.m.HiringCost = 135;
 		this.m.DailyCost = 17;
 		this.m.Excluded = [

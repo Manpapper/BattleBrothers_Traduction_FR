@@ -7,8 +7,8 @@ this.gladiator_background <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.Name = "Gladiateur";
 		this.m.Icon = "ui/backgrounds/background_61.png";
 		this.m.BackgroundDescription = "Les gladiateurs coûtent cher, mais une vie dans l\'arène les a forgés en combattants compétents.";
-		this.m.GoodEnding = "You thought that %name% the gladiator would return to the arenas as you thought he might. However, news from the south speaks of an uprising of indebted and gladiators alike. Unlike previous revolts, this one has viziers swinging from rooftops and slavers being lynched in the streets. The general upheaval is apparently about to sit the once-ringfighter as a legitimate powerbroker in the region.";
-		this.m.BadEnding = "The call of the crowd was too loud for the gladiator %name%. After your quick retirement from the unsuccessful %companyname%, the fighter returned to the southern kingdoms\' fighting arenas. Unfortunately, the wear and tear of his time with mercenaries slowed him a step and he was mortally slain by a half-starved slave wielding a pitchfork and a net.";
+		this.m.GoodEnding = "Vous pensiez que %name% le gladiateur reviendrait dans les arènes comme prévu. Cependant, des nouvelles du sud parlent d\'un soulèvement de personnes endettées et de gladiateurs. Contrairement aux révoltes précédentes, celle-ci voit des vizirs se balancer du haut des toits et des esclavagistes se faire lyncher dans les rues. Le bouleversement général est apparemment sur le point d\'asseoir le combattant d\'autrefois comme un détenteur légitime du pouvoir dans la région.";
+		this.m.BadEnding = "L\'appel de la foule était trop fort pour le gladiateur %name%. Après l\'échec de la compagnie %companyname% et de votre retaite forçée, le combattant est retourné dans les arènes de combat des royaumes du sud. Malheureusement, le temps passé avec les mercenaires l\'a usé et ramolli et il a été mortellement tué par un esclave à moitié affamé maniant une fourche et un filet.";
 		this.m.HiringCost = 200;
 		this.m.DailyCost = 35;
 		this.m.Excluded = [
