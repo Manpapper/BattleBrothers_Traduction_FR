@@ -132,7 +132,7 @@ gt.Const.Strings.Difficulty <- [
 	"Expert"
 ];
 gt.Const.Strings.EntityName <- [
-	"Nécromanciens",
+	"Nécromancien",
 	"Revenant",
 	"Revenant en armure",
 	"Héro déchu",
@@ -235,7 +235,7 @@ gt.Const.Strings.EntityName <- [
 	"Citoyen",
 	"Le Gardien du Savoir (Lorekeeper)",
 	"Apparition du Gardien du Savoir",
-	"Phylactères",
+	"Phylactère",
 	"Chasseur de trésors (perdu ? todo)",
 	"Crâne hurlant",
 	"Oathbringer"
