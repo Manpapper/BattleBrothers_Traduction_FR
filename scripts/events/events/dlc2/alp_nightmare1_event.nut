@@ -10,13 +10,13 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 300.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{The men are talking around the campfire when %spiderbro% suddenly jumps to his feet screaming. He bounds backward, and lit by the flames you see a spider the size of a helmet glommed onto his boot!}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{Les hommes discutent autour du feu de camp quand %spiderbro% se lève soudainement en hurlant. Il bondit en arrière, et éclairé par les flammes, on voit une araignée de la taille d'un casque collée à sa botte!}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Someone slash it off!",
+					Text = "Que quelqu'un la découpe!",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,7 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Burn it in the fire!",
+					Text = "Brûlez-la dans le feu!",
 					function getResult( _event )
 					{
 						return "D";
@@ -40,13 +40,13 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{You draw your blade, but %otherbro% has already beaten you to the punch. He yells at %spiderbro% to stand still which he reluctantly does. But the armed sellsword swings his blade far too high and cuts straight through the man\'s neck. The headless body buckles and the rest of the company screams in horror and rage.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{Vous dégainez votre lame, mais %otherbro% vous a déjà devancé. Il crie à %spiderbro% de rester immobile, ce qu\'il fait à contrecœur. Mais le mercenaire armé balance sa lame bien trop haut et coupe directement le cou de l\'homme. Le corps sans tête s\'effondre et le reste de la compagnie hurle de peur et de rage.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What the fuck!",
+					Text = "C\'est quoi ce bordel!",
 					function getResult( _event )
 					{
 						return "C";
@@ -61,7 +61,7 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 13,
 					icon = "ui/icons/kills.png",
-					text = _event.m.Victim.getName() + " has died"
+					text = _event.m.Victim.getName() + " est mort"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -89,13 +89,13 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_39.png[/img]{You run toward %otherbro% looking to choke the very life out of him, only for your hands to sift through the flesh like fingers into fog and your momentum sails you into the ground.%SPEECH_ON%Uh, you alright captain?%SPEECH_OFF%Looking back, you see a perfectly healthy %spiderbro% sitting beside the fire. Far off in the distance, something pale and sleek steps back from a tree trunk. When you blink, it\'s gone. You tell the men to mind the perimeter and then return to your tent, shaking your head and pinching your eyes.}",
+			Text = "[img]gfx/ui/events/event_39.png[/img]{Vous courez vers %otherbro% pour l\'étrangler, mais vos mains passent à travers la chair comme des doigts dans le brouillard et votre élan vous envoie au sol.%SPEECH_ON%Euh, vous allez bien capitaine?%SPEECH_OFF%En regardant en arrière, vous voyez un %spiderbro% en parfaite santé assis à côté du feu. Au loin, quelque chose de pâle et de fin s\'éloigne d\'un tronc d\'arbre. Quand vous clignez des yeux, il n\'y a plus rien. Vous dites aux hommes de surveiller le périmètre et retournez à votre tente en secouant la tête et en vous frottant les yeux.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Just a bad dream.",
+					Text = "Juste un mauvais rêve.",
 					function getResult( _event )
 					{
 						return 0;
@@ -110,13 +110,13 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%spiderbro% nods and stiffly walks toward the campfire with the spiderling looking up at him with oddly trusting eyes. He puts the critter to the pit and it is immediately set ablaze. At first, you think he\'s done it, he\'s in the clear, but the fiery spiderling sprints up the man\'s pantleg, setting his attire alight, and gloms onto his head. Set afire, the man throws his hands out and begins to run around for help. The beast burrows its fangs into his skull and the screaming ceases in sudden paralysis and the sellsword falls into the campfire like a board of wood.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%spiderbro% hoche la tête et se dirige d\'un pas ferme vers le feu de camp, l\'araignée le regardant avec des yeux étrangement confiants. Il met la créature dans le feu et celle-ci s\'enflamme immédiatement. Au début, vous pensez qu\'il a réussi, qu\'il est hors de danger, mais l\'araignée ardente s\'élance le long de la jambe du pantalon de l\'homme, enflammant sa tenue, se collant à sa tête. En proie aux flammes, l\'homme jette ses mains en l\'air et commence à courir dans tous les sens pour demander de l\'aide. La bête enfonce ses crocs dans son crâne et les hurlements cessent dans une paralysie soudaine et le soldat tombe dans le feu de camp comme une planche de bois.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Get his body out of there!",
+					Text = "Sortez son corps de là!",
 					function getResult( _event )
 					{
 						return "E";
@@ -130,7 +130,7 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 13,
 					icon = "ui/icons/kills.png",
-					text = _event.m.Victim.getName() + " has died"
+					text = _event.m.Victim.getName() + " est mort"
 				});
 				local brothers = this.World.getPlayerRoster().getAll();
 
@@ -158,13 +158,13 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_39.png[/img]{You scream at the mercenaries to do their part, but when you jump toward the campfire and %spiderbro% there\'s a wash of embers and sparks and when they fade you find the sellsword calmly sitting beside the flames.%SPEECH_ON%Ah, captain, did you say something?%SPEECH_OFF%Looking around, you find the rest of the company engaged in idle chat. When you look back at %spiderbro% you thought you saw a white shadow passing behind him, but upon second glance it is gone. You tell the men to keep a vigilant eye for intruders and then return to your tent.}",
+			Text = "[img]gfx/ui/events/event_39.png[/img]{Vous hurlez aux mercenaires de faire leur part, mais quand vous sautez vers %spiderbro%, il y a un jet de braises et d\'étincelles qui vous arrête. Quand elles s\'estompent, vous trouvez le mercenaire calmement assis à côté des flammes.%SPEECH_ON%Ah, capitaine, vous avez dit quelque chose ?%SPEECH_OFF%En regardant autour de vous, vous trouvez le reste de la compagnie en train de bavarder. Lorsque vous vous retournez vers %spiderbro%, vous pensez voir une ombre blanche passer derrière lui, mais en y regardant une seconde fois, elle a disparu. Vous dites aux hommes de garder un œil vigilant sur d\'éventuelles intrusions, puis vous retournez à votre tente.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I need to get more rest.",
+					Text = "J\'ai besoin de plus de repos.",
 					function getResult( _event )
 					{
 						return 0;

@@ -7,13 +7,13 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_11.png[/img]{You come across a goatskin tent beside the road. The hide tarps have been dipped in purple dyes and there are fresh daisies twisted into the knots of matted goat hair. An old woman with a hunchback stands outside with her hands clasped and hanging. She sizes you up and down with withered eyes.%SPEECH_ON%Ah, a sellsword. No, a captain of sellswords. Or perhaps something more. You smell of a strange odor, and not just that of a man. Do you wish to have your fortune told?%SPEECH_OFF%She gestures to inside the tent. You see a number of long, cards laid facedown across the table.}",
+			Text = "[img]gfx/ui/events/event_11.png[/img]{Vous tombez sur une tente en peau de chèvre au bord de la route. Les bâches en peau ont été trempées dans des teintures violettes, des marguerites fanées sont accrochées aux poils de chèvres, formant des nœuds sans queue ni tête. Une vieille femme bossue se tient dehors, les mains jointes et pendantes. Elle vous regarde de haut en bas avec des yeux flétris.%SPEECH_ON%Ah, un mercenaire. Non, un capitaine de mercenaires. Ou peut-être plus que ça. Vous sentez une odeur étrange, et pas seulement celle d\'un homme. Voulez-vous qu\'on vous dise la bonne aventure?%SPEECH_OFF%Elle fait un geste indiquant l\'intérieur de la tente. Vous voyez un certain nombre de longues cartes posées à plat sur la table.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Tell me my fortune, old woman.",
+					Text = "Dites-moi ce qui m'attend, vieille femme.",
 					function getResult( _event )
 					{
 						local r = this.Math.rand(1, 100);
@@ -34,7 +34,7 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I\'ll tell you yours instead: You\'re about to give us all your valuables.",
+					Text = "Je vais plutôt vous dire la vôtre: Vous êtes sur le point de nous donner tous vos objets de valeur.",
 					function getResult( _event )
 					{
 						local r = this.Math.rand(1, 100);
@@ -51,7 +51,7 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No, we\'re good.",
+					Text = "Non, c\'est bon.",
 					function getResult( _event )
 					{
 						return 0;
@@ -66,13 +66,13 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_11.png[/img]{A card reader such as this has probably done a fair bit of business, enough so that you wouldn\'t mind taking it for yourself. You order the company to pick the place apart. The woman says nothing as you move her out of the way, and she says nothing as the sellswords swarm her tent and tilt its pole to the ground. She smiles a little as they throw the goatskin tarp off to see the loot like magicians unveiling a failed trick. The smile fades as they begin to pick through her things, their boots crushing and smashing anything of no use to them. The hag shrugs and holds up two cards seemingly pulled right out of her sleeves.%SPEECH_ON%Tell me, sellsword, what do you see?%SPEECH_OFF%You take a look. The tarot cards depict a group of knights ransacking a village, and another is of a graveyard guarded by a particularly punitive keeper. You shrug and tell her she keeps those two cards tucked for events just like this and you\'re no fool to the notion of a helpless hag being runover on the road. You tell her she may have scared a few robbers with that trick, but you\'re not so easily fooled. She laughs.%SPEECH_ON%You are as wise as you are cruel.%SPEECH_OFF%Damn straight. Now let\'s see what the company has found.}",
+			Text = "[img]gfx/ui/events/event_11.png[/img]{Cette gourde doit avoir pas mal de choses de valeurs depuis le temps, assez pour que vous puissiez vous faire plaisir. Vous ordonnez à la compagnie de fouiller l\'endroit. La femme ne dit rien lorsque vous l\'écartez du chemin, et encre moins lorsque les mercenaires envahissent sa tente et renversent son mât au sol. Elle sourit un peu lorsqu\'ils jettent la bâche en peau de chèvre pour voir le butin, comme des magiciens dévoilant un tour raté. Leurs sourires s\'effacent lorsqu\'ils commencent à fouiller dans ses affaires, leurs bottes écrasant et brisant tout ce qui ne leur est pas utile. La sorcière hausse les épaules et brandit deux cartes qui semblent sorties tout droit de ses manches.%SPEECH_ON%Dites-moi, mercenaire, que voyez-vous?%SPEECH_OFF%Vous jetez un coup d\'œil. Les cartes de tarot représentent un groupe de chevaliers saccageant un village, et une autre représente un cimetière gardé par un gardien particulièrement sévère. Vous haussez les épaules et lui dites qu\'elle garde ce tour de passe-passe comme moyen de défense, une sorcière seule n\'a pas d\'autre solution de toute façon. Vous lui dites qu\'elle a peut-être effrayé quelques voleurs avec ce tour, mais que vous n\'êtes pas né de la dernière pluie. Elle rit.%SPEECH_ON%Vous êtes aussi sage que cruel.%SPEECH_OFF%Exactement. Maintenant, voyons ce que la compagnie a trouvé.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Reprenons la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -95,13 +95,13 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_11.png[/img]{You take a good look around you. If the hag had an ambush waiting somewhere you certainly don\'t see it. With a wave of your hand, you order the company to ransack her place. A few brothers slide into her tent and start picking it apart, flipping tables and yanking out drawers. The old woman steps aside, and keeps stepping, and keeps stepping. She\'s... grinning?%SPEECH_ON%Ay, take a look at this thing!%SPEECH_OFF%You turn back to see one of the mercenaries grabbing an orb that hangs from the tent ceiling. He yanks it down. The chain goes taut, snags, and there\'s a clank of a wire snapping loose. Blue sparks sidewind up the chain and zip down the length right into the orb. You don\'t hear a thing. The tent rips apart in a burst of blue flame and the pole punches into the sky and the silhouettes of sellswords stumble through the hot smoke. Grey and burning daisies twist through the air. You augur your ears to get your hearing back and then look to see where the woman is, but she\'s gone. Pursing your lips, you rush to see what damage has been done.}",
+			Text = "[img]gfx/ui/events/event_11.png[/img]{Vous regardez attentivement autour de vous. Si la sorcière a préparé une embuscade quelque part, vous ne voyez pas d\'où cela pourrait venir. D\'un geste de la main, vous ordonnez à la compagnie de piller sa propriété. Quelques frères se glissent dans sa tente et commencent à la démolir, retournant les tables et arrachant les tiroirs. La vieille femme fait un pas de côté, et un autre, et encore un autre. Elle... sourit?%SPEECH_ON%Hey, jettez un coup d\'oeil à ce truc!%SPEECH_OFF%Vous vous retournez pour voir l\'un des mercenaires saisir un orbe suspendu au plafond de la tente. Il le décroche d\'un coup sec. La chaîne se tend et on entend le bruit d\'un fil qui se détache. Des étincelles bleues remontent le long de la chaîne et descendent jusqu\'à l\'orbe. Il ne se passe rien. La tente se disloque dans une explosion de flammes bleues, le mât est éjecté loin dans le ciel et les mercenaires titubent, pris dans une fumée chaude. Des marguerites grises et brûlantes virevoltent dans l\'air. Vous protégez vos oreilles pour retrouver l\'ouïe puis vous cherchez la femme du regard mais elle s\'est déjà enfuie. En pinçant vos lèvres, vous vous précipitez pour voir les dégats.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Reprenons la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -122,7 +122,7 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/icons/days_wounded.png",
-							text = bro.getName() + " suffers light wounds"
+							text = bro.getName() + " souffre de blessures légères"
 						});
 					}
 				}
@@ -131,13 +131,13 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_11.png[/img]{The tent closes shut as you step in. An orange glow flicks and bobs from a lantern. Groaning, the old woman leans into it with a candlestick and broadens the light to a table and two chairs. She motions toward them.%SPEECH_ON%Sit.%SPEECH_OFF%You sit. She sits. She smacks her lips over toothless gums and nods and begins flipping the cards.%SPEECH_ON%First there is...%SPEECH_OFF%You lean forward to get a better look and the table breaks beneath your weight. The cards go fluttering and the woman falls backwards and the candle goes flying. You catch its stick midair with one hand and rush to save the lady from falling with the other. You set her back down and give her candle back. She stares at you, grinning with a black rim of a smile, her eyes squinted into dots.%SPEECH_ON%Let\'s forget this happened and say you get all that you ever wished for, sellsword, starting with this.%SPEECH_OFF%She gives you a slobbery kiss on the forehead and prods you with a dagger handle.%SPEECH_ON%Deal!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_11.png[/img]{La tente se referme quand vous entrez. Une lueur orange jaillit d\'une lanterne. En gémissant, la vieille femme utilise cette lumière orangée pour faire apparaître une table et deux chaises. Elle fait un signe vers eux.%SPEECH_ON%Sit.%SPEECH_OFF%Vous vous asseyez. Elle s\'assoit. Elle fait claquer ses lèvres sur ses gencives édentées, hoche la tête et commence à retourner les cartes.%SPEECH_ON%D\'abord, il y a...%SPEECH_OFF%Vous vous penchez en avant pour mieux voir et la table se brise sous votre poids. Les cartes voltigent, la femme tombe à la renverse et la bougie s\'envole. D\'une main, vous attrapez sa canne en plein vol et de l\'autre, vous vous précipitez pour l\'a rattraper. Vous la faites asseoir et lui rendez sa bougie. Elle vous regarde fixement, affichant un sourire aux contours noirs, les yeux plissés.%SPEECH_ON%Oublions ce qui s\'est passé et disons que vous obtenez ce que vous avez toujours voulu avoir, mercenaire, en commençant par ça.%SPEECH_OFF%Elle vous donne un baiser baveux sur le front et vous pousse avec le manche d\'une dague.%SPEECH_ON%Deal!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What a dame.",
+					Text = "Quelle femme.",
 					function getResult( _event )
 					{
 						return 0;
@@ -160,13 +160,13 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_11.png[/img]{You step into the tent. A concerned %randombrother% looks in as the folds close him and the rest of the world out. The old woman lights a candle and carries it to her seat. Ironically, her olden shapes take further prominence in the dark as shadows find crevices you never knew could exist on a person, and her skin brims with lightning brought permanence. She immediately starts flipping cards and speaking.%SPEECH_ON%Defeat. Speculation. Doubt.%SPEECH_OFF%Poorly painted knights come and go, their limbs askew in bizarre poses.%SPEECH_ON%More defeat. But, also, victory. Many victories. You forget weakness. You grow tired of its contagious nature. You become powerful. Strength is survival. And there you are. Old. You die.%SPEECH_OFF%Raising an eyebrow you grab that last card and slide it into the light. You see a man with a long grey beard sitting in a chair. You tell the woman you\'ve never really been able to grow a beard and she snuffs the candle out and shoos you out of the tent.}",
+			Text = "[img]gfx/ui/events/event_11.png[/img]{Vous pénétrez dans la tente. %randombrother% regarde à l\'intérieur tandis que les rideaux se referme sur eux. La vieille femme allume une bougie et la porte jusqu\'à son siège. Ironiquement, sa vieille silhouette prend encore plus d\'importance dans l\'obscurité, car les ombres révèlent des crevasses dont vous ne soupçonniez même pas qu\'elles puissent exister sur une personne, et sa peau brille de mille feux. Elle commence immédiatement à retourner les cartes et à parler.%SPEECH_ON%Défaite. Spéculation. Doute.%SPEECH_OFF%Des chevaliers mal peints vont et viennent, leurs membres étant de travers dans des poses bizarres.%SPEECH_ON%Plus de défaite. Mais, aussi, des victoires. Beaucoup de victoires. Vous oubliez la faiblesse. Vous vous lassez de son caractère communicatif. Vous devenez puissant. La force est la survie. Et vous êtes là. Vieux. Vous mourrez.%SPEECH_OFF%Levant un sourcil, vous prenez la dernière carte et la faites glisser dans la lumière. Vous voyez un homme avec une longue barbe grise assis sur une chaise. Vous dites à la femme que vous n\'avez jamais réussi à vous faire pousser une telle barbe, elle éteint la bougie et vous chasse de la tente.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I should stop shaving.",
+					Text = "Je devrais arrêter de me raser.",
 					function getResult( _event )
 					{
 						return 0;
@@ -181,13 +181,13 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_11.png[/img]{You step into the tent and its folds close and you\'re in nothing but darkness. You stand there for a time and ask the woman where she went. Pursing your lips, you open the tent flap to bring in some light. The slip of light strikes a sheen from the darkness and you turn around to see the dagger soaring forward. You block it away with your gauntlet and draw your sword and plunge it into the hag\'s chest. She drops the knife and clutches your shoulder.%SPEECH_ON%Such a monster you are, sellsword, killing a kind old woman such as I. You\'ll die for this. You and your men will all die.%SPEECH_OFF%You bring the witch in close and get a look at suddenly bright, wicked cat eyes. You spit and nod.%SPEECH_ON%Foretelling doom in a world where everything dies? Not a hard job. Do you know what my job is, you witch?%SPEECH_OFF%She grins a black rind of a gummy smile. Black blood spurts over her lips as she laughs.%SPEECH_ON%Oh, sellsword! We shall see what you are when Davkul has you in his hands.%SPEECH_OFF%The witch\'s body goes limp and your sword suddenly cuts straight through her flesh, leaving sliced flesh folding at your feet. You quickly exit the tent and have the whole thing burned. Some of the men swear they can see the woman\'s face grinning in the palls of smoke.}",
+			Text = "[img]gfx/ui/events/event_11.png[/img]{Vous entrez dans la tente, ses plis se referment et vous n\'êtes plus que dans l\'obscurité. Vous restez là un moment et demandez à la femme où elle est allée. Vous vous pincez les lèvres et ouvrez le rabat de la tente pour faire entrer un peu de lumière. Le rayon de lumière fait briller l\'obscurité, vous vous retournez pour voir une dague foncer vers vous. Vous la bloquez avec votre gantelet et dégainez votre épée pour la plonger dans la poitrine de la sorcière. Elle laisse tomber le couteau et s\'accroche à votre épaule.%SPEECH_ON%Quel monstre vous êtes, mercenaire, pour tuer une gentille vieille femme comme moi. Vous allez mourir pour ça. Vous et vos hommes allez tous mourir.%SPEECH_OFF%Vous rapprochez la sorcière de vous et jetez un coup d\'œil à ses yeux de chat soudainement brillants et méchants. Vous crachez et hochez la tête.%SPEECH_ON%Prédire le malheur dans un monde en péril? Ce n\'est pas un travail difficile. Vous savez quel est mon travail, sorcière?%SPEECH_OFF%Son sourire est noir, ses lèvres collantes, du sang noir gicle sur ses lèvres quand elle rit.%SPEECH_ON%Oh, mercenaire ! Nous verrons qui vous êtes vraiment quand Davkul vous aura entre ses mains.%SPEECH_OFF%Le corps de la sorcière devient mou et votre épée traverse soudainement sa peau, laissant la chair tranchée tomber à vos pieds. Vous sortez rapidement de la tente et faites brûler le tout. Certains des hommes jurent qu\'ils peuvent voir le visage de la femme souriant dans les nuages de fumée.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Burn the witch!",
+					Text = "Brûlez la sorcière !",
 					function getResult( _event )
 					{
 						return 0;

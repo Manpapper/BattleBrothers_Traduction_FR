@@ -8,11 +8,11 @@ this.collector_wants_trophy_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.collector_wants_trophy";
-		this.m.Title = "A %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_01.png[/img]{While browsing the town\'s markets, a man in silk approaches. He\'s wearing a grin with more glitter than chomp, and each of his fingers are adorned to glint. | As you take a look at the local market\'s wares, a strange man approaches. He has baubles of strange liquids hanging from his hip and there\'s a strange wood taking the place of most of his teeth. | It\'s not a true trip to the markets without some strange fella accosting you. This time it\'s a man with a large face, his mouth a bear trap of jagged teeth, and his cheeks set high as though they were meant to be shelves. Features aside, he swings his weight around like someone of import and wealth.}%SPEECH_ON%{Ah sellsword, I see you have some interesting trophies with ya. How about I take that %trophy% for, say, %reward% crowns? | That\'s an interesting trophy you got there, the %trophy%. I\'ll give you %reward% crowns for it, hand over fist, easy money! | Hmm, I see you are of the adventuring sort. You wouldn\'t come by that %trophy% without some guile in ya. Well I got some gold in me, and I\'ll give you %reward% of it for that trinket.}%SPEECH_OFF%You consider the man\'s offer.",
+			Text = "[img]gfx/ui/events/event_01.png[/img]{Vous parcourez les marchés de la ville, un homme en soie s\'approche. Il arbore un sourire tellement chargé de strass que les dents apparaissent à peine, et chacun de ses doigts est orné d\'une certaine lueur. | Alors que vous jetez un coup d\'œil aux marchandises du marché local, un homme étrange s\'approche. Des boules de liquides bizarres sont suspendues à sa hanche et un bois étrange remplace la plupart de ses dents. | Un tour au marché ne serait pas ce qu\'il est sans qu\'un type louche ne vous accoste. Cette fois, il s\'agit d\'un homme au visage large, dont la bouche est un piège à ours aux dents déchiquetées, et les joues hautes comme si elles étaient faites pour être des étagères. Ces caractéristiques mises à part, il se déplace comme quelqu\'un d\'important et de riche.}%SPEECH_ON%{Ah mercenaire, je vois que vous avez quelques trophées intéressants avec vous. Et si je prenais ce %trophy% pour, disons, %reward% couronnes? | C\'est un trophée intéressant que vous avez là, le %trophy%. Je vous donne %reward% de couronnes pour ça, là maintenant, de l\'argent facile! | Hmm, je vois que vous êtes du genre aventureux. Vous n\'auriez pas trouvé ce %trophy% sans un peu de jugeote. Bon, j\'ai de l\'or sur moi, et je vous en donne %reward% pour cette babiole.}%SPEECH_OFF%Vous considérez l\'offre de cet homme.",
 			Image = "",
 			List = [],
 			Options = [
@@ -44,7 +44,7 @@ this.collector_wants_trophy_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No deal.",
+					Text = "Non merci.",
 					function getResult( _event )
 					{
 						if (_event.m.Peddler != null)
@@ -66,7 +66,7 @@ this.collector_wants_trophy_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Peddler",
-			Text = "[img]gfx/ui/events/event_01.png[/img]{%peddler% steps forward and pushes you back as though you were a random customer and not the company captain. He yells at the buyer and throws a hand up and the buyer responds and it\'s like two dogs barking at one another and it\'s all so fast and with so many numbers being thrown around it may as well be another language. After a minute passes, the peddler returns.%SPEECH_ON%Alright. He\'s now offering %reward% crowns. I\'m off to look at some pots and pans, good luck.%SPEECH_OFF%He pats you on the shoulder and walks off.}",
+			Text = "[img]gfx/ui/events/event_01.png[/img]{Le %peddler% s'avance et vous repousse comme si vous étiez un client quelconque et non le capitaine de la compagnie. Comme deux chiens s'aboyant l'un sur l'autre, il crie sur l'acheteur, lève la main et l'autre lui répond. Tout est si rapide et avec tant de chiffres lancés, c'est comme si ils parlaient dans une autre langue. Après une minute, le colporteur revient.%SPEECH_ON%Très bien. Il offre maintenant %reward% de couronnes. Je vais aller voir les casseroles et les poêles, bonne chance.%SPEECH_OFF%Il vous tape sur l'épaule et s'en va.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -92,7 +92,7 @@ this.collector_wants_trophy_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No deal.",
+					Text = "Non merci.",
 					function getResult( _event )
 					{
 						return 0;

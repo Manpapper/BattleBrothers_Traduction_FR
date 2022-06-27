@@ -3,18 +3,18 @@ this.ancient_statue_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.ancient_statue";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_116.png[/img]{A golden man the size of a castle sits atop his stone throne with such august stature it seems even he, as inanimate as he is, should rule the land. And perhaps the world would be better for it, this nonspeaking entity with such awesome presence would make a finer ruler than the lot of skunks you constantly run into. The bulk of the statue rests upon an enormous disc made of spiraling square stones. Were they coffins it\'d take all of two bricks to store the %companyname% whole. %randombrother% tilts his helm up.%SPEECH_ON%If it ain\'t the biggest thing I ever seen I don\'t know what is.%SPEECH_OFF%%randombrother2% smirks and makes a reach for the sellsword\'s crotch.%SPEECH_ON%I thought the womenfolk said that little worm was the biggest thing to ever be seen!%SPEECH_OFF%As the company laughs, you step forward and look up. You\'re not much for kneeling, but you feel the urge here. The statue\'s staring out at the world with firm authority, and its hands are out at the sides, one upon a sword staked into the earth, and the other supinated as though to weigh justice herself. You nod at the golden sheen present before you. That there is not a single scratch of a wouldbe robber suggests its austere presence still has some ethereal grip on the world. But that doesn\'t make sense. Any smart man would be nicking a fair share from the statue\'s shins alone. A few mercenaries ask if they can have a stab at collecting some gold for themselves.}",
+			Text = "[img]gfx/ui/events/event_116.png[/img]{Un homme couvert d\'or est assis sur un trône de pierre avec une posture si majestueuse qu\'il semble que même lui, aussi inanimé qu\'il soit, devrait gouverner le pays. Et peut-être que le monde s\'en porterait mieux, cette entité muette à la présence si impressionnante ferait un meilleur dirigeant que le lot de putois que vous rencontrez constamment. La statue repose sur un énorme disque fait de pierres carrées en spirale. S\'il s\'agissait de cercueils, il faudrait deux briques pour stocker l\'ensemble de la compagnie %companyname%. %randombrother% incline son casque vers le haut.%SPEECH_ON%Si ce n\'est pas la plus grosse chose que j\'ai jamais vue, je ne sais pas ce que c\'est.%SPEECH_OFF%%randombrother2% sourit et tend la main vers l\'entrejambe du mercenaire.%SPEECH_ON%Je croyais que les femmes disaient que ce petit ver était la plus grosse chose qu\'on ait jamais vue !%SPEECH_OFF%Alors que la compagnie rit, vous vous avancez et levez les yeux. Vous n\'êtes pas du genre à vous agenouiller, mais vous en ressentez le besoin ici. La statue domine son environnement avec une certaine autorité, ses mains sont tendues sur les côtés, l\'une sur une épée plantée dans le sol, l\'autre en supination comme pour peser la justice elle-même. Vous faites un signe de tête à l\'éclat doré présent devant vous. Le fait qu\'il n\'y ait pas une seule trace du passage d\'un quelconque voleur ici, suggère que cette statue a encore une certaine emprise éthérée sur le monde. Mais cela n\'a pas de sens. N\'importe quel homme intelligent se contenterait d\'une partie des tibias de la statue. Quelques mercenaires demandent s\'ils peuvent mettre un coup de couteau pour collecter un peu d\'or pour eux-mêmes.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "There\'s no harm in it.",
+					Text = "Il n\'y a pas de mal à cela.",
 					function getResult( _event )
 					{
 						return "B";
@@ -29,13 +29,13 @@ this.ancient_statue_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_116.png[/img]{The statue is so huge perhaps it scared off the lesser scapegraces by superstition alone. You\'ve no reason to let a good thing go, like a nearly endless pile of gold shaped into something \'pretty.\' To hell with history and the artistry. You tell the men to have it. They leap to the task with the tools available, but the second %randombrother% makes contact he falls limp and slumps against the statue. Another mercenary goes to help him, brushes the enormous toe there, and collapses atop the sellsword. Just as the company begins to panic, the two mercenaries bolt back to their feet and start screaming about amazing sights, sights beyond this world, sights of the future itself!\n\n Invigorated by this, the company gladly runs themselves into the statue, the lot banging against its giant toes and falling backward like mimes unexpectedly finding a very real wall. It\'s the most ridiculous thing you\'ve ever seen, but each man springs back to his feet spilling out fantastic stories. You shrug and walk up to the statue yourself, standing before the big toe with its big toenail. The men urge you forward. Sighing, you put your hand out and touch the toenail. Nothing. Nothing happens. You fist the gap between the nail and golden flesh. You angrily put both hands to the toe like it owes you money. Nothing. Well then. Looks like you\'ve riches to harvest. You draw your sword out...}",
+			Text = "[img]gfx/ui/events/event_116.png[/img]{La statue est si énorme qu\'elle a peut-être effrayé les petits vauriens par simple superstition. Vous n\'avez aucune raison de laisser passer une telle découverte, un tas d\'or presque infini façonné en quelque chose de \"joli\". Au diable l\'histoire et l\'art. Vous dites aux hommes de la prendre. Ils s\'attellent à la tâche avec les outils disponibles, mais à la seconde où %randombrother% touche la statue, il s\'effondre et s\'affale contre elle. Un autre mercenaire va l\'aider, effleure l\'énorme orteil de la statue et s\'effondre sur le mercenaire. Au moment où la compagnie commence à paniquer, les deux mercenaires se relèvent d\'un bond et se mettent à hurler à propos de visions extraordinaires, de visions au-delà de ce monde, de visions du futur lui-même!\n\n Revigorés, les membres de la compagnie se précipitent volontiers sur la statue, se cognant à ses orteils géants et tombant à la renverse comme des mimes découvrant inopinément un mur bien réel. C\'est la chose la plus ridicule que vous ayez jamais vue, mais chaque homme se remet sur pied en racontant des histoires fantastiques. Vous haussez les épaules et vous vous approchez vous-même de la statue, vous tenant devant le gros orteil avec son gros ongle. Les hommes vous poussent à avancer. En soupirant, vous tendez la main et touchez l\'ongle de l\'orteil. Rien. Il ne se passe rien. Vous mettez le poing dans l\'espace entre l\'ongle et la chair dorée. Vous mettez furieusement les deux mains sur l\'orteil comme s\'il vous devait de l\'argent. Rien. Bon. On dirait que vous avez des richesses à récolter. Vous dégainez votre épée...}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Time to strike gold.",
+					Text = "Il est temps de récolter de l\'or.",
 					function getResult( _event )
 					{
 						return "C";
@@ -50,13 +50,13 @@ this.ancient_statue_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_116.png[/img]{You swing the sword but the second steel touches gold the sheen of the world flashes over you as though you\'d struck the sun itself and drew blood. The sword continues on into the darkness like a star across the night sky and it cuts a world of its own into reality, as though you\'d slashed the magician\'s cloth off his trick, revealing a room with pillared corners and beautiful silk curtains, and the sword continues on until it slams against a spear shaft. You look down to see a man with gilded armor and red eyes holding his guard with a grimace. He slides across the tiled floor to his right and lets your momentum fall to the ground, then he twirls the spear around his back and strikes it forward. You throw your arm wide and close rank with the killer, catching the spear shaft beneath your armpit and driving forward to stab him just beneath his pauldron, driving the sword into the heart. The man\'s red eyes drain to a pure white and he goes limp and slides right off the steel.\n\n As he clatters to the ground, you quickly look around. Against the far wall stands an enormous bed with corners of marble, each statue shaped to a woman or man, each of them adorned submissively to what looks like a rising sun. There\'s an elderly man in the bed who is looking at you. Bearded. Eyes dim, weathered. Familiarity in his stare. He smiles, but it quickly fades. He yells, but you don\'t understand the words. A shadow slides across the room and you wheel around to see a large knight with fire in his eyes bearing down with a two-hander.}",
+			Text = "[img]gfx/ui/events/event_116.png[/img]{Vous balancez l\'épée, mais à la seconde où l\'acier touche l\'or, un éclair lumineux vous envahit comme si vous aviez frappé le soleil lui-même et fait couler le sang. L\'épée continue dans l\'obscurité comme une étoile dans le ciel nocturne, elle découpe la réalité et fait apparaitre un monde parallèle, comme si vous aviez vu l\'envers du décors d\'un tour de magie, révélant une pièce avec des piliers et de beaux rideaux de soie, l\'épée continue jusqu\'à ce qu\'elle heurte le manche d\'une lance. Vous baissez les yeux pour voir un homme avec une armure dorée et des yeux rouges qui tient sa garde en grimaçant. Il se lance dans votre direction et vous fait tomber, puis il prend sa lance, l\'a fait tournoyer et vous porte un coup. Vous arrivez esquiver l\'attaque en mettant sur le côté, vous vous relevez en un éclair puis saisissez la lance sous votre aisselle pour vous rapprocher du tueur, le poignardant sous son pauldron, enfonçant l\'épée dans le coeur. Les yeux rouges de l\'homme se transforment en un blanc pur, il devient mou et glisse directement sur l\'acier.\n\n Alors qu\'il s\'effondre sur le sol, vous regardez rapidement autour de vous. Contre le mur du fond se dresse un énorme lit avec des coins marbrés, chaque marbre ayant la forme d\'une femme ou d\'un homme, chacun d\'eux étant présenté de manière soumise à ce qu\'on dirait un soleil levant. Il y a un vieil homme dans un lit qui vous observe. Barbu. Des yeux sombres, usés par le temps. Une familiarité dans son regard. Il sourit, mais son sourire s\'efface rapidement. Il crie, mais vous ne comprenez pas les mots. Une ombre se glisse dans la pièce, vous vous retournez pour apercevoir un grand chevalier, les yeux remplis de flammes, il attaque avec un couteau à deux mains.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Parry!",
+					Text = "Parer!",
 					function getResult( _event )
 					{
 						return "D";
@@ -71,13 +71,13 @@ this.ancient_statue_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_116.png[/img]{You step back and flip your sword crosswise and crouch at the knees to brace for impact. The killer\'s two-hander slams against your sword and just like that the world snaps away and still frozen in a parry you can feel the issuance of time and space fly by your sides like a plow wind, and ungodly amounts of suffering, screaming, living and dying, and in the far distance a speck of light that fast approaches until you arrive back in your body and your sword hits the statue and swings backward so hard it flies out of your hands and sails through the air until stabbing into the earth with an earthen chunk. The men look about one another. You go and fetch your sword.%SPEECH_ON%I think you broke it, sir.%SPEECH_OFF%Says %randombrother% as he gets handsy with the pinky toe. You tell him and the rest of the men to pack their things, it\'s time to leave this place. Looking at the statue, you see that it is all rusted bronze now. You think to ask one of the mercenaries if it had been gold earlier, but you already know the answer to that. Instead, you stare at the head of the statue. At the face. At the very familiar face.}",
+			Text = "[img]gfx/ui/events/event_116.png[/img]{Vous reculez et faites pivoter votre épée en croix, vous vous accroupissez pour vous préparer à l\'impact. Le couteau de l\'assassin se heurte à votre épée , le monde parallèle se disloque, toujours figé dans une parade, vous pouvez sentir la délivrance du temps et de l\'espace voler à tes côtés, des quantités impies de souffrance, de cris, de vie et de mort, et au loin un point lumineux qui s\'approche rapidement jusqu\'à ce que vous revenez dans votre corps et que votre épée frappe la statue si fort qu\'elle s\'envole dans les airs jusqu\'à ce qu\'elle se plante dans le sol. Les hommes se regardent les uns les autres. Vous allez chercher ton épée.%SPEECH_ON%Je pense que vous l\'avez cassé, monsieur.%SPEECH_OFF%Dit %randombrother% en se frottant le petit doigt de pied. Vous lui dites, ainsi qu\'au reste des hommes, de faire leurs bagages, il est temps de quitter cet endroit. En regardant la statue, vous constatez qu\'elle n\'est plus que de bronze rouillé. Vous pensez demander à l\'un des mercenaires si elle était en or auparavant, mais vous connaissez déjà la réponse à cette question. Au lieu de cela, vous fixez la tête de la statue. Le visage. Un visage très familier.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s not dwell on this.",
+					Text = "Ne nous attardons pas sur ce point.",
 					function getResult( _event )
 					{
 						return 0;

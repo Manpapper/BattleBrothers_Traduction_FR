@@ -10,13 +10,13 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_25.png[/img]While camping in the woods, %randombrother% calls you out of the command tent. You ask what it is he wants and he pushes a finger to his lips in a silent shush. He points up a tree which grows tall into the evening darkness. You hear cracks as though something were making a nest out of branches whole. The noisemaker only pauses to snort and chortle in a quick tittering of guttural chirps, like a bird crying for help from the belly of a snake. When you look back down, the men are staring at you, looking for an idea as to what to do about this event.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Alors que vous campez dans les bois, %randombrother% vous appelle hors de la tente de commandement. Vous demandez ce qu\'il veut, il met un doigt sur ses lèvres en signe de silence. Il désigne un arbre qui s\'élève dans l\'obscurité de la nuit. On entend des craquements comme si quelque chose faisait un nid à partir de grosses branches. Vous entendez des gloussements, des reniflements, puis des ricanements gutturaux, dignes d\'un oiseau qui crie au secours depuis le ventre d\'un serpent. Lorsque vous baissez les yeux, les hommes vous regardent fixement, cherchant une idée sur la façon de réagir à cet événement.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s just some animal. Get back to doing your jobs.",
+					Text = "C'est juste un animal. Retournez au travail.",
 					function getResult( _event )
 					{
 						return "WalkOff";
@@ -24,7 +24,7 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Better safe than sorry. We\'ll cut down the tree.",
+					Text = "Mieux vaut prévenir que guérir. On va couper l\'arbre.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -44,7 +44,7 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Lumberjack != null)
 				{
 					this.Options.push({
-						Text = "%lumberjack%, you know well how to bring down trees. Do it.",
+						Text = "%lumberjack%, vous savez comment abattre les arbres. Faites-le.",
 						function getResult( _event )
 						{
 							return "Lumberjack";
@@ -56,7 +56,7 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Brave != null)
 				{
 					this.Options.push({
-						Text = "%bravebro%, you\'re the bravest of the lot. Go see what this is about.",
+						Text = "%bravebro%, vous êtes le plus courageux du lot. Allez voir de quoi il s\'agit.",
 						function getResult( _event )
 						{
 							return "Brave";
@@ -69,13 +69,13 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Lumberjack",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You order %lumberjack% the lumberjack to bring the tree down. He nods and gets to work, using a host of tools available, not all of which are axes. He plies the wood open in a divot on one side and jams the gaps with the helves of weapons and then goes to the other side and chops away at its trunk. He works with the sort of speed you\'d love to see on the battlefield. It\'s the sort of authenticity one rarely sees in life, a man home at his work, his eyes settled on modeling an undeniable future, his hands hardly assigned to the task so much as born for it.%SPEECH_ON%Ay-yo!%SPEECH_OFF%He yells out and the tree is felled. It cracks and slumbers down the heft and tilts into the forest where its long stock falls through the wickets and slams the ground so hard it seems to ache the very earth. Drawing your sword, you go to investigate the felled treetop. You find a pair of Nachzehrers there, smashed flat, teeth skittered to the forest floor like capless shrooms. The company\'s fear is settled by the grisly sight.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous ordonnez à %lumberjack%, le bûcheron, d\'abattre l\'arbre. Il acquiesce et se met au travail en utilisant une foule d\'outils disponibles, qui ne sont forcement des haches. Il entaille le bois d\'un côté et bloque les interstices avec la poignée de diverses armes, puis va de l\'autre côté et coupe le tronc. Il bosse avec une aisance que vous aimeriez voir sur le champ de bataille. C\'est le genre d\'authenticité que l\'on voit rarement dans la vie, un homme et son travail. Il a les yeux fixés sur le dessin d\'un avenir certain, des mains destinées à effectuer cette tâche.%SPEECH_ON%Ay-yo!%SPEECH_OFF%Il crie et l\'arbre est abattu. Il se fissure, craque, pour finalement s\'incliner et frapper le sol si fort qu\'il semble faire mal à la terre elle-même. Dégainant votre épée, vous allez enquêter au niveau la cime de l\'arbre abattu. Vous y trouvez une paire de Nachzehrers, écrasés, les dents tombées sur le sol de la forêt comme des champignons sans chapeau. Les craintes de la compagnie sont dissipées par cette vision macabre.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "So that mystery is solved.",
+					Text = "Ce mystère est donc résolu.",
 					function getResult( _event )
 					{
 						return 0;
@@ -98,13 +98,13 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Brave",
-			Text = "[img]gfx/ui/events/event_25.png[/img]%bravebro%, the ever brave sellsword, clambers up the tree with speed not to be erred by fear or reluctance. You\'d think they spotted a fair maiden up in those parts the way he\'s going. It isn\'t long until he\'s gone, though the scratch \'n\' scratch of his noisy ascent is unmistakable. Finally you hear him returning, the clutter of his descent coming in stops and starts as he finds safe footing. You see him break back into view, the soles of his boots first to appear like butter trays dangling in the dark. His shadowy silhouette follows, sliding ever downward until he makes a last leap to the earth. He intentionally buckles at the knees and rolls back against the tree trunk with his tired hands limp across his knees.%SPEECH_ON%T\'was a black bear head deep in a honeycomb, but the beast been dead at least two days. I saw a group of bats skitter on out when I approached, I think they was eating its insides. This tumbled on out when they fled.%SPEECH_OFF%He turns and throws a sword upon the ground. It\'s covered in sticky honey and pinestraw, but otherwise looks like a remarkable blade.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]%bravebro%, le courageux soldat, grimpe dans l\'arbre à une vitesse qui ne laisse pas de place à la peur ou la réticence. C\'est comme si il avait vu passer une jeune fille au loin. Il vient tout juste de partir et, malgré cela, \'n\' son ascension bruyante est immanquable. Finalement, vous l\'entendez revenir, le bruit de sa descente s\'arrêtant et repartant au fur et à mesure qu\'il trouve un terrain sûr. Vous le voyez revenir dans votre champ de vision, les semelles de ses bottes apparaissant d\'abord comme des plaquettes de beurre suspendues dans le noir. Sa silhouette ombrageuse glisse toujours vers le bas jusqu\'à ce qu\'il fasse un dernier bond pour atteindre le sol. Il fait une roulade pour assurer son atterrissage puis se relève.%SPEECH_ON%Il y avait un ours noir la tête enfoncée dans un nid d\'abeille, mais la bête était morte depuis au moins deux jours. J\'ai vu un groupe de chauves-souris s\'échapper quand je me suis approché, je pense qu\'elles mangeaient ses entrailles. Ça a dégringolé quand elles se sont enfuies.%SPEECH_OFF%Il se retourne et jette une épée sur le sol. Elle est couverte de miel et d\'aiguilles de pin, mais sinon, elle a l\'air d\'une lame remarquable.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see that blade.",
+					Text = "Voyons cette lame.",
 					function getResult( _event )
 					{
 						return 0;
@@ -127,13 +127,13 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "CutdownGood",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You order the company to chop the tree down. They get to the task, though there\'s little experience in doing it and the end result is a frantic run for safety as the trunk comes barreling down in an unexpected direction. A very frightened black bear bolts off the treetop. It has a honeycomb for a snout and huffs its way into the dark of the forest.\n\n No one is crushed, but the chaos and debris leaves a few of the men worse for the wear.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous demandez à la compagnie d\'abattre l\'arbre. Ils s\'attellent à la tâche, bien qu\'ils aient peu d\'expérience en la matière, le résultat final est une course effrénée pour se mettre à l\'abri lorsque le tronc s\'abat dans une direction inattendue. Un ours noir effrayé s\'élance depuis la cime de l\'arbre. Il a un museau en forme de nid d\'abeille et s\'enfonce dans l\'obscurité de la forêt.\n\n Personne n\'est écrasé, mais le chaos et les débris laissent quelques hommes dans un sale état.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well, that was a worthwhile endeavour...",
+					Text = "Eh bien, c\'était un effort qui en valait la peine...",
 					function getResult( _event )
 					{
 						return 0;
@@ -167,13 +167,13 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "CutdownBad",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You order the men to cut the tree down. %randombrother% starts in with a heavy thwack. He plants a foot on the trunk to wrench the tool free and that\'s about the last you see of him as he goes flying away. A tree branch swings back into view with a long groan emanating from the trunk as though some ancient wood were being felled inside its very body. You watch as the wood cracks loose of the soil and uproots itself. Emerald eyes flare and widen, their stare blinkered by the twists of falling leaves.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous ordonnez aux hommes d\'abattre l\'arbre. %randombrother% commence avec un coup sec muni d\'un objet plat. Il pose un pied sur le tronc pour libérer l\'objet et c\'est à peu près la dernière fois que vous le voyez car il s\'envole. Une branche d\'arbre revient à sa position initiale accompagné d\'un long gémissement émanant du tronc, comme si l\'arbre réclamait une partie de son corps. Vous regardez l\'arbre se détacher du sol et se déraciner. Des yeux d\'émeraude s\'enflamment et s\'élargissent, leurs regards étant entrecoupés par la chute des feuilles.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What the hell!",
+					Text = "C'est quoi ce bordel!",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -195,13 +195,13 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "WalkOff",
-			Text = "[img]gfx/ui/events/event_25.png[/img]You can\'t be bothered by such trivial nonsense. It\'s likely to be a lynx or an eagle of some sort. If it\'s worse, it\'ll come on down and the company will deal with it then. This line of thinking doesn\'t sit well with some of the men.",
+			Text = "[img]gfx/ui/events/event_25.png[/img]Vous ne pouvez pas être dérangé par une telle absurdité. Il est probable que ce soit un lynx ou un aigle en quelque sorte. Si c\'est pire, il descendra et la compagnie s\'en occupera à ce moment-là. Cette façon de penser ne convient pas à certains hommes.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s just some animal...",
+					Text = "Ce n\'est qu'un animal...",
 					function getResult( _event )
 					{
 						return 0;

@@ -3,18 +3,18 @@ this.fountain_of_youth_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.fountain_of_youth";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_114.png[/img]{You stand at the edge of a forest clearing and the sight therein beggars belief.\n\n A trunk of a human body runs up out of the earth like a slender tree, naked and bristling, goosebumps for bark, continuing upward until it is twice as tall as yourself. There are no branches. There are no hands. There are, instead, a series of human heads bound in a bunch where a tree crown should be. From left to right they are babyish and beautifully present, ambiguously sexless, malformed creations of time it seems, where the shadows they themselves author turn their faces from ones oddly familiar to strangely naive, as they stare about as though they knew not how they got there and seem ever ready to ask it of you. It reminds you of a drowning you happened upon, the face contorting beneath the running river water, the flesh suffering nothing short of constant conjecture as to what put it there.\n\n Whispers sift in from the trees. They riffle over the ground as if spoken by the bugs, and they clamber up your arms until they scratch at your very ears. They ask you to stay.}",
+			Text = "[img]gfx/ui/events/event_114.png[/img]{Vous vous tenez à l\'orée d\'une clairière et la vue qui s\'offre à vous est incroyable.\n\n Le tronc d\'un corps humain sort de terre comme un arbre élancé, nu, la chair de poule en guise d\'écorce, il continue de monter jusqu\'à ce qu\'il soit deux fois plus grand que vous. Il n\'y a pas de branches. Il n\'y a pas de mains. Il y a, à la place, une série de têtes humaines reliées formant un bouquet là où devrait se trouver la cime de l\'arbre. De gauche à droite, ce sont des bébés dotés d\'une magnifique prestance, sans sexe, des créations difformes du temps, où leurs ombres transforment leurs visages d\'étrangement familiers à étrangement naïfs, tandis qu\'ils regardent fixement comme s\'ils ne savaient pas comment ils sont arrivés là et semblent toujours prêts à vous le demander. Cela vous rappelle une noyade que vous avez observée par hasard, le visage se contorsionnant sous l\'eau courante de la rivière, la chair ne souffrant que de conjectures persistantes quant à ce qui l\'a mise là.\n\n Des chuchotements s\'échappent des arbres. Ils glissent sur le sol comme s\'ils étaient prononcés par les insectes, ils grimpent le long de vos bras jusqu\'à ce qu\'ils vous grattent les oreilles. Ils vous demandent de rester.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see what this is.",
+					Text = "Voyons voir ce que c\'est.",
 					function getResult( _event )
 					{
 						return "B";
@@ -22,7 +22,7 @@ this.fountain_of_youth_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We need to get the hell out of here. Fast.",
+					Text = "On doit se barrer d\'ici. Rapidement.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -42,13 +42,13 @@ this.fountain_of_youth_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_114.png[/img]{Upon entering the clearing, the bizarre creature straightens up, swaying its heads from side to side like a peacock readying a display. They speak to you.%SPEECH_ON%The. Elder. Yes. Here. Yes. Him. We. Know. Him. We. Knew.%SPEECH_OFF%The faces warp and discolor as though blemished in the wake of the words leaving their very mouths. Slowly they reform to speak again, a grotesque panoply punctuating itself one head at a time.%SPEECH_ON%Drink. Little. Heal. All. Drink. All. Become. One.%SPEECH_OFF%You look down to see an earthen overhang curving across a puddle the size of a plate. There\'s a faint trickle as water drips into it from the overhang, and from where that water comes is anyone\'s idea. You look up to see the faces looking down, their appearances molding from anguish to happiness to surprise to fear to confusion.%SPEECH_ON%Familiar. Always. Familiar. Drink. Little. Yes. No. Drink. All.%SPEECH_OFF%Looking back down, you take out your waterskin and pop the cork.}",
+			Text = "[img]gfx/ui/events/event_114.png[/img]{En entrant dans la clairière, l\'étrange créature se redresse, balançant sa tête d\'un côté à l\'autre comme un paon qui se prépare à une parade. Ils vous parlent.%SPEECH_ON%Le. Aîné. Oui. Ici. Oui. Lui. Nous. Le connaissons. Lui. Nous. Connaissions.%SPEECH_OFF%Les visages se déforment et se décolorent comme s\'ils étaient ternis par les mots qui sortent de leurs bouches. Lentement, ils se remettent à parler, une panoplie grotesque rythmant une tête après l\'autre.%SPEECH_ON%Buvez. Un peu. Soigner. Tout. Buvez. Tous. Devenir. Un.%SPEECH_OFF%Vous regardez vers le bas pour voir un excédent de terre qui se courbe sur une flaque de la taille d\'une assiette. Il y a un léger filet d\'eau qui s\'écoule de l\'excédent, personne ne sait d\'où vient cette eau. Vous levez les yeux pour voir les visages qui vous regardent, leurs apparences passant de l\'angoisse au bonheur, à la surprise, à la peur puis à la confusion.%SPEECH_ON%Familier. Toujours. Familier. Boire. Un peu. Oui. Non. Bois. Tout.%SPEECH_OFF%En regardant vers le bas, vous sortez votre gourde et faites sauter le bouchon.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll just take a little.",
+					Text = "Je vais juste en prendre un peu.",
 					function getResult( _event )
 					{
 						return "C";
@@ -56,7 +56,7 @@ this.fountain_of_youth_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I\'ll drink it all!",
+					Text = "Je vais tout boire!",
 					function getResult( _event )
 					{
 						return "D";
@@ -71,13 +71,13 @@ this.fountain_of_youth_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_114.png[/img]{You crouch beneath the grotesque tree. The heads sway downward, the shade coming with them as though someone were placing the lid upon a basket. When you look up, they stare from a foot away, rippling and forever moving. Yet, one on the far end is very still. Its face is stuck on an old man\'s grimace, the brow furrowed, the jowls taut, the elderly lines ever creased as if the fury was folding upon itself like a well-crafted sword. A bulb of darkness surrounds it, the penumbra pulsing, as if the head was staring in from another world altogether.\n\n Hands firm, you take the waterskin and pour out its contents. Emptied, you put it beneath the dripping overhang and listen to each drop hit its bottom. The faces lean in ever closer, surrounding you in a cone of chaos. As they draw near, you can hear the tearing of their reality as they come to and fall out of shape. The waterskin shakes in your hand as if you had to hold it against the surge of a waterfall. You yank it out from the overhang and as you tumble backward you realize the heads have long since reared upright. Rolling over, you crawl your way to your feet and run out of the clearing. Seemingly safe you look back to see the creature is gone. There is nothing there at all. No tree. No fountain. The waterskin, however, remains.}",
+			Text = "[img]gfx/ui/events/event_114.png[/img]{Vous vous accroupissez sous l\'arbre grotesque. Les têtes se balancent vers le bas, l\'ombre les accompagnant comme si quelqu\'un posait le couvercle sur un panier. Lorsque vous levez les yeux, elles vous fixent à un mètre de distance, ondulant et toujours en mouvement. Pourtant, l\'une d\'entre elles, tout au bout, est immobile. Son visage prend la forme d\'un vieil homme, le front froncé, les bajoues tendues, les traits âgés toujours plissés comme si la fureur se repliait sur elle-même. Une sphère de ténèbres l\'entoure, la pénombre vibre, comme si la tête regardait depuis un tout autre monde.\n\n Les mains fermes, vous prenez la gourde et en versez le contenu. Vidée, vous la mettez sous l\'excédent dégoulinante et écoutez chaque goutte toucher le fond. Les visages se rapprochent de plus en plus, vous entourant dans un cône de chaos. Au fur et à mesure qu\'ils s\'approchent, vous pouvez entendre le déchirement de leur réalité alors qu\'ils se mettent en place et se désagrègent. La gourde tremble dans votre main comme si une chute d\'eau lui tombait dessus. Vous l\'arrachez de l\'excédent et, en tombant en arrière, vous réalisez que les têtes se sont redressées depuis longtemps. En roulant, vous vous remettez sur pied en rampant et sortez de la clairière en courant. En sécurité, vous vous retournez pour voir que la créature a disparu. Il n\'y a rien du tout. Pas d\'arbre. Pas de fontaine. La gourde, cependant, est toujours là.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Best keep this somewhere safe.",
+					Text = "Il vaut mieux garder ça dans un endroit sûr.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -106,13 +106,13 @@ this.fountain_of_youth_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_114.png[/img]{You throw the waterskin aside and put your mouth into the puddle and drink. The world beneath the puddle\'s surface is empty and silent. Your lips move, your throat gulps, but there is nothing to drink here. You scream. There is nothing. Not even a feeling. Just the notion of fear, a tickle with no means to scratch it. When you put your hands to the earth to try and remove yourself, you find that you cannot leave the puddle.\n\n Faint faces wink in and out of the void. They are like the tree\'s, dramatically inanimate, painfully issued from past to present to future, and here they approach, gathering in number, bubbling and jostling forward, turning this black hell into a frothy white. As they near, you realize you\'ve been not looking right. Individually, they are but faces without presence. Taken as a whole, as the great white sheet on the approach, you realize that they make up one large face: yours. And it is laughing.\n\n Screaming, you finally fall back out of the puddle. %randombrother% has you under his arm and he\'s looking at you with concern.%SPEECH_ON%Sir, are you alright? You was napping then your head slid into the water there.%SPEECH_OFF%You look up, thinking to see the grotesque tree and its awful faces. It is not there and no matter how many times you look or in how many places, it is never there again.}",
+			Text = "[img]gfx/ui/events/event_114.png[/img]{Vous jetez la gourde par terre, mettez votre bouche dans la flaque et buvez. Le monde sous la surface de la flaque est vide et silencieux. Vos lèvres bougent, vous avalez, mais il n\'y a rien à boire ici. Vous criez. Il n\'y a rien. Pas même une sensation. Juste une notion de peur, un chatouillement sans moyen de le soulager. Lorsque vous mettez vos mains sur le sol pour essayer de vous retirer, vous constatez que vous ne pouvez pas quitter la flaque.\n\n Des visages pâles apparaissent et disparaissent du vide. Ils sont comme ceux de l\'arbre, inanimés, douloureusement issus du passé, du présent et du futur, les voilà qui s\'approchent, se rassemblent en nombre, bouillonnent et se bousculent, transformant cet enfer noir en un blanc écumeux. À leur approche, vous vous rendez compte que vous n\'avez pas bien regardé. Individuellement, ils ne sont que des visages sans réalité. Pris dans leur ensemble, la grande feuille blanche s\'approche, vous réalisez qu\'ils forment un grand visage: le vôtre. Le visage rit.\n\n En hurlant, vous ressortez de la flaque. %randombrother% vous tient sous son bras, il vous regarde avec inquiétude.%SPEECH_ON%Monsieur, vous allez bien ? Vous faisiez une sieste et votre tête a glissé dans l\'eau.%SPEECH_OFF%Vous levez les yeux, pensant voir l\'arbre grotesque et ses visages horribles. Il n\'est pas là et peu importe combien de fois vous regardez ou à quels endroits, il a totalement disparu.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I... don\'t... understand.",
+					Text = "Je... ne... comprends pas.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)

@@ -11,13 +11,13 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 120.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_66.png[/img]%randombrother% brings you to a crack in the side of a caliche berm. You can see something glinting in the dark. Whatever it is, its earthen hold would be hard going to dig through. The sellsword nods.%SPEECH_ON%I know it\'s in there good and solid, but I reckon that\'s something worth fetching. Whatchu think?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_66.png[/img]%randombrother% vous amène à une fissure sur le côté d\'une berme de caliche. Vous pouvez voir quelque chose qui brille dans l\'obscurité. Quoi qu\'il en soit, il serait difficile de creuser cette roche sédimentaire. Le mercenaire acquiesce.%SPEECH_ON%Je sais que c\'est là-dedans,  je pense que ça vaut le coup d\'aller le chercher. Qu\'en pensez-vous?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s dig!",
+					Text = "Creusons!",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -37,7 +37,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Miner != null)
 				{
 					this.Options.push({
-						Text = "Some miner\'s expertise could be of use here.",
+						Text = "L\'expertise d\'un mineur pourrait être utile ici.",
 						function getResult( _event )
 						{
 							return "Miner";
@@ -49,7 +49,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Tiny != null)
 				{
 					this.Options.push({
-						Text = "Any of you tiny enough to fit into that hole?",
+						Text = "L\'un d'entre vous est assez petit pour entrer dans ce trou.?",
 						function getResult( _event )
 						{
 							return "Tiny";
@@ -59,7 +59,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "That\'s not what we\'re after. Get ready to move on.",
+					Text = "Ce n\'est pas ce que nous recherchons. Préparez-vous à passer à autre chose.",
 					function getResult( _event )
 					{
 						return 0;
@@ -71,13 +71,13 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Miner",
-			Text = "[img]gfx/ui/events/event_66.png[/img]%miner% nods at your request. He gathers his tools and surveys the berm for a few minutes. He spits at the rock and nods and gets to work. A few minutes time and this stone hewer\'s already weeding out the weakspots and bringing the hard soil to crumbling dust. The hidden treasure reveals itself and the man pulls it free and hands it over.%SPEECH_ON%A nice workout, captain, and I\'d say well worth the time. Appreciate you depending on me, I mean that honestly.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_66.png[/img]Le %miner% hoche la tête à votre demande. Il rassemble ses outils et examine la berme pendant quelques minutes. Il crache sur la roche, hoche la tête et se met au travail. Quelques minutes plus tard, il est déjà en train de désherber certains coins et de réduire la terre dure en poussière. Le trésor caché se révèle, l\'homme le libère et le donne.%SPEECH_ON%Un bon entraînement, capitaine, et je dirais que ça en valait la peine. J\'apprécie que vous comptiez sur moi, je le pense honnêtement.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good work.",
+					Text = "Beau travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -117,13 +117,13 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Tiny",
-			Text = "[img]gfx/ui/events/event_66.png[/img]The ever tiny %tiny% walks up to the crack in the berm and stares into it. He turns \'round like a top.%SPEECH_ON%Now I ain\'t one to assume, but I\'ve the sense of being slighted here.%SPEECH_OFF%You assure him that you mean nothing at all by asking he make use of his comical size. He nods and gets to the task as though he were born for it, easily wiggling his way into the crack until it\'s just a pair of boots sticking out the earth. One of the sellswords glances over and quietly asks if it\'s weird that he feels the urge to tickle the feet. You ask what in the fark does that mean with no intention of attaining an answer. Thankfully, %tiny% yells out that he\'s got the item and the men help yank him back out. %tiny% flips over with the treasure held aloft in his tiny hands.",
+			Text = "[img]gfx/ui/events/event_66.png[/img]Le tout petit %tiny% s\'approche de la fissure dans la berme et la regarde fixement. Il tourne en rond comme une toupie.%SPEECH_ON%Je n\'ai pas l\'habitude de faire des suppositions, mais j\'ai l\'impression d\'avoir été offensé.%SPEECH_OFF%Vous lui assurez que vous ne pensez pas du tout à mal en lui demandant d\'utiliser sa petite taille amusante. Il acquiesce et s\'attelle à la tâche comme s\'il était né pour ça, se faufilant facilement dans la fissure jusqu\'à ce qu\'il n\'y ait plus qu\'une paire de bottes qui dépassent de la terre. L\'un des mercenaires jette un coup d\'œil et demande tranquillement si c\'est bizarre qu\'il ressente l\'envie de chatouiller des pieds. Vous demandez ce que ça veut dire sans avoir l\'intention d\'obtenir une réponse. Heureusement, %tiny% crie qu\'il a l\'objet et les hommes l\'aident à sortir. %tiny% se retourne avec le trésor qu\'il brandi en l\'air avec ses petites mains.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good work.",
+					Text = "Beau travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -163,13 +163,13 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "DigGood",
-			Text = "[img]gfx/ui/events/event_66.png[/img]You order the sellswords to use whatever tools are available to dig into the berm. It takes a good clip of time to make headway into the caliche, but eventually %randombrother% manages to loosen the earth enough to reach in and take the hidden treasure right out. It\'s a golden chalice and a scattering of other items one could sell on the market.",
+			Text = "[img]gfx/ui/events/event_66.png[/img]Vous ordonnez aux mercenaires d\'utiliser tous les outils disponibles pour creuser dans la berme. Cela prend un bon moment pour avancer dans la caliche, mais finalement %randombrother% parvient à ameublir la terre suffisamment pour atteindre l\'intérieur et sortir le trésor caché. Il s\'agit d\'un calice en or et d\'un certain nombre d\'autres objets que l\'on pourrait vendre sur le marché.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Luck smiles upon us today.",
+					Text = "La chance nous sourit aujourd'hui.",
 					function getResult( _event )
 					{
 						return 0;
@@ -198,13 +198,13 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "DigBad",
-			Text = "[img]gfx/ui/events/event_66.png[/img]You order a few of the mercenaries to set upon the berm with whatever tools are good for the task. They get to it to the best of their abilities, but they\'ve barely started the dig when a chunk of caliche slides free and clips %hurtbro%, knocking him out cold. The desired treasure rolls out after him and you come to find it\'s a rusted and rusticated piece of metal of almost no use to anyone.",
+			Text = "[img]gfx/ui/events/event_66.png[/img]Vous ordonnez à quelques mercenaires de s\'attaquer à la berme avec les outils adéquats. Ils s\'y mettent du mieux qu\'ils peuvent, mais ils ont à peine commencé à creuser qu\'un morceau de caliche se détache et frappe %hurtbro%, l\'assommant sur le coup. Le trésor recherché roule à côté de lui et vous découvrez qu\'il s\'agit d\'un morceau de métal rouillé qui ne sert pratiquement à rien.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Goddammit.",
+					Text = "Putain de merde.",
 					function getResult( _event )
 					{
 						return 0;

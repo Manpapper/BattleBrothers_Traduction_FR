@@ -10,13 +10,13 @@ this.lucky_finds_something_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 35.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{%lucky% the ever lucky sellsword has managed to find something interesting. You ask how he came across the item. He shrugs.%SPEECH_ON%{I was walking, and then I stepped on it. Simple enough. | I looked up and this bird shat and it just missed me. When I looked at where it landed, well, there it was. The bird shit and that thing you got in your hands. | Felt a tingle in my fingers, and then a tingle in my cock. After that I got to looking around for somethin\' boring to absolve myself and saw it just settin\' there. | Saw a horseshoe just layin\' on the ground there and thought to go and fetch it and, well, that was underneath. | Well, see, I saw this four-leaf clover just setting there and I was gonna add it to my bag, see, I got dozens, anyway when I went to go pick it up I saw that item just settin\' there. Pretty nifty, huh?}%SPEECH_OFF%}",
+			Text = "%terrainImage%{%lucky% le mercenaire toujours chanceux, a réussi à trouver quelque chose d\'intéressant. Vous lui demandez comment il a trouvé l\'objet. Il hausse les épaules.%SPEECH_ON%{Je marchais, et j\'ai marché dessus. Assez simple. | J\'ai levé les yeux et cet oiseau a chié et m\'a manqué de peu. Quand j\'ai regardé où il avait atterri, eh bien, c\'était là. La merde d\'oiseau et cette chose que vous avez dans vos mains. | J\'ai senti un picotement dans mes doigts, et puis un autre dans ma bite. Après cela, j\'ai commencé à chercher quelque chose d\'ennuyeux pour m\'absoudre et j\'ai vu qu\'il était là. | J\'ai vu un fer à cheval par terre et j\'ai pensé aller le chercher et, eh bien, c\'était en dessous. | J\'ai vu ce trèfle à quatre feuilles posé là et j\'allais le ramasser, j\'en ai des douzaines, mais quand je suis allé le chercher, j\'ai vu cet objet posé là. Plutôt chouette, hein?}%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Lucky you.",
+					Text = "Vous avez de la chance.",
 					function getResult( _event )
 					{
 						return 0;

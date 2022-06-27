@@ -3,18 +3,18 @@ this.unhold_graveyard_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.unhold_graveyard";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_117.png[/img]{Fingerbones like fallen totems, thighs hewn free of the knees as though foresters had set upon a gloomy work, curved ribs scattered across the earth like they were under a shipwright\'s appraisal, and the skulls, tottering on the wedges of jawbones, held up like animistic abodes of shamans, molars the size of shields and any man could crawl through its eye sockets.\n\n Looking past the unhold\'s skeletal remains, you find plenty more fanning out into a valley. The heaviest of the bones stay where their owner\'s breath had last ushered them, while the smallest of the sort have long since rolled to the valley ditch and settled there in a wash of white wimpled with whatever flesh and fur remains.\n\nYou\'ve no reason to believe that none other than the unholds themselves plotted their demise here. Violence is not in their shapes. They are sitting up or laying down in peaceful eternities, and indeed %randombrother% points out a great giant which seems to have recently laid itself to rest. It is nestled into an earthen nook with its hands wrapped over its knees and its head tilted on a shoulder. It watched the sunset, and will do so for many years to come. Not that you care. You order the men to fan out and collect what they can. Some of these bones or pelts or what else they\'ve brought could be of great use to the company.}",
+			Text = "[img]gfx/ui/events/event_117.png[/img]{Des os de doigts comme des totems tombés, des cuisses arrachées des genoux comme si des forestiers s\'étaient attelés à un travail lugubre, des côtes incurvées éparpillées sur la terre comme si elles avaient été expertisées par un charpentier de marine, et les crânes, dont les mâchoires chancelaient, se dressaient comme des demeures animistes de chamans, des molaires de la taille d\'un bouclier où n\'importe quel homme pourrait y ramper à travers ses cavités.\n\n En regardant au-delà des restes squelettiques, vous en trouvez beaucoup d\'autres qui s\'étendent dans la vallée. Les os les plus lourds restent là où le souffle de leur propriétaire les a conduits en dernier lieu, tandis que les plus petits ont depuis longtemps roulé jusqu\'au fossé de la vallée et s\'y sont déposés dans un mélange de blanc teinté de chair et de fourrure.\n\nVous n\'avez aucune raison de croire que personne d\'autre que les monstres eux-mêmes ont manigancé leur perte ici. La violence n\'est pas dans leurs habitudes. Ils sont assis ou couchés dans des étreintes paisibles, %randombrother% signale qu\'un géant immense semble s\'être récemment couché. Il est niché dans un recoin, les mains posées sur ses genoux et la tête inclinée sur une épaule. Il a regardé le coucher du soleil, et le fera pour de nombreuses années à venir. Mais vous vous en foutez. Vous ordonnez aux hommes de se disperser et de ramasser ce qu\'ils peuvent. Certains de ces os, peaux ou autres qu\'ils ont apportés pourraient être d\'une grande utilité pour la compagnie.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Take everything.",
+					Text = "Prenez tout.",
 					function getResult( _event )
 					{
 						return 0;

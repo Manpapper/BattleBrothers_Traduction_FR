@@ -12,13 +12,13 @@ this.bird_shits_on_sellsword_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{While traveling the land, %birdbro% gets struck by birdshite. It hits his swordhand and splashes crosswise all over his armor.%SPEECH_ON%Aww, awwww!%SPEECH_OFF%His arms go wide like chicken wings as he looks at the damage.%SPEECH_ON%Bloody hell, just my luck!%SPEECH_OFF%}",
+			Text = "%terrainImage%{En parcourant la contrée, %birdbro% est atteint par une fiente d\'oiseau. Elle frappe le mercenaire et éclabousse son armure de part en part.%SPEECH_ON%Aww, awwww!%SPEECH_OFF%Ses bras s\'écartent comme des ailes de poulet alors qu\'il regarde les dégâts.%SPEECH_ON%Putain, c\'est bien ma chance!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Yeah, don\'t dwell on it and let\'s get going.",
+					Text = "Ouais, ne vous attardez pas sur ça et continuons.",
 					function getResult( _event )
 					{
 						if (_event.m.Historian == null)
@@ -40,7 +40,7 @@ this.bird_shits_on_sellsword_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Superstitious != null)
 				{
 					this.Options.push({
-						Text = "Could this be an omen?",
+						Text = "Serait-ce un présage?",
 						function getResult( _event )
 						{
 							return "Superstitious";
@@ -52,7 +52,7 @@ this.bird_shits_on_sellsword_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Archer != null)
 				{
 					this.Options.push({
-						Text = "Someone bring down that plumed transgressor!",
+						Text = "Que quelqu\'un fasse tomber ce transgresseur à plume!",
 						function getResult( _event )
 						{
 							return "Archer";
@@ -65,13 +65,13 @@ this.bird_shits_on_sellsword_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Continue",
-			Text = "%terrainImage%{%birdbro% nods.%SPEECH_ON%Course. Just ruined m\'day that\'s all.%SPEECH_OFF%}",
+			Text = "%terrainImage%{%birdbro% hochement de tête.%SPEECH_ON%Evidemment. J\'ai juste gâché ma journée, c\'est tout.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Ah well.",
+					Text = "Ah bien.",
 					function getResult( _event )
 					{
 						return 0;
@@ -97,13 +97,13 @@ this.bird_shits_on_sellsword_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Superstitious",
-			Text = "%terrainImage%{The ever superstitious %superstitious% analyzes the shit with the appraising eye of a proper jeweler. He purses his lips and nods, as satisfied a summary of bird shit as there ever was. He says.%SPEECH_ON%This is a good thing.%SPEECH_OFF%In the face of very incredulous company the man calmly explains that being shat on by a bird is an omen of good things to come. A few of the sellswords seem convinced by this notion. It is rather spectacular to have a bird choose you, out of all earth below, to land a squat on. You nod and say %birdbro% should open his mouth next time for extra special good fortune.}",
+			Text = "%terrainImage%{Le superstitieux %superstitieux% analyse la merde avec l\'œil expert d\'un vrai bijoutier. Il se pince les lèvres et hoche la tête, un résumé aussi complet que possible d\'une merde d\'oiseau. il dit.%SPEECH_ON%C\'est une bonne chose.%SPEECH_OFF%Face à une compagnie très incrédule, l\'homme explique calmement que se faire chier dessus par un oiseau est un présage de bonnes choses à venir. Quelques mercenaires semblent convaincus par cette idée. Il est assez spectaculaire qu\'un oiseau vous choisisse, parmi toutes les autres possibilités qu\'il avait. Vous hochez la tête et dites à %birdbro% qu\'il devrait ouvrir la bouche la prochaine fois pour avoir plus de chance.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Lucky guy.",
+					Text = "Un gars chanceux.",
 					function getResult( _event )
 					{
 						return 0;
@@ -141,13 +141,13 @@ this.bird_shits_on_sellsword_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Archer",
-			Text = "[img]gfx/ui/events/event_10.png[/img]{%archer% looks up, hand shielded over his eyes, tongue out. He sees the bird and nods. He licks a finger, puts it to the air, and nods again. The archer grins as he nocks an arrow.%SPEECH_ON%With crime there is punishment.%SPEECH_OFF%The mercenaries groan and mock the man\'s moralizing, but he calmly raises the bow and lets the arrow loose. It zips and shrinks high into the air and you can hardly see the shot but you do see the bird suddenly crank sideways and start twirling to the earth. The sharpshooter nods and looks over at the company.%SPEECH_ON%You laughing now?%SPEECH_OFF%This only brings more jeers. The archer snidely comments about his importance and this brings about a healthy debate between the men who stand on the frontline and those in the back. You tell the men that if they want to argue which is better they can prove it on the battlefield.}",
+			Text = "[img]gfx/ui/events/event_10.png[/img]{%archer% lève la tête, la main au dessus des yeux, la langue tirée. Il voit l\'oiseau et fait un signe de tête. Il se lèche un doigt, le met en l\'air, et hoche à nouveau la tête. L\'archer sourit en encochant une flèche.%SPEECH_ON%Pas de crime sans châtiment.%SPEECH_OFF%Les mercenaires grognent et se moquent de la vision moralisatrice de l\'homme, mais celui-ci lève calmement son arc et décoche la flèche. Elle s\'envole à très grande vitesse dans les airs, vous voyez l\'oiseau s\'incliner soudainement sur le côté et commencer à tournoyer vers le sol. Le tireur d\'élite hoche la tête et regarde la compagnie.%SPEECH_ON%Vous riez maintenant ?%SPEECH_OFF%Cela n\'amène que des huées supplémentaires. L\'archer fait un commentaire narquois sur son importance, ce qui provoque un débat sain entre les hommes qui se trouvent en première ligne et ceux qui sont à l\'arrière. Vous dites aux hommes que s\'ils veulent discuter de la meilleure solution, ils peuvent le prouver sur le champ de bataille.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nice shot!",
+					Text = "Joli tir!",
 					function getResult( _event )
 					{
 						return 0;
@@ -209,13 +209,13 @@ this.bird_shits_on_sellsword_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Historian",
-			Text = "%terrainImage%{You tell %birdbro% that being shit on is a part of life and get the company ready to get back on the road. But a modest %historian% comes up and tells the ill-fated sellsword to hold off on cleaning the shite. The historian takes a good look at the shite and then up at the bird which authored it.%SPEECH_ON%Yes, yes... I know that bird! That magical creature!%SPEECH_OFF%The men look up at the bird as though they were sealeagured sailors finding rarified land. %historian% points at %birdbro%.%SPEECH_ON%You got shat on by a red-and-blue mockingbird! That\'s all I wanted to say, really. I just hadn\'t seen one in awhile. You... you can clean it now.%SPEECH_OFF%The mercenaries stand slackjawed before bursting into laughter. %birdbro% grabs the historian and uses his sleeves to clean the shit off which brings more roars from the men.}",
+			Text = "%terrainImage%{Vous dites à %birdbro% que de se faire emmerder fait partie de la vie et préparez la compagnie à reprendre la route. Mais un modeste %historian% se présente et dit au malheureux mercenaire d\'attendre avant de nettoyer la merde. L\'historien jette un bon coup d\'œil à cette merde, puis à l\'oiseau qui en est l\'auteur.%SPEECH_ON%Oui, oui... je connais cet oiseau! Cette créature magique!%SPEECH_OFF%Les hommes lèvent les yeux vers l\'oiseau comme s\'ils étaient des marins en quête de terres promises. %historian% pointe du doigt %birdbro%.%SPEECH_ON%Vous vous êtes fait chier dessus par un oiseau moqueur rouge et bleu ! C\'est tout ce que je voulais dire, vraiment. Je n\'en avais pas vu depuis un moment. Vous... vous pouvez nettoyer maintenant.%SPEECH_OFF%Les mercenaires restent bouche bée avant d\'éclater de rire. %birdbro% attrape l\'historien et utilise ses manches pour nettoyer la merde, ce qui provoque de nouveaux rires chez les hommes.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "So that mystery is solved.",
+					Text = "Ce mystère est donc résolu.",
 					function getResult( _event )
 					{
 						return 0;

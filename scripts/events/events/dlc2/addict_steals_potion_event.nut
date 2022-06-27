@@ -11,13 +11,13 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You go to check the inventory only to find %addict% splayed half-assed into a barrel, all four limbs hanging over the lip. There\'s a number of vials collected onto his belly. He stares at you with dim, reddened eyes, and the sockets holding them are purple as though all the blood had rushed there. You ask what the hell is going on and %addict% only smiles.%SPEECH_ON%Do, uh, do what you must. Er, captain. For I have already won.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous allez vérifier le stock pour trouver %addict% plongé à moitié dans un tonneau, les quatre membres dépassant du rebord. Il a ingurgité bon nombre de fioles. Il vous regarde fixement avec des yeux sombres et rougis, et les orbites qui les contiennent sont violettes comme si tout le sang s\'y était précipité. Vous demandez ce qui se passe et %addict% ne fait que de sourire.%SPEECH_ON%Faites, euh, faites ce que vous devez faire. Er, capitaine. Car j\'ai déjà gagné.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I just hope you\'ll heal in time.",
+					Text = "J\'espère juste que tu guériras à temps.",
 					function getResult( _event )
 					{
 						return 0;
@@ -25,7 +25,7 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "This needs to stop now, %addict%.",
+					Text = "Il faut que ça cesse maintenant, %addict%.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 33 ? "C" : "D";
@@ -33,7 +33,7 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Enough. I\'ll have this bloody demon whipped out of you!",
+					Text = "Assez. Je vais faire sortir ce démon sanguinaire de toi!",
 					function getResult( _event )
 					{
 						return "B";
@@ -69,13 +69,13 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_38.png[/img]{You have %addict% taken to an ad-hoc whipping post. He lays limply against the wood, his fingers splayed out and pinching and clenching. He looks like he\'s chasing butterflies, and he carries that absent look when %otherbrother% hides him fierce with the whip.\n\n At first, the whipping does nothing, not even as it snaps across the man\'s back, leaving crescents of crimson. But after a few strikes, he wakes to reality and begins to scream. You come around to face him and ask if he\'ll swallow his addiction. He nods hurriedly. You let him get whipped again, and ask again, and again he nods. Another whipping, another question, another answer. So this goes, until he is broken and whatever ailed him is gone.}",
+			Text = "[img]gfx/ui/events/event_38.png[/img]{Vous avez amené %addict% jusqu\'au pilori pour le faire fouetter. Il s\'allonge mollement contre le bois, ses doigts s\'écartent, se coincent et se serrent. Il a l\'air de chasser des papillons, et il garde ce regard absent lorsque %otherbrother% le fouette violemment.\n\n Le fouet ne fait rien, pas même lorsqu\'il claque sur le dos de l\'homme, laissant des croissants pourpres. Mais après quelques coups, il se met à prendre conscience et commence à crier. Vous vous retournez pour lui faire face et lui demander s\'il veut bien renoncer à sa dépendance. Il hoche précipitamment la tête. Vous le laissez se faire fouetter à nouveau, et vous lui demandez à nouveau, et à nouveau il acquiesce. Un autre coup de fouet, une autre question, une autre réponse. Et ainsi de suite, jusqu\'à ce que son corps soit en sang et que ce qui le faisait souffrir ai complètement disparu.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Get him out of my sight.",
+					Text = "Mettez-le hors de ma vue.",
 					function getResult( _event )
 					{
 						return 0;
@@ -91,14 +91,14 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 					{
 						id = 10,
 						icon = "ui/icons/days_wounded.png",
-						text = _event.m.Addict.getName() + " receives an injury"
+						text = _event.m.Addict.getName() + " est blessé"
 					}
 				];
 				_event.m.Addict.getSkills().removeByID("trait.addict");
 				this.List.push({
 					id = 10,
 					icon = "ui/traits/trait_icon_29.png",
-					text = _event.m.Addict.getName() + " is no longer an addict"
+					text = _event.m.Addict.getName() + " n\'est plus dépendant"
 				});
 				_event.m.Addict.worsenMood(2.5, "Was flogged on your orders");
 				this.List.push({
@@ -136,13 +136,13 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You pull %addict% out of the barrel and throw him to the ground. He wobbles there as though the earth was a staircase and he was looking down the top step\'s precipice.%SPEECH_ON%Oy, sir, careful, it\'s just down and down!%SPEECH_OFF%At first you think to kick his arse, but relent. You crouch and set down next to the man as he rolls over to stare at the clouds. Time passes, and after a while %addict% purses his lips and you can see clarity has returned to his eyes.%SPEECH_ON%I got a problem, sir.%SPEECH_OFF%You nod and tell him to ease up on the potions, that you can\'t trust him in this state. If he\'s got a problem with being a sellsword, if that\'s why he\'s like this, then that\'s okay, but it is a problem. He purses his lips again and nods.%SPEECH_ON%Thank you, sir. I\'ll do my best to unfark myself and set things straight.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous sortez %addict% du tonneau et le jetez au sol. Il vacille comme si le sol était un escalier et sa dernière marche, un précipice.%SPEECH_ON%Hé, monsieur, attention, c\'est très profond!%SPEECH_OFF%Vous pensez d\'abord à lui botter le cul, mais n\'en faites rien. Vous vous accroupissez et vous vous posez à côté de l\'homme qui se retourne pour fixer les nuages. Le temps passe, et au bout d\'un moment, %addict% se pince les lèvres et on peut voir que la lucidité est revenue dans ses yeux.%SPEECH_ON%J\'ai un problème, monsieur.%SPEECH_OFF%Vous acquiescez et lui dites d\'y aller doucement avec les potions, que vous ne pouvez pas lui faire confiance dans cet état. Si il rencontre une difficulté avec le fait d\'être un mercenaire, si c\'est la raison pour laquelle il est comme ça, alors c\'est bon, mais c\'est un problème. Il se pince à nouveau les lèvres et acquiesce.%SPEECH_ON%Merci, monsieur. Je vais faire de mon mieux pour me libérer de cette emprise et remettre les choses en ordre.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nice talking.",
+					Text = "Bien dit.",
 					function getResult( _event )
 					{
 						return 0;
@@ -157,20 +157,20 @@ this.addict_steals_potion_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/traits/trait_icon_62.png",
-					text = _event.m.Addict.getName() + " is no longer an addict"
+					text = _event.m.Addict.getName() + " n\'est plus dépendant"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You pull %addict% out of the barrel and throw him to the ground. He wobbles there as though the earth was a staircase and he was looking down the top step\'s precipice.%SPEECH_ON%Oy, sir, careful, it\'s just down and down!%SPEECH_OFF%At first you think to kick his arse, but relent. You crouch and set down next to the man as he rolls over to stare at the clouds. After a while he looks over.%SPEECH_ON%You trying to help me?%SPEECH_OFF%You nod and say you are, but %addict% simply smiles and shakes his head.%SPEECH_ON%Ain\'t talking to you, I\'m talking to you!%SPEECH_OFF%He points behind you at the barrel, and by the time you look back the man is up to his feet and charging forward.%SPEECH_ON%Fat sumbitch gon\' be smart with me huh!%SPEECH_OFF%The sellsword tackles the barrel and it splinters from top to bottom and a number of items within spill out and shatter. A few mercenaries rush over and get the man and take him away while you count what\'s been lost.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous sortez %addict% du tonneau et le jetez au sol. Il vacille comme si le sol était un escalier et sa dernière marche, un précipice.%SPEECH_ON%Hé, monsieur, attention, c\'est très profond!%SPEECH_OFF%Vous pensez d\'abord à lui botter le cul, mais n\'en faites rien. Vous vous accroupissez et vous vous posez à côté de l\'homme qui se retourne pour fixer les nuages. Après un moment, il vous jete un coup d\'oeil.%SPEECH_ON%Vous essayez de m\'aider?%SPEECH_OFF%Vous acquiescez, mais %addict% sourit simplement et secoue la tête.%SPEECH_ON%C\'est pas à toi que je parle, c\'est à toi que je parle!%SPEECH_OFF%Il pointe le baril derrière vous, et le temps que vous vous retourniez, l\'homme est debout et vous charge.%SPEECH_ON%Le gros connard veut faire le malin avec moi, hein!%SPEECH_OFF%Le mercenaire s\'attaque au tonneau qui se fend de haut en bas et un certain nombre d\'objets en sortent et se brisent. Quelques mercenaires se précipitent sur l\'homme et l\'emmènent pendant que vous comptez ce qui a été détruit.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Goddammit.",
+					Text = "Bon sang.",
 					function getResult( _event )
 					{
 						return 0;

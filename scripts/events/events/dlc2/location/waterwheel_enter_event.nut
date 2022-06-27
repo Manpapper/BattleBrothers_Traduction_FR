@@ -1,20 +1,20 @@
 this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 	m = {},
 	function create()
-	{
+	{.
 		this.m.ID = "event.location.waterwheel_enter";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_109.png[/img]{The waterwheel totters at the hinges as its buckets dip and draw water. Attached to its side is a stonewalled abode with a chimney piping bulbs of black. There are pelts and traps hanging outside on the walls, and an oaken chair sets on the porch. Its windows are too blurry to look through, but you can hear the mill inside rising and churning with wooden groans. Drawing your sword, you step up to the porch and open the door.\n\n A man welcomes you in the first and only room there is. He\'s standing beside the mill well, running his hand through the grains. He is an elderly fellow yet of modest stature, as though time had no warrant for his posture or abilities. There is a sword hilt hanging above the fireplace. Its glint is unmistakably rich and the old man regards your stare with a warm smile.%SPEECH_ON%Only those who are worthy may have the hilt of the %weapon%. You, stranger, are not.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_109.png[/img]{La roue à eau vacille sur ses charnières tandis que ses godets plongent et puisent l\'eau. Attenante à son flanc, se trouve une demeure en pierre avec une cheminée au conduit noir. Des peaux et des pièges sont accrochés aux murs, une chaise en chêne est posée sur le porche. Ses fenêtres sont trop opaques pour qu\'on puisse y jeter un coup d\'œil, mais on peut entendre le moulin à l\'intérieur se lever et tourner dans des craquements de bois. Dégainant votre épée, vous montez sur le porche et ouvrez la porte.\n\n Un homme vous accueille dans la première et seule pièce qui existe. Il est debout à côté du moulin, passant sa main dans le grain. Il s\'agit d\'un homme âgé mais de stature modeste, comme si le temps n\'avait pas de prise sur lui. Il y a un manche d\'épée suspendue au-dessus de la cheminée. Son reflet est d\'une richesse inégalée, le vieil homme vous regarde avec un sourire chaleureux.%SPEECH_ON%Seuls ceux qui en sont dignes peuvent avoir la poignée de %weapon%. Vous, étranger, ne l\'êtes pas.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This old man ain\'t stopping me.",
+					Text = "Ce vieil homme ne va pas m\'arrêter.",
 					function getResult( _event )
 					{
 						return "B";
@@ -22,7 +22,7 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "What would make me worthy?",
+					Text = "Qu\'est-ce qui me rendrait digne?",
 					function getResult( _event )
 					{
 						return "C";
@@ -41,13 +41,13 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_109.png[/img]{You step forward and threaten the man to stand aside or face your steel. He waves his hand and your feet leave the ground. A rush of wind slams you against the wall with such force you hear silverware clattering and dust streams down from the ceiling. The old man looks at you as calmly as the second you walked through his door.%SPEECH_ON%Only the worthy. Do you understand?%SPEECH_OFF%There\'s no other answer here than to nod in agreement. The old man\'s hand goes to his side and you fall to the floor. You pick up your sword, making sure he understands you\'re only sheathing it. You ask what would make you worthy. The old man smiles again.%SPEECH_ON%My only son was worthy. He left to fight the great beast. Avenge him and ye shall be worthy.%SPEECH_OFF%You\'re shunted from the home and the door slams behind you. Seems you have a quest, though you\'ve not even the faintest notion of a compass\'s northern point to know where to go with it.}",
+			Text = "[img]gfx/ui/events/event_109.png[/img]{Vous vous avancez et menacez l\'homme de s\'écarter ou d\'affronter votre acier. Il fait un signe de la main et vos pieds quittent le sol. Un coup de vent vous projette contre le mur avec une telle force que vous entendez l\'argenterie s\'entrechoquer et la poussière tomber du plafond. Le vieil homme vous regarde aussi calmement qu\'à la seconde où vous avez franchi sa porte.%SPEECH_ON%Seulement ceux qui en sont dignes. Vous comprenez?%SPEECH_OFF%Il n\'y a rien d\'autre à faire à part acquiescer. La main du vieil homme se baisse et vous tombez au sol. Vous ramassez votre épée, en vous assurant qu\'il comprend que vous ne faites que la rengainer. Vous demandez ce qui vous rendrait digne. Le vieil homme sourit à nouveau.%SPEECH_ON%Mon fils unique était digne. Il est parti combattre la grande bête. Vengez-le et vous en serez digne.%SPEECH_OFF%Vous êtes chassé de la maison, la porte claque derrière vous. Il semble que vous ayez une quête, bien que vous ne sachiez pas trouver le nord sur une boussole.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll have to resolve it ourselves.",
+					Text = "Nous allons devoir nous débrouiller seuls.",
 					function getResult( _event )
 					{
 						this.World.Flags.set("IsWaterWheelVisited", true);
@@ -63,13 +63,13 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_109.png[/img]{The old man stares into the mill. His hand rises up and a swarm of grain revolves around his fingertips like bees around the buds of sugarcane.%SPEECH_ON%My only son departed to slay the great beast. His squire returned the hilt to me, but the blade was gone. Avenge my son, and you shall be worthy yet, stranger.%SPEECH_OFF%You ask where the beast is and the man puts his hand into the millwork again.%SPEECH_ON%If only I knew. I trust you will find out, sellsword.%SPEECH_OFF%Your feet suddenly slide back across the floor and to the porch and onto the grass. The door slams in front of you and won\'t be opened again. Seems you\'ve unwittingly taken up a quest, or perhaps one to keep on the side.}",
+			Text = "[img]gfx/ui/events/event_109.png[/img]{Le vieil homme fixe le moulin. Sa main se lève et un nuage de grains tourne autour de ses doigts comme les abeilles autour des bourgeons de canne à sucre.%SPEECH_ON%Mon fils unique est parti pour tuer la grande bête. Son écuyer m\'a rendu le manche, mais la lame avait disparu. Vengez mon fils, et vous en serez digne, étranger.%SPEECH_OFF%Vous demandez où est la bête et l\'homme remet sa main les grains.%SPEECH_ON%Si seulement je le savais. Je suis sûr que vous le découvrirez, mercenaire.%SPEECH_OFF%Vos pieds glissent soudainement sur le sol, puis sur le porche et enfin sur l\'herbe. La porte claque devant vous et reste fermée. Il semble que vous ayez involontairement entrepris une quête, ou peut-être une quête à garder sous le coude.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll have to resolve it ourselves.",
+					Text = "Nous allons devoir nous débrouiller seuls.",
 					function getResult( _event )
 					{
 						this.World.Flags.set("IsWaterWheelVisited", true);
@@ -85,13 +85,13 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "A2",
-			Text = "[img]gfx/ui/events/event_109.png[/img]{The elderly man is already waiting for you when you enter. He turns rather rapidly as though interrupted.%SPEECH_ON%So you have returned! And have you succeeded? Have you avenged my boy? Are you, sellsword, worthy?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_109.png[/img]{L\'homme âgé vous attend déjà lorsque vous entrez. Il se retourne assez rapidement comme s\'il était interrompu.%SPEECH_ON%Vous êtes donc de retour! Et avez-vous réussi? Avez-vous vengé mon garçon? Etes-vous, mercenaire, digne?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Would this make me worthy?",
+					Text = "Cela me rendrait-il digne?",
 					function getResult( _event )
 					{
 						return "C2";
@@ -106,7 +106,7 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B2",
-			Text = "[img]gfx/ui/events/event_109.png[/img]{The waterwheel totters at the hinges as its buckets dip and draw water. Attached to its side is a stonewalled abode with a chimney piping bulbs of black. There are pelts and traps hanging outside on the walls, and an oaken chair sets on the porch. Its windows are too blurry to look through, but you can hear the mill inside rising and churning with wooden groans. Drawing your sword, you step up to the porch and open the door.\n\n A man welcomes you in the first and only room there is. He\'s standing beside the mill well, running his hand through the grains. He is an elderly fellow yet of modest stature, as though time had no warrant for his posture or abilities. There is a sword hilt hanging above the fireplace, and its glint is unmistakably rich and the old man regards your stare with a warm smile.%SPEECH_ON%Only those who are worthy may have the hilt of the %weapon%. Only those who avenge my son and bring me his blade will be worthy. To do that, you would need to find the beast.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_109.png[/img]{La roue à eau vacille sur ses charnières tandis que ses godets plongent et puisent l\'eau. Attenante à son flanc, se trouve une demeure en pierre avec une cheminée au conduit noir. Des peaux et des pièges sont accrochés aux murs, une chaise en chêne est posée sur le porche. Ses fenêtres sont trop opaques pour qu\'on puisse y jeter un coup d\'œil, mais on peut entendre le moulin à l\'intérieur se lever et tourner dans des craquements de bois. Dégainant votre épée, vous montez sur le porche et ouvrez la porte.\n\n Un homme vous accueille dans la première et seule pièce qui existe. Il est debout à côté du moulin, passant sa main dans le grain. Il s\'agit d\'un homme âgé mais de stature modeste, comme si le temps n\'avait pas de prise sur lui. Il y a un manche d\'épée suspendue au-dessus de la cheminée. Son reflet est d\'une richesse inégalée, le vieil homme vous regarde avec un sourire chaleureux.%SPEECH_ON%Seuls ceux qui en sont dignes peuvent avoir la poignée de %weapon%. Seuls ceux qui vengeront mon fils et m\'apporteront sa lame seront dignes. Pour cela, vous devez trouver la bête.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -127,13 +127,13 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C2",
-			Text = "[img]gfx/ui/events/event_109.png[/img]{The blade of the %weapon% vibrates and hums. You hold it forward in both hands, the steel wobbling ever so slightly on your fingers. Smiling once more, the elder nods and turns his hand to the hanging hilt. It lifts up off its holder and floats across the room to your hands. There it turns aside and melds with the steel, becoming whole with a flash of orange and blue. It is one of the most incredible blades you\'ve ever seen with glyphs of moons and stars flaring along the fuller. When you look up, you can see through the elder\'s chest as he steadily fades away.%SPEECH_ON%My son has been avenged. His spirit can rest, and now so can mine.%SPEECH_OFF%You watch as the finished sword lifts into the air and rotates with the steel pointed down. The cupboards burst open and strips of leather fly out and clasp shots of bindings that draw together to complete a sheathe.}",
+			Text = "[img]gfx/ui/events/event_109.png[/img]{La lame de %weapon% vibre et bourdonne. Vous le tenez à deux mains, l\'acier ondule très légèrement sur vos doigts. Souriant une fois de plus, l\'aîné acquiesce et tourne sa main vers la poignée suspendue. Elle se soulève de son support et flotte à travers la pièce jusqu\'à vos mains. Là, le manche se détourne et se fond dans l\'acier, dans un éclair orange et bleu, l'arme prend forme. C\'est l\'une des lames les plus incroyables que vous ayez jamais vues, avec des glyphes de lunes et d\'étoiles qui ornent son tranchant. Quand vous levez les yeux, vous pouvez voir à travers la poitrine de l\'aîné, il s\'efface progressivement.%SPEECH_ON%Mon fils a été vengé. Son esprit peut se reposer, et maintenant le mien aussi.%SPEECH_OFF%Vous regardez l\'épée s\'élever dans les airs, tourner avec l\'acier pointé vers le bas. Les armoires de la demeure s\'ouvrent, des lanières de cuir s\'envolent et s\'accrochent à des plans de reliure qui s\'assemblent pour former un fourreau.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll take it.",
+					Text = "Je vais la prendre.",
 					function getResult( _event )
 					{
 						return "D2";
@@ -163,13 +163,13 @@ this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D2",
-			Text = "[img]gfx/ui/events/event_109.png[/img]{The %weapon% then falls and you reach to catch it, but a ghostly hand steals it away. You look up to see the elder unsheathing the blade, revealing its fire and ice as though he brokered a new day and gloomy night in the very spectrum of its steel. He chokes with laughter.%SPEECH_ON%\'Avenge my son!\' \'Be worthy!\' Idle doings for simpletons. You did well to chase the carrot, sellsword, and for that I will kill you quick.%SPEECH_OFF%Pauldrons and bracers and a chest plate rise out of the mill well, sheets of grain streaming off them to reveal their garish shapes, and the metals twist and float to the elder, fiercely striking his body as though they meant to armor the very anvil that helped craft them. The suit of steel comes together as its occupant croaks with laughter. Hands grab you by your shoulders and drag you out of the house. You are shielded by the %companyname%. The elder geist turns his head.%SPEECH_ON%A mob of morons, is it? Depart, the lot of you, and you shall be spared. I only ask that you leave me the captain as I have already promised his demise.%SPEECH_OFF%%randombrother% draws his weapon and the rest of the company follows suit. The elder holds up the crepuscular sword in return. Though the steel is firmly real, the elder\'s body is rippling to and fro like a thinly veiled curtain on a moonlit night. He sighs and parts of blue ether drift from his lips. He turns the blade so its edge faces you.%SPEECH_ON%So be it.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_109.png[/img]{L\'%weapon% tombe alors et vous tendez le bras pour l\'attraper, une main fantomatique vous la dérobe. Vous levez les yeux pour voir l\'aîné dégainer la lame, révélant ses effets de feu et de glace comme si il l\'avait fait naître pendant une sombre nuit dans le spectre même de son acier. Il s\'étrangle de rire.%SPEECH_ON%\"Vengez mon fils!\" \"Soyez dignes!\" - Des bêtises pour les simples d\'esprit. Vous avez bien fait de courir après la carotte, mercenaire, et pour cela je vais vous tuer rapidement.%SPEECH_OFF%Les métaux présente dans la demeure se tordent et volent jusqu\'à l\'aîné, frappant férocement son corps comme s\'ils voulaient armer l\'enclume même qui les a fabriqués. Le costume d\'acier s\'assemble alors que son occupant croasse de rire. Des mains vous attrapent par les épaules et vous traînent hors de la maison. Vous êtes protégé par la compagnie %companyname%. Le viielle esprit tourne la tête.%SPEECH_ON%Une bande de crétins, c\'est ça? Partez, tout le monde, et vous serez épargnés. Je demande seulement que vous me laissiez le capitaine car j\'ai déjà promis sa mort.%SPEECH_OFF%%randombrother% dégaine son arme et le reste de la compagnie fait de même. L\'aîné brandit l\'épée crépusculaire en retour. Bien que l\'acier soit bien réel, le corps de l\'aîné ondule de droite à gauche comme un rideau à peine voilé par une nuit de lune. Il soupire et des morceaux d\'éther bleu s\'échappent de ses lèvres. Il tourne la lame pour que la pointe soit face à vous.%SPEECH_ON%Qu\'il en soit ainsi.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To battle!",
+					Text = "Au combat !",
 					function getResult( _event )
 					{
 						this.World.State.getLastLocation().setFaction(this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).getID());

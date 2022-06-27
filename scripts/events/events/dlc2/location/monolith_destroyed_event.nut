@@ -3,18 +3,18 @@ this.monolith_destroyed_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.monolith_destroyed";
-		this.m.Title = "After the battle";
+		this.m.Title = "Après le combat";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_101.png[/img]{%SPEECH_START%It\'s disappointing.%SPEECH_OFF%%randombrother% says as he looks at the slain corpses. He snorts and spits.%SPEECH_ON%Don\'t think disappointing is the word for it, though. They\'re just lying there, bones and coats, like we\'d fought a closet. No flesh, no blood. It\'s unsatisfying. And knowing that, thinking it true, well that unnerves me.%SPEECH_OFF%You got nothing to say to such things other than there\'s a kernel of truth in the matter. If it weren\'t the issuances of its lust, why else the vigor for violence? Another sellsword calls you over, interrupting any solemn introspection.%SPEECH_ON%Sir, come have a look.%SPEECH_OFF%You head over and spot a skull sitting in the bed of pauldrons like an egg in the bosom of a well-endowed southerner. The rest of its body is battered and thrown to the winds as far as you can tell. What remains is a decadent slab of chest armor. It is covered in glyphs and treatments, fortunes and historical retellings, and is embroidered with red tassels and combs made of bristly hair. You touch the metal and the second you do the skull beside it powders and blows away. The mercenary seeing this shrugs rather sheepishly.%SPEECH_ON%If you got magical powers I won\'t tell no one.%SPEECH_OFF%You slug the sellsword in the shoulder and tell him to the load armor into the inventory for later allocation.}",
+			Text = "[img]gfx/ui/events/event_101.png[/img]{%SPEECH_START%C\'est décevant.%SPEECH_OFF%Dit %randombrother% en regardant les cadavres. Il renifle et crache.%SPEECH_ON%Je ne pense pas que \"décevant\" soit le mot juste, cependant. Ils sont juste là, os et vêtements, comme si on avait combattu un placard. Pas de chair, pas de sang. Ce n\'est pas satisfaisant, cela me perturbe.%SPEECH_OFF%Vous n\'avez rien à dire à ce sujet, si ce n\'est qu\'il y a un fond de vérité dans vos pensées. Si cela n\'était pas la conséquence de son désir, pourquoi cette propension à la violence? Un autre mercenaire vous interpelle, interrompant toute introspection solennelle.%SPEECH_ON%onsieur, venez voir.%SPEECH_OFF%Vous vous dirigez et repérez un crâne posé un lit de pauldrons, comme un œuf sur la poitrine d\'un sudiste bien portant. Pour autant qu\'on puisse en juger, le reste de son corps est meurtri et laissé à l\'abandon. Ce qui reste est une plaque cabossée pour armure de poitrine. Elle est couverte de glyphes et de formules, de prédictions et de récits historiques, et est ornée de pompons rouges et de peignes en poils hirsutes. Vous touchez le métal et à la seconde où vous le faites, le crâne à côté s\'envole et se pulvérise. Le mercenaire, voyant cela, hausse les épaules de manière plutôt maladroite.%SPEECH_ON%Si vous avez des pouvoirs magiques, je ne le dirai à personne.%SPEECH_OFF%Vous frappez le mercenaire et lui dites de charger l\'armure dans l\'inventaire pour une répartition ultérieure.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I should take a closer look at that armor.",
+					Text = "Je devrais regarder de plus près cette armure.",
 					function getResult( _event )
 					{
 						return "B";
@@ -29,13 +29,13 @@ this.monolith_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_101.png[/img]{As the men pack up to leave, you hear a voice behind you.%SPEECH_ON%...never were...%SPEECH_OFF%You turn back and the world darkens in a shrouded tunnel, your men and their voices fading into the dark until all that remains is an elderly man and a light at the end of all that black, an unsteady flicker and a warble of flesh trying to hold it. You approach slowly, getting bearing on the speaker. It is a shrewd, elderly man, bent at the waist and bent again at the back, and his arms are thinner than a sword\'s hilt. You look back to see the world of dark had followed you forward, nothing behind but blackness. Looking forward again, the man is suddenly before you. He looks so similar, like someone you had seen in the past and yet had forgotten, perhaps someone you had seen in your childhood, a dying uncle glimpsed on your fourth winter and his last. He is holding the candlestick with the wax drooping over his knuckles and rolling down his wrist.%SPEECH_ON%You never were meant to be... never were... never were... never were meant to be, you, the one they call the False King%SPEECH_OFF%You wake on the ground. A mercenaries are looking down at you with concerned stares.%SPEECH_ON%Uhh, you alright captain?%SPEECH_OFF%Getting up, you tell them that you were just fell into a quick nap. You look back at the Black Monolith and you can see yourself in the obelisk\'s reflection, and it is your reflection alone.}",
+			Text = "[img]gfx/ui/events/event_101.png[/img]{Alors que les hommes se préparent à partir, vous entendez une voix derrière vous.%SPEECH_ON%...jamais été...%SPEECH_OFF%Vous faites demi-tour et le monde s\'assombrit dans un tunnel obscur, vos hommes et leurs voix s\'évanouissent dans l\'obscurité jusqu\'à ce qu\'il ne reste plus qu\'un vieil homme et une lumière au bout du tunnel, un scintillement instable et un tremblement de chair qui tente de la retenir. Vous vous approchez lentement, en prenant appui sur votre interlocuteur. Il s\'agit d\'un homme âgé et avisé, courbé à la taille et dans le dos, ses bras sont plus fins que la poignée d\'une épée. Vous regardez en arrière pour voir que le monde des ténèbres vous a suivi, et qu\'il n\'y a que du noir derrière vous. LEn regardant à nouveau vers l\'avant, l\'homme est soudainement devant vous. Il a l\'air si familier, comme quelqu\'un que vous avez vu dans le passé et que vous avez oublié, peut-être quelqu\'un que vous avez vu dans votre enfance, un oncle mourant aperçu lors de votre quatrième hiver. Il tient le chandelier, la cire tombant sur ses phalanges et roulant sur son poignet.%SPEECH_ON%Vous n\'avez jamais été destiné à être... jamais été... jamais été... jamais été destiné à être, vous, celui qu\'ils appellent le Faux Roi.%SPEECH_OFF%Vous vous réveillez sur le sol. Des mercenaires vous regardent d\'un air inquiet.%SPEECH_ON%Uhh, vous allez bien capitaine?%SPEECH_OFF%En vous levant, vous leur dites que vous faisiez juste une sieste rapide. En regardant le Monolithe noir, vous vous voyez dans le reflet de l\'obélisque, seul votre image est visible.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'m alright.",
+					Text = "Je vais bien.",
 					function getResult( _event )
 					{
 						return 0;

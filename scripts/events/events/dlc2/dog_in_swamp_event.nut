@@ -11,13 +11,13 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_09.png[/img]A shrill cry pierces the doldrums of the swamp. You rush forward and find a man thrashing about in the waters, his arms swinging ropes of kudzu. The water is foaming and bubbling and the snout of a dog briefly appears and spends that second barking for help instead of breathing for any momentary extension of life. Seeing you, the dog\'s owner calls out.%SPEECH_ON%Please, help! Something\'s got my dog!%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_09.png[/img]Un cri strident perce le marasme du marais. Vous vous précipitez et trouvez un homme qui se débat dans les eaux, ses bras balançant des lianes de kudzu. L\'eau mousse et bouillonne, le museau d\'un chien apparaît brièvement et en profite pour aboyer à l\'aide au lieu de respirer pour prolonger momentanément sa vie. En vous voyant, le propriétaire du chien hurle.%SPEECH_ON%S\'il vous plaît, à l\'aide! Mon chien a été happé par quelque chose!%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This ain\'t our business.",
+					Text = "C\'est pas notre problème.",
 					function getResult( _event )
 					{
 						return 0;
@@ -25,7 +25,7 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Men, we\'ve got to help that dog!",
+					Text = "Les gars, il faut aider ce chien !",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 60)
@@ -57,7 +57,7 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 				if (net)
 				{
 					this.Options.push({
-						Text = "Maybe I can use one of our nets to save that dog.",
+						Text = "Peut-être que je peux utiliser un de nos filets pour sauver ce chien.",
 						function getResult( _event )
 						{
 							return "Net";
@@ -69,7 +69,7 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Houndmaster != null)
 				{
 					this.Options.push({
-						Text = "Maybe our houndmaster can help?",
+						Text = "Peut-être que notre maître-chien peut aider ?",
 						function getResult( _event )
 						{
 							return "Houndmaster";
@@ -81,7 +81,7 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Beastslayer != null)
 				{
 					this.Options.push({
-						Text = "%beastslayer%, you\'re used to deal with beasts. Know what this is?",
+						Text = "%beastslayer%, vous avez l\'habitude de traiter avec des bêtes. Vous savez ce que c\'est?",
 						function getResult( _event )
 						{
 							return "BeastSlayer";
@@ -94,13 +94,13 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "GoodEnding",
-			Text = "[img]gfx/ui/events/event_09.png[/img]%helpbro% wades into the swampwater with his arms out and swaying as though he were screwing the lid off a barrel. He lifts the weapon on high and the dog\'s owner nervously watches. A grin crosses the sellsword\'s face.%SPEECH_ON%Gotcha!%SPEECH_OFF%He skewers the swamp water and wrangles up a snake longer than any you\'ve ever seen, the length of it flopping about as the mercenary parades its corpse like a colored rope of a reward. The owner goes for his dog, but it slips out his grasp as though his arms were but another snake and it sprints right to your side. You ask if it\'s his dog at all. He nods, then slowly shakes his head.%SPEECH_ON%I suppose it\'s yer dog now. He\'s a fighter, that one, but he ain\'t nothing at all if not a goddam shite swimmer. I\'d see it a fair trade if I can keep that there snake.%SPEECH_OFF%You nod and make the trade, telling %helpbro% to hand over his newfound trophy.",
+			Text = "[img]gfx/ui/events/event_09.png[/img]%helpbro% s\'avance dans l\'eau du marais en tendant les bras et en se balançant comme s\'il vissait le couvercle d\'un baril. Il lève l\'arme en hauteur et le propriétaire du chien observe nerveusement. Un sourire traverse le visage du mercenaire.%SPEECH_ON%Je t\'ai eu!%SPEECH_OFF%Il embroche l\'eau du marais et arrache un serpent plus long que tout ce que vous avez jamais vu, la bête se balance dans tous les sens tandis que le mercenaire parade avec son cadavre comme récompense. Le maître va chercher son chien, mais celui-ci lui glisse entre les mains comme si ses bras n\'étaient qu\'un autre serpent et il saute à côté de vous. Vous demandez si c\'est son chien. Il acquiesce, puis secoue lentement la tête.%SPEECH_ON%Je suppose que c\'est ton chien maintenant. C\'est un battant, celui-là, mais il n\'est rien du tout si ce n\'est un foutu nageur de merde. Je verrais ça comme un échange équitable si je pouvais garder ce serpent.%SPEECH_OFF%Vous acquiescez et faites l\'échange, en disant à %helpbro% de vous remettre son nouveau trophée.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I think I\'ll name you... Swimmer.",
+					Text = "Je pense que je vais t\'appeler... Nageur.",
 					function getResult( _event )
 					{
 						return 0;
@@ -124,13 +124,13 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "BadEnding",
-			Text = "[img]gfx/ui/events/event_09.png[/img]%helpbro% heads to the shoreline and draws his weapon. He wades into the mire like some ale strewn saint departing a crowd before they recognize his face. Such is his struggle that he topples over on top of the dog and disappears into the froth and bubbles of the battle. You rush to his side and pull him ashore, the man covered in moss and his boots wrapped in lily pads and he\'s hacking nasty swamp water and picking out the brine which fermented it. There\'s no sight of the dog, just a slight ripple of water which trails away from the scene. Unnerved, its owner nods.%SPEECH_ON%Appreciate the effort, but it is what it is. The swamp sees to such things because it\'s a swamp and fark this goddam farkin\' place I\'d see this whole shitstain of geographical oddity drained and burned and salted to nothing but a wasteland whole if I could!%SPEECH_OFF%You raise an eyebrow and ask if he lives in the swamp. He takes a long breath and nods.%SPEECH_ON%Yessir. Rent free.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_09.png[/img]%helpbro% se dirige vers le rivage et dégaine son arme. Il s\'enfonce dans le bourbier comme un saint rempli de bière qui quitte la foule avant qu\'on ne reconnaisse son visage. Sa lutte est telle qu\'il tombe sur le chien et disparaît dans l\'écume et les remous de la bataille. Vous vous précipitez à ses côtés et le tirez sur le rivage, l\'homme couvert de mousse a ses bottes enveloppées de nénuphars et il hache l\'eau sale du marécage et en retire la saumure fermentée. On ne voit pas le chien, juste une légère ondulation de l\'eau qui s\'éloigne de la zone. Inquiet, son propriétaire acquiesce.%SPEECH_ON%J\'apprécie l\'effort, mais les choses sont ce qu\'elles sont. Le marais s\'occupe de ce genre de situations parce que c\'est un marais et que j\'emmerde ce putain d\'endroit. Si je pouvais, je verrais cette tache de merde de bizarrerie géographique vidée, brûlée et salée pour n\'être plus qu\'un terrain vague.!%SPEECH_OFF%Vous levez un sourcil et lui demandez s\'il vit dans le marais. Il prend une longue inspiration et acquiesce.%SPEECH_ON%Oui monsieur... et à perpetuité.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well, that was a whorthwile endeavour.",
+					Text = "Eh bien, c\'était un effort qui valait la peine.",
 					function getResult( _event )
 					{
 						return 0;
@@ -145,20 +145,20 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/days_wounded.png",
-					text = _event.m.Helper.getName() + " suffers light wounds"
+					text = _event.m.Helper.getName() + " souffre de blessures légères"
 				});
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "Houndmaster",
-			Text = "[img]gfx/ui/events/event_09.png[/img]%houndmaster% the houndmaster rushes forward to help, but the dog the swamp surface goes still. The man slips into the water and feels about. His hands clench and he stares back at the stranger.%SPEECH_ON%I\'m a dog handler at heart. That means I train \'em to not get into this much trouble. But I ain\'t ever would need to train a dog to beware this here bog, which means this sonuvabitch here threw him in there, ain\'t that right?%SPEECH_OFF%The stranger\'s first words are excuses and so the houndmaster batters him. The stranger scissors his legs backwards so awkwardly his pants fall about his ankles and there in his drawers spill an assortment of treasures. The damned fool is a treasure hunter! %houndmaster% draws a weapon and looks ready to murder this man. Screaming, the stranger kicks his pants off and runs off into the swampwoods hooting and pallidly half naked like some potato sack governed by a ghost. Laughing, you crouch to sift through the departed\'s goods, not all of which is shiny.",
+			Text = "[img]gfx/ui/events/event_09.png[/img]%houndmaster% le maître-chien se précipite pour aider, mais le chien à la surface du marais reste immobile. L\'homme se glisse dans l\'eau et observe ce qu\'il voit. Ses mains se crispent et il fixe l\'étranger.%SPEECH_ON%Je suis un maître-chien dans l\'âme. Ça veut dire que je les entraîne pour qu\'ils ne s\'attirent pas autant de problèmes. Mais je n\'ai jamais eu besoin d\'entraîner un chien à se méfier de cette tourbière, ce qui signifie que ce fils de pute l\'a jeté là-dedans, n\'est-ce pas?%SPEECH_OFF%Les premiers mots de l\'étranger sont des excuses mais le maître-chien le frappe. L\'étranger recule si maladroitement que son pantalon tombe sur ses chevilles et que de nombreux trésors tombent de ses poches. Ce fou furieux est un chasseur de trésors! %houndmaster% sort une arme et semble prêt à tuer cet homme. En hurlant, l\'étranger enlève son pantalon et s\'enfuit dans les bois du marais en hululant et en restant à moitié nu comme un sac à patates dominé par un fantôme. En riant, vous vous accroupissez pour passer en revue les biens du défunt, qui ne sont pas tous brillants.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What a shame. And what a gain!",
+					Text = "Quelle honte. Et quel profit !",
 					function getResult( _event )
 					{
 						return 0;
@@ -181,13 +181,13 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "BeastSlayer",
-			Text = "[img]gfx/ui/events/event_09.png[/img]The slayer of creatures, %beastslayer%, nods and wades into the swamp. He calmly comes to the thrashing water and stands over it, staring into the mire with his eyes tracking left to right as though he were watching carp in clear waters. Finally, he draws a dinner knife and slashes it into the water. Once more. And again. The dog surfaces and it snorts for air. The slayer stabs again and this time the dog runs free and goes between your legs where it huddles wet and whimpering. %beastslayer% holds something in his hand and then lets it go, whatever it is diving across the swamp, the water rippling in its wake.%SPEECH_ON%Nothing but a snake, captain.%SPEECH_OFF%The beast slayer kicks his foot up out of the water and riding his toe is a shiny goblet. He regards the swamp stranger with complete contempt.%SPEECH_ON%Your cowardice has made you a monster, treasure hunter, a right savage that\'d use a dog in place of his own two hands. You\'ve no business in these swamps. When I turn around, you\'d best be gone, got it?%SPEECH_OFF%The beast slayer hands you the goblet and the stranger retreats without delay.",
+			Text = "[img]gfx/ui/events/event_09.png[/img]Le tueur de créatures, %beastslayer%, hoche la tête et s\'enfonce dans le marais. Il s\'approche calmement de l\'eau agitée et se tient au-dessus, fixant la boue de ses yeux de gauche à droite comme s\'il observait des carpes dans des eaux claires. Enfin, il sort un couteau de table et l\'enfonce dans l\'eau. Une fois de plus. Et encore. Le chien fait surface pour respirer. Le tueur l\'enfonce à nouveau et cette fois le chien s\'échappe et va entre vos jambes où il se blottit, mouillé et gémissant. Le %beastslayer% tient quelque chose dans sa main puis le lâche, quoi que ce soit, l\'objet plonge à travers le marais, l\'eau ondulant dans son sillage.%SPEECH_ON%Rien qu\'un serpent, capitaine.%SPEECH_OFF%Le tueur de bêtes sort son pied de l\'eau et sur son orteil se trouve un gobelet brillant. Il considère l\'étranger du marais avec un mépris total.%SPEECH_ON%Votre lâcheté a fait de vous un monstre, un chasseur de trésor, un vrai sauvage qui utiliserait un chien à la place de ses propres mains. Tu n\'as rien à faire dans ces marais. Quand je me retournerai, vous feriez mieux d\'être parti, compris ?%SPEECH_OFF%Le tueur de bêtes vous donne le gobelet et l\'étranger se retire sans délai.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Very good.",
+					Text = "Très bien.",
 					function getResult( _event )
 					{
 						return 0;
@@ -199,7 +199,7 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Beastslayer.getImagePath());
 				local item = this.new("scripts/items/accessory/wardog_item");
-				item.m.Name = "Swimmer";
+				item.m.Name = "Nageur";
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
@@ -218,13 +218,13 @@ this.dog_in_swamp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Net",
-			Text = "[img]gfx/ui/events/event_09.png[/img]You fetch a net from the inventory and toss it over the dog. Despite the thrashing, the rim of the net sifts ever so gently into the mire like a child would slowly capture a jittery fly. A few of the sellswords join your side and go into the bog and tighten the ropes then drag the net ashore. The dog\'s legs stick out the bindings every which way and even with its life on the line it stares blankly in some sort of shamed caninity. Whatever held the dog seems to have gotten a sense of danger and releases itself and you watch a slippery green rope unfurl and dive back into the water and it\'s gone in the slightest of ripples.\n\n %randombrother% notes the mutt\'s fit frame and obedient demeanor. Indeed, it already seems unaffected by its brush with death, offering a friendly bark as deposition. You tell the stranger the dog now belongs to the company.",
+			Text = "[img]gfx/ui/events/event_09.png[/img]Vous récupérez un filet dans l\'inventaire et le lancez sur le chien. Malgré les secousses, le bord du filet s\'enfonce doucement dans la boue comme un enfant capturerait lentement une mouche agile. Quelques mercenaires se joignent à vous et vont dans la tourbière pour tendre les cordes et tirer le filet sur le rivage. Les pattes du chien dépassent des attaches dans tous les sens et même si sa vie est en jeu, il regarde avec ses yeux de chiens battu. Ce qui retenait le chien semble avoir pris conscience du danger et se libère, vous regardez une sorte de corde verte glissante se déplier et replonger dans l\'eau, elle disparaît sans la moindre ondulation.\n\n %randombrother% souligne la bonne santé du chien et son comportement obéissant. En effet, il semble déjà ne pas avoir été affecté par son contact avec la mort, offrant un aboiement amical en guise de témoignage. Vous dites à l\'étranger que le chien appartient désormais à la compagnie.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I think I\'ll name you... Swimmer.",
+					Text = "Je pense que je vais t\'appeler... Nageur.",
 					function getResult( _event )
 					{
 						return 0;

@@ -10,23 +10,23 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.kraken_cult_enter";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Texts.resize(4);
-		this.m.Texts[0] = "And who are you?";
-		this.m.Texts[1] = "So what all do you know?";
-		this.m.Texts[2] = "You\'re a full on nutbar.";
-		this.m.Texts[3] = "So, how can I help?";
+		this.m.Texts[0] = "Et qui êtes-vous?";
+		this.m.Texts[1] = "Alors, que savez-vous?";
+		this.m.Texts[2] = "Vous êtes un vrai cinglé.";
+		this.m.Texts[3] = "Alors, comment puis-je aider?";
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{You stumble across a woman in the swamps, alone and with a rucksack and a pannier with rolls of what may be maps, and there\'s a dagger to her left hip and pots and pans to her right. There\'s a kicked campfire nearby and a pile of tomes shoed into a velvet sock. Everything she is and everything she has is covered in the greenery of the mire. She\'s standing there staring at you and you at her. It is not exactly ordinary for a woman to be out alone in the bog. She smiles quaintly, hesitantly.%SPEECH_ON%Hello.%SPEECH_OFF%With a hand on the handle of your sword, you eye the surrounding parts for an ambush. You ask her what she\'s doing out this way and she says you wouldn\'t believe her. You\'ve seen enough to lend credence to even the edges of whatever insanity she could respond with. The woman nods.%SPEECH_ON%Well, alright then. Come on over and I\'ll show ya.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{Vous tombez sur une femme dans les marais, seule, avec un sac à dos et une sacoche contenant des rouleaux de ce qui pourrait être des cartes, il y a une dague à sa hanche gauche et des casseroles à sa droite. Il y a un feu de camp allumé à proximité et une pile de tomes rangés dans une chaussette de velours. Tout ce qu\'elle est et tout ce qu\'elle a est recouvert par la végétation du bourbier. Elle est là à vous fixer et réciproquement. Ce n\'est pas vraiment ordinaire pour une femme d\'être seule dans la tourbière. Elle sourit d\'un air bizarre et hésitant.%SPEECH_ON%Bonjour.%SPEECH_OFF%Une main sur la poignée de votre épée, vous observez les environs craignant une embuscade. Vous lui demandez ce qu\'elle fait par ici et elle dit que vous ne la croiriez pas. Vous en avez vu assez pour ne pas croire que cette femme est folle. La femme acquiesce.%SPEECH_ON%Bon, d\'accord. Venez et je vous montrerai.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s have a look.",
+					Text = "Jetons un coup d\'oeil.",
 					function getResult( _event )
 					{
 						return "B";
@@ -34,7 +34,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'re fine.",
+					Text = "Ça va aller, merci.",
 					function getResult( _event )
 					{
 						return 0;
@@ -56,7 +56,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{You tell the company to keep vigilant for scapegraces hiding in the swamp, but they only laugh and say you should have stopped at the whorehouse if you were so up and in a fit. Ignoring them, you head toward the woman. You find her on a log, a mushroom cap twisting in her hands, and she speaks rather honestly.%SPEECH_ON%I\'m in search of a monster and whether real or farce, to me it is a monster all the same. Understand?%SPEECH_OFF%In a way, you do. Not all monsters are real, and a bog broad like this could be crazy. You ask her what this supposed beast is. She eats the mushroom and then grabs a book and throws it your way. There\'s a page held by a leaf and you open to it. Drawn there is what looks like an octopus with limbs the size of longships. It is in battle with a whole navy and seems to even be winning. The woman leans forward, her limp green hands hanging like kudzu between her knees.%SPEECH_ON%The monster I\'m seeking is the kraken.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{Vous dites à la compagnie de rester vigilante quant aux crapules qui se cachent dans le marécage, mais ils se contentent de rire et de dire que vous auriez dû vous arrêter au bordel si vous étiez si remonté et dans un état second. Vous les ignorez et allez vers la femme. Vous la trouvez sur un rondin, en train de tordre avec ses mains un chapeau en forme de champignon, elle parle plutôt ouvertement.%SPEECH_ON%Je suis à la recherche d\'un monstre et qu\'il soit réel ou fictif, pour moi c\'est tout de même un monstre. Vous comprenez?%SPEECH_OFF%Dans un sens, oui. Tous les monstres ne sont pas réels, et une tourbière comme celle-ci pourrait être folle. Vous lui demandez ce qu\'est cette supposée bête. Elle mange un champignon, puis attrape un livre et vous le lance. Une feuille faisant office de marque-page vous indique où regarder. On y voit ce qui ressemble à une pieuvre avec des membres de la taille d\'un navire. Il se bat contre une flotte entière et semble même gagner. La femme se penche en avant, ses mains vertes et molles pendent comme du kudzu entre ses genoux.%SPEECH_ON%Le monstre que je cherche est le kraken.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -69,7 +69,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B0",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{The woman leans back. She eats another mushroom and turns and stabs her dagger into a bug that had been scuttling across the log. Without so much as a pause she eats it off the tip and speaks between mashing its carapace.%SPEECH_ON%Ordinarily, I\'d be short on details and already waving this here dagger at your pecker, but I think you\'re keen on helping. I can see it in your eyes. You\'re a killer, a murderer, a lech, a fancier of the coin, and a crazy sumbitch.%SPEECH_OFF%She swallows the remains of the insect and spits out its remains like the shells of a sunflower seed. She nods.%SPEECH_ON%I\'m the daughter of a wealthy nobleman, but I\'m clearly far away from that life.%SPEECH_OFF%That she is.}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{La femme se penche en arrière. Elle mange un autre champignon et se retourne pour planter sa dague dans un insecte qui se déplaçait sur une bûche. Sans même une pause, elle le mange par la pointe et parle en écrasant sa carapace.%SPEECH_ON%D\'habitude, je serais à court de détails et j\'agiterais déjà cette dague sur votre queue, mais je pense que vous avez envie d\'aider. Je peux le voir dans vos yeux. Vous êtes un tueur, un assassin, une pute, un amateur de pièces de monnaie, et un putain de fou.%SPEECH_OFF%Elle avale les restes de l\'insecte et les recrachent comme les coquilles d\'une graine de tournesol. Elle acquiesce.%SPEECH_ON%Je suis la fille d\'un riche noble, mais cette vie est loin maintenant.%SPEECH_OFF%C\'est le cas.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -83,7 +83,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B1",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{She turns to her tomes and stares at them as though they were gravestones.%SPEECH_ON%My father owns one of the largest libraries in all the land. In those halls I discovered stories of these very swamps. Stories by authors who, unwittingly, were repeating themselves. Ten years ago. A hundred. A thousand. All the same tale. A tale of men coming here, and men disappearing. Resolution is not sought and the answers are ambiguous. Bandits. Diseases. One scholar simply said the men experienced such wonder at the beauties of the swamp that they decided to stay there. Can you believe that? Beauties of the swamp?%SPEECH_OFF%Smirking, you say you\'re looking at one. She laughs.%SPEECH_ON%I haven\'t seen myself in months, but I\'m serious, stranger. I\'ve searched these parts and I haven\'t found a goddam thing.%SPEECH_OFF%She points a finger at her books.%SPEECH_ON%Twenty disappearances with up to three hundred men, armored, with horses, some with caravans, some with protected highborn, and yet I look around out here and I don\'t see a single goddam thing.%SPEECH_OFF%You suspect if you fucked off and died in a swamp no one would give a shit about you either, but that many tales is a little suspicious.}}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{Elle se tourne vers ses tomes et les fixe comme s\'ils étaient des pierres tombales.%SPEECH_ON%Mon père possède l\'une des plus grandes bibliothèques de tout le pays. Dans ces salles, j\'ai découvert les histoires de ces marais. Des histoires d\'auteurs qui, sans le savoir, se répétaient. Il y a dix ans. Cent ans. Mille ans. Toujours la même histoire. Une histoire d\'hommes qui arrivent et d\'hommes qui disparaissent. La réponse n\'est pas claire et les réponses sont ambiguës. Des bandits. Des maladies. Un érudit a simplement dit que les hommes ont été tellement émerveillés par les beautés du marais qu\'ils ont décidé d\'y rester. Vous y croyez? Les beautés du marais?%SPEECH_OFF%En souriant, vous dites que vous en regardez un. Elle rit.%SPEECH_ON%Je ne me suis pas vu depuis des mois, mais je suis sérieuse, étranger. J\'ai cherché dans le coin et je n\'ai rien trouvé.%SPEECH_OFF%Elle désigne ses livres.%SPEECH_ON%Vingt disparitions au début, jusqu\'à trois cents hommes de nos jours, en armure, avec des chevaux, certains avec des caravanes, d\'autres avec des nobles protégés, et pourtant je regarde autour de moi et je ne vois pas la moindre chose.%SPEECH_OFF%Si demain, vous mourriez dans les marais, vous savez que personne n\'en aurait rien à foutre de vous non plus, mais autant de récits, c\'est un peu suspect.}}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -97,7 +97,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B2",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{She shrugs.%SPEECH_ON%Maybe, but at least I didn\'t hire a company full of assholes.%SPEECH_OFF%You look back at the %companyname% who on one side of the camp are having fistfights and in the middle someone is slipping a swamp snake up a sleeping sellsword\'s pants and on the closer side of things a few are pointing at you two and grabbing their crotches and humping the air. You turn back and tell her they aren\'t so bad. Just then, a mercenary screams across the swamp.%SPEECH_ON%Tell her about the time everyone fucking died and so we made you captain cause there was no one else! Ladies love heroics!%SPEECH_OFF%Grinning, you repeat yourself.%SPEECH_ON%Honestly, not the worst.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{Elle hausse les épaules.%SPEECH_ON%Peut-être, mais au moins je n\'ai pas engagé une compagnie pleine de trous du cul.%SPEECH_OFF%Vous regardez en arrière vers la compagnie %companyname% qui, d\'un côté, des mercenaires se battent à coups de poing, un autre glisse un serpent des marais dans le pantalon d\'un mercenaire endormi et, de l\'autre côté, quelques uns vous montrent du doigt, agrippent leur entrejambe et se trémoussent. Vous vous retournez et lui dites qu\'ils ne sont pas si mauvais. Au même moment, un mercenaire hurle à travers le marais.%SPEECH_ON%Raconte-lui la fois où tout le monde est mort et où on t\'a nommé capitaine parce qu\'il n\'y avait personne d\'autre! Les femmes aiment les héros!%SPEECH_OFF%En souriant, vous vous répétez.%SPEECH_ON%Honnêtement, c\'est pas les pires.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -111,13 +111,13 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{The woman rummages through her rucksack and produces a signet unlike any you\'ve seen before. She flips it to you as though it were a shite counterfeit coin.%SPEECH_ON%Got plenty more where that came from. Well, not here exactly. Wouldn\'t want you get any ideas about robbing and ravaging, you know. But you do what I ask and I\'ll dump a chest of those on ya.%SPEECH_OFF%You pocket the signet and ask her what\'s needed. She answers.%SPEECH_ON%That I\'m not entirely yet sure of. Sailors talk of the krakens as being natural enemies to whales, but well, there are no whales around these parts given we\'re on land and all. But there is something close. An unhold of the bog. I suspect the krakens, through eons of time, moved inland and fed upon what they could and, like when they were in the seas, found an enemy here just as well. Bring me %hides% unhold hides and I may be able to lure the beast out of its slumber yet.%SPEECH_OFF%Out of its slumber? Where the hell would it even be sleeping? You shrug and figure if she\'s willing to rid herself of such magnificent jewelry then you\'d be more than happy to oblige her.}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{La femme fouille dans son sac à dos et en sort une chevalière comme vous n\'en avez jamais vu. Elle vous la tend comme si c\'était une fausse pièce de monnaie.%SPEECH_ON%Il y en a plein d\'autres ailleurs. Mais pas ici exactement. Je ne voudrais pas que tu te fasses des idées sur le vol, tu sais. Mais tu fais ce que je demande et je te balance un coffre de ces trucs.%SPEECH_OFF%Vous empochez la bague et vous lui demandez ce dont elle a besoin. Elle répond.%SPEECH_ON%Je n\'en suis pas encore tout à fait sûr. Les marins disent que les krakens sont des ennemis naturels des baleines, mais il n\'y a pas de baleines par ici, puisque nous sommes sur la terre ferme. Mais il y a quelque chose qui s\'en rapproche. Un monstre des marais. Je soupçonne que les krakens, à travers les millénaires, se sont déplacés vers l\'intérieur des terres et se sont nourris de ce qu\'ils pouvaient et, comme lorsqu\'ils étaient dans les mers, ont trouvé des proies. Apportez-moi des %hides% de monstres et je pourrai peut-être sortir la bête de son hibernation.%SPEECH_OFF%Sortir de son sommeil? Où diable pourrait-il dormir? Vous haussez les épaules et vous vous dites que si elle est prête à se débarrasser de ces magnifiques bijoux, vous serez plus qu\'heureux de lui rendre service.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll bring you the hides.",
+					Text = "Je vais vous apporter les peaux.",
 					function getResult( _event )
 					{
 						this.World.Flags.set("KrakenCultStage", 1);
@@ -149,13 +149,13 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{You bring the woman her unhold hides only to find there are more people now. A few men and women milling about, poking around the swamp, eating mushrooms. They ask if you are here to help find the kraken. You sternly ask if they\'re here to get paid as well because you are sure as shite not sharing the goods. The woman calls out to you and runs over. She turns her head and scrunches swamp slush out of her hair as though it were a dirty rag.%SPEECH_ON%Are those the, they are!%SPEECH_OFF%She snaps her fingers and a few helpers take the hides away. You ask who the hell these people are. She shrugs.%SPEECH_ON%They just started arriving, I guess. Said it was in the stars for them to be here and I ain\'t one to question that. And no, I ain\'t going to pay them what I owed you. They\'re just happy to be here, away from everywhere else, away from everything always.%SPEECH_OFF%You raise an eyebrow.}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{Vous apportez à la femme les peaux de monstres pour constater qu\'il y a plus de monde maintenant. Quelques hommes et femmes qui se promènent, fouillant dans le marais, mangeant des champignons. Ils demandent si vous êtes ici pour aider à trouver le kraken. Vous leur demandez violemment s\'ils sont là pour être payés aussi parce que vous êtes sûr de ne pas partager les bénéfices. Une femme vous appelle et court vers vous. Elle tourne la tête et enlève la boue de ses cheveux comme si c\'était un chiffon sale.%SPEECH_ON%Ce sont les, ce sont les!%SPEECH_OFF%Elle claque des doigts et quelques assistants emportent les peaux. Vous demandez qui sont ces gens. Elle hausse les épaules.%SPEECH_ON%Ils ont juste commencé à arriver, je suppose. Ils ont dit que c\'était grâces aux étoiles qu\'ils étaient là, je ne vais les contredire. Et non, je ne vais pas leur payer ce que je vous devais. Ils sont juste heureux d\'être ici, loin de tout le reste, loin de tout, toujours.%SPEECH_OFF%Vous levez un sourcil.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "So the deal is done then?",
+					Text = "L\'affaire est donc conclue?",
 					function getResult( _event )
 					{
 						return "E";
@@ -198,13 +198,13 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{With the hides delivered, you ask for what you\'re owed. She flips you another signet as though you were a beggar and then waves for you toward her books. As you walk over, you see the helpers cutting up the unholds\' hides. They seem to be tailoring them as cloaks. The woman talks.%SPEECH_ON%I think we\'re closer to the awakening. The helpers here said they saw stars, but I think what they really saw were fireflies. I see them sometimes myself. Little bugs that glow in the dark. I\'ve tried to capture a few, but they keep winking away.%SPEECH_OFF%Right. You ask for your payment. Again. She answers by reopening that old tome and looking at the drawing of the sailors being attacked by the kraken.%SPEECH_ON%With so much help around I have had more time to delve into the books, and in that time I noticed something. What do you see in this picture? Look closely now.%SPEECH_OFF%You stare at it, but shrug. She drags her finger across the particularities of the drawing, as though her narration were etching it there and then.%SPEECH_ON%Moonlight. This battle occurred at night. What are these here, flying above the fight? Seagulls? No. Those are bats. What in the hells are bats doing flittering around in the middle of the ocean? And then there\'s this man here, at the helm of the ship, with the long ears and the black cloak. An interesting figure, no? And then there\'s this, a few pages down, a record of, I quote, \'a vagabond who threw bats out of his cloak to mask his escape\'. Rather particular, no? I think these were called Necrosavants. Ancient ones. And I think they weren\'t ambushed by the kraken. I think they were hunting it.%SPEECH_OFF%Sighing, you ask what she needs. The woman claps the book closed.%SPEECH_ON%Depends if they exist or not, for with mine own eyes I have not witnessed them, but in my days I have seen the shamans and the magicians with their strange glittery ashes. Perhaps trickery, perhaps not. Bring me %remains% ash piles of these nightmen and we may have our kraken yet.%SPEECH_OFF%The woman excitedly stuffs her face with more mushrooms. She pauses, grinning with black caps for teeth.%SPEECH_ON%And then you\'ll have your crowns, too, of course.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{Une fois les peaux livrées, vous demandez ce qui vous est dû. Elle vous fait un autre signe de la main comme si vous étiez un mendiant et vous fait signe de vous diriger vers ses livres. En vous approchant, vous voyez les assistants qui découpent les peaux des monstres. Ils semblent les tailler en cape. La femme parle.%SPEECH_ON%Je pense que nous sommes proches de l\'éveil. Les assistants ici ont dit qu\'ils ont vu des étoiles, mais je pense que ce qu\'ils ont vraiment vu, ce sont des lucioles. J\'en vois parfois moi-même. Des petites bestioles qui brillent dans le noir. J\'ai essayé d\'en capturer quelques-unes, mais elles continuent à clignoter.%SPEECH_OFF%Bien. Vous demandez votre paiement. Encore une fois. Elle répond en rouvrant ce vieux tome et en regardant le dessin des marins attaqués par le kraken.%SPEECH_ON%Avec autant d\'aide, j\'ai eu plus de temps pour me plonger dans les livres, et j\'ai remarqué quelque chose. Que voyez-vous dans cette image ? Regardez attentivement maintenant.%SPEECH_OFF%Vous le fixez, mais vous haussez les épaules. Elle fait glisser son doigt sur les particularités du dessin, comme si sa narration le gravait à cet instant précis.%SPEECH_ON%Un clair de lune. Cette bataille a eu lieu la nuit. Qu\'est-ce que c\'est que ça, volant au-dessus du combat ? Des mouettes ? Non. Ce sont des chauves-souris. Qu\'est-ce que des chauves-souris peuvent bien faire à voleter au milieu de l\'océan ? Et puis il y a cet homme, à la barre du navire, avec des longues oreilles et une cape noire. Une personnage intéressante, non? Et puis il y a ceci, quelques pages plus bas, un rapport sur, je cite, \"un vagabond qui jetait des chauves-souris hors de sa cape pour masquer sa fuite\". Plutôt particulier, non? Je crois qu\'on les appelait les Nécrosavants. Des Anciens. Et je pense qu\'ils n\'ont pas été pris en embuscade par le kraken. Je pense qu\'ils le chassaient.%SPEECH_OFF%En soupirant, vous lui demandez ce dont elle a besoin. La femme referme le livre en claquant des doigts.%SPEECH_ON%Cela dépend s\'ils existent ou non, car de mes propres yeux je n\'en ai pas été témoin, mais de mon temps j\'ai vu les chamans et les magiciens avec leurs étranges cendres scintillantes. Peut-être une supercherie, peut-être pas. Apportez-moi des %remains% de cendres de ces hommes de la nuit et nous aurons peut-être notre kraken.%SPEECH_OFF%La femme s\'empiffre de champignons avec entrain. Elle fait une pause, souriant avec des calottes noires à la place des dents.%SPEECH_ON%Et puis vous aurez vos couronnes, aussi, bien sûr.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "From dust to finding dust.",
+					Text = "De la poussière à la recherche de la poussière.",
 					function getResult( _event )
 					{
 						this.World.Flags.set("KrakenCultStage", 2);
@@ -236,13 +236,13 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_120.png[/img]{With all the time spent there, you thought this place an increasingly familiar mire, but the swamp suddenly feels strange and foreign, like walking into an old bedroom only to know something has been moved around.\n\nYou find the woman standing at a distance, a formation of her helpers behind her. They\'re all wearing cloaks made of unhold hides. They\'re crouching before bulbs of green lights, cupping them in their hands, and you can see slivers of grins brokered in each viridian sheen, rinds of lips hissing softly in fading sanity. The woman\'s books and tomes and papers are littered all around. A fog lingers, and it has brought with it a horrible stench. You ask where your money is. The woman grins and her eyes are jaundiced and her lips parched and splintered and mushrooms bits are smattered across her cheeks.%SPEECH_ON%The sellsword wants his crowns! There is nothing here but escape! Escape from everything everywhere!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_120.png[/img]{Avec tout le temps que vous y avez passé, vous pensiez que cet endroit était de plus en plus familier, mais le marais vous semble soudain étrange et étranger, comme si vous entriez dans une vieille chambre pour vous rendre compte que quelque chose a été déplacé.\n\nVous trouvez la femme debout à une certaine distance, avec tout ces assistants juste derrière. Ils portent tous des manteaux faits de peaux de monstres. Ils sont accroupis devant des sphères de lumière verte, les tenant dans leurs mains, vous pouvez voir des rictus dans chaque éclat viridien, des lèvres remplies de rides sifflant doucement une santé mentale déclinante. Les livres, tomes et papiers de la femme sont éparpillés un peu partout. Un brouillard persiste, et il a apporté avec lui une horrible puanteur. Vous demandez où est votre argent. La femme sourit, ses yeux ont la jaunisse, ses lèvres sont desséchées et éclatées, des morceaux de champignons sont éparpillés sur ses joues.%SPEECH_ON%Le mercenaire veut ses couronnes! Il n\'y a rien d\'autre à faire que de partir d\'ici! Il faut fuir!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What is going on here?",
+					Text = "Qu\'est-ce qui se passe ici ?",
 					function getResult( _event )
 					{
 						return "G";
@@ -250,7 +250,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I demand to be paid right now.",
+					Text = "J\'exige d'être payé tout de suite.",
 					function getResult( _event )
 					{
 						return "G";
@@ -265,13 +265,13 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_103.png[/img]{You watch as one of the helpers suddenly lifts into the air, and in the green light you see the slick tentacle drag him backward and it seems as though the earth itself opens up, and a thousand wet boughs and branches crinkle and drip, and rows upon rows of fangs bristle, clattering against one another as though shouldering for a slice, and the helper is thrown into it the maw and the gums twist and he is disrobed and defleshed and delimbed and destroyed. The woman chomps on another mushroom and then her hands caress bulbs of green, and you can see the tentacles slithering beneath each.%SPEECH_ON%Join us, sellsword! Let the Beast of Beasts have its feast!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_103.png[/img]{Vous regardez l\'un des assistants s\'élever soudainement dans les airs, et dans la lumière verte vous voyez le tentacule gluant l\'entraîner vers l\'arrière, il semble que la terre elle-même s\'ouvre. Un millier de branches et de rameaux humides se tordent et dégoulinent, des rangées et des rangées de crocs se dressent, s\'entrechoquent comme s\'ils cherchaient à s\'emparer d\'une part de gâteau. L\'assistant est projeté dans la gueule, les gencives se tordent, il est déshabillé, dépouillé, ébranché et détruit. La femme croque un autre champignon, puis ses mains caressent des bulbes verts, et on peut voir les tentacules qui se glissent sous chacun d\'eux.%SPEECH_ON%Rejoignez-nous, mercenaire! Laissez la Bête des Bêtes festoyer!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To formation!",
+					Text = "En formation!",
 					function getResult( _event )
 					{
 						this.World.State.getLastLocation().setFaction(this.World.FactionManager.getFactionOfType(this.Const.FactionType.Beasts).getID());

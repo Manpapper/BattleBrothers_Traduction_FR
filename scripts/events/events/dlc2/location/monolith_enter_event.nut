@@ -3,18 +3,18 @@ this.monolith_enter_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.monolith_enter";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_101.png[/img]{From a distance, the Black Monolith looked like a black tower tilting from the earth. The sky above was without blemish, as though the clouds and the birds were circumventing some unseen mountain. A numbness settled its hinterland, terra neither dying nor growing, and a cruel silence left the listless life worse than no life at all. Adventurers went to it and did not return. Stories of their demise stacked high until their absence shielded the monolith whole, clothing it in such fear and menace no one dared go near.\n\n But now the %companyname% stands before the obelisk like ants at the steel of a staked sword. Here you see that the structure was not built upon the earth at all: the obelisk rests in the pit of an abandoned quarry. Roads and paths sidewinder into the depths like some great and hollow terra socket. Ropes carrying buckets hang across every gap, innumerable pails of dirt left listing like fireless lanterns on a festive night. More bindings hold the frames of bridges, the walkway planks long since fallen, and more yet wrap about the monolith as though a great bevy of men had attempted to pull it down or perhaps even correct its tilt. At the bottom of this abandoned pit is the base of the monolith, but to you this is only a guess. It has every appearance of never stopping its descent into the very earth and whatever is below. Shovels and pickaxes litter about its obsidian walls with soil still clumped on their metals. %randombrother% nods at the scene.%SPEECH_ON%Looks like whoever was digging there got interrupted.%SPEECH_OFF%The man\'s words carry far into the quarry and there become so presently shaped in echo that you just about watch them go. Looking back, you see that the silence itself has followed you in, but even here at the edge of the pit it is pensive and cut with ease. The decision to enter the quarry rests heavy on your shoulders.}",
+			Text = "[img]gfx/ui/events/event_101.png[/img]{De loin, le Monolithe Noir ressemblait à une tour noire penchée. Le ciel au-dessus de nous était vierge, comme si les nuages et les oiseaux contournaient une montagne invisible. Un sentiment de paralysie s\'est installé dans l\'arrière-pays, une terre qui ne meurt ni ne croît, un silence cruel a rendu la vie inerte, pire que l\'absence de vie. Des aventuriers y sont allés et n\'en sont jamais revenus. Les histoires de leur disparition s\'empilaient jusqu\'à ce que leur absence recouvre entièrement le monolithe, le revêtant d\'une telle peur et d\'une telle menace que personne n\'osait s\'en approcher.\n\n Mais maintenant, la compagnie %companyname% se tient devant l\'obélisque comme des fourmis devant l\'acier d\'une épée plantée. Vous voyez ici que la structure n\'a pas du tout été construite sur la terre: l\'obélisque repose dans le puits d\'une carrière abandonnée. Les routes et les chemins s\'enfoncent dans les profondeurs comme une grande et creuse cavité en terre. Des sceaux attachés à des cordes sont suspendues à chaque intervalle, d\'innombrables seaux de terre laissés par terre comme des lanternes sans feu lors d\'une nuit de fête. Des attaches maintiennent les charpentes des ponts, les planches des passerelles sont tombées depuis longtemps, d\'autres encore s\'enroulent autour du monolithe, comme si une multitude d\'hommes avaient tenté de le faire descendre ou même de corriger son inclinaison. Vous supposez qu\'au fond de cette fosse abandonnée se trouve la base du monolithe. L\'édifice semble descendre bien au-delà de tout ce que vous pouvez imaginer. Des pelles et des pioches jonchent ses murs d\'obsidienne avec de la terre encore agglutinée sur leurs métaux. %randombrother% acquiesce en regardant les outils.%SPEECH_ON%On dirait que celui qui creusait là a été interrompu.%SPEECH_OFF%La voix de l\'homme porte si loin qu\'elle prend la forme d\'un écho. En regardant en arrière, vous voyez que le silence lui-même vous a suivi, mais même ici, au bord de la fosse, il est aussi pensif et impressionné que vous. La décision d\'entrer dans la carrière repose sur vos épaules.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Go in.",
+					Text = "Vous entrez.",
 					function getResult( _event )
 					{
 						return "B";
@@ -22,7 +22,7 @@ this.monolith_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Fall back.",
+					Text = "Demi-tour.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -42,13 +42,13 @@ this.monolith_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_101.png[/img]{Halfway into the quarry and rounding a long bend, you notice a series of hallways cut into the lower wall. You cast up a fist. The company seizes, bumbling into one another as the formation comes to a stop. %randombrother% asks what\'s wrong. You put a finger to your lips. \n\n With the lightest of steps you approach one of the ropes strung between this level and the very bottom of the pit. A pail filled with soil totters the tether as though jittered by your appearance. The pulley used to draw it up and down has long since rusted over. You draw your sword and cut the rope. The binding shoots back like a whip and the bucket plummets. It clatters side to side off the rocks until striking the ground with a metal pang and a cloud of dust. And just like that, the silence is gone.\n\n Pale men flood out of the hallways below, a stream of malignant miners and ditch diggers in haggard drawers and boots and capes of shredded shirts, shambling back out as though returning to some long gone work left incomplete. You try and count their numbers but are mightily distracted when a throng of armored soldiers march out behind the mob, this outfit carrying polearms, shields, spears and, most dangerously of all, a sense of cohesion.\n\n No point in running out of the quarry. Nothing in the land to run to. When you look back at the men, they\'re already drawing out their weapons. %randombrother% nods.%SPEECH_ON%With you to the end, captain.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_101.png[/img]{À mi-chemin dans la carrière et au détour d\'un long virage, vous remarquez une série de couloirs creusés dans le mur inférieur. Vous levez le poing. La compagnie s\'arrête, se heurtant les uns aux autres alors que la formation se fige. %randombrother% demande ce qui ne va pas. Vous mettez un doigt sur vos lèvres. \n\n Avec des pas très légers, vous vous approchez de l\'une des cordes tendues entre ce niveau et le fond de la fosse. Un seau rempli de terre fait vaciller la corde comme s\'il était secoué juste par votre présence. La poulie utilisée pour le faire monter et descendre est rouillée depuis longtemps. Vous dégainez votre épée et coupez la corde. La corde se détend comme un fouet qu\'on agite et le sceau entame sa chute. Il s\'entrechoque sur les rochers avant de heurter le sol dans un bruit de métal et un nuage de poussière. Et juste comme ça, le silence est parti.\n\n Des hommes pâles sortent des couloirs en contrebas, un flot de mineurs et de pelleteurs chétifs, vêtus de dessous, de bottes et de chemises déchiquetés, ils titubent comme s\'ils retournaient à un travail laissé inachevé depuis longtemps. Vous essayez de compter leur nombre mais vous êtes tout de suite distrait lorsqu\'une foule de soldats en armure sortent derrière eux, portant des armes de poing, des boucliers, des lances et, plus dangereux encore, un sentiment de cohésion.\n\n Ça ne sert à rien de sortir de la carrière en courant. Il n\'y a rien à fuir sur ces terres. Quand vous vous retournez vers les hommes, ils sont déjà en train de sortir leurs armes. %randombrother% hoche la tête.%SPEECH_ON%Avec vous jusqu\'au bout, capitaine.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To the end!",
+					Text = "Jusqu\'au bout!",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)

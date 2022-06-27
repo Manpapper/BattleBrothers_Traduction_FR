@@ -10,13 +10,13 @@ this.corpses_in_forest_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_132.png[/img]{While marching through the forest you come across a pile of burnt corpses clutching themselves in a final fiery embrace. It is a writhing mass of black limbs and the occasional face which gapes up at the sky. The faint smell of burnt pigs is still present, but there are no pigs with it. %randombrother% nods at the sight.%SPEECH_ON%That there is one big pile of awful.%SPEECH_OFF%You nod. Indeed it is.}",
+			Text = "[img]gfx/ui/events/event_132.png[/img]{En marchant dans la forêt, vous tombez sur un tas de cadavres brûlés enlacés dans une dernière étreinte ardente. C\'est une masse grouillante de membres calcinés avec, parfois, un visage qui fixant le ciel. La légère odeur de cochon brûlé est toujours présente, mais sans cochons. %randombrother% acquiesce à la vue.%SPEECH_ON%C\'est un gros tas immonde.%SPEECH_OFF%Vous acquiescez. En effet, c\'est le cas.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Maybe there\'s something useful in there.",
+					Text = "Peut-être qu\'il y a quelque chose d\'utile là-dedans.",
 					function getResult( _event )
 					{
 						if (_event.m.BeastSlayer != null && this.Math.rand(1, 100) <= 75)
@@ -35,7 +35,7 @@ this.corpses_in_forest_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Better not dwell here.",
+					Text = "Mieux vaut ne pas s\'attarder ici.",
 					function getResult( _event )
 					{
 						return 0;
@@ -50,13 +50,13 @@ this.corpses_in_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_132.png[/img]{The mercenaries start going through the bodies. Most of the corpses come in bundles of three or four which have to cracked apart like eggs. It takes a boot or steel wedge to get them apart. Chips of charred flesh flutter away as the men work. Burnt children are peeled off like breast plates, their chests caved in and their arms firmly out like spokes. Not much is discovered beneath the bodies. A few bits of gold at most. %randombrother% finds a grisly looking mask of sorts. You\'re not entirely sure what it is, but figure it wouldn\'t hurt to take it along. Maybe some trader will find it interesting.}",
+			Text = "[img]gfx/ui/events/event_132.png[/img]{Les mercenaires commencent à fouiller les corps. La plupart des cadavres se présentent en paquets de trois ou quatre, qu\'il faut casser comme des œufs. Il faut un coup de botte ou une cale en acier pour les séparer. Des morceaux de chair carbonisée s\'envolent pendant que les hommes travaillent. Les enfants brûlés sont décollés comme des plastrons, leurs poitrines se sont affaissées et leurs bras sont tendus comme des rayons. On ne découvre pas grand-chose sous les corps. Quelques morceaux d\'or, tout au plus. %randombrother% trouve une sorte de masque macabre. Vous n\'êtes pas tout à fait sûr de ce que c\'est, mais vous vous êtes dit que ça ne ferait pas de mal de l\'emporter. Peut-être qu\'un commerçant trouvera ça intéressant.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Retournons sur la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -85,13 +85,13 @@ this.corpses_in_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_132.png[/img]{%randombrother% crouches beside the ball of charred corpses and shakes his head.%SPEECH_ON%I don\'t rightfully think there\'s anything in there, sir.%SPEECH_OFF%Before you can respond a black hand shoots out and grabs the man by his ankle. The bodies rise and shift, a lone victim pulling himself out of the seared grotesquerie with a cape of charred corpses riding his back like spiderlings. His mouth is firmly agape, the lips burned away and the cheeks hollowed, and his eyes are flat in their sockets. His hand has the grip of a stone gargoyle\'s claw and when the mercenary crawls backward it only pulls the burnt man with him. The whole pile jerks and tumbles with some bodies rolling off the pile with their limbs firmly out like coffee tables and others totters over to stare at the sky and another pitches forward and smashes its head into the ground, pasting it there into a powdery blackmark.\n\n Groaning, the survivor yells for water. You draw your sword and put it through his neck, ending his pain there and then. %randombrother% breaks the fingers off to free his boot from the grisly hand. A few of the sellswords are shaken by the event.}",
+			Text = "[img]gfx/ui/events/event_132.png[/img]{%randombrother% s\'accroupit à côté de la boule de cadavres calcinés et secoue la tête.%SPEECH_ON%Je ne pense pas qu\'il y ait quoi que ce soit là-dedans, monsieur.%SPEECH_OFF%Avant que vous puissiez répondre, une main noire jaillit et attrape l\'homme par la cheville. Les corps se soulèvent et se déplacent, une seule victime s\'extirpe de ce charnier, son dos ressemble à une cape de cadavres carbonisés. Sa bouche est grande ouverte, les lèvres sont brûlées et les joues creuses, les yeux sont écrasés dans leurs orbites. Sa main a la poigne d\'une griffe de gargouille en pierre et lorsque le mercenaire rampe en arrière, il ne fait qu\'entraîner l\'homme brûlé avec lui. L\'ensemble du tas se met à bouger et à dégringoler, certains corps roulant sur le tas avec leurs membres bien tendus comme des tables basses, d\'autres se retournant pour fixer le ciel et un autre s\'élançant vers l\'avant et s\'écrasant la tête sur le sol, collant une marque noire poudreuse.\n\n Gémissant, le survivant réclame de l\'eau. Vous dégainez votre épée et la plantez dans son cou, mettant fin à sa douleur sur le champ. %randombrother% casse les doigts pour libérer sa botte de la main macabre. Quelques-uns des mercenaires sont ébranlés par l\'événement.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Retournons sur la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -126,13 +126,13 @@ this.corpses_in_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_132.png[/img]{%beastslayer% holds his hand up.%SPEECH_ON%They weren\'t murdered, they were purged.%SPEECH_OFF%He squats beside the rim of the pile and lifts a charred arm and wrenched it free at the elbow. He flips the arm around and gives it a squeeze. Green puss oozes out from where the veins would be, dripping steadily to the ground. The beast slayer takes a vial and collects what he can.%SPEECH_ON%These people were infected with a Webknecht\'s poison. It usually dissolves the organs and kills, but sometimes, rarely, it has other effects. Causes bristles of thick hair to grow out on the arms, long fingernails, the shoulder blades start to ache and protrude from the back. Unsightly. And the poisoned, well, they go insane.%SPEECH_OFF%You ask if all these people were poisoned. The beast slayer shakes his head.%SPEECH_ON%This one I knew from the shoulders, the rest, I dunno. When an illness grips a village, it grips the village whole, and soon chaos and confusion become the contagion and the illness itself is but a forgotten spark drifting in the very bonfire it started.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_132.png[/img]{Le %beastslayer% lève la main.%SPEECH_ON%Ils n\'ont pas été assassinés, ils ont été purgés.%SPEECH_OFF%Il s\'accroupit à côté du tas et soulève un bras carbonisé qu\'il arrache au niveau du coude. Il retourne le bras et le serre. Du pus vert suinte de l\'endroit où se trouveraient les veines, dégoulinant constamment vers le sol. Le tueur de bêtes prend une fiole et récupère ce qu\'il peut.%SPEECH_ON%Ces gens ont été infectés par le poison d\'un Webknecht. Elle dissout généralement les organes et tue, mais parfois, elle a d\'autres effets. Provoque une poussée de poils épais sur les bras, d\'ongles longs, les omoplates commencent à être douloureuses et ressortent du dos. Horrible. Et les empoisonnés, eh bien, ils deviennent fous.%SPEECH_OFF%Vous demandez si tous ces gens ont été empoisonnés. Le tueur de bêtes secoue la tête.%SPEECH_ON%Celui-là, je le connaissais par cœur, les autres, je ne sais pas. Quand une maladie s\'empare d\'un village, elle s\'empare du village tout entier, et bientôt le chaos et la confusion deviennent la vraie contagion et la maladie elle-même n\'est plus qu\'une étincelle oubliée qui dérive dans le feu de joie qu\'elle a elle-même allumé.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Retournons sur la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -155,13 +155,13 @@ this.corpses_in_forest_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_132.png[/img]{%killer% the murderer on the run smirks and snorts and he nods and spits and nods again. He points at the pile of bodies.%SPEECH_ON%That\'s a cruelty so fierce I don\'t think its doer survived the doing.%SPEECH_OFF%You ask what he means, but the man holds a finger up and walks about the forest, looking behind tree after tree until he comes to a stop.%SPEECH_ON%Just as I thought.%SPEECH_OFF%You come round to see a man hanging there. His fingertips are black and there\'s ash on his face and a noose about his neck. A note in his hand carries apologies, though it does not describe the nature of his crime or if it were a crime at all. Below his feet is his armor and weapons. He may have been a nobleman. Regardless, you have the body cut down and everything looted.}",
+			Text = "[img]gfx/ui/events/event_132.png[/img]{%killer% le meurtrier en cavale sourit, renifle, acquiesce, crache et acquiesce encore. Il montre du doigt la pile de corps.%SPEECH_ON%C\'est une cruauté si barbare que je ne pense pas que son auteur ait survécu à son acte.%SPEECH_OFF%Vous demandez ce qu\'il veut dire, mais l\'homme lève un doigt et marche dans la forêt, regardant derrière chaque arbre jusqu\'à ce qu\'il s\'arrête.%SPEECH_ON%C\'est ce que je pensais.%SPEECH_OFF%Vous vous retournez pour voir un la dépouille d\'un homme pendu. Le bout de ses doigts est noir, il y a de la cendre sur son visage et une corde autour de son cou. Une note dans sa main porte des excuses, bien qu\'elle ne décrive pas la nature de son crime si crime il y a eu. Sous ses pieds se trouvent son armure et ses armes. C\'était peut-être un noble. Quoi qu\'il en soit, vous avez découpé le corps et tout pillé.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Retournons sur la route.",
 					function getResult( _event )
 					{
 						return 0;

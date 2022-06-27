@@ -12,13 +12,13 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{%callbrother% runs into your tent and says something is watching the camp. You come outside to see a silhouette in the distance, skulking behind brush and tree limbs. You know its staring when it hisses, for what else would it be looking at to elicit such a charge. Its arms are long and slender and end in claws. You take a torch and sling it toward the beast. Its slick skin winks a vibrant orange and it shrieks away from the cloud of embers and sparks as the torch lands and rolls past. The toothy maw is the last thing you see fading back into the darkness.%SPEECH_ON%I think it\'s an alp, sir. It\'s all by itself as far as we can tell.%SPEECH_OFF%You ask if the sellsword has had visions. He shrugs.%SPEECH_ON%Yeah, some, but I also been drinking so there\'s that.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{%callbrother% entre en courant dans votre tente et dit que quelque chose épie le camp. Vous sortez pour voir une silhouette au loin, se cachant derrière des broussailles et des branches d\'arbres. Vous savez qu\'il vous fixe lorsqu\'il siffle, car que pourrait-il regarder d\'autre pour susciter une telle réaction. Ses bras sont longs et minces et sont prolongés par des griffes. Vous prenez une torche et la lancez vers la bête. Sa peau lisse se teinte alors d\'un orange intense, il s\'éloigne en criant du nuage de braises et d\'étincelles que la torche émet lorsqu\'elle atterrit et roule devant lui. La mâchoire dentée est la dernière chose que vous voyez disparaître dans l\'obscurité.%SPEECH_ON%Je pense que c\'est un alp, monsieur. À priori, il a l\'air seul.%SPEECH_OFF%Vous demandez si le mercenaire a eu des visions. Il hausse les épaules.%SPEECH_ON%Oui, un peu, mais j\'ai bu aussi, voilà.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Kill it.",
+					Text = "Tuez-le.",
 					function getResult( _event )
 					{
 						return "B";
@@ -26,7 +26,7 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Ignore it.",
+					Text = "Ignorez-le.",
 					function getResult( _event )
 					{
 						return "C";
@@ -41,7 +41,7 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Beastslayer != null)
 				{
 					this.Options.push({
-						Text = "%beastslayer%, you\'re an expert on these things. What say you?",
+						Text = "%beastslayer%, Vous êtes un expert de ces choses. Qu\'en dites-vous?",
 						function getResult( _event )
 						{
 							return "D";
@@ -53,7 +53,7 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Flagellant != null)
 				{
 					this.Options.push({
-						Text = "What is %flagellant% saying about this?",
+						Text = "Que dit %flagellant% à ce sujet?",
 						function getResult( _event )
 						{
 							return "E";
@@ -66,13 +66,13 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_122.png[/img]{The alp is alone and possibly a youngling. Even monsters have to cut their cloth and put in the work to become truly horrible beasts, and this one just doesn\'t seem there yet. You send a pair of sellswords to slay the beast. They close in on it through the shroud of darkness. You see the silhouettes rising up in ambush and there\'s a clatter and a scream, and another scream which is nothing humanlike at all. Shrieking now. And this time a man crying. Someone speaking. Quiet. A long, long quiet. Then the pair comes back. One is clutching his head as though taken by a terrific ache, the other looks at you and nods.%SPEECH_ON%We killed it and, uh, I think we need to lie down.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_122.png[/img]{L\'alp est seul et probablement jeune. Même les monstres doivent faire des efforts pour devenir des bêtes vraiment horribles, et celui-ci ne semble pas encore en être là. Vous envoyez une paire de mercenaires pour tuer la bête. Ils se rapprochent d\'elle à travers le linceul des ténèbres. Vous voyez les silhouettes se dresser en embuscade, il y a un fracas et un cri, et un autre cri qui n\'a rien d\'humain du tout. Des hurlements maintenant. Et cette fois, un homme qui pleure. Quelqu\'un qui parle. Un silence. Un long, long silence. Puis le duo revient. L\'un d\'eux se tient la tête comme s\'il était pris d\'une terrible douleur, l\'autre vous regarde et acquiesce.%SPEECH_ON%On l\'a tué et, euh, je pense qu\'on doit s\'allonger.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good work.",
+					Text = "Beau travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -124,13 +124,13 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{You tell the men to ignore the alp. If it were of any danger it would have already proven so. Instead, it has let you know it is there, whether by ignorance or arrogance, neither of which bother you none. A few of the men do not agree with this decision and they stay up all night watching for the beast.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{Vous dites aux hommes d\'ignorer l\'alp. Si c\'était un danger, il l\'aurait déjà montré. Au contraire, il vous a fait savoir qu\'il était là, que ce soit par ignorance ou par arrogance, ce qui ne vous dérange pas. Quelques hommes ne sont pas d\'accord avec cette décision et restent debout toute la nuit à guetter la bête.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Grow a pair.",
+					Text = "Fais toi pousser les couilles.",
 					function getResult( _event )
 					{
 						return 0;
@@ -163,13 +163,13 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_122.png[/img]{%beastslayer% the beast slayer comes over.%SPEECH_ON%It ain\'t dangerous, it\'s confused. I\'ll take care of this.%SPEECH_OFF%He\'s chewing on a dried biscuit and grunts and puts the biscuit in his pocket and sets off into the dark all by himself. A moment later, the alp\'s silhouette suddenly falls away and disappears. A few minutes later and the slayer returns, shoving the last morsels of the biscuit into his mouth. You ask why the alp didn\'t put up much of a fight. The beast slayer laughs.%SPEECH_ON%You said %callbrother% fetched you from your tent, right? Right. And where is %callbrother%?%SPEECH_OFF%The beast slayer points toward the campfire. The sellsword is there. Asleep. Deeply asleep. %beastslayer% gets himself another biscuit.%SPEECH_ON%Young alps are still learning how to pry into your mind. They\'re not good at it and often call attention to themselves while trying. They\'re like thieves who can\'t pick a lock, so they knock on the door instead.%SPEECH_OFF%A few of the men listen to this and are emboldened by the apparent flaws of these otherwise horrifying creatures.}  ",
+			Text = "[img]gfx/ui/events/event_122.png[/img]{%beastslayer% le tueur de bêtes arrive.%SPEECH_ON%Ce n\'est pas dangereux, c\'est perturbant. Je vais m\'en occuper.%SPEECH_OFF%Il mâchonne un biscuit sec, grogne, met le biscuit dans sa poche et s\'en va dans le noir tout seul. Un moment plus tard, la silhouette de l\'alp se détache soudainement et disparaît. Quelques minutes plus tard, le tueur revient, avalant les dernières bouchées de son biscuit. Vous demandez pourquoi l\'alp ne s\'est pas beaucoup battu. Le tueur de bêtes rit.%SPEECH_ON%Vous avez dit que %callbrother% est allé vous chercher dans votre tente, non ? Exact. Et où est %callbrother%?%SPEECH_OFF%Le tueur de bêtes indique le feu de camp. Le mercenaire est là. Endormi. Profondément endormi. Le tueur de bêtes se prend un autre biscuit.%SPEECH_ON%Les jeunes alps apprennent encore comment pénétrer dans votre esprit. Ils ne sont pas doués pour cela et attirent souvent l\'attention sur eux en essayant. Ils sont comme des voleurs qui ne peuvent pas crocheter une serrure, alors ils frappent à la porte à la place.%SPEECH_OFF%Quelques hommes l\'écoutent et sont confortés par les défauts apparents de ces créatures par ailleurs horribles.}  ",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nice job.",
+					Text = "Beau travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -204,13 +204,13 @@ this.youngling_alp_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{%flagellant% the flagellant is at the rim of the camp whipping himself raw. His soul cleansing tool is rigged with broken glass and cat claws, bound tight with leather rinsed taut in urine, and tassels of twisted horse hair. He walks out into the wilderness, hiding himself with every step.%SPEECH_ON%It\'s not that I fear you, creature in the shadows. It\'s not that I fear you, shadows in my mind. It\'s not that I fear you, mind in my body.%SPEECH_OFF%The man stops walking, but the urgency of his flagellation increases and you can see the flecks of blood winking in the moonlight.%SPEECH_ON%It is that I fear the old gods of which you are not! Of which you are but an insect!%SPEECH_OFF%The alp\'s silhouette shrinks away, shrieks, and then scurries off altogether. The man returns and collapses into the camp. A few of the men are horrified, while others are emboldened by his courage and righteousness.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{%flagellant% le flagellant est au bord du camp en train de se fouetter à vif. Son instrument de purification de l\'âme est truffé de verre brisé et de griffes de chat, attaché avec du cuir rincé à l\'urine et des glands de crin de cheval tordus. Il marche en direction de l\'alp, se cachant à chaque pas.%SPEECH_ON%Ce n\'est pas que je vous craigne, créature de l\'ombre. Ce n\'est pas que vous craigne, ombres de mon esprit. Ce n\'est pas que je vous craigne, esprit de mon corps.%SPEECH_OFF%L\'homme s\'arrête de marcher, mais l\'urgence de sa flagellation augmente et on peut voir les taches de sang clignoter dans la lumière de la lune.%SPEECH_ON%C\'est que je crains sont les anciens dieux que vous n\'êtes pas! Vous n\'êtes qu\'un insecte!%SPEECH_OFF%La silhouette de l\'alp s\'éloigne, hurle, puis s\'enfuit. L\'homme revient et s\'effondre dans le camp. Quelques hommes sont horrifiés, tandis que d\'autres sont stimulés par son courage et sa droiture.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "By the old gods.",
+					Text = "Par les anciens dieux",
 					function getResult( _event )
 					{
 						return 0;

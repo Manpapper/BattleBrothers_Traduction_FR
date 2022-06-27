@@ -3,18 +3,18 @@ this.witchhut_enter_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.witchhut_enter";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{You pause at the forest clearing. The hut before you stands like a mere crumb. It\'s so quaint and easily forgotten you wondered how it could survive, but perhaps its total banality and unassuming nature is itself a sort of armor. But you\'ve been around this world long enough to know to trust your instinct, and right now your instinct is to wait.\n\n Soon enough, the hut\'s door pops open and an elderly woman hobbles out. She immediately waves in your direction.%SPEECH_ON%You, and only you.%SPEECH_OFF%Confused, you ask why just yourself, or more particularly why would you ever trust her to begin with. She smiles.%SPEECH_ON%Because I know what the False King dreams of at night.%SPEECH_OFF%The mercenaries around you turn about and ask what she said. You put a hand up and tell them to stay their ground while you go have a talk with the mysterious woman.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Vous vous arrêtez à la clairière de la forêt. La hutte devant vous se dresse comme une simple miette. Elle est si pittoresque et si facile à oublier qu\'on se demande comment elle a pu survivre, mais peut-être que sa totale banalité et sa nature discrète sont elles-mêmes une sorte d\'armure. Mais vous avez vécu assez longtemps dans ce monde pour savoir qu\'il faut faire confiance à son instinct, et pour l\'instant votre instinct vous dit d\'attendre.\n\n Très vite, la porte de la hutte s\'ouvre et une vieille femme sort en boitant. Elle fait immédiatement un signe dans votre direction.%SPEECH_ON%Vous, et seulement vous.%SPEECH_OFF%Perplexe, pourquoi seulement vous? Ou plus particulièrement, pourquoi avez-vous lui fait confiance pour commencer. Elle sourit.%SPEECH_ON%Parce que je sais ce dont rêve le faux roi la nuit.%SPEECH_OFF%Les mercenaires qui vous entourent se retournent et demandent ce qu\'elle a dit. Vous levez la main et leur dites de rester sur place pendant que vous allez discuter avec la mystérieuse femme.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Stay here and stay on guard.",
+					Text = "Restez ici et soyez sur vos gardes.",
 					function getResult( _event )
 					{
 						return "B";
@@ -29,13 +29,13 @@ this.witchhut_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{You come in with your sword drawn just to find the woman offering you a bowl of stew. She suggests it is only rabbit and potatoes, and more the former than the latter. Sheathing your sword, you take the bowl and have a seat at a table with her opposite you. A couple of candles burn nearby, and there are glyphs painted on the walls in white, and similar shapes hang from the ceiling as dreamcatchers. The woman puts her elbows on the table. There are trinkets wound into her hair, clips of bird bones and feathers. She carries a weathered face, though her eyes are starkly young like pearls glimmering from the depths of a swamp.%SPEECH_ON%I knew you would come in, a phantom of a friend, like a moth to the flame, seeking truth which cannot be tamed.%SPEECH_OFF%Pushing the bowl back across the table, you ask if she is a witch. She nods affirmatively and stares at you before nodding again.%SPEECH_ON%Good. You haven\'t killed me which means you\'re thinking now. I am indeed a so-called witch, but I am alone. Entirely alone. And hounded by the others. You might call them my \'sisters\', but these others know who you are, just as I do, and they want your blood. They can smell it and that is why I want to talk.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Vous entrez, épée au poing, pour trouver la femme qui vous offre un bol de ragoût. Elle suggère que ce n\'est que du lapin et des pommes de terre, et plus le premier que le second. Rengainant votre épée, vous prenez le bol et prenez place à une table avec elle en face de vous. Quelques bougies brûlent à proximité, des glyphes sont peints en blanc sur les murs et des formes similaires sont suspendues au plafond comme des capteurs de rêves. La femme pose ses coudes sur la table. Des babioles sont enroulées dans ses cheveux, des barrettes d\'os d\'oiseaux et des plumes. Elle a un visage usé par le temps, mais ses yeux sont jeunes comme des perles qui scintillent au fond d\'un marais.%SPEECH_ON%Je savais que vous viendriez, comme un papillon de nuit vers la lumière, cherchant la vérité qui ne peut être apprivoisée.%SPEECH_OFF%Repoussant le bol sur la table, vous lui demandez si elle est une sorcière. Elle fait un signe de tête affirmatif et vous regarde fixement avant de hocher à nouveau la tête.%SPEECH_ON%Bien. Vous ne m\'avez pas tué, ce qui signifie que vous réfléchissez maintenant. Je suis en effet une soi-disant sorcière, mais je suis seule. Entièrement seule. Et traquée par les autres. Vous pouvez les appeler mes "soeurs", mais ces autres savent qui vous êtes, tout comme moi, et ils veulent votre sang. Ils peuvent le sentir et c\'est pourquoi je veux parler.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What is it you want?",
+					Text = "Qu\'est-ce que vous voulez ?",
 					function getResult( _event )
 					{
 						return "C";
@@ -50,13 +50,13 @@ this.witchhut_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{The woman draws a long object wrapped in table cloth and sets it on the table. She throws back its linens to reveal a jagged obsidian blade with a leather strips for a grip.%SPEECH_ON%Cut your flesh and bleed upon the black. The hexen and their lowly craft shall come, and then you shall kill them all. After that, we can talk. Sellsword and witch, witch and sellsword.%SPEECH_OFF%You ask what is in it for you. The witch cackles.%SPEECH_ON%Oh sellsword, you are not in the business of allegiance, but in the business of gold, and with a clever turn of coin you know friend can turn to foe. But I offer something more. A truth which cannot be seen, a truth for the False King.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{La femme dégaine un long objet enveloppé dans une nappe et le pose sur la table. Elle retire la nappe pour révéler une lame d\'obsidienne dentelée avec une bande de cuir en guise de poignée.%SPEECH_ON%Coupez votre chair et saignez dans cette obscurité. Les hexen et leur basse besogne viendront, et alors vous les tuerez toutes. Après cela, nous pourrons parler. L\'épée et la sorcière, la sorcière et l\'épée.%SPEECH_OFF%Vous demandez ce qu\'il y a pour vous. La sorcière glousse.%SPEECH_ON%Oh mercenaire, vous n\'êtes pas dans le business de la loyauté, mais dans le business de l\'or, et avec un habile tour de monnaie vous savez qu\'un ami peut se transformer en ennemi. Mais j\'offre quelque chose de plus. Une vérité qui ne peut être vue, une vérité pour le faux roi.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ve already come this far.",
+					Text = "Nous avons déjà fait tout ce chemin.",
 					function getResult( _event )
 					{
 						return "D";
@@ -71,13 +71,13 @@ this.witchhut_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{The black blade rests in your hand, and your reflection rests jaggedly in its stony grooves, stretched and pulled into every divot and edge. Tis a simple stone. A simple dagger. That is all. Not the least bit heavy, but you can feel the import, like dust tossed upon a grave, there is not so much weight in the sand as there is in the throw itself. This blade is either loss or gain and there\'s only one way to see to which. The witch nods. You nod back and slash your upper arm. The blood pools onto the stone and your reflections disappear beneath the crimson. Almost growling, the witch eagerly leans in and presses the blade against the skin.%SPEECH_ON%More. More, sellsword. More!%SPEECH_OFF%You slash again and flex. A spurt hits the stone. She takes the knife and slaps a spotless cloth onto the wound.%SPEECH_ON%Well enough, sellsword. Go to your men and prepare.%SPEECH_OFF%You stand and look at the woman. You ask.%SPEECH_ON%And once I kill your enemies, then we talk again?%SPEECH_OFF%She smiles.%SPEECH_ON%In so many words, yes.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{La lame noire repose dans votre main, et votre reflet se pose en dents de scie dans ses rainures de pierre, étiré et tiré dans chaque creux et bord. C\'est une simple pierre. Une simple dague. C\'est tout. Elle n\'est pas du tout lourde, mais vous pouvez sentir son importance, comme la poussière jetée sur une tombe, il n\'y a pas tant de poids dans le sable que dans le jet lui-même. Cette lame est soit une erreur soit un avantage et il n\'y a qu\'un seul moyen de savoir lequel. La sorcière hoche la tête. Vous acquiescez et vous vous entaillez le bras. Le sang s\'écoule sur la pierre et vos reflets disparaissent sous la couleur pourpre. Presque en grognant, la sorcière se penche avec empressement et presse la lame contre votre peau.%SPEECH_ON%Plus. Plus, mercenaire. Plus!%SPEECH_OFF%Vous tailladez encore puis vous fléchissez. Une giclée frappe la pierre. Elle prend le couteau et passe un tissu immaculé sur la plaie.%SPEECH_ON%C\'est bon, mercenaire. Allez rejoindre vos hommes et préparez-vous.%SPEECH_OFF%Vous vous levez et regardez la femme. Vous demandez.%SPEECH_ON%Et une fois que j\'aurai tué vos ennemis, on pourra reparler ensemble?%SPEECH_OFF%Elle sourit.%SPEECH_ON%Dans d\'autres termes, oui.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Then I will do so.",
+					Text = "Alors je le ferai.",
 					function getResult( _event )
 					{
 						return "E";
@@ -92,13 +92,13 @@ this.witchhut_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{When you step outside and inform the company that hostiles are coming. Soon enough, the haggard women are spotted walking between the trees of the forest, their long fingernails scratching across the bark and their drooling lips sniveling up to snort and cackle. The first to come through has a long head shaped like a canoe. An infant\'s skull dangles from her necklace, and a leather bag bounces at her hip, two rabbit feet sticking out of the pouch. She glares at the hut and sniffs the air, then shifts her eyes upon you.%SPEECH_ON%Ah, you have made covenant with that bitch?%SPEECH_OFF%You nod.%SPEECH_ON%The deal\'s been made, aye, and it will end with you dying on the end of this blade. And I believe she prefers to just be called \'witch.\'%SPEECH_OFF%Another hexen steps forward.%SPEECH_ON%We prefer to call her cunt. Kill the sellswords. Take the captain alive, but remove his eyes and that lousy tongue.%SPEECH_OFF%The throng of witches rush forward, some already shifting into licentious looking younglings while others revolve their arms in ritual rites.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Vous sortez et informez la compagnie que les hostilités sont en route. Assez rapidement, des femmes hagards sont aperçues marchant entre les arbres de la forêt, leurs longs ongles grattant l\'écorce et leurs lèvres baveuses grimaçant pour renifler et glousser. La première à arriver a une longue tête en forme de canoë. Un crâne d\'enfant pend à son collier, et un sac en cuir rebondit sur sa hanche, deux pattes de lapin dépassant de la poche. Elle jette un coup d\'œil à la hutte et renifle l\'air, puis tourne son regard vers vous.%SPEECH_ON%Ah, vous avez fait un pacte avec cette salope?%SPEECH_OFF%Vous acquiescez.%SPEECH_ON%Le marché a été conclu, oui, et il se terminera par votre mort au bout de cette lame. Et je crois qu\'elle préfère qu\'on l\'appelle simplement \"sorcière\".%SPEECH_OFF%Un autre hexen s\'avance.%SPEECH_ON%Nous préférons l\'appeler pétasse. Tuez les mercenaires. Prenez le capitaine vivant, mais enlevez-lui les yeux et cette langue minable.%SPEECH_OFF%La multitude de sorcières se précipite sur vous, certaines se transformant déjà en jeunes filles à l\'allure obscène tandis que d\'autres agitent leurs bras selon des rites spirituels.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To battle!",
+					Text = "Au combat!",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)

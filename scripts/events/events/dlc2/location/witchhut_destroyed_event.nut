@@ -11,16 +11,16 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Texts.resize(7);
-		this.m.Texts[0] = "Who are you?";
-		this.m.Texts[1] = "How do you know who I am?";
-		this.m.Texts[2] = "Who were the ancients?";
-		this.m.Texts[3] = "What is Davkul?";
-		this.m.Texts[4] = "Were the greenskins human?";
-		this.m.Texts[5] = "Why did you call me the False King?";
-		this.m.Texts[6] = "What is it that I dream of?";
+		this.m.Texts[0] = "Qui êtes-vous ?";
+		this.m.Texts[1] = "Comment savez-vous qui je suis?";
+		this.m.Texts[2] = "Qui étaient les anciens?";
+		this.m.Texts[3] = "Qu'est-ce que Davkul?";
+		this.m.Texts[4] = "Les peaux vertes étaient-elles humaines?";
+		this.m.Texts[5] = "Pourquoi m'avez-vous appelé le Faux Roi?";
+		this.m.Texts[6] = "De quoi est-ce que je rêve?";
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{The last of the witches is slain and you have their corpses mutilated for good measure. Ears. Lips. Noses. Toes. All of them cut off. Their bags are emptied out and the items crushed into powder and covered in dust. Fleshy bits or animal parts are dumped into a pile and promptly burned. As the fire rises, the hexen from the hut seemingly appears out of nowhere and takes you by the arm. Your men draw their swords, but you hold your hand up. You tell them to keep salting the earth, so to speak, and as you enter the hut you take a look back to see a few of the men pissing on the embers of the fire.\n\n Inside the hut you sit where you had before. On the table you find something rolled up in a handkerchief and the witch pinches its corner and rolls it between her finger and thumb. She looks up and tips her chin forward and turns her hands palms up.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{La dernière des sorcières est tuée et vous faites mutiler leurs cadavres pour faire bonne mesure. Oreilles. Lèvres. Nez. Orteils. Tout est coupé. Leurs sacs sont vidés et les objets réduits en cendres et couverts de poussière. Les morceaux charnus ou les parties d\'animaux sont jetés sur un tas et promptement brûlés. Alors que le feu s\'élève, l\'hexen de la hutte semble sortir de nulle part et vous prend par le bras. Vos hommes tirent leurs épées, mais vous levez la main. Vous leur dites de continuer à saler la terre, pour ainsi dire, et en entrant dans la hutte, vous jetez un coup d\'œil en arrière pour voir quelques hommes pisser sur les braises du feu.\n\n À l\'intérieur de la hutte, vous vous asseyez là où vous étiez avant. Sur la table, vous trouvez quelque chose enroulé dans un mouchoir. La sorcière en pince le bout et le roule entre son doigt et son pouce. Elle lève les yeux, penche le menton vers l\'avant et tourne ses paumes vers le haut.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -33,7 +33,7 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B0",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{The witch smiles.%SPEECH_ON%An old hag in a forest hut. Everything else is hearsay.%SPEECH_OFF%You stare at her long enough to see there\'s little fruit to bear in chasing this question further.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{La sorcière sourit.%SPEECH_ON%Une vieille sorcière qui vit dans une cabane dans la forêt. Tout le reste n\'est que ouï-dire.%SPEECH_OFF%Vous la fixez assez longtemps pour voir qu\'il y a peu d\'intérêt à poursuivre cette discussion.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -47,7 +47,7 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B1",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{She stares at the wrapped item.%SPEECH_ON%I don\'t even know your name, sellsword, and I haven\'t the slightest inclination to begin to care. It is not a matter of who you are, but what you are.%SPEECH_OFF%She turns her hands as though they were following a tune.%SPEECH_ON%The blood of the ancients resides within you. It resides within us all, but you in particular, well.%SPEECH_OFF%Her nose crinkles as she snorts, and she exhales she grins madly.%SPEECH_ON%It is ever so there. And if I can smell it, then the whole world can smell it.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Elle fixe l\'objet emballé.%SPEECH_ON%Je ne connais même pas ton nom, mercenaire, et je n\'ai pas la moindre envie de m\'en soucier. Il ne s\'agit pas de savoir qui vous êtes, mais ce que vous êtes.%SPEECH_OFF%Elle tourne ses mains comme si elles suivaient une mélodie.%SPEECH_ON%Le sang des anciens réside en vous. Il réside en nous tous, mais vous en particulier.%SPEECH_OFF%Son nez se plisse alors qu\'elle renifle, et elle expire en souriant comme une folle.%SPEECH_ON%Il est toujours là. Et si je peux le sentir, alors le monde entier peut le sentir.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -61,7 +61,7 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B2",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{She taps the handkerchief and whatever is beneath raps the table. She answers.%SPEECH_ON%The ancients were men before our time. Truly, truly before our time. Imagine a kingdom, now imagine a kingdom that ruled kingdoms. An empire, that\'s correct. Now imagine an empire that ruled empires. Unfathomable power such as that leaves the world with great vengeance, and will spend its dying days ruining those which have ruined it.%SPEECH_OFF%You ask if the empire is dead. The witch smiles.%SPEECH_ON%I suspect not, but I do not truly know.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Elle tapote le mouchoir et ce qui se trouve en dessous tape sur la table. Elle répond.%SPEECH_ON%Les anciens étaient des hommes avant notre ère. Vraiment, vraiment avant notre ère. Imaginez un royaume, maintenant imaginez un royaume qui gouverne des royaumes. Un empire, c\'est exact. Maintenant, imaginez un empire qui gouverne les empires. Une puissance insondable telle que celle-ci quitte le monde avec une incroyable vengeance, et passera ses derniers jours à ruiner ceux qui l\'ont ruiné.%SPEECH_OFF%Vous demandez si l\'empire est mort. La sorcière sourit.%SPEECH_ON%Je ne le soupçonne pas, mais je ne le sais pas vraiment.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -75,7 +75,7 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B3",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{Shrugging and leaning back, the hexen asks you to repeat the name. \'Davkul.\' She shakes her head.%SPEECH_ON%I have heard nothing about this Davkul. A supposed god you say? Well, he has not spoken to me.%SPEECH_OFF%You stare at her and try to pry a hidden truth from her eyes, but she seems earnest in her response and you change the subject.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Haussant les épaules et se penchant en arrière, l\'hexen vous demande de répéter le nom. \'Davkul.\' Elle secoue la tête.%SPEECH_ON%Je n\'ai jamais rien entendue à propos de ce Davkul. Un supposé dieu, dites-vous? Eh bien, il ne m\'a pas parlé.%SPEECH_OFF%Vous la fixez et essayez de découvrir une vérité cachée dans ses yeux, mais elle semble sérieuse dans sa réponse et vous changez de sujet.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -89,7 +89,7 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B4",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{The hexen cackles.%SPEECH_ON%I wish! Have you seen what orcs got between their legs? Wouldn\'t mind a ride on that if I knew it wouldn\'t tear me in half and fark one end while wearing the other for a glove!%SPEECH_OFF%You raise an eyebrow and nod as though to say \'of course.\'}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{L\'hexen glousse.%SPEECH_ON%J\'aimerais bien! Vous avez vu ce que les orcs ont entre les jambes? Je ne serais pas contre un tour là-dessus si je savais que ça ne me déchirerait pas en deux et ne me baiserait pas d\'un côté en portant l\'autre comme un gant!%SPEECH_OFF%Vous levez un sourcil et hochez la tête comme pour dire \"bien sûr\".}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -103,7 +103,7 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B5",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{For the first time there is a crack in the witch\'s facade. She purses her lips.%SPEECH_ON%When did I call you that?%SPEECH_OFF%You point to the door and then to the table. You answer.%SPEECH_ON%I walked in here and you said I\'d seek the truth, that you know what the False King dreams of.%SPEECH_OFF%The hexen taps the handkerchief rather mindlessly. She looks up.%SPEECH_ON%Then you have my apologies, sellsword, I remember no such thing. I am but a fragile and old woman, older than I look, and I\'m not being cheeky about that.%SPEECH_OFF%You press her on the matter, but she only stonewalls you further.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Pour la première fois, il y a une faille dans la personnalité de la sorcière. Elle se pince les lèvres.%SPEECH_ON%Quand t\'ai-je appelé comme ça?%SPEECH_OFF%Vous désignez la porte, puis la table. Vous répondez.%SPEECH_ON%Je suis entré ici et vous avez dit que je chercherais la vérité, que vous savez ce dont rêve le faux roi.%SPEECH_OFF%L\'hexen tapote le mouchoir sans réfléchir. Elle lève les yeux.%SPEECH_ON%Alors vous avez mes excuses, mercenaire, je ne me souviens pas d\'une telle chose. Je ne suis qu\'une vieille femme fragile, plus âgée que je n\'en ai l\'air, et je ne suis pas effrontée à ce point.%SPEECH_OFF%Vous la pressez sur le sujet, mais elle ne fait que l\'éviter davantage.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -117,13 +117,13 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Dream",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{The hexen leans forward. She puts her hands to your face and you feel the leathery fingers press deep into your cheeks like a half-dozen walnuts. They rub the corners of your eyes and tap your temples. All the while she is smiling, and then she pulls back.%SPEECH_ON%You go to the noblemen and the rich and they pay you gold and in return you risk life and limb and you slaughter and murder and kill all that you can, and there you are day after day, wondering if that\'s all you are good for, and afterward the highborn shut the door on you and your deeds, and you hear them inside having a grand time, music playing, womenfolk laughing, jesters joking, the festivities are riotous, and you are outside with a bag of gold in hand and its bloodslaked receipt, and you go down to the pub and buy yourself a whore and tip a coin to the minstrel for a song and you can taste a fine wine in even the cheapest of cellars, but there is no escape from that horrible feeling in the back of your head, that feeling you were born into fever and all this violence and death is not a means to an end, but the end itself. It is what you are and what you always will be.%SPEECH_OFF%She pauses. Sighs. Continues.%SPEECH_ON%Sellsword, the power of a lie is only equaled by one\'s desire to believe in it. You live a powerful lie, and such power will not go easily. I beg of you, be only what you can understand.%SPEECH_OFF%It was not yourself, or your weaponry, or the presence of your company whole which brought her fear, but only the dawning of some unknown realization as she speaks to you now.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{L\'hexen se penche en avant. Elle pose ses mains sur votre visage et vous sentez ses doigts rugueux s\'enfoncer dans vos joues comme une demi-douzaine de noix. Ils frottent les angles de vos yeux et tapent sur vos tempes. Pendant tout ce temps, elle sourit, puis elle se retire.%SPEECH_ON%Vous allez chez les nobles et les riches, ils paient en or et en retour vous risquez votre vie et votre intégrité physique, vous massacrez, assassinez et tuez tout ce que vous pouvez, et vous êtes toujours là, jour après jour, à vous demander si vous n\'êtes bon qu\'à ça, et après, les nobles vous ferment la porte au nez, vous les entendez à l\'intérieur en train de s\'amuser, la musique joue, les femmes rient, les bouffons plaisantent, les festivités sont violentes, dehors avec un sac d\'or à la main et son récépissé ensanglanté, vous descendez au pub pour payer une pute puis donnez une pièce au ménestrel pour une chanson, vous pouvez même goûter à un bon vin même dans la cave la moins chère, mais il n\'y a pas d\'échappatoire à cet horrible sentiment dans le fond de votre tête, ce sentiment que vous êtes né dans la fièvre et que toute cette violence et ces mort ne sont pas un moyen de parvenir à vos fin, mais c\'est la fin elle-même. C\'est ce que vous êtes et ce que vous serez toujours.%SPEECH_OFF%Elle fait une pause. Soupire. Continue.%SPEECH_ON%Mercenaire, le pouvoir d\'un mensonge n\'a d\'égal que le désir d\'y croire. Vous vivez un mensonge puissant, et un tel pouvoir ne disparaîtra pas facilement. Je vous en prie, ne faites que ce que vous pouvez comprendre.%SPEECH_OFF%Ce n\'est pas vous, ni votre armement, ni la présence de toute votre compagnie qui lui a fait peur, mais seulement l\'émergence d\'une prise de conscience inconnue au moment où elle vous parle.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Who am I?!",
+					Text = "Qui suis-je?!",
 					function getResult( _event )
 					{
 						return "WhoAmI";
@@ -138,13 +138,13 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "WhoAmI",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{You stand up yelling at the woman for answers. She slaps you in the face and you stiffen and falter back a step. A drop of blood slips down your cheek and you catch it in your cuff. The witch grabs the handkerchief and throws it off, revealing the obsidian blade beneath. It is sharper than you remember, a vivid sliver of yourself running down the edge as though you cracked a door toward a mirror. The hexen sits back down and pushes the weapon across the table.%SPEECH_ON%No more questions, sellsword. There\'s only so much I know, and so much you need to know. We\'ve made a deal and this is the end of it.%SPEECH_OFF%Taking the dagger, you ask what she did to it, but she refuses to answer. You then ask if there are more out there like her. She grins playfully.%SPEECH_ON%I pray there are not.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Vous vous levez en criant sur la femme pour obtenir des réponses. Elle vous gifle au visage, vous vous raidissez et reculez d\'un pas. Une goutte de sang glisse sur votre joue, vous l\'attrapez dans votre manchette. La sorcière saisit le mouchoir et le jette, révélant la lame d\'obsidienne en dessous. Elle est plus nette que dans votre souvenir, un éclat vif de vous-même courant le long du bord, comme si vous aviez fendu une porte vers un miroir. L\'hexen se rassoit et pousse l\'arme sur la table.%SPEECH_ON%Plus de questions, mercenaire. Il y a tellement de choses que je sais, et tellement de choses que vous devez savoir. Nous avons passé un accord et il touche à sa fin.%SPEECH_OFF%Prenant la dague, vous lui demandez ce qu\'elle lui a fait, mais elle refuse de répondre. Vous lui demandez alors s\'il y en a d\'autres comme elle. Elle vous fait un sourire malicieux.%SPEECH_ON%Je prie pour qu\'il n\'y en ait pas.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'re done, then, and I shall take my leave.",
+					Text = "Nous avons terminé, alors, je vais prendre congé.",
 					function getResult( _event )
 					{
 						return "Leave";
@@ -152,7 +152,7 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You\'ve served your purpose, then. Die, witch!",
+					Text = "Vous avez rempli votre objectif, alors. Meurs, sorcière!",
 					function getResult( _event )
 					{
 						return "Kill";
@@ -175,13 +175,13 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Leave",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{You bid the witch adieu and she says nothing more. Outside, the men ask what she said, while others making reference to sexual escapades. You think you\'re smirking, but you really don\'t know. The conversation has left you in a fog and from within the mist you only depend upon what you know: ordering the company back on the road.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Vous dites adieu à la sorcière mais elle ne parle plus. Dehors, les hommes demandent ce qu\'elle a dit, tandis que d\'autres font référence à des escapades sexuelles. Vous pensez que vous souriez d\'un air suffisant, mais vous en êtes pas sûr. La conversation vous a laissé dans le brouillard mais vous êtes sûr d\'une chose: il faut remettre l\'entreprise en route.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Time to go.",
+					Text = "C\'est l\'heure de partir.",
 					function getResult( _event )
 					{
 						return 0;
@@ -197,13 +197,13 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Kill",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{The witch folds her fingers and nods. You nod back. And then grab the obsidian dagger and plunge it into her chest. She bleeds like any man or woman you know. She coughs and chokes on her blood like any living being you know. And she reels backward, eyes wide with fear, like many you\'ve known before. You draw the dagger out and kick her. She goes wailing and her hands reach out and drag down fistfuls of dreamcatchers and cobwebs alike and her elbow slaps a board of wooden cutlery and the utensils scatter all over the hut with hollow clattering. Weak fingers clasp a butterknife, her eyes piercing yours. She coughs once, twice. She drops the butterknife to pound her chest with a fist and a spurt of blood spurts onto her chin. She looks up.%SPEECH_ON%We had a deal, sellsword.%SPEECH_OFF%You sheathe the dagger and nod.%SPEECH_ON%Aye, you had a deal with a mercenary and you got what you wanted out of it. Myself? I had a deal with the world to get rid of you and your ilk whole. Nice talk and have a good life.%SPEECH_OFF%Gargling, the hexen\'s head lowers to the floor and her body goes limp. When you head outside the company asks what happened. You tell them to burn the hut and prepare to get back on the road.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{La sorcière croise les doigts et hoche la tête. Vous faites un signe de tête en retour. Elle prend la dague d\'obsidienne et la plonge dans sa poitrine.Elle saigne comme n\'importe quel homme ou femme que vous connaissez. Elle tousse et s\'étouffe avec son sang comme tout être vivant. Elle recule, les yeux écarquillés par la peur, comme beaucoup de personnes que vous avez connues auparavant. Vous sortez la dague et vous la frappez. Elle se met à gémir, ses mains se tendent pour arracher des poignées de capteurs de rêves et des toiles d\'araignée, son coude heurte une planche de couverts en bois, les ustensiles s\'éparpillent dans toute la cabane dans un bruit creux. Ses doigts fragiles enserrent un couteau à beurre, ses yeux vous transpercent. Elle tousse une fois, deux fois. Elle lâche le couteau à beurre pour se frapper la poitrine avec le poing, un filet de sang gicle sur son menton. Elle lève les yeux.%SPEECH_ON%Nous avions un accord, parole de mercenaire. Vous rengainez la dague et hochez la tête.%SPEECH_ON%Oui, vous avez fait un marché avec un mercenaire et vous avez obtenu ce que vous vouliez. Moi?. J\'ai fait un pacte avec le monde pour me débarrasser entièrement de vous et de votre espèce. Bonne continuation et bonne chance.%SPEECH_OFF%En déglutissant, la tête de l\'hexen s\'effondre sur le sol et son corps devient mou. Lorsque vous vous dirigez vers l\'extérieur, la compagnie demande ce qui s\'est passé. Vous leur dites de brûler la cabane et de se préparer à reprendre la route.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Time to go.",
+					Text = "C\'est l\'heure de partir.",
 					function getResult( _event )
 					{
 						return 0;

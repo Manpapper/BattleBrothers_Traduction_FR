@@ -9,16 +9,16 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.kid_blacksmith";
-		this.m.Title = "A %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{While walking about the shops of %townname%, you feel a tug at your sleeve. You turn to find a child there with a face smeared black with two bright white eyes staring out. He asks if you know anything about swords. You gesture toward the one you got sheathed at your side. He claps his hands.%SPEECH_ON%Great! I work for a blacksmith yonder, but he\'s away fetching iron ingots. He told me to keep watch of this special sword he was making, but it, uh, it fell. And broke. Fell on its own and broke on its own. Will you help me put it back together?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{Alors que vous vous promenez dans les boutiques de %townname%, vous sentez qu\'on tire sur votre manche. Vous vous retournez pour trouver un enfant, le visage barbouillé de noir, avec deux yeux blancs brillants qui vous fixent. Il demande si vous vous y connaissez en épées. Vous faites un geste vers celle que se trouve dans votre fourreau. Il tape dans ses mains.%SPEECH_ON%Génial ! Je travaille pour un forgeron là-bas, mais il est parti chercher des lingots de fer. Il m\'a dit de surveiller cette épée spéciale qu\'il fabriquait, mais elle, euh, elle est tombée. Et s\'est cassée. Elle est tombée toute seule et s\'est cassée toute seule. Tu veux bien m\'aider à la remettre en place?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Someone help the kid out.",
+					Text = "Que quelqu\'un aide le gamin.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 70)
@@ -38,7 +38,7 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Juggler != null)
 				{
 					this.Options.push({
-						Text = "Looks like %juggler% wants to help you.",
+						Text = "On dirait que %juggler% veut vous aider.",
 						function getResult( _event )
 						{
 							return "Juggler";
@@ -50,7 +50,7 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Apprentice != null)
 				{
 					this.Options.push({
-						Text = "Looks like %apprentice% wants to help you.",
+						Text = "On dirait que %apprentice% veut vous aider.",
 						function getResult( _event )
 						{
 							return "Apprentice";
@@ -62,7 +62,7 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Killer != null)
 				{
 					this.Options.push({
-						Text = "Looks like %killer% wants to help you.",
+						Text = "On dirait que %killer% veut vous aider.",
 						function getResult( _event )
 						{
 							return "Killer";
@@ -72,7 +72,7 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "No. Run along, kid.",
+					Text = "Non. Va-t\'en, petit.",
 					function getResult( _event )
 					{
 						return "No";
@@ -84,13 +84,13 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "No",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{You tell the kid to piss off. Probably a scheming little pickpocket anyhow. Speaking of which, you check your pockets to ensure everything is still there.}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{Tu dis au gamin d\'aller se faire voir. C\'est probablement un petit pickpocket de toute façon. En parlant de ça, vous vérifiez vos poches pour vous assurer que tout est toujours là.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What a relief, nothing seems to be missing.",
+					Text = "Quel soulagement, rien ne semble manquer.",
 					function getResult( _event )
 					{
 						return 0;
@@ -105,13 +105,13 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Good",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{%other% is fetched to go help the kid. He helps place the sword\'s handle and steel together and the kid works his magic on his own, easily mending the sword back into one piece. You\'re amazed by his skill and wonder how good the blacksmith himself must be if this is his apprentice. After the work is done, the boy offers to fix some of the weapons for the %companyname% which you happily accept.}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{%other% va chercher l\'enfant pour l\'aider. Il l\'aide à replacer la poignée et l\'acier de l\'épée et le petit fait sa magie tout seul, réparant facilement l\'épée en une seule pièce. Vous êtes étonné par son habileté et vous vous demandez à quel point le forgeron lui-même doit être bon si c\'est son apprenti. Une fois le travail terminé, le garçon propose de réparer certaines armes pour la compagnie %companyname%, ce que vous acceptez avec joie.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nice work!",
+					Text = "Beau travail!",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(1);
@@ -134,7 +134,7 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 						this.List.push({
 							id = 10,
 							icon = "ui/items/" + item.getIcon(),
-							text = "Your " + item.getName() + " is repaired"
+							text = "Votre " + item.getName() + " est réparé"
 						});
 						items = ++items;
 
@@ -149,13 +149,13 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Bad",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{%other% sighs after you ask that he go help the kid with his duties. He lazily steps over to the blacksmith\'s anvil which is shaped like a molar as it rests on thin iron stilts. The blacksmith\'s goods are hanging from ad hoc walls manufactured out of old iron fences, the spokes curved outward to help catch the metalworks. The kid claps his hands.%SPEECH_ON%Now don\'t touch nothing else, just help me with this.%SPEECH_OFF% %other% turns \'round with confusion and mid-sentence knocks the anvil\'s leg out. It starts to crumple sideways and the kid rushes to catch it if only to stem the tide of trouble which has beset his day. The insane weight pastes him flat against the cobblestones, his limbs briefly stretched up like a cricket smooshed beneath a thumb. You see this all from a distance and whistle for the mercenary to head back before there\'s trouble. He makes his escape just as a few passersby start to take notice. He shrugs.%SPEECH_ON%We didn\'t do nothing, right sir?%SPEECH_OFF%You nod.}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{%other% soupire après que tu lui aies demandé d\'aller aider le gamin dans ses tâches. Il s\'avance paresseusement vers l\'enclume du forgeron qui a la forme d\'une molaire et repose sur de fins pilotis en fer. Les marchandises du forgeron sont suspendues à des murs fabriqués à partir de vieilles clôtures en fer, les rebords étant recourbés vers l\'extérieur pour mieux retenir les pièces métalliques. Le gamin tape dans ses mains.%SPEECH_ON%Ne touchez à rien d\'autre, aidez-moi juste avec ça.%SPEECH_OFF%%other% se retourne avec confusion et, au milieu de sa phrase, frappe l\'un des pilotis soutenant l\'enclume. Celle-ci commence à s\'effondrer sur le côté et le gamin se précipite pour la rattraper, ne serait-ce que pour éviter d\'avoir encore plus de problèmes par la suite. Le poids de l\'enclume le plaque contre les pavés, ses membres s\'écartèlent brièvement comme un grillon écrasé sous un pouce. Vous voyez tout cela de loin et sifflez pour que le mercenaire reparte avant qu\'il y ait des problèmes. Il s\'échappe au moment où quelques passants commencent à le remarquer. Il hausse les épaules.%SPEECH_ON%On n\'a rien fait, n\'est-ce pas monsieur ?%SPEECH_OFF%Vous acquiescez.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You should probably stay low for awhile.",
+					Text = "Vous devriez probablement rester discret pendant un moment.",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(-1);
@@ -182,13 +182,13 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Juggler",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{Your suspicions about the juggler volunteering to be sent to help are confirmed true as you soon see him throwing daggers and axes into the air and wowing the public at large. Seeing the crowds gather, he places a hat upon the cobblestones and continues the act. They throw plenty of coin in, and the applause is deafening as he plays out his final act of five maces at the same time. Bowing, he picks up the hat and rushes back over.%SPEECH_ON%A fine day\'s work, aye sir?%SPEECH_OFF%Nodding, you ask about the boy\'s broken sword. He clears the sweat from his brow.%SPEECH_ON%What you say, sir? Get back with the company? Aye sir, I\'ll get back with the company now.%SPEECH_OFF%Pursing your lips, you look back toward the smithery to see the boy bent over an anvil and taking a sound leather hiding from the returned blacksmith.}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{Vos suppositions concernant le jongleur qui s\'est porté volontaire pour vous aider se confirment, car vous le voyez bientôt lancer des dagues et des haches en l\'air et épater le public. Voyant la foule se rassembler, il pose un chapeau sur les pavés et continue son numéro. Ils jettent beaucoup d\'argent, et les applaudissements sont impressionnants lorsqu\'il joue son acte final avec cinq masses en même temps. Il se baisse pour ramasser son chapeau et se précipite vers vous.%SPEECH_ON%Une belle journée de travail, n\'est ce pas monsieur?%SPEECH_OFF%En hochant la tête, vous demandez si l\'épée du garçon est cassée. Il retire la sueur de son front.%SPEECH_ON%Qu\'est-ce que vous dites, monsieur? Rejoindre la compagnie? Oui, monsieur, je retourne à la compagnie de suite.%SPEECH_OFF%Vous vous retournez vers la forge pour voir le garçon penché sur l\'enclume, prenant une veste en cuir comme cachette en attendant le retour du forgeron.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A show\'s a show.",
+					Text = "Un spectacle est un spectacle.",
 					function getResult( _event )
 					{
 						return 0;
@@ -222,13 +222,13 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Apprentice",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{%apprentice% the young apprentice is tasked with helping the kid. He saunters over to the smithy and starts helping the kid. But he does more than just help: he fashions the sword back together in such a way that is stronger than it was to begin with. The blacksmith returns to find the handiwork and demands to know how to do it, almost begging for insight. %apprentice% laughs.%SPEECH_ON%You give me this sword and I\'ll give you the secret my meister passed down to me.%SPEECH_OFF%You didn\'t even know the apprentice knew how to do any of this, but the lad is nothing if not a sponge in boots. A trade is made with the blacksmith and both parties leave more than happy.}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{%apprentice%, le jeune apprenti, est chargé d\'aider le gamin. Il se dirige vers la forge et commence à aider le gamin. Mais il ne se contente pas d\'aider : il reconstitue l\'épée de manière à ce qu\'elle soit plus solide qu\'elle ne l\'était au départ. Le forgeron revient, voit l\'ouvrage, et demande à ce qu\'on lui explique la manière de faire pour réaliser une telle œuvre. %apprentice% rit.%SPEECH_ON%Donnez-moi cette épée et je vous donnerai le secret que mon maître m\'a transmis.%SPEECH_OFF%Vous ne saviez même pas que l\'apprenti savait faire tout cela, mais le garçon n\'est rien si ce n\'est un caillou dans la chaussure. Un échange est fait avec le forgeron et les deux parties partent plus que satisfaites.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I thought you studied baskets?",
+					Text = "Je croyais que tu étudiais les paniers et corbeilles?",
 					function getResult( _event )
 					{
 						this.World.Assets.addMoralReputation(1);
@@ -263,13 +263,13 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Killer",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{You ask %killer% the murderer to help the kid. The man obliges with a smile to which the kid seems intuitively offended by. He takes a few steps back and waves the help away.%SPEECH_ON%No sir, I think I\'m quite alright. Th-thank you. After all, a man\'s gotta do what a man\'s gotta do, right?%SPEECH_OFF%The killer smiles, crouches, and puts a thumb to the kid\'s cheek and leaves it laying there.%SPEECH_ON%That\'s right, boy. That\'s right. A man does what he needs.%SPEECH_OFF%Now you\'re offended and ask %killer% to go count inventory. He rubs the lad\'s hair and then rises and departs. The kid runs off, but quickly returns with a dagger.%SPEECH_ON%H-here, take this. Keep that fella all the hells away from me, please sir. Got it? I want no business with that man and would sooner seek a blacksmith\'s hiding than see him ever again. You take the weapon, you keep him away. Deal? Deal, yeah? Take it!%SPEECH_OFF%You measure that the kid\'s never bargained in his life, that or this is the first time he\'s felt his life on the line. Either way, you accept the dagger. The kid sighs in relief before returning to the smithy, there working away, and there always keeping an eye over his shoulder.}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{Vous demandez à %killer% d\'aider le gamin. L\'homme s\'exécute avec un sourire qui mets le gamin mal à l\'aise. Il fait quelques pas en arrière et rejette toute aide.%SPEECH_ON%Non monsieur, je pense que je vais bien. Me-merci. Après tout, un homme doit faire ce qu\'il doit faire, non?%SPEECH_OFF%Le tueur sourit, s\'accroupit, pose un pouce sur la joue de l\'enfant et le laisse tranquille.%SPEECH_ON%C\'est vrai, mon garçon. C\'est vrai. Un homme fait ce dont il a besoin.%SPEECH_OFF%Maintenant vous êtes offensé et vous demandez à %killer% d\'aller compter le stock. Il caresse les cheveux du garçon, puis se lève et s\'en va. Le gamin s\'enfuit, mais revient rapidement avec une dague.%SPEECH_ON%Tenez, prenez ça. Gardez ce gars-là loin de moi monsieur s\'il vous plait. C\'est compris? Je ne veux pas avoir affaire à lui et je préférerais me cacher chez le forgeron plutôt que de le revoir. Vous prenez l\'arme, vous le tenez à l\'écart. Marché conclu? Marché conclu, ouais? Prenez-la!%SPEECH_OFF%Vous comprenez que le gamin n\'a jamais négocié de sa vie, ou que c\'est la première fois qu\'il met sa vie en jeu. Dans tous les cas, vous acceptez la dague. Le gamin est soulagé et retourne à la forge ou il travaille, tout en gardant un œil ouvert.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You\'re a killer with the kid, %killer%.",
+					Text = "Tu es un tueur avec le gamin, %killer%.",
 					function getResult( _event )
 					{
 						return 0;

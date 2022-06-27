@@ -10,13 +10,13 @@ this.nightowl_catches_thief_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{Waking from a strange dream, you step out of your tent to find most of the company asleep, aside from the night owl %nightowl%. He\'s at the edge of the camp with his back turned, but he seems to hear you approaching and speaks without looking.%SPEECH_ON%This is how it starts, sir. The rage. The fever. That turns good men, hoooo.%SPEECH_OFF%He wheels around to show off an actual owl he has caught. Its eyelids are half-closed, probably worn out from escaping and now simply humiliated at being caught without any carnivorous purpose. You ask %nightowl% how the hell he caught it. The sellsword lets the bird go and shrugs.%SPEECH_ON%With my hands. I also caught this.%SPEECH_OFF%He crouches and pulls up a heretofore unseen corpse.%SPEECH_ON%Slick little thief. I happened upon him, eh, discounting our wares so to speak. I was a little too tired to talk, so I let my blade here tell him the shop\'s closed. I then followed his footsteps out to where he came from and found his, eh, let\'s say accoutrements.%SPEECH_OFF%You nod. Right. Of course. You tell the man you\'re going back to sleep and you\'ll make judgments of his doings in the morning. He nods back.%SPEECH_ON%Right sir. I\'ll try and get some shuteye myself. Been a couple days. Or was it weeks?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{En vous réveillant d\'un rêve étrange, vous sortez de votre tente et trouvez la plupart des membres de la compagnie endormis, à l\'exception du noctambule %nightowl%. Il est à l\'extrémité du camp, le dos tourné, mais il semble vous entendre approcher et parle sans se retourner.%SPEECH_ON%C\'est comme ça que ça commence, monsieur. La rage. La fièvre. Ça transforme les hommes bons, hoooo.%SPEECH_OFF%Il tourne autour pour montrer une chouette qu\'il a attrapée. Ses paupières sont à moitié fermées, probablement épuisées par la fuite et maintenant humiliée d\'avoir été capturée sans aucun but carnivore. Vous demandez à %nightowl% comment il a pu l\'attraper. Le mercenaire laisse partir l\'oiseau et hausse les épaules.%SPEECH_ON%Avec mes mains. J\'ai aussi attrapé ça.%SPEECH_OFF%Il s\'accroupit et soulève un cadavre jusqu\'alors caché.%SPEECH_ON%Petit voleur rusé. Je suis tombé sur lui, euh, en train de vendre nos produits au rabais pour ainsi dire. J\'étais un peu trop fatigué pour parler, alors j\'ai laissé ma lame lui dire que la boutique était fermée. J\'ai ensuite suivi ses pas jusqu\'à l\'endroit d\'où il venait et j\'ai trouvé ses, eh, disons, accoutrements.%SPEECH_OFF%Vous acquiescez. C\'est vrai. Bien sûr. Vous dites à l\'homme que vous allez vous rendormir et que vous jugerez de ce qu\'il fait demain matin. Il obéit.%SPEECH_ON%Bien monsieur. Je vais essayer de dormir un peu moi aussi. Ça fait quelques jours. Ou était-ce des semaines?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Rest well.",
+					Text = "Reposez-vous bien.",
 					function getResult( _event )
 					{
 						return 0;
@@ -43,7 +43,7 @@ this.nightowl_catches_thief_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = trait.getIcon(),
-					text = _event.m.NightOwl.getName() + " is exhausted"
+					text = _event.m.NightOwl.getName() + " est épuisé"
 				});
 				local money = this.Math.rand(100, 300);
 				this.World.Assets.addMoney(money);

@@ -5,18 +5,18 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.golden_goose";
-		this.m.Title = "As you approach...";
+		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_125.png[/img]{The ship is wrecked amongst the trees some of which have long since started to grow through it. As far as you\'re aware, there is neither sea nor river for miles. %observer% walks up and halts at the very sight.%SPEECH_ON%By the old gods, is that a ship?%SPEECH_OFF%You sigh and tell the company to stay here while you and the very observant sellsword go take a look.}",
+			Text = "[img]gfx/ui/events/event_125.png[/img]{Le navire a fait naufrage au milieu des arbres, dont certains ont depuis longtemps commencé à pousser au travers. Pour autant que vous le sachiez, il n\'y a ni mer ni rivière à des kilomètres à la ronde. %observer% s\'avance et s\'arrête devant ce spectacle.%SPEECH_ON%Par les vieux dieux, est-ce un bateau?%SPEECH_OFF%Vous soupirez et dites à toute la compagnie de rester ici pendant que vous et %observer% allez jeter un coup d\'œil.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see what secrets are inside.",
+					Text = "Voyons voir quels secrets se cachent à l\'intérieur.",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,7 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s not worth investigating now.",
+					Text = "Ce n\'est pas la peine d\enquêter maintenant.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -45,13 +45,13 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_125.png[/img]{You step into the bowels of the ship. It\'s completely vacant save for a stump with an axehead chopped into it. %observer% looks at it.%SPEECH_ON%There\'s an axehead.%SPEECH_OFF%Nodding, you say there it is indeed. But the metal of it carries veins of a sort of golden hue. Getting closer to the stump, you can see embers flittering upward out of the wedge. %observer% taps your shoulder and you find him pointing into the dark of the ship.%SPEECH_ON%Skeleton. Dead one.%SPEECH_OFF%Just faintly can you see the pale bones. As you draw near, the clothing becomes apparent, and readily obvious as royal attire. There is a cracked ale horn in one hand and a molded loaf of bread in the other. His jacket is blown open and shredded by splinters. Upon closer inspection, some of the wood is embedded in his brainpan.}",
+			Text = "[img]gfx/ui/events/event_125.png[/img]{Vous entrez dans les entrailles du vaisseau. C\'est complètement vide, à l\'exception d\'une souche dans laquelle est planté un manche de hache. %observer% le regarde.%SPEECH_ON%Il y a un manche de hache.%SPEECH_OFF%En hochant la tête, vous dites que c\'est bien ça. Mais le manche en métal porte des traces de teinte dorée. En vous rapprochant de la souche, vous pouvez voir des braises qui s\'élèvent du morceau de metal. %observer% vous tape sur l\'épaule et vous le voyez pointer du doigt un coin sombre du vaisseau.%SPEECH_ON%Un squelette. Mort.%SPEECH_OFF%Vous apercevez à peine ses ossements pâles. En vous approchant, les vêtements deviennent apparents, il s\'agit bien d\'une tenue royale. Il y a une corne à boire dans une main et une miche de pain moisi dans l\'autre. Sa veste est éventrée et déchiquetée par des éclats. En regardant de plus près, une partie du bois est incrustée dans son cerveau.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Inspect the stump.",
+					Text = "Inspectez la souche.",
 					function getResult( _event )
 					{
 						return "C";
@@ -59,7 +59,7 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let\'s get out of here.",
+					Text = "Allons-nous-en d\'ici.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -80,13 +80,13 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_125.png[/img]{Seeing as how the skeleton and his beer and bread ain\'t going anywhere, you leave it be. The axehead however draws your eye again. %observer% walks over to the stump and the glowing wedge. He tries to take it out. Finding no luck there, he steps back and kicks it further in. The trump cracks in twain and the sellsword suddenly flies upside down and the axehead shoots through the roof of the boat and you can hear it clunk and clatter down its sides outside. Debris and smoke drift lazily about. The sellsword gets up and pats himself off.%SPEECH_ON%What in all the hells was that?%SPEECH_OFF%You shush him and point. A little golden goose squats where the stump\'s base used to be. The sheen of its metal glows and swirls. You\'ve heard stories of a golden goose, but never thought they were anything beyond that!}",
+			Text = "[img]gfx/ui/events/event_125.png[/img]{Vu que le squelette, sa bière et son pain n\'iront nulle part, vous le laissez tranquille. Cependant, le manche de la hache attire de nouveau votre attention. %observer% se dirige vers la souche et les braises. Il essaie de le retirer mais il n\'a pas de chance, il recule et l\'enfonce davantage. La souche et le manche se brisent en deux et le mercenaire tombe en arrière, le manche traverse le toit du bateau, on peut l\'entendre s\'entrechoquer sur les parois à l\'extérieur. Les débris et la fumée flottent lentement. Le mercenaire se lève et se congratule.%SPEECH_ON%WQu\'est-ce que c\'était que ça ?%SPEECH_OFF%Vous le faites taire tout en le montrant du doigt. Une petite oie dorée s\'installe là où se trouvait la base de la souche. L\'éclat de son métal brille et tournoie. Vous avez entendu des histoires d\'oies dorées, mais vous n\'avez jamais pensé que cela pouvait être authentique!}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Is it real?",
+					Text = "Est-ce réel?",
 					function getResult( _event )
 					{
 						return "D";
@@ -102,13 +102,13 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_125.png[/img]{%observer% stumbles forward.%SPEECH_ON%Sir, what are you doing?%SPEECH_OFF%You wave him off and pick the golden goose up. Holding it in both hands, it feels oddly warm. And it isn\'t exploding or melting your face. You can feel its metal rippling ever so slightly against your fingers. It might even be growing? With the treasure safely huddled beneath your elbow, you wonder why the skeleton didn\'t fare better. %observer% walks up and touches the golden goose on the head, but quickly recoils. You ask if it burned him. The sellsword purses his lips.%SPEECH_ON%Really, sir? Was it not obvious?%SPEECH_OFF%He sticks his finger in his mouth. You tell him to not be so snappy with his commander or you\'ll throw the goose at him and see if it makes short work of him as it did the skeleton. The man shrugs.%SPEECH_ON%Oh look at the man chosen by a shiny bauble, put a blade beneath a wing so it can knight ye, or hells why not put it on yer head and call yerself king already?%SPEECH_OFF%You look down at the goose. A drop of red blood runs down its length, turns gold, and drops to the ground with a tiny plink. You pick it up and bite it. The gold smooshes satisfyingly in your teeth and you then throw it to %observer%. It does not burn him this time, and you realize you may have found the genuine Golden Goose from the tales!}",
+			Text = "[img]gfx/ui/events/event_125.png[/img]{%observer% trébuche en avant.%SPEECH_ON%Monsieur, que faites-vous ?%SPEECH_OFF%Vous lui faites signe de partir et vous ramassez l\'oie d\'or. En la tenant à deux mains, vous ressentez une étrange chaleur. Il n\'explose pas ou ne fait pas fondre votre visage. Vous pouvez sentir son métal onduler très légèrement contre vos doigts. Il pourrait même être en train de grandir ? Le trésor étant bien caché sous votre coude, vous vous demandez pourquoi le squelette ne s\'en est pas mieux sorti. %observer% s\'approche et touche l\'oie dorée sur la tête, mais recule rapidement. Vous demandez si ça l\'a brûlé. Le mercenaire se pince les lèvres.%SPEECH_ON%Vraiment, monsieur? Ce n\'était pas évident?%SPEECH_OFF%Il se met le doigt dans la bouche. Vous lui dites de ne pas être aussi brusque avec son commandant ou vous lui lancerez l\'oie et vous verrez si elle l\'élimine aussi rapidement que le squelette. L\'homme hausse les épaules.%SPEECH_ON%oooh regardez l\'homme qui a été choisi par une babiole brillante, mettez lui une lame sous une aile pour qu\'elle puisse vous adouber, ou alors pourquoi ne pas la mettre sur votre tête et vous déclarer roi?%SPEECH_OFF%Vous regardez l\'oie. Une goutte de sang rouge coule le long de son corps, elle devient dorée et tombe sur le sol dans un petit bruit. Vous la ramassez et la mordez. L\'or passe avec satisfaction entre vos dents et vous le jetez ensuite à %observateur%. Il ne le brûle pas cette fois, et vous réalisez que vous avez peut-être trouvé la véritable Oie d\'or des contes!}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The tales tell true!",
+					Text = "Les contes sont vrais!",
 					function getResult( _event )
 					{
 						return 0;
@@ -126,7 +126,7 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "Vous recevez the " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 

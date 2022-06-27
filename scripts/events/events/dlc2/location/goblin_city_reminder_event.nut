@@ -7,13 +7,13 @@ this.goblin_city_reminder_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_119.png[/img]{With so many goblins taken care of, it is likely that word of their deaths and annihilations will reach back to the greenskins\' city. If that goblin expert is as learned as he seems, the goblins will overreact and send their armies out, leaving the gates largely undefended. Perhaps it is time to return to the goblin city and see if the stranger\'s summations ring true.}",
+			Text = "[img]gfx/ui/events/event_119.png[/img]{Après avoir pris soins d\'autant de gobelins, il est probable que la nouvelle de leur mort et de leur extermination parvienne jusqu\'à la cité des peaux vertes. Si cet expert gobelin est aussi savant qu\'il le semble, les gobelins réagiront de manière excessive et enverront leurs armées, laissant les portes pratiquement sans défense. Il est peut-être temps de retourner à la cité des gobelins et de voir si les dires de l\'étranger sont vraies.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We should return.",
+					Text = "Nous devrions revenir.",
 					function getResult( _event )
 					{
 						return 0;

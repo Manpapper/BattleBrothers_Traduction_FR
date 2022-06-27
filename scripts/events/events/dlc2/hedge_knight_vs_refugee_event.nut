@@ -11,13 +11,13 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 60.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_52.png[/img]%hedgeknight% the hedge knight walks up to an eating %refugee%. The former refugee sees the shadow loom over him and slowly turns about.%SPEECH_ON%Yeah?%SPEECH_OFF%The hedge knight snorts and spits a loogie about the size of a baby\'s arm. He snorts again.%SPEECH_ON%You ran from your home. You watched it burn and put yer back to the flames rather than fight them. This company is your home now. What stops you from running from the fire now?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_52.png[/img]%hedgeknight%, le chevalier errant, marche vers un %refugee% qui mange. Il voit l\'ombre se profiler au-dessus de lui et se retourne lentement.%SPEECH_ON%Ouais?%SPEECH_OFF%Le chevalier errant renifle et crache un mollard de la taille du bras d\'un bébé. Il renifle encore.%SPEECH_ON%Vous avez fui votre maison. Vous l\'avez regardé brûler et avez fermer les yeux sur les flammes plutôt que de les affronter. Cette compagnie est votre maison maintenant. Qu\'est-ce qui vous empêche de fuir le feu maintenant?%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Come on, %hedgeknight%. Stop it!",
+					Text = "Allez, %hedgeknight%. Arrêtez ça!",
 					function getResult( _event )
 					{
 						return "B";
@@ -25,7 +25,7 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "You can deal with this yourselves.",
+					Text = "Vous pouvez vous en occuper vous-mêmes.",
 					function getResult( _event )
 					{
 						return "C";
@@ -41,7 +41,7 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 				if (_event.m.OtherGuy != null)
 				{
 					this.Options.push({
-						Text = "Wait. %streetrat%, you look like you have something to say?",
+						Text = "Attends. %streetrat%, on dirait que vous avez quelque chose à dire?",
 						function getResult( _event )
 						{
 							return "D";
@@ -54,13 +54,13 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_52.png[/img]You step forward and tell the hedge knight to stuff it. The company ain\'t here to stroke his ego. Laughing, the bear of a man steps off.%SPEECH_ON%As you say, sir. Wouldn\'t want to get into a scrap with the company princess.%SPEECH_OFF%The company laughs, but the refugee only stares into is bowl of food like someone\'d just spat in it.",
+			Text = "[img]gfx/ui/events/event_52.png[/img]Vous vous avancez et vous dites au chevalier errant de se la fermer. L\'entreprise n\'est pas là pour flatter son ego. En riant, l\'armoire à glace s\'éloigne.%SPEECH_ON%Comme vous le dites, monsieur. Je ne voudrais pas m\'embrouiller avec la princesse de la compagnie.%SPEECH_OFF%La compagnie rit, mais le réfugié se contente de fixer son bol de nourriture comme si quelqu\'un venait de cracher dedans.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well, I guess that\'s settled.",
+					Text = "Eh bien, je suppose que c\'est réglé.",
 					function getResult( _event )
 					{
 						return 0;
@@ -95,13 +95,13 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_06.png[/img]You don\'t intervene. The hedge knight continues.%SPEECH_ON%I\'ve no pity for your pain. You understand?%SPEECH_OFF%Nodding, the refugee looks up.%SPEECH_ON%Aye, but what pity does anyone have for yours?%SPEECH_OFF%%refugee%\'s arm shoots forward so fast it flips the plate into the campfire. The fork sticks in the thigh of %hedgeknight% and %refugee% can\'t wrench it out no better than if it were stuck in a trunk of oak. The hedge knight grits and falls on the refugee and flattens him. His giant hands press the refugee\'s skull into the earth until the poor man\'s breathing dirt. The rest of the company stands up and backs off. You step forward, but %hedgeknight% holds his hand out before standing back up.%SPEECH_ON%Alright, little runner, alright. You\'ve fight in you yet.%SPEECH_OFF%He retrieves the fork and holds it out. A drop of blood grooves between he tines.%SPEECH_ON%Whatcha eating? Oh yeah? Good. I\'ll double it with my portion. Come and sit.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_06.png[/img]Vous n\'intervenez pas. Le chevalier errant continue.%SPEECH_ON%Je n\'ai aucune pitié pour votre souffrance. Vous comprenez?%SPEECH_OFF%En hochant la tête, le réfugié lève les yeux.%SPEECH_ON%Oui, mais quelle pitié a-t-on pour les vôtres?%SPEECH_OFF%Le bras du réfugié s\'avance si vite qu\'il renverse l\'assiette dans le feu de camp. La fourchette se plante dans la cuisse de %hedgeknight% et %refugee% ne peut pas l\'enlever plus facilement que si elle était plantée dans un chêne. Le chevalier errant grogne, tombe sur le réfugié et l\'aplatit. Ses mains géantes enfoncent le crâne du réfugié dans le sol jusqu\'à ce que le pauvre homme ne respire plus que de la terre. Le reste de la compagnie se lève et recule. Vous faites un pas en avant, mais %hedgeknight% vous tend la main avant de se relever.%SPEECH_ON%D\'accord, d\'accord. Tu as encore de la force en toi.%SPEECH_OFF%Il récupère la fourchette et la tend. Une goutte de sang s\'écoule entre ses dents.%SPEECH_ON%Qu\'est-ce que tu manges? Ah oui? Bien. Je vais le doubler avec ma portion. Viens t\'asseoir.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Glad that\'s settled.",
+					Text = "Content que ce soit réglé.",
 					function getResult( _event )
 					{
 						return 0;
@@ -147,13 +147,13 @@ this.hedge_knight_vs_refugee_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_80.png[/img]%streetrat% steps forward. He points a finger at the hedge knight.%SPEECH_ON%You ain\'t got a lick of understanding of no flame nor fire.%SPEECH_OFF%Laughing, %hedgeknight% turns around and cracks his knuckles.%SPEECH_ON%Course I do. I AM the fire.%SPEECH_OFF%The lowborn defiantly crosses his arms.%SPEECH_ON%And we ain\'t the ash, but the wood itself. You\'re a whore for the noblemen, that\'s what you truly are. They pay you a high price and you go on with your strength and cruelty and do what they tell you to do. Like... like a whore...%SPEECH_OFF%Another sellsword holds up a finger.%SPEECH_ON%I think yer describing us in general. We\'re mercenaries.%SPEECH_OFF%And another adds.%SPEECH_ON%Did you just compare yerself to kindling?%SPEECH_OFF%%streetrat% rubs the back of his head.%SPEECH_ON%Yeah I\'m gonna be honest the hedge knight scared me a bit there and I lost what I was going to say.%SPEECH_OFF%The company looks around before bursting into laughter and whatever animosity there was is gone.",
+			Text = "[img]gfx/ui/events/event_80.png[/img]%streetrat% s\'avance. Il pointe un doigt vers le chevalier errant.%SPEECH_ON%Vous n\'avez pas la moindre idée de ce qu\'est une flamme ou le feu.%SPEECH_OFF%En riant, %hedgeknight% se retourne et fait craquer ses doigts.%SPEECH_ON%Bien sûr que si. JE SUIS le feu.%SPEECH_OFF%Le roturier croise les bras de manière provocante.%SPEECH_ON%Et nous ne sommes pas le frêne, mais le bois lui-même. Tu es une putain pour les nobles, c\'est ce que tu es vraiment. Ils te paient un prix élevé et tu continues avec ta force et ta cruauté et tu fais ce qu\'ils te disent de faire. Comme... comme une putain...%SPEECH_OFF%Un autre mercenaire lève un doigt.%SPEECH_ON%Je pense que vous nous décrivez en général. Nous sommes des mercenaires.%SPEECH_OFF%Et un autre ajoute.%SPEECH_ON%Est-ce que vous venez de vous comparer à du petit bois?%SPEECH_OFF%%streetrat% se frotte l\'arrière de la tête.%SPEECH_ON%Ouais, je vais être honnête, le chevalier errant m\'a fait un peu peur et je ne sais plus ce que je voulais dire.%SPEECH_OFF%La compagnie regarde autour d\'elle avant d\'éclater de rire et l\'animosité qu\'il y avait a été balayée.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What were we fighting about again?",
+					Text = "Pourquoi on se disputait déjà ?",
 					function getResult( _event )
 					{
 						return 0;
