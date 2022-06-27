@@ -24,7 +24,7 @@ this.golden_goose_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Ce n\'est pas la peine d\enquêter maintenant.",
+					Text = "Ce n\'est pas la peine d\'enquêter maintenant.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)

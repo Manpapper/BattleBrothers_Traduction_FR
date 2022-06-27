@@ -1,7 +1,7 @@
 this.waterwheel_enter_event <- this.inherit("scripts/events/event", {
 	m = {},
 	function create()
-	{.
+	{
 		this.m.ID = "event.location.waterwheel_enter";
 		this.m.Title = "En approchant...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
