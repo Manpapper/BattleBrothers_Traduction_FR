@@ -11,13 +11,13 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{As the company camps, %randombrother% stops stropping a blade and looks up.%SPEECH_ON%Y\'all hear that?%SPEECH_OFF%You do. Wild dogs are yipping and howling. You shrug and say it\'s nothing, but in that moment there\'s a yelp and the yips turn into snarling and you hear the distinct sound of animalistic struggle. The snarls turn to whines. Something is losing the fight. %randombrother% turns to you.%SPEECH_ON%Sounds close, should we check it out? I don\'t wanna sleep with that around.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{Alors que la compagnie campe, %randombrother% arrête d\'aiguiser une lame et lève les yeux.%SPEECH_ON%Vous avez entendu ça?%SPEECH_OFF%Vous avez entendu oui. Les chiens sauvages aboient et hurlent. Vous haussez les épaules et dites que ce n\'est rien, mais à ce moment-là, il y a un jappement et les jappements se transforment en grognements puis vous entendez le son distinct d\'une lutte animale. Les grognements se transforment en gémissements. Quelque chose est en train de perdre le combat. %randombrother% se tourne vers vous.%SPEECH_ON%Ça a l\'air proche, on devrait aller voir ? Je ne veux pas dormir avec ça dans les parages.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Just ignore it.",
+					Text = "Ignorez-le.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -30,7 +30,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Hunter != null)
 				{
 					this.Options.push({
-						Text = "You\'re a hunter, %hunter%, go take a look.",
+						Text = "Vous êtes un chasseur, %hunter%, allez voir.",
 						function getResult( _event )
 						{
 							return "D";
@@ -42,7 +42,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Wildman != null)
 				{
 					this.Options.push({
-						Text = "You are a man of the wilds, %wildman%, go take a look.",
+						Text = "Vous êtes un homme de la nature, %wildman%, allez voir.",
 						function getResult( _event )
 						{
 							return "E";
@@ -54,7 +54,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Expendable != null)
 				{
 					this.Options.push({
-						Text = "Looks like a job for the new guy. Go take a look, %recruit%!",
+						Text = "On dirait un travail pour le nouveau. Va jeter un coup d\'oeil, %recruit%!",
 						function getResult( _event )
 						{
 							return this.Math.rand(1, 100) <= 40 ? "F" : "G";
@@ -67,13 +67,13 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{You tell the company to ignore the sounds. That\'s a hard task to oblige as the cries of the wild dogs only grow louder and louder until, just like that, they stop. Your men stand still as though making any noise could bring the hell of whatever horror it is that\'s out there. Nothing comes to pass, but a number of the men have a hard time sleeping through the night.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{Vous dites à la compagnie d\'ignorer les sons. C\'est une tâche difficile à accomplir car les cris des chiens sauvages sont de plus en plus forts jusqu\'à ce qu\'ils s\'arrêtent. Vos hommes ne bougent pas, comme si le moindre bruit pouvait déclencher l\'enfer de n\'importe quelle horreur qu\'il y a dehors. Rien ne se passe, mais un certain nombre d\'hommes ont du mal à dormir la nuit.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Grow a pair, you gits.",
+					Text = "Faites-vous pousser une paire, bande d\'idiots.",
 					function getResult( _event )
 					{
 						return 0;
@@ -114,13 +114,13 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{You tell the company to plug their ears if it bothers them so much. As the cries of the wild dogs grow louder the men turn to impromptu ear candling to keep the sounds at bay. Eventually, the sense deprived sellswords are awkwardly walking around like animatronics. You look to join the muted, plugging a waxball into your ear, but before you can get the second ear a loud crash sends inventory flowing and a tent billows as it collapses. You drain your ear and bark orders to the mercenaries who are scattered all over the camp.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{Vous dites à la compagnie de se boucher les oreilles si c\'est si génant. Alors que les cris des chiens sauvages se font de plus en plus forts, les hommes ont recours à des bouchons d\'oreilles improvisées pour faire taire les sons. Finalement, les mercenaires privés de sens se promènent maladroitement comme des robots. Vous cherchez à imiter les muets, en vous mettant une boule de cire dans l\'oreille, mais avant que vous fassiez la même chose pour la deuxième oreille, un grand fracas renverse les stocks et une tente s\'effondre. Vous enlevez vos bouchons et aboyez des ordres aux mercenaires qui sont éparpillés dans le camp.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "To arms, you deaf fools!",
+					Text = "Aux armes, bande de sourds!",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -142,13 +142,13 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_14.png[/img]{It does appear the men will not be assuaged by telling them to grow a pair. %hunter% elects to go seek out the noise, as he\'s sure it\'s nothing more than the wild dogs squabbling over primacy over the pack. You send him on his way, the man venturing into the dark all by his lonesome. Just as soon as he\'s gone the canines cease their crying and you hear a growl that seems as though it came from a much higher ground. The whole camp is dead silent, daring not to even move.\n\n An hour later and the hunter walks into camp, nobody having heard him come in. He\'s camouflaged himself in mud slaked with twigs and leaves. He\'s grafted stems into a hood which he wears like some arboreal abbess. With hushed tones, the sellswords ask what he saw. He shrugs.%SPEECH_ON%Well. I seen about a dozen dead dogs. Some ripped apart. Found a few in the pit of very large footprints and they\'d not found the print but had been stomped there, you know. And I saw something move along in the shadows between the tree tops and it went the other way and I did not follow. I found a deer dead on its feet leaning against a tree. Heart faltered by whatever it saw, I suppose. I harvested everything I could.%SPEECH_OFF%The man turns and slings forward a rack of meat strung to a paneling of wood and leaves.%SPEECH_ON%Anyone hungry?%SPEECH_OFF%} ",
+			Text = "[img]gfx/ui/events/event_14.png[/img]{Il semble que les hommes ne seront pas calmés en leur disant de se faire pousser une paire. %hunter% choisit d\'aller voir ce qui se passe, car il est sûr qu\'il ne s\'agit que de chiens sauvages qui se disputent la suprématie de la meute. Vous l\'envoyez voir, l\'homme s\'aventurant dans l\'obscurité tout seul. Dès qu\'il est parti, les canidés cessent de pleurer, on entend un grognement qui semble venir d\'un endroit beaucoup plus éloigné. Le camp entier est silencieux, personne n\'ose bouger.\n\n Une heure plus tard, le chasseur rentre au camp, personne ne l\'ayant entendu arriver. Il s\'est camouflé dans de la boue mélangée à des brindilles et des feuilles. Il a greffé des tiges dans une capuche qu\'il porte comme une abbesse arboricole. A voix basse, les mercenaires lui demandent ce qu\'il a vu. Il hausse les épaules.%SPEECH_ON%Eh bien. J\'ai vu une douzaine de chiens morts. J\'ai ai trouvé quelques-uns dans une fosse qui ressemblait à une grande emprunte de pas. Ils ont été piétinés là. Et j\'ai vu quelque chose bouger dans l\'ombre entre les cimes des arbres, il est parti dans l\'autre sens mais je ne l\'ai pas suivi. J\'ai trouvé un cerf mort, réplié sur ses pattes, appuyé contre un arbre. Son cœur a été ébranlé par ce qu\'il a vu, je suppose. J\'ai récolté tout ce que je pouvais.%SPEECH_OFF%L\'homme se retourne et fait avancer un râtelier de viande accroché à un panneau de bois et de feuilles.%SPEECH_ON%Quelqu\'un a faim ?%SPEECH_OFF%} ",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Hell of a haul, I suppose.",
+					Text = "Un sacré voyage, je suppose.",
 					function getResult( _event )
 					{
 						return 0;
@@ -197,13 +197,13 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{Fear comes over the camp, but you fetch %wildman% to your side. The wildman snorts and runs his hand along his nose as though you\'ve inconvenienced whatever inexplicable notion he has of his own time. He raises an eyebrow as you suggest, to the best of your pantomiming abilities, that he go and seek out the noise. With little further suggestion, the man grunts and takes off into the woods.\n\n You swear he\'s a good hundred meters off but you can still hear him barreling through the bushes making all the goddam noise in the world. The wild dogs quit their baying and in their place you hear a loud growl and the hoots of a smaller one. They bandy back and forth and you notice you can feel the ground tremoring beneath your feet. The vibrations falter and fade and the screaming halts altogether. Just as you begin to worry, the wildman walks back into camp. He sits beside the campfire, yawns, turns over, and falls asleep. It is as though he\'d never left at all.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{La peur s\'empare du camp, mais vous attirez %wildman% à vos côtés. Le sauvage souffle bruyamment et passe sa main le long de son nez comme si vous aviez dérangé la notion inexplicable qu\'il a de son propre temps. Il lève un sourcil alors que vous lui suggérez, au mieux de vos capacités de pantomime, d\'aller chercher d\'où vient le bruit. Sans autre indication, l\'homme grogne et s\'enfonce dans les bois.\n\n Vous jurez qu\'il est à une bonne centaine de mètres mais vous pouvez toujours l\'entendre foncer dans les buissons en faisant tout le bruit du monde. Les chiens sauvages cessent de hurler et à leur place, on entend un grognement fort et les glapissements d\'un plus petit chien. Ils se balancent d\'avant en arrière, vous pouvez sentir le sol trembler sous vos pieds. Les vibrations faiblissent et s\'estompent, les cris s\'arrêtent complètement. Au moment où vous commencez à vous inquiéter, votre compagnon revient au camp. Il s\'assied près du feu de camp, bâille, se retourne et s\'endort. Comme s\'il n\'était jamais parti.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Problem good as solved, I guess.",
+					Text = "Le problème est réglé, je pense.",
 					function getResult( _event )
 					{
 						return 0;
@@ -229,13 +229,13 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{You look about the company. A young %recruit% looks back. He looks down, as though to look within himself, and then hurriedly gets to his feet.%SPEECH_ON%Say no more, captain. I will find out what this disturbance is.%SPEECH_OFF%The fresh recruit gathers his things and then stands at the edge of the camp\'s light, a very dark forest looking back at him. The man stares down again and clenches and unclenches his hands.%SPEECH_ON%Alright. Alright.%SPEECH_OFF%He looks up.%SPEECH_ON%Let\'s do this.%SPEECH_OFF%The man is never seen again.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{Vous regardez la compagnie. Un jeune %recrue% se retourne. Il baisse les yeux, comme pour regarder en lui-même, puis se lève précipitamment.%SPEECH_ON%N\'en dites pas plus, capitaine. Je vais découvrir d'où vient cette agitation.%SPEECH_OFF%La nouvelle recrue rassemble ses affaires et se tient à la lisière du camp, une forêt très sombre lui faisant face. L\'homme fixe à nouveau le sol puis serre et desserre les mains.%SPEECH_ON%C\'est bon. C\'est bon.%SPEECH_OFF%Il lève les yeux.%SPEECH_ON%Allons-y.%SPEECH_OFF%L\'homme n\'a jamais été revu.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Perhaps sending a greenhorn wasn\'t the best idea.",
+					Text = "Peut-être qu\'envoyer un blanc-bec n\'était pas la meilleure idée.",
 					function getResult( _event )
 					{
 						return 0;
@@ -270,13 +270,13 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{You look about the company. A young %recruit% looks back. He looks down, as though to look within himself, and then hurriedly gets to his feet.%SPEECH_ON%Say no more, captain. I will find out what this disturbance is.%SPEECH_OFF%The fresh recruit gathers his things and then stands at the edge of the camp\'s light, a very dark forest looking back at him. The man stares down again and clenches and unclenches his hands. He huffs and then steps forth, immediately slipping into the shadows. Hours pass. Finally, he returns. His clothes are in tatters. His weapons are gone. He spits forth story after story. Magic rings, volcanoes, giant eagles, absolute nonsense. Whatever he saw, it\'s clear the blubbering sellsword needs to clear his head with some well earned beauty sleep. Which he\'ll get since all that awful noise has ceased.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{Vous regardez la compagnie.Un jeune %recrue% regarde en arrière. Il baisse les yeux, comme pour regarder en lui-même, puis se lève précipitamment.%SPEECH_ON%N\\'en dites pas plus, capitaine. Je vais découvrir d\'où vient cette agitation.%SPEECH_OFF%La nouvelle recrue rassemble ses affaires et se tient à la lisière du camp, une forêt très sombre lui faisant face. L\\'homme fixe à nouveau le sol puis serre et desserre les mains. Il souffle et s\'avance, se glissant immédiatement dans l\'ombre. Les heures passent. Finalement, il revient. Ses vêtements sont en lambeaux. Ses armes ont disparu. Il déblatère des histoires absurdes. Anneaux magiques, volcans, aigles géants, tout ça n\'a aucun sens. Peu importe ce qu\'il a vu, il est clair que le mercenaire a besoin de se vider la tête grâce à un sommeil réparateur bien mérité. Ce qu\'il obtiendra puisque tout ce vacarme affreux a cessé.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Get your sleep, kid.",
+					Text = "Va dormir, petit.",
 					function getResult( _event )
 					{
 						return 0;

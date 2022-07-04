@@ -12,13 +12,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 80.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{While on the march, you find a drunken nobleman tottering side to side on the path. Mussy is the name of his hair, leaves and grass and what looks like birdshit swept up in it like someone stirred the ingredients to a prank. But his clothes sweep about with the finest of silks and his fingers glisten with jewelry. He has a bottle in each hand and he swings them around as he sings gibberish pub songs.\n\nHe is in all regards the greatest magnet for a mugging you\'ve ever seen. %randombrother% purses his lips and he looks like a wolf staring at a fat sheep.%SPEECH_ON%I\'m not saying nothing, sir, I\'m just. I\'m just seeing it. That\'s a lot of juice. A lot of juice limping down the road. But again I ain\'t saying nothing.%SPEECH_OFF%You know what he\'s talking about.}",
+			Text = "%terrainImage%{Alors que vous êtes en route, vous tombez sur un noble ivre qui titube d\'un côté à l\'autre du chemin. Mussy est le nom de ses cheveux, des feuilles, de l\'herbe et ce qui ressemble à de la merde d\'oiseau s\'y trouve, comme si quelqu\'un avait mélangé les ingrédients et fait une farce. Mais ses vêtements sont faits de la plus belle des soies et ses doigts brillent de bijoux. Il a une bouteille dans chaque main et les balance en chantant des chants de tavernes, un vrai charabia.\n\nIl est, à tous égards, le plus grand aimant à agressions que vous ayez jamais vu. %randombrother% pince ses lèvres et ressemble à un loup qui dévisage un gros mouton.%SPEECH_ON%Je ne dis rien, monsieur, je... Je le vois, c\'est tout. C\'est beaucoup de jus. Beaucoup de jus sur la route. Mais encore une fois, je ne dis rien.%SPEECH_OFF%Vous savez de quoi il parle.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll rob him.",
+					Text = "Nous allons le voler.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -31,7 +31,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Servant != null)
 				{
 					this.Options.push({
-						Text = "Why is he looking at %servant%?",
+						Text = "Pourquoi regarde-t-il %servant%?",
 						function getResult( _event )
 						{
 							return "G";
@@ -43,7 +43,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Thief != null)
 				{
 					this.Options.push({
-						Text = "Perhaps %thief% can ease his burden.",
+						Text = "Peut-être que %thief% peut alléger son fardeau.",
 						function getResult( _event )
 						{
 							return "H";
@@ -53,7 +53,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "Leave him be.",
+					Text = "Laissez-le tranquille.",
 					function getResult( _event )
 					{
 						return 0;
@@ -65,13 +65,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "%terrainImage%{You walk up to the man and help him sit down. He grins as one of his bottles clanks off the path and rolls away.%SPEECH_ON%Thankiicup, sir, jast, no, well, ya.%SPEECH_OFF%Nodding, you hold his hand out and spit on his fingers, then roll the jewelry off and pocket them. He merely watches as though you were a physician treating a malady. The rest of your mercenaries strip him down and throw a goatskin tarp over him and then leave him there. As you walk away he asks if you know about the drink.%SPEECH_ON%Not, not sayin\' away the secret, but, sirs, drinks are good.%SPEECH_OFF%Yes, are they ever. Unfortunately, as you rejoin the company %randombrother% reports that a kid saw everything and scampered off. You ask why he didn\'t chase after him. He looks at you shrewdly.%SPEECH_ON%I\'m not the scampering sort, sir.%SPEECH_OFF%}",
+			Text = "%terrainImage%{Vous vous approchez de l'homme et l'aidez à s'asseoir. Il sourit lorsqu'une de ses bouteilles s'écrase sur le chemin et roule au loin.%SPEECH_ON%Meeerciii, m\'sieur, ouais, hein?, je sais pas... \*Hips\*.%SPEECH_OFF%En hochant la tête, vous lui tendez la main et crachez sur ses doigts, puis vous enlevez le bijou et le mettez dans votre poche. Il se contente de regarder comme si vous étiez un médecin traitant une maladie. Le reste de vos mercenaires le dépouille et lui jette une bâche en peau de chèvre dessus, puis le laisse là. En partant, il vous demande si vous connaissez ce breuvage.%SPEECH_ON%Je ne veux pas dévoiler le secret, mais, messieurs, les breuvages sont bons.%SPEECH_OFF%Oui, ils sont toujours là. Malheureusement, alors que vous rejoignez la compagnie, %randombrother% rapporte qu'un enfant a tout vu et s'est enfui. Vous lui demandez pourquoi il ne lui a pas couru après. Il vous regarde d'un air malin.%SPEECH_ON%Je ne suis pas du genre à détaler, monsieur.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Rest easy, stranger.",
+					Text = "Repose-toi bien, étranger.",
 					function getResult( _event )
 					{
 						return 0;
@@ -116,13 +116,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "%terrainImage%{You walk up to the man and, startled, he reels back with a hiccup.%SPEECH_ON%Oy, who are ye?%SPEECH_OFF%Telling him you\'re a good friend, you approach to rob him of everything, but as you take another step his eyes clear and he drops both bottles and suddenly reaches into his coat and pulls out a crossbow.%SPEECH_ON%Not another step you lout. I got men yonder who are watching. I don\'t want no trouble. We ain\'t keen on getting squirrely with sellswords. We\'re here to rob travelers, no good travelers at that, choosing to rob a drunk! Now why dontcha just get on down the road and we all leave without impasse upon our purposes.%SPEECH_OFF%The crossbow crickets as its wood shakes in his loose grip.}",
+			Text = "%terrainImage%{Vous vous approchez de l\'homme et, surpris, il recule en hoquetant.%SPEECH_ON%Oy, qui êtes-vous?%SPEECH_OFF%En lui disant que vous êtes un bon ami, vous vous approchez pour le dépouiller de tous ses biens, mais lorsque vous faites un pas de plus, ses yeux s\'éclaircissent, il laisse tomber les deux bouteilles et fouille soudainement dans son manteau pour en sortir une arbalète.%SPEECH_ON%Pas un pas de plus, espèce de voyou. J\'ai des hommes là-bas qui surveillent. Je ne veux pas d\'ennuis. On n\'a pas envie de s\'embrouiller avec des mercenaires. On est là pour voler des voyageurs, et pas des bons en plus, on choisit de voler un ivrogne, hein? Maintenant pourquoi ne pas continuer la route et nous laisser tranquille?%SPEECH_OFF%L\'arbalète grince et commence à trembler dangereusement.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Deal.",
+					Text = "Marché conclu.",
 					function getResult( _event )
 					{
 						return "D";
@@ -130,7 +130,7 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No deal.",
+					Text = "Même pas en rêve.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "E" : "F";
@@ -145,13 +145,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "%terrainImage%{You nod.%SPEECH_ON%Quite alright. I\'m assuming all that you got is counterfeit, aye?%SPEECH_OFF%The man nods.%SPEECH_ON%Of course. The finest fitting counterfeit this side of %townname% this is! But enough chin wagging shenanigans. Appreciate ya keeping this square, but we got work to do.%SPEECH_OFF%Nodding again, you wish him luck in them doings.}",
+			Text = "%terrainImage%{You nod.%SPEECH_ON%Très bien. Je suppose que tout ce que vous avez est contrefait, n\'est-ce pas?%SPEECH_OFF%L\'homme acquiesce.%SPEECH_ON%Bien sûr. C\'est la meilleure contrefaçon de cette partie de %townname%! Mais assez de manigances. J\'apprécie que vous gardiez cette zone, mais on a du travail.%SPEECH_OFF%En hochant la tête une nouvelle fois, vous lui souhaitez bonne chance pour ce qu\'il fait.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Back to the road.",
+					Text = "Reprenons la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -166,13 +166,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "%terrainImage%{You look back at the company, then unsheathe your sword as you turn around. You swing it up and clip the crossbow and the man shoots it just over your shoulder. You drive the blade down the slat of wood and cut the cords of the weapon and stab the steel into the man\'s chest. He goes down easy and you hear men shout in the distance, but they\'re scared and scampering away. Thieves like this know not to fight with sellswords. You collect whatever goods the man had already stolen up to this point.}",
+			Text = "%terrainImage%{Vous regardez la compagnie, puis vous vous retourner en faisant mine de ranger votre épée. Vous levez votre épée vers le haut puis chargez l\'arbalète, l\'homme tire juste au-dessus de votre épaule. Vous enfoncez la lame dans le bois, coupez les cordes de l\'arme et plantez l\'acier dans la poitrine de l\'homme. Il tombe facilement, on entend des hommes crier au loin mais prennent peur et s\'enfuient. Les voleurs comme lui savent qu\'il ne faut pas se battre avec des mercenaires. Vous récupérez les biens que l\'homme avait volés auparavant.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see what he had.",
+					Text = "Voyons ce qu\'il avait.",
 					function getResult( _event )
 					{
 						return 0;
@@ -208,13 +208,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "%terrainImage%{You look back at the company, then unsheathe your sword as you turn around. You swing it up and clip the crossbow and the man shoots it just over your shoulder. You drive the blade down the slat of wood and cut the cords of the weapon and stab the steel into the man\'s chest. He goes down easy and you hear men shout in the distance, but they\'re scared and scampering away. Thieves like this know not to fight with sellswords. Unfortunately, the crossbow bolt that went over your shoulder struck %hurtbro%. He\'ll survive, but it is a garish wound.}",
+			Text = "%terrainImage%{Vous regardez la compagnie, puis vous vous retourner en faisant mine de ranger votre épée. Vous levez votre épée vers le haut puis chargez l\\'arbalète, l\\'homme tire juste au-dessus de votre épaule. Vous enfoncez la lame dans le bois, coupez les cordes de l\\'arme et plantez l\\'acier dans la poitrine de l\\'homme. Il tombe facilement, on entend des hommes crier au loin mais prennent peur et s\\'enfuient. Les voleurs comme lui savent qu\\'il ne faut pas se battre avec des mercenaires. Malheureusement, le carreau d\'arbalète qui est passé par-dessus votre épaule a touché %hurtbro%. Il survivra, mais c\'est une vilaine blessure.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s see what he had.",
+					Text = "Voyons ce qu\'il avait.",
 					function getResult( _event )
 					{
 						return 0;
@@ -250,13 +250,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "%terrainImage%{As you near the nobleman, his eyes go wide and he points at %servant% the servant.%SPEECH_ON%Jast wait a sssec, I know youuu.%SPEECH_OFF%You look back. He does? The nobleman stumbles forward with his legs scissoring side to side.%SPEECH_ON%You were servant to my cousin in %randomtown% one fine evening. You were great! The greatest. Greeaaatest. S-servant. Hargh. Well -hic- I dare say you can have all this shite cause I don\'t think -hic- we explained yee, sorry, paid ya.%SPEECH_OFF%The man takes anything of value and throws it over. He seems happy just to be relieved of the weight of it all.%SPEECH_ON%If ye see my c-cousin again, let, let him know that I killed his brother, with the, the, mantlepiece. No harsh -hic- feelings.%SPEECH_OFF%Well alright then.}",
+			Text = "%terrainImage%{Lorsque vous vous approchez du noble, ses yeux s\'écarquillent et il désigne %servant% le serviteur.%SPEECH_ON%Attendez une seconde, je vous connais.%SPEECH_OFF%Vous vous retournez. Est-ce vrai? Le noble trébuche en avant, ses jambes se balançant d\'un côté à l\'autre.%SPEECH_ON%Vous serviez mon cousin dans %randomtown% un soir. Vous étiez formidable ! Le plus grand. Le plus génial. S-serviteur. Hargh. Eh bien -hic- j\'ose dire que vous pouvez avoir toute cette merde parce que je ne pense pas -hic- qu\'on vous ait expliqué, désolé, qu\'on vous ait payé.%SPEECH_OFF%L\'homme prend tout ce qui a de la valeur et le jette devant lui. Il semble heureux de s\'être simplement débarrassé de ce poids.%SPEECH_ON%Si vous revoyez mon cousin, dites-lui que j\'ai tué son frère, avec le manteau de cheminée. Sans rancune.%SPEECH_OFF%Bon, d\'accord.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good job doing that thing awhile back.",
+					Text = "C\'était une bonne chose de faire ce truc il y a quelques temps.",
 					function getResult( _event )
 					{
 						return 0;
@@ -287,13 +287,13 @@ this.drunk_nobleman_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "H",
-			Text = "%terrainImage%{As you approach the drunkard, a sharp whistle cracks across the path. You and the drunkard both look to see %thief% the thief standing there with a weapon to the back of another man.%SPEECH_ON%That feller\'s no nobleman, and probably aint no drunk neither. They\'re working together to either ambush travelers or threaten them with blackmail. They\'re robbers, sir.%SPEECH_OFF%You look back to see the man smiling nervously. He explains with suddenly sharpened clarity.%SPEECH_ON%We\'d no interest in robbing sellswords, sir, I-I-I swear I was about to explain myself soon as I sawr yer swords.%SPEECH_OFF%%thief% yells out, asking where the cache is. You look back at the man and tell him to hand over everything he\'s stolen. He nods and asks if you\'ll gut him if he refuses. You nod and tell him the gutting will come last, and by that point it\'ll be a relief. The man puts a little pep in his step.%SPEECH_ON%Yessir gotcha sir, right this way.%SPEECH_OFF%} ",
+			Text = "%terrainImage%{Alors que vous vous approchez de l\'ivrogne, un sifflement aigu se fait entendre sur le chemin. Vous et l\'ivrogne regardez tous deux pour voir %thief% le voleur, il se tient là avec une arme dans le dos appartenant à quelqu\'un d\'autre.%SPEECH_ON%Ce type n\'est pas un noble, et probablement pas un ivrogne non plus. Ils travaillent ensemble pour piéger les voyageurs ou les menacer de chantage. Ce sont des voleurs, monsieur.%SPEECH_OFF%Vous vous retournez pour voir l\'homme qui sourit nerveusement. Il s\'explique de manière fluide.%SPEECH_ON%Nous n\'avions aucun intérêt à voler des mercenaires, monsieur, je-je-je jure que j\'étais sur le point de m\'expliquer dès que j\'ai vu vos épées.%SPEECH_OFF%%thief% crie, demandant où est la cachette. Vous vous retournez vers l\'homme et lui dites de vous remettre tout ce qu\'il a volé. Il acquiesce et vous demande si il va se faire étriper s\'il refuse. Vous acquiescez et lui dites que l\'éviscération viendra en dernier, et qu\'à ce moment-là, ce sera un soulagement. L\'homme met un peu d\'entrain dans sa démarche.%SPEECH_ON%Oui, j\'ai compris monsieur, par ici.%SPEECH_OFF%} ",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Ol\' thief sniffed that right out.",
+					Text = "Le voleur a flairé le coup.",
 					function getResult( _event )
 					{
 						return 0;

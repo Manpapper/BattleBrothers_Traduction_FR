@@ -3,18 +3,18 @@ this.tundra_elk_destroyed_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.location.tundra_elk_destroyed";
-		this.m.Title = "After the battle...";
+		this.m.Title = "Après le combat...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_146.png[/img]{With the killing blow well placed, the Ijirok clambers side to side gripping its final wound. It lets out a howl of pain and buckles at the knees and can only barely hold itself up with one hand as its body doubles over and vomits into the ground. But the whole thing seems like a charade and the beast at times looks over as though to make sure you are watching. It is a drama. A poorly acted show put on by that which does not know death in any sense. The eyes lock with yours and that unsettling grin returns, then the monstrosity flashes a blinding strobe of blue and when the natural light of the world returns the corpse is frozen solid and flakes of snow drizzle from the sky.\n\n That can\'t be it. You just know it. You walk up to the iced remains and start chopping away. As you hew into the ice, a blue ooze drips from channels and gaps. One final swing smashes the ice apart and a blob of goo runs every which way. As the men looked on rather concerned, you grab the shattered armor from the cave and throw it into the Ijirok\'s blood. The strange tendrils which held its pieces together instantly brighten and you watch as they begin to twist taut and pull the plates together. Matted elk fur conjoins with the metal as though they were one being coming to heal old wounds. Blood snakes over the plates like moss twirling beneath a riverbed, curling to and fro before flattening out and painting the armor a slick red. \n\nPicking it up, you feel a buzz on your fingertips.%SPEECH_ON%I hope you don\'t suggest I wear that, captain.%SPEECH_OFF%%randombrother% says, shaking his head with a nervous smile. You\'re not yet sure what the armor is capable of, but no doubt have the mind to keep it in inventory to see. As for the Ijirok, you\'ve no doubt it is still out there somewhere. Its corpse is already decaying rapidly and the bones which remain are not that of a giant beast but simply that of a poor elk.}",
+			Text = "[img]gfx/ui/events/event_146.png[/img]{Le coup fatal étant bien porté, l\'Ijirok grimpe d\'un côté à l\'autre en serrant sa dernière blessure. Il laisse échapper un hurlement de douleur, ses genoux se plient et peut à peine se tenir d\'une main tandis que son corps se déforme, il vomit sur le sol. Mais tout cela ressemble à une mascarade, la bête regarde parfois par-dessus comme pour s\'assurer que vous regardez. C\'est du théâtre. Un spectacle mal joué pour ceux qui connaissent la mort. Les yeux se fixent sur les vôtres et son sourire inquiétant réapparaît, puis la monstruosité émet un flash bleu aveuglant et, lorsque la lumière naturelle du monde revient, le corps est gelé, des flocons de neige tombent du ciel.\n\n Ça ne peut pas être ça. Vous le savez. Vous vous approchez des restes gelés et commencez à couper. Quand vous taillez dans la glace, une sueur bleue s\'écoule des canaux et des trous. Un dernier coup brise la glace et une masse gluante coule dans tous les sens. Alors que les hommes regardent d\'un air plutôt inquiet, vous saisissez l\'armure brisée de la grotte et la jetez dans le sang de l\'Ijirok. Les étranges vrilles qui maintenaient les pièces ensemble s\'éclaircissent instantanément et vous observez qu\'elles commencent à se tordre et à tirer les plaques ensemble. La fourrure d\'élan emmêlée s\'associe au métal comme s\'il s\'agissait d\'un seul et même être venant guérir de vieilles blessures. Le sang serpente sur les plaques comme la mousse qui virevolte sous le lit d\'une rivière, s\'enroulant dans tous les sens avant de s\'aplatir et de peindre l\'armure d\'un rouge éclatant. \n\nEn le ramassant, vous sentez un bourdonnement au bout de vos doigts.%SPEECH_ON%J\'espère que vous ne me suggérez pas de porter ça, capitaine.%SPEECH_OFF%dit %randombrother%, en secouant la tête avec un sourire nerveux. Vous ne savez pas encore de quoi l\'armure est capable, mais vous avez sans doute l\'intention de la garder dans votre inventaire pour voir. Quant à l\'Ijirok, vous n\'avez aucun doute qu\'il est toujours là quelque part. Son cadavre se décompose déjà rapidement et les os qui restent ne sont pas ceux d\'une bête géante mais simplement ceux d\'un pauvre élan.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Still, we prevailed.",
+					Text = "Pourtant, nous avons gagné.",
 					function getResult( _event )
 					{
 						return 0;
@@ -61,13 +61,13 @@ this.tundra_elk_destroyed_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_146.png[/img]{With the killing blow well placed, the Ijirok clambers side to side gripping its final wound. It lets out a howl of pain and buckles at the knees and can only barely hold itself up with one hand as its body doubles over and vomits into the ground. But the whole thing seems like a charade and the beast at times looks over as though to make sure you are watching. It is a drama. A poorly acted show put on by that which does not know death in any sense. The eyes lock with yours and that unsettling grin returns, then the monstrosity flashes a blinding strobe of blue and when the natural light of the world returns the corpse is frozen solid and flakes of snow drizzle from the sky.\n\n That can\'t be it. You just know it. You walk up to the iced remains and start chopping away. As you hew into the ice, a blue ooze drips from channels and gaps. One final swing smashes the ice apart and a blob of goo runs every which way.\n\nYou\'ve no doubt that this thing is still out there somewhere. Its corpse is already decaying rapidly and the bones which remain are not that of a giant beast but simply that of a poor elk.}",
+			Text = "[img]gfx/ui/events/event_146.png[/img]{Le coup fatal étant bien porté, l\'Ijirok grimpe d\'un côté à l\'autre en serrant sa dernière blessure. Il laisse échapper un hurlement de douleur, ses genoux se plient et peut à peine se tenir d\\'une main tandis que son corps se déforme, il vomit sur le sol. Mais tout cela ressemble à une mascarade, la bête regarde parfois par-dessus comme pour s\\'assurer que vous regardez. C\\'est du théâtre. Un spectacle mal joué pour ceux qui connaissent la mort. Les yeux se fixent sur les vôtres et son sourire inquiétant réapparaît, puis la monstruosité émet un flash bleu aveuglant et, lorsque la lumière naturelle du monde revient, le corps est gelé, des flocons de neige tombent du ciel.\n\n Ça ne peut pas être ça. Vous le savez. Vous vous approchez des restes gelés et commencez à couper. Quand vous taillez dans la glace, une sueur bleue s\\'écoule des canaux et des trous. Un dernier coup brise la glace et une masse gluante coule dans tous les sens.\n\nVous n\'avez aucun doute que cette chose est toujours là quelque part. Son cadavre se décompose déjà rapidement et les os qui restent ne sont pas ceux d\'une bête géante mais simplement ceux d\'un pauvre élan.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Still, we prevailed.",
+					Text = "Pourtant, nous avons gagné.",
 					function getResult( _event )
 					{
 						return 0;

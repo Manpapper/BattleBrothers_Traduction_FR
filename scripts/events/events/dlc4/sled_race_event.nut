@@ -11,13 +11,13 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_143.png[/img]{As the snow and stiff winds beat down upon your face, it seems almost miraculous that there\'s someone on this mountain waving you down. But there he is, a bearded fella with two sleds in hand. He yells out if you\'re interested in a race.%SPEECH_ON%First one to split them two rocks shaped like cocks is the winner!%SPEECH_OFF%You ask what it is that\'s on the line. When he looks at you like a dog spoken to in the wrong language, you ask what you\'re betting. He laughs.%SPEECH_ON%Ain\'t no bet! Just a matter of fun!%SPEECH_OFF%Fair enough. Maybe one of the %companyname% would like to try?}",
+			Text = "[img]gfx/ui/events/event_143.png[/img]{Alors que la neige et les vents violents s\'abattent sur votre visage, il semble presque miraculeux qu\'il y ait quelqu\'un sur cette montagne qui vous fasse signe de descendre. Mais il est là, un gars barbu avec deux traîneaux à la main. Il crie pour savoir si vous êtes intéressés par une course.%SPEECH_ON%Le premier à fendre ces deux pierres en forme de bite gagne!%SPEECH_OFF%Vous demandez ce qu\'il y a en jeu. Quand il vous regarde comme un chien à qui on parle dans la mauvaise langue, vous demandez ce que vous pariez. Il rit.%SPEECH_ON%Il n\'y a pas de pari! C\'est juste pour le plaisir!%SPEECH_OFF%Pas de problème. Peut-être que l\'un de la compagnie %companyname% aimerait essayer?}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Someone step forward and do it!",
+					Text = "Que quelqu\'un s'avance et le fasse!",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -30,7 +30,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Fat != null)
 				{
 					this.Options.push({
-						Text = "Looks like %fat% is volunteering.",
+						Text = "On dirait que %fat% est volontaire.",
 						function getResult( _event )
 						{
 							return "D";
@@ -42,7 +42,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Blind != null)
 				{
 					this.Options.push({
-						Text = "Looks like %shortsighted% is volunteering.",
+						Text = "On dirait que %shortsighted% est volontaire.",
 						function getResult( _event )
 						{
 							return "E";
@@ -52,7 +52,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "We have more important things to take care of.",
+					Text = "Nous avons des choses plus importantes à faire.",
 					function getResult( _event )
 					{
 						return 0;
@@ -64,13 +64,13 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_143.png[/img]{%sledder% takes the sled from the mountain man.%SPEECH_ON%I\'ll beat ya to them rock dicks in proper time.%SPEECH_OFF%Everyone raises an eyebrow as he sets the sled down. He jacks his boots against its front and tips it toward the edge of the hillside.%SPEECH_ON%Ready when you are.%SPEECH_OFF%The mountain man gives a signal to start the race and the two zip down the snow in an instant. You\'re not sure if your sellsword played cheap, but the mountain man suddenly turns sideways and flips his sled and he goes rolling through the powder in a flail of beard and limbs. %sledder% meanwhile coasts to an easy victory. The company roars to the victory and carry him up the mountain on their shoulders. If the mercenary did cheat it doesn\'t show on the mountain man\'s face, he is just happy to have had raced at all.}",
+			Text = "[img]gfx/ui/events/event_143.png[/img]{%sledder% prend l\'un des traîneaux de l\'homme des montagnes.%SPEECH_ON%Je serais plus rapide que vous pour séparer ces bites.%SPEECH_OFF%Tout le monde lève un sourcil quand il pose le traîneau. Il cale ses bottes contre l\'avant et le fait basculer vers le bord de la colline.%SPEECH_ON%Quand vous voulez.%SPEECH_OFF%Le montagnard donne le signal de départ, les deux hommes dévalent la neige en un instant. Vous n\'êtes pas sûr que votre mercenaire ait joué petit bras, mais l\'homme des montagnes tourne soudainement sur le côté et renverse son traîneau, il roule dans la poudreuse dans un fracas de barbe et de membres. Pendant ce temps, %sledder% s\'offre une victoire sans difficulté. La compagnie applaudit la victoire et le porte sur ses épaules en haut de la montagne. Si le mercenaire a triché, cela ne se voit pas sur le visage du montagnard, il est juste heureux d\'avoir couru.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nice one!",
+					Text = "Bien joué!",
 					function getResult( _event )
 					{
 						return 0;
@@ -111,7 +111,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_143.png[/img]{%sledder% takes the sled from the mountain man.%SPEECH_ON%I\'ll beat ya to them rock dicks in proper time.%SPEECH_OFF%Everyone raises an eyebrow as he sets the sled down. He jacks his boots against its front and tips it toward the edge of the hillside.%SPEECH_ON%Ready when you are.%SPEECH_OFF%The mountain man gives a signal to start the race and the two zip down the snow in an instant. Rooster tails of powder shower in their wake and it seems like %sledder% is going to win until he angles incorrectly and smashes right into one of the rock cocks. The sled shatters to pieces and the sellsword goes flying over the stone and lands limply into the snow. Laughing, the company rushes to his aide and brings him back to his feet. He\'s got some raspberries and something is clicking, but he\'ll live. The mountain man cheers.%SPEECH_ON%Ye almost had me, but yer s\'posed to split the dicks, not ride up them!%SPEECH_OFF%This brings your men to their knees in crying laughter.}",
+			Text = "[img]gfx/ui/events/event_143.png[/img]{%sledder% prend le traîneau de l\'homme des montagnes.%SPEECH_ON%Je vous battrai à ces bites en temps voulu.%SPEECH_OFF%Tout le monde lève un sourcil quand il pose le traîneau. Il cale ses bottes contre l\'avant et le fait basculer vers le bord de la colline.%SPEECH_ON%C\'est quand vous voulez.%SPEECH_OFF%L\'homme des montagnes donne le signal du départ et les deux hommes dévalent la neige en un instant. Des blocs de poudreuses tombent dans leur sillage et il semble que %sledder% va gagner jusqu\'à ce qu\'il se trompe d\'angle et percute l\'un des rochers. Le traîneau se brise en morceaux, l\'épée passe au-dessus de la pierre et atterrit mollement dans la neige. En riant, la compagnie se précipite pour l\'aider et le remet sur pied. Il a des framboises sur lui et quelque chose fait \"clic\", mais il survivra. L\'homme des montagnes applaudit.%SPEECH_ON%Vous m\'avez presque eu, mais vous êtes censé fendre les bites, pas les monter!%SPEECH_OFF%Pleurant de rire, vos hommes sont en train de se rouler par terre.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -162,13 +162,13 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_08.png[/img]{%fat%, the fattest man in the company, elects to give it a try. You like his chances - given his weight it\'s likely he\'ll blow right down the mountainside. The mountain man readily accepts the challenge, sets the ground rules, and starts the race proper. The two rip through the snow with ease and, just as you thought, the fat man roars through the powder like lightning through a cloud. But he doesn\'t seem to slow. He plows right between the two cock rocks, signaling his win, but he\'s unable to seize the reins or slow down. He barrels over an escarpment and that\'s about the last of you see of him. The mountain man grimaces and runs toward the hillside.%SPEECH_ON%He\'s alive! Little busted up, but alive!%SPEECH_OFF%Though you\'re mightily concerned, you look back to see that the company whole is doubled over or on their knees choking with laughter.}",
+			Text = "[img]gfx/ui/events/event_08.png[/img]{%fat%, l\'homme le plus gros de la compagnie, décide d\'essayer. Vous appréciez sa prise de risque - étant donné son poids, il est probable qu\'il dévalera le flanc de la montagne. L\'homme des montagnes accepte volontiers le défi, fixe les règles de base et lance la course proprement dite. Les deux hommes se frayent un chemin dans la neige avec aisance et, comme vous le pensiez, le gros fonce dans la poudreuse comme un éclair dans un nuage. Mais il ne semble pas ralentir. Il passe juste entre les deux rochers, signant sa victoire. Le problème, c\'est qu\'il est incapable de saisir les rênes ou de ralentir. Il franchit un escarpement et c\'est à peu près la dernière fois que vous le voyez. Le montagnard grimace et court vers la colline.%SPEECH_ON%Il est vivant! Un peu amoché, mais vivant!%SPEECH_OFF%Bien que vous soyez très inquiet, vous vous retournez pour voir que toute la compagnie est pliée en deux ou à genoux, morte de rire.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Holy smokes!",
+					Text = "Nom d'une pipe!",
 					function getResult( _event )
 					{
 						return 0;
@@ -213,13 +213,13 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_143.png[/img]{%shortsighted% volunteers to race the mountain man. You are reluctant to allows that, given the sellsword\'s poor eyesight, but he is pretty diligent about the matter. As he squats on the sled and takes up the reins you can\'t help but notice that he is already squinting downhill as though he wouldn\'t tell a mountainside from a red barn.%SPEECH_ON%Ready!%SPEECH_OFF%The mountain man sets the rules and starts the race. Almost immediately the shortsighted sellsword veers off course. Thankfully he\'s not even full speed when he slams head first into a rock formation. The sled shatters like a tomato against a pillory and the man himself pancakes against the stone. You rush to his aide and get him to his feet, but there you find your foot stepping on something metallic. A treasure chest! You tell the company to get the man some proper help while you dig out what you can.}",
+			Text = "[img]gfx/ui/events/event_143.png[/img]{%shortsighted% se porte volontaire pour faire la course avec l\'homme des montagnes. Vous êtes réticent à l\'idée de le laisser faire, étant donné la mauvaise vue du mercenaire, mais il est plutôt assidu en la matière. Lorsqu\'il s\'accroupit sur le traîneau et prend les rênes, on ne peut s\'empêcher de remarquer qu\'il louche déjà vers le bas de la pente, comme s\'il ne pouvait distinguer un flanc de montagne d\'une grange rouge.%SPEECH_ON%Prêt!%SPEECH_OFF%L\'homme des montagnes fixe les règles et lance la course. Presque immédiatement, le mercenaire bigleux dévie de sa route. Heureusement, il n\'est même pas à pleine vitesse quand il percute une formation rocheuse la tête la première. Le traîneau se brise comme une tomate contre un pilori et l\'homme s\'écrase contre la pierre. Vous vous précipitez à son secours et le remettez sur pied, mais à cet instant, vous marchez sur quelque chose de métallique. Un coffre au trésor ! Vous dites à la compagnie d\'apporter à l\'homme une aide appropriée pendant que vous déterrez ce que vous pouvez.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Blind leading the seeing.",
+					Text = "Les aveugles guident les voyants.",
 					function getResult( _event )
 					{
 						return 0;

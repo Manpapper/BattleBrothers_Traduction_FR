@@ -13,13 +13,13 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%terrainImage%{You come across a man holding the reins of a lanky horse whose mangy mane has seen better days. The horse has a grey beard forming and its got dry caliche lips smacking desperately for water. Seeing you, its owner waves.%SPEECH_ON%Come, come! I\'ve a bet to make for those brave and fast enough to think they\'ll win it!%SPEECH_OFF%Curious, you ask what the bet is. The man pats the horse, a plume of dust lifting on the pat and you can see his handprint on the shoulder.%SPEECH_ON%Race m\'horse! Not with another horse, mind, but your humanly legs! If you lose, you give me %reward% crowns. If you win, I\'ll pay you triple. You up for it?%SPEECH_OFF%}",
+			Text = "%terrainImage%{Vous rencontrez un homme qui tient les rênes d\'un cheval longiligne dont la crinière a connu des jours meilleurs. Le cheval a une barbe grise qui se forme, ses lèvres sèches réclament désespérément de l\'eau. En vous voyant, son propriétaire vous fait signe.%SPEECH_ON%Venez, venez! J\'ai un pari à proposer à ceux qui sont assez courageux et rapides pour penser qu\'ils vont le gagner!%SPEECH_OFF%Curieux, vous demandez quel est le pari. L\'homme tapote le cheval, un panache de poussière se soulève et vous pouvez voir l\'empreinte de sa main sur l\'épaule.%SPEECH_ON%Faites la course avec mon cheval! Pas avec un autre cheval bien sûr mais avec vos jambes! Si vous perdez, vous me donnez %reward% de couronnes. Si vous gagnez, je vous paierai le triple. Vous êtes partant?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Very well. Someone step forward and race that horse!",
+					Text = "Très bien. Que quelqu'un s\'avance et fasse cette course!",
 					function getResult( _event )
 					{
 						return "B";
@@ -32,7 +32,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Athletic != null)
 				{
 					this.Options.push({
-						Text = "Our most athletic man, %athlete%, will race that horse.",
+						Text = "Notre homme le plus athlétique, %athlete%, va courir.",
 						function getResult( _event )
 						{
 							return "C";
@@ -44,7 +44,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Fat != null)
 				{
 					this.Options.push({
-						Text = "Our fattest man, %fat%, will race for our enjoyment.",
+						Text = "Notre homme le plus gros, %fat%, va courir pour notre plaisir.",
 						function getResult( _event )
 						{
 							return "D";
@@ -56,7 +56,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Dumb != null)
 				{
 					this.Options.push({
-						Text = "I can think only of %dumb% to be dim enough to race a horse.",
+						Text = "Je ne peux penser qu\'à %dumb% d\'être assez bête pour faire cette course.",
 						function getResult( _event )
 						{
 							return "E";
@@ -66,7 +66,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "No, thanks.",
+					Text = "Non, merci.",
 					function getResult( _event )
 					{
 						return 0;
@@ -78,13 +78,13 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "%terrainImage%{You nominate %randombrother% to try and see if he can best the beast. The race\'s rules are first to the apple tree and before you can even begin to root for the sellsword the horse smokes him completely. It gets to the finish line and begins fishing the branches for apples. The company is sitting completely silent, but when %randombrother% crosses the finish line in a distant last place they roar with delight as though he just won the keys to the kingdom\'s finest whorehouse. The horse\'s owner laughs.%SPEECH_ON%Don\'t be hard on yerself, kind sir. The fun is in the chance.%SPEECH_OFF%Indeed it seems the spectacle of the man\'s efforts entertained the company.} ",
+			Text = "%terrainImage%{Vous désignez %randombrother% pour voir s\'il peut battre la bête. Les règles de la course sont d\'abord celles du pommier et avant même que vous ne puissiez commencer à encourager le vendeur, le cheval le fume complètement. Il arrive à la ligne d\'arrivée et commence à manger les pommes situées dans les branches. La compagnie reste totalement silencieuse, mais lorsque %randombrother% franchit la ligne d\'arrivée loin derrière le cheval, ils hurlent de joie comme s\'il venait de gagner les clés du meilleur bordel du royaume. Le propriétaire du cheval rit.%SPEECH_ON%Ne soyez pas dur avec vous-même, gentil monsieur. Le hasard fait partie du plaisir.%SPEECH_OFF%En effet, il semble que le spectacle offert ait amusé la compagnie.} ",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It was quite the amusement.",
+					Text = "C\'était très amusant.",
 					function getResult( _event )
 					{
 						return 0;
@@ -129,13 +129,13 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "%terrainImage%{%athlete% steps forward. His calves bulge from his socks and he shoulder rolls to loosen up.%SPEECH_ON%Yeah I\'ll race that sorry horse.%SPEECH_OFF%The wager is made and the horse\'s owner directs you to a path. With the race set up, he holds up a pair of wooden tongs held apart, and backwards, by some tine. When he cuts the rope, the tongs snap clap together and start the race. Despite being looking like a wart left in the rain, the horse instantly gets a step on the nimble sellsword. It\'s only halfway down the track does the mercenary\'s stamina seem to put him back in the race, but he ultimately fails at the finish line. The owner claps his hands.%SPEECH_ON%Oh, that was a close one! The closest I\'ve seen!%SPEECH_OFF%You nod and pay the man what he is owed. %athlete% was beaten, but despite that it seems the loss has bettered him in some regard and the company certainly enjoyed the spectacle.}",
+			Text = "%terrainImage%{%athlete% s\'avance. Il saut sur place et s\'échauffe les épaules.%SPEECH_ON%Ouais, je vais faire la course avec ce pauvre cheval.%SPEECH_OFF%Le pari est fait et le propriétaire du cheval vous indique un chemin. Une fois la course mise en place, il brandit une paire de pinces en bois munie de quelques dents. Les pinces s\'entrechoquent lorsqu\'il coupe la corde et la course commence. Bien qu\'il ait l\'air d\'une verrue laissée sous la pluie, le cheval prend instantanément de vitesse l\'agile mercenaire. Ce n\'est qu\'à mi-parcours que l\'endurance du mercenaire semble le remettre dans la course, mais il échoue finalement sur la ligne d\'arrivée. Le propriétaire tape dans ses mains.%SPEECH_ON%Oh, on l\'a échappé belle! La course la plus serrée que j\'ai vu!%SPEECH_OFF%Vous acquiescez et payez à l\'homme ce qui lui est dû. %athlete% a été battu, mais malgré cela, il semble que la défaite l\'ait grandi à certains égard. La compagnie a certainement appréciée le spectacle.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nice try.",
+					Text = "Bien essayé.",
 					function getResult( _event )
 					{
 						return 0;
@@ -187,13 +187,13 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "%terrainImage%{Feeling rather courageous, you nominate the fattest man in the company to handle the race. %fat% steps forward with an eyebrow raised, asking if you\'re sure about taking him as your horseracing champion. You hold your hand on his shoulder and say he\'s the fattest fark you\'ve ever seen being a sellsword, but that you believe in him. You also believe the horse is a haggard draught animal that\'s on its last legs, but you keep that part to yourself.\n\n The man and horse are put next to each other. An apple tree stands in the distance and the first to it is the winner. With the rules laid out, the race is started. It\'s not an especially close one. %fat% falls behind almost instantly and trundles down the track with his face beet red and huffing breath and the men nearly die laughing at the sight. The fat sellsword and dire horse meet back up at the apple tree and there share the fruits of their labors. You pay the horse\'s owner what he is owed. He smiles as he counts the coin.%SPEECH_ON%Don\'t usually get a show with the race, sir.%SPEECH_OFF%}",
+			Text = "%terrainImage%{Se sentant plutôt audacieux, vous nommez l\'homme le plus gros de la compagnie pour effectuer la course. %fat% s\'avance, un sourcil levé, et vous demande si vous êtes sûr de vouloir le prendre comme champion de courses hippiques. Vous lui mettez la main sur l\'épaule et lui dites que c\'est le plus gros tas de graisse que vous ayez jamais vu en tant que mercenaire, mais que vous croyez en lui. Vous pensez également que la bête est un cheval de trait qui est sur le point de mourir, mais vous gardez cette réflexion pour vous.\n\n L\'homme et le cheval sont placés l\'un à côté de l\'autre. Un pommier se trouve au loin et le premier à l\'atteindre est le gagnant. Une fois les règles établies, la course est lancée. Ce n\'est pas un épreuve très longue. %fat% se laisse distancer presque instantanément et descend la piste en trombe, le visage rouge et le souffle court, les hommes sont presque morts de rire devant ce spectacle. Le mercenaire obèse et le cheval sinistre se retrouvent au pommier et y partagent le fruit de leur labeur. Vous payez au propriétaire du cheval ce qui lui est dû. Il sourit en comptant les pièces.%SPEECH_ON%D\'habitude, on n\'a pas ce genre de spectacle avec la course, monsieur.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Lose some pounds, would you?",
+					Text = "Perdez quelques kilos, voulez-vous?",
 					function getResult( _event )
 					{
 						return 0;
@@ -245,13 +245,13 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "%terrainImage%{You elect %dumb%, the company\'s biggest idiot, to be your horse racing champion. The horse\'s owner takes one look at the man and raises an eyebrow.%SPEECH_ON%Well. Alright.%SPEECH_OFF%Rules of the race are clear: first to a distant apple tree is the winner. The man and animal line up on the track. Pretending that he knows what he\'s doing, %dumb% crouches in a tri-pointed stance. The horse owner yells and slaps his beast on the buttocks. %dumb% releases into a nice stride and shockingly gets ahead of the horse, but he\'s unable to handle his speed and tilts into the second lane and collides with the beast. The horse buckles at the knees and flips head over hind and %dumb% somehow ends up in the curve of its loins and on the flip around is catapulted through the air. It\'s a damned sight and one you\'ll surely never see again. The horse gets back to its feet and stares around confused while %dumb%\'s unconscious body flies over the finish line. You turn your palms to the horse owner whose hands are gripping his head.%SPEECH_ON%By the old gods, man, are you not concerned for your sellsword?%SPEECH_OFF%}",
+			Text = "%terrainImage%{Vous choisissez %dumb%, le plus grand idiot de la compagnie, pour être votre champion dans cette course. Le propriétaire du cheval jette un coup d\'œil à l\'homme et lève un sourcil.%SPEECH_ON%Bien. Très bien.%SPEECH_OFF%Les règles de la course sont claires : le premier à atteindre le pommier éloigné est le vainqueur. L\'homme et l\'animal s\'alignent sur la piste. Prétendant qu\'il sait ce qu\'il fait, %dumb% s\'accroupit dans une position à trois pointes. Le propriétaire du cheval hurle et tape sa bête sur les fesses. %dumb% réalise une belle foulée et prend de l\'avance sur le cheval, mais il ne peut pas contrôler sa vitesse et entre en collision avec la bête. Le cheval plie les genoux et se renverse, tandis que %dumb% se retrouve dans la courbe de ses reins et est catapulté dans les airs lorsque la bête se retourne. C\'est un sacré spectacle que vous ne reverrez sûrement jamais. Le cheval se remet sur ses jambes et regarde autour de lui, confus, tandis que le corps inconscient de %dumb% s\'envole au-dessus de la ligne d\'arrivée. Vous tournez vos paumes vers le propriétaire du cheval dont les mains enserrent sa tête.%SPEECH_ON%Par les anciens dieux, homme, n\'êtes-vous pas inquiet pour votre mercenaire?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "He\'ll be alright. Pay up.",
+					Text = "Ça va aller. Payez.",
 					function getResult( _event )
 					{
 						return 0;

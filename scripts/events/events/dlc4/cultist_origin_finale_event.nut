@@ -10,13 +10,13 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_33.png[/img]%cultist% enters your tent and a strong, brisk wind chases in after him, rearing up your scrolls and other notes. He walks forward, hands crossed before him, a rather priestly look to his approach.%SPEECH_ON%Sir, I\'ve been spoken to and it is a grave matter which I\'ve been given responsibility for.%SPEECH_OFF%You put your hand up and tell the man to be silent. Carefully, you reach out to each candle in the tent and snuff them out until one remains. You bring it to your face...",
+			Text = "[img]gfx/ui/events/event_33.png[/img]%cultist% entre dans votre tente, un vent fort et frais le poursuit, soulevant vos parchemins et autres notes. Il s\'avance, les mains croisées devant lui, un air assez solennel dans sa démarche.%SPEECH_ON%Monsieur, on est venu me parlr, c\'est une affaire grave dont on m\'a confié la responsabilité.%SPEECH_OFF%Vous levez la main et dites à l\'homme de se taire. Avec précaution, vous prenez chaque bougie de la tente et les éteignez jusqu\'à ce qu\'il en reste une. Vous la portez à votre visage...",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Speak to me, Davkul.",
+					Text = "Parle-moi, Davkul.",
 					function getResult( _event )
 					{
 						return "B";
@@ -32,13 +32,13 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_33.png[/img]Kneeling before the candle, you hold your hand over the flame and the fire comes to a standstill, pointing upright and unmoving. You\'ve seen icicles more animated than it. You stare into the glow and the tent melts away, slipping into the folds of an immense and immutable darkness. The cultist is gone. In his place is a black cloak, its arms to your shoulders, a slate of granite for a head, its edges chipped and cracking. It appears there is something behind this mask, behind this futile effort to keep your mind safe from its true visage. You reach out to the mask, but some invisible force stops you.%SPEECH_ON%In good time you shall see all that I am.%SPEECH_OFF%The voice is booming yet narrowed into a brutish whisper only for you to hear.%SPEECH_ON%I\'ll give you Death, mortal, and warmed in its comforts, Death shall be visited upon your enemies. %sacrifice% will not be lost, he will be with you always, this I promise you.%SPEECH_OFF%A whiteness snaps back over you, a rush of wind, tent flaps curling outward, the candle\'s flame tilting impossibly without going out, and a frigid coolness that has your first breath seen floating across the air. %cultist% is nowhere to be seen. You quickly get up and touch your face and skin, making sure that you are all that you\'re supposed to be. To your great disappointment, Davkul is gone and you are still you.",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Agenouillé devant la bougie, vous tenez votre main au-dessus de la flamme et celle-ci s\'immobilise, pointant vers le haut sans bouger. Vous avez vu des glaçons plus animés que ça. Vous fixez la lueur et la tente fond, glissant dans les plis d\'une obscurité immense et immuable. Le cultistes est parti. A sa place se trouve une cape noire, ses bras jusqu\'à vos épaules, une ardoise de granit pour tête, ses bords ébréchés et craquelés. Il semble qu\'il y ait quelque chose derrière ce masque, derrière cet effort futile pour protéger votre esprit de son vrai visage. Vous tendez la main vers le masque, mais une force invisible vous en empêche.%SPEECH_ON%En temps voulu, vous verrez tout ce que je suis.%SPEECH_OFF%La voix est puissante mais se réduit à un murmure brutal que vous seul pouvez entendre.%SPEECH_ON%Je vous donne la Mort, mortel, elle sera à son aise et visitée par vos ennemis. %sacrifice% ne sera pas perdu, il sera toujours avec vous, je vous le promets.%SPEECH_OFF%Une blancheur s\'abat sur vous, un coup de vent, les volets de la tente se replient vers l\'extérieur, la flamme de la bougie s\'incline de façon incroyable sans s\'éteindre, et une fraîcheur glaciale qui fait que votre premier souffle flotte dans l\'air. %cultist% est introuvable. Vous vous levez rapidement et vous vous touchez le visage et la peau, comme pour s\'assurer que tout est bien à sa place. A votre grande déception, Davkul est parti et vous êtes toujours le même.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The sacrifice must be made.",
+					Text = "Le sacrifice doit être fait.",
 					function getResult( _event )
 					{
 						return "C";
@@ -46,7 +46,7 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Absolutely not!",
+					Text = "Absolument pas!",
 					function getResult( _event )
 					{
 						return "D";
@@ -62,13 +62,13 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_33.png[/img]Davkul would be most unhappy with your failure to obey, not that you feel any urge other than to do what is asked. You and the %cultist% go to %sacrifice%\'s tent. He leans up as though already expecting you and he sees the knife in the carriage of your party and nods at the simple sight of it. %cultist% kneels beside the man and you realize they\'ve already talked before this, that the question to you very well may have been a test of your devotion to Davkul. You are happy to have passed.\n\n%sacrifice% unbuttons his shirt and %cultist% pierces his chest as though he were putting a key into a lock, and he twists it all the same. The sacrifice gasps and tenses, for no devotion to Davkul can put aside the manner in which death may be permitted, which is in pain and suffering. But he smiles, and the light doesn\'t so much go out of his eyes as the darkness, a sort you haven\'t seen before, replaces it. And like that, he is gone.\n\n %cultist% gets to work on the still warm corpse, carving the flesh with rapid slices across the skin and hard cuts into the tendons. He pulls the chest apart. A black fog lingers with the blade\'s every move, and it seems to sway cheerily after its every move. When %cultist% is done, %sacrifice% has been turned into a slab of armor, flesh torn asunder and stretched, teeth for rivets, tendons for strappings, bones for pauldrons, a cuirass of absolute carnage. And it pulses and moves as though that manifested it still lived. %cultist% turns to you, his hands slopped red.%SPEECH_ON%Davkul awaits us all.%SPEECH_OFF%You nod and embrace your fellow comrade.",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Davkul serait très mécontent de votre manque d\'obéissance, bien que vous ne ressentiez aucune envie de faire autre chose que ce qui est demandé. Vous et %cultistes% allez à la tente du %sacrifice%. Il se penche comme s\'il vous attendait déjà et voit le couteau dans le chariot de votre groupe, il hoche la tête à sa simple vue. %cultist% s\'agenouille à côté de l\'homme, vous réalisez qu\'ils ont déjà parlé auparavant, que la question qui vous a été posée pourrait très bien avoir été un test de votre dévotion envers Davkul. Vous êtes heureux d\'avoir réussi.\n\n%sacrifice% déboutonne sa chemise et %cultist% pénètre sa poitrine comme s\'il mettait une clé dans une serrure, il se permet même de la tourner. Le sacrifié halète et se crispe, car aucune dévotion à Davkul ne peut mettre de côté la manière dont la mort est permise, c\'est-à-dire dans la douleur et la souffrance. Mais il sourit, et la lumière ne s\'éteint pas tant de ses yeux, une certaine obscurité, que vous n\'aviez jamais vue auparavant, les remplace. Il est parti.\n\n %cultist% se met au travail sur le cadavre encore chaud, découpant la chair en tranches et faisant résonner ses coups lorsqu\'il frappe les tendons. Il sépare le buste. Un brouillard noir accompagne les moindres mouvements de la lame, elle semble se balancer joyeusement après chacun de ses mouvements. Lorsque %cultist% a terminé, %sacrifice% a été transformé en une plaque d\'armure, de la chair déchirée et étirée, des dents pour les rivets, des tendons pour les sangles, des os pour les pauldrons, un carnage absolu. La plaque palpite et bouge comme si elle vivait encore.%cultist% se tourne vers vous, ses mains sont rouges.%SPEECH_ON%Davkul nous attend tous.%SPEECH_OFF%Vous hochez la tête et embrassez votre camarade.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It is done, and it is good.",
+					Text = "C\'est fait, c\'est bon.",
 					function getResult( _event )
 					{
 						return 0;
@@ -142,13 +142,13 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_33.png[/img]You feel this is a test. Not one to pass by sacrificing one of your men, but quite the opposite. Davkul may have sent false believers to see if you would do all that they say, simply because they say it. You do not know how you know this, you just know, which is the very sort of certainty a man should follow most. Just as you stand to go tell %cultist% of your decision, half the candles in the room suddenly blow out. Tendrils of smoke waft in the remaining gloom, a twisting haze through which, for but a moment, you swear you see a blackened visage fade out the tent\'s opening. You get the feeling that %cultist% already knows what choice you\'ve made. You stay in the tent and await Davkul\'s presence. When it is not felt, you simply light the candles again and speak to the emptied room.%SPEECH_ON%Davkul awaits us all.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_33.png[/img]Vous sentez que c'est un test. Pas un test à passer en sacrifiant un de vos hommes, mais plutôt le contraire. Davkul a peut-être envoyé des faux croyants pour voir si vous feriez tout ce qu'ils disaient... simplement parce qu'ils le disaient. Vous ne savez que vous devez suivre votre instinct. Au moment où vous vous apprêtez à annoncer votre décision à %cultist%, la moitié des bougies de la pièce s'éteignent soudainement. Des volutes de fumée flottent dans l'obscurité restante, un brouillard sinueux à travers lequel, pendant un instant, vous jurez voir un visage noirci disparaître par l'ouverture de la tente. Vous avez l'impression que %cultist% sait déjà quel choix vous avez fait. Vous restez dans la tente et attendez la présence de Davkul. Lorsqu'on ne ressent rien, on rallume simplement les bougies et on parle à une pièce vide.%SPEECH_ON%Davkul nous attend tous.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "And with him, darkness.",
+					Text = "Et avec lui, l\'obscurité.",
 					function getResult( _event )
 					{
 						return 0;
