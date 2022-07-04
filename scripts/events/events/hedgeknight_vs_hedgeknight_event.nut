@@ -12,13 +12,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]%nonhedgeknight% sprints into your tent, nearly taking out one of the stakes and bringing the whole thing down. Sweat flies off his face and onto your maps. You look at the man with a stare that demands a good answer for what he\'s doing. He explains that the hedge knights %hedgeknight1% and %hedgeknight2% are getting into it. They\'ve both picked up weapons and look about ready to kill each other. Having the two largest men in the company do battle probably isn\'t best for the health of... well, everyone. You quickly rush to the scene.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]%nonhedgeknight% bondit dans votre tente, arrachant presque l\'un des piquets et faisant tout tomber. La sueur coule sur son visage et sur vos cartes. Vous regardez l\'homme avec un air qui exige une explication. Il explique que le chevalier errant %hedgeknight1% et %hedgeknight2% sont à deux doigts d\'en venir aux mains. Ils ont tous deux pris des armes et semblent prêts à s\'entretuer. Le fait que ces deux-là se battent n\'est probablement pas le mieux pour la santé de... eh bien, de tout le monde. Vous vous précipitez rapidement sur la scène.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Show me to them.",
+					Text = "Dites-moi où ils sont..",
 					function getResult( _event )
 					{
 						return "B";
@@ -34,13 +34,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_35.png[/img]You find %hedgeknight1% with a great sword in hand and %hedgeknight2% is twirling a giant axe around like a child would a stick. Most of the men have cleared out. %nonhedgeknight% explains that the two {have unfinished business from a jousting tournament | met before on the battlefield, on opposite sides, and now look to continue a battle long past | seek to end a dispute between them by the old tradition of mortal combat}. Another brother steps forward, begging that the hedge knights put their differences aside, but %hedgeknight2% throws him out of the way. Golems of might and terror that they are, perhaps it is wise to seek an end to this confrontation?",
+			Text = "[img]gfx/ui/events/event_35.png[/img]Vous trouvez %hedgeknight1% avec une grande épée à la main et %hedgeknight2% qui fait tourner une hache géante comme un enfant le ferait avec un bâton. La plupart des hommes sont partis. %nonhedgeknight% explique que les deux {ont des comptes à régler après un tournoi de joutes | se sont affrontés auparavant sur un champ de bataille, dans des camps opposés, et cherchent maintenant à poursuivre cet affrontement | cherchent à mettre fin à un conflit entre eux par la vieille tradition du combat à mort}. Un autre frère s\'avance, suppliant les chevaliers errants de mettre leurs différences de côté, mais %hedgeknight2% le pousse hors du chemin. Golems de puissance et de terreur qu\'ils sont, peut-être est-il sage de chercher à mettre fin à cette confrontation?",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "May the strongest man win.",
+					Text = "Que le meilleur gagne.",
 					function getResult( _event )
 					{
 						return _event.m.Monk == null ? "C1" : "C2";
@@ -48,7 +48,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Listen to me, save yourselves for the battlefield!",
+					Text = "Écoutez-moi, économisez vos forces pour le champ de bataille!",
 					function getResult( _event )
 					{
 						return _event.m.Monk == null ? "C3" : "C4";
@@ -56,7 +56,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "A thousand crowns to both of you to stop this madness now!",
+					Text = "Mille couronnes à vous deux pour arrêter cette folie maintenant!",
 					function getResult( _event )
 					{
 						return "D";
@@ -73,13 +73,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C1",
-			Text = "[img]gfx/ui/events/event_35.png[/img]%nonhedgeknight% calls out to you, asking you to stop the fight. The two hedge knights look over, each breath heaving their massive chests. You throw a dismissive hand. The knights nod and charge one another. The clash is loud, metal-shattering, bone-crunching. Growls follow every attempt to kill, so sonorous become the weapon swings. The sword catches the shaft of the giant axe and the two blades snap against one another. The hedge knights exchange cruel stares over the crossing, then quickly disarm and pull daggers, stabbing each other repeatedly as they fall to the ground. Neither man seems the least bit bothered by the wounds. They give up on the pitiful daggers and turn to using their own mitts, punching each other so fiercely you see teeth scattering amongst the bloodsprays.\n\nAgain, the company looks to you for guidance as it is becoming readily obvious that these men seek to fight to a finish.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]%nonhedgeknight% hurle, vous demandant d\'arrêter le combat. Les deux chevaliers errants se retournent, chaque respiration soulevant leurs poitrines. Vous tendez une main dédaigneuse. Les chevaliers acquiescent et se chargent l\'un l\'autre. Le choc est fort, le métal se fracasse, les os craquent. Les coups portés par les armes sont si bruyants que des grognements accompagnent chaque attaque. L\'épée se prend dans le manche de la hache géante et les deux lames s\'entrechoquent. Les chevaliers errants échangent des regards cruels, puis se désarment rapidement et sortent leurs dagues, ils se poignardent à plusieurs reprises avant de tomber au sol. Aucun des deux hommes ne semble atteints par les blessures. Ils abandonnent leurs misérables dagues et se servent de leurs propres poings, se donnant des coups si violents qu\'on voit des dents voler en éclats au milieu des gouttes de sang.\n\nEncore une fois, la compagnie compte sur votre autorité, car il devient évident que ces hommes cherchent à se battre jusqu\'à la mort.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This is getting out of hand. Everyone, stop them!",
+					Text = "Ça devient incontrôlable. Arrêtez-les!",
 					function getResult( _event )
 					{
 						return "E";
@@ -87,7 +87,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let\'s see who is strongest in battle.",
+					Text = "Voyons qui est le plus fort au combat.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, _event.m.HedgeKnight1.getLevel() + _event.m.HedgeKnight2.getLevel()) <= _event.m.HedgeKnight1.getLevel() ? "F" : "G";
@@ -116,13 +116,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C3",
-			Text = "[img]gfx/ui/events/event_35.png[/img]The two hedge knights stand there, eyes only on their opponent and with no regard to your words, each breath heaving their massive chests. A short moment and they charge one another. The clash is loud, metal-shattering, bone-crunching. Growls follow every attempt to kill, so sonorous become the weapon swings. The sword catches the shaft of the giant axe and the two blades snap against one another. The hedge knights exchange cruel stares over the crossing, then quickly disarm and pull daggers, stabbing each other repeatedly as they fall to the ground. Neither man seems the least bit bothered by the wounds. They give up on the pitiful daggers and turn to using their own mitts, punching each other so fiercely you see teeth scattering amongst the bloodsprays.\n\nThe company looks to you for guidance as it is becoming readily obvious that these men seek to fight to a finish.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]Les deux chevaliers errants se tiennent là, les yeux rivés sur leur adversaire, sans tenir compte de vos paroles, chaque souffle soulevant leur poitrine. Un court instant puis ils se chargent l\'un l\'autre. Le choc est fort, le métal se fracasse, les os se brisent. Les coups portés par les armes sont si bruyants que des grognements accompagnent chaque attaque. L\'épée se prend dans le manche de la hache géante et les deux lames s\'entrechoquent. Les chevaliers errants échangent des regards cruels, puis se désarment rapidement et dégainent leurs dagues, se poignardant à plusieurs reprises avant de tomber au sol. Aucun des deux hommes ne semble atteints par les blessures. Ils abandonnent leurs misérables dagues et se servent de leurs propres poings, se donnant des coups si violents qu\'on voit des dents voler en éclats au milieu des gouttes de sang.\n\nEncore une fois, la compagnie compte sur votre autorité, car il devient évident que ces hommes cherchent à se battre jusqu\'à la mort.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This is getting out of hand. Everyone, stop them!",
+					Text = "Ça devient incontrôlable. Arrêtez-les!",
 					function getResult( _event )
 					{
 						return "E";
@@ -130,7 +130,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let\'s see who is strongest in battle.",
+					Text = "Voyons qui est le plus fort au combat.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, _event.m.HedgeKnight1.getLevel() + _event.m.HedgeKnight2.getLevel()) <= _event.m.HedgeKnight1.getLevel() ? "F" : "G";
@@ -159,13 +159,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C2",
-			Text = "[img]gfx/ui/events/event_35.png[/img]%nonhedgeknight% calls out to you, asking you to stop the fight. The two hedge knights look over, each breath heaving their massive chests. You throw a dismissive hand. The knights nod and charge one another. The clash is loud, metal-shattering, bone-crunching. Growls follow every attempt to kill, so sonorous become the weapon swings. The sword catches the shaft of the giant axe and the two blades snap against one another. The hedge knights exchange cruel stares over the crossing, then quickly disarm and pull daggers, stabbing each other repeatedly as they fall to the ground. Neither man seems the least bit bothered by the wounds. They give up on the pitiful daggers and turn to using their own mitts, punching each other so fiercely you see teeth scattering amongst the bloodsprays.\n\nAgain, the company looks to you for guidance as it is becoming readily obvious that these men seek to fight to a finish.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]%nonhedgeknight% hurle en vous demandant d\'arrêter le combat. Les deux chevaliers errants regardent, chaque souffle soulevant leurs poitrines. Vous tendez une main dédaigneuse. Les chevaliers acquiescent et se chargent l\'un l\'autre. Le choc est fort, le métal se fracasse, les os craquent. Les coups portés par les armes sont si bruyants que des grognements accompagnent chaque attaque. L\'épée se prend dans le manche de la hache géante et les deux lames s\'entrechoquent. Les chevaliers errants échangent des regards cruels, puis se désarment rapidement et dégainent leurs dagues, se poignardant à plusieurs reprises avant de tomber au sol. Aucun des deux hommes ne semble atteints par les blessures. Ils abandonnent leurs misérables dagues et se servent de leurs propres poings, se donnant des coups si violents qu\'on voit des dents voler en éclats au milieu des gouttes de sang.\n\nEncore une fois, la compagnie compte sur votre autorité, car il devient évident que ces hommes cherchent à se battre jusqu\'à la mort.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This is getting out of hand. Everyone, stop them!",
+					Text = "Ça devient incontrôlable. Arrêtez-les!",
 					function getResult( _event )
 					{
 						return "E";
@@ -173,7 +173,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let\'s see who is strongest in battle.",
+					Text = "Voyons qui est le plus fort au combat.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, _event.m.HedgeKnight1.getLevel() + _event.m.HedgeKnight2.getLevel()) <= _event.m.HedgeKnight1.getLevel() ? "F" : "G";
@@ -181,7 +181,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "%monk% the monk! Can you find a peaceful resolution?",
+					Text = "%monk% le moine! Pouvez-vous trouver une solution pacifique?",
 					function getResult( _event )
 					{
 						return "H";
@@ -210,13 +210,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C4",
-			Text = "[img]gfx/ui/events/event_35.png[/img]The two hedge knights stand there, eyes only on their opponent and with no regard to your words, each breath heaving their massive chests. A short moment and they charge one another. The clash is loud, metal-shattering, bone-crunching. Growls follow every attempt to kill, so sonorous become the weapon swings. The sword catches the shaft of the giant axe and the two blades snap against one another. The hedge knights exchange cruel stares over the crossing, then quickly disarm and pull daggers, stabbing each other repeatedly as they fall to the ground. Neither man seems the least bit bothered by the wounds. They give up on the pitiful daggers and turn to using their own mitts, punching each other so fiercely you see teeth scattering amongst the bloodsprays.\n\nThe company looks to you for guidance as it is becoming readily obvious that these men seek to fight to a finish.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]Les deux chevaliers errants se tiennent là, les yeux rivés sur leur adversaire, sans tenir compte de vos paroles, chaque souffle soulevant leur poitrine. Un court instant puis ils se chargent l\'un l\'autre. Le choc est fort, le métal se fracasse, les os se brisent. Les coups portés par les armes sont si bruyants que des grognements accompagnent chaque attaque. L\'épée se prend dans le manche de la hache géante et les deux lames s\'entrechoquent. Les chevaliers errants échangent des regards cruels, puis se désarment rapidement et dégainent leurs dagues, se poignardant à plusieurs reprises avant de tomber au sol. Aucun des deux hommes ne semble atteints par les blessures. Ils abandonnent leurs misérables dagues et se servent de leurs propres poings, se donnant des coups si violents qu\'on voit des dents voler en éclats au milieu des gouttes de sang.\n\nEncore une fois, la compagnie compte sur votre autorité, car il devient évident que ces hommes cherchent à se battre jusqu\'à la mort.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This is getting out of hand. Everyone, stop them!",
+					Text = "Ça devient incontrôlable. Arrêtez-les!",
 					function getResult( _event )
 					{
 						return "E";
@@ -224,7 +224,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let\'s see who is strongest in battle.",
+					Text = "Voyons qui est le plus fort au combat.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, _event.m.HedgeKnight1.getLevel() + _event.m.HedgeKnight2.getLevel()) <= _event.m.HedgeKnight1.getLevel() ? "F" : "G";
@@ -232,7 +232,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "%monk% the monk, can you find a peaceful resolution?",
+					Text = "%monk% le moine! Pouvez-vous trouver une solution pacifique?",
 					function getResult( _event )
 					{
 						return "H";
@@ -261,13 +261,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_04.png[/img]You bring out a satchel heavy with coins. The two hedge knights look over, the sound of gold clinking against itself hard to miss.%SPEECH_ON%A thousand crowns to each of you, yeah?%SPEECH_OFF%The men exchange a glance. They shrug. You nod.%SPEECH_ON%Alright, but this isn\'t happening again, understand?%SPEECH_OFF%The men nod too, walking over and accepting the crowns with shameless ease. Some brothers look a little miffed that these men just got free money for essentially choosing not to fight. The hedge knights begrudgingly find peace amongst themselves, being more concerned with counting money than killing each other. You just hope they got an equal amount lest the \'festivities\' resume.",
+			Text = "[img]gfx/ui/events/event_04.png[/img]Vous sortez une sacoche remplie de pièces. Les deux chevaliers errants l\'a regardent, le son de l\'or s\'entrechoquant étant difficile à ignorer. %SPEECH_ON%Mille couronnes à chacun d\'entre vous, c\'est d\'accord?%SPEECH_OFF%Les hommes échangent un regard. Ils haussent les épaules. Vous acquiescez.%SPEECH_ON%D\'accord, mais ça ne se reproduira pas, compris?%SPEECH_OFF%Les hommes acquiescent également, s\'approchent et acceptent les couronnes avec une aisance insolente. Certains frères semblent un peu fâchés que ces hommes aient reçu de l\'argent gratuitement pour avoir simplement choisi de ne pas se battre. Étant plus préoccupés à compter l\'argent qu\'à s\'entretuer, les chevaliers errants trouvent, à contrecœur, une certaine paix. Vous espérez juste qu\'ils ont eu le même montant, sinon les \\'festivités\\' vont reprendre.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "This better last.",
+					Text = "Il vaudrait mieux que ça dure.",
 					function getResult( _event )
 					{
 						return 0;
@@ -316,13 +316,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_35.png[/img]Having seen enough, you order the men to intervene. They hesitate, but you quickly remind them of their contractual duties. The men grab great tarps of leather and blankets and some pots and pans and a few carry buckets. Their strategy is sound: buckets are slammed over the heads of the hedge knights, blinding them just long enough to throw everything else over them. As a man would wrestle a bull, the men tangle with the hedge knights, occasionally being thrown into the air, and one brother eats a kick to the face, suffering a black-gapped smile for his troubles. Another is swallowed up in the mass of blankets, being smashed in between the growling hedge knights like an amorphous blob of anger.\n\nEventually, the two men cool down and the battle is over. They begrudgingly make peace, lest you have the rest of your men pick up real weapons to end the scuffle. The rest of the company recovers, picking themselves up as though a great tornado had just torn through the camp. You take account of the injuries and begin distributing aid.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]Vous en avez vu assez et ordonnez aux hommes d\'intervenir. Ils hésitent, mais vous leur rappelez rapidement leurs devoirs contractuels. Les hommes s\'emparent de grandes bâches en cuir, de couvertures, de quelques casseroles, de poêles et de seaux. Leur stratégie est solide: Des seaux sont lancés sur la tête des chevaliers errants, les aveuglant juste assez longtemps pour jeter tout le reste sur eux. Les hommes se battent avec les chevaliers errants comme un homme lutterait contre un taureau. Ils sont parfois projetés en l\'air. Un frère reçoit un coup de pied au visage, ce qui lui vaut d\'être édenté. Un autre est englouti sous les couvertures, écrasé entre les chevaliers errants qui grognent comme une boule de colère informe.\n\nLes deux hommes finissent par se calmer et mettent fin à la bataille. Ils font la paix à contrecœur, de peur que vous ne demandiez au reste de vos hommes de prendre de vraies armes pour mettre fin à la rixe. Le reste de la compagnie se remet, ils se relèvent comme si une grande tornade venait de traverser le camp. Vous prenez en compte les blessures et commencez à appliquer les premiers secours",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Finally, it\'s over.",
+					Text = "Enfin, c\'est fini.",
 					function getResult( _event )
 					{
 						return 0;
@@ -372,13 +372,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_35.png[/img]You set yourself down on a stump and watch the rest of the fight. The men roll around on the ground, smashing each other in the face with punches that would kill a horse. Eventually, %hedgeknight1% squats on %hedgeknight2%\'s shoulders. Seeing a rock nearby, %hedgeknight1% grabs it and cracks it over his opponent\'s skull. A bit of flesh is sheared off, revealing a slop of red and white beneath. The rock is brought down again. The brain pan splinters, shards of bone rupturing into fragments. %hedgeknight2% goes a bit limp, showing only a modicum of fight left in him. %hedgeknight1% punches his fist into the brainbox and rips out the namesake in one big gush of crimson. You gag at the sight, and a few men turn and vomit.\n\n%hedgeknight1% gets to his feet and throws his trophy into the tall grass. He wipes his forehead and says only one word.%SPEECH_ON%Finished.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_35.png[/img]Vous vous installez sur une souche et regardez le reste du combat. Les hommes se roulent par terre, se frappant au visage avec des coups de poing qui tueraient un cheval. Finalement, %hedgeknight1% s\'accroupit sur les épaules de %hedgeknight2%. Voyant un rocher à proximité, %hedgeknight1% le saisit et l\'éclate sur le crâne de son adversaire. Un bout de chair est arraché, dévoilant un mélange de rouge et de blanc en dessous. Le rocher est à nouveau abattu. Un pan du cerveau éclate, les os se brisent en miettes. %hedgeknight2% devient un peu mou, sa motivation semble s\'être envolée. %hedgeknight1% frappe son homonyme en pleine boite crânienne et le laisse se vider de son sang. Vous avez des nausées à la vue de ce spectacle, quelques hommes se retournent et vomissent.\n\n%hedgeknight1% se lève et jette son trophée dans les hautes herbes. Il s\'essuie le front et ne dit qu\'un seul mot.%SPEECH_ON%Terminé.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A death in battle for %hedgeknight2%, at least.",
+					Text = "Une mort au combat pour %hedgeknight2%, au final.",
 					function getResult( _event )
 					{
 						return 0;
@@ -442,13 +442,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_35.png[/img]You look to set yourself down on a nearby stump but jump back when the two hedge knights come barreling your way. %hedgeknight1%\'s head smashes face first into what was to be your seat. He quickly turns around to face his assailant. All he meets is %hedgeknight2%\'s boot, the interfacing of flesh and leather sounding off with a sickening clap. Now gargling on his own teeth, %hedgeknight1% asks if that\'s the best %hedgeknight2%\'s got. To answer, %hedgeknight2% kicks him in the head again and again, and each rearing of his boot reveals %hedgeknight1% to be in a worse state, from bloodied red to a nightmarish twisting of flesh and eyelids and a flattened nose and a grin of horror where his teeth are either missing or hanging from blood engorged gums like they were nails on a skinless finger.\n\nFinally, the brainpan is crushed, the series of splintering boneplates sounding like something falling through a winter tree\'s branches. You turn your gaze in abhorrence, but some brothers cannot, one spews vomit. Peeking to see what damage was done, you see %hedgeknight2%\'s heel is halfway down a throat and the toe of his boot is churning another man\'s brain. He curses as he struggles to retrieve what delivered the killing blow.\n\nThe surviving hedge knight has to pull on his thigh to help yank his foot out of the brainpan. Turning around, he drags his foot across the grass and picks his heel up like a child coming in after a day\'s play, looking intently to make sure there was no mess to be dragged in after him. He peels off a slug of brain matter and throws it aside like he just shucked some corn. Rubbing his belly, he asks if anyone\'s hungry before grabbing a plate of grits and heading back to his own tent.\n\nLater in the night, after you\'ve put down a short-lived plot to have the man eliminated for the safety of the company, you find %hedgeknight2% sleeping like a baby.",
+			Text = "[img]gfx/ui/events/event_35.png[/img]Vous cherchez à vous installer sur une souche proche, mais vous faites un bond en arrière lorsque les deux chevaliers errants foncent sur vous. La tête de %hedgeknight1%% se fracasse en premier sur ce qui devait être votre siège. Il se retourne rapidement pour faire face à son assaillant. Tout ce qu'il rencontre est la botte de %hedgeknight2%, le contact de la chair et du cuir émettant un bruit répugnant. En se gargarisant, %hedgeknight1% demande à %hedgeknight2% si c'est tout ce qu'il a en réserve. En réponse, %hedgeknight2% lui donne des coups de pied à la tête, encore et encore, et chaque fois que sa botte se relève, %hedgeknight1% est dans un état encore pire, passant du rouge sang à une déformation de sa chair et de ses paupières, à un nez aplati et à un sourire horrible où ses dents sont soit manquantes, soit suspendues à des gencives gorgées de sang comme s'il s'agissait d'ongles sur un doigt sans peau.\n\nPour finir, le cerveau est écrasé, ne restant plus que des bribes de cervelle et d'os. Vous tournez votre regard avec horreur, mais certains frères ne peuvent pas, l'un d'eux vomit. En jetant un coup d'œil pour voir les dégâts, vous voyez que le talon de %hedgeknight2% est posé sur la gorge d'un homme et que le bout de sa botte lui retourne le cerveau. Il pousse des jurons en essayant de récupérer l'objet qui a porté le coup fatal.\n\nLe chevalier errant survivant doit tirer sur sa cuisse pour sortir son pied de la cervelle. Se retournant, il traîne son pied dans l'herbe pour le nettoyer comme un enfant rentrant après une journée de jeu, regardant attentivement pour s'assurer qu'il n'y a pas autre chose à laver. Il enlève un morceau de matière cérébrale et le jette sur le côté comme s'il venait d'éplucher du maïs. Se frottant le ventre, il demande si quelqu'un a faim avant de prendre une assiette de gruau et de retourner à sa propre tente.\n\nPlus tard dans la nuit, et après avoir mis au point un complot éphémère visant à éliminer l\'homme pour la sécurité de la compagnie, vous trouvez %hedgeknight2% endormi comme un bébé.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A death in battle for %hedgeknight1%, at least.",
+					Text = "Une mort au combat pour %hedgeknight2%, au final.",
 					function getResult( _event )
 					{
 						return 0;
@@ -512,13 +512,13 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "H",
-			Text = "[img]gfx/ui/events/event_05.png[/img]The monk nods, stepping forward and calmly walking between the two men. His hands are raised, the fingers trailing to and fro as they mimic the shapes of old religious rites. He speaks of the gods and how they judge men for what they are and what they do. He says that some gods might find this battle favorable, but that most would not. Most of all, though, the monk says that if they truly wish to fight, then there is plenty of room for that after they die. However, if they kill one another, the loser is given great prestige in the afterlife, and the winner will not, for this violence serves no purpose than to give the victor pride. Surprisingly, this oddity in religious rules calms the men down. The monk invites them to talk more and they do so, the three walking off, hands gesticulating, backs arching in bellowing laughter. As for the rest of the company, they just seem happy nobody got killed.",
+			Text = "[img]gfx/ui/events/event_05.png[/img]Le moine acquiesce, s\'avance et marche calmement entre les deux hommes. Ses mains sont levées, les doigts vont et viennent en imitant les formes des anciens rites religieux. Il parle des dieux et de la façon dont ils jugent les hommes pour ce qu\'ils sont et ce qu\'ils font. Il dit que certains dieux pourraient trouver cette bataille favorable, mais que la plupart ne le feraient pas. Mais surtout, le moine dit que s\'ils souhaitent vraiment se battre, il y a encore beaucoup à faire après leur mort. Cependant, s\'ils s\'entretuent, le perdant bénéficie d\'un grand prestige dans l\'au-delà, ce qui n\'est pas le cas du gagnant, car cette violence ne sert à rien d\'autre qu\'à donner de la fierté au vainqueur. Étonnamment, cette bizarrerie dans les règles religieuses calme les hommes. Le moine les invite à parler davantage, ce qu\'ils font, et tous trois s\'en vont, les mains gesticulant, le dos se voûtant dans un éclat de rire. Quant au reste de la compagnie, ils semblent juste heureux que personne n\'ait été tué.",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Thank the gods.",
+					Text = "Remercions les dieux.",
 					function getResult( _event )
 					{
 						return 0;
