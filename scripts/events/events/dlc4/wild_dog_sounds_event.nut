@@ -229,7 +229,7 @@ this.wild_dog_sounds_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_33.png[/img]{Vous regardez la compagnie. Un jeune %recrue% se retourne. Il baisse les yeux, comme pour regarder en lui-même, puis se lève précipitamment.%SPEECH_ON%N\'en dites pas plus, capitaine. Je vais découvrir d'où vient cette agitation.%SPEECH_OFF%La nouvelle recrue rassemble ses affaires et se tient à la lisière du camp, une forêt très sombre lui faisant face. L\'homme fixe à nouveau le sol puis serre et desserre les mains.%SPEECH_ON%C\'est bon. C\'est bon.%SPEECH_OFF%Il lève les yeux.%SPEECH_ON%Allons-y.%SPEECH_OFF%L\'homme n\'a jamais été revu.}",
+			Text = "[img]gfx/ui/events/event_33.png[/img]{Vous regardez la compagnie. Un jeune %recrue% se retourne. Il baisse les yeux, comme pour regarder en lui-même, puis se lève précipitamment.%SPEECH_ON%N\'en dites pas plus, capitaine. Je vais découvrir d\'où vient cette agitation.%SPEECH_OFF%La nouvelle recrue rassemble ses affaires et se tient à la lisière du camp, une forêt très sombre lui faisant face. L\'homme fixe à nouveau le sol puis serre et desserre les mains.%SPEECH_ON%C\'est bon. C\'est bon.%SPEECH_OFF%Il lève les yeux.%SPEECH_ON%Allons-y.%SPEECH_OFF%L\'homme n\'a jamais été revu.}",
 			Image = "",
 			List = [],
 			Characters = [],

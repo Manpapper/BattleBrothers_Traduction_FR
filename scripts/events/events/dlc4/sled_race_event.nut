@@ -17,7 +17,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Que quelqu\'un s'avance et le fasse!",
+					Text = "Que quelqu\'un s\'avance et le fasse!",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -168,7 +168,7 @@ this.sled_race_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Nom d'une pipe!",
+					Text = "Nom d\'une pipe!",
 					function getResult( _event )
 					{
 						return 0;

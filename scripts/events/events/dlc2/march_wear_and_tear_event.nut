@@ -31,7 +31,7 @@ this.march_wear_and_tear_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Tailor != null)
 				{
 					this.Options.push({
-						Text = "Peut-être qu\'on peut créer de nouvelles tenues avec ce qu'on a?",
+						Text = "Peut-être qu\'on peut créer de nouvelles tenues avec ce qu\'on a?",
 						function getResult( _event )
 						{
 							return "Tailor";
@@ -122,7 +122,7 @@ this.march_wear_and_tear_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "C'est un magicien si j'en ai jamais vu un.",
+					Text = "C\'est un magicien si j\'en ai jamais vu un.",
 					function getResult( _event )
 					{
 						return 0;

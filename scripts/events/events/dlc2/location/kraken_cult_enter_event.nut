@@ -250,7 +250,7 @@ this.kraken_cult_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "J\'exige d'être payé tout de suite.",
+					Text = "J\'exige d\'être payé tout de suite.",
 					function getResult( _event )
 					{
 						return "G";

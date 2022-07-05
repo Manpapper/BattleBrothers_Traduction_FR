@@ -66,7 +66,7 @@ this.collector_wants_trophy_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Peddler",
-			Text = "[img]gfx/ui/events/event_01.png[/img]{Le %peddler% s'avance et vous repousse comme si vous étiez un client quelconque et non le capitaine de la compagnie. Comme deux chiens s'aboyant l'un sur l'autre, il crie sur l'acheteur, lève la main et l'autre lui répond. Tout est si rapide et avec tant de chiffres lancés, c'est comme si ils parlaient dans une autre langue. Après une minute, le colporteur revient.%SPEECH_ON%Très bien. Il offre maintenant %reward% de couronnes. Je vais aller voir les casseroles et les poêles, bonne chance.%SPEECH_OFF%Il vous tape sur l'épaule et s'en va.}",
+			Text = "[img]gfx/ui/events/event_01.png[/img]{Le %peddler% s\'avance et vous repousse comme si vous étiez un client quelconque et non le capitaine de la compagnie. Comme deux chiens s\'aboyant l\'un sur l\'autre, il crie sur l\'acheteur, lève la main et l\'autre lui répond. Tout est si rapide et avec tant de chiffres lancés, c\'est comme si ils parlaient dans une autre langue. Après une minute, le colporteur revient.%SPEECH_ON%Très bien. Il offre maintenant %reward% de couronnes. Je vais aller voir les casseroles et les poêles, bonne chance.%SPEECH_OFF%Il vous tape sur l\'épaule et s\'en va.}",
 			Image = "",
 			List = [],
 			Characters = [],

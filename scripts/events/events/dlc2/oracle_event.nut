@@ -13,7 +13,7 @@ this.oracle_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Dites-moi ce qui m'attend, vieille femme.",
+					Text = "Dites-moi ce qui m\'attend, vieille femme.",
 					function getResult( _event )
 					{
 						local r = this.Math.rand(1, 100);

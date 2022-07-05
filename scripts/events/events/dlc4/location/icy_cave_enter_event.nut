@@ -104,7 +104,7 @@ this.icy_cave_enter_event <- this.inherit("scripts/events/event", {
 				{
 					local bro = roster[i];
 					this.Options.push({
-						Text = "J'ai besoin que vous alliez en éclaireur, " + bro.getName() + ".",
+						Text = "J\'ai besoin que vous alliez en éclaireur, " + bro.getName() + ".",
 						function getResult( _event )
 						{
 							_event.m.Champion = bro;

@@ -25,7 +25,7 @@ this.ancient_temple_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Oubliez ces ruines, on s'en va.",
+					Text = "Oubliez ces ruines, on s\'en va.",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)
@@ -123,7 +123,7 @@ this.ancient_temple_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_111.png[/img]{La voix est silencieuse pendant un moment, puis reprend.%SPEECH_ON%Correct!%SPEECH_OFF%Grâce à une ingénierie ancienne, la porte coulisse et la gargouille s\'abaisse à portée de bras, le gardien fixe la fiole avec un aplomb stoïque. Vous saisissez la fiole et la serrez contre vous, comme si cette monstruosité pouvait s\'animer pour la reprendre. Vous agitez votre torche et demandez à savoir qui parle. La voix émet un rire, mais rien de plus.%volontaire% vous regarde et hausse les épaules.%SPEECH_ON%Eh bien, nous en avons une des deux, n\'est-ce pas ? Il n\'y a pas de mal à essayer de prendre l'autre.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_111.png[/img]{La voix est silencieuse pendant un moment, puis reprend.%SPEECH_ON%Correct!%SPEECH_OFF%Grâce à une ingénierie ancienne, la porte coulisse et la gargouille s\'abaisse à portée de bras, le gardien fixe la fiole avec un aplomb stoïque. Vous saisissez la fiole et la serrez contre vous, comme si cette monstruosité pouvait s\'animer pour la reprendre. Vous agitez votre torche et demandez à savoir qui parle. La voix émet un rire, mais rien de plus.%volontaire% vous regarde et hausse les épaules.%SPEECH_ON%Eh bien, nous en avons une des deux, n\'est-ce pas ? Il n\'y a pas de mal à essayer de prendre l\'autre.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -184,7 +184,7 @@ this.ancient_temple_enter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_111.png[/img]{La dernière fiole se trouve derrière une autre porte, troublante d'un point de vue architectural. Ici, il n'y a pas de simples barreaux de pierre, mais des flèches de fer tordues, marquées de scories. La fiole elle-même se trouve derrière sur une autre hauteur, ce qui signifie que vous devrez passer sous un mur et remonter pour l'obtenir. La voix revient.%SPEECH_ON%De moi tout vient le commencement, De moi tout sera la fin. Quand l'homme traverse le monde, je suis ses pas.%SPEECH_OFF%Vous gardez le silence et observez %volontaire%. Il hausse les épaules.}",
+			Text = "[img]gfx/ui/events/event_111.png[/img]{La dernière fiole se trouve derrière une autre porte, troublante d\'un point de vue architectural. Ici, il n\'y a pas de simples barreaux de pierre, mais des flèches de fer tordues, marquées de scories. La fiole elle-même se trouve derrière sur une autre hauteur, ce qui signifie que vous devrez passer sous un mur et remonter pour l\'obtenir. La voix revient.%SPEECH_ON%De moi tout vient le commencement, De moi tout sera la fin. Quand l\'homme traverse le monde, je suis ses pas.%SPEECH_OFF%Vous gardez le silence et observez %volontaire%. Il hausse les épaules.}",
 			Image = "",
 			List = [],
 			Characters = [],

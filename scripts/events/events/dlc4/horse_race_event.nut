@@ -19,7 +19,7 @@ this.horse_race_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Très bien. Que quelqu'un s\'avance et fasse cette course!",
+					Text = "Très bien. Que quelqu\'un s\'avance et fasse cette course!",
 					function getResult( _event )
 					{
 						return "B";

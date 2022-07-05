@@ -16,7 +16,7 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "C'est juste un animal. Retournez au travail.",
+					Text = "C\'est juste un animal. Retournez au travail.",
 					function getResult( _event )
 					{
 						return "WalkOff";
@@ -173,7 +173,7 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "C'est quoi ce bordel!",
+					Text = "C\'est quoi ce bordel!",
 					function getResult( _event )
 					{
 						local properties = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -201,7 +201,7 @@ this.spooky_forest_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Ce n\'est qu'un animal...",
+					Text = "Ce n\'est qu\'un animal...",
 					function getResult( _event )
 					{
 						return 0;

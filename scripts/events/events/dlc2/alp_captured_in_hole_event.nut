@@ -15,7 +15,7 @@ this.alp_captured_in_hole_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "D'\accord, je vais payer un peu juste pour voir.",
+					Text = "D\'accord, je vais payer un peu juste pour voir.",
 					function getResult( _event )
 					{
 						return "B";

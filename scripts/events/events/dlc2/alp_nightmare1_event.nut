@@ -10,13 +10,13 @@ this.alp_nightmare1_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 300.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{Les hommes discutent autour du feu de camp quand %spiderbro% se lève soudainement en hurlant. Il bondit en arrière, et éclairé par les flammes, on voit une araignée de la taille d'un casque collée à sa botte!}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{Les hommes discutent autour du feu de camp quand %spiderbro% se lève soudainement en hurlant. Il bondit en arrière, et éclairé par les flammes, on voit une araignée de la taille d\'un casque collée à sa botte!}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Que quelqu'un la découpe!",
+					Text = "Que quelqu\'un la découpe!",
 					function getResult( _event )
 					{
 						return "B";

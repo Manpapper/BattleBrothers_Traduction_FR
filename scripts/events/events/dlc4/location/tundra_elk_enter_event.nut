@@ -29,7 +29,7 @@ this.tundra_elk_enter_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Nous devons sortir d'ici! Vite!",
+					Text = "Nous devons sortir d\'ici! Vite!",
 					function getResult( _event )
 					{
 						if (this.World.State.getLastLocation() != null)

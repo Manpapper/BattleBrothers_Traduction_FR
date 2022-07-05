@@ -14,9 +14,9 @@ this.witchhut_destroyed_event <- this.inherit("scripts/events/event", {
 		this.m.Texts[0] = "Qui êtes-vous ?";
 		this.m.Texts[1] = "Comment savez-vous qui je suis?";
 		this.m.Texts[2] = "Qui étaient les anciens?";
-		this.m.Texts[3] = "Qu'est-ce que Davkul?";
+		this.m.Texts[3] = "Qu\'est-ce que Davkul?";
 		this.m.Texts[4] = "Les peaux vertes étaient-elles humaines?";
-		this.m.Texts[5] = "Pourquoi m'avez-vous appelé le Faux Roi?";
+		this.m.Texts[5] = "Pourquoi m\'avez-vous appelé le Faux Roi?";
 		this.m.Texts[6] = "De quoi est-ce que je rêve?";
 		this.m.Screens.push({
 			ID = "A",

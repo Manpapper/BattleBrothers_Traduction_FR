@@ -49,7 +49,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Tiny != null)
 				{
 					this.Options.push({
-						Text = "L\'un d'entre vous est assez petit pour entrer dans ce trou.?",
+						Text = "L\'un d\'entre vous est assez petit pour entrer dans ce trou.?",
 						function getResult( _event )
 						{
 							return "Tiny";
@@ -169,7 +169,7 @@ this.treasure_in_rock_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "La chance nous sourit aujourd'hui.",
+					Text = "La chance nous sourit aujourd\'hui.",
 					function getResult( _event )
 					{
 						return 0;
