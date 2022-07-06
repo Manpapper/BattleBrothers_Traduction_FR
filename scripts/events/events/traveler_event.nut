@@ -561,7 +561,7 @@ this.traveler_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "S1",
-			Text = "[img]gfx/ui/events/event_26.png[/img] Vous êtes assis autour d\'un feu. L'homme à l\'air plutôt malheureux regarde fixement le feu en parlant.%SPEECH_ON%J\'ai entendu dire que les riches ont ces trucs qui leur permettent de voir à quoi ils ressemblent. Des miroirs! Oui, c\'est ça. J\'aimerais en avoir un. Je n\'ai pas vu mon propre visage depuis... eh bien, depuis toujours. C\'est peut-être un peu comme quand on regarde fixement dans un étang, je suppose.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_26.png[/img] Vous êtes assis autour d\'un feu. L\'homme à l\'air plutôt malheureux regarde fixement le feu en parlant.%SPEECH_ON%J\'ai entendu dire que les riches ont ces trucs qui leur permettent de voir à quoi ils ressemblent. Des miroirs! Oui, c\'est ça. J\'aimerais en avoir un. Je n\'ai pas vu mon propre visage depuis... eh bien, depuis toujours. C\'est peut-être un peu comme quand on regarde fixement dans un étang, je suppose.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Options = [

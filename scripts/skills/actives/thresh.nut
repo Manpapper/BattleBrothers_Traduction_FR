@@ -6,7 +6,7 @@ this.thresh <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.thresh";
 		this.m.Name = "Faucher";
-		this.m.Description = "Coupe tout ce qu\'il y a autour de vous, qu\'ils soient alliés ou ennemis, avec un coup tournoyant. À la probabilité d\'étourdir les cibles pendant un tour. Ce coup n'est pas difficile à esquiver car il ne vise rien en particulier, mais peut être dévastateur s\'il touche. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez !";
+		this.m.Description = "Coupe tout ce qu\'il y a autour de vous, qu\'ils soient alliés ou ennemis, avec un coup tournoyant. À la probabilité d\'étourdir les cibles pendant un tour. Ce coup n\'est pas difficile à esquiver car il ne vise rien en particulier, mais peut être dévastateur s\'il touche. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez !";
 		this.m.KilledString = "Smashed";
 		this.m.Icon = "skills/active_46.png";
 		this.m.IconDisabled = "skills/active_46_sw.png";
