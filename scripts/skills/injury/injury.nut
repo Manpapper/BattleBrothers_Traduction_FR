@@ -113,7 +113,7 @@ this.injury <- this.inherit("scripts/skills/skill", {
 				id = 16,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is content for now with being in reserve"
+				text = "Préfererait être en réserve pour le moment"
 			});
 		}
 

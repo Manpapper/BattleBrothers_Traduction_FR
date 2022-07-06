@@ -4,7 +4,7 @@ this.round_swing <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.round_swing";
 		this.m.Name = "Coup Tournoyant";
-		this.m.Description = "Coupe tout ce qu\'il y a autour de vous, qu\'ils soient alliés ou ennemis, avec un coup tournoyant insouciant. Pas compliqué à esquiver car il n\'est dirigé à rien en particulier, mais peut être ddévastateur s\'il touche. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez !";
+		this.m.Description = "Coupe tout ce qu\'il y a autour de vous, qu\'ils soient alliés ou ennemis, avec un coup tournoyant. Ce coup n'est pas difficile à esquiver car il ne vise rien en particulier, mais peut être dévastateur s\'il touche. Faites attention à vos hommes autour à moins que vous souhaitiez diminuer le salaire que vous versez !";
 		this.m.KilledString = "Carved up";
 		this.m.Icon = "skills/active_48.png";
 		this.m.IconDisabled = "skills/active_48_sw.png";

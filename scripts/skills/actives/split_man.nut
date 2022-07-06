@@ -6,7 +6,7 @@ this.split_man <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.split_man";
 		this.m.Name = "Pourfendre";
-		this.m.Description = "Un coup large au dessus de la tête effectué avec fore pour fendre une cible en deux de haut en bas. A assez de force pour toujours attaquer la tête et le corps pour des dégâts supplémentaires.";
+		this.m.Description = "Un coup large au dessus de la tête effectué avec force pour fendre une cible en deux de haut en bas. A assez de force pour toujours attaquer la tête et le corps pour des dégâts supplémentaires.";
 		this.m.KilledString = "Coupé en deux";
 		this.m.Icon = "skills/active_37.png";
 		this.m.IconDisabled = "skills/active_37_sw.png";

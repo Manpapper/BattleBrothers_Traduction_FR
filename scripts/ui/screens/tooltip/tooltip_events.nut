@@ -1197,7 +1197,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus surdes terrain accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + food + "[/color] provisions vous permettrons de tenir encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jours tout au plus. Gardez à l\'esprit que certaines provisions peuvent pourrir!"
+						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus surdes terrain accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + food + "[/color] provisions vous permettrons de tenir encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jours tout au plus. Gardez à l\'esprit que certaines provisions peuvent pourrir!"
 					}
 				];
 			}
@@ -1212,7 +1212,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez pratiquement plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
+						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez pratiquement plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
 					}
 				];
 			}
@@ -1227,7 +1227,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
+						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
 					}
 				];
 			}
@@ -1242,7 +1242,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre de provision qu\'un homme à besoin par jour. Arriver à cours de provisions diminuera le morale et fera fuir vos hommes avant de mourir de faim."
+					text = "Le nombre de provision qu\'un homme à besoin par jour. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim."
 				}
 			];
 
@@ -1489,12 +1489,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Morale"
+					text = "Moral"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "La morale est un des cinq état qui représente la condition mentale de vos combatants ainsi que leur efficacité en combat. Au plus bas, ils fuiront, le personnage sera alors hors de contrôle - même s\'ils se rallieront probablement de nouveau. Le Morale change au fur et à mesure que la bataille progresse, avec des personnages ayant un morale assez haut, ils auront moins tendence à tomber dans un moral bas (et donc à fuir). Beaucoup de vos ennemies sont aussi affectés par le morale.\n\nDes vérifications de morale sont lancés à ces différentes occasions:\n- Tuer un ennemi\n- Voir un ennemi être tué\n- Voir un allié être tué\n- Voir un allié fuir\n- Etre touché et subir plus de 15 point de vie de dégâts\n- Etre engagé en mélée par plus d\'un ennemi\n- Utiliser certaines compétences, comme \'Rallier\'"
+					text = "Le moral est un des cinq état qui représente la condition mentale de vos combatants ainsi que leur efficacité en combat. Au plus bas, ils fuiront, le personnage sera alors hors de contrôle - même s\'ils se rallieront probablement de nouveau. Le Moral change au fur et à mesure que la bataille progresse, avec des personnages ayant un moral assez haut, ils auront moins tendence à tomber dans un moral bas (et donc à fuir). Beaucoup de vos ennemies sont aussi affectés par le moral.\n\nDes vérifications de moral sont lancés à ces différentes occasions:\n- Tuer un ennemi\n- Voir un ennemi être tué\n- Voir un allié être tué\n- Voir un allié fuir\n- Etre touché et subir plus de 15 point de vie de dégâts\n- Etre engagé en mélée par plus d\'un ennemi\n- Utiliser certaines compétences, comme \'Rallier\'"
 				}
 			];
 
@@ -1690,7 +1690,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La Détermination répresente la volonté et la bravoure de vos personnages. Plus elle est élevée, moins vos personnages auront la probabilité de faire descendre le morale pendant des événements négatifs, et plus vos personnages auront la chance de gagner en confidence lors des événements positifs. La détermination acte comme une défense contre les attaques mentales qui infligent des paniques, la peur, ou des contrôles mentale. Voir aussi: Morale."
+					text = "La Détermination répresente la volonté et la bravoure de vos personnages. Plus elle est élevée, moins vos personnages auront la probabilité de faire descendre le moral pendant des événements négatifs, et plus vos personnages auront la chance de gagner en confidence lors des événements positifs. La détermination acte comme une défense contre les attaques mentales qui infligent des paniques, la peur, ou des contrôles mentale. Voir aussi: Moral."
 				}
 			];
 
@@ -3147,7 +3147,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Affiche ou chache les empreintes laissés par les autres groupes qui sillonnent le monde pour que vous puissez les suivre ou les éviter plus facilement."
+					text = "Affiche ou cache les empreintes laissés par les autres groupes qui sillonnent le monde pour que vous puissez les suivre ou les éviter plus facilement."
 				}
 			];
 

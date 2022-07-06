@@ -317,7 +317,7 @@ gt.Const.ArmorStateName <- [
 	"Se désagrége",
 	"Cabossé",
 	"Rayé",
-	"Intacte"
+	"Intact"
 ];
 gt.Const.MoodChange <- {
 	DrunkAtTavern = 1.0,
