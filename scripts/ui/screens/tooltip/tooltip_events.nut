@@ -1227,7 +1227,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
+						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus  sur des terrains accidentés. Vos hommes prioriserons les denrées qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
 					}
 				];
 			}
@@ -1262,7 +1262,7 @@ this.tooltip_events <- {
 
 		case "assets.Supplies":
 			local repair = this.World.Assets.getRepairRequired();
-			local desc = "Ensemble d\'outils et de ressources pour garder vos armes, armures, casques et boucliers en bonne condition. Un point est nécessaire pour réparer 15 points de durabilité d\'un objet. Arrivez à court d\'outils peut signifier que vos armes peuvent se casser durant un combat ou laisser vos armures en mauvaise condition et donc inutile.";
+			local desc = "Ensemble d\'outils et de ressources pour garder vos armes, armures, casques et boucliers en bonne condition. Un point est nécessaire pour réparer 15 points de durabilité d\'un objet. Arriver à court d\'outils peut signifier que vos armes peuvent se casser durant un combat ou laisser vos armures en mauvaise condition et donc inutiles.";
 
 			if (repair.ArmorParts > 0)
 			{
@@ -1296,7 +1296,7 @@ this.tooltip_events <- {
 
 		case "assets.Medicine":
 			local heal = this.World.Assets.getHealingRequired();
-			local desc = "Les ressources médicales comportent des bandages, des herbes, des onguents et autres choses de la sorte, ils sont utilisés pour soigner les blessures sévères que vos hommes ont eu dans la bataille. Une unité de ressource médicale est requise tous les jours pour chaque blessure pour les soigner jusqu\'à les guérir. Les points de vies perdus se soignent d\'eux-mêmes.\n\nArriver à court de ressource médicale empechera vos hommes de récuperer de leurs blessures.";
+			local desc = "Les ressources médicales comportent des bandages, des herbes, des onguents et autres fournitures de la sorte, ils sont utilisés pour soigner les blessures graves de vos hommes après un combat. Une unité de ressource médicale est requise tous les jours pour chaque blessure pour les soigner jusqu\'à la guérison complète. Les points de vies perdus se soignent d\'eux-mêmes.\n\nArriver à court de ressource médicale empêchera vos hommes de récupérer de leurs blessures.";
 
 			if (heal.MedicineMin > 0)
 			{
