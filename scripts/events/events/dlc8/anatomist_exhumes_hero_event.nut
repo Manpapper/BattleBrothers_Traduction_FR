@@ -7,17 +7,17 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_exhumes_hero";
-		this.m.Title = "At %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{While in %townname%, you get wind of a local hero who had been recently buried. To you, this is idle news. The man probably wasn\'t even a hero if you compare him to anything above the level of rat-killer, so you pay it little mind. Naturally, the anatomists are of a different sort, and take to the news like flies to a cadaver\'s arse. They\'re propositioning that the company dig up this hero\'s corpse so that they might see by its shape and make what differentiates this \'heroic element\' from the ordinary man. %anatomist% explains.%SPEECH_ON%A hero\'s corpse is not just another corpse. It is invigorated with something else entire, some alluring drive which separates it from the rest of us.%SPEECH_OFF%Having seen your fair share in life, you assure the anatomists that the corpse will look very much like any other. They\'re quite fervent about stealing a look, though, even if it offends the masses.}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{Dans la ville de %nombreux%, vous avez entendu parler d\'un héros local qui a été enterré récemment. Pour vous, c\'est une nouvelle sans intérêt. L\'homme n\'était probablement même pas un héros si on le compare à quoi que ce soit d\'autre qu\'un tueur de rats, alors vous n\'y faites pas attention. Naturellement, les anatomistes sont d\'un autre genre, et prennent la nouvelle comme des mouches sur le cul d\'un cadavre. Ils proposent à la compagnie de déterrer le cadavre de ce héros afin de voir par sa forme et sa composition ce qui différencie cet \"élément héroïque\" de l\'homme ordinaire. %anatomiste% explique.%SPEECH_ON%Le cadavre d\'un héros n\'est pas juste un simple cadavre. Il est animé par quelque chose d\'entier, un certain charme qui le sépare du reste d\'entre nous.%SPEECH_OFF%Ayant rouler votre bosse, vous assurez aux anatomistes que le cadavre ressemblera à n\'importe quel autre. Ils sont cependant très attachés à ce que l\'on jette quand même un coup d\'œil, même si cela offense la foule.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Alright, let\'s go dig it up.",
+					Text = "D\'accord, allons le déterrer.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -25,7 +25,7 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No digging up graves today.",
+					Text = "Pas de déterrage de tombes aujourd\'hui.",
 					function getResult( _event )
 					{
 						return 0;
@@ -38,7 +38,7 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Graver != null)
 				{
 					this.Options.push({
-						Text = "%graver%, what are you doing here?",
+						Text = "%graver%, Que faites-vous ici?",
 						function getResult( _event )
 						{
 							return "D";
@@ -53,13 +53,13 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{After much plying, the anatomists break down your defenses and you agree to go fetch the local hero\'s dead, cold, and allegedly heroically shaped body from the grave. There\'s much stealth and sneaking done in the matter as you traipse through the graveyard like a bunch of kids up to absolutely no good, which you might as well be. The hero\'s grave is easy enough to spot, as it is adorned with flowers and other niceties.\n\n%anatomist% kicks the flowers out of the way and shovels off a kid\'s toy and hurls it across the graveyard. He quickly stakes his shovel and the digging starts. It doesn\'t take long, the soil so recently disturbed. A few items lie in the grave, and alongside them is the body itself: just an ordinary man with a pale visage. It is jerked up and out of the grave, the anatomists throwing it end over end like a piece of plywood and as it lands in the grass they chase after it like gremlins, slicing and dicing and digging into it with a disturbing fervor. When they\'re finished, they roll the body back into the grave, its shape more ragged and shredded than before. They complain that you were possibly correct, that a hero\'s body has no unusual aspects whatsoever. But rather than agree with the likes of an uneducated sellsword, they instead conclude that perhaps he wasn\'t a hero at all, and that their search will have to continue. You\'re just glad you didn\'t get caught.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{Après de nombreuses discussions, les anatomistes arrivent a leurs fins et vous acceptez d\'aller jusqu\'à la tombe. Le corps froid d\'un prétendu héros vous attends à l\'intérieur. Vous vous faufilez dans le cimetière comme une bande de gamins sur le point de faire une bêtise, ce qui correspond assez bien à la réalité. La tombe du héros est assez facile à repérer, car elle est ornée de fleurs et d\'autres subtilités.\n\n%anatomiste% dégage les fleurs d\'un coup de pied et jette le jouet d\'un enfant à travers le cimetière. Il plante rapidement sa pelle et commence à creuser. Ça ne prend pas longtemps, le sol ayant été récemment remué. Quelques objets gisent dans la tombe, et à côté d\'eux se trouve le corps lui-même: un homme ordinaire au visage pâle. Il est soulevé et sorti de la tombe, les anatomistes le jetant par-dessus bord comme un morceau de contreplaqué et, lorsqu\'il atterrit dans l\'herbe, ils poursuivent leur tâche comme des gremlins, le découpant et le fouillant avec une ferveur inquiétante. Lorsqu\'ils ont terminé, ils remettent le corps dans la tombe, sa forme étant plus déchiquetée qu\'auparavant. Ils se plaignent que vous aviez peut-être raison, que le corps d\'un héros ne présente aucun aspect inhabituel. Mais plutôt que de se ranger à l\'avis d\'un mercenaire inculte, ils concluent qu\'il n\'était peut-être pas du tout un héros et que leur recherche devra se poursuivre. Vous êtes heureux d\'avoir eu raison.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Gross. Let\'s get out of here.",
+					Text = "Dégueulasse. Partons d\'ici.",
 					function getResult( _event )
 					{
 						return 0;
@@ -103,13 +103,13 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_141.png[/img]{After much plying, the anatomists break down your measly defenses and you agree to go fetch the local hero\'s dead, cold body from the grave. There\'s much stealth and sneaking done in the matter as you traipse through the graveyard like a bunch of kids up to absolutely no good, which you might as well be. You get to the graveyard and ask if any of them know the name of the hero. %anatomist% says he thinks it was, ironically, Mortimer.\n\nYou find such a named grave and begin the digging, but by the time you get down to the bottom of it you just find a dead cat, curled up and grey and decrepit with more worms than fur. As the anatomists hold it up, a shout shoots in from the treeline. You turn to see a young boy there crying and pointing. Before you can grab him, he turns and runs off shouting rather descriptive prose about your ill-designed venture. In return come the murmurs of the mob, and their words are lost in a frenzy, but you can still make out the name of the %companyname% and the racket a bevy of pitchforks make when they\'re clattering together. You turn to tell the anatomists to quit the digging only to see they\'re already halfway out of the graveyard and running for their lives. Cursing, you join them in the dishonorable retreat and cut out from town altogether.}",
+			Text = "[img]gfx/ui/events/event_141.png[/img]{Après de nombreuses tractations, les anatomistes brisent vos maigres défenses et vous acceptez d\'aller chercher le corps froid et mort du héros local dans la tombe. Vous vous faufilez dans le cimetière comme une bande de gamins sur le point de faire une bêtise, ce qui correspond assez bien à la réalité. Vous arrivez au cimetière et vous demandez si l\'un d\'entre eux connaît le nom du héros.%anatomist% dit qu\'il pense que c\'était, ironiquement, Mortimer.\n\nVous trouvez la tombe et commencez à creuser, mais lorsque vous arrivez au fond, vous trouvez juste un chat mort, recroquevillé, gris et décrépit, avec plus de vers que de poils. Au moment où les anatomistes le brandissent, un cri retentit depuis les arbustes qui se trouvent juste derrière vous. Vous vous retournez pour voir un jeune garçon en train de pleurer et de montrer du doigt. Avant que vous puissiez l\'attraper, il se retourne et s\'enfuit en criant une prose plutôt descriptive de vos actions. Vous entendez les murmures de la foule qi vous fait face, leurs paroles se perdent dans une certaine frénésie, mais on peut encore entendre resonner le nom de la compagnie %companyname% malgré le vacarme que font les fourches lorsqu\'elles s\'entrechoquent. Vous vous retournez pour dire aux anatomistes d\'arrêter de creuser, mais vous constatez qu\'ils sont déjà en train de courir pour sauver leur peau tout en étant à mi-chemin de la sortie du cimetière. En maudissant, vous les rejoignez dans cette retraite déshonorante puis vous quittez la ville.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The shit they get me into...",
+					Text = "Ils m\'ont mis dans une sacrée merde...",
 					function getResult( _event )
 					{
 						return 0;
@@ -151,13 +151,13 @@ this.anatomist_exhumes_hero_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{%graver% is suddenly at your side. The graveyard familiar stakes a filthy thumb into his chest.%SPEECH_ON%Wanna dig up a corpse? I\'m yer man.%SPEECH_OFF%With his expertise on hand, you decide to go along with the anatomists\' dire plans. You find the graveyard and set across it in search of the hero\'s grave. The whole place is a pauper\'s lot, but you eventually find a marking covered in fresh flowers and other adornments which the men gracelessly stomp and kick away. The groundwork is soon started and with %graver% on hand the body is dug up in incredible speed. The anatomists set to work on the corpse, hunched over it and murmuring to one another, their curled, cloaked forms like buzzards. %graver% meanwhile roots around in the grave itself before coming up with a weapon that had been tucked into a corner. It\'s a nice find, all things considered, and almost makes this series of events worth it. You turn around to see the anatomists kick the body back into the grave, its limbs coming out of shape and flopping stiffly every which way as the hero\'s face comes to a rest, eyes open, staring into the disturbed soil where the worms are out and prodding air. Everyone having gotten what they needed, you soon depart the place before the locals show up and lynch you to the last.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{%graver% est désormais à vos côtés. L\'habitué du cimetière enfonce un pouce dégoûtant dans sa poitrine.%SPEECH_ON%Vous voulez déterrer un cadavre? Je suis votre homme.%SPEECH_OFF%Avec son expertise à portée de main, vous décidez de suivre les plans sinistres de l\'anatomiste. Vous trouvez le cimetière et le traversez à la recherche de la tombe du héros. L\'endroit est un terrain misérable, vous finissez par trouver un emplacement couvert de fleurs fraîches et d\'autres ornements que les hommes piétinent et chassent d\'un coup de pied gracieux. Le travail de fond est rapidement entamé et, avec %gravier% sous la main, le corps est déterré à une vitesse incroyable. Les anatomistes se sont mis au travail sur le cadavre, penchés sur lui et se murmurant les uns aux autres, leurs formes recroquevillées et enveloppées comme des buses. Pendant ce temps, %graver% fouille dans la tombe elle-même avant de trouver une arme qui était cachée dans un coin. C\'est une belle trouvaille, tout bien considéré, et cela rend presque cette série d\'événements intéressante. Vous vous retournez pour voir les anatomistes repousser le corps dans la tombe, ses membres se déformant et se balançant avec raideur dans tous les sens, tandis que le visage du héros s\'immobilise, les yeux ouverts, fixant le sol remué où les vers apparents cherchent de l\'air. Tout le monde ayant obtenu ce dont il avait besoin, vous quittez rapidement l\'endroit avant que les habitants ne se montrent et vous lynchent jusqu\'au dernier.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Reprenons la route.",
 					function getResult( _event )
 					{
 						return 0;

@@ -5,17 +5,17 @@ this.anatomist_helps_blighted_guy_2_event <- this.inherit("scripts/events/event"
 	function create()
 	{
 		this.m.ID = "event.anatomist_helps_blighted_guy_2";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_58.png[/img]{The supposedly diseased man the anatomists had rescued from the literal grave comes forward. He\'s looking better than ever. He thanks the anatomists for their work, though they regard him with barely any notice at all. It seems he was of more interest to them when he was ill, and they could poke and prod and learn from that which ailed him, and there was some unspoken hope that he would in fact die so they could learn even more. Seeing this, the man then turns to you.%SPEECH_ON%It\'s all much appreciated, I hope at least you know that. You don\'t know what hells I\'ve been through with that lot who tried to bury me alive. I think they knew I wasn\'t no blight, they just wanted my property. See, I used to head the local militia, but that position comes with the weight of conspiracy and jealousy.%SPEECH_OFF%He rubs the back of his head, then comes out with it.%SPEECH_ON%I\'ve nothing else after those gravediggers done taken it all so regardless of whether I\'m alive or dead, I may well be of the latter. So, well, let me just say I\'m glad to be fighting for you and making myself a new living out here.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_58.png[/img]{L\'homme prétendument malade que les anatomistes avaient sauvé de la tombe se manifeste. Il est plus beau que jamais. Il remercie les anatomistes pour leur travail, bien qu\'ils ne le considèrent guère. Il semble qu\'il était plus intéressant pour eux lorsqu\'il était souffrant et qu\'ils pouvaient le tripoter pour en apprendre plus sur sa maladie. Il y avait un certain espoir de la part des anatomistes de le voir mort pour en apprendre encore plus. Voyant cela, l\'homme se tourne vers vous.%SPEECH_ON%J\'apprécie beaucoup, j\'espère au moins que vous le savez. Vous n\'imaginez pas l\'enfer que j\'ai vécu avec ceux qui ont essayé de m\'enterrer vivant. Je pense qu\'ils savaient que je n\'étais pas malade, ils voulaient juste ma propriété. Vous voyez, j\'ai l\'habitude de diriger la milice locale, mais cela veut dire aussi d\'encaisser une certaine jalousie patente de mes rivaux ainsi que diverses conspirations.%SPEECH_OFF%Il se frotte l\'arrière de la tête, puis décide de prendre la parole.%SPEECH_ON%Ces fossoyeurs m\'ont tout pris, je n\'ai plus rien. Donc, eh bien, laissez-moi juste dire que je suis heureux de me battre pour vous et de me faire une nouvelle vie ici.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Glad you\'re feeling better, %militiacaptain%.",
+					Text = "Content que vous vous sentiez mieux, %militiacaptain%.",
 					function getResult( _event )
 					{
 						return 0;

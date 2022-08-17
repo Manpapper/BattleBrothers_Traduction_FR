@@ -6,17 +6,17 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_dead_knight";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_75.png[/img]{%anatomist% the anatomist spots something gleaming a little ways off the main path. You walk over and take a look. There\'s something dark and metallic in the distance. Perhaps a knight\'s corpse? Though it would make you wonder how he got there by himself. %anatomist% ponders aloud if perhaps something could be learned from the body of presumably great martial prowess. You shake your head.%SPEECH_ON%Knights rarely die alone, and if they do they sure as shite don\'t keep their armor with them. It smells like a trap through and through.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_75.png[/img]{%anatomiste% l\'anatomiste aperçoit quelque chose de brillant un peu à l\'écart du chemin principal. Vous vous approchez et jetez un coup œil. Il y a quelque chose de sombre et métallique au loin. Peut-être le cadavre d\'un chevalier? Vous vous demandez comment il est arrivé là tout seul. %anatomiste% se demande à voix haute si l\'on ne pourrait pas apprendre quelque chose de ce corps voué à la guerre. Vous secouez la tête.%SPEECH_ON%Les chevaliers meurent rarement seuls, et s\'ils le font, ils ne gardent certainement pas leur armure avec eux. Ça sent le piège à plein nez.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s go get it.",
+					Text = "On va aller voir.",
 					function getResult( _event )
 					{
 						if (_event.m.Noble != null)
@@ -39,7 +39,7 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No.",
+					Text = "Laissons-le de côté.",
 					function getResult( _event )
 					{
 						return 0;
@@ -55,13 +55,13 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{Against your better judgment you go and take a look. You feel quite naked walking across the open ground to the knight, like a thief who steals by reaching all the way across the aisle. When you get to the knight, you pause and look around. No movement in the land around you. No bandits firing off a trap. No wolfpack finding its prey. You shrug and look down. The man is covered in decent armor and carrying a nice, albeit used sword. His face is dried out and the eyes gone. Dry birdshit crusts on the scuff of his chest armor. You order %anatomist% to get him out of the armor and carry it all back the wagon.%SPEECH_ON%What? Why do I have to do it?%SPEECH_OFF%You tell him if he wants to study the body, then the price is he has to strip it down in the first place. Walking off, you tell him that when he puts it in the inventory to make sure to not crush any of the foodstuffs cause that armor does look a bit heavy. Also be sure to clean the bird shit off, too. %anatomist% sighs, but he\'s still happy to have access to the corpse of one \'hero.\' You sometimes wonder what the anatomist would do if he found you dead like this...}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{Au mépris du bon sens, vous allez jeter un coup d\'œil. Vous vous sentez tout nu en traversant le terrain à découvert jusqu\'au chevalier, comme un voleur qui dérobe en tendant la main jusqu\'à l\'autre bout de l\'allée. Quand vous arrivez au niveau du chevalier, vous faites une pause et regardez autour de vous. Aucun mouvement dans les parages. Pas de bandits en embuscade. Pas de meute de loups cherchant sa proie. Vous haussez les épaules et baissez les yeux. L\'homme est revêtu d\'une armure décente et porte une belle épée, bien qu\'usée. Son visage est desséché et ses yeux ont disparu. Des croûtes de merde d\'oiseau séchés son présentes sur une éraflure de son armure. Vous ordonnez à %anatomist% de le sortir de l\'armure et de ramener le tout dans le chariot.%SPEECH_ON%Quoi? Pourquoi dois-je le faire?%SPEECH_OFF%Vous lui dites que s\'il veut étudier le corps, il doit d\'abord retirer l\'armure. En partant, vous lui dites que lorsqu\'il le mettra dans l\'inventaire, il devra s\'assurer de ne pas écraser les aliments, car cette armure a l\'air un peu lourde. Assurez-vous aussi de nettoyer la merde d\'oiseaux. %anatomist% soupire, mais il est toujours heureux de pouvoir accéder au cadavre d\'un héros. Vous vous demandez parfois ce que l\'anatomiste ferait s\'il vous trouvait mort comme ça...}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Easy enough.",
+					Text = "C\'est assez simple.",
 					function getResult( _event )
 					{
 						return 0;
@@ -107,13 +107,13 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_78.png[/img]{You set out to the pile of armor which you hope is not at all the trap it looks like. %anatomist% is practically at your hip, his eyes eating up the prospective \'science\' set before him, and his hands have a tome open and are fervently writing into it already.\n\nSurprisingly, %noble% comes along, the man of noble background seeming to recognize the pile of armor itself. Indeed, as you get close he exclaims that it is a good friend of his from days gone by. You nod solemnly, but still say that the armor would be best used with the company instead of just wasting away here on the ground. The man nods.%SPEECH_ON%I think he would prefer the same. I\'ll get it off him.%SPEECH_OFF%Before he begins, %noble% turns to %anatomist% and tells him that he better not even dare to touch his friend. You go back to the wagon with the anatomist, who you\'ve given the duty of carrying the armor itself. The now sweaty anatomist is upset that he did not get a chance to see the corpse, and %noble% is noticeably upset that the corpse itself was a good friend. All in all, it seems this damn dead man has caused more grief than he was possibly worth.}",
+			Text = "[img]gfx/ui/events/event_78.png[/img]{Vous vous dirigez vers l\'armure qui, vous l\'espérez, n\'est pas du tout le piège auquel il ressemble. %anatomiste% est pratiquement au niveau de votre hanche, ses yeux dévorant la \"science\" potentielle qui se présente à lui, ses mains porte un tome ouvert dans lequel il écrit déjà avec ferveur.\n\nÉtonnamment, %noble% arrive, l\'homme d\'origine noble semblant reconnaître l\'armure elle-même. En effet, lorsque vous vous approchez, il s\'exclame qu\'il s\'agit d\'un de ses bons amis d\'autrefois. Vous acquiescez solennellement, mais dites quand même que l\'armure serait mieux utilisée au sein de la compagnie plutôt que de dépérir ici sur le sol. L\'homme acquiesce.%SPEECH_ON%Je pense que le chevalier serait d\'accord. Je vais la lui retirer.%SPEECH_OFF%Avant de commencer, %noble% se tourne vers %anatomiste% et lui dit qu\'il vaut mieux qu\'il évite de toucher son ami. Vous retournez au chariot avec l\'anatomiste, à qui vous aviez confié la tâche de porter l\'armure elle-même. L\'anatomiste, maintenant en sueur, est contrarié de ne pas avoir eu la chance de voir le cadavre et %noble% est visiblement mécontent que le cadavre lui-même soit l\'un de ses bons amis. Dans l\'ensemble, il semble que ce fichu mort ait causé plus de chagrin qu\'autre chose.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "At least we got the armor.",
+					Text = "Au moins nous avons l\'armure.",
 					function getResult( _event )
 					{
 						return 0;
@@ -163,13 +163,13 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_21.png[/img]{You decide to go take a look. As you cross the seemingly open plain you get a feeling you\'re being watched. Something about all this just feels wrong. Halfway across, you turn to %anatomist% and tell him that it\'s time to doubleback. He shakes his head and says that you\'ve already come so far, why stop now? Before you can answer, an arrow whistles past your ear and the anatomist falls backward clutching his shoulder.\n\nYou gather the man up and drag him back to the wagon, arrows landing in the ground around you, tufts of dirt thrown over your boots, until they start hitting the wagon itself. Gathering up the company for a counter-attack, you see the would-be ambushers think better of their chances and run off, a few of them carrying the knight\'s armor with them. As you thought, the whole thing was a brigandine honeypot. %anatomist% will live, thankfully, and he\'s already writing in his book about the experience or perhaps, judging by his fascination with the arrow sticking out of him, writing about his grisly wound.}",
+			Text = "[img]gfx/ui/events/event_21.png[/img]{Vous décidez d\'aller jeter un coup d\'oeil. En traversant la plaine apparemment dégagée, vous avez l\'impression d\'être observé. Il y a quelque chose qui ne va pas dans tout ça. À mi-chemin, vous vous tournez vers %anatomist% et lui dites qu\'il est temps de faire demi-tour. Il secoue la tête et dit que si vous êtes déjà allé si loin, pourquoi s\'arrêter maintenant? Avant que vous ne puissiez répondre, une flèche siffle à votre oreille et l\'anatomiste tombe à la renverse en se serrant l\'épaule.\n\nVous ramassez l\'homme et le traînez jusqu\'au chariot, les flèches atterrissant dans le sol autour de vous, des touffes de terre projetées sur vos bottes, jusqu\'à ce qu\'elles commencent à frapper le chariot lui-même. Rassemblant la compagnie pour une contre-attaque, vous voyez les prétendus ennemis prendre leurs distances et s\'enfuir, certains d\'entre eux portant l\'armure du chevalier avec eux. Comme vous le pensiez, tout cela n\'était qu\'un pot de miel pour les bandits. Heureusement, %anatomist% vivra, il écrit déjà dans son livre l\'expérience qu\'il vient de vivre ou peut-être, à en juger par sa fascination pour la flèche qui sort de lui, sur sa blessure macabre.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Next time I\'ll listen to my intuition.",
+					Text = "La prochaine fois, j\'écouterai mon intuition.",
 					function getResult( _event )
 					{
 						return 0;
@@ -201,13 +201,13 @@ this.anatomist_dead_knight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{Against your better judgment you go and take a look. You feel quite naked walking across the open ground to the knight, like a thief who steals by reaching all the way across the aisle. Nearing the corpse, you look back to ask the %anatomist% what his plans are for the dead body. You see the anatomist is standing stiff, his head back and eyes open, a nervous and jittery hand pointing forward. You look back to see the corpse moving, slowly gathering itself off the ground, moaning, croaking. The helm juts forward as filth pours through its openings. You draw your sword.\n\nThe black knight pushes itself up off the ground, its gauntlets falling away to reveal pale flesh beneath. It turns to look at you and there\'s a slight hue of red glowing somewhere in that frothing helm. You slash the sword down and the creature\'s head falls free, clanking against the ground as air sputters out of its neckholes. Sheathing your sword, you tell %anatomist% that if he wants something to study, well, there it is.%SPEECH_ON%Also be sure to carry its armor back to the wagon. Make sure to use your legs when you bend, don\'t want you hurting your back or anything.%SPEECH_OFF%You walk past the anatomist. He stares, gobsmacked, then closes his mouth and pulls out a quill pen and some scrolls. His fear is put behind him, and his usual self comes to the fore.%SPEECH_ON%A fresh specimen, up close, recently deceased, or perhaps it is re-deceased? Either way...we can learn so much from this.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{Au mépris du bon sens, vous allez jeter un coup d\\'œil. Vous vous sentez tout nu en traversant le terrain à découvert jusqu\'au chevalier, comme un voleur qui dérobe en tendant la main jusqu\'à l\'autre bout de l\'allée. En vous approchant du corps, vous vous retournez pour demander au %anatomiste% quels sont ses plans pour le cadavre. Vous voyez que l\'anatomiste se tient raide, la tête en arrière et les yeux grand ouverts, sa main nerveuse et agitée pointant l\'horizon. Vous regardez en arrière pour voir le cadavre bouger, ramper sur le sol, gémir, couiner. Le casque est projeté vers l\'avant et de la saleté se déverse par ses ouvertures. Vous dégainez votre épée.\n\nLe chevalier noir se soulève du sol, ses gantelets tombent pour révéler une chair blafarde. Il se retourne pour vous regarder. Son casque émet, par tous les orifices ,une faible lumière rouge. Vous abaissez votre épée et la tête de la créature se détache du corps, heurtant le sol tandis que de l\'air s\'échappe de son cou. Rengainant votre épée, vous dites à %anatomist% que s\'il veut quelque chose à étudier, eh bien, c\'est ici que cela se passe.%SPEECH_ON%Assurez-vous aussi de porter son armure jusqu\'au chariot. Veillez à utiliser vos jambes lorsque vous vous penchez, je ne veux pas que vous vous blessiez le dos ou autre.%SPEECH_OFF%Vous passez devant l\'anatomiste. Il vous regarde, bouche bée, puis ferme la bouche et sort une plume d\'oie et quelques parchemins. Sa peur s\'efface et il redevient lui-même.%SPEECH_ON%Un spécimen frais, de près, récemment décédé, ou peut-être est-il re-décédé ? Quoi qu\'il en soit... nous pouvons apprendre tellement de choses de cette expérience.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You can also learn to bend with your knees, chop chop.",
+					Text = "Vous pouvez aussi apprendre à vous pencher avec vos genoux, et que ça saute!",
 					function getResult( _event )
 					{
 						return 0;

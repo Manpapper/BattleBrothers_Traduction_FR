@@ -7,17 +7,17 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_confronts_healer";
-		this.m.Title = "At %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{You come into %townname% to find a white bearded and eloquent elder helping a family with their ill child. To you, this sight isn\'t anything unusual. To %anatomist% the anatomist, however, some great offense is at hand. So quick is his walk across the road to the elder that you jump in front of him, sensing that whatever it is he aims to do might reflect poorly on the %companyname% as a whole. %anatomist% stands up straight.%SPEECH_ON%Excuse me, this man is dispensing poor medical advice. He needs to be corrected.%SPEECH_OFF%Mindful of the natives, you warn him that it can be unwise to try and wedge yourself in on local customs, of which an elder is almost assuredly the spearpoint of. He might be and likely is of even greater import as well, such as overseeing the local militia. The anatomist, however, is rather diligent about the task, and seeks to weaponize his own knowledge and use it even if it tears the local politic apart.}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{Vous entrez dans %townname% pour trouver le doyen à la barbe blanche qui s\'occupe d\'une famille dont l\'enfant est malade. Pour vous, cette situation n\'a rien d\'inhabituelle. Pour %anatomist% l\'anatomiste, cependant, cette affaire est loin d\'être anodine. Il traverse si rapidement la route vers le doyen que vous vous jetez devant lui, sentant que ce qu\'il cherche à faire pourrait donner une mauvaise image de la compagnie %companyname% dans son ensemble. %anatomist% se tient droit.%SPEECH_ON%Excusez-moi, cet homme donne de mauvais conseils en matière de soins médicaux. Il a besoin d\'être corrigé.%SPEECH_OFF%Conscient des autochtones, vous le prévenez qu\'il peut être imprudent d\'essayer de s\'immiscer dans les coutumes locales, dont un ancien est presque certainement le fer de lance. Il pourrait encore être de plus grande importance, comme peut-être le superviseur de la milice locale. L\'anatomiste, cependant, est plutôt assidu dans sa tâche, il cherche à utiliser ses propres connaissances comme une arme, même si cela déchire la politique locale.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Go on and correct him then.",
+					Text = "Allez-y et corrigez-le alors.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -32,7 +32,7 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "It\'s not worth upsetting the locals.",
+					Text = "Ça ne vaut pas la peine de contrarier les gens du coin.",
 					function getResult( _event )
 					{
 						return "D";
@@ -45,7 +45,7 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Monk != null)
 				{
 					this.Options.push({
-						Text = "%monk%, can you talk some sense into him?",
+						Text = "%monk%, pouvez-vous lui faire entendre raison?",
 						function getResult( _event )
 						{
 							return "E";
@@ -60,13 +60,13 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_17.png[/img]{You think it over for a time, and decide to let the anatomist do as he pleases. Stepping aside, you turn to watch the goings on, hoping that this won\'t be an event to tarnish the %companyname%\'s name any more than this quack already seems determined to do. %anatomist% sidles next to the old man and they look at each other for a moment, and a few peasants stare over as well. The anatomist pops a squat and asks the old man if he knows that the information he is giving out is incorrect.\n\nSurprisingly, the old man is receptive to the occasion, and the two sit and talk for a long while. Instead of being offended by some outsider\'s input, the townspeople are equally enthralled by any knowledge he might have. There\'s some disagreements about trivial matters, but %anatomist% himself is so warmed by the reception that he handwaves them away and even lies and says those matters are still yet to be medically settled. By the time it is all over, the anatomist hands off some notes to the old man, and the village in turn give him a bevy of treats and goods as thanks.}",
+			Text = "[img]gfx/ui/events/event_17.png[/img]{Vous y réfléchissez un moment, et décidez de laisser l\'anatomiste faire ce qu\'il veut. En faisant un pas de côté, vous vous retournez pour observer ce qui se passe, en espérant que ce ne sera pas un événement qui ternira le nom de la compagnie %companyname% plus que ce charlatan ne semble déjà déterminé à le faire. %anatomiste% se place à côté du vieil homme, ils se regardent un moment, quelques paysans les regardent aussi. L\'anatomiste s\'accroupit et demande au vieil homme s\'il sait que les informations qu\'il donne sont incorrectes.\n\nÉtonnamment, le vieil homme est réceptif à la remarque, et les deux s\'assoient et parlent pendant un long moment. Au lieu d\'être offensés par la présence d\'un étranger, les habitants de la ville sont tout aussi fascinés par les connaissances qu\'il peut avoir. Il y a bien quelques désaccords sur des questions triviales, mais %anatomist% est si heureux de l\'accueil des autochtones qu\'il les évacue et ment même en disant que ces questions ne sont pas encore connues médicalement parlant. Lorsque tout est terminé, l\'anatomiste remet quelques notes au vieil homme, et le village lui offre à son tour une série de cadeaux en guise de remerciement.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That went well.",
+					Text = "Ça s\'est bien passé.",
 					function getResult( _event )
 					{
 						return 0;
@@ -122,13 +122,13 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_141.png[/img]{You think it over for a time, and decide to let the anatomist do as he pleases. Stepping aside, you turn to watch the goings on, hoping that this won\'t be an event to tarnish the %companyname%\'s name any more than these quacks already seem determined to do. %anatomist% sidles next to the old man and they look at each other for a moment, and a few peasants stare over as well. The anatomist pops a squat and asks the old man if he realizes he is a charlatan. You put your head in your hands. The old man stands up and pushes the anatomist backward.%SPEECH_ON%And who the fark are you, huh? A traveler with a toolbox of fancy vocabulary, huh?%SPEECH_OFF%The anatomist holds his hands out and plainly explains himself to be an intelligent, very well educated man from- before he can even finish, a peasant comes over and decks him, knocking him right into the mud. The %companyname% jumps in to save the anatomist and in the scuffle a few more blows are exchanged, but thankfully that\'s where it ends. You get %anatomist% back into your ranks and order everyone to settle down before the sellswords-side of the %companyname% is drawn out into the open for all the laity to see. The elder nods and says he wishes not to invite the militia to these affairs. It seems everyone barely escaped a far more gruesome affair. %anatomist% only looks at the blood coming out of his nose and ponders if anyone has been counting time to see how long it takes to coagulate.}",
+			Text = "[img]gfx/ui/events/event_141.png[/img]{Vous y réfléchissez un moment, et décidez de laisser l\'anatomiste faire ce qu\'il veut. En faisant un pas de côté, vous vous retournez pour observer ce qui se passe, en espérant que ce ne sera pas un événement qui ternira le nom de la compagnie %companyname% plus que ce charlatan ne semble déjà déterminé à le faire. %anatomiste% s\'installe à côté du vieil homme, ils se regardent un moment, quelques paysans les regardent également. L\'anatomiste s\'accroupit et demande au vieil homme s\'il se rend compte qu\'il est un charlatan. Vous mettez votre tête dans vos mains. Le vieil homme se lève et pousse l\'anatomiste vers l\'arrière.%SPEECH_ON%Et vous êtes qui, vous? Un voyageur avec un vocabulaire fantaisiste en guise de boite à camembert, hein?%SPEECH_OFF%L\'anatomiste tend les mains et explique clairement qu\'il est un homme intelligent, très bien éduqué, originaire de... avant même qu\'il ne puisse terminer, un paysan s\'approche et le frappe, le faisant tomber dans la boue. La comapgnie %companyname% intervient pour sauver l\'anatomiste et dans la bagarre, quelques coups sont échangés, mais heureusement, cela ne va pas plus loin. Vous faites revenir %anatomist% dans vos rangs et ordonnez à tout le monde de se calmer avant que le côté sombre de la compagnie %companyname% ne soit exposé au grand jour devant tous les laïcs. Le vieux acquiesce et dit qu\'il ne souhaite pas inviter la milice dans ses affaires. Il semble que tout le monde ait échappé de justesse à une affaire bien plus sordide. L\'%anatomiste% se contente de regarder le sang qui coule de son nez et se demande si quelqu\'un calculer le temps qu\'il a mis avant de coaguler.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Damn fool.",
+					Text = "Espèce d\'idiot.",
 					function getResult( _event )
 					{
 						return 0;
@@ -176,13 +176,13 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{%anatomist% moves to get past you, but you put your hand to him and hold him where he is. You explain that correcting locals on their own customs and beliefs is dangerous ground to trod on, and as a sellsword you\'re already distrusted and seen in a bad light. The last thing you need is a few embers blown onto the drywood that is villager traditions. The anatomist protests, but you holdfast. If he wants to go around correcting everyone and everything, he can return to the schools or universities from which he came. Eventually, %anatomist% slinks off. You glance back at the town elder just in time to see him bite the head off a frog and pour its blood into a bowl for future divinations.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{%anatomiste% se démène pour vous dépasser, mais vous l\'attrapez et le maintenez là où il est. Vous expliquez que critiquer les locaux sur leurs propres coutumes et croyances est un terrain dangereux, et qu\'en tant que mercenaire, vous êtes déjà mal vu à la base. La dernière chose dont vous avez besoin, c\'est de quelques braises soufflées sur le bois sec que sont les traditions locales. L\'anatomiste proteste, mais vous tenez bon. S\'il veut corriger tout le monde toute la journée, il peut retourner dans les écoles ou les universités d\'où il vient. Finalement, %anatomist% s\'éclipse. Vous vous retournez vers l\'ancien juste à temps pour le voir arracher la tête d\'une grenouille et verser son sang dans un bol pour de futures divinations.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get on on the road.",
+					Text = "Reprenons la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -209,13 +209,13 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{As %anatomist% tries to move past you, %monk% the monk intervenes. He stands by the anatomist and calmly explains that just because someone is wrong needn\'t mean that a foreign party step in and correct them. The loss of face in the public\'s eye is not going to end with the individual being corrected, it will merely bring the light of scrutiny back upon the one doing the criticizing. %anatomist% thinks this over for a time.%SPEECH_ON%Are you telling me that the error here is not in the poor advice being given out, but in the community as a whole being so maligned with falsehoods that an entrance of truth would do not all but stoke a fire to protect what they wrongfully believe?%SPEECH_OFF%The monk purses his lips and shrugs.%SPEECH_ON%Sure.%SPEECH_OFF%The anatomist does not combat it any further and walks off, perhaps mulling over some scientific element to the affair. After he is gone, the monk shakes his head.%SPEECH_ON%I just don\'t want him being an arse and getting the %companyname% in more trouble than it needs to be.%SPEECH_OFF%You agree, and thank the monk for putting it in better words than you ever could.}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{Alors que %anatomist% tente de vous dépasser, %monk% le moine intervient. Il se tient aux côtés de l\'anatomiste et lui explique calmement que ce n\'est pas parce que quelqu\'un a tort qu\'un tiers doit intervenir pour le corriger. Le fait de critiquer l\'individu sur sa manière de soigner va, tout simplement, exposer la compagnie et non le vieillard. %anatomiste% réfléchit un moment.%SPEECH_ON%Êtes-vous en train de me dire que l\'erreur ici ne réside pas dans les mauvais conseils donnés, mais dans le fait que la communauté dans son ensemble est tellement entachée de mensonges qu\'une entrée de la vérité ne ferait qu\'attiser le feu pour protéger ce qu\'ils croient à tort?%SPEECH_OFF%Le moine se pince les lèvres et hausse les épaules.%SPEECH_ON%Bien sûr.%SPEECH_OFF%L\'anatomiste ne se soucie pas davantage de la question et s\'en va, réfléchissant peut-être à un élément scientifique de cette histoire. Après son départ, le moine secoue la tête.%SPEECH_ON%Je ne veux pas qu\'il fasse l\'imbécile et qu\'il mette la compagnie %companyname% dans le pétrin.%SPEECH_OFF%Vous êtes d\'accord, et vous remerciez le moine de l\'avoir exprimé mieux que vous ne pourriez le faire.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Thanks, %monk%.",
+					Text = "Merci, %monk%.",
 					function getResult( _event )
 					{
 						return 0;
@@ -352,7 +352,7 @@ this.anatomist_confronts_healer_event <- this.inherit("scripts/events/event", {
 		]);
 		_vars.push([
 			"monk",
-			this.m.Monk != null ? this.m.Monk.getNameOnly() : ""
+			this.m.Monk.getNameOnly()
 		]);
 		_vars.push([
 			"townname",
