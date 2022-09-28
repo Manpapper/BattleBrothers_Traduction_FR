@@ -344,12 +344,12 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "UndeadRepository",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_57.png[/img]{A familiar stench begins to waft over the company. %randombrother% remarks that they must be getting close to the repository. You remark that he is a goddam genius and should be making inventions and discoveries for the betterment of mankind. You can practically hear his silence over the laughter of the company. | As you near your objective, it becomes increasingly obvious that %employer%\'s assessments of the area were correct. The stench is undeniable: whatever dead were in this area have returned to roam the lands. | You find a corpse tangled in a bush, its branch-strung hands repeatedly pedaling outward with a sort of deadly indifference. %randombrother% steps close, carefully keeping his distance, and puts a blade through its skull. He steps back, cleaning his weapon and remarks that the company must be getting close to what you came to destroy. | Judging by the overbearing smell of ripened bodies and the belching gasses they produce, it\'s of little doubt that this %objective% is near. | You find half a man crawling across the ground. It stares up at you, groaning mindlessly, indifferent to its newfound existence though yet yearning to end yours. With a boot, you push its head into the mud. Its growls become gurgles and you carefully put a dagger through its earhole. %randombrother% looks around.%SPEECH_ON%This %objective% shan\'t be too far off now.%SPEECH_OFF% | Your destination is barely in view yet, but its smells are hitting the nose with a ferocity you hope is not reflected by whatever dwells there. You should prepare the men for the upcoming battle. | %randombrother% points off the path to a bunch of corpses strewn there in what appears to be a series of most acrobatic deaths. You\'ve no idea what happened, but the bodies have been long dead and yet there\'s no sign of flies or other animals having set upon them. You inform the men that your destination is close and that they should ready themselves for a coming fight. | The company stumbles upon a shambling corpse with shackled hands and legs. Imprisonment in life did not end upon reanimation and so you do what an executioner should have however long ago and remove the wiederganger\'s head. %randombrother% asks if your destination is close and you nod. It surely is, and with it will come a battle which the %companyname% would best prepare for. | Your destination mustn\'t be far off if the horrid smell wafting over the company is anything to go by. Whether it is the walking dead or a man with most pernicious bowel movements, the %companyname% should prepare for a fight. | The walking dead greet you one by one, a series of easily dispatched breadcrumbs leading the %companyname% straight to its target. You should prepare for a fight because soon you\'ll have the whole loaf on your plate. | An old man greets the company and states that %objective% is not far off. You ask what the hell he\'s still doing autour den. He shrugs.%SPEECH_ON%Being old, what else?%SPEECH_OFF% | %randombrother% sniffs the air.%SPEECH_ON%I know %randombrother2%\'s farting arse and that ain\'t him.%SPEECH_OFF%The insulted mercenary shrugs.%SPEECH_ON%Not for a lack of tryin\', but yeah, I think yer right. We gotta be getting close to this %objective%.%SPEECH_OFF%You nod and tell the men to prepare for a coming battle. | You find an earthworn corpse with abyssal eye sockets flailing around a big rock. It shuffles about scraping the stone with an earnest effort to kill it. %randombrother% decapitates the wiederganger with a swipe of his blade, like a man slicing through a totem of butter. He nods toward the distance.%SPEECH_ON%%objective% is close.%SPEECH_OFF%If so, the %companyname% should prepare for battle.}",
+			Text = "[img]gfx/ui/events/event_57.png[/img]{Une odeur familière commence à se répandre sur la compagnie. %randombrother% remarque qu'on doit se rapprocher de notre cible. Vous lui faites remarquer qu'il est un putain de génie et qu'il devrait faire des inventions et des découvertes pour le bien de l'humanité. Vous pouvez pratiquement entendre son silence par-dessus les rires de la compagnie. | Alors que vous vous approchez de votre objectif, il devient de plus en plus évident que les conclusions de %employer% sur la zone étaient correctes. La puanteur est indéniable : les morts qui se trouvaient dans cette zone sont revenus parcourir les terres. | Vous trouvez un cadavre emmêlé dans un buisson, ses mains couvertes de branches pédalant sans cesse vers l'extérieur avec une sorte d'indifférence mortelle. %randombrother% s'approche, en gardant soigneusement ses distances, et lui plante une lame dans le crâne. Il se recule, nettoie son arme et remarque que la compagnie doit se rapprocher de ce que vous êtes venu détruire. | À en juger par l'odeur envahissante des corps en putréfaction et les gaz qui en émanent, il ne fait guère de doute que %objective% est proche. | Vous trouvez la moitié d'un homme rampant sur le sol. Il vous regarde fixement, gémissant sans réfléchir, indifférent à sa nouvelle existence mais désireux de mettre fin à la vôtre. D'un coup de botte, vous enfoncez sa tête dans la boue. Ses grognements deviennent des gargouillis et vous lui enfoncez délicatement une dague par le trou de l'oreille. %randombrother% regarde autour de lui.%SPEECH_ON%%objective% ne devrait plus être très loin maintenant.%SPEECH_OFF% | Votre destination est encore à peine en vue, mais les odeurs frappent le nez avec une férocité que vous espérez ne pas se voir reflétée par ce qui l'habite. Vous devriez préparer les hommes pour la bataille à venir. | %randombrother% montre du doigt, en dehors du chemin, un groupe de cadavres éparpillés là dans ce qui semble être une série de morts des plus spectaculaires. Vous n'avez aucune idée de ce qui s'est passé, mais les corps sont morts depuis longtemps et pourtant il n'y a aucun signe de mouches ou d'autres animaux qui se soient posés sur eux. Vous informez les hommes que votre destination est proche et qu'ils doivent se préparer au combat à venir. | La compagnie tombe sur un cadavre rampant aux mains et aux jambes attachées. L'emprisonnement dans la vie n'a pas pris fin avec la réanimation et vous faites donc ce qu'un bourreau aurait dû faire il y a longtemps et vous enlevez la tête du wiederganger. %randombrother% vous demande si votre destination est proche et vous acquiescez. Elle l'est certainement, et avec elle viendra une bataille à laquelle la compagnie %companyname% devrait se préparer. | Votre destination ne doit pas être bien loin si l'on en croit l'horrible odeur qui flotte sur la compagnie. Qu'il s'agisse de morts-vivants ou d'un homme aux selles les plus pernicieuses, la compagnie %companyname% doit se préparer à combattre. | Les morts-vivants vous accueillent un par un, une succession de miettes de pain à éliminer qui mènent la compagnie %companyname% directement à sa cible. Préparez-vous à vous battre, car vous aurez bientôt le pain entier dans votre assiette. | Un vieil homme salue la compagnie et déclare que %objective% n'est pas loin. Vous lui demandez ce qu'il fait encore ici. Il hausse les épaules.%SPEECH_ON%Le fait d'être vieux, quoi d'autre ?%SPEECH_OFF% | %randombrother% renifle l'air.%SPEECH_ON%Je connais le cul puant de %randombrother2% et ce n'est pas lui.%SPEECH_OFF%Le mercenaire insulté hausse les épaules.%SPEECH_ON%Ce n'est pas faute d'avoir essayé, mais oui, je pense que tu as raison. On doit se rapprocher de %objective%.%SPEECH_OFF%Vous acquiescez et dites aux hommes de se préparer pour la bataille à venir. | Vous trouvez un cadavre rongé par les vers et avec des orbites abyssales qui se débat autour d'un gros rocher. Il se traîne en grattant la pierre dans un effort sincère pour la tuer. %randombrother% décapite le wiederganger d'un coup de lame, comme un homme tranchant un totem de beurre. Il fait un signe de tête vers le lointain.%SPEECH_ON%%objective% est proche%SPEECH_OFF%Si c'est le cas, la compagnie %companyname% doit se préparer à la bataille.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Prepare for the worst!",
+					Text = "Préparez-vous au pire !",
 					function getResult()
 					{
 						return 0;
@@ -361,12 +361,12 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Aftermath1",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{The evil in the place has been extinguished. You take a breath that feels like the first in years, as though the air itself had warmed to your victory. Only the so-called %objective2% remains now. | As the last of the undead are put to rest, you get a sense that the air is clearing up, like a fog of smoky air giving way to crisp, springtime aromas. The quick change in scents no doubt means you\'ve cleaned whatever evil dwelled there. Now to cleanse %objective2% and be done with this contract. | The evil of the place has been put to rest. Your next target awaits. | With the horrid place cleansed of evil, only %objective2% remains on the contract. | As the last wiederganger is put to rest, you feel a sudden change in the air. Cleanliness punches your lungs with unexpected clarity as you stand in a world of muck and mire. %randombrother% wipes his brow.%SPEECH_ON%Must be the end of it. On our way to %objective2% then?%SPEECH_OFF% | You entered a domain of evil, but with the last wiederganger slain you see the light of the world brighten and the smell of the earth beneath your feet returns to the natural order. With this place laid to rest, it\'s time to go on to %objective2%. | The victory was hard fought. Wiedergangers and the oddities of more ancient undead litter the field. You hope %objective2% will be easier to sort out, but you doubt it. | You step over the corpse of an ancient deadman. It\'s so different from yourself that it may as well be alien to all life you know of. The skull is ill-shaped, like a shrunken precursor to your own, and the armor and weapons appear out of this world.\n\n You prepare the men for the journey to %objective2%. | The earth is strewn with the ruinous corpses of the undead. You step over their bodies to find the ground beneath you returning to health, as if the soil was turning over from hiding, and the air itself is easier to breathe. Perhaps the evil truly has left the place? Regardless, it is time to go on to %objective2% and give it the friendly %companyname% treatment. | With the last of the undead slain, you look about the field. The dead are not of one source, judging by their variety of clothes and armors, but they are not of one timeline either. Some wear the armors of ancients and carry with them disturbing uniformity in their effort to kill.\n\n %randombrother% comes by, stating that the company is ready to move onto this %objective2% whenever you are.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{Le mal dans cet endroit a été détruit. Vous prenez une inspiration qui semble être la première depuis des années, comme si l'air lui-même s'était réchauffé à votre victoire. Il ne reste plus que %objective2% maintenant. | Alors que les derniers morts-vivants sont mis au repos, vous avez l'impression que l'air s'éclaircit, comme un brouillard de fumée qui fait place à des arômes printaniers. Le changement rapide des odeurs signifie sans doute que vous avez nettoyé le mal qui habitait là. Maintenant, il faut nettoyer %objective2% et en finir avec ce contrat. | Le mal de cet endroit a été mis au repos. Votre prochaine cible vous attend. | Une fois l'endroit horrible débarrassé du mal, il ne reste plus que %objective2% sur le contrat. | Alors que le dernier wiederganger est mis au repos, vous sentez un changement soudain dans l'air. La propreté frappe vos poumons avec une clarté inattendue alors que vous vous trouvez dans un monde de boue et de fange. %randombrother% s'essuie le front.%SPEECH_ON%Ça doit être la fin. En route pour %objective2%, maintenant ?%SPEECH_OFF% | Vous êtes entré dans un domaine du mal, mais avec le dernier wiederganger tué, vous voyez le monde autour de vous s'éclairer et l'odeur de la terre sous vos pieds revenir à l'ordre naturel. Avec cet endroit mis au repos, il est temps de passer à %objective2%. | La victoire a été durement disputée. Des Wiedergangers et les bizarreries de morts-vivants plus anciens jonchent le sol. Vous espérez que %objective2% sera plus facile à gérer, mais vous en doutez. | Vous enjambez le cadavre d'un ancien mort. Il est si différent de vous qu'il pourrait aussi bien être étranger à toute vie que vous connaissez. Le crâne est mal formé, comme un ancêtre rétréci du vôtre, et l'armure et les armes semblent étrangères à ce monde.\n\n Vous préparez les hommes pour le voyage vers %objective2%. | La terre est jonchée des cadavres en décomposition des morts-vivants. Vous enjambez leurs corps pour constater que le sol sous vos pieds redevient sain, comme si le sol se retournait de sa cachette, et l'air lui-même est plus facile à respirer. Peut-être le mal a-t-il vraiment quitté les lieux ? Quoi qu'il en soit, il est temps de passer à %objective2% et de lui donner le traitement amical de la compagnie %companyname%. | Une fois les derniers morts-vivants tués, vous regardez le champ de bataille. Les morts ne sont pas d'une seule origine, à en juger par la variété de leurs vêtements et armures, mais ils ne sont pas non plus d'une seule époque. Certains portent les armures des anciens et apportent avec eux une uniformité troublante dans leur effort de tuer.\n\n %randombrother% passe, déclarant que la compagnie est prête à passer à %objective2% dès que vous le serez.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "{Victory! | And stay dead!}",
+					Text = "{Victoire ! | Et restez mort !}",
 					function getResult()
 					{
 						this.Contract.getActiveState().start();
@@ -385,7 +385,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "{Victory! | Time to head back to %townname%.}",
+					Text = "{Victoire ! | Il est temps de retourner à %townname%.}",
 					function getResult()
 					{
 						this.Contract.setState("Return");
@@ -403,7 +403,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "After them!",
+					Text = "Poursuivons-les !",
 					function getResult()
 					{
 						local tile = this.Contract.m.Objective2.getTile();
@@ -456,7 +456,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "No, no, no!",
+					Text = "Non, non, non!",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
@@ -476,7 +476,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "One less thing to worry about.",
+					Text = "Une chose de moins à laquelle se soucier.",
 					function getResult()
 					{
 						this.Flags.set("IsNecromancers", false);
@@ -508,7 +508,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "We share a common goal. Let\'s attack, together!",
+					Text = "Nous partageons un objectif commun. Attaquons, ensemble !",
 					function getResult()
 					{
 						this.Flags.set("IsBanditsCoop", true);
@@ -520,7 +520,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "We\'re not here to share the spoils. Meet your end!",
+					Text = "Nous ne sommes pas là pour partager le butin. Rencontrez votre fin !",
 					function getResult()
 					{
 						this.Flags.set("IsBandits3Way", true);
@@ -539,7 +539,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "Victory!",
+					Text = "Victoire !",
 					function getResult()
 					{
 						this.Flags.set("IsBanditsCoop", false);
@@ -568,7 +568,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "Serves them right.",
+					Text = "Ça leur apprendra.",
 					function getResult()
 					{
 						this.Flags.set("IsBandits3Way", false);
