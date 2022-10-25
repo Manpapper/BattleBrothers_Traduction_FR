@@ -6,17 +6,17 @@ this.disowned_noble_vs_deserter_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.disowned_noble_vs_deserter";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%deserter% the deserter and %disowned% the disowned nobleman are staring at each other over a campfire. Being that the camp is a rather romanceless place, such a thing usually precedes one thing: a barn burner of a fight. But, instead, and rather whimsically, both men slowly start to smile. %deserter% points a finger.%SPEECH_ON%You were commanding %randomname%\'s levy out west, right?%SPEECH_OFF%The disowned nobleman laughs and smacks his knee.%SPEECH_ON%Sonuvabitch. I knew you looked familiar! You little deserter, you, do you have any idea how long we looked for your damn arse? One whole week! We did catch the rest, but you, you got away.%SPEECH_OFF%The deserter laughs.%SPEECH_ON%And now look at us, fighting for the same mercenary company! What are the odds, right? What\'d you do with the guys you did catch, by the way?%SPEECH_OFF%%disowned% shrugs.%SPEECH_ON%Oh, we hanged them, of course. In fact, it reminds me of an old trick that...well, let\'s just say, those were the days!%SPEECH_OFF%%deserter% stares into the fire for a moment. He looks up.%SPEECH_ON%Haha, yeah.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%deserter% le déserteur et %disowned% le noble désavoué se regardent fixement autour d\'un feu de camp. Le camp étant un endroit peu romantique, il est évident qu\'il va se passer autre chose: un affrontement de type \"combat de taverne\". Mais, au lieu de cela, et de façon plutôt étrange, les deux hommes commencent lentement à sourire. %deserter% lève son doigt.%SPEECH_ON%Vous commandiez le régiment %randomname% à l\'ouest, non?%SPEECH_OFF%Le noble désavoué rit et se frappe le genou.%SPEECH_ON%Connard. Je savais que vous me disiez quelque chose! Vous, petit déserteur, vous savez combien de temps on a cherché votre cul? Une semaine entière! Nous avons attrapé tout le monde, mais vous, vous vous êtes échappé!.%SPEECH_OFF%Le déserteur rigole.%SPEECH_ON%Et maintenant, regardez-nous, combattant pour la même compagnie de mercenaires! Quelles sont les chances, hein? Qu\'est-ce que vous avez fait des gars que vous avez attrapés, au fait?%SPEECH_OFF%%disowned% hausse les épaules.%SPEECH_ON%Oh, on les pendait, bien sûr. En fait, ça me rappelle un vieux truc... disons que c\'était le bon temps!%SPEECH_OFF%%deserter% regarde fixement le feu pendant un moment. Il lève les yeux.%SPEECH_ON%Haha, ouais.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s a small world, at least for outcasts.",
+					Text = "Le monde est petit, du moins pour les parias.",
 					function getResult( _event )
 					{
 						return 0;

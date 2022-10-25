@@ -6,17 +6,17 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.brawler_throw_fight";
-		this.m.Title = "At %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 100.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_51.png[/img]{Without giving you any heads up, it appears that %brawler% the brawler entered a fighting tournament on his own accord, and he\'s already made it all the way to the final match. He has so easily smashed all his opposition in the first round that he is the heavy favorite to win it all.\n\nHowever, a few very powerful betting brokers are upset that %brawler% has already caused them to lose a ton of money. Knowing that he is with you, they have asked that you tell %brawler% to take a fall and throw the match. In return, you\'ll get a percentage of their winnings, which will no doubt be quite substantial...}",
+			Text = "[img]gfx/ui/events/event_51.png[/img]{Sans vous prévenir, il semblerait que %brawler% le bagarreur se soit inscrit de lui-même à un tournoi et qu\'il soit déjà arrivé jusqu\'à la finale. Il a si facilement écrasé tous ses adversaires au premier tour qu\'il est le grand favori pour remporter le tournoi. Cependant, quelques courtiers en paris très influents sont mécontents que %brawler% leur ait déjà fait perdre une tonne d\'argent. Sachant qu\'il est avec vous, ils vous ont demandé de dire à %brawler% de faire une chute et de perdre le match. En retour, vous obtiendrez un pourcentage de leurs gains, qui seront sans doute assez importants...}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You need to take a fall.",
+					Text = "Vous devez simuler une chute.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -24,7 +24,7 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "He\'s not taking a fall.",
+					Text = "Il ne se couchera pas.",
 					function getResult( _event )
 					{
 						local outcome = this.Math.rand(1, 100);
@@ -45,7 +45,7 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "What? There won\'t be a fight at all!",
+					Text = "Quoi? Il n\'y aura pas de combat du tout!",
 					function getResult( _event )
 					{
 						return "G";
@@ -61,13 +61,13 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{You order %brawler% to take a fall. As expected, he resists the idea, but you remind him that you are captain to the company, and while brawling is his business, the fact a third party entered into business with you makes the brawler\'s business your business. He sighs and nods.\n\nWhen the fight occurs, %brawler%, as instructed, takes a few hits then \'sells\' a knockout, spinning away from a weak jab. The crowd roars and the underdog cheers and runs around the fighting pit with his hands raised. After the fight, the betting brokers come and give you %reward% crowns for the fall. One looks over at %brawler%.%SPEECH_ON%Gods damned, man, you could have spurred a riot if anyone had been paying attention. You should look into theater training, cause that winning punch wouldn\'t have harelipped a whore. Next time wait for a cross or solid hook would ya?%SPEECH_OFF%The brawler laughs, but it is forced. He has humiliated himself for a few crowns. Somewhere in %townname% you can hear the townspeople cheering the other fighter\'s name.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous ordonnez à %brawler% de simuler une chute. Comme prévu, il refuse, mais vous lui rappelez que vous êtes le capitaine de la compagnie, et que même si la bagarre est son domaine, le business est le vôtre. Il soupire et acquiesce. Lorsque le combat a lieu, %brawler%, comme il en a reçu l\'ordre, prend quelques coups puis simule un KO venant d\'un direct digne d\'un amateur. La foule hurle, l\'outsider applaudit et court autour de la fosse de combat les mains levées. Après le combat, les courtiers en paris viennent vous donner des couronnes %reward% pour la chute. L\'un d\'eux regarde le %brawler%. %SPEECH_ON%Dieu du ciel, mec, tu aurais pu déclencher une émeute si quelqu\'un avait fait attention. Tu devrais t\'entraîner au théâtre, parce que ce coup gagnant n\'aurait pas fait chuter une pute. La prochaine fois, attends une croix ou un crochet solide, veux-tu? Le bagarreur ri nerveusement. Il s\'est humilié pour quelques couronnes. Quelque part dans %townname%, vous pouvez entendre les habitants de la ville acclamer le nom du vainqueur.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "He\'ll get over it.",
+					Text = "Il s\'en remettra.",
 					function getResult( _event )
 					{
 						return 0;
@@ -100,13 +100,13 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{You order %brawler% to take a fall. As expected, he resists the idea, but you remind him that you are captain to the company, and while brawling is his business, the fact a third party entered into business with you makes the brawler\'s business your business. He sighs and nods.\n\nWhen the fight occurs, %brawler% does as instructed and goes down to a single punch. He stares at you from the floor of the fighting pit, and you see a fire in his eyes. You tell him to stay down, but instead he gets up and promptly destroys the other fighter with a flurry of hooks and uppercuts. He wins the fight and is carried out of the arena by the crowd. You try and hurry after them and see where he went, only to find him in an alleyway beaten to a pulp. He grins up at you.%SPEECH_ON%Them bettin\' brokers weren\'t happy, but fark them. They shoulda bet on my pride.%SPEECH_OFF%He falls unconscious.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous ordonnez à %brawler% de simuler une chute. Comme prévu, il refuse, mais vous lui rappelez que vous êtes le capitaine de la compagnie, et que même si la bagarre est son domaine, le business est le vôtre. Il soupire et acquiesce. Lorsque le combat a lieu, %brawler% simule un KO venant d\'un direct digne d\'un amateur. À terre, il vous regarde fixement, vous voyez la haine dans ses yeux. Vous lui dites de rester à terre, mais au lieu de cela, il se relève et détruit rapidement l\'autre combattant avec une rafale de crochets et d\'uppercuts. Il gagne le combat et est porté hors de l\'arène par la foule. Vous essayez de les suivre et de voir où il est allé... vous le trouvez dans une ruelle, réduit en bouillie. Il vous sourit. Les courtiers qui ont parié n\'étaient pas contents, mais qu\'ils aillent se faire voir. Ils auraient dû parier sur ma fierté. Il tombe inconscient.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ve had quite enough betting for now, myself.",
+					Text = "Bon, j\'ai assez parié pour le moment, moi aussi.",
 					function getResult( _event )
 					{
 						return 0;
@@ -139,13 +139,13 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{You tell the gambling brokers that %brawler% will fight however he pleases. The brokers, not wanting to cross paths with a sellsword, do not argue the issue any further. They simply leave before you can even bet on your own man. Now knowing there is a fight, though, you go and watch as %brawler% completely smashes down %townname%\'s best brawler. The beatdown was so obviously going to happen that everyone bet on %brawler% and there\'s a run on the gambling brokers. Fights break out and some betters and brokers start smashing each other. There\'s no money made out of the fight, but %brawler% is elated to be the champion of %townname%.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous dites aux courtiers que %brawler% se battra comme il l\'entend. Les courtiers, qui ne veulent pas se frotter à un mercenaire, ne discutent pas davantage. Ils partent simplement avant que vous ne puissiez même parier sur votre homme. Maintenant que vous savez que le match va avoir lieu, %brawler% va tout simplement éclater le meilleur bagarreur de %townname% sans l\'ombre d\'un doute. Il était tellement évident que la raclée allait se produire que tout le monde a parié sur %brawler% et les courtiers en jeux d\'argent se sont rués dessus. Des bagarres éclatent et certains parieurs et courtiers commencent à se frapper les uns les autres. Le combat ne rapporte rien, mais %brawler% est ravi d\'être le champion de %townname%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Well done!",
+					Text = "Bien joué!",
 					function getResult( _event )
 					{
 						return 0;
@@ -201,13 +201,13 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{You tell the gambling brokers that %brawler% will fight however he pleases. Not wanting to get tangled up with a mercenary captain, they simply nod and back off. As expected, %brawler% wins the fight and it is not even close. He\'s the talk of %townname% and you let him go celebrate with the peasants. A few hours pass, though, and you realize you haven\'t seen him in awhile. You venture into town to find him in an alley with smashed knees, his lead hand has been hammered to a pulp, and his eyes are swollen shut. You shout out to him and run over. He picks his head up off the ground.%SPEECH_ON%Captain? Ayy captain, good to hear your voice. Don\'t worry about me. It was worth it.%SPEECH_OFF%He passes out. You carry him back to the company and consider hunting down the brokers, but you know that they wouldn\'t have done such a thing without first preparing to get the hells out of town afterward.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous dites aux courtiers que %brawler% se battra comme il l\'entend. Ne voulant pas s\'embrouiller avec un capitaine mercenaire, ils acquiescent simplement et se retirent. Comme prévu, %brawler% gagne le combat haut la main. Comme il est le sujet de conversation de %townname%, vous le laissez aller faire la fête avec les paysans. Mais quelques heures passent et vous réalisez que vous ne l\'avez pas vu depuis longtemps. Vous vous aventurez en ville pour le trouver dans une ruelle, les genoux fracassés, sa main de fer réduite en bouillie et ses yeux tuméfiés. Vous hurlez et courez vers lui. Il se relève difficilement.%SPEECH_ONCapitaine? Oui, capitaine, c\'est bon d\'entendre votre voix. Ne vous inquiétez pas pour moi. Ça en valait la peine.%SPEECH_OFF%Il s\'évanouit. Vous le ramenez à la compagnie et envisagez de traquer les courtiers, mais vous savez qu\'ils n\'auraient pas fait une telle chose sans se préparer à quitter la ville par la suite.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Damn.",
+					Text = "Merde.",
 					function getResult( _event )
 					{
 						return 0;
@@ -267,13 +267,13 @@ this.brawler_throw_fight_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{You tell the gambling brokers that %brawler% will fight however he pleases. The brokers, not wanting to cross paths with a sellsword, do not argue the issue any further. They simply leave before you can even bet on your own man. Now knowing there is a fight, though, you attend the fight. %brawler% starts the bout throwing hooks left and right with zero regard for his opponent\'s skill. Without a single jab to set it up, his opponent shells up and then screams and throws one desperate hook and %brawler%\'s head twists on a swivel, and he falls to the ground unconscious. The crowd goes wild, at least those who didn\'t just lose a pile of crowns. One of the bettors walks over to you as he counts his money. He grins.%SPEECH_ON%Best go fetch yer boy.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous dites aux courtiers que %brawler% se battra comme il l\\'entend. Les courtiers, qui ne veulent pas se frotter à un mercenaire, ne discutent pas davantage. Ils partent simplement avant que vous ne puissiez même parier sur votre homme. Maintenant que vous savez que le match va avoir lieu, vous vous y rendez. %brawler% commence le combat en lançant des crochets du gauche et du droit sans se soucier de l\'habileté de son adversaire. L\'adversaire de %brawler% tient bon, il s\'élance, puis crie et lance un crochet désespéré à la tête de %brawler% qui se tord et il tombe au sol, inconscient. La foule est en délire, du moins ceux qui n\'ont pas perdu une seule couronne. L\'un des parieurs s\'approche de vous alors qu\'il compte son argent. Il sourit.%SPEECH_ON%Vous devriez aller chercher votre garçon.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That could have gone better.",
+					Text = "Ça aurait pu mieux se passer.",
 					function getResult( _event )
 					{
 						return 0;

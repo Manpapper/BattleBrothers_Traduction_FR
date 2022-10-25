@@ -6,17 +6,17 @@ this.anatomist_vs_clubfooted_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_vs_clubfooted";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camps...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You find %anatomist% the anatomist staring at %clubfoot%\'s awkward footing situation: namely that one of his feet looks like a bag of hammers. It is a disgusting, unsightly thing, and of course makes it difficult for him to perform the full duties expected of a sellsword. Word is that it is strangely popular with the womenfolk, but this is unconfirmed hearsay. Whatever the case, the anatomist comes to you with a suggestion.%SPEECH_ON%It\'s actually not at all rare malady, this man\'s clubfoot. At young age it is easily fixed, but the operation becomes steadily more difficult to amend the older one grows. Thankfully, I am a trained anatomist who has great depths of knowledge on this very subject. If you will let me, I shall attempt to heal this man of his unfortunate and unnecessarily lifelong circumstance.%SPEECH_OFF%%clubfoot% himself nods, saying he\'s ready to give it a whirl if you think it\'s best.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous trouvez %anatomist% l\'anatomiste en train de regarder %clubfoot% qui est dans une situation compliquée: à savoir que l\'un de ses pieds ressemble à... rien. C\'est une chose dégoûtante et disgracieuse, qui l\'empêche bien sûr d\'accomplir toutes les tâches que l\'on attend d\'un mercenaire. On dit qu\'il est étrangement populaire auprès des femmes, mais ce sont des ouï-dire non confirmés. Quoi qu\'il en soit, l\'anatomiste vient vous voir avec une suggestion.%SPEECH_ON%Ce n\'est pas une maladie rare, ce pied bot. Si il est prit à temps, il est facilement soigné, mais plus on attend, plus l\'opération devient de plus en plus difficile à réaliser. Heureusement, je suis un anatomiste de formation qui possède de grandes connaissances sur ce sujet. Si vous me le permettez, j\'essaierai de guérir cet homme de cette malheureuse et inutile circonstance de toute une vie.%SPEECH_OFF%%clubfoot% lui-même acquiesce, disant qu\'il est prêt à accepter si vous pensez que c\'est le mieux.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Do it, work your trade.",
+					Text = "Faites-le, exercez votre métier.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -24,7 +24,7 @@ this.anatomist_vs_clubfooted_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No, the risk is too great.",
+					Text = "Non, le risque est trop grand.",
 					function getResult( _event )
 					{
 						return "E";
@@ -41,13 +41,13 @@ this.anatomist_vs_clubfooted_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You give %anatomist% the go-ahead. Him and the clubfooted man walk-and-hobble off to handle the business. Naturally, you go to have a look. You watch as %anatomist% brings %clubfoot%\'s foot up on a stool. He takes a piece of wood out that already has teeth marks augured into it. He then takes out a vial of liquid, pops the cork, lathers the wood in it, takes a drink of it himself, and then hands the rest to his patient. %clubfoot% chugs the drink, then bites down on the wood. What follows is a disgusting series of leg breaks and castings and re-castings. %anatomist% starts cutting in with a scalpel, grinning madly as he works. %clubfoot% has long since passed out.\n\nWhen it\'s all said and done, %clubfoot%\'s leg is totally wrecked and casted up. %anatomist% says the operation was a success, though there will be a somewhat lengthy recovery time that will be necessary. The foot will have to be re-casted again and again, and each time moving the foot a little more, but it can be done. A delirious %clubfoot% is smiling as he looks down at his foot.%SPEECH_ON%It will be worth it, captain. For me, and also for the %companyname%.%SPEECH_OFF%The rather dutiful and drugged up mercenary then falls backwards and into a snoring sleep.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous donnez le feu vert à %anatomist%. Lui et l\'homme au pied bot partent ensemble. Naturellement, vous allez jeter un coup d\'œil. Vous regardez l\'anatomiste qui pose le pied bot sur un tabouret. Il sort un morceau de bois sur lequel sont déjà gravées des marques de dents. Il sort ensuite une fiole remplie de liquide, fait sauter le bouchon, y trempe le bois, en boit lui-même une gorgée, puis tend le reste à son patient. %clubfoot% boit la mixture puis mord le bois. Ce qui suit est dégoûtant de jambes cassées, de moulages et de re-moulages. %anatomist% commence à découper avec un scalpel, affichant un sourire fou pendant qu\'il travaille. %clubfoot% s\'est évanoui depuis longtemps.\n\nAu bout du compte, la jambe de %clubfoot%% est totalement démolie et plâtrée. L\'anatomiste dit que l\'opération a été un succès, mais qu\'un temps de récupération un peu long sera nécessaire. Il faudra refaire le moulage du pied encore et encore, et à chaque fois déplacer un peu plus le pied, mais c\'est possible. Un %clubfoot% délirant sourit en regardant son pied.%SPEECH_ON%Ça en vaudra la peine, capitaine. Pour moi, et aussi pour la compagnie %companyname%.%SPEECH_OFF%Le mercenaire, plutôt obéissant et drogué, tombe alors à la renverse et s\'endort en ronflant.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Walk walk, brother, it\'s your life.",
+					Text = "Marche, marche, mon frère, c'est ta vie.",
 					function getResult( _event )
 					{
 						return 0;
@@ -95,7 +95,7 @@ this.anatomist_vs_clubfooted_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{Reluctantly, you give the go-ahead for %anatomist% the anatomist to get to work. You consider joining him and %clubfoot% in the tent, but something about breaking a foot to heal it doesn\'t...stand right with you. Instead, you go to your favorite task of counting inventory. The peace and quiet of noting down how much you have of what, how much you\'ll need, the rate at which the company is chewing through these items. It is all fascinating.\n\nThere really isn\'t anything like counting inventory, and the only thing that could stop your enjoyment is the shrill, horrific screams of %clubfoot% suddenly emanating from the tent you diligently avoided going into. Now, with his shrill cries filling the air, you run to the tent and enter it. You find %anatomist% off to the side wiping sweat from his brow.%SPEECH_ON%Hello captain. Well, let me summarize here. As you can see, there have been some unforeseen complications. He will heal from them, of course, don\'t you worry about that, but the clubfoot shall remain. It proved, eh, resistant to my applications.%SPEECH_OFF%You look at %clubfoot%. He is now passed out, and beneath the kneecaps his leg is twisted up like a rag. The anatomist nods dutifully.%SPEECH_ON%Don\'t worry about that, I\'ll get that fixed, too. Just needed for the man to stop screaming and moving around so much and a little bit of a breather so I can catch my breath. Do you wish to watch?%SPEECH_OFF%The anatomist grabs the man\'s foot. It flops around in his grasp as though he was holding dough. You shake your head and hurry from the tent.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{A contrecœur, vous donnez le feu vert à %anatomiste% l\'anatomiste pour se mettre au travail. Vous envisagez de le rejoindre avec %clubfoot% dans la tente, mais l\'idée de casser un pied pour le guérir ne vous convient pas vraiment. Au lieu de cela, vous vous consacrez à votre tâche préférée: faire l\'inventaire. La paix et la tranquillité de noter combien il vous reste, de combien vous aurez besoin, la vitesse à laquelle la compagnie consomme ces produits. Tout cela est fascinant.\n\nIl n\'y a vraiment rien de tel que de compter les stocks, et la seule chose qui pourrait interrompre votre plaisir, ce sont les cris stridents et horribles de %clubfoot% qui émanent soudainement de la tente dans laquelle vous avez évité d\'entrer. Maintenant que ses cris stridents emplissent l\'air, vous courez vers la tente pour voir. Vous trouvez %anatomist% sur le côté, en train d\'essuyer la sueur de son front.%SPEECH_ON%Bonjour capitaine. Bien, laissez-moi résumer ici. Comme vous pouvez le voir, il y a eu quelques complications imprévues. Il va guérir, bien sûr, ne vous inquiétez pas pour ça, mais le pied bot restera. Il s\'est avéré, euh, résistant à mes traitements.%SPEECH_OFF%Vous regardez %clubfoot%. Il est maintenant évanoui, sa jambe est tordue comme un chiffon. L\'anatomiste acquiesce consciencieusement.%SPEECH_ON%Ne vous inquiétez pas pour ça, je vais arranger ça aussi. J\'avais juste besoin que l\'homme arrête de crier et de bouger autant et d\'un peu d\'air pour que je puisse reprendre mon souffle. Vous voulez regarder?%SPEECH_OFF%L\'anatomiste saisit le pied de l\'homme. Il l\'agite dans sa main comme s\'il tenait de la pâte. Vous secouez la tête et vous vous précipitez hors de la tente.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -143,13 +143,13 @@ this.anatomist_vs_clubfooted_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You look at %anatomist% inquisitively.%SPEECH_ON%Am I running a horse racing outfit here? If the man wants his busted foot to get fixed, he can go out to pasture with honor and dignity. We won\'t be needing bizarre experiments that\'ll end up with the old gods know what results.%SPEECH_OFF%The anatomist clears his throat and says that the procedures are fairly simple, but he slips up in also saying that the scientific gains to be made from completing them are immense, showing that he did not have %clubfoot%\'s interests in mind at all. You tell the man the conversation is over.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous regardez %anatomist% avec curiosité.%SPEECH_ON%Est-ce que je dirige une écurie de chevaux ici? Si cet homme veut que son pied bot soit soigné, il peut aller paître avec honneur et dignité. Nous n\'aurons pas besoin d\'expériences bizarres qui aboutiront à des résultats que seuls les dieux connaissent.%SPEECH_OFF%L\'anatomiste s\'éclaircit la gorge et dit que les procédures sont assez simples, mais il fait une erreur en disant aussi que les gains scientifiques à réaliser sont immenses, ce qui montre qu\'il n\'avait pas du tout en tête de bonnes intentions envers %clubfoot%. Vous dites à l\'homme que la conversation est terminée.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Hobble along now.",
+					Text = "Vous marcherez en boitant à partir de maintenant.",
 					function getResult( _event )
 					{
 						return 0;

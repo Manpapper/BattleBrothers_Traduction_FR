@@ -7,17 +7,17 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_wants_skull";
-		this.m.Title = "On the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_16.png[/img]{You come to a remote village to find a few of its peoples crouched before a large, bleached skull decoratively set on a lectern. Passing peasants pause and profess faith to it. As you get closer, you realize the skull itself is extraordinary: a long, thick forehead juts out from the top, its brow quite dominant and ridged, and the jaw of it, still intact, carries enormous and sharp teeth, most of which are in a state of disorder, as if in any ordinary head closing such a mouth would be a danger to itself. What it very well may be is a Nachzehrer\'s skull. Naturally, with this strange skeletal sight before you, you hope to turn the company away before-%SPEECH_ON%We should take that for studying.%SPEECH_OFF%Sighing, you turn to see %anatomist% standing there, ogling the skull. You correct him, saying instead that what he really means is he intends to steal it. The anatomist stares at you.%SPEECH_ON%The vocabulary needn\'t matter, when the studying is done, it will be of better use in our hands than theirs, that much is clear.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_16.png[/img]{Vous arrivez dans un village reculé et trouvez quelques-uns de ses habitants accroupis devant un grand crâne blanchi posé de façon décorative sur un lutrin. Les paysans qui passent s\'arrêtent et lui professent leur foi. En vous approchant, vous vous rendez compte que le crâne lui-même est exceptionnel: un long front et épais au sommet, il est assez dominant et strié. Sa mâchoire, encore intacte, possède des dents énormes et pointues, dont la plupart sont en désordre, ce type de dentition serait un danger en temps normal. Ce qu\'il pourrait bien être, c\'est le crâne d\'un Nachzehrer. Naturellement, avec cette étrange image squelettique qui vous fait face, vous espérez détourner la compagnie avant-%SPEECH_ON%Nous devrions l\'étudier.%SPEECH_OFF%En soupirant, vous vous retournez pour voir %anatomist% debout, en train de reluquer le crâne. Vous le corrigez en lui disant que ce qu\'il veut vraiment, c\'est de le voler. L\'anatomiste vous fixe.%SPEECH_ON%Le vocabulaire n\'a pas d\'importance, car une fois l\'étude terminée, il sera plus utile dans nos mains que dans les leurs, c\'est clair.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Alright, take it.",
+					Text = "D\'accord, prenez-le.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -25,7 +25,7 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I don\'t think so.",
+					Text = "Je ne pense pas.",
 					function getResult( _event )
 					{
 						return 0;
@@ -38,7 +38,7 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Thief != null)
 				{
 					this.Options.push({
-						Text = "What\'s our thief %thief% have to say?",
+						Text = "Qu\'est-ce que notre voleur %thief% a à dire ?",
 						function getResult( _event )
 						{
 							return "D";
@@ -50,7 +50,7 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Wildman != null)
 				{
 					this.Options.push({
-						Text = "That skull looks like our wildman, %wildman%.",
+						Text = "Ce crâne ressemble à notre homme sauvage, %wildman%.",
 						function getResult( _event )
 						{
 							return "E";
@@ -65,7 +65,7 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{Sighing, you agree to the anatomist\'s fancies, but you tell him that it will be he who does the stealing, if it is he who wishes to do the studying. The man doesn\'t even hesitate and heads off, eyes narrowed to the bony item central to his scientific fancy. You\'re not going to be responsible for the mayhem that goes down if he is caught so you leave him to it, returning instead to count inventory while keeping your ears perked for sounds of religion wrecking chaos. A few moments later, %anatomist% returns, a fat skull cradled under an arm and a bit of sweat on his brow.%SPEECH_ON%It\'s a Nachzehrer\'s skull and should be of great value to our studies.%SPEECH_OFF%Curious, you ask him how it was that he managed to get the skull in the first place. %anatomist% raises an eyebrow.%SPEECH_ON%You weren\'t watching? I thought the endeavor was quite impressive, but alas so impressive that I believe telling it second hand will make you susceptible to believing me to tell a tall tale. A fable, if you will. Just know that we should probably get out of here soon. Perhaps sooner than soon, and quicker than quick. Do you understand?%SPEECH_OFF%A din of shouting grows in the distance. The anatomist wipes his brow and turns and walks away. The back of his shirt is clawed apart and there are little darts or arrows sticking out of his back - and those distant shouts are getting louder.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{En soupirant, vous acceptez les fantaisies de l\'anatomiste, mais vous lui dites que c\'est à lui de le voler si vous voulez qu\'il l\'étudie. L\'homme n\'hésite même pas et s\'en va, les yeux rivés sur la pièce osseuse représentant son délire scientifique. Vous ne serez pas responsable du chaos qui se produira s\'il se fait prendre, alors vous le laissez faire, vous retournez faire l\'inventaire tout en gardant les oreilles ouvertes pour entendre les bruits du chaos religieux.Quelques instants plus tard, %anatomist% revient, un gros crâne bercé sous son bras, quelques gouttelettes de sueurs sont présentes sur son front.%SPEECH_ON%C\'est le crâne d\'un Nachzehrer et il devrait être d\'une grande valeur pour nos études.%SPEECH_OFF%Curieux, vous lui demandez comment il a réussi à obtenir le crâne en premier lieu. %anatomiste% lève un sourcil.%SPEECH_ON%Vous ne regardiez pas? J\'ai trouvé la tentative assez impressionnante, mais hélas si impressionnante soit-elle, elle n\'hésitera pas à vous faire douter de sa véracité. Une fable, si vous voulez. Sachez juste que nous devrions probablement partir d\'ici bientôt. Peut-être plus tôt que prévue et le plus rapidement possible. Est-ce que vous comprenez?%SPEECH_OFF%Un brouhaha de cris se fait entendre au loin. L\'anatomiste s\'essuie le front, se retourne et s\'éloigne. L\'arrière de sa chemise est déchiré par des griffes et de petites fléchettes ou flèches sortent de son dos - et ces cris lointains sont de plus en plus forts.}",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -109,13 +109,13 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{You tell %anatomist% he can take the skull. He stares at you for a time, then says he thought you were the one that was going to do it. You tell him there\'s no way you\'re taking a skull from local peasants who worship said skull. If he wishes to do the studying, then it is he who should do the stealing. %anatomist% draws a hand to his chest.%SPEECH_ON%I\'m a man of science, and no ordinary scribe, I could not deign myself to a task of such lowness. It requires a man of knowhow, a man who understands the grit and grime of daily life, to steal this skull.%SPEECH_OFF%The anatomist clenches a fist, so certain that his speech is not an insult to you, and his eyes staring off with determined ferocity that could only be vicarious at best.%SPEECH_ON%What the fark you two strangers talkin\' about?%SPEECH_OFF%You both turn around to see a peasant holding a pitchfork, and as a few more join him he motions toward you.%SPEECH_ON%These fellas were aimin\' to steal the skull!%SPEECH_OFF%You hold your hands out, explaining that- before you finish, %anatomist% turns and sprints away. Thinking fast, you call him a thief and promise to have his head, making a grand show of drawing out your sword and waving it at the peasants. You pretend to accidentally drop a purse of crowns, turning the peasants\' anger into greed, and giving you enough time to escape.}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{Vous dites à %anatomist% qu\'il peut prendre le crâne. Il vous regarde fixement pendant un moment, puis dit qu\'il pensait que c\'était vous qui alliez le faire. Vous lui dites qu\'il est hors de question que vous preniez un crâne à des paysans locaux qui vénèrent ledit crâne. S\'il veut étudier, alors c\'est lui qui doit voler. %anatomist% porte une main à sa poitrine.%SPEECH_ON%Je suis un homme de science, et pas un scribe ordinaire, je ne pourrais pas m\'atteler à une tâche d\'une telle bassesse. Il faut un homme de savoir faire, un homme qui comprend le grain et la crasse de la vie quotidienne pour voler ce crâne.%SPEECH_OFF%L\'anatomiste serre le poing, si certain que son discours n\'est pas une insulte pour vous que ses yeux fixent le ciel avec une férocité certaine.%SPEECH_ON%De quoi parlez-vous, étrangers?%SPEECH_OFF%Vous vous retournez tous les deux pour voir un paysan tenant une fourche, et comme quelques autres le rejoignent, il fait signe vers vous.%SPEECH_ON%Ces types voulaient voler le crâne!%SPEECH_OFF%Vous tendez les mains, expliquant que... avant que vous n\'ayez fini, %anatomist% se retourne et part en courant. Réfléchissant vite, vous le traitez de voleur et promettez d\'avoir sa tête, faisant un show ridicule en sortant votre épée et en l\'agitant vers les paysans. Vous faites semblant de laisser tomber accidentellement une bourse de couronnes, transformant la colère des paysans en avidité, vous donnant suffisamment de temps pour vous échapper.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get out of here.",
+					Text = "Partons d\'ici.",
 					function getResult( _event )
 					{
 						return 0;
@@ -137,13 +137,13 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_65.png[/img]{Sighing, you agree to the idea of stealing the skull. Before you can say anything more, %thief% the thief appears. He comes up chewing grass and walking with swagger.%SPEECH_ON%So you wanna steal something, hm? Just point at whatcha need and I\'ll go and fetch it for you. Is it gold? A weapon?%SPEECH_OFF%%anatomist% points at the skull. The thief stares at it for a time before turning back.%SPEECH_ON%Oh, uh, alright.%SPEECH_OFF%The thief and would be skull stealer wanders off. You go and count inventory, giving him time to do his job. He later returns with the skull in tow, as well as a bevy of weapons and armor which you know he didn\'t buy. As you stare at the clearly lifted goods, the man shrugs.%SPEECH_ON%What? I had to make it worth my time.%SPEECH_OFF%The anatomist takes the skull away without saying a word, carrying it off while staring into its emptied eyesockets as though it were a lover, muttering that many things will be learned from its vacant stare. The thief does the same, but instead with a satchel of crowns and other goodies, himself muttering that he\'ll finally be able to afford two whores at the same time, an apparent long held dream of his. You take the weapons and armor to inventory, and in the distance you hear the wailing of peasants looking for the relic.}",
+			Text = "[img]gfx/ui/events/event_65.png[/img]{En soupirant, vous acceptez l\'idée de voler le crâne. Avant que vous ne puissiez en dire plus, %thief% le voleur apparaît. Il s\'avance en mâchant de l\'herbe et en marchant avec assurance.%SPEECH_ON%Alors vous voulez voler quelque chose, hm? Pointez juste ce dont vous avez besoin et je vais aller le chercher pour vous. De l\'or? Une arme?%SPEECH_OFF%%anatomist% montre le crâne. Le voleur le fixe un moment avant de se retourner.%SPEECH_ON%Oh, euh, d\'accord.%SPEECH_OFF%Le voleur et futur voleur de crâne s\'éloigne. Vous allez faire l\'inventaire, lui laissant le temps de faire son travail. Il revient ensuite avec le crâne, ainsi qu\'avec une série d\'armes et d\'armures. Alors que vous fixez les marchandises manifestement volées, l\'homme hausse les épaules.%SPEECH_ON%Quoi? Je devais faire en sorte que ça vaille le coup.%SPEECH_OFF%L\'anatomiste emporte le crâne sans dire un mot, en fixant ses orbites vides comme s\'il s\'agissait d\'un amant et en murmurant que son regard vide lui apprendra beaucoup de choses. Le voleur fait de même, mais à la place avec une sacoche de couronnes et autres goodies, lui-même marmonnant qu\'il va enfin pouvoir se payer deux putes en même temps, un rêve qu\'il semble avoir depuis longtemps. Vous prenez les armes et les armures et les mettez dans l\'inventaire. Au loin vous entendez les gémissements des paysans qui cherchent la relique.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A win\'s a win.",
+					Text = "Une victoire est une victoire.",
 					function getResult( _event )
 					{
 						return 0;
@@ -239,13 +239,13 @@ this.anatomist_wants_skull_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_43.png[/img]{You decide that if the anatomists can make some grand use of the skull, then you\'ll abide by giving them the chance to study it. The question is how does one go about stealing a hideous skull from a group so insane they\'d worship it? Almost as if on cue, %wildman% the wildman appears, chowing down on a handful of worms. His nature-rinsed face and cruelly shaped skull seem almost kin to the monstrosity which resides on the village\'s town center lectern. %anatomist% snaps his fingers and claims to have an idea. He pulls the wildman forward, and the two walk straight toward the village\'s beloved skull.\n\nThe anatomist pushes the wildman before the praying folk, and claims that they have murdered one who is cousin to his being. He states that by stealing the skull of his kin, they have doomed him to a life of being cursed. The crowd is horrified, not realizing the error of their ways. The wildman eats another worm. You continue to watch as the anatomist picks up the skull, lofts it over his head, and says that with this he may finally heal %wildman% of what ails him, and through him also lift any curses which have befallen the village itself. By this point the crowd is arisen, taken to the anatomist like a tentpole priest, and they clap as he leaves, cheering the theft as it were, the skull lofted above his head. The two men return to you. %anatomist% grins.%SPEECH_ON%To study the body, one shouldn\'t forget to study the mind, and in studying the mind, one shouldn\'t forget to study minds, plural! For many minds put together are a creature to study in and of themselves.%SPEECH_OFF%The anatomist walks off. A group of peasants approach carrying goods of all sorts. They throw them at the feet of %wildman% in apology. The wildman eats another worm.}",
+			Text = "[img]gfx/ui/events/event_43.png[/img]{Vous décidez que si les anatomistes peuvent faire un grand usage du crâne, alors vous accepterez de leur donner la chance de l\'étudier. La question est de savoir comment s\'y prendre pour voler un crâne hideux à un groupe si fou pour le vénérer? Comme si c\'était le moment, %wildman% le sauvage apparaît, dévorant une poignée de vers. Son visage rincé par la nature et son crâne cruellement formé semblent presque apparentés à la monstruosité qui trône sur le pupitre du centre du village. %anatomist% claque des doigts et prétend avoir une idée. Il tire le sauvage en avant, les deux marchent droit vers le crâne bien-aimé des villageois.\n\nL\'anatomiste pousse l\'homme sauvage devant les priants et prétend qu\'ils ont assassiné son cousin. Il déclare qu\'en ayant fait ceci, ils l\'ont condamné à une vie de malédiction. La foule est horrifiée, ne réalisant pas l\'erreur qu\'elle a commise. Le sauvage mange un autre ver. Vous continuez à regarder l\'anatomiste ramasser le crâne, le soulever au-dessus de sa tête et dire qu\'avec cela, il pourra enfin guérir %wildman% de ses maux et, à travers lui, lever toutes les malédictions qui se sont abattues sur le village. À ce stade, la foule s\'est levée, s\'est rapprochée de l\'anatomiste comme d\'un prêtre de haut rang, elle l\'applaudit lorsqu\'il part, acclamant pour ainsi dire le vol, le crâne au-dessus de sa tête. Les deux hommes reviennent vers vous. L\'anatomiste sourit.%SPEECH_ON%Pour étudier le corps, il ne faut pas oublier d\'étudier l\'esprit, et en étudiant l\'esprit, il ne faut pas oublier d\'étudier les esprits, au pluriel! Car plusieurs esprits mis ensemble sont une créature à étudier en soi.%SPEECH_OFF%L\'anatomiste s\'en va. Un groupe de paysans s\'approche, portant des marchandises de toutes sortes. Ils les jettent aux pieds de %wildman% en guise d\'excuses. Le sauvageon mange un autre ver.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Hmm, alright.",
+					Text = "Hmm, d\'accord.",
 					function getResult( _event )
 					{
 						return 0;

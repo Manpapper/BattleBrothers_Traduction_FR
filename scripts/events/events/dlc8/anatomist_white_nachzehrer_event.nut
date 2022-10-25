@@ -5,17 +5,17 @@ this.anatomist_white_nachzehrer_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_white_nachzehrer";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{%anatomist% hasn\'t been writing in his journals so much lately. When he does, the pen only seems to tap the pages now and again without scribbling anything of import. You inquire as to what has him so bothered. Somber in tone, he says that his primary hope in coming out to these lands was to find the White Nachzehrer, a monster that\'s larger than any of its kind. You tell him that you\'ve slain a few nachs that were quite rotund, but the anatomist shakes his head.%SPEECH_ON%Per the literature, this nachzehrer cannot be felled by any man for it has grown to such proportions that its flesh has turned white, and it is covered in great ridges of calloused skin that no steel can penetrate. It was spotted roaming these lands and I\'d hoped to find it, but it seems that, perhaps, I have been led astray. Maybe the anatomists who told me this tale have put me on a great snipe hunt. I worry, scapegrace, that I have been made a fool of.%SPEECH_OFF%You tell him that this creature sounds like the \'king\' of nachzehrers, and if that\'s the case then perhaps it no longer roams, but instead uses a small army of lesser nachzehrers to do its bidding for it. The anatomist smiles.%SPEECH_ON%Truly, this may be the case! Of course it took the scrying eye of the laity, so used to staring up at our purpled suzerains, to bring this to my clouded attention!%SPEECH_OFF%Agreeing with yourself further, you note that perhaps the \'White Nachzehrer\' is so pale cause it doesn\'t get much sun. The anatomist laughs.%SPEECH_ON%Please, scapegrace, the first observation was sufficient input from your side.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{%anatomist% n\'a pas beaucoup écrit dans son journal ces derniers temps. Quand il le fait, le stylo semble seulement effleurer les pages de temps en temps, sans rien griffonner d\'important. Vous lui demandez ce qui le tracasse tant. D\'un ton sombre, il dit que son principal espoir en venant sur ces terres était de trouver le Nachzehrer blanc, un monstre plus grand que tous ceux de son espèce. Vous lui dites que vous avez tué quelques nachs qui étaient assez grassouillets, mais l\'anatomiste secoue la tête.%SPEECH_ON%D\'après la littérature, ce nachzehrer ne peut être abattu par aucun homme car il a atteint de telles proportions que sa chair est devenue blanche et qu\'il est couvert de grandes crêtes de peau calleuse qu\'aucun acier ne peut pénétrer. Il a été repéré errant dans ces terres et j\'espérais le trouver, mais il semble que, peut-être, j\'ai été induit en erreur. Peut-être que les anatomistes qui m\'ont raconté cette histoire m\'ont mis sur une grande chasse à la bécasse. J\'ai peur, vaurien, qu\'on se soit moqué de moi.%SPEECH_OFF%Vous lui dites que cette créature ressemble au \"roi\" des nachzehrers, et si c\'est le cas, peut-être qu\'elle ne se déplace plus, mais qu\'elle utilise une petite armée de nachzehrers de moindre importance pour exécuter ses ordres. L\'anatomiste sourit.%SPEECH_ON%C\'est peut-être le cas! Bien sûr, il a fallu l\'œil inquisiteur des laïcs, si habitués à regarder nos suzerains pourpres, pour attirer mon attention sur ce point!%SPEECH_OFF%En accord avec vous-même, vous dites que le \"Nachzehrer blanc\" est peut-être pâle car il ne voit pas beaucoup le soleil. L\'anatomiste rit.%SPEECH_ON%S\'il vous plaît, vaurien, la première observation était une contribution suffisante de votre part.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Don\'t let your White Nach\' earn you a black eye, bloody loggerhead.",
+					Text = "Ne laissez pas votre \"Nacho blanc\" vous faire un œil au beurre noir, tête de nœud.",
 					function getResult( _event )
 					{
 						return 0;

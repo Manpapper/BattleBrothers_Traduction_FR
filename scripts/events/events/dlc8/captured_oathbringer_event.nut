@@ -5,17 +5,17 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.captured_oathbringer";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "{[img]gfx/ui/events/event_05.png[/img]{One of the men rushes into your tent exclaiming that someone has been caught sneaking into the camp. You ask if it\'s a thief. The man shakes his head.%SPEECH_ON%No, worse. He\'s an Oathbringer.%SPEECH_OFF%Sonuvabitch. You jump to your feet and rush out, finding this interloper already tied up and being battered by the Oathtakers. You break it up, coming to stand before him.%SPEECH_ON%Oathbringer, where is Anselm\'s jaw?%SPEECH_OFF%The man spits on your boot and tells you he\'d never give that up, and that the Oathtakers can go to the hells where they belong, and that Anselm himself would walk them there if he could. This blaspheming of Young Anselm\'s name draws gasps from you and your men. %randombrother% leans over.%SPEECH_ON%Just give the word, captain, and we\'ll show this Oathbringer the error of his ways.%SPEECH_OFF%}",
+			Text = "{[img]gfx/ui/events/event_05.png[/img]{Un des hommes se précipite dans votre tente en s\'exclamant que quelqu\'un a été surpris en train de se faufiler dans le camp. Vous demandez si c\'est un voleur. L\'homme secoue la tête.%SPEECH_ON%Non, pire. C\'est un Oathbringer.%SPEECH_OFF%Fils de pute. Vous vous levez d\'un bond et vous vous précipitez, trouvant cet intrus déjà ligoté et battu par les Oathtakers. Vous les interrompez et venez vous placer devant lui.%SPEECH_ON%Oathbringer, où est la mâchoire d\'Anselm?%SPEECH_OFF%L\'homme crache sur votre botte et vous dit qu\'il n\'y renoncera jamais, et que les Oathtakers peuvent aller en enfer et qu\'Anselme lui-même les y accompagnerait s\'il le pouvait. Ce blasphème du jeune Anselme suscite des halètements chez vous et vos hommes. %randombrother% se penche.%SPEECH_ON%Donnez l\'ordre, capitaine, et nous montrerons à ce Oathbringer l\'erreur qu\'il commet.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Kill him.",
+					Text = "Tuez-le.",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Torture him.",
+					Text = "Torturez-le.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 80 ? "C" : "D";
@@ -31,7 +31,7 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Let him go.",
+					Text = "Laissez-le partir.",
 					function getResult( _event )
 					{
 						return "E";
@@ -46,13 +46,13 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "{[img]gfx/ui/events/event_05.png[/img]{You draw your sword and plunge it into the man\'s heart.%SPEECH_ON%Anselm will not await you in the next life, heretic.%SPEECH_OFF%The man\'s body sags around the steel, his eyes briefly wide before settling into a half-lidded gaze at the ground. You draw out your sword and the %companyname% cheers.%SPEECH_ON%Death to all Oathbringers!%SPEECH_OFF%The Oathtakers draw out their swords and raise them to the skies as a ravenous mood sweeps over the company.}",
+			Text = "{[img]gfx/ui/events/event_05.png[/img]{Vous dégainez votre épée et la plongez dans son cœur.%SPEECH_ON%Anselme ne t\'attendra pas de l\'autre côté, hérétique.%SPEECH_OFF%Le corps de l\'homme fléchit devant l\'acier, ses yeux s\'écarquillent brièvement avant de se fixer sur le sol. Vous retirez votre épée et la compagnie %companyname% applaudit.%SPEECH_ON%Mort à tous les Oathbringers!%SPEECH_OFF%Les Oathtakers dégainent leurs épées et les lèvent vers le ciel tandis qu\'une atmosphère de fureur envahit la compagnie.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Justice has been done.",
+					Text = "Justice a été rendue.",
 					function getResult( _event )
 					{
 						return 0;
@@ -111,13 +111,13 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "{[img]gfx/ui/events/event_05.png[/img]{You nod.%SPEECH_ON%Torture him until his tongue points us to Young Anselm\'s jaw. I don\'t care how you do it, just do it.%SPEECH_OFF%Turning away, the prisoner screams out that Anselm would not approve. He then just starts screaming indiscriminately and eventually shouting out things that don\'t make a whole lot of sense. You retire to your tent, bouncing your foot to the screams that now take a rhythmic sort of wailing. Eventually, %randombrother% reappears. He has with him some weapons and armor you know weren\'t in inventory.%SPEECH_ON%He led us to a location that had these hidden away, but Anselm\'s jawbone is still missing. I\'m afraid the Oathbringers must have it in their own camp, but he wouldn\'t say where that was. We, uh, we had some difficulties communicating after we cut his tongue out.%SPEECH_OFF%Sighing, you ask where the prisoner is now. The man clears his throat.%SPEECH_ON%Oh he went all white and fell over. He\'s dead, sir.%SPEECH_OFF%We did right by Young Anselm, at least.}",
+			Text = "{[img]gfx/ui/events/event_05.png[/img]{Vous acquiescez.%SPEECH_ON%Torturez-le jusqu\'à ce qu\'il crache l\'endroit où se trouve la mâchoire du Jeune Anselme. Je me fiche de savoir comment vous le faites, faites-le, c\'est tout.%SPEECH_OFF%Vous partez pendant que le prisonnier dit qu\'Anselme n\'approuverait pas. Il se met alors à hurler sans discernement et finit par crier des choses qui n\'ont pas beaucoup de sens. Vous vous retirez dans votre tente, en faisant rebondir votre pied sur les cris qui prennent maintenant une sorte de gémissement rythmique. Finalement, %randombrother% réapparaît. Il a avec lui quelques armes et armures qui sortent d\'on ne sait où.%SPEECH_ON%Il nous a conduit à un endroit où ils étaient cachés, mais la mâchoire d\'Anselme manque toujours. J\'ai bien peur que les Oathbringers ne l\'aient dans leur propre camp, mais il n\'a pas voulu dire où il se trouvait. Nous avons eu quelques difficultés à communiquer après lui avoir coupé la langue.%SPEECH_OFF%En soupirant, vous demandez où est le prisonnier maintenant. L\'homme s\'éclaircit la gorge.%SPEECH_ON%Oh, il est devenu tout blanc et s\'est écroulé. Il est mort, monsieur.%SPEECH_OFF%Au moins, nous avons fait quelque chose de bien pour le Jeune Anselm.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'ll find the jawbone yet.",
+					Text = "Nous allons trouver la mâchoire.",
 					function getResult( _event )
 					{
 						return 0;
@@ -190,13 +190,13 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "{[img]gfx/ui/events/event_05.png[/img]{You tell the men to torture the man for information. If there\'s one thing every Oathbringer knows, it\'s where Young Anselm\'s jawbone is and that is something every Oathtaker wishes to find out. The man screams as he\'s dragged away, and you retire to your tent to drown out the annoyances of things like shrieking and crying which really put a crimp on your mood. A moment later, %torturer% enters the tent, blood on his shirt. He looks to speak, then collapses to the ground. Another Oathtaker comes in saying the prisoner escaped, shanking his torturer before fleeing. You tell the men to help %torturer% before he bleeds out.%SPEECH_ON%Those damned Oathbringers have no honor! We\'ll find and kill him dead, so sayeth Young Anselm, so sayeth us all!%SPEECH_OFF%You speak with a clenched jaw, and an air of theatrics. The truth is the bastard got away and those Oathbringers are hard to catch, the rats that they are. You just hope that %torturer% survives.}",
+			Text = "{[img]gfx/ui/events/event_05.png[/img]{Vous dites aux hommes de torturer l\'homme pour obtenir des informations. S\'il y a une chose que tous les Oathbringer savent, c\'est où se trouve la mâchoire du Jeune Anselme et c\'est quelque chose que chaque Oathtaker souhaite découvrir. L\'homme hurle tandis qu\'on le traîne. Vous vous retirez dans votre tente afin que ces cris n\'entachent pas votre humeur. Un moment plus tard, %torturer% entre dans la tente avec sang sur sa chemise. Il semble vouloir parler, puis s\'effondre sur le sol. Un autre Oathtaker entre en disant que le prisonnier s\'est échappé et a frappé son tortionnaire avant de s\'enfuir. Dites aux hommes d\'aider %torturer% avant qu\'il ne se vide de son sang.%SPEECH_ON%Ces maudits Oathbringers n\'ont aucun honneur! Nous le trouverons et le tuerons, comme le dirait le Jeune Anselme, comme nous le disons tous!%SPEECH_OFF%Vous parlez avec une mâchoire serrée et un air théâtral. La vérité, c\'est que le bâtard s\'est échappé et que ces Oathbringers sont difficiles à attraper. Vous espérez juste que %torturer% survivra.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Damn Oathbringer scum.",
+					Text = "Saleté d'Oathbringer.",
 					function getResult( _event )
 					{
 						return 0;
@@ -230,13 +230,13 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "{[img]gfx/ui/events/event_05.png[/img]{This man has nothing of value. You tell the men to cut him loose. They protest, saying that an Oathbringer has but one choice, to submit to the Oathtakers and to the true Final Path, or to die. There is also room for one who returns Young Anselm\'s jawbone, but the codes on how to treat an Oathbringer who does that have not yet been worked out. But, as far as this man is concerned, he is of no real use and you\'re in no mood for bloodspilling. Just as you reiterate to cut him loose, %randombrother% cuts the man\'s throat, much to the cheering of the others.%SPEECH_ON%You said cut him, right captain? Right?%SPEECH_OFF%You realize the Oathtaker is covering for you, and to keep denying that the Oathbringer had to die might put you in a prickly situation. You nod.%SPEECH_ON%Yes, of course, the little rat had to die, same as all the pathless Oathbringers! And die they all shall!%SPEECH_OFF%The men roar again though you have a feeling that a few will remember your ridiculous suggestion to let an Oathbringer walk.}",
+			Text = "{[img]gfx/ui/events/event_05.png[/img]{Cet homme n\'a rien de valeur. Vous dites aux hommes de le libérer. Ils protestent, disant qu\'un Oathbringer n\'a qu\'un seul et unique choix à faire, c\'est de se soumettre aux Oathtakers et à la Voie Finale, ou mourir. Il y a aussi de la place pour celui qui rend la mâchoire du Jeune Anselme, mais les codes sur la façon de traiter un Oathbringer qui le fait n\'ont pas encore été définis. Mais, en ce qui concerne cet homme, il n\'est pas vraiment utile et vous n\'êtes pas d\'humeur à verser du sang. Alors que vous vous apprêtez à le libérer, %randombrother% lui tranche la gorge, sous les acclamations des autres.%SPEECH_ON%Vous avez dit de le couper, n\'est-ce pas capitaine? C\'est ça?%SPEECH_OFF%Vous réalisez que l\'Oathtaker vous couvre, et continuer à nier que l\'Oathbringer devait mourir pourrait vous mettre dans une situation délicate. Vous acquiescez.%SPEECH_ON%Oui, bien sûr, le petit rat devait mourir, comme tous les Oathbringers! Et ils mourront tous!%SPEECH_OFF%Les hommes hurlent à nouveau, mais vous avez le sentiment que quelques-uns se souviendront de votre suggestion ridicule de laisser un Oathbringer en liberté.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I should be more careful what I say.",
+					Text = "Je devrais faire plus attention à ce que je dis.",
 					function getResult( _event )
 					{
 						return 0;

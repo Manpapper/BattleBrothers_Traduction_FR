@@ -7,17 +7,17 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.black_market";
-		this.m.Title = "At %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_01.png[/img]{%townname%\'s fruit carts are laden with all manner of delicious albeit grossly overpriced treats. You side-eye one of their owners, trying to time his looking away with your own little five finger discount. Right as you\'re about to sneak a swipe, %anatomist% the anatomist runs up in a hurry, and more importantly gathering all the attention in the world. You put your petty thieving aside and ask what it is he wants. He grins.%SPEECH_ON%We have found the %townname%\'s black market.%SPEECH_OFF%You head to the place and find a scrawny man leaning in a chair. On the desk in front of him is an assortment of \'goods\', if they can be called that. To you, it looks like a pile of nondescript shite, but to the anatomist it may as well be a gift from the old gods. Yawning, the scrawny man says take your pick. %anatomist% leans in close, appraising the goods, and finds three that look to be of questionable quality and eventually dubious purpose. He cautions that perhaps the company should only purchase one.%SPEECH_ON%If the town guards find us with too many, they may confuse us with peddlers instead of mere purchasers, and peddling such goods is quite the criminal offense.%SPEECH_OFF%You take a look at the options.}",
+			Text = "[img]gfx/ui/events/event_01.png[/img]{Les charrettes de fruits de %townname% sont chargées de toutes sortes de délicieuses douceurs, bien qu\'excessivement chères. Vous regardez de travers l\'un de leurs propriétaires, espérant détourner son attention pour lui voler quelques fruits.Juste au moment où vous êtes sur le point de faire le coup, %anatomist% l\'anatomiste arrive en courant, attirant toute l\'attention de la foule autour de lui. Vous cachez votre petit larcin et lui demandez ce qu\'il veut. Il sourit.%SPEECH_ON%Nous avons trouvé le marché noir de %townname%.%SPEECH_OFF%Vous vous rendez sur place et trouvez un homme maigrelet, appuyé sur une chaise. Sur le bureau en face de lui se trouve un assortiment de \"marchandises\", si on peut les appeler ainsi. Pour vous, il ressemble à un tas de merde indéfinissable, mais pour l\'anatomiste, il pourrait aussi bien être un cadeau des dieux anciens. En bâillant, l\'homme rachitique dit \"Faites votre choix\". %anatomist% se penche de plus près pour évaluer les marchandises et en trouve trois qui semblent être douteux. Il prévient que la compagnie ne devrait peut-être en acheter qu\'un seul.%SPEECH_ON%Si les gardes nous trouvent avec trop de marchandises, ils peuvent nous confondre avec des colporteurs au lieu de simples acheteurs, et le trafic de ces marchandises est un véritable délit.%SPEECH_OFF%Vous jettez un coup d\'œil aux marchandises.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get that brain-looking thing for 100 crowns.",
+					Text = "Prenons ce truc qui ressemble à un cerveau pour 100 couronnes.",
 					function getResult( _event )
 					{
 						_event.m.Price = 100;
@@ -26,7 +26,7 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I\'ll take the big heart for...550 crowns, is it?",
+					Text = "Je prendrai le gros coeur pour... 550 couronnes, c\'est ça?",
 					function getResult( _event )
 					{
 						_event.m.Price = 550;
@@ -35,7 +35,7 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I\'ll pay the 200 crowns for that...some kind of gland?",
+					Text = "Je paierai 200 couronnes pour cette... sorte de glande?",
 					function getResult( _event )
 					{
 						_event.m.Price = 200;
@@ -44,7 +44,7 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We can\'t afford such indulgences.",
+					Text = "Nous ne pouvons pas nous permettre de telles excentricités.",
 					function getResult( _event )
 					{
 						return 0;
@@ -60,13 +60,13 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Brain",
-			Text = "[img]gfx/ui/events/event_14.png[/img]{You purchase what looks like a slab of condensed noodles, the spongy ropes grey with black dots mottling the cushy texture. Rather disgustingly, %anatomist% puts his whole palm upon the substance and presses in. When he takes his hand away, the print lingers, the flesh popping as it unsticks and reforms. He smiles.%SPEECH_ON%I believe we can make much use of this in our studies.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_14.png[/img]{Vous achetez ce qui ressemble à un bloc de nouilles condensées, dont les filaments spongieux sont gris et dont la texture moelleuse est tachetée de points noirs. De façon assez dégoûtante, %anatomist% pose toute sa paume sur la substance et appuie dessus. Lorsqu\'il retire sa main, l\'empreinte persiste, la chair se reforme d\'elle-même. Il sourit.%SPEECH_ON%Je crois que nous pouvons étudier cette chose et en tirer profit.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Gross, but alright.",
+					Text = "C\'est dégoutant mais d\'accord.",
 					function getResult( _event )
 					{
 						return 0;
@@ -113,13 +113,13 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Heart",
-			Text = "[img]gfx/ui/events/event_14.png[/img]{A wheelbarrow is needed to haul the huge organ. %anatomist% claims it is the heart of an Unhold and will be of plenty use as a specimen of study. The wheelbarrow is lowered and you both take a look at it, yourself an uncultured and uneducated layman looking at something gross and unsightly, and the anatomist an uncultured and educated layman looking at something gross and fascinating. What has you uneasy is that something so massive could be at the core of beast. The heart of man is small, yet it pumps with the fire and determination to bring all under his domain. Yet this heart...\n\nDisturbingly, %anatomist% balls up his fist and punches it into one of the heart\'s chambers. You can see the muscle moving, seemingly pumping and throbbing like it may have once done. He takes his hand back out and looks upon the grime there: black tissues and a filmy layer of mold or blood or molding blood.%SPEECH_ON%Our studies will gain much from this specimen.%SPEECH_OFF%He looks at you as though for confirmation. You look at the weighted wheelbarrow and tell him if it\'s his specimen then it\'ll be his spine that gets broken hauling the damn thing around.}",
+			Text = "[img]gfx/ui/events/event_14.png[/img]{Une brouette est nécessaire pour transporter l\'énorme organe. %anatomist% affirme qu\'il s\'agit du cœur d\'un Unhold et qu\'il sera très utile comme spécimen d\'étude. La brouette est abaissée et vous y jetez tous les deux un coup d\'œil. Vous, profane inculte et non éduqué, regardant quelque chose de grossier et d\'inesthétique, tandis que l\'anatomiste, profane inculte et éduqué, regardant quelque chose de grossier et de fascinant. Ce qui vous met mal à l\'aise, c\'est que quelque chose d\'aussi massif puisse être au cœur d\'une bête. Le cœur de l\'homme est petit, mais il déborde de chaleur et de volonté pour tout soumettre à son autorité. Pourtant, ce cœur...\n\nDe façon troublante, %anatomist% lève son poing et l\'enfonce dans une des chambres du cœur. On peut voir le muscle bouger, semblant pomper et palpiter comme il l\'a peut-être fait autrefois. Il retire sa main et regarde la crasse qui s\'y trouve: des tissus noirs, une couche de moisissure, du sang séché.%SPEECH_ON%Ce spécimen sera très utile pour nos études.%SPEECH_OFF%Il vous regarde comme attendant une confirmation de votre part. Vous regardez la brouette lestée et vous lui dites que si c\'est son spécimen à partir de maintenant, c\'est sa colonne vertébrale qui sera brisée en le transportant.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Remember, bend with your knees.",
+					Text = "N\'oubliez pas, c\'est les genoux qu\'il faut plier.",
 					function getResult( _event )
 					{
 						return 0;
@@ -166,13 +166,13 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Gland",
-			Text = "[img]gfx/ui/events/event_14.png[/img]{To you, the purchase has all the appearance of ashen peapods twisted around one another. Grey lumps curve and flatten repeatedly across the organ as its muscles contour and twist like sailor\'s ropes. The ripples end in a fat bulb of tissue. %anatomist% explains.%SPEECH_ON%It is believed that this is the organ which gives the direwolf so much energy. Even its shape carries a sort of ferocious structure, as if the organ itself meant to replicate its very purpose.%SPEECH_OFF%He cuts into the tissue and pulls it back, revealing a web of fleshen tunnels and channels that end in a bizarre complex of chambers. There\'s no telling what use a human could make of this part, but as %anatomist% starts fingering around the holes you quickly leave, only warning him to not do that so publicly lest he arise within the peasantry a form of lynch-hungry disgust.}",
+			Text = "[img]gfx/ui/events/event_14.png[/img]{Pour vous, cet achat ressemble à des pépites cendrées enroulées les unes autour des autres. Des bosses grises se courbent et s\'aplatissent à plusieurs reprises sur l\'organe, tandis que ses muscles se contournent et se tordent comme les cordes d\'un matelot. Les ondulations se terminent par un gros bulbe de tissu.%anatomist% explique.%SPEECH_ON%On pense que c\'est l\'organe qui donne au loup-garou tant d\'énergie. Même sa forme est de structure féroce, comme si l\'organe lui-même était prédisposé à son utilité.%SPEECH_OFF%Il coupe dans le tissu et en retire un bout, révélant un réseau de tunnels et de canaux charnus qui aboutissent à un étrange complexe de cavités. On ne sait pas à quoi peut servir cette pièce pour un humain, mais lorsque %anatomist% commence à tripoter les trous, vous partez rapidement, en le prévenant seulement de ne pas le faire en public, de peur qu\'il ne suscite dans la paysannerie une envie pressente de lynchage.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "And cut your nails.",
+					Text = "Et coupez vos ongles.",
 					function getResult( _event )
 					{
 						return 0;
@@ -219,13 +219,13 @@ this.black_market_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Bunk",
-			Text = "[img]gfx/ui/events/event_14.png[/img]{When you get back to the company, %anatomist% seems a little bummed with the purchase. He tries to divest from it something of use, something which perhaps no one else before has seen, but it seems his venture is ending with naught all. He complains that he knows these parts already, that they have already been written about, and that other people have already been made famous on their discoveries of it. Chowing down on some food, you nod as you listen, and pretend to care when he looks at you with sad eyes. He says.%SPEECH_ON%This substance is what the orcs eat, and sometimes it is cut of orc itself. We\'ve known this for years. I thought I might take something out of it that had not been yet learned, yet my overconfidence has only led to the wastage of crowns.%SPEECH_OFF%You take a spoon of chicken grit and shove it in your mouth. You take out the spoon and stare at your misshapen reflection in it. Nodding, you say.%SPEECH_ON%It\'s all so fascinating. Now, have you tried eating it?%SPEECH_OFF%The anatomist stares at the strange meat. He confesses that he does not think anyone has, at least not for the purpose of study. He stares at the meat a while longer. He mumbles.%SPEECH_ON%It would be a scientific matter, would it not?%SPEECH_OFF%You take another bite of grit and nod. %anatomist% digs his hand into the strange meat and pulls out a rib dripping with soggy flesh. He begins to dry heave and quickly gets up and runs off. You take the strange rib and toss it off the table and the second it touches the ground a pack of wild dogs emerge from an alley and fight one another to eat it. You point at the dogs and yell after the anatomist.%SPEECH_ON%Hey I think I just did an experiment!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_14.png[/img]{Quand vous revenez voir la compagnie, %anatomist% semble un peu déçu de son achat. Il essaie d\'en retirer quelque chose d\'utile, quelque chose que peut-être personne d\'autre n\'a vu auparavant, mais il semble que son projet n\'aboutisse à rien. Il se plaint qu\'il connaît déjà ces parties, qu\'elles ont déjà été écrites, et que d\'autres personnes ont déjà été rendues célèbres grâce à leurs découvertes. Vous hochez la tête en écoutant, et faites semblant de vous intéresser à lui alors qu\'il vous regarde avec des yeux tristes. Il dit.%SPEECH_ON%Cette substance est ce que les orcs mangent, parfois elle vient de l\'orc lui-même. Nous le savons depuis des années. Je pensais pouvoir en tirer quelque chose qui n\'avait pas encore été appris, mais mon excès de confiance n\'a conduit qu\'au gaspillage de couronnes.%SPEECH_OFF%Vous prenez une cuillère de poulet grillé et vous la mettez dans votre bouche. En l\'a retirant,  vous fixez votre reflet difforme sur la cuillère. En hochant la tête, vous dites.%SPEECH_ON%C\'est tellement fascinant. Avez-vous essayé de le manger?%SPEECH_OFF%L\'anatomiste fixe l\'étrange viande. Il avoue qu\'il ne pense pas que quelqu\'un l\'ait fait, du moins pas dans le but de l\'étudier. Il fixe la viande un peu plus longtemps. Il marmonne.%SPEECH_ON%C\'est pour la science n\'est-ce pas?%SPEECH_OFF%Vous prenez une autre bouchée de nourriture et hochez la tête. %anatomist% plonge sa main dans la viande étrange et en retire une côte dégoulinante de chair détrempée. Il commence à avoir des haut-le-cœur et se lève rapidement pour s\'enfuir. Vous prenez l\'étrange côte et la lancez au loin. À la seconde où elle touche le sol, une meute de chiens sauvages sort d\'une ruelle et se battent entre eux pour la manger. Vous pointez du doigt les chiens et criez après l\'anatomiste.%SPEECH_ON%Hé, je crois que je viens de faire une expérience!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Look at \'em fight over it.",
+					Text = "Regardez-les se battre pour ça.",
 					function getResult( _event )
 					{
 						return 0;

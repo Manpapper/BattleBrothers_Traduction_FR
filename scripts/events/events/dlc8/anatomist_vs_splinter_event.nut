@@ -6,17 +6,17 @@ this.anatomist_vs_splinter_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_vs_splinter";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 110.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{You find %anatomist% holding up the bare foot of %splinterbro%. Naturally, you inquire just what they\'re doing. The anatomist straightens up with a tweezer in hand and pinched between its prongs is a huge splinter. %splinterbro% wiggles his toes then gets to his feet. He walks around, then quickly plants his foot and pivots and walks backwards and forwards.%SPEECH_ON%I\'ll be damned. I thought I\'d just busted my foot or somethin\', turns out I\'d just been walking around with a huge arsed splinter for years! This feels great!%SPEECH_OFF%Instead of throwing the splinter away, %anatomist% confines it to a wooden box where other medical oddities are rolling around.}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{Vous trouvez %anatomist% qui tient le pied nu de %splinterbro%. Naturellement, vous demandez ce qu\'ils font. L\'anatomiste se redresse, une pince à épiler à la main et, pincée entre ses dents, une énorme écharde. %splinterbro% remue les orteils puis se lève. Il se promène, puis plante rapidement son pied à terre, il se met à le faire pivoter de droite à gauche.%SPEECH_ON%Que je sois damné. Je pensais que je m\'étais juste cassé le pied ou quelque chose comme ça, il s\'avère que j\'ai juste marché avec une énorme écharde pendant des année! Ça fait du bien!%SPEECH_OFF%Au lieu de jeter l\'écharde, %anatomist% la confine dans une boîte en bois où roulent d\'autres bizarreries médicales.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I best not see you using that as a toothpick.",
+					Text = "Je ne vous vois pas utiliser ça comme un cure-dent.",
 					function getResult( _event )
 					{
 						return 0;

@@ -6,17 +6,17 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 	function create()
 	{
 		this.m.ID = "event.disowned_noble_welcomed_back";
-		this.m.Title = "At %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_20.png[/img]{While in %townname%, you receive a letter from a messenger. He asks that you not read it, but as soon as he\'s around the corner you do just that, breaking apart a wax royal seal. You read that %disowned%, the disowned nobleman, is no longer exiled. Instead, his place is on the family throne as soon as his already gravely-ill father passes away.\n\nYou hold the letter in your hand, unsure of what to do with it. %disowned% has long been a member of the %companyname%. For some, there is a strange appeal to a man who was once in the royal rooms of the world, and now finds himself in the veritable lowlands of a mercenary company. But while a bloodline may dry, a lineage never truly dies...}",
+			Text = "[img]gfx/ui/events/event_20.png[/img]{Dans %townname%, vous recevez une lettre d\'un messager. Il vous demande de ne pas la lire, mais dès qu\'il est au coin de la rue, vous le faites en brisant le sceau royal en cire. Vous lisez que %disowned%, le noble désavoué, n\'est plus exilé. Au contraire, sa place sera sur le trône familial dès que son père, déjà gravement malade, sera décédé. Vous tenez la lettre dans votre main, ne sachant pas quoi en faire. %disowned% a longtemps été un membre de la compagnie %companyname%. Pour certains, il y a un charme étrange pour cet homme qui était autrefois dans toutes les salles royales du monde et qui se retrouve maintenant dans les véritables bas-fonds d\'une compagnie de mercenaires. Mais si une lignée peut se tarir, un lignage ne meurt jamais vraiment...}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I\'ll show him the letter.",
+					Text = "Je vais lui montrer la lettre.",
 					function getResult( _event )
 					{
 						return "B";
@@ -24,7 +24,7 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 
 				},
 				{
-					Text = "I\'ll burn the letter.",
+					Text = "Je vais brûler la lettre.",
 					function getResult( _event )
 					{
 						return "E";
@@ -40,13 +40,13 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_82.png[/img]{Sighing with the realization of what might happen, you decide to go and show him the letter. He reads it for a length of time, then looks up.%SPEECH_ON%I know you\'ve read this.%SPEECH_OFF%He holds the letter back toward you.%SPEECH_ON%And I know you could have just as easily burned this letter. But you didn\'t. That only goes to show me what I already know: the %companyname% is my family now. If you want me to stay, I\'ll stay, if you want me to go, I\'ll go.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_82.png[/img]{Soupirant en pensant à ce qui pourrait se passer, vous décidez d\'aller lui montrer la lettre. Il la lit longuement, puis lève les yeux.%SPEECH_ON%Je sais que vous l\'avez lu.%SPEECH_OFF%Il tend la lettre vers vous.%SPEECH_ON%Et je sais que vous auriez pu tout aussi bien brûler cette lettre. Mais vous ne l\'avez pas fait. Ça ne fait que me montrer ce que je sais déjà: la compagnie %companyname% est ma famille maintenant. Si vous voulez que je reste, je reste, si vous voulez que je parte, je pars.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I think you should stay with us.",
+					Text = "Je pense que vous devriez rester avec nous.",
 					function getResult( _event )
 					{
 						return "C";
@@ -54,7 +54,7 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 
 				},
 				{
-					Text = "You should go home to your family.",
+					Text = "Vous devriez rentrer chez vous, auprès de votre famille.",
 					function getResult( _event )
 					{
 						return "D";
@@ -70,13 +70,13 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_82.png[/img]{You take the letter back, then put it toward a nearby candle. It burns quickly, ashes feathering way from your fingertips as the fire climbs up the paper. %disowned% nods.%SPEECH_ON%I\'m glad you did it. If my homelands need me, I shall only return when my work with the %companyname% is over. But until then, you shall have my sword, my sweat, and my blood.%SPEECH_OFF%He grins.%SPEECH_ON%For the right price, of course. I am, as it is, still yet a sellsword.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_82.png[/img]{Vous reprenez la lettre, puis vous l\'amenez vers une bougie proche. Elle brûle rapidement, les cendres s\'échappant du bout de vos doigts à mesure que le feu brule le papier. %disowned% fait un signe de tête.%SPEECH_ON%Je suis content que vous l\'ayez fait. Si ma patrie a besoin de moi, je ne reviendrai que lorsque mon travail avec la compagnie %companyname% sera terminé. Mais jusque-là, vous aurez mon épée, ma sueur et mon sang.%SPEECH_OFF%Il sourit.%SPEECH_ON%Si la paye est correcte, bien sûr. Je suis, malgré tout, encore un mercenaire.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Of course.",
+					Text = "Bien sûr.",
 					function getResult( _event )
 					{
 						return 0;
@@ -133,13 +133,13 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_74.png[/img]{You push the letter back toward him.%SPEECH_ON%I think a man removed from his family is more in need of that family when they call him back, and certainly they must be in dire need of him. Your time with the %companyname% is over.%SPEECH_OFF%At first, the disowned nobleman appears despondent, but he then begins to nod, agreeing with your assessment that his family must be in need of him and he should not leave them twisting in the wind. He says his goodbyes to you and the rest of the company, but before he leaves for good he has prepared you a letter.%SPEECH_ON%You will have my thanks, captain. Don\'t think I\'d ever just leave without acknowledging how important you were to saving my life, because that\'s precisely what you did, whether you realize it or not.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_74.png[/img]{Vous lui remettez la lettre en main propre.%SPEECH_ON%Je pense qu\'un homme éloigné de sa famille a davantage besoin d\'elle lorsqu\'elle le rappelle, et cela doit être important. Votre temps avec la compagnie %companyname% est terminé.%SPEECH_OFF%Au début, le noble désavoué semble abattu, mais il commence ensuite à hocher la tête, approuvant votre décision de dire que sa famille doit avoir besoin de lui et qu\'il ne devrait pas les laisser dans le pétrin. Il vous dit au revoir, ainsi qu\'au reste de la compagnie. Mais avant de partir pour de bon, il vous a préparé une lettre.%SPEECH_ON%Vous aurez mes remerciements, capitaine. Vous ne pensiez pas que j\'allais partir sans reconnaître à quel point vous avez contribué à me sauver la vie, parce que c\'est précisément ce que vous avez fait, que vous le réalisiez ou non.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "You\'re alright, %disowned%.",
+					Text = "De rien, %disowned%.",
 					function getResult( _event )
 					{
 						return 0;
@@ -168,13 +168,13 @@ this.disowned_noble_welcomed_back_event <- this.inherit("scripts/events/event", 
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_98.png[/img]{There\'s no way you\'re showing that to %disowned%. You promptly burn the letter and all details of his acceptance back into his family lineage. Just then, he comes around the corner. He looks a little perplexed and asks if there\'s anything wrong. You shake your head and ask if he wants to help count inventory. %disowned% grins.%SPEECH_ON%Of course. The %companyname% can\'t do what it does without a good inventory, or without your command, captain.%SPEECH_OFF%Just as you turn to join him, you see the messenger from earlier pulling something over. You leave %disowned% to the task and head the man off, asking what it is now. He pulls a heavy chest over and then wipes his brow, stating that this was also intended for the disowned nobleman. You kick it open to find a litany of arms and armor, some of which have his family crest on them. You thank the messenger, send him on his way, and then hurriedly break the crests off and throw the emblems into the gutters lest the nobleman see them himself. Curious, he hollers over if anything is wrong. You shake your head.%SPEECH_ON%No, nothing wrong. Just got a shipment of new gear, that\'s all.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_98.png[/img]{Il n\'y a pas moyen que vous montriez ça à %disowned%. Vous brûlez rapidement la lettre et tous les détails de son retour dans la lignée familiale. À ce moment-là, il arrive au coin de la rue. Il a l\'air un peu perplexe et demande s\'il y a un problème. Vous secouez la tête et lui demandez s\'il veut aider à compter l\'inventaire. %disowned% sourit.%SPEECH_ON%Bien sûr. La compagnie %companyname% ne peut pas être compétente sans un bon inventaire, ou sans vos ordres, capitaine.%SPEECH_OFF%Au moment où vous commencer à faire l\'inventaire, vous voyez le messager de tout à l\'heure en train de tirer quelque chose. Vous laissez %disowned% à sa tâche pour aller vers l\'homme. Il tire un coffre très lourd vers lui, puis s\'essuie le front en précisant que celui-ci était également destiné au noble désavoué. Vous l\'ouvrez d\'un coup de pied pour trouver une litanie d\'armes et d\'armures, dont certaines portent les armoiries de sa famille. Vous remerciez le messager, puis vous vous empressez de briser les blasons et de jeter les emblèmes dans les caniveaux de peur que le noble ne les voie. Curieux, il demande si tout va bien. Vous secouez la tête.%SPEECH_ON%Oui, tout va bien. J\'ai juste reçu une livraison de nouveau matériel, c\'est tout.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nothing to see here.",
+					Text = "Il n\'y a rien à voir ici.",
 					function getResult( _event )
 					{
 						return 0;

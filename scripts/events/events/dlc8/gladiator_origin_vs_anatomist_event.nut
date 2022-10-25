@@ -6,17 +6,17 @@ this.gladiator_origin_vs_anatomist_event <- this.inherit("scripts/events/event",
 	function create()
 	{
 		this.m.ID = "event.gladiator_origin_vs_anatomist";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{You see %anatomist% and %gladiator% sitting together near the campfire. The anatomist and gladiator seem ill-suited for conversation, and in little time does the latter rise to his feet with great fury.%SPEECH_ON%Enhancements? You think I take enhancements? You foolish, stick-shaped, daisy-pulling, corpse-chasing fool! My muscles are made out of sweat and blood! No pain, no gain!%SPEECH_OFF%The gladiator kicks a pile of ash onto the anatomist and storms off. %anatomist% cleans himself off, then takes out a ream of notes. He remarks that the \'subject\' is experiencing flashes of hot anger. You ask the man if he\'s secretly doing something to the gladiator. %anatomist% snaps his notebook closed.%SPEECH_ON%Captain! I would never!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{Vous voyez %anatomiste% et %gladiator% assis ensemble près du feu de camp. L\'anatomiste et le gladiateur semblent peu enclins à la conversation, et peu de temps après, ce dernier se lève avec une grande fureur.%SPEECH_ON%Des produits? Vous pensez que je prends des produits? Espèce d\'idiot en forme de bâton, tireur de marguerite, chasseur de cadavres! Mes muscles sont faits de sueur et de sang! Pas de douleur, pas de gain!%SPEECH_OFF%Le gladiateur jette un tas de cendres sur l\'anatomiste et part en trombe. %anatomiste% se nettoie, puis sort un carnet. Il remarque que le \"sujet\" a des bouffées de colère. Vous lui demandez si il a fait secrètement quelque chose au gladiateur. L\'anatomiste referme son carnet de notes.%SPEECH_ON%Capitaine! Je ne ferais jamais ça!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A strangely terse retort, %anatomist%...",
+					Text = "Une réplique étrangement laconique, %anatomist%...",
 					function getResult( _event )
 					{
 						return 0;

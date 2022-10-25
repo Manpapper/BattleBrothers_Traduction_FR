@@ -5,17 +5,17 @@ this.anatomist_vs_historian_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.anatomist_vs_historian";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{%historian% the historian and the anatomists are getting into some sort of scribal spat. You walk over to see that %historian% is holding up a book filled with bodily descriptions and images. He states that it is the most accurate portrayal of the human body known to man, but the anatomists scoff, saying such a book doesn\'t exist for they have yet to write one. Interested, you take a look at the book. The drawings show man as a series of what look like very long worms, that flow to his heart and back out, each dedicated to one particular traversal. Other pages show the body parts laid out, showing lungs, kidneys, the liver, and more. It does seem rather detailed, but you\'re not exactly one to know who would ever be right in this case.%SPEECH_ON%Do not ascribe to that book\'s lies, captain. Let us anatomists do our work, so that such awful tomes may be put to the dust where they belong.%SPEECH_OFF%Furious, the historian snatches the book from your hand and shows a page to them. It has the human brain displayed, with numerous ropes or cords stretching out from it and down the spine. He states that this is central to the human experience, all that we are and all that we think we are is found in this organ. Again, the anatomists scoff. The historian turns to you, as though your layman\'s perspective might arbitrate the feelings of eggheads, and indeed every party present seems to wait on your word.}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{%historien%, l\'historien, et les anatomistes ont une sorte de dispute scribale. Vous vous approchez pour voir que %historien% brandit un livre rempli de descriptions et d\'images corporelles. Il affirme qu\'il s\'agit de la représentation la plus précise du corps humain connue de l\'homme, mais les anatomistes se moquent, disant qu\'un tel livre n\'existe pas car ils doivent encore en écrire un. Intéressé, vous jetez un coup d\'œil au livre. Les dessins montrent l\'homme ayant une multitude de longs vers lui traversants le corps, qui vont vers son cœur et en ressortent, chacun étant dédié à une trajectoire bien établie. D\'autres pages montrent les parties du corps étalées, les poumons, les reins, le foie, etc. Cela semble plutôt détaillé, mais vous n\'êtes pas exactement celui qui pourrait en dire plus.%SPEECH_ON%Ne vous fiez pas aux mensonges de ce livre, capitaine. Laissez-nous, anatomistes, faire notre travail, pour que ces horribles tomes soient mis à la poubelle, là où ils doivent être.%SPEECH_OFF%Furieux, l\'historien vous arrache le livre des mains et leur montre une page. On y voit le cerveau humain, avec de nombreuses cordes ou cordons qui partent de celui-ci et descendent le long de la colonne vertébrale. Il affirme que cet organe est au cœur de l\'expérience humaine, que tout ce que nous sommes et tout ce que nous pensons être se trouve dans cet organe. Encore une fois, les anatomistes se moquent. L\'historien se tourne vers vous, comme si votre point de vue de profane pouvait arbitrer les opinions des intellectuels, et en effet, toutes les parties présentes semblent attendre votre parole.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I think the historian is correct.",
+					Text = "Je pense que l\'historien a raison.",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.anatomist_vs_historian_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "The anatomists probably know more on this.",
+					Text = "Les anatomistes en savent probablement plus à ce sujet.",
 					function getResult( _event )
 					{
 						return "C";
@@ -39,13 +39,13 @@ this.anatomist_vs_historian_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{You sigh and say, without literally any knowledge about the subject at all, that the historian has the right idea. After all, if someone put it in ink, then surely it meant something important, and was presumably right. This assertion brings both parties together against you. Even the historian protests, despite your defense of him.%SPEECH_ON%Just because it\'s in ink does not in anyway mean it is therefore automatically correct.%SPEECH_OFF%Sighing again, you ask who would waste ink on the wrong idea? Both the historian and the anatomists laugh at you for doubling down on such an absurd notion. They walk off together shaking their heads and muttering something about the laity. For a brief moment, you picture yourself running them all through with a sword and the image is grossly satisfying, but that\'s where you leave it.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{Vous soupirez et dites, sans littéralement aucune connaissance du sujet, que l\'historien à raison. Après tout, si quelqu\'un l\'a écrit à l\'encre, cela signifie sûrement quelque chose d\'important, et c\'est sans doute vrai. Cette affirmation réunit les deux parties contre vous. Même l\'historien proteste, malgré le fait que vous ayez pris sa défense.%SPEECH_ON%Ce n\'est pas parce que c\'est écrit à l\'encre que c\'est forcément correct.%SPEECH_OFF%Soupirant à nouveau, vous demandez qui gaspillerait de l\'encre pour une idée fausse? L\'historien et les anatomistes se moquent de vous, car vous vous obstinez dans une voie absurde. Ils partent ensemble en secouant la tête et en marmonnant quelque chose à propos des laïcs. Pendant un bref instant, vous vous imaginez en train de les transpercer avec une épée, l\'image est très satisfaisante mais vous n\'allez pas plus loin.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Getting bullied by eggheads.",
+					Text = "Se faire malmener par des intellos.",
 					function getResult( _event )
 					{
 						return 0;
@@ -61,13 +61,13 @@ this.anatomist_vs_historian_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{You tell the historian that the anatomists are well traveled and surely they have seen other books greater and grander than the one he has. The anatomists turn to you. They speak plainly.%SPEECH_ON%No, we haven\'t.%SPEECH_OFF%Not sure what they mean, you try and press the fact that you\'re defending them on this issue, reiterating that surely they\'ve read plenty on the subject. Again, they scoff at you.%SPEECH_ON%Read plenty? READ? Do you not see that we have come out this way not in the interest of reading, but of doing. We are men of action, and by action we will find the truth of all matters of this world, particularly those regarding its men and beasts alike. The idea that we read our way to this position is something we take offense to.%SPEECH_OFF%Sighing, you try to amend the issue, but now %historian% the historian jumps in.%SPEECH_ON%Captain, do you also see me in this light? That I have merely read my way to this position? I, too, can fight, you know? That is why I am here. I hope you do not see me as someone of minor use to read a book here and there and do little else.%SPEECH_OFF%You\'ve enough of this lot and turn and leave, hearing mutterings of how insulting it is that you think of them as mere eggheads and not the warriors that any sellsword company would hire. A thought of challenging them to martial combat arises, but you leave it be. Another thought of simply slaughtering them in their sleep also comes to mind. You dwell on it for a minute, but also let it go.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{Vous dites à l\'historien que les anatomistes ont beaucoup voyagé et qu\'ils ont sûrement vu d\'autres livres plus importants et plus grandioses que celui qu\'il possède. Les anatomistes se tournent vers vous. Ils parlent sans détour.%SPEECH_ON%Non, pas du tout.%SPEECH_OFF%Ne sachant pas trop ce qu\'ils veulent dire, vous essayez d\'insister sur le fait que vous les défendez sur cette question, en répétant qu\'ils ont sûrement lu beaucoup de choses sur le sujet. Encore une fois, ils se moquent de vous.%SPEECH_ON%Lire beaucoup? LIRE? Ne voyez-vous pas que nous sommes venus ici non pas pour lire, mais pour agir. Nous sommes des hommes d\'action et c\'est par l\'action que nous trouverons la vérité sur toutes les questions de ce monde, en particulier celles qui concernent ses hommes et ses bêtes. L\'idée que nous avons lu pour arriver là où nous en sommes est quelque chose qui nous offense.%SPEECH_OFF%En soupirant, vous essayez de rectifier le problème, mais voilà que %historien% l\'historien s\'en mêle.%SPEECH_ON%Capitaine, vous me voyez aussi sous cet angle? Que j\'ai simplement lu pour arriver là où j\'en suis? Moi aussi, je peux me battre, vous savez? C\'est pourquoi je suis ici. J\'espère que vous ne me voyez pas comme quelqu\'un de peu utile qui lit un livre ici et là et ne fait pas grand-chose d\'autre.%SPEECH_OFF%Vous décidez de partir car vous en avez assez de ces gens. En vous éloignant, des murmures se font entendre concernant à quel point il est insultant que vous les considériez comme de simples intellos et non comme des guerriers que n\'importe quelle compagnie de mercenaire engagerait. L\'idée de les défier en combat martial vous vient à l\'esprit, mais vous laissez tomber. De même que l\'idée de les massacrer dans leur sommeil. Vous y pensez pendant une minute, mais vous laissez aussi tomber.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Getting bullied by eggheads.",
+					Text = "Se faire malmener par des intellos.",
 					function getResult( _event )
 					{
 						return 0;

@@ -6,17 +6,17 @@ this.apprentice_vs_anatomist_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.apprentice_vs_anatomist";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{You find %apprentice% the apprentice under the wings of %anatomist% the anatomist. It\'s a bit of a frightful sight, as you briefly wonder if the egghead is planning something nefarious. But %apprentice% is only learning things from him, as he is wont to do with most in the company. This time around it is not martial matters to which the anatomist is privy and the apprentice not, but instead methods of how to think, how to remember, and how to recall. You see %anatomist% tap his own head.%SPEECH_ON%Now remember, the faintest of inks is infinitely stronger than the most incredible of minds. All that you remember, you write down, but also recall this: your mind shall remember things you think you\'ve forgotten. If in a moment of need, do not dwell on your thoughts, but let them come to the fore on their own, as they will usher themselves into the light without aid, but if sought they will only go deeper, and wish to be forgotten.%SPEECH_OFF%The apprentice nods attentively and takes notes. So long as these conversations stay within the bounds of not dissecting animals and questioning the old gods, you\'ve no real qualm about it.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{Vous trouvez %apprentice% l\'apprentie sous les ordres de %anatomist% l\'anatomiste. C\'est un spectacle un peu effrayant, car vous vous demandez brièvement si le crâne d\'œuf ne prépare pas quelque chose d\'infâme. Mais %apprentice% ne fait qu\'étudier, comme il a l\'habitude de le faire avec la plupart des membres de la compagnie. Cette fois, il ne s\'agit pas de questions martiales auxquelles l\'anatomiste initie l\'apprenti, mais plutôt de méthodes de réflexion, de mémorisation et de comment se souvenir des choses. Vous voyez %anatomist% se taper la tête.%SPEECH_ON%Maintenant, souvenez-vous, la plus faible des encres est infiniment plus forte que le plus incroyable des esprits. Tout ce dont vous vous souvenez, vous l\'écrivez, mais rappelez-vous aussi ceci: votre esprit se souviendra des choses que vous pensez avoir oubliées. Si vous êtes dans un moment de détresse, ne vous attardez pas sur vos pensées, mais laissez-les venir d\'elles-mêmes car elles se frayeront un chemin vers la lumière toutes seules. Mais si on les cherche, elles ne feront que s\'enfoncer davantage et souhaiteront être oubliées.%SPEECH_OFF%L\'apprenti acquiesce attentivement et prend des notes. Tant que ces conversations restent dans les limites de la dissection des animaux et de la remise en question des anciens dieux, vous n\'avez pas de réel problème.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Just don\'t spend too much time together.",
+					Text = "Ne passez pas trop de temps ensemble.",
 					function getResult( _event )
 					{
 						return 0;

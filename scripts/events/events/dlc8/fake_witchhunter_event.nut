@@ -5,17 +5,17 @@ this.fake_witchhunter_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.fake_witchhunter";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_43.png[/img]{You come across a man surrounded by a crowd of angry and drunk peasants. The surrounded man is wearing a black hat and has a crossbow at his side and a finger on the trigger. Nearby stands a pyre with a post in the middle, and tethers missing someone to shackle. The crowd shouts and hollers and through their spit and froth you piece together what had occurred: the town hired a witch hunter and, as one belligerent peasant explains, the hunter found the witch and decided she wasn\'t a witch at all and let her go. The peasant stumbles around almost crying.%SPEECH_ON%And that ain\'t right, it just ain\'t right. We built this pyre and everythin\' to see the fires have her. It just ain\'t right, but we\'ll make it right. Because we sure as hells gonna burn something ain\'t that right!%SPEECH_OFF%The crowd roars. It appears this supposed witch hunter committed one of the worst crimes that is out there: boring the laity.}",
+			Text = "[img]gfx/ui/events/event_43.png[/img]{Vous tombez sur un homme entouré d\'une foule de paysans ivres et en colère. L\'homme cerné porte un chapeau noir et un arbalète prête à tirer. Tout près se trouve un bûcher muni d\'un poteau et des attaches auxquelles il manque quelqu\'un à enchaîner. La foule crie et hurle et à travers leurs crachats et leur écume, on comprend ce qui s\'est passé: la ville a engagé un chasseur de sorcières et, comme l\'explique un paysan agressif, le chasseur a trouvé la sorcière et a décidé qu\'elle n\'était pas du tout une sorcière et l\'a laissée partir. Le paysan trébuche, presque en pleurant.%SPEECH_ON%Ce n\'est pas juste, ce n\'est pas juste. Nous avons construit ce bûcher et tout le reste pour que le feu fasse son œuvre. Ce n\'est pas juste, mais on va arranger ça. Parce qu\'il est certain que nous allons brûler quelque chose de mauvais!%SPEECH_OFF%La foule rugit. Il semble que ce supposé chasseur de sorcières ait commis l\'un des pires crimes qui soient: ennuyer les laïcs.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We have to intervene.",
+					Text = "Nous devons intervenir.",
 					function getResult( _event )
 					{
 						if (this.Math.rand(1, 100) <= 50)
@@ -35,7 +35,7 @@ this.fake_witchhunter_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Witchhunter != null)
 				{
 					this.Options.push({
-						Text = "%witchhunter%, do you know this man?",
+						Text = "%witchhunter%, Vous connaissez cet homme?",
 						function getResult( _event )
 						{
 							return "D";
@@ -45,7 +45,7 @@ this.fake_witchhunter_event <- this.inherit("scripts/events/event", {
 				}
 
 				this.Options.push({
-					Text = "This doesn\'t concern us.",
+					Text = "Cela ne nous concerne pas.",
 					function getResult( _event )
 					{
 						return "E";
@@ -57,13 +57,13 @@ this.fake_witchhunter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_43.png[/img]{You step forward and explain the rules of an agreement, explaining that surely the village hired the man to kill a witch, and if the person they directed him toward was not a witch, then he cannot kill her. If he still went ahead and did so, then he\'d be compelled to act on account of crowns. If he decided not to kill her, and the village rescinded its agreement, then he\'d later be compelled to simply do the bidding of every village to prevent that situation from happening again. Through a series of gentle explanations you show that the village is in danger of displaying for all that it is untrustworthy, and that by the virtue of the example it sets it will only be set upon by charlatans and miscreants with aims on their gold and not on completing a task as asked. And, if anything, the hunter\'s refusal to burn an innocent shows the strength of his character.\n\nWhen you\'re finished, the crowd mostly agrees, but then someone says \'burn him anyway!\' and everyone roars back into a rage. Turning around, though, they find the witch hunter slipped out while you were giving your spiel. The peasants start blaming one another for not keeping an eye on him. Arguments quickly descend into fighting and you make your leave. When you hit the edge of town, you run across the man of the hour. He thanks you with a count of crowns. You find it very unusual that a man would part with money when he could have simply left. He tips his black hat and says he doesn\'t do this witch hunting business for the money.}",
+			Text = "[img]gfx/ui/events/event_43.png[/img]{Vous vous avancez et expliquez ce qu\'est un accord. Si le village a engagé l\'homme pour tuer une sorcière alors qu\'elle n\'en était pas une, alors il ne peut pas la tuer. S\'il le faisait quand même, ce serait uniquement pour une histoire de couronnes. S\'il décidait de ne pas la tuer et que le village annulait son accord, il serait alors contraint de faire tout simplement ce que lui demande chaque village pour éviter que cette situation ne se reproduise. En expliquant calmement, vous dites au village qu\'il risque de montrer à tous qu\'ils ne sont pas dignes de confiance, et qu\'en vertu de l\'exemple qu\'ils donnent, ils ne seront approchés que par des charlatans et des mécréants qui visent leur or et non l\'accomplissement d\'une tâche demandée. Et le refus du chasseur de brûler un innocent montre la force de son caractère.\n\nLorsque vous avez terminé, la foule est en grande partie d\'accord, mais quelqu\'un dit alors: \"Brûlez-le quand même !\", c'est alors que tout le monde se met en colère. Cependant, en se retournant, ils découvrent que le chasseur de sorcières s\'est échappé pendant que vous faisiez votre discours. Les paysans commencent à s\'accuser mutuellement de ne pas l\'avoir surveillé. Les disputes se transforment rapidement en bagarres, ce qui vous force à partir. Quand vous arrivez à la sortie de la ville, vous tombez sur la star du jour. Il vous remercie en vous offrant un certain nombre de couronnes. Vous trouvez très inhabituel qu\'un homme se sépare de son argent alors qu\'il aurait pu simplement partir. Il incline son chapeau noir et dit qu\'il ne fait pas cette chasse aux sorcières pour l\'argent.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What a strange man.",
+					Text = "Quel homme étrange.",
 					function getResult( _event )
 					{
 						return 0;
@@ -84,13 +84,13 @@ this.fake_witchhunter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_141.png[/img]{You step forward shouting and waving your hands. The crowd slowly quiets down and turns around to pay you mind. Using a careful choice of words, you explain that there\'s a commerce to honest dealings, that if one pays crowns to hire someone, and then they turn their back on that someone because of a change of predicaments, then they\'re only setting themselves up to be an untrustworthy village that no one will want to deal with, and before you can finish your spiel someone hurls a rock just over your head and another man runs forward screaming and drives a pitchfork into the witch hunter\'s chest. Total chaos breaks out and you and the %companyname% fend off the rabid peasants and get out of there as fast as you can.}",
+			Text = "[img]gfx/ui/events/event_141.png[/img]{Vous vous avancez en criant et en agitant les mains. La foule se calme lentement et se retourne pour vous écouter. En choisissant soigneusement vos mots, vous expliquez qu\'il y a un commerce dans les affaires honnêtes, que si quelqu\'un paie des couronnes pour engager quelqu\'un, et qu\'il tourne le dos à cette personne à cause d\'un changement de situation, alors il ne fait que s\'ériger en individu indigne de confiance avec lequel personne ne voudra traiter, et avant que vous ne puissiez terminer votre discours, quelqu\'un lance une pierre juste au-dessus de votre tête et un autre homme court en criant et plante une fourche dans la poitrine du chasseur de sorcières. Cette dernière action entraine le chaos le plus total, vous et la compagnie %companyname% fuyez en repoussant les paysans enragés.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Farkin\' peasants.",
+					Text = "Putain de paysans.",
 					function getResult( _event )
 					{
 						return 0;
@@ -119,13 +119,13 @@ this.fake_witchhunter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_141.png[/img]{%witchhunter% comes forward. He says the man in the black hat is a known fraud in witch hunting circles.%SPEECH_ON%We\'ve been looking for this man for some time as his lies sully the name of our profession. I\'ve long been looking for a chance to get this scalp.%SPEECH_OFF%Before you can say another word, %witchhunter% walks through the crowd and emerges on the other end with one of the peasant\'s pitchforks in hand and promptly drives it through the faux hunter\'s leg. The man bends over screaming. The faux hunter wheels up with the crossbow, but %witchhunter% catches it by the barrel and rides it upward where the shot harmlessly launches into the sky. He yanks the crossbow away, yelling that it does not belong to him, and he announces to the crowd that the man is a charlatan. He throws him to the ground, telling the crowd to do whatever it is they wish. They descend on the liar, though the extent of torture is hard to see through the excited ranks of laity. %witchhunter% returns with the crossbow, turning it one way and another. It is the most incredible weapon you\'ve seen in some time. The witch hunter explains.%SPEECH_ON%This belonged to a guildmaster in the region. We believe this fool murdered him, took his clothes, and has been walking around pretending the part ever since. If his screams disturb you, captain, just remember he has burned countless innocents and stolen countless crowns from the desperate and confused. Fark him.%SPEECH_OFF%You stare over the man and into the crowd. You can just make out the man being hoisted onto the pyre and the early smoke of fires getting their start.}",
+			Text = "[img]gfx/ui/events/event_141.png[/img]{%witchhunter% se présente. Il dit que l\'homme au chapeau noir est un fraudeur connu dans le milieu de la chasse aux sorcières.%SPEECH_ON%Nous recherchons cet homme depuis un certain temps car ses mensonges souillent le nom de notre profession. J\'ai longtemps cherché une occasion d\'obtenir son scalp.%SPEECH_OFF%Avant que vous ne puissiez dire un mot de plus, %witchhunter% attrape une fourche qui appartenait à un paysan et traverse la foule à toutes jambes. Il fini par l\'enfoncer promptement dans la jambe du faux chasseur de sorcières. L\'homme se penche en hurlant. Le faux chasseur arme son arbalète, mais %witchhunter% l\'attrape par le canon afin que le tir parte vers le ciel. Il arrache l\'arbalète en hurlant qu\'elle ne lui appartient pas et annonce à la foule que l\'homme est un charlatan. Il le jette à terre, en disant à la foule de faire ce qu\'elle veut. Ils se jettent sur le menteur, bien qu\'il soit difficile de pouvoir discerner quoi que ce soit du lynchage en cours, %witchhunter% revient avec l\'arbalète, la tournant dans un sens puis dans l\'autre. C\'est l\'arme la plus incroyable que vous ayez vue depuis longtemps. Le chasseur de sorcières vous la présente.%SPEECH_ON%Il appartenait à un maître de guilde de la région. Nous pensons que ce fou l\'a assassiné, a pris ses vêtements et se promène depuis en faisant semblant. Si ses cris vous dérangent, capitaine, rappelez-vous qu\'il a brûlé d\'innombrables innocents et volé d\'innombrables couronnes à des gens désespérés et paumés. Qu\'il aille se faire voir.%SPEECH_OFF%Vous regardez fixement l\'homme et la foule. Vous pouvez tout juste distinguer l\'homme que l\'on hisse sur le bûcher et la fumée des premiers feux qui s\'allument.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get back on the road.",
+					Text = "Reprenons la route.",
 					function getResult( _event )
 					{
 						return 0;
@@ -149,13 +149,13 @@ this.fake_witchhunter_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_43.png[/img]{While the goings on of a drunken lynch mob is the preferred form of peasant entertainment, you smell a bit of danger in the air and move the %companyname% to the edge of town. You just never know when these things get out of hand and the laymen start laying hands on everyone in sight.}",
+			Text = "[img]gfx/ui/events/event_43.png[/img]{Alors que le lynchage est la forme de divertissement préférée des paysans, vous sentez un certain danger dans l\'air. La compagnie %companyname% se déplace à la périphérie de la ville. Vous ne savez jamais à quel moment cela va partir en bagarre générale.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s get out of here.",
+					Text = "On se casse.",
 					function getResult( _event )
 					{
 						return 0;

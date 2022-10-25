@@ -6,17 +6,17 @@ this.eunuch_vs_insecure_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.eunuch_vs_insecure";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%eunuch% the eunuch and %insecure% the, rather obviously so, insecure sellsword are sitting and having a chat. The eunuch shakes his head.%SPEECH_ON%Your timidity makes no sense to me, %insecure%. Look at me. I don\'t even have the only reason to live as a man. When the wind blows against my pants, all I feel is cloth against my inner thigh. Do you have any idea how awfully strange that feels? But do you see me complaining? No. When half the company goes to the local whorehouse and dogs a broad, do you see me sitting in a corner crying? Of course not!%SPEECH_OFF%%insecure% nods.%SPEECH_ON%You know what, you dickless bastard, you\'re right. If you can pound air and be happy about it, then I can not be so afraid and small.%SPEECH_OFF%The insecure sellsword gets up and leaves. %eunuch% purses his lips.%SPEECH_ON%Pound air? Did this dumb farker just tell me I pound air? Hey, hey! I\'ll pound yer mother!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%eunuch% l\'eunuque et %insecure% le fragile sont assis et discutent. L\'eunuque secoue sa tête.%SPEECH_ON%Vos inquiétudes n\'a aucun sens pour moi, %insecure%. Regarde-moi. Quand le vent souffle contre mon pantalon, je ne sens que du tissu contre l\'intérieur de ma cuisse. Vous avez une idée de l\'étrangeté de cette sensation? Mais vous me voyez me plaindre? Non. Quand la moitié de la compagnie va au bordel du coin et se tape une nana, me voyez-vous assis dans un coin à pleurer? Bien sûr que non!%SPEECH_OFF%%insecure% acquiesce.%SPEECH_ON%Vous savez quoi, espèce de bâtard sans queue, vous avez raison. Si vous pouvez brasser de l\'air et en être heureux, alors je ne peux pas être si effrayé et faible.%SPEECH_OFF%Le mercenaire peu sûr de lui se lève et part. %eunuque% serre les lèvres.%SPEECH_ON%Brasser de l\'air? Est-ce que cet abruti vient de me dire que je suis un branleur? Hé, hé! Je vais aller brasser ta mère plutôt!%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Don\'t let his insecurity rub off on you, %eunuch%.",
+					Text = "Ne laisse pas son insécurité déteindre sur toi, %eunuque%.",
 					function getResult( _event )
 					{
 						return 0;

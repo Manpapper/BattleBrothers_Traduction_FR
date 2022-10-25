@@ -6,17 +6,17 @@ this.apprentice_vs_oathtaker_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.apprentice_vs_oathtaker";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 90.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_05.png[/img]{%apprentice% the apprentice is sitting beside the campfire when %oathtaker% the Oathtaker starts sizing him up. The apprentice returns a confused look.%SPEECH_ON%What is it?%SPEECH_OFF%The Oathtaker grins.%SPEECH_ON%Young Anselm, the First Oathtaker, was an apprentice much like you. He wandered the lands in seeking knowledge and finding himself the Final Path. You even look just like him.%SPEECH_OFF%The apprentice smiles warmly. It seems this notion of connectedness with the dead Oathtaker has emboldened the apprentice. But, as far as you\'re concerned, Young Anselm\'s skull looks absolutely nothing like %apprentice%. The nose is too big, the brow too ridged, and the First Oathtaker\'s teeth are impeccable while %apprentice% looks like he cleans his with a mallet. But maybe %apprentice% will look more the part when he is also a shiny skull cared for by an unwavering cult.}",
+			Text = "[img]gfx/ui/events/event_05.png[/img]{%apprentice% l\'apprenti est assis près du feu de camp quand %oathtaker% l\'Oathtaker commence à le jauger. L\'apprenti lui adresse un regard confus.%SPEECH_ON%Qu\'est-ce qu\'il y a?%SPEECH_OFF%L\'Oathtaker sourit.%SPEECH_ON%Le jeune Anselme, le Premier Oathtaker était un apprenti comme vous. Il a parcouru les terres en cherchant la connaissance et en trouvant lui-même la Voie Finale. Vous lui ressemblez beaucoup.%SPEECH_OFF%L\'apprenti sourit chaleureusement. Il semble que cette notion de lien avec le défunt Oathtaker l\'ait enhardi. Mais, en ce qui vous concerne, le crâne du jeune Anselme ne ressemble absolument pas à celui de %apprentice%. Le nez est trop gros, le front trop marqué, et les dents du Premier Oathtaker sont impeccables alors que %apprentice% a l\'air de se nettoyer les siennes avec un maillet. Mais peut-être que %apprentice% aura davantage l\'air de lui ressembler quand il sera aussi un crâne brillant choyé par un culte inébranlable.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Not that I want that to happen.",
+					Text = "Non pas que je veuille que ça arrive.",
 					function getResult( _event )
 					{
 						return 0;

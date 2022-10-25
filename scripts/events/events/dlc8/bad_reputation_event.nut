@@ -6,17 +6,17 @@ this.bad_reputation_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.bad_reputation";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 14.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "{[img]gfx/ui/events/event_05.png[/img]{A few of the Oathtakers bring a piece of paper to your attention. On it is the name of the %companyname%, a rather amusing drawing of yourself that is not remotely in proportion, and a few choice descriptors of your lowly character. It seems that your reputation in this world is not nearly as high and mighty as you assumed it to be.%SPEECH_ON%We must rectify this, captain! For people to think of the Oathtakers in this manner is a great insult to us, and especially to Young Anselm!%SPEECH_OFF%You agree. | As the company camps, a few of the Oathtakers are grousing about the reputation of the %companyname%.%SPEECH_ON%Young Anselm would not be happy with the way the world sees us. We should be setting an example of how to behave!%SPEECH_OFF%You agree, though it may take some time to repair the Oathtakers\' honor. | Young Anselm founded the Oathtakers with the belief that they should be paragons reestablishing a precedence of honor, virtue, and sound character, elements which he believed the world had lost sight of. Unfortunately, you\'ve struggled to maintain these ideals, slipping the %companyname%\'s reputation a little lower than it ought to be. A few of the men are rightfully complaining, and if they\'re not outwardly complaining it is obvious that these faults are draining morale anyway. You think it best to perhaps start mending the %companyname%\'s reputation as soon as possible lest the men lose faith in its ultimate purpose.}",
+			Text = "{[img]gfx/ui/events/event_05.png[/img]{Quelques-uns des Oathtakers apportent un morceau de papier à votre attention. Vous y trouverez le nom de la compagnie %companyname%, un dessin plutôt amusant de vous-même qui n\'est pas du tout proportionné, et quelques descriptifs de choix de votre humble personnage. Il semble que votre réputation dans ce monde n\'est pas aussi importante et puissante que vous le pensiez.%SPEECH_ON%Nous devons rectifier cela, capitaine! Que les gens pensent aux Oathtakers de cette manière est une grande insulte pour nous, et surtout pour le Jeune Anselme!%SPEECH_OFF%Vous êtes d\'accord. | Pendant que la compagnie campe, quelques Oathtakers se plaignent de la réputation de la compagnie %companyname%.%SPEECH_ON%Le jeune Anselme ne serait pas heureux de la façon dont le monde nous voit. Nous devrions donner l\'exemple en matière de comportement!%SPEECH_OFF%Vous êtes d\'accord, bien que cela puisse prendre un certain temps pour rétablir l\'honneur des Oathtakers. | Le jeune Anselm a fondé les Oathtakers avec la conviction qu\'ils devaient être des modèles d\'honneur, de vertu et de comportement sain, des éléments que le monde avait perdus. Malheureusement, vous avez eu du mal à maintenir ces idéaux, faisant glisser la réputation de la compagnie %companyname% un peu plus bas qu\'elle ne devrait l\'être. Quelques hommes se plaignent à juste titre, et s\'ils ne se plaignent pas ouvertement, il est évident que ces fautes sapent le moral des troupes. Vous pensez qu\'il est préférable de commencer à redorer le blason de la compagnie %companyname% dès que possible, de peur que les hommes ne perdent confiance dans son objectif final.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I will lead better.",
+					Text = "Je serai un meilleur dirigeant.",
 					function getResult( _event )
 					{
 						return 0;
