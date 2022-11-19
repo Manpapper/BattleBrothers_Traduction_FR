@@ -26,10 +26,7 @@ this.assassin_southern_background <- this.inherit("scripts/skills/backgrounds/ch
 			"trait.strong",
 			"trait.hesitant",
 			"trait.insecure",
-			"trait.clubfooted",
 			"trait.short_sighted",
-			"trait.brute",
-			"trait.strong",
 			"trait.bloodthirsty"
 		];
 		this.m.ExcludedTalents = [

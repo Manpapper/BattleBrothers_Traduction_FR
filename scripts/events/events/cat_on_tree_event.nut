@@ -100,7 +100,6 @@ this.cat_on_tree_event <- this.inherit("scripts/events/event", {
 					Text = "Repose en paix, chaton.",
 					function getResult( _event )
 					{
-						this.World.Assets.addMoralReputation(1);
 						return 0;
 					}
 

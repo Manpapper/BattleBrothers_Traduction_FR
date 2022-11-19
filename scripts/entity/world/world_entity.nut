@@ -272,7 +272,7 @@ this.world_entity <- {
 
 	function isAbleToSee( _entity )
 	{
-		local e = typeof _entity == "instance" ? _entity.get() : this._entity2;
+		local e = typeof _entity == "instance" ? _entity.get() : _entity;
 		return e.isVisibleToEntity(this, this.getVisionRadius());
 	}
 

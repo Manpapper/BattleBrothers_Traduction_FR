@@ -50,6 +50,15 @@ this.apprentice_vs_anatomist_event <- this.inherit("scripts/events/event", {
 						text = _event.m.Apprentice.getName() + this.Const.MoodStateEvent[_event.m.Apprentice.getMoodState()]
 					});
 				}
+				
+				if (_event.m.Anatomist.getMoodState() >= this.Const.MoodState.Neutral)
+				{
+					this.List.push({
+						id = 10,
+						icon = this.Const.MoodStateIcon[_event.m.Anatomist.getMoodState()],
+						text = _event.m.Anatomist.getName() + this.Const.MoodStateEvent[_event.m.Anatomist.getMoodState()]
+					});
+				}
 			}
 
 		});

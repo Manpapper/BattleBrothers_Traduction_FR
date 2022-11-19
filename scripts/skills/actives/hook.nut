@@ -139,6 +139,13 @@ this.hook <- this.inherit("scripts/skills/skill", {
 
 		if (this.Math.rand(1, 100) > this.getHitchance(target))
 		{
+			local overwhelm = this.getContainer().getSkillByID("perk.overwhelm");
+
+			if (overwhelm != null)
+			{
+				overwhelm.onTargetMissed(this, target);
+			}
+
 			return false;
 		}
 

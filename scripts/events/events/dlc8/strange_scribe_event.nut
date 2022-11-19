@@ -369,7 +369,7 @@ this.strange_scribe_event <- this.inherit("scripts/events/event", {
 			}
 		}
 
-		if (minstrelCandidates.len() > 0)
+		if (minstrelCandidates.len() > 0 && this.World.getPlayerRoster().getSize() < this.World.Assets.getBrothersMax())
 		{
 			this.m.Minstrel = minstrelCandidates[this.Math.rand(0, minstrelCandidates.len() - 1)];
 		}

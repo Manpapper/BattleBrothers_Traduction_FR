@@ -162,20 +162,20 @@ this.trade_black_book_event <- this.inherit("scripts/events/event", {
 					icon = "ui/items/" + book.getIcon(),
 					text = "Vous perdez " + book.getName()
 				});
-				this.World.Assets.getStash().makeEmptySlots(1);
 				local item = this.new("scripts/items/special/trade_jug_01_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "Vous recevez a " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
+				this.World.Assets.getStash().makeEmptySlots(1);
 				item = this.new("scripts/items/special/trade_jug_02_item");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "Vous recevez a " + item.getName()
+					text = "Vous recevez " + item.getName()
 				});
 			}
 

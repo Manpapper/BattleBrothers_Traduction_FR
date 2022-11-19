@@ -90,7 +90,7 @@ this.paladins_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 		this.World.Assets.m.Money = this.World.Assets.m.Money - 1000;
 		this.World.Assets.m.ArmorParts = this.World.Assets.m.ArmorParts / 2;
 		this.World.Assets.m.Medicine = this.World.Assets.m.Medicine / 2;
-		this.World.Assets.m.Ammo = this.World.Assets.m.Medicine / 2;
+		this.World.Assets.m.Ammo = this.World.Assets.m.Ammo / 2;
 	}
 
 	function onSpawnPlayer()

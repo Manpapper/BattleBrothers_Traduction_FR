@@ -142,6 +142,13 @@ this.repel <- this.inherit("scripts/skills/skill", {
 			{
 				this.Sound.play(this.m.SoundOnMiss[this.Math.rand(0, this.m.SoundOnMiss.len() - 1)], this.Const.Sound.Volume.Skill, _user.getPos());
 			}
+			
+			local overwhelm = this.getContainer().getSkillByID("perk.overwhelm");
+
+			if (overwhelm != null)
+			{
+				overwhelm.onTargetMissed(this, target);
+			}
 
 			target.onMissed(this.getContainer().getActor(), this);
 			return false;

@@ -38,7 +38,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 		this.m.Flags.set("RivalHouseID", this.m.Origin.getOwner().getID());
 		this.m.Flags.set("RivalHouse", this.m.Origin.getOwner().getName());
 		this.m.Flags.set("WaitUntil", 0.0);
-		this.m.Name = "Siege %objective%";
+		this.m.Name = "Siege " + this.m.Origin.getName();
 		this.m.Flags.set("CommanderName", this.Const.Strings.KnightNames[this.Math.rand(0, this.Const.Strings.KnightNames.len() - 1)]);
 		this.m.Payment.Pool = 1550 * this.getPaymentMult() * this.Math.pow(this.getDifficultyMult(), this.Const.World.Assets.ContractRewardPOW) * this.getReputationToPaymentMult();
 
