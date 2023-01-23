@@ -5,17 +5,17 @@ this.incense_trade_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.incense_trade";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_144.png[/img]{As you\'re clearing a path through the snowy wastes, a strange figure steps out onto the road. You can see strings of rope attached to their shoulders, and far above them fly black kites which twirl and whirl as though he\'d seen to himself a puppet of his own construction. His face looks the sort of man to make such a thing, a twist of madness, sneering with some joke that he thought of years ago and never stopped laughing about. His dark complexion is not usual to the north, and when he speaks he knows your tongue.%SPEECH_ON%You\'ve oddities on you, good smelling oddities at that. What is that, though, what is it? It is not meat. It is not tender human meat. It is not meat of the birds, nor of the pups that go under the ice. It, well, is it even meat at all? Oh my, that is incense! Look, lemme have a whiff of that sweet spice and I\'ll give you something in return for it. Just a little sniff, that\'s all, I\'ll even pay for it.%SPEECH_OFF%You put your hand on your sword.}",
+			Text = "[img]gfx/ui/events/event_144.png[/img]{Alors que vous déblayez un chemin à travers les étendues enneigées, une étrange silhouette s\'avance sur la route. Vous pouvez voir des cordes attachées à ses épaules. Au-dessus d\'elle, des cerfs-volants noirs qui tournent et tourbillonnent comme si la silhouette était une marionnette. Son visage même représente la définition de la folie, ricanant d\'une blague à laquelle il a pensé il y a des années et dont il n\'a jamais cessé de rire. Son teint sombre est inhabituel dans le nord et quand il parle, il connaît votre langue.%SPEECH_ON%Vous avez des étrangetés sur vous, des étrangetés qui sentent bon en plus. Mais qu\'est-ce que c\'est, qu\'est-ce que c\'est? Ce n\'est pas de la viande. Ce n\'est pas de la viande humaine tendre. Ce n\'est pas de la viande d\'oiseaux. C\'est, enfin, est-ce même de la viande tout court? Oh mon Dieu, c\'est comme de l\'encens! Ecoutez, laissez-moi sentir cette douce épice et je vous donnerai quelque chose en échange. Juste une petite bouffée, c\'est tout, je vais même payer pour ça.%SPEECH_OFF%Vous mettez la main sur votre épée.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Uh, alright.",
+					Text = "Euh, d\'accord.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 66 ? "B" : "C";
@@ -23,7 +23,7 @@ this.incense_trade_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "I don\'t think so.",
+					Text = "Certainement pas.",
 					function getResult( _event )
 					{
 						return "E";
@@ -36,7 +36,7 @@ this.incense_trade_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Dancer != null)
 				{
 					this.Options.push({
-						Text = "%bellydancer% the belly dancer, do you know this man?",
+						Text = "%bellydancer% la danseuse du ventre, vous connaissez cet homme?",
 						function getResult( _event )
 						{
 							return "D";
@@ -49,13 +49,13 @@ this.incense_trade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_144.png[/img]{You tell him that he may take a smell of that which he desires, so long as he pays you for it in the end. He agrees, and shuffles over to your wagon, his long kites following above like eternal buzzards winking in and out of the snowy blinds. He leans into the wagon and sniffs around, his cold, red nose honking with every breath. He gets to the incense jars and a smile crosses his face.%SPEECH_ON%Ah yes. I have not smelled such magnificence in many, many years.%SPEECH_OFF%He rides up his jacket and slams a large purse of coins onto the tailgate. You count them out, seeing far more than you\'d ever get for selling this incense anywhere. He turns to you, the incense cradled in his arms.%SPEECH_ON%Fair deal?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_144.png[/img]{Vous lui dites qu\'il peut prendre ce qu\'il désire, pourvu qu\'il vous paie à la fin. Il accepte et s\'approche en traînant les pieds, ses longs cerfs-volants suivant au-dessus comme des buses. Il se penche dans le chariot et renifle les alentours, son nez rouge et froid sifflant à chaque inspiration. Il arrive aux pots d\'encens et un sourire traverse son visage.%SPEECH_ON%Ah oui. Je n\'ai pas senti une telle magnificence depuis de très nombreuses années.%SPEECH_OFF%Il remonte sa veste et dépose une grande bourse de pièces sur le hayon de votre charriot. Vous les comptez, voyant que c\'est bien plus que ce que vous obtiendriez en vendant cet encens. Il se tourne vers vous, l\'encens serré dans ses bras.%SPEECH_ON%Marché conclu? %SPEECH_OFF%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "A man knows what he loves.",
+					Text = "Un homme sait ce qu\'il aime.",
 					function getResult( _event )
 					{
 						return 0;
@@ -100,13 +100,13 @@ this.incense_trade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_144.png[/img]{You take your hand off your sword and agree with the wily albeit seemingly harmless request. You say he may have a whiff of your wagon if he pays upfront for it. The man nods, and gives out a few crowns. Before cycling around to the back of the cart. He puts his bulbous nose in, snorting around like a pig rooting up the ground.\n\nSuddenly, he snatches up a few jars of incense and tears off the covers. All the dust and powder goes flying, the snowy wastes briefly vibrant, and the chortling man dances through it. You go to knock him out, but he throws the cables of kites at you, knotting you up in their wiry grasps, all the while himself making a daring escape, cackling as the incense drifts off his shoulders like some wayward transient passing a celestial meridian. Furious, and cutting yourself loose of the damned kites, you take inventory of the damage wrought.}",
+			Text = "[img]gfx/ui/events/event_144.png[/img]{Vous retirez la main de votre épée et acceptez la proposition louche, bien qu\'apparemment inoffensive. Vous dites qu\'il peut avoir un aperçu de votre chariot s\'il paie d\'avance. L\'homme hoche la tête et donne quelques couronnes. Il met son nez bulbeux dans votre chariot, reniflant comme un cochon qui fouille le sol. Soudain, il attrape quelques pots d\'encens et arrache les couvertures. Toute la poussière et la poudre volent, l\'homme glousse et danse à travers. Vous allez pour l\'assommer, mais il vous lance tous les câbles de ses cerfs-volants, vous nouant dans leurs poignées filiformes. Tout en s\'échappant audacieusement, l\'étrange sihouette ricane tandis que l\'encens s\'échappe de ses épaules comme un passager errant qui passe un méridien céleste. Furieux, et vous détachant de ces maudits cerfs-volants, vous faites l\'inventaire des dégâts causés.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "What in the hells.",
+					Text = "C\'est quoi ce bordel.",
 					function getResult( _event )
 					{
 						return 0;
@@ -149,13 +149,13 @@ this.incense_trade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_144.png[/img]{%bellydancer% the belly dancer steps forward, peers into the snow, and rather unexpectedly wonders aloud if that is his father. The crazed man comes forward, his black kites following after him like buzzards in the tailwind of the doomed, then his face lights up and the two embrace. The man is apparently %bellydancer%\'s long lost father, an incense merchant who had headed far north only to be ambushed and enslaved by the savage barbarians there whom he has since escaped. He smiles madly.%SPEECH_ON%It had been so long since I had seen good incense I could smell your wagon from miles away. My wife, your mother, %bellydancer%, how is she?%SPEECH_OFF%The belly dancer\'s smile fades. He mentions that she held out hope for as long as she could. The kite-kitted man nods solemnly, but also expectedly. He says it wouldn\'t be right for her to be married to a specter of what once was, and that he himself, with no hope of making a return home, moved on as well. The man pulls out an ornate weapon with a blade unlike anything you\'ve seen before. He says that it is a long held relic of the family, and that he kept it buried and safe all his years in the north.%SPEECH_ON%Best you take it and make use of it before one of the savages here eats me and uses it as a toothpick.%SPEECH_OFF%The man smiles fondly and the two embrace for a time. Curious, you ask him why the kites. He responds that they are tools of fear meant to ward off dangerous animals and the like, including the more superstitious of the barbarians. You bid the man goodbye and suggest to %bellydancer% that he can leave if he needs to as well, but he shakes his head.%SPEECH_ON%The son and father mustn\'t share the gilded path, for we know that we shall be together at its end as we were at its beginning.%SPEECH_OFF%He says a few words to his father in his native tongue, and then the two depart and that is that.}",
+			Text = "[img]gfx/ui/events/event_144.png[/img]{%bellydancer% la danseuse du ventre s\'avance, regarde dans la neige et, de manière plutôt inattendue, se demande à voix haute si c\'est son père. L\'homme fou s\'avance, ses cerfs-volants noirs le suivent comme des buses, puis son visage s\'illumine et les deux s\'embrassent. L\'homme est apparemment le père de %bellydancer% qu\'il avait perdu de vue, un marchand d\'encens qui s\'est dirigé vers le nord pour y être pris en embuscade et réduit en esclavage par les barbares sauvages auxquels il a échappé depuis. Il sourit éperdument. %SPEECH_ON%Il y avait si longtemps que je n\'avais pas vu de bon encens que je pouvais sentir ton chariot à des kilomètres. Ma femme, ta mère, %bellydancer%, comment va-t-elle? %SPEECH_OFF%Le sourire de la danseuse du ventre s\'efface. Il mentionne qu\'elle a gardé espoir aussi longtemps qu\'elle le pouvait. L\'homme acquiesce solennellement, mais aussi de manière attendue. Il dit qu\'il ne serait pas juste qu\'elle soit mariée à un spectre de ce qu\'elle a été, et que lui-même, sans espoir de retour, n\'est plus l\'ombre que de lui-même. L\'homme sort une arme ornée d\'une lame différente de tout ce que vous avez vu auparavant. Il dit qu\'il s\'agit d\'une relique familiale de longue date, et qu\'il l\'a gardée enterrée et en sécurité pendant toutes ses années dans le nord. %SPEECH_ON%Il vaut mieux que tu la prennes et que tu t\'en serves avant qu\'un des sauvages ici me mange et s\'en serve comme cure-dent. %SPEECH_OFF%L\'homme sourit affectueusement et les deux s\'embrassent un moment. Curieux, vous lui demandez pourquoi les cerfs-volants. Il répond que ce sont des outils de peur destinés à éloigner les animaux dangereux et autres, y compris les plus superstitieux des barbares. Vous dites au revoir à l\'homme et suggérez à %bellydancer% qu\'elle peut partir elle aussi si elle en a besoin, mais elle secoue la tête.%SPEECH_ON%La fille et le père ne doivent pas partager le chemin doré, car nous savons que nous serons ensemble à sa fin comme nous l\'étions à son début.%SPEECH_OFF%elle dit quelques mots à son père dans sa langue maternelle, puis les deux partent.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Damn this incense is some good stuff.",
+					Text = "Bon sang, cet encens est une bonne chose.",
 					function getResult( _event )
 					{
 						return 0;
@@ -179,13 +179,13 @@ this.incense_trade_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_144.png[/img]{You tell the man to step aside or else. He does as told, though he stands there with both hands reaching, fingers prying emptily at whatever scent his nose had picked up. You take a few looks back, making sure he isn\'t following. He stands in the snowy wastes staring at your wagon. Then he is but a sliver of black. Then he is gone, and his kites dance above where you know him to be, and then they are gone.}",
+			Text = "[img]gfx/ui/events/event_144.png[/img]{Vous dites à l\'homme de s\'écarter, sinon... Il s\'exécute, bien qu\'il se tienne là, les deux mains tendues, les doigts s\'enfonçant dans l\'odeur que son nez a décelée. Vous jetez quelques regards en arrière, pour vous assurer qu\'il ne vous suit pas. Il se tient debout dans les étendues enneigées, fixant votre chariot. Il n\'est plus qu\'un éclat de noir. Puis il disparaît, ses cerfs-volants dansent au-dessus de lui puis ils disparaissent.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Can\'t escape these strange bastards.",
+					Text = "Je ne peux pas éviter ces étranges bâtards.",
 					function getResult( _event )
 					{
 						return 0;

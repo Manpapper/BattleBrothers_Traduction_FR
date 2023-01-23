@@ -5,17 +5,17 @@ this.oathtakers_skull_cracked_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.oathtakers_skull_cracked";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "{[img]gfx/ui/events/event_183.png[/img]{%oathtaker% bursts into the tent with trembling hands holding Young Anselm\'s skull.%SPEECH_ON%It\'s broken!%SPEECH_OFF%You jump out of your seat and take a look at Young Anselm\'s holy remains. There\'s a sliver of a crack going down the back of the skull. At first it doesn\'t look too bad, but when you stick a pinky finger in and lift, the bone splits apart. You both gasp and set the skull on the table. There\'s no doubt the skull could be broken apart with only a little bit more effort.%SPEECH_ON%What should we do? How do we fix it?%SPEECH_OFF%You ponder the question very carefully. The last time this happened Young Anselm\'s jawbone broke off, and so too did break the Oathtakers - with one group remaining as the Oathtakers, and the other forming the savage blasphemers, the Oathbringers. You\'re not going to let that happen again.}",
+			Text = "{[img]gfx/ui/events/event_183.png[/img]{%oathtaker% fait irruption dans la tente, les mains tremblantes tenant le crâne du jeune Anselme.%SPEECH_ON%Il est cassé!%SPEECH_OFF%Vous vous levez de votre siège et jetez un coup d\'oeil aux restes sacrés du jeune Anselme. Il y a une petite fente à l\'arrière du crâne. Au début, vous pensez que ce n\'est pas trop grave, mais quand vous mettez votre petit doigt dedans et que vous tirez, l\'os se brise. Vous êtes tous les deux surpris et posez le crâne sur la table. Il n\'y a aucun doute que le crâne pourrait se brisé aussi facilement.%SPEECH_ON%Que devons-nous faire? Comment le réparer?%SPEECH_OFF%Vous réfléchissez à la question très attentivement. La dernière fois que cela s\'est produit, l\'os de la mâchoire du jeune Anselme s\'est brisé. Les Oathtakers se sont séparés, un groupe est resté les Oathtakers, et l\'autre a formé les blasphémateurs, les Oathbringers. Vous ne laisserez pas cela se reproduire.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Fix it.",
+					Text = "Réparez-le.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 50 ? "B" : "C";
@@ -31,13 +31,13 @@ this.oathtakers_skull_cracked_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "{[img]gfx/ui/events/event_183.png[/img]{You take out a piece of string and coat it in ivy and sap. Then you gently lift Young Anselm\'s crack and run your finger down it with more sap. %oathtaker% stares nervously. Satisfied, you then insert the string along the crack and set the skull\'s parts back down, chomping down on the string and the sticky ivy with it.  You stand back, looking at your work. %oathtaker% swallows.%SPEECH_ON%I...I don\'t think anyone will notice.%SPEECH_OFF%You actually worry that it may be preferable that they find the crack in the skull absent of one\'s attempt to fix it, than to see the handiwork of some skulking skull restorer who tried to sneak one by. Either way, it\'s done, and Young Anselm\'s honor has been restored. %oathtaker% wipes the sweat from his brow.%SPEECH_ON%I believe this to have been a test, captain, and that Young Anselm has seen us through. His strength flows through me, and no words are capable of describing the honor I feel right now.%SPEECH_OFF%What? Young Anselm probably had no idea about sticky saps and ivies, and he presumably knew even less now that he\'s an unspeaking skull. But...you leave %oathtaker% to his interpretations, as shortchanging as they are to yourself.}",
+			Text = "{[img]gfx/ui/events/event_183.png[/img]{Vous sortez un morceau de ficelle et l\'enduisez de lierre et de sève. Puis vous soulevez délicatement la fente du crâne et passez votre doigt dessus avec encore plus de sève. %oathtaker% regarde nerveusement. Satisfait, vous insérez ensuite la ficelle le long de la fissure et reposez toutes les parties en mâchant la ficelle et le lierre collant qui l\'accompagne.  Vous prenez du recul et regardez votre travail. %oathtaker% déglutit.%SPEECH_ON%Je... Je pense que personne ne le remarquera.%SPEECH_OFF%En fait, vous pensez qu\'il est préférable qu\'ils découvrent la fissure dans le crâne sans que quelqu\'un ait tenté de la réparer, plutôt que de voir le travail manuel d\'un pseudo restaurateur de crânes qui aurait essayé de passer en douce. Quoi qu\'il en soit, c\'est fait, et l\'honneur du jeune Anselme a été restauré. %oathtaker% essuie la sueur de son front.%SPEECH_ON%Je crois que c\'était une épreuve, capitaine, et que le jeune Anselm nous a permis de la surmonter. Sa force coule en moi, et aucun mot n\'est capable de décrire l\'honneur que je ressens en ce moment.%SPEECH_OFF%Quoi? Le jeune Anselme n\'avait probablement aucune idée de ce qu\'étaient des sèves collantes et des lierres et vu son état actuel, il en sait probablement encore moins maintenant. Mais... vous laissez %oathtaker% à ses interprétations qui ne vous intéresse pas vraiment.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "I should have been an undertaker.",
+					Text = "J\'aurais dû être croque-mort.",
 					function getResult( _event )
 					{
 						return 0;
@@ -83,13 +83,13 @@ this.oathtakers_skull_cracked_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "{[img]gfx/ui/events/event_183.png[/img]{You hush %oathtaker% and tell him to close the tent tarp. Taking the skull, you set it on the table and immediately work to fix it. Unfortunately, the second your hands put in any kind of effort, the crack widens and there\'s even fragments that fly off and scatter to who knows where. You let go of the skull as though it had burned you, Anselm\'s grace clopping hollowly on the table. %oathtaker% looks at you.%SPEECH_ON%What now? What should we do? Maybe we should take the best part and run off and form a new band?%SPEECH_OFF%Scoffing, you ask the fool if he takes you for an Oathtaker or an Oathbringer. He swallows and confirms the former. Damn right, and there\'s only one thing to do if that is the case: claim it is Young Anselm\'s desire to have this here skull crack, and that it is a display of how the %companyname% are not owning up to being true Oathtakers. He agrees, and you do end up showing the rest of the men the skull and its newly acquired bony demarcations.\n\nAt first they are fearful of its crack, but soon agree with you, that Young Anselm\'s influence is waning, not because of the First Oathtaker himself, but because you all, the last of the Oathtakers, are not owning up to your Oaths! And that you all must do better to follow the path of a true Oathtaker! The men roar and cheer, their convictions renewed by Young Anselm\'s crack.}",
+			Text = "{[img]gfx/ui/events/event_183.png[/img]{Vous faites taire %oathtaker% et lui dites de fermer la tente. Vous prenez le crâne, le posez sur la table et travaillez immédiatement à le réparer. Malheureusement, dès que vos mains font le moindre effort, la fissure s\'élargit et il y a même des fragments qui s\'envolent et se dispersent un peu partout. Vous lâchez le crâne comme s\'il vous avait brûlé. %oathtaker% vous regarde.%SPEECH_ON%Et maintenant? Qu\'est-ce qu\'on fait? Peut-être qu\'on devrait prendre la parti encore intacte et s\'enfuir pour former un nouveau groupe?%SPEECH_OFF%En vous moquant, vous demandez à cet imbécile s\'il vous prend pour un Oathtaker ou un Oathbringer. Il déglutit et confirme la première hypothèse. C\'est bien vrai, et il n\'y a qu\'une seule chose à faire si c\'est le cas: prétendre que c\'est le désir du Jeune Anselme de se fendre le crâne et que c\'est une démonstration de la façon dont la compagnie %companyname% n\'assument pas d\'être de vrais Oathtakers. Il est d\'accord, et vous finissez par montrer au reste des hommes le crâne dans son entièreté.\n\nAu début, ils ont peur en voyant la fissure, mais ils sont bientôt d\'accord avec vous, que l\'influence du Jeune Anselm est en train de diminuer, non pas à cause du Premier Oathtaker lui-même, mais parce que vous tous, les derniers des Oathtakers, ne respectez pas vos serments! Et que vous devez tous faire mieux pour suivre la voie d\'un véritable Oathtaker! Les hommes hurlent et applaudissent leurs convictions retrouvées grâce au jeune Anselm..}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Nice save.",
+					Text = "Bien joué.",
 					function getResult( _event )
 					{
 						return 0;

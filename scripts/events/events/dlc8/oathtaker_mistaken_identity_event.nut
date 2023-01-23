@@ -6,17 +6,17 @@ this.oathtaker_mistaken_identity_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.oathtaker_mistaken_identity";
-		this.m.Title = "At %townname%";
+		this.m.Title = "À %townname%";
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%townImage%{A boy suddenly runs up to the company. He practically gloms onto %oathtaker%\'s leg and the Oathtaker\'s countenance takes on an appearance of confusion. He asks the runt if he is lost. The boy springs back.%SPEECH_ON%Lost? No, I\'m not lost! I thought I\'d never see your sort again, the vaunted Oathbringers!%SPEECH_OFF%%oathtaker%\'s eye twitches, his hands tightens around the handle of his weapon. You\'re not sure when his screaming started and when the boy ended up on the ground with a blackened eye, but the righteous rage cracked from the Oathtaker like a bolt of holy fury, and you watch as he pushes the boy into the mud screaming and frothing that he is an Oathtaker, not some horrible, ugly, and inglorious Oathbringer, and he smooshes the boy\'s face into the grass and drags him into a pile of horse dung and sleds him across the road on the rolls of ordure until the boy cries out and runs for his life. Finished, %oathtaker% straightens up, affixing his attire, regirding his disheveled weaponry.%SPEECH_ON%Let us leave this hellhole of filthy degenerates, captain.%SPEECH_OFF%As he struts off, you turn around to see the townspeople staring at you in horror.}",
+			Text = "%townImage%{Un garçon court soudainement vers la compagnie. Il s\'accroche pratiquement à la jambe de %oathtaker%, le visage de ce dernier prend une apparence de confusion. Il demande à l\'avorton s\'il est perdu. Le garçon recule d\'un coup sec.%SPEECH_ON%Perdu? Non, je ne suis pas perdu! Je pensais ne jamais revoir votre espèce, les fameux Oathbringers!%SPEECH_OFF%L\'œil de %oathtaker% tressaute, ses mains se crispent autour du manche de son arme. Vous ne savez pas exactement quand ses cris ont commencé et quand le garçon s\'est retrouvé par terre avec un cocard, mais une rage légitime a jailli du Oathtaker, vous le regardez pousser le garçon dans la boue en hurlant et en écumant qu\'il est un Oathtaker, et non pas un horrible, laid et ingrat Oathbringer. Il écrase le visage du garçon dans l\'herbe et le traîne dans un tas de crottin de cheval jusqu\'à ce que le garçon hurle et s\'enfuit pour sauver sa vie. %oathtaker% se redresse, fixant sa tenue, remettant en place son armement en désordre.%SPEECH_ON%Quittons cet enfer de dégénérés crasseux, capitaine.%SPEECH_OFF%Alors qu\'il s\'éloigne, vous vous retournez pour voir les habitants vous regarder avec horreur.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s pretty much what it looks like.",
+					Text = "C\'est à peu près ce à quoi ça ressemble.",
 					function getResult( _event )
 					{
 						return 0;

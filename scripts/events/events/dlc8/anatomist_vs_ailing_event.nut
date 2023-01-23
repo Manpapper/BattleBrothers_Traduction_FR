@@ -140,7 +140,7 @@ this.anatomist_vs_ailing_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Fini les expériences, monsieur l'anatomiste.",
+					Text = "Fini les expériences, monsieur l\'anatomiste.",
 					function getResult( _event )
 					{
 						return 0;

@@ -5,17 +5,17 @@ this.killer_on_the_run_reminisces_event <- this.inherit("scripts/events/event", 
 	function create()
 	{
 		this.m.ID = "event.killer_on_the_run_reminisces";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{Seemingly out of nowhere, which you imagine is just how he prefers to behave, %killer% casually mentions that there\'s a body buried out here. You know he\'s a killer on the run, but you do the honor of inquiring as to how he might know that. He flatly states:%SPEECH_ON%Because I killed them and hid the corpse out this way. You know, it was a good kill. I mean that, because this individual was pained by diseases.%SPEECH_OFF%The very word \'diseases\' elicits a turn of heads from the anatomists, as though they were hawks who\'d just seen a scampering mouse. Soon enough, and much to your chagrin, the medical troupe is digging up a corpse. There\'s much discussion over what blights the body might have carried. It is beyond you, but the group agrees that learning of it will make great advances in whatever it is they\'re studying. After their discussions are over, %killer% sidles up to you with a smirk. He says that he killed that person cause he enjoyed it, and it was nice seeing the body again.%SPEECH_ON%It\'s just a shame those eggheads manhandled it like they did. It deserved more care, more...time.%SPEECH_OFF%You ease away from the man and get this bizarre company of men back on the road.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{Semblant sortir de nulle part, %killer% mentionne avec légèreté qu\'il y a un corps enterré ici. Vous savez qu\'il s\'agit d\'un tueur en cavale, mais vous avez l\'honneur de lui demander comment il peut le savoir. Il dit carrément: %SPEECH_ON%Parce que je les ai tués et que j\'ai caché un corps par ici. Vous savez, c\'était un meurtre utile... l\'individu souffrait de maladies.%SPEECH_OFF%Le seul mot "maladies" provoque un choc chez les anatomistes, comme s\'ils étaient des faucons qui venaient de voir une souris détaler. Très vite, et à votre grand dam, le groupe médicale déterre le cadavre. Il y a beaucoup de discussions sur les maladies que le corps a pu porter. Cela vous dépasse, mais le groupe s\'accorde à dire que le fait de l\'étudier permettra de faire de grandes avancées dans leur domaine. Une fois leurs discussions terminées, %killer% s\'approche de vous avec un sourire en coin. Il dit qu\'il a tué cette personne parce qu\'il aimait ça, et que c\'était sympa de revoir le corps.%SPEECH_ON%Il est juste dommage que ces têtes d\'œuf l\'aient malmené comme ils l\'ont fait. Il méritait plus de soins, plus... de temps.%SPEECH_OFF%Vous vous éloignez de l\'homme et reprenez la route avec cette étrange compagnie.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "The lot I cast my dice with...",
+					Text = "Les dés sont jetés...",
 					function getResult( _event )
 					{
 						return 0;

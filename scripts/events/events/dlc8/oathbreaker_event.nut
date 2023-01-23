@@ -5,16 +5,16 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.oathbreaker";
-		this.m.Title = "Along the road...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_180.png[/img]{You come across a man in a sort of disparate state: on one hand, he is covered in ornate armor that seems befitting a man sitting on a horse ready to joust at a grand tournament. On the other hand, he is laid out on the ground, legs scissoring back and forth in a drunken stupor, his arms slung out as if they were around the shoulders of friends but instead only find the comfort of mud.%SPEECH_ON%I beseech ye, traveler, buy m\'armors and m\'weapons, and leave me the crowns suitably worthy of both, such that I may seek redemption another way, for them martial matters are no longer kin to my path in this world, and -hic- I\'d sooner buy m\'way to Young Anselm\'s graces than see to it with the swing of a sword, may the old gods smite me for admittin\' it aloud but I\'ll admit it aloud!%SPEECH_OFF%It seems he is offering his weapons and armor for a price of, if you get his babblings right, 9,000 crowns.}",
+			Text = "[img]gfx/ui/events/event_180.png[/img]{Vous rencontrez un homme qui semble être en pleine confusion: d\'un côté, il est couvert d\'une armure ornée qui semble convenir à un homme assis sur un cheval prêt à effectuer une joute dans un grand tournoi. D\'autre part, il est étendu sur le sol, les jambes faisant des ciseaux d\'avant en arrière, ce qui traduit chez lui un état d\'ébriété avancé. Ses bras sont étendus comme s\'ils voulaient étreindre quelqu\'un ou quelque chose...%SPEECH_ON%Je ne suis plus enclin à suivre la voie martiale, je préférerais acheter mon chemin vers les grâces du jeune Anselme plutôt que de le faire à l\'épée. Que les anciens dieux me frappent sans délai pour l\'avoir crier haut et fort!%SPEECH_OFF%Il semble qu\'il offre ses armes et armures pour un prix de, si vous comprenez bien ses élucubrations, 9000 couronnes.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll take the armor for 9,000 crowns.",
+					Text = "Nous prenons le tout pour 9 000 couronnes.",
 					function getResult( _event )
 					{
 						return "BuyArmor";
@@ -22,7 +22,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Not interested.",
+					Text = "Non merci.",
 					function getResult( _event )
 					{
 						return 0;
@@ -35,7 +35,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 				if (this.World.Assets.getOrigin().getID() == "scenario.paladins")
 				{
 					this.Options.push({
-						Text = "Young Anselm has other plans for you. Join us!",
+						Text = "Le jeune Anselme a d\'autres projets pour vous. Rejoignez-nous!",
 						function getResult( _event )
 						{
 							return "Oathtaker";
@@ -48,13 +48,13 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "BuyArmor",
-			Text = "[img]gfx/ui/events/event_180.png[/img]{You crouch down with the purse of crowns in hand.%SPEECH_ON%Take it off.%SPEECH_OFF%The man nods and starts shucking off the armor, wriggling out of it, sniffing now and again. He holds it all out, and the armor with it. You have it taken and put into inventory, then give the monies as agreed. His fingers clutch and grip and touch the purse like a spider\'s legs rolling up its prey, his drunken eyes darting left to right. He gets up and hobbles away. You have a feeling that he will not find the redemption he thinks he will with that money. %randombrother% puts a hand on your shoulder.%SPEECH_ON%Don\'t dwell on him, captain. There\'s certain people in this world that you just don\'t want to be the last person who forgets them, understand?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_180.png[/img]{Vous vous avancez vers lui en tenant la bourse pleines de couronnes.%SPEECH_ON%Enlevez tout.%SPEECH_OFF%L\'homme acquiesce et commence à enlever l\'armure, à s\'en dégager, à renifler de temps en temps. Il tend le tout et l\'armure avec. Vous mettez l\'ensemble des objetss dans l\'inventaire, puis vous donnez l\'argent comme convenu. Ses doigts s\'agrippent et touchent a bourse comme les pattes d\'une araignée qui enroule sa proie, ses yeux ivres papillonnant de gauche à droite. Il se lève et s\'en va en clopinant. Vous avez le sentiment qu\'il ne trouvera pas la rédemption à laquelle il pense avec cet argent. %randombrother% pose une main sur votre épaule.%SPEECH_ON%Ne vous attardez pas sur lui, capitaine. Il y a certaines personnes dans ce monde qu\'il faut oublier le plus vite possible, compris?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Safe travels.",
+					Text = "Bon voyage.",
 					function getResult( _event )
 					{
 						return 0;
@@ -108,13 +108,13 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Oathtaker",
-			Text = "[img]gfx/ui/events/event_183.png[/img]{Instead of giving a hand out, you give out your hand.%SPEECH_ON%Sir, Young Anselm knew full well that no oath could be respected forever. To falter is to live, and to live is to falter. Do you think being here in the mud is error? Do you think your failures are something mended by money?%SPEECH_OFF%The man looks up. He asks if you, too, know Young Anselm. He still hasn\'t taken your hand, so you take his and pull him to his feet.%SPEECH_ON%Oathtaker, who do you think sent me?%SPEECH_OFF%The man stumbles a second, staring at you in disbelief. Then he cracks a wide grin and gives you a firm hug, embracing you and the company together. Wherever an Oathtaker is in the world, he is not alone, that was Young Anselm\'s first message.}",
+			Text = "[img]gfx/ui/events/event_183.png[/img]{Vous préférez lui tendre la main plutôt que de lui donner bêtement de l\'argent.%SPEECH_ON%Monsieur, le jeune Anselm savait très bien qu\'aucun serment ne pouvait être respecté éternellement. Echouer, c\'est vivre, et vivre, c\'est échouer. Pensez-vous qu\'être ici dans la boue est une erreur? Pensez-vous que vos échecs sont réparés grâce à l\'argent?%SPEECH_OFF%L\'homme lève les yeux. Il demande si vous aussi, vous connaissez le jeune Anselme. Il ne vous a toujours pas pris la main, alors vous prenez la sienne et le mettez debout.%SPEECH_ON%Oathtaker, qui m\'a envoyé selon vous?%SPEECH_OFF%L\'homme trébuche une seconde, vous regardant avec incrédulité. Puis il esquisse un large sourire et vous serre dans ses bras, vous embrassant ainsi que la compagnie. Un Oathtaker peut se trouver n\'importe où dans le monde, il ne sera jamais seul, tel était le premier message du Jeune Anselme.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome aboard!",
+					Text = "Bienvenue à bord!",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);

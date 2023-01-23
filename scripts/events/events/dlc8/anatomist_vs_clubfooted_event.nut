@@ -47,7 +47,7 @@ this.anatomist_vs_clubfooted_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Marche, marche, mon frère, c'est ta vie.",
+					Text = "Marche, marche, mon frère, c\'est ta vie.",
 					function getResult( _event )
 					{
 						return 0;

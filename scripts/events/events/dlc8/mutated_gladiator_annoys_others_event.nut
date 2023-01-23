@@ -5,17 +5,17 @@ this.mutated_gladiator_annoys_others_event <- this.inherit("scripts/events/event
 	function create()
 	{
 		this.m.ID = "event.mutated_gladiator_annoys_others";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 65.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{Ever since %gladiator% the gladiator imbibed one of anatomists\' curios, the pit fighter has not stopped flexing. Many are growing annoyed with the bronzed, glistening, overly muscled man demanding that the other sellswords take him on, one-versus-one, in naked wrestling matches. When he\'s not plying for bouts of grabass, he\'s doing exercises, screaming out between every set as if he were in a pitched battle. Hopefully this phase of his life ends soon.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{Depuis que le gladiateur %gladiator% a ingurgité l\'une des spécialités de l\'anatomiste, le combattant n\'a cessé de se renforcer. Nombreux sont ceux qui s\'agacent de voir cet homme bronzé, luisant et musclé exiger que les autres mercenaires l\'affrontent, un contre un, nu, dans des combats de lutte. Quand il n\'est pas en train de faire des combats de catch, il fait des exercices, criant entre chaque série comme s\'il était dans une bataille rangée. Espérons que cette période de sa vie se termine bientôt.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "At least he\'s feeling energetic...",
+					Text = "Au moins, il se sent en pleine forme...",
 					function getResult( _event )
 					{
 						return 0;

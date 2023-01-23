@@ -5,17 +5,17 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.ruined_priory";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{You come across a monk standing before a priory. The walls of the building have been shattered, slabs of stone splintering out of the foundations, smaller stones turned to powder in the ensuing collapse. He explains that an earthquake shunted the place entirely, breaking chunks off and nearly bringing the whole place to the ground. He sighs.%SPEECH_ON%The worst of it isn\'t just the material damage, the worst of it is that the earthquake shook the faithful themselves, loosening their reserve for the suffering which is inherent in our day to day. They\'ve not yet returned to me, for they fear that the old gods have chosen our grounds as a point of punishment for some heretofore unrealized error.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{Vous rencontrez un moine debout devant un prieuré. Les murs du bâtiment ont été détruits, des dalles de pierre se détachant des fondations, les plus petites pierres étant réduites en poudre dans l\'effondrement qui a suivi. Il explique qu\'un tremblement de terre a entièrement ébranlé le site, brisant des morceaux et faisant presque s\'effondrer l\'ensemble. Il soupire.%SPEECH_ON%Le pire, ce ne sont pas seulement les dégâts matériels, le pire, c\'est que le tremblement de terre a secoué les fidèles eux-mêmes. Ils ne sont pas encore revenus vers moi car ils craignent que les anciens dieux n\'aient choisi notre terre comme point de punition pour quelques erreurs non commises dans le passé.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We have gold. Could you rebuild with 2500 crowns?",
+					Text = "Nous avons de l\'or. Pourriez-vous reconstruire avec 2500 couronnes?",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 80 ? "B" : "C";
@@ -23,7 +23,7 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We have tools. I think 40 should be enough?",
+					Text = "Nous avons des outils. Je pense que 40 devrait suffire?",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 75 ? "D" : "E";
@@ -31,7 +31,7 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "This isn\'t our problem.",
+					Text = "Ce n\'est pas notre problème.",
 					function getResult( _event )
 					{
 						return "F";
@@ -46,13 +46,13 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{You pay the monk monies to fix up the priory. He breaks into tears, saying that he did not expect such men of honor to even exist in this world, much less come and meet him personally. The very fact that you are here, and that you are so giving, is surely a sign that the old gods are not punishing him.%SPEECH_ON%Not only will these crowns allow me to rebuild, but such generosity will be seen by the locals as a sign that the old gods are not in fact punishing us! Here, please take this. It just barely survived the rubble, but perhaps you\'ll be able to make more use of it in time than we ever could.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{Vous versez l\'argent au moine pour qu\'il répare le prieuré. Il fond en larmes, disant qu\'il ne s\'attendait pas à ce que de tels hommes d\'honneur existent en ce monde, et encore moins qu\'ils viennent le rencontrer personnellement. Le fait même que vous soyez là, et que vous soyez si généreux, est sûrement un signe que les anciens dieux ne le punissent pas.%SPEECH_ON%Non seulement ces couronnes me permettront de reconstruire, mais une telle générosité sera vue par les habitants comme un signe que les anciens dieux ne nous punissent pas en fait! Tenez, prenez ça. Il a tout juste survécu aux décombres, mais peut-être qu\'il sera plus utile qu\'à nous.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "All in a day\'s work.",
+					Text = "Tout cela en une journée de travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -104,13 +104,13 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{You put your hand on the monk\'s shoulder. He looks back, tears in his eyes, then glances at the purse of crowns you\'re holding out. He takes it and holds it tenderly as though he\'d never been gifted anything in his whole life.%SPEECH_ON%Is this...is this for the priory?%SPEECH_OFF%Nodding, you tell him to use it to rebuild the place. You start to suggest maybe also adding a modest belltower, but just as you start in with the poor architectural references, a man comes screaming down the road, his finger pointing, his feet beating a mean path.%SPEECH_ON%Don\'t trust that rat! He\'s a no good beggar!%SPEECH_OFF%When you look back, the supposed monk who was at the priory steps is already running off, sprinting down the road before jumping through a cut of nettles and disappearing into some brush and trees, money in hand and his cackling in the air. The man coming down the road throws his hands up.%SPEECH_ON%That squirrely wretch has been playing woe is me for weeks now. This here buildin\' is dead and gone, not been occupied since the greenskins wrecked it ten years ago. I know you was just lookin\' to do right, but there are many in this world who see your generosity as a big bullseye to aim for. S\'ry you got scammed, fellas.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_04.png[/img]{Vous posez votre main sur l\'épaule du moine. Il vous regarde, les larmes aux yeux, puis jette un coup d\'œil à la bourse de couronnes que vous lui tendez. Il la prend et la tient tendrement comme s\'il n\'avait jamais reçu de cadeau de toute sa vie.%SPEECH_ON%C\'est... c\'est pour le prieuré?%SPEECH_OFF%En hochant la tête, vous lui dites de l\'utiliser pour reconstruire le site. Vous commencez à suggérer d\'ajouter un modeste clocher, mais au moment où vous vous lancez dans des références architecturales médiocres, un homme arrive en hurlant sur la route.%SPEECH_ON%Ne faites pas confiance à ce rat! C\'est un bon à rien de mendiant!%SPEECH_OFF%Lorsque vous vous retournez, le prétendu moine qui se trouvait sur les marches du prieuré est déjà en train de s\'enfuir, de sprinter le long de la route avant de sauter au dessus d\'un fossé et de disparaître dans les broussailles l\'argent à la main. L\'homme qui descend la route lève les mains en l\'air.%SPEECH_ON%Ce misérable joue à \"pauvre de moi\" depuis des semaines maintenant. Ce bâtiment est mort et enterré, il n\'a pas été occupé depuis que les peaux vertes l\'ont détruit il y a dix ans. Je sais que vous vouliez juste faire le bien, mais il y a beaucoup de gens dans ce monde qui voient votre générosité comme une cible. Désolé que vous vous soyez fait avoir, les gars.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Fark.",
+					Text = "Fait chier..",
 					function getResult( _event )
 					{
 						return 0;
@@ -153,13 +153,13 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_85.png[/img]{You believe the %companyname% has the tools and manpower to complete the task themselves. Smiling, you tell the monk that they will set forth and rectify the rectory. The holy man is beside himself as you and the Oathtakers gather up their equipment and start the fixing. It takes a few hours, but the blood and sweat is worth it. By the time you are finished, a throng of peasants have appeared, and they leave not only with the old gods on their minds, but the %companyname% being carried on their tongues. No doubt many will hear of the Oathtakers for days to come!}",
+			Text = "[img]gfx/ui/events/event_85.png[/img]{Vous pensez que la compagnie %companyname% a les outils et la main d\'œuvre pour accomplir les travaux. En souriant, vous dites au moine qu\'ils vont se mettre en route et rectifier le presbytère. Le saint homme est hors de lui tandis que vous et les Oathtakers rassemblez vos équipement et commencez les réparations. Cela prend quelques heures mais cela en vaut la peine. Lorsque vous avez terminé, une foule de paysans est apparue. Ils repartent non seulement avec les anciens dieux en tête, mais aussi avec le nom de la %companyname% sur la langue. Nul doute que beaucoup entendront parler des Oathtakers dans les jours à venir!}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "As it should be.",
+					Text = "Voilà du travail bien fait",
 					function getResult( _event )
 					{
 						return 0;
@@ -209,13 +209,13 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_40.png[/img]{You grab the monk and pull him to his feet. You tell him that the %companyname% will repair the priory. He is tearful and happy, though warns that it might be beyond saving. Smiling, you tell him nothing is too great a task for the Oathtakers. A moment later, %injurybro% pushes on the busted wall only for the bottom half to spill inward and the top parts to spill out, promptly burying him in a pile of rubble. The company shouts in horror and goes to pull him out, and as they do the rest of the building collapses, folding unto itself in a stream of powdered stone. %injurybro% is rescued from the debris, albeit with a fair share of injuries.%SPEECH_ON%Well, I suppose it\'s the thought that counts.%SPEECH_OFF%The monk says, scratching the back of his head.%SPEECH_ON%Perhaps the old gods truly did seek to punish us here. But no matter, I think you still did right, and there is dignity in the attempt, is there not? I shall speak well of you, %companyname%.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_40.png[/img]{Vous attrapez le moine et le remettez debout. Vous lui dites que la compagnie %companyname% va réparer le prieuré. Il est en larmes mais il vous prévient qu\'il est peut-être impossible de le sauver. En souriant, vous lui dites que rien n\'est trop difficile pour les Oathtakers. Un instant plus tard, %injurybro% intervient sur mur défoncé mais tout s\'écroule en quelques secondes, l\'enterrant rapidement sous un tas de gravats. Tout le monde pousse un cri d\'horreur et va le sortir de là. Pendant ce temps, le reste du bâtiment s\'effondre dans un flot de pierres en poudre. %injurybro% est sauvé des débris, mais avec un bon nombre de blessures.%SPEECH_ON%Eh bien, je suppose que c\'est l\'intention qui compte...%SPEECH_OFF%En se grattant l\'arrière de la tête, le moine dit%SPEECH_ON%Peut-être que les anciens dieux ont vraiment cherché à nous punir ici. Mais peu importe, je pense que vous avez bien fait, n\'est-ce pas? Je parlerai en bien de vous, %companyname%.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "That could have gone better.",
+					Text = "Ça aurait pu mieux se passer.",
 					function getResult( _event )
 					{
 						return 0;
@@ -243,13 +243,13 @@ this.ruined_priory_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_64.png[/img]{You decide that this venture is not yours to have. This choice has a few of the men questioning your leadership. Sure, the Oaths can\'t all be followed at all times, but to not even spare a drop of sweat or ounce of crown to help a holy man and his flock? It is in skipping over the little things, the things that require no effort at all, that a man can find himself spiraling into being an uncaring savage.}",
+			Text = "[img]gfx/ui/events/event_64.png[/img]{Vous décidez que cette affaire ne vous appartient pas. Ce choix amène quelques hommes à s\'interroger sur votre leadership. Bien sûr, les Serments ne peuvent pas tous être suivis à la lettre, mais ne pas dépenser une goutte de sueur ou une once de couronne pour aider un saint homme et son troupeau? C\'est en négligeant les petites choses, celles qui ne demandent aucun effort, qu\'un homme peut devenir un sauvage impitoyable.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Yeah, yeah.",
+					Text = "Ouais, ouais.",
 					function getResult( _event )
 					{
 						return 0;

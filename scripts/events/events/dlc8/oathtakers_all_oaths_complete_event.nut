@@ -3,16 +3,16 @@ this.oathtakers_all_oaths_complete_event <- this.inherit("scripts/events/event",
 	function create()
 	{
 		this.m.ID = "event.oathtakers_all_oaths_complete";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_180.png[/img]{The last of Young Anselm\'s Oaths have been completed. The Oathtakers have truly earned their name! Just one question remains: what now? You were never certain of what would happen once the First Oathtaker\'s oaths had been completed, and now that you have completed them, something is dawning on you and the rest of the company: to keep going. Why turn back now? Who wants to go back to the old, unguided life? Moribund and listless, floating through life without purpose? Surely that is not what Young Anselm intended by starting on the Final Path. You tell the men that every Oath has its meaning, and perhaps it is all the Oaths together which form a meaning of their own. The path of the Oathtaker ends when the Oathtaker wishes it to be so. You look out at the group of men.%SPEECH_ON%If you believe yourself free of the need for the Oaths, then please, leave.%SPEECH_OFF%A wave of pensive stares at the ground washes over the group. Eventually one looks up.%SPEECH_ON%There is only one way to leave Young Anselm\'s guidance, and that is to join him!%SPEECH_OFF%The group cheers. To Young Anselm, and to finding his jawbone, and to killing all Oathbringers!}",
+			Text = "[img]gfx/ui/events/event_180.png[/img]{Les derniers serments du Jeune Anselme sont terminés. Les Oathtakers ont vraiment mérité leur nom! Il ne reste plus qu\'une question: Et maintenant? Vous n\'avez jamais été certain de ce qui se passerait une fois que les serments du premier Oathtaker auraient été accomplis, mais maintenant que c\'est fait, quelque chose vous frappe, vous et le reste de la compagnie: poursuivre. Pourquoi faire demi-tour maintenant? Qui veut retourner à son ancienne vie, sans but, moribonde et apathique? Ce n\'est sûrement pas ce que le jeune Anselme voulait en s\'engageant sur le Chemin Final. Vous dites aux hommes que chaque serment a sa signification, et peut-être que ce sont tous les serments mis bout à bout qui forment une signification qui leur est propre. Le chemin du Oathtaker se termine lorsqu\'il le souhaite. Vous regardez la bande.%SPEECH_ON%Si vous vous croyez libéré de l\'obligation de prêter serment, alors partez, s\'il vous plaît.%SPEECH_OFF%Une vague de regards pensifs s\'abat sur le groupe. Finalement, l\'un d\'eux s\'exclame.%SPEECH_ON%Il n\'y a qu\'une seule façon de quitter la voie du Jeune Anselme, c\'est de le rejoindre!%SPEECH_OFF%Le groupe applaudit. Au jeune Anselme, à la découverte de sa mâchoire et à la mort de tous les Oathbringers!}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To Young Anselm!",
+					Text = "Au jeune Anselme!",
 					function getResult( _event )
 					{
 						return 0;

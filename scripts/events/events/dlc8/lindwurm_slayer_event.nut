@@ -6,16 +6,16 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.crisis.lindwurm_slayer";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_35.png[/img]{You\'re enjoying a drink at one of %townname%\'s cozy taverns. Naturally, this comfort doesn\'t last long as a man struts into the place with his armor clinking and clanking. You make the error of glancing at him and catching his eye. He immediately heads over. Sighing, you put your opposite hand onto your sword and await what this could possibly be. The man stomps to the end of your table and straightens up.%SPEECH_ON%Let me introduce myself, in case rumor and myth have not done it already. I am %dragonslayer%. My chosen life in this world is to hunt and slay dragons.%SPEECH_OFF%You take a drink and set it down, telling the man that dragons don\'t exist. He grins.%SPEECH_ON%That is because my father slew them all. In truth, I am a killer of lindwurms, and I hear you are the captain of the %companyname%, an outfit some renown, almost as much as renown as yours truly. What would you say to combining our skills and talents, hm? I\'d be willing to join you for %price% crowns.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_35.png[/img]{Vous êtes en train de boire un verre dans l\'une des confortables tavernes de %townname%. Naturellement, ce bien-être ne dure pas longtemps, car un homme entre avec son armure qui cliquette et tinte. Vous commettez l\'erreur de le regarder et d\'attirer son attention. Il se dirige immédiatement vers vous. Soupirant, vous mettez votre main sur votre épée et attendez la suite. L\'homme se dirige vers l\'extrémité de votre table et se redresse.%SPEECH_ON%Laissez-moi me présenter, au cas où la rumeur et le mythe ne l\'auraient pas déjà fait. Je suis %dragonslayer%. Mon choix de vie dans ce monde est de chasser et de tuer des dragons.%SPEECH_OFF%Vous prenez un verre et le posez, en disant à l\'homme que les dragons n\'existent pas. Il sourit. %SPEECH_ON% C\'est parce que mon père les a tous tués. En vérité, je suis un tueur de lindwurms, et j\'ai entendu dire que vous étiez le capitaine de la compagnie %companyname%, une unité de grande renommée. Que diriez-vous de combiner nos compétences et nos talents, hm? Je serais prêt à me joindre à vous pour %price% couronnes.%SPEECH_OFF%}",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Very well, I\'ll pay your %price% crown fee.",
+					Text = "Très bien, je vais payer %price% couronnes.",
 					function getResult( _event )
 					{
 						return "C";
@@ -23,7 +23,7 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No, thanks, we\'re good.",
+					Text = "Non merci.",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -72,12 +72,12 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_35.png[/img]{You and the Oathtakers are walking the streets of %townname% when a man in glinting, Oathtaker-worthy armor suddenly appears. He strides right for you, and despite the company half-drawing their weapons as a sort of warning, the man continues unfaltered and holds his hand out.%SPEECH_ON%Hail! I am %dragonslayer%, son of the most famous dragonslayer in all the land.%SPEECH_OFF%Your men sheathe their weapons and everyone glances around. You shake the man\'s hand and ask what it is he wants. He steps back, straightens up as though for presentation, and peacocks his doings: that he\'s slain monsters of all sizes, and women of all sizes, and that he has a particular fondness for slaying dragons, and another fondness for bigger lasses because they remind him of- you cut him off, telling him that dragons no longer exist. He nods.%SPEECH_ON%That is correct! Dragons no longer exist, because my father is the one who killed the last one. I shall be honest, I am a lindwurm slayer, and I am quite good at it. And I have sought out you Oathtakers because of the renown and fame you have achieved, and of course because I wish to be a part of it.%SPEECH_OFF%This supposedly famous lindwurm slayer offers to join the %companyname% free of charge.}",
+			Text = "[img]gfx/ui/events/event_35.png[/img]{Vous et les Oathtakers êtes en train de marcher dans les rues de %townname% lorsqu\'un homme en armure étincelante, digne des Oathtakers, apparaît soudainement. Il se dirige vers vous, et malgré le fait que les membres de la compagnie dégainent leurs armes en guise d\'avertissement, l\'homme continue sans être inquiété et vous tend la main.%SPEECH_ON%Hail! Je suis %dragonslayer%, fils du plus célèbre dragonnier de tout le pays.%SPEECH_OFF% Vos hommes rengainent leurs armes et tout le monde regarde autour de lui. Vous serrez la main de l\'homme et lui demandez ce qu\'il veut. Il se recule, se redresse comme pour se présenter puis se vante de ses exploits: il a tué des monstres de toutes tailles, des femmes de toutes tailles. Il a un penchant particulier pour les dragons et un autre pour les grandes filles parce qu\'elles lui rappellent... Vous l\'interrompez, lui disant que les dragons n\'existent plus. Il hoche la tête. %SPEECH_ON%C\'est exact ! Les dragons n\'existent plus, car mon père est celui qui a tué le dernier. Je vais être honnête, je suis un tueur de lindwurm, et je suis plutôt bon dans ce domaine. J\'ai cherché à vous rencontrer, vous, les Oathtakers, car votre renommée n\'est plus à faire et je souhaite en faire partie.%SPEECH_OFF%Ce soi-disant célèbre tueur de lindwurm souhaite rejoindre gratuitement la compagnie %companyname%.}",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Very well, join us.",
+					Text = "Très bien, rejoignez-nous.",
 					function getResult( _event )
 					{
 						return "D";
@@ -85,7 +85,7 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "No, thanks, we\'re good.",
+					Text = "Non merci",
 					function getResult( _event )
 					{
 						this.World.getTemporaryRoster().clear();
@@ -134,12 +134,12 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_35.png[/img]{You reach into your pockets and put the purse on the table. The man takes it up, picking through the change. He nods and cinches the pursestrings.%SPEECH_ON%Very well. You have my services, captain of the %companyname%, and by my father\'s good name you shall not regret it.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_35.png[/img]{Vous fouillez dans vos poches et posez la bourse sur la table. L\'homme la prend en main, l\'ouvre, compte la monnaie, il hoche la tête et referme le tout.%SPEECH_ON%Très bien capitaine, je me joins à vous et à la compagnie %companyname%. Je jure sur la tombe de mon père que vous ne le regretterez pas.%SPEECH_OFF%.}",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome to the company!",
+					Text = "Bienvenue dans la compagnie!",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);
@@ -166,12 +166,12 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_35.png[/img]{The man will either prove himself to be worthy of his stated accomplishments, or he\'ll end up dead meat. If he\'s willing to join without any upfront cost to you, what does it hurt to see how he fares? You hold your hand out and the man shakes it. His armor clinks and clanks as his arm bounces up and down.%SPEECH_ON%Your Oathtakers will not be disappointed, that I can promise you.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_35.png[/img]{Soit il se montrera à la hauteur de ce qu\'il a accompli, soit il finira en charpie. S\'il est prêt à se joindre à vous sans frais, qu\'est-ce que ça peut faire qu\'il soit bon ou pas? Vous tendez votre main et l\'homme la serre. Son armure tinte et cliquette tandis que son bras rebondit de haut en bas.%SPEECH_ON%Vos Oathtakers ne seront pas déçus, je peux vous le promettre.%SPEECH_OFF%.}",
 			Banner = "",
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome to the company, %dragonslayer%.",
+					Text = "Bienvenue dans la compagnie, %dragonslayer%.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude);

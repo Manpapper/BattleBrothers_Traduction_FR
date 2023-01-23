@@ -7,17 +7,17 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.something_in_barn";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 9999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{A man comes to the company saying that there\'s an evil direwolf pup trapped in his barn. %anatomist% the anatomist overhears this and slides on over. He asks if he knows for a certainty that the pup is evil. The stranger nods.%SPEECH_ON%Part direwolf, I imagine that its pedigree is clothed in evil. Damn thing is holed up in the barn and there\'s only one way in, so the whole affair is damn bit prickly.%SPEECH_OFF%He asks that you go and kill the pup before it escapes. %anatomist% is quite curious about this endeavor as very little is known about direwolves when they\'re young. He elects himself as volunteer to go with you to see to this infantile creature.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Un homme vient à l\'encontre de la compagnie en disant qu\'il y a un méléfique chiot loup-garou piégé dans sa grange. %anatomist% l\'anatomiste entend cela et se rapproche. Il demande s\'il est certain que le chiot est maléfique. L\'étranger acquiesce.%SPEECH_ON%A moitié loup-garou, j\'imagine que son pedigree est imprégné du mal. Cette foutue chose est enfermée dans la grange et il n\'y a qu\'une seule entrée, c\'est un peu risqué.%SPEECH_OFF%Il vous demande d\'aller tuer le petit avant qu\'il ne s\'échappe. %anatomiste% est assez curieux car on sait très peu de choses sur les loups-garous lorsqu\'ils sont jeunes. Il se porte volontaire pour vous accompagner et s\'occuper de cette créature infantile}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Let\'s go see it.",
+					Text = "Allons voir ça.",
 					function getResult( _event )
 					{
 						return this.Math.rand(1, 100) <= 55 ? "B" : "C";
@@ -25,7 +25,7 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "Not our business.",
+					Text = "C\'est pas notre problème.",
 					function getResult( _event )
 					{
 						return "F";
@@ -38,7 +38,7 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 				if (this.Const.DLC.Unhold && _event.m.BeastSlayer != null)
 				{
 					this.Options.push({
-						Text = "%beastslayer% the beast slayer should handle this.",
+						Text = "%beastslayer% le tueur de bêtes devrait s\'en occuper.",
 						function getResult( _event )
 						{
 							return "D";
@@ -50,7 +50,7 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 				if (_event.m.Farmer != null)
 				{
 					this.Options.push({
-						Text = "Our resident farmer %farmer% seems to have an idea.",
+						Text = "Notre fermier %farmer% semble avoir une idée.",
 						function getResult( _event )
 						{
 							return "E";
@@ -65,13 +65,13 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_27.png[/img]{You take up the stranger\'s request and head over to the barn. It\'s fairly nondescript, and he explains that there\'s only one way in. He leans against the door and listens, then nods.%SPEECH_ON%Oh yeah, it\'s still in there alright.%SPEECH_OFF%The door is opened and you and %anatomist% venture in, passing piles of shite and stalls with spooked animals crammed into corners and rearing their heads as you pass. You see at the far end of the barn that there\'s a slovenly creature rummaging in a pile of hay. %anatomist% panics and snatches up a pitchfork and goes charging forth. You stave him off, catching the pole and riding it into the air. You yell at him and then point down. The beast isn\'t a direwolf at all, but just a regular dog, the mutt itself staring up with teary eyes. The man stands behind you rubbing the back of his neck.%SPEECH_ON%Oof, ah, yeah, that is my bad. I was sure this was a wolven monstrosity.%SPEECH_OFF%With a bit of food and training, there\'s little doubt that this mutt could be made into something useful for the %companyname%.}",
+			Text = "[img]gfx/ui/events/event_27.png[/img]{Vous acceptez la demande de l\'étranger et vous vous rendez à la grange. Elle est assez quelconque, il vous explique encore une fois qu\'il n\'y a qu\'une seule entrée. Il s\'appuie contre la porte et écoute, puis fait un signe de tête.%SPEECH_ON%Ah oui, il est toujours là, c\'est sûr.%SPEECH_OFF%La porte s\'ouvre et vous vous engrouffrez avec %anatomist% à l\'intérieur. Ce que vous voyez ressemble à des tas de merde, des cages avec des animaux effrayés, entassés et dressant la tête sur votre passage. Vous voyez au bout de la grange une créature mal fagotée qui fouille dans un tas de foin. Paniqué, %anatomist% attrape une fourche et part à l\'assaut. Vous le stoppez net en attrapant la fourche et en la faisant voler dans les airs. Vous lui criez dessus et pointez le doigt vers la créature. La bête n\'est pas du tout un loup-garou, mais juste un chien ordinaire, un bâtard aux yeux larmoyants. L\'homme se tient derrière vous et se frotte la nuque.%SPEECH_ON%Euh, ah, ouais, c\'est ma faute. J\'étais sûr que c\'était un loup-garou.%SPEECH_OFF%Avec un peu de nourriture et d\'entraînement, il y a peu de doutes que ce cabot pourrait être transformé en quelque chose d\'utile pour la compagnie %companyname%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Just keep it away from %anatomist%.",
+					Text = "Tenez-le éloigné de %anatomist%.",
 					function getResult( _event )
 					{
 						return 0;
@@ -94,13 +94,13 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "C",
-			Text = "[img]gfx/ui/events/event_06.png[/img]{You venture over to a nondescript barn with chains across its door. The man leans against the frame for a moment, listening through it, then nods and takes the chains off. As he swings the door open, he retreats behind you and stares from this safe position.%SPEECH_ON%It\'s there, in the hay.%SPEECH_OFF%You see the shape of the beast and, drawing your sword, you creep forward. %anatomist%, however, jolts at the very sight of it, losing all composure with a graceless yelp and womanly cry. He grabs a pitchfork and stabs it into the hay. There\'s a shriek of the beast as the anatomist repeatedly thrusts the prongs in, again and again until the creature is slain. You crouch down and pick way the bloody straw. It isn\'t a direwolf at all, not even a hint of a small pup. It is in fact just a regular dog, and regularly dead at that.\n\nJust then, you hear a voice behind you. It isn\'t the man who fetched you at all, but instead someone else. He cries out that you killed his dog. %anatomist% throws the pitchfork down. He explains that this was all a mistake. Seeing as how the anatomist elected to arbitrate the situation himself, you hurriedly leave the scene to him, only hearing the faint cries of the dog\'s owner and %anatomist% trying to argue that it was all an accident. You\'ve mind to find the bastard who set you up in the first place, but you got the feeling he\'s made himself very scarce. All you can do is go count some inventory while ignoring the wailings of the dead dog\'s owner and %anatomist%\'s pitiful gainsaying.}",
+			Text = "[img]gfx/ui/events/event_06.png[/img]{Vous vous aventurez vers une grange quelconque dont la porte est couverte de chaînes. L\'homme s\'appuie sur le cadre pendant un moment, écoutant à travers, puis hoche la tête et enlève les chaînes. Alors qu\'il ouvre la porte, il se cache derrière vous et vous regarde.%SPEECH_ON%C\'est là, dans le foin.%SPEECH_OFF%Vous apercevez la forme de la bête. En dégainant votre épée, vous avancez en rampant. %anatomist%, lui, sursaute à sa vue, perdant tout sang-froid dans un glapissement sans grâce et un cri de femme. Il saisit une fourche et la plante dans le foin. La bête hurle lorsque l\'anatomiste enfonce les dents à plusieurs reprises, encore et encore, jusqu\'à ce que la créature soit tuée. Vous vous accroupissez et ramassez la paille pleine de sang. Ce n\'est pas du tout un loup-garou, pas même un soupçon d\'un petit chiot. En fait, c\'est juste un chien ordinaire. Au même moment, vous entendez une voix derrière vous. Ce n\'est pas du tout l\'homme qui est venu vous chercher, mais quelqu\'un d\'autre. Il crie que vous avez tué son chien. %anatomist% jette la fourche par terre. Il explique que c\'était une erreur. Comme l\'anatomiste a choisi d\'arbitrer lui-même la situation, vous vous empressez de fuir, n\'entendant que les faibles cris du propriétaire du chien et de l\'%anatomiste% qui tentent de faire valoir qu\'il s\'agissait d\'un accident. Vous avez essayé de trouver le salaud qui vous a piégé mais sans succès. Tout ce que vous pouvez faire, c\'est compter le stock tout en ignorant les gémissements du propriétaire du chien mort et les lamentations de %anatomist%.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Oof.",
+					Text = "Ouch.",
 					function getResult( _event )
 					{
 						return 0;
@@ -127,13 +127,13 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_131.png[/img]{If it is indeed a beast, it\'s probably best %beastslayer% the actual slayer of beasts comes along. You all three go to the barn. After standing in silence, for a time, you count to three and you and the beast slayer kick the barn doors open. The anatomist is late and didn\'t even realize this was the plan and kicks last and way too late and finds his boot pushing air and his leg plants and scissors horribly across the barnfloor. He tries to regain his dignity and get back up, but it appears he\'s pulled a muscle in his groin. You and %beastslayer% burst out laughing. As you help the anatomist up, the beast slayer ceases all musings and there\'s a rush of movement and a burst of air and a hard thwack against one of the barn\'s stalls. You look over to see the beast slayer pinning a pale, ghoulish creature, his weapon bored through its skull as his arm pins it by the neck.%SPEECH_ON%It\'s a pup alright, but it sure as shite ain\'t a direwolf.%SPEECH_OFF%He says, and drops the small nachzehrer to the ground. He looks over.%SPEECH_ON%Kinda looks like the anatomist a little bit.%SPEECH_OFF%%anatomist% takes this on the chin, awkwardly getting up and trundling forth in a bowlegged gait. He remarks that the beast could still be of scientific benefit. Despite not being as rough around the edges as some of the other men, you can\'t help but respect his admiration for study.}",
+			Text = "[img]gfx/ui/events/event_131.png[/img]{Si c\'est bien une bête, il vaut mieux que ce soit %beastslayer% qui vienne. Vous allez tous les trois dans la grange. Après être restés un moment sans bouger, vous comptez jusqu\'à trois et vous et le tueur de bêtes ouvrez les portes de la grange d\'un coup de pied. L\'anatomiste qui se trouve juste derrière n\'a pas compris quel était le plan. Il donne le dernier coup de pied, bien trop tard, sa botte brasse du vent et frappe violemment le sol. Il tente de retrouver sa dignité et de se relever, mais il semble s\'être froissé un muscle à l\'aine. Vous et %beastslayer% éclatez de rire. Alors que vous aidez l\'anatomiste à se relever, tout se passe très vite, un bruit sourd se produit contre l\'une des stalles de la grange. Vous regardez pour voir le tueur de bêtes embrocher une créature pâle et macabre, son arme lui transperçant le crâne tandis que son bras la tient par le cou.%SPEECH_ON%C\'est un chiot, d\'accord, mais ce n\'est certainement pas un loup-garou.%SPEECH_OFF%Dit-il. Il laisse tomber le petit nachzehrer sur le sol. Il regarde par-dessus.%SPEECH_ON%Il ressemble un peu à l\'anatomiste.%SPEECH_OFF%%anatomiste% prend la chose à bras le corps, se lève maladroitement et avance d\'un pas traînant. Il remarque que la bête peut encore être utile à la science. Bien qu\'il ne soit pas aussi brut de décoffrage que certains autres hommes, vous ne pouvez vous empêcher de respecter son professionnalisme.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good job.",
+					Text = "Beau travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -176,13 +176,13 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_131.png[/img]{%farmer% the farmer comes up. He tells the man.%SPEECH_ON%That wasn\'t originally your barn, was it?%SPEECH_OFF%The man shakes his head. %farmer% nods.%SPEECH_ON%Figured as much, because barns like that aren\'t just one way in. There\'s an earthen exit built in, you just have to know where to look. Give me one sec and I\'ll go spur this beast from the back end, you all just be ready for it in the front.%SPEECH_OFF%According to the plan, you all await at the front. It isn\'t long until you hear the yelp of a beast inside and it comes bumbling toward the doors. The second it steps outside you stab a sword through its skull, and as it flips over onto the ground you realize that it\'s a small nachzehrer. %anatomist% claps his hands for he has something that might be worth studying. %farmer% comes back around the sides of the barn holding a long two-handed weapon.%SPEECH_ON%Looks like someone forgot about this when they were auguring out the back of the barn. I think we\'ll go ahead and take it for ourselves as payment, won\'t we?%SPEECH_OFF%You nod, and the man who asked for your assistance gives no protest to the matter.}",
+			Text = "[img]gfx/ui/events/event_131.png[/img]{%farmer% le fermier arrive. Il dit à l\'homme.%SPEECH_ON%Ce n\'était pas votre grange à l\'origine, n\'est-ce pas?%SPEECH_OFF%L\'homme secoue la tête. %farmer% acquiesce.%SPEECH_ON%Je m\'en doutais, parce que les granges comme celle-ci n\'ont pas qu\'une seule entrée. Il y a une sortie en terre intégrée, il suffit de savoir où regarder. Donnez-moi une seconde et je vais faire du bruit derrière en espérant qu\'elle sorte par la porte principale.%SPEECH_OFF%Comme prévu, vous attendez tous devant l\'entrée. Il ne faut pas longtemps avant d\'entendre le glapissement d\'une bête à l\'intérieur qui se rapproche de vous. A la seconde où elle fait un pas dehors, vous lui plantez une épée dans le crâne. Alors qu\'elle tombe au sol, vous réalisez que c\'est un petit nachzehrer. %anatomiste% frappe dans ses mains car il a quelque chose qui pourrait mériter d\'être examiné. %farmer% revient en tenant une longue arme à deux mains.%SPEECH_ON%On dirait que quelqu\'un à oublié ça derrière la grange. On va la prendre, ce sera notre façon de se faire payer n\'est ce pas?%SPEECH_OFF%Vous acquiescez, l\'homme qui a demandé votre aide ne proteste pas.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Good job.",
+					Text = "Beau travail.",
 					function getResult( _event )
 					{
 						return 0;
@@ -223,13 +223,13 @@ this.something_in_barn_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_115.png[/img]{Despite %anatomist%\'s desires, you tell the peasant that if it is indeed a direwolf in the barn then he should see to it himself. This sort of trouble isn\'t your concern, and if it will be, then somebody better damn well pay you for it. Hells, maybe the pup direwolf will provide ample opportunities for contract work down the road once it\'s big and strong to scare the peasantry into the %companyname%\'s arms.}",
+			Text = "[img]gfx/ui/events/event_115.png[/img]{Malgré les souhaits de l\'%anatomiste, vous dites au paysan que s\'il y a bien un loup-garou dans la grange, il doit s\'en occuper lui-même. Ce genre de problème ne vous concerne pas. Dans le contraire, vous devez vous faire payer. Bon sang, peut-être que le chiot loup-garou sera d\'une aide précieuse pour la compagnie %companyname% une fois qu\'il sera grand et fort.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "We\'re running a business here.",
+					Text = "Nous gérons une entreprise ici.",
 					function getResult( _event )
 					{
 						return 0;

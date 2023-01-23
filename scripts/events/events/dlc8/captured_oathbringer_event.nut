@@ -196,7 +196,7 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "Saleté d'Oathbringer.",
+					Text = "Saleté d\'Oathbringer.",
 					function getResult( _event )
 					{
 						return 0;

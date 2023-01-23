@@ -5,17 +5,17 @@ this.oathtaker_happy_with_company_event <- this.inherit("scripts/events/event", 
 	function create()
 	{
 		this.m.ID = "event.oathtaker_happy_with_company";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 45.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "{[img]gfx/ui/events/event_183.png[/img]{%oathtaker% the oathtaker joins you by the campfire. He nods.%SPEECH_ON%Respectfully, captain, I can say that it is a big ask to require a man to be of genuine goodness. When I first knew ya, I didn\'t think you had the chops for such an undertaking. I thought this world\'s creeping darkness would wither you away, grind you down like sand to a stone. But here you are. Stalwart. Keeping to the Oaths, one after the other. Good on ya. I think Young Anselm would be proud.%SPEECH_OFF%You thank the Oathtaker for the kind words.}",
+			Text = "{[img]gfx/ui/events/event_183.png[/img]{%oathtaker% l\'oathtaker vous rejoint près du feu de camp. Il hoche la tête.%SPEECH_ON%Avec tout le respect que je vous dois, capitaine, je peux dire que c\'est beaucoup demander que d\'exiger d\'un homme qu\'il soit d\'une réelle sincérité. Quand je vous ai connu, je ne pensais pas que vous aviez les couilles pour une telle aventure. Je pensais que la noirceur rampante de ce monde vous ferait dépérir, vous broierait comme du sable sur une pierre. Mais vous êtes là. Vaillant. Respectant les serments, l\'un après l\'autre. Tant mieux pour vous. Je pense que le jeune Anselm serait fier.%SPEECH_OFF%Vous remerciez l\'Oathtaker pour ses paroles chaleureuses.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Glad someone appreciates it.",
+					Text = "Heureux que quelqu\'un le reconnaisse.",
 					function getResult( _event )
 					{
 						return 0;

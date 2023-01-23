@@ -7,17 +7,17 @@ this.volunteers_event <- this.inherit("scripts/events/event", {
 	function create()
 	{
 		this.m.ID = "event.volunteers";
-		this.m.Title = "Along the way...";
+		this.m.Title = "Sur la route...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_80.png[/img]{You are sitting in your tent and flipping a quill pen through your fingers. Awhile back you saw a scribe doing it, but you can\'t figure out how he did it so fast without dropping the damned thing. Even a breeze carries out from your shuffling fingers. %randombrother% shakes his head.%SPEECH_ON%Will we ever financially recover from this?%SPEECH_OFF%Sighing, you look up. You\'d hoped the men would keep it together and not fret over losses but given a whole series of recent events the company almost seems on the precipice of incurring irreversible damage. Morale is low, the treasury is low, but even if you had the monies it seems like many might not even wish to join the company anyway given its lousy performance. Just then, a sellsword enters your camp with three men in tow. The man in front introduces himself, then makes his case.%SPEECH_ON%We knew of the %companyname% for its reputation, and we marched far to see it for ourselves. Now, if I may speak honestly, y\'all seem beat to hell and not at all like the stories spoke of, but, shite, we know this world is hard on people and the only thing to do is make hay of it. We didn\'t walk all this way to get upset at a little scuff, y\'know?%SPEECH_OFF%The men offer their services without upfront hiring costs, and not only this but the rest of the company is emboldened by the fact that the world still thinks highly of them and their efforts. All that time spent furnishing the %companyname%\'s renown has finally paid off.}",
+			Text = "[img]gfx/ui/events/event_80.png[/img]{Vous êtes assis dans votre tente et faites tourner une plume d\'oie entre vos doigts. Il y a quelque temps, vous avez vu un scribe le faire, mais vous n\'arrivez pas à comprendre comment il a pu le faire si vite sans faire tomber cette satanée chose. Une brise s\'échappe de vos doigts. %randombrother% secoue la tête.%SPEECH_ON%Est-ce que nous nous en remettrons un jour financièrement?%SPEECH_OFF%En soupirant, vous levez les yeux. Vous aviez espéré que les hommes garderaient leur sang-froid et ne s\'inquiéteraient pas des pertes, mais au vu de toute une série d\'événements récents, la compagnie semble presque sur le point de subir des dommages irréversibles. Le moral est bas, la trésorerie est faible, mais même si vous aviez l\'argent, il semble que beaucoup ne voudraient pas rejoindre la compagnie étant donné ses performances médiocres. À ce moment-là, un mercenaire entre dans votre camp avec trois hommes à sa botte. L\'homme en tête se présente, puis expose son cas.%SPEECH_ON%Nous connaissions la compagnie %companyname% pour sa réputation et nous venons de loin pour la voir par nous-mêmes. Maintenant, si je peux parler honnêtement, vous semblez tous complétement abattus et ne ressemblez pas du tout aux récits dont on parle, mais, merde, nous savons que ce monde est dur pour les gens, la seule chose à faire est d\'en tirer profit. Nous n\'avons pas fait tout ce chemin pour nous énerver à cause d\'une petite éraflure, vous savez?%SPEECH_OFF%Les hommes offrent leurs services gratuitement. Cela suffit pour que toute la compagnie soit de nouveau sur pied, encouragé par le fait que le monde a toujours eu une haute opinion d\'eux et de leurs services. Tout ce temps passé à assurer la renommée de la compagnie %companyname%\ a finalement porté ses fruits.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Welcome aboard.",
+					Text = "Bienvenue à bord.",
 					function getResult( _event )
 					{
 						this.World.getPlayerRoster().add(_event.m.Dude1);
@@ -87,11 +87,6 @@ this.volunteers_event <- this.inherit("scripts/events/event", {
 		{
 			return;
 		}
-		
-		if (this.World.Assets.getBusinessReputation() < 1800 || this.World.Assets.getMoney() > 1500)
-		{
-			return;
-		}
 
 		local fallen = [];
 		local fallen = this.World.Statistics.getFallen();
@@ -106,14 +101,19 @@ this.volunteers_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
-		if (this.World.getPlayerRoster().getSize() < 2)
+		if (this.World.getPlayerRoster().getSize() + 3 >= this.World.Assets.getBrothersMax())
+		{
+			return;
+		}
+
+		if (this.World.Assets.getBusinessReputation() < 1800 || this.World.Assets.getMoney() > 1500)
 		{
 			return;
 		}
 
 		local brothers = this.World.getPlayerRoster().getAll();
 
-		if (this.World.getPlayerRoster().getSize() + 3 >= this.World.Assets.getBrothersMax())
+		if (brothers.len() < 2)
 		{
 			return;
 		}

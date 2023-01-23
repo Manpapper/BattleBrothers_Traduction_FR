@@ -6,17 +6,17 @@ this.gladiator_origin_vs_oathtaker_event <- this.inherit("scripts/events/event",
 	function create()
 	{
 		this.m.ID = "event.gladiator_origin_vs_oathtaker";
-		this.m.Title = "During camp...";
+		this.m.Title = "Pendant le camp...";
 		this.m.Cooldown = 70.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_26.png[/img]{%oathtaker% and %gladiator% are ruminating over the proper use of weaponry. The Oathtaker is inclined to believe that every swing of the sword is powered by an intent to do good. The gladiator retorts that keeping oneself alive is the greatest good, such that the start of a sword swing already has good intentions, therefore its finality must not be for oneself, but instead for the crowd that is watching. Raising an eyebrow, %oathtaker% says,%SPEECH_ON%You think battles are shows, gladiator?%SPEECH_OFF%%gladiator% grins as he leans in.%SPEECH_ON%Life itself is a show, Oathtaker, and I\'m its greatest star.%SPEECH_OFF%You regret listening in on the conversation.}",
+			Text = "[img]gfx/ui/events/event_26.png[/img]{%oathtaker% et %gladiator% réfléchissent sur l\'utilisation appropriée de leurs armes. L\'Oathtaker est tenté de croire que chaque coup d\'épée est motivé par l\'intention de faire le bien. Le gladiateur rétorque que se maintenir en vie est la principale priorité, de sorte que le premier coup porté avec une épée est synonyme de bonnes intentions et que sa finalité ne doit pas être pour soi-même, mais plutôt pour la foule qui regarde. En haussant un sourcil, %oathtaker% dit,%SPEECH_ON% Vous pensez que les batailles sont de simples spectacles, gladiateur?%SPEECH_OFF%%gladiator% sourit en se penchant vers lui.%SPEECH_ON% La vie elle-même est un spectacle, Oathtaker, et je suis sa plus grande star.%SPEECH_OFF% Vous regrettez d\'avoir écouté cette conversation.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "It\'s a horror show, truly.",
+					Text = "C\'est un spectacle horrible, vraiment.",
 					function getResult( _event )
 					{
 						return 0;
