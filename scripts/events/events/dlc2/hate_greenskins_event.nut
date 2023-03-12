@@ -46,7 +46,7 @@ this.hate_greenskins_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
-		if (this.Time.getVirtualTimeF() - this.World.Events.getLastBattleTime() > 5.0)
+		if (this.Time.getVirtualTimeF() - this.World.Events.getLastBattleTime() > 6.0)
 		{
 			return;
 		}

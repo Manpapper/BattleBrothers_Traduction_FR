@@ -161,29 +161,33 @@ this.food_item <- this.inherit("scripts/items/item", {
 
 	function onAddedToStash( _stashID )
 	{
-		if (_stashID == "player" && this.m.BestBefore == 0)
+		if (_stashID == "player")
 		{
-			local time;
-
-			if (("State" in this.World) && this.World.State != null && this.World.State.getCombatStartTime() != 0)
+			if (this.m.BestBefore == 0)
 			{
-				time = this.World.State.getCombatStartTime();
-			}
-			else
-			{
-				time = this.Time.getVirtualTimeF();
+				local time;
+
+				if (("State" in this.World) && this.World.State != null && this.World.State.getCombatStartTime() != 0)
+				{
+					time = this.World.State.getCombatStartTime();
+				}
+				else
+				{
+					time = this.Time.getVirtualTimeF();
+				}
+
+				this.m.BestBefore = time + this.m.GoodForDays * this.World.getTime().SecondsPerDay;
 			}
 
-			this.m.BestBefore = time + this.m.GoodForDays * this.World.getTime().SecondsPerDay;
+			if (this.m.BoughtAtPrice == 0)
+			{
+				if (("State" in this.World) && this.World.State != null && this.World.State.getCurrentTown() != null)
+				{
+					this.m.BoughtAtPrice = this.getBuyPrice();
+				}
+			}
+
 			this.World.Assets.updateFood();
-		}
-
-		if (_stashID == "player" && this.m.BoughtAtPrice == 0)
-		{
-			if (("State" in this.World) && this.World.State != null && this.World.State.getCurrentTown() != null)
-			{
-				this.m.BoughtAtPrice = this.getBuyPrice();
-			}
 		}
 	}
 

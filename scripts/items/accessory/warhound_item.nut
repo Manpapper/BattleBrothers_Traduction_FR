@@ -120,8 +120,38 @@ this.warhound_item <- this.inherit("scripts/items/accessory/accessory", {
 
 	function onActorDied( _onTile )
 	{
-		if (!this.isUnleashed() && _onTile != null)
+		if (_onTile == null)
 		{
+			return;
+		}
+
+		if (!this.isUnleashed())
+		{
+			if (!_onTile.IsEmpty)
+			{
+				for( local i = 0; i < 6; i = ++i )
+				{
+					if (!_onTile.hasNextTile(i))
+					{
+					}
+					else
+					{
+						local t = _onTile.getNextTile(i);
+
+						if (t.IsEmpty)
+						{
+							_onTile = t;
+							break;
+						}
+					}
+				}
+
+				if (!_onTile.IsEmpty)
+				{
+					return;
+				}
+			}
+
 			local entity = this.Tactical.spawnEntity(this.getScript(), _onTile.Coords.X, _onTile.Coords.Y);
 			entity.setItem(this);
 			entity.setName(this.getName());

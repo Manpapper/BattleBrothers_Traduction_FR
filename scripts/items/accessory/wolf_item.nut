@@ -112,13 +112,51 @@ this.wolf_item <- this.inherit("scripts/items/accessory/accessory", {
 
 	function onActorDied( _onTile )
 	{
-		if (!this.isUnleashed() && _onTile != null)
+		if (_onTile == null)
 		{
+			return;
+		}
+
+		if (!this.isUnleashed())
+		{
+			if (!_onTile.IsEmpty)
+			{
+				for( local i = 0; i < 6; i = ++i )
+				{
+					if (!_onTile.hasNextTile(i))
+					{
+					}
+					else
+					{
+						local t = _onTile.getNextTile(i);
+
+						if (t.IsEmpty)
+						{
+							_onTile = t;
+							break;
+						}
+					}
+				}
+
+				if (!_onTile.IsEmpty)
+				{
+					return;
+				}
+			}
+
 			local entity = this.Tactical.spawnEntity(this.getScript(), _onTile.Coords.X, _onTile.Coords.Y);
 			entity.setItem(this);
 			entity.setName(this.getName());
+			entity.setVariant(this.getVariant());
 			this.setEntity(entity);
 			entity.setFaction(this.Const.Faction.PlayerAnimals);
+
+			if (this.m.ArmorScript != null)
+			{
+				local item = this.new(this.m.ArmorScript);
+				entity.getItems().equip(item);
+			}
+
 			this.Sound.play(this.m.UnleashSounds[this.Math.rand(0, this.m.UnleashSounds.len() - 1)], this.Const.Sound.Volume.Skill, _onTile.Pos);
 		}
 	}

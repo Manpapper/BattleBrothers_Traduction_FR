@@ -90,6 +90,7 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 		local skill = this.m.SkillBonus == null ? _user.getCurrentProperties().getMeleeSkill() : this.m.SkillBonus;
 		local toHit = this.Math.min(100, skill - 10 + this.m.ChanceBonus + (_user.getSkills().hasSkill("effects.goblin_shaman_potion") ? 100 : 0));
 		local rolled = this.Math.rand(1, 100);
+		this.m.SkillBonus = null;
 		this.Tactical.EventLog.log_newline();
 
 		if (rolled <= toHit)
@@ -161,8 +162,6 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 			this.m.ChanceBonus += 10;
 			return false;
 		}
-
-		this.m.SkillBonus = null;
 	}
 
 });
