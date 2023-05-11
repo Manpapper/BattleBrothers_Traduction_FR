@@ -83,7 +83,7 @@ this.hunting_lindwurms_contract <- this.inherit("scripts/contracts/contract", {
 				local nearTile = this.Contract.getTileToSpawnLocation(playerTile, 4, 7);
 				local party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Beasts).spawnEntity(tile, "Lindwurm", false, this.Const.World.Spawn.Lindwurm, 100 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				party.getSprite("banner").setBrush("banner_beasts_01");
-				party.setDescription("A Lindwurm - a wingless bipedal dragon resembling a giant snake.");
+				party.setDescription("Un Lindwurm - un dragon bipède sans ailes ressemblant à un serpent géant.");
 				party.setFootprintType(this.Const.World.FootprintsType.Lindwurms);
 				party.setAttackableByAI(false);
 				party.setFootprintSizeOverride(0.75);
