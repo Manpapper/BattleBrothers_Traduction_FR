@@ -9,7 +9,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_180.png[/img]{Vous rencontrez un homme qui semble être en pleine confusion: d\'un côté, il est couvert d\'une armure ornée qui semble convenir à un homme assis sur un cheval prêt à effectuer une joute dans un grand tournoi. D\'autre part, il est étendu sur le sol, les jambes faisant des ciseaux d\'avant en arrière, ce qui traduit chez lui un état d\'ébriété avancé. Ses bras sont étendus comme s\'ils voulaient étreindre quelqu\'un ou quelque chose...%SPEECH_ON%Je ne suis plus enclin à suivre la voie martiale, je préférerais acheter mon chemin vers les grâces du jeune Anselme plutôt que de le faire à l\'épée. Que les anciens dieux me frappent sans délai pour l\'avoir crier haut et fort!%SPEECH_OFF%Il semble qu\'il offre ses armes et armures pour un prix de, si vous comprenez bien ses élucubrations, 9000 couronnes.}",
+			Text = "[img]gfx/ui/events/event_180.png[/img]{Vous rencontrez un homme qui semble être en pleine confusion: d\'un côté, il est couvert d\'une armure ornée qui semble convenir à un homme assis sur un cheval prêt à effectuer une joute dans un grand tournoi. D\'autre part, il est étendu sur le sol, les jambes faisant des ciseaux d\'avant en arrière, ce qui traduit chez lui un état d\'ébriété avancé. Ses bras sont étendus comme s\'ils voulaient étreindre quelqu\'un ou quelque chose...%SPEECH_ON%Je ne suis plus enclin à suivre la voie martiale, je préférerais acheter mon chemin vers les grâces du jeune Anselm plutôt que de le faire à l\'épée. Que les anciens dieux me frappent sans délai pour l\'avoir crier haut et fort!%SPEECH_OFF%Il semble qu\'il offre ses armes et armures pour un prix de, si vous comprenez bien ses élucubrations, 9000 couronnes.}",
 			Image = "",
 			List = [],
 			Options = [
@@ -35,7 +35,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 				if (this.World.Assets.getOrigin().getID() == "scenario.paladins")
 				{
 					this.Options.push({
-						Text = "Le jeune Anselme a d\'autres projets pour vous. Rejoignez-nous!",
+						Text = "Le jeune Anselm a d\'autres projets pour vous. Rejoignez-nous!",
 						function getResult( _event )
 						{
 							return "Oathtaker";
@@ -108,7 +108,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "Oathtaker",
-			Text = "[img]gfx/ui/events/event_183.png[/img]{Vous préférez lui tendre la main plutôt que de lui donner bêtement de l\'argent.%SPEECH_ON%Monsieur, le jeune Anselm savait très bien qu\'aucun serment ne pouvait être respecté éternellement. Echouer, c\'est vivre, et vivre, c\'est échouer. Pensez-vous qu\'être ici dans la boue est une erreur? Pensez-vous que vos échecs sont réparés grâce à l\'argent?%SPEECH_OFF%L\'homme lève les yeux. Il demande si vous aussi, vous connaissez le jeune Anselme. Il ne vous a toujours pas pris la main, alors vous prenez la sienne et le mettez debout.%SPEECH_ON%Oathtaker, qui m\'a envoyé selon vous?%SPEECH_OFF%L\'homme trébuche une seconde, vous regardant avec incrédulité. Puis il esquisse un large sourire et vous serre dans ses bras, vous embrassant ainsi que la compagnie. Un Oathtaker peut se trouver n\'importe où dans le monde, il ne sera jamais seul, tel était le premier message du Jeune Anselme.}",
+			Text = "[img]gfx/ui/events/event_183.png[/img]{Vous préférez lui tendre la main plutôt que de lui donner bêtement de l\'argent.%SPEECH_ON%Monsieur, le jeune Anselm savait très bien qu\'aucun serment ne pouvait être respecté éternellement. Echouer, c\'est vivre, et vivre, c\'est échouer. Pensez-vous qu\'être ici dans la boue est une erreur? Pensez-vous que vos échecs sont réparés grâce à l\'argent?%SPEECH_OFF%L\'homme lève les yeux. Il demande si vous aussi, vous connaissez le jeune Anselm. Il ne vous a toujours pas pris la main, alors vous prenez la sienne et le mettez debout.%SPEECH_ON%Oathtaker, qui m\'a envoyé selon vous?%SPEECH_OFF%L\'homme trébuche une seconde, vous regardant avec incrédulité. Puis il esquisse un large sourire et vous serre dans ses bras, vous embrassant ainsi que la compagnie. Un Oathtaker peut se trouver n\'importe où dans le monde, il ne sera jamais seul, tel était le premier message du Jeune Anselm.}",
 			Image = "",
 			List = [],
 			Characters = [],

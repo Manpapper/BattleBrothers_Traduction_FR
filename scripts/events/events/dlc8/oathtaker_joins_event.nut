@@ -57,7 +57,7 @@ this.oathtaker_joins_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "B",
-			Text = "[img]gfx/ui/events/event_180.png[/img]{L\'homme tombe à genoux, la tête basse.%SPEECH_ON%En vérité, le jeune Anselme m\'a guidé jusqu\'ici! Je vous rejoindrai sur le chemin, compagnons Oathtakers!%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_180.png[/img]{L\'homme tombe à genoux, la tête basse.%SPEECH_ON%En vérité, le jeune Anselm m\'a guidé jusqu\'ici! Je vous rejoindrai sur le chemin, compagnons Oathtakers!%SPEECH_OFF%}",
 			Banner = "",
 			Characters = [],
 			Options = [
