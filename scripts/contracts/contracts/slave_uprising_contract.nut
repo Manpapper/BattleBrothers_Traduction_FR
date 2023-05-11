@@ -15,7 +15,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.contract.create();
 		this.m.DifficultyMult = this.Math.rand(70, 105) * 0.01;
 		this.m.Type = "contract.slave_uprising";
-		this.m.Name = "Slave Uprising";
+		this.m.Name = "Révolte des endettés";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -256,14 +256,14 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_162.png[/img]{Normally surrounded by contemplative opulence, %employer% is in a whirlwind of advisers and fellow Viziers, each counseling the other with snaps of their fingers and aggressive points on a map. Despite all the frenzy, a small servant threads through the crowd and comes to you with a scroll. He deftly explains that indebted have overtaken their masters in %townname%\'s %location%.%SPEECH_ON%A Crownling\'s services are requested. If you wish to partake in the restoration of normative statuses for all parties involved, and for the betterment of indebted and master alike, please take this here pen and cross an X here on the scroll.%SPEECH_OFF%He stares at you and you at him. He sighs and taps the page.%SPEECH_ON%Your pay, if accepted, here. %reward% crowns.%SPEECH_OFF% | En vous approchant %employer%\'s rooms, a pair of guards move to stick you with the business ends of their halberds. This elicits shouting and hurried footsteps from down the hall as an interfering servant comes sprinting down.%SPEECH_ON%Guards! These sloppily dressed travelers are Crownlings. Apologies, Crownling, we are on edge for the very reason the Viziers may need your assistance: the indebted have overtaken the %location% in %townname%. The uprising may spread from there.%SPEECH_OFF%The servant produces a scroll and hands it over. It states that there are %reward% crowns awaiting those who squash the revolt of the indebted, and the scroll bears the sigil of %townname%\'s various Viziers. | The Viziers of %townname% are together in their war room and there is more tension than usual in the air. You are gated off from getting anywhere close to them. You\'re not sure how, but large golden bars have been brought down from the ceiling. They talk amongst themselves, nodding now and again, before handing a servant a scroll. You watch as the servant rushes to you. He hands it over, and then repeats its words from memory.%SPEECH_ON%The indebted have overrun their masters and thence taken over the %location%. %reward% crowns are available to dispatch to the coffers of the man or mans who will crush this band of upstarts.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_162.png[/img]{Normalement entouré d\'une opulence contemplative, %employer% se trouve dans un torrent de conseillers et de vizirs, chacun conseillant l\'autre en claquant des doigts et en pointant agressivement sur une carte. Malgré cette frénésie, un petit serviteur se faufile dans la foule et vient vous voir avec un parchemin. Il explique habilement que les endettés ont pris le dessus sur leurs maîtres à %location% dans %townname%.%SPEECH_ON%Les services d\'un mercenaire sont demandés. Si vous souhaitez participer à la restauration des statuts habituels pour tous les partis concernés, et pour l\'amélioration de la situation des endettés et des maîtres, veuillez prendre cette plume et faire une croix ici sur le parchemin.%SPEECH_OFF%Il vous fixe et vous le fixez. Il soupire et touche la page.%SPEECH_ON%Votre salaire, s\'il est accepté, est ici. %reward% couronnes.%SPEECH_OFF% | En vous approchant du bureau de %employer%, deux gardes s\'apprêtent à vous frapper avec le bout de leurs hallebardes. Cela provoque des cris et des bruits de pas précipités dans le couloir, alors qu\'un serviteur interfére après être arrivé en courant.%SPEECH_ON%Gardes ! Ces voyageurs mal habillés sont des mercenaires. Excusez-nous, mercenaire, mais nous sommes sur les nerfs pour la même raison que les vizirs ont besoin de votre aide : les endettés ont envahi %location% à %townname%. Le mouvement de révolte risque de s\'étendre à partir de là.%SPEECH_OFF%Le serviteur sort un parchemin et le tend. Il indique que %reward% couronnes attendent ceux qui écraseront la révolte des endettés, et le parchemin porte le sigle des différents vizirs de %townname%. | Les vizirs de %townname% sont réunis dans leur salle de guerre et il y a plus de tension que d\'habitude dans l\'air. Vous ne pouvez pas vous approcher d\'eux. Vous ne savez pas trop comment, mais de gros lingots d\'or ont été descendus du grenier. Ils discutent entre eux, hochant la tête de temps à autre, avant de tendre un parchemin à un serviteur. Vous observez le serviteur qui se précipite vers vous. Il vous le remet, puis en répète les mots de mémoire.%SPEECH_ON%Les endettés ont renversé leurs maîtres et se sont donc emparés de %location%. %reward% couronnes sont disponibles pour alimenter les coffres de l\'homme ou des hommes qui écraseront cette bande de rebelles.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{They stand no chance. | We\'ll make an example out of them. | We\'ll retake the %location%.}",
+					Text = "{Ils n\'ont aucune chance. | Nous allons en faire un exemple. | Nous reprendrons %location%.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -271,7 +271,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Ça ne ressemble pas à notre type de travail. | Je ne pense pas. | We\'re not in the business of fighting former slaves.}",
+					Text = "{Ça ne ressemble pas à notre type de travail. | Je ne pense pas. | Nous n\'avons pas vocation à combattre d\'anciens esclaves.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -288,12 +288,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "FightingBack1",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{The indebted at %location% see you coming and you hope the presence of your weapons will help deter them from continuing whatever freedom seeking they\'ve undertaken. Shockingly, they do not lay down their arms but merely come together to stand against you. They are a crude lot, an arrangement of those whom enforced labor and recruitment has put the number on. | You find the indebted and they stare back with a very clear understanding of why you are there. The arrangement of participants, yourself armed to the teeth, coming by way of town, the indebted, armed with whatever they scavenged, far from their chains. They are a motley, sad assembly, but you know well that whatever they lack in weaponry they more than make up for in desire. A taste of freedom is nothing if not a sharpening effect. | As described, the indebted have taken over the %location% and armed themselves with whatever they could find. Upon seeing you, they hurry to some notion of formation, but they lack training, discipline, food, and much else. What they have, though, is no desire to Retournez à whence they came which can be as sharp and dangerous a steel as any.}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{Les endettés à %location% vous voient arriver et vous espérez que la présence de vos armes les dissuadera de poursuivre leur quête de liberté. Chose choquante, ils ne déposent pas les armes, mais s\'unissent pour se dresser contre vous. Il s\'agit d\'une bande hétéroclite, d\'un arrangement de ceux que le travail forcé et le recrutement a marqué. | Vous trouvez les endettés et ils vous regardent avec une compréhension très claire de la raison de votre présence. L\'arrangement des participants, vous-même armé jusqu\'aux dents, venant par la ville, les endettés, armés de ce qu\'ils ont récupéré, loin de leurs chaînes. Ils forment un triste regroupement hétéroclite, mais vous savez bien que ce qui leur manque en armement, ils le compensent largement en volonté. Le goût de la liberté leur donne du courage à se battre. | Comme décrit, les endettés ont pris le contrôle de %location% et se sont armés de tout ce qu\'ils ont pu trouver. En vous voyant, ils se hâtent de se regrouper, mais ils manquent d\'entraînement, de discipline, de nourriture et de bien d\'autres choses encore. Ce qu\'ils ont, par contre, c\'est le désir de ne pas retourner d\'où ils viennent, ce qui peut être un acier aussi tranchant et dangereux que n\'importe quel autre.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Destroy them!",
+					Text = "Détruisez-les !",
 					function getResult()
 					{
 						local tile = this.World.State.getPlayer().getTile();
@@ -321,12 +321,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "FightingBack2",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_71.png[/img]{The uprising has been crushed. In death, the faces of the slaves do seem to carry some relief, as though the end of all things is preferred to the relentless cruelty of living in the chain. %employer% and the Viziers will be awaiting your return.}",
+			Text = "[img]gfx/ui/events/event_71.png[/img]{Le soulèvement a été écrasé. Dans la mort, les visages des esclaves semblent porter un certain soulagement, comme si la fin de toutes choses était préférable à la cruauté implacable de la vie à la chaîne. %employer% et les vizirs attendront votre retour.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Our work is done.",
+					Text = "Notre travail est terminé.",
 					function getResult()
 					{
 						return 0;
@@ -338,12 +338,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Outlaws1",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_176.png[/img]{You get to the %location% to find it burned to the ground and ransacked. A survivor stumbles out of the blackened ashes of a building. He explains the indebted set themselves upon everyone available, ravishing the women, killing children, stole everything of value and then split off into the hinterland. | The uprising of the indebted has long since departed %location%, leaving behind a wake of destruction and death. A number of survivors stumble about picking up their things. Those who can still speak talk of horrors, the indebted basically setting upon the area like savages, killing, ravishing, robbing. A man with rags over his eyes says he heard them talk about heading into the countryside and splitting up there.%SPEECH_ON%They\'re simple bandits now. Animals who have tasted the blood, for them there is no Retournez à the safety of the chain. They are lost.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_176.png[/img]{Vous arrivez à %location% pour la trouver brûlée et saccagée. Un survivant sort des cendres noircies d\'un bâtiment. Il explique que les endettés se sont attaqués à tous ceux qui étaient là, ravissant les femmes, tuant les enfants, volant tout ce qui avait de la valeur, puis se sont dispersés dans l\'arrière-pays. | Le soulèvement des endettés a depuis longtemps quitté %location%, laissant derrière lui un sillage de destruction et de mort. Un certain nombre de survivants ramassent leurs affaires en titubant. Ceux qui peuvent encore parler parlent d\'horreurs, les endettés s\'attaquant à la région comme des sauvages, tuant, ravageant, volant. Un homme dont les yeux sont recouverts de chiffons dit qu\'il les a entendus parler de se diriger vers la campagne et de s\'y séparer.%SPEECH_ON%Ce sont de simples bandits maintenant. Des animaux qui ont goûté au sang, pour eux il n\'y a pas de retour à la sécurité des chaines. Ils sont perdus.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll hunt them down.",
+					Text = "Nous allons les chasser.",
 					function getResult()
 					{
 						this.World.uncoverFogOfWar(this.Contract.m.Target.getPos(), 400.0);
@@ -360,7 +360,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 				local nearest_nomads = this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getNearestSettlement(cityTile);
 				local tile = this.Contract.getTileToSpawnLocation(this.Contract.m.Home.getTile(), 9, 15);
 				local party = this.World.FactionManager.getFaction(nearest_nomads.getFaction()).spawnEntity(tile, "Indebted", false, this.Const.World.Spawn.NomadRaiders, 110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				party.setDescription("A group of indebted that turned to banditry.");
+				party.setDescription("Un groupe d\'endettées qui se sont tournées vers le banditisme.");
 				party.setFootprintType(this.Const.World.FootprintsType.Nomads);
 				party.getSprite("banner").setBrush(nearest_nomads.getBanner());
 				party.getSprite("body").setBrush("figure_nomad_03");
@@ -387,12 +387,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Outlaws3",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_168.png[/img]{You look down at the corpse of a slave, his body molded by labors of a prior life, but in his hands and around his neck the adornments of stolen weapons and loot. In a cruel turn of thought, you find it strange that they would have been easier to put down had they simply no ambition at all besides their freedom. But it was their greed and sense of wanting that made them all the more dangerous. But. They\'re dead. And the Viziers of %townname% will be happy regardless of whatever lofty goals the indebted had.}",
+			Text = "[img]gfx/ui/events/event_168.png[/img]{Vous regardez le cadavre d\'un esclave, le corps modelé par les travaux d\'une vie passée, mais dans ses mains et autour de son cou les ornements d\'armes et de butins volés. Dans un cruel retournement de pensée, vous trouvez étrange qu\'ils auraient été plus faciles à abattre s\'ils n\'avaient eu d\'autre ambition que leur liberté. Mais c\'est leur avidité et leur sens du désir qui les ont rendus d\'autant plus dangereux. Mais... Ils sont morts. Et les vizirs de %townname% seront heureux, quels que soient les nobles objectifs des endettés.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Our work is done.",
+					Text = "Notre travail est terminé.",
 					function getResult()
 					{
 						return 0;
@@ -404,12 +404,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Spartacus1",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_166.png[/img]{You find the indebted sitting amongst desert rocks and they do not rise to your arrival. Instead, one man comes to you. Despite his powerful build, you sense that he has come to barter, a diplomatic tongue bedded in all his muscle.%SPEECH_ON%Crownling, I figured you would come. My name is %spartacus%, the chosen leader of these freedom seekers, insofar as the open cage is the leader of the bird who wishes to fly. You arrive to us by way of the gilded road, lead by the chain of unseen gold, promises which you cannot guarantee to be kept, and it is upon these forgeries of agreement, these misunderstood arrangements, that you are to come and kill or capture us. Is that so?%SPEECH_OFF%You nod. %spartacus% nods back.%SPEECH_ON%So it is. Before we commit ourselves to our agreements, ourselves to be masters of our own hands, and yourself slave to the mighty crown, let me try and negotiate in a manner which you, Crownling, will find beneficial.%SPEECH_OFF%The man kneels.%SPEECH_ON%I am the scion to a lost family, to a lost heritage, to a lost estate. These people, these men, are my family now. But from my previous life I have something which you may find valuable.%SPEECH_OFF%He holds out a piece of paper.%SPEECH_ON%Let us go and I will write upon this paper here the location of treasures which you cannot find elsewhere. Attack us, and I shall take my family\'s final heirlooms to the grave, and gasp my final breath not in concern with such lost riches, but with to breathe the fierce fire of freedom itself, glistening in my lungs, the pain preferable to the comforts of any chain.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_166.png[/img]{Vous trouvez les endettés assis au milieu des rochers du désert et ils ne se lèvent pas à votre arrivée. Au lieu de cela, c\'est un homme qui vient à vous. Malgré sa puissante carrure, vous sentez qu\'il est venu pour négocier, une langue diplomatique enfouie dans tous ses muscles.%SPEECH_ON%Mercenaire, je me doutais que vous viendriez. Mon nom est %spartacus%, le chef élu de ces chercheurs de liberté, dans la mesure où la cage ouverte est le chef de l\'oiseau qui souhaite voler. Vous arrivez à nous par l\'appel des couronnes, conduits par la chaîne d\'or invisible, des promesses dont vous ne pouvez garantir le respect, et c\'est sur ces faux accords, ces arrangements mal compris, que vous devez venir nous tuer ou nous capturer. Est-ce bien le cas ?%SPEECH_OFF%Vous acquiescez. %spartacus% répond par un signe de tête.%SPEECH_ON%Il en est donc bien ainsi ainsi. Avant de nous engager à respecter nos accords, à être maîtres de nos mains et esclaves de la puissante couronne, permettez-moi d\'essayer de négocier d\'une manière que vous, mercenaire, jugerez bénéfique.%SPEECH_OFF%L\'homme s\'agenouille.%SPEECH_ON%Je suis le descendant d\'une famille perdue, d\'un héritage perdu, d\'un domaine perdu. Ces gens, ces hommes, sont ma famille aujourd\'hui. Mais de ma vie antérieure, je tiens quelque chose qui pourrait vous être utile.%SPEECH_OFF%Il tend une feuille de papier.%SPEECH_ON%Laissez-nous partir et j\'écrirai sur ce papier l\'emplacement des trésors que vous ne trouverez pas ailleurs. Attaquez-nous, et j\'emporterai dans la tombe les derniers héritages de ma famille, et je rendrai mon dernier souffle, non pas pour me préoccuper de ces richesses perdues, mais pour respirer le feu féroce de la liberté elle-même, scintillant dans mes poumons, la douleur étant préférable au confort de n\'importe quelle chaîne.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "I agree to your terms. You shall have your freedom.",
+					Text = "J\'accepte vos conditions. Vous aurez votre liberté.",
 					function getResult()
 					{
 						return "Spartacus2";
@@ -417,7 +417,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "This is just business. Your little rebellion is about to be crushed.",
+					Text = "Ce n\'est que du business. Votre petite rébellion est sur le point d\'être écrasée.",
 					function getResult()
 					{
 						return "Spartacus3";
@@ -429,12 +429,11 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Spartacus2",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_166.png[/img]{You stick your hand out. %spartacus% sticks out his. He speaks.%SPEECH_ON%So it is.%SPEECH_OFF%He holds up a pencil made of rock and some black powdery rock at its tip. He points at a far away stone.%SPEECH_ON%As we leave, I will write the location of my family\'s heirlooms there. Now I see upon your face the question of whether I am lying or not. Such uncertainty is the price of freedom, no? To be unsure of where you go, but to do so of your own mind. That is true freedom. The comfort of the cage is for birds who do not wish to fly, Crownling. May your travels upon the gilded road be as fruitful as our first steps.%SPEECH_OFF%}",
-			Image = "",
+			Text = "[img]gfx/ui/events/event_166.png[/img]{Vous tendez la main. %spartacus% tend la sienne. Il parle.%SPEECH_ON%Qu\'il en soit ainsi.%SPEECH_OFF%Il brandit un crayon fait de roche et d\'un peu de poudre noire à son extrémité. Il pointe du doigt une pierre éloignée.%SPEECH_ON%Lorsque nous partirons, j\'écrirai l\'emplacement des objets de ma famille. Maintenant, je vois sur votre visage la question de savoir si je mens ou non. Cette incertitude est le prix de la liberté, non ? Ne pas savoir où l\'on va, mais le faire de son plein gré. C\'est cela la vraie liberté. Le confort de la cage est pour les oiseaux qui ne veulent pas voler, mercenaire. Que vos voyages sur la route de l\'or soient aussi fructueux que nos premiers pas.			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Enjoy your freedom while it lasts.",
+					Text = "Profitez de votre liberté tant qu\'elle dure.",
 					function getResult()
 					{
 						local bases = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).getSettlements();
@@ -479,7 +478,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 						location.setDiscovered(true);
 						this.World.getCamera().moveTo(location);
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationMajorOffense, "Sided with indebted in their uprising");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationMajorOffense, "S\'est rangé du côté des endettés lors de leur soulèvement");
 						this.World.Contracts.finishActiveContract();
 						return 0;
 					}
@@ -490,12 +489,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Spartacus3",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_166.png[/img]{%spartacus% sticks his hand out, but you do not stick out yours. Instead, you draw your sword. The rebellion\'s leader nods.%SPEECH_ON%Alright. You are forbidden to leave the cage of the crown, I see, and you are bidden to the glistening of the gilded road, so urgent your enslavement, so captured, that when the gate is open you do not open your wings, instead you settle for a mere hop to the master\'s finger. May battle treat us well, Crownling.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_166.png[/img]{%spartacus% tend sa main, mais vous ne tendez pas la vôtre. Au lieu de cela, vous tirez votre épée. Le chef de la rébellion hoche la tête.%SPEECH_ON%D\'accord. Il vous est interdit de quitter la cage de la couronne, je vois, et vous êtes invité à vous rendre sur la route dorée. Votre asservissement est si urgent, votre captivité si grande, que lorsque la porte est ouverte, vous n\'ouvrez pas vos ailes, mais vous vous contentez d\'un simple saut jusqu\'au doigt du maître. Que la bataille nous traite bien, mercenaire.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To Arms!",
+					Text = "Aux armes !",
 					function getResult()
 					{
 						local tile = this.World.State.getPlayer().getTile();
@@ -523,12 +522,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Spartacus4",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_168.png[/img]{You stand over %spartacus%. Despite his fondness for freedom, the rebellion\'s dead leader is not smiling in his final, liberated moment. His face is wrenched in pain and he has wounds which reveal the slick patterns of that which folds beneath the flesh. But his eyes. There is a spark there, staring up at the sky. A shadow crosses his eyes and you look up expecting a bird, but there is nothing. When you look down, the spark is gone and the dead man is just a dead man.}",
+			Text = "[img]gfx/ui/events/event_168.png[/img]{Vous vous tenez au-dessus de %spartacus%. Malgré son goût pour la liberté, le chef défunt de la rébellion ne sourit pas dans son dernier moment de liberté. Son visage est déchiré par la douleur et ses blessures révèlent les motifs glissants de ce qui se cache sous la chair. Mais ses yeux. Il y a là une étincelle qui fixe le ciel. Une ombre traverse ses yeux et vous levez la tête, vous attendant à voir un oiseau, mais il n\'y a rien. Quand on baisse les yeux, l\'étincelle a disparu et le mort n\'est plus qu\'un mort.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Our work is done.",
+					Text = "Notre travail est terminé.",
 					function getResult()
 					{
 						return 0;
@@ -540,12 +539,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Fleeing1",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_59.png[/img]{You find a pile of rankled shackles which are hot to the touch. An old man points his hand north.%SPEECH_ON%The freed men went that way.%SPEECH_OFF%Curious, you ask him why he\'d rat out the indebted. He smiles.%SPEECH_ON%I\'ve work that needs finishing and sometimes the Viziers lend me a few. Hard to get a good task done with just my own two hands.%SPEECH_OFF% | You come across a long trail of sand and dirt and scrub which has clearly suffered northbound disturbances. Amongst the littered path you find a shackle, the last bit of evidence needed. The indebted have turned in north and you\'ll have to hunt them down. | You find a shackle flailing from the bush of desert scrub. An old man sipping water from a mug grunts and points northward.%SPEECH_ON%The indebted rabbited that way. If you manage to gather them back to the Vizier, perhaps put in a good word for me. I could use a man or two around here to fetch water. No freedmen ever fetches me water.%SPEECH_OFF%You\'ll not be putting in a word for nobody, but thank him anyway and head north.}",
+			Text = "[img]gfx/ui/events/event_59.png[/img]{Vous trouvez un tas de chaînes brûlantes qui sont chaudes au toucher. Un vieil homme pointe sa main vers le nord.%SPEECH_ON%Les hommes libérés sont partis par là.%SPEECH_OFF%Curieux, vous lui demandez pourquoi il dénoncerait les endettés. Il sourit.%SPEECH_ON%J\'ai des travaux à finir et parfois les vizirs m\'en prêtent quelques-uns. Il est difficile d\'accomplir un bon travail avec mes seules mains.%SPEECH_OFF% | Vous tombez sur une longue piste de sable, de terre et de broussailles qui a manifestement subi des dégâts. Parmi les détritus du chemin, vous trouvez une chaîne, la dernière preuve dont vous avez besoin. Les endettés se sont tournés vers le nord et vous devrez les traquer. | Vous trouvez une manille qui s\'agite dans un buisson du désert. Un vieil homme sirotant de l\'eau dans une tasse grogne et indique la direction du nord.%SPEECH_ON%Les endettés sont passés par là. Si vous réussissez à les ramener au Vizir, vous pourrez peut-être parler de moi en bien. J\'aurais besoin d\'un homme ou deux pour aller chercher de l\'eau. Aucun endetté ne m\'a jamais apporté d\'eau.%SPEECH_OFF%Vous ne parlerez pas pour personne, mais remerciez-le quand même et partez vers le nord.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll hunt them down.",
+					Text = "Nous allons les traquer.",
 					function getResult()
 					{
 						this.World.uncoverFogOfWar(this.Contract.m.Target.getPos(), 400.0);
@@ -562,7 +561,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 				local nearest_nomads = this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getNearestSettlement(cityTile);
 				local tile = this.Contract.getTileToSpawnLocation(this.Contract.m.Home.getTile(), 9, 15);
 				local party = this.World.FactionManager.getFaction(nearest_nomads.getFaction()).spawnEntity(tile, "Indebted", false, this.Const.World.Spawn.Slaves, 90 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				party.setDescription("A group of indebted.");
+				party.setDescription("Un groupe d\'endettés.");
 				party.setFootprintType(this.Const.World.FootprintsType.Nomads);
 				party.getSprite("banner").setBrush("banner_deserters");
 				this.Contract.m.UnitsSpawned.push(party);
@@ -600,12 +599,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Fleeing2",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_59.png[/img]{You finally catch up to the indebted. They\'re rough roaders by now, the bleak terrain which they have crossed having left its own marks upon them as they have upon it. But they\'ve not come this far to just to give up: the whole lot arm themselves at the very sight of you and make their own approach. | The indebted are found in a desperate state, insofar as the journey has given them free breath, they\'ve paid for it with mind and body alike. The sunburned, beleaguered and ragged men approach with eyes both wide and weary. You know by the wild stares that they\'ve no quit left in them. They\'ll be fighting it out on way or another.}",
+			Text = "[img]gfx/ui/events/event_59.png[/img]{Vous rattrapez enfin les endettés. Ce sont de rudes voyageurs à présent, le morne terrain qu\'ils ont traversé ayant laissé ses marques sur eux comme sur n\'importe qui. Mais ils ne sont pas venus jusqu\'ici pour abandonner : ils s\'arment tous à votre vue et s\'approchent. | Les endettés se trouvent dans un état désespéré, car si le voyage leur a permis de respirer librement, ils l\'ont payé de leur corps et de leur esprit. Les hommes brûlés par le soleil, épuisés et en haillons s\'approchent avec des yeux à la fois écarquillés et fatigués. Vous savez à leurs regards féroces qu\'ils n\'ont plus d\'espoir. Ils se battront d\'une manière ou d\'une autre.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Destroy them!",
+					Text = "Détruisez-les !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Target, this.Contract.m.IsPlayerAttacking);
@@ -618,12 +617,12 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Fleeing3",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_168.png[/img]{Putting an end to the indebted is a simple matter once it is all said and done. Any survivors make themselves incapable of a return, instead preferring the steel demise. In their skin you are not sure you would choose it any different. You collect what evidences you can and ready a Retournez à %employer%.}",
+			Text = "[img]gfx/ui/events/event_168.png[/img]{Il est facile d\'en finir avec les endettés une fois que tout a été dit et fait. Les survivants se rendent incapables de revenir, préférant la mort par l\'acier. A leur place, vous n\'êtes pas sûr que vous auriez choisi autre chose. Vous rassemblez les preuves que vous pouvez et vous préparez à retourner voir %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Our work is done.",
+					Text = "Notre travail est terminé.",
 					function getResult()
 					{
 						return 0;
@@ -635,20 +634,20 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_162.png[/img]{You do not find %employer% with a harem or swimming in wine. Instead you find him strutting about with an empty bird cage at his side. He somberly states that his favorite bird got out and flew away.%SPEECH_ON%Do not consider me dull witted, Crownling, I see that you might find similarity between my pet and my indebted. Feel free, if I may say, to do so. But you are shortsighted to think in such a manner. My bird will fly free, and to the world be of no use than to be consumed. But this is not freedom, Crownling, to resume a duty which birth had given it. Freedom was its escape from such a doom, an escape to my world, an escape not afforded to many of its kind.%SPEECH_OFF%The Vizier snaps his fingers and a servant appears seemingly from nowhere. He hands you a purse of coins. You look up to see the Vizier set the cage down and walk away. | %employer% is buried amongst the limbs of his, in the guard\'s words, \'favorite harem.\' He pokes his mouth out and you get the sense his eyes stare at you from the nook of a sweaty knee, though there\'s no real telling.%SPEECH_ON%The victorious Crownling returns to feast his weary eyes upon my finest wares. And it is so, my scouts say, that you laid to waste those upstart indebted, and that the message of their death has been reissued as a new utility, a kind word, written by your hand, Crownling, as warning to all other of the indebted.%SPEECH_OFF%The Vizier disappears momentarily, then reemerges between a woman\'s thighs.%SPEECH_ON%Servants! Pay the Crownling.%SPEECH_OFF%Two wiry-framed boys carry over a small chest and leave it at your feet. It is quite heavy, and you are offered no help carrying it out. | A man in chains meets you outside %employer%\'s rooms. He has a chain attached to each arm. One chain runs to the wall, the other chain rankles across the floor to a chest of crowns. Both chains are held by a lock. And this man has the key. He stares at you, his fingers gripping and ungripping the key, his breath uneven. He finally squats and unlocks the lock to your chest which you take up and step back. The slave holds the key at his chest, and he glances at the other lock, and he folds his hand autour de key and bows his head and there comes a noise you\'re not sure what to make of. A guard tells him to keep it quiet before ushering you out the door.}",
+			Text = "[img]gfx/ui/events/event_162.png[/img]{Vous ne trouverez pas %employer% avec un harem ou nageant dans le vin. Au contraire, il se pavane avec une cage à oiseaux vide à ses côtés. Il déclare sombrement que son oiseau préféré est sorti et s\'est envolé.%SPEECH_ON%Ne me considérez pas comme un idiot, Mercenaire, je vois que vous pourriez trouver des similitudes entre mon animal de compagnie et mes endettés. Sentez-vous libre, si je puis dire, de le faire. Mais vous manquez de perspicacité en pensant de la sorte. Mon oiseau volera librement et ne servira à rien d\'autre qu\'à être consommé. Mais ce n\'est pas la liberté, Mercenaire, de reprendre un devoir que la naissance lui a donné. La liberté lui a permis d\'échapper à une telle fatalité, de s\'échapper vers mon monde, une échappatoire que peu de ses congénères ont la chance de connaître.%SPEECH_OFF%Le vizir claque des doigts et un serviteur semble surgir de nulle part. Il vous tend une bourse de pièces. Vous levez les yeux pour voir le vizir poser la cage et s\'éloigner. | %employer% est enterré parmi les membres de son \"harem préféré\", comme le dit le gardien. Il ouvre la bouche et on a l\'impression que ses yeux vous fixent depuis le creux d\'un genou en sueur, bien qu\'il n\'y ait rien à dire.%SPEECH_ON%Le mercenaire victorieux revient pour se délecter de mes plus belles marchandises. C\'est ainsi, disent mes éclaireurs, que vous avez détruit ces endettés rebelles et que le message de leur mort a été réédité sous la forme d\'une nouvelle utilité, un mot gentil, écrit de votre main, Mercenaire, en guise d\'avertissement à tous les autres endettés.%SPEECH_OFF%Le vizir disparaît momentanément, puis réapparaît entre les cuisses d\'une femme.%SPEECH_ON%Serviteurs ! Payez le Mercenaire.%SPEECH_OFF%Deux garçons en armure portent un petit coffre et le déposent à vos pieds. Il est assez lourd et on ne vous aide pas à le porter. | Un homme enchaîné vient à votre rencontre à l\'extérieur des locaux de %employer%. Il a une chaîne attachée à chaque bras. L\'une des chaînes est accrochée au mur, l\'autre traverse le sol jusqu\'à un coffre contenant des couronnes. Les deux chaînes sont retenues par un cadenas. Et c\'est cet homme qui en a la clé. Il vous regarde fixement, ses doigts serrant et desserrant la clé, son souffle irrégulier. Il s\'accroupit enfin et déverrouille le cadenas deu coffre, que vous saisissez et reculez. L\'esclave tient la clé sur sa poitrine, jette un coup d\'œil à l\'autre serrure, replie sa main autour de la clé, incline la tête et fait un bruit dont vous ne savez que faire. Un garde lui dit de se taire avant de vous raccompagner à la porte.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "Crowns are crowns.",
+					Text = "Les couronnes sont des couronnes.",
 					function getResult()
 					{
 						this.World.Assets.addMoralReputation(-2);
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Beat down an indebted uprising");
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Réprimer une révolte d\'endettées");
 						this.World.Contracts.finishActiveContract();
 						return 0;
 					}
