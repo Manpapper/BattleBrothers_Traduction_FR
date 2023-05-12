@@ -1629,7 +1629,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Dommage"
+					text = "Dégâts"
 				},
 				{
 					id = 2,
