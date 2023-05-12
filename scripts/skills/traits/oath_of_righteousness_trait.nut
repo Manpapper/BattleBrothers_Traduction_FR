@@ -6,9 +6,9 @@ this.oath_of_righteousness_trait <- this.inherit("scripts/skills/traits/characte
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_righteousness";
-		this.m.Name = "Oath of Righteousness";
+		this.m.Name = "Serment de Justice";
 		this.m.Icon = "ui/traits/trait_icon_78.png";
-		this.m.Description = "This character has taken an Oath of Righteousness, and is sworn to put the living dead to their final rest.";
+		this.m.Description = "Ce personnage a prêté un serment de justice et s\'est engagé à mettre les morts vivants au repos.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -30,61 +30,61 @@ this.oath_of_righteousness_trait <- this.inherit("scripts/skills/traits/characte
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Resolve when fighting undead"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] de Détermination en combattant des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Skill when fighting undead"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Compétence en Mêlée en combattant des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Skill when fighting undead"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Compétence à Distance en combattant des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Defense when fighting undead"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] de Défense en Mêlée en combattant des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Ranged Defense when fighting undead"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] de Défense à Distance en combattant des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve when not fighting undead"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Détermination en combattant autre chose que des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee Skill when not fighting undead"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Compétence en Mêlée en combattant autre chose que des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Ranged Skill when not fighting undead"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Compétence à Distance en combattant autre chose que des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee Defense when not fighting undead"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Défense en Mêlée en combattant autre chose que des morts-vivants"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Ranged Defense when not fighting undead"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Défense à Distance en combattant autre chose que des morts-vivants"
 			}
 		];
 	}

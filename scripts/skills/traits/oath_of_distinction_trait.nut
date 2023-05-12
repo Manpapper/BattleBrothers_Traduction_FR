@@ -4,9 +4,9 @@ this.oath_of_distinction_trait <- this.inherit("scripts/skills/traits/character_
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_distinction";
-		this.m.Name = "Oath of Distinction";
+		this.m.Name = "Serment de Distinction";
 		this.m.Icon = "ui/traits/trait_icon_88.png";
-		this.m.Description = "This character has taken an Oath of Distinction, and is sworn to seek his own victories without the support of allies.";
+		this.m.Description = "Ce personnage a fait un serment de distinction, et a juré de remporter ses propres victoires sans le soutien d\'alliés.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -28,25 +28,25 @@ this.oath_of_distinction_trait <- this.inherit("scripts/skills/traits/character_
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Resolve if there are no allies in adjacent tiles"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] de Détermination s\'il n\'y a pas d\'alliés dans les tuiles adjacentes"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] Fatigue Regeneration per turn if there are no allies in adjacent tiles"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] de Regéneration de Fatigue par tour s\'il n\'y a pas d\'alliés dans les tuiles adjacentes"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] damage if there are no allies in adjacent tiles"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de Dégâts s\'il n\'y a pas d\'alliés dans les tuiles adjacentes"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]0%[/color] Experience Gain for allied kills"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]0%[/color] d\'expérience pour les ennemis tués par les alliés"
 			}
 		];
 	}

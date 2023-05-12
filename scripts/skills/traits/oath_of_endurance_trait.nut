@@ -4,9 +4,9 @@ this.oath_of_endurance_trait <- this.inherit("scripts/skills/traits/character_tr
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_endurance";
-		this.m.Name = "Oath of Endurance";
+		this.m.Name = "Serment d\'Endurance";
 		this.m.Icon = "ui/traits/trait_icon_84.png";
-		this.m.Description = "This character has taken an Oath of Endurance, and is sworn to outlast any foe in battle.";
+		this.m.Description = "Ce personnage a prêté un serment d\'endurance, et a juré de survivre à n\'importe quel ennemi au combat.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -28,7 +28,7 @@ this.oath_of_endurance_trait <- this.inherit("scripts/skills/traits/character_tr
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] Fatigue Recovery per turn"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] de Regéneration de Fatigue par tour"
 			}
 		];
 	}

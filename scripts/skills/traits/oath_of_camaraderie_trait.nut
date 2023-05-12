@@ -4,9 +4,9 @@ this.oath_of_camaraderie_trait <- this.inherit("scripts/skills/traits/character_
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_camaraderie";
-		this.m.Name = "Oath of Camaderie";
+		this.m.Name = "Serment de Camaraderie";
 		this.m.Icon = "ui/traits/trait_icon_85.png";
-		this.m.Description = "This character has taken an Oath of Camaraderie, and is sworn to stand and fall together with his allies. The general confusion of higher numbers on the battlefield, and the lack of focus on individual skill and personal glory has taken a toll on this character\'s resolve at the start of battle, however.";
+		this.m.Description = "Ce personnage a prêté un serment de camaraderie, et a juré de rester debout et de tomber avec ses alliés. La confusion générale engendrée par le nombre élevé de soldats sur le champ de bataille, ainsi que le manque d\'attention portée aux compétences individuelles et à la gloire personnelle, ont cependant mis à mal la détermination de ce personnage en début de combat.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -28,7 +28,7 @@ this.oath_of_camaraderie_trait <- this.inherit("scripts/skills/traits/character_
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Will start combat at Wavering or Breaking morale"
+				text = "Commence le combat avec un moral Vacillant ou Brisé."
 			}
 		];
 	}

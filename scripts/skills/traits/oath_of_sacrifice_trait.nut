@@ -4,9 +4,9 @@ this.oath_of_sacrifice_trait <- this.inherit("scripts/skills/traits/character_tr
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_sacrifice";
-		this.m.Name = "Oath of Sacrifice";
+		this.m.Name = "Serment de Sacrifice";
 		this.m.Icon = "ui/traits/trait_icon_87.png";
-		this.m.Description = "This character has taken an Oath of Sacrifice, and is sworn to forgo self-care to see the company succeed. Such drive takes a toll on physical well-being, however.";
+		this.m.Description = "Ce personnage a prêté un serment de sacrifice et a juré de renoncer à prendre soin de lui-même pour assurer le succès de la compagnie. Cependant, une telle motivation a des conséquences sur son bien-être physique.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -28,13 +28,13 @@ this.oath_of_sacrifice_trait <- this.inherit("scripts/skills/traits/character_tr
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is not paid any wage"
+				text = "Ne reçoit pas de salaire"
 			},
 			{
 				id = 10,
 				type = "hint",
 				icon = "ui/icons/warning.png",
-				text = "Injuries do not heal"
+				text = "Les blessures ne guérissent pas"
 			}
 		];
 	}

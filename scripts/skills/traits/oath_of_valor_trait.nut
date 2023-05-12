@@ -4,9 +4,9 @@ this.oath_of_valor_trait <- this.inherit("scripts/skills/traits/character_trait"
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_valor";
-		this.m.Name = "Oath of Valor";
+		this.m.Name = "Serment de Courage";
 		this.m.Icon = "ui/traits/trait_icon_83.png";
-		this.m.Description = "This character has taken an Oath of Valor, and is sworn to hold fast in battle at any cost.";
+		this.m.Description = "Ce personnage a prêté un serment de Courage et a juré de tenir bon dans la bataille, quel qu\'en soit le prix.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -28,13 +28,13 @@ this.oath_of_valor_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 11,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Will not flee in battle"
+				text = "Ne fuit pas au combat"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] Experience Gain"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] d\'expérience"
 			}
 		];
 	}

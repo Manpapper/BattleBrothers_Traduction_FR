@@ -4,9 +4,9 @@ this.oath_of_wrath_trait <- this.inherit("scripts/skills/traits/character_trait"
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_wrath";
-		this.m.Name = "Oath of Wrath";
+		this.m.Name = "Serment de Colère";
 		this.m.Icon = "ui/traits/trait_icon_80.png";
-		this.m.Description = "This character has taken an Oath of Wrath, and is sworn to smite even the greatest foe.";
+		this.m.Description = "Ce personnage a prêté un serment de la colère et a juré de frapper même le plus grand des ennemis.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -28,25 +28,25 @@ this.oath_of_wrath_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] chance to hit when wielding a two-handed or double-gripped melee weapon"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] chances de toucher en maniant une arme de mêlée à deux mains ou à double poignée"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee Defense"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] de Défense en Mêlée"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Ranged Defense"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] de Défense à Distance"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "All kills are fatalities (if the weapon allows)."
+				text = "Tous les tués sont des fatalités (si l\'arme le permet)."
 			}
 		];
 	}

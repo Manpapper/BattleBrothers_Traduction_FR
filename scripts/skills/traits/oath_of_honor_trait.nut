@@ -4,9 +4,9 @@ this.oath_of_honor_trait <- this.inherit("scripts/skills/traits/character_trait"
 	{
 		this.character_trait.create();
 		this.m.ID = "trait.oath_of_honor";
-		this.m.Name = "Oath of Honor";
+		this.m.Name = "Serment d\'Honneur";
 		this.m.Icon = "ui/traits/trait_icon_82.png";
-		this.m.Description = "This character has taken an Oath of Honor, and is sworn to seize victory up close.";
+		this.m.Description = "Ce personnage a prêté un serment d\'honneur, et a juré de saisir la victoire au corps à corps.";
 		this.m.Order = this.Const.SkillOrder.Trait - 1;
 		this.m.Excluded = [];
 	}
@@ -28,13 +28,13 @@ this.oath_of_honor_trait <- this.inherit("scripts/skills/traits/character_trait"
 				id = 10,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Starts combat at Confident morale if permitted by mood"
+				text = "Commence le combat avec un moral Confiant si l\'humeur le permet."
 			},
 			{
 				id = 11,
 				type = "hint",
 				icon = "ui/icons/warning.png",
-				text = "Cannot use ranged attacks or tools"
+				text = "Ne peut pas utiliser d\'attaques à distance ou d\'outils"
 			}
 		];
 	}
