@@ -429,7 +429,8 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Spartacus2",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/event_166.png[/img]{Vous tendez la main. %spartacus% tend la sienne. Il parle.%SPEECH_ON%Qu\'il en soit ainsi.%SPEECH_OFF%Il brandit un crayon fait de roche et d\'un peu de poudre noire à son extrémité. Il pointe du doigt une pierre éloignée.%SPEECH_ON%Lorsque nous partirons, j\'écrirai l\'emplacement des objets de ma famille. Maintenant, je vois sur votre visage la question de savoir si je mens ou non. Cette incertitude est le prix de la liberté, non ? Ne pas savoir où l\'on va, mais le faire de son plein gré. C\'est cela la vraie liberté. Le confort de la cage est pour les oiseaux qui ne veulent pas voler, mercenaire. Que vos voyages sur la route de l\'or soient aussi fructueux que nos premiers pas.			Image = "",
+			Text = "[img]gfx/ui/events/event_166.png[/img]{Vous tendez la main. %spartacus% tend la sienne. Il parle.%SPEECH_ON%Qu\'il en soit ainsi.%SPEECH_OFF%Il brandit un crayon fait de roche et d\'un peu de poudre noire à son extrémité. Il pointe du doigt une pierre éloignée.%SPEECH_ON%Lorsque nous partirons, j\'écrirai l\'emplacement des objets de ma famille. Maintenant, je vois sur votre visage la question de savoir si je mens ou non. Cette incertitude est le prix de la liberté, non ? Ne pas savoir où l\'on va, mais le faire de son plein gré. C\'est cela la vraie liberté. Le confort de la cage est pour les oiseaux qui ne veulent pas voler, mercenaire. Que vos voyages sur la route de l\'or soient aussi fructueux que nos premiers pas.}",		
+			Image = "",
 			List = [],
 			Options = [
 				{
