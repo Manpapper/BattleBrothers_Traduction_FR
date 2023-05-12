@@ -15,7 +15,7 @@ this.slave_uprising_contract <- this.inherit("scripts/contracts/contract", {
 		this.contract.create();
 		this.m.DifficultyMult = this.Math.rand(70, 105) * 0.01;
 		this.m.Type = "contract.slave_uprising";
-		this.m.Name = "Révolte des endettés";
+		this.m.Name = "Révolte des Endettés";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
