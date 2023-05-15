@@ -5,7 +5,7 @@ this.hunters_cabin_location <- this.inherit("scripts/entity/world/attached_locat
 		this.attached_location.create();
 		this.m.Name = "Cabane de chasseur";
 		this.m.ID = "attached_location.hunters_cabin";
-		this.m.Description = "Hunters take shelter in these small huts while on the hunt. Chopped up game, venison and hides hung up to dry in the sun surround the huts.";
+		this.m.Description = "Les chasseurs s\'abritent dans ces petites huttes lorsqu\'ils sont à la chasse. Du gibier découpé, de la venaison et des peaux suspendues pour sécher au soleil entourent les huttes.";
 		this.m.Sprite = "world_hunter_01";
 		this.m.SpriteDestroyed = "world_hunter_01_ruins";
 	}
