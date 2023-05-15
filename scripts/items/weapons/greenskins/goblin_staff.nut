@@ -8,7 +8,7 @@ this.goblin_staff <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.goblin_staff";
 		this.m.Name = "Bâton noueux";
 		this.m.Description = "Un bâton noueux sculpté dans du bois ancien et dur, orné d\'os et de plumes. Peut intéresser les collectionneurs.";
-		this.m.Categories = "Mace, One-Handed";
+		this.m.Categories = "Masse, Une Main";
 		this.m.IconLarge = "weapons/melee/goblin_weapon_06.png";
 		this.m.Icon = "weapons/melee/goblin_weapon_06_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

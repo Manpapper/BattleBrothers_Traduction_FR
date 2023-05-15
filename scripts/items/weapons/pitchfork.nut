@@ -6,7 +6,7 @@ this.pitchfork <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.pitchfork";
 		this.m.Name = "Fourche";
 		this.m.Description = "Un outil agricole avec un long manche et d\'épaisses dents pointues utilisées pour soulever et dresser la paille. En tant qu\'arme improvisée, elle peut être utilisée pour tenir un adversaire à distance, mais elle n\'infligera pas les blessures les plus mortelles et fonctionnera mal contre les armures.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/pitchfork_01.png";
 		this.m.Icon = "weapons/melee/pitchfork_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

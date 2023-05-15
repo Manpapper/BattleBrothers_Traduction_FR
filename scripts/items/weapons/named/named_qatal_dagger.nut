@@ -10,7 +10,7 @@ this.named_qatal_dagger <- this.inherit("scripts/items/weapons/named/named_weapo
 		this.m.PrefixList = this.Const.Strings.SouthernPrefix;
 		this.m.SuffixList = this.Const.Strings.SouthernSuffix;
 		this.m.Description = "Une lame incurvée de fabrication exquise, notoirement utilisée par les assassins des déserts du sud. Particulièrement efficace contre des cibles déjà affaiblies.";
-		this.m.Categories = "Dagger, One-Handed";
+		this.m.Categories = "Dague, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.IsDoubleGrippable = true;

@@ -6,7 +6,7 @@ this.goedendag <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.goedendag";
 		this.m.Name = "Goedendag";
 		this.m.Description = "Un club renforcé de métal avec une pointe au sommet. Peut être utilisé pour pousser l\'ennemi ou le tabasser jusqu\'à ce qu\'ils se soumette.";
-		this.m.Categories = "Spear/Mace, Two-Handed";
+		this.m.Categories = "Lance/Masse, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/goedendag_01.png";
 		this.m.Icon = "weapons/melee/goedendag_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

@@ -8,7 +8,7 @@ this.named_flail <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.ID = "weapon.named_flail";
 		this.m.NameList = this.Const.Strings.FlailNames;
 		this.m.Description = "Une tête de frappe séparée attachée à une poignée par une chaîne. Une arme plutôt imprévisible, mais utile pour frapper sur ou autour de la couverture d\'un bouclier. Ce fléau particulier semble encore plus terrifiant en raison de ses caractéristiques uniques.";
-		this.m.Categories = "Flail, One-Handed";
+		this.m.Categories = "Fléau, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.ItemProperty = this.Const.Items.Property.IgnoresShieldwall;

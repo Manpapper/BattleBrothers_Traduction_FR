@@ -6,7 +6,7 @@ this.spetum <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.spetum";
 		this.m.Name = "Spetum";
 		this.m.Description = "Un croisement entre une lance et une pique, ce qui en fait une bonne arme défensive. Utilisé pour attaquer à distance ou retenir l\'ennemi.";
-		this.m.Categories = "Spear, Two-Handed";
+		this.m.Categories = "Lance, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/spetum_01.png";
 		this.m.Icon = "weapons/melee/spetum_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

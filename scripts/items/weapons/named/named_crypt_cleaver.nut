@@ -10,7 +10,7 @@ this.named_crypt_cleaver <- this.inherit("scripts/items/weapons/named/named_weap
 		this.m.PrefixList = this.Const.Strings.OldWeaponPrefix;
 		this.m.UseRandomName = false;
 		this.m.Description = "Un grand kopesh massif qui peut couper à travers la chair et l\'armure. Cette pièce est en bon état malgré sa vieillesse.";
-		this.m.Categories = "Cleaver, Two-Handed";
+		this.m.Categories = "Fendoir, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

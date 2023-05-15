@@ -6,7 +6,7 @@ this.woodcutters_axe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.woodcutters_axe";
 		this.m.Name = "Hache de bûcheron";
 		this.m.Description = "Une longue hache à deux mains qui pèse lourdement à chaque coup. Tenu à deux mains, il sert à abattre les grands arbres, mais il peut tout aussi bien abattre les hommes.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/axe_two_handed_02.png";
 		this.m.Icon = "weapons/melee/axe_two_handed_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

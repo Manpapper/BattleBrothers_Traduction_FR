@@ -8,7 +8,7 @@ this.named_dagger <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.ID = "weapon.named_dagger";
 		this.m.NameList = this.Const.Strings.DaggerNames;
 		this.m.Description = "Un poignard court et durci, magistralement conçu avec une lame pointue pour percer des petits trous dans l\'armure.";
-		this.m.Categories = "Dagger, One-Handed";
+		this.m.Categories = "Dague, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.IsDoubleGrippable = true;

@@ -6,7 +6,7 @@ this.qatal_dagger <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.qatal_dagger";
 		this.m.Name = " Dague Qatal";
 		this.m.Description = "Une lame incurvée notoirement utilisée par les assassins des déserts du sud. Particulièrement efficace contre des cibles déjà affaiblies.";
-		this.m.Categories = "Dagger, One-Handed";
+		this.m.Categories = "Dague, Une Main";
 		this.m.IconLarge = "weapons/melee/qatal_dagger_01.png";
 		this.m.Icon = "weapons/melee/qatal_dagger_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

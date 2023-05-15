@@ -8,7 +8,7 @@ this.named_billhook <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.m.ID = "weapon.named_billhook";
 		this.m.NameList = this.Const.Strings.BillNames;
 		this.m.Description = "Une arme semblable à une pique avec une lame pour frapper sur une certaine distance et un crochet attaché pour tirer des cibles. Le forgeron qui a forgé cette arme savait certainement ce qu\'il faisait.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

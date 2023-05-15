@@ -8,7 +8,7 @@ this.greatsword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.greatsword";
 		this.m.Name = "Claymore";
 		this.m.Description = "Une longue lame à deux mains aussi bonne pour écraser que pour couper.";
-		this.m.Categories = "Sword, Two-Handed";
+		this.m.Categories = "Epée, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/sword_two_hand_02.png";
 		this.m.Icon = "weapons/melee/sword_two_hand_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

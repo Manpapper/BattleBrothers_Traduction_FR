@@ -6,7 +6,7 @@ this.orc_metal_club <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.orc_metal_club";
 		this.m.Name = "Gourdin";
 		this.m.Description = "Un bâton en bois massif parsemé de plaques de métal. Pas fait pour les mains humaines.";
-		this.m.Categories = "Mace, One-Handed";
+		this.m.Categories = "Masse, Une Main";
 		this.m.IconLarge = "weapons/melee/orc_club_02_140x70.png";
 		this.m.Icon = "weapons/melee/orc_club_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

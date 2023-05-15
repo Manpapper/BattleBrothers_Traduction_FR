@@ -11,7 +11,7 @@ this.named_heavy_rusty_axe <- this.inherit("scripts/items/weapons/named/named_we
 		this.m.SuffixList = this.Const.Strings.BarbarianSuffix;
 		this.m.UseRandomName = false;
 		this.m.Description = "Cette hache lourde et décorée appartenait à un membre estimé d\'une tribu barbare. Ses ornements et son savoir-faire relativement élevé sont une trouvaille rare parmi les guerriers sauvages du nord.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

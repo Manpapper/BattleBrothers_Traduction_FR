@@ -6,7 +6,7 @@ this.orc_axe_2h <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.orc_axe_2h";
 		this.m.Name = "Coupeur d\'homme";
 		this.m.Description = "Une énorme hache de combat à deux têtes de construction grossière, trop lourde pour être utilisée efficacement par l\'humain moyen.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/orc_axe_two_handed.png";
 		this.m.Icon = "weapons/melee/orc_axe_two_handed_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

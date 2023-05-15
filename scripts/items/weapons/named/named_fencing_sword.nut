@@ -8,7 +8,7 @@ this.named_fencing_sword <- this.inherit("scripts/items/weapons/named/named_weap
 		this.m.ID = "weapon.named_fencing_sword";
 		this.m.NameList = this.Const.Strings.FencingSwordNames;
 		this.m.Description = "Fabriquer une épée d\'escrime appropriée, à la fois délicate et flexible, n\'est pas moins difficile que de la manier. Le forgeron qui a créé cette arme particulière doit avoir été parmi les meilleurs dans son métier.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.IsDoubleGrippable = true;

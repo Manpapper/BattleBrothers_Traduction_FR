@@ -6,7 +6,7 @@ this.wonky_bow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.wonky_bow";
 		this.m.Name = "Arc bancal";
 		this.m.Description = "Un arc mal conçu si vous en avez déjà vu un. Le bois craque et se fissure lorsqu\'il est plié, la ficelle frise et se raidit à chaque fois que vous la retirez.";
-		this.m.Categories = "Bow, Two-Handed";
+		this.m.Categories = "Arc, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/bow_04.png";
 		this.m.Icon = "weapons/ranged/bow_04_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

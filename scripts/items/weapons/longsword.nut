@@ -8,7 +8,7 @@ this.longsword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.longsword";
 		this.m.Name = "Épée longue";
 		this.m.Description = "Une longue lame à deux mains qui en fait une arme polyvalente.";
-		this.m.Categories = "Sword, Two-Handed";
+		this.m.Categories = "Epée, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/longsword_01.png";
 		this.m.Icon = "weapons/melee/longsword_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

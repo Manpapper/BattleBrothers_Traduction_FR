@@ -8,7 +8,7 @@ this.named_battle_whip <- this.inherit("scripts/items/weapons/named/named_weapon
 		this.m.ID = "weapon.named_battle_whip";
 		this.m.NameList = this.Const.Strings.WhipNames;
 		this.m.Description = "Un fouet est une arme assez particulière, mais cette pièce a été conçue par un vrai maître. Il est plus resistant et équilibré que tout autre que vous avez vu.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.IsDoubleGrippable = true;

@@ -6,7 +6,7 @@ this.broken_bladed_pike <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.broken_bladed_pike";
 		this.m.Name = "Pique à pointe antique brisé";
 		this.m.Description = "Une pique avec la pointe cassée. Toutes les armes ne résistent pas à l\'épreuve du temps. Autrefois utilisé pour attaquer à une certaine distance et tenir l\'ennemi au loin.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/broken_pike_01.png";
 		this.m.Icon = "weapons/melee/broken_pike_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

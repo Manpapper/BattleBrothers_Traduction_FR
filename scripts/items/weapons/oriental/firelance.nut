@@ -6,7 +6,7 @@ this.firelance <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.firelance";
 		this.m.Name = "Lance de feu";
 		this.m.Description = "Une lance de conception méridionale avec une charge explosive qui crachera du feu sur deux tuiles lorsqu\'elle est allumée. La charge n\'est utilisable qu\'une seule fois par bataille, mais automatiquement rechargée après la bataille.";
-		this.m.Categories = "Spear/Firearm, One-Handed";
+		this.m.Categories = "Spear/Firearm, Une Main";
 		this.m.IconLarge = "weapons/ranged/firelance_01.png";
 		this.m.Icon = "weapons/ranged/firelance_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

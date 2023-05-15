@@ -10,7 +10,7 @@ this.named_two_handed_scimitar <- this.inherit("scripts/items/weapons/named/name
 		this.m.PrefixList = this.Const.Strings.SouthernPrefix;
 		this.m.SuffixList = this.Const.Strings.SouthernSuffix;
 		this.m.Description = "Un très grand cimeterre manié à deux mains. La lame incurvée fend à travers n\'importe quel ennemi, et la lame est étonnamment bien équilibrée pour sa taille.";
-		this.m.Categories = "Cleaver, Two-Handed";
+		this.m.Categories = "Fendoir, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

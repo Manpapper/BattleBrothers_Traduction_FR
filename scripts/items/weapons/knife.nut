@@ -6,7 +6,7 @@ this.knife <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.knife";
 		this.m.Name = "Couteau";
 		this.m.Description = "Un petit couteau, pas fait pour le combat.";
-		this.m.Categories = "Dagger, One-Handed";
+		this.m.Categories = "Dague, Une Main";
 		this.m.IconLarge = "weapons/melee/knife_01.png";
 		this.m.Icon = "weapons/melee/knife_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

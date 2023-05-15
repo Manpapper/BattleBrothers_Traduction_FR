@@ -6,7 +6,7 @@ this.throwing_spear <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.throwing_spear";
 		this.m.Name = "Harpon";
 		this.m.Description = "Plus légère qu\'une lance ordinaire, mais plus lourde qu\'un javelot, cette arme est destinée à être lancée sur de courtes distances. La pointe se pliera à l\'impact, rendant potentiellement les boucliers inutilisables. Peut également être utilisé contre des adversaires non protégés.";
-		this.m.Categories = "Throwing Weapon, One-Handed";
+		this.m.Categories = "Arme de jet, Une Main";
 		this.m.IconLarge = "weapons/ranged/throwing_spear_01.png";
 		this.m.Icon = "weapons/ranged/throwing_spear_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

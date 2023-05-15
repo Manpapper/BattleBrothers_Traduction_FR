@@ -6,7 +6,7 @@ this.hand_axe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.hand_axe";
 		this.m.Name = "Hache";
 		this.m.Description = "Une hache à une main avec un manche de longueur moyenne et une tête raffinée";
-		this.m.Categories = "Axe, One-Handed";
+		this.m.Categories = "Hache, Une Main";
 		this.m.IconLarge = "weapons/melee/axe_02.png";
 		this.m.Icon = "weapons/melee/axe_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

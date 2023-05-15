@@ -18,7 +18,7 @@ this.heavy_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.heavy_crossbow";
 		this.m.Name = "Arbalète lourde";
 		this.m.Description = "Une arbalète lourde avec une manivelle qui peut propulser des carreaux sur des distances moyennes et est efficace même contre des cibles lourdement blindées. Nécessite presque un tour complet pour recharger.";
-		this.m.Categories = "Crossbow, Two-Handed";
+		this.m.Categories = "Arbalète, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/crossbow_03.png";
 		this.m.Icon = "weapons/ranged/crossbow_03_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

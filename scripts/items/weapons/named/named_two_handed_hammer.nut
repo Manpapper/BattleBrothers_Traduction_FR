@@ -8,7 +8,7 @@ this.named_two_handed_hammer <- this.inherit("scripts/items/weapons/named/named_
 		this.m.ID = "weapon.named_two_handed_hammer";
 		this.m.NameList = this.Const.Strings.HammerNames;
 		this.m.Description = "Un marteau massif qui est étonnamment bien équilibré, malgré son poids énorme. Ce qui lui manque en grâce, il le compense par sa force brute car il est utilisé pour briser même les lignes ennemies lourdement blindées en projetant les gens au loin ou au sol.";
-		this.m.Categories = "Hammer, Two-Handed";
+		this.m.Categories = "Hammer, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

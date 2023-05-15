@@ -20,7 +20,7 @@ this.named_throwing_axe <- this.inherit("scripts/items/weapons/named/named_weapo
 		this.m.ID = "weapon.named_throwing_axe";
 		this.m.NameList = this.Const.Strings.ThrowingAxeNames;
 		this.m.Description = "Petites haches à lancer vers une cible. Celles-ci sont particulièrement bien équilibrées et suffisamment robustes pour infliger de sérieux dégâts aux armures et aux boucliers.";
-		this.m.Categories = "Throwing Weapon, One-Handed";
+		this.m.Categories = "Arme de jet, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.RangedWeapon | this.Const.Items.ItemType.Ammo | this.Const.Items.ItemType.Defensive;
 		this.m.AddGenericSkill = true;

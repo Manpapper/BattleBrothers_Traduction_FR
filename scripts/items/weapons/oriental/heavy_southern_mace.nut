@@ -8,7 +8,7 @@ this.heavy_southern_mace <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.heavy_southern_mace";
 		this.m.Name = "Masse du sud lourde";
 		this.m.Description = "Masse ailée lourde couramment utilisée par les soldats bien équipés du sud.";
-		this.m.Categories = "Mace, One-Handed";
+		this.m.Categories = "Masse, Une Main";
 		this.m.IconLarge = "weapons/melee/heavy_southern_mace_01.png";
 		this.m.Icon = "weapons/melee/heavy_southern_mace_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

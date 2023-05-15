@@ -6,7 +6,7 @@ this.swordlance <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.swordlance";
 		this.m.Name = "Épée lance";
 		this.m.Description = "Une longue perche attachée à une lame incurvée tranchante, utilisée pour effectuer des frappes profondes sur une certaine distance.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/swordlance_01.png";
 		this.m.Icon = "weapons/melee/swordlance_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

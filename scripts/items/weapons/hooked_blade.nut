@@ -6,7 +6,7 @@ this.hooked_blade <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.hooked_blade";
 		this.m.Name = "Anicroche";
 		this.m.Description = "Outil agricole adapté à une utilisation au combat, cette arme d\'hast possède une lame crochue pour frapper à distance ou tirer des cibles.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/hooked_blade_01.png";
 		this.m.Icon = "weapons/melee/hooked_blade_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

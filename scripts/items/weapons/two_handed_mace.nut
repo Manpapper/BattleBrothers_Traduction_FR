@@ -6,7 +6,7 @@ this.two_handed_mace <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.two_handed_mace";
 		this.m.Name = "Morgenstein à deux mains";
 		this.m.Description = "Une batte en bois massif avec une tête pointue. Recevoir un coup de cette arme laissera n\'importe qui étourdi et à bout de souffle, quelle que soit son armure.";
-		this.m.Categories = "Mace, Two-Handed";
+		this.m.Categories = "Masse, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/mace_two_handed_01.png";
 		this.m.Icon = "weapons/melee/mace_two_handed_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

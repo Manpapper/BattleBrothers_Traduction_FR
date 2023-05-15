@@ -18,7 +18,7 @@ this.goblin_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.goblin_crossbow";
 		this.m.Name = "Empaleur à pointes";
 		this.m.Description = "Une arbalète large et lourde avec des pointes menaçantes à l\'avant. Plus comme une baliste miniature, elle tire des piquets avec suffisamment de force pour repousser une cible touchée.";
-		this.m.Categories = "Crossbow, Two-Handed";
+		this.m.Categories = "Arbalète, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/crossbow_goblin_01.png";
 		this.m.Icon = "weapons/ranged/crossbow_goblin_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

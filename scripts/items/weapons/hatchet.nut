@@ -6,7 +6,7 @@ this.hatchet <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.hatchet";
 		this.m.Name = "Hachette";
 		this.m.Description = "Une hache grossière avec un manche court et une tête en fer.";
-		this.m.Categories = "Axe, One-Handed";
+		this.m.Categories = "Hache, Une Main";
 		this.m.IconLarge = "weapons/melee/axe_01.png";
 		this.m.Icon = "weapons/melee/axe_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

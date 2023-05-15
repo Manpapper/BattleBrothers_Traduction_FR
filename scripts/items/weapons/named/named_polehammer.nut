@@ -8,7 +8,7 @@ this.named_polehammer <- this.inherit("scripts/items/weapons/named/named_weapon"
 		this.m.ID = "weapon.named_polehammer";
 		this.m.NameList = this.Const.Strings.PolehammerNames;
 		this.m.Description = "Une arme grossière comme un marteau perforateur peut également être fabriquée avec passion, compétence et souci du détail, comme le montre cet exemplaire de manière impressionnante.";
-		this.m.Categories = "Hammer, Two-Handed";
+		this.m.Categories = "Hammer, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

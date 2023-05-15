@@ -6,7 +6,7 @@ this.warfork <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.warfork";
 		this.m.Name = "Fourche de guerre";
 		this.m.Description = "Une fourche reforgée en une arme de champ de bataille qui est un croisement entre une lance et une pique. Utilisé pour attaquer à distance ou retenir l\'ennemi.";
-		this.m.Categories = "Spear, Two-Handed";
+		this.m.Categories = "Lance, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/warfork_01.png";
 		this.m.Icon = "weapons/melee/warfork_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

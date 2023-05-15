@@ -6,7 +6,7 @@ this.two_handed_scimitar <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.two_handed_scimitar";
 		this.m.Name = "Cimeterre à deux mains";
 		this.m.Description = "Un grand cimeterre manié à deux mains. La lame incurvée fend à travers n\'importe quel ennemi.";
-		this.m.Categories = "Cleaver, Two-Handed";
+		this.m.Categories = "Fendoir, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/two_handed_scimitar_01.png";
 		this.m.Icon = "weapons/melee/two_handed_scimitar_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

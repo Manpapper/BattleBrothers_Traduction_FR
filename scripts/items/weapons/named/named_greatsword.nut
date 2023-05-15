@@ -10,7 +10,7 @@ this.named_greatsword <- this.inherit("scripts/items/weapons/named/named_weapon"
 		this.m.ID = "weapon.named_greatsword";
 		this.m.NameList = this.Const.Strings.GreatswordNames;
 		this.m.Description = "Cette épée à deux mains est un véritable chef-d\'oeuvre, avec une lame à la fois flexible et extrêmement résistante.";
-		this.m.Categories = "Sword, Two-Handed";
+		this.m.Categories = "Epée, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

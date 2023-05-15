@@ -6,7 +6,7 @@ this.obsidian_dagger <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.obsidian_dagger";
 		this.m.Name = "Dague d\'obsidienne";
 		this.m.Description = "Une sorcière ermite vous a donné ce poignard en pierre après l\'avoir trempé avec votre sang. Les reflets dans son verre semblent se déplacer d\'eux-mêmes, mais c\'est clairement un jeu de l\'oeil. Très curieusement, cependant, le sang ne semble jamais sécher s\'il repose sur l\'obsidienne.";
-		this.m.Categories = "Dagger, One-Handed";
+		this.m.Categories = "Dague, Une Main";
 		this.m.IconLarge = "weapons/melee/obsidian_dagger_01.png";
 		this.m.Icon = "weapons/melee/obsidian_dagger_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

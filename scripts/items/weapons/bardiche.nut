@@ -6,7 +6,7 @@ this.bardiche <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.bardiche";
 		this.m.Name = "Bardiche";
 		this.m.Description = "Une grande hache avec une longue tête qui peut être abattue sur l\'ennemi avec un effet dévastateur.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/bardiche_01.png";
 		this.m.Icon = "weapons/melee/bardiche_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

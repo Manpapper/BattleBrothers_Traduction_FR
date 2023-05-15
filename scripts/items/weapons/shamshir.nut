@@ -6,7 +6,7 @@ this.shamshir <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.shamshir";
 		this.m.Name = "Shamshir";
 		this.m.Description = "Cette lame exotique du sud bien conçue a un bord incurvé qui lui permet de couper facilement des blessures profondes, mais la rend moins adaptée pour enfoncer et pénétrer les armures. Une trouvaille rare dans ces terres.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/scimitar_01.png";
 		this.m.Icon = "weapons/melee/scimitar_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

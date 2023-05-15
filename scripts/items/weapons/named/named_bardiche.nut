@@ -8,7 +8,7 @@ this.named_bardiche <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.m.ID = "weapon.named_bardiche";
 		this.m.NameList = this.Const.Strings.AxeNames;
 		this.m.Description = "Cette lourde bardiche fabriquée à partir d\'un alliage rare est largement supérieure aux armes similaires.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

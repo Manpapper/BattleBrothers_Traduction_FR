@@ -6,7 +6,7 @@ this.saif <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.saif";
 		this.m.Name = "Saif";
 		this.m.Description = "Une épée incurvée que l\'on ne trouve généralement que dans le sud. Excellent pour trancher, mais pas pour enfoncer ou pénétrer une armure.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/southern_short_sword_01.png";
 		this.m.Icon = "weapons/melee/southern_short_sword_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

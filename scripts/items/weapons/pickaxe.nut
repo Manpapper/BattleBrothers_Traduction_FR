@@ -6,7 +6,7 @@ this.pickaxe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.pickaxe";
 		this.m.Name = "Pioche";
 		this.m.Description = "Une tête dure en métal attachée à un manche en bois, la pioche est un outil de mineur utilisé pour briser les roches. En tant qu\'arme improvisée, elle est difficile à manier mais peut causer des blessures mortelles même à travers une armure.";
-		this.m.Categories = "Hammer, One-Handed";
+		this.m.Categories = "Hammer, Une Main";
 		this.m.IconLarge = "weapons/melee/miners_pick_01.png";
 		this.m.Icon = "weapons/melee/miners_pick_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

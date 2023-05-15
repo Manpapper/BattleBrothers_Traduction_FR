@@ -6,7 +6,7 @@ this.goblin_heavy_bow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.goblin_heavy_bow";
 		this.m.Name = "Arc Boondock renforcé";
 		this.m.Description = "Un arc léger mais puissant fabriqué à partir de divers bois.";
-		this.m.Categories = "Bow, Two-Handed";
+		this.m.Categories = "Arc, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/bow_goblin_02.png";
 		this.m.Icon = "weapons/ranged/bow_goblin_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

@@ -18,7 +18,7 @@ this.crossbow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.crossbow";
 		this.m.Name = "Arbalète";
 		this.m.Description = "Une arbalète à levier qui peut propulser des carreaux sur des distances moyennes. Efficace même entre les mains de profanes, mais nécessite presque un tour complet pour recharger.";
-		this.m.Categories = "Crossbow, Two-Handed";
+		this.m.Categories = "Arbalète, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/crossbow_01.png";
 		this.m.Icon = "weapons/ranged/crossbow_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

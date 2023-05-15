@@ -6,7 +6,7 @@ this.crypt_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.crypt_cleaver";
 		this.m.Name = "Grand Khopesh";
 		this.m.Description = "Une lame lourde avec une extrémité curieusement incurvée, combinant les qualités de l\'épée et de la hache dans un couperet à deux mains dévastateur.";
-		this.m.Categories = "Cleaver, Two-Handed";
+		this.m.Categories = "Fendoir, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/cryptcleaver_01.png";
 		this.m.Icon = "weapons/melee/cryptcleaver_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

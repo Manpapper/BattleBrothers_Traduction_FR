@@ -6,7 +6,7 @@ this.orc_flail_2h <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.orc_flail_2h";
 		this.m.Name = "Chaîne Berserk";
 		this.m.Description = "Une chaîne en fer massif avec une tête en métal pleine de pointes. Trop lourd pour être utilisé efficacement par l\'humain moyen.";
-		this.m.Categories = "Flail, Two-Handed";
+		this.m.Categories = "Fléau, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/orc_flail_two_handed.png";
 		this.m.Icon = "weapons/melee/orc_flail_two_handed_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

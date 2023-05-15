@@ -6,7 +6,7 @@ this.falchion <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.falchion";
 		this.m.Name = "Fauchon";
 		this.m.Description = "Une épée incurvée adaptée pour trancher et couper des adversaires sans armure.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/sword_04.png";
 		this.m.Icon = "weapons/melee/sword_04_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

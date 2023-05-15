@@ -6,7 +6,7 @@ this.war_bow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.war_bow";
 		this.m.Name = "Arc de guerre";
 		this.m.Description = "Un arc long avec une puissance de traction massive. Spécialement conçu pour la bataille.";
-		this.m.Categories = "Bow, Two-Handed";
+		this.m.Categories = "Arc, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/bow_05.png";
 		this.m.Icon = "weapons/ranged/bow_05_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

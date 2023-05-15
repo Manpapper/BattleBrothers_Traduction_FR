@@ -6,7 +6,7 @@ this.khopesh <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.khopesh";
 		this.m.Name = "Khopesh";
 		this.m.Description = "Une ancienne épée incurvée sur un long manche avec d\'étranges ornementations. Sa forme le rend particulièrement efficace contre les armures.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.IconLarge = "weapons/melee/kopesh_01.png";
 		this.m.Icon = "weapons/melee/kopesh_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

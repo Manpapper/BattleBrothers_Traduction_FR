@@ -16,7 +16,7 @@ this.orc_javelin <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.orc_javelin";
 		this.m.Name = "Lot de javelots bruts";
 		this.m.Description = "Un tas de javelots de fabrication grossière destinés à être lancés sur des cibles. Ils ont une portée limitée et sont épuisants à lancer, mais peuvent infliger des blessures dévastatrices. Peut également infliger des dégâts mineurs aux boucliers si ceux-ci sont touchés à la place.";
-		this.m.Categories = "Throwing Weapon, One-Handed";
+		this.m.Categories = "Arme de jet, Une Main";
 		this.m.IconLarge = "weapons/ranged/orc_javelins.png";
 		this.m.Icon = "weapons/ranged/orc_javelins_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

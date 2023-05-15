@@ -8,7 +8,7 @@ this.named_pike <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.ID = "weapon.named_pike";
 		this.m.NameList = this.Const.Strings.PikeNames;
 		this.m.Description = "Une longue pique utilisée pour attaquer à distance ou tenir l\'ennemi au loin. Cette pique particulière est habilement fabriqué à partir de bois flexible qui peut se plier mais ne jamais se casser, et la pointe en métal se compose d\'un alliage rarement vu dans ces parties du monde.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded | this.Const.Items.ItemType.Defensive;

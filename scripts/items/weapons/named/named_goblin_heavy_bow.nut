@@ -9,7 +9,7 @@ this.named_goblin_heavy_bow <- this.inherit("scripts/items/weapons/named/named_w
 		this.m.NameList = this.Const.Strings.BowNames;
 		this.m.UseRandomName = false;
 		this.m.Description = "Les gobelins savent fabriquer des arcs efficaces et légers. Cette pièce, fabriquée à partir d\'un bois pâle inconnu, a une puissance de traction surprenante malgré sa petite taille.";
-		this.m.Categories = "Bow, Two-Handed";
+		this.m.Categories = "Arc, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.RangedWeapon | this.Const.Items.ItemType.Defensive;

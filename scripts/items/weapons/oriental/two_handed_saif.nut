@@ -6,7 +6,7 @@ this.two_handed_saif <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.two_handed_saif";
 		this.m.Name = "Saif à deux mains";
 		this.m.Description = "Une version longue du Saif maniée à deux mains. La lame incurvée provoque des blessures horribles.";
-		this.m.Categories = "Cleaver, Two-Handed";
+		this.m.Categories = "Fendoir, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/two_handed_saif.png";
 		this.m.Icon = "weapons/melee/two_handed_saif_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

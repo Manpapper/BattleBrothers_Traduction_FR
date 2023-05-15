@@ -8,7 +8,7 @@ this.named_warbrand <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.m.ID = "weapon.named_warbrand";
 		this.m.NameList = this.Const.Strings.WarbrandNames;
 		this.m.Description = "Une variante magistralement conçue et quelque peu rare de l\'épée avec une lame longue et fine, affûtée d\'un seul côté et sans garde-corps. Peut être utilisé à la fois pour des entailles rapides et des frappes rapides.";
-		this.m.Categories = "Sword, Two-Handed";
+		this.m.Categories = "Epée, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

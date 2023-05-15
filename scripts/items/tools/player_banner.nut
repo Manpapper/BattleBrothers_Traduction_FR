@@ -5,8 +5,8 @@ this.player_banner <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.player_banner";
 		this.m.Name = "Bannière";
-		this.m.Description = "A company standard to take into battle. Held high, allies will rally around it with renewed resolve, and enemies will know well who is about to crush them.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Description = "Une bannière de la compagnie à porter sur le champ de bataille. Portée haute, les alliés s'y rallieront avec une détermination renouvelée, et les ennemis sauront bien qui est sur le point de les écraser.";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded | this.Const.Items.ItemType.Defensive;

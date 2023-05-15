@@ -8,7 +8,7 @@ this.wooden_stick <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.wooden_stick";
 		this.m.Name = "Baton de bois";
 		this.m.Description = "Un simple bâton en bois, généralement une arme improvisée.";
-		this.m.Categories = "Mace, One-Handed";
+		this.m.Categories = "Masse, Une Main";
 		this.m.IconLarge = "weapons/melee/club_01.png";
 		this.m.Icon = "weapons/melee/club_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

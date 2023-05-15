@@ -20,7 +20,7 @@ this.named_crossbow <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.m.ID = "weapon.named_crossbow";
 		this.m.NameList = this.Const.Strings.CrossbowNames;
 		this.m.Description = "Une arbalète à levier qui peut propulser des carreaux sur des distances moyennes. Efficace même entre les mains de profanes, mais nécessite presque un tour complet pour recharger. Bien équilibrée et dotée d\'une force extraordinaire, cette arme est véritablement l\'oeuvre d\'un maître artisan.";
-		this.m.Categories = "Crossbow, Two-Handed";
+		this.m.Categories = "Arbalète, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.RangedWeapon | this.Const.Items.ItemType.Defensive;

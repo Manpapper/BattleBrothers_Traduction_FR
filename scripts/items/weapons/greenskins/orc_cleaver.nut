@@ -6,7 +6,7 @@ this.orc_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.orc_cleaver";
 		this.m.Name = "Coupe coupe";
 		this.m.Description = "Un éclat de métal pointu et brut avec une poignée enveloppée ressemblant à une épée mais beaucoup plus lourde. Pas fait pour les mains humaines.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.IconLarge = "weapons/melee/orc_cleaver.png";
 		this.m.Icon = "weapons/melee/orc_cleaver_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

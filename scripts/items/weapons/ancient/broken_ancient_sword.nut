@@ -6,7 +6,7 @@ this.broken_ancient_sword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.broken_ancient_sword";
 		this.m.Name = "Épée antique brisée";
 		this.m.Description = "Une épée ancienne avec une lame cassée, limitant sévèrement sa portée.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/ancient_broken_sword_01.png";
 		this.m.Icon = "weapons/melee/ancient_broken_sword_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

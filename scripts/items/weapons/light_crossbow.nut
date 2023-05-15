@@ -18,7 +18,7 @@ this.light_crossbow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.light_crossbow";
 		this.m.Name = "Arbalète légère";
 		this.m.Description = "Une variante plus légère d\'une arbalète à levier qui peut propulser des carreaux sur des distances moyennes. Efficace même entre les mains de profanes, mais nécessite presque un tour complet pour recharger.";
-		this.m.Categories = "Crossbow, Two-Handed";
+		this.m.Categories = "Arbalète, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/crossbow_02.png";
 		this.m.Icon = "weapons/ranged/crossbow_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

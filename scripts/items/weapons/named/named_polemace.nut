@@ -10,7 +10,7 @@ this.named_polemace <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.m.PrefixList = this.Const.Strings.SouthernPrefix;
 		this.m.SuffixList = this.Const.Strings.SouthernSuffix;
 		this.m.Description = "Une arme grossière comme une massue peut également être fabriquée avec passion, compétence et souci du détail, comme cet exemplaire le montre de manière impressionnante.";
-		this.m.Categories = "Mace, Two-Handed";
+		this.m.Categories = "Masse, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

@@ -6,7 +6,7 @@ this.longaxe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.longaxe";
 		this.m.Name = "Hache longue";
 		this.m.Description = "Une lame relativement fine sur un manche très long utilisée pour des attaques coupantes dévastatrices à distance et pour rendre les boucliers inutilisables de derrière la ligne de front.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/longaxe_01.png";
 		this.m.Icon = "weapons/melee/longaxe_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

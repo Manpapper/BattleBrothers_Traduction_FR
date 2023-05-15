@@ -6,7 +6,7 @@ this.goblin_notched_blade <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.goblin_notched_blade";
 		this.m.Name = "Lame crantée";
 		this.m.Description = "Un long couteau incurvé avec une lame unilatérale utilisé pour trancher, tailler et poignarder les points faibles.";
-		this.m.Categories = "Sword/Dagger, One-Handed";
+		this.m.Categories = "Sword/Dagger, Une Main";
 		this.m.IconLarge = "weapons/melee/goblin_weapon_01.png";
 		this.m.Icon = "weapons/melee/goblin_weapon_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

@@ -8,7 +8,7 @@ this.named_cleaver <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.ID = "weapon.named_cleaver";
 		this.m.NameList = this.Const.Strings.CleaverNames;
 		this.m.Description = "Un forgeron magistral a réussi à créer cette machette militaire de manière à ce qu\'il se manipule presque comme une épée ordinaire, mais ne perde rien de son pouvoir dévastateur.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.IsDoubleGrippable = true;

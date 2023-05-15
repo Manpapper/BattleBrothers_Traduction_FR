@@ -6,7 +6,7 @@ this.reinforced_wooden_flail <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.reinforced_wooden_flail";
 		this.m.Name = "Fléau en bois renforcé";
 		this.m.Description = "Deux gros bâtons attachés par une chaîne courte et renforcés de métal, le fléau en bois renforcé est un outil agricole transformé en arme. Plutôt imprévisible, mais suffisamment mortel pour abattre la plupart des hommes avec un bon coup à la tête, et utile pour frapper par-dessus ou autour d\'un bouclier.";
-		this.m.Categories = "Flail, One-Handed";
+		this.m.Categories = "Fléau, Une Main";
 		this.m.IconLarge = "weapons/melee/flail_03.png";
 		this.m.Icon = "weapons/melee/flail_03_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

@@ -6,7 +6,7 @@ this.scimitar <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.scimitar";
 		this.m.Name = "Cimeterre";
 		this.m.Description = "Une épée incurvée exotique du sud qui est excellente pour trancher, mais pas pour enfoncer ou pénétrer une armure.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/scimitar_02.png";
 		this.m.Icon = "weapons/melee/scimitar_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

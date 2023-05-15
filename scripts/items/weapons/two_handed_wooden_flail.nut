@@ -6,7 +6,7 @@ this.two_handed_wooden_flail <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.two_handed_wooden_flail";
 		this.m.Name = "Fléau en bois à deux mains";
 		this.m.Description = "Un lourd fléau en bois à deux mains qui peut frapper sur ou autour d\'un bouclier.";
-		this.m.Categories = "Flail, Two-Handed";
+		this.m.Categories = "Fléau, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/flail_two_handed_01.png";
 		this.m.Icon = "weapons/melee/flail_two_handed_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

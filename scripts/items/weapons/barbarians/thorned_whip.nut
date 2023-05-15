@@ -6,7 +6,7 @@ this.thorned_whip <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.thorned_whip";
 		this.m.Name = "Fouet épineux";
 		this.m.Description = "Un fouet à épines robuste. Utilisé par les barbares à la fois au combat et pour rassembler les bêtes sauvages, même les plus grosses trembleront sous sa morsure.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.IconLarge = "weapons/melee/wildmen_11.png";
 		this.m.Icon = "weapons/melee/wildmen_11_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

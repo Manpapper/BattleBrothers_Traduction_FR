@@ -6,7 +6,7 @@ this.greataxe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.greataxe";
 		this.m.Name = "Grande Hache";
 		this.m.Description = "Une lourde et longue hache à deux mains conçue pour le combat qui pèse lourdement à chaque coup et peut facilement couper un homme en deux.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/axe_two_handed_01.png";
 		this.m.Icon = "weapons/melee/axe_two_handed_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

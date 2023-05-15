@@ -8,7 +8,7 @@ this.winged_mace <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.winged_mace";
 		this.m.Name = "Masse à ailettes";
 		this.m.Description = "Une masse entièrement en métal avec un manche court et des lames attachées.";
-		this.m.Categories = "Mace, One-Handed";
+		this.m.Categories = "Masse, Une Main";
 		this.m.IconLarge = "weapons/melee/mace_01.png";
 		this.m.Icon = "weapons/melee/mace_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

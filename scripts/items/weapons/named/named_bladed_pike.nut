@@ -10,7 +10,7 @@ this.named_bladed_pike <- this.inherit("scripts/items/weapons/named/named_weapon
 		this.m.PrefixList = this.Const.Strings.OldWeaponPrefix;
 		this.m.UseRandomName = false;
 		this.m.Description = "Cette pique avec une lame en faux est originaire des légions de l\'ancien empire. Très peu d\'armes ont été conservées aussi bien que cette pièce.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;

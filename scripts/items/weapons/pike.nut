@@ -6,7 +6,7 @@ this.pike <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.pike";
 		this.m.Name = "Pique";
 		this.m.Description = "Une longue pique utilisée pour attaquer ou tenir l\'ennemi à distance.";
-		this.m.Categories = "Polearm, Two-Handed";
+		this.m.Categories = "Arme D\'Hast, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/pike_01.png";
 		this.m.Icon = "weapons/melee/pike_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

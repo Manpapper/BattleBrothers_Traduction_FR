@@ -6,7 +6,7 @@ this.falx <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.falx";
 		this.m.Name = "Falx";
 		this.m.Description = "Une lame courte et lourde avec un bord incurvé conçue pour couper et déchirer. Émoussé au fil des ans.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.IconLarge = "weapons/melee/falx_01.png";
 		this.m.Icon = "weapons/melee/falx_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

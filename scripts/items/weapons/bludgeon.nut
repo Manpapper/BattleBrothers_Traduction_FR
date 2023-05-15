@@ -8,7 +8,7 @@ this.bludgeon <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.bludgeon";
 		this.m.Name = "Matraque en fer";
 		this.m.Description = "Une tête en métal à pointes sur un manche en bois, grossière mais efficace pour frapper les têtes.";
-		this.m.Categories = "Mace, One-Handed";
+		this.m.Categories = "Masse, Une Main";
 		this.m.IconLarge = "weapons/melee/mace_02.png";
 		this.m.Icon = "weapons/melee/mace_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

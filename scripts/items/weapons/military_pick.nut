@@ -6,7 +6,7 @@ this.military_pick <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.military_pick";
 		this.m.Name = "Pioche militaire";
 		this.m.Description = "Un manche en bois avec une tête métallique longue et pointue conçue pour percer les armures les plus solides.";
-		this.m.Categories = "Hammer, One-Handed";
+		this.m.Categories = "Hammer, Une Main";
 		this.m.IconLarge = "weapons/melee/military_pick_01.png";
 		this.m.Icon = "weapons/melee/military_pick_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

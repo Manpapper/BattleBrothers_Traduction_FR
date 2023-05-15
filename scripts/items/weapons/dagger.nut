@@ -6,7 +6,7 @@ this.dagger <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.dagger";
 		this.m.Name = "Dague";
 		this.m.Description = "Un poignard pointu conçu pour le combat rapproché.";
-		this.m.Categories = "Dagger, One-Handed";
+		this.m.Categories = "Dague, Une Main";
 		this.m.IconLarge = "weapons/melee/dagger_01.png";
 		this.m.Icon = "weapons/melee/dagger_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

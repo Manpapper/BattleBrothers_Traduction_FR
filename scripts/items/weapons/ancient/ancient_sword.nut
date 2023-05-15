@@ -6,7 +6,7 @@ this.ancient_sword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.ancient_sword";
 		this.m.Name = "Épée ancienne";
 		this.m.Description = "Une lame droite d\'origine ancienne. La poignée est recouverte d\'ornements étranges, ce qui peut la rendre précieuse pour les historiens et autres personnes à l\'esprit érudit.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/ancient_sword_01.png";
 		this.m.Icon = "weapons/melee/ancient_sword_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

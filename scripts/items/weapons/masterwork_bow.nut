@@ -6,7 +6,7 @@ this.masterwork_bow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.masterwork_bow";
 		this.m.Name = "Arc de maître";
 		this.m.Description = "Un arc finement conçu, léger en main et parfaitement équilibré pour la précision. Construit à partir de bois différents, il a les couleurs de cet arbre et de ces noeuds à travers la courbe de l\'arme, ressemblant à un arboricole damasquiné. Vraiment le travail d\'un maître Artillier.";
-		this.m.Categories = "Bow, Two-Handed";
+		this.m.Categories = "Arc, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/bow_03.png";
 		this.m.Icon = "weapons/ranged/bow_03_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

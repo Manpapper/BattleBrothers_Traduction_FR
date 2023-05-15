@@ -6,7 +6,7 @@ this.shortsword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.shortsword";
 		this.m.Name = "Épée courte";
 		this.m.Description = "Une épée courte en fer brut avec quelques bosses et encoches, facile à manier d\'une seule main.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/sword_01.png";
 		this.m.Icon = "weapons/melee/sword_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

@@ -33,7 +33,7 @@ this.named_handgonne <- this.inherit("scripts/items/weapons/named/named_weapon",
 		this.m.PrefixList = this.Const.Strings.SouthernPrefix;
 		this.m.SuffixList = this.Const.Strings.SouthernSuffix;
 		this.m.Description = "Un canon en fonte savamment moulé avec un long manche en bois. Il tire des éclats d\'obus dans un cône et peut toucher plusieurs cibles d\'un seul coup. Ne peut pas être utilisé en mêlée.";
-		this.m.Categories = "Firearm, Two-Handed";
+		this.m.Categories = "Firearm, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.RangedWeapon | this.Const.Items.ItemType.Defensive;

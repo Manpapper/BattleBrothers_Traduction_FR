@@ -6,7 +6,7 @@ this.noble_sword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.noble_sword";
 		this.m.Name = "Épée de noble";
 		this.m.Description = "Une épée longue bien équilibrée avec une lame à double tranchant.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/sword_03.png";
 		this.m.Icon = "weapons/melee/sword_03_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

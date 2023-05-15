@@ -6,7 +6,7 @@ this.blunt_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.blunt_cleaver";
 		this.m.Name = "Couperet émoussé";
 		this.m.Description = "Ce couperet est lourd et contondant, mais peut tout de même causer de terribles blessures.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.IconLarge = "weapons/melee/wildmen_04.png";
 		this.m.Icon = "weapons/melee/wildmen_04_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

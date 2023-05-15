@@ -6,7 +6,7 @@ this.crude_axe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.crude_axe";
 		this.m.Name = "Hache brute";
 		this.m.Description = "Cette hache est grossièrement faite, mais lourde et dentelée.";
-		this.m.Categories = "Axe, One-Handed";
+		this.m.Categories = "Hache, Une Main";
 		this.m.IconLarge = "weapons/melee/wildmen_05.png";
 		this.m.Icon = "weapons/melee/wildmen_05_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

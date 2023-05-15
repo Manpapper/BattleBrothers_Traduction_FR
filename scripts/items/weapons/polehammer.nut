@@ -6,7 +6,7 @@ this.polehammer <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.polehammer";
 		this.m.Name = "Bec de corbin";
 		this.m.Description = "Un marteau de guerre monté sur une longue perche, utilisé contre des cibles blindées à distance et derrière la ligne de front.";
-		this.m.Categories = "Hammer, Two-Handed";
+		this.m.Categories = "Hammer, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/polehammer_01.png";
 		this.m.Icon = "weapons/melee/polehammer_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

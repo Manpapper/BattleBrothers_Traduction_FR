@@ -6,7 +6,7 @@ this.lightbringer_sword <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.lightbringer_sword";
 		this.m.Name = "Reproche des Dieux anciens";
 		this.m.Description = "L\'épée crépusculaire plie les violets et les oranges jusqu\'à ce qu\'elle porte apparemment elle-même le crépuscule dans son intégralité. Au toucher, on ne peut pas dire s\'ils sont brûlés ou refroidis. Magique ou bien conçue, quelle que soit cette arme, elle vibre comme si elle combattait une puissance immense et il vous suffit de la manier pour trouver le véritable pouvoir de l\'acier.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.IconLarge = "weapons/melee/sword_legendary_01.png";
 		this.m.Icon = "weapons/melee/sword_legendary_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

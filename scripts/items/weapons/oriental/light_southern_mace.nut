@@ -8,7 +8,7 @@ this.light_southern_mace <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.light_southern_mace";
 		this.m.Name = "Masse du Sud légère";
 		this.m.Description = "Une masse en métal avec des ailes étendues pour plus d\'efficacité contre les armures.";
-		this.m.Categories = "Mace, One-Handed";
+		this.m.Categories = "Masse, Une Main";
 		this.m.IconLarge = "weapons/melee/light_southern_mace_01.png";
 		this.m.Icon = "weapons/melee/light_southern_mace_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

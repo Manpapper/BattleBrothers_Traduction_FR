@@ -16,7 +16,7 @@ this.throwing_axe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.throwing_axe";
 		this.m.Name = "Lot de haches de lancer";
 		this.m.Description = "Petites haches à lancer vers une cible. Assez lourd pour infliger de sérieux dégâts aux armures et aux boucliers à distance.";
-		this.m.Categories = "Throwing Weapon, One-Handed";
+		this.m.Categories = "Arme de jet, Une Main";
 		this.m.IconLarge = "weapons/ranged/throwing_axes_01.png";
 		this.m.Icon = "weapons/ranged/throwing_axes_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

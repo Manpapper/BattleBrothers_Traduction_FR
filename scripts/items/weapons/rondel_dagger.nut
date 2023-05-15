@@ -6,7 +6,7 @@ this.rondel_dagger <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.rondel_dagger";
 		this.m.Name = "Dague à rouelles";
 		this.m.Description = "Une longue pointe quadrangulaire conçue pour percer les points faibles de l\'armure.";
-		this.m.Categories = "Dagger, One-Handed";
+		this.m.Categories = "Dague, Une Main";
 		this.m.IconLarge = "weapons/melee/dagger_02.png";
 		this.m.Icon = "weapons/melee/dagger_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

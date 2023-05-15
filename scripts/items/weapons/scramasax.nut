@@ -6,7 +6,7 @@ this.scramasax <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.scramasax";
 		this.m.Name = "Scramasaxe";
 		this.m.Description = "Un couteau long et lourd avec une lame unilatérale utilisé plus pour tailler que pour trancher.";
-		this.m.Categories = "Cleaver, One-Handed";
+		this.m.Categories = "Fendoir, Une Main";
 		this.m.IconLarge = "weapons/melee/sax_01.png";
 		this.m.Icon = "weapons/melee/sax_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

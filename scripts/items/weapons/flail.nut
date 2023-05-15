@@ -5,8 +5,8 @@ this.flail <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.flail";
 		this.m.Name = "Fléau";
-		this.m.Description = "Une tête de frappe séparée attachée à une poignée par une chaîne. Une arme plutôt imprévisible, mais utile pour frapper sur ou par-dessus un bouclier.";
-		this.m.Categories = "Flail, One-Handed";
+		this.m.Description = "Une masse attachée à une poignée par une chaîne. Une arme plutôt imprévisible, mais utile pour frapper sur ou par-dessus un bouclier.";
+		this.m.Categories = "Fléau, Une Main";
 		this.m.IconLarge = "weapons/melee/flail_01.png";
 		this.m.Icon = "weapons/melee/flail_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

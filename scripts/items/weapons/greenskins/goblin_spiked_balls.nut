@@ -16,7 +16,7 @@ this.goblin_spiked_balls <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.goblin_spiked_balls";
 		this.m.Name = "Lot de bolas à pointes";
 		this.m.Description = "Petites et lourdes boules de fer avec des pointes métalliques à lancer sur une cible.";
-		this.m.Categories = "Throwing Weapon, One-Handed";
+		this.m.Categories = "Arme de jet, Une Main";
 		this.m.IconLarge = "weapons/ranged/goblin_weapon_07.png";
 		this.m.Icon = "weapons/ranged/goblin_weapon_07_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

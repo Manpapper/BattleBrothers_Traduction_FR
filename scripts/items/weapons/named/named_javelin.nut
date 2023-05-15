@@ -20,7 +20,7 @@ this.named_javelin <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.ID = "weapon.named_javelin";
 		this.m.NameList = this.Const.Strings.JavelinNames;
 		this.m.Description = "Quelques lances légères qui sont savamment équilibrées pour voler aussi droite que possible. Elles ont une portée limitée et sont épuisantes à lancer, mais peuvent infliger des blessures dévastatrices.";
-		this.m.Categories = "Throwing Weapon, One-Handed";
+		this.m.Categories = "Arme de jet, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.RangedWeapon | this.Const.Items.ItemType.Ammo | this.Const.Items.ItemType.Defensive;
 		this.m.AddGenericSkill = true;

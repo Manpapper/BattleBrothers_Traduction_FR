@@ -8,7 +8,7 @@ this.named_warbow <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.m.ID = "weapon.named_warbow";
 		this.m.NameList = this.Const.Strings.BowNames;
 		this.m.Description = "Fabriqué à partir de bois très solide mais flexible, cet arc de guerre a une puissance de traction massive et est une pièce rare de savoir-faire.";
-		this.m.Categories = "Bow, Two-Handed";
+		this.m.Categories = "Arc, Deux-Mains";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.RangedWeapon | this.Const.Items.ItemType.Defensive;

@@ -16,7 +16,7 @@ this.heavy_throwing_axe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.heavy_throwing_axe";
 		this.m.Name = "Des haches de lancer lourdes";
 		this.m.Description = "Haches de lancer lourdes et encombrantes utilisées par les barbares du nord. Difficile à lancer, mais mortel.";
-		this.m.Categories = "Throwing Weapon, One-Handed";
+		this.m.Categories = "Arme de jet, Une Main";
 		this.m.IconLarge = "weapons/ranged/throwing_axes_heavy_01.png";
 		this.m.Icon = "weapons/ranged/throwing_axes_heavy_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

@@ -10,7 +10,7 @@ this.named_goblin_falchion <- this.inherit("scripts/items/weapons/named/named_we
 		this.m.PrefixList = this.Const.Strings.GoblinWeaponPrefix;
 		this.m.UseRandomName = false;
 		this.m.Description = "Fabriquée à partir de roche noire affûtée, cette lame cruelle peut infliger des blessures plus rapidement que l\'oeil ne peut voir. Une pièce vraiment remarquable.";
-		this.m.Categories = "Sword, One-Handed";
+		this.m.Categories = "Epée, Une Main";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.IsDoubleGrippable = true;

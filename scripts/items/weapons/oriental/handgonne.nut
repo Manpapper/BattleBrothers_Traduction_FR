@@ -29,7 +29,7 @@ this.handgonne <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.handgonne";
 		this.m.Name = "Cannon à main";
 		this.m.Description = "Un tonneau en fer avec un long manche en bois. Il tire des éclats d\'obus dans un cône et peut toucher plusieurs cibles d\'un seul coup. Ne peut pas être utilisé en mêlée.";
-		this.m.Categories = "Firearm, Two-Handed";
+		this.m.Categories = "Firearm, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/handgonne_01.png";
 		this.m.Icon = "weapons/ranged/handgonne_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

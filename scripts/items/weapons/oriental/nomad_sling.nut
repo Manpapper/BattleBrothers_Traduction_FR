@@ -6,7 +6,7 @@ this.nomad_sling <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.nomad_sling";
 		this.m.Name = "Fronde nomade";
 		this.m.Description = "Une fronde en cuir sur un bâton renforcé de métal, utilisée pour lancer des pierres sur l\'ennemi. Avec des pierres abondantes partout, il ne manquera jamais de munitions.";
-		this.m.Categories = "Throwing Weapon, Two-Handed";
+		this.m.Categories = "Arme de jet, Deux-Mains";
 		this.m.IconLarge = "weapons/ranged/warriors_sling_01.png";
 		this.m.Icon = "weapons/ranged/warriors_sling_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

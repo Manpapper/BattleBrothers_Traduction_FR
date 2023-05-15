@@ -6,7 +6,7 @@ this.heavy_rusty_axe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.heavy_rusty_axe";
 		this.m.Name = "Hache lourde rouillée";
 		this.m.Description = "Cette lourde hache rouillée fonctionne plus par son poids que par son tranchant, mais elle fait néanmoins le travail.";
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = "Hache, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/wildmen_09.png";
 		this.m.Icon = "weapons/melee/wildmen_09_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

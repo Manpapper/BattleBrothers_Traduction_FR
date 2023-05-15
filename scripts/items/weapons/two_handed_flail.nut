@@ -6,7 +6,7 @@ this.two_handed_flail <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.two_handed_flail";
 		this.m.Name = "Fléau à deux mains";
 		this.m.Description = "Un grand fléau en métal lourd qui nécessitait deux mains pour l\'utiliser. Utile pour frapper sur ou autour d\'un bouclier.";
-		this.m.Categories = "Flail, Two-Handed";
+		this.m.Categories = "Fléau, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/flail_two_handed_02.png";
 		this.m.Icon = "weapons/melee/flail_two_handed_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

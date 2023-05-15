@@ -8,7 +8,7 @@ this.lute <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.lute";
 		this.m.Name = "Luth";
 		this.m.Description = "Un instrument de musique qui, s\'il est entre de bonnes mains, est capable de produire des sons agréables avec ses cordes vibrantes.";
-		this.m.Categories = "Musical Instrument, Two-Handed";
+		this.m.Categories = "Instrument de Musique, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/lute_01.png";
 		this.m.Icon = "weapons/melee/lute_01_70x70.png";
 		this.m.BreakingSound = "sounds/combat/lute_break_01.wav";

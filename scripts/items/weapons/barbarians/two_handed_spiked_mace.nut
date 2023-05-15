@@ -6,7 +6,7 @@ this.two_handed_spiked_mace <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.two_handed_spiked_mace";
 		this.m.Name = "Masse à pointes à deux mains";
 		this.m.Description = "Une énorme masse équipé d\'un crâne pour faire bonne mesure. Recevoir un coup de cette arme laissera n\'importe qui étourdi et à bout de souffle, quelle que soit son armure.";
-		this.m.Categories = "Mace, Two-Handed";
+		this.m.Categories = "Masse, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/wildmen_06.png";
 		this.m.Icon = "weapons/melee/wildmen_06_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
