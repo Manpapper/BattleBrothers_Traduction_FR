@@ -6,7 +6,7 @@ this.two_handed_wooden_hammer <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.two_handed_wooden_hammer";
 		this.m.Name = "Maillet à deux mains";
 		this.m.Description = "Un grand maillet en bois qui se tient à deux mains. Peut infliger des coups dévastateurs qui peuvent repousser ou faire tomber au sol même les ennemis en armure.";
-		this.m.Categories = "Hammer, Deux-Mains";
+		this.m.Categories = "Marteau, Deux-Mains";
 		this.m.IconLarge = "weapons/melee/hammer_two_handed_02.png";
 		this.m.Icon = "weapons/melee/hammer_two_handed_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

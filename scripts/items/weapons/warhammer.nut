@@ -6,7 +6,7 @@ this.warhammer <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.warhammer";
 		this.m.Name = "Marteau de guerre";
 		this.m.Description = "Un marteau de guerre en fer court qui traverse facilement les plaques de blindage.";
-		this.m.Categories = "Hammer, Une Main";
+		this.m.Categories = "Marteau, Une Main";
 		this.m.IconLarge = "weapons/melee/warhammer_01.png";
 		this.m.Icon = "weapons/melee/warhammer_01_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;

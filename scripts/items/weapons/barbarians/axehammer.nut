@@ -6,7 +6,7 @@ this.axehammer <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.axehammer";
 		this.m.Name = "Hache-marteau";
 		this.m.Description = "Un hybride massif et rouillé de marteau et de hache. En raison de son bord émoussé plus du premier que du dernier.";
-		this.m.Categories = "Hammer/Axe, Une Main";
+		this.m.Categories = "Marteau/Hache, Une Main";
 		this.m.IconLarge = "weapons/melee/wildmen_03.png";
 		this.m.Icon = "weapons/melee/wildmen_03_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
