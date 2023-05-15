@@ -2309,11 +2309,11 @@ this.world_state <- this.inherit("scripts/states/state", {
 
 			if (!_isPlayerInitiated)
 			{
-				text = "You can\'t make out who is attacking you in time.<br/>You have to defend yourself!";
+				text = "Vous ne parvenez pas à identifier à temps les attaquants.<br/>Vous devez vous défendre !";
 			}
 			else
 			{
-				text = "You can\'t make out who you\'ll be facing. Attack at your own peril and be prepared to retreat if need be!";
+				text = "Vous ne parvenez pas à identifier ceux que vous allez affronter. Attaquez à vos risques et périls et soyez prêts à battre en retraite si nécessaire !";
 			}
 		}
 
@@ -2332,7 +2332,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 		this.m.EngageByPlayer = _isPlayerInitiated;
 		this.Tooltip.hide();
 		this.m.WorldScreen.hide();
-		this.m.CombatDialog.show(entities, allyBanners, enemyBanners, _isPlayerInitiated || this.m.EscortedEntity != null, _allowFormationPicking, text, image, this.m.EscortedEntity != null ? "Flee!" : "Fall back!");
+		this.m.CombatDialog.show(entities, allyBanners, enemyBanners, _isPlayerInitiated || this.m.EscortedEntity != null, _allowFormationPicking, text, image, this.m.EscortedEntity != null ? "Fuyez !" : "Se replier !");
 		this.m.MenuStack.push(function ()
 		{
 			this.m.EngageCombatPos = null;
