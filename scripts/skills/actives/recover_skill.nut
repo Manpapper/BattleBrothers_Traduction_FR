@@ -3,8 +3,8 @@ this.recover_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.recover";
-		this.m.Name = "Recover";
-		this.m.Description = "Take a deep breath and rest for a turn in order to recover your strength.";
+		this.m.Name = "Récupérer";
+		this.m.Description = "Respirez profondément et reposez-vous pendant un tour afin de récupérer vos forces.";
 		this.m.Icon = "ui/perks/perk_54_active.png";
 		this.m.IconDisabled = "ui/perks/perk_54_active_sw.png";
 		this.m.Overlay = "perk_54_active";
@@ -44,7 +44,7 @@ this.recover_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Current Fatigue is reduced by half"
+				text = "La fatigue actuelle est réduite de moitié"
 			}
 		];
 		return ret;

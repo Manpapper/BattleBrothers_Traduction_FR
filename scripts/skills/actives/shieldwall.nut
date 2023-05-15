@@ -37,7 +37,7 @@ this.shieldwall <- this.inherit("scripts/skills/skill", {
 		{
 			mult = mult * 1.25;
 		}
-		
+
 		if (this.getContainer().getActor().getCurrentProperties().IsProficientWithShieldSkills)
 		{
 			proficiencyBonus = 5;
@@ -63,13 +63,13 @@ this.shieldwall <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getMeleeDefense() * mult + proficiencyBonu) + "[/color] à la Défense de Mêlée pour un tour"
+				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getMeleeDefense() * mult + proficiencyBonus) + "[/color] à la Défense de Mêlée pour un tour"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getRangedDefense() * mult + proficiencyBonu) + "[/color] à la Défense à Distance pour un tour"
+				text = "Octroie un bonus de [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getRangedDefense() * mult + proficiencyBonus) + "[/color] à la Défense à Distance pour un tour"
 			},
 			{
 				id = 6,
@@ -101,7 +101,7 @@ this.shieldwall <- this.inherit("scripts/skills/skill", {
 
 		if (!_user.isHiddenToPlayer())
 		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " uses Shieldwall");
+			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " utilise Mur de Bouclier");
 		}
 
 		return true;

@@ -138,7 +138,7 @@ this.main_menu_screen <- {
 		}
 
 		this.m.JSHandle.asyncCall("setDLC", dlc);
-		this.m.JSHandle.asyncCall("setMOTD", "Battle Brothers est un jeu difficile. Les défaites et les come-back font partie du jeu.\nIl est recommandé de commencer par la difficulté \"Débutant\" et l'origine de campagne \"tutoriel\" !");
+		this.m.JSHandle.asyncCall("setMOTD", "Battle Brothers est un jeu difficile. Les défaites et les come-back font partie du jeu.\nIl est recommandé de commencer par la difficulté \"Débutant\" et l\'origine de campagne \"tutoriel\" !");
 	}
 
 	function destroy()

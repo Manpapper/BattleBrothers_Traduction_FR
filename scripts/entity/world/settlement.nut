@@ -288,7 +288,7 @@ this.settlement <- this.inherit("scripts/entity/world/location", {
 			ret.push({
 				id = 4,
 				type = "text",
-				text = "Vous n'avez jamais visité cet endroit."
+				text = "Vous n\'avez jamais visité cet endroit."
 			});
 		}
 

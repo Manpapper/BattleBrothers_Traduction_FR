@@ -3,8 +3,8 @@ this.rally_the_troops <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.rally_the_troops";
-		this.m.Name = "Rally";
-		this.m.Description = "Raaaaally! Use this character\'s inspirational resolve to rally nearby fleeing allies and push everyone to go the extra mile. A single character can only be rallied once per round.";
+		this.m.Name = "Rallier les troupes";
+		this.m.Description = "Ralliemment ! Utilisez la détermination inspirante de ce personnage pour rallier les alliés en fuite qui se trouvent à proximité et pousser tout le monde à se surpasser. Un même personnage ne peut être rallié qu\'une seule fois par tour.";
 		this.m.Icon = "ui/perks/perk_42_active.png";
 		this.m.IconDisabled = "ui/perks/perk_42_active_sw.png";
 		this.m.Overlay = "perk_42_active";
@@ -48,19 +48,19 @@ this.rally_the_troops <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Triggers a morale check to rally fleeing allies within 4 tiles distance, with a bonus to Resolve of [color=" + this.Const.UI.Color.PositiveValue + "]+" + bravery + "[/color] based on this character\'s Resolve"
+				text = "Déclenche un test de moral pour rallier les alliés en fuite dans un rayon de 4 tuiles, avec un bonus à la Détermination de [color=" + this.Const.UI.Color.PositiveValue + "]+" + bravery + "[/color] basé sur la résolution de ce personnage"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Triggers a morale check to raise the morale of anyone wavering or worse within 4 tiles distance, with a bonus to Resolve of [color=" + this.Const.UI.Color.PositiveValue + "]+" + bravery + "[/color] based on this character\'s Resolve, but lowered by [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] per tile distance"
+				text = "Déclenche un test de moral pour remonter le moral de toute personne vacillante ou pire dans un rayon de 4 tuiles, avec un bonus à la Détermination de [color=" + this.Const.UI.Color.PositiveValue + "]+" + bravery + "[/color] basé sur la résolution de ce personnage, mais diminuée de [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] par tuile de distance"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Removes the Sleeping status effect of allies within 4 tiles distance"
+				text = "Supprime l\'effet d\'endormissement des alliés dans un rayon de 4 tuiles."
 			}
 		];
 
@@ -70,7 +70,7 @@ this.rally_the_troops <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not rally others the same turn as being rallied himself[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut pas rallier d\'autres personnes pendant le même tour que celui où il est lui-même rallié[/color]"
 			});
 		}
 

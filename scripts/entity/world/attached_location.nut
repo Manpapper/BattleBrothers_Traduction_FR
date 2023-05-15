@@ -75,7 +75,7 @@ this.attached_location <- this.inherit("scripts/entity/world/location", {
 		}
 		else
 		{
-			return "Ces ruines faisaient autrefois parties de la colonie voisine, il n'en reste aujourd'hui que des ruines brûlées et abandonnées.";
+			return "Ces ruines faisaient autrefois parties de la colonie voisine, il n\'en reste aujourd\'hui que des ruines brûlées et abandonnées.";
 		}
 	}
 
