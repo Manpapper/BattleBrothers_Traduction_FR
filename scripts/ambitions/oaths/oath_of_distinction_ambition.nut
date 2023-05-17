@@ -22,7 +22,7 @@ this.oath_of_distinction_ambition <- this.inherit("scripts/ambitions/oaths/oath_
 
 	function getRewardTooltip()
 	{
-		return "Vous gagnez de la renommée supplémentaire si l\'un de vos hommes monte en grade " + this.getBonusObjectiveGoal() + " fois (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
+		return "Vous gagnez de la renommée supplémentaire si l\'un de vos hommes monte en niveau " + this.getBonusObjectiveGoal() + " fois (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
 	}
 
 	function getBonusObjectiveProgress()
