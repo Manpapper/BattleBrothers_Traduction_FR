@@ -925,26 +925,12 @@ gt.Const.CharacterProperties <- {
 	DailyFood = 2.0,
 	function getMeleeDefense()
 	{
-		if (this.MeleeDefense >= 0)
-		{
-			return this.Math.floor(this.MeleeDefense * (this.MeleeDefenseMult >= 0 ? this.MeleeDefenseMult : 1.0 / this.MeleeDefenseMult));
-		}
-		else
-		{
-			return this.Math.floor(this.MeleeDefense * (this.MeleeDefenseMult < 0 ? this.MeleeDefenseMult : 1.0 / this.MeleeDefenseMult));
-		}
+		return this.Math.floor(this.MeleeDefense * (this.MeleeDefense >= 0 ? this.MeleeDefenseMult : 1.0 / this.MeleeDefenseMult));
 	}
 
 	function getRangedDefense()
 	{
-		if (this.RangedDefense >= 0)
-		{
-			return this.Math.floor(this.RangedDefense * (this.RangedDefenseMult >= 0 ? this.RangedDefenseMult : 1.0 / this.RangedDefenseMult));
-		}
-		else
-		{
-			return this.Math.floor(this.RangedDefense * (this.RangedDefenseMult < 0 ? this.RangedDefenseMult : 1.0 / this.RangedDefenseMult));
-		}
+		return this.Math.floor(this.RangedDefense * (this.RangedDefense >= 0 ? this.RangedDefenseMult : 1.0 / this.RangedDefenseMult));
 	}
 
 	function getMeleeSkill()
@@ -954,7 +940,7 @@ gt.Const.CharacterProperties <- {
 
 	function getRangedSkill()
 	{
-		return this.Math.floor(this.RangedSkill * (this.RangedSkillMult >= 0 ? this.RangedSkillMult : 1.0 / this.RangedSkillMult));
+		return this.Math.floor(this.RangedSkill * (this.RangedSkill >= 0 ? this.RangedSkillMult : 1.0 / this.RangedSkillMult));
 	}
 
 	function getVision()
@@ -964,12 +950,12 @@ gt.Const.CharacterProperties <- {
 
 	function getBravery()
 	{
-		return this.Math.floor(this.Bravery * (this.BraveryMult >= 0 ? this.BraveryMult : 1.0 / this.BraveryMult));
+		return this.Math.floor(this.Bravery * (this.Bravery >= 0 ? this.BraveryMult : 1.0 / this.BraveryMult));
 	}
 
 	function getInitiative()
 	{
-		return this.Math.floor(this.Initiative * (this.InitiativeMult >= 0 ? this.InitiativeMult : 1.0 / this.InitiativeMult));
+		return this.Math.floor(this.Initiative * (this.Initiative >= 0 ? this.InitiativeMult : 1.0 / this.InitiativeMult));
 	}
 
 	function getRegularDamageAverage()

@@ -3382,7 +3382,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 			{
 				foreach( a in i )
 				{
-					if (a.getID() != this.getID())
+					if (a.getID() != this.getID() && a.isPlacedOnMap())
 					{
 						a.onOtherActorDeath(_killer, this, _skill);
 					}

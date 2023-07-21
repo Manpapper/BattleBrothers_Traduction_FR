@@ -205,7 +205,7 @@ this.warriors_death_event <- this.inherit("scripts/events/event", {
 
 	function onUpdateScore()
 	{
-		if (this.Time.getVirtualTimeF() - this.World.Events.getLastBattleTime() > 6.0)
+		if (this.Time.getVirtualTimeF() - this.World.Events.getLastBattleTime() > 8.0)
 		{
 			return;
 		}
