@@ -13,7 +13,7 @@ this.kid_blacksmith_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_97.png[/img]{Alors que vous vous promenez dans les boutiques de %townname%, vous sentez qu\'on tire sur votre manche. Vous vous retournez pour trouver un enfant, le visage barbouillé de noir, avec deux yeux blancs brillants qui vous fixent. Il demande si vous vous y connaissez en épées. Vous faites un geste vers celle que se trouve dans votre fourreau. Il tape dans ses mains.%SPEECH_ON%Génial ! Je travaille pour un forgeron là-bas, mais il est parti chercher des lingots de fer. Il m\'a dit de surveiller cette épée spéciale qu\'il fabriquait, mais elle, euh, elle est tombée. Et s\'est cassée. Elle est tombée toute seule et s\'est cassée toute seule. Tu veux bien m\'aider à la remettre en place?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_97.png[/img]{Alors que vous vous promenez dans les boutiques de %townname%, vous sentez qu\'on tire sur votre manche. Vous vous retournez pour trouver un enfant, le visage barbouillé de noir, avec deux yeux blancs brillants qui vous fixent. Il demande si vous vous y connaissez en épées. Vous faites un geste vers celle qui se trouve dans votre fourreau. Il tape dans ses mains.%SPEECH_ON%Génial ! Je travaille pour un forgeron là-bas, mais il est parti chercher des lingots de fer. Il m\'a dit de surveiller cette épée spéciale qu\'il fabriquait, mais elle, euh, elle est tombée. Et s\'est cassée. Elle est tombée toute seule et s\'est cassée toute seule. Tu veux bien m\'aider à la remettre en place?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
