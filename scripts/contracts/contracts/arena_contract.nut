@@ -302,7 +302,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t what I had in mind. | I\'ll sit this one out. | I\'ll wait for the next fight.}",
+					Text = "{Ce n\'est pas ce que j\'avais en tête. | Je vais m\'asseoir sur cette affaire. | Je vais attendre le prochain combat.}",
 					function getResult()
 					{
 						this.Contract.getHome().getBuilding("building.arena").refreshCooldown();
@@ -408,43 +408,43 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% unholds";
 					}
 
-					this.Text += "%SPEECH_ON%You\'re against %number% of what the northern scum refer to as an \'unhold.\' The Vizier pays a proper pile of coin to get them here, and the masses love the giant bastards. They do a good job smashing fighters and, on occasion, heaving a warrior clear into the crowds. It\'s quite wonderful. I think some of the unholds even learn to enjoy it the longer they stay here, like they learn what spurs the mob to cheers and jeer. The brutality is something else. Anyway, may the Gilder watch over you.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Vous êtes contre %number% de ce que la racaille nordique appelle un\'unhold.\' Le Vizir paie un bon paquet de couronnes pour les faire venir ici et les masses adorent ces bâtards géants. Ils font du bon travail en écrasant les combattants et, à l'occasion, en projetant un guerrier dans la foule. C\'est tout à fait merveilleux. Je crois même que certains d\'entre eux apprennent à apprécier cela au fur et à mesure qu\'ils restent ici, comme s'ils apprenaient ce qui incite la foule à applaudir ou à se moquer. La brutalité, c\'est autre chose. Quoi qu\'il en soit, que le doreur veille sur vous.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsDesertRaiders"))
 				{
 					this.Flags.set("Number", this.Math.max(2, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.NomadOutlaw, baseDifficulty)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% nomades";
-					this.Text += "%SPEECH_ON%Your opponents will be %number% recently retired desert bandits. And by retired, I mean taken by the Vizier\'s lawmen, of course. No bandit willingly steps foot in here, haghaghagh!%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Vos adversaires seront %number% bandits du désert récemment mis à la retraite. Et par retraités, je veux dire capturés par les hommes de loi du Vizir, bien sûr. Aucun bandit ne veut mettre les pieds ici, haghaghagh!%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsGladiators"))
 				{
 					this.Flags.set("Number", this.Math.max(2, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Gladiator, baseDifficulty)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% gladiateurs";
-					this.Text += "%SPEECH_ON%Well, heh, the Gilder must have a sense of humor. You\'ll be facing %number% gladiators. May your path be ever Gilded, but to be honest, I said that to the gladiators. And I\'ve been saying it to them every day. Understand? You should prepare to the best of your abilities.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Bien, heh, le doreur doit avoir le sens de l'humour. Vous allez affronter %number% gladiateurs. Que votre chemin soit toujours doré, mais pour être honnête, c\'est ce que j\'ai dit aux gladiateurs. Et je le leur ai dit tous les jours. Vous comprenez ? Vous devez vous préparer au mieux de vos capacités.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsSpiders"))
 				{
 					this.Flags.set("Number", this.Math.max(3, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Spider, baseDifficulty)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% webknechts";
-					this.Text += "%SPEECH_ON%That is not a fig tree, it\'s a spider. The alchemists, bless their learned hearts, call them webknechts which is a silly northern name, in truth they\'re spiders. Unfortunately for you a boot will not be sufficient this time around for %number% of them.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Ce n\'est pas un figuier, c\'est une araignée. Les alchimistes, bénis soient leurs cœurs érudits, les appellent webknechts, ce qui est un nom nordique stupide, en vérité ce sont des araignées. Malheureusement pour vous, une botte ne suffira pas cette fois-ci pour %number% d\'entre elles.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsSerpents"))
 				{
 					this.Flags.set("Number", this.Math.max(2, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Serpent, baseDifficulty)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% serpents";
-					this.Text += "%SPEECH_ON%What do you mean you don\'t understand? Huh, it\'s just a squiggly line? No. Look, this is its tail, and that\'s the head. It\'s a snake. You\'re fighting %number% snakes. \'Serpents\' the alchemists like to call them, but if I wanted to draw a serpent I\'d just draw an alchemist haghaghagh!%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Comment ça, tu ne comprends pas ? Huh, c'est juste une ligne sinueuse ? Non. Regarde, ça c'est la queue, et ça c'est la tête. C'est un serpent. Tu te bats contre %number% serpents. \'Serpents\' Les alchimistes aiment les appeler "serpents", mais si je voulais dessiner un serpent, je dessinerais juste un alchimiste haghaghagh!%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsHyenas"))
 				{
 					this.Flags.set("Number", this.Math.max(2, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Hyena, baseDifficulty)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% hyènes";
-					this.Text += "%SPEECH_ON%Hyenas. Heeheehee. Hyenas. %numberC% of the giggling mutts, to be exact. Good luck, and may the Gilder watch over you.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Hyènes. Heeheehee. Les hyènes. %numberC% cabots ricanants, pour être exact. Bonne chance, et que le doreur veille sur vous.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsFrenziedHyenas"))
 				{
 					this.Flags.set("Number", this.Math.max(2, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.HyenaHIGH, baseDifficulty)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% hyènas frénétique";
-					this.Text += "%SPEECH_ON%Hyenas. Heeheehee. Hyenas. %numberC% of the giggling mutts, to be exact. Good luck, and may the Gilder watch over you.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Hyènes. Heeheehee. Les hyènes. %numberC% cabots ricanants, pour être exact. Bonne chance, et que le doreur veille sur vous.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsLindwurm"))
 				{
@@ -459,56 +459,56 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 						this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre deux lindwurms";
 					}
 
-					this.Text += "%SPEECH_ON%Your opponent is a... a... what is this? A worm? It\'s green. Never seen a worm that col- oh! A wyrm! No wait, \'wurm.\' Wurm? A lindwurm! I gots\'ta be honest with ya, I don\'t know what the hell this is, but I imagine our dear matchmakers won\'t be having you fightin\' a worm of the regular sort. Or maybe they is. Maybe they\'ll just have ye eat it for our entertainment. Maybe they ain\'t matchmakers, but tastemakers! Herghgheeagghheeehoogh. Ha.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Votre adversaire est un... un... qu'est-ce que c'est ? Un ver ? Il est vert. Je n\'ai jamais vu un ver de cette couleur... Oh ! Un wyrm ! Non, attendez, un wurm ! Wurm ? Un lindwurm ! Je dois être honnête avec vous, je ne sais pas ce que c\'est, mais j\'imagine que nos chers entremetteurs ne vous feront pas combattre un ver ordinaire. Ou peut-être que si. Peut-être qu\'ils vous feront juste manger pour nous divertir. Peut-être que ce ne sont pas des entremetteurs, mais des faiseurs de goût ! Herghgheeagghheeehoogh. Ha.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsMercenaries"))
 				{
 					this.Flags.set("Number", this.Math.max(2, this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Mercenary, baseDifficulty)));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %amount% mercenaires";
-					this.Text += "%SPEECH_ON%Crownlings like you have ventured down from the north. Up there, they call them \'sellswords.\' Hagh! What sort of attempt at poetry is that? Don\'t they know not every man even uses a sword? They ain\'t the brightest up there. That\'s why I like it in the south. The sun is bright, and thus so are we.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Des couronnes comme les vôtres sont descendues du nord. Là-haut, on les appelle des \'sellswords.\' Hagh! Quelle sorte de tentative de poésie est-ce là ? Ils ne savent pas que tous les hommes ne se servent pas d'une épée ? Ils ne sont pas les plus brillants là-haut. C\'est pour ça que j'aime le sud. Le soleil est brillant, et donc nous aussi.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsGladiatorChampion"))
 				{
 					this.Flags.set("Champion1", this.Const.World.Common.generateName(this.Const.World.Spawn.Troops.Gladiator.NameList) + (this.Const.World.Spawn.Troops.Gladiator.TitleList != null ? " " + this.Const.World.Spawn.Troops.Gladiator.TitleList[this.Math.rand(0, this.Const.World.Spawn.Troops.Gladiator.TitleList.len() - 1)] : ""));
 					this.Flags.set("Number", this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Gladiator, baseDifficulty - this.Const.World.Spawn.Troops.Gladiator.Cost * 2, 2));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %champion1% et %amount% gladiateurs";
-					this.Text += "%SPEECH_ON%Recognize this face? There\'s a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin\' in those seats upstairs. It\'s %champion1%, one of the greatest fighters in this land. Maybe some day they\'ll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Vous reconnaissez ce visage? Ce n\'est pas pour rien que les artistes ont passé du temps sur cette brochure et qu\'ils l\'ont distribuée à tous les spectateurs assis dans ces fauteuils à l\'étage. C\'est %champion1%,l\'un des plus grands combattants de ce pays. Peut-être qu\'un jour, ils te feront un joli visage également, si le Vizir te trouve assez talentueux pour sauver, ce que tu as entre les deux oreilles, hegheghegh.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsSwordmasterChampion"))
 				{
 					this.Flags.set("Champion1", this.Const.World.Common.generateName(this.Const.World.Spawn.Troops.Swordmaster.NameList) + (this.Const.World.Spawn.Troops.Swordmaster.TitleList != null ? " " + this.Const.World.Spawn.Troops.Swordmaster.TitleList[this.Math.rand(0, this.Const.World.Spawn.Troops.Swordmaster.TitleList.len() - 1)] : ""));
 					this.Flags.set("Number", this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Mercenary, baseDifficulty - this.Const.World.Spawn.Troops.Gladiator.Cost * 2, 2));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %champion1% et %amount% mercenaires";
-					this.Text += "%SPEECH_ON%Recognize this face? There\'s a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin\' in those seats upstairs. It\'s %champion1%, one of the greatest fighters in this land. Maybe some day they\'ll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Vous reconnaissez ce visage? Ce n\'est pas pour rien que les artistes ont passé du temps sur cette brochure et qu\'ils l\'ont distribuée à tous les spectateurs assis dans ces fauteuils à l\'étage. C\'est %champion1%,l\'un des plus grands combattants de ce pays. Peut-être qu\'un jour, ils te feront un joli visage également, si le Vizir te trouve assez talentueux pour sauver, ce que tu as entre les deux oreilles, hegheghegh.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsExecutionerChampion"))
 				{
 					this.Flags.set("Champion1", this.Const.World.Common.generateName(this.Const.World.Spawn.Troops.Executioner.NameList) + (this.Const.World.Spawn.Troops.Executioner.TitleList != null ? " " + this.Const.World.Spawn.Troops.Executioner.TitleList[this.Math.rand(0, this.Const.World.Spawn.Troops.Executioner.TitleList.len() - 1)] : ""));
 					this.Flags.set("Number", this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.Gladiator, baseDifficulty - this.Const.World.Spawn.Troops.Gladiator.Cost * 2, 2));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %champion1% and %amount% gladiateurs";
-					this.Text += "%SPEECH_ON%Recognize this face? There\'s a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin\' in those seats upstairs. It\'s %champion1%, one of the greatest fighters in this land. Maybe some day they\'ll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Vous reconnaissez ce visage? Ce n\'est pas pour rien que les artistes ont passé du temps sur cette brochure et qu\'ils l\'ont distribuée à tous les spectateurs assis dans ces fauteuils à l\'étage. C\'est %champion1%,l\'un des plus grands combattants de ce pays. Peut-être qu\'un jour, ils te feront un joli visage également, si le Vizir te trouve assez talentueux pour sauver, ce que tu as entre les deux oreilles, hegheghegh.%SPEECH_OFF%";
 				}
 				else if (this.Flags.get("IsDesertDevilChampion"))
 				{
 					this.Flags.set("Champion1", this.Const.World.Common.generateName(this.Const.World.Spawn.Troops.DesertDevil.NameList) + (this.Const.World.Spawn.Troops.DesertDevil.TitleList != null ? " " + this.Const.World.Spawn.Troops.DesertDevil.TitleList[this.Math.rand(0, this.Const.World.Spawn.Troops.DesertDevil.TitleList.len() - 1)] : ""));
 					this.Flags.set("Number", this.Contract.getAmountToSpawn(this.Const.World.Spawn.Troops.NomadOutlaw, baseDifficulty - this.Const.World.Spawn.Troops.Gladiator.Cost * 2, 2));
 					this.Contract.m.BulletpointsObjectives[1] = "Entrer dans l\'arène de nouveau pour commencer le combat contre %champion1% and %amount% nomades";
-					this.Text += "%SPEECH_ON%Recognize this face? There\'s a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin\' in those seats upstairs. It\'s %champion1%, one of the greatest fighters in this land. Maybe some day they\'ll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%";
+					this.Text += "%SPEECH_ON%Vous reconnaissez ce visage? Ce n\'est pas pour rien que les artistes ont passé du temps sur cette brochure et qu\'ils l\'ont distribuée à tous les spectateurs assis dans ces fauteuils à l\'étage. C\'est %champion1%,l\'un des plus grands combattants de ce pays. Peut-être qu\'un jour, ils te feront un joli visage également, si le Vizir te trouve assez talentueux pour sauver, ce que tu as entre les deux oreilles, hegheghegh.%SPEECH_OFF%";
 				}
 
 				if (this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon") > 0 && this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon") % 5 == 0)
 				{
-					this.Text += "He pauses.%SPEECH_ON%We expect important guests for this bout, so everything is set up for you to die proper bloody this time, got it? And if you can\'t do that, then have your lot dispatch their opponents in the most spectacular way to please the crowd. Do that, and I\'ll hand you a proper piece of gladiator gear ontop of the coin.%SPEECH_OFF%";
+					this.Text += "Il marque une pause.%SPEECH_ON%Nous attendons des invités importants pour ce combat, alors tout est prévu pour que vous mourriez de façon sanglante cette fois-ci, compris ? Et si vous n\'y arrivez pas, faites en sorte que votre équipe élimine ses adversaires de la manière la plus spectaculaire qui soit pour plaire à la foule. Faites-le, et je vous remettrai une pièce d\'équipement de gladiateur en plus des couronnes.%SPEECH_OFF%";
 				}
 
-				this.Text += "He points to some strange looking collars and continues.%SPEECH_ON%When you\'re ready, put these on the three men who\'ll be doing the fighting. This lets us know who to take into the pits. Anyone not wearing these will not be allowed in, not you, not the Vizier, dare I say even the Gilder may be turned down.%SPEECH_OFF%";
+				this.Text += "Il montre d'étranges colliers et continue.%SPEECH_ON%Quand vous serez prêts, mettez-les aux trois hommes qui se battront. Cela nous permettra de savoir qui emmener dans les fosses. Quiconque ne porte pas ces colliers ne sera pas autorisé à entrer, ni vous, ni le vizir, si j\'ose dire, même le doreur pourrait être refusé.%SPEECH_OFF%";
 			}
 
 		});
 		this.m.Screens.push({
 			ID = "Overview",
 			Title = "Overview",
-			Text = "Cette d\'arène fonctionne comme cela. Acceptez-vous les conditions ?",
+			Text = "Cette arène fonctionne comme cela. Acceptez-vous les conditions ?",
 			Image = "",
 			List = [],
 			Options = [
@@ -544,12 +544,12 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Start",
 			Title = "À l\'arène",
-			Text = "[img]gfx/ui/events/event_155.png[/img]{As you wait your turn, the crowd\'s bloodlust crawls through the dark, sheets of dust falling from above, the stomps of feet thunderous. They murmur in anticipation, and roar at killings. The quiet between battles is mere moments, and this silence is snatched away as the rusted gate lurches upward, chains rankling, the crowd abuzz once more. You step out into the light and so thunderous is the noise against your heart it could surely yet spur a dead man forth... | The arena\'s crowd is shoulder to shoulder, most blathering drunk. They scream and shout, their languages a mix of local and foreign, though the appeal to their bloodlust needs little articulation beyond their maddened faces and pumping fists. Now, the %companyname%\'s men will satiate these mad fools... | Cleaners hurry about the arena. They drag away the bodies, collect what\'s worth collecting, and occasionally throw a trophy into the crowds, eliciting a moblike rendition of the arena\'s battles in the stands themselves. The %companyname% is now a part of this affair. | The arena awaits, the crowd alight, and the %companyname%\'s turn to gain glory is at hand! | The crowd booms as the %companyname%\'s men stride into its bloody pit. Despite the mindless bloodlust of the peoples, you can\'t help but feel a beat of pride in your chest, knowing that it is your company ready to put on a show. | The gate rises. Nothing is heard save the rattle of chains, the creak of pulleys, the grunts of slaves at work. When the men of the %companyname% step out of the arena\'s bowels they can hear the crunch of sand underfoot until they come to stand in the center of the pit. A strange voice screams from the tops of the stadium, some lost language beyond your knowing, but the words echo just once before the crowd erupts with cheers and roaring. Now is the time your men shall prove themselves before the watchful eye of the commoner. | The %companyname%\'s business is rarely done before the eyes of those who would prefer themselves distantly separated from such violence. But in the arena, the commoner greedily awaits death and suffering, and it growls with bloodlust as your men enter the pits, and roars as the sellswords draw their weapons and ready for battle. | The arena is shaped like the pit of some sore, its ceiling torn away by the gods, revealing the vanity, bloodlust, and savagery of man. And it is man there, yelling and screaming, and if the blood sprays hit them, they wash their faces in the gore and grin at one another as though it were a joke. They fight one another for trophies and relish in the pain of others. And it is before these peoples that the %companyname% will fight, and for them they shall entertain and entertain well. | The arena\'s crowd is a mash of classes, rich and poor, for only the Viziers separate themselves out into stations above all. Briefly unified, the peoples of %townname% have graciously come together to watch men and monsters murder one another. With pleasure, the %companyname% seeks to do its part. | Boys sitting on the shoulders of fathers, young girls throwing flowers to the gladiators, women fanning themselves, men wondering if they could do it. These are the peoples of the arena - and the rest are all drunk out of their gourd and screaming nonsense. You hope the %companyname% can contribute to at least an hour or two to entertaining this mad lot. | The crowd roars as the %companyname%\'s men step into the pit. One would be dumb to confuse excitement for desire, for as soon as the applause ends there is a smattering of empty beer mugs and rotten tomatoes and the general giggling delight of those watching the matter. You wonder if the %companyname%\'s men are really best spent here, but then think hard on the gold and glory to be won, and that at the end of the day these mongrels in the stands will go home to their shit lives, and you\'ll go home to your shit life as well, but at least your pockets will be a bit deeper.}",
+			Text = "[img]gfx/ui/events/event_155.png[/img]{Pendant que vous attendez votre tour, la soif de sang de la foule se faufile dans l\'obscurité, des nappes de poussière tombent d\'en haut, les piétinements sont tonitruants. Ils murmurent dans l\'attente et rugissent lors de la mise à mort. Le silence entre les batailles ne dure que quelques instants, et il est rompu lorsque la porte rouillée se soulève, les chaînes s\'entrechoquent et la foule s'agite à nouveau. Vous sortez dans la lumière et votre cœur bat si fort qu\'il pourrait sûrement faire avancer un homme mort... | La foule de l\'arène est épaule contre épaule, la plupart étant complètement ivres. Ils crient et hurlent, leurs langues sont un mélange de langues locales et étrangères, mais l\'appel à leur soif de sang n\'a pas besoin d'être formulé au-delà de leurs visages enragés et de leurs poings battants. Maintenant, les hommes de %companyname%\vont rassasier ces fous furieux... | Les nettoyeurs se pressent dans l\'arène. Ils emportent les corps, ramassent ce qui en vaut la peine et lancent parfois un trophée dans la foule, provoquant ainsi une reproduction des batailles de l\'arène dans les tribunes. %companyname% fait désormais partie de cette affaire. | L\'arène attend, la foule s\'enflamme, et le tour de gloire de %companyname%\est arrivé! | La foule est en ébullition lorsque les hommes de %companyname% s\'avancent dans la fosse sanglante. La foule est en ébullition lorsque les hommes de %companyname% s'avancent dans la fosse sanglante. Malgré la soif de sang des gens, vous ne pouvez vous empêcher de ressentir une certaine fierté dans votre poitrine, sachant que c\'est votre compagnie qui est prête à faire le spectacle. | La porte se lève. On n\'entend rien d\'autre que le cliquetis des chaînes, le grincement des poulies et les grognements des esclaves au travail. Lorsque les hommes de %companyname% sortent des entrailles de l\'arène. Ils entendent le sable crisser sous leurs pieds jusqu'à ce qu\'ils se retrouvent au centre de la fosse. Une voix étrange hurle depuis le haut du stade, dans une langue inconnue, mais les mots ne résonnent qu\'une seule fois avant que la foule n\'éclate en acclamations et en rugissements. Le moment est venu pour vos hommes de faire leurs preuves devant l\'œil attentif du peuple. | Les affaires de %companyname% est rarement fait sous les yeux de ceux qui préfèrent se tenir à l\'écart de cette violence. Mais dans l\'arène, le vulgaire attend avec avidité la mort et la souffrance, et il grogne de soif de sang lorsque vos hommes entrent dans les fosses, et rugit lorsque les vendeurs dégainent leurs armes et se préparent au combat. | L\'arène a la forme d'un gouffre, dont le plafond a été arraché par les dieux, révélant la vanité, la soif de sang et la sauvagerie de l\'homme. Et ce sont les hommes qui sont là, hurlant et criant, et si les jets de sang les atteignent, ils se lavent le visage dans le sang et se sourient les uns aux autres comme s\'il s\'agissait d'une plaisanterie. Ils se battent pour des trophées et se délectent de la douleur des autres. C\'est devant ces peuples que %companyname% L'arène a la forme d'un gouffre, dont le plafond a été arraché par les dieux, révélant la vanité, la soif de sang et la sauvagerie de l'homme. Et ce sont les hommes qui sont là, hurlant et criant, et si les jets de sang les atteignent, ils se lavent le visage dans le sang et se sourient les uns aux autres comme s'il s'agissait d'une plaisanterie. Ils se battent pour des trophées et se délectent de la douleur des autres. C'est devant ces peuples que les %companyname% se battront, et c\'est pour eux qu\'ils s\'amuseront et s\'amuseront bien. |  La foule de l\'arène est un mélange de classes, de riches et de pauvres, car seuls les vizirs se répartissent en plusieurs postes. Brièvement unifiés, les habitants de %townname% se sont gracieusement rassemblés pour regarder des hommes et des monstres s\'assassiner les uns les autres. C\'est avec plaisir que %companyname%  cherche à faire sa part. | Des garçons assis sur les épaules de leurs pères, des jeunes filles jetant des fleurs aux gladiateurs, des femmes s\'éventant, des hommes se demandant s\'ils en sont capables. Ce sont les gens de l'arène - et les autres sont tous complètement ivres et crient des bêtises. Vous espérez que %companyname% pourra contribuer au moins une heure ou deux à divertir ces fous. | La foule rugit lorsque les hommes de %companyname% entrent dans la fosse. Il serait stupide de confondre excitation et désir, car dès que les applaudissements se terminent, les chopes de bière vides et les tomates pourries s\'éparpillent, tandis que les spectateurs s\'esclaffent de plaisir. Vous vous demandez si les hommes de %companyname% sont vraiment mieux utilisés ici, mais vous pensez ensuite à l\'or et à la gloire à gagner, et au fait qu\'à la fin de la journée, ces bâtards dans les gradins rentreront chez eux dans leur vie de merde, et vous rentrerez chez vous dans votre vie de merde aussi, mais au moins vos poches seront un peu plus profondes.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Let\'s give the crowd something to cheer for!",
+					Text = "Donnons à la foule une raison d\'applaudir !",
 					function getResult()
 					{
 						local p = this.Const.Tactical.CombatInfo.getClone();
