@@ -302,7 +302,7 @@ this.arena_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{This isn\'t what I had in mind. | I\'ll sit this one out. | I\'ll wait for the next fight.}",
+					Text = "{Ce n\'est pas ce que j'avais en tête. | Je vais m\'asseoir sur cette affaire. | Je vais attendre le prochain combat.}",
 					function getResult()
 					{
 						this.Contract.getHome().getBuilding("building.arena").refreshCooldown();
