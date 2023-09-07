@@ -274,7 +274,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{J\'imagine que vous allez payer chère pour ça. | Tout peut être fait si la paie est juste. | Convince me with jingling coin.}",
+					Text = "{J\'imagine que vous allez payer chère pour ça. | Tout peut être fait si la paie est juste. | Convainquez-moi avec de la monnaie sonnante et trébuchante.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -299,12 +299,12 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "ClosingIn",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{A cairn of humanly skulls freshly removed. %randombrother% stares at the totem of anguished faces and shakes his own head.%SPEECH_ON%You suppose they consider this art? Like did one of them savages take a step back and said, Yeah, that looks good.%SPEECH_OFF%You\'re not sure. You very much hope that humans are not the brush and canvas for the greenskins. | You come across a field of slaughtered farm animals. Entrails have been run down the farm\'s corrugated soils like some sanguinary irrigation. Either a farmer horribly misread the weather, or this is a sure sign of the orcs being close. | Dead bodies. Some cleaved in twain, others rather peaceful with but a few darts pocking their backs. Both forms of finality are a sure sign of greenskins being close. | You come to an abandoned greenskin encampment. There\'s a goblin with its head crushed. Perhaps it got into a fight with a much larger, stronger orc. Some ghastly shape is sitting over a spit. You just hope it\'s not what you think it is. %randombrother% points at the embers crackling beneath the meal.%SPEECH_ON%This is fresh. They aren\'t far off, sir.%SPEECH_OFF% | You come to a barn with its doors creaking open and shut in a pungent wind. %randombrother% peaks inside, then quickly bolts back with a hand to his nose.%SPEECH_ON%Yeah, the greenskins have been here.%SPEECH_OFF%Sparing yourself a look into the barn, you tell the men to prepare for a battle because it is surely coming. | You find a dead orc with a dead goblin splayed across its back. Pushing both bodies over, you find a dead farmer beneath. %randombrother% nods.%SPEECH_ON%Well, he gave a hell of a fight. A shame we couldn\'t have gotten here sooner.%SPEECH_OFF%You point to a running of fresh tracks in the mud.%SPEECH_ON%He was outnumbered and the rest of them aren\'t far off. Tell the men to prepare for battle.%SPEECH_OFF% | You come across a man wrapped in heavy chains and, apparently, squeezed to death by them. His purpled and crushed body chinks and chimes as the chains swing and twist. %randombrother% cuts the body down. The corpse spews dark blood from its mouth and the sellsword jumps away.%SPEECH_ON%Hell, this guy\'s fresh! Whoever did this ain\'t far off!%SPEECH_OFF%You point at tracks in the mud and tell him this is no doubt the work of greenskins and, indeed, they are very close by. | You find a bag made of flesh in the road. Inside it are human ears, tanned and stiff with holes to run keychains through. %randombrother% gags. You inform the men that the greenskins aren\'t far off. No doubt a battle is coming! | You come across the remains of a hovel. Embers crackle in the blackened remains. %randombrother% finds a couple of skeletons, noting that they are missing half their bodies. Seeing some deep tracks in the ashen mud, you inform the men to ready themselves as greenskins are no doubt close by. | You find a man sobbing by the road. He\'s sitting cross-legged, body bobbing forward and back. When you get near, he twists his head around, eyeless and noseless and with the lips cut away.%SPEECH_ON%No more! Please, no more!%SPEECH_OFF%He falls to his side and starts convulsing and then he is still. %randombrother% pokes autour de body then stands up, shaking his head.%SPEECH_ON%Greenskins?%SPEECH_OFF%You point at the deep tracks in the mud and nod. | You come across a woman wailing over a corpse. She is dripping blood and gore, and the body beneath her knees has had its head completely caved in. You crouch beside her. She glances at you and moans. You ask who or what did this. The woman clears her throat and answers.%SPEECH_ON%Greenskins. Big ones. Small ones. They laughed as they did it. Their clubs went up, down, over and over, and in between they would not stop laughing.%SPEECH_OFF% | You find a horse dead beside the path with its stomach turned out into the trail. Its rib cage is still pouring a fresh drip. %randombrother% notes that the heart, liver, and other gourmet segments are missing. You point at big and small footprints tracking blood further up the path.%SPEECH_ON%Goblins and orcs.%SPEECH_OFF%And they\'re not far off. You order the %companyname% properly prepare itself for a fight.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{Un petit tas de crânes humains fraîchement déplacés. %randombrother% fixe le totem des visages angoissés et secoue la tête.%SPEECH_ON%Tu crois qu\'ils considèrent ça comme de l\'art ? Est-ce que l\'un de ces sauvages a pris du recul et s'est dit : Oui, ça a l\'air bien ?%SPEECH_OFF%Vous n\'êtes pas sûr. Vous espérez vraiment que les humains ne sont pas le pinceau et la toile des peaux vertes. | Vous tombez sur un champ d\'animaux de ferme abattus. Les entrailles ont coulé sur les sols ondulés de la ferme comme une irrigation sanguinaire. Soit un fermier a terriblement mal interprété la météo, soit c\'est un signe certain que les orcs sont proches. | Des cadavres. Certains coupés en deux, d\'autres plutôt paisibles avec quelques fléches dans le dos. Les deux formes de finalité sont un signe certain de la proximité des peaux-vertes. | Vous arrivez à un campement abandonné de peaux vertes. Il y a un gobelin dont la tête a été écrasée. Il s\'est peut-être battu avec un orc plus grand et plus fort. Une forme effroyable est posée sur une broche. Il ne reste plus qu\'à espérer que ce soit pas ce que l\'on croit. %randombrother% montre les braises qui crépitent sous le repas.%SPEECH_ON%c\'est tout frais. Ils ne sont pas loin, monsieur.%SPEECH_OFF% | Vous arrivez dans une grange dont les portes s\'ouvrent et se ferment en grinçant sous l\'effet d'un vent âcre. %randombrother% se précipite ensuite vers l\'intérieur, puis revient rapidement en arrière en portant la main à son nez.%SPEECH_ON%Oui, les peaux vertes sont passées par là.%SPEECH_OFF%En vous épargnant un coup d\'œil dans la grange, vous dites aux hommes de se préparer à la bataille, car elle ne manquera pas d\'arriver. | Vous trouvez un orc mort avec un gobelin mort sur son dos. En poussant les deux corps, vous trouvez un fermier mort en dessous. %randombrother% acquiesce.%SPEECH_ON%Il s\'est bien battu. Dommage qu\'on n\'ait pas pu arriver plus tôt.%SPEECH_OFF%Vous montrez des traces fraîches dans la boue.%SPEECH_ON%Il etait en infériorité numérique et les autres ne sont pas loin. Dites aux hommes de se préparer au combat.%SPEECH_OFF% | Vous tombez sur un homme enveloppé de lourdes chaînes et, apparemment, écrasé à mort par celles-ci. Son corps violacé et écrasé grince et tressaille tandis que les chaînes se balancent et se tordent. %randombrother%descend les corps. Le cadavre crache du sang noir par la bouche et le mercenaire s\'éloigne d\'un bond.%SPEECH_ON%Bon sang, ce type est frais ! Celui qui a fait ça n\'est pas loin !%SPEECH_OFF%Vous lui montrez des traces dans la boue et lui dites qu\'il s'agit sans aucun doute de l\'œuvre de peaux vertes et qu\'elles sont en effet très proches. | Vous trouvez sur la route un sac fait de chair. À l\'intérieur, il y a des oreilles humaines, tannées et rigides, avec des trous pour faire un collier. %randombrother% baille. Vous informez les hommes que les peaux vertes ne sont pas loin. La bataille approche à grands pas ! | Vous tombez sur les restes d\'une maison. Des braises crépitent dans les restes noircis. %randombrother% trouve un couple de squelettes et remarque qu\'il leur manque la moitié du corps. Voyant des traces profondes dans la boue cendrée, vous informez les hommes de se préparer car des peaux vertes sont sans doute proches. | Vous trouvez un homme qui sanglote au bord de la route. Il est assis les jambes croisées, le corps balançant d\'avant en arrière. Lorsque vous vous en approchez, il tourne la tête, sans yeux, sans nez et avec les lèvres coupées.%SPEECH_ON%Arrêtez ! S'il vous plaît, pitier !%SPEECH_OFF%Il tombe sur le côté et commence à convulser, puis reste immobile. %randombrother%fait le tour du corps, puis se lève en secouant la tête.%SPEECH_ON%peaux vertes?%SPEECH_OFF%Vous montrez les traces profondes dans la boue et vous acquiescez. | Vous tombez sur une femme qui se lamente sur un cadavre. Elle dégouline de sang et de chair, et le corps qui se trouve sous ses genoux a la tête complètement enfoncée. Vous vous accroupissez à côté d\'elle. Elle vous regarde et gémit. Vous demandez qui ou quoi a fait ça. La femme s\'éclaircit la gorge et répond.%SPEECH_ON%les peaux vertes. Des grands. Des peties. Ils riaient en le faisant. Leurs massues montaient, descendaient, ils recommençaient encore et encore, et entre les deux, ils n'arrêtaient pas de rire.%SPEECH_OFF% | Vous trouvez un cheval mort au bord du chemin, l\'estomac tourné vers le sentier. Sa cage thoracique laisse encore couler des gouttes fraîche. %randombrother% note qu\'il manque le cœur, le foie et d\'autres morceaux de choix. Vous montrez du doigt des empreintes de pas, grandes et petites, qui suivent le sang plus loin sur le chemin.%SPEECH_ON%Goblins et orcs.%SPEECH_OFF%Et ils ne sont pas loin. Vous ordonnez à %companyname% de se préparer au combat.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Be on your guard!",
+					Text = "Soyez sur vos gardes!",
 					function getResult()
 					{
 						return 0;
@@ -321,7 +321,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "{Victory! | Damn greenskins.}",
+					Text = "{Victoire! | Maudits peaux-vertes.}",
 					function getResult()
 					{
 						return 0;
@@ -333,12 +333,12 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "FinalConfrontation1",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_81.png[/img]{You\'re hearing a lot of rumors from countryfolk that an orcish warlord is amassing his soldiers and heading your way. If these rumors are true, you should prepare as best you can. | Well, there\'s a lot of buzz about an orc warlord marching through the region. It just so happens to be heading your way - which makes you think your plan has worked! The %companyname% should prepare itself for one hell of a fight. | Word has it that the orc warlord is heading your way! Prepare the %companyname% as they are in for one hell of a fight! | Every peasant you pass seems to be carrying the same rumor: there\'s an orc warlord coming your way! This is most likely not a coincidence and the %companyname% should prepare itself accordingly. | Well, the news on the wind is that that the %companyname% is the target of an orc warlord marching with a small army. It appears your plan has worked. The company should prepare for the incredible battle coming its way! | It seems that every peasant you pass has a story to tell and they\'re all the same: an orc warlord has amassed a small army and just coincidentally happens to be heading your way. The %companyname% should prepare itself for a hell of a fight! | A little old lady comes rushing to you. She explains that everyone is talking about an orc warlord that is heading your way. You\'re not sure if it\'s true, but given your purpose these past days it is certainly far too coincidental. The %companyname% should prepare for battle. | Well, the %companyname% should prepare itself or a battle. Everybody you pass is telling you the same story: an orc warlord has amassed a small army and is heading your way! | It appears the killings have worked: news has it that an orc warlord and his army is heading your way to take care of the company personally. The %companyname% should prepare itself for a fight! | A small kid approaches you. He glances at the %companyname%\'s sigil and then at you. He smiles.%SPEECH_ON%I think y\'all need help.%SPEECH_OFF%That might be true, but it sounds strange coming from the kid. You ask him why and he responds.%SPEECH_ON%My father said a big mean orc is going to kill you all. He said traders have been talking about it allllllll day!%SPEECH_OFF%Hmmm, if true it means the strategy has paid off and the %companyname% should prepare for battle. You thank the kid. He shrugs.%SPEECH_ON%I just saved your life and all I get is a thanks? You people!%SPEECH_OFF%The kid spits and walks off kicking rocks.}",
+			Text = "[img]gfx/ui/events/event_81.png[/img]{Vous entendez beaucoup de rumeurs de la part des habitants de la région selon lesquelles un seigneur de guerre orc rassemble ses soldats et se dirige vers vous. Si ces rumeurs sont fondées, vous devez vous préparer au mieux. | Bien, on parle beaucoup d\'un seigneur de guerre orc qui serait dans la région. Il se trouve qu\'il se dirige vers vous - ce qui vous fait penser que votre plan a fonctionné ! %companyname% doit se préparer à une lutte acharnée.| La rumeur dit que le seigneur de guerre orc se dirige vers vous !  Preparez %companyname% car un combat d\'enfer les attend ! | Tous les paysans que vous croisez semblent colporter la même rumeur : un seigneur de guerre orc arrive dans votre direction ! Il ne s\'agit probablement pas d\'une coïncidence et  %companyname% doit se préparer en conséquence. | La nouvelle qui circule est que %companyname% est la cible d\'un seigneur de guerre orc marchant avec une petite armée. Il semble que votre plan ait fonctionné. La compagnie doit se préparer à l\'incroyable bataille qui l\'attend ! | Il semble que chaque paysan que vous croisez ait une histoire à raconter et elles sont toutes les mêmes : un seigneur de guerre orc a rassemblé une petite armée et se trouve par hasard dans votre direction. %companyname% devrait se préparer à un combat d\'enfer ! | Une petite vieille se précipite vers vous. Elle vous explique que tout le monde parle d\'un seigneur de guerre orc qui se dirige vers vous. Vous n\'êtes pas sûr que ce soit vrai, mais étant donné votre but ces derniers jours, c\'est certainement une bien trop grande coïncidence. %companyname% doit se préparer au combat. | Bien, %companyname% doit se préparer au combat. Tous les gens que vous croisez vous racontent la même histoire : un seigneur de guerre orque a rassemblé une petite armée et se dirige vers vous ! | Il semble que les massacres aient porté leurs fruits : un seigneur de guerre orque et son armée se dirigent vers vous pour s\'occuper personnellement de la compagnie. %companyname% doit se préparer au combat ! |  Un petit garçon s\'approche de vous. Il jette un coup d\'œil à la bannière de %companyname%puis à vous. Il sourie.%SPEECH_ON%Je pense que vous avez besoin d\'aide.%SPEECH_OFF%C\'est peut-être vrai, mais cela semble étrange de la part d'un enfant. Vous lui demandez pourquoi et il vous répond.%SPEECH_ON%Mon père a dit qu\'un grand orque méchant allait tous vous tuer. Il a dit que les marchands en ont parlé toute la journée !%SPEECH_OFF%Hmmm, si c\'est vrai, cela signifie que la stratégie a porté ses fruits et que %companyname% doit se préparer à la bataille. Vous remerciez l\'enfant. Il hausse les épaules.%SPEECH_ON%Je viens de vous sauver la vie et tout ce que j\'obtiens, c\'est un remerciement ? Vous, les gens !%SPEECH_OFF%Le gamin crache et s\'en va en donnant des coups de pied dans les cailloux.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We need to be ready for this.",
+					Text = "Nous devons être prêts pour cela.",
 					function getResult()
 					{
 						return 0;
@@ -400,7 +400,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux armes!",
 					function getResult()
 					{
 						this.Contract.getActiveState().onCombatWithWarlord(this.Contract.m.Destination, this.Contract.m.IsPlayerAttacking);
@@ -418,7 +418,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "{The %companyname% prevailed! | Victory!}",
+					Text = "{Le %companyname% l\'a emporté! | Victoire!}",
 					function getResult()
 					{
 						return 0;
@@ -440,7 +440,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "We\'re at war and every battle counts. To arms!",
+					Text = "Nous sommes en guerre et chaque bataille compte. Aux armes!",
 					function getResult()
 					{
 						local p = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos(), true);
@@ -455,7 +455,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "This isn\'t our fight.",
+					Text = "Ce n\'est pas notre combat.",
 					function getResult()
 					{
 						return "Berserkers2";
@@ -467,12 +467,12 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Berserkers2",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_93.png[/img]This isn\'t your fight nor would it ever be. You have the men swing autour de encampment, quietly avoiding what could very easily be a devastating fight with a group of berserkers. The howls of dogs seem to chase you away and linger with a few of the men long after you\'ve left the place.",
+			Text = "[img]gfx/ui/events/event_93.png[/img]Ce n\'est pas votre combat et ça ne le sera jamais. Les hommes se déplacent autour du campement, évitant tranquillement ce qui pourrait très facilement être un combat dévastateur avec un groupe de berserkers. Les hurlements des chiens semblent vous chasser et s\'attardent sur quelques hommes longtemps après que vous ayez quitté les lieux.",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Keep your heads on straight, men.",
+					Text = "Gardez la tête froide, messieurs.",
 					function getResult()
 					{
 						this.Flags.set("IsBerserkers", false);
@@ -513,7 +513,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "Good work, men.",
+					Text = "Bon travail les gars.",
 					function getResult()
 					{
 						this.Flags.set("IsBerserkers", false);
