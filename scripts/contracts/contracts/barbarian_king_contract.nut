@@ -536,7 +536,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = "Prepare for battle.",
+					Text = "Préparez-vous au combat.",
 					function getResult()
 					{
 						this.World.Contracts.showCombatDialog(false, true, true);
