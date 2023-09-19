@@ -435,7 +435,7 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Berserkers1",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_93.png[/img]While on the path, %randombrother% suddenly straightens up and tells everyone to get quiet. You crouch low and crabwalk to him. He points through some bushes.%SPEECH_ON%There. Trouble. Big, fat trouble.%SPEECH_OFF%You stare through the bushes to see a camp of orc berserkers. They\'ve got a small fire going with a spit of spinning meat. Nearby are a cluster of cages, each one holding a whining dog. You watch as one of the greenskins opens a cage and yanks a dog out. He drags it kicking and screaming toward the fire and holds it over the flames.\n\n The mercenary glances at you.%SPEECH_ON%What should we do, sir?%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_93.png[/img]Sur le chemin, %randombrother% se redresse soudain et demande à tout le monde de se taire. Vous vous accroupissez et avancez jusqu\'à lui. Il pointe du doigt quelques buissons.%SPEECH_ON%là. Des emmerdes. Vous regardez à travers les buissons pour voir un camp de berserkers orcs. Ils ont allumé un petit feu avec une broche de viande qui tourne. A proximité se trouve un regroupement de cages, chacune contenant un chien qui gémit. Vous regardez une peau verte ouvrir une cage et en extraire un chien. Il le traîne en hurlant vers le feu et le tient au-dessus des flammes. Le mercenaire vous jette un regard. %SPEECH_ON%Que devons-nous faire, monsieur ?%SPEECH_OFF%,
 			Image = "",
 			List = [],
 			Options = [
