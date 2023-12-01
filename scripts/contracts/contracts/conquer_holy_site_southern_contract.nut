@@ -153,7 +153,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 				{
 					if (n.getFlags().get("IsHolyWarParticipant"))
 					{
-						n.addPlayerRelation(-99.0, "Took sides in the war");
+						n.addPlayerRelation(-99.0, "A pris parti dans la guerre");
 					}
 				}
 
@@ -458,7 +458,8 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_162.png[/img]{You find %employer% behind a pile of scrolls. He is busy to the task of writing and the holy men around him are just as busy paying attention, being certain to steal away a scroll the second it has captured the Vizier\'s final utterances. The man of scribbling import finally looks up.%SPEECH_ON%We\'ve a matter of %holysite% being trespassed by northern rats. I will try and temper my feelings on the matter, as it is not the Gilder\'s way to sully emotions with shades of fury, so let me just state clearly that the presence of these savages offends the rational appetite.%SPEECH_OFF%The Vizier dunks a quill pen and returns to his writing and speaking.%SPEECH_ON%However, shall the dog bark the birds will fly. I need a dog, Crownling, and one with bite. Take your company to the holy land and root out the reprobates. If we have agreement, then %reward% crowns and the Gilder\'s gleam shall await your return.%SPEECH_OFF% | %employer% welcomes you with surprising warmth.%SPEECH_ON%I knew it true that the Gilder would bring me a man of great import, a man of serious might and main. A Crownling, sure. But a warrior? Certainly!%SPEECH_OFF%Before you can ask the nature of the business, the Vizier holds up a golden chalice with half of the cupping sliced like the rim of the moon.%SPEECH_ON%Our holiest land, %holysite%, has been taken by savage northerners. Our world is threatened with darkness, and to fend the shadow we must be propitious in our endeavors. The men of my domain are plenty, but the lands beneath the Gilder\'s eye stretch far. I need soldiers such as yourself to help claim %holysite%. For it is a part of this earth which the Gilder is suzerain, and the Gilder pays us all: %reward% crowns for the task\'s completion. Do we have an arrangement?%SPEECH_OFF% | In a rare sight, you find %employer% prostrated beneath the sublimity of a glinting, shiny emblem shaped like the sun. He whispers a few words to himself then rises, then whispers again, cleans his fingertips one at a time, and turns to you.%SPEECH_ON%Whilst my troops make propitious advances elsewhere, %holysite% has been left undefended. In my wont to win this war, I have left the door open for the barbarian northerners to take it over. I request, face to face with you, a parcel of outside help. The Gilder will provide us all the gilded path, Crownling, and you are not outside His generosity. Through my hand, you shall have %reward% crowns if you take back %holysite%!%SPEECH_OFF% | A golden goblet scatters across the marbled floors and the wine sprays every which way. The Vizier yells at you, a mix of anger and need.%SPEECH_ON%Finally, someone who can be of assistance!%SPEECH_OFF%He waves off a few helpers and even a few of what appear to be his own lieutenants.%SPEECH_ON%Crownling, %holysite% has been conquered by the northern filth. I have wept at the thought of them ransacking it, and I shall weep again for every day they sully one of the Gilder\'s footprints. %reward% crowns. That is how much shall be procured and placed into your pockets. A hefty amount for you, surely, but it is true what they say, that for some the way of the gilded path is perhaps more literal than for others.%SPEECH_OFF% | %employer% is surrounded by silk-laden men. One carries fireflies in a hooded cage, the dull insect-lights winking here and there. The other has a cage with the remains of a dead bird, stripped entirely to the bone save for two feathers which seem to replicate the entirety of what were once its wings. Seeing you, the Vizier steps out between these men as one would step between the unmovable pillars of a temple.%SPEECH_ON%Crownling, you are here! My scouts have reported that we have taken a step back in this war against the dogs of the north. %holysite% has been captured and, per the Gilder\'s whispers, I must have it returned to us. Not only for my domain, but so that His sublimity may bear the slightest shade. You will be given %reward% crowns for this venture, a heavy sum for a heavy task, yes!%SPEECH_OFF% | Ordinarily ordained in opulence and surrounded by familiar profligates, you find %employer% kneeled and dressed in somewhat modest attire. He\'s wearing a headdress with corded black around his pate. The socially muted Vizier speaks to you calmly.%SPEECH_ON%Northern heathens have taken %holysite% from our lands. I do not blame them for their actions, they know not what it is they do. By my honest hands, the Gilder shall know my faults. But failure does not mean surrender. I need you to Voyagez jusqu\'à the holy grounds and return it to our realm. For this, you shall have %reward% crowns placed within your coffers.%SPEECH_OFF%}",
+			Text: "[img]gfx/ui/events/event_162.png[/img]{Vous trouvez %employer% derrière une pile de parchemins. Il est occupé à la tâche d'écriture, et les hommes saints autour de lui sont tout aussi occupés à prêter attention, veillant à dérober un parchemin dès qu'il a capturé les dernières paroles du Vizir. L'homme à l'importance du griffonnage lève enfin les yeux.%SPEECH_ON%Nous avons un problème avec %holysite% qui est violé par des rats du nord. Je vais essayer de tempérer mes sentiments à ce sujet, car il n'est pas dans la voie du Gilder de souiller les émotions avec des nuances de fureur. Permettez-moi donc de déclarer clairement que la présence de ces sauvages offense l'appétit rationnel.%SPEECH_OFF%Le Vizir trempe une plume et retourne à son écriture et à sa parole.%SPEECH_ON%Mais, si le chien aboie, les oiseaux s'envoleront. J'ai besoin d'un chien, Crownling, et d'un chien qui morde. Emmenez votre compagnie sur la terre sainte et délogez les réprouvés. Si nous sommes d'accord, alors %reward% couronnes et l'éclat du Gilder vous attendront à votre retour.%SPEECH_OFF% | %employer% vous accueille avec une chaleur surprenante.%SPEECH_ON%Je savais que c'était vrai, que le Gilder m'amènerait un homme d'une grande importance, un homme de sérieuse puissance. Un Crownling, certes. Mais un guerrier ? Certainement !%SPEECH_OFF%Avant que vous puissiez demander la nature de l'affaire, le Vizir tient une coupe dorée avec la moitié de la bordure tranchée comme le rebord de la lune.%SPEECH_ON%Notre terre la plus sainte, %holysite%, a été prise par des barbares du nord. Notre monde est menacé d'obscurité, et pour repousser l'ombre, nous devons être propices dans nos efforts. Les hommes de mon domaine sont nombreux, mais les terres sous le regard du Gilder s'étendent loin. J'ai besoin de soldats comme vous pour aider à revendiquer %holysite%. Car c'est une partie de cette terre dont le Gilder est suzerain, et le Gilder nous paie tous : %reward% couronnes pour l'achèvement de la tâche. Avons-nous un accord ?%SPEECH_OFF% | Dans une vision rare, vous trouvez %employer% prosterné sous la sublimité d'un écusson brillant en forme de soleil. Il chuchote quelques mots pour lui-même, puis se lève, puis chuchote à nouveau, nettoie ses doigts un à un, et se tourne vers vous.%SPEECH_ON%Pendant que mes troupes font des avancées propices ailleurs, %holysite% a été laissé sans défense. Dans ma volonté de gagner cette guerre, j'ai laissé la porte ouverte aux barbares du nord pour qu'ils la prennent. Je demande, face à vous, une partie d'aide extérieure. Le Gilder nous fournira tous le chemin doré, Crownling, et vous n'êtes pas en dehors de Sa générosité. À travers ma main, vous aurez %reward% couronnes si vous reprenez %holysite% !%SPEECH_OFF% | Une coupe dorée se disperse sur les sols marbrés et le vin éclabousse dans tous les sens. Le Vizir vous crie dessus, un mélange de colère et de besoin.%SPEECH_ON%Enfin, quelqu'un qui peut être d'assistance !%SPEECH_OFF%Il chasse quelques assistants et même quelques-uns de ce qui semblent être ses propres lieutenants.%SPEECH_ON%Crownling, %holysite% a été conquise par l'ordure du nord. J'ai pleuré à la pensée qu'ils la pillent, et je pleurerai à nouveau pour chaque jour qu'ils souillent une des empreintes du Gilder. %reward% couronnes. C'est la somme qui sera acquise et placée dans vos poches. Une somme importante pour vous, certainement, mais il est vrai ce qu'on dit, que pour certains, la voie du chemin doré est peut-être plus littérale que pour d'autres.%SPEECH_OFF% | %employer% est entouré d'hommes chargés de soie. L'un porte des lucioles dans une cage à capuchon, les lumières d'insectes ternes clignotant ici et là. L'autre a une cage avec les restes d'un oiseau mort, dépouillé entièrement jusqu'à l'os, sauf pour deux plumes qui semblent reproduire l'intégralité de ce qui étaient autrefois ses ailes. En vous voyant, le Vizir se place entre ces hommes comme on se placerait entre les piliers inébranlables d'un temple.%SPEECH_ON%Crownling, | vous êtes ici ! Mes éclaireurs ont rapporté que nous avons fait un pas en arrière dans cette guerre contre les chiens du nord. %holysite% a été capturé et, selon les murmures du Gilder, je dois le récupérer pour nous. Non seulement pour mon domaine, mais pour que Sa sublimité puisse supporter la moindre nuance. Vous recevrez %reward% couronnes pour cette entreprise, une somme lourde pour une tâche lourde, n'est-ce pas !%SPEECH_OFF% | Ordinairement ordonné dans l'opulence et entouré de prodigues familiers, vous trouvez %employer% agenouillé et habillé de manière quelque peu modeste. Il porte un bandeau avec du noir cordé autour de sa calotte. Le Vizir socialement muet vous parle calmement.%SPEECH_ON%Les païens du nord ont pris %holysite% de nos terres. Je ne les blâme pas pour leurs actions, ils ne savent pas ce qu'ils font. Par mes mains honnêtes, le Gilder connaîtra mes fautes. Mais l'échec ne signifie pas la reddition. J'ai besoin que vous voyagez jusqu'aux terres saintes et le rameniez dans notre royaume. Pour cela, vous aurez %reward% couronnes placées dans vos coffres.%SPEECH_OFF%}"
+
 			Image = "",
 			List = [],
 			ShowEmployer = true,
@@ -490,12 +491,12 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Attacking",
 			Title = "En vous approchant...",
-			Text = "[img]gfx/ui/events/%illustration%.png[/img]{As the Vizier believed, the northerners have taken up positions in and around %holysite%. Most of the riffraff religious folk have long since departed, leaving only the %companyname% and the opposing force. You draw out your sword and order the men to make the attack.}",
+			Text: "[img]gfx/ui/events/%illustration%.png[/img]{Comme le croyait le Vizir, les nordistes ont pris des positions dans et autour de %holysite%. La plupart des religieux vagabonds sont partis depuis longtemps, ne laissant que la %companyname% et la force adverse. Vous tirez votre épée et ordonnez aux hommes de lancer l'attaque.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Begin the assault!",
+					Text = "Commencer l'assaut !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -508,13 +509,13 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "AlliedArmy",
 			Title = "À %holysite%",
-			Text = "[img]gfx/ui/events/event_164.png[/img]{As you near %holysite%, a man rises seemingly from the ground itself. Startled, you draw your weapon but the man reveals himself to be a camouflaged commander of %employer%.%SPEECH_ON%Easy, Crownling, you\'ll have your coin yet. The Vizier\'s birds have told my outfit of your approach and I must say, you\'re a bit late. I know this isn\'t your war, but, well, I suppose this is no time for admonishment. Let us reclaim the holy lands for the Gilder, and may both our paths forward be ever gilded by his shine.%SPEECH_OFF% | %holysite% is in sight when a man seemingly appears out of the ground. He asks if you are the commander of the %companyname%, and a slight pause must have given him the answer for he speaks straight away.%SPEECH_ON%Yes, of course you are. I am %commander%, lieutenant of %employer%. The Vizier\'s birds told you may come. You may be chasing coin, Crownling, but if we are victorious today the Gilder will shine brightly upon your morrow\'s path!%SPEECH_OFF%}",
+			 Text: "[img]gfx/ui/events/event_164.png[/img]{À mesure que vous approchez de %holysite%, un homme se lève comme sorti de nulle part. Surpris, vous tirez votre arme, mais l'homme se révèle être un commandant camouflé de %employer%.%SPEECH_ON%Facile, Crownling, vous aurez votre pièce de monnaie. Les oiseaux du Vizir ont informé ma troupe de votre arrivée et je dois dire que vous êtes un peu en retard. Je sais que ce n'est pas votre guerre, mais, eh bien, je suppose que ce n'est pas le moment des remontrances. Reclaimons les terres saintes pour le Gilder, et que nos deux chemins soient toujours dorés par sa lumière.%SPEECH_OFF% | %holysite% est en vue quand un homme semble surgir du sol. Il vous demande si vous êtes le commandant de la %companyname%, et une légère pause a dû lui donner la réponse car il parle immédiatement.%SPEECH_ON%Oui, bien sûr que vous l'êtes. Je suis %commander%, lieutenant de %employer%. Les oiseaux du Vizir vous ont dit que vous pourriez venir. Vous pourriez chasser la pièce, Crownling, mais si nous sommes victorieux aujourd'hui, le Gilder brillera de tout son éclat sur le chemin de votre lendemain !%SPEECH_OFF%}",
 			Image = "",
 			Banner = "",
 			List = [],
 			Options = [
 				{
-					Text = "Begin the assault!",
+					Text = "Commencer l'assaut !",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -532,12 +533,12 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "SallyForth",
 			Title = "À %holysite%",
-			Text = "[img]gfx/ui/events/%illustration%.png[/img]{%holysite%\'s defenders have received reinforcements! Thankfully, there is a silver lining: the additional arms has given them the confidence to leave the natural defenses of the holy site and to approach you in the open field. | You\'re surprised to see the defenders leaving %holysite% and trekking across the open field. A quick scouting report relays that they received reinforcements sometime in the past few days and are emboldened by numbers alone. On one hand, their deep ranks are a bit unsettling, but on the other hand facing them on even ground will be much easier. Though by your honest estimation it is their mistake to face the %companyname% at all.}",
+			 Text: "[img]gfx/ui/events/%illustration%.png[/img]{Les défenseurs de %holysite% ont reçu des renforts ! Heureusement, il y a un côté positif : les bras supplémentaires leur ont donné la confiance de quitter les défenses naturelles du site sacré et de vous affronter sur le champ ouvert. | Vous êtes surpris de voir les défenseurs quitter %holysite% et traverser le champ ouvert. Un rapport d'éclaireurs rapide indique qu'ils ont reçu des renforts au cours des derniers jours et sont enhardis par leur nombre seul. D'un côté, leurs rangs profonds sont un peu inquiétants, mais d'un autre côté, les affronter sur un terrain égal sera beaucoup plus facile. Bien que, selon votre estimation honnête, c'est leur erreur de faire face à la %companyname% tout court.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "A field battle, then.",
+					Text = "Une bataille en plein champ, alors.",
 					function getResult()
 					{
 						this.Contract.getActiveState().onDestinationAttacked(this.Contract.m.Destination);
@@ -554,7 +555,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Mercenaries1",
 			Title = "À %holysite%",
-			Text = "[img]gfx/ui/events/event_134.png[/img]{As %holysite% draws into view, a man who looks almost eerily similar to you approaches. He\'s got a paymaster and a couple of sellswords at his side.%SPEECH_ON%Evenin\', captain. I am %mercenary% of the %mercenarycompany%. I came to these lands in search of crown, just as you have. Now, I wager the Vizier wetted his pen in a sound contract for you and your men, but what say you pay me %pay% crowns and I\'ll help you in this little endeavor?%SPEECH_OFF% | You are approached by a group of men, one of which whose gait and constitution alike seem strangely reminiscent to your own. He announces himself as %mercenary%, captain of the %mercenarycompany%.%SPEECH_ON%I thought the Vizier might send his professional army to see to the holy site\'s change of hands. I will admit to you, captain, that I helped the northerners take over this prestigious monument in the first place. However, for %pay% crowns, I\'m willing to help your side take it back. As a fellow mercenary, I\'m sure you can see how this would be a good deal for all involved.%SPEECH_OFF%}",
+			 Text: "[img]gfx/ui/events/event_134.png[/img]{À mesure que %holysite% se dessine à l'horizon, un homme qui ressemble étrangement à vous s'approche. Il a un payeur et quelques mercenaires à ses côtés.%SPEECH_ON%Bonsoir, capitaine. Je suis %mercenaire% de la %compagniedemercenaires%. Je suis venu dans ces terres à la recherche de couronnes, tout comme vous. À présent, je parie que le Vizir a mouillé sa plume dans un contrat solide pour vous et vos hommes, mais que diriez-vous de me payer %pay% couronnes et je vous aiderai dans cette petite entreprise ?%SPEECH_OFF% | Vous êtes approché par un groupe d'hommes, l'un d'entre eux dont la démarche et la constitution semblent étrangement semblables aux vôtres. Il se présente comme %mercenaire%, capitaine de la %compagniedemercenaires%.%SPEECH_ON%Je pensais que le Vizir enverrait son armée professionnelle s'occuper du changement de mains du site sacré. Je vous avoue, capitaine, que j'ai aidé les nordistes à prendre possession de ce monument prestigieux en premier lieu. Cependant, pour %pay% couronnes, je suis prêt à aider votre camp à le reprendre. En tant que camarade mercenaire, je suis sûr que vous pouvez voir à quel point cela serait une bonne affaire pour tous.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [],
@@ -563,7 +564,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 				if (this.World.Assets.getMoney() > this.Flags.get("MercenaryPay"))
 				{
 					this.Options.push({
-						Text = "You\'re hired!",
+						Text = "Tu es engagé !",
 						function getResult()
 						{
 							return "Mercenaries2";
@@ -574,7 +575,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 				else
 				{
 					this.Options.push({
-						Text = "I\'m afraid we don\'t have that kind of coin.",
+						Text = "J'ai bien peur de ne pas avoir ce genre de pièce.",
 						function getResult()
 						{
 							return "Mercenaries3";
@@ -584,7 +585,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 				}
 
 				this.Options.push({
-					Text = "Find your own work, %mercenary%. We don\'t need help.",
+					 Text: "Trouvez votre propre travail, %mercenaire%. Nous n'avons pas besoin d'aide.",
 					function getResult()
 					{
 						return "Mercenaries3";
@@ -597,12 +598,12 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Mercenaries2",
 			Title = "À %holysite%",
-			Text = "[img]gfx/ui/events/event_134.png[/img]{The captain grins and slaps your shoulder.%SPEECH_ON%Aaahhh, there it is! There it is, the noble sellsword spirit! Aye, commander of the %companyname%, let us venture forth, for a short time, and do battle together, also for a short time!%SPEECH_OFF% | With the deal made, the captain of the mercenary company sidles up next to you. Almost uncomfortably close, and assuredly within range of his breath which is unappreciated.%SPEECH_ON%You know, men like us, fellas like us, pals, we\'re pals, right? Pals like us. We gotta stick together. And for this here battle, we\'ll be sticking together.%SPEECH_OFF%He nods and slugs one into your shoulder.%SPEECH_ON%After the fight, well, I hope we can be buddies again sometime, you know?%SPEECH_OFF%}",
+			Text: "[img]gfx/ui/events/event_134.png[/img]{Le capitaine sourit et vous tape sur l'épaule.%SPEECH_ON%Ah, voilà ! C'est ça, l'esprit noble du mercenaire ! Oui, commandant de la %companyname%, partons ensemble, pour un court instant, et combattons côte à côte, aussi pour un court instant !%SPEECH_OFF% | Le marché conclu, le capitaine de la compagnie de mercenaires se rapproche de vous. Presque inconfortablement proche et certainement à portée de son souffle, ce qui est peu apprécié.%SPEECH_ON%Tu sais, des gars comme nous, des potes comme nous, on est des potes, non ? Des potes comme nous. On doit rester solidaires. Et pour ce combat ici, on restera solidaires.%SPEECH_OFF%Il hoche la tête et vous tape sur l'épaule.%SPEECH_ON%Après le combat, eh bien, j'espère qu'on pourra être potes à nouveau un jour, tu vois ?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Begin the assault!",
+					Text: "Commencez l'assaut !",
 					function getResult()
 					{
 						this.Flags.set("MercenariesAsAllies", true);
@@ -618,7 +619,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_money.png",
-					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("MercenaryPay") + "[/color] Couronnes"
+					 text: "Vous dépensez [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("MercenaryPay") + "[/color] Couronnes"
 				});
 			}
 
@@ -626,12 +627,12 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Mercenaries3",
 			Title = "À %holysite%",
-			Text = "[img]gfx/ui/events/event_134.png[/img]{%SPEECH_START%That\'s a shame.%SPEECH_OFF%%mercenary% says as he quickly jaunts back to the ranks of the %mercenarycompany%. He keeps backing up right into the soldiers defending %holysite%. His arms are wide and fanning, as though he were swimming against a current.%SPEECH_ON%A damn shame, I say! Well, captain of the %companyname%, let us see which side purchased the finer sellsword, yeah?%SPEECH_OFF%The mercenary draws his weapon, as do the soldiers of the north around him, and you do the same. It is time to fight. | %SPEECH_ON%Aye, aye, I see. Well. I didn\'t expect much. I am, after all, also a seller of the sword. And right now...%SPEECH_OFF%He paces backward to his company, and his company to the ranks of the northern soldiers protecting %holysite%.%SPEECH_ON%Right now, the north proves to be the highest bidder.%SPEECH_OFF%}",
+			Text: "[img]gfx/ui/events/event_134.png[/img]{%SPEECH_START%C'est dommage.%SPEECH_OFF%%mercenary% dit en faisant rapidement demi-tour vers les rangs de la %mercenarycompany%. Il recule rapidement droit vers les soldats défendant %holysite%. Ses bras sont écartés et s'ouvrent, comme s'il nageait à contre-courant.%SPEECH_ON%C'est vraiment dommage, je dirais ! Eh bien, capitaine de la %companyname%, voyons voir quelle faction a acheté le meilleur mercenaire, hein ?%SPEECH_OFF%Le mercenaire tire son arme, tout comme les soldats du nord autour de lui, et vous faites de même. Il est temps de se battre. | %SPEECH_ON%Oui, oui, je comprends. Eh bien. Je n'attendais pas grand-chose. Après tout, je vends aussi l'épée. Et en ce moment...%SPEECH_OFF%Il fait quelques pas en arrière vers sa compagnie, et sa compagnie rejoint les rangs des soldats du nord protégeant %holysite%.%SPEECH_ON%En ce moment, le nord s'avère être l'enchérisseur le plus généreux.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll meet again on the battlefield. Begin the assault!",
+					 Text: "Nous nous retrouverons sur le champ de bataille. Commencez l'assaut !",
 					function getResult()
 					{
 						this.Flags.set("MercenariesAsAllies", false);
@@ -649,12 +650,12 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "CounterAttack1",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_78.png[/img]{The battle is over, but there\'s a glint and gleam of armor winking in the distance. You slim your eyes and focus on the approaching silhouettes. Perhaps they are the faithful come to fill the holy site and - no, they\'re northeners! It\'s a counter-attack! | As you sheathe your blade an arrow zips overhead and hits the sand with a muted spiff. You look toward the source and see a young and nervous archer being slapped upside the head, and beside this man is an entire contingent of northerners! It\'s a counter-attack!}",
+			 Text: "[img]gfx/ui/events/event_78.png[/img]{La bataille est terminée, mais il y a un éclat d'armure qui scintille au loin. Vous plissez les yeux et vous concentrez sur les silhouettes qui s'approchent. Peut-être sont-ils les fidèles venus pour remplir le site sacré et - non, ce sont des Nordiens ! C'est une contre-attaque ! | Alors que vous rangez votre lame, une flèche passe au-dessus de votre tête et frappe le sable avec un bruit étouffé. Vous regardez vers la source et voyez un archer jeune et nerveux se faire gifler à côté de la tête, et à côté de cet homme se trouve tout un contingent de Nordiens ! C'est une contre-attaque !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "We\'ll make a stand defending the site!",
+					Text: "Nous tiendrons bon pour défendre le site !",
 					function getResult()
 					{
 						return "CounterAttack2";
@@ -662,7 +663,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 
 				},
 				{
-					Text = "We\'ll meet them in the open!",
+					 Text: "Nous les affronterons en terrain découvert !",
 					function getResult()
 					{
 						return "CounterAttack3";
@@ -670,7 +671,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 
 				},
 				{
-					Text = "We can\'t take another fight. Retreat!",
+					 Text: "Nous ne pouvons pas affronter un autre combat. Retraite !",
 					function getResult()
 					{
 						return "Failure";
@@ -686,12 +687,12 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "CounterAttack2",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_78.png[/img]{%SPEECH_START%Just more northerners.%SPEECH_OFF%%randombrother% says. You nod and respond.%SPEECH_ON%More logs for the Gilder\'s fire.%SPEECH_OFF%The sellsword mentions the Gilder is more keen on gold than flame, but you tell him to shutup and get prepared for what\'s coming. The defenses of %holysite% itself should serve the company well here. | You order the men to defend themselves within %holysite%. %randombrother% looks around.%SPEECH_ON%You ever wonder if the god or gods watching this get a little ornery? Ya know? Like are we making a mess of their pots and pans?%SPEECH_OFF%You slap him upside the head and tell him to focus.}",
+			Text: "[img]gfx/ui/events/event_78.png[/img]{%SPEECH_START%Juste plus de Nordiens.%SPEECH_OFF%%randombrother% dit. Vous hochez la tête et répondez.%SPEECH_ON%Encore des bûches pour le feu du Gilder.%SPEECH_OFF%Le mercenaire mentionne que le Gilder préfère l'or à la flamme, mais vous lui dites de se taire et de se préparer à ce qui vient. Les défenses de %holysite% devraient bien servir la compagnie ici. | Vous ordonnez aux hommes de se défendre à l'intérieur de %holysite%. %randombrother% regarde autour de lui.%SPEECH_ON%Tu te demandes jamais si le dieu ou les dieux qui regardent ça s'énervent un peu ? Tu sais ? Comme est-ce qu'on fait un gâchis de leurs casseroles et poêles ?%SPEECH_OFF%Vous le giflez sur le côté de la tête et lui dites de se concentrer.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Rally!",
+					Text: "Ralliement !",
 					function getResult()
 					{
 						this.Flags.set("IsCounterAttackDefend", true);
@@ -712,12 +713,12 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "CounterAttack3",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_78.png[/img]{You order the %companyname% into the field. The northern lieutenant greets you with a wave and a grin.%SPEECH_ON%Coming on out, are ye? What, tired of prayin\'?%SPEECH_OFF%You turn and spit.%SPEECH_ON%We were running out of room to bury your bodies.%SPEECH_OFF%The lieutenant\'s smile fades and he orders a charge. To battle!}",
+			 Text: "[img]gfx/ui/events/event_78.png[/img]{Vous ordonnez au %companyname% de se rendre sur le terrain. Le lieutenant nordien vous salue d'un signe de la main et d'un sourire.%SPEECH_ON%Vous sortez, hein ? Quoi, fatigué de prier ?%SPEECH_OFF%Vous vous retournez et crachez.%SPEECH_ON%On commençait à manquer de place pour enterrer vos corps.%SPEECH_OFF%Le sourire du lieutenant s'efface et il ordonne une charge. À la bataille !}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Charge!",
+					 Text: "Chargez !",
 					function getResult()
 					{
 						this.Flags.set("IsCounterAttackDefend", false);
@@ -738,13 +739,14 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Victory",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/%illustration%.png[/img]{As you sheath your weapon and have the company set out to collect what they can from the dead, you get the strange feeling that this is not the first time %holysite% has been home to such bloodshed. Oh well, if anyone\'s gonna be dying in their ancestor\'s footsteps you\'re glad it\'s not you. A few southerners arrive to secure the holy tract. With them here, you make your leave, knowing that %employer% will welcome the news you have to bring him. | The enemy is defeated and %holysite% reclaimed. Southern soldiers slowly fill the defenses. Trickling behind them is a crowd of the faithful, passing by the dead so they may prostrate themselves at the holiest of spots. Not a one says thanks to you. Not that it matters, that\'s %employer%\'s job. | With the battle over, a small crowd of the faithful begins to congregate in the corners of %holysite%. You don\'t know where these people even came from. They don\'t mind you, and you don\'t mind them. What matters now is that %employer% will have a huge trove of crowns awaiting your return. As you leave, a few southern soldiers take the post with not a thanks to their lips either.}",
+			Text: "[img]gfx/ui/events/%illustration%.png[/img]{En rangeant votre arme et en demandant à la compagnie de récupérer ce qu'elle peut parmi les morts, vous avez le sentiment étrange que ce n'est pas la première fois que %holysite% est le théâtre d'un tel bain de sang. Peu importe, si quelqu'un doit mourir dans les traces de ses ancêtres, vous êtes content que ce ne soit pas vous. Quelques sudistes arrivent pour sécuriser le lieu saint. Avec eux ici, vous prenez congé, sachant que %employer% accueillera favorablement les nouvelles que vous avez à lui apporter. | L'ennemi est vaincu et %holysite% est récupéré. Les soldats du Sud remplissent lentement les défenses. Derrière eux coule une foule de fidèles, passant devant les morts pour se prosterner au lieu le plus saint. Aucun d'eux ne vous remercie. Peu importe, c'est le travail de %employer%. | Avec la bataille terminée, une petite foule de fidèles commence à se rassembler dans les coins de %holysite%. Vous ne savez même pas d'où viennent ces gens. Ils ne vous dérangent pas, et vous ne les dérangez pas. Ce qui compte maintenant, c'est que %employer% aura une énorme réserve de couronnes qui vous attendra à votre retour. En partant, quelques soldats du Sud prennent le poste sans un mot de remerciement non plus.}",
+  Image: "",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Victory!",
+					Text: "Victoire !",
 					function getResult()
 					{
 						this.Contract.m.Destination.setFaction(this.Contract.getFaction());
@@ -765,13 +767,13 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Failure",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/%illustration%.png[/img]{You\'ve failed to protect %holysite% from the northerners. There\'s no reason to stick around, and the only reason to Retournez à %employer% is if you want your head on one of the Vizier\'s gold-encrusted platters.}",
+			 Text: "[img]gfx/ui/events/%illustration%.png[/img]{Vous avez échoué à protéger %holysite% des Nordiens. Il n'y a aucune raison de rester, et la seule raison de retourner chez %employer% est si vous voulez votre tête sur l'un des plateaux incrustés d'or du Vizir.}",
 			Image = "",
 			Characters = [],
 			List = [],
 			Options = [
 				{
-					Text = "Disaster!",
+					 Text: "Désastre !",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
@@ -790,7 +792,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_04.png[/img]{%employer% is sitting beneath the glow of a golden bauble, an enormous piece of metal like the sun with chains holding it from the ceiling. It must have been erected while you were away. When you come forward, a holy man stops you and shakes his head. He draws a circle in the air with his hand and then touches his fingertip upon your pate. Smiling, he warmly guides you to another side of the room where %reward% crowns have been stacked neatly inside wooden trays.\n\n The man bows, points his hands to the golden bauble, shaping his palms as though he carried the very construct, and then he seems to guide its sublimity upon your payment, the coins crackling with light. Some sort of trick, but the pay is real so you take it and go. | When you enter %employer%\'s room, a number of guards bow and prostrate themselves momentarily and then get to their feet. In the distance, the Vizier is silently sitting on a throne with silk-wearing holy men all around him. It seems you will not be approaching him on this day, but a group of young boys carry trays of coins to you one at a time until you have %reward% crowns. The Vizier nods and turns his hand over. You take the payment and go. | You enter the grand hall to find %employer% seemingly ensorcelled by a swirl of golden mist. He stands upon a rotating platform - revolving rather roughly with the help of nearly unseen slaves beneath the floor itself - and there are strips of cloth tied to his wrists. His harem stands off to the side filling their mouths with some golden liquid before spraying it out in lip-spattering mists. Upon closer inspection, it is not so glorious an event as you first thought walking in here. Fortunately, you will not be afforded a closer look: a large man in religious frock cuts you off and guides you to a table at the back of the room. It is lined with trays filled with coin, their entirety being your reward of %reward% crowns. With your pay in hand, you are hurriedly ushered out of the room.}",
+			 Text: "[img]gfx/ui/events/event_04.png[/img]{%employer% est assis sous l'éclat d'une boule dorée, une énorme pièce de métal comme le soleil avec des chaînes la maintenant depuis le plafond. Elle a dû être érigée pendant votre absence. Lorsque vous avancez, un homme saint vous arrête et secoue la tête. Il dessine un cercle dans l'air avec sa main, puis touche votre front de son doigt. Souriant, il vous guide chaleureusement vers un autre côté de la pièce où %reward% couronnes ont été empilées soigneusement dans des plateaux en bois.\n\n L'homme s'incline, pointe ses mains vers la boule dorée, façonnant ses paumes comme s'il portait la construction elle-même, et semble ensuite guider sa sublimité sur votre paiement, les pièces crépitant de lumière. Une sorte de tour de passe-passe, mais le salaire est réel alors vous le prenez et partez. | Lorsque vous entrez dans la chambre de %employer%, plusieurs gardes s'inclinent et se prosternent brièvement avant de se relever. Au loin, le Vizir est assis silencieusement sur un trône entouré d'hommes saints vêtus de soie. Il semble que vous ne l'approcherez pas en ce jour, mais un groupe de jeunes garçons vous apporte des plateaux de pièces une à une jusqu'à ce que vous ayez %reward% couronnes. Le Vizir hoche la tête et tourne la main. Vous prenez le paiement et partez. | Vous entrez dans la grande salle pour trouver %employer% apparemment ensorcelé par un tourbillon de brume dorée. Il se tient sur une plateforme rotative - tournant plutôt brusquement avec l'aide d'esclaves presque invisibles sous le plancher lui-même - et il y a des bandes de tissu attachées à ses poignets. Son harem se tient sur le côté, remplissant leurs bouches avec un liquide doré avant de le projeter en brumes éclaboussantes sur leurs lèvres. Après un examen plus attentif, ce n'est pas aussi glorieux qu'il y paraissait d'abord en entrant ici. Heureusement, vous n'aurez pas droit à un examen plus approfondi : un grand homme en froc religieux vous coupe la route et vous guide vers une table à l'arrière de la pièce. Elle est garnie de plateaux remplis de pièces, leur totalité étant votre récompense de %reward% couronnes. Avec votre salaire en main, on vous pousse précipitamment hors de la pièce.}",
 			Image = "",
 			Characters = [],
 			List = [],
