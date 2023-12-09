@@ -451,12 +451,12 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Approaching1",
 			Title = "En vous approchant...",
-			Text: "[img]gfx/ui/events/%illustration%.png[/img]{La grande caldeira a été en grande partie vidée de ses fidèles et de ses occupants curieux. Même la plus légère allusion à la guerre a dispersé les croyants vers les abris de leurs prieurés respectifs. Après tout, il y aura un gagnant et un perdant dans les heures à venir. Un certain niveau de vigueur pourrait inciter les premiers à s'adonner à l'excès de vertu...}",
+			Text = "[img]gfx/ui/events/%illustration%.png[/img]{La grande caldeira a été en grande partie vidée de ses fidèles et de ses occupants curieux. Même la plus légère allusion à la guerre a dispersé les croyants vers les abris de leurs prieurés respectifs. Après tout, il y aura un gagnant et un perdant dans les heures à venir. Un certain niveau de vigueur pourrait inciter les premiers à s'adonner à l'excès de vertu...}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					 Text: "Nous camperons ici.",
+					 Text = "Nous camperons ici.",
 					function getResult()
 					{
 						return "Preparation1";
@@ -473,12 +473,12 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Approaching0",
 			Title = "En vous approchant...",
-			Text: "[img]gfx/ui/events/%illustration%.png[/img]{L'Oracle n'est pas comme dans votre dernier souvenir : beaucoup des fidèles sont partis et les roulements de tambour de la guerre ont atteint le seuil du temple ancien. Peu importe. Vous n'avez aucune vision à chercher ici, aucun rêve à démêler, seulement des cauchemars à offrir à vos ennemis.}",
+			Text = "[img]gfx/ui/events/%illustration%.png[/img]{L'Oracle n'est pas comme dans votre dernier souvenir : beaucoup des fidèles sont partis et les roulements de tambour de la guerre ont atteint le seuil du temple ancien. Peu importe. Vous n'avez aucune vision à chercher ici, aucun rêve à démêler, seulement des cauchemars à offrir à vos ennemis.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text: "Nous camperons ici.",
+					Text = "Nous camperons ici.",
 					function getResult()
 					{
 						return "Preparation1";
@@ -495,12 +495,12 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Approaching2",
 			Title = "En vous approchant...",
-			 Text: "[img]gfx/ui/events/%illustration%.png[/img]{L'Oracle n'est pas comme dans votre dernier souvenir : beaucoup des fidèles sont partis et les roulements de tambour de la guerre ont atteint le seuil du temple ancien. Peu importe. Vous n'avez aucune vision à chercher ici, aucun rêve à démêler, seulement des cauchemars à offrir à vos ennemis.}",
+			 Text = "[img]gfx/ui/events/%illustration%.png[/img]{L'Oracle n'est pas comme dans votre dernier souvenir : beaucoup des fidèles sont partis et les roulements de tambour de la guerre ont atteint le seuil du temple ancien. Peu importe. Vous n'avez aucune vision à chercher ici, aucun rêve à démêler, seulement des cauchemars à offrir à vos ennemis.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text: "Nous camperons ici.",
+					Text = "Nous camperons ici.",
 					function getResult()
 					{
 						return "Preparation1";
@@ -517,24 +517,24 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Preparation1",
 			Title = "À %holysite%",
-			 Text: "[img]gfx/ui/events/%illustration%.png[/img]{Vous pensez avoir mis en place une défense modeste avec les positions que %holysite% peut offrir. Avec le peu de temps qu'il reste, il y a probablement au moins une tâche sérieuse que vous pouvez confier à la %companyname% pour la réaliser. C'est juste une question de savoir ce qui conviendrait le mieux à la compagnie.}",
+			 Text = "[img]gfx/ui/events/%illustration%.png[/img]{Vous pensez avoir mis en place une défense modeste avec les positions que %holysite% peut offrir. Avec le peu de temps qu'il reste, il y a probablement au moins une tâche sérieuse que vous pouvez confier à la %companyname% pour la réaliser. C'est juste une question de savoir ce qui conviendrait le mieux à la compagnie.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-            Text: "Construire des palissades pour renforcer davantage les murs !",
+            Text = "Construire des palissades pour renforcer davantage les murs !",
             function getResult() {
                 return "Preparation2";
             }
         },
         {
-            Text: "Explorer ces environs pour trouver tout ce qui pourrait nous être utile !",
+            Text = "Explorer ces environs pour trouver tout ce qui pourrait nous être utile !",
             function getResult() {
                 return "Preparation3";
             }
         },
         {
-            Text: "Recruter certains des fidèles pour nous aider dans la défense !",
+            Text = "Recruter certains des fidèles pour nous aider dans la défense !",
             function getResult() {
                 return "Preparation4";
             }
@@ -549,12 +549,12 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Preparation2",
 			Title = "À %holysite%",
-			  Text: "[img]gfx/ui/events/%illustration%.png[/img]{En pillant le site sacré lui-même, dont vous ne direz à personne que vous l'avez fait, et en fouillant les affaires abandonnées des fidèles, vous parvenez à rassembler assez de bois pour renforcer un ensemble de murs qui entourent un coin de %holysite%. C'est, selon vous, le meilleur endroit pour qu'un assaillant entre, et donc celui que vous voudrez défendre le plus.}",
+			  Text = "[img]gfx/ui/events/%illustration%.png[/img]{En pillant le site sacré lui-même, dont vous ne direz à personne que vous l'avez fait, et en fouillant les affaires abandonnées des fidèles, vous parvenez à rassembler assez de bois pour renforcer un ensemble de murs qui entourent un coin de %holysite%. C'est, selon vous, le meilleur endroit pour qu'un assaillant entre, et donc celui que vous voudrez défendre le plus.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text: "Maintenant, nous attendons.",
+					Text = "Maintenant, nous attendons.",
 					function getResult()
 					{
 						this.Flags.set("AttackTime", this.Time.getVirtualTimeF() + this.Math.rand(5, 10));
@@ -572,12 +572,12 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Preparation3",
 			Title = "À %holysite%",
-			 Text: "[img]gfx/ui/events/%illustration%.png[/img]{Vous faites parcourir la zone par vos hommes à la recherche de fournitures de guerre. Une kyrielle d'articles est pillée et entassée. Une fois que la totalité de %holysite% a été ratissée, vous et vos hommes passez quelques minutes à déterminer ce qui serait le plus utile...}",
+			 Text = "[img]gfx/ui/events/%illustration%.png[/img]{Vous faites parcourir la zone par vos hommes à la recherche de fournitures de guerre. Une kyrielle d'articles est pillée et entassée. Une fois que la totalité de %holysite% a été ratissée, vous et vos hommes passez quelques minutes à déterminer ce qui serait le plus utile...}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text: "Maintenant, nous attendons.",
+					Text = "Maintenant, nous attendons.",
 					function getResult()
 					{
 						this.Flags.set("AttackTime", this.Time.getVirtualTimeF() + this.Math.rand(5, 10));
@@ -670,7 +670,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Preparation4",
 			Title = "À %holysite%",
-			 Text: "[img]gfx/ui/events/%illustration%.png[/img]{Les quelques fidèles qui persistent autour de %holysite% doivent être les plus fervents et zélés. Étant donné que vous êtes ici représentant le nord, vous demandez aux hommes de choisir quelques zélotes des anciens dieux au regard robuste et de leur demander de combattre pour leurs dieux. C'est un outil de recrutement pratique s'il en existe un, et ils se hâtent de s'armer et de suivre la formation la plus courte. Vous ne pouvez qu'espérer qu'ils seront utiles dans la bataille à venir.}",
+			 Text = "[img]gfx/ui/events/%illustration%.png[/img]{Les quelques fidèles qui persistent autour de %holysite% doivent être les plus fervents et zélés. Étant donné que vous êtes ici représentant le nord, vous demandez aux hommes de choisir quelques zélotes des anciens dieux au regard robuste et de leur demander de combattre pour leurs dieux. C'est un outil de recrutement pratique s'il en existe un, et ils se hâtent de s'armer et de suivre la formation la plus courte. Vous ne pouvez qu'espérer qu'ils seront utiles dans la bataille à venir.}",
 			Image = "",
 			List = [],
 			Options = [
