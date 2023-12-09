@@ -69,7 +69,7 @@ OptionsMenuModuleAudioPanel.prototype.createDIV = function (_parentDiv)
 	this.createVolumeControlDIV(this.mVolumeOptions.Master, 'Master', row);	
 	this.createVolumeControlDIV(this.mVolumeOptions.Music, 'Musique', row);
 	this.createVolumeControlDIV(this.mVolumeOptions.Effects, 'Effets', row);
-    this.createVolumeControlDIV(this.mVolumeOptions.Ambience, 'Ambience', row);
+    this.createVolumeControlDIV(this.mVolumeOptions.Ambience, 'Ambiance', row);
 
     var row = $('<div class="row"></div>');
     rightColumn.append(row);
