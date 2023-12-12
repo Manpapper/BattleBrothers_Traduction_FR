@@ -261,7 +261,7 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 			List = [],
 			Options = [
 				{
-					Text = Restez concentrés, les gars.",
+					Text = "Restez concentrés, les gars.",
 					function getResult()
 					{
 						if (this.Flags.get("StartTime") + this.Flags.get("Delay") - 3.0 <= this.Time.getVirtualTimeF())
