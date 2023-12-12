@@ -224,14 +224,14 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Négociations",
-			Text = "[img]gfx/ui/events/event_79.png[/img]{You find %employer% with a scapula around his neck, though its ordinary thaumaturgical arrangements have been replaced with garlic and onions. He has tears in his eyes.%SPEECH_ON%Oh sellsword am I glad to see you! Please, sit.%SPEECH_OFF%Ducking under herb-heavy streamers, you come and sit before the man. Your eyes slim and begin to water. He continues.%SPEECH_ON%Look, this is going to make me sound like the biggest goddam fool you\'ve ever come by, but listen. Many years ago my firstborn, %protectee%, came into this world clothed in illness. Desperate, I sought the aid of witches...%SPEECH_OFF%You hold up your hand. You ask him if he made a pact and if they\'re here to collect on the debt. The man nods.%SPEECH_ON%Aye. Eighteen years is what they promised and tonight is his eighteenth upon the earth. This is no simple task, sellsword. These women are dangerous beyond any steel\'s proper reckoning, and I wager they\'ll be all the more hellish once they learn I refuse to pay. Are you sure you wish to help me protect my child?%SPEECH_OFF%Wiping your eyes, you weigh the options... | %employer% is found in the corner of his room. He\'s contorted to look out the window like a marmot from its warren. Seeing your shadow stretch over him, he leaps and clutches his chest. His wink of cowardice is no laughing matter, though, and he comes to you earnestly.%SPEECH_ON%Witches have hexed my family! Well, hexed my bloodline. Well, more specifically my firstborn, %protectee%. Many moons ago I struggled to put it in... you know, with the wife. I asked the witches for help and they brewed me something proper for the bedroom. Of course, witches being what they is, they\'re now back and asking to take my firstborn away!%SPEECH_OFF%You\'re amazed that witches would do that to him and express your sympathy. %employer% snaps at you.%SPEECH_ON%This is no joking matter! I need protection for my firstborn, are you willing to help save %protectee% or not?%SPEECH_OFF% | You find %employer% fervently flipping through books. It\'s in a manner which suggests he\'s pored over them previously and now he\'s just hurriedly hunting for any missed clue. There is none and he throws the tomes off his table with a burst of anger. Seeing you, he wipes his forehead and explains.%SPEECH_ON%I\'ve searched high and low for an answer, but it seems I will have to resort to steel. That would be your steel, sellsword. I\'ll be honest with you. I made dealings with witches many years ago to protect my firstborn, %protectee%, from a hellish fever. The child survived, but now those awful women are coming back and demand my child as payment.%SPEECH_OFF%You nod. This is almost as bad as the schemes of some loan sharks. He continues, poling a finger into the desk.%SPEECH_ON%I need you here, sellsword. I need a sword to protect %protectee% through the night, and to kill these damned wenches so that my bloodline can live on beyond this nightmare. Are you willing to help?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_79.png[/img]{Vous trouvez %employer% avec une omoplate autour de son cou, bien que ses arrangements thaumaturgiques ordinaires aient été remplacés par de l'ail et des oignons. Il a des larmes aux yeux.%SPEECH_ON%Oh, mercenaire, je suis heureux de te voir ! S'il te plaît, assieds-toi.%SPEECH_OFF%Sous des guirlandes chargées d'herbes, vous venez vous asseoir devant l'homme. Vos yeux se rétrécissent et commencent à pleurer. Il continue.%SPEECH_ON%Regarde, cela va me faire passer pour le plus grand idiot que tu aies jamais rencontré, mais écoute. Il y a de nombreuses années, mon premier-né, %protectee%, est venu au monde vêtu de maladie. Désespéré, j'ai cherché l'aide de sorcières...%SPEECH_OFF%Vous levez la main. Vous lui demandez s'il a fait un pacte et s'ils sont là pour réclamer la dette. L'homme hoche la tête.%SPEECH_ON%Oui. Dix-huit ans, c'est ce qu'elles ont promis, et ce soir est son dix-huitième sur terre. Ce n'est pas une tâche simple, mercenaire. Ces femmes sont dangereuses au-delà de toute compréhension de l'acier, et je parie qu'elles seront d'autant plus infernales quand elles apprendront que je refuse de payer. Es-tu sûr de vouloir m'aider à protéger mon enfant ?%SPEECH_OFF%En essuyant vos yeux, vous évaluez les options... | %employer% est trouvé dans le coin de sa chambre. Il est contorsionné pour regarder par la fenêtre comme une marmotte hors de son terrier. Voyant votre ombre s'étendre sur lui, il saute et saisit sa poitrine. Son clin d'œil de lâcheté n'est pas une affaire drôle, cependant, et il vient à vous avec sincérité.%SPEECH_ON%Les sorcières ont jeté un sort à ma famille ! Enfin, ont jeté un sort à ma lignée. Enfin, plus précisément à mon premier-né, %protectee%. Il y a bien des lunes, j'ai eu du mal à... tu sais, avec la femme. J'ai demandé de l'aide aux sorcières et elles m'ont concocté quelque chose de convenable pour la chambre à coucher. Bien sûr, les sorcières étant ce qu'elles sont, elles sont maintenant de retour et demandent de prendre mon premier-né !%SPEECH_OFFVous êtes étonné que des sorcières puissent lui faire cela et exprimez votre sympathie. %employer% vous rabroue.%SPEECH_ON%Ce n'est pas une affaire de plaisanterie ! J'ai besoin de protection pour mon premier-né, es-tu prêt à aider à sauver %protectee% ou non ?%SPEECH_OFF% | Vous trouvez %employer% en train de feuilleter fébrilement des livres. C'est d'une manière qui suggère qu'il les a déjà étudiés auparavant et qu'il les recherche maintenant précipitamment pour trouver un indice manqué. Il n'y en a pas et il jette les tomes de sa table avec une explosion de colère. En vous voyant, il essuie son front et explique.%SPEECH_ON%J'ai cherché partout une réponse, mais il semble que je doive recourir à l'acier. Ce serait ton acier, mercenaire. Je vais être honnête avec toi. J'ai conclu des accords avec des sorcières il y a de nombreuses années pour protéger mon premier-né, %protectee%, d'une fièvre infernale. L'enfant a survécu, mais maintenant ces femmes horribles reviennent et réclament mon enfant comme paiement.%SPEECH_OFF%Vous hochez la tête. C'est presque aussi mauvais que les machinations de certains usuriers. Il continue, enfonçant un doigt dans le bureau.%SPEECH_ON%J'ai besoin de toi ici, mercenaire. J'ai besoin d'une épée pour protéger %protectee% toute la nuit, et pour tuer ces maudites sorcières afin que ma lignée puisse survivre au-delà de ce cauchemar. Es-tu prêt à aider ?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{You\'ll have to pay us very well in order to take on this enemy. | Convince me this is worth it with a full pouch of crowns. | I expect to be paid very well to fight an enemy as this.}",
+					Text = "{Tu devras bien nous payer pour affronter cet ennemi. | Convaincs-moi que cela vaut le coup avec une bourse pleine de couronnes. | Je m'attends à être très bien payé pour combattre un ennemi comme celui-ci.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -239,7 +239,7 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "{Sounds to me like you should honor your pact. | This won\'t be worth the risk. | I\'d rather not get the company involved with an enemy like this.}",
+					Text = "{Il me semble que tu devrais honorer ton pacte. | Cela ne vaudra pas le risque. | Je préférerais ne pas impliquer la compagnie avec un ennemi comme celui-ci.}",
 					function getResult()
 					{
 						this.World.Contracts.removeContract(this.Contract);
@@ -256,12 +256,12 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Banter",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_79.png[/img]{%randombrother% comes up to you. He\'s auguring his ear with a pinky.%SPEECH_ON%Hey there captain. You seen any of them saucy broads yet?%SPEECH_OFF%Hearing this, %randombrother2% comes over. He leans in.%SPEECH_ON%Hey, the way I hear it them hexes ARE quite the lookers, but that\'s how they get ya. They fool ya with their charms and then eat yer very soul.%SPEECH_OFF%Laughing, %randombrother% wipes the wax on %randombrother2%\'s garb.%SPEECH_ON%They\'ll have to go to %randomtown% to get my soul, then, cause another woman done beat them to the punch.%SPEECH_OFF% | You\'re inspecting inventory when %randombrother% comes up. You\'d sent him to scout the lands and he\'s readied a report.%SPEECH_ON%Sir, nothing sighted as of yet, but I got talking to some of the locals. The way they have it, the witches make pacts with regular folk and then trade on the investment years later, usually with great interest. They said they can fool you into seeing them as licentious minxes. They can bed you right into the grave! I said that sounded like cicada cockamamie to me.%SPEECH_OFF%Nodding, you ask the man what the hell a cicada is. He laughs.%SPEECH_ON%Seriously? It\'s a kind of nut, sir.%SPEECH_OFF% | The brothers are idling the time away, bantering about women and witches alike and if there\'s any real significant difference at all. %randombrother% holds his hand out.%SPEECH_ON%Now in all seriousness, I\'ve heard tales of these wenches. They can put a hex on you to make you see things. They\'ll make you sign bloodpacts and if you don\'t pay they\'ll cut your kneecaps out and use them for divination. Hell, when I was a child, my neighbor made a deal with one and then he disappeared. I later saw a mysterious woman walking around with a fresh skull being used for a lantern!%SPEECH_OFF%%randombrother2% nods attentively.%SPEECH_ON%That\'s incredible, but does anybody know what a witch does?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_79.png[/img]{%randombrother% s'approche de toi. Il se nettoie l'oreille avec un auriculaire.%SPEECH_ON%Salut capitaine. T'as vu des filles coquines par ici ?%SPEECH_OFF%Entendant cela, %randombrother2% s'approche. Il se penche.%SPEECH_ON%Hé, de ce que j'ai entendu, ces sorcières sont plutôt belles, mais c'est comme ça qu'elles t'attrapent. Elles te trompent avec leurs charmes et puis elles dévorent ton âme.%SPEECH_OFF%En riant, %randombrother% essuie la cire sur la tenue de %randombrother2%.%SPEECH_ON%Elles devront aller à %randomtown% pour avoir mon âme, alors, car une autre femme les a devancées.%SPEECH_OFF% | Tu inspectes l'inventaire lorsque %randombrother% s'approche. Tu l'avais envoyé en reconnaissance et il a préparé un rapport.%SPEECH_ON%Monsieur, rien en vue pour le moment, mais j'ai discuté avec certains habitants. Selon eux, les sorcières font des pactes avec des gens ordinaires et échangent sur l'investissement des années plus tard, généralement avec un grand intérêt. Ils disent qu'elles peuvent te tromper en te faisant les voir comme des séductrices lubriques. Elles peuvent te conduire droit dans la tombe ! J'ai dit que cela me semblait être une foutaise.%SPEECH_OFF%Hochant la tête, tu demandes à l'homme ce qu'est une foutaise. Il rit.%SPEECH_ON%Sérieusement ? C'est une sorte de noix, monsieur.%SPEECH_OFF% | Les frères passent le temps, plaisantant sur les femmes et les sorcières, et s'il y a vraiment une différence significative entre les deux. %randombrother% tend la main.%SPEECH_ON%Maintenant, sérieusement, j'ai entendu des histoires sur ces femmes. Elles peuvent te jeter un sort pour te faire voir des choses. Elles te font signer des pactes de sang et si tu ne paies pas, elles te coupent les rotules et les utilisent pour la divination. En enfer, quand j'étais enfant, mon voisin a conclu un marché avec l'une d'elles, puis il a disparu. Plus tard, j'ai vu une femme mystérieuse se promener avec un crâne frais utilisé comme lanterne !%SPEECH_OFF%%randombrother2% hoche la tête attentivement.%SPEECH_ON%C'est incroyable, mais est-ce que quelqu'un sait ce qu'une sorcière fait ?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Stay focused, lads.",
+					Text = Restez concentrés, les gars.",
 					function getResult()
 					{
 						if (this.Flags.get("StartTime") + this.Flags.get("Delay") - 3.0 <= this.Time.getVirtualTimeF())
@@ -277,13 +277,13 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SpiderQueen",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_106.png[/img]{A lone woman crosses your path and approaches between a gap of trees. She saunters with her thighs slipping in and out of a silk dress. Her skin is spotless and emerald eyes stare between locks of red with licentiousness you haven\'t seen since you were just a lad. You know this woman is a witch for such perfection can\'t stand in this world and in these parts it\'s like putting on makeup to go to the grave. Which is what she\'s done. You draw your sword and tell her to face her doom with honor. The witch\'s skin wrinkles to true, ghastly form, and she cackles with delight.%SPEECH_ON%Ah, for a moment I had you, but the cock slackens, and the pride returns. You\'ve such delightful scents, sellsword. I\'ll make sure they save you just for me.%SPEECH_OFF%Before you can ask what she means, the two trees she stands between blossom with the stretching of spider legs. Great black bulbs emerge from the thicket and scuttle to the terra below, the webknechts clacking their mandibles with imago hunger. The witch\'s hands go up and her fingers dance like a puppeteer in command of the clouds above.}",
+			Title = "Près de  %townname%",
+			Text = "[img]gfx/ui/events/event_106.png[/img]{Une femme solitaire croise votre chemin et s'approche entre un écart d'arbres. Elle se promène avec ses cuisses glissant dedans et dehors d'une robe de soie. Sa peau est impeccable et ses yeux émeraude fixent entre des mèches de roux avec une luxure que vous n'avez pas vue depuis votre jeunesse. Vous savez que cette femme est une sorcière, car une telle perfection ne peut subsister dans ce monde et dans ces contrées, c'est comme mettre du maquillage pour aller à la tombe. Ce qu'elle a fait. Vous tirez votre épée et lui dites de faire face à son destin avec honneur. La peau de la sorcière se plisse pour révéler sa véritable forme sinistre, et elle glousse avec délice.%SPEECH_ON%Ah, pendant un moment, je vous avais, mais le coq s'affaisse, et la fierté revient. Vous avez des parfums si délicieux, mercenaire. Je veillerai à ce qu'ils vous préservent rien que pour moi.%SPEECH_OFF%Avant que vous ne puissiez demander ce qu'elle veut dire, les deux arbres entre lesquels elle se tient s'épanouissent avec l'étirement de pattes d'araignée. De grandes ampoules noires émergent de la broussaille et se précipitent vers la terre en dessous, les webknechts cliquetant leurs mandibules avec la faim de l'imago. Les mains de la sorcière montent et ses doigts dansent comme un marionnettiste commandant les nuages au-dessus.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text =  "Aux armes !",
 					function getResult()
 					{
 						local p = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -330,13 +330,13 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SinisterDeal",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_106.png[/img]{%randombrother% whistles and tips his cap at the beautiful ladies which have arrived seemingly out of nowhere to swoon before the company. You hold the sellsword back and step forward, but before you can speak one of the women holds her hands up and strides to meet you.%SPEECH_ON%Let me show you my true self, sellsword.%SPEECH_OFF%Her arms go to her sides and there turn grey and shrivel like wet almond skin. Once bright and silken hair falls out in long wispy strands until her grotesque skull is bared, the last roots there holding clumped assemblage of gnats and lice like final congregates upon a dying world. She bows, her face up toward you with a yellow grin shorn across it.%SPEECH_ON%We\'ve great power, sellsword, of this you surely see. I offer you a deal.%SPEECH_OFF%She produces a tiny vial in each hand, one carrying a drop of green liquid, the other blue. She smiles and spins them in her fingers as she talks.%SPEECH_ON%A drink for the body, or for the spirit. Men would kill for either. I offer you one in exchange for the firstborn\'s life. What worth is the offspring of a stranger? You\'ve slaughtered your fair share, have you not? Stand aside, sellsword, and let us have this one. Or confront us, risk your men\'s lives, and your own, all for some runt who won\'t remember your face in due time. It\'s your choice.%SPEECH_OFF%}",
+			Title = "Près de %townname%",
+			Text = "[img]gfx/ui/events/event_106.png[/img]{%randombrother% siffle et bascule sa casquette devant les belles dames qui sont arrivées comme par enchantement pour séduire la compagnie. Vous retenez le mercenaire en arrière et avancez, mais avant que vous ne puissiez parler, l'une des femmes lève les mains et s'avance vers vous.%SPEECH_ON%Laisse-moi te montrer ma vraie nature, mercenaire.%SPEECH_OFF%Ses bras vont sur ses côtés et deviennent gris et se ratatinent comme une peau d'amande mouillée. Les cheveux autrefois brillants et soyeux tombent en longs brins ondulants jusqu'à ce que son crâne grotesque soit découvert, les dernières racines là tenant un assemblage aggloméré de moucherons et de poux comme des congrégations finales sur un monde mourant. Elle s'incline, son visage dirigé vers vous avec un sourire jaune coupé à travers.%SPEECH_ON%Nous avons un grand pouvoir, mercenaire, cela tu le vois sûrement. Je te propose un marché.%SPEECH_OFF%Elle sort une minuscule fiole dans chaque main, l'une portant une goutte de liquide vert, l'autre bleu. Elle sourit et les fait tournoyer entre ses doigts tout en parlant.%SPEECH_ON%Un breuvage pour le corps, ou pour l'esprit. Les hommes tueraient pour l'un ou l'autre. Je t'en offre un en échange de la vie du premier-né. Quelle valeur a la progéniture d'un étranger ? Tu en as abattu plus d'un, n'est-ce pas ? Écarte-toi, mercenaire, et laissez-nous avoir celui-ci. Ou affronte-nous, risque la vie de tes hommes, et la tienne, tout ça pour un marmot qui ne se souviendra pas de ton visage en temps voulu. C'est ton choix.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "I will never yield that boy to you hags. To arms!",
+					Text = "Je ne céderai jamais ce garçon à vous, vieilles harpies. Aux armes !",
 					function getResult()
 					{
 						local p = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -352,7 +352,7 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "I desire a drink for the body.",
+					Text = "Je désire une boisson pour le corps.",
 					function getResult()
 					{
 						return "SinisterDealBodily";
@@ -360,7 +360,7 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "I desire a drink for the spirit.",
+					Text = "Je désire une boisson pour l'esprit.",
 					function getResult()
 					{
 						return "SinisterDealSpiritual";
@@ -371,13 +371,13 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "SinisterDealBodily",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_106.png[/img]{The witch smiles.%SPEECH_ON%A man is nothing without an able body to maneuver him through the world. Here you are, sellsword. Please, do not waste it.%SPEECH_OFF%She tosses you the vial. Twisting through the air, it winks viridian spectra across the earth, each dip of its faint light springing forth a tiny flower out of unseeded mud. You catch the glass. It vibrates in your hand, and the ache of your bones slowly depart, as though your fist had been asleep all this time and you just didn\'t know it. When you look up for an explanation the witches are already gone. A lone cry is all that\'s left, piping up in the great distance yet with no way to ascertain just how far off it is. No doubt it is the demise of %employer%\'s firstborn.}",
+			Title = "près de %townname%",
+			Text = "[img]gfx/ui/events/event_106.png[/img]{La sorcière sourit.%SPEECH_ON%Un homme n'est rien sans un corps apte à le manœuvrer à travers le monde. Te voilà, mercenaire. S'il te plaît, ne le gaspille pas.%SPEECH_OFF%Elle te lance la fiole. En vrillant dans l'air, elle cligne des spectres viridiens à travers la terre, chaque plongée de sa faible lumière faisant surgir une petite fleur de la boue non ensemencée. Tu attrapes le verre. Il vibre dans ta main, et la douleur de tes os s'éloigne lentement, comme si ton poing avait dormi tout ce temps et que tu ne le savais simplement pas. Quand tu lèves les yeux pour demander une explication, les sorcières sont déjà parties. Un cri solitaire est tout ce qui reste, s'élevant dans la grande distance mais sans moyen de savoir à quelle distance il est. Sans aucun doute, c'est la fin du premier-né de %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Too good a trade to refuse.",
+					Text = "Trop bon marché pour refuser.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractBetrayal);
@@ -403,12 +403,12 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "SinisterDealSpiritual",
 			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_106.png[/img]{With a flip of her hand and a bump of her wrist the witch shunts the green vial down her sleeve. The remaining blue vial she holds out to you.%SPEECH_ON%A smart man you are, sellsword.%SPEECH_OFF%She snorts harshly, her fat nose shriveling into a maggot\'s girth before flopping back down.%SPEECH_ON%I do sense sharp minded men in your blood, sellsword. I\'d almost want to have the blood for myself.%SPEECH_OFF%Her eyes stare at you like a cat upon a delimbed cricket, a cricket which still dares to move. But then her smile returns, more gum than teeth, more black than pink.%SPEECH_ON%Ah, well, a deal is a deal. Here you are.%SPEECH_OFF%She throws the vial through the air and by the time you catch it and look back the witches are gone. You hear the faint cry of horrific torture, its distance seemingly both near and far, and you\'ve little doubt that it is the demise of %employer%\'s firstborn.}",
+			Text = "[img]gfx/ui/events/event_106.png[/img]{D'un geste de la main et d'une secousse du poignet, la sorcière pousse la fiole verte le long de sa manche. La fiole bleue restante, elle te la tend.%SPEECH_ON%Un homme intelligent que tu es, mercenaire.%SPEECH_OFF%Elle renifle bruyamment, son gros nez se ratatinant dans l'envergure d'une larve avant de retomber lourdement.%SPEECH_ON%Je sens des hommes perspicaces dans ton sang, mercenaire. J'aurais presque envie d'avoir le sang pour moi-même.%SPEECH_OFF%Ses yeux te fixent comme un chat sur un criquet démembré, un criquet qui ose encore bouger. Mais ensuite son sourire revient, plus de gencives que de dents, plus de noir que de rose.%SPEECH_ON%Ah, eh bien, un marché est un marché. Te voilà.%SPEECH_OFF%Elle lance la fiole dans les airs et d'ici à ce que tu l'attrapes et que tu regardes en arrière, les sorcières sont parties. Tu entends le cri faible d'une torture horrifique, sa distance semblant à la fois proche et lointaine, et tu ne doutes guère qu'il s'agit de la fin du premier-né de %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Too good a trade to refuse.",
+					Text = "Trop bon marché pour refuser.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractBetrayal);
@@ -433,13 +433,13 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		this.m.Screens.push({
 			ID = "Encounter",
-			Title = "Near %townname%",
-			Text = "[img]gfx/ui/events/event_106.png[/img]{%randombrother% whistles and yells out.%SPEECH_ON%We\'ve company. Nice... beautiful company...%SPEECH_OFF%A licentious looking woman is approaching the band. She sashays over the ground with ease, one finger playing with her ear, the other pinching a stone hanging over her bulging bosom. You clap the sellsword on the shoulder.%SPEECH_ON%That\'s no ordinary lady.%SPEECH_OFF%Just as the words leave your lips, the woman\'s ample and youthful features shrivel into a patterned grey and her luxurious hair withers from her pate and what you\'re left with is a hag, grinning with nothing but evil intentions. To arms! Keep %protectee% safe! | You spot a woman approaching the party. She\'s wearing bright red and a necklace sways over and between her ample bosom. It\'s quite the sight, but she is flawless and such a thing does not exist in this world.\n\nYou draw your sword. The lady sees the steel and then looks at you with a wily grin. Plots of hair fall from her head and what\'s left shrivels into grey wisps. Her skin shrinks into pale valleys and her fingernails grow so long they curl. She points a finger at you and screams that nobody will prevent the conclusion of the pact she\'s made. You yell out to the company to make sure %protectee% is kept out of harm\'s way. | A woman is spotted approaching the company. The sellswords are ensorcelled by her beauty, but you know better. You draw your sword and clang it loud enough to draw the ire of this supposed lady. She sneers and her lips snap back with a grin that goes from nearly ear to ear. Her skin tightens until it creases and turns a pale grey. She laughs and laughs as her hair falls out. The witch points a finger at you.%SPEECH_ON%Ah, I smell your ancestry, sellsword, but it matters not where you come from. The pact must be paid by the firstborn\'s blood and anyone who stands in our way will bleed in kind!%SPEECH_OFF%The company falls into formation and you tell %protectee% to keep his head down.}",
+			Title = "près de %townname%",
+			Text = "[img]gfx/ui/events/event_106.png[/img]{%randombrother% siffle et crie.%SPEECH_ON%Nous avons de la compagnie. Belle... magnifique compagnie...%SPEECH_OFF%Une femme au regard lubrique s'approche du groupe. Elle se pavane sur le sol avec facilité, un doigt jouant avec son oreille, l'autre pincant une pierre suspendue sur son décolleté bombé. Tu tapes sur l'épaule du mercenaire.%SPEECH_ON%Ce n'est pas une dame ordinaire.%SPEECH_OFF%Juste après que les mots aient quitté tes lèvres, les traits amples et jeunes de la femme se ratatinent en un gris modelé et ses cheveux luxuriants se flétrissent de son crâne et ce qu'il te reste est une sorcière, grimaçant avec rien d'autre que des intentions maléfiques. Aux armes ! Protégez %protectee% ! | Vous repérez une femme s'approchant du groupe. Elle porte du rouge vif et un collier se balance sur et entre ses seins opulents. C'est une vue assez spectaculaire, mais elle est sans défaut et une telle chose n'existe pas dans ce monde.\n\nVous tirez votre épée. La dame voit l'acier et vous regarde ensuite avec un sourire rusé. Des mèches de cheveux tombent de sa tête et ce qui reste se flétrit en mèches grises. Sa peau se contracte en vallées pâles et ses ongles poussent si longs qu'ils s'enroulent. Elle pointe un doigt vers vous et crie que personne n'empêchera la conclusion du pacte qu'elle a fait. Vous criez à la compagnie de vous assurer que %protectee% reste hors de danger. | Une femme est repérée s'approchant de la compagnie. Les mercenaires sont ensorcelés par sa beauté, mais vous savez mieux. Vous tirez votre épée et la faites claquer assez fort pour attirer la colère de cette prétendue dame. Elle ricane et ses lèvres se replient avec un sourire qui va d'une oreille à l'autre. Sa peau se resserre jusqu'à ce qu'elle se plisse et devienne d'un gris pâle. Elle rit et rit alors que ses cheveux tombent. La sorcière pointe un doigt vers vous.%SPEECH_ON%Ah, je sens ta lignée, mercenaire, mais cela n'a pas d'importance d'où tu viens. Le pacte doit être payé par le sang du premier-né et quiconque se mettra sur notre chemin saignera de même !%SPEECH_OFF%La compagnie se met en formation et tu dis à %protectee% de baisser la tête.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "To arms!",
+					Text = "Aux Armes !",
 					function getResult()
 					{
 						local p = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
@@ -459,13 +459,13 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Curse",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_124.png[/img]{As you start your return trip to %employer%, you find %superstitious% staring down at a witch. You can see the damned woman\'s lips are still moving and you rush over. She\'s speaking in curses which you shutup with the heel of your boot. Teeth flutter from rent gums as she laughs. You draw your sword and stab it between her eyes, putting her to rest once and for all. %superstitious% is just about shaking.%SPEECH_ON%She knew all about me! She knew everything, captain! She knew everything! She knew when I\'d die and how!%SPEECH_OFF%You tell the man to ignore every word the witch told him. Nodding, he rejoins the company, but his face grimaces with fortunes that can\'t go unheard.}",
+			Text = "[img]gfx/ui/events/event_124.png[/img]{Alors que vous entamez votre retour vers %employer%, vous trouvez %superstitious% fixant du regard une sorcière. Vous pouvez voir que les lèvres maudites de la femme bougent toujours, et vous vous précipitez vers elle. Elle parle en proférant des malédictions que vous interrompez d'un coup de talon. Des dents voltigent depuis ses gencives déchirées tandis qu'elle rit. Vous tirez votre épée et la plantez entre ses yeux, la mettant en repos une fois pour toutes. %superstitious% est pratiquement en train de trembler.%SPEECH_ON%Elle savait tout de moi ! Elle connaissait tout, capitaine ! Elle savait tout ! Elle savait quand je mourrais et comment !%SPEECH_OFF%Vous dites à l'homme d'ignorer chaque mot que la sorcière lui a dit. En hochant la tête, il rejoint la compagnie, mais son visage grimace avec des présages qui ne peuvent être ignorés.}",
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Don\'t think about it.",
+					Text = "N'y pense même pas.",
 					function getResult()
 					{
 						return "Success";
@@ -499,12 +499,12 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "EnchantedVillager",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_124.png[/img]{As the men recover from battle, a young peasant runs across the field hollering and whooping. You turn to see him fall before a witch and hold her ghastly, leathery body up, clutching it between his arms and rocking back and forth. Seeing you, he spits curses.%SPEECH_ON%Why\'d you do it, huh? Goddam bastards the lot of ya! She was wed to me a fortnight ago and now I must bury her. Well I say take me with her! Do your worst, you savages! This world will bury us both, my love!%SPEECH_OFF%You raise an eyebrow. The man must have been bewitched sometime before your arrival, probably a lackey for the witches. Whatever you think, a few of the men are a bit disturbed by the sight of the grieving boy. However, one hardier sellsword with a slick grin and his hand on his weapon asks if he should grant the kid his request. You shake your head no and order the men back into formation.} ",
+			Text = "[img]gfx/ui/events/event_124.png[/img]{Alors que les hommes se remettent de la bataille, un jeune paysan court à travers le champ en hurlant et poussant des cris de joie. Vous vous retournez pour le voir tomber devant une sorcière et tenir son corps hideux et parcheminé, le serrant entre ses bras en se balançant d'avant en arrière. En vous voyant, il crache des malédictions.%SPEECH_ON%Pourquoi avez-vous fait ça, hein ? Espèces de salauds, tous autant que vous êtes ! Elle était ma femme depuis une quinzaine de jours et maintenant je dois l'enterrer. Eh bien, je dis que prenez-moi avec elle ! Faites de votre pire, bande de sauvages ! Ce monde nous enterrera tous les deux, mon amour !%SPEECH_OFF%Vous haussez un sourcil. L'homme a dû être ensorcelé quelque temps avant votre arrivée, probablement un laquais des sorcières. Quoi que vous pensiez, quelques hommes sont un peu perturbés par la vue du garçon en deuil. Cependant, un mercenaire plus résistant avec un sourire narquois et la main sur son arme demande s'il doit accorder la requête du gamin. Vous secouez la tête et ordonnez aux hommes de reprendre leur formation.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Poor fool.",
+					Text = "Pauvre fou.",
 					function getResult()
 					{
 						return "Success";
@@ -516,12 +516,12 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure1",
 			Title = "Après la bataille...",
-			Text = "[img]gfx/ui/events/event_124.png[/img]{The battle over, %randombrother% comes to your side. He says %protectee% died during the fight. Says his eyeballs are gone as is his tongue, that his face looks like two wet rags folding in on each other. No point in going back to %employer% now. | You look down at %protectee%\'s corpse. The eyeballs have been yanked and hang down his cheeks like wet craw. His face is stretched into a smile, though whatever put it that way couldn\'t have been the least bit funny. %randombrother% asks if the company should Retournez à %employer% and you shake your head no. | You find %employer%\'s firstborn crumpled on the ground. Every joint has been scooped or carved out, though when or how this happened is beyond you. %randombrother% tries to move the body, but it twists and clatters like a stringless puppet. The sellsword grimaces and throws the corpse back to the ground where it rimples into a basket of its own ribcage, the head egglike in the nest. There\'s no point in returning to %employer% now.}",
+			Text = "[img]gfx/ui/events/event_124.png[/img]{La bataille terminée, %randombrother% vient à vos côtés. Il dit que %protectee% est mort pendant le combat. Il dit que ses globes oculaires sont partis ainsi que sa langue, que son visage ressemble à deux chiffons mouillés se repliant l'un sur l'autre. Aucun intérêt à retourner chez %employer% maintenant. | Vous regardez le cadavre de %protectee%. Les globes oculaires ont été arrachés et pendent sur ses joues comme des crabes humides. Son visage est étiré en un sourire, bien que ce qui l'a mis de cette manière n'ait pas dû être le moins du monde drôle. %randombrother% demande si la compagnie devrait retourner chez %employer% et vous secouez la tête. | Vous trouvez le premier-né de %employer% gisant au sol. Chaque articulation a été évidée ou tailladée, bien que le moment ou la manière dont cela s'est produit vous échappent. %randombrother% essaie de déplacer le corps, mais il se tord et claque comme une marionnette sans ficelles. Le mercenaire grimace et lance le cadavre au sol où il se replie dans un panier de sa propre cage thoracique, la tête en forme d'œuf dans le nid. Il n'y a plus aucune raison de retourner chez %employer% maintenant.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Shite, shite, shite!",
+					Text = "Merde, merde, merde !",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
@@ -536,12 +536,12 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure2",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_16.png[/img]{%employer% was paying you to protect %protectee%. The firstborn is hard to protect when you leave %townname% and abandon him to the witches. Don\'t bother going back for your pay. | You had been tasked to keep %protectee% safe in %townname%, or did you forget? Don\'t bother going back, the firstborn is no doubt already dead or, worse, taken by the witches for some nefarious purpose.}",
+			Text = "[img]gfx/ui/events/event_16.png[/img]{%employer% vous payait pour protéger %protectee%. Il est difficile de protéger le premier-né lorsque vous quittez %townname% et l'abandonnez aux sorcières. N'essayez même pas de retourner chercher votre salaire. | Vous aviez pour mission de garder %protectee% en sécurité à %townname%, ou avez-vous oublié ? N'essayez même pas de retourner, le premier-né est sans aucun doute déjà mort ou, pire, pris par les sorcières pour quelque dessein néfaste.}",
 			Image = "",
 			List = [],
 			Options = [
 				{
-					Text = "Oh, damn.",
+					Text = "Oh, zut.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractFail);
@@ -556,14 +556,14 @@ this.hunting_hexen_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Success",
 			Title = "À votre retour...",
-			Text = "[img]gfx/ui/events/event_79.png[/img]{%employer% embraces %protectee%, holding the firstborn tight. He looks at you.%SPEECH_ON%So it\'s done then, all the witches are dead?%SPEECH_OFF%You nod. The townsman nods back.%SPEECH_ON%Thank you! Thank you, mercenary!%SPEECH_OFF%He points you to a chest in the corner of the room. It\'s full of your payment. | You return %protectee% to %employer%. The townsman and firstborn embrace like the telling of two separate dreams of identical circumstance, slowly coming together despite the appeals of reality. Finally, they hug and clench one another and pause to stare at one another to be sure it\'s all real. You tell %employer% that every witch is dead, but that he should keep the tale to himself. He nods.%SPEECH_ON%Spirits feed on hubris, I know that much, and I shall take this story to the grave. I thank you for what you\'ve done today, sellsword. I thank you to such lengths you could not possibly know. I\'ve but one way to express my appreciation.%SPEECH_OFF%He brings you a satchel of gold. The sight of the bag bulging with coin brings a warm smile to your face. | %protectee% runs from your side and into the arms of %employer%. The townsman looks over his firstborn\'s shoulders.%SPEECH_ON%So it\'s done then, we are free of the curse?%SPEECH_OFF%You shrug and respond.%SPEECH_ON%You\'re free of the witches.%SPEECH_OFF%The townsman purses his lips and nods.%SPEECH_ON%Well, that\'s good enough. Your payment is over there in the satchel, as much as promised.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_79.png[/img]{%employer% étreint %protectee%, tenant le premier-né fermement. Il vous regarde.%SPEECH_ON%Alors, c'est fait, toutes les sorcières sont mortes ?%SPEECH_OFF%Vous hochez la tête. Le citadin fait de même.%SPEECH_ON%Merci ! Merci, mercenaire !%SPEECH_OFF%Il vous montre une malle dans le coin de la pièce. Elle est pleine de votre paiement. | Vous ramenez %protectee% à %employer%. Le citadin et le premier-né s'étreignent comme la narration de deux rêves distincts d'une circonstance identique, se rapprochant lentement malgré les appels de la réalité. Finalement, ils se serrent l'un contre l'autre et s'arrêtent pour se regarder mutuellement pour s'assurer que tout est bien réel. Vous dites à %employer% que chaque sorcière est morte, mais qu'il devrait garder l'histoire pour lui. Il hoche la tête.%SPEECH_ON%Les esprits se nourrissent de l'hubris, je le sais bien, et je porterai cette histoire jusqu'à la tombe. Je vous remercie pour ce que vous avez fait aujourd'hui, mercenaire. Je vous remercie à une telle mesure que vous ne pourriez pas imaginer. J'ai qu'une seule façon d'exprimer ma gratitude.%SPEECH_OFF%Il vous apporte une bourse d'or. La vue du sac débordant de pièces fait naître un sourire chaleureux sur votre visage. | %protectee% court de votre côté et dans les bras de %employer%. Le citadin regarde par-dessus l'épaule de son premier-né.%SPEECH_ON%Alors, c'est fait, nous sommes libérés de la malédiction ?%SPEECH_OFF%Vous haussez les épaules et répondez.%SPEECH_ON%Vous êtes libres des sorcières.%SPEECH_OFF%Le citadin pince les lèvres et hoche la tête.%SPEECH_ON%Eh bien, c'est déjà bien. Votre paiement est là dans la bourse, autant que promis.%SPEECH_OFF%}",
 			Image = "",
 			Characters = [],
 			List = [],
 			ShowEmployer = true,
 			Options = [
 				{
-					Text = "All worked out in the end.",
+					Text = "Tout s'est arrangé à la fin.",
 					function getResult()
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
