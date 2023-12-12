@@ -419,7 +419,7 @@ this.intercept_raiding_parties_contract <- this.inherit("scripts/contracts/contr
 		this.m.Screens.push({
 			ID = "LocationDestroyed",
 			Title = "Sur la route...",
-			Text = "[img]gfx/ui/events/event_30.png[/img]{La fumée s\'élève au loin. Des cris sous les nuages, et des silhouettes fugaces dans les feux qui les ont produits. C\'est %location% à %objectif%, et elle a sans doute été détruite.}",
+			Text = "[img]gfx/ui/events/event_30.png[/img]{La fumée s\'élève au loin. Des cris sous les nuages, et des silhouettes fugaces dans les feux qui les ont produits. C\'est %location% à %objective%, et elle a sans doute été détruite.}",
 			Image = "",
 			List = [],
 			Options = [

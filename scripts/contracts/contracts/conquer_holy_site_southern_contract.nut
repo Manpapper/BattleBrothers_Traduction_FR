@@ -554,7 +554,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 		this.m.Screens.push({
 			ID = "Mercenaries1",
 			Title = "À %holysite%",
-			 Text = "[img]gfx/ui/events/event_134.png[/img]{À mesure que %holysite% se dessine à l\'horizon, un homme qui ressemble étrangement à vous s\'approche. Il a un payeur et quelques mercenaires à ses côtés.%SPEECH_ON%Bonsoir, capitaine. Je suis %mercenaire% de la %compagniedemercenaires%. Je suis venu dans ces terres à la recherche de couronnes, tout comme vous. À présent, je parie que le Vizir a mouillé sa plume dans un contrat solide pour vous et vos hommes, mais que diriez-vous de me payer %pay% couronnes et je vous aiderai dans cette petite entreprise ?%SPEECH_OFF% | Vous êtes approché par un groupe d\'hommes, l\'un d\'entre eux dont la démarche et la constitution semblent étrangement semblables aux vôtres. Il se présente comme %mercenaire%, capitaine de la %compagniedemercenaires%.%SPEECH_ON%Je pensais que le Vizir enverrait son armée professionnelle s\'occuper du changement de mains du site sacré. Je vous avoue, capitaine, que j\'ai aidé les nordistes à prendre possession de ce monument prestigieux en premier lieu. Cependant, pour %pay% couronnes, je suis prêt à aider votre camp à le reprendre. En tant que camarade mercenaire, je suis sûr que vous pouvez voir à quel point cela serait une bonne affaire pour tous.%SPEECH_OFF%}",
+			 Text = "[img]gfx/ui/events/event_134.png[/img]{À mesure que %holysite% se dessine à l\'horizon, un homme qui ressemble étrangement à vous s\'approche. Il a un payeur et quelques mercenaires à ses côtés.%SPEECH_ON%Bonsoir, capitaine. Je suis %mercenary% de la %compagniedemercenaires%. Je suis venu dans ces terres à la recherche de couronnes, tout comme vous. À présent, je parie que le Vizir a mouillé sa plume dans un contrat solide pour vous et vos hommes, mais que diriez-vous de me payer %pay% couronnes et je vous aiderai dans cette petite entreprise ?%SPEECH_OFF% | Vous êtes approché par un groupe d\'hommes, l\'un d\'entre eux dont la démarche et la constitution semblent étrangement semblables aux vôtres. Il se présente comme %mercenary%, capitaine de la %compagniedemercenaires%.%SPEECH_ON%Je pensais que le Vizir enverrait son armée professionnelle s\'occuper du changement de mains du site sacré. Je vous avoue, capitaine, que j\'ai aidé les nordistes à prendre possession de ce monument prestigieux en premier lieu. Cependant, pour %pay% couronnes, je suis prêt à aider votre camp à le reprendre. En tant que camarade mercenaire, je suis sûr que vous pouvez voir à quel point cela serait une bonne affaire pour tous.%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			Options = [],
@@ -584,7 +584,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 				}
 
 				this.Options.push({
-					 Text = "Trouvez votre propre travail, %mercenaire%. Nous n\'avons pas besoin d\'aide.",
+					 Text = "Trouvez votre propre travail, %mercenary%. Nous n\'avons pas besoin d\'aide.",
 					function getResult()
 					{
 						return "Mercenaries3";
