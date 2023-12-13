@@ -2063,7 +2063,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les villes, villages et châteaux peuvent être détruit indéfiniment pendant le crise de fin de jeu, et avoir le monde partir en fumée est une des nombreuses façon de perdre la campagne."
+					text = "Les villes, villages et châteaux peuvent être détruit indéfiniment pendant les crises de fin de jeu, et avoir le monde partir en fumée est une des nombreuses façon de perdre la campagne."
 				}
 			];
 
