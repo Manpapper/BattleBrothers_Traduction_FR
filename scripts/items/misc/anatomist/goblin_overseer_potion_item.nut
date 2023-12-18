@@ -4,8 +4,8 @@ this.goblin_overseer_potion_item <- this.inherit("scripts/items/misc/anatomist/a
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.goblin_overseer_potion";
-		this.m.Name = "Deadeye\'s Draught";
-		this.m.Description = "Equal parts terrifying and annoying, the uncanny marksmanship of upper caste goblins has long been thought unobtainable by ordinary, self-respecting humans. With this wondrous potion, however, the discerning warrior can harness some of that latent skill for himself at minor cosmetic cost!";
+		this.m.Name = "Breuvage du Tireur d'Élite";
+		this.m.Description = "À parts égales terrifiant et ennuyeux, le tir infaillible des gobelins de la caste supérieure a longtemps été considéré comme inaccessible pour les humains ordinaires respectueux d'eux-mêmes. Cependant, avec cette potion merveilleuse, le guerrier averti peut exploiter une partie de cette compétence latente pour lui-même à un coût cosmétique mineur !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_13.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.goblin_overseer_potion_item <- this.inherit("scripts/items/misc/anatomist/a
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "An additional [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] of damage ignores armor when using bows or crossbows"
+			text = "Un [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] supplémentaire des dégâts ignore l'armure lors de l'utilisation d'arcs ou d'arbalètes"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

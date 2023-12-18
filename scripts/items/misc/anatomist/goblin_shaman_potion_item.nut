@@ -4,8 +4,8 @@ this.goblin_shaman_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.goblin_shaman_potion";
-		this.m.Name = "Greasejar Potion";
-		this.m.Description = "While the phrase \'slippery as a goblin\' hasn\'t quite caught on in the common vernacular, anyone who has fought the hateful greenskins knows its truth. With this amazing potion, however, anyone can take on this loathsome aspect!";
+		this.m.Name = "Potion du Pot de Graisse";
+		this.m.Description = "Bien que l'expression 'glissant comme un gobelin' n'ait pas encore pris dans le langage courant, quiconque a combattu les abominables peaux-vertes connaît sa vérité. Avec cette potion étonnante, cependant, n'importe qui peut adopter cet aspect répugnant !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_12.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.goblin_shaman_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Always successfully able to escape from ensnarement, such as from nets or roots"
+			text = "Toujours capable de s'échapper avec succès de l'emprisonnement, comme avec des filets ou des racines"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

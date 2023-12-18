@@ -3,9 +3,8 @@ this.alp_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_pot
 	function create()
 	{
 		this.anatomist_potion_item.create();
-		this.m.ID = "misc.alp_potion";
-		this.m.Name = "Nightking\'s Draft";
-		this.m.Description = "This draft, the result of intensive study into the so-called \'Third Eye\' of the Alp, allows whomever drinks it to see through the night as if it were day! Blurry vision and hallucinations are expected while the body acclimates.";
+		this.m.Name = "Élixir du Roi de la Nuit";
+		this.m.Description = "Cet élixir, fruit d'une étude intensive du prétendu 'Troisième Œil' de l'Alp, permet à quiconque le boit de voir à travers la nuit comme s'il faisait jour ! Vision floue et hallucinations sont à prévoir pendant que le corps s'acclimate.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_34.png";
 		this.m.Value = 0;
@@ -53,18 +52,18 @@ this.alp_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_pot
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Not affected by nighttime penalties"
+			text = "Non affecté par les pénalités nocturnes"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

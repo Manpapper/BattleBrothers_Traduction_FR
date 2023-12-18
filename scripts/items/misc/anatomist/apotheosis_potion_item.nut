@@ -4,8 +4,8 @@ this.apotheosis_potion_item <- this.inherit("scripts/items/misc/anatomist/anatom
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.apotheosis_potion";
-		this.m.Name = "Apotheosis Potion";
-		this.m.Description = "This fantastic concoction is the pinnacle of what research on human anatomy has yielded. The few who know of its existence claim that to consume it is to ascend to a higher state of being, something beyond a mere human.";
+		this.m.Name = "Potion de l'Apothéose";
+		this.m.Description = "Cette concoction fantastique est le summum de ce que la recherche sur l'anatomie humaine a produit. Les rares initiés qui en connaissent l'existence prétendent que la consommer revient à accéder à un état supérieur de l'être, quelque chose au-delà d'un simple humain.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_10.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.apotheosis_potion_item <- this.inherit("scripts/items/misc/anatomist/anatom
 			id = 11,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Hitpoints"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Points de vie"
 		});
 		result.push({
 			id = 11,
@@ -64,13 +64,13 @@ this.apotheosis_potion_item <- this.inherit("scripts/items/misc/anatomist/anatom
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}
