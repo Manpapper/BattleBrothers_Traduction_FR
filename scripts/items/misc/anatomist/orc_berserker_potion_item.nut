@@ -4,8 +4,8 @@ this.orc_berserker_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.orc_berserker_potion";
-		this.m.Name = "Rose Philter";
-		this.m.Description = "Developed from the adrenal glands of so called Orc \'Berserkers\', this concoction is so named for the heightened emotional state and reddened hue of whoever drinks it.";
+		this.m.Name = "Philtre de Rose";
+		this.m.Description = "Développé à partir des glandes surrénales des prétendus Orc 'Berserkers', cette concoction est ainsi nommée en raison de l'état émotionnel intensifié et de la teinte rougie de celui qui la boit.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_16.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.orc_berserker_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Gain stacks of Rage upon taking hitpoint damage, which increases Resolve, Initiative and damage dealt, and reduces damage taken"
+			text = "Gagnez des piles de Rage en subissant des dégâts d'impact, ce qui augmente la Résolution, l'Initiative et les dégâts infligés, et réduit les dégâts subis"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

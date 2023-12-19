@@ -4,8 +4,8 @@ this.orc_young_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.orc_young_potion";
-		this.m.Name = "Kineticist\'s Draft";
-		this.m.Description = "Feel the strength of an orc flow through your veins! Imbibing this draft will infuse even the meekest man\'s blows with the intense destructive power of a hulking greenskin, guaranteed!";
+		this.m.Name = "Élixir du Kineticien";
+		this.m.Description = "Sentez la force d'un orc circuler dans vos veines ! Avaler cette potion infusera même les coups du plus timide des hommes avec la puissance destructive intense d'un peau verte imposant, garantie !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_14.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.orc_young_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 			id = 11,
 			type = "text",
 			icon = "ui/icons/armor_damage.png",
-			text = "Attacks have [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] effectiveness against armor"
+			text = "Les attaques ont une efficacité accrue de [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] contre l'armure"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

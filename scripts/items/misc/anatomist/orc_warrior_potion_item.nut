@@ -4,8 +4,8 @@ this.orc_warrior_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.orc_warrior_potion";
-		this.m.Name = "Ironhead Potion";
-		this.m.Description = "As any veteran of the Battle of Many Names can attest, to fight an orc warrior is to fight a veritable wall of metal and flesh, seemingly impervious to even the most debilitating of blows. With this potion, now you can be that wall!";
+		this.m.Name = "Potion Tête de Fer";
+		this.m.Description = "Comme tout vétéran de la Bataille aux Nombreux Noms peut en témoigner, combattre un guerrier orc revient à affronter un véritable mur de métal et de chair, apparemment impénétrable même aux coups les plus débilitants. Avec cette potion, vous pouvez maintenant être ce mur !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_15.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.orc_warrior_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] de résistance aux effets d'étourdissement, de chancellement, de sonné, de distraction et de flétrissement"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}
