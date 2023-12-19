@@ -2,12 +2,12 @@ this.human_camp_furniture <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Furniture";
+		return "Meuble";
 	}
 
 	function getDescription()
 	{
-		return "Wooden furniture for this camp\'s inhabitants.";
+		return "Meuble en bois pour les occupants de ce camp.";
 	}
 
 	function onInit()

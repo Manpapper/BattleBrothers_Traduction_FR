@@ -2,12 +2,12 @@ this.tree_stump1 <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Tree Stump";
+		return "Souche d'Arbre";
 	}
 
 	function getDescription()
 	{
-		return "The remains of a cut-down tree.";
+		return "Les restes d'un arbre abattu.";
 	}
 
 	function onInit()

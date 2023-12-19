@@ -7,7 +7,7 @@ this.tree_needle1_snow <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "A small tree.";
+		return "Un petit arbre.";
 	}
 
 	function onInit()

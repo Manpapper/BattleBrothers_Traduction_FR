@@ -7,7 +7,7 @@ this.tree_trunk_forest_leaves <- this.inherit("scripts/entity/tactical/entity", 
 
 	function getDescription()
 	{
-		return "The remains of a once proud tree.";
+		return "Les restes d'un arbre d'autrefois.";
 	}
 
 	function onInit()

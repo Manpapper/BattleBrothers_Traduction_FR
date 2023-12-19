@@ -2,12 +2,12 @@ this.orc_camp_wall <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Palisade";
+		return "Palissade";
 	}
 
 	function getDescription()
 	{
-		return "A wooden palisade.";
+		return "Une palissade en bois.";
 	}
 
 	function setDirBasedOnCenter( _centerTile, _dist )

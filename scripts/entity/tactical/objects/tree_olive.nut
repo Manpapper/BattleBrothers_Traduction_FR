@@ -2,12 +2,12 @@ this.tree_olive <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Olive Tree";
+		return "Olivier";
 	}
 
 	function getDescription()
 	{
-		return "A large olive tree. Blocks movement and line of sight.";
+		return "Un grand olivier. Bloque les mouvements et la visibilité.";
 	}
 
 	function onInit()

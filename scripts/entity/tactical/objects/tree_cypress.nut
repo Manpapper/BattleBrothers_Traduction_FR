@@ -2,12 +2,12 @@ this.tree_cypress <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Cypress";
+		return "Cyprès";
 	}
 
 	function getDescription()
 	{
-		return "A cypress tree. Blocks movement and line of sight.";
+		return "Un cyprès. Bloque les mouvements et la visibilité.";
 	}
 
 	function onInit()

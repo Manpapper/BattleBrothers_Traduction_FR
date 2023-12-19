@@ -2,12 +2,12 @@ this.southern_ruins_wall <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Old Wall";
+		return "Ancien mur";
 	}
 
 	function getDescription()
 	{
-		return "An old and partly crumbled wall.";
+		return "Un ancien mur en partie écroulé.";
 	}
 
 	function setDirBasedOnCenter( _centerTile, _dist )

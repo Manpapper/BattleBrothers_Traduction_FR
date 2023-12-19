@@ -2,12 +2,12 @@ this.human_camp_wood <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Chopped Wood";
+		return "Bois Coupé";
 	}
 
 	function getDescription()
 	{
-		return "Wood chopped as firewood or for constructing palisades.";
+		return "Bois coupé comme bois de chauffage ou pour la construction de palissades.";
 	}
 
 	function onInit()

@@ -2,12 +2,12 @@ this.tree_dead_steppe <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Dead Tree";
+		return "Arbre Mort";
 	}
 
 	function getDescription()
 	{
-		return "This tree has withered and is long dead. Blocks movement and line of sight.";
+		return "Cet arbre s'est desséché et est mort depuis longtemps. Il bloque les mouvements et la visibilité.";
 	}
 
 	function onInit()

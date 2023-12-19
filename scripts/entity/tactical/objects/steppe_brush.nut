@@ -2,12 +2,12 @@ this.steppe_brush <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Bush";
+		return "Buisson";
 	}
 
 	function getDescription()
 	{
-		return "Dense shrubbery that blocks movement and line of sight.";
+		return "Buissons denses qui bloquent les mouvements et la visibilité.";
 	}
 
 	function onInit()

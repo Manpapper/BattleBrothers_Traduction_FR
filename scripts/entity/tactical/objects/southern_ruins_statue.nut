@@ -2,12 +2,12 @@ this.southern_ruins_statue <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Bronze Statue";
+		return "Statue de Bronze";
 	}
 
 	function getDescription()
 	{
-		return "A bronze statue from an age long past.";
+		return "Une statue de bronze d'une époque révolue.";
 	}
 
 	function onInit()

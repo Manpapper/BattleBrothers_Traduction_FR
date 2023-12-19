@@ -7,7 +7,7 @@ this.human_camp_large_Fireplace <- this.inherit("scripts/entity/tactical/entity"
 
 	function getDescription()
 	{
-		return "Un Fireplace pour cuisiner.";
+		return "Un foyer pour cuisiner.";
 	}
 
 	function onInit()

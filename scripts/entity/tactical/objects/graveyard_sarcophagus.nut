@@ -2,12 +2,12 @@ this.graveyard_sarcophagus <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Sarcophagus";
+		return "Sarcophage";
 	}
 
 	function getDescription()
 	{
-		return "Presumably the last resting place of someone who died long ago.";
+		return "Il s'agit probablement du dernier lieu de repos d'une personne décédée il y a longtemps.";
 	}
 
 	function onInit()

@@ -2,12 +2,12 @@ this.goblin_camp_weapon_display <- this.inherit("scripts/entity/tactical/entity"
 	m = {},
 	function getName()
 	{
-		return "Weapon Display";
+		return "Présentoir d'armes";
 	}
 
 	function getDescription()
 	{
-		return "Several polearms on display, perhaps to mark territory or as a warning to intruders.";
+		return "Plusieurs armes sont exposées, peut-être pour marquer un territoire ou pour avertir les intrus.";
 	}
 
 	function onInit()

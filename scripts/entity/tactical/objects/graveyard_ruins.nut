@@ -2,12 +2,12 @@ this.graveyard_ruins <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Ruins";
+		return "Ruines";
 	}
 
 	function getDescription()
 	{
-		return "Ruins of crumbled stone.";
+		return "Ruines de pierres émiettées.";
 	}
 
 	function onInit()

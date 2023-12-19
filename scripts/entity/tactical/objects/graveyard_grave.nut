@@ -2,12 +2,12 @@ this.graveyard_grave <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Graves";
+		return "Tombes";
 	}
 
 	function getDescription()
 	{
-		return "The last resting place of some unfortunate souls.";
+		return "La dernière demeure de quelques âmes malheureuses.";
 	}
 
 	function onInit()

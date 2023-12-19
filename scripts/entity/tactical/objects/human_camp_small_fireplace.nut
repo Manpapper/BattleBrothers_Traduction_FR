@@ -7,7 +7,7 @@ this.human_camp_small_Fireplace <- this.inherit("scripts/entity/tactical/entity"
 
 	function getDescription()
 	{
-		return "A Fireplace with a cauldron.";
+		return "A foyer with a cauldron.";
 	}
 
 	function onInit()
