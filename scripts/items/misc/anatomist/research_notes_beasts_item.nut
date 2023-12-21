@@ -4,8 +4,8 @@ this.research_notes_beasts_item <- this.inherit("scripts/items/item", {
 	{
 		this.item.create();
 		this.m.ID = "misc.research_notes_beasts";
-		this.m.Name = "Tome of Beasts";
-		this.m.Description = "A treatise on the beasts of the world. Coded notes fill the margins in sections on the most interesting - and real - creatures.";
+		this.m.Name = "Tome des Bêtes";
+		this.m.Description = "Un traité sur les bêtes du monde. Des notes codées remplissent les marges dans des sections sur les créatures les plus intéressantes - et réelles.";
 		this.m.Icon = "misc/inventory_anatomists_book_03.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc;
@@ -54,7 +54,7 @@ this.research_notes_beasts_item <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/papers.png",
-			text = "Tracks your research on the beasts of the world"
+			text = "Suit vos recherches sur les bêtes du monde"
 		});
 		local buffAcquisitions = [
 			{

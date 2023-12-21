@@ -4,8 +4,8 @@ this.research_notes_greenskins_item <- this.inherit("scripts/items/item", {
 	{
 		this.item.create();
 		this.m.ID = "misc.research_notes_greenskins";
-		this.m.Name = "Greenskin Research Notes";
-		this.m.Description = "A tidy collection of eyewitness reports, experiment logs, and research diaries detailing the anatomy of various greenskin specimens.";
+		this.m.Name = "Notes de recherche sur les Peaux-Vertes";
+		this.m.Description = "Une collection soignée de rapports de témoins oculaires, de journaux d'expériences et de carnets de recherche détaillant l'anatomie de divers spécimens de Peaux-Vertes.";
 		this.m.Icon = "misc/inventory_anatomists_book_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc;
@@ -54,7 +54,7 @@ this.research_notes_greenskins_item <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/papers.png",
-			text = "Tracks your study of orc and goblin anatomy"
+			text = "Suit votre étude de l'anatomie des orcs et gobelins"
 		});
 		local buffAcquisitions = [
 			{
