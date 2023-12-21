@@ -4,8 +4,8 @@ this.research_notes_undead_item <- this.inherit("scripts/items/item", {
 	{
 		this.item.create();
 		this.m.ID = "misc.research_notes_undead";
-		this.m.Name = "Ledger of the Dead";
-		this.m.Description = "A ledger stuffed full of folktales, post-mortems, autopsy notes, and the mad scribblings of a supposed necromancer that collectively contain your knowledge of the undead.";
+		this.m.Name = "Registre des Morts";
+		this.m.Description = "Un registre bourré de contes populaires, de comptes rendus post-mortem, de notes d'autopsie et des gribouillages fous d'un prétendu nécromancien qui contiennent collectivement votre connaissance des morts-vivants.";
 		this.m.Icon = "misc/inventory_anatomists_book_02.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc;

@@ -4,8 +4,8 @@ this.schrat_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.schrat_potion";
-		this.m.Name = "Draught of Godtree Roots";
-		this.m.Description = "With this wondrous concoction, mere mortal men shall take on an aspect of the gods themselves! Any who consume it can become rooted as solidly as the great godtrees of legend.";
+		this.m.Name = "Élixir des Racines de l'Arbre Divin";
+		this.m.Description = "Avec cette concoction merveilleuse, de simples mortels prendront l'aspect des dieux eux-mêmes ! Tous ceux qui la consomment peuvent devenir aussi solidement enracinés que les grands arbres divins de la légende.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_33.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.schrat_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Immune to being knocked back or grabbed"
+			text = "Immunité contre les reculs ou les saisies"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Faites un clic droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant une maladie"
 		});
 		return result;
 	}

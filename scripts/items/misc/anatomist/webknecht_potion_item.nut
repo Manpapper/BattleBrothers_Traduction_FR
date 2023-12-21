@@ -4,8 +4,8 @@ this.webknecht_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.webknecht_potion";
-		this.m.Name = "Venomblood Potion";
-		this.m.Description = "As any experienced beast hunter could tell you, what makes the overgrown arachnids known as Webknechts truly fearsome is their vicious poison. Well, no longer! Whoever drinks this potion need not fear the creatures\' venom again!";
+		this.m.Name = "Potion Venomblood";
+		this.m.Description = "Comme tout chasseur de bêtes expérimenté pourrait vous le dire, ce qui rend les arachnides surdimensionnés appelés Webknechts vraiment redoutables, c'est leur poison vicieux. Eh bien, plus maintenant ! Celui qui boit cette potion n'aura plus à craindre le venin de ces créatures !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_31.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.webknecht_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Immune to poison effects, including those of Webknechts and Goblins"
+			text = "Immunité aux effets de poison, y compris ceux des Webknechts et des Gobelins"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant une maladie"
 		});
 		return result;
 	}

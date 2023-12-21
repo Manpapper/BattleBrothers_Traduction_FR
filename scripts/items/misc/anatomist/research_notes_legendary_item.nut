@@ -4,8 +4,8 @@ this.research_notes_legendary_item <- this.inherit("scripts/items/item", {
 	{
 		this.item.create();
 		this.m.ID = "misc.research_notes_legendary";
-		this.m.Name = "Book of Legends";
-		this.m.Description = "A slim journal bound in fine leather, containing your meager scientific notes on creatures of myth and legend.";
+		this.m.Name = "Livre des Légendes";
+		this.m.Description = "Un mince journal relié de cuir de qualité, contenant vos maigres notes scientifiques sur les créatures de mythes et de légendes.";
 		this.m.Icon = "misc/inventory_anatomists_book_04.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc;
