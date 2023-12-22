@@ -4,8 +4,8 @@ this.oathtaker_skull_01_item <- this.inherit("scripts/items/accessory/accessory"
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.oathtaker_skull_01";
-		this.m.Name = "Young Anselm\'s Skull";
-		this.m.Description = "The skull of Young Anselm, the first Oathtaker. Adorning oneself with such a priceless artifact would surely fill any man to the brim with honor and courage.";
+		this.m.Name = "Crâne de Jeune Anselm";
+		this.m.Description = "Le crâne de Jeune Anselm, le premier Jureur. Orner soi-même d'un tel artefact inestimable remplirait sûrement tout homme d'honneur et de courage.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -57,7 +57,7 @@ this.oathtaker_skull_01_item <- this.inherit("scripts/items/accessory/accessory"
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+7[/color] Resolve"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+7[/color] Détermination"
 		});
 		return result;
 	}
