@@ -4,9 +4,10 @@ this.hyena_fur_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgra
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.hyena_fur";
-		this.m.Name = "Hyena Fur Mantle";
-		this.m.Description = "Furs taken from ferocious hyenas, cured and sewn together to be worn as a beast hunter\'s trophy around the neck. Donning the skin of a beast like this bolsters one\'s drive to action.";
-		this.m.ArmorDescription = "A mantle of hyena furs has been attached to this armor, which bolsters the wearer\'s drive to action.";
+		this.m.Name = "Manteau en Fourrure de Hyène";
+		this.m.Description = "Fourrures prélevées sur des hyènes féroces, traitées et cousues ensemble pour être portées comme un trophée de chasseur de bêtes autour du cou. Revêtir la peau d'une bête comme celle-ci renforce la volonté d'agir.";
+		this.m.ArmorDescription = "Un manteau de fourrure de hyène a été attaché à cette armure, renforçant la volonté d'agir du porteur.";
+		this.m.Icon = "armor_upgrades/upgrade_26.png";
 		this.m.Icon = "armor_upgrades/upgrade_26.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_26.png";
@@ -29,7 +30,7 @@ this.hyena_fur_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgra
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Durabilité"
 		});
 		result.push({
 			id = 15,

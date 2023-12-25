@@ -4,9 +4,9 @@ this.protective_runes_upgrade <- this.inherit("scripts/items/armor_upgrades/armo
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.protective_runes";
-		this.m.Name = "Protective Runes and Sigils";
-		this.m.Description = "Protective runes and sigils written on parched skin and emitting an unsettling aura.";
-		this.m.ArmorDescription = "Protective runes and sigils written on parched skin are hefted to this armor.";
+		this.m.Name = "Runes et Sceaux Protecteurs";
+		this.m.Description = "Runes et sceaux protecteurs inscrits sur une peau parcheminée et émettant une aura inquiétante.";
+		this.m.ArmorDescription = "Des runes et des sceaux protecteurs inscrits sur une peau parcheminée sont fixés à cette armure.";
 		this.m.Icon = "armor_upgrades/upgrade_07.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_07.png";
@@ -27,7 +27,7 @@ this.protective_runes_upgrade <- this.inherit("scripts/items/armor_upgrades/armo
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve at morale checks against fear, panic or mind control effects"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Résistance aux checks de moral contre la peur, la panique ou les effets de contrôle mental"
 		});
 		return result;
 	}
@@ -38,7 +38,7 @@ this.protective_runes_upgrade <- this.inherit("scripts/items/armor_upgrades/armo
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve at morale checks against fear, panic or mind control effects"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Résistance aux checks de moral contre la peur, la panique ou les effets de contrôle mental"
 		});
 	}
 

@@ -4,9 +4,9 @@ this.mail_patch_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.mail_patch";
-		this.m.Name = "Mail Patch";
-		this.m.Description = "A large patch of mail that can be added to any armor to further protect the most vulnerable areas.";
-		this.m.ArmorDescription = "A large patch of mail has been added to this armor to further protect the most vulnerable areas.";
+this.m.Name = "Écusson de Maille";
+		this.m.Description = "Un grand écusson de maille qui peut être ajouté à n'importe quelle armure pour protéger davantage les zones les plus vulnérables.";
+		this.m.ArmorDescription = "Un grand écusson de maille a été ajouté à cette armure pour protéger davantage les zones les plus vulnérables.";
 		this.m.Icon = "armor_upgrades/upgrade_09.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_09.png";
@@ -29,13 +29,13 @@ this.mail_patch_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Fatigue Maximum"
 		});
 		return result;
 	}

@@ -4,9 +4,9 @@ this.leather_neckguard_upgrade <- this.inherit("scripts/items/armor_upgrades/arm
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.leather_neckguard";
-		this.m.Name = "Leather Neckguard";
-		this.m.Description = "This neckguard of cured leather can be attached to any armor for some additional protection.";
-		this.m.ArmorDescription = "A neckguard of cured leather has been attached to this armor for additional protection.";
+this.m.Name = "Protège-Cou en Cuir";
+		this.m.Description = "Ce protège-cou en cuir traité peut être attaché à n'importe quelle armure pour une protection supplémentaire.";
+		this.m.ArmorDescription = "Un protège-cou en cuir traité a été attaché à cette armure pour une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_13.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_13.png";
@@ -29,7 +29,7 @@ this.leather_neckguard_upgrade <- this.inherit("scripts/items/armor_upgrades/arm
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Durabilité"
 		});
 		return result;
 	}

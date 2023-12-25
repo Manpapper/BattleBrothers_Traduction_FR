@@ -4,9 +4,9 @@ this.negative_falling_apart_upgrade <- this.inherit("scripts/items/armor_upgrade
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.negative_falling_apart";
-		this.m.Name = "Falling Apart";
+		this.m.Name = "En Train de Tomber en Morceaux";
 		this.m.Description = "";
-		this.m.ArmorDescription = "This armor is close to falling apart. Negligence and long use have left it in a sad state long beyond repairability.";
+		this.m.ArmorDescription = "Cette armure est sur le point de tomber en morceaux. La négligence et une utilisation prolongée l'ont laissée dans un état triste bien au-delà de toute réparation possible.";
 		this.m.Icon = null;
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_downgrade_01.png";
@@ -26,7 +26,7 @@ this.negative_falling_apart_upgrade <- this.inherit("scripts/items/armor_upgrade
 			id = 6,
 			type = "text",
 			icon = "ui/icons/warning.png",
-			text = "No armor attachment slot"
+			text = "Aucun emplacement d'accessoire d'armure"
 		});
 	}
 

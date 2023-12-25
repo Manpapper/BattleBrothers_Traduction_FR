@@ -4,9 +4,9 @@ this.direwolf_pelt_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.direwolf_pelt";
-		this.m.Name = "Direwolf Pelt Mantle";
-		this.m.Description = "Pelts taken from ferocious direwolves, cured and sewn together to be worn as a beast hunter\'s trophy around the neck. Donning the skin of a beast like this can turn one into an imposing figure.";
-		this.m.ArmorDescription = "A mantle of direwolf pelts has been attached to this armor, which transforms the wearer into an imposing figure.";
+		this.m.Name = "Manteau en Peau de Loup-Dire";
+		this.m.Description = "Peaux prélevées sur des loups-dires féroces, traitées et cousues ensemble pour être portées comme un trophée de chasseur de bêtes autour du cou. Revêtir la peau d'une bête comme celle-ci peut transformer quelqu'un en une figure imposante.";
+		this.m.ArmorDescription = "Un manteau de peaux de loups-dires a été attaché à cette armure, transformant celui qui le porte en une figure imposante.";
 		this.m.Icon = "armor_upgrades/upgrade_01.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_01.png";
@@ -29,13 +29,13 @@ this.direwolf_pelt_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Durabilité"
 		});
 		result.push({
 			id = 15,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]"
+			text = "Réduit la Résolution de tout adversaire engagé au corps à corps de [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]"
 		});
 		return result;
 	}
@@ -46,7 +46,7 @@ this.direwolf_pelt_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 			id = 15,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces the Resolve of any opponent engaged in melee by [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]"
+			text = "Réduit la Résolution de tout adversaire engagé au corps à corps de [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color]"
 		});
 	}
 

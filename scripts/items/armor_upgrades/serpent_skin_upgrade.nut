@@ -4,9 +4,9 @@ this.serpent_skin_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_up
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.serpent_skin";
-		this.m.Name = "Serpent Skin Mantle";
-		this.m.Description = "A mantle crafted from the thin and shimmering scales of desert serpents, especially resistant to heat and flames.";
-		this.m.ArmorDescription = "A mantle of serpent skin has been attached to this armor, which makes it more resistant to heat and flames.";
+		this.m.Name = "Manteau en Peau de Serpent";
+		this.m.Description = "Un manteau confectionné à partir des écailles fines et scintillantes de serpents du désert, particulièrement résistant à la chaleur et aux flammes.";
+		this.m.ArmorDescription = "Un manteau en peau de serpent a été fixé à cette armure, la rendant plus résistante à la chaleur et aux flammes.";
 		this.m.Icon = "armor_upgrades/upgrade_27.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_27.png";
@@ -29,19 +29,19 @@ this.serpent_skin_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_up
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Fatigue Maximale"
 		});
 		result.push({
 			id = 15,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces damage from fire and firearms by [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
+			text = "Réduit les dégâts du feu et des armes à feu de [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
 		});
 		return result;
 	}
@@ -52,7 +52,7 @@ this.serpent_skin_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_up
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces damage from fire and firearms by [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
+			text = "Réduit les dégâts du feu et des armes à feu de [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
 		});
 	}
 

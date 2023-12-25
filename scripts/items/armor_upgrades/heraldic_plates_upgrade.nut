@@ -4,9 +4,9 @@ this.heraldic_plates_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.heraldic_plates";
-		this.m.Name = "Heraldic Shoulderplates";
-		this.m.Description = "Large protective plates to be fixed at the shoulders of an armor.";
-		this.m.ArmorDescription = "Large protective plates have been fixed at the shoulders of this armor.";
+		this.m.Name = "Épaulières Héraldiques";
+		this.m.Description = "Grandes plaques protectrices à fixer sur les épaules d'une armure.";
+		this.m.ArmorDescription = "De grandes plaques protectrices ont été fixées aux épaules de cette armure.";
 		this.m.Variant = this.Math.rand(14, 18);
 		this.updateVariant();
 		this.m.Value = 500;
@@ -42,13 +42,13 @@ this.heraldic_plates_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+40[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+40[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Fatigue Maximale"
 		});
 		return result;
 	}

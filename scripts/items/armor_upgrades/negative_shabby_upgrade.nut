@@ -4,9 +4,9 @@ this.negative_shabby_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.negative_shabby";
-		this.m.Name = "Shabby";
+		this.m.Name = "Délabré";
 		this.m.Description = "";
-		this.m.ArmorDescription = "It appears that the previous owner did not take care of it at all; parts are missing or have been replaced with improvised patchings.";
+		this.m.ArmorDescription = "On dirait que le propriétaire précédent n'en a pas du tout pris soin ; des pièces sont manquantes ou ont été remplacées par des réparations improvisées.";
 		this.m.Icon = null;
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_downgrade_02.png";
@@ -26,7 +26,7 @@ this.negative_shabby_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 			id = 6,
 			type = "text",
 			icon = "ui/icons/warning.png",
-			text = "No armor attachment slot"
+			text = "Aucun emplacement d'accessoire d'armure"
 		});
 	}
 

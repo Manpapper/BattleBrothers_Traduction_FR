@@ -4,9 +4,10 @@ this.negative_weathered_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.negative_weathered";
-		this.m.Name = "Weathered";
+		this.m.Name = "Vieilli";
 		this.m.Description = "";
-		this.m.ArmorDescription = "This armor is slightly weathered from dust and rain, which has made the metal dull and leather brittle.";
+		this.m.ArmorDescription = "Cette armure est légèrement vieillie par la poussière et la pluie, ce qui a rendu le métal terne et le cuir cassant.";
+		this.m.Icon = null;
 		this.m.Icon = null;
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_downgrade_04.png";
@@ -26,7 +27,7 @@ this.negative_weathered_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 			id = 6,
 			type = "text",
 			icon = "ui/icons/warning.png",
-			text = "No armor attachment slot"
+			text = "Aucun emplacement d'accessoire d'armure"
 		});
 	}
 

@@ -4,9 +4,9 @@ this.unhold_fur_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.unhold_fur";
-		this.m.Name = "Unhold Fur Cloak";
-		this.m.Description = "A thick cloak made out of a Frost Unhold\'s majestic white fur. Can be worn atop any armor to make the wearer more resilient against ranged weapons.";
-		this.m.ArmorDescription = "A cloak of thick white fur has been attached to this armor to make it more resilient against ranged weapons.";
+		this.m.Name = "Cape en Fourrure d'Unhold";
+		this.m.Description = "Une épaisse cape confectionnée à partir de la majestueuse fourrure blanche d'un Unhold de givre. Peut être portée par-dessus n'importe quelle armure pour rendre le porteur plus résistant aux armes à distance.";
+		this.m.ArmorDescription = "Une cape en épaisse fourrure blanche a été attachée à cette armure pour la rendre plus résistante aux armes à distance.";
 		this.m.Icon = "armor_upgrades/upgrade_02.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_02.png";
@@ -29,13 +29,13 @@ this.unhold_fur_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Durabilité"
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces any ranged damage to the body by [color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color]"
+			text = "Réduit les dégâts de toute attaque à distance sur le corps de [color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color]"
 		});
 		return result;
 	}
@@ -46,7 +46,7 @@ this.unhold_fur_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces any ranged damage to the body by [color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color]"
+			text = "Réduit les dégâts de toute attaque à distance sur le corps de [color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color]"
 		});
 	}
 
