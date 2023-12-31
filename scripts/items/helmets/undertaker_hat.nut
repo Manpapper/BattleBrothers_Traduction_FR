@@ -4,8 +4,8 @@ this.undertaker_hat <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.undertaker_hat";
-		this.m.Name = "Undertaker\'s Hat";
-		this.m.Description = "A wide-brimmed feathered hat with a scarf to cover the mouth. Durable enough to protect against weather and scratches.";
+		this.m.Name = "Chapeau de croque-mort";
+		this.m.Description = "Un chapeau à larges bords avec des plumes et un foulard pour couvrir la bouche. Assez robuste pour protéger contre les intempéries et les égratignures.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

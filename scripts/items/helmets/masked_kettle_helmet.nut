@@ -4,8 +4,8 @@ this.masked_kettle_helmet <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.masked_kettle_helmet";
-		this.m.Name = "Masked Kettle Helmet";
-		this.m.Description = "A brimmed metal helmet with an ominous black mask to cover the face.";
+		this.m.Name = "Casque Kettle Masqué";
+		this.m.Description = "Un casque en métal à bord avec un masque noir menaçant pour couvrir le visage.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;
