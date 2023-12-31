@@ -3,7 +3,7 @@ this.ghastly_touch <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.ghastly_touch";
-		this.m.Name = "Ghastly Touch";
+		this.m.Name = "Toucher Fantomatique";
 		this.m.Description = "";
 		this.m.KilledString = "Mort de peur";
 		this.m.Icon = "skills/active_42.png";

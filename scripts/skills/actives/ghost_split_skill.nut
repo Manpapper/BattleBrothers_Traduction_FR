@@ -3,8 +3,8 @@ this.ghost_split_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.ghost_split";
-		this.m.Name = "Split";
-		this.m.Description = "A wide swinging overhead attack performed for maximum reach rather than force that can hit two tiles in a straight line.";
+		this.m.Name = "Fendre";
+		this.m.Description = "Une attaque large effectuée en balayant de haut en bas pour maximiser la portée plutôt que la force, pouvant toucher deux tuiles en ligne droite.";
 		this.m.KilledString = "Coupé en deux";
 		this.m.Icon = "skills/active_153.png";
 		this.m.IconDisabled = "skills/active_153.png";

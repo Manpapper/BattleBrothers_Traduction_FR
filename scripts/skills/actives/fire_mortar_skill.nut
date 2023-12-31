@@ -6,9 +6,9 @@ this.fire_mortar_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.fire_mortar";
-		this.m.Name = "Fire Mortar";
-		this.m.Description = "";
-		this.m.KilledString = "Blown to bits";
+ 		this.m.Name = "Tir de Mortier";
+        this.m.Description = "";
+        this.m.KilledString = "Réduit en morceaux";
 		this.m.Icon = "skills/active_211.png";
 		this.m.IconDisabled = "skills/active_211.png";
 		this.m.Overlay = "active_211";

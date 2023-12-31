@@ -10,8 +10,8 @@ this.berserker_mushrooms_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.berserker_mushrooms";
-		this.m.Name = "Eat or Give Strange Mushrooms";
-		this.m.Description = "Give to an adjacent ally or eat yourself strange mushrooms to enter a state of trance-like rage with no regard for your safety. May result in sickness. The effect will slowly wear off over 4 turns. Can not be used while engaged in melee, and anyone receiving the item needs to have a free bag slot.";
+		 this.m.Name = "Manger ou Donner des Champignons Étranges";
+        this.m.Description = "Donnez à un allié adjacent ou mangez vous-même des champignons étranges pour entrer dans un état de rage semblable à une transe sans se soucier de votre sécurité. Peut entraîner la maladie. L'effet disparaîtra lentement au bout de 4 tours. Ne peut pas être utilisé en mêlée, et toute personne recevant l'objet doit avoir un emplacement de sac libre.";
 		this.m.Icon = "skills/active_98.png";
 		this.m.IconDisabled = "skills/active_98_sw.png";
 		this.m.Overlay = "active_98";
@@ -51,29 +51,29 @@ this.berserker_mushrooms_skill <- this.inherit("scripts/skills/skill", {
 				text = this.getCostString()
 			},
 			{
-				id = 11,
-				type = "text",
-				icon = "ui/icons/regular_damage.png",
-				text = "Grants [color=" + this.Const.UI.Color.PositiveValue + "]+40%[/color] Damage in Melee"
-			},
-			{
-				id = 11,
-				type = "text",
-				icon = "ui/icons/melee_defense.png",
-				text = "Grants [color=" + this.Const.UI.Color.NegativeValue + "]-40%[/color] Melee Defense"
-			},
-			{
-				id = 11,
-				type = "text",
-				icon = "ui/icons/ranged_defense.png",
-				text = "Grants [color=" + this.Const.UI.Color.NegativeValue + "]-40%[/color] Ranged Defense"
-			},
-			{
-				id = 10,
-				type = "text",
-				icon = "ui/icons/morale.png",
-				text = "No morale check triggered upon losing hitpoints"
-			}
+                id = 11,
+                type = "text",
+                icon = "ui/icons/regular_damage.png",
+                text = "Confère [color=" + this.Const.UI.Color.PositiveValue + "]+40%[/color] de Dommages en Mêlée"
+            },
+            {
+                id = 11,
+                type = "text",
+                icon = "ui/icons/melee_defense.png",
+                text = "Confère [color=" + this.Const.UI.Color.NegativeValue + "]-40%[/color] de Défense en Mêlée"
+            },
+            {
+                id = 11,
+                type = "text",
+                icon = "ui/icons/ranged_defense.png",
+                text = "Confère [color=" + this.Const.UI.Color.NegativeValue + "]-40%[/color] de Défense à Distance"
+            },
+            {
+                id = 10,
+                type = "text",
+                icon = "ui/icons/morale.png",
+                text = "Pas de vérification morale déclenchée en cas de perte de points de vie"
+            }
 		];
 
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
@@ -82,7 +82,7 @@ this.berserker_mushrooms_skill <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut pas être utilisé car ce personnage est engagé en mêlée[/color]"
 			});
 		}
 

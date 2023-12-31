@@ -3,7 +3,7 @@ this.fling_back_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.fling_back";
-		this.m.Name = "Fling Back";
+		this.m.Name = "Reculer";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_111.png";
 		this.m.IconDisabled = "skills/active_111.png";
