@@ -3,7 +3,7 @@ this.move_tail_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.move_tail";
-		this.m.Name = "Move Tail";
+		this.m.Name = "Bouger la Queue";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_109.png";
 		this.m.IconDisabled = "skills/active_109.png";

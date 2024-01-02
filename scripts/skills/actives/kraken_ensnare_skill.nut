@@ -3,7 +3,7 @@ this.kraken_ensnare_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.kraken_ensnare";
-		this.m.Name = "Ensnare";
+		this.m.Name = "Piéger";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_147.png";
 		this.m.Overlay = "active_147";

@@ -3,7 +3,7 @@ this.nightmare_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.nightmare";
-		this.m.Name = "Nightmare";
+		this.m.Name = "Cauchemar";
 		this.m.Description = "";
 		this.m.KilledString = "Died of nightmares";
 		this.m.Icon = "skills/active_117.png";

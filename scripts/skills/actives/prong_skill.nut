@@ -3,8 +3,8 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.prong";
-		this.m.Name = "Prong";
-		this.m.Description = "A thrusting attack that can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most melee weapons.";
+		this.m.Description = "Attaque en thrust qui peut couvrir la distance de 2 tiles et peut être utilisée depuis l'arrière de la ligne de front, en dehors de la portée de la plupart des armes de mêlée.";
+		this.m.KilledString = "Estocadé";
 		this.m.KilledString = "Pronged";
 		this.m.Icon = "skills/active_123.png";
 		this.m.IconDisabled = "skills/active_123_sw.png";
@@ -52,7 +52,7 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] chance to hit"
+			text = "A une chance de toucher de [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]"
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInSpears)
@@ -61,7 +61,7 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
+				text = "A une chance de toucher de [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] sur les cibles directement adjacentes car l'arme est trop difficile à manier"
 			});
 		}
 

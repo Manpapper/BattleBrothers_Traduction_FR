@@ -3,7 +3,7 @@ this.raise_all_undead_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.raise_all_undead";
-		this.m.Name = "The Black Book";
+		this.m.Name = "Le Livre Noir";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_213.png";
 		this.m.IconDisabled = "skills/active_213.png";
