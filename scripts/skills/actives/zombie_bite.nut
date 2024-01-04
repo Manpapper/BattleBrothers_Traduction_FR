@@ -3,7 +3,7 @@ this.zombie_bite <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.zombie_bite";
-		this.m.Name = "Bite";
+		this.m.Name = "Morsure";
 		this.m.Description = "";
 		this.m.KilledString = "Bitten";
 		this.m.Icon = "skills/active_24.png";

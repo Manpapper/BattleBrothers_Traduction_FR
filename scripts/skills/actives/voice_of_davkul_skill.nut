@@ -3,8 +3,8 @@ this.voice_of_davkul_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.voice_of_davkul";
-		this.m.Name = "Voice of Davkul";
-		this.m.Description = "Become the fleshen conduit and the earthen voice of Davkul. Speak truth to his followers and make them give their everything to please their god.";
+		this.m.Nom = "Voix de Davkul";
+		this.m.Description = "Devenez le conduit charnel et la voix terrestre de Davkul. Parlez la vérité à ses disciples et incitez-les à tout donner pour plaire à leur dieu.";
 		this.m.Icon = "skills/active_176.png";
 		this.m.IconDisabled = "skills/active_176_sw.png";
 		this.m.Overlay = "active_176";
@@ -37,7 +37,7 @@ this.voice_of_davkul_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Lowers the fatigue of every cultist, friend or foe, by [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] instantly. Anyone not a cultist is not affected."
+				text = "Réduit instantanément la fatigue de chaque cultiste, ami ou ennemi, de [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color]. Les non-cultistes ne sont pas affectés."
 			}
 		]);
 		return ret;

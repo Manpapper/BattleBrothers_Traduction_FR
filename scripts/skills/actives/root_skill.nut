@@ -3,7 +3,7 @@ this.root_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.root";
-		this.m.Name = "Root";
+		this.m.Name = "Racine";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_70.png";
 		this.m.IconDisabled = "skills/active_70_sw.png";

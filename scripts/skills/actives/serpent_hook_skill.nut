@@ -5,7 +5,7 @@ this.serpent_hook_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.serpent_hook";
-		this.m.Name = "Drag";
+		this.m.Name = "Traîner";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_192.png";
 		this.m.Overlay = "active_192";

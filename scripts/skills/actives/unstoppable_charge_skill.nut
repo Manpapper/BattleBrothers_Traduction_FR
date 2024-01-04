@@ -6,7 +6,7 @@ this.unstoppable_charge_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.unstoppable_charge";
-		this.m.Name = "Unstoppable Charge";
+		this.m.Nom = "Charge Imparable";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_110.png";
 		this.m.IconDisabled = "skills/active_110.png";

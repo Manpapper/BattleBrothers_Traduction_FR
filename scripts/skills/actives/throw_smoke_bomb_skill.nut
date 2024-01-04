@@ -3,8 +3,8 @@ this.throw_smoke_bomb_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.throw_smoke_bomb";
-		this.m.Name = "Throw Smoke Pot";
-		this.m.Description = "Throw a pot filled with substances that upon impact will quickly create a dense cloud.";
+		this.m.Name = "Lancer une bombe de fumée";
+		this.m.Description = "Lance une bombe remplie de substances qui, au moment de l'impact, créera rapidement un nuage dense.";
 		this.m.Icon = "skills/active_208.png";
 		this.m.IconDisabled = "skills/active_208_sw.png";
 		this.m.Overlay = "active_208";
@@ -51,19 +51,19 @@ this.throw_smoke_bomb_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Covers [color=" + this.Const.UI.Color.DamageValue + "]7[/color] tiles in smoke for one round, allowing anyone inside to move freely and ignore zones of control"
+			text = "Recouvre  [color=" + this.Const.UI.Color.DamageValue + "]7[/color] cases de fumée pendant un tour, permettant à quiconque à l'intérieur de se déplacer librement et d'ignorer les zones de contrôle"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Increases Ranged Defense by [color=" + this.Const.UI.Color.PositiveValue + "]+100%[/color], but lowers Ranged Skill by [color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] for anyone inside"
+			text = "Augmente la Défense à distance de [color=" + this.Const.UI.Color.PositiveValue + "]+100%[/color],mais diminue la Compétence à distance de [color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] pour quiconque à l'intérieur"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Extinguishes existing tile effects like Fire or Miasma"
+			text = "Éteint les effets de case existants comme le Feu ou le Miasme"
 		});
 		return ret;
 	}

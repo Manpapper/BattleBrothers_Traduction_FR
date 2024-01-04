@@ -3,7 +3,7 @@ this.wither_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.wither";
-		this.m.Name = "Wither";
+		this.m.Name = "Faner";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_217.png";
 		this.m.IconDisabled = "skills/active_217.png";

@@ -3,7 +3,7 @@ this.throw_golem_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.throw_golem";
-		this.m.Name = "Throw Living Sand";
+		this.m.Name = "Lancer de sable vivant";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_193.png";
 		this.m.IconDisabled = "skills/active_193.png";

@@ -40,8 +40,8 @@ this.unleash_wolf <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.unleash_wolf";
-		this.m.Name = "Unleash Wardog";
-		this.m.Description = "Unleash your wardog and send him charging into the enemy. Needs a free tile adjacent.";
+		this.m.Name = "Libérer le chien de guerre";
+		this.m.Description = "Libérez votre chien de guerre et envoyez-le charger l'ennemi. Nécessite une case libre adjacente.";
 		this.m.Icon = "skills/active_83.png";
 		this.m.IconDisabled = "skills/active_83_sw.png";
 		this.m.Overlay = "active_83";

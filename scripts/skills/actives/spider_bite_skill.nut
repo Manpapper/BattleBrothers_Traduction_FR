@@ -3,7 +3,7 @@ this.spider_bite_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.spider_bite";
-		this.m.Name = "Webknecht Bite";
+		this.m.Name = "Morsure du Tisseur";
 		this.m.Description = "";
 		this.m.KilledString = "Ripped to shreds";
 		this.m.Icon = "skills/active_115.png";
