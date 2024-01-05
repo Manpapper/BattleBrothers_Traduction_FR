@@ -58,7 +58,7 @@ this.beast_hunters_scenario <- this.inherit("scripts/scenarios/world/starting_sc
 		bros[1].setStartValuesEx([
 			"beast_hunter_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "A young lad from the city, %name% got his start in beast slaying by rooting out the warrens of \'vicious rabbits\', as he puts it. You\'re not sure how true that is, but regardless he has proven himself on the field of battle more times than you can count.";
+		bros[1].getBackground().m.RawDescription = "Un jeune homme de la ville, %name% a commencé sa carrière de chasseur de bêtes en délogeant les terriers de 'lapins vicieux', comme il le dit. Vous n'êtes pas sûr de la véracité de cela, mais il s'est néanmoins prouvé sur le champ de bataille plus de fois que vous ne pouvez compter.";
 		bros[1].setPlaceInFormation(4);
 		bros[1].addLightInjury();
 		bros[1].m.Talents = [];
@@ -75,7 +75,7 @@ this.beast_hunters_scenario <- this.inherit("scripts/scenarios/world/starting_sc
 		bros[2].setStartValuesEx([
 			"beast_hunter_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "Grizzled vets are a rarity in beast slaying, and %name% sure ain\'t one. Instead, he\'s an intelligent man who started his foray into monster hunting by reading books instead of training the sword. Still a good enough warrior at heart, it is his study and preparation that gives him the edge in battle.";
+		bros[2].getBackground().m.RawDescription = "Les vétérans aguerris sont rares dans la chasse aux monstres, et %name% n'en est certainement pas un. Au lieu de cela, c'est un homme intelligent qui a commencé sa première incursion dans la chasse aux monstres en lisant des livres plutôt qu'en s'entraînant à l'épée. Toujours un guerrier assez compétent au cœur, c'est son étude et sa préparation qui lui donnent l'avantage au combat.";
 		bros[2].setPlaceInFormation(5);
 		bros[2].addInjury(this.Const.Injury.Brawl);
 		bros[2].m.Talents = [];

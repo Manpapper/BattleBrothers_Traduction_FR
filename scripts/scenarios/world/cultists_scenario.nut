@@ -38,7 +38,8 @@ this.cultists_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 		bros[0].setStartValuesEx([
 			"cultist_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "When %name% joined, he warmly called you captain, saying \"tis a proper manner to pursue the path into the black from whence we came\".";
+		bros[0].getBackground().m.RawDescription = "Quand %name% a rejoint, il vous a chaleureusement appelé capitaine, disant \"c'est une manière appropriée de poursuivre le chemin dans le noir d'où nous venons\".";
+		bros[0].setPlaceInFormation(2);
 		bros[0].setPlaceInFormation(2);
 		local items = bros[0].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -50,7 +51,7 @@ this.cultists_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 		bros[1].setStartValuesEx([
 			"cultist_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "%name% found you upon the road. He stated that he knew you were a mercenary captain. You wore but ordinary cloth at that moment, but he said by Davkul\'s darkness you had an aura of wanted black about you.";
+		bros[1].getBackground().m.RawDescription = "%name% vous a trouvé sur la route. Il a déclaré qu'il savait que vous étiez un capitaine mercenaire. Vous ne portiez alors que des vêtements ordinaires, mais il a dit qu'avec l'obscurité de Davkul, vous aviez une aura de noir recherché autour de vous.";
 		bros[1].setPlaceInFormation(3);
 		local items = bros[1].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -62,7 +63,7 @@ this.cultists_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 		bros[2].setStartValuesEx([
 			"cultist_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "A quiet man, %name% has shadows beneath his fingerprints, running like the brine beneath a pallid shore. When he shook your hand, it was as though you could hear the hissing of your sanity.";
+		bros[2].getBackground().m.RawDescription = "Un homme silencieux, %name% a des ombres sous ses empreintes digitales, coulant comme la saumure sous une rive pâle. Quand il vous a serré la main, on aurait dit que vous pouviez entendre le sifflement de votre santé mentale.";
 		bros[2].setPlaceInFormation(4);
 		local items = bros[2].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -73,7 +74,7 @@ this.cultists_scenario <- this.inherit("scripts/scenarios/world/starting_scenari
 		bros[3].setStartValuesEx([
 			"cultist_background"
 		]);
-		bros[3].getBackground().m.RawDescription = "%name% banded with you outside a tavern. The first time you saw him he had scars running up his arms and across veins that would imply he should not still be living. But each morning it appears as though his scars move, slowly creeping in one direction: toward his forehead.";
+		bros[3].getBackground().m.RawDescription = "%name% s'est associé à vous devant une taverne. La première fois que vous l'avez vu, il avait des cicatrices remontant le long de ses bras et à travers des veines qui laisseraient penser qu'il ne devrait plus être en vie. Mais chaque matin, on dirait que ses cicatrices bougent, se déplaçant lentement dans une direction : vers son front.";
 		bros[3].setPlaceInFormation(5);
 		local items = bros[3].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));

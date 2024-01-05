@@ -23,7 +23,7 @@ this.lone_wolf_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		bro.setStartValuesEx([
 			"hedge_knight_background"
 		]);
-		bro.getBackground().m.RawDescription = "A wandering hedge knight, you were a veteran of jousting and sparring tournaments. You were also a veteran of victory. Tis a scary thought for many, but if it were anything at all that turned your eye toward mercenary work it was boredom. Outwardly you state it is for the coin, but a part of you knows it\'s also for the company.";
+		bro.getBackground().m.RawDescription = "Un chevalier errant, vous étiez un vétéran des tournois de joute et d'escrime. Vous étiez également un vétéran de la victoire. C'est une pensée effrayante pour beaucoup, mais si c'était quelque chose qui attirait votre attention vers le travail de mercenaire, c'était l'ennui. Extérieurement, vous déclarez que c'est pour la pièce, mais une partie de vous sait que c'est aussi pour la compagnie.";
 		bro.getBackground().buildDescription(true);
 		bro.setTitle("the Lone Wolf");
 		bro.getSkills().removeByID("trait.survivor");
