@@ -7,7 +7,7 @@ this.orc_camp_standard <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "A standard that leaves no doubt about who this camp\'s inhabitants are.";
+		return "Un étendard qui ne laisse aucun doute sur l'identité des habitants de ce camp.";
 	}
 
 	function onInit()

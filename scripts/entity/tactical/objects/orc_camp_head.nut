@@ -2,12 +2,12 @@ this.orc_camp_head <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Spiked Head";
+		return "Tête empalée";
 	}
 
 	function getDescription()
 	{
-		return "A gruesome display of what happens to humans around here.";
+		return "Une démonstration macabre de ce qui arrive aux humains par ici.";
 	}
 
 	function setFlipped( _flip )

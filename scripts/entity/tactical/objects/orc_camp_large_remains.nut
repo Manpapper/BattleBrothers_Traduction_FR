@@ -2,12 +2,12 @@ this.orc_camp_large_remains <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Gruesome Display";
+		return "Une démonstration macabre";
 	}
 
 	function getDescription()
 	{
-		return "Flayed skin and intestines on display.";
+		return "Peau écorchée et intestins exposés.";
 	}
 
 	function onInit()
