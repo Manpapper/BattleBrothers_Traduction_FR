@@ -5,7 +5,7 @@ this.lindwurm_scales_item <- this.inherit("scripts/items/item", {
 		this.item.create();
 		this.m.ID = "misc.lindwurm_scales";
 		this.m.Name = "Écailles de Lindwurm";
-		this.m.Description = "Les écailles vertes chatoyantes d\'un Lindwurm sont parmi les trophées les plus réputés qu\'un chasseur de bêtes puisse rapporter de ses aventures.";
+this.m.Description = "Les écailles vertes chatoyantes d'un Lindwurm sont parmi les trophées les plus réputés qu'un chasseur de bêtes puisse rapporter de ses aventures.";
 		this.m.Icon = "misc/inventory_lindwurm_scales.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Crafting;

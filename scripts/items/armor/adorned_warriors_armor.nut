@@ -4,8 +4,8 @@ this.adorned_warriors_armor <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.adorned_warriors_armor";
-		this.m.Name = "Adorned Warrior\'s Armor";
-		this.m.Description = "A long mail shirt covered by a riveted leather gambeson. Heavily worn from extensive use, but adorned with relics and well-maintained.";
+		this.m.Name = "Armure de guerrier ornée";
+this.m.Description = "Une longue chemise de mailles recouverte d'une gambison en cuir riveté. Fortement usée par une utilisation extensive, mais ornée de reliques et bien entretenue.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

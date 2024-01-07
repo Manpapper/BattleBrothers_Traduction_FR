@@ -4,8 +4,8 @@ this.adorned_mail_shirt <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.adorned_mail_shirt";
-		this.m.Name = "Adorned Mail Shirt";
-		this.m.Description = "A heavy mail shirt covered by a quilted surcoat. An impressive and well-maintained piece, adorned with trophies and holy symbols.";
+		this.m.Name = "Chemise de mailles ornée";
+		this.m.Description = "Une lourde chemise de mailles recouverte d'une surcot matelassée. Une pièce impressionnante et bien entretenue, ornée de trophées et de symboles sacrés.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

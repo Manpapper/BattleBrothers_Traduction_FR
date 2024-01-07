@@ -4,8 +4,8 @@ this.manhunters_ledger_item <- this.inherit("scripts/items/item", {
 	{
 		this.item.create();
 		this.m.ID = "misc.manhunters_ledger";
-		this.m.Name = "Company Ledger";
-		this.m.Description = "A ledger detailing the members and contract terms of the company.";
+		this.m.Name = "Livre de comptes de la compagnie";
+this.m.Description = "Un registre détaillant les membres et les termes du contrat de la compagnie.";
 		this.m.Icon = "misc/inventory_ledger_item.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Misc;
