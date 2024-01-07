@@ -39,7 +39,7 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"lindwurm_slayer_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "{%name% is a supposedly famous monster hunter with a particular talent for slaying lindwurms. He says he is the son of Dirk the Dragonslayer, the monster hunter who ostensibly slew the last living dragon.}";
+			_event.m.Dude.getBackground().m.RawDescription = "{%name% est censé être un chasseur de monstres célèbre avec un talent particulier pour tuer des Lindwurms. Il prétend être le fils de Dirk le Tueur de Dragons, le chasseur de monstres qui aurait abattu le dernier dragon vivant.}";
 				_event.m.Dude.getBackground().buildDescription(true);
 
 				if (_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand) != null)
@@ -101,7 +101,7 @@ this.lindwurm_slayer_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"lindwurm_slayer_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "{%name% is a supposedly famous monster hunter with a particular talent for slaying lindwurms. He says he is the son of Dirk the Dragonslayer, the monster hunter who ostensibly slew the last living dragon.}";
+			_event.m.Dude.getBackground().m.RawDescription = "{%name% est censé être un célèbre chasseur de monstres avec un talent particulier pour tuer des Lindwurms. Il prétend être le fils de Dirk le Tueur de Dragons, le chasseur de monstres qui aurait abattu le dernier dragon vivant.}";
 				_event.m.Dude.getBackground().buildDescription(true);
 
 				if (_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand) != null)
