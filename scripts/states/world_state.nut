@@ -3202,7 +3202,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				local faction = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs);
 				local party = faction.spawnEntity(this.m.LastTileHovered, "Orc Marauders", false, this.Const.World.Spawn.OrcRaiders, 200);
 				party.getSprite("banner").setBrush("banner_orcs_04");
-				party.setDescription("A band of menacing orcs, greenskinned and towering any man.");
+				party.setDescription("Une bande d'orcs menaçants, à la peau verte et imposant n'importe quel homme.");
 				local c = party.getController();
 				local ambush = this.new("scripts/ai/world/orders/ambush_order");
 				c.addOrder(ambush);

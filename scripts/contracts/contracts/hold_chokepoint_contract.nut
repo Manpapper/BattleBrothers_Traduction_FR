@@ -284,7 +284,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 						});
 						local party = enemyNobleHouse.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.Noble, (this.Math.rand(100, 120) + this.Flags.get("Wave") * 10 + (this.Flags.get("IsAlliedReinforcements") ? 50 : 0)) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 						party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + enemyNobleHouse.getBannerString());
-						party.setDescription("Professional soldiers in service to local lords.");
+						party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 						party.getLoot().Money = this.Math.rand(50, 200);
 						party.getLoot().ArmorParts = this.Math.rand(0, 25);
 						party.getLoot().Medicine = this.Math.rand(0, 3);
@@ -908,7 +908,7 @@ this.hold_chokepoint_contract <- this.inherit("scripts/contracts/contract", {
 		});
 		local party = cityState.spawnEntity(tiles[0].Tile, "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.Southern, this.Math.rand(100, 150) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + cityState.getBannerString());
-		party.setDescription("Conscripted soldiers loyal to their city state.");
+		party.setDescription("Soldats enrôlés fidèles à leur cité-état.");
 		party.getLoot().Money = this.Math.rand(50, 200);
 		party.getLoot().ArmorParts = this.Math.rand(0, 25);
 		party.getLoot().Medicine = this.Math.rand(0, 3);

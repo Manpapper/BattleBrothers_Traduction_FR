@@ -114,7 +114,7 @@ this.hunting_schrats_contract <- this.inherit("scripts/contracts/contract", {
 				local tile = this.Contract.getTileToSpawnLocation(playerTile, numWoods >= 12 ? 6 : 3, 11, disallowedTerrain);
 				local party;
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Beasts).spawnEntity(tile, "Schrats", false, this.Const.World.Spawn.Schrats, 100 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				party.setDescription("A creature of bark and wood, blending between trees and shambling slowly, its roots digging through the soil.");
+				party.setDescription("Une créature d'écorce et de bois, se fondant entre les arbres et marchant lentement, ses racines creusant le sol.");
 				party.setFootprintType(this.Const.World.FootprintsType.Schrats);
 				party.setAttackableByAI(false);
 				party.setFootprintSizeOverride(0.75);

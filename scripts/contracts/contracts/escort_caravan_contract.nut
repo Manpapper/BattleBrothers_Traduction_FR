@@ -1185,7 +1185,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			if (bandits_dist <= goblins_dist && bandits_dist <= orcs_dist && bandits_dist <= barbarians_dist && bandits_dist <= nomads_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(tile, "Brigands", false, this.Const.World.Spawn.BanditRaiders, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("A rough and tough band of brigands preying on the weak.");
+				party.setDescription("Une bande de brigands rudes et coriaces s'attaquant aux faibles.");
 				party.setFootprintType(this.Const.World.FootprintsType.Brigands);
 				party.getLoot().Money = this.Math.rand(50, 100);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1219,7 +1219,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			else if (goblins_dist <= bandits_dist && goblins_dist <= orcs_dist && goblins_dist <= barbarians_dist && goblins_dist <= nomads_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(tile, "Goblin Raiders", false, this.Const.World.Spawn.GoblinRaiders, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("A band of mischievous goblins, small but cunning and not to be underestimated.");
+				party.setDescription("Une bande de gobelins espiègles, petits mais rusés et à ne pas sous-estimer.");
 				party.setFootprintType(this.Const.World.FootprintsType.Goblins);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
 				party.getLoot().Medicine = this.Math.rand(0, 2);
@@ -1244,7 +1244,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			else if (barbarians_dist <= goblins_dist && barbarians_dist <= bandits_dist && barbarians_dist <= orcs_dist && barbarians_dist <= nomads_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians).spawnEntity(tile, "Barbarians", false, this.Const.World.Spawn.Barbarians, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("A warband of barbarian tribals.");
+				party.setDescription("Une bande de guerre de tribus barbares.");
 				party.setFootprintType(this.Const.World.FootprintsType.Barbarians);
 				party.getLoot().Money = this.Math.rand(0, 50);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1285,7 +1285,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			else if (nomads_dist <= barbarians_dist && nomads_dist <= goblins_dist && nomads_dist <= bandits_dist && nomads_dist <= orcs_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).spawnEntity(tile, "Nomads", false, this.Const.World.Spawn.NomadRaiders, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("A band of desert raiders preying on anyone trying to cross the seas of sand.");
+				party.setDescription("Une bande de pillards du désert s'attaquant à quiconque tente de traverser les mers de sable.");
 				party.setFootprintType(this.Const.World.FootprintsType.Nomads);
 				party.getLoot().Money = this.Math.rand(50, 200);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1315,7 +1315,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			else
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Orc Marauders", false, this.Const.World.Spawn.OrcRaiders, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("A band of menacing orcs, greenskinned and towering any man.");
+				party.setDescription("Une bande d'orcs menaçants, à la peau verte et imposant n'importe quel homme.");
 				party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 				party.getLoot().ArmorParts = this.Math.rand(0, 25);
 				party.getLoot().Ammo = this.Math.rand(0, 10);

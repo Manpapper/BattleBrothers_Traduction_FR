@@ -148,7 +148,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 
 					local party = f.spawnEntity(this.Contract.m.Destination.getTile(), candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Company", true, this.Const.World.Spawn.Noble, this.Math.rand(100, 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-					party.setDescription("Professional soldiers in service to local lords.");
+					party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 					party.getLoot().Money = this.Math.rand(50, 200);
 					party.getLoot().ArmorParts = this.Math.rand(0, 25);
 					party.getLoot().Medicine = this.Math.rand(0, 3);
@@ -1204,7 +1204,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 
 		local party = f.spawnEntity(tiles[0].Tile, "Regiment of " + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.Southern, this.Math.rand(100, 150) * this.getScaledDifficultyMult());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Conscripted soldiers loyal to their city state.");
+		party.setDescription("Soldats enrôlés fidèles à leur cité-état.");
 		party.getLoot().Money = this.Math.rand(50, 200);
 		party.getLoot().ArmorParts = this.Math.rand(0, 25);
 		party.getLoot().Medicine = this.Math.rand(0, 3);
@@ -1312,7 +1312,7 @@ this.defend_holy_site_southern_contract <- this.inherit("scripts/contracts/contr
 
 		local party = f.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Company", true, this.Const.World.Spawn.Noble, (this.m.Flags.get("IsEnemyLuredAway") ? 130 : 160) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Professional soldiers in service to local lords.");
+		party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 		party.setAttackableByAI(false);
 		party.setAlwaysAttackPlayer(true);
 		party.getLoot().Money = this.Math.rand(50, 200);

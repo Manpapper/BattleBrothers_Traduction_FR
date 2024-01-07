@@ -1689,7 +1689,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 		local party = enemyFaction.spawnEntity(tile, this.m.Origin.getOwner().getName() + " Army", true, this.Const.World.Spawn.Noble, 200 * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + enemyFaction.getBannerString());
 		party.getSprite("banner").setBrush(enemyFaction.getBannerSmall());
-		party.setDescription("Professional soldiers in service to local lords.");
+		party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 		party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 		party.getLoot().Money = this.Math.rand(50, 200);
 		party.getLoot().ArmorParts = this.Math.rand(0, 25);
@@ -1761,7 +1761,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 		local party = enemyFaction.spawnEntity(tile, "Supply Caravan", false, this.Const.World.Spawn.NobleCaravan, this.Math.rand(100, 150));
 		party.getSprite("base").Visible = false;
 		party.setMirrored(true);
-		party.setDescription("A caravan with armed escorts transporting provisions, supplies and equipment between settlements.");
+		party.setDescription("Une caravane accompagnée d'escortes armées transportant des provisions, des fournitures et du matériel entre les colonies.");
 		party.addToInventory("supplies/ground_grains_item");
 		party.addToInventory("supplies/ground_grains_item");
 		party.addToInventory("supplies/ground_grains_item");
@@ -1851,7 +1851,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 
 			lastTile = tile;
 			local party = f.spawnEntity(tile, castles[this.Math.rand(0, castles.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.Noble, castles[this.Math.rand(0, castles.len() - 1)].getResources());
-			party.setDescription("Professional soldiers in service to local lords.");
+			party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 			party.setVisibilityMult(2.5);
 
 			if (i == 0)

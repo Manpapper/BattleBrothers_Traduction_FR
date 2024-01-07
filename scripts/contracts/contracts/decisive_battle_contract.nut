@@ -856,7 +856,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 				local tile = this.Contract.getTileToSpawnLocation(playerTile, 5, 8);
 				local party = this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).spawnEntity(tile, "Scouts", false, this.Const.World.Spawn.Noble, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				party.getSprite("banner").setBrush(this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).getBannerSmall());
-				party.setDescription("Professional soldiers in service to local lords.");
+				party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 				party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 				this.Contract.m.UnitsSpawned.push(party);
 				party.getLoot().Money = this.Math.rand(50, 100);
@@ -1243,7 +1243,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 				party.setVisibleInFogOfWar(true);
 				party.setImportant(true);
 				party.setDiscovered(true);
-				party.setDescription("A caravan with armed escorts transporting provisions, supplies and equipment between settlements.");
+				party.setDescription("Une caravane accompagnée d'escortes armées transportant des provisions, des fournitures et du matériel entre les colonies.");
 				party.setFootprintType(this.Const.World.FootprintsType.Caravan);
 				party.getFlags().set("IsCaravan", true);
 				party.setAttackableByAI(false);
@@ -1744,7 +1744,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 						local origin = settlements[this.Math.rand(0, settlements.len() - 1)];
 						local party = faction.spawnEntity(this.World.State.getPlayer().getTile(), origin.getName() + " Company", true, this.Const.World.Spawn.Noble, 150);
 						party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + faction.getBannerString());
-						party.setDescription("Professional soldiers in service to local lords.");
+						party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 						this.Contract.setState("Return");
 						return 0;
 					}

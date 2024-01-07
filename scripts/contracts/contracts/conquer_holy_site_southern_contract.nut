@@ -1009,7 +1009,7 @@ this.conquer_holy_site_southern_contract <- this.inherit("scripts/contracts/cont
 
 		local party = f.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Company", true, this.Const.World.Spawn.Noble, this.Math.rand(100, 140) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Professional soldiers in service to local lords.");
+		party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 		party.setAttackableByAI(false);
 		party.setAlwaysAttackPlayer(true);
 		party.getLoot().Money = this.Math.rand(50, 200);
