@@ -96,7 +96,7 @@ this.armor_upgrade <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto an armor carried by the currently selected character in order to permanently fuse. This item will be consumed in the process to give the following effects:"
+			text = "Faites un clic droit ou faites glisser sur une armure portée par le personnage actuellement sélectionné pour fusionner de manière permanente. Cet objet sera consommé dans le processus pour donner les effets suivants :"
 		});
 		return result;
 	}
@@ -108,7 +108,7 @@ this.armor_upgrade <- this.inherit("scripts/items/item", {
 			id = 15,
 			type = "text",
 			icon = "ui/icons/plus.png",
-			text = "Has an armor attachment which can be replaced, but will be destroyed in the process"
+			text = "A une amélioration d'armure qui peut être remplacée, mais sera détruite dans le processus"
 		});
 	}
 

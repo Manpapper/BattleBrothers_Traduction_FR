@@ -4,8 +4,8 @@ this.ifrit_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.ifrit_potion";
-		this.m.Name = "Potion of Stoneskin";
-		this.m.Description = "With this potion, a common man may take on the aspect of that most frightful of foes, the Ifrit of the southern deserts! Gain the devils\' stone skin and laugh at your foes as they break their weapons upon you! Side effects may include itchiness.";
+		this.m.Name = "Potion de Peau de Pierre";
+		this.m.Description = "Avec cette potion, un homme ordinaire peut prendre l'aspect du plus redoutable des ennemis, l'Ifrit des déserts du sud ! Obtenez la peau de pierre des démons et riez de vos ennemis alors qu'ils cassent leurs armes contre vous ! Des effets secondaires peuvent inclure des démangeaisons.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_28.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.ifrit_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 11,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "Turns skin hard and stone-like, granting [color=" + this.Const.UI.Color.PositiveValue + "]25[/color] points of natural armor"
+			text = "Transforme la peau en une substance dure comme la pierre, conférant [color=" + this.Const.UI.Color.PositiveValue + "]25[/color] points d'armure naturelle"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

@@ -3,7 +3,7 @@ this.raise_undead <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.raise_undead";
-		this.m.Name = "Raise Undead";
+		this.m.Name = "Lever les morts";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_26.png";
 		this.m.IconDisabled = "skills/active_01_sw.png";

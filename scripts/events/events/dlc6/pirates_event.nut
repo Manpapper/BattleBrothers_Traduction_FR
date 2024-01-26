@@ -214,7 +214,7 @@ this.pirates_event <- this.inherit("scripts/events/event", {
 					"slave_background"
 				]);
 				_event.m.Fisherman.setTitle("the Mariner");
-				_event.m.Fisherman.getBackground().m.RawDescription = "%name% travaillait sur les mers en tant que marin lorsque des pirates de la cité ont abordé son navire et l\'ont fait prisonnier avec son équipage. Par hasard, il s\'est retrouvé sous votre protection pour rembourser sa dette au Doreur.";
+				_event.m.Fisherman.getBackground().m.Raw = "%name% travaillait sur les mers en tant que marin lorsque des pirates de la cité ont abordé son navire et l\'ont fait prisonnier avec son équipage. Par hasard, il s\'est retrouvé sous votre protection pour rembourser sa dette au Doreur.";
 				_event.m.Fisherman.getBackground().buildDescription(true);
 				_event.m.Fisherman.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand));
 				_event.m.Fisherman.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand));

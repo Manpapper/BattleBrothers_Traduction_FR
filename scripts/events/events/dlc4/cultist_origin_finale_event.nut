@@ -99,7 +99,7 @@ this.cultist_origin_finale_event <- this.inherit("scripts/events/event", {
 				this.World.getPlayerRoster().remove(_event.m.Sacrifice);
 				this.World.Assets.getStash().makeEmptySlots(1);
 				local item = this.new("scripts/items/armor/legendary/armor_of_davkul");
-				item.m.Description = "A grisly aspect of Davkul, an ancient power not from this world, and the last remnants of " + _event.m.Sacrifice.getName() + " from whose body it has been fashioned. It shall never break, but instead keep regrowing its scarred skin on the spot.";
+				item.m.Description = "Un aspect sinistre de Davkul, une ancienne puissance non originaire de ce monde, et les derniers vestiges de " + _event.m.Sacrifice.getName() + " à partir duquel il a été façonné. Il ne se brisera jamais, mais continuera plutôt à faire repousser sa peau cicatrisée sur place.";
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,

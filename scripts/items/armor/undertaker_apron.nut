@@ -4,8 +4,8 @@ this.undertaker_apron <- this.inherit("scripts/items/armor/armor", {
 	{
 		this.armor.create();
 		this.m.ID = "armor.body.undertaker_apron";
-		this.m.Name = "Undertaker\'s Apron";
-		this.m.Description = "A thick leather apron that provides protection against light cuts and scratches.";
+		this.m.Name = "Tablier de croque-mort";
+this.m.Description = "Un tablier en cuir épais qui offre une protection contre les coupures légères et les égratignures.";
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 110;

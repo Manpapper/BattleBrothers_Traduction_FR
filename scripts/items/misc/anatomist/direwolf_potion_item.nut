@@ -4,8 +4,8 @@ this.direwolf_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.direwolf_potion";
-		this.m.Name = "Potion of Blade Dancing";
-		this.m.Description = "This humoural concoction, borne from research into the dreaded direwolf, will turn even the clumsiest oaf into a lithe dancer of a warrior, able to gracefully move with the tides of battle long after lesser men succumb to fatigue! Mild akathisia after consuming is normal and expected.";
+		this.m.Name = "Potion de la Danse des Lames";
+		this.m.Description = "Cette concoction humorale, issue de recherches sur le redoutable loup-dire, transformera même le plus maladroit des balourds en un guerrier agile, capable de se mouvoir gracieusement avec les marées de la bataille bien après que des hommes moins vaillants succombent à la fatigue ! Une légère akathisie après la consommation est normale et prévue.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_26.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.direwolf_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Attacks that miss have [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of their Fatigue cost refunded"
+			text = "Les attaques qui échouent remboursent [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] de leur coût en Fatigue"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

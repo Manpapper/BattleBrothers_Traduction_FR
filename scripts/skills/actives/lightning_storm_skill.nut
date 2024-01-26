@@ -7,7 +7,7 @@ this.lightning_storm_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.lightning_storm";
-		this.m.Name = "Lightning Strike";
+		this.m.Name = "Frappe Éclair";
 		this.m.Description = "";
 		this.m.KilledString = "Electrocuted";
 		this.m.Icon = "skills/active_216.png";

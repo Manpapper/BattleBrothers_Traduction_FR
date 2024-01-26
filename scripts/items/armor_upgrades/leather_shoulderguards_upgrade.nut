@@ -4,9 +4,9 @@ this.leather_shoulderguards_upgrade <- this.inherit("scripts/items/armor_upgrade
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.leather_shoulderguards";
-		this.m.Name = "Leather Shoulderguards";
-		this.m.Description = "Studded leather shoulderguards can help in making even light armors a little bit more resilient.";
-		this.m.ArmorDescription = "Shoulderguards made of studded leather have been added to this armor for additional protection.";
+		this.m.Name = "Protège-Épaules en Cuir Clouté";
+		this.m.Description = "Des protège-épaules en cuir clouté peuvent contribuer à rendre même les armures légères un peu plus résilientes.";
+		this.m.ArmorDescription = "Des protège-épaules en cuir clouté ont été ajoutés à cette armure pour une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_08.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_08.png";
@@ -29,7 +29,7 @@ this.leather_shoulderguards_upgrade <- this.inherit("scripts/items/armor_upgrade
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Durabilité"
 		});
 		return result;
 	}

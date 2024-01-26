@@ -39,7 +39,7 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[0].setStartValuesEx([
 			"farmhand_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "%name% is a farmer\'s son, and presumably wishes to be the father of his own son at some point. For now, he\'s with you which is quite a regrettable clash between dreams and reality.";
+		bros[0].getBackground().m.RawDescription = "%name% est le fils d'un fermier et souhaite probablement être le père de son propre fils à un moment donné. Pour l'instant, il est avec toi, ce qui constitue un regrettable conflit entre les rêves et la réalité.";
 		bros[0].improveMood(3.0, "Has recently fallen in love");
 		local items = bros[0].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -47,7 +47,7 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[1].setStartValuesEx([
 			"farmhand_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "%name% owned a farmstead that has long since gone underfoot of countless passing armies, including the very ones he has fought for. His \'allegiance\' to you is arguably the result of an empty belly more than anything.";
+		bros[1].getBackground().m.RawDescription = "%name% possédait une ferme qui a depuis longtemps succombé aux innombrables armées passantes, y compris celles pour lesquelles il a combattu. Son 'allégeance' envers toi est sans doute le résultat d'un ventre vide plus que de tout autre chose.";
 		bros[1].worsenMood(0.5, "Was involved in a brawl");
 		bros[1].addLightInjury();
 		local items = bros[1].getItems();
@@ -56,7 +56,7 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[2].setStartValuesEx([
 			"poacher_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "It is a common joke that %name% is in fact a nobleman hiding away from the world, but to the best of your knowledge he was a simple poacher. The grind of the world got him to where he is today, not much else need be said other than you hope he gets back on his feet.";
+		bros[2].getBackground().m.RawDescription = "C'est une blague courante que %name% est en réalité un noble se cachant du monde, mais selon vos connaissances, il était simplement un braconnier. Le dur labeur du monde l'a amené là où il est aujourd'hui, il n'y a pas grand-chose d'autre à dire sinon que vous espérez qu'il se remettra sur pied.";
 		bros[2].worsenMood(0.5, "Was involved in a brawl");
 		bros[2].addLightInjury();
 		local items = bros[2].getItems();
@@ -67,7 +67,7 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 			"thief_background",
 			"gambler_background"
 		]);
-		bros[3].getBackground().m.RawDescription = "You notice that %name% hides from certain noblemen. It is likely that he is a common criminal at large for some petty crime, but so long as he fights well it is no business to you.";
+		bros[3].getBackground().m.RawDescription = "Tu remarques que %name% se cache de certains nobles. Il est probable qu'il soit un criminel commun en fuite pour quelque petit crime, mais tant qu'il se bat bien, cela ne te concerne pas.";
 		bros[3].improveMood(1.5, "Stole someone\'s scramasax");
 		items = bros[3].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -75,13 +75,12 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[4].setStartValuesEx([
 			"daytaler_background"
 		]);
-		bros[4].getBackground().m.RawDescription = "A daytaler and common laborer, %name% would rather join your outfit than go back to wasting his body building some nobleman\'s new fancy foyer.";
-		bros[4].worsenMood(0.5, "Was involved in a brawl");
+		bros[4].getBackground().m.RawDescription = "Un jourtravailleur et ouvrier ordinaire, %name% préférerait rejoindre ta troupe que de retourner gaspiller son corps à construire le nouveau foyer fantaisiste d'un noble.";
 		bros[4].addLightInjury();
 		bros[5].setStartValuesEx([
 			"miller_background"
 		]);
-		bros[5].getBackground().m.RawDescription = "Seeking riches, %name% has come to the right place in your newfound mercenary band. Unfortunately, his background is in farming, milling, and laying stone, particularly none of which he was any good at.";
+		bros[5].getBackground().m.RawDescription = "À la recherche de richesse, %name% est venu au bon endroit dans ta nouvelle bande de mercenaires. Malheureusement, son passé se situe dans l'agriculture, la meunerie et la pose de pierre, domaines dans lesquels il n'était particulièrement doué.";
 		bros[5].improveMood(1.0, "Looks forward to becoming rich as a sellsword");
 		local items = bros[5].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -89,12 +88,12 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[6].setStartValuesEx([
 			"fisherman_background"
 		]);
-		bros[6].getBackground().m.RawDescription = "%name% states he was a sailor prior to coming inland and falling in with the militia and now your mercenary band. He hopes to eventually own a boat and put its sails to the open ocean. You hope he can do that someday, truly.";
+		bros[6].getBackground().m.RawDescription = "%name% déclare qu'il était marin avant de venir à l'intérieur des terres et de se joindre à la milice, puis à ta bande de mercenaires. Il espère éventuellement posséder un bateau et mettre ses voiles à l'océan ouvert. Tu espères qu'il pourra le faire un jour, vraiment.";
 		bros[6].worsenMood(0.25, "Feels somewhat sickly of late");
 		bros[7].setStartValuesEx([
 			"militia_background"
 		]);
-		bros[7].getBackground().m.RawDescription = "%name% has apparently been in many militias, all of which eventually dissolved for one reason or another. At no point has he made any money in any of them, so he hopes to changes that with this whole new sellswording schtick.";
+		bros[7].getBackground().m.RawDescription = "%name% a apparemment été dans de nombreuses milices, toutes ayant finalement disparu pour une raison ou une autre. À aucun moment il n'a gagné d'argent dans aucune d'entre elles, alors il espère changer cela avec ce nouveau numéro de mercenariat.";
 		bros[7].improveMood(3.0, "Has recently become a father");
 		bros[7].m.PerkPoints = 0;
 		bros[7].m.LevelUps = 0;
@@ -102,19 +101,19 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[8].setStartValuesEx([
 			"minstrel_background"
 		]);
-		bros[8].getBackground().m.RawDescription = "A proper lad, %name% enjoys carousing ladies at the pub and chasing skirt in the church. You get the sense he\'s only tagged along to spread his sense of \'fun\' around the world.";
+		bros[8].getBackground().m.RawDescription = "Un vrai gars, %name% aime faire la fête avec les dames au pub et courir les jupons à l'église. Tu as l'impression qu'il n'est venu que pour répandre son sens du 'plaisir' dans le monde.";
 		local items = bros[8].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.equip(this.new("scripts/items/weapons/lute"));
 		bros[9].setStartValuesEx([
 			"daytaler_background"
 		]);
-		bros[9].getBackground().m.RawDescription = "Daytaler, laborer, caravan hand, sailor, militiaman, %name%\'s done a bit of it all. Hopefully this new foray into mercenary work will stick for him.";
+		bros[9].getBackground().m.RawDescription = "Daytaler, ouvrier, homme de caravane, marin, milicien, %name% a tout fait un peu. Espérons que cette nouvelle incursion dans le travail de mercenaire lui convienne.";
 		bros[9].worsenMood(1.0, "Had his trusty scramasax stolen");
 		bros[10].setStartValuesEx([
 			"militia_background"
 		]);
-		bros[10].getBackground().m.RawDescription = "Like yourself, %name% was fed up with militias being overused to solve the crises of unprepared nobles. He was arguably the most earnest of the men in joining the transition to mercenary work.";
+		bros[10].getBackground().m.RawDescription ="Comme toi, %name% en avait assez que les milices soient trop souvent utilisées pour résoudre les crises de nobles mal préparés. Il était peut-être le plus sincère des hommes à rejoindre la transition vers le travail de mercenaire.";
 		bros[10].worsenMood(0.5, "Disliked that some members of the militia were involved in a brawl");
 		bros[10].m.PerkPoints = 0;
 		bros[10].m.LevelUps = 0;
@@ -124,7 +123,7 @@ this.militia_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 			"tailor_background",
 			"shepherd_background"
 		]);
-		bros[11].getBackground().m.RawDescription = "%name% is, ostensibly, running away from his wife. You met her once and approve his escape plan entirely, and not just because it affords you another body on the front line.That wench is genuinely crazy.";
+		bros[11].getBackground().m.RawDescription = "%name% est, apparemment, en train de fuir sa femme. Tu l'as rencontrée une fois et approuves entièrement son plan d'évasion, et pas seulement parce que cela te procure un autre corps sur la ligne de front. Cette mégère est vraiment folle.";
 		bros[11].improveMood(1.0, "Managed to get away from his wife");
 		this.World.Assets.m.BusinessReputation = -100;
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));

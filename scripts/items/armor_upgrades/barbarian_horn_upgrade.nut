@@ -4,9 +4,9 @@ this.barbarian_horn_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.barbarian_horn";
-		this.m.Name = "Horn and Bone";
-		this.m.Description = "The ceremonial adornment of a self-proclaimed barbarian king. The rare and durable horns act as an suprisingly effective armor.";
-		this.m.ArmorDescription = "This armor has been adorned with ceremonial horns by barbarian craftsmen.";
+		this.m.Name = "Corne et Os";
+		this.m.Description = "L'ornement cérémonial d'un roi autoproclamé barbare. Les cornes rares et durables agissent comme une armure étonnamment efficace.";
+		this.m.ArmorDescription = "Cette armure a été ornée de cornes cérémoniales par des artisans barbares.";
 		this.m.Icon = "armor_upgrades/upgrade_23.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_23.png";
@@ -29,13 +29,13 @@ this.barbarian_horn_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+40[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+40[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Fatigue Maximale"
 		});
 		return result;
 	}

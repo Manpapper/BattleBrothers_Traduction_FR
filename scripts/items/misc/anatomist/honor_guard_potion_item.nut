@@ -4,8 +4,8 @@ this.honor_guard_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.honor_guard_potion";
-		this.m.Name = "Elixir of Boneflesh";
-		this.m.Description = "The undead are rightly feared for their unflagging purpose and their unbreakable will, but any experienced warrior knows of a third horror, the dread creatures resistance to spears and arrows. With this concoction, the living may obtain such an aegis as well!";
+		this.m.Name = "Élixir d'Os et de Chair";
+		this.m.Description = "Les morts-vivants sont à juste titre craints pour leur dessein inflexible et leur volonté inébranlable, mais tout guerrier expérimenté connaît une troisième horreur, la résistance redoutable de ces créatures aux lances et aux flèches. Avec cette concoction, les vivants peuvent acquérir un tel aegis également !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_19.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.honor_guard_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Take between [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] and [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] less damage from piercing attacks, such as those from bows or spears"
+			text = "Prenez entre [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] et [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] de dégâts en moins des attaques perforantes, telles que celles provenant d'arcs ou de lances"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

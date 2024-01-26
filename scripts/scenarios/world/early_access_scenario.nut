@@ -33,17 +33,17 @@ this.early_access_scenario <- this.inherit("scripts/scenarios/world/starting_sce
 		bros[0].setStartValuesEx([
 			"companion_1h_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "{You saved %name%\'s life in a battle against brigands, and he returned the favor in an alley ambush by thieves. Given that common criminals are a few levels beneath brigands, you often joke with him that he is still a little behind on the \'saving each other\'s asses\' debt.}";
+		bros[0].getBackground().m.RawDescription = "{Vous avez sauvé la vie de %name% lors d'une bataille contre des brigands, et il a rendu la pareille lors d'une embuscade dans une ruelle par des voleurs. Étant donné que les criminels ordinaires sont quelques niveaux en dessous des brigands, vous plaisantez souvent avec lui en disant qu'il est encore un peu en retard dans la dette de 'sauver les fesses de l'autre'.}";
 		bros[0].setPlaceInFormation(3);
 		bros[1].setStartValuesEx([
 			"companion_2h_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "{Whatever is wrong with %name% you hope he never fixes it. A character with a particular taste for battling, whoring, gambling, singing, dogfighting, skirt chasing, weirdly dish washing, vomiting and, of course, drinking, he has always been a gift to have around. He also just happens to be an excellent fighter in his own right.}";
+		bros[1].getBackground().m.RawDescription = "{Quoi qu'il en soit de mal avec %name%, vous espérez qu'il ne le répare jamais. Un personnage avec un goût particulier pour la bagarre, la débauche, le jeu, le chant, les combats de chiens, la poursuite des jupons, le lavage étrange de la vaisselle, les vomissements et, bien sûr, la boisson, il a toujours été un cadeau à avoir autour. Il se trouve également être un excellent combattant en son propre droit.}";
 		bros[1].setPlaceInFormation(4);
 		bros[2].setStartValuesEx([
 			"companion_ranged_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "You crossed paths with %name% a number of times prior to his joining the company. First time you were both simple laborers. The second time you were sellswords. And now is the third go of it with him joining your company. If all goes well, he\'ll finally stick around this time and you\'ll both find the riches you seek.";
+		bros[2].getBackground().m.RawDescription = "Vous avez croisé la route de %name% à plusieurs reprises avant qu'il ne rejoigne la compagnie. La première fois, vous étiez tous deux de simples ouvriers. La deuxième fois, vous étiez des mercenaires. Et maintenant, c'est la troisième fois avec lui qui rejoint votre compagnie. Si tout se passe bien, il restera enfin cette fois-ci et vous trouverez tous deux les richesses que vous recherchez.";
 		bros[2].setPlaceInFormation(5);
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));

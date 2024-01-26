@@ -4,8 +4,8 @@ this.oathtaker_skull_02_item <- this.inherit("scripts/items/accessory/accessory"
 	{
 		this.accessory.create();
 		this.m.ID = "accessory.oathtaker_skull_02";
-		this.m.Name = "Young Anselm\'s Skull and Jawbone";
-		this.m.Description = "The skull of Young Anselm, the first Oathtaker, worn alongside a reliquary containing his fractured jawbone. To enter battle adorned with such a powerful relic is to have complete assurance in victory, for who could be defeated with Young Anselm at their side?";
+		this.m.Name = "Crâne et mâchoire de Jeune Anselm";
+		this.m.Description = "Le crâne de Jeune Anselm, le premier Jureur, porté aux côtés d'un reliquaire contenant sa mâchoire fracturée. Entrer en bataille orné d'une relique aussi puissante, c'est avoir l'assurance totale de la victoire, car qui pourrait être vaincu avec Jeune Anselm à ses côtés ?";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -63,7 +63,7 @@ this.oathtaker_skull_02_item <- this.inherit("scripts/items/accessory/accessory"
 			id = 11,
 			type = "text",
 			icon = "ui/icons/morale.png",
-			text = "Will start combat at confident morale if permitted by mood"
+			text = "Commencera le combat avec une moralité confiante si permis par l'humeur"
 		});
 		return result;
 	}

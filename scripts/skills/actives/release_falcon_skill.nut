@@ -5,8 +5,8 @@ this.release_falcon_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.release_falcon";
-		this.m.Name = "Release Falcon";
-		this.m.Description = "Release your falcon to gain vision of the surrounding 12 tiles for the duration of the current round. Can be used once per battle.";
+		this.m.Name = "Libérer le Faucon";
+		this.m.Description = "Libérez votre faucon pour gagner une vision des 12 tuiles environnantes pendant la durée du tour en cours. Peut être utilisé une fois par combat.";
 		this.m.Icon = "skills/active_104.png";
 		this.m.IconDisabled = "skills/active_104_sw.png";
 		this.m.Overlay = "active_104";

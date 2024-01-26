@@ -7,7 +7,7 @@ this.orc_camp_Fireplace <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "A Fireplace. You don\'t want to know what they\'re cooking here.";
+		return "Une cheminée. Vous ne voulez pas savoir ce qu'ils cuisinent ici.";
 	}
 
 	function onInit()

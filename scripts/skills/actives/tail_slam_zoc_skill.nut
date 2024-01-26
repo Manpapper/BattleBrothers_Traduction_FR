@@ -3,7 +3,7 @@ this.tail_slam_zoc_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.tail_slam_zoc";
-		this.m.Name = "Tail Slam";
+		this.m.Name = "Écrasement de queue";
 		this.m.Description = "";
 		this.m.KilledString = "Crushed";
 		this.m.Icon = "skills/active_108.png";

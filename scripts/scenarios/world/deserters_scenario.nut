@@ -170,7 +170,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		}
 
 		local bros = roster.getAll();
-		bros[0].getBackground().m.RawDescription = "{Prior to his conscription into the army, %name% was a failed, illiterate baker. His poor work and frequent dessert errors made him prone to being pulled into military ranks. Having always hated the life, the deserter was quick to join your cause and company.}";
+		bros[0].getBackground().m.RawDescription = "{Avant d'être enrôlé dans l'armée, %name% était un boulanger raté et illettré. Son travail médiocre et ses erreurs fréquentes en pâtisserie le rendaient sujet à être attiré dans les rangs militaires. Ayant toujours détesté cette vie, le déserteur a rapidement rejoint votre cause et votre compagnie.}";
 		bros[0].getBackground().buildDescription(true);
 		local talents = bros[0].getTalents();
 		talents[this.Const.Attributes.MeleeSkill] = 2;
@@ -185,7 +185,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
 		items.equip(this.new("scripts/items/weapons/hatchet"));
-		bros[1].getBackground().m.RawDescription = "{A fine fighter by any judgment, %name% simply hated the low pay of being a soldier in the army. His pursuit of the sellsword\'s life makes sense. Though he is quite flighty, you believe his transient sense of allegiance will be buffered by a steady flow of good coin.}";
+		bros[1].getBackground().m.RawDescription = "{Un combattant accompli selon tout jugement, %name% détestait simplement le faible salaire d'un soldat dans l'armée. Sa poursuite de la vie de mercenaire a du sens. Bien qu'il soit assez volage, vous croyez que son sens transitoire de l'allégeance sera compensé par un flux constant de bonne monnaie.}";
 		bros[1].getBackground().buildDescription(true);
 		local talents = bros[1].getTalents();
 		talents[this.Const.Attributes.MeleeSkill] = 2;
@@ -200,7 +200,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
 		items.equip(this.new("scripts/items/weapons/shortsword"));
-		bros[2].getBackground().m.RawDescription = "{%name% is like many deserters. You can see the spirit of a fighter in him, but the heart for it is withering. It doesn\'t make him a coward, as many assume deserters to be, but instead simply a man who may need change. Hopefully the coin of mercenary work can provide it.}";
+		bros[2].getBackground().m.RawDescription = "{%name% est comme beaucoup de déserteurs. Vous pouvez voir l'esprit d'un combattant en lui, mais le cœur pour cela se flétrit. Cela ne fait pas de lui un lâche, comme beaucoup le supposent des déserteurs, mais simplement un homme qui peut avoir besoin de changement. Espérons que la monnaie du travail de mercenaire puisse le lui fournir.}";
 		bros[2].getBackground().buildDescription(true);
 		local talents = bros[2].getTalents();
 		talents[this.Const.Attributes.RangedSkill] = 2;

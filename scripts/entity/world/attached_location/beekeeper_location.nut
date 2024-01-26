@@ -5,7 +5,7 @@ this.beekeeper_location <- this.inherit("scripts/entity/world/attached_location"
 		this.attached_location.create();
 		this.m.Name = "Apiculteur";
 		this.m.ID = "attached_location.beekeeper";
-		this.m.Description = "Surrounded by humming bees, these small huts are home to beekeepers. The honey they produce is a precious ingredient to sweeten pastries and other foods.";
+		this.m.Description = "Entourées d'abeilles bourdonnantes, ces petites huttes sont le domicile des apiculteurs. Le miel qu'ils produisent est un ingrédient précieux pour sucrer les pâtisseries et d'autres aliments.";
 		this.m.Sprite = "world_bee_keeper_01";
 		this.m.SpriteDestroyed = "world_bee_keeper_01_ruins";
 	}

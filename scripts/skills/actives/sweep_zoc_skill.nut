@@ -5,7 +5,7 @@ this.sweep_zoc_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.sweep_zoc";
-		this.m.Name = "Sweeping Strike";
+		this.m.Name = "Coup balayant";
 		this.m.Description = "";
 		this.m.KilledString = "Smashed";
 		this.m.Icon = "skills/active_112.png";

@@ -4,8 +4,8 @@ this.fallen_hero_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.fallen_hero_potion";
-		this.m.Name = "Elixir of Perseverance";
-		this.m.Description = "This serum, developed from a substance found within certain extraordinary specimens of Wiederganger, allows a living man to gain some of the indefatigable perseverance of the loathsome undead warriors - with no loss of life! Some minor joint stiffness is to be expected.";
+		this.m.Name = "Élixir de Persévérance";
+		this.m.Description = "Ce sérum, développé à partir d'une substance trouvée dans certains spécimens extraordinaires de Wiederganger, permet à un homme vivant de gagner une partie de la persévérance inlassable des redoutables guerriers morts-vivants - sans perte de vie ! Quelques raideurs articulaires mineures sont à prévoir.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_23.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.fallen_hero_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Accumulate no Fatigue from enemy attacks, whether they hit or miss"
+			text = "N'accumulez aucune Fatigue des attaques ennemies, qu'elles touchent ou non"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

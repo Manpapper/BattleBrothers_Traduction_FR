@@ -25,7 +25,7 @@ this.charm_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.charm";
-		this.m.Name = "Charm";
+		this.m.Name = "Charme";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_120.png";
 		this.m.IconDisabled = "skills/active_120.png";

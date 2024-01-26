@@ -38,7 +38,7 @@ this.rangers_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[0].setStartValuesEx([
 			"hunter_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "{A bit of a devious runt, though a good man at heart. %name% used to hunt for his local liege, but when the nobleman died falling into an unseen ravine the hunter was blamed and kicked out of court. With some guile, he turned his hunting talents into poaching and fur trade. He is of a merchant\'s mind and was quick to engender the idea of mercenary work because of it.}";
+		bros[0].getBackground().m.RawDescription = "{Un peu rusé, bien qu'un bon homme au fond. %name% chassait autrefois pour son seigneur local, mais lorsque le noble est mort en tombant dans un ravin invisible, le chasseur a été accusé et expulsé de la cour. Avec un peu de ruse, il a transformé son talent de chasse en braconnage et commerce de fourrures. Il a l'esprit d'un marchand et a rapidement suscité l'idée du travail de mercenaire à cause de cela.}";
 		bros[0].setPlaceInFormation(3);
 		bros[0].m.Talents = [];
 		talents = bros[0].getTalents();
@@ -52,7 +52,7 @@ this.rangers_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[1].setStartValuesEx([
 			"poacher_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "{%name% fell into poaching after a drought ravaged his farmstead. Like most poachers, he is not truly of the criminal mind. Long grouped together in the hunting gangs, %name% was quick to nominate you as captain of the new sellsword outfit.}";
+		bros[1].getBackground().m.RawDescription = "{%name% s'est lancé dans le braconnage après qu'une sécheresse a ravagé sa ferme. Comme la plupart des braconniers, il n'a pas vraiment l'esprit criminel. Longtemps regroupé dans les gangs de chasse, %name% a rapidement fait de toi le capitaine du nouveau groupe de mercenaires.}";
 		bros[1].setPlaceInFormation(4);
 		bros[1].m.Talents = [];
 		talents = bros[1].getTalents();
@@ -68,7 +68,7 @@ this.rangers_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[2].setStartValuesEx([
 			"poacher_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "{A former jester whose gag was to shoot three water jugs out of the sky. You don\'t know how he got into poaching, and in fact seems rather bitter about some jester-related drama, but he is an excellent archer. He also likes to remind you that he is a far better shot than you.}";
+		bros[2].getBackground().m.RawDescription = "{Un ancien bouffon dont la plaisanterie était de tirer trois cruches d'eau dans le ciel. Tu ne sais pas comment il en est venu au braconnage, et en fait, il semble plutôt amer à propos de quelque drame lié au bouffon, mais il est un excellent archer. Il aime aussi te rappeler qu'il est un bien meilleur tireur que toi.}";
 		bros[2].setPlaceInFormation(5);
 		bros[2].m.Talents = [];
 		talents = bros[2].getTalents();

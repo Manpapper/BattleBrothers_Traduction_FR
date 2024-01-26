@@ -1024,7 +1024,7 @@ this.conquer_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 
 		local party = f.spawnEntity(tiles[0].Tile, "Régiment de" + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.Southern, this.Math.rand(100, 140) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Conscripted soldiers loyal to their city state.");
+		party.setDescription("Soldats enrôlés fidèles à leur cité-état.");
 		party.setAttackableByAI(false);
 		party.setAlwaysAttackPlayer(true);
 		party.getLoot().Money = this.Math.rand(50, 200);

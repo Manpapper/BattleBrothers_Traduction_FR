@@ -5,7 +5,7 @@ this.grant_night_vision_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.grant_night_vision";
-		this.m.Name = "Grant Night Vision";
+		this.m.Name = "Octroyer la Vision Nocturne";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_156.png";
 		this.m.IconDisabled = "skills/active_156.png";

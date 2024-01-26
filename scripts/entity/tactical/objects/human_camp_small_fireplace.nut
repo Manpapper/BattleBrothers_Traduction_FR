@@ -7,7 +7,7 @@ this.human_camp_small_Fireplace <- this.inherit("scripts/entity/tactical/entity"
 
 	function getDescription()
 	{
-		return "A foyer with a cauldron.";
+		return "Un foyer avec un chaudron.";
 	}
 
 	function onInit()

@@ -4,8 +4,8 @@ this.necrosavant_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.necrosavant_potion";
-		this.m.Name = "Potion of the Nightstalker";
-		this.m.Description = "Whoever drinks this incredible potion, produced with the ash of a Necrosavant, will find themselves in possession of the miraculous healing powers of the undead creatures! It does not grant the extended lifespan associated with the abominations, however - quite the opposite, in fact. This may be considered a feature should the imbiber get a bit too comfortable drinking blood.";
+		this.m.Name = "Potion du Pourchasseur Nocturne";
+		this.m.Description = "Celui qui boit cette potion incroyable, produite avec les cendres d'un Necrosavant, se trouvera en possession des pouvoirs de guérison miraculeux des créatures mortes-vivantes ! Cependant, elle ne confère pas la longévité accrue associée aux abominations, bien au contraire. Cela peut être considéré comme une caractéristique si le buveur devient un peu trop à l'aise à boire du sang.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_20.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.necrosavant_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Heal [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] of hitpoint damage inflicted on adjacent enemies that have blood"
+			text = "Soigne [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] des dégâts d'impact sur les ennemis adjacents qui ont du sang"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

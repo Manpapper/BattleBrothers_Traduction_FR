@@ -166,7 +166,7 @@ this.strange_scribe_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"minstrel_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "{%name% was found deploying his minstrel talents in street scamming. Vouched for by a fellow minstrel, he joined the %companyname% to seek out a life on the road. Hopefully the charlatan-turned-sellsword will be able to \'fake it til he makes it\', as he likes to say a little too often.}";
+				_event.m.Dude.getBackground().m.RawDescription = "{%name% a été trouvé déployant ses talents de ménestrel dans des escroqueries de rue. Recommandé par un collègue ménestrel, il a rejoint le %companyname% pour chercher une vie sur la route. Espérons que le charlatan devenu mercenaire pourra 'faire semblant jusqu'à ce qu'il réussisse', comme il aime le dire un peu trop souvent.}"
 				_event.m.Dude.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.Minstrel.getImagePath());
 				this.Characters.push(_event.m.Dude.getImagePath());

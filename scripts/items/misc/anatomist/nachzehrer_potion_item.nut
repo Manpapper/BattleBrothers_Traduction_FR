@@ -4,8 +4,8 @@ this.nachzehrer_potion_item <- this.inherit("scripts/items/misc/anatomist/anatom
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.nachzehrer_potion";
-		this.m.Name = "Potion of Flesh Knitting";
-		this.m.Description = "If one divorces the horror of the act from its utility, there are few phenomena more marvelous in nature than the Nachzehrer\'s ability to recover by eating the flesh of the dead. No longer! Now man himself may take on such qualities, and without committing crimes of conscience, to boot!";
+		this.m.Name = "Potion de Tricotage de Chair";
+		this.m.Description = "Si l'on sépare l'horreur de l'acte de son utilité, il y a peu de phénomènes plus merveilleux dans la nature que la capacité du Nachzehrer à récupérer en mangeant la chair des morts. Plus maintenant ! Désormais, l'homme lui-même peut acquérir de telles qualités, et cela sans commettre de crimes de conscience, qui plus est !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_36.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.nachzehrer_potion_item <- this.inherit("scripts/items/misc/anatomist/anatom
 			id = 11,
 			type = "text",
 			icon = "ui/icons/days_wounded.png",
-			text = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day"
+			text = "Réduit le temps nécessaire pour guérir de toute blessure d'un jour, jusqu'à un minimum d'un jour"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

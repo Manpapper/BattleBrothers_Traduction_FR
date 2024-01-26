@@ -3,7 +3,7 @@ this.line_breaker <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.line_breaker";
-		this.m.Name = "Line Breaker";
+		this.m.Name = "Perce-Ligne";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_53.png";
 		this.m.IconDisabled = "skills/active_53.png";

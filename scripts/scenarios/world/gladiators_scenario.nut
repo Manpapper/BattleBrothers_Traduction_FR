@@ -95,11 +95,12 @@ this.gladiators_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		bros[2].getItems().equip(this.new("scripts/items/weapons/oriental/qatal_dagger"));
 		bros[2].getItems().equip(this.new("scripts/items/tools/throwing_net"));
 		bros[2].improveMood(0.75, "Eager to prove himself outside the arena");
-		bros[0].getBackground().m.RawDescription = "{%fullname% thinks muscles make for glory. Wrong. Captain, it is I, " + bros[2].getName() + ", who commands the ladies of this realm. Need not ask me how. Behold! Look at it! Look at the size of it! Yeah. That\'s what I thought. Fools, train all you want, you can\'t have this!}";
+		bros[0].getBackground().m.RawDescription = "{%fullname% pense que les muscles font la gloire. Faux. Capitaine, c'est moi, " + bros[2].getName() + ", qui commande les dames de ce royaume. N'ayez pas besoin de me demander comment. Regardez ! Regardez ça ! Regardez la taille de ça ! Ouais. C'est ce que je pensais. Imbéciles, entraînez-vous autant que vous voulez, vous ne pouvez pas avoir ça !}";
 		bros[0].getBackground().buildDescription(true);
-		bros[1].getBackground().m.RawDescription = "{%fullname% is not the best warrior here, let\'s be clear. Captain, look at my muscles, is it not I, " + bros[0].getName() + ", who commands the greatest reward of life: the fear of one\'s own enemies! Look, if I lather a little and catch the light, the muscles gleam. Would it not be that the heavens were mistakened for above, when all the women say they find them right here, particularly here, upon my glorious pecs?}";
+		bros[0].getBackground().buildDescription(true);
+		bros[1].getBackground().m.RawDescription = "{%fullname% n'est pas le meilleur guerrier ici, soyons clairs. Capitaine, regardez mes muscles, n'est-ce pas moi, " + bros[0].getName() + ", qui commande la plus grande récompense de la vie : la peur de ses propres ennemis ! Regardez, si je me lave un peu et que je capture la lumière, les muscles brillent. Ne serait-ce pas que les cieux se trompaient d'en haut, quand toutes les femmes disent les trouver ici, particulièrement ici, sur mes pectoraux glorieux ?}";
 		bros[1].getBackground().buildDescription(true);
-		bros[2].getBackground().m.RawDescription = "{Why are you looking at %fullname%? Captain, it is I, " + bros[1].getName() + ", who is your greatest gladiator. I am the one who swept the legs of a lindwurm and choked it out with its own tail! What you bastards say? You call that a tall tale? Pah! \'Tis a horizontal lizard at best.}";
+		bros[2].getBackground().m.RawDescription = "{Pourquoi regardez-vous %fullname% ? Capitaine, c'est moi, " + bros[1].getName() + ", qui suis votre plus grand gladiateur. C'est moi qui ai balayé les jambes d'un Lindwurm et l'ai étranglé avec sa propre queue ! Que dites-vous, salauds ? Vous appelez ça un conte de grande envergure ? Pah ! C'est un lézard horizontal au mieux.}";
 		bros[2].getBackground().buildDescription(true);
 		this.World.Assets.m.BusinessReputation = 100;
 		this.World.Assets.getStash().resize(this.World.Assets.getStash().getCapacity() - 9);
@@ -195,7 +196,7 @@ this.gladiators_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			{
 				if (bro.getFlags().get("IsPlayerCharacter"))
 				{
-					bro.getBackground().m.RawDescription = "{%fullname% is somber about the passing of a good friend, but he looks to the future knowing that he has someone behind him at all times. Behind him in a brotherly way, that is. And spiritually. Brotherly and spiritually, only.}";
+					bro.getBackground().m.RawDescription = "{%fullname% est sombre à propos de la perte d'un bon ami, mais il regarde vers l'avenir en sachant qu'il a toujours quelqu'un derrière lui. Derrière lui d'une manière fraternelle, c'est-à-dire. Et spirituellement. Fraternellement et spirituellement, uniquement.}";
 					bro.getBackground().buildDescription(true);
 				}
 			}
@@ -208,7 +209,7 @@ this.gladiators_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			{
 				if (bro.getFlags().get("IsPlayerCharacter"))
 				{
-					bro.getBackground().m.RawDescription = "{You should know something, captain. I\'m glad you stay out of the fray. I haven\'t felt this alive in what must be ten years. And if you see me out there about to go down, you stay right where you are, because I\'ll be right where I want to be.}";
+					bro.getBackground().m.RawDescription = "{Tu devrais savoir quelque chose, capitaine. Je suis content que tu restes en dehors de la mêlée. Je n'ai pas ressenti cela depuis au moins dix ans. Et si tu me vois sur le point de tomber, reste bien où tu es, car je serai exactement là où je veux être.}";
 					bro.getBackground().buildDescription(true);
 				}
 			}

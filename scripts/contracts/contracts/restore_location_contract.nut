@@ -599,7 +599,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 		party.getSprite("banner").Visible = false;
 		party.getSprite("base").Visible = false;
 		party.setMirrored(true);
-		party.setDescription("A caravan of workers and building materials from " + this.m.Home.getName() + ".");
+		party.setDescription("Une caravane d'ouvriers et de matériaux de construction de " + this.m.Home.getName() + ".");
 		party.setFootprintType(this.Const.World.FootprintsType.Caravan);
 		party.setMovementSpeed(this.Const.World.MovementSettings.Speed * 0.5);
 		party.setLeaveFootprints(false);

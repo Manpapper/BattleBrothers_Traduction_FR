@@ -4,8 +4,8 @@ this.lindwurm_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.lindwurm_potion";
-		this.m.Name = "Tincture of Emberblood";
-		this.m.Description = "Feel your blood boil! Or, more to the point, don\'t! With this tincture, the burning blood of a lindwurm will flow through decidedly human veins, with the lucky subject none the wiser. Until they start bleeding, of course.";
+		this.m.Name = "Teinture de Sangembrasé";
+		this.m.Description = "Sentez votre sang bouillonner ! Ou, pour être plus précis, non ! Avec cette teinture, le sang brûlant d'un lindwurm coulera à travers des veines décidément humaines, le sujet chanceux n'y verrait que du feu. Jusqu'à ce qu'il commence à saigner, bien sûr.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_27.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.lindwurm_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Makes a character\'s blood burn with acid, damaging attackers in melee range whenever they deal hitpoint damage"
+			text = "Fait brûler le sang d'un personnage avec de l'acide, infligeant des dégâts aux attaquants en mêlée chaque fois qu'ils infligent des dégâts aux points de vie"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant la maladie"
 		});
 		return result;
 	}

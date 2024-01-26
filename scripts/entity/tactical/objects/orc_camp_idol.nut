@@ -2,12 +2,12 @@ this.orc_camp_idol <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Idol";
+		return "Idole";
 	}
 
 	function getDescription()
 	{
-		return "An idol erected by greenskins.";
+		return "Une idole érigée par les peaux-vertes.";
 	}
 
 	function onInit()

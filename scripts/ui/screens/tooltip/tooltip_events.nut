@@ -90,7 +90,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Locked Seat"
+					text = "Siège verrouillé"
 				},
 				{
 					id = 4,
@@ -760,7 +760,7 @@ this.tooltip_events <- {
 					{
 						id = 1,
 						type = "title",
-						text = "Your Lookout reports"
+						text = "Rapports de votre observateur"
 					}
 				];
 
@@ -1736,12 +1736,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Higher Level"
+					text = "Niveau Supérieur"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "This character already has experience in combat and starts with a higher level."
+					 text = "Ce personnage a déjà de l'expérience au combat et démarre avec un niveau plus élevé."
 				}
 			];
 
@@ -1848,12 +1848,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Map Seed"
+					text = "Graine de Carte"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "A map seed is a unique string that determines how the world in your campaign will look like. You can see the seed of ongoing campaigns in the game menu accessible by pressing the Escape key, and then share it with friends to have them play in the same world."
+					 text = "Une graine de carte est une chaîne unique qui détermine l'apparence du monde dans votre campagne. Vous pouvez voir la graine des campagnes en cours dans le menu du jeu accessible en appuyant sur la touche Échap, puis la partager avec des amis pour qu'ils jouent dans le même monde."
 				}
 			];
 
@@ -1918,7 +1918,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Veteran Difficulty"
+					text = "Difficulté Veteran"
 				},
 				{
 					id = 2,
@@ -1932,7 +1932,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Expert Difficulty"
+					text = "Difficulté Expert"
 				},
 				{
 					id = 2,
@@ -2016,12 +2016,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Unexplored Map"
+					text = "Carte Inexplorée"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "An optional way to play the game where the map is entirely unexplored and not visible to you at the start of your campaign. You\'ll have to discover everything on your own, which makes your campaign more difficult, but potentially also more exciting.\n\nRecommended only for experienced players that know what they\'re doing."
+					text = "Une façon facultative de jouer au jeu où la carte est entièrement inexplorée et n'est pas visible au début de votre campagne. Vous devrez tout découvrir par vous-même, ce qui rend votre campagne plus difficile, mais potentiellement aussi plus excitante.\n\nRecommandé uniquement pour les joueurs expérimentés qui savent ce qu'ils font."
 				}
 			];
 
@@ -2044,7 +2044,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "No Crisis"
+					text = "Pas de Crise"
 				},
 				{
 					id = 2,
@@ -2128,12 +2128,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Depth of Field"
+					text = "Profondeur de Champ"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Enabling the Depth of Field effect will render height levels below the camera in tactical combat slightly out of focus (i.e. blurry), giving more of a miniature vibe and making it easier to differentiate heights, but potentially at the expense of some detail."
+					text = "Activer l'effet de profondeur de champ rendra légèrement floues les hauteurs sous la caméra en combat tactique (c'est-à-dire floues), donnant plus une ambiance de miniature et facilitant la différenciation des hauteurs, mais potentiellement au détriment de certains détails."
 				}
 			];
 
@@ -2147,7 +2147,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Change the scale of the user interface, i.e. menus and texts."
+					 text = "Changez l'échelle de l'interface utilisateur, c'est-à-dire des menus et du texte."
 				}
 			];
 
@@ -2161,7 +2161,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Change the scale of the scene, i.e. everything that isn\'t the user interface, such as the characters shown on the battlefield."
+					 text = "Changez l'échelle de la scène, c'est-à-dire tout ce qui n'est pas l'interface utilisateur, comme les personnages affichés sur le champ de bataille."
 				}
 			];
 
@@ -2184,12 +2184,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Drag with Mouse"
+					 text = "Glisser avec la souris"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Scroll the screen by pressing the left mouse button and dragging it (default)."
+					text = "Faites défiler l'écran en maintenant enfoncé le bouton gauche de la souris et en le faisant glisser (par défaut)."
 				}
 			];
 
@@ -2198,12 +2198,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Use Hardware Cursor"
+					text = "Utiliser le curseur matériel"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Using the hardware cursor minimizes input lag when moving the mouse in the game. Disable this if you experience problems with the mouse cursor."
+					 text = "L'utilisation du curseur matériel réduit au minimum le décalage d'entrée lors du déplacement de la souris dans le jeu. Désactivez cela si vous rencontrez des problèmes avec le curseur de la souris."
 				}
 			];
 
@@ -2212,12 +2212,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Use Hardware Sound"
+					text = "Utiliser le son matériel"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Use hardware-accelerated sound playback for better performance. Disable this if you experience any issues related to sound."
+					 text = "Utilisez la lecture du son accélérée par matériel pour de meilleures performances. Désactivez cela si vous rencontrez des problèmes liés au son."
 				}
 			];
 
@@ -2226,12 +2226,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Always Focus AI Movement"
+					text = "Centrer toujours sur le mouvement de l'IA"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Always have the camera centered on any AI movement visible to you."
+					text = "Ayez toujours la caméra centrée sur tout mouvement de l'IA visible pour vous."
 				}
 			];
 
@@ -2240,12 +2240,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Auto-Adjust Height Levels"
+					text = "Ajustement automatique des niveaux de hauteur"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Automatically adjust the camera\'s height level to see the currently active character in combat. Disabling this will prevent the camera from changing height levels when it isn\'t strictly necessary, but will also require manual adjustment of height levels when characters happen to be obstructed by terrain."
+					text = "Ajustez automatiquement le niveau de hauteur de la caméra pour voir le personnage actuellement actif en combat. La désactivation de cette option empêchera la caméra de changer de niveau de hauteur lorsqu'elle ne sera pas strictement nécessaire, mais nécessitera également un ajustement manuel des niveaux de hauteur lorsque les personnages seront obstrués par le terrain."
 				}
 			];
 
@@ -2268,12 +2268,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Show Orientation Icons"
+					text = "Afficher les icônes d'orientation"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Show icons at the edges of your screen indicating the direction in which any characters currently outside the screen are on the map."
+					text = "Affiche des icônes aux bords de votre écran indiquant la direction dans laquelle se trouvent actuellement les personnages à l'extérieur de l'écran sur la carte."
 				}
 			];
 
@@ -2380,12 +2380,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Expand/Retract Event Log"
+					text = "Développer/Rétracter le journal des événements"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Expands or retracts the Combat Event Log."
+					text = "Développe ou rétracte le journal des événements de combat."
 				}
 			];
 
@@ -2436,12 +2436,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Center Camera (Shift)"
+					text = "Centrer la caméra (Maj)"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Center the camera on the currently acting character."
+					 text = "Centre la caméra sur le personnage actuellement en action."
 				}
 			];
 
@@ -2464,12 +2464,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Raise Camera Level (+)"
+					 text = "Élever le niveau de la caméra (+)"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Raise camera level to see the more elevated parts of the map."
+					text = "Élever le niveau de la caméra pour voir les parties plus élevées de la carte."
 				}
 			];
 
@@ -2478,12 +2478,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Lower Camera Level (-)"
+					text = "Descendre d'un niveau de caméra (-)"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Lower camera level and hide elevated parts of the map."
+					 text = "Descendre d'un niveau de caméra et masquer les parties élevées de la carte."
 				}
 			];
 
@@ -2525,7 +2525,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Fuyez lz combat et courrez pour vos vies. Il est mieux de se battre un autre jour ue de mourrir ici inutilement."
+					text = "Fuyez le combat et courrez pour vos vies. Il est mieux de se battre un autre jour ue de mourrir ici inutilement."
 				}
 			];
 
@@ -3868,24 +3868,24 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "The free Lindwurm DLC adds a challenging new beast, a new player banner, as well as a new famed armor, helmet and shield."
+					 text = "Le DLC gratuit Lindwurm ajoute une nouvelle bête difficile, un nouveau bannière de joueur, ainsi qu'une nouvelle armure renommée, un casque et un bouclier."
 				}
 			];
 
 			if (this.Const.DLC.Lindwurm == true)
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]This DLC has been installed.[/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]Ce DLC est installé.[/color]";
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]This DLC is missing. It\'s available for free on Steam and GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible gratuitement sur Steam et GOG![/color]";
 			}
 
 			ret.push({
 				id = 1,
 				type = "hint",
 				icon = "ui/icons/mouse_left_button.png",
-				text = "Open store page in browser"
+				text = "Ouvrir la page du magasin dans le navigateur"
 			});
 			return ret;
 
@@ -3899,24 +3899,24 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "The Beasts & Exploration DLC adds a variety of new beasts roaming the wilds, a new crafting system to create items from trophies, legendary locations with unique rewards to discover, many new contracts and events, a new system of armor attachments, new weapons, armor and usable items, and more."
+					text = "Le DLC Beasts & Exploration ajoute une variété de nouvelles créatures errant dans les contrées sauvages, un nouveau système d'artisanat pour créer des objets à partir de trophées, des lieux légendaires avec des récompenses uniques à découvrir, de nombreux nouveaux contrats et événements, un nouveau système d'accessoires d'armure, de nouvelles armes, armures et objets utilisables, et plus encore."
 				}
 			];
 
 			if (this.Const.DLC.Unhold == true)
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]This DLC has been installed.[/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]Ce DLC est installé.[/color]";
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]This DLC is missing. It\'s available for purchase on Steam and GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l'achat sur Steam et GOG![/color]";
 			}
 
 			ret.push({
 				id = 1,
 				type = "hint",
 				icon = "ui/icons/mouse_left_button.png",
-				text = "Open store page in browser"
+				text = "Ouvrir la page du magasin dans le navigateur"
 			});
 			return ret;
 
@@ -3961,24 +3961,24 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "The Blazing Deserts DLC adds a new desert region to the south inspired by medieval Arabic and Persian cultures, a new late game crisis involving a holy war, a retinue of non-combat followers with which to customize your company, alchemical contraptions and primitive firearms, new human and beastly opponents, new contracts and events, and more."
+					text = "Le DLC Blazing Deserts ajoute une nouvelle région désertique au sud inspirée par les cultures arabes et perses médiévales, une nouvelle crise en fin de partie impliquant une guerre sainte, une suite de suiveurs non combattants avec lesquels personnaliser votre compagnie, des engins alchimiques et des armes à feu primitives, de nouveaux adversaires humains et bestiaux, de nouveaux contrats et événements, et plus encore."
 				}
 			];
 
 			if (this.Const.DLC.Desert == true)
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]This DLC has been installed.[/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]Ce DLC est installé.[/color]";
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]This DLC is missing. It\'s available for purchase on Steam and GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l'achat sur Steam et GOG![/color]";
 			}
 			
 			ret.push({
 				id = 1,
 				type = "hint",
 				icon = "ui/icons/mouse_left_button.png",
-				text = "Open store page in browser"
+				text = "Ouvrir la page du magasin dans le navigateur"
 			});
 			return ret;
 
@@ -4010,7 +4010,7 @@ this.tooltip_events <- {
 				id = 1,
 				type = "hint",
 				icon = "ui/icons/mouse_left_button.png",
-				text = "Open store page in browser"
+				text = "Ouvrir la page du magasin dans le navigateur"
 			});
 			return ret;
 		}

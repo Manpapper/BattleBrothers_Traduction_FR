@@ -5,7 +5,7 @@ this.stealth_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.stealth";
-		this.m.Name = "Stealth";
+		this.m.Name = "Furtivité";
 		this.m.Description = "TODO";
 		this.m.Icon = "skills/active_15.png";
 		this.m.IconDisabled = "skills/active_15_sw.png";

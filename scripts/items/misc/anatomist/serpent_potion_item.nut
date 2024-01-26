@@ -4,8 +4,8 @@ this.serpent_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.serpent_potion";
-		this.m.Name = "Quickfang Potion";
-		this.m.Description = "With this potion, the feared guile and precision of the hateful desert serpent is within any warrior\'s grasp!";
+		this.m.Name = "Potion de Croc-Rapide";
+		this.m.Description = "Avec cette potion, la redoutable ruse et la précision du serpent du désert haï sont à la portée de n'importe quel guerrier !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_29.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.serpent_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Gain an additional [color=" + this.Const.UI.Color.PositiveValue + "]+3%[/color] chance to hit in melee for every ally adjacent to your target"
+			text = "Gagnez une chance supplémentaire de [color=" + this.Const.UI.Color.PositiveValue + "]+3%[/color] de toucher en mêlée pour chaque allié adjacent à votre cible"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, provoquant une maladie"
 		});
 		return result;
 	}

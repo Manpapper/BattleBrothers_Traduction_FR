@@ -3,7 +3,7 @@ this.summon_mirror_image_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.mirror_image";
-		this.m.Name = "Mirror Image";
+		this.m.Name = "Image miroir";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_218.png";
 		this.m.IconDisabled = "skills/active_218.png";

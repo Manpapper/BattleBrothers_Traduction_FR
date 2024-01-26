@@ -4,9 +4,9 @@ this.negative_mouldered_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.negative_moulderedd";
-		this.m.Name = "Mouldered";
+		this.m.Name = "Mourant";
 		this.m.Description = "";
-		this.m.ArmorDescription = "This armor has been exposed to the elements for a long time. Leather is falling apart, cloth is rotten, metal is rusty and perforated.";
+		this.m.ArmorDescription = "Cette armure a été exposée aux éléments pendant longtemps. Le cuir se décompose, le tissu pourrit, le métal est rouillé et perforé.";
 		this.m.Icon = null;
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_downgrade_03.png";
@@ -26,7 +26,7 @@ this.negative_mouldered_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 			id = 6,
 			type = "text",
 			icon = "ui/icons/warning.png",
-			text = "No armor attachment slot"
+			text = "Aucun emplacement d'accessoire d'armure"
 		});
 	}
 

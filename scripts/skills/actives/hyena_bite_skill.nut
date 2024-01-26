@@ -3,7 +3,7 @@ this.hyena_bite_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.hyena_bite";
-		this.m.Name = "Hyena Bite";
+		this.m.Name = "Morsure de la Hyène";
 		this.m.Description = "";
 		this.m.KilledString = "Ripped to shreds";
 		this.m.Icon = "skills/active_197.png";

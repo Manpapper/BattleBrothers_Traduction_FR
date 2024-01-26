@@ -3,7 +3,7 @@ this.merge_golem_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.merge_golem";
-		this.m.Name = "Merge Living Sands";
+		this.m.Name = "Fusionner les Sables Vivants";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_194.png";
 		this.m.IconDisabled = "skills/active_194.png";

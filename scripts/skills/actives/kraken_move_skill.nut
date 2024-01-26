@@ -3,7 +3,7 @@ this.kraken_move_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.kraken_move";
-		this.m.Name = "Move Tentacle";
+		this.m.Name = "Déplacer la Tentacule";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_149.png";
 		this.m.Overlay = "active_149";

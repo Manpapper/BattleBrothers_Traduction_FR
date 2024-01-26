@@ -4,9 +4,9 @@ this.joint_cover_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upg
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.joint_cover";
-		this.m.Name = "Metal Joint Covers";
-		this.m.Description = "Large metal plates that cover the vulnerable shoulder joints.";
-		this.m.ArmorDescription = "Large metal plates have been added to protect the vulnerable shoulder joints.";
+		this.m.Name = "Couvre-Articulations en Métal";
+		this.m.Description = "Grandes plaques métalliques qui recouvrent les articulations vulnérables des épaules.";
+		this.m.ArmorDescription = "De grandes plaques métalliques ont été ajoutées pour protéger les articulations vulnérables des épaules.";
 		this.m.Icon = "armor_upgrades/upgrade_10.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_10.png";
@@ -29,13 +29,13 @@ this.joint_cover_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upg
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+30[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color] Fatigue Maximale"
 		});
 		return result;
 	}

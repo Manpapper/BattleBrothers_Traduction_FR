@@ -5,7 +5,7 @@ this.geomancy_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.geomancy";
-		this.m.Name = "Geomancy";
+		this.m.Name = "Géomancie";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_220.png";
 		this.m.IconDisabled = "skills/active_220.png";

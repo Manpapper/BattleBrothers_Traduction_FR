@@ -30,7 +30,7 @@ this.anatomist_helps_blighted_guy_2_event <- this.inherit("scripts/events/event"
 				bg.m.IsNew = false;
 				_event.m.MilitiaCaptain.getSkills().removeByID("background.vagabond");
 				_event.m.MilitiaCaptain.getSkills().add(bg);
-				_event.m.MilitiaCaptain.getBackground().m.RawDescription = "You found %name% being buried alive for carrying some unknown blight. The anatomists took interest in him and rescued him, nursing him back to health. Now, he fights for you, putting to use the skills that made him captain of the guard in a previous life.";
+				_event.m.MilitiaCaptain.getBackground().m.RawDescription = "Vous avez trouvé %name% en train d'être enterré vivant pour avoir porté une maladie inconnue. Les anatomistes ont manifesté de l'intérêt pour lui et l'ont sauvé, le soignant pour le ramener à la santé. Maintenant, il se bat pour vous, mettant à profit les compétences qui ont fait de lui le capitaine de la garde dans une vie antérieure.";
 				_event.m.MilitiaCaptain.getBackground().buildDescription(true);
 				_event.m.MilitiaCaptain.improveMood(1.0, "Recovered from the blight afflicting him");
 

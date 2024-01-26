@@ -10,8 +10,8 @@ this.lunge_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.lunge";
-		this.m.Name = "Lunge";
-		this.m.Description = "A swift lunge towards a target 2 tiles away, followed by a precise thrusting attack to catch them unprepared. The faster you are, the more damage you do.";
+		this.m.Name = "Allonge";
+		this.m.Description = "Une plongée rapide vers une cible à 2 tuiles de distance, suivie d'une attaque précise pour les prendre au dépourvu. Plus vous êtes rapide, plus les dégâts sont importants.";
 		this.m.KilledString = "Sliced up";
 		this.m.Icon = "skills/active_135.png";
 		this.m.IconDisabled = "skills/active_135_sw.png";
@@ -58,13 +58,13 @@ this.lunge_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Moves the user next to the target, ignoring Zone of Control"
+				text = "Déplace l'utilisateur à côté de la cible, ignorant la Zone de Contrôle"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Inflicts additional damage, the higher the user\'s current Initiative"
+				text = "Inflige des dégâts supplémentaires, plus l'Initiative actuelle de l'utilisateur est élevée"
 			}
 		]);
 
@@ -74,7 +74,7 @@ this.lunge_skill <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used while rooted[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Ne peut pas être utilisé lorsqu'il est enraciné[/color]"
 			});
 		}
 

@@ -4,8 +4,8 @@ this.ancient_priest_potion_item <- this.inherit("scripts/items/misc/anatomist/an
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.ancient_priest_potion";
-		this.m.Name = "Dastard\'s Valor";
-		this.m.Description = "This potion will turn into even the most yellow-bellied of men into a veritable font of courage. No matter the odds or the foe, they shall remain dauntless! Side effects may include loss of life due to being unable to back down when the situation calls for it.";
+		this.m.Name = "Vaillance du Coquin";
+		this.m.Description = "Cette potion transformera même les plus poltrons des hommes en une véritable source de courage. Peu importe les chances ou l'adversaire, ils resteront intrépides ! Les effets secondaires peuvent inclure une perte de vie due à l'incapacité de reculer lorsque la situation l'exige.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_21.png";
 		this.m.Value = 0;
@@ -53,18 +53,18 @@ this.ancient_priest_potion_item <- this.inherit("scripts/items/misc/anatomist/an
 			id = 11,
 			type = "text",
 			icon = "ui/icons/morale.png",
-			text = "Cannot be reduced to Fleeing morale, only Breaking"
+			text = "Ne peut pas être réduit à la morale 'Fuite', seulement 'Rompre'"
 		});
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = "Cliquez avec le bouton droit ou faites glisser sur le personnage actuellement sélectionné pour boire. Cet objet sera consommé dans le processus."
 		});
 		result.push({
 			id = 65,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Mutates the body, causing sickness"
+			text = "Mutile le corps, prov"
 		});
 		return result;
 	}

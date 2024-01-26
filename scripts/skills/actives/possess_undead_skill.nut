@@ -3,7 +3,7 @@ this.possess_undead_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.possess_undead";
-		this.m.Name = "Possess Undead";
+		this.m.Name = "Posséder les Morts-vivants";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_99.png";
 		this.m.IconDisabled = "skills/active_99.png";

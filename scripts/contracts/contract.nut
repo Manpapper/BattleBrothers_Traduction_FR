@@ -1422,7 +1422,7 @@ this.contract <- {
 		if (_factionType == this.Const.FactionType.Bandits)
 		{
 			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(enemyBase.getTile(), "Brigands", false, this.Const.World.Spawn.BanditRaiders, _resources);
-			party.setDescription("A rough and tough band of brigands out to hunt for food.");
+			party.setDescription("Une bande de brigands rudes et coriaces en quête de nourriture.");
 			party.setFootprintType(this.Const.World.FootprintsType.Brigands);
 			party.getLoot().Money = this.Math.rand(50, 100);
 			party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1454,7 +1454,7 @@ this.contract <- {
 		else if (_factionType == this.Const.FactionType.Goblins)
 		{
 			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(enemyBase.getTile(), "Goblin Raiders", false, this.Const.World.Spawn.GoblinRaiders, _resources);
-			party.setDescription("A band of mischievous goblins, small but cunning and not to be underestimated.");
+			party.setDescription("Une bande de gobelins espiègles, petits mais rusés et à ne pas sous-estimer.");
 			party.setFootprintType(this.Const.World.FootprintsType.Goblins);
 			party.getLoot().ArmorParts = this.Math.rand(0, 10);
 			party.getLoot().Medicine = this.Math.rand(0, 2);
@@ -1483,7 +1483,7 @@ this.contract <- {
 		else if (_factionType == this.Const.FactionType.Orcs)
 		{
 			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(enemyBase.getTile(), "Orc Marauders", false, this.Const.World.Spawn.OrcRaiders, _resources);
-			party.setDescription("A band of menacing orcs, greenskinned and towering any man.");
+			party.setDescription("Une bande d'orcs menaçants, à la peau verte et imposant n'importe quel homme.");
 			party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 			party.getLoot().ArmorParts = this.Math.rand(0, 25);
 			party.getLoot().Ammo = this.Math.rand(0, 10);
@@ -1492,7 +1492,7 @@ this.contract <- {
 		else if (_factionType == this.Const.FactionType.Undead)
 		{
 			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).spawnEntity(enemyBase.getTile(), "Undead", false, this.Const.World.Spawn.UndeadArmy, _resources);
-			party.setDescription("A legion of walking dead, back to claim from the living what was once theirs.");
+			party.setDescription("Une légion de morts-vivants, de retour pour réclamer aux vivants ce qui leur appartenait autrefois.");
 			party.setFootprintType(this.Const.World.FootprintsType.Undead);
 			party.getLoot().ArmorParts = this.Math.rand(0, 10);
 			party.getLoot().Ammo = this.Math.rand(0, 5);
@@ -1500,7 +1500,7 @@ this.contract <- {
 		else if (_factionType == this.Const.FactionType.Zombies)
 		{
 			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).spawnEntity(enemyBase.getTile(), "Undead", false, this.Const.World.Spawn.Necromancer, _resources);
-			party.setDescription("Something seems wrong.");
+			party.setDescription("Quelque chose ne va pas.");
 			party.setFootprintType(this.Const.World.FootprintsType.Undead);
 			party.getLoot().ArmorParts = this.Math.rand(0, 10);
 			party.getLoot().Ammo = this.Math.rand(0, 5);

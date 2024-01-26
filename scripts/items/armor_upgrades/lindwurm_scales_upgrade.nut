@@ -4,9 +4,9 @@ this.lindwurm_scales_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.lindwurm_scales";
-		this.m.Name = "Lindwurm Scale Cloak";
-		this.m.Description = "A cloak made out of the scales of a Lindwurm. Not only is it a rare and impressive trophy, it also offers additional protection and is untouchable by corroding Lindwurm blood.";
-		this.m.ArmorDescription = "A cloak made out of Lindwurm scales is worn over this armor for additional protection, including from the corrosive effects of Lindwurm blood.";
+				this.m.Name = "Cape d'Écailles de Lindwurm";
+		this.m.Description = "Une cape faite à partir des écailles d'un Lindwurm. Non seulement c'est un trophée rare et impressionnant, mais elle offre également une protection supplémentaire et est insensible au sang corrosif du Lindwurm.";
+		this.m.ArmorDescription = "Une cape faite d'écailles de Lindwurm est portée par-dessus cette armure pour une protection supplémentaire, y compris contre les effets corrosifs du sang de Lindwurm.";
 		this.m.Icon = "armor_upgrades/upgrade_04.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_04.png";
@@ -29,19 +29,19 @@ this.lindwurm_scales_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 			id = 13,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+60[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+60[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-3[/color] Fatigue Maximum"
 		});
 		result.push({
 			id = 15,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Unaffected by acidic Lindwurm blood"
+			text = "Non affecté par le sang acide du Lindwurm"
 		});
 		return result;
 	}
@@ -52,7 +52,7 @@ this.lindwurm_scales_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Unaffected by acidic Lindwurm blood"
+			text = "Non affecté par le sang acide du Lindwurm"
 		});
 	}
 

@@ -4,8 +4,8 @@ this.adorned_full_helm <- this.inherit("scripts/items/helmets/helmet", {
 	{
 		this.helmet.create();
 		this.m.ID = "armor.head.adorned_full_helm";
-		this.m.Name = "Adorned Full Helm";
-		this.m.Description = "A closed metal helm with breathing holes. Adorned with relics and lovingly maintained despite its extensive use, this is the helmet of a true questing knight.";
+		this.m.Name = "Heaume Intégral Ornée";
+		this.m.Description = "Un heaume métallique fermé avec des trous de respiration. Ornée de reliques et entretenue avec amour malgré son utilisation extensive, il s'agit du casque d'un véritable chevalier en quête d'aventures.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

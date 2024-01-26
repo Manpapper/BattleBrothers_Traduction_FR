@@ -4,9 +4,9 @@ this.additional_padding_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.additional_padding";
-		this.m.Name = "Additional Fur Padding";
-		this.m.Description = "Crafted from thick furs, this additional padding helps dampen the impact of any blow.";
-		this.m.ArmorDescription = "Additional fur padding helps to further dampen the impact of any blow.";
+		this.m.Name = "Rembourrage supplémentaire en fourrure";
+		this.m.Description = "Fabriqué à partir de fourrures épaisses, ce rembourrage supplémentaire aide à atténuer l'impact de tout coup.";
+		this.m.ArmorDescription = "Le rembourrage supplémentaire en fourrure aide à atténuer davantage l'impact de tout coup.";
 		this.m.Icon = "armor_upgrades/upgrade_03.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_03.png";
@@ -28,13 +28,13 @@ this.additional_padding_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 			id = 15,
 			type = "text",
 			icon = "ui/icons/direct_damage.png",
-			text = "Reduces damage ignoring armor by [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
+			text = "Réduit les dégâts ignorants l'armure de [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Fatigue maximale"
 		});
 		return result;
 	}
@@ -45,7 +45,7 @@ this.additional_padding_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 			id = 15,
 			type = "text",
 			icon = "ui/icons/direct_damage.png",
-			text = "Only take [color=" + this.Const.UI.Color.NegativeValue + "]66%[/color] of any damage that ignores armor"
+			text = "Ne subit que [color=" + this.Const.UI.Color.NegativeValue + "]66%[/color] de tout dégât ignorant l'armure"
 		});
 	}
 

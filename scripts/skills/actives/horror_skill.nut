@@ -3,7 +3,7 @@ this.horror_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.horror";
-		this.m.Name = "Horror";
+		this.m.Name = "Horreur";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_102.png";
 		this.m.IconDisabled = "skills/active_102.png";

@@ -3,8 +3,8 @@ this.reap_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.reap";
-		this.m.Name = "Reap";
-		this.m.Description = "A sweeping strike in a wide arc that hits three adjacent tiles in counter-clockwise order over some distance. Be careful around your own men unless you want to relieve your payroll!";
+	this.m.Name = "Moissonner";
+		this.m.Description = "Une frappe balayante en un large arc qui touche trois tuiles adjacentes dans l'ordre antihoraire sur une certaine distance. Faites attention à vos propres hommes à moins que vous ne vouliez soulager votre masse salariale !";
 		this.m.Icon = "skills/active_100.png";
 		this.m.IconDisabled = "skills/active_100_sw.png";
 		this.m.Overlay = "active_100";
@@ -48,13 +48,13 @@ this.reap_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can hit up to 3 targets"
+			text = "Peut toucher jusqu'à 3 cibles"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "A une distance de tir de [color=" + this.Const.UI.Color.PositiveValue + "]2" + "[/color] tiles"
+			text = "À une portée de [color=" + this.Const.UI.Color.PositiveValue + "]2" + "[/color] tuiles"
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms)
@@ -63,7 +63,7 @@ this.reap_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
+				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] de chance de toucher les cibles directement adjacentes car l'arme est trop difficile à manier"
 			});
 		}
 

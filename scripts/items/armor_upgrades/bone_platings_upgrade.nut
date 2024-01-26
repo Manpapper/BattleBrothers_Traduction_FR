@@ -6,9 +6,9 @@ this.bone_platings_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.bone_platings";
-		this.m.Name = "Bone Plating";
-		this.m.Description = "Crafted from strong but surprisingly light bones, these ornate platings make for an ablative armor to be worn ontop of regular armor.";
-		this.m.ArmorDescription = "A layer of ornate bone plates is attached to this armor.";
+		this.m.Name = "BPlaque d'os";
+		this.m.Description = "Fabriquées à partir d'os solides mais étonnamment légers, ces plaques ornées constituent une armure ablative à porter par-dessus une armure régulière.";
+		this.m.ArmorDescription = "Une couche de plaques d'os ornées est fixée à cette armure.";
 		this.m.Icon = "armor_upgrades/upgrade_06.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_06.png";
@@ -30,13 +30,13 @@ this.bone_platings_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Completely absorbs the first hit of every combat encounter which doesn\'t ignore armor"
+			text = "Absorbe complètement le premier coup de chaque rencontre en combat qui n'ignore pas l'armure"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Fatigue Maximale"
 		});
 		return result;
 	}
@@ -47,7 +47,7 @@ this.bone_platings_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Completely absorbs the first hit of every combat encounter which doesn\'t ignore armor"
+			text = "Absorbe complètement le premier coup de chaque rencontre en combat qui n'ignore pas l'armure"
 		});
 	}
 

@@ -4,9 +4,9 @@ this.double_mail_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upg
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.double_mail";
-		this.m.Name = "Double Mail";
-		this.m.Description = "A thick double mail patch. Heavy, but effective in further adding to an armor\'s protection.";
-		this.m.ArmorDescription = "A thick double mail has been added to this armor for further protection.";
+		this.m.Name = "Cotte de Mailles Doublée";
+		this.m.Description = "Un épais morceau de cotte de mailles doublée. Lourd, mais efficace pour renforcer davantage la protection d'une armure.";
+		this.m.ArmorDescription = "Une épaisse cotte de mailles doublée a été ajoutée à cette armure pour une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_19.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_19.png";
@@ -29,13 +29,13 @@ this.double_mail_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upg
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-2[/color] Fatigue Maximale"
 		});
 		return result;
 	}

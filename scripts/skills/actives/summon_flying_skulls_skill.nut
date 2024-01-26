@@ -3,7 +3,7 @@ this.summon_flying_skulls_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.flying_skulls";
-		this.m.Name = "Raise Screaming Skulls";
+		this.m.Name = "Élever des crânes hurlants";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_219.png";
 		this.m.IconDisabled = "skills/active_219.png";

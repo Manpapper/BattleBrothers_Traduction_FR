@@ -3,8 +3,8 @@ this.ghoul_claws <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.ghoul_claws";
-		this.m.Name = "Ghoul Claws";
-		this.m.Description = "Long and sharp claws that can tear flesh with ease.";
+		this.m.Name = "Griffes de Goule";
+		this.m.Description = "Des griffes longues et tranchantes qui peuvent déchirer la chair facilement.";
 		this.m.KilledString = "Ripped to shreds";
 		this.m.Icon = "skills/active_21.png";
 		this.m.IconDisabled = "skills/active_21_sw.png";

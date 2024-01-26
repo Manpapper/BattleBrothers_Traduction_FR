@@ -75,7 +75,7 @@ this.anatomist_helps_blighted_guy_1_event <- this.inherit("scripts/events/event"
 				], false);
 				_event.m.Dude.setTitle("");
 				_event.m.Dude.getFlags().set("IsSpecial", true);
-				_event.m.Dude.getBackground().m.RawDescription = "" + _event.m.Anatomist.getNameOnly() + " the Anatomist rescued %name% from being buried alive for carrying some strange disease. Now he has the unique pleasure of both bearing the plague AND being a lab rat for some researchers. Stay over there, please.";
+				_event.m.Dude.getBackground().m.RawDescription = "" + _event.m.Anatomist.getNameOnly() + " l'Anatomiste a sauvé %name% d'être enterré vivant pour avoir porté une maladie étrange. Maintenant, il a le plaisir unique de porter à la fois la peste ET d'être un cobaye pour certains chercheurs. Restez là-bas, s'il vous plaît.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.m.Talents = [];
 				local talents = _event.m.Dude.getTalents();

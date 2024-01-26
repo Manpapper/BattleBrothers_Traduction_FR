@@ -4,9 +4,9 @@ this.light_gladiator_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.light_gladiator_upgrade";
-		this.m.Name = "Padded Armor Pieces";
-		this.m.Description = "Padded armpieces that provides additional protection.";
-		this.m.ArmorDescription = "This harness has padded armpieces attached that provide additional protection.";
+		this.m.Name = "Pièces d'Armure Rembourrées";
+		this.m.Description = "Pièces d'armure rembourrées qui offrent une protection supplémentaire.";
+		this.m.ArmorDescription = "Cette armure comporte des pièces d'armure rembourrées qui offrent une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_24.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_24.png";
@@ -29,13 +29,13 @@ this.light_gladiator_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 			id = 14,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+60[/color] Durability"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+60[/color] Durabilité"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/fatigue.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Maximum Fatigue"
+			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-4[/color] Fatigue Maximum"
 		});
 		return result;
 	}

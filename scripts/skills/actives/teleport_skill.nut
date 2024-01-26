@@ -5,7 +5,7 @@ this.teleport_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.teleport";
-		this.m.Name = "Spirit Walk";
+		this.m.Name = "Marche spirituelle";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_167.png";
 		this.m.IconDisabled = "skills/active_167.png";

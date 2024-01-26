@@ -10,7 +10,7 @@ this.swallow_whole_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.swallow_whole";
-		this.m.Name = "Swallow Whole";
+		this.m.Name = "Avaler entier";
 		this.m.Description = "";
 		this.m.Icon = "skills/active_103.png";
 		this.m.IconDisabled = "skills/active_103.png";
