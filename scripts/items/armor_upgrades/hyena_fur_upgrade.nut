@@ -5,8 +5,8 @@ this.hyena_fur_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgra
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.hyena_fur";
 		this.m.Name = "Manteau en Fourrure de Hyène";
-		this.m.Description = "Fourrures prélevées sur des hyènes féroces, traitées et cousues ensemble pour être portées comme un trophée de chasseur de bêtes autour du cou. Revêtir la peau d'une bête comme celle-ci renforce la volonté d'agir.";
-		this.m.ArmorDescription = "Un manteau de fourrure de hyène a été attaché à cette armure, renforçant la volonté d'agir du porteur.";
+		this.m.Description = "Fourrures prélevées sur des hyènes féroces, traitées et cousues ensemble pour être portées comme un trophée de chasseur de bêtes autour du cou. Revêtir la peau d\'une bête comme celle-ci renforce la volonté d\'agir.";
+		this.m.ArmorDescription = "Un manteau de fourrure de hyène a été attaché à cette armure, renforçant la volonté d\'agir du porteur.";
 		this.m.Icon = "armor_upgrades/upgrade_26.png";
 		this.m.Icon = "armor_upgrades/upgrade_26.png";
 		this.m.IconLarge = this.m.Icon;

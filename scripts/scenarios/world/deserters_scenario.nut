@@ -170,7 +170,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		}
 
 		local bros = roster.getAll();
-		bros[0].getBackground().m.RawDescription = "{Avant d'être enrôlé dans l'armée, %name% était un boulanger raté et illettré. Son travail médiocre et ses erreurs fréquentes en pâtisserie le rendaient sujet à être attiré dans les rangs militaires. Ayant toujours détesté cette vie, le déserteur a rapidement rejoint votre cause et votre compagnie.}";
+		bros[0].getBackground().m.RawDescription = "{Avant d\'être enrôlé dans l\'armée, %name% était un boulanger raté et illettré. Son travail médiocre et ses erreurs fréquentes en pâtisserie le rendaient sujet à être attiré dans les rangs militaires. Ayant toujours détesté cette vie, le déserteur a rapidement rejoint votre cause et votre compagnie.}";
 		bros[0].getBackground().buildDescription(true);
 		local talents = bros[0].getTalents();
 		talents[this.Const.Attributes.MeleeSkill] = 2;
@@ -185,7 +185,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
 		items.equip(this.new("scripts/items/weapons/hatchet"));
-		bros[1].getBackground().m.RawDescription = "{Un combattant accompli selon tout jugement, %name% détestait simplement le faible salaire d'un soldat dans l'armée. Sa poursuite de la vie de mercenaire a du sens. Bien qu'il soit assez volage, vous croyez que son sens transitoire de l'allégeance sera compensé par un flux constant de bonne monnaie.}";
+		bros[1].getBackground().m.RawDescription = "{Un combattant accompli selon tout jugement, %name% détestait simplement le faible salaire d\'un soldat dans l\'armée. Sa poursuite de la vie de mercenaire a du sens. Bien qu\'il soit assez volage, vous croyez que son sens transitoire de l\'allégeance sera compensé par un flux constant de bonne monnaie.}";
 		bros[1].getBackground().buildDescription(true);
 		local talents = bros[1].getTalents();
 		talents[this.Const.Attributes.MeleeSkill] = 2;
@@ -200,7 +200,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
 		items.equip(this.new("scripts/items/weapons/shortsword"));
-		bros[2].getBackground().m.RawDescription = "{%name% est comme beaucoup de déserteurs. Vous pouvez voir l'esprit d'un combattant en lui, mais le cœur pour cela se flétrit. Cela ne fait pas de lui un lâche, comme beaucoup le supposent des déserteurs, mais simplement un homme qui peut avoir besoin de changement. Espérons que la monnaie du travail de mercenaire puisse le lui fournir.}";
+		bros[2].getBackground().m.RawDescription = "{%name% est comme beaucoup de déserteurs. Vous pouvez voir l\'esprit d\'un combattant en lui, mais le cœur pour cela se flétrit. Cela ne fait pas de lui un lâche, comme beaucoup le supposent des déserteurs, mais simplement un homme qui peut avoir besoin de changement. Espérons que la monnaie du travail de mercenaire puisse le lui fournir.}";
 		bros[2].getBackground().buildDescription(true);
 		local talents = bros[2].getTalents();
 		talents[this.Const.Attributes.RangedSkill] = 2;

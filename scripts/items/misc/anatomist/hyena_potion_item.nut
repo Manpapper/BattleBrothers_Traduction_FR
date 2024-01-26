@@ -5,7 +5,7 @@ this.hyena_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.hyena_potion";
 		this.m.Name = "Breuvage de la Porte Sanguine";
-		this.m.Description = "Brassé avec une glande précédemment inconnue de la hyène sauvage du désert, ce breuvage robuste transforme même l'homme le plus frêle en une source d'endurance. Même les blessures les plus graves cesseront de saigner et se refermeront en une fraction du temps.";
+		this.m.Description = "Brassé avec une glande précédemment inconnue de la hyène sauvage du désert, ce breuvage robuste transforme même l\'homme le plus frêle en une source d\'endurance. Même les blessures les plus graves cesseront de saigner et se refermeront en une fraction du temps.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_30.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.hyena_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Les dégâts causés par l'effet de saignement sont réduits de [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]"
+			text = "Les dégâts causés par l\'effet de saignement sont réduits de [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]"
 		});
 		result.push({
 			id = 65,

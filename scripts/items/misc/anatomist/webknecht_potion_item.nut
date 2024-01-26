@@ -5,7 +5,7 @@ this.webknecht_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.webknecht_potion";
 		this.m.Name = "Potion Venomblood";
-		this.m.Description = "Comme tout chasseur de bêtes expérimenté pourrait vous le dire, ce qui rend les arachnides surdimensionnés appelés Webknechts vraiment redoutables, c'est leur poison vicieux. Eh bien, plus maintenant ! Celui qui boit cette potion n'aura plus à craindre le venin de ces créatures !";
+		this.m.Description = "Comme tout chasseur de bêtes expérimenté pourrait vous le dire, ce qui rend les arachnides surdimensionnés appelés Webknechts vraiment redoutables, c\'est leur poison vicieux. Eh bien, plus maintenant ! Celui qui boit cette potion n\'aura plus à craindre le venin de ces créatures !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_31.png";
 		this.m.Value = 0;

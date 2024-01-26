@@ -4,7 +4,7 @@ this.throw_smoke_bomb_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.throw_smoke_bomb";
 		this.m.Name = "Lancer une bombe de fumée";
-		this.m.Description = "Lance une bombe remplie de substances qui, au moment de l'impact, créera rapidement un nuage dense.";
+		this.m.Description = "Lance une bombe remplie de substances qui, au moment de l\'impact, créera rapidement un nuage dense.";
 		this.m.Icon = "skills/active_208.png";
 		this.m.IconDisabled = "skills/active_208_sw.png";
 		this.m.Overlay = "active_208";
@@ -51,13 +51,13 @@ this.throw_smoke_bomb_skill <- this.inherit("scripts/skills/skill", {
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Recouvre  [color=" + this.Const.UI.Color.DamageValue + "]7[/color] cases de fumée pendant un tour, permettant à quiconque à l'intérieur de se déplacer librement et d'ignorer les zones de contrôle"
+			text = "Recouvre  [color=" + this.Const.UI.Color.DamageValue + "]7[/color] cases de fumée pendant un tour, permettant à quiconque à l\'intérieur de se déplacer librement et d\'ignorer les zones de contrôle"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Augmente la Défense à distance de [color=" + this.Const.UI.Color.PositiveValue + "]+100%[/color],mais diminue la Compétence à distance de [color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] pour quiconque à l'intérieur"
+			text = "Augmente la Défense à distance de [color=" + this.Const.UI.Color.PositiveValue + "]+100%[/color],mais diminue la Compétence à distance de [color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] pour quiconque à l\'intérieur"
 		});
 		ret.push({
 			id = 6,

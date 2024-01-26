@@ -1185,7 +1185,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			if (bandits_dist <= goblins_dist && bandits_dist <= orcs_dist && bandits_dist <= barbarians_dist && bandits_dist <= nomads_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(tile, "Brigands", false, this.Const.World.Spawn.BanditRaiders, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("Une bande de brigands rudes et coriaces s'attaquant aux faibles.");
+				party.setDescription("Une bande de brigands rudes et coriaces s\'attaquant aux faibles.");
 				party.setFootprintType(this.Const.World.FootprintsType.Brigands);
 				party.getLoot().Money = this.Math.rand(50, 100);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1285,7 +1285,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			else if (nomads_dist <= barbarians_dist && nomads_dist <= goblins_dist && nomads_dist <= bandits_dist && nomads_dist <= orcs_dist)
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).spawnEntity(tile, "Nomads", false, this.Const.World.Spawn.NomadRaiders, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("Une bande de pillards du désert s'attaquant à quiconque tente de traverser les mers de sable.");
+				party.setDescription("Une bande de pillards du désert s\'attaquant à quiconque tente de traverser les mers de sable.");
 				party.setFootprintType(this.Const.World.FootprintsType.Nomads);
 				party.getLoot().Money = this.Math.rand(50, 200);
 				party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1315,7 +1315,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			else
 			{
 				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Orc Marauders", false, this.Const.World.Spawn.OrcRaiders, this.Math.rand(80, 100) * this.getDifficultyMult() * this.getScaledDifficultyMult());
-				party.setDescription("Une bande d'orcs menaçants, à la peau verte et imposant n'importe quel homme.");
+				party.setDescription("Une bande d\'orcs menaçants, à la peau verte et imposant n\'importe quel homme.");
 				party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 				party.getLoot().ArmorParts = this.Math.rand(0, 25);
 				party.getLoot().Ammo = this.Math.rand(0, 10);

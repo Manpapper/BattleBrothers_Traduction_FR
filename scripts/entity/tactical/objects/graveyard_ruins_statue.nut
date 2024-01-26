@@ -7,7 +7,7 @@ this.graveyard_ruins_statue <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Une statue de bronze d'une époque révolue.";
+		return "Une statue de bronze d\'une époque révolue.";
 	}
 
 	function onInit()

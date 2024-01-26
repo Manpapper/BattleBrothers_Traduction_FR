@@ -5,7 +5,7 @@ this.unhold_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.unhold_potion";
 		this.m.Name = "Potion du Trésor du Fou";
-		this.m.Description = "Ignorez le nom, cette potion conférera une quasi-immortalité à celui qui la boit ! C'est vrai, tout comme le redoutable Unhold, quiconque a la chance de la consommer verra ses blessures se refermer quelques instants après les avoir ouvertes ! Prenez-la ! Vite ! Ne réfléchissez pas, agissez !";
+		this.m.Description = "Ignorez le nom, cette potion conférera une quasi-immortalité à celui qui la boit ! C\'est vrai, tout comme le redoutable Unhold, quiconque a la chance de la consommer verra ses blessures se refermer quelques instants après les avoir ouvertes ! Prenez-la ! Vite ! Ne réfléchissez pas, agissez !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_32.png";
 		this.m.Value = 0;

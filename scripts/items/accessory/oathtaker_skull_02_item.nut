@@ -5,7 +5,7 @@ this.oathtaker_skull_02_item <- this.inherit("scripts/items/accessory/accessory"
 		this.accessory.create();
 		this.m.ID = "accessory.oathtaker_skull_02";
 		this.m.Name = "Crâne et mâchoire de Jeune Anselm";
-		this.m.Description = "Le crâne de Jeune Anselm, le premier Jureur, porté aux côtés d'un reliquaire contenant sa mâchoire fracturée. Entrer en bataille orné d'une relique aussi puissante, c'est avoir l'assurance totale de la victoire, car qui pourrait être vaincu avec Jeune Anselm à ses côtés ?";
+		this.m.Description = "Le crâne de Jeune Anselm, le premier Jureur, porté aux côtés d\'un reliquaire contenant sa mâchoire fracturée. Entrer en bataille orné d\'une relique aussi puissante, c\'est avoir l\'assurance totale de la victoire, car qui pourrait être vaincu avec Jeune Anselm à ses côtés ?";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
@@ -63,7 +63,7 @@ this.oathtaker_skull_02_item <- this.inherit("scripts/items/accessory/accessory"
 			id = 11,
 			type = "text",
 			icon = "ui/icons/morale.png",
-			text = "Commencera le combat avec une moralité confiante si permis par l'humeur"
+			text = "Commencera le combat avec une moralité confiante si permis par l\'humeur"
 		});
 		return result;
 	}

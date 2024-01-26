@@ -5,7 +5,7 @@ this.mail_patch_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.mail_patch";
 this.m.Name = "Écusson de Maille";
-		this.m.Description = "Un grand écusson de maille qui peut être ajouté à n'importe quelle armure pour protéger davantage les zones les plus vulnérables.";
+		this.m.Description = "Un grand écusson de maille qui peut être ajouté à n\'importe quelle armure pour protéger davantage les zones les plus vulnérables.";
 		this.m.ArmorDescription = "Un grand écusson de maille a été ajouté à cette armure pour protéger davantage les zones les plus vulnérables.";
 		this.m.Icon = "armor_upgrades/upgrade_09.png";
 		this.m.IconLarge = this.m.Icon;

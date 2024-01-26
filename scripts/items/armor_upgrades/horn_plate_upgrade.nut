@@ -5,7 +5,7 @@ this.horn_plate_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.horn_plate";
 		this.m.Name = "Plaque de Corne";
-		this.m.Description = "Ces segments de plaque de corne sont fabriqués à partir de l'un des matériaux les plus durs et flexibles que la nature puisse offrir. Portés par-dessus une armure ordinaire, ils peuvent aider à dévier les coups entrants.";
+		this.m.Description = "Ces segments de plaque de corne sont fabriqués à partir de l\'un des matériaux les plus durs et flexibles que la nature puisse offrir. Portés par-dessus une armure ordinaire, ils peuvent aider à dévier les coups entrants.";
 		this.m.ArmorDescription = "Les segments de plaque de corne fournissent une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_22.png";
 		this.m.IconLarge = this.m.Icon;

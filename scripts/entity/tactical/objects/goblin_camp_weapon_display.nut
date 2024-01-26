@@ -2,7 +2,7 @@ this.goblin_camp_weapon_display <- this.inherit("scripts/entity/tactical/entity"
 	m = {},
 	function getName()
 	{
-		return "Présentoir d'armes";
+		return "Présentoir d\'armes";
 	}
 
 	function getDescription()

@@ -5,7 +5,7 @@ this.orc_berserker_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.orc_berserker_potion";
 		this.m.Name = "Philtre de Rose";
-		this.m.Description = "Développé à partir des glandes surrénales des prétendus Orc 'Berserkers', cette concoction est ainsi nommée en raison de l'état émotionnel intensifié et de la teinte rougie de celui qui la boit.";
+		this.m.Description = "Développé à partir des glandes surrénales des prétendus Orc \'Berserkers\', cette concoction est ainsi nommée en raison de l\'état émotionnel intensifié et de la teinte rougie de celui qui la boit.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_16.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.orc_berserker_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Gagnez des piles de Rage en subissant des dégâts d'impact, ce qui augmente la Résolution, l'Initiative et les dégâts infligés, et réduit les dégâts subis"
+			text = "Gagnez des piles de Rage en subissant des dégâts d\'impact, ce qui augmente la Résolution, l\'Initiative et les dégâts infligés, et réduit les dégâts subis"
 		});
 		result.push({
 			id = 65,

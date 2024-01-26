@@ -2,12 +2,12 @@ this.barbarian_camp_nithing_pole <- this.inherit("scripts/entity/tactical/entity
 	m = {},
 	function getName()
 	{
-		return "Poteau d'ancrage";
+		return "Poteau d\'ancrage";
 	}
 
 	function getDescription()
 	{
-		return "Une longue perche en bois avec une tête de cheval récemment coupée au bout, orientée vers l'ennemi et la cible d'une malédiction.";
+		return "Une longue perche en bois avec une tête de cheval récemment coupée au bout, orientée vers l\'ennemi et la cible d\'une malédiction.";
 	}
 
 	function setFlipped( _flip )

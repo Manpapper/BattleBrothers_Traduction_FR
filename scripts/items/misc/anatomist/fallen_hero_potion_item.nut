@@ -5,7 +5,7 @@ this.fallen_hero_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.fallen_hero_potion";
 		this.m.Name = "Élixir de Persévérance";
-		this.m.Description = "Ce sérum, développé à partir d'une substance trouvée dans certains spécimens extraordinaires de Wiederganger, permet à un homme vivant de gagner une partie de la persévérance inlassable des redoutables guerriers morts-vivants - sans perte de vie ! Quelques raideurs articulaires mineures sont à prévoir.";
+		this.m.Description = "Ce sérum, développé à partir d\'une substance trouvée dans certains spécimens extraordinaires de Wiederganger, permet à un homme vivant de gagner une partie de la persévérance inlassable des redoutables guerriers morts-vivants - sans perte de vie ! Quelques raideurs articulaires mineures sont à prévoir.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_23.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.fallen_hero_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "N'accumulez aucune Fatigue des attaques ennemies, qu'elles touchent ou non"
+			text = "N\'accumulez aucune Fatigue des attaques ennemies, qu\'elles touchent ou non"
 		});
 		result.push({
 			id = 65,

@@ -5,7 +5,7 @@ this.heavy_mail_coif <- this.inherit("scripts/items/helmets/helmet", {
 		this.helmet.create();
 		this.m.ID = "armor.head.heavy_mail_coif";
 this.m.Name = "Camail Lourd";
-		this.m.Description = "Un camail complet en mailles, plus lourd et plus robuste que la plupart des autres de son genre. Décoré d'une tresse colorée.";
+		this.m.Description = "Un camail complet en mailles, plus lourd et plus robuste que la plupart des autres de son genre. Décoré d\'une tresse colorée.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = true;

@@ -4,9 +4,9 @@ this.light_gladiator_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.light_gladiator_upgrade";
-		this.m.Name = "Pièces d'Armure Rembourrées";
-		this.m.Description = "Pièces d'armure rembourrées qui offrent une protection supplémentaire.";
-		this.m.ArmorDescription = "Cette armure comporte des pièces d'armure rembourrées qui offrent une protection supplémentaire.";
+		this.m.Name = "Pièces d\'Armure Rembourrées";
+		this.m.Description = "Pièces d\'armure rembourrées qui offrent une protection supplémentaire.";
+		this.m.ArmorDescription = "Cette armure comporte des pièces d\'armure rembourrées qui offrent une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_24.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_24.png";

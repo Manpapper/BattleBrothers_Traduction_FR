@@ -4,7 +4,7 @@ this.honor_guard_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.honor_guard_potion";
-		this.m.Name = "Élixir d'Os et de Chair";
+		this.m.Name = "Élixir d\'Os et de Chair";
 		this.m.Description = "Les morts-vivants sont à juste titre craints pour leur dessein inflexible et leur volonté inébranlable, mais tout guerrier expérimenté connaît une troisième horreur, la résistance redoutable de ces créatures aux lances et aux flèches. Avec cette concoction, les vivants peuvent acquérir un tel aegis également !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_19.png";
@@ -53,7 +53,7 @@ this.honor_guard_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Prenez entre [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] et [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] de dégâts en moins des attaques perforantes, telles que celles provenant d'arcs ou de lances"
+			text = "Prenez entre [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] et [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] de dégâts en moins des attaques perforantes, telles que celles provenant d\'arcs ou de lances"
 		});
 		result.push({
 			id = 65,

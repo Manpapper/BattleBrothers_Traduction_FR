@@ -5,7 +5,7 @@ this.orc_warlord_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.orc_warlord_potion";
 		this.m.Name = "Source de Force";
-		this.m.Description = "Plus d'un général a souhaité apprivoiser les orques, car si l'on pouvait contrôler les peaux vertes et diriger leur force avec l'intellect de l'homme, on contrôlerait sûrement une force imparable. Avec cela, de tels fantasmes sont à portée de main !";
+		this.m.Description = "Plus d\'un général a souhaité apprivoiser les orques, car si l\'on pouvait contrôler les peaux vertes et diriger leur force avec l\'intellect de l\'homme, on contrôlerait sûrement une force imparable. Avec cela, de tels fantasmes sont à portée de main !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_17.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.orc_warlord_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Ne subissez plus de pénalité de fatigue supplémentaire pour l'utilisation d'armes orques"
+			text = "Ne subissez plus de pénalité de fatigue supplémentaire pour l\'utilisation d\'armes orques"
 		});
 		result.push({
 			id = 65,

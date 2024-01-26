@@ -4,7 +4,7 @@ this.ghost_swing_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.ghost_swing";
 		this.m.Name = "Balancement";
-		this.m.Description = "Balancer l'arme dans un large arc qui frappe trois tuiles adjacentes dans l'ordre anti-horaire. Faites attention à vos propres hommes à moins de vouloir soulager votre masse salariale !";
+		this.m.Description = "Balancer l\'arme dans un large arc qui frappe trois tuiles adjacentes dans l\'ordre anti-horaire. Faites attention à vos propres hommes à moins de vouloir soulager votre masse salariale !";
 		this.m.Icon = "skills/active_154.png";
 		this.m.Icon = "skills/active_154.png";
 		this.m.IconDisabled = "skills/active_154_sw.png";
@@ -42,7 +42,7 @@ this.ghost_swing_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Peut toucher jusqu'à 3 cibles"
+			text = "Peut toucher jusqu\'à 3 cibles"
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInSwords)

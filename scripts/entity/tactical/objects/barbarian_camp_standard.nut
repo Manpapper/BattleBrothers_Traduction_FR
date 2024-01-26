@@ -7,7 +7,7 @@ this.barbarian_camp_standard <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Un étendard qui ne laisse aucun doute sur l'identité des habitants de ce camp.";
+		return "Un étendard qui ne laisse aucun doute sur l\'identité des habitants de ce camp.";
 	}
 
 	function onInit()

@@ -38,7 +38,7 @@ this.trader_scenario <- this.inherit("scripts/scenarios/world/starting_scenario"
 		bros[0].setStartValuesEx([
 			"caravan_hand_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "Daytaler, maçon, meunier, %name% avait tout fait, passant d'une tâche à l'autre sans s'attarder à en faire une véritable vocation. Tu n'étais pas sûr s'il resterait longtemps comme homme de caravane non plus, mais quand on lui a demandé de se tourner vers le travail de mercenaire, il n'a eu aucun problème à accepter...";
+		bros[0].getBackground().m.RawDescription = "Daytaler, maçon, meunier, %name% avait tout fait, passant d\'une tâche à l\'autre sans s\'attarder à en faire une véritable vocation. Tu n\'étais pas sûr s\'il resterait longtemps comme homme de caravane non plus, mais quand on lui a demandé de se tourner vers le travail de mercenaire, il n\'a eu aucun problème à accepter...";
 		bros[0].setPlaceInFormation(3);
 		bros[0].m.Talents = [];
 		local talents = bros[0].getTalents();
@@ -49,7 +49,7 @@ this.trader_scenario <- this.inherit("scripts/scenarios/world/starting_scenario"
 		bros[1].setStartValuesEx([
 			"caravan_hand_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "Tu as trouvé %name% jeté hors d'un pub et à première vue, il n'était guère plus qu'un malfaiteur ivre. Mais tu as vu comment il a repoussé trois agresseurs potentiels. Ils ont réussi à lui prendre ses bottes à la fin, c'est sûr, mais ils n'ont pas pu vraiment vaincre son esprit. Impressionné, tu l'as pris comme homme de caravane.";
+		bros[1].getBackground().m.RawDescription = "Tu as trouvé %name% jeté hors d\'un pub et à première vue, il n\'était guère plus qu\'un malfaiteur ivre. Mais tu as vu comment il a repoussé trois agresseurs potentiels. Ils ont réussi à lui prendre ses bottes à la fin, c\'est sûr, mais ils n\'ont pas pu vraiment vaincre son esprit. Impressionné, tu l\'as pris comme homme de caravane.";
 		bros[1].setPlaceInFormation(4);
 		bros[1].m.Talents = [];
 		local talents = bros[1].getTalents();

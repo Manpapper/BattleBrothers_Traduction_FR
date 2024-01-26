@@ -7,7 +7,7 @@ this.tree_olive_dry <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Cet arbre s'est desséché et est mort depuis longtemps. Il bloque les mouvements et la visibilité.";
+		return "Cet arbre s\'est desséché et est mort depuis longtemps. Il bloque les mouvements et la visibilité.";
 	}
 
 	function onInit()

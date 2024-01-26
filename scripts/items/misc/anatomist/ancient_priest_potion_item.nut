@@ -5,7 +5,7 @@ this.ancient_priest_potion_item <- this.inherit("scripts/items/misc/anatomist/an
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.ancient_priest_potion";
 		this.m.Name = "Vaillance du Coquin";
-		this.m.Description = "Cette potion transformera même les plus poltrons des hommes en une véritable source de courage. Peu importe les chances ou l'adversaire, ils resteront intrépides ! Les effets secondaires peuvent inclure une perte de vie due à l'incapacité de reculer lorsque la situation l'exige.";
+		this.m.Description = "Cette potion transformera même les plus poltrons des hommes en une véritable source de courage. Peu importe les chances ou l\'adversaire, ils resteront intrépides ! Les effets secondaires peuvent inclure une perte de vie due à l\'incapacité de reculer lorsque la situation l\'exige.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_21.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.ancient_priest_potion_item <- this.inherit("scripts/items/misc/anatomist/an
 			id = 11,
 			type = "text",
 			icon = "ui/icons/morale.png",
-			text = "Ne peut pas être réduit à la morale 'Fuite', seulement 'Rompre'"
+			text = "Ne peut pas être réduit à la morale \'Fuite\', seulement \'Rompre\'"
 		});
 		result.push({
 			id = 65,

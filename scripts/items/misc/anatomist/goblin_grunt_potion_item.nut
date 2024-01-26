@@ -53,7 +53,7 @@ this.goblin_grunt_potion_item <- this.inherit("scripts/items/misc/anatomist/anat
 			id = 11,
 			type = "text",
 			icon = "ui/icons/action_points.png",
-			text = "Les coûts en Points d'Action des compétences Rotation et Footwork sont réduits à [color=" + this.Const.UI.Color.PositiveValue + "]2[/color]"
+			text = "Les coûts en Points d\'Action des compétences Rotation et Footwork sont réduits à [color=" + this.Const.UI.Color.PositiveValue + "]2[/color]"
 		});
 		result.push({
 			id = 12,

@@ -6,9 +6,9 @@ this.bone_platings_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.bone_platings";
-		this.m.Name = "BPlaque d'os";
-		this.m.Description = "Fabriquées à partir d'os solides mais étonnamment légers, ces plaques ornées constituent une armure ablative à porter par-dessus une armure régulière.";
-		this.m.ArmorDescription = "Une couche de plaques d'os ornées est fixée à cette armure.";
+		this.m.Name = "BPlaque d\'os";
+		this.m.Description = "Fabriquées à partir d\'os solides mais étonnamment légers, ces plaques ornées constituent une armure ablative à porter par-dessus une armure régulière.";
+		this.m.ArmorDescription = "Une couche de plaques d\'os ornées est fixée à cette armure.";
 		this.m.Icon = "armor_upgrades/upgrade_06.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_06.png";
@@ -30,7 +30,7 @@ this.bone_platings_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Absorbe complètement le premier coup de chaque rencontre en combat qui n'ignore pas l'armure"
+			text = "Absorbe complètement le premier coup de chaque rencontre en combat qui n\'ignore pas l\'armure"
 		});
 		result.push({
 			id = 14,
@@ -47,7 +47,7 @@ this.bone_platings_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Absorbe complètement le premier coup de chaque rencontre en combat qui n'ignore pas l'armure"
+			text = "Absorbe complètement le premier coup de chaque rencontre en combat qui n\'ignore pas l\'armure"
 		});
 	}
 

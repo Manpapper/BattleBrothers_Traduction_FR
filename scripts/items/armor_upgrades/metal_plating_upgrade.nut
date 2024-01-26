@@ -5,8 +5,8 @@ this.metal_plating_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.metal_plating";
 		this.m.Name = "Plaques Métalliques et Rivets";
-		this.m.Description = "Épaisses plaques métalliques rivetées à l'armure sous-jacente. Très rudimentaire, mais un moyen facile d'ajouter rapidement de la protection.";
-		this.m.ArmorDescription = "Cette armure est dotée d'une couche de plaques métalliques rudimentaires rivetées pour une protection supplémentaire.";
+		this.m.Description = "Épaisses plaques métalliques rivetées à l\'armure sous-jacente. Très rudimentaire, mais un moyen facile d\'ajouter rapidement de la protection.";
+		this.m.ArmorDescription = "Cette armure est dotée d\'une couche de plaques métalliques rudimentaires rivetées pour une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_12.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_12.png";

@@ -4,8 +4,8 @@ this.goblin_overseer_potion_item <- this.inherit("scripts/items/misc/anatomist/a
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.goblin_overseer_potion";
-		this.m.Name = "Breuvage du Tireur d'Élite";
-		this.m.Description = "À parts égales terrifiant et ennuyeux, le tir infaillible des gobelins de la caste supérieure a longtemps été considéré comme inaccessible pour les humains ordinaires respectueux d'eux-mêmes. Cependant, avec cette potion merveilleuse, le guerrier averti peut exploiter une partie de cette compétence latente pour lui-même à un coût cosmétique mineur !";
+		this.m.Name = "Breuvage du Tireur d\'Élite";
+		this.m.Description = "À parts égales terrifiant et ennuyeux, le tir infaillible des gobelins de la caste supérieure a longtemps été considéré comme inaccessible pour les humains ordinaires respectueux d\'eux-mêmes. Cependant, avec cette potion merveilleuse, le guerrier averti peut exploiter une partie de cette compétence latente pour lui-même à un coût cosmétique mineur !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_13.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.goblin_overseer_potion_item <- this.inherit("scripts/items/misc/anatomist/a
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Un [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] supplémentaire des dégâts ignore l'armure lors de l'utilisation d'arcs ou d'arbalètes"
+			text = "Un [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] supplémentaire des dégâts ignore l\'armure lors de l\'utilisation d\'arcs ou d\'arbalètes"
 		});
 		result.push({
 			id = 65,

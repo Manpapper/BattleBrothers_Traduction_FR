@@ -11,7 +11,7 @@ this.berserker_mushrooms_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.berserker_mushrooms";
 		 this.m.Name = "Manger ou Donner des Champignons Étranges";
-        this.m.Description = "Donnez à un allié adjacent ou mangez vous-même des champignons étranges pour entrer dans un état de rage semblable à une transe sans se soucier de votre sécurité. Peut entraîner la maladie. L'effet disparaîtra lentement au bout de 4 tours. Ne peut pas être utilisé en mêlée, et toute personne recevant l'objet doit avoir un emplacement de sac libre.";
+        this.m.Description = "Donnez à un allié adjacent ou mangez vous-même des champignons étranges pour entrer dans un état de rage semblable à une transe sans se soucier de votre sécurité. Peut entraîner la maladie. L\'effet disparaîtra lentement au bout de 4 tours. Ne peut pas être utilisé en mêlée, et toute personne recevant l\'objet doit avoir un emplacement de sac libre.";
 		this.m.Icon = "skills/active_98.png";
 		this.m.IconDisabled = "skills/active_98_sw.png";
 		this.m.Overlay = "active_98";

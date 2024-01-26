@@ -4,8 +4,8 @@ this.unhold_fur_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upgr
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.unhold_fur";
-		this.m.Name = "Cape en Fourrure d'Unhold";
-		this.m.Description = "Une épaisse cape confectionnée à partir de la majestueuse fourrure blanche d'un Unhold de givre. Peut être portée par-dessus n'importe quelle armure pour rendre le porteur plus résistant aux armes à distance.";
+		this.m.Name = "Cape en Fourrure d\'Unhold";
+		this.m.Description = "Une épaisse cape confectionnée à partir de la majestueuse fourrure blanche d\'un Unhold de givre. Peut être portée par-dessus n\'importe quelle armure pour rendre le porteur plus résistant aux armes à distance.";
 		this.m.ArmorDescription = "Une cape en épaisse fourrure blanche a été attachée à cette armure pour la rendre plus résistante aux armes à distance.";
 		this.m.Icon = "armor_upgrades/upgrade_02.png";
 		this.m.IconLarge = this.m.Icon;

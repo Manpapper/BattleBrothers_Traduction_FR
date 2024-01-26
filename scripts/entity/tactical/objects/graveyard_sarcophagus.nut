@@ -7,7 +7,7 @@ this.graveyard_sarcophagus <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Il s'agit probablement du dernier lieu de repos d'une personne décédée il y a longtemps.";
+		return "Il s\'agit probablement du dernier lieu de repos d\'une personne décédée il y a longtemps.";
 	}
 
 	function onInit()

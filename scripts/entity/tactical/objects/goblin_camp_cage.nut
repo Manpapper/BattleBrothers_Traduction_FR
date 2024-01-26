@@ -7,7 +7,7 @@ this.goblin_camp_cage <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Une cage contenant les restes d'un malheureux prisonnier.";
+		return "Une cage contenant les restes d\'un malheureux prisonnier.";
 	}
 
 	function onInit()

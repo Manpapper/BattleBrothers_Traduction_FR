@@ -1243,7 +1243,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 				party.setVisibleInFogOfWar(true);
 				party.setImportant(true);
 				party.setDiscovered(true);
-				party.setDescription("Une caravane accompagnée d'escortes armées transportant des provisions, des fournitures et du matériel entre les colonies.");
+				party.setDescription("Une caravane accompagnée d\'escortes armées transportant des provisions, des fournitures et du matériel entre les colonies.");
 				party.setFootprintType(this.Const.World.FootprintsType.Caravan);
 				party.getFlags().set("IsCaravan", true);
 				party.setAttackableByAI(false);

@@ -7,7 +7,7 @@ this.orc_camp_Fireplace <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Une cheminée. Vous ne voulez pas savoir ce qu'ils cuisinent ici.";
+		return "Une cheminée. Vous ne voulez pas savoir ce qu\'ils cuisinent ici.";
 	}
 
 	function onInit()

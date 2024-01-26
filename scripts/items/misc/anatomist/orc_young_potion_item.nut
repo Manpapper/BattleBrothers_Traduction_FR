@@ -5,7 +5,7 @@ this.orc_young_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.orc_young_potion";
 		this.m.Name = "Élixir du Kineticien";
-		this.m.Description = "Sentez la force d'un orc circuler dans vos veines ! Avaler cette potion infusera même les coups du plus timide des hommes avec la puissance destructive intense d'un peau verte imposant, garantie !";
+		this.m.Description = "Sentez la force d\'un orc circuler dans vos veines ! Avaler cette potion infusera même les coups du plus timide des hommes avec la puissance destructive intense d\'un peau verte imposant, garantie !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_14.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.orc_young_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 			id = 11,
 			type = "text",
 			icon = "ui/icons/armor_damage.png",
-			text = "Les attaques ont une efficacité accrue de [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] contre l'armure"
+			text = "Les attaques ont une efficacité accrue de [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] contre l\'armure"
 		});
 		result.push({
 			id = 65,

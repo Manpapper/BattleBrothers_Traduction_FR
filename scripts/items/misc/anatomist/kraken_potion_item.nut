@@ -5,7 +5,7 @@ this.kraken_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.kraken_potion";
 		this.m.Name = "Breuvage du Roi des Marais";
-		this.m.Description = "Prenez l'aspect de la bête des bêtes ! Avec cette potion miraculeuse, un infirme devient fort comme un homme fort, et un homme fort devient semblable à un dieu ! Les effets secondaires connus comprennent une augmentation de l'appétit et quelques hallucinations mineures.";
+		this.m.Description = "Prenez l\'aspect de la bête des bêtes ! Avec cette potion miraculeuse, un infirme devient fort comme un homme fort, et un homme fort devient semblable à un dieu ! Les effets secondaires connus comprennent une augmentation de l\'appétit et quelques hallucinations mineures.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_41.png";
 		this.m.Value = 0;

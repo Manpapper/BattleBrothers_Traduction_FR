@@ -1741,7 +1741,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					 text = "Ce personnage a déjà de l'expérience au combat et démarre avec un niveau plus élevé."
+					 text = "Ce personnage a déjà de l\'expérience au combat et démarre avec un niveau plus élevé."
 				}
 			];
 
@@ -1853,7 +1853,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					 text = "Une graine de carte est une chaîne unique qui détermine l'apparence du monde dans votre campagne. Vous pouvez voir la graine des campagnes en cours dans le menu du jeu accessible en appuyant sur la touche Échap, puis la partager avec des amis pour qu'ils jouent dans le même monde."
+					 text = "Une graine de carte est une chaîne unique qui détermine l\'apparence du monde dans votre campagne. Vous pouvez voir la graine des campagnes en cours dans le menu du jeu accessible en appuyant sur la touche Échap, puis la partager avec des amis pour qu\'ils jouent dans le même monde."
 				}
 			];
 
@@ -2021,7 +2021,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Une façon facultative de jouer au jeu où la carte est entièrement inexplorée et n'est pas visible au début de votre campagne. Vous devrez tout découvrir par vous-même, ce qui rend votre campagne plus difficile, mais potentiellement aussi plus excitante.\n\nRecommandé uniquement pour les joueurs expérimentés qui savent ce qu'ils font."
+					text = "Une façon facultative de jouer au jeu où la carte est entièrement inexplorée et n\'est pas visible au début de votre campagne. Vous devrez tout découvrir par vous-même, ce qui rend votre campagne plus difficile, mais potentiellement aussi plus excitante.\n\nRecommandé uniquement pour les joueurs expérimentés qui savent ce qu\'ils font."
 				}
 			];
 
@@ -2133,7 +2133,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Activer l'effet de profondeur de champ rendra légèrement floues les hauteurs sous la caméra en combat tactique (c'est-à-dire floues), donnant plus une ambiance de miniature et facilitant la différenciation des hauteurs, mais potentiellement au détriment de certains détails."
+					text = "Activer l\'effet de profondeur de champ rendra légèrement floues les hauteurs sous la caméra en combat tactique (c\'est-à-dire floues), donnant plus une ambiance de miniature et facilitant la différenciation des hauteurs, mais potentiellement au détriment de certains détails."
 				}
 			];
 
@@ -2147,7 +2147,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					 text = "Changez l'échelle de l'interface utilisateur, c'est-à-dire des menus et du texte."
+					 text = "Changez l\'échelle de l\'interface utilisateur, c\'est-à-dire des menus et du texte."
 				}
 			];
 
@@ -2161,7 +2161,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					 text = "Changez l'échelle de la scène, c'est-à-dire tout ce qui n'est pas l'interface utilisateur, comme les personnages affichés sur le champ de bataille."
+					 text = "Changez l\'échelle de la scène, c\'est-à-dire tout ce qui n\'est pas l\'interface utilisateur, comme les personnages affichés sur le champ de bataille."
 				}
 			];
 
@@ -2189,7 +2189,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Faites défiler l'écran en maintenant enfoncé le bouton gauche de la souris et en le faisant glisser (par défaut)."
+					text = "Faites défiler l\'écran en maintenant enfoncé le bouton gauche de la souris et en le faisant glisser (par défaut)."
 				}
 			];
 
@@ -2203,7 +2203,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					 text = "L'utilisation du curseur matériel réduit au minimum le décalage d'entrée lors du déplacement de la souris dans le jeu. Désactivez cela si vous rencontrez des problèmes avec le curseur de la souris."
+					 text = "L\'utilisation du curseur matériel réduit au minimum le décalage d\'entrée lors du déplacement de la souris dans le jeu. Désactivez cela si vous rencontrez des problèmes avec le curseur de la souris."
 				}
 			];
 
@@ -2226,12 +2226,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Centrer toujours sur le mouvement de l'IA"
+					text = "Centrer toujours sur le mouvement de l\'IA"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Ayez toujours la caméra centrée sur tout mouvement de l'IA visible pour vous."
+					text = "Ayez toujours la caméra centrée sur tout mouvement de l\'IA visible pour vous."
 				}
 			];
 
@@ -2245,7 +2245,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ajustez automatiquement le niveau de hauteur de la caméra pour voir le personnage actuellement actif en combat. La désactivation de cette option empêchera la caméra de changer de niveau de hauteur lorsqu'elle ne sera pas strictement nécessaire, mais nécessitera également un ajustement manuel des niveaux de hauteur lorsque les personnages seront obstrués par le terrain."
+					text = "Ajustez automatiquement le niveau de hauteur de la caméra pour voir le personnage actuellement actif en combat. La désactivation de cette option empêchera la caméra de changer de niveau de hauteur lorsqu\'elle ne sera pas strictement nécessaire, mais nécessitera également un ajustement manuel des niveaux de hauteur lorsque les personnages seront obstrués par le terrain."
 				}
 			];
 
@@ -2268,12 +2268,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Afficher les icônes d'orientation"
+					text = "Afficher les icônes d\'orientation"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Affiche des icônes aux bords de votre écran indiquant la direction dans laquelle se trouvent actuellement les personnages à l'extérieur de l'écran sur la carte."
+					text = "Affiche des icônes aux bords de votre écran indiquant la direction dans laquelle se trouvent actuellement les personnages à l\'extérieur de l\'écran sur la carte."
 				}
 			];
 
@@ -2478,12 +2478,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Descendre d'un niveau de caméra (-)"
+					text = "Descendre d\'un niveau de caméra (-)"
 				},
 				{
 					id = 2,
 					type = "description",
-					 text = "Descendre d'un niveau de caméra et masquer les parties élevées de la carte."
+					 text = "Descendre d\'un niveau de caméra et masquer les parties élevées de la carte."
 				}
 			];
 
@@ -3868,7 +3868,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					 text = "Le DLC gratuit Lindwurm ajoute une nouvelle bête difficile, un nouveau bannière de joueur, ainsi qu'une nouvelle armure renommée, un casque et un bouclier."
+					 text = "Le DLC gratuit Lindwurm ajoute une nouvelle bête difficile, un nouveau bannière de joueur, ainsi qu\'une nouvelle armure renommée, un casque et un bouclier."
 				}
 			];
 
@@ -3899,7 +3899,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le DLC Beasts & Exploration ajoute une variété de nouvelles créatures errant dans les contrées sauvages, un nouveau système d'artisanat pour créer des objets à partir de trophées, des lieux légendaires avec des récompenses uniques à découvrir, de nombreux nouveaux contrats et événements, un nouveau système d'accessoires d'armure, de nouvelles armes, armures et objets utilisables, et plus encore."
+					text = "Le DLC Beasts & Exploration ajoute une variété de nouvelles créatures errant dans les contrées sauvages, un nouveau système d\'artisanat pour créer des objets à partir de trophées, des lieux légendaires avec des récompenses uniques à découvrir, de nombreux nouveaux contrats et événements, un nouveau système d\'accessoires d\'armure, de nouvelles armes, armures et objets utilisables, et plus encore."
 				}
 			];
 
@@ -3909,7 +3909,7 @@ this.tooltip_events <- {
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l'achat sur Steam et GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l\'achat sur Steam et GOG![/color]";
 			}
 
 			ret.push({
@@ -3971,7 +3971,7 @@ this.tooltip_events <- {
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l'achat sur Steam et GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l\'achat sur Steam et GOG![/color]";
 			}
 			
 			ret.push({

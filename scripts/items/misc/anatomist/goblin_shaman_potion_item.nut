@@ -5,7 +5,7 @@ this.goblin_shaman_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.goblin_shaman_potion";
 		this.m.Name = "Potion du Pot de Graisse";
-		this.m.Description = "Bien que l'expression 'glissant comme un gobelin' n'ait pas encore pris dans le langage courant, quiconque a combattu les abominables peaux-vertes connaît sa vérité. Avec cette potion étonnante, cependant, n'importe qui peut adopter cet aspect répugnant !";
+		this.m.Description = "Bien que l\'expression \'glissant comme un gobelin\' n\'ait pas encore pris dans le langage courant, quiconque a combattu les abominables peaux-vertes connaît sa vérité. Avec cette potion étonnante, cependant, n\'importe qui peut adopter cet aspect répugnant !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_12.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.goblin_shaman_potion_item <- this.inherit("scripts/items/misc/anatomist/ana
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Toujours capable de s'échapper avec succès de l'emprisonnement, comme avec des filets ou des racines"
+			text = "Toujours capable de s\'échapper avec succès de l\'emprisonnement, comme avec des filets ou des racines"
 		});
 		result.push({
 			id = 65,

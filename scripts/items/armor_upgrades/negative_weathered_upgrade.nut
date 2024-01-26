@@ -27,7 +27,7 @@ this.negative_weathered_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 			id = 6,
 			type = "text",
 			icon = "ui/icons/warning.png",
-			text = "Aucun emplacement d'accessoire d'armure"
+			text = "Aucun emplacement d\'accessoire d\'armure"
 		});
 	}
 

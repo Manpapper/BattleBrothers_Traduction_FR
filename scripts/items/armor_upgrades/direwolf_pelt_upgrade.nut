@@ -5,7 +5,7 @@ this.direwolf_pelt_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_u
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.direwolf_pelt";
 		this.m.Name = "Manteau en Peau de Loup-Dire";
-		this.m.Description = "Peaux prélevées sur des loups-dires féroces, traitées et cousues ensemble pour être portées comme un trophée de chasseur de bêtes autour du cou. Revêtir la peau d'une bête comme celle-ci peut transformer quelqu'un en une figure imposante.";
+		this.m.Description = "Peaux prélevées sur des loups-dires féroces, traitées et cousues ensemble pour être portées comme un trophée de chasseur de bêtes autour du cou. Revêtir la peau d\'une bête comme celle-ci peut transformer quelqu\'un en une figure imposante.";
 		this.m.ArmorDescription = "Un manteau de peaux de loups-dires a été attaché à cette armure, transformant celui qui le porte en une figure imposante.";
 		this.m.Icon = "armor_upgrades/upgrade_01.png";
 		this.m.IconLarge = this.m.Icon;

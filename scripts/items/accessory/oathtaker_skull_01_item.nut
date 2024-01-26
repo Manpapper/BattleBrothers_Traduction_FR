@@ -5,7 +5,7 @@ this.oathtaker_skull_01_item <- this.inherit("scripts/items/accessory/accessory"
 		this.accessory.create();
 		this.m.ID = "accessory.oathtaker_skull_01";
 		this.m.Name = "Crâne de Jeune Anselm";
-		this.m.Description = "Le crâne de Jeune Anselm, le premier Jureur. Orner soi-même d'un tel artefact inestimable remplirait sûrement tout homme d'honneur et de courage.";
+		this.m.Description = "Le crâne de Jeune Anselm, le premier Jureur. Orner soi-même d\'un tel artefact inestimable remplirait sûrement tout homme d\'honneur et de courage.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

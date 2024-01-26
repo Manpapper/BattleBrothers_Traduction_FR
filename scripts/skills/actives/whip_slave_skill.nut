@@ -3,8 +3,8 @@ this.whip_slave_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.whip_slave";
-		this.m.Name = "Fouetter l'Esclave";
-		this.m.Description = "Rappelez à vos endettés qui est leur maître en les fouettant, afin qu'ils donnent tout, y compris leur vie même.";
+		this.m.Name = "Fouetter l\'Esclave";
+		this.m.Description = "Rappelez à vos endettés qui est leur maître en les fouettant, afin qu\'ils donnent tout, y compris leur vie même.";
 		this.m.KilledString = "Whipped to death";
 		this.m.Icon = "skills/active_214.png";
 		this.m.IconDisabled = "skills/active_214_sw.png";
@@ -50,19 +50,19 @@ this.whip_slave_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]1[/color] - [color=" + this.Const.UI.Color.DamageValue + "]3[/color] dégâts qui ignorent l'armure à la cible"
+				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]1[/color] - [color=" + this.Const.UI.Color.DamageValue + "]3[/color] dégâts qui ignorent l\'armure à la cible"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Donne à l'endetté ciblé l'effet de statut 'Fouetté', augmentant plusieurs de leurs statistiques pendant 2 rounds. Plus le niveau du personnage utilisant cette compétence est élevé, plus l'augmentation est grande."
+				text = "Donne à l\'endetté ciblé l\'effet de statut \'Fouetté\', augmentant plusieurs de leurs statistiques pendant 2 rounds. Plus le niveau du personnage utilisant cette compétence est élevé, plus l\'augmentation est grande."
 			},
 			{
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Réinitialise la morale de l'endetté ciblé à 'Stable' s'il est actuellement inférieur"
+				text = "Réinitialise la morale de l\'endetté ciblé à \'Stable\' s\'il est actuellement inférieur"
 			}
 		];
 		return ret;

@@ -29,7 +29,7 @@ this.raiders_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[0].setStartValuesEx([
 			"barbarian_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "Un guerrier robuste, %name% a traversé de nombreuses campagnes de raids et de pillages. Bien qu'homme de peu de mots, le pillard est un spécimen absolument vicieux au combat. Même pour un pillard, ce qu'il fait aux villageois vaincus irrite beaucoup. Il est probable qu'il soit venu avec toi pour assouvir ses pulsions sadiques.";
+		bros[0].getBackground().m.RawDescription = "Un guerrier robuste, %name% a traversé de nombreuses campagnes de raids et de pillages. Bien qu\'homme de peu de mots, le pillard est un spécimen absolument vicieux au combat. Même pour un pillard, ce qu\'il fait aux villageois vaincus irrite beaucoup. Il est probable qu\'il soit venu avec toi pour assouvir ses pulsions sadiques.";
 		bros[0].improveMood(1.0, "Had a successful raid");
 		bros[0].setPlaceInFormation(3);
 		bros[0].m.PerkPoints = 2;
@@ -52,7 +52,7 @@ this.raiders_scenario <- this.inherit("scripts/scenarios/world/starting_scenario
 		bros[1].setStartValuesEx([
 			"barbarian_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "%name% était un garçon lorsqu'il a été pris d'un village du sud et élevé parmi les barbares des terres désolées. Bien qu'il ait appris la langue et la culture, il n'a jamais trouvé sa place et a été constamment victime de blagues cruelles et de jeux. Tu n'es pas sûr s'il t'a suivi pour rentrer chez lui ou pour fuir sa 'famille' du nord.";
+		bros[1].getBackground().m.RawDescription = "%name% était un garçon lorsqu\'il a été pris d\'un village du sud et élevé parmi les barbares des terres désolées. Bien qu\'il ait appris la langue et la culture, il n\'a jamais trouvé sa place et a été constamment victime de blagues cruelles et de jeux. Tu n\'es pas sûr s\'il t\'a suivi pour rentrer chez lui ou pour fuir sa \'famille\' du nord.";
 bros[1].improveMood(1.0, "A eu un raid réussi");
 		bros[1].improveMood(1.0, "Had a successful raid");
 		bros[1].setPlaceInFormation(4);
@@ -73,7 +73,7 @@ bros[1].improveMood(1.0, "A eu un raid réussi");
 		bros[2].setStartValuesEx([
 			"barbarian_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "Les pillards barbares prennent souvent dans des terres étrangères. La plupart voient leurs raids comme une question de matériel et de femmes, mais occasionnellement, ils esclavagisent des garçons redoutables avec un grand potentiel. %name%, un homme du nord, était un tel enfant et il a été élevé pour devenir lui-même un pillard. La moitié de sa vie a été avec son clan primitif, et l'autre moitié avec ceux qui l'ont pris. Cela en a fait un guerrier aussi robuste et brutal que possible.";
+		bros[2].getBackground().m.RawDescription = "Les pillards barbares prennent souvent dans des terres étrangères. La plupart voient leurs raids comme une question de matériel et de femmes, mais occasionnellement, ils esclavagisent des garçons redoutables avec un grand potentiel. %name%, un homme du nord, était un tel enfant et il a été élevé pour devenir lui-même un pillard. La moitié de sa vie a été avec son clan primitif, et l\'autre moitié avec ceux qui l\'ont pris. Cela en a fait un guerrier aussi robuste et brutal que possible.";
 		bros[2].improveMood(1.0, "Had a successful raid");
 		bros[2].setPlaceInFormation(5);
 		bros[2].m.PerkPoints = 2;
@@ -93,7 +93,7 @@ bros[1].improveMood(1.0, "A eu un raid réussi");
 		bros[3].setStartValuesEx([
 			"monk_background"
 		]);
-		bros[3].getBackground().m.RawDescription = "L'homme qui t'a mis sur le chemin, tu crois que %name% pourrait jouer un rôle plus important dans ta quête de richesses immenses. Tu as vu des hommes du nord handicapés et des hommes à un bras qui le surpasseraient probablement au combat, mais sa connaissance et son intelligence pourraient être des lames plus aiguisées en temps voulu.";
+		bros[3].getBackground().m.RawDescription = "L\'homme qui t\'a mis sur le chemin, tu crois que %name% pourrait jouer un rôle plus important dans ta quête de richesses immenses. Tu as vu des hommes du nord handicapés et des hommes à un bras qui le surpasseraient probablement au combat, mais sa connaissance et son intelligence pourraient être des lames plus aiguisées en temps voulu.";
 bros[3].improveMood(2.0, 
 		bros[3].improveMood(2.0, "Thinks he managed to convince you to give up raiding and pillaging");
 		bros[3].setPlaceInFormation(13);

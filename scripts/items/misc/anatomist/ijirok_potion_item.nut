@@ -5,7 +5,7 @@ this.ijirok_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.ijirok_potion";
 		this.m.Name = "Élixir du Dieu Fou";
-		this.m.Description = "L'étiquette principale de cet élixir est illisible, écrite en sigles griffonnés à la hâte dans une langue étrangère ou fictive. En dessous, écrit dans une écriture soignée et petite : 'EFFETS SECONDAIRES : NOMBREUX'. Passionnant !";
+		this.m.Description = "L\'étiquette principale de cet élixir est illisible, écrite en sigles griffonnés à la hâte dans une langue étrangère ou fictive. En dessous, écrit dans une écriture soignée et petite : \'EFFETS SECONDAIRES : NOMBREUX\'. Passionnant !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_37.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.ijirok_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] de chance de résister à n'importe quel effet de statut, comme Étourdi ou Assommé"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] de chance de résister à n\'importe quel effet de statut, comme Étourdi ou Assommé"
 		});
 		result.push({
 			id = 65,

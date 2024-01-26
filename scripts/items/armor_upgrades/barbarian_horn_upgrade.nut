@@ -5,7 +5,7 @@ this.barbarian_horn_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.barbarian_horn";
 		this.m.Name = "Corne et Os";
-		this.m.Description = "L'ornement cérémonial d'un roi autoproclamé barbare. Les cornes rares et durables agissent comme une armure étonnamment efficace.";
+		this.m.Description = "L\'ornement cérémonial d\'un roi autoproclamé barbare. Les cornes rares et durables agissent comme une armure étonnamment efficace.";
 		this.m.ArmorDescription = "Cette armure a été ornée de cornes cérémoniales par des artisans barbares.";
 		this.m.Icon = "armor_upgrades/upgrade_23.png";
 		this.m.IconLarge = this.m.Icon;

@@ -7,7 +7,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.pound";
 		this.m.Name = "Pound";
 		this.m.Name = "Frappe";
-		this.m.Description = "Frappe la cible au sol avec la chaîne et frappe la tête. Quelque peu imprévisible, mais capable de frapper par-dessus ou autour d'un bouclier avec un peu de chance. Une cible frappée avec assez de force peut être étourdie pendant un tour.";
+		this.m.Description = "Frappe la cible au sol avec la chaîne et frappe la tête. Quelque peu imprévisible, mais capable de frapper par-dessus ou autour d\'un bouclier avec un peu de chance. Une cible frappée avec assez de force peut être étourdie pendant un tour.";
 		this.m.Icon = "skills/active_50.png";
 		this.m.IconDisabled = "skills/active_50_sw.png";
 		this.m.Overlay = "active_50";
@@ -71,7 +71,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Inflige  [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] de dégâts aux Point de Vie, avec [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] pouvant ignorer l'armure"
+			text = "Inflige  [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] de dégâts aux Point de Vie, avec [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] pouvant ignorer l\'armure"
 		});
 
 		if (damage_Armor_max > 0)
@@ -80,7 +80,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Inflige  [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_max + "[/color] de dégâts à l'armure"
+				text = "Inflige  [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_max + "[/color] de dégâts à l\'armure"
 			});
 		}
 
@@ -90,7 +90,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Les coups à la tête ignorent [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] d'armure supplémentaire"
+				text = "Les coups à la tête ignorent [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] d\'armure supplémentaire"
 			});
 		}
 		else
@@ -99,7 +99,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Les coups à la tête ignorent [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] d'armure supplémentaire"
+				text = "Les coups à la tête ignorent [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] d\'armure supplémentaire"
 			});
 		}
 
@@ -107,7 +107,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "A une chance de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] d'étourdir en cas de réussite"
+			text = "A une chance de [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] d\'étourdir en cas de réussite"
 		});
 		ret.push({
 			id = 8,

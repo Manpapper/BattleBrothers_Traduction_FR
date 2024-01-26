@@ -134,7 +134,7 @@ this.oathbreaker_event <- this.inherit("scripts/events/event", {
 					"paladin_background"
 				]);
 				_event.m.Dude.setTitle("the Oathbreaker");
-				_event.m.Dude.getBackground().m.RawDescription = "Comme beaucoup d'hommes, %name% a été trouvé dans la misère. De la bière sur ses lèvres, de la crasse dans ses oreilles, de l'urine et des excréments au moins quelque part sur lui. Mais il était un Gardien de Serments dans l'âme, et par la providence du jeune Anselm, ce n'était certainement pas une circonstance ordinaire qui l'a ramené à la foi. Bien sûr, il associera toujours la bière à la croyance, mais de temps en temps, on doit permettre à un homme ses vices, surtout si ledit homme partage un intérêt pour tuer les Porteurs de Serments."
+				_event.m.Dude.getBackground().m.RawDescription = "Comme beaucoup d\'hommes, %name% a été trouvé dans la misère. De la bière sur ses lèvres, de la crasse dans ses oreilles, de l\'urine et des excréments au moins quelque part sur lui. Mais il était un Gardien de Serments dans l\'âme, et par la providence du jeune Anselm, ce n\'était certainement pas une circonstance ordinaire qui l\'a ramené à la foi. Bien sûr, il associera toujours la bière à la croyance, mais de temps en temps, on doit permettre à un homme ses vices, surtout si ledit homme partage un intérêt pour tuer les Porteurs de Serments."
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.m.PerkPoints = 0;
 				_event.m.Dude.m.LevelUps = 0;

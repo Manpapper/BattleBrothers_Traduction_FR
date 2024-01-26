@@ -4,7 +4,7 @@ this.reap_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.reap";
 	this.m.Name = "Moissonner";
-		this.m.Description = "Une frappe balayante en un large arc qui touche trois tuiles adjacentes dans l'ordre antihoraire sur une certaine distance. Faites attention à vos propres hommes à moins que vous ne vouliez soulager votre masse salariale !";
+		this.m.Description = "Une frappe balayante en un large arc qui touche trois tuiles adjacentes dans l\'ordre antihoraire sur une certaine distance. Faites attention à vos propres hommes à moins que vous ne vouliez soulager votre masse salariale !";
 		this.m.Icon = "skills/active_100.png";
 		this.m.IconDisabled = "skills/active_100_sw.png";
 		this.m.Overlay = "active_100";
@@ -48,7 +48,7 @@ this.reap_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Peut toucher jusqu'à 3 cibles"
+			text = "Peut toucher jusqu\'à 3 cibles"
 		});
 		ret.push({
 			id = 7,
@@ -63,7 +63,7 @@ this.reap_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] de chance de toucher les cibles directement adjacentes car l'arme est trop difficile à manier"
+				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] de chance de toucher les cibles directement adjacentes car l\'arme est trop difficile à manier"
 			});
 		}
 

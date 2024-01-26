@@ -33,7 +33,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			"manhunter_background"
 		]);
 		bros[0].setTitle("the Stoic");
-		bros[0].getBackground().m.RawDescription = "{Dans un sens, tu n'as pas particulièrement d'affection pour %name%. Il n'est ni haineux ni clément envers les prisonniers de guerre, les criminels, et autres. Il gère simplement ses affaires. Mais il a aussi cette manière calme et inébranlable avec toi, et c'est un peu dérangeant. Cet homme a tellement de potentiel, c'est pourquoi tu l'as à bord pour la %companyname%, mais tu souhaiterais simplement qu'il montre de temps en temps un peu de passion.}";
+		bros[0].getBackground().m.RawDescription = "{Dans un sens, tu n\'as pas particulièrement d\'affection pour %name%. Il n\'est ni haineux ni clément envers les prisonniers de guerre, les criminels, et autres. Il gère simplement ses affaires. Mais il a aussi cette manière calme et inébranlable avec toi, et c\'est un peu dérangeant. Cet homme a tellement de potentiel, c\'est pourquoi tu l\'as à bord pour la %companyname%, mais tu souhaiterais simplement qu\'il montre de temps en temps un peu de passion.}";
 		bros[0].setPlaceInFormation(12);
 		local items = bros[0].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -60,7 +60,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			"manhunter_background"
 		]);
 		bros[1].setTitle("the Whip");
-		bros[1].getBackground().m.RawDescription = "{%name% est l'une des pires personnes que vous ayez jamais connues. Il est impitoyablement brutal envers les endettés, même selon vos critères, et est responsable de la mort de quelques-uns de vos prises. Cela dit, sa cruauté servira bien à la compagnie. Et étant donné que vous l'avez déjà fouetté une fois ou deux pour avoir perdu des stocks, vous savez qu'il peut encaisser aussi bien qu'il peut donner.}";
+		bros[1].getBackground().m.RawDescription = "{%name% est l\'une des pires personnes que vous ayez jamais connues. Il est impitoyablement brutal envers les endettés, même selon vos critères, et est responsable de la mort de quelques-uns de vos prises. Cela dit, sa cruauté servira bien à la compagnie. Et étant donné que vous l\'avez déjà fouetté une fois ou deux pour avoir perdu des stocks, vous savez qu\'il peut encaisser aussi bien qu\'il peut donner.}";
 		bros[1].setPlaceInFormation(13);
 		local items = bros[1].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
@@ -80,7 +80,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			"slave_southern_background"
 		]);
 		bros[2].setTitle("the Learned");
-		bros[2].getBackground().m.RawDescription = "{Vous avez trouvé %name% en train d'être emprisonné par les gardes de la ville. On aurait dit qu'ils allaient jouer à 'attrape le cimeterre' avec ses poignets jusqu'à ce que vous interveniez, soutenant qu'il devait de l'argent au Gilder bien avant de devoir de l'argent à un homme. Vous espériez le céder à des vizirs bien payés, mais aucun ne voulait le prendre, car il était trop 'instruit' et semblait être le genre de menace susceptible de provoquer une révolte. Contrairement à un homme de son rang, il vous témoigne un certain respect.}";
+		bros[2].getBackground().m.RawDescription = "{Vous avez trouvé %name% en train d\'être emprisonné par les gardes de la ville. On aurait dit qu\'ils allaient jouer à \'attrape le cimeterre\' avec ses poignets jusqu\'à ce que vous interveniez, soutenant qu\'il devait de l\'argent au Gilder bien avant de devoir de l\'argent à un homme. Vous espériez le céder à des vizirs bien payés, mais aucun ne voulait le prendre, car il était trop \'instruit\' et semblait être le genre de menace susceptible de provoquer une révolte. Contrairement à un homme de son rang, il vous témoigne un certain respect.}";
 		bros[2].setPlaceInFormation(2);
 		bros[2].getSkills().removeByID("trait.dumb");
 		bros[2].getSkills().add(this.new("scripts/skills/traits/bright_trait"));
@@ -94,7 +94,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			"slave_background"
 		]);
 		bros[3].setTitle("the Northerner");
-		bros[3].getBackground().m.RawDescription = "{Ce n'est pas un homme sympathique, mais c'est à cela que servent les chaînes. %name% était sur le billot pour une série de crimes quand vous êtes tombé sur lui. Vous avez payé pour sa vie comme un investissement, déclarant qu'il devait maintenant travailler dur pour trouver le salut aux yeux du Gilder. Il n'est pas si sûr de vos convictions sincères, mais vous avez payé un prêtre pour confirmer que l'homme doit effectivement sa sueur à une sublimité supérieure.}";
+		bros[3].getBackground().m.RawDescription = "{Ce n\'est pas un homme sympathique, mais c\'est à cela que servent les chaînes. %name% était sur le billot pour une série de crimes quand vous êtes tombé sur lui. Vous avez payé pour sa vie comme un investissement, déclarant qu\'il devait maintenant travailler dur pour trouver le salut aux yeux du Gilder. Il n\'est pas si sûr de vos convictions sincères, mais vous avez payé un prêtre pour confirmer que l\'homme doit effectivement sa sueur à une sublimité supérieure.}";
 		bros[3].setPlaceInFormation(3);
 		bros[3].getSprite("miniboss").setBrush("bust_miniboss_indebted");
 		local items = bros[3].getItems();
@@ -107,7 +107,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			"slave_southern_background"
 		]);
 		bros[4].setTitle("the Deserter");
-		bros[4].getBackground().m.RawDescription = "{%name% est un héritage de l'hérésie, un homme offert à vous par l'un des prêtres du Vizir. L'homme était un déserteur dans l'armée du grand seigneur, mais grâce à des connexions riches, il a réussi à éviter l'exécution. Cependant, il n'y a qu'une seule façon d'éviter le feu des enfers, et c'est à travers une gratitude endettée. Il travaillera pour vous jusqu'à ce qu'il trouve le salut, et quand cela arrivera dépend entièrement de vous.}";
+		bros[4].getBackground().m.RawDescription = "{%name% est un héritage de l\'hérésie, un homme offert à vous par l\'un des prêtres du Vizir. L\'homme était un déserteur dans l\'armée du grand seigneur, mais grâce à des connexions riches, il a réussi à éviter l\'exécution. Cependant, il n\'y a qu\'une seule façon d\'éviter le feu des enfers, et c\'est à travers une gratitude endettée. Il travaillera pour vous jusqu\'à ce qu\'il trouve le salut, et quand cela arrivera dépend entièrement de vous.}";
 		bros[4].setPlaceInFormation(4);
 		bros[4].getSprite("miniboss").setBrush("bust_miniboss_indebted");
 		local items = bros[4].getItems();
@@ -118,7 +118,7 @@ this.manhunters_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			"slave_southern_background"
 		]);
 		bros[5].setTitle("the Beggar");
-		bros[5].getBackground().m.RawDescription ="{Trouvé dans les rues, %name% n'avait jamais eu beaucoup de chances. En tant que mendiant, il était physiquement facile de lui mettre les chaînes, et socialement personne ne s'en soucierait. Le Gilder ne se soucie pas de ceux qui ne travaillent pas, et chaque jour l'homme gaspillé sans mettre sa sueur en banque accumulait une dette. Maintenant, elle doit être payée, sinon il goûtera à ce feu désertique pour l'éternité. Il a en fait l'air plus en bonne santé maintenant que quand vous l'avez trouvé, bien qu'il ne semble jamais vous remercier pour cela.}";
+		bros[5].getBackground().m.RawDescription ="{Trouvé dans les rues, %name% n\'avait jamais eu beaucoup de chances. En tant que mendiant, il était physiquement facile de lui mettre les chaînes, et socialement personne ne s\'en soucierait. Le Gilder ne se soucie pas de ceux qui ne travaillent pas, et chaque jour l\'homme gaspillé sans mettre sa sueur en banque accumulait une dette. Maintenant, elle doit être payée, sinon il goûtera à ce feu désertique pour l\'éternité. Il a en fait l\'air plus en bonne santé maintenant que quand vous l\'avez trouvé, bien qu\'il ne semble jamais vous remercier pour cela.}";
 		bros[5].setPlaceInFormation(5);
 		bros[5].getSprite("miniboss").setBrush("bust_miniboss_indebted");
 		local items = bros[5].getItems();

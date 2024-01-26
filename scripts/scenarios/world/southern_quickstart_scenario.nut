@@ -38,17 +38,17 @@ this.southern_quickstart_scenario <- this.inherit("scripts/scenarios/world/start
 		bros[0].setStartValuesEx([
 			"companion_1h_southern_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "{%name% faisait autrefois partie de la garde d'élite d'un Vizir. Une bataille féroce a vu toute sa légion anéantie et lui-même enseveli sous leurs cadavres. Il a été abandonné dans le désert et a survécu de manière qu'il ne te dira même pas aujourd'hui. Mais sa loyauté infaillible envers toi en dit plus que n'importe quelle histoire de guerre pourrait jamais.}";
+		bros[0].getBackground().m.RawDescription = "{%name% faisait autrefois partie de la garde d\'élite d\'un Vizir. Une bataille féroce a vu toute sa légion anéantie et lui-même enseveli sous leurs cadavres. Il a été abandonné dans le désert et a survécu de manière qu\'il ne te dira même pas aujourd\'hui. Mais sa loyauté infaillible envers toi en dit plus que n\'importe quelle histoire de guerre pourrait jamais.}";
 		bros[0].setPlaceInFormation(3);
 		bros[1].setStartValuesEx([
 			"companion_2h_southern_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "{Si la loyauté était de l'or, %name% pourrait être l'homme le plus riche à se tenir sous l'œil du Gilder. Tu as trouvé l'homme attaqué en embuscade dans une ruelle. En l'aidant à repousser les voleurs, il a juré allégeance pour une année. Et cela fait bien plus depuis. Malgré s'être fait botter le cul à première vue, %name% est un combattant très redoutable quand il n'est pas pris au dépourvu.}";
+		bros[1].getBackground().m.RawDescription = "{Si la loyauté était de l\'or, %name% pourrait être l\'homme le plus riche à se tenir sous l\'œil du Gilder. Tu as trouvé l\'homme attaqué en embuscade dans une ruelle. En l\'aidant à repousser les voleurs, il a juré allégeance pour une année. Et cela fait bien plus depuis. Malgré s\'être fait botter le cul à première vue, %name% est un combattant très redoutable quand il n\'est pas pris au dépourvu.}";
 		bros[1].setPlaceInFormation(4);
 		bros[2].setStartValuesEx([
 			"companion_ranged_southern_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "{Tu n'es pas entièrement sûr du passé de %name%, seulement que son chemin n'a pas eu autant d'éclat qu'on l'aurait espéré. Il dit avoir rempli de nombreux rôles, mais l'armée ne le veut pas, la garde de la ville ne le veut pas, et les femmes certainement ne le veulent pas, alors il a choisi la vie en tant que Crownling. Il pense qu'une mort glorieuse et hâtée le conduira sous l'œil du Gilder pour lui demander pourquoi exactement Il a traité sa vie si durement. Quand il ne traîne pas en se plaignant, %name% peut être joyeux et drôle. Il suffit de le tenir éloigné des boissons et des prêtres.}";
+		bros[2].getBackground().m.RawDescription = "{Tu n\'es pas entièrement sûr du passé de %name%, seulement que son chemin n\'a pas eu autant d\'éclat qu\'on l\'aurait espéré. Il dit avoir rempli de nombreux rôles, mais l\'armée ne le veut pas, la garde de la ville ne le veut pas, et les femmes certainement ne le veulent pas, alors il a choisi la vie en tant que Crownling. Il pense qu\'une mort glorieuse et hâtée le conduira sous l\'œil du Gilder pour lui demander pourquoi exactement Il a traité sa vie si durement. Quand il ne traîne pas en se plaignant, %name% peut être joyeux et drôle. Il suffit de le tenir éloigné des boissons et des prêtres.}";
 		bros[2].setPlaceInFormation(5);
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/rice_item"));
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/rice_item"));

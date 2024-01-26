@@ -5,7 +5,7 @@ this.lindwurm_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.lindwurm_potion";
 		this.m.Name = "Teinture de Sangembrasé";
-		this.m.Description = "Sentez votre sang bouillonner ! Ou, pour être plus précis, non ! Avec cette teinture, le sang brûlant d'un lindwurm coulera à travers des veines décidément humaines, le sujet chanceux n'y verrait que du feu. Jusqu'à ce qu'il commence à saigner, bien sûr.";
+		this.m.Description = "Sentez votre sang bouillonner ! Ou, pour être plus précis, non ! Avec cette teinture, le sang brûlant d\'un lindwurm coulera à travers des veines décidément humaines, le sujet chanceux n\'y verrait que du feu. Jusqu\'à ce qu\'il commence à saigner, bien sûr.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_27.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.lindwurm_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Fait brûler le sang d'un personnage avec de l'acide, infligeant des dégâts aux attaquants en mêlée chaque fois qu'ils infligent des dégâts aux points de vie"
+			text = "Fait brûler le sang d\'un personnage avec de l\'acide, infligeant des dégâts aux attaquants en mêlée chaque fois qu\'ils infligent des dégâts aux points de vie"
 		});
 		result.push({
 			id = 65,

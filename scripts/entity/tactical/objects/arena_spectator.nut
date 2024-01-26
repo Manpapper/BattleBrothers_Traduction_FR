@@ -7,7 +7,7 @@ this.arena_spectator <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Un spectateur acclamant le combat de l'arène";
+		return "Un spectateur acclamant le combat de l\'arène";
 	}
 
 	function setFlipped( _flip )

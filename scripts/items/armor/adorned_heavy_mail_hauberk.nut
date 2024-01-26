@@ -5,7 +5,7 @@ this.adorned_heavy_mail_hauberk <- this.inherit("scripts/items/armor/armor", {
 		this.armor.create();
 		this.m.ID = "armor.body.adorned_heavy_mail_hauberk";
 		this.m.Name = "Haubert de mailles lourdes orné";
-		this.m.Description = "Un haubert de mailles lourdes porté sous une épaisse veste rivetée et renforcé avec des avant-bras. Ornée de trophées et entretenue avec amour malgré son utilisation extensive, c'est l'armure d'un véritable chevalier quêteur.";
+		this.m.Description = "Un haubert de mailles lourdes porté sous une épaisse veste rivetée et renforcé avec des avant-bras. Ornée de trophées et entretenue avec amour malgré son utilisation extensive, c\'est l\'armure d\'un véritable chevalier quêteur.";
 		this.m.SlotType = this.Const.ItemSlot.Body;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;

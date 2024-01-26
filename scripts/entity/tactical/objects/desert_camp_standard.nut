@@ -7,7 +7,7 @@ this.desert_camp_standard <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Armes misent en évidence, peut-être en guise d'avertissement pour les intrus.";
+		return "Armes misent en évidence, peut-être en guise d\'avertissement pour les intrus.";
 	}
 
 	function onInit()

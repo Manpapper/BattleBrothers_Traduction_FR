@@ -5,8 +5,8 @@ this.metal_pauldrons_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.metal_pauldrons";
 	this.m.Name = "Spalières en Métal";
-		this.m.Description = "Des spalières en métal robuste qui peuvent être ajoutées à n'importe quelle armure pour une protection accrue des épaules et du haut du corps. Bien sûr, cela rendra également l'armure un peu plus lourde.";
-		this.m.ArmorDescription = "Des spalières en métal robuste ont été ajoutées à cette armure pour une protection accrue des épaules et du haut du corps, mais au prix d'un poids supplémentaire.";
+		this.m.Description = "Des spalières en métal robuste qui peuvent être ajoutées à n\'importe quelle armure pour une protection accrue des épaules et du haut du corps. Bien sûr, cela rendra également l\'armure un peu plus lourde.";
+		this.m.ArmorDescription = "Des spalières en métal robuste ont été ajoutées à cette armure pour une protection accrue des épaules et du haut du corps, mais au prix d\'un poids supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_11.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_11.png";

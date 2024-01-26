@@ -2,12 +2,12 @@ this.orc_camp_small_remains <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
-		return "Restes d'animaux";
+		return "Restes d\'animaux";
 	}
 
 	function getDescription()
 	{
-		return "Restes macabres d'une sorte d'animal.";
+		return "Restes macabres d\'une sorte d\'animal.";
 	}
 
 	function onInit()

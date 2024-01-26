@@ -3,7 +3,7 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.prong";
-		this.m.Description = "Attaque en thrust qui peut couvrir la distance de 2 tiles et peut être utilisée depuis l'arrière de la ligne de front, en dehors de la portée de la plupart des armes de mêlée.";
+		this.m.Description = "Attaque en thrust qui peut couvrir la distance de 2 tiles et peut être utilisée depuis l\'arrière de la ligne de front, en dehors de la portée de la plupart des armes de mêlée.";
 		this.m.KilledString = "Estocadé";
 		this.m.KilledString = "Pronged";
 		this.m.Icon = "skills/active_123.png";
@@ -61,7 +61,7 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A une chance de toucher de [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] sur les cibles directement adjacentes car l'arme est trop difficile à manier"
+				text = "A une chance de toucher de [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] sur les cibles directement adjacentes car l\'arme est trop difficile à manier"
 			});
 		}
 

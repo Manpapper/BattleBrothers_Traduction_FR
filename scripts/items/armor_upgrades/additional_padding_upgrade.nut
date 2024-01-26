@@ -5,8 +5,8 @@ this.additional_padding_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.additional_padding";
 		this.m.Name = "Rembourrage supplémentaire en fourrure";
-		this.m.Description = "Fabriqué à partir de fourrures épaisses, ce rembourrage supplémentaire aide à atténuer l'impact de tout coup.";
-		this.m.ArmorDescription = "Le rembourrage supplémentaire en fourrure aide à atténuer davantage l'impact de tout coup.";
+		this.m.Description = "Fabriqué à partir de fourrures épaisses, ce rembourrage supplémentaire aide à atténuer l\'impact de tout coup.";
+		this.m.ArmorDescription = "Le rembourrage supplémentaire en fourrure aide à atténuer davantage l\'impact de tout coup.";
 		this.m.Icon = "armor_upgrades/upgrade_03.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_03.png";
@@ -28,7 +28,7 @@ this.additional_padding_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 			id = 15,
 			type = "text",
 			icon = "ui/icons/direct_damage.png",
-			text = "Réduit les dégâts ignorants l'armure de [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
+			text = "Réduit les dégâts ignorants l\'armure de [color=" + this.Const.UI.Color.NegativeValue + "]33%[/color]"
 		});
 		result.push({
 			id = 14,
@@ -45,7 +45,7 @@ this.additional_padding_upgrade <- this.inherit("scripts/items/armor_upgrades/ar
 			id = 15,
 			type = "text",
 			icon = "ui/icons/direct_damage.png",
-			text = "Ne subit que [color=" + this.Const.UI.Color.NegativeValue + "]66%[/color] de tout dégât ignorant l'armure"
+			text = "Ne subit que [color=" + this.Const.UI.Color.NegativeValue + "]66%[/color] de tout dégât ignorant l\'armure"
 		});
 	}
 

@@ -5,7 +5,7 @@ this.heraldic_plates_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.heraldic_plates";
 		this.m.Name = "Épaulières Héraldiques";
-		this.m.Description = "Grandes plaques protectrices à fixer sur les épaules d'une armure.";
+		this.m.Description = "Grandes plaques protectrices à fixer sur les épaules d\'une armure.";
 		this.m.ArmorDescription = "De grandes plaques protectrices ont été fixées aux épaules de cette armure.";
 		this.m.Variant = this.Math.rand(14, 18);
 		this.updateVariant();

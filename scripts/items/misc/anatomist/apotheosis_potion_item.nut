@@ -4,8 +4,8 @@ this.apotheosis_potion_item <- this.inherit("scripts/items/misc/anatomist/anatom
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.apotheosis_potion";
-		this.m.Name = "Potion de l'Apothéose";
-		this.m.Description = "Cette concoction fantastique est le summum de ce que la recherche sur l'anatomie humaine a produit. Les rares initiés qui en connaissent l'existence prétendent que la consommer revient à accéder à un état supérieur de l'être, quelque chose au-delà d'un simple humain.";
+		this.m.Name = "Potion de l\'Apothéose";
+		this.m.Description = "Cette concoction fantastique est le summum de ce que la recherche sur l\'anatomie humaine a produit. Les rares initiés qui en connaissent l\'existence prétendent que la consommer revient à accéder à un état supérieur de l\'être, quelque chose au-delà d\'un simple humain.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_10.png";
 		this.m.Value = 0;

@@ -4,8 +4,8 @@ this.schrat_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_
 	{
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.schrat_potion";
-		this.m.Name = "Élixir des Racines de l'Arbre Divin";
-		this.m.Description = "Avec cette concoction merveilleuse, de simples mortels prendront l'aspect des dieux eux-mêmes ! Tous ceux qui la consomment peuvent devenir aussi solidement enracinés que les grands arbres divins de la légende.";
+		this.m.Name = "Élixir des Racines de l\'Arbre Divin";
+		this.m.Description = "Avec cette concoction merveilleuse, de simples mortels prendront l\'aspect des dieux eux-mêmes ! Tous ceux qui la consomment peuvent devenir aussi solidement enracinés que les grands arbres divins de la légende.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_33.png";
 		this.m.Value = 0;

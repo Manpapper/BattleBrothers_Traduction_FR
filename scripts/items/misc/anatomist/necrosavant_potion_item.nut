@@ -5,7 +5,7 @@ this.necrosavant_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.necrosavant_potion";
 		this.m.Name = "Potion du Pourchasseur Nocturne";
-		this.m.Description = "Celui qui boit cette potion incroyable, produite avec les cendres d'un Necrosavant, se trouvera en possession des pouvoirs de guérison miraculeux des créatures mortes-vivantes ! Cependant, elle ne confère pas la longévité accrue associée aux abominations, bien au contraire. Cela peut être considéré comme une caractéristique si le buveur devient un peu trop à l'aise à boire du sang.";
+		this.m.Description = "Celui qui boit cette potion incroyable, produite avec les cendres d\'un Necrosavant, se trouvera en possession des pouvoirs de guérison miraculeux des créatures mortes-vivantes ! Cependant, elle ne confère pas la longévité accrue associée aux abominations, bien au contraire. Cela peut être considéré comme une caractéristique si le buveur devient un peu trop à l\'aise à boire du sang.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_20.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.necrosavant_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Soigne [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] des dégâts d'impact sur les ennemis adjacents qui ont du sang"
+			text = "Soigne [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] des dégâts d\'impact sur les ennemis adjacents qui ont du sang"
 		});
 		result.push({
 			id = 65,

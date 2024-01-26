@@ -5,7 +5,7 @@ this.ifrit_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.ifrit_potion";
 		this.m.Name = "Potion de Peau de Pierre";
-		this.m.Description = "Avec cette potion, un homme ordinaire peut prendre l'aspect du plus redoutable des ennemis, l'Ifrit des déserts du sud ! Obtenez la peau de pierre des démons et riez de vos ennemis alors qu'ils cassent leurs armes contre vous ! Des effets secondaires peuvent inclure des démangeaisons.";
+		this.m.Description = "Avec cette potion, un homme ordinaire peut prendre l\'aspect du plus redoutable des ennemis, l\'Ifrit des déserts du sud ! Obtenez la peau de pierre des démons et riez de vos ennemis alors qu\'ils cassent leurs armes contre vous ! Des effets secondaires peuvent inclure des démangeaisons.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_28.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.ifrit_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 11,
 			type = "text",
 			icon = "ui/icons/armor_body.png",
-			text = "Transforme la peau en une substance dure comme la pierre, conférant [color=" + this.Const.UI.Color.PositiveValue + "]25[/color] points d'armure naturelle"
+			text = "Transforme la peau en une substance dure comme la pierre, conférant [color=" + this.Const.UI.Color.PositiveValue + "]25[/color] points d\'armure naturelle"
 		});
 		result.push({
 			id = 65,

@@ -1483,7 +1483,7 @@ this.contract <- {
 		else if (_factionType == this.Const.FactionType.Orcs)
 		{
 			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(enemyBase.getTile(), "Orc Marauders", false, this.Const.World.Spawn.OrcRaiders, _resources);
-			party.setDescription("Une bande d'orcs menaçants, à la peau verte et imposant n'importe quel homme.");
+			party.setDescription("Une bande d\'orcs menaçants, à la peau verte et imposant n\'importe quel homme.");
 			party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 			party.getLoot().ArmorParts = this.Math.rand(0, 25);
 			party.getLoot().Ammo = this.Math.rand(0, 10);

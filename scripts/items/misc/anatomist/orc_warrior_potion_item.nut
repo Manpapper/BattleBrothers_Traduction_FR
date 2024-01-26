@@ -53,7 +53,7 @@ this.orc_warrior_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] de résistance aux effets d'étourdissement, de chancellement, de sonné, de distraction et de flétrissement"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] de résistance aux effets d\'étourdissement, de chancellement, de sonné, de distraction et de flétrissement"
 		});
 		result.push({
 			id = 65,

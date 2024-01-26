@@ -5,7 +5,7 @@ this.serpent_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.serpent_potion";
 		this.m.Name = "Potion de Croc-Rapide";
-		this.m.Description = "Avec cette potion, la redoutable ruse et la précision du serpent du désert haï sont à la portée de n'importe quel guerrier !";
+		this.m.Description = "Avec cette potion, la redoutable ruse et la précision du serpent du désert haï sont à la portée de n\'importe quel guerrier !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_29.png";
 		this.m.Value = 0;

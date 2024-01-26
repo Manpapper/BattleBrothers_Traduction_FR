@@ -5,7 +5,7 @@ this.hexe_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_po
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.hexe_potion";
 		this.m.Name = "Potion de Malveillance";
-		this.m.Description = "L'étiquette sur cette bouteille indique : 'DANGER ! RECHERCHE SUPPLÉMENTAIRE REQUISE AVANT CONSOMMATION.' Eh bien, vous êtes sûr que tout va bien.";
+		this.m.Description = "L\'étiquette sur cette bouteille indique : \'DANGER ! RECHERCHE SUPPLÉMENTAIRE REQUISE AVANT CONSOMMATION.\' Eh bien, vous êtes sûr que tout va bien.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_35.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.hexe_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_po
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reflet de [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] des dégâts reçus en points de vie vers l'attaquant"
+			text = "Reflet de [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] des dégâts reçus en points de vie vers l\'attaquant"
 		});
 		result.push({
 			id = 65,

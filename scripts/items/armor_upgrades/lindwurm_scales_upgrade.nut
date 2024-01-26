@@ -4,9 +4,9 @@ this.lindwurm_scales_upgrade <- this.inherit("scripts/items/armor_upgrades/armor
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.lindwurm_scales";
-				this.m.Name = "Cape d'Écailles de Lindwurm";
-		this.m.Description = "Une cape faite à partir des écailles d'un Lindwurm. Non seulement c'est un trophée rare et impressionnant, mais elle offre également une protection supplémentaire et est insensible au sang corrosif du Lindwurm.";
-		this.m.ArmorDescription = "Une cape faite d'écailles de Lindwurm est portée par-dessus cette armure pour une protection supplémentaire, y compris contre les effets corrosifs du sang de Lindwurm.";
+				this.m.Name = "Cape d\'Écailles de Lindwurm";
+		this.m.Description = "Une cape faite à partir des écailles d\'un Lindwurm. Non seulement c\'est un trophée rare et impressionnant, mais elle offre également une protection supplémentaire et est insensible au sang corrosif du Lindwurm.";
+		this.m.ArmorDescription = "Une cape faite d\'écailles de Lindwurm est portée par-dessus cette armure pour une protection supplémentaire, y compris contre les effets corrosifs du sang de Lindwurm.";
 		this.m.Icon = "armor_upgrades/upgrade_04.png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "armor_upgrades/icon_upgrade_04.png";

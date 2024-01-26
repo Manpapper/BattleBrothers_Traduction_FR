@@ -5,7 +5,7 @@ this.physician_mask <- this.inherit("scripts/items/helmets/helmet", {
 		this.helmet.create();
 		this.m.ID = "armor.head.physician_mask";
 		this.m.Name = "Masque de Médecin";
-		this.m.Description = "Une épaisse cagoule en cuir avec un masque distinctif en forme de bec d'oiseau. Le bec sert de ventilateur, contenant des herbes parfumées pour éloigner les maladies.";
+		this.m.Description = "Une épaisse cagoule en cuir avec un masque distinctif en forme de bec d\'oiseau. Le bec sert de ventilateur, contenant des herbes parfumées pour éloigner les maladies.";
 		this.m.ShowOnCharacter = true;
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;

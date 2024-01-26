@@ -5,7 +5,7 @@ this.double_mail_upgrade <- this.inherit("scripts/items/armor_upgrades/armor_upg
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.double_mail";
 		this.m.Name = "Cotte de Mailles Doublée";
-		this.m.Description = "Un épais morceau de cotte de mailles doublée. Lourd, mais efficace pour renforcer davantage la protection d'une armure.";
+		this.m.Description = "Un épais morceau de cotte de mailles doublée. Lourd, mais efficace pour renforcer davantage la protection d\'une armure.";
 		this.m.ArmorDescription = "Une épaisse cotte de mailles doublée a été ajoutée à cette armure pour une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_19.png";
 		this.m.IconLarge = this.m.Icon;

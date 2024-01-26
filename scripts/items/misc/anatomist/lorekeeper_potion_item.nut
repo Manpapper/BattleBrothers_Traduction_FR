@@ -5,7 +5,7 @@ this.lorekeeper_potion_item <- this.inherit("scripts/items/misc/anatomist/anatom
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.lorekeeper_potion";
 		this.m.Name = "Potion du Sanctum Intérieur";
-		this.m.Description = "Contenue dans ce flacon se trouve un puissant sédatif qui induira un sommeil profond, insensible à la douleur. Cela est nécessaire pour maintenir le sujet sous l'emprise assez longtemps pour greffer une autre rangée de côtes, les os eux-mêmes provenant de l'une des phylactères plus ordinaires du Gardien des connaissances.";
+		this.m.Description = "Contenue dans ce flacon se trouve un puissant sédatif qui induira un sommeil profond, insensible à la douleur. Cela est nécessaire pour maintenir le sujet sous l\'emprise assez longtemps pour greffer une autre rangée de côtes, les os eux-mêmes provenant de l\'une des phylactères plus ordinaires du Gardien des connaissances.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_38.png";
 		this.m.Value = 0;

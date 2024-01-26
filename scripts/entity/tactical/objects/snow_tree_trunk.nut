@@ -7,7 +7,7 @@ this.snow_tree_trunk <- this.inherit("scripts/entity/tactical/entity", {
 
 	function getDescription()
 	{
-		return "Les restes d'un arbre d'autrefois.";
+		return "Les restes d\'un arbre d\'autrefois.";
 	}
 
 	function onInit()

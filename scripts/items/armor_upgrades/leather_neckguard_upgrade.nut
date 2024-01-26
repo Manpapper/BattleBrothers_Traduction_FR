@@ -5,7 +5,7 @@ this.leather_neckguard_upgrade <- this.inherit("scripts/items/armor_upgrades/arm
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.leather_neckguard";
 this.m.Name = "Protège-Cou en Cuir";
-		this.m.Description = "Ce protège-cou en cuir traité peut être attaché à n'importe quelle armure pour une protection supplémentaire.";
+		this.m.Description = "Ce protège-cou en cuir traité peut être attaché à n\'importe quelle armure pour une protection supplémentaire.";
 		this.m.ArmorDescription = "Un protège-cou en cuir traité a été attaché à cette armure pour une protection supplémentaire.";
 		this.m.Icon = "armor_upgrades/upgrade_13.png";
 		this.m.IconLarge = this.m.Icon;

@@ -5,7 +5,7 @@ this.wiederganger_potion_item <- this.inherit("scripts/items/misc/anatomist/anat
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.wiederganger_potion";
 		this.m.Name = "Potion Peau de Cuir";
-		this.m.Description = "Lorsqu'elle est consommée, cette puissante concoction modifie la chair pour réagir immédiatement aux coups soudains, protégeant le corps contre les blessures graves ! N'y prêtez pas attention à l'odeur, c'est juste un signe de sa puissance.";
+		this.m.Description = "Lorsqu\'elle est consommée, cette puissante concoction modifie la chair pour réagir immédiatement aux coups soudains, protégeant le corps contre les blessures graves ! N\'y prêtez pas attention à l\'odeur, c\'est juste un signe de sa puissance.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_22.png";
 		this.m.Value = 0;

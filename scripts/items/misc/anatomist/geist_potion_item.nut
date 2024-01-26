@@ -5,7 +5,7 @@ this.geist_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.geist_potion";
 		this.m.Name = "Breuvage du Mort";
-		this.m.Description = "Cette concoction, synthétisée à partir des faibles résidus ectoplasmiques d'un Geist 'tué', modifie le corps de celui qui la boit pour prendre un aspect spectral similaire. Toutes les armes maniées par un tel guerrier gagneront sûrement une partie de la capacité de la créature à contourner l'armure ! Des hallucinations auditives sont un effet secondaire attendu de la consommation du breuvage et cesseront probablement après un certain temps. Enfin, on l'espère.";
+		this.m.Description = "Cette concoction, synthétisée à partir des faibles résidus ectoplasmiques d\'un Geist \'tué\', modifie le corps de celui qui la boit pour prendre un aspect spectral similaire. Toutes les armes maniées par un tel guerrier gagneront sûrement une partie de la capacité de la créature à contourner l\'armure ! Des hallucinations auditives sont un effet secondaire attendu de la consommation du breuvage et cesseront probablement après un certain temps. Enfin, on l\'espère.";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_24.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.geist_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Un [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] supplémentaire des dégâts ignore l'armure lors de l'utilisation d'armes de mêlée"
+			text = "Un [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] supplémentaire des dégâts ignore l\'armure lors de l\'utilisation d\'armes de mêlée"
 		});
 		result.push({
 			id = 65,

@@ -5,7 +5,7 @@ this.necromancer_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.necromancer_potion";
 		this.m.Name = "Le Roi enchaîné";
-		this.m.Description = "Parmi les nombreuses armes à la disposition de l'homme, la plus mortelle est certainement son esprit, et nulle part cette vérité n'est plus évidente que chez le redouté nécromancien. Avec ce mélange, cet intellect redoutable peut descendre jusqu'à la portée même de l'homme ordinaire !";
+		this.m.Description = "Parmi les nombreuses armes à la disposition de l\'homme, la plus mortelle est certainement son esprit, et nulle part cette vérité n\'est plus évidente que chez le redouté nécromancien. Avec ce mélange, cet intellect redoutable peut descendre jusqu\'à la portée même de l\'homme ordinaire !";
 		this.m.IconLarge = "";
 		this.m.Icon = "consumables/potion_25.png";
 		this.m.Value = 0;
@@ -53,7 +53,7 @@ this.necromancer_potion_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/xp_received.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] Gain d'expérience"
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] Gain d\'expérience"
 		});
 		result.push({
 			id = 65,

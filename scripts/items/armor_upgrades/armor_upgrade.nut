@@ -108,7 +108,7 @@ this.armor_upgrade <- this.inherit("scripts/items/item", {
 			id = 15,
 			type = "text",
 			icon = "ui/icons/plus.png",
-			text = "A une amélioration d'armure qui peut être remplacée, mais sera détruite dans le processus"
+			text = "A une amélioration d\'armure qui peut être remplacée, mais sera détruite dans le processus"
 		});
 	}
 

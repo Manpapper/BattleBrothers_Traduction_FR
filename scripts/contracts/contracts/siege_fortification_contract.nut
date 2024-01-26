@@ -1761,7 +1761,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 		local party = enemyFaction.spawnEntity(tile, "Supply Caravan", false, this.Const.World.Spawn.NobleCaravan, this.Math.rand(100, 150));
 		party.getSprite("base").Visible = false;
 		party.setMirrored(true);
-		party.setDescription("Une caravane accompagnée d'escortes armées transportant des provisions, des fournitures et du matériel entre les colonies.");
+		party.setDescription("Une caravane accompagnée d\'escortes armées transportant des provisions, des fournitures et du matériel entre les colonies.");
 		party.addToInventory("supplies/ground_grains_item");
 		party.addToInventory("supplies/ground_grains_item");
 		party.addToInventory("supplies/ground_grains_item");

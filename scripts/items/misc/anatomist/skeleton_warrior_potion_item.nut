@@ -53,7 +53,7 @@ this.skeleton_warrior_potion_item <- this.inherit("scripts/items/misc/anatomist/
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Le coût de Fatigue de la compétence 'Mur de Boucliers' est réduit de [color=" + this.Const.UI.Color.PositiveValue + "]" + 100 * (1 - this.Const.Combat.WeaponSpecFatigueMult) + "%[/color]"
+			text = "Le coût de Fatigue de la compétence \'Mur de Boucliers\' est réduit de [color=" + this.Const.UI.Color.PositiveValue + "]" + 100 * (1 - this.Const.Combat.WeaponSpecFatigueMult) + "%[/color]"
 		});
 		result.push({
 			id = 65,
