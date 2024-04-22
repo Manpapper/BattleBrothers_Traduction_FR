@@ -22,8 +22,8 @@ this.campfire_main_dialog_module <- this.inherit("scripts/ui/screens/ui_module",
 		local type = myTile.TacticalType == this.Const.World.TerrainTacticalType.DesertHills ? this.Const.World.TerrainType.Desert : myTile.Type;
 		local shield = this.World.Assets.getBannerID() < 10 ? "0" + this.World.Assets.getBannerID() : this.World.Assets.getBannerID();
 		local result = {
-			Title = "Retinue",
-			SubTitle = "Manage your retinue of non-combat followers",
+			Title = "Compagnons",
+			SubTitle = "Gérer les compagnons non-combatants",
 			Assets = this.UIDataHelper.convertAssetsInformationToUIData(),
 			Background = this.Const.World.TerrainSettlementImages[type].Background + (night ? "_night" : "") + ".jpg",
 			BackgroundCenter = "ui/campfire/campfire_tents_01.png",

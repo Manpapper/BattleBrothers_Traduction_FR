@@ -11,7 +11,7 @@ this.ghost_overhead_strike <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.ghost_overhead_strike";
 		this.m.Name = "Frappe En Coup de Travers";
-		this.m.Description = "Une frappe en diagonale effectuée avec toute sa force pour un effet dévastate
+		this.m.Description = "Une frappe en diagonale effectuée avec toute sa force pour un effet dévastateur";
 		this.m.Icon = "skills/active_152.png";
 		this.m.IconDisabled = "skills/active_152.png";
 		this.m.Overlay = "active_152";

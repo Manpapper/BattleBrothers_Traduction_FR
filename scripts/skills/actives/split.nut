@@ -49,7 +49,7 @@ this.split <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can hit up to 2 targets"
+			text = "Peut toucher jusqu\'à deux cibles"
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInSwords)

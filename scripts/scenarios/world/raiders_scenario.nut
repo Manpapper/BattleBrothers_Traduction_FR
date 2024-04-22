@@ -94,7 +94,6 @@ bros[1].improveMood(1.0, "A eu un raid réussi");
 			"monk_background"
 		]);
 		bros[3].getBackground().m.RawDescription = "L\'homme qui t\'a mis sur le chemin, tu crois que %name% pourrait jouer un rôle plus important dans ta quête de richesses immenses. Tu as vu des hommes du nord handicapés et des hommes à un bras qui le surpasseraient probablement au combat, mais sa connaissance et son intelligence pourraient être des lames plus aiguisées en temps voulu.";
-bros[3].improveMood(2.0, 
 		bros[3].improveMood(2.0, "Thinks he managed to convince you to give up raiding and pillaging");
 		bros[3].setPlaceInFormation(13);
 		bros[3].m.Talents = [];

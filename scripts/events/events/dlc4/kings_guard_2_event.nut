@@ -30,7 +30,7 @@ this.kings_guard_2_event <- this.inherit("scripts/events/event", {
 				bg.m.IsNew = false;
 				_event.m.Dude.getSkills().removeByID("background.cripple");
 				_event.m.Dude.getSkills().add(bg);
-				_event.m.Dude.getBackground().m.RawDescription = "Vous avez trouvé %nom% à moitié gelé dans le nord. Avec votre aide, l\'ancien garde du Roi a retrouvé ses forces et se bat maintenant pour vous.";
+				_event.m.Dude.getBackground().m.RawDescription = "Vous avez trouvé %name% à moitié gelé dans le nord. Avec votre aide, l\'ancien garde du Roi a retrouvé ses forces et se bat maintenant pour vous.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.improveMood(1.0, "Is his former self again");
 

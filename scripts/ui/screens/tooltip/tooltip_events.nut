@@ -3182,12 +3182,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Retinue (P)"
+					text = "Compagnons (P)"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "See your retinue of non-combat followers that grant various advantages outside combat, and upgrade your cart for more inventory space."
+					text = "Vous permet de gérer les compagnons non-combatants qui vous donnent des avantages hors combats, et améliorés votre chariot pour plus de stockage."
 				}
 			];
 

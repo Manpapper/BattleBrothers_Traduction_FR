@@ -100,7 +100,7 @@ this.pirates_event <- this.inherit("scripts/events/event", {
 					"fisherman_background"
 				]);
 				_event.m.Dude.setTitle("the Sailor");
-				_event.m.Dude.getBackground().m.RawDescription = "Vous avez sauvé %nom% d\'une vie d\'esclavage après qu\'il ait été capturé par des pirates opérant hors des villes états.";
+				_event.m.Dude.getBackground().m.RawDescription = "Vous avez sauvé %name% d\'une vie d\'esclavage après qu\'il ait été capturé par des pirates opérant hors des villes états.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand));
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand));
@@ -155,7 +155,7 @@ this.pirates_event <- this.inherit("scripts/events/event", {
 					"fisherman_background"
 				]);
 				_event.m.Dude.setTitle("the Sailor");
-				_event.m.Dude.getBackground().m.RawDescription = "Vous avez sauvé %nom% d\'une vie d\'esclavage après qu\'il ait été capturé par des pirates opérant hors des villes états.";
+				_event.m.Dude.getBackground().m.RawDescription = "Vous avez sauvé %name% d\'une vie d\'esclavage après qu\'il ait été capturé par des pirates opérant hors des villes états.";
 				_event.m.Dude.getBackground().buildDescription(true);
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand));
 				_event.m.Dude.getItems().unequip(_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand));
