@@ -9,7 +9,7 @@ this.march_wear_and_tear_event <- this.inherit("scripts/events/event", {
 	{
 		this.m.ID = "event.march_wear_and_tear";
 		this.m.Title = "Sur la route...";
-		this.m.Cooldown = 50.0 * this.World.geztTime().SecondsPerDay;
+		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
 			Text = "%terrainImage%{Marcher sans arrêt de par le monde a mis les hommes à rude épreuve. Chaque fois qu\'un mercenaire enlève une botte, on peut voir le sang suinter à travers sa chaussette. Ils ont accumulé des plaies et des furoncles. Un homme s\'arrache la chair de son orteil et dit qu\'il regrette de l\'avoir fait, vous acquiescez. Tout compte fait, c\'est le prix à payer pour être si souvent sur la route.}",
