@@ -95,7 +95,7 @@ this.tooltip_events <- {
 				{
 					id = 4,
 					type = "description",
-					text = "Votre compagnie manque de renom néceessaire pour employer plus de non-combatant. Atteignez au moins " + renown + " de renom pour débloquer cet emplacement. Gagnez du renom en complétant des ambitions, des contrats et aussi en gagnant des batailles."
+					text = "Votre compagnie ne dispose pas du renom nécessaire pour employer plus de non-combattants. Atteignez au moins " + renown + " de renom pour débloquer cet emplacement. Gagnez du renom en complétant des ambitions, des contrats ou en gagnant des batailles."
 				}
 			];
 			return ret;
@@ -111,7 +111,7 @@ this.tooltip_events <- {
 				{
 					id = 4,
 					type = "description",
-					text = "Il y a de la place ici pour ajouter un nouveau suivant non combatant dans votre compagnie."
+					text = "Il y a de la place ici pour ajouter un nouveau suivant non combattant dans votre compagnie."
 				},
 				{
 					id = 1,
@@ -209,7 +209,7 @@ this.tooltip_events <- {
 					id = 98,
 					type = "text",
 					icon = "ui/icons/vision.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]Cache n\'importe qui s\'y cachant tant qu\'il n\'y a personne à proximité.[/color]"
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]Dissimule n\'importe qui s\'y cachant tant qu\'il n\'y a personne à proximité.[/color]"
 				});
 			}
 
@@ -240,7 +240,7 @@ this.tooltip_events <- {
 					id = 99,
 					type = "text",
 					icon = "ui/tooltips/warning.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]N\'importe quel personnage sur ce carreau peut partir sans encombre et immédiatement de la bataille.[/color]"
+					text = "[color=" + this.Const.UI.Color.NegativeValue + "]N\'importe quel personnage sur cette tuile peut partir sans encombre et immédiatement de la bataille.[/color]"
 				});
 			}
 
@@ -714,7 +714,7 @@ this.tooltip_events <- {
 						id = 3,
 						type = "hint",
 						icon = "ui/tooltips/warning.png",
-						text = "Pas assez de couronnes pour payer les réparations!"
+						text = "Pas assez de couronnes pour payer les réparations !"
 					});
 				}
 			}
@@ -1090,7 +1090,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le nombre de pièces que votre compagnie possède. Utilisé pour payer tous vos hommes à midi, ainsi qu\'à engager de nouvelles personnes ou acheter du nouvel equipement.\n\nVous ne payez actuellement personne."
+						text = "Le nombre de pièces que votre compagnie possède. Utilisé pour payer vos hommes à midi, pour engager de nouvelles recrues ou acheter du nouvel equipement.\n\nVous ne payez actuellement personne."
 					}
 				];
 			}
@@ -1105,7 +1105,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le nombre de pièces que votre compagnie possède. Utilisé pour payer tous vos hommes à midi, ainsi qu\'à engager de nouvelles personnes ou acheter du nouvel equipement.\n\nVous payez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyMoney + "[/color] couronnes par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + money + "[/color] couronnes dureront encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jour."
+						text = "Le nombre de pièces que votre compagnie possède. Utilisé pour payer vos hommes à midi, pour engager de nouvelles recrues ou acheter du nouvel equipement.\n\nVous payez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyMoney + "[/color] couronnes par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + money + "[/color] couronnes dureront encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jour."
 					}
 				];
 			}
@@ -1120,7 +1120,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le nombre de pièces votre compagnie possède. Utilisé pour payer tous vos hommes à midi, ainsi qu\'à engager de nouvelles personnes ou acheter du nouvel equipement.\n\nVous payez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyMoney + "[/color] couronnes par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de couronnes pour payer vos hommes! Gagnez rapidement des couronnes ou vos hommes s\'en iront un par un.[/color]"
+						text = "Le nombre de pièces votre compagnie possède. Utilisé pour payer vos hommes à midi, pour engager de nouvelles recrues ou acheter du nouvel equipement.\n\nVous payez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyMoney + "[/color] couronnes par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de couronnes pour payer vos hommes! Gagnez rapidement des couronnes ou vos hommes s\'en iront un par un.[/color]"
 					}
 				];
 			}
@@ -1197,7 +1197,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus surdes terrain accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + food + "[/color] provisions vous permettrons de tenir encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jours tout au plus. Gardez à l\'esprit que certaines provisions peuvent pourrir!"
+						text = "Le total de provisions que vous transportez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriseront les denrées qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour. Vos [color=" + this.Const.UI.Color.PositiveValue + "]" + food + "[/color] provisions vous permettrons de tenir encore [color=" + this.Const.UI.Color.PositiveValue + "]" + time + "[/color] jours tout au plus. Gardez à l\'esprit que certaines provisions peuvent pourrir!"
 					}
 				];
 			}
@@ -1212,7 +1212,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriserons les denrés qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez pratiquement plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
+						text = "Le total de provisions que vous transportez. Un homme normal a besoin de 2 provisions par jour et plus sur des terrains accidentés. Vos hommes prioriseront les denrées qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez pratiquement plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
 					}
 				];
 			}
@@ -1227,7 +1227,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Le total de provisions que vous portez. Un homme normal a besoin de 2 provisions par jour et plus  sur des terrains accidentés. Vos hommes prioriserons les denrées qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
+						text = "Le total de provisions que vous transportez. Un homme normal a besoin de 2 provisions par jour et plus  sur des terrains accidentés. Vos hommes prioriseront les denrées qui sont proches de l\'expiration. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim.\n\nVous utilisez [color=" + this.Const.UI.Color.PositiveValue + "]" + dailyFood + "[/color] provisions par jour.\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Vous n\'avez plus de provisions pour nourrir vos hommes! Achetez rapidement des provisions aussi vite que possible ou vos hommes déserterons un par un avant de mourrir de faim![/color]"
 					}
 				];
 			}
@@ -1242,7 +1242,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre de provision qu\'un homme à besoin par jour. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim."
+					text = "Le nombre de provision dont un homme à besoin par jour. Arriver à cours de provisions diminuera le moral et fera fuir vos hommes avant de mourir de faim."
 				}
 			];
 
@@ -1256,13 +1256,13 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Un ensemble de flèches, carreau et d\'armes de jets utilisés automatiquement pour remplir les carquois après les batailles. Remplacer une flèche ou un carreau utilisera une munition, remplacer un tir d\'arme à main utilisera jusqu\'à deux points et remplacer une arme de jet ou une charge de lance de feu en utilisera jusqu\'à trois. Arriver à court de munition laissera votre carquoi vide et vos hommes n\'auront plus rien à tirer. Vous ne pouvez porter plus de " + (this.Const.Difficulty.MaxResources[this.World.Assets.getEconomicDifficulty()].Ammo + this.World.Assets.m.AmmoMaxAdditional) + " munitions."
+					text = "Un ensemble de flèches, de carreaux et d\'armes de jets utilisés automatiquement pour remplir les carquois après les batailles. Remplacer une flèche ou un carreau utilisera une munition, remplacer un tir d\'arme à main utilisera jusqu\'à deux points et remplacer une arme de jet ou une charge de lance de feu en utilisera jusqu\'à trois. Arriver à court de munitions laissera votre carquois vide et vos hommes n\'auront plus rien à tirer. Vous ne pouvez porter plus de " + (this.Const.Difficulty.MaxResources[this.World.Assets.getEconomicDifficulty()].Ammo + this.World.Assets.m.AmmoMaxAdditional) + " munitions."
 				}
 			];
 
 		case "assets.Supplies":
 			local repair = this.World.Assets.getRepairRequired();
-			local desc = "Ensemble d\'outils et de ressources pour garder vos armes, armures, casques et boucliers en bonne condition. Un point est nécessaire pour réparer 15 points de durabilité d\'un objet. Arriver à court d\'outils peut signifier que vos armes peuvent se casser durant un combat ou laisser vos armures en mauvaise condition et donc inutiles.";
+			local desc = "Ensemble d\'outils et de ressources pour garder vos armes, armures, casques et boucliers en bon état. Un outil est nécessaire pour réparer 15 points de durabilité d\'un objet. Arriver à court d\'outils peut signifier que vos armes peuvent se casser durant un combat ou laisser vos armures en mauvaise condition et donc inutiles.";
 
 			if (repair.ArmorParts > 0)
 			{
@@ -1296,7 +1296,7 @@ this.tooltip_events <- {
 
 		case "assets.Medicine":
 			local heal = this.World.Assets.getHealingRequired();
-			local desc = "Les ressources médicales comportent des bandages, des herbes, des onguents et autres fournitures de la sorte, ils sont utilisés pour soigner les blessures graves de vos hommes après un combat. Une unité de ressource médicale est requise tous les jours pour chaque blessure pour les soigner jusqu\'à la guérison complète. Les points de vies perdus se soignent d\'eux-mêmes.\n\nArriver à court de ressource médicale empêchera vos hommes de récupérer de leurs blessures.";
+			local desc = "Les ressources médicales comportent des bandages, des herbes, des onguents et autres fournitures de la sorte, ils sont utilisés pour soigner les blessures graves de vos hommes après un combat. Une unité de ressource médicale est requise tous les jours pour chaque blessure pour les soigner jusqu\'à la guérison complète. Les points de vie perdus se soignent d\'eux-mêmes.\n\nArriver à court de ressource médicale empêchera vos hommes de guérir de leurs blessures.";
 
 			if (heal.MedicineMin > 0)
 			{
@@ -1349,7 +1349,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Montre l\'ensemble des informations relatives à votre compagnie de mercenaire."
+					text = "Montre l\'ensemble des informations relatives à votre compagnie de mercenaires."
 				}
 			];
 
@@ -1363,7 +1363,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le renom est votre réputation en tant que mercenaire professionnel et reflète à quel point les gens vous juge fiable et compétent. Le plus haut votre renom, le plus haut sera la récompense et la difficulté des contrats qui vous seront proposés. Le renom augmentera en réussissant vos ambitions, vos contrats et en gagnants vos batailles, et diminuera en n\'arrivant pas à les faire."
+					text = "Le renom est votre réputation en tant que mercenaire professionnel et reflète à quel point les gens vous jugent fiable et compétent. Le plus haut est votre renom, le plus haut sera la récompense et la difficulté des contrats qui vous seront proposés. Le renom augmentera en réussissant vos ambitions, vos contrats et en gagnants vos batailles et diminuera en cas d\'échec."
 				}
 			];
 
@@ -1377,7 +1377,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Votre réputation reflète comment les gens dans le monde juge la conduite de votre compagnie de mercenaire en se basant sur vos actions passés. Avez-vous épargné vos ennemies ? Est-ce que vous brûler les fermes et tuer la paysannerie? En se basant sur votre réputation, les gens vous offrirons différents types de contrats, de plus les contrats et les évenements pourraient se finir différement."
+					text = "Votre réputation reflète comment les gens dans le monde jugent la conduite de votre compagnie de mercenaires en se basant sur vos actions passés. Avez-vous épargné vos ennemis ? Est-ce que vous brûler les fermes et tuer la paysannerie? En se basant sur votre réputation, les gens vous offrirons différents types de contrats, de plus les contrats et les évenements pourraient se finir différement."
 				}
 			];
 
@@ -1392,7 +1392,7 @@ this.tooltip_events <- {
 						id = 10,
 						type = "hint",
 						icon = "ui/icons/mouse_right_button.png",
-						text = "Annuler AMbition"
+						text = "Annuler Ambition"
 					});
 				}
 
@@ -1409,7 +1409,7 @@ this.tooltip_events <- {
 					{
 						id = 2,
 						type = "description",
-						text = "Vous n\'avez pas annoncé d\'ambition pour votre compagnie. Cela vous le sera demandé au fur et à mesure que le jeu progressera."
+						text = "Vous n\'avez pas annoncé d\'ambition pour votre compagnie. Cela vous le sera demandé au fur et à mesure de votre progression."
 					}
 				];
 			}
@@ -1424,7 +1424,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Montre le chargement actuel et maximum de votre inventaire."
+					text = "Montre le chargement actuel et la capacité maximum de votre inventaire."
 				}
 			];
 
@@ -1438,7 +1438,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Montre le nombre actuel et maximum d\'hommes placés en formatoin pour se battre dans la prochaine bataille.\n\nGlisser et déposer vos hommes où vous voulez qu\'ils soient; La ligne du haut est la ligne de front façant l\'ennemi, la seconde ligne est la ligne à l\'arrière, et la ligne du bas est la ligne de réserve (vos hommes qui ne prendront pas part au combat)."
+					text = "Montre le nombre actuel et maximum d\'hommes placés en formation pour se battre dans la prochaine bataille.\n\nGlisser et déposer vos hommes où vous voulez qu\'ils soient. La ligne du haut est la ligne de front faisant face à l\'ennemi, la seconde ligne est la ligne à l\'arrière et la ligne du bas est la ligne de réserve (vos hommes qui ne prendront pas part au combat)."
 				}
 			];
 
@@ -1480,7 +1480,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les points de vie représentent les dommages qu\'un personnage peut prendre avant de mourrir. Une fois qu\'ils atteignent zéro, le personnage est considéré mort. Plus les point de vies sont élevés, moins le caractère à de \"chance\" de subir une blessure incapacitante quand il est touché."
+					text = "Les points de vie représentent les dommages qu\'un personnage peut subir avant de mourir. Une fois atteint zéro, le personnage meurt. Plus les point de vie sont élevés, moins le personnage à de \"chance\" de subir une blessure incapacitante quand il est touché."
 				}
 			];
 
@@ -1494,7 +1494,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le moral est un des cinq état qui représente la condition mentale de vos combatants ainsi que leur efficacité en combat. Au plus bas, ils fuiront, le personnage sera alors hors de contrôle - même s\'ils se rallieront probablement de nouveau. Le Moral change au fur et à mesure que la bataille progresse, avec des personnages ayant un moral assez haut, ils auront moins tendence à tomber dans un moral bas (et donc à fuir). Beaucoup de vos ennemies sont aussi affectés par le moral.\n\nDes vérifications de moral sont lancés à ces différentes occasions:\n- Tuer un ennemi\n- Voir un ennemi être tué\n- Voir un allié être tué\n- Voir un allié fuir\n- Etre touché et subir plus de 15 point de vie de dégâts\n- Etre engagé en mélée par plus d\'un ennemi\n- Utiliser certaines compétences, comme \'Rallier\'"
+					text = "Le moral est un des cinq états qui représente la condition mentale de vos combattants ainsi que leur efficacité en combat. Au plus bas, ils fuiront et seront alors hors de contrôle - même s\'ils se rallieront probablement de nouveau. Le Moral change au fur et à mesure que la bataille progresse. Des personnages avec un moral haut seront moins enclins à se décourager (et donc à fuir). Beaucoup de vos ennemis sont aussi affectés par le moral.\n\nDes vérifications de moral sont lancées à ces différentes occasions:\n- Tuer un ennemi\n- Voir un ennemi être tué\n- Voir un allié être tué\n- Voir un allié fuir\n- Etre touché et subir plus de 15 points de dégât\n- Etre engagé en mêlée par plus d\'un ennemi\n- Utiliser certaines compétences, comme \'Rallier\'"
 				}
 			];
 
@@ -1508,7 +1508,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La Fatigue est gagné pour chaque action, comme bouger, utiliser une compétence, en se faisant toucher en combat ou encore en esquivant. La Fatigue est reduite de 15 à chaque tour ou autant qu\'il est nécessaire pour qu\'un personnage commence son tour avec son mximum de fatigue moins 15. Si un personnage accumule trop de fatigue, il aura probablement besoin de se reposer pendant un ou plusieurs tours (en ne faisant rien) avant d\'avoir la possibilité d\'utiliser des capacités plus spécialisés."
+					text = "La Fatigue survient pour chaque action, comme bouger, utiliser une compétence, en se faisant toucher en combat ou encore en esquivant. La Fatigue est reduite de 15 à chaque tour ou autant qu\'il est nécessaire pour qu\'un personnage commence son tour avec son maximum de fatigue moins 15. Si un personnage accumule trop de fatigue, il aura probablement besoin de se reposer pendant un ou plusieurs tours (en ne faisant rien) avant d\'avoir la possibilité d\'utiliser des capacités plus spécialisées."
 				}
 			];
 
@@ -1522,7 +1522,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La Fatigue Maximum est la Fatigue maximum qu\'un personnage peut accumuler avant d\'être dans l\'impossibilité d\'effectuer plus d\'actions. Elle est réduite en portant des équipements lourds, spécifiquement les armures."
+					text = "La Fatigue Maximum est la Fatigue qu\'un personnage peut accumuler avant d\'être dans l\'impossibilité d\'effectuer plus d\'actions. Elle est réduite en portant des équipements lourds, notamment les armures."
 				}
 			];
 
@@ -1536,7 +1536,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le casque (armure) protège, étonnament, la tête, qui est plus difficile à toucher que le corps, mais qui est plus vulnérable aux dégats. Plus vous avez de l\'armure (casque), moins il y aura de dégats appliqués à vos points de vies si vous vous faites toucher à la tête."
+					text = "Le casque (armure) protège, étonnament, la tête, qui est plus difficile à toucher que le corps, mais qui est plus vulnérable aux dégats. Plus vous avez d\'armure (casque), moins il y aura de dégats appliqués à vos points de vie si vous vous faites toucher à la tête."
 				}
 			];
 
@@ -1550,7 +1550,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Plus vous avez de l\armure (corps) moins il y aura de dégats appliqués à vos points de vies si vous vous faites toucher."
+					text = "Plus vous avez d\'armure (corps) moins il y aura de dégats appliqués à vos points de vie si vous vous faites toucher."
 				}
 			];
 
@@ -1592,7 +1592,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Une défense de mêlée plus élevée réduit la probabilité de se faire toucher par une attaque de mêlée, tel que les coups de lances. Elle peut être augmentée quand le personnage gagne des niveaux ou en équippant un bon bouclier."
+					text = "Une défense de mêlée plus élevée réduit la probabilité de se faire toucher par une attaque de mêlée, tel que les coups de lance. Elle peut être augmentée quand le personnage gagne des niveaux ou en l\'équipant d\'un bon bouclier."
 				}
 			];
 
@@ -1606,7 +1606,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Une défense à distance plus élevée réduit la probabilité de se faire toucher par une attaque à distance, tel qu\'une flèche tiré d\'une certaine distance. Elle peut être augmentée quand le personnage gagne des niveaux ou en équippant un bon bouclier."
+					text = "Une défense à distance plus élevée réduit la probabilité de se faire toucher par une attaque à distance, tel qu\'une flèche tirée d\'une certaine distance. Elle peut être augmentée quand le personnage gagne des niveaux ou en l\'équipant d\'un bon bouclier."
 				}
 			];
 
@@ -1620,7 +1620,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La Vision, ou la distance de vue, détermine la distance à laquel un personnage peut voir et donc révéler ce qu\'il y a derrière le brouillard de guerre, découvrir des menaces ou encore tirer avec des attaques à distance. Les casques lourd et la nuit peuvent la faire diminuer."
+					text = "La Vision ou la distance de vue, détermine la distance à laquelle un personnage peut voir et donc révéler ce qu\'il y a derrière le brouillard de guerre, découvrir des menaces ou encore tirer avec des attaques à distance. Les casques lourds et la nuit peuvent la réduire."
 				}
 			];
 
@@ -1634,7 +1634,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les dégâts de base que fait l\'arme actuellement équipé. Sera appliqué entièrement s\'il n\'y a pas d\'armure protégeant la cible. Si la cible est protégé par l\'armure, les dégâts sont appliqués à l\'armure en se basant sur l\'efficacité de l\'arme contre l\'armure. Les dégâts occasionnés sont modifiés par la compétence utilisé et la cible touché."
+					text = "Les dégâts de base que fait l\'arme actuellement équipée. Ils seront totalement appliqués s\'il n\'y a pas d\'armure protégeant la cible. Si la cible est protégée, les dégâts sont appliqués à l\'armure en se basant sur l\'efficacité de l\'arme contre l\'armure. Les dégâts occasionnés sont modifiés par la compétence utilisée et la cible touchée."
 				}
 			];
 
@@ -1648,7 +1648,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le pourcentage des dégats de base de l\'arme quand elle frappe une cible en armure. Dès que l\'armure est détruite, les dégâts de l\'arme sont appliqués à 100%. Les dégâts occasionnés sont modifiés par la compétence utilisé et la cible touché."
+					text = "Le pourcentage des dégats de base de l\'arme quand elle frappe une cible en armure. Dès que l\'armure est détruite, les dégâts de l\'arme sont appliqués à 100%. Les dégâts occasionnés sont modifiés par la compétence utilisée et la cible touchée."
 				}
 			];
 
@@ -1662,7 +1662,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La probabilité de base de toucher la tête de la cible pour des dégats augmentés. La probabilité finale peut être modifiés par la compétence utilisé."
+					text = "La probabilité de base de toucher la tête de la cible pour des dégats augmentés. La probabilité finale peut être modifiée par la compétence utilisée."
 				}
 			];
 
@@ -1676,7 +1676,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Plus la valeur est élevée, plus le personnage commencera son tour tôt. L\'Initiative est réduite par la fatigue actuelle, ainsi que toute pénalité appliqué à la Fatigue Maximum (comme les amures lourdes). En général, quelqu\'un en armure légère jouera son tour avant quelqu\'un en armure lourde, et quelqu\'un en pleine forme jouera avant quelqu\'un de fatigué."
+					text = "Plus la valeur est élevée, plus le personnage commencera son tour tôt. L\'Initiative est réduite par la fatigue actuelle, ainsi que toute pénalité appliquée à la Fatigue Maximum (comme les amures lourdes). En général, quelqu\'un en armure légère jouera son tour avant quelqu\'un en armure lourde, et quelqu\'un en pleine forme jouera avant quelqu\'un de fatigué."
 				}
 			];
 
@@ -1690,7 +1690,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La Détermination répresente la volonté et la bravoure de vos personnages. Plus elle est élevée, moins vos personnages auront la probabilité de faire descendre le moral pendant des événements négatifs, et plus vos personnages auront la chance de gagner en confidence lors des événements positifs. La détermination acte comme une défense contre les attaques mentales qui infligent des paniques, la peur, ou des contrôles mentale. Voir aussi: Moral."
+					text = "La Détermination répresente la volonté et la bravoure de vos personnages. Plus elle est élevée, moins vos personnages auront la probabilité de voir descendre le moral pendant des événements négatifs, et plus vos personnages auront la chance de gagner en confidence lors des événements positifs. La détermination agit comme une défense contre les attaques mentales qui infligent des paniques, la peur, ou des contrôles mentaux. Voir aussi: Moral."
 				}
 			];
 
@@ -1839,7 +1839,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nom de votre compagnie qui sera connu aux quatres coins du monde."
+					text = "Le nom de votre compagnie qui sera connu aux quatre coins du monde."
 				}
 			];
 
@@ -1848,12 +1848,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Graine de Carte"
+					text = "Seed de Carte"
 				},
 				{
 					id = 2,
 					type = "description",
-					 text = "Une graine de carte est une chaîne unique qui détermine l\'apparence du monde dans votre campagne. Vous pouvez voir la graine des campagnes en cours dans le menu du jeu accessible en appuyant sur la touche Échap, puis la partager avec des amis pour qu\'ils jouent dans le même monde."
+					 text = "Une seed de carte est une chaîne unique qui détermine l\'apparence du monde dans votre campagne. Vous pouvez voir la seed des campagnes en cours dans le menu du jeu accessible en appuyant sur la touche Échap, puis la partager avec des amis pour qu\'ils jouent dans le même monde."
 				}
 			];
 
@@ -1867,7 +1867,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Vous ferez fasse à moins d\'ennemi, et ils seront plus facile, vos hommes gagneront de l\'expérience plus rapidement et battre en retraite pendant les bataille est plus facile.\n\nVos hommes auront un petit bonus aux chances de toucher et les ennemis une petite pénalité, pour faciliter votre arrivé dans le jeu.\n\nRecommendé pour les nouveaux joueurs."
+					text = "Vous ferez face à moins d\'ennemis et ils seront moins dangereux. Vos hommes gagneront de l\'expérience plus rapidement et battre en retraite pendant les batailles est plus facile.\n\nVos hommes auront un petit bonus aux chances de toucher et les ennemis une petite pénalité pour faciliter votre départ dans le jeu.\n\nRecommandé pour les nouveaux joueurs."
 				}
 			];
 
@@ -1881,7 +1881,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Fournit une expérience plus équilibré qui peut se révéler plus difficile.\n\nRecommendé pour les vétérans du jeu ou du genre."
+					text = "Fournit une expérience plus équilibré qui peut se révéler plus difficile.\n\nRecommandé pour les vétérans du jeu ou du genre."
 				}
 			];
 
@@ -1895,7 +1895,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Vos rencontres seront plus difficiles et nombreuses.\n\nRecommendé pour les experts du jeu qui veulent un défi mortel."
+					text = "Vos rencontres seront plus difficiles et nombreuses.\n\nRecommandé pour les experts du jeu qui veulent un défi mortel."
 				}
 			];
 
@@ -1909,7 +1909,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les contrats paieront plus, vous pourrez transporter plus de ressources.\n\nRecommendé pour les nouveaux joueurs."
+					text = "Les contrats rapporteront plus et vous pourrez transporter plus de ressources.\n\nRecommandé pour les nouveaux joueurs."
 				}
 			];
 
@@ -1918,12 +1918,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Difficulté Veteran"
+					text = "Difficulté Vétéran"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Fournit une expérience plus équilibré qui peut se révéler plus difficile.\n\nRecommendé pour les vétérans du jeu ou du genre."
+					text = "Fournit une expérience plus équilibré qui peut se révéler plus difficile.\n\nRecommandé pour les vétérans du jeu ou du genre."
 				}
 			];
 
@@ -1937,7 +1937,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les contrats paieront moins, les deserteurs prendront leur équipement avec eux.\n\nRecommendé pour les experts du jeu qui veulent plus de défi à gérer les fonds et les ressources de la compagnie."
+					text = "Les contrats paieront moins, les déserteurs emporteront leur équipement avec eux.\n\nRecommandé pour les experts du jeu qui veulent plus de défi à gérer les fonds et les ressources de la compagnie."
 				}
 			];
 
@@ -1951,7 +1951,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Vous commencerez avec plus de couronnes et de ressources.\n\nRecommendé pour les nouveaux joueurs."
+					text = "Vous commencerez avec plus de couronnes et de ressources.\n\nRecommandé pour les nouveaux joueurs."
 				}
 			];
 
@@ -1965,7 +1965,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Recommendé pour une expérience équilibré."
+					text = "Recommandé pour une expérience équilibrée."
 				}
 			];
 
@@ -1979,7 +1979,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Vous commencerez avec moins de couronnes et de ressources.\n\nRecommendé pour les experts du jeu."
+					text = "Vous commencerez avec moins de couronnes et de ressources.\n\nRecommandé pour les experts du jeu."
 				}
 			];
 
@@ -1993,7 +1993,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Choisissez comment commence votre compagnie dans le monde. En fonction de votre choix, vous commencerez avec différents hommes, équipement, ressources et des règles spéciales."
+					text = "Choisissez comment commence votre histoire dans le monde. En fonction de votre choix, vous commencerez avec différents hommes, équipements, ressources et des règles spéciales."
 				}
 			];
 
@@ -2007,7 +2007,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le mode Ironman désactive les sauvegardes manuelles. Une seule sauvegarde existera pour la compagnie, et le jeu est sauvegardé automatiquement durant le jeu et en quittant. Perdre la compagnie signifie perdre la sauvegarde. Recommendé pour la meilleure expérience une fois que vous connaissez le jeu.\n\nGardez à l\'esprit que les ordinateurs moins puissants pauseront probablement le jeu pendant quelques secondes pour sauvegarder."
+					text = "Le mode Ironman désactive les sauvegardes manuelles. Une seule sauvegarde existera pour la compagnie, et le jeu est sauvegardé automatiquement durant le jeu et en quittant. Perdre la compagnie signifie perdre la sauvegarde. Recommandé pour la meilleure expérience une fois que vous connaissez le jeu.\n\nGardez à l\'esprit que les ordinateurs moins puissants peuvent ralentir le jeu pendant quelques secondes pour sauvegarder."
 				}
 			];
 
@@ -2049,7 +2049,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Il n\'y aura pas de crise de fin de jeu et vous pourrez continuer de jouer indéfiniment. Notez qu\'en sélectionnant cette option, une partie significative du contenu du jeu et du challenge de fin ne sera pas disponible. Pas recommendé pour une bonne expérience de jeu."
+					text = "Il n\'y aura pas de crise de fin de jeu et vous pourrez continuer de jouer indéfiniment. Notez qu\'en sélectionnant cette option, une partie significative du contenu du jeu et du challenge de fin ne sera pas disponible. Non recommandé pour une bonne expérience de jeu."
 				}
 			];
 
@@ -2063,7 +2063,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les villes, villages et châteaux peuvent être détruit indéfiniment pendant les crises de fin de jeu, et avoir le monde partir en fumée est une des nombreuses façon de perdre la campagne."
+					text = "Les villes, villages et châteaux peuvent être détruits à tout jamais pendant les crises de fin de jeu et voir le monde partir en fumée est une des nombreuses façons de perdre la campagne."
 				}
 			];
 
@@ -2077,7 +2077,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La première crise de fin sera une guerre sans merci entre les maisons des nobles pour le pouvoir. Si vous survivez assez longtemps, les prochaines crises seront choisi aléatoirement."
+					text = "La première crise de fin sera une guerre sans merci entre les maisons des nobles pour le pouvoir. Si vous survivez assez longtemps, les prochaines crises seront choisies aléatoirement."
 				}
 			];
 
@@ -2091,7 +2091,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La première crise de fin sera une invasion de hordes de Peaux-Vertes menaçant de raser le monde des hommes. Si vous survivez assez longtemps, les prochaines crises seront choisi aléatoirement."
+					text = "La première crise de fin sera une invasion de hordes de Peaux-Vertes menaçant de raser le monde des hommes. Si vous survivez assez longtemps, les prochaines crises seront choisies aléatoirement."
 				}
 			];
 
@@ -2105,7 +2105,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Dans la première crise de fin les morts se lèveront de nouveau pour reprendre ce qui leur appartenait autrefois. Si vous survivez assez longtemps, les prochaines crises seront choisi aléatoirement."
+					text = "Dans la première crise de fin les morts se lèveront de nouveau pour reprendre ce qui leur appartenait autrefois. Si vous survivez assez longtemps, les prochaines crises seront choisies aléatoirement."
 				}
 			];
 
@@ -2119,7 +2119,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "La première crise de fin sera une guerre sainte entre les cultures du nord et du sud. Si vous survivez assez longtemps, les prochaines crises seront choisi aléatoirement."
+					text = "La première crise de fin sera une guerre sainte entre les cultures du nord et du sud. Si vous survivez assez longtemps, les prochaines crises seront choisies aléatoirement."
 				}
 			];
 
@@ -2133,7 +2133,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Activer l\'effet de profondeur de champ rendra légèrement floues les hauteurs sous la caméra en combat tactique (c\'est-à-dire floues), donnant plus une ambiance de miniature et facilitant la différenciation des hauteurs, mais potentiellement au détriment de certains détails."
+					text = "Activer l\'effet de profondeur de champ rendra légèrement floues les hauteurs sous la caméra en combat tactique, facilitant la différenciation des hauteurs, mais au détriment de certains détails."
 				}
 			];
 
@@ -2175,7 +2175,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Scroll the screen by moving the mouse cursor to the edge of the screen."
+					text = "Faites défiler l\'écran en déplaçant le curseur de la souris vers les bords de l\'écran."
 				}
 			];
 
@@ -2245,7 +2245,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ajustez automatiquement le niveau de hauteur de la caméra pour voir le personnage actuellement actif en combat. La désactivation de cette option empêchera la caméra de changer de niveau de hauteur lorsqu\'elle ne sera pas strictement nécessaire, mais nécessitera également un ajustement manuel des niveaux de hauteur lorsque les personnages seront obstrués par le terrain."
+					text = "Ajustez automatiquement le niveau de hauteur de la caméra pour voir le personnage actuellement actif en combat. La désactivation de cette option empêchera la caméra de changer de niveau de hauteur lorsqu\'elle ne sera pas strictement nécessaire, mais nécessitera également un ajustement manuel des niveaux de hauteur lorsque les personnages seront masqués par le terrain."
 				}
 			];
 
@@ -2287,7 +2287,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Augmente la vitesse de déplacement des personnages contrôlés par le joueur en combat. N\'affecte pas les compétence liés au déplacement."
+					text = "Augmente la vitesse de déplacement des personnages contrôlés par le joueur en combat. N\'affecte pas les compétences liées au déplacement."
 				}
 			];
 
@@ -2301,7 +2301,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Augmente la vitesse de déplacement des personnages contrôlés par l\'IA en combat. N\'affecte pas les compétence liés au déplacement."
+					text = "Augmente la vitesse de déplacement des personnages contrôlés par l\'IA en combat. N\'affecte pas les compétences liées au déplacement."
 				}
 			];
 
@@ -2338,12 +2338,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Pause-Auto après avoir quitter une Ville"
+					text = "Pause-Auto après avoir quitté une Ville"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Met le jeu automatiquement en pause après avoir quitté la ville, cela afin de ne pas perdre de temps - mais oblige d\'enlever la pause à chaque fois."
+					text = "Met le jeu automatiquement en pause après avoir quitté la ville, cela afin de ne pas perdre de temps - mais oblige à enlever la pause à chaque fois."
 				}
 			];
 
@@ -2399,7 +2399,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre de frères d\'armes controllés par vous ou vos alliés (controllés par l\'IA) sur le champ de bataille."
+					text = "Le nombre de frères d\'arme contrôlés par vous ou vos alliés (contrôlés par l\'IA) sur le champ de bataille."
 				}
 			];
 
@@ -2408,12 +2408,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Ennemies"
+					text = "Ennemis"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre d\'ennemies sur le champs de bataille."
+					text = "Le nombre d\'ennemis sur le champ de bataille."
 				}
 			];
 
@@ -2427,7 +2427,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre de tours joués depuis ue la bataille a commencé."
+					text = "Le nombre de tours joués depuis que la bataille a commencé."
 				}
 			];
 
@@ -2450,12 +2450,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Affiche/Cache la surbrillance sur les tuiles bloqués (B)"
+					text = "Affiche/Cache la surbrillance sur les tuiles bloquées (B)"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Bacule entre afficher et cacher l\'affichage en rouge pour indiquer les tuiles bloqués par l\'environnement (comme les arbres) où les personnages ne peuvent s\'y déplacer."
+					text = "Bacule entre afficher et cacher l\'affichage en rouge pour indiquer les tuiles bloquées par l\'environnement (comme les arbres) où les personnages ne peuvent s\'y déplacer."
 				}
 			];
 
@@ -2492,7 +2492,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Afficher/Cacher les barres de points de vies (Alt)"
+					text = "Afficher/Cacher les barres de points de vie (Alt)"
 				},
 				{
 					id = 2,
@@ -2525,7 +2525,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Fuyez le combat et courrez pour vos vies. Il est mieux de se battre un autre jour ue de mourrir ici inutilement."
+					text = "Fuyez le combat et courrez pour vos vies. Il est mieux de se battre un autre jour que de mourir ici inutilement."
 				}
 			];
 
@@ -2535,7 +2535,7 @@ this.tooltip_events <- {
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "Vous ne pouvez pas fuir de ce combat."
+					text = "Vous ne pouvez pas fuir ce combat."
 				});
 			}
 
@@ -2621,7 +2621,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Quitter le combat tactiue et retourner à la map du monde."
+					text = "Quitter le combat tactique et retourner sur la carte du monde."
 				}
 			];
 
@@ -2635,7 +2635,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ce personnage vient de monter de niveau! Trouvez-le dans votre compagnie, accessible depuis la map monde pour monter ses attributs et sélectionner un Talent."
+					text = "Ce personnage vient de monter de niveau! Trouvez-le dans votre compagnie, accessible depuis la carte du monde pour monter ses attributs et sélectionner un Talent."
 				}
 			];
 			return result;
@@ -2650,7 +2650,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Petit bleu, petite perte de sang et autres blessures superficielles qui ont provoqués une perte de points de vie à ce personnage sans impacter leurs compétences."
+					text = "Petit bleu, petite perte de sang et autres blessures superficielles qui ont provoqué une perte de points de vie à ce personnage sans impacter ses compétences."
 				}
 			];
 
@@ -2697,12 +2697,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Experience Gagné"
+					text = "Experience Gagnée"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre de point d\'expérience gagné en combattant et tuant des ennemis. Gagner assez de points d\'expérience permettra à ce personnage de montre de niveau, ce qui augmentera ses attributs et lui permettra de choisir un Talent."
+					text = "Le nombre de points d\'expérience gagnés en combattant et tuant des ennemis. Gagner assez de points d\'expérience permettra à ce personnage de monter de niveau, ce qui augmentera ses attributs et lui permettra de choisir un Talent."
 				}
 			];
 
@@ -2749,7 +2749,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les dégats reçus par ce personnage, partagés en dommages à l\'armure et aux points de vie. Ces valeurs sont après application des réductions de dommages."
+					text = "Les dégats reçus par ce personnage, partagés en dommages à l\'armure et aux points de vie. Ces valeurs sont calculées après application des réductions de dommage."
 				}
 			];
 
@@ -2810,7 +2810,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Les personnages gagnent des points d\'expérience quand vous ou vos alliés tuent des ennemies en bataille. Si un combattant accumule assez d\'expérience, il montera de niveau et aura la possibilité de monter ses attributs et de sélectionner un Talent qui offrira un bonus unique.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points de Talent, mais ils continueront de s\'ameliorer."
+					text = "Les personnages gagnent des points d\'expérience quand vous ou vos alliés tuent des ennemis en bataille. Si un combattant accumule assez d\'expérience, il montera de niveau et aura la possibilité de monter ses attributs et de sélectionner un Talent qui offrira un bonus unique.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points de Talent, mais ils continueront de s\'ameliorer."
 				}
 			];
 
@@ -2824,7 +2824,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le niveau d\'un personnage mesure son niveau d\'expérience au combat. Les personnages montent en niveau au fur et à mesure qu\'ils gagnent de l\'expérience et gagne la possibilité de gagner des Talents qui les rendent meilleurs dans leur travail de mercenaires.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points de Talent, mais ils continueront de s\'ameliorer."
+					text = "Le niveau d\'un personnage reflète son niveau d\'expérience au combat. Les personnages montent de niveau au fur et à mesure qu\'ils gagnent de l\'expérience et gagnent la possibilité de gagner des Talents qui les rendent meilleurs dans leur travail de mercenaires.\n\nAu dessus du level 11, les personnages sont des vétérans et ne gagneront plus de points de Talent, mais ils continueront de s\'ameliorer."
 				}
 			];
 
@@ -2838,7 +2838,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ce personnage est monté de niveau. Monter ses attributs et sélectionner un Talent!"
+					text = "Ce personnage est monté de niveau. Augmenter ses attributs et sélectionner un Talent!"
 				}
 			];
 			return result;
@@ -2853,7 +2853,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Renvoyer ce personnage de votre compagnie pour économiser sur le salaire journalier et faire de la place pour quelqu\'un d\'autre. Les personnages endettés seront libérés de l\'esclavage et quitteront votre compagnie."
+					text = "Renvoyer ce personnage de votre compagnie pour économiser son salaire journalier et faire de la place pour quelqu\'un d\'autre. Les personnages endettés seront libérés de l\'esclavage et quitteront votre compagnie."
 				}
 			];
 
@@ -2867,7 +2867,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Afficher l\'inventaire global de votre compagnie de mercenaire, ou voir ce qu\'il y a au sol pour le personnage sélectionner pendant un combat."
+					text = "Afficher l\'inventaire global de votre compagnie ou voir ce qu\'il y a au sol pour le personnage sélectionné pendant un combat."
 				}
 			];
 
@@ -2937,7 +2937,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Montre seulement les armes, outils offensifs et les accessoires."
+					text = "Montre seulement les armes, outils et accessoires offensifs."
 				}
 			];
 
@@ -2965,7 +2965,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Montre seulements les ressources, nourritures, trésors et autres."
+					text = "Montre seulements les ressources, nourriture, trésors et autres."
 				}
 			];
 
@@ -2979,7 +2979,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Montre seulements les objets utilisables en mode inventaire, comme les peintures ou les améliorations d\'armures."
+					text = "Montre seulements les objets utilisables en mode inventaire, comme les peintures ou les améliorations d\'armure."
 				}
 			];
 
@@ -3021,7 +3021,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Dépenser ces points pour augmenter 3 des 8 attributs par niveau par un nombre aléatoire. Un attribut peut seulement être augmenté une fois seulement par niveau.\n\nLes étoiles signifient qu\'un personnage est talentueux dans un attribut spécifique, ce qui permet d\'avoir régulièrement de meilleures jets de stats."
+					text = "Dépenser ces points pour augmenter 3 des 8 attributs par niveau par un nombre aléatoire. Un attribut peut seulement être augmenté une fois seulement par niveau.\n\nLes étoiles signifient qu\'un personnage est talentueux dans un attribut spécifique, ce qui permet d\'avoir régulièrement de meilleurs jets de dés."
 				}
 			];
 
@@ -3035,7 +3035,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Payer une compensation, un pourboir ou une pension pour le temps travaillé dans la compagnie permettra à la personne renvoyée de partir avec honneur et lui permettra de commencer une nouvelle vie, cela empêchera les autres membres de la compagnie de réagir avec colère au renvoie du personnage.\n\nPour les personnages endettés une indemnité leur est payé pour leur temps passés au sein de la compagnie. Les autres personnages endettés apprécieront si vous payez l\'indemnité, mais ne seront pas non plus en colère si vous ne le faites pas."
+					text = "Payer une compensation, un pourboire ou une pension pour le temps travaillé dans la compagnie permettra à la personne renvoyée de partir avec honneur et lui permettra de commencer une nouvelle vie. Cela empêchera les autres membres de la compagnie de réagir avec colère au renvoi du personnage.\n\nPour les personnages endettés, une indemnité leur est payé pour leur temps passé au sein de la compagnie. Les autres personnages endettés apprécieront si vous payez l\'indemnité, mais ne seront pas non plus en colère si vous ne le faites pas."
 				}
 			];
 
@@ -3058,7 +3058,7 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Vitesse Normal (1)"
+					text = "Vitesse Normale (1)"
 				},
 				{
 					id = 2,
@@ -3105,7 +3105,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Voir les factions que vous connaissez et votre relation avec eux."
+					text = "Voir les factions que vous connaissez et votre relation avec elles."
 				}
 			];
 
@@ -3147,7 +3147,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Affiche ou cache les empreintes laissés par les autres groupes qui sillonnent le monde pour que vous puissez les suivre ou les éviter plus facilement."
+					text = "Affiche ou cache les empreintes laissées par les autres groupes qui sillonnent le monde pour que vous puissez les suivre ou les éviter plus facilement."
 				}
 			];
 
@@ -3161,7 +3161,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Faire ou défaire le camp. Pendant que vous camper, le temps passera plus vite et vos hommes se soigneront et répareront leur équipement plus rapidement. Cependant, vous êtes aussi plus succeptible d\'être victime d\'une attaque surprise."
+					text = "Installer ou démonter le camp. Pendant que vous campez, le temps passera plus vite et vos hommes se soigneront et répareront leur équipement plus rapidement. Cependant, vous êtes aussi plus succeptible d\'être victime d\'une attaque surprise."
 				}
 			];
 
@@ -3187,7 +3187,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Vous permet de gérer les compagnons non-combatants qui vous donnent des avantages hors combats, et améliorés votre chariot pour plus de stockage."
+					text = "Vous permet de gérer les compagnons non-combattants qui vous donnent des avantages hors combat et peuvent augmenter les capacités de stockage de votre chariot."
 				}
 			];
 
@@ -3201,7 +3201,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Dans le carnet de deuil ayez accès à la liste de tous vos compagnons qui sont tombés au combat depuis que vous êtes aux commandes."
+					text = "Dans le carnet de deuil, vous avez accès à la liste de tous vos compagnons qui sont tombés au combat depuis que vous êtes aux commandes."
 				}
 			];
 
@@ -3257,7 +3257,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombre de jours où le personnage a été dans la compagnie avant son décès."
+					text = "Le nombre de jours où le personnage a fait partie de la compagnie avant son décès."
 				}
 			];
 
@@ -3271,7 +3271,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le nombres de batailles dont le personnage a participé avant son décès."
+					text = "Le nombre de batailles auquel le personnage a participé avant son décès."
 				}
 			];
 
@@ -3352,12 +3352,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Vous avez déjà un contrat!"
+					text = "Vous avez déjà un contrat !"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Vous pouvez avoir seulement un contrat actif à un moment donné. Les offres de contrats resteront pendant que vous effectuez le contrat actuel, à moins que le problème ne disparaisse d\'ici là."
+					text = "Vous ne pouvez avoir qu\'un contrat actif à un moment donné. Les offres de contrats resteront pendant que vous effectuez le contrat actuel, à moins que le problème ne disparaisse d\'ici là."
 				}
 			];
 			return ret;
@@ -3372,7 +3372,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Seulement les contrats donnés par les nobles possédant cette fortification sont disponibles ici, mais vous n\'êtes pas digne de leur attention. Augmentez votre renom et accomplissez l\'ambition des maisons des nobles pour qu\'il remarque la compagnie et vous confient des contrats!"
+					text = "Seulement les contrats donnés par les nobles possédant cette fortification sont disponibles ici, mais vous n\'êtes pas digne de leur attention. Augmentez votre renom et accomplissez l\'ambition des maisons des nobles pour qu\'ils remarquent la compagnie et vous confient des contrats !"
 				}
 			];
 			return ret;
@@ -3387,7 +3387,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Engager de nouveaux hommes dans votre compagnie de mercenaires. La qualité et la quantité de volontaire dépend de la taille et du type de colonie. Tous les quelques jours, de nouvelles personnes arriveront, et d\'autres partiront."
+					text = "Engager de nouveaux hommes dans votre compagnie de mercenaires. La qualité et la quantité de volontaires dépendent de la taille et du type de colonie. De nouvelles personnes arriveront et partiront régulièrement."
 				}
 			];
 
@@ -3401,7 +3401,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Une grande taverne templie de clients des quatres coins du monde, elle offre boissons, nourriture possède une atmophère vivante dans laquelle il est possible de partager des rumeurs et des informations."
+					text = "Une grande taverne remplie de clients des quatre coins du monde, elle offre boissons, nourriture et possède une atmosphère vivante dans laquelle il est possible de partager des rumeurs et des informations."
 				}
 			];
 
@@ -3415,7 +3415,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Un refuge contre le monde brutal de dehors. Vous pourrez y chercher de l\'aide pour soigner vos bléssés et y prier pour le salut éternel de vos âmes."
+					text = "Un refuge contre le monde brutal de dehors. Vous pourrez y chercher de l\'aide pour soigner vos blessés et y prier pour le salut éternel de vos âmes."
 				}
 			];
 
@@ -3429,7 +3429,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Un lieu de rassemblement pour ceux qui pratiquent une profession de combat. Ayez vos hommes s\'entraîner ici pour apprendre de guerriers aguerris, pour que vous puissiez les forger plus rapidement en des mercenaires endurcies."
+					text = "Un lieu de rassemblement pour ceux qui pratiquent une profession de combat. Envoyez vos hommes s\'entraîner ici pour apprendre de guerriers aguerris et devenir plus rapidement des mercenaires endurcis."
 				}
 			];
 
@@ -3443,7 +3443,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Pour le bon prix un taxidermiste pourra vous créer des objets utiles à partir de toutes les sortes de trophées que vous lui ramènerez."
+					text = "Pour le bon prix un taxidermiste pourra créer des objets utiles à partir de toutes sortes de trophées que vous lui ramènerez."
 				}
 			];
 
@@ -3457,7 +3457,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Un chenil où des chiens fort et rapides sont élevés pour la guerre."
+					text = "Un chenil où on élève des chiens de guerre, forts et rapides."
 				}
 			];
 
@@ -3471,7 +3471,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Personnaliser l\'apparence de vos hommes chez le barbier. Ayez leurs cheveux et barbes coupés ou achetés des potions douteuse pour leur faire perdre du poids."
+					text = "Personnaliser l\'apparence de vos hommes chez le barbier. Faites couper leurs cheveux et barbes ou achetez des potions douteuse pour leur faire perdre du poids."
 				}
 			];
 
@@ -3485,7 +3485,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le fabricant de flèche se spécialise dans toutes les sortes d\'armes à distance."
+					text = "Le fabricant de flèches se spécialise dans toutes les sortes d\'armes à distance."
 				}
 			];
 
@@ -3499,7 +3499,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Un alchimiste vous propose des choses exotiques et dangereuses pour de beaux montants."
+					text = "Un alchimiste vous propose des choses exotiques et dangereuses à bon prix."
 				}
 			];
 
@@ -3513,7 +3513,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "L\'arène permet de gagner de l\'or et de la gloire en se battant dans des combats jusqu\'à la mort, et tout devant les cris du public qui s\'exclame devant les morts les plus atroces et sanglantes."
+					text = "L\'arène permet de gagner de l\'or et de la gloire en se battant dans des combats à mort, le tout devant les cris du public qui s\'exclame devant les faits les plus atroces et sanglants."
 				}
 			];
 
@@ -3523,7 +3523,7 @@ this.tooltip_events <- {
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "Il n\'y a plus de matches de planifiés pour aujourd\'hui. Revenez demain!"
+					text = "Il n\'y a plus de matchs prévus pour aujourd\'hui. Revenez demain !"
 				});
 			}
 
@@ -3542,7 +3542,7 @@ this.tooltip_events <- {
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "Vous avez besoin d\'au moins 5 emplacements d\'inventaire vide pour participer dans ce tournoi"
+					text = "Vous avez besoin d\'au moins 5 emplacements d\'inventaire vides pour participer à ce tournoi"
 				});
 			}
 			else if (this.World.Contracts.getActiveContract() == null && this.World.Assets.getStash().getNumberOfEmptySlots() < 3)
@@ -3551,7 +3551,7 @@ this.tooltip_events <- {
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "Vous avez besoin d\'au moins 3 emplacements d\'inventaire vide pour combattre dans l\'arène"
+					text = "Vous avez besoin d\'au moins 3 emplacements d\'inventaire vides pour combattre dans l\'arène"
 				});
 			}
 
@@ -3567,7 +3567,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le port est utilisé autant par les bateaux de commerce lointain que par les bateaux de pêches locaux. Vous aurez probablement la possibilité de réserver un voyage vers d\'autres parties du continent ici."
+					text = "Le port est utilisé autant par les bateaux de commerce lointains que par les bateaux de pêches locaux. Vous aurez probablement la possibilité de réserver un voyage vers d\'autres parties du continent ici."
 				}
 			];
 
@@ -3577,7 +3577,7 @@ this.tooltip_events <- {
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "Vous ne pouvez utiliser le port quand vous devez escorter une caravane"
+					text = "Vous ne pouvez pas utiliser le port quand vous devez escorter une caravane"
 				});
 			}
 
@@ -3593,7 +3593,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le marché est un lieu animé offrant toute sorte de biens produit dans la région. De nouveaux biens sont produits tous les quelques jours et quand des caravanes atteignent cette colonie."
+					text = "Le marché est un lieu animé offrant toute sorte de biens produits dans la région ou acheminés par caravane."
 				}
 			];
 
@@ -3607,7 +3607,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le forgeron d\'armes met en étalage toutes sortes d\'armes de mélés créé à la main. L\'équipement endommagé peut y être réparé contre une petite compensation."
+					text = "Le forgeron d\'armes met en étalage toutes sortes d\'armes de mêlés créés à la main. L\'équipement endommagé peut y être réparé contre une petite compensation."
 				}
 			];
 
@@ -3621,7 +3621,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Le forgeron d\'armure est le bon endroit pour chercher des biens bien fait et une protection durable. L\'équipement endommagé peut y être réparé contre une petite compensation."
+					text = "Le forgeron d\'armures est le bon endroit pour chercher des biens de qualité et offrant une protection durable. L\'équipement endommagé peut y être réparé contre une petite compensation."
 				}
 			];
 
@@ -3649,7 +3649,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Engager la recrue sélectionner pour qu\'elle rejoigne votre compagnie."
+					text = "Engager la recrue sélectionnée pour qu\'elle rejoigne votre compagnie."
 				}
 			];
 
@@ -3663,7 +3663,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Donner une periode d\'essai à la recrue pour révéler ses traits cachés, si elle en a."
+					text = "Offrir une période d\'essai à la recrue pour révéler ses traits cachés, si elle en a."
 				}
 			];
 
@@ -3677,7 +3677,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ce personnage pourrait avoir des traits inconnus. Vous pouvez payer pour les révélés."
+					text = "Ce personnage pourrait avoir des traits inconnus. Vous pouvez payer pour les révéler."
 				}
 			];
 
@@ -3691,7 +3691,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Payer le prix indiqué, et fournisser les composants nécessaires pour recevoir l\'objet fabriqué en retour."
+					text = "Payer le prix indiqué et fournisser les composants nécessaires pour recevoir l\'objet fabriqué en retour."
 				}
 			];
 
@@ -3747,7 +3747,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ayez un de vos homme participer à une joute amicale contre des combattants expérimentés utilisant des styles de combat variés. Les bleus reçus et les leçons apprîses se traduisent en un gain de [color=" + this.Const.UI.Color.PositiveValue + "]+50%[/color] d\'expérience pour la prochaine bataille."
+					text = "Envoyez un de vos hommes participer à une joute amicale contre des combattants expérimentés utilisant des styles de combat variés. Les bleus reçus et les leçons apprîses se traduisent en un gain de [color=" + this.Const.UI.Color.PositiveValue + "]+50%[/color] d\'expérience pour la prochaine bataille."
 				}
 			];
 
@@ -3761,7 +3761,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ayez un de vos homme participer à des leçons et un transferts de connaissances par des vétérans du métier. La connaissance acquise se traduit par un gain de [color=" + this.Const.UI.Color.PositiveValue + "]+35%[/color] d\'expérience pour les trois prochaines batailles."
+					text = "Envoyez un de vos hommes participer à des leçons dispensées par des vétérans du métier. La connaissance acquise se traduit par un gain de [color=" + this.Const.UI.Color.PositiveValue + "]+35%[/color] d\'expérience pour les trois prochaines batailles."
 				}
 			];
 
@@ -3775,7 +3775,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Ayez un de vos homme participer à un entraiment rigoureux de régiment pour le façonner en un combatant expérimenté. Le sang et les larmes versés lui seront bénéfiques et se traduisent sur le long terme par un gain de [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] d\'expérience pour les cinq prochaines batailles."
+					text = "Envoyez un de vos hommes participer à un entraînement militaire rigoureux pour le transformer en un combattant expérimenté. Le sang et les larmes versés lui seront bénéfiques et se traduiront sur le long terme par un gain de [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] d\'expérience pour les cinq prochaines batailles."
 				}
 			];
 
@@ -3784,12 +3784,12 @@ this.tooltip_events <- {
 				{
 					id = 1,
 					type = "title",
-					text = "Quiter le jeu"
+					text = "Quitter le jeu"
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Quitter le jeu et retourner au menu principal. Votre progrès ne sera pas sauvegardé."
+					text = "Quitter le jeu et retourner au menu principal. Votre progression ne sera pas sauvegardée."
 				}
 			];
 
@@ -3803,7 +3803,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Vos relations avec une faction détermine si elle vous combattront ou agiront pacifiquement envers vous, leur volonté de vous engager pour des contrats, le prix qu\'ils seront prêt à vous payer ainsi que le nombre de recrues qui vous seront accessible dans leur colonies.\n\nLes relations augmentent en menant un bien des contract pour les factions, et diminuent quand vous échouez, quand vous les trahissez ou quand vous les attaquez. Au fur et à mesure que le temps d\'écoule, les relations se dirige vers la neutralité."
+					text = "Vos relations avec une faction détermine si elle vous combattra ou agira pacifiquement envers vous, sa volonté de vous engager pour des contrats, le prix qu\'elle sera prête à vous payer ainsi que le nombre de recrues qui vous seront accessible dans ses colonies.\n\nLes relations augmentent en menant à bien des contrats pour les factions et diminuent quand vous échouez, quand vous les trahissez ou quand vous les attaquez. Au fur et à mesure du temps, les relations évoluent vers la neutralité."
 				}
 			];
 			local changes = this.World.FactionManager.getFaction(_entityId).getPlayerRelationChanges();
@@ -3842,7 +3842,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Une compagnie de mercenaire transporte énormement d\'équipement et de ressources. En utilisant des chariots et des carriages, vous pouvez agrandir l\'espace d\'inventaire disponible et vous pourrez donc transporter encore plus."
+					text = "Une compagnie de mercenaires transporte énormément d\'équipement et de ressources. En utilisant des chariots, vous pouvez augmenter vos capacités d'emport."
 				}
 			];
 
@@ -3868,7 +3868,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					 text = "Le DLC gratuit Lindwurm ajoute une nouvelle bête difficile, un nouveau bannière de joueur, ainsi qu\'une nouvelle armure renommée, un casque et un bouclier."
+					 text = "Le DLC gratuit Lindwurm ajoute une nouvelle bête dangereuse, une nouvelle bannière de joueur, ainsi qu\'une nouvelle armure renommée, un casque et un bouclier."
 				}
 			];
 
@@ -3878,7 +3878,7 @@ this.tooltip_events <- {
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible gratuitement sur Steam et GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible gratuitement sur Steam et GOG ![/color]";
 			}
 
 			ret.push({
@@ -3909,7 +3909,7 @@ this.tooltip_events <- {
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l\'achat sur Steam et GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l\'achat sur Steam et GOG ![/color]";
 			}
 
 			ret.push({
@@ -3930,24 +3930,24 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "The Warriors of the North DLC adds a new human faction of northern barbarians with their own fighting style and equipment, different starting scenarios for your company, new nordic and rus inspired equipment, as well as new contracts and events."
+					text = "Le DLC Warriors of the North ajoute une nouvelle faction humaine de barbares du nord avec leur propre style de combat et leur propre équipement, différents scénarios de départ, de nouveaux équipements d\'inspiration nordique et russe, ainsi que de nouveaux contrats et événements.."
 				}
 			];
 
 			if (this.Const.DLC.Wildmen == true)
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]This DLC has been installed.[/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]Ce DLC est installé.[/color]";
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]This DLC is missing. It\'s available for purchase on Steam and GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l\'achat sur Steam et GOG ![/color]";
 			}
 
 			ret.push({
 				id = 1,
 				type = "hint",
 				icon = "ui/icons/mouse_left_button.png",
-				text = "Open store page in browser"
+				text = "Ouvrir la page du magasin dans le navigateur"
 			});
 			return ret;
 
@@ -3971,7 +3971,7 @@ this.tooltip_events <- {
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l\'achat sur Steam et GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible à l\'achat sur Steam et GOG ![/color]";
 			}
 			
 			ret.push({
@@ -3992,17 +3992,17 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "The free Of Flesh and Faith DLC adds two new and very unique origins for you to play as: The Anatomists and the Oathtakers. In addition, there\'s two new banners, new equipment, new backgrounds to hire and lots of new events."
+					text = "Le DLC gratuit Of Flesh and Faith ajoute deux nouvelles origines très originales : les Anatomistes et les Oathtakers. De plus, il y a deux nouvelles bannières, de nouveaux équipements, de nouveaux décors à louer et de nombreux nouveaux événements.."
 				}
 			];
 
 			if (this.Const.DLC.Paladins == true)
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]This DLC has been installed.[/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.PositiveValue + "]Ce DLC est installé.[/color]";
 			}
 			else
 			{
-				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]This DLC is missing. It\'s available for free on Steam and GOG![/color]";
+				ret[1].text += "\n\n[color=" + this.Const.UI.Color.NegativeValue + "]Ce DLC est manquant. Il est disponible gratuitement sur Steam et GOG ![/color]";
 			}
 
 

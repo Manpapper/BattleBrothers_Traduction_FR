@@ -189,7 +189,7 @@ this.privateering_contract <- this.inherit("scripts/contracts/contract", {
 				local origin = nonIsolatedSettlements[this.Math.rand(0, nonIsolatedSettlements.len() - 1)];
 				local party = f.spawnEntity(origin.getTile(), origin.getName() + " Company", true, this.Const.World.Spawn.Noble, 190 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-				party.setDescription("Professional soldiers in service to local lords.");
+				party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 				this.Contract.m.UnitsSpawned.push(party.getID());
 				party.getLoot().Money = this.Math.rand(50, 200);
 				party.getLoot().ArmorParts = this.Math.rand(0, 25);

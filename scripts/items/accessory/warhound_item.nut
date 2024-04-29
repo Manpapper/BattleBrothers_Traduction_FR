@@ -67,7 +67,7 @@ this.warhound_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.updateVariant();
 		this.m.ID = "accessory.warhound";
 		this.m.Name = this.Const.Strings.WardogNames[this.Math.rand(0, this.Const.Strings.WardogNames.len() - 1)] + " Le chien de combat";
-		this.m.Description = "Un chien du nord fort et loyal, élevé pour la guerre. Peut être déclenché au combat pour repérer, traquer ou chasser les ennemis en déroute.";
+		this.m.Description = "Un chien du nord fort et loyal, élevé pour la guerre. Peut être lâché au combat pour repérer, traquer ou chasser les ennemis en déroute.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = false;
@@ -105,7 +105,7 @@ this.warhound_item <- this.inherit("scripts/items/accessory/accessory", {
 		local unleash = this.new("scripts/skills/actives/unleash_wardog");
 		unleash.setItem(this);
 		unleash.m.Name = "Unleash Warhound";
-		unleash.m.Description = "Libérez votre chien de guerre et envoyez-le charger l\'ennemi. Nécessite une tuile libre adjacente.";
+		unleash.m.Description = "Lâcher votre chien de guerre et envoyez-le charger l\'ennemi. Nécessite une tuile libre adjacente.";
 		unleash.m.Icon = "skills/active_165.png";
 		unleash.m.IconDisabled = "skills/active_165_sw.png";
 		unleash.m.Overlay = "active_165";

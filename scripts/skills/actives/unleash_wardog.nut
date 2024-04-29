@@ -52,8 +52,8 @@ this.unleash_wardog <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.unleash_wardog";
-		this.m.Name = "Libérer le Chien de Guerre";
-		this.m.Description = "Libérer le Chien de Guerre et envoyer le charger l\'ennemie. Nécessite une tuile libre adjacente.";
+		this.m.Name = "Lâcher le Chien de Guerre";
+		this.m.Description = "Lâcher le Chien de Guerre et envoyer le charger l\'ennemi. Nécessite une tuile libre adjacente.";
 		this.m.Icon = "skills/active_83.png";
 		this.m.IconDisabled = "skills/active_83_sw.png";
 		this.m.Overlay = "active_83";

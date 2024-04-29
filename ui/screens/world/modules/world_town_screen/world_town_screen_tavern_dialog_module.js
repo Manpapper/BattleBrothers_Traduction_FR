@@ -114,7 +114,7 @@ WorldTownScreenTavernDialogModule.prototype.createDIV = function (_parentDiv)
 	var backgroundRowBorder = $('<div class="row is-top border"/>');
 	backgroundRow.append(backgroundRowBorder);
 	
-	this.mLeftDetailsPanel.Name = $('<div class="name title-font-normal font-bold font-color-brother-name">Entendre les rumeurs et les dernières informations que les client ont</div>');
+	this.mLeftDetailsPanel.Name = $('<div class="name title-font-normal font-bold font-color-brother-name">Entendre les dernières rumeurs</div>');
     backgroundRow.append(this.mLeftDetailsPanel.Name);
     backgroundRow = $('<div class="row is-bottom"/>');
     detailsColumn.append(backgroundRow);
@@ -173,7 +173,7 @@ WorldTownScreenTavernDialogModule.prototype.createDIV = function (_parentDiv)
     backgroundRow.append(detailsRow);
     var hireButtonLayout = $('<div class="l-tavern-button"/>');
     detailsRow.append(hireButtonLayout);
-    this.mRightDetailsPanel.Button = hireButtonLayout.createTextButton("Pay", function()
+    this.mRightDetailsPanel.Button = hireButtonLayout.createTextButton("Payer", function()
 	{
         self.notifyBackendDrink();
     }, '', 1);

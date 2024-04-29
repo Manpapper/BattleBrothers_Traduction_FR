@@ -23,7 +23,7 @@ this.campfire_main_dialog_module <- this.inherit("scripts/ui/screens/ui_module",
 		local shield = this.World.Assets.getBannerID() < 10 ? "0" + this.World.Assets.getBannerID() : this.World.Assets.getBannerID();
 		local result = {
 			Title = "Compagnons",
-			SubTitle = "Gérer les compagnons non-combatants",
+			SubTitle = "Gérer les compagnons non-combattants",
 			Assets = this.UIDataHelper.convertAssetsInformationToUIData(),
 			Background = this.Const.World.TerrainSettlementImages[type].Background + (night ? "_night" : "") + ".jpg",
 			BackgroundCenter = "ui/campfire/campfire_tents_01.png",
@@ -61,11 +61,11 @@ this.campfire_main_dialog_module <- this.inherit("scripts/ui/screens/ui_module",
 		{
 			if (this.World.Assets.getMoney() >= this.Const.World.InventoryUpgradeCosts[this.World.Retinue.getInventoryUpgrades()])
 			{
-				this.showDialogPopup(this.Const.Strings.InventoryUpgradeHeader[this.World.Retinue.getInventoryUpgrades()], "Vous pouvez choisir d\'" + this.Const.Strings.InventoryUpgradeText[this.World.Retinue.getInventoryUpgrades()] + " pour gagner 27 emplacement d\'inventaire en plus pour le prix de " + this.Const.Strings.InventoryUpgradeCosts[this.World.Retinue.getInventoryUpgrades()] + " Couronnes. Est-ce que c\'est ce que vous voulez faire?", this.onUpgradeInventorySpace.bindenv(this), null);
+				this.showDialogPopup(this.Const.Strings.InventoryUpgradeHeader[this.World.Retinue.getInventoryUpgrades()], "Vous pouvez choisir d\'" + this.Const.Strings.InventoryUpgradeText[this.World.Retinue.getInventoryUpgrades()] + " pour gagner 27 emplacements d\'inventaire en plus pour le prix de " + this.Const.Strings.InventoryUpgradeCosts[this.World.Retinue.getInventoryUpgrades()] + " Couronnes. Confirmez-vous ?", this.onUpgradeInventorySpace.bindenv(this), null);
 			}
 			else
 			{
-				this.showDialogPopup(this.Const.Strings.InventoryUpgradeHeader[this.World.Retinue.getInventoryUpgrades()], "Malheureusement, vous ne pouvez pas vous permettre des payer " + this.Const.Strings.InventoryUpgradeCosts[this.World.Retinue.getInventoryUpgrades()] + " Couronnes nécessaire pour " + this.Const.Strings.InventoryUpgradeText[this.World.Retinue.getInventoryUpgrades()] + " et gagner plus d\'emplacement d\'inventaire en ce moment.", null, null, true);
+				this.showDialogPopup(this.Const.Strings.InventoryUpgradeHeader[this.World.Retinue.getInventoryUpgrades()], "Malheureusement, vous ne pouvez pas vous permettre de payer " + this.Const.Strings.InventoryUpgradeCosts[this.World.Retinue.getInventoryUpgrades()] + " Couronnes nécessaires pour " + this.Const.Strings.InventoryUpgradeText[this.World.Retinue.getInventoryUpgrades()] + " et gagner plus d\'emplacements d\'inventaire en ce moment.", null, null, true);
 			}
 		}
 	}

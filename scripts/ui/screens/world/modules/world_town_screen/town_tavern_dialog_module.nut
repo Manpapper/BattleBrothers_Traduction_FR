@@ -54,13 +54,13 @@ this.town_tavern_dialog_module <- this.inherit("scripts/ui/screens/ui_module", {
 	{
 		return {
 			Title = "Taverne",
-			SubTitle = "Une grande taverne remplie de clients provenant de des quatre coins du pays.",
+			SubTitle = "Une grande taverne remplie de clients provenant des quatre coins du pays.",
 			Rumor = this.m.Tavern.getRumor(false),
 			RumorPrice = this.m.Tavern.getRumorPrice(),
 			Drink = null,
 			DrinkPrice = this.m.Tavern.getDrinkPrice(),
 			LeftInfo = "Payez pour une tournée afin que les clients partagent plus de nouvelles et de rumeurs ([img]gfx/ui/tooltips/money.png[/img]" + this.Math.round(20 * this.m.Tavern.getSettlement().getBuyPriceMult()) + ").",
-			RightInfo = "Payez une tournée pour vos hommes afin de leur remonter le moral. ([img]gfx/ui/tooltips/money.png[/img]" + this.Math.round(this.World.getPlayerRoster().getSize() * 5 * this.m.Tavern.getSettlement().getBuyPriceMult()) + ").",
+			RightInfo = "Payez une tournée à vos hommes afin de leur remonter le moral. ([img]gfx/ui/tooltips/money.png[/img]" + this.Math.round(this.World.getPlayerRoster().getSize() * 5 * this.m.Tavern.getSettlement().getBuyPriceMult()) + ").",
 			Assets = this.m.Parent.queryAssetsInformation()
 		};
 	}

@@ -2332,7 +2332,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 		this.m.EngageByPlayer = _isPlayerInitiated;
 		this.Tooltip.hide();
 		this.m.WorldScreen.hide();
-		this.m.CombatDialog.show(entities, allyBanners, enemyBanners, _isPlayerInitiated || this.m.EscortedEntity != null, _allowFormationPicking, text, image, this.m.EscortedEntity != null ? "Fuyez !" : "Se replier !");
+		this.m.CombatDialog.show(entities, allyBanners, enemyBanners, _isPlayerInitiated || this.m.EscortedEntity != null, _allowFormationPicking, text, image, this.m.EscortedEntity != null ? "Fuir..." : "Se replier...");
 		this.m.MenuStack.push(function ()
 		{
 			this.m.EngageCombatPos = null;

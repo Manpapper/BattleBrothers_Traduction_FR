@@ -196,7 +196,7 @@ WorldCombatDialog.prototype.createButtons = function (_allowDisengage, _disengag
 	{
 		var layout = $('<div class="l-engage-button"/>');
 		footerButtonBar.append(layout);
-		layout.createTextButton("Engager le Combat!", function ()
+		layout.createTextButton("Engager !", function ()
 		{
 			self.notifyBackendEngageButtonPressed();
 		}, '', 1);

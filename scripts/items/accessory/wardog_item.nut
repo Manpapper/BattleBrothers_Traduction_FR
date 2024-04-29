@@ -67,7 +67,7 @@ this.wardog_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.updateVariant();
 		this.m.ID = "accessory.wardog";
 		this.m.Name = this.Const.Strings.WardogNames[this.Math.rand(0, this.Const.Strings.WardogNames.len() - 1)] + " Le chien de combat";
-		this.m.Description = "Un chien fort et fidèle élevé pour la guerre. Peut être déclenché au combat pour repérer, traquer ou chasser les ennemis en déroute.";
+		this.m.Description = "Un chien fort et fidèle élevé pour la guerre. Peut être lâché au combat pour repérer, traquer ou chasser les ennemis en déroute.";
 		this.m.SlotType = this.Const.ItemSlot.Accessory;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = false;

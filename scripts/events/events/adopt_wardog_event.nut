@@ -10,7 +10,7 @@ this.adopt_wardog_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 120.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_27.png[/img]Vous avez remarqué le cabot quelques kilomètres de distance, que ce soit à l\'avant ou à l\'arrière, il est toujours là, à rentrer et sortir de votre champ de vision.\n\nUn cabot comme ça, ne suis pas un groupe de dangereuses personnes sans raisons - peut-être que quelqu\'un le nourrit?",
+			Text = "[img]gfx/ui/events/event_27.png[/img]Vous avez remarqué le cabot à quelques kilomètres de distance, que ce soit à l\'avant ou à l\'arrière, il est toujours là, à rentrer et sortir de votre champ de vision.\n\nUn cabot comme ça ne suis pas un groupe de dangereuses personnes sans raisons - peut-être que quelqu\'un le nourrit?",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -118,7 +118,7 @@ this.adopt_wardog_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_27.png[/img]Vous prenez un arc et encochez une flèche. Plusieurs de vos frère d\'arme vous regardent pendant que vous visez. le vent vient, s\'arrête, puis revient. Vous attendez patiemment avant de tirer la corde et fermer un oeil et viser le chien. Il s\'arrête et vous regarde entre temps long halètement.\n\nVous relâchez le tir. La flèche traverse l\'air et le chien hurle de douleur. Il se redresse sur ses pattes arrière et tombe, ses pattes frappant et raclant le sol jusqu\'à ce qu\'elles s\'arrêtent.Vous rangez l\'arc et la compagnie reprend la route.",
+			Text = "[img]gfx/ui/events/event_27.png[/img]Vous prenez un arc et encochez une flèche. Plusieurs de vos frère d\'arme vous regardent pendant que vous visez. Le vent vient, s\'arrête, puis revient. Vous attendez patiemment avant de tirer la corde, fermer un oeil et viser le chien. Il s\'arrête et vous regarde entre de longs halètements.\n\nVous relâchez le tir. La flèche traverse l\'air et le chien hurle de douleur. Il se redresse sur ses pattes arrières et tombe, ses pattes frappant et raclant le sol jusqu\'à ce qu\'elles s\'arrêtent.Vous rangez l\'arc et la compagnie reprend la route.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -139,7 +139,7 @@ this.adopt_wardog_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "E",
-			Text = "[img]gfx/ui/events/event_27.png[/img]Vous décidez de prendre un morceau de viand et de la tendre en approchant le chien. Il est craintif au début, il recule à votre approche, mais le doût arôme dans votre main est séduisante c\'est sûr. Le bâtard revient vers vous, s\'arrêtant ici et là, les yeux à la recherche d\'une embuscade.\n\nVous pouvez voir les côtes du chien , plusieurs jours sur la route ont donné un air squelettique au chien. Ses oreilles sont recousues et sa queue est marqué de signes de bataille. Cet animal sait comment se battre et c\'est exactement ce qu\'il va faire pour vous maintenant, ce battre.",
+			Text = "[img]gfx/ui/events/event_27.png[/img]Vous décidez de prendre un morceau de viande et de la tendre en approchant du chien. Il est craintif au début, il recule à votre approche, mais le doux arôme dans votre main est alléchant c\'est sûr. Le bâtard revient vers vous, s\'arrêtant ici et là, les yeux à la recherche d\'une embuscade.\n\nVous pouvez voir les côtes du chien , plusieurs jours sur la route lui ont donné un air squelettique. Ses oreilles sont recousues et sa queue est marquée de signes de bataille. Cet animal sait comment se battre et c\'est exactement ce qu\'il va faire pour vous maintenant, se battre.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -168,7 +168,7 @@ this.adopt_wardog_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "F",
-			Text = "[img]gfx/ui/events/event_37.png[/img]Un chien robuste comme lui ferait une excellente mascotte. Le petit cabot pourra certainement booster le moral. Vous ordonnez %bro% de le nourrir dans l\'espoir qu\'il decide de rester. Il part avec un morceau de restes et s\'accroupit.%SPEECH_ON%Bon chien.%SPEECH_OFF%Le cabot renifle la nourriture, puis la dévore - et la main du mercenaire avec. Votre frère d\'arme daute en arrière, blottissant son bras dans sa poitrine comme s\'il risquait de le perdre. Le chien, quant à lui, avale les morceaux et s\'enfuit.",
+			Text = "[img]gfx/ui/events/event_37.png[/img]Un chien robuste comme lui ferait une excellente mascotte. Le petit cabot pourra certainement booster le moral. Vous ordonnez %bro% de le nourrir dans l\'espoir qu\'il decide de rester. Il part avec un morceau de restes et s\'accroupit.%SPEECH_ON%Bon chien.%SPEECH_OFF%Le cabot renifle la nourriture, puis la dévore - et la main du mercenaire avec. Votre frère d\'arme chute en arrière, blottissant son bras dans sa poitrine comme s\'il risquait de le perdre. Le chien, quant à lui, avale les morceaux et s\'enfuit.",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -198,7 +198,7 @@ this.adopt_wardog_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "G",
-			Text = "[img]gfx/ui/events/event_27.png[/img]Vous demandez %houndmaster% le maître chien s\'il peut essayer et \'charmer\' le chien. Il hôche de la tête et s\'avance vers le chien. Les oreilles du cabot sauvage passent de couchés à relevés. Accroupi, le maître chien se rapproche doucement de la bête. Il garde sa main en avant avec un morceau de viande. La faim l\'emporte sur la vigilance et le chien se rapproche de la main du maître chien. Le chien l\'enlève avec la langue de sa paume et la dévore. Le dresseur de chiens lui donne une autre bouchée. Il le caresse et trouve l\'endroit idéal derrière ses oreilles. En regardant derrière, %houndmaster% hôche la tête.%SPEECH_ON%Oui, c\'est une bonne bête et elle sera facilement entrainable.%SPEECH_OFF%C\'est super. Vous demandez s\'il pourra se battre. Le maître chien se pince les lèvres.%SPEECH_ON%Les chiens, c\'est comme les hommes. S\'il respire, il peut se battre.%SPEECH_OFF%",
+			Text = "[img]gfx/ui/events/event_27.png[/img]Vous demandez %houndmaster% le maître chien s\'il peut essayer et \'charmer\' le chien. Il hôche de la tête et s\'avance vers le chien. Ses oreilles se couchent et se redressent. Accroupi, le maître chien se rapproche doucement de la bête. Il garde sa main en avant avec un morceau de viande. La faim l\'emporte sur la vigilance et le chien se rapproche de la main du maître chien. Le chien l\'enlève avec la langue de sa paume et la dévore. Le dresseur de chiens lui donne une autre bouchée. Il le caresse et trouve l\'endroit idéal derrière ses oreilles. En regardant derrière, %houndmaster% hôche la tête.%SPEECH_ON%Oui, c\'est une bonne bête et elle sera facilement entrainable.%SPEECH_OFF%C\'est super. Vous demandez s\'il pourra se battre. Le maître chien se pince les lèvres.%SPEECH_ON%Les chiens, c\'est comme les hommes. S\'il respire, il peut se battre.%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],

@@ -6,7 +6,7 @@ this.bloodthirsty_trait <- this.inherit("scripts/skills/traits/character_trait",
 		this.m.ID = "trait.bloodthirsty";
 		this.m.Name = "Sanguinaire";
 		this.m.Icon = "ui/traits/trait_icon_42.png";
-		this.m.Description = "Ce personnage a tendance à être excessivement violent et cruel contre ses ennemis. Un ennemie mort ce n\'est pas assez, sa tête doit aussi être sur une pique!";
+		this.m.Description = "Ce personnage a tendance à être excessivement violent et cruel contre ses ennemis. Un ennemi mort ce n\'est pas assez, sa tête doit aussi être sur une pique!";
 		this.m.Titles = [
 			"le Boucher",
 			"le Cruel",

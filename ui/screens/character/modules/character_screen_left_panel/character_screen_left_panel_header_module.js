@@ -887,7 +887,7 @@ CharacterScreenLeftPanelHeaderModule.prototype.setXP = function(_xpValue, _xpVal
 	if (_hasLevelUp)
     {
         this.mXPProgressbar.changeProgressbarNormalWidth(100, 100);
-        this.mXPProgressbar.changeProgressbarLabel('Cliquer pour monter de niveau!');
+        this.mXPProgressbar.changeProgressbarLabel('Cliquer ici pour monter de niveau!');
     }
     else
     {

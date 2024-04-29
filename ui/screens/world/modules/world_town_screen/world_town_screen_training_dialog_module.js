@@ -93,7 +93,7 @@ WorldTownScreenTrainingDialogModule.prototype.createDIV = function (_parentDiv)
     this.mListContainer = listContainerLayout.createList(8.85);
     this.mListScrollContainer = this.mListContainer.findListScrollContainer();
 
-    this.mNoInjuredLabel = $('<div class="is-no-wounded-hint text-font-medium font-bottom-shadow font-color-description display-none">Vous n\'avez personne dans vos rangs qui puisse être entraîner ici.</div>');
+    this.mNoInjuredLabel = $('<div class="is-no-wounded-hint text-font-medium font-bottom-shadow font-color-description display-none">Vous n\'avez personne dans vos rangs qui puisse être entraîné ici.</div>');
     listContainerLayout.append(this.mNoInjuredLabel);
 
 	// right column
@@ -132,7 +132,7 @@ WorldTownScreenTrainingDialogModule.prototype.createDIV = function (_parentDiv)
     }, null, 'opacity-none');
 
     //var explanation = $('<div class="text-font-medium font-bottom-shadow font-color-description is-explanation">Training with and learning from experienced fighters will allow your men to develop faster into hardened mercenaries.</div>');
-    var explanation = $('<div class="text-font-medium font-bottom-shadow font-color-description is-explanation">Louer le terrain d\'entraitement et payer pour des leçons pour façonner vos hommes en des guerriers aguerris.</div>');
+    var explanation = $('<div class="text-font-medium font-bottom-shadow font-color-description is-explanation">Louer le terrain d\'entraînement et payer des leçons pour faire de vos hommes des guerriers aguerris.</div>');
     detailsRow.append(explanation);
 
     detailsColumn = $('<div class="column is-character-background-container"/>');
