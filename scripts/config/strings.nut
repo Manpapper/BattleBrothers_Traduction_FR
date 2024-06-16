@@ -835,7 +835,7 @@ gt.Const.Strings.TerrainRegionNames <- [
 		"Vaste-Arpent",
 		"Fleur du Sud",
 		"Terre d\'Aurore",
-		"Pres du Bois de Chêne",
+		"Pres du Bois de Chene",
 		"Arpent du Vent du Sud",
 		"Pre de la Crique",
 		"Champs de Saules",

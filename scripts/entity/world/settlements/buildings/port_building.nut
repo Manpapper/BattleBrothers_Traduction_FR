@@ -191,8 +191,8 @@ this.port_building <- this.inherit("scripts/entity/world/settlements/buildings/b
 	function getUITravelRoster()
 	{
 		local data = {
-			Title = "Harbor",
-			SubTitle = "A harbor that allows you to book passage by ship to other parts of the continent",
+			Title = "Port",
+			SubTitle = "Un port qui permet de se déplacer par bateau vers d'autres parties du continent.",
 			HeaderImage = null,
 			Roster = []
 		};
@@ -218,7 +218,7 @@ this.port_building <- this.inherit("scripts/entity/world/settlements/buildings/b
 			local dest = {
 				ID = s.getID(),
 				EntryID = data.Roster.len(),
-				ListName = "Sail to " + s.getName(),
+				ListName = "Voyager vers " + s.getName(),
 				Name = s.getName(),
 				Cost = this.getCostTo(s),
 				ImagePath = s.getImagePath(),
@@ -234,7 +234,7 @@ this.port_building <- this.inherit("scripts/entity/world/settlements/buildings/b
 
 	function getRandomDescription( _destinationName )
 	{
-		local desc = "{A fast ship | A sturdy ship | A cog | A longship | A small ship | A trading ship | A knarr | A local fishing boat | A creaking old ship} by the name of \'%shipname%\' {would take your company onboard and to %destname% | happens to sail to %destname% and would take your company onboard | is soon to depart and could be a way to safely and quickly make passage to %destname% | could provide a means to reach %destname% a lot faster than going overland | could drop you off at %destname% for a full purse of crowns}.";
+		local desc = "{Un navire rapide | Un navire solide | Un engin | Un long navire| Un petit navire | Un navire de commerce | Un knarr | Un bateau de pêche local | Un vieux navire grinçant} au nom de \'%shipname%\' {qui prendra votre compagnie à bord jusqu'à %destname% | se trouve à naviguer vers %destname% et accepterait votre compagnie à bord | iest sur le point de partir et pourrait être un moyen de se rendre rapidement à %destname% | pourrait constituer un moyen d'atteindre %destname% beaucoup plus rapidement que par la voie terrestre | pourrait vous déposer à %destname% pour une bourse complète de couronnes}.";
 		local vars = [
 			[
 				"shipname",

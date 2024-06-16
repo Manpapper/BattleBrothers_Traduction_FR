@@ -21,7 +21,7 @@ this.vulcano_location <- this.inherit("scripts/entity/world/location", {
 
 	function onSpawned()
 	{
-		this.m.Name = "La Cité Antique";
+		this.m.Name = "Cité Antique";
 		this.location.onSpawned();
 	}
 
