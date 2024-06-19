@@ -13,7 +13,7 @@ this.swordmaster_background <- this.inherit("scripts/skills/backgrounds/characte
 		this.m.DailyCost = 35;
 		this.m.Excluded = [
 			"trait.huge",
-			"trait.weasel",swordmaster
+			"trait.weasel",
 			"trait.fear_undead",
 			"trait.fear_beasts",
 			"trait.fear_greenskins",
