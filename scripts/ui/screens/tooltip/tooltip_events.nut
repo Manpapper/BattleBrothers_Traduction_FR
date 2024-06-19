@@ -3842,7 +3842,7 @@ this.tooltip_events <- {
 				{
 					id = 2,
 					type = "description",
-					text = "Une compagnie de mercenaires transporte énormément d\'équipement et de ressources. En utilisant des chariots, vous pouvez augmenter vos capacités d'emport."
+					text = "Une compagnie de mercenaires transporte énormément d\'équipement et de ressources. En utilisant des chariots, vous pouvez augmenter vos capacités d\'emport."
 				}
 			];
 

@@ -192,7 +192,7 @@ this.port_building <- this.inherit("scripts/entity/world/settlements/buildings/b
 	{
 		local data = {
 			Title = "Port",
-			SubTitle = "Un port qui permet de se déplacer par bateau vers d'autres parties du continent.",
+			SubTitle = "Un port qui permet de se déplacer par bateau vers d\'autres parties du continent.",
 			HeaderImage = null,
 			Roster = []
 		};
@@ -234,7 +234,7 @@ this.port_building <- this.inherit("scripts/entity/world/settlements/buildings/b
 
 	function getRandomDescription( _destinationName )
 	{
-		local desc = "{Un navire rapide | Un navire solide | Un engin | Un long navire| Un petit navire | Un navire de commerce | Un knarr | Un bateau de pêche local | Un vieux navire grinçant} au nom de \'%shipname%\' {qui prendra votre compagnie à bord jusqu'à %destname% | se trouve à naviguer vers %destname% et accepterait votre compagnie à bord | iest sur le point de partir et pourrait être un moyen de se rendre rapidement à %destname% | pourrait constituer un moyen d'atteindre %destname% beaucoup plus rapidement que par la voie terrestre | pourrait vous déposer à %destname% pour une bourse complète de couronnes}.";
+		local desc = "{Un navire rapide | Un navire solide | Un engin | Un long navire| Un petit navire | Un navire de commerce | Un knarr | Un bateau de pêche local | Un vieux navire grinçant} au nom de \'%shipname%\' {qui prendra votre compagnie à bord jusqu\'à %destname% | se trouve à naviguer vers %destname% et accepterait votre compagnie à bord | iest sur le point de partir et pourrait être un moyen de se rendre rapidement à %destname% | pourrait constituer un moyen d\'atteindre %destname% beaucoup plus rapidement que par la voie terrestre | pourrait vous déposer à %destname% pour une bourse complète de couronnes}.";
 		local vars = [
 			[
 				"shipname",
