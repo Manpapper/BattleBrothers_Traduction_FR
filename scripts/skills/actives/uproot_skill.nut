@@ -3,7 +3,7 @@ this.uproot_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.uproot";
-		this.m.Nom = "Déraciner";
+		this.m.Name = "Déraciner";
 		this.m.Description = "";
 		this.m.KilledString = "Crushed";
 		this.m.Icon = "skills/active_122.png";
@@ -143,10 +143,8 @@ this.uproot_skill <- this.inherit("scripts/skills/skill", {
 					}.bindenv(this), null);
 				}
 
-				  // [284]  OP_CLOSE          0      6    0    0
 			}
 
-			  // [285]  OP_CLOSE          0      5    0    0
 		}
 
 		return true;

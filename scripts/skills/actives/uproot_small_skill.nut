@@ -3,7 +3,7 @@ this.uproot_small_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.uproot_small";
-		this.m.Nom = "Déraciner";
+		this.m.Name = "Déraciner";
 		this.m.Description = "";
 		this.m.KilledString = "Crushed";
 		this.m.Icon = "skills/active_122.png";

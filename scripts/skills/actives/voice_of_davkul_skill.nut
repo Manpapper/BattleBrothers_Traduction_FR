@@ -3,7 +3,7 @@ this.voice_of_davkul_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.voice_of_davkul";
-		this.m.Nom = "Voix de Davkul";
+		this.m.Name = "Voix de Davkul";
 		this.m.Description = "Devenez le conduit charnel et la voix terrestre de Davkul. Parlez la vérité à ses disciples et incitez-les à tout donner pour plaire à leur dieu.";
 		this.m.Icon = "skills/active_176.png";
 		this.m.IconDisabled = "skills/active_176_sw.png";
