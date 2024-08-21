@@ -6,7 +6,7 @@ this.light_padding_replacement_upgrade <- this.inherit("scripts/items/armor_upgr
 	{
 		this.armor_upgrade.create();
 		this.m.ID = "armor_upgrade.light_padding_replacement";
-this.m.Name = "Remplacement Léger de Rembourrage";
+		this.m.Name = "Remplacement Léger de Rembourrage";
 		this.m.Description = "Fabriqué à partir de matériaux exotiques, ce rembourrage de remplacement peut fournir la même quantité de protection que le rembourrage régulier avec moins de poids.";
 		this.m.ArmorDescription = "Cette armure a son rembourrage remplacé par un rembourrage plus léger mais tout aussi durable.";
 		this.m.Icon = "armor_upgrades/upgrade_05.png";

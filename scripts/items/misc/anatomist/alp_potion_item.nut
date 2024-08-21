@@ -3,6 +3,7 @@ this.alp_potion_item <- this.inherit("scripts/items/misc/anatomist/anatomist_pot
 	function create()
 	{
 		this.anatomist_potion_item.create();
+		this.m.ID = "misc.alp_potion";
 		this.m.Name = "Élixir du Roi de la Nuit";
 		this.m.Description = "Cet élixir, fruit d\'une étude intensive du prétendu \'Troisième Œil\' de l\'Alp, permet à quiconque le boit de voir à travers la nuit comme s\'il faisait jour ! Vision floue et hallucinations sont à prévoir pendant que le corps s\'acclimate.";
 		this.m.IconLarge = "";

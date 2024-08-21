@@ -2,10 +2,10 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "actives.prong";
-		this.m.Description = "Attaque en thrust qui peut couvrir la distance de 2 tiles et peut être utilisée depuis l\'arrière de la ligne de front, en dehors de la portée de la plupart des armes de mêlée.";
+		this.m.ID = "actives.prong";		
+		this.m.Name = "Embrocher";
+		this.m.Description = "Une attaque qui peut couvrir la distance de 2 tiles et peut être utilisée depuis l\'arrière de la ligne de front, en dehors de la portée de la plupart des armes de mêlée.";
 		this.m.KilledString = "Estocadé";
-		this.m.KilledString = "Pronged";
 		this.m.Icon = "skills/active_123.png";
 		this.m.IconDisabled = "skills/active_123_sw.png";
 		this.m.Overlay = "active_123";
@@ -46,7 +46,7 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "A une distance de tir de [color=" + this.Const.UI.Color.PositiveValue + "]2[/color] tiles"
+			text = "A une distance de tir de [color=" + this.Const.UI.Color.PositiveValue + "]2[/color] tuiles"
 		});
 		ret.push({
 			id = 6,

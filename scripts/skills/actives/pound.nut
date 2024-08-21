@@ -5,7 +5,6 @@ this.pound <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.pound";
-		this.m.Name = "Pound";
 		this.m.Name = "Frappe";
 		this.m.Description = "Frappe la cible au sol avec la chaîne et frappe la tête. Quelque peu imprévisible, mais capable de frapper par-dessus ou autour d\'un bouclier avec un peu de chance. Une cible frappée avec assez de force peut être étourdie pendant un tour.";
 		this.m.Icon = "skills/active_50.png";
