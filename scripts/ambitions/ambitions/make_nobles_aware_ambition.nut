@@ -54,7 +54,7 @@ this.make_nobles_aware_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.m.SuccessList.push({
 			id = 10,
 			icon = "ui/icons/special.png",
-			text = "Nobles will now give you contracts"
+			text = "Les nobles vous donneront désormais des contrats"
 		});
 
 		if (!this.World.Assets.getOrigin().isFixedLook())
