@@ -236,9 +236,14 @@ gt.Const.Strings.EntityName <- [
 	"Le Gardien du Savoir (Lorekeeper)",
 	"Apparition du Gardien du Savoir",
 	"Phylactère",
-	"Chasseur de trésors (perdu ? todo)",
+	"Chasseur de trésors perdus",
 	"Crâne hurlant",
-	"Oathbringer"
+	"Oathbringer",
+	"Golem de Chair",
+	"Golem de Chair Supérieur",
+	"Reconnaisseur de Fautes",
+	"Le Grand Devin",
+	"Berceau de Chair"
 ];
 gt.Const.Strings.EntityNamePlural <- [
 	"Nécromanciens",
@@ -1333,7 +1338,7 @@ gt.Const.Strings.PerkDescription <- {
 	Indomitable = "Débloque la compétence \'Invincible\' qui permet une réduction de dégâts de [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] et une immunité contre l\'étourdissement, le repoussement ou encore la saisie pendant un tour.",
 	RallyTheTroops = "Débloque la compétence \'Rallier\' qui rallie les troupes qui sont en train de fuir, et augmente le moral de tous les alliés à proximité à un niveau raisonable. Plus la détermination du personnage utilisant la compétence est élevée, plus les chances de réussite sont élevées.",
 	Adrenaline = "Débloque la compétence \'Adrenaline\' qui vous permet d\'agir en premier au prochain tour. Sentez l\'adrénaline parcourir vos veines!",
-	Fearsome = "Faites-les se disperser et s\'enfuir! Toutes les attaques qui infligent au moins 1 de dégât déclenchent un jet de test de moral pour l\'ennemi avec une pénalité égale à [color=" + this.Const.UI.Color.NegativeValue + "]20%[/color] de votre détermination - 10, par contre, si les dégâts sont de 15 ou plus, il n\'y a pas de pénalité.",
+	Fearsome = "Faites-les se disperser et s\'enfuir! Toutes les attaques qui infligent au moins 1 de dégât déclenchent un jet de test de moral pour l\'ennemi avec une pénalité égale à [color=" + this.Const.UI.Color.NegativeValue + "]15%[/color] de votre détermination, par contre, si les dégâts sont de 15 ou plus, il n\'y a pas de pénalité.",
 	HeadHunter = "Visez la tête! Toucher la tête de votre cible vous garantira de toucher la tête à votre prochaine attaque. Il vous faudra toucher votre cible pour que l\'effet soit réinitialisé.",
 	SunderingStrikes = "L\'Efficacité contre l\'armure augmente de [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] pour n\'importe quelle arme utilisé.",
 	FastAdaption = "Adaptez vous aux attaques de vos ennemis! Gagnez un stack additionnel de [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de chance de toucher pour chaque attaque qui manque un ennemi. Le bonus est réinitialisé dès que vous touchez un ennemi.",

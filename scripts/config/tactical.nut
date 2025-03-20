@@ -76,7 +76,8 @@ gt.Const.Tactical.Settings <- {
 	CameraNextEventDelay = 1000,
 	SwitchWeaponAPCost = 4,
 	SwitchItemAPCost = 4,
-	CampRadius = 7
+	CampRadius = 7,
+	AttributeDefenseSoftCap = 50
 };
 gt.Const.Tactical.AmbientLightingColor <- {
 	Default = "#ffffff",
@@ -808,7 +809,8 @@ gt.Const.Tactical.DeploymentType <- {
 	Camp = 8,
 	Random = 9,
 	Arena = 10,
-	Custom = 11
+	Custom = 11,
+	LineCenter = 12
 };
 gt.Const.Tactical.CombatInfo <- {
 	TerrainTemplate = null,
@@ -873,4 +875,7 @@ gt.Const.Tactical.CombatInfo <- {
 	}
 
 };
-
+gt.Const.Tactical.ImpactTileSkills <- [
+	"actives.lightning_storm",
+	"actives.fire_mortar"
+];

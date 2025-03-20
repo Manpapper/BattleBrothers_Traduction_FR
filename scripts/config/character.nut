@@ -592,7 +592,8 @@ gt.Const.ProjectileType <- {
 	Rock = 8,
 	Bomb1 = 9,
 	Bomb2 = 10,
-	COUNT = 11
+	Corpse = 11,
+	COUNT = 12
 };
 gt.Const.ProjectileDecals <- [
 	[],
@@ -631,6 +632,7 @@ gt.Const.ProjectileDecals <- [
 	],
 	[],
 	[],
+	[],
 	[]
 ];
 gt.Const.ProjectileSprite <- [
@@ -644,7 +646,8 @@ gt.Const.ProjectileSprite <- [
 	"projectile_07",
 	"projectile_08",
 	"projectile_09",
-	"projectile_10"
+	"projectile_10",
+	"projectile_11"
 ];
 gt.Const.FliesDecals <- [
 	"detail_flies_01",
@@ -746,12 +749,14 @@ gt.Const.CharacterProperties <- {
 		c.DamageAgainstMult = clone this.DamageAgainstMult;
 		c.MoraleCheckBravery = clone this.MoraleCheckBravery;
 		c.MoraleCheckBraveryMult = clone this.MoraleCheckBraveryMult;
+		c.SkillCostAdjustments = [];
 		return c;
 	}
 
 	ActionPoints = 0,
 	ActionPointsMult = 1.0,
 	AdditionalActionPointCost = 0,
+	AdditionalHealingDays = 0,
 	Hitpoints = 0,
 	HitpointsMult = 1.0,
 	HitpointsRecoveryRate = 0,
@@ -784,6 +789,7 @@ gt.Const.CharacterProperties <- {
 	RangedDefenseMult = 1.0,
 	Threat = 0,
 	ThreatOnHit = 0,
+	SkillCostAdjustments = [],
 	Vision = 7,
 	VisionMult = 1.0,
 	XPGainMult = 1.0,
@@ -879,6 +885,8 @@ gt.Const.CharacterProperties <- {
 	IsImmuneToPoison = false,
 	IsImmuneToDamageReflection = false,
 	IsImmuneToFire = false,
+	IsImmuneToHeadshots = false,
+	IsImmuneToCriticals = false,
 	IsIgnoringArmorOnAttack = false,
 	IsResistantToAnyStatuses = false,
 	IsResistantToPhysicalStatuses = false,
