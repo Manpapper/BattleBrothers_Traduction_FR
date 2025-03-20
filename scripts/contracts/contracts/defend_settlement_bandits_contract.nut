@@ -558,7 +558,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 					function getResult()
 					{
 						local home = this.Contract.m.Home;
-						local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(home.getTile(), home.getName() + " Militia", false, this.Const.World.Spawn.Militia, home.getResources() * 0.7);
+						local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(home.getTile(), "Milice de " + home.getName(), false, this.Const.World.Spawn.Militia, home.getResources() * 0.7, this.Contract.getMinibossModifier());
 						party.getSprite("banner").setBrush(home.getBanner());
 						party.setDescription("Des hommes courageux qui défendent leur foyer au péril de leur vie. Des fermiers, des artisans, des ouvriers - mais pas un seul vrai soldat.");
 						party.setFootprintType(this.Const.World.FootprintsType.Militia);
@@ -579,7 +579,7 @@ this.defend_settlement_bandits_contract <- this.inherit("scripts/contracts/contr
 					function getResult()
 					{
 						local home = this.Contract.m.Home;
-						local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(home.getTile(), home.getName() + " Militia", false, this.Const.World.Spawn.Militia, home.getResources() * 0.7);
+						local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(home.getTile(), "Milice de " + home.getName(), false, this.Const.World.Spawn.Militia, home.getResources() * 0.7, this.Contract.getMinibossModifier());
 						party.getSprite("banner").setBrush(home.getBanner());
 						party.setDescription("Des hommes courageux qui défendent leur foyer au péril de leur vie. Des fermiers, des artisans, des ouvriers - mais pas un seul vrai soldat.");
 						party.setFootprintType(this.Const.World.FootprintsType.Militia);

@@ -1686,7 +1686,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 		}
 
 		local enemyFaction = this.m.Origin.getOwner();
-		local party = enemyFaction.spawnEntity(tile, this.m.Origin.getOwner().getName() + " Army", true, this.Const.World.Spawn.Noble, 200 * this.getDifficultyMult() * this.getScaledDifficultyMult());
+		local party = enemyFaction.spawnEntity(tile, "Armée de " this.m.Origin.getOwner().getName() , true, this.Const.World.Spawn.Noble, 200 * this.getDifficultyMult() * this.getScaledDifficultyMult(), this.getMinibossModifier());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + enemyFaction.getBannerString());
 		party.getSprite("banner").setBrush(enemyFaction.getBannerSmall());
 		party.setDescription("Soldats professionnels au service des seigneurs locaux.");
@@ -1758,7 +1758,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 		}
 
 		local enemyFaction = this.m.Origin.getOwner();
-		local party = enemyFaction.spawnEntity(tile, "Supply Caravan", false, this.Const.World.Spawn.NobleCaravan, this.Math.rand(100, 150));
+		local party = enemyFaction.spawnEntity(tile, "Caravane de Ravitaillement", false, this.Const.World.Spawn.NobleCaravan, this.Math.rand(100, 150), this.getMinibossModifier());
 		party.getSprite("base").Visible = false;
 		party.setMirrored(true);
 		party.setDescription("Une caravane accompagnée d\'escortes armées transportant des provisions, des fournitures et du matériel entre les colonies.");
@@ -1850,7 +1850,7 @@ this.siege_fortification_contract <- this.inherit("scripts/contracts/contract", 
 			}
 
 			lastTile = tile;
-			local party = f.spawnEntity(tile, castles[this.Math.rand(0, castles.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.Noble, castles[this.Math.rand(0, castles.len() - 1)].getResources());
+			local party = f.spawnEntity(tile, castles[this.Math.rand(0, castles.len() - 1)].getName() + " Compagnie", true, this.Const.World.Spawn.Noble, castles[this.Math.rand(0, castles.len() - 1)].getResources(), this.getMinibossModifier());
 			party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 			party.setVisibilityMult(2.5);
 

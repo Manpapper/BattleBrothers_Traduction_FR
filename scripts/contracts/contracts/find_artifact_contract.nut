@@ -555,7 +555,7 @@ this.find_artifact_contract <- this.inherit("scripts/contracts/contract", {
 						local playerTile = this.World.State.getPlayer().getTile();
 						local camp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).getNearestSettlement(playerTile);
 						local tile = this.Contract.getTileToSpawnLocation(playerTile, 8, 14);
-						local party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, this.Flags.get("NemesisNameC"), false, this.Const.World.Spawn.Mercenaries, 120 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						local party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, this.Flags.get("NemesisNameC"), false, this.Const.World.Spawn.Mercenaries, 120 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 						party.setFootprintType(this.Const.World.FootprintsType.Mercenaries);
 						local n = 0;
 

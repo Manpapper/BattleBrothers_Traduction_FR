@@ -8,7 +8,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 	{
 		this.contract.create();
 		this.m.Type = "contract.defend_holy_site";
-		this.m.Name = "Defend Holy Site";
+		this.m.Name = "Défendre un lieu saint";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 	}
 
@@ -130,7 +130,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 				if (this.Contract.getDifficultyMult() >= 0.95)
 				{
 					local cityState = cityStates[this.Math.rand(0, cityStates.len() - 1)];
-					local party = cityState.spawnEntity(this.Contract.m.Destination.getTile(), "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.Southern, this.Math.rand(100, 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+					local party = cityState.spawnEntity(this.Contract.m.Destination.getTile(), "Régiment de " + cityState.getNameOnly(), true, this.Const.World.Spawn.Southern, this.Math.rand(100, 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 					party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + cityState.getBannerString());
 					party.setDescription("Conscripted soldiers loyal to their city state.");
 					party.getLoot().Money = this.Math.rand(50, 200);
@@ -1168,7 +1168,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 			}
 		}
 
-		local party = f.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Company", true, this.Const.World.Spawn.Noble, this.Math.rand(100, 150) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+		local party = f.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Compagnie", true, this.Const.World.Spawn.Noble, this.Math.rand(100, 150) * this.getDifficultyMult() * this.getScaledDifficultyMult(), this.getMinibossModifier());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
 		party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 		party.getLoot().Money = this.Math.rand(50, 200);
@@ -1269,7 +1269,7 @@ this.defend_holy_site_contract <- this.inherit("scripts/contracts/contract", {
 			candidates.push(s);
 		}
 
-		local party = f.spawnEntity(tiles[0].Tile, "Regiment of " + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.Southern, (this.m.Flags.get("IsEnemyLuredAway") ? 130 : 160) * this.getScaledDifficultyMult());
+		local party = f.spawnEntity(tiles[0].Tile, "Régiment de " + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.Southern, (this.m.Flags.get("IsEnemyLuredAway") ? 130 : 160) * this.getScaledDifficultyMult(), this.getMinibossModifier());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
 		party.setDescription("Soldats enrôlés fidèles à leur cité-état.");
 		party.setAttackableByAI(false);

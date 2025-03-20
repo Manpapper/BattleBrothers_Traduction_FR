@@ -1107,11 +1107,11 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 
 		if (faction.hasTrait(this.Const.FactionTrait.OrientalCityState))
 		{
-			party = faction.spawnEntity(this.m.Home.getTile(), "Trading Caravan", false, this.Const.World.Spawn.CaravanSouthernEscort, this.m.Home.getResources() * this.Math.rand(10, 25) * 0.01);
+			party = faction.spawnEntity(this.m.Home.getTile(), "Caravane commerciale", false, this.Const.World.Spawn.CaravanSouthernEscort, this.m.Home.getResources() * this.Math.rand(10, 25) * 0.01, this.getMinibossModifier());
 		}
 		else
 		{
-			party = faction.spawnEntity(this.m.Home.getTile(), "Trading Caravan", false, this.Const.World.Spawn.CaravanEscort, this.m.Home.getResources() * 0.4);
+			party = faction.spawnEntity(this.m.Home.getTile(), "Caravane commerciale", false, this.Const.World.Spawn.CaravanEscort, this.m.Home.getResources() * 0.4, this.getMinibossModifier());
 		}
 
 		party.getSprite("banner").Visible = false;

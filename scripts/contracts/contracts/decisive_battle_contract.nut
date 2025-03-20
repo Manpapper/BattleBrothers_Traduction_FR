@@ -854,7 +854,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 			{
 				local playerTile = this.Contract.m.Warcamp.getTile();
 				local tile = this.Contract.getTileToSpawnLocation(playerTile, 5, 8);
-				local party = this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).spawnEntity(tile, "Scouts", false, this.Const.World.Spawn.Noble, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+				local party = this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).spawnEntity(tile, "Scouts", false, this.Const.World.Spawn.Noble, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 				party.getSprite("banner").setBrush(this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).getBannerSmall());
 				party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 				party.setFootprintType(this.Const.World.FootprintsType.Nobles);
@@ -1236,7 +1236,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 				local startTile = this.World.getEntityByID(this.Flags.get("InterceptSuppliesStart")).getTile();
 				local destTile = this.World.getEntityByID(this.Flags.get("InterceptSuppliesDest")).getTile();
 				local enemyFaction = this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse"));
-				local party = enemyFaction.spawnEntity(startTile, "Supply Caravan", false, this.Const.World.Spawn.NobleCaravan, 110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+				local party = enemyFaction.spawnEntity(startTile, "Caravane de Ravitaillement", false, this.Const.World.Spawn.NobleCaravan, 110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 				party.getSprite("base").Visible = false;
 				party.getSprite("banner").setBrush(this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).getBannerSmall());
 				party.setMirrored(true);
@@ -1349,7 +1349,7 @@ this.decisive_battle_contract <- this.inherit("scripts/contracts/contract", {
 					this.Const.World.TerrainType.Shore,
 					this.Const.World.TerrainType.Mountains
 				]);
-				local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(tile, "Deserters", false, this.Const.World.Spawn.Noble, 80 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+				local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(tile, "Déserteurs", false, this.Const.World.Spawn.Noble, 80 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 				party.getSprite("banner").setBrush("banner_deserters");
 				party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 				party.setAttackableByAI(false);

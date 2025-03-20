@@ -108,7 +108,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 				}
 
 				local faction = this.World.FactionManager.getFaction(this.Contract.getFaction());
-				local party = faction.spawnEntity(this.Contract.getHome().getTile(), this.Contract.getHome().getName() + " Company", true, this.Const.World.Spawn.Noble, 110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+				local party = faction.spawnEntity(this.Contract.getHome().getTile(), this.Contract.getHome().getName() + " Compagnie", true, this.Const.World.Spawn.Noble, 110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 				party.getSprite("banner").setBrush(faction.getBannerSmall());
 				party.setDescription("Soldats professionnels au service des seigneurs locaux.");
 				this.Contract.m.Troops = this.WeakTableRef(party);
@@ -647,7 +647,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 				break;
 			}
 
-			local party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(tile, "Siege Engines", false, this.Const.World.Spawn.GreenskinHorde, this.Math.rand(100, 120) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+			local party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(tile, "Engins de Siège", false, this.Const.World.Spawn.GreenskinHorde, this.Math.rand(100, 120) * this.getDifficultyMult() * this.getScaledDifficultyMult(), this.getMinibossModifier());
 			this.m.UnitsSpawned.push(party.getID());
 			party.setDescription("Une horde de peaux-vertes et leurs engins de siège.");
 			local numSiegeUnits = this.Math.rand(3, 4);
@@ -728,7 +728,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 				break;
 			}
 
-			local party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.GreenskinHorde, this.Math.rand(90, 110) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+						local party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Horde de Peaux-Vertes", false, this.Const.World.Spawn.GreenskinHorde, this.Math.rand(90, 110) * this.getDifficultyMult() * this.getScaledDifficultyMult(), this.getMinibossModifier());
 			this.m.UnitsSpawned.push(party.getID());
 			party.setDescription("Une horde de peaux-vertes en marche vers la guerre.");
 			party.getLoot().ArmorParts = this.Math.rand(0, 15);

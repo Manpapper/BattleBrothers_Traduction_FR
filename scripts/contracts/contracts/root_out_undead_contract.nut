@@ -412,7 +412,7 @@ this.root_out_undead_contract <- this.inherit("scripts/contracts/contract", {
 						this.Contract.m.Objective2 = null;
 						local playerTile = this.World.State.getPlayer().getTile();
 						local camp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).getNearestSettlement(playerTile);
-						local party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, "Necromancers", false, this.Const.World.Spawn.UndeadScourge, 100 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						local party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, "Nécromanciens", false, this.Const.World.Spawn.UndeadScourge, 100 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 						party.getSprite("banner").setBrush(banner);
 						party.setFootprintType(this.Const.World.FootprintsType.Undead);
 						party.getSprite("body").setBrush("figure_necromancer_01");

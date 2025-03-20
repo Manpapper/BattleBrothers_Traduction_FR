@@ -351,10 +351,10 @@ this.confront_warlord_contract <- this.inherit("scripts/contracts/contract", {
 				local playerTile = this.World.State.getPlayer().getTile();
 				local nearest_orcs = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).getNearestSettlement(playerTile);
 				local tile = this.Contract.getTileToSpawnLocation(playerTile, 9, 15);
-				local party = this.World.FactionManager.getFaction(nearest_orcs.getFaction()).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.GreenskinHorde, 130 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+								local party = this.World.FactionManager.getFaction(nearest_orcs.getFaction()).spawnEntity(tile, "Horde de Peaux-Vertes", false, this.Const.World.Spawn.GreenskinHorde, 130 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
 				party.getSprite("banner").setBrush(nearest_orcs.getBanner());
 				party.getSprite("body").setBrush("figure_orc_05");
-				party.setDescription("A horde of greenskins led by a fearsome orc warlord.");
+				party.setDescription("Une horde de peaux-vertes dirigé par un redoutable seigneur de guerre Orc");
 				party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 				this.Contract.m.UnitsSpawned.push(party);
 				local hasWarlord = false;

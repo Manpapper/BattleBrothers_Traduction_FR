@@ -443,6 +443,11 @@ this.contract <- {
 
 		if (this.m.ActiveState != null && "end" in this.m.ActiveState)
 		{
+			if (this.m.ActiveState == this.m.States[0])
+			{
+				this.World.State.getPlayer().updateStrength();
+			}
+
 			this.m.ActiveState.end();
 		}
 
@@ -1209,24 +1214,9 @@ this.contract <- {
 
 		foreach( t in p.Troops )
 		{
-			local mb;
-
-			if (this.getDifficultyMult() >= 1.15)
-			{
-				mb = 5;
-			}
-			else if (this.getDifficultyMult() >= 0.85)
-			{
-				mb = 0;
-			}
-			else
-			{
-				mb = -99;
-			}
-
 			for( local i = 0; i != t.Num; i = ++i )
 			{
-				this.Const.World.Common.addTroop(_entity, t, false, mb);
+				this.Const.World.Common.addTroop(_entity, t, false, this.getMinibossModifier());
 			}
 		}
 
@@ -1453,7 +1443,7 @@ this.contract <- {
 		}
 		else if (_factionType == this.Const.FactionType.Goblins)
 		{
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(enemyBase.getTile(), "Goblin Raiders", false, this.Const.World.Spawn.GoblinRaiders, _resources);
+			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(enemyBase.getTile(), "Raiders gobelins", false, this.Const.World.Spawn.GoblinRaiders, _resources, this.getMinibossModifier());
 			party.setDescription("Une bande de gobelins espiègles, petits mais rusés et à ne pas sous-estimer.");
 			party.setFootprintType(this.Const.World.FootprintsType.Goblins);
 			party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1482,7 +1472,7 @@ this.contract <- {
 		}
 		else if (_factionType == this.Const.FactionType.Orcs)
 		{
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(enemyBase.getTile(), "Orc Marauders", false, this.Const.World.Spawn.OrcRaiders, _resources);
+			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(enemyBase.getTile(), "Orc Maraudeurs", false, this.Const.World.Spawn.OrcRaiders, _resources, this.getMinibossModifier());
 			party.setDescription("Une bande d\'orcs menaçants, à la peau verte et imposant n\'importe quel homme.");
 			party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 			party.getLoot().ArmorParts = this.Math.rand(0, 25);
@@ -1491,7 +1481,7 @@ this.contract <- {
 		}
 		else if (_factionType == this.Const.FactionType.Undead)
 		{
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).spawnEntity(enemyBase.getTile(), "Undead", false, this.Const.World.Spawn.UndeadArmy, _resources);
+			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).spawnEntity(enemyBase.getTile(), "Morts Vivants", false, this.Const.World.Spawn.UndeadArmy, _resources, this.getMinibossModifier());
 			party.setDescription("Une légion de morts-vivants, de retour pour réclamer aux vivants ce qui leur appartenait autrefois.");
 			party.setFootprintType(this.Const.World.FootprintsType.Undead);
 			party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1499,7 +1489,7 @@ this.contract <- {
 		}
 		else if (_factionType == this.Const.FactionType.Zombies)
 		{
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).spawnEntity(enemyBase.getTile(), "Undead", false, this.Const.World.Spawn.Necromancer, _resources);
+			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).spawnEntity(enemyBase.getTile(), "Morts Vivants", false, this.Const.World.Spawn.Necromancer, _resources, this.getMinibossModifier());
 			party.setDescription("Quelque chose ne va pas.");
 			party.setFootprintType(this.Const.World.FootprintsType.Undead);
 			party.getLoot().ArmorParts = this.Math.rand(0, 10);
@@ -1617,6 +1607,22 @@ this.contract <- {
 		}
 
 		return ret;
+	}
+
+	function getMinibossModifier()
+	{
+		if (this.getDifficultyMult() >= 1.15)
+		{
+			return 5;
+		}
+		else if (this.getDifficultyMult() >= 0.85)
+		{
+			return 0;
+		}
+		else
+		{
+			return -99;
+		}
 	}
 
 	function onSerialize( _out )
