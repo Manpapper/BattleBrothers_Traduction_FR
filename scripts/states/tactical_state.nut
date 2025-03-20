@@ -522,7 +522,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 					foreach( item in items )
 					{
-						if (isArena && item.getLastEquippedByFaction() != 1)
+						if (isArena && item.getLastEquippedByFaction() != this.Const.Faction.Player)
 						{
 							continue;
 						}
@@ -541,6 +541,39 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 							loot.push(item);
 						}
 					}
+				}
+			}
+		}
+		
+		foreach( corpse in this.Tactical.Entities.getUnplacedCorpses() )
+		{
+			if (!("Items" in corpse))
+			{
+				continue;
+			}
+
+			if (corpse.Items == null)
+			{
+				continue;
+			}
+
+			foreach( item in corpse.Items.getAllItems() )
+			{
+				if (isArena && item.getLastEquippedByFaction() != this.Const.Faction.Player)
+				{
+					continue;
+				}
+
+				item.onCombatFinished();
+
+				if (item.isDroppedAsLoot())
+				{
+					if (item.getCondition() > 1 && item.getConditionMax() > 1 && item.getCondition() > item.getConditionMax() * 0.66 && this.Math.rand(1, 100) <= 50)
+					{
+						item.setCondition(this.Math.minf(item.getCondition(), this.Math.rand(this.Math.maxf(10, item.getConditionMax() * 0.35), item.getConditionMax())));
+					}
+
+					loot.push(item);
 				}
 			}
 		}
@@ -1579,7 +1612,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 				{
 					local skill = entity.getSkills().getSkillByID(this.m.SelectedSkillID);
 
-					if (skill == null || !skill.isUsable() || !skill.isAffordable() || !skill.onVerifyTarget(entity.getTile(), hoveredTile) || !skill.isInRange(hoveredTile) || !hoveredTile.IsVisibleForEntity || skill.isTargetingActor() && !hoveredTile.IsEmpty && !this.isKindOf(hoveredTile.getEntity(), "actor"))
+					if (skill == null || !skill.isUsable() || !skill.isAffordable() || !skill.onVerifyTarget(entity.getTile(), hoveredTile) || !skill.isInRange(hoveredTile) || skill.isVisibleTileNeeded() && !hoveredTile.IsVisibleForEntity || skill.isTargetingActor() && !hoveredTile.IsEmpty && !this.isKindOf(hoveredTile.getEntity(), "actor"))
 					{
 						this.Cursor.setCursor(this.Const.UI.Cursor.Denied);
 					}
@@ -3149,7 +3182,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/humans/nomad_cutthroat");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/grand_diviner");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getID());
 				e.assignRandomEquipment();
 			}
@@ -3164,7 +3197,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/humans/nomad_outlaw");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/greater_flesh_golem");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getID());
 				e.assignRandomEquipment();
 			}
@@ -3179,8 +3212,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e;
-				e = this.Tactical.spawnEntity("scripts/entity/tactical/humans/nomad_slinger");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/greater_flesh_golem");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getID());
 				e.assignRandomEquipment();
 			}
@@ -3195,7 +3227,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/humans/nomad_archer");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/greater_flesh_golem");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getID());
 				e.assignRandomEquipment();
 			}
@@ -3210,7 +3242,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/humans/conscript");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/greater_flesh_golem");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalCityState).getID());
 				e.assignRandomEquipment();
 			}
@@ -3225,7 +3257,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/humans/gunner");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/fault_finder");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalCityState).getID());
 				e.assignRandomEquipment();
 			}
@@ -3240,7 +3272,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/objective/mortar");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/lesser_flesh_golem");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalCityState).getID());
 				e.assignRandomEquipment();
 			}
@@ -3255,7 +3287,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 
 			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/humans/engineer");
+				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/lesser_flesh_golem_unarmed");
 				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalCityState).getID());
 				e.assignRandomEquipment();
 			}
