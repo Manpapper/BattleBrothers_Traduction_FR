@@ -297,6 +297,60 @@ WorldTownScreenShopDialogModule.prototype.destroyDIV = function ()
     this.mContainer = null;
 };
 
+WorldTownScreenShopDialogModule.prototype.showSwapConfirmationDialog = function(_item, _options, _callbackOnConfirm)
+{
+    var popupDialog = $('.l-shop-dialog-container').createPopupDialog(_options.Prompt, null, null, 'swap-confirmation-popup');
+    
+    popupDialog.addPopupDialogContent(this.createSwapConfirmationDialogContent(_item, _options.Text));
+
+    popupDialog.addPopupDialogOkButton(jQuery.proxy(function (_dialog)
+    {
+        if (_options.Confirmable) { _callbackOnConfirm(); }
+
+        _dialog.destroyPopupDialog();
+    }, this));
+
+    if (_options.Confirmable)
+    {
+        popupDialog.addPopupDialogCancelButton(function (_dialog)
+        {
+            _dialog.destroyPopupDialog();
+        });
+    }
+};
+
+WorldTownScreenShopDialogModule.prototype.createSwapConfirmationDialogContent = function (_item, _confirmationText)
+{
+	var result = $('<div class="swap-confirmation-popup-dialog-content-container"/>');
+
+    var leftColumn = $('<div class="left-column"/>');
+    result.append(leftColumn);
+
+    var itemImage = $('<img/>');
+    itemImage.attr('src', Path.ITEMS + _item.Icon);
+    leftColumn.append(itemImage);
+
+    var rightColumn = $('<div class="right-column"/>');
+    result.append(rightColumn);
+    
+    var itemNameLabel = $('<div class="name title-font-big font-bold font-color-title">' + _item.Name + '</div>');
+    rightColumn.append(itemNameLabel);
+
+    var descriptionText = _confirmationText.replace(/#135213/gi, "#1e861e"); // positive values
+    descriptionText = descriptionText.replace(/#8f1e1e/gi, "#a22424"); // negative values
+
+    var parsedDescriptionText = XBBCODE.process({
+        text: descriptionText,
+        removeMisalignedTags: false,
+        addInLineBreaks: true
+    });
+
+    var itemDescriptionLabel = $('<div class="description description-font-small font-style-italic font-color-description">' + parsedDescriptionText.html + '</div>');
+    rightColumn.append(itemDescriptionLabel);
+
+    return result;
+};
+
 WorldTownScreenShopDialogModule.prototype.setupEventHandler = function ()
 {
     var self = this;
@@ -344,7 +398,7 @@ WorldTownScreenShopDialogModule.prototype.setupEventHandler = function ()
             return;
         }
 
-        self.swapItem(sourceItemIdx, sourceOwner, targetItemIdx, targetOwner);
+        self.triggerSwapFlow(sourceItemIdx, sourceOwner, targetItemIdx, targetOwner);
 
         // workaround if the source container was removed before we got here
         if(drag.parent().length === 0)
@@ -609,17 +663,17 @@ WorldTownScreenShopDialogModule.prototype.loadFromData = function (_data)
 
     if('Title' in _data && _data.Title !== null)
 	{
-		 this.mDialogContainer.findDialogTitle().html(_data.Title);
+		this.mDialogContainer.findDialogTitle().html(_data.Title);
 	}
 
 	if('SubTitle' in _data && _data.SubTitle !== null)
 	{
-		 this.mDialogContainer.findDialogSubTitle().html(_data.SubTitle);
+		this.mDialogContainer.findDialogSubTitle().html(_data.SubTitle);
 	}
 
 	if('HeaderImage' in _data && _data.HeaderImage !== null)
 	{
-		 this.mDialogContainer.findDialogHeaderImage().attr('src', Path.GFX + _data.HeaderImage);
+		this.mDialogContainer.findDialogHeaderImage().attr('src', Path.GFX + _data.HeaderImage);
 	}
 
 	if('IsRepairOffered' in _data && _data.IsRepairOffered !== null)
@@ -844,7 +898,7 @@ WorldTownScreenShopDialogModule.prototype.createItemSlot = function (_owner, _in
             return;
         }
 
-        self.swapItem(sourceItemIdx, sourceOwner, targetItemIdx, targetOwner);
+        self.triggerSwapFlow(sourceItemIdx, sourceOwner, targetItemIdx, targetOwner);
     };
 
     var dragEndHandler = function (_source, _target)
@@ -911,7 +965,7 @@ WorldTownScreenShopDialogModule.prototype.createItemSlot = function (_owner, _in
                     else
                     {
                         //console.info('sell');
-                        self.swapItem(itemIdx, owner, null, WorldTownScreenShop.ItemOwner.Shop);
+                        self.triggerSwapFlow(itemIdx, owner, null, WorldTownScreenShop.ItemOwner.Shop);
                     }
                 } break;
                 case WorldTownScreenShop.ItemOwner.Shop:
@@ -945,6 +999,29 @@ WorldTownScreenShopDialogModule.prototype.repairItem = function(_itemIdx)
 
         self.mParent.loadAssetData(_result.Assets);
     });
+}
+
+WorldTownScreenShopDialogModule.prototype.triggerSwapFlow = function (_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner)
+{
+    var self = this;
+    this.notifyBackendCanSwapItem(_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner, function (data)
+    {
+        if (data === undefined || data == null || typeof (data) !== 'object')
+        {
+            console.error("ERROR: Item not swappable. Reason: Invalid data result.");
+            return;
+        }
+
+        if (data.Result == ResponseCode.CanSwap)
+        {
+            self.swapItem(_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner);
+        }
+        else
+        {
+            var callbackOnConfirm = function() { self.swapItem(_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner); }
+            self.showSwapConfirmationDialog(data.Item, self.getSwapConfirmationOptionsFromResult(data.Result), callbackOnConfirm);
+        }
+    })
 }
 
 WorldTownScreenShopDialogModule.prototype.swapItem = function (_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner)
@@ -1245,6 +1322,35 @@ WorldTownScreenShopDialogModule.prototype.getStashStatistics = function ()
     return { size: this.mStashSpaceMax, used: this.mStashSpaceUsed };
 };
 
+WorldTownScreenShopDialogModule.prototype.getSwapConfirmationOptionsFromResult = function (_result)
+{
+    var text = '';
+    var confirmable = true;
+    var prompt = 'Are you sure?';
+
+    switch(_result)
+    {
+        case ResponseCode.ConfirmReplaceSwap:
+        {
+            text = 'Cet objet peut ne pas être acquis ultérieurement si vous le vendez.';
+            break;
+        }
+        case ResponseCode.ConfirmNoReplaceSwap:
+        {
+            text = 'Cet article est unique et ne pourra pas être acquis à nouveau plus tard !';
+            break;
+        }
+        case ResponseCode.DoNotSwap:
+        {
+            prompt = 'Invendable.'
+            text = 'Cet objet ne peut pas être vendu.';
+            confirmable = false;
+        }
+    }
+
+    return { Prompt: prompt, Text: text, Confirmable: confirmable };
+};
+
 WorldTownScreenShopDialogModule.prototype.notifyBackendModuleShown = function ()
 {
     SQ.call(this.mSQHandle, 'onModuleShown');
@@ -1270,6 +1376,11 @@ WorldTownScreenShopDialogModule.prototype.notifyBackendRepairItem = function (_i
     SQ.call(this.mSQHandle, 'onRepairItem', _itemIdx, _callback);
 };
 
+
+WorldTownScreenShopDialogModule.prototype.notifyBackendCanSwapItem = function (_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner, _callback)
+{
+    SQ.call(this.mSQHandle, 'onCanSwapItem', [_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner], _callback);
+};
 
 WorldTownScreenShopDialogModule.prototype.notifyBackendSwapItem = function (_sourceItemIdx, _sourceItemOwner, _targetItemIdx, _targetItemOwner, _callback)
 {
