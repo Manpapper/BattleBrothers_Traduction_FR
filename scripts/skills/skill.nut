@@ -8,6 +8,7 @@ this.skill <- {
 		Overlay = "",
 		Description = "",
 		KilledString = "Killed",
+		ImpactSprite = "",
 		Delay = 0,
 		HitChanceBonus = 0,
 		SoundOnUse = [],
@@ -55,7 +56,6 @@ this.skill <- {
 		IsUsingHitchance = true,
 		IsUsingActorPitch = false,
 		IsShieldRelevant = true,
-		IsShieldwallRelevant = true,
 		IsSpearwallRelevant = true,
 		IsShowingProjectile = false,
 		IsDoingAttackMove = true,
@@ -66,6 +66,8 @@ this.skill <- {
 		IsRemovedAfterBattle = false,
 		IsDisengagement = false,
 		IsTooCloseShown = false,
+		IsTargetingCorpses = false,
+		IsTargetingDangerTiles = false,
 		IsUsable = true,
 		IsGarbage = false
 	},
@@ -107,6 +109,11 @@ this.skill <- {
 	function getKilledString()
 	{
 		return this.m.KilledString;
+	}
+	
+	function getImpactSprite()
+	{
+		return this.m.ImpactSprite;
 	}
 
 	function getType()
@@ -278,6 +285,11 @@ this.skill <- {
 	{
 		return this.m.IsSpearwallRelevant;
 	}
+	
+	function isShieldRelevant()
+	{
+		return this.m.IsShieldRelevant;
+	}
 
 	function isVisibleTileNeeded()
 	{
@@ -305,17 +317,29 @@ this.skill <- {
 
 	function getActionPointCost()
 	{
-		if (this.m.Container.getActor().getCurrentProperties().IsSkillUseFree)
+		local baseAPCost = this.m.ActionPointCost;
+		local containerProperties = this.m.Container.getActor().getCurrentProperties();
+		local adjustedAPCost = baseAPCost + containerProperties.AdditionalActionPointCost;
+
+		foreach( skill in containerProperties.SkillCostAdjustments )
+		{
+			if (skill.ID == this.getID() && "APAdjust" in skill)
+			{
+				adjustedAPCost = adjustedAPCost + skill.APAdjust;
+			}
+		}
+
+		if (containerProperties.IsSkillUseFree)
 		{
 			return 0;
 		}
 		else if (this.m.Container.getActor().getCurrentProperties().IsSkillUseHalfCost)
 		{
-			return this.Math.max(1, this.Math.floor(this.m.ActionPointCost / 2));
+			return this.Math.max(1, this.Math.floor(adjustedAPCost / 2));
 		}
 		else
 		{
-			return this.m.ActionPointCost;
+			return adjustedAPCost;
 		}
 	}
 
@@ -344,11 +368,31 @@ this.skill <- {
 	{
 		if (this.m.Container != null)
 		{
-			return this.Math.max(0, this.Math.round(this.Math.ceil(this.m.FatigueCost * this.m.FatigueCostMult * this.m.Container.getActor().getCurrentProperties().FatigueEffectMult) + this.m.Container.getActor().getCurrentProperties().FatigueOnSkillUse));
+			local containerProperties = this.m.Container.getActor().getCurrentProperties();
+			local fatigueAdjust = containerProperties.FatigueOnSkillUse;
+			local fatigueMultAdjust = 1.0;
+
+			foreach( skill in containerProperties.SkillCostAdjustments )
+			{
+				if (skill.ID == this.getID())
+				{
+					if ("FatigueAdjust" in skill)
+					{
+						fatigueAdjust = fatigueAdjust + skill.FatigueAdjust;
+					}
+
+					if ("FatigueMultAdjust" in skill)
+					{
+						fatigueMultAdjust = fatigueMultAdjust * skill.FatigueMultAdjust;
+					}
+				}
+			}
+
+			return this.Math.max(0, this.Math.round(this.Math.ceil(this.m.FatigueCost * this.m.FatigueCostMult * containerProperties.FatigueEffectMult * fatigueMultAdjust) + fatigueAdjust));
 		}
 		else
 		{
-			return this.Math.ceil(this.m.FatigueCost * this.m.Container.getActor().getCurrentProperties().FatigueEffectMult);
+			return this.m.FatigueCost;
 		}
 	}
 
@@ -491,7 +535,7 @@ this.skill <- {
 
 	function isAffordable()
 	{
-		return this.getActionPointCost() + this.m.Container.getActor().getCurrentProperties().AdditionalActionPointCost <= this.m.Container.getActor().getActionPoints() && this.getFatigueCost() + this.m.Container.getActor().getFatigue() <= this.m.Container.getActor().getFatigueMax();
+		return this.getActionPointCost() <= this.m.Container.getActor().getActionPoints() && this.getFatigueCost() + this.m.Container.getActor().getFatigue() <= this.m.Container.getActor().getFatigueMax();
 	}
 
 	function isAffordablePreview()
@@ -786,6 +830,10 @@ this.skill <- {
 	}
 
 	function onDismiss()
+	{
+	}
+	
+	function onMovementFinished()
 	{
 	}
 
@@ -1104,17 +1152,6 @@ this.skill <- {
 			}
 		}
 
-		if (this.m.IsShieldwallRelevant)
-		{
-			if (_targetTile.IsOccupiedByActor && targetEntity.getSkills().hasSkill("effects.shieldwall"))
-			{
-				ret.push({
-					icon = "ui/tooltips/negative.png",
-					text = "Mur de Bouclier"
-				});
-			}
-		}
-
 		if (_targetTile.IsOccupiedByActor && myTile.getDistanceTo(_targetTile) <= 1 && targetEntity.getSkills().hasSkill("effects.riposte"))
 		{
 			ret.push({
@@ -1245,22 +1282,6 @@ this.skill <- {
 			toHit = toHit + this.Const.Combat.LevelDifferenceToHitMalus * levelDifference;
 		}
 
-		if (!this.m.IsShieldRelevant)
-		{
-			local shield = _targetEntity.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
-
-			if (shield != null && shield.isItemType(this.Const.Items.ItemType.Shield))
-			{
-				local shieldBonus = (this.m.IsRanged ? shield.getRangedDefense() : shield.getMeleeDefense()) * (_targetEntity.getCurrentProperties().IsSpecializedInShields ? 1.25 : 1.0);
-				toHit = toHit + shieldBonus;
-
-				if (!this.m.IsShieldwallRelevant && _targetEntity.getSkills().hasSkill("effects.shieldwall"))
-				{
-					toHit = toHit + shieldBonus;
-				}
-			}
-		}
-
 		toHit = toHit * properties.TotalAttackToHitMult;
 		toHit = toHit + this.Math.max(0, 100 - toHit) * (1.0 - defenderProperties.TotalDefenseToHitMult);
 		local userTile = user.getTile();
@@ -1347,18 +1368,8 @@ this.skill <- {
 		{
 			shieldBonus = (this.m.IsRanged ? shield.getRangedDefense() : shield.getMeleeDefense()) * (_targetEntity.getCurrentProperties().IsSpecializedInShields ? 1.25 : 1.0);
 
-			if (!this.m.IsShieldRelevant)
-			{
-				toHit = toHit + shieldBonus;
-			}
-
 			if (_targetEntity.getSkills().hasSkill("effects.shieldwall"))
 			{
-				if (!this.m.IsShieldwallRelevant)
-				{
-					toHit = toHit + shieldBonus;
-				}
-
 				shieldBonus = shieldBonus * 2;
 			}
 		}

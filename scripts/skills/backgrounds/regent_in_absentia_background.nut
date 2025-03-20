@@ -4,7 +4,7 @@ this.regent_in_absentia_background <- this.inherit("scripts/skills/backgrounds/c
 	{
 		this.character_background.create();
 		this.m.ID = "background.regent_in_absentia";
-		this.m.Name = "Régent d\'Absenta";
+		this.m.Name = "Régent d\'Absentia";
 		this.m.Icon = "ui/backgrounds/background_06.png";
 		this.m.HiringCost = 135;
 		this.m.DailyCost = 17;

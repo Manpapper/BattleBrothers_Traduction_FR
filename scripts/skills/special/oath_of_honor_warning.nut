@@ -27,14 +27,14 @@ this.oath_of_honor_warning <- this.inherit("scripts/skills/skill", {
 
 		if (actor.getSkills().hasSkill("trait.oath_of_honor"))
 		{
-			local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
+			local item = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 
 			if (item != null && (item.isItemType(this.Const.Items.ItemType.RangedWeapon) || item.isItemType(this.Const.Items.ItemType.Tool)))
 			{
 				this.m.IsHidden = false;
 			}
 
-			item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
+			item = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 
 			if (item != null && (item.isItemType(this.Const.Items.ItemType.RangedWeapon) || item.isItemType(this.Const.Items.ItemType.Tool)))
 			{

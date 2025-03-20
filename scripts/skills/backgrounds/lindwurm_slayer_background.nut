@@ -28,7 +28,7 @@ this.lindwurm_slayer_background <- this.inherit("scripts/skills/backgrounds/char
 			"trait.insecure",
 			"trait.irrational",
 			"trait.night_blind",
-			"trait.team_player",
+			"trait.teamplayer",
 			"trait.weasel"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;

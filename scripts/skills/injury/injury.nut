@@ -71,16 +71,10 @@ this.injury <- this.inherit("scripts/skills/skill", {
 	function getHealingTime()
 	{
 		local time = this.getTime();
-		local mint = this.Math.max(1, (this.m.IsTreated ? this.m.HealingTimeMin * 0.5 : this.m.HealingTimeMin) - this.Math.ceil((time - this.m.TimeApplied) / this.World.getTime().SecondsPerDay));
-		local maxt = this.Math.max(1, (this.m.IsTreated ? this.m.HealingTimeMax * 0.5 : this.m.HealingTimeMax) - this.Math.floor((time - this.m.TimeApplied) / this.World.getTime().SecondsPerDay));
+		local mint = this.Math.max(1, (this.m.IsTreated ? this.m.HealingTimeMin * 0.5 : this.m.HealingTimeMin) - this.Math.ceil((time - this.m.TimeApplied) / this.World.getTime().SecondsPerDay) + this.getContainer().getActor().getCurrentProperties().AdditionalHealingDays);
+		local maxt = this.Math.max(1, (this.m.IsTreated ? this.m.HealingTimeMax * 0.5 : this.m.HealingTimeMax) - this.Math.floor((time - this.m.TimeApplied) / this.World.getTime().SecondsPerDay) + this.getContainer().getActor().getCurrentProperties().AdditionalHealingDays);
 
 		if (("State" in this.World) && this.World.State != null && this.World.Retinue.hasFollower("follower.surgeon"))
-		{
-			mint = this.Math.max(1, mint - 1);
-			maxt = this.Math.max(1, maxt - 1);
-		}
-		
-		if (this.getContainer().getActor().getSkills().hasSkill("effects.nachzehrer_potion"))
 		{
 			mint = this.Math.max(1, mint - 1);
 			maxt = this.Math.max(1, maxt - 1);
