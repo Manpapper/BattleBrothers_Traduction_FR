@@ -152,6 +152,61 @@ this.town_shop_dialog_module <- this.inherit("scripts/ui/screens/ui_module", {
 		this.World.Statistics.getFlags().increment("ItemsRepaired");
 		return result;
 	}
+	
+	function onCanSwapItem( _data )
+	{
+		local sourceItemIdx = _data[0];
+		local sourceItemOwner = _data[1];
+		local targetItemIdx = _data[2];
+		local targetItemOwner = _data[3];
+
+		if (targetItemOwner == null)
+		{
+			this.logError("onSwapItem #1");
+			return null;
+		}
+
+		local result = {
+			Result = this.Const.UI.Swap.CanSwap,
+			Item = null
+		};
+
+		if (sourceItemOwner == "world-town-screen-shop-dialog-module.stash")
+		{
+			local sourceItemWrapper = this.Stash.getItemAtIndex(sourceItemIdx);
+
+			if (sourceItemWrapper == null)
+			{
+				this.logError("onSwapItem(stash) #2");
+				return null;
+			}
+
+			local sourceItem = sourceItemWrapper.item;
+
+			if (targetItemIdx == null && sourceItemOwner != targetItemOwner)
+			{
+				if (!sourceItem.isSellable())
+				{
+					result.Result = this.Const.UI.Swap.DoNotSwap;
+				}
+				else if (sourceItem.isUnique())
+				{
+					result.Result = this.Const.UI.Swap.ConfirmNoReplaceSwap;
+				}
+				else if (sourceItem.isPrecious())
+				{
+					result.Result = this.Const.UI.Swap.ConfirmReplaceSwap;
+				}
+
+				result.Item = {
+					Name = sourceItem.getName(),
+					Icon = sourceItem.getIcon()
+				};
+			}
+		}
+
+		return result;
+	}
 
 	function onSwapItem( _data )
 	{

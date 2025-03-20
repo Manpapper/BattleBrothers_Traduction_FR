@@ -574,7 +574,14 @@ this.turn_sequence_bar <- this.inherit("scripts/ui/screens/ui_module", {
 		this.m.JSHandle.call("insertEntity", {
 			id = _entityId,
 			index = 1
-		});
+		});	
+		
+		if (this.m.CurrentEntities.len() > this.m.MaxVisibleEntities)
+		{
+			local indexToRemove = this.Math.min(this.m.CurrentEntities.len(), this.m.MaxVisibleEntities);
+			this.m.JSHandle.asyncCall("removeEntity", this.m.CurrentEntities[indexToRemove].getID());
+			this.m.LastRemoveTime = this.Time.getRealTimeF();
+		}
 	}
 
 	function updateEntity( _entityId )
