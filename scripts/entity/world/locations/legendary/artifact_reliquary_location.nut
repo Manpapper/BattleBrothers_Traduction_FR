@@ -2,7 +2,7 @@ this.artifact_reliquary_location <- this.inherit("scripts/entity/world/location"
 	m = {},
 	function getDescription()
 	{
-		return "Une ruine effondrée datant d'une époque lointaine. La lueur occasionnelle d\'une torche trahit la présence d\'habitants actuels, tout comme les sons étranges qui émanent des profondeurs.";
+		return "Une ruine effondrée datant d\'une époque lointaine. La lueur occasionnelle d\'une torche trahit la présence d\'habitants actuels, tout comme les sons étranges qui émanent des profondeurs.";
 	}
 
 	function create()
