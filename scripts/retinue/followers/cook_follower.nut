@@ -10,7 +10,7 @@ this.cook_follower <- this.inherit("scripts/retinue/follower", {
 		this.m.Cost = 2000;
 		this.m.Effects = [
 			"Fait durer toutes les provisions 3 jours de plus",
-			"Augmente le taux de guérison des points de vie de 33%"
+			"Augmente le taux de guérison des points de vie de 1 par heure"
 		];
 		this.m.Requirements = [
 			{
@@ -23,7 +23,7 @@ this.cook_follower <- this.inherit("scripts/retinue/follower", {
 	function onUpdate()
 	{
 		this.World.Assets.m.FoodAdditionalDays = 3;
-		this.World.Assets.m.HitpointsPerHourMult = 1.33;
+		this.World.Assets.m.AdditionalHitpointsPerHour += 1;
 	}
 
 	function onEvaluate()

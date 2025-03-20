@@ -9,8 +9,9 @@ this.blacksmith_follower <- this.inherit("scripts/retinue/follower", {
 		this.m.Image = "ui/campfire/blacksmith_01";
 		this.m.Cost = 3000;
 		this.m.Effects = [
-			"Répare toutes les armures, casques, armes et boucliers portés par vos hommes, même s\'ils sont cassés ou perdus parce que votre homme est mort",
-			"Augmente la vitesse de réparation de 33%"
+			"Répare tout l\'équipement porté par vos hommes, même s\'ils sont cassés ou perdus parce que votre homme est mort",
+			"Augmente la vitesse de réparation de 20%",
+			"Réduit la consommation des Outils par 20%"
 		];
 		this.m.Requirements = [
 			{
@@ -22,7 +23,8 @@ this.blacksmith_follower <- this.inherit("scripts/retinue/follower", {
 
 	function onUpdate()
 	{
-		this.World.Assets.m.RepairSpeedMult *= 1.33;
+		this.World.Assets.m.RepairSpeedMult *= 1.2;
+		this.World.Assets.m.ArmorPartsPerArmor *= 0.8;
 		this.World.Assets.m.IsBlacksmithed = true;
 	}
 
