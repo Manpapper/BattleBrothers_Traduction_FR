@@ -1,12 +1,14 @@
 this.anatomist_potion_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
-	{
+	{		
+		this.item.create();
 		this.m.SlotType = this.Const.ItemSlot.None;
-		this.m.ItemType = this.Const.Items.ItemType.Usable;
+		this.m.ItemType = this.Const.Items.ItemType.Usable | this.Const.Items.ItemType.Quest;
 		this.m.IsDroppedAsLoot = true;
 		this.m.IsAllowedInBag = false;
 		this.m.IsUsable = true;
+		this.m.IsSellable = false;
 	}
 
 	function playInventorySound( _eventType )

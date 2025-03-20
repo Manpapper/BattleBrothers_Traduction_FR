@@ -25,6 +25,7 @@ this.money_item <- this.inherit("scripts/items/item", {
 
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "supplies.money";
 		this.m.Name = "Couronnes d\'or";
 		this.m.Icon = "supplies/money.png";

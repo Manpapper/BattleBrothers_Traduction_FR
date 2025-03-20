@@ -5,10 +5,10 @@ this.manhunters_ledger_item <- this.inherit("scripts/items/item", {
 		this.item.create();
 		this.m.ID = "misc.manhunters_ledger";
 		this.m.Name = "Livre de comptes de la compagnie";
-this.m.Description = "Un registre détaillant les membres et les termes du contrat de la compagnie.";
+		this.m.Description = "Un registre détaillant les membres et les termes du contrat de la compagnie.";
 		this.m.Icon = "misc/inventory_ledger_item.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
-		this.m.ItemType = this.Const.Items.ItemType.Misc;
+		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Quest;
 		this.m.Value = 0;
 	}
 

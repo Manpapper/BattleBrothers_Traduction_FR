@@ -12,7 +12,8 @@ this.orc_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.m.IconLarge = "";
 		this.m.Icon = "accessory/orc_trophy.png";
 		this.m.Sprite = "orc_trophy";
-		this.m.Value = 500;
+		this.m.Value = 500;	
+		this.m.IsPrecious = true;
 	}
 
 	function getTooltip()

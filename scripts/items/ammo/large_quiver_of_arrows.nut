@@ -2,6 +2,7 @@ this.large_quiver_of_arrows <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.arrows";
 		this.m.Name = "Grand carquois de flèches";
 		this.m.Description = "Un grand carquois de flèches, nécessaire pour utiliser des arcs de toutes sortes. Est automatiquement rechargé après chaque combat si vous avez suffisamment de munitions.";

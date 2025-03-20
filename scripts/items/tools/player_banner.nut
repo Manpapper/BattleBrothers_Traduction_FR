@@ -17,6 +17,7 @@ this.player_banner <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowArmamentIcon = false;
 		this.m.ArmamentIcon = "";
 		this.m.Value = 1500;
+		this.m.IsPrecious = true;
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 64;
 		this.m.ConditionMax = 64;

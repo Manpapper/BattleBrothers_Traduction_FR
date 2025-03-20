@@ -13,6 +13,7 @@ this.undead_trophy_item <- this.inherit("scripts/items/accessory/accessory", {
 		this.m.Icon = "accessory/undead_trophy.png";
 		this.m.Sprite = "undead_trophy";
 		this.m.Value = 500;
+		this.m.IsPrecious = true;
 	}
 
 	function getTooltip()

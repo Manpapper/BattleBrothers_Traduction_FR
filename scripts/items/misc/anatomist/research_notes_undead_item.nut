@@ -8,7 +8,7 @@ this.research_notes_undead_item <- this.inherit("scripts/items/item", {
 		this.m.Description = "Un registre bourré de contes populaires, de comptes rendus post-mortem, de notes d\'autopsie et des gribouillages fous d\'un prétendu nécromancien qui contiennent collectivement votre connaissance des morts-vivants.";
 		this.m.Icon = "misc/inventory_anatomists_book_02.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
-		this.m.ItemType = this.Const.Items.ItemType.Misc;
+		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Quest;
 		this.m.Value = 0;
 	}
 

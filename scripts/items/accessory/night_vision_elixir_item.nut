@@ -2,6 +2,7 @@ this.night_vision_elixir_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "accessory.night_vision_elixir";
 		this.m.Name = "Élixir de la chouette";
 		this.m.Description = "Cet élixir, lorsqu\'il est consommé, illumine la nuit comme si c\'était le milieu de la journée. Buvez de façon responsable. Dure pour la prochaine bataille.";

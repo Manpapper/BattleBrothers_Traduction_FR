@@ -2,6 +2,8 @@ this.iron_will_potion_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+
+		this.item.create();
 		this.m.ID = "accessory.iron_will_potion";
 		this.m.Name = "Potion de volonté de fer";
 		this.m.Description = "Une boisson pour engourdir la douleur. Attendez-vous à une sensation de brûlure importante dans votre gorge. Buvez de façon responsable. Dure pour la prochaine bataille.";

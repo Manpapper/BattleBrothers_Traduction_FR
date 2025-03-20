@@ -24,6 +24,7 @@ this.medicine_item <- this.inherit("scripts/items/item", {
 
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "supplies.medicine";
 		this.m.Name = "Medical Supplies";
 		this.m.Icon = "supplies/medicine.png";

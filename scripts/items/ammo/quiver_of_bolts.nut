@@ -2,6 +2,7 @@ this.quiver_of_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.bolts";
 		this.m.Name = "Carquois de carreaux";
 		this.m.Description = "Un carquois de carreaux, nécessaire pour utiliser des arbalètes. Est automatiquement rechargé après chaque combat si vous avez suffisamment de munitions.";

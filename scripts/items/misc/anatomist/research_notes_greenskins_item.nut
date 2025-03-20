@@ -8,7 +8,7 @@ this.research_notes_greenskins_item <- this.inherit("scripts/items/item", {
 		this.m.Description = "Une collection soignée de rapports de témoins oculaires, de journaux d\'expériences et de carnets de recherche détaillant l\'anatomie de divers spécimens de Peaux-Vertes.";
 		this.m.Icon = "misc/inventory_anatomists_book_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
-		this.m.ItemType = this.Const.Items.ItemType.Misc;
+		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Quest;
 		this.m.Value = 0;
 	}
 

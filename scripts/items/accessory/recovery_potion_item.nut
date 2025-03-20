@@ -2,6 +2,7 @@ this.recovery_potion_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "accessory.recovery_potion";
 		this.m.Name = "Potion du deuxième vent";
 		this.m.Description = "Un combattant fatigué est un combattant mort. Cette concoction d\'adrénaline et de stimulants à base de plantes peut être utilisée pour faire un effort supplémentaire. Dure pour la prochaine bataille.";

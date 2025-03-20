@@ -653,6 +653,47 @@ this.item_container <- {
 
 		_tile.IsContainingItemsFlipped = _flip;
 	}
+	
+	function getDroppableLoot( _killer )
+	{
+		local droppableItems = [];
+		local isDroppingLoot = true;
+		local isPlayer = this.m.Actor.getFaction() == this.Const.Faction.Player || this.isKindOf(this.m.Actor.get(), "player");
+
+		if (_killer != null && !_killer.isPlayerControlled() && !this.m.Actor.isPlayerControlled() && _killer.getID() != this.m.Actor.getID() && _killer.getFaction() != this.Const.Faction.PlayerAnimals)
+		{
+			isDroppingLoot = false;
+		}
+
+		if (!this.m.Actor.isPlayerControlled() && this.m.Actor.isAlliedWithPlayer())
+		{
+			isDroppingLoot = false;
+		}
+
+		if (_killer != null && _killer.isPlayerControlled() && !isPlayer && _killer.isAlliedWith(this.m.Actor))
+		{
+			isDroppingLoot = false;
+		}
+
+		for( local i = 0; i < this.Const.ItemSlot.COUNT; i = ++i )
+		{
+			for( local j = 0; j < this.m.Items[i].len(); j = ++j )
+			{
+				if (this.m.Items[i][j] == null || this.m.Items[i][j] == -1)
+				{
+				}
+				else if (isDroppingLoot || this.m.Items[i][j].isItemType(this.Const.Items.ItemType.Legendary))
+				{
+					if (this.m.Items[i][j].isChangeableInBattle())
+					{
+						droppableItems.push(this.m.Items[i][j]);
+					}
+				}
+			}
+		}
+
+		return droppableItems;
+	}
 
 	function transferToStash( _stash )
 	{
@@ -894,15 +935,18 @@ this.item_container <- {
 	{
 		this.m.IsUpdating = true;
 
-		for( local i = 0; i < this.m.Items[this.Const.ItemSlot.Mainhand].len(); i = ++i )
+		for( local s = 0; s < this.Const.ItemSlot.Bag; s = ++s )
 		{
-			if (this.m.Items[this.Const.ItemSlot.Mainhand][i] != null && this.m.Items[this.Const.ItemSlot.Mainhand][i] != -1)
+			for( local i = 0; i < this.m.Items[s].len(); i = ++i )
 			{
-				this.m.Items[this.Const.ItemSlot.Mainhand][i].onDamageDealt(_target, _skill, _hitInfo);
-
-				if (this.m.Items[this.Const.ItemSlot.Mainhand][i].isGarbage())
+				if (this.m.Items[s][i] != null && this.m.Items[s][i] != -1)
 				{
-					this.unequip(this.m.Items[this.Const.ItemSlot.Mainhand][i]);
+					this.m.Items[s][i].onDamageDealt(_target, _skill, _hitInfo);
+
+					if (this.m.Items[s][i].isGarbage())
+					{
+						this.unequip(this.m.Items[s][i]);
+					}
 				}
 			}
 		}

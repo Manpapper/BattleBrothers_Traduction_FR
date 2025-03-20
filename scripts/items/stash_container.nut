@@ -120,7 +120,7 @@ this.stash_container <- {
 				if (this.m.Items[i] == null)
 				{
 				}
-				else if (this.m.Items[i].isItemType(this.Const.Items.ItemType.Named) || this.m.Items[i].isItemType(this.Const.Items.ItemType.Legendary) || this.m.Items[i].isItemType(this.Const.Items.ItemType.Food))
+				else if (this.m.Items[i].isItemType(this.Const.Items.ItemType.Named) || this.m.Items[i].isItemType(this.Const.Items.ItemType.Legendary) || this.m.Items[i].isItemType(this.Const.Items.ItemType.Quest) || this.m.Items[i].isItemType(this.Const.Items.ItemType.Food))
 				{
 				}
 				else if (this.m.Items[i].getValue() < lowestValue)

@@ -6,7 +6,8 @@ this.oathtaker_skull_02_item <- this.inherit("scripts/items/accessory/accessory"
 		this.m.ID = "accessory.oathtaker_skull_02";
 		this.m.Name = "Crâne et mâchoire de Jeune Anselm";
 		this.m.Description = "Le crâne de Jeune Anselm, le premier Jureur, porté aux côtés d\'un reliquaire contenant sa mâchoire fracturée. Entrer en bataille orné d\'une relique aussi puissante, c\'est avoir l\'assurance totale de la victoire, car qui pourrait être vaincu avec Jeune Anselm à ses côtés ?";
-		this.m.SlotType = this.Const.ItemSlot.Accessory;
+		this.m.SlotType = this.Const.ItemSlot.Accessory;		
+		this.m.ItemType = this.Const.Items.ItemType.Accessory | this.Const.Items.ItemType.Quest;
 		this.m.IsDroppedAsLoot = true;
 		this.m.ShowOnCharacter = true;
 		this.m.IconLarge = "";

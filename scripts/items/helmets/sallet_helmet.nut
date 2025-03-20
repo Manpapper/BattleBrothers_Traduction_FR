@@ -37,7 +37,7 @@ this.sallet_helmet <- this.inherit("scripts/items/helmets/helmet", {
 
 	function setPlainVariant()
 	{
-		this.setVariant(1);
+		this.setVariant(163);
 	}
 
 	function onPaint( _color )

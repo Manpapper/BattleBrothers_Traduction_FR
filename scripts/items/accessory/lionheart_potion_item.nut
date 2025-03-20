@@ -2,6 +2,8 @@ this.lionheart_potion_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+
+		this.item.create();
 		this.m.ID = "accessory.lionheart_potion";
 		this.m.Name = "Potion Coeur de Lion";
 		this.m.Description = "Soyez courageux comme un lion ! Cette potion inhibe la peur et favorise le courage, jusqu\'à et y compris la surestimation grossière de ses propres capacités. Buvez de façon responsable. Dure pour la prochaine bataille.";

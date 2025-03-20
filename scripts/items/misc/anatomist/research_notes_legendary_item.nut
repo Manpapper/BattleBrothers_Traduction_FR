@@ -8,7 +8,7 @@ this.research_notes_legendary_item <- this.inherit("scripts/items/item", {
 		this.m.Description = "Un mince journal relié de cuir de qualité, contenant vos maigres notes scientifiques sur les créatures de mythes et de légendes.";
 		this.m.Icon = "misc/inventory_anatomists_book_04.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
-		this.m.ItemType = this.Const.Items.ItemType.Misc;
+		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Quest;
 		this.m.Value = 0;
 	}
 
@@ -76,6 +76,21 @@ this.research_notes_legendary_item <- this.inherit("scripts/items/item", {
 				flag = "isLorekeeperPotionDiscovered",
 				creatureName = "Lorekeeper",
 				potionName = "Potion of Inner Phylactery"
+			},
+			{
+				flag = "isLesserFleshGolemPotionAcquired",
+				creatureName = "Lesser Flesh Golem",
+				potionName = "Potion of Change"
+			},
+			{
+				flag = "isGreaterFleshGolemPotionAcquired",
+				creatureName = "Greater Flesh Golem",
+				potionName = "Potion of Progress"
+			},
+			{
+				flag = "isGrandDivinerPotionAcquired",
+				creatureName = "The Grand Diviner",
+				potionName = "Elixir of Enlightenment"
 			}
 		];
 

@@ -8,7 +8,7 @@ this.legendary_sword_blade_item <- this.inherit("scripts/items/item", {
 		this.m.Description = "La lame scintillante d\'une épée brisée que vous avez récupérée du Kraken. Au cours de toutes vos années de combat, vous n\'avez jamais rencontré une lame si magistralement conçue. Peut-être que l\'épée pourrait être reforgée si vous aviez les deux parties.";
 		this.m.Icon = "misc/inventory_sword_blade_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
-		this.m.ItemType = this.Const.Items.ItemType.Misc;
+		this.m.ItemType = this.Const.Items.ItemType.Misc | this.Const.Items.ItemType.Quest;
 		this.m.IsDroppedAsLoot = true;
 		this.m.Value = 2500;
 	}

@@ -5,7 +5,7 @@ this.named_bladed_pike <- this.inherit("scripts/items/weapons/named/named_weapon
 		this.named_weapon.create();
 		this.m.Variant = 1;
 		this.updateVariant();
-		this.m.ID = "weapon.named_warscythe";
+		this.m.ID = "weapon.named_bladed_pike";
 		this.m.NameList = this.Const.Strings.PikeNames;
 		this.m.PrefixList = this.Const.Strings.OldWeaponPrefix;
 		this.m.UseRandomName = false;

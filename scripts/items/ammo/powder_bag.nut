@@ -2,6 +2,7 @@ this.powder_bag <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.powder";
 		this.m.Name = "Sac de poudre noire";
 		this.m.Description = "Un sac de poudre noire, utilisé pour charger des armes à feu exotiques. Est automatiquement rechargé après chaque combat si vous avez suffisamment de munitions.";

@@ -3,7 +3,7 @@ this.holy_water_item <- this.inherit("scripts/items/weapons/weapon", {
 	function create()
 	{
 		this.weapon.create();
-		this.m.ID = "weapon.holy Water";
+		this.m.ID = "weapon.holy_water";
 		this.m.Name = "Flacon d\'eau bénite";
 		this.m.Description = "Un flacon rempli d\'eau bénite par un homme de Dieu. Peut être lancé à courte distance.";
 		this.m.IconLarge = "tools/holy_water_01.png";

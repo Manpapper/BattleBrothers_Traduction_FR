@@ -2,6 +2,7 @@ this.berserker_mushrooms_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
+		this.item.create();
 		this.m.ID = "accessory.berserker_mushrooms";
 		this.m.Name = "Champignons étranges";
 		this.m.Description = "Les champignons étranges, si quelqu\'un les mâche il entre dans un état de rage semblable à la transe où il ne ressent aucune douleur et présente une agressivité considérablement accrue. Mangez de façon responsable. Dure pour la prochaine bataille.";

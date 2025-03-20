@@ -34,7 +34,7 @@ this.heavy_throwing_axe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.RegularDamage = 30;
 		this.m.RegularDamageMax = 50;
 		this.m.ArmorDamageMult = 1.15;
-		this.m.DirectDamageMult = 0.25;
+		this.m.DirectDamageMult = 0.3;
 		this.m.ShieldDamage = 0;
 		this.m.ChanceToHitHead = 5;
 		this.m.IsDroppedAsLoot = true;
