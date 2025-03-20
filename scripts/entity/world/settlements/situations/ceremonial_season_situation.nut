@@ -3,7 +3,7 @@ this.ceremonial_season_situation <- this.inherit("scripts/entity/world/settlemen
 	function create()
 	{
 		this.situation.create();
-		this.m.ID = "situation.ceremonial_seasonn";
+		this.m.ID = "situation.ceremonial_season";
 		this.m.Name = "Saison des Cérémonies";
 		this.m.Description = "Pendant la saison des cérémonies, de grandes quantités d\'encens sont utilisées par les temples. La demande et les prix de l\'encens atteignent des sommets.";
 		this.m.Icon = "ui/settlement_status/settlement_effect_44.png";

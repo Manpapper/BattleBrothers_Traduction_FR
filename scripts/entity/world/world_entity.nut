@@ -607,7 +607,7 @@ this.world_entity <- {
 			return;
 		}
 
-		this.setVisibility(this.m.VisibilityMult * this.Const.World.TerrainTypeVisibilityMult[this.getTile().Type]);
+		this.setVisibility(this.getVisibilityMult() * this.Const.World.TerrainTypeVisibilityMult[this.getTile().Type]);
 
 		if (this.Const.World.AI.VisionDebugMode)
 		{

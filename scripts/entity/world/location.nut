@@ -318,7 +318,7 @@ this.location <- this.inherit("scripts/entity/world/world_entity", {
 
 	function onEnter()
 	{
-		if (!this.m.IsVisited && this.m.OnEnter != null)
+		if (!this.m.IsVisited && this.isDiscovered() && this.m.OnEnter != null)
 		{
 			this.m.IsVisited = true;
 			this.World.Events.fire(this.m.OnEnter);

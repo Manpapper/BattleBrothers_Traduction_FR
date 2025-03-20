@@ -200,7 +200,7 @@ this.port_building <- this.inherit("scripts/entity/world/settlements/buildings/b
 
 		foreach( s in settlements )
 		{
-			if (!s.isCoastal())
+			if (!s.hasBuilding("building.port"))
 			{
 				continue;
 			}

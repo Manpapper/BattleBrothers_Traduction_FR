@@ -910,25 +910,45 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 	{
 		local malus = 0;
 		local d = 0;
+		local shieldRangedDefense = 0;
+		local shieldMeleeDefense = 0;
 
 		if (!this.m.CurrentProperties.IsImmuneToSurrounding)
 		{
 			malus = _attackingEntity != null ? this.Math.max(0, _attackingEntity.getCurrentProperties().SurroundedBonus * _attackingEntity.getCurrentProperties().SurroundedBonusMult - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount() : this.Math.max(0, 5 - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount();
 		}
+		
+		local shield = this.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
+
+		if (shield != null && shield.isItemType(this.Const.Items.ItemType.Shield))
+		{
+			shieldMeleeDefense = shield.getMeleeDefense() * (this.m.CurrentProperties.IsSpecializedInShields ? 1.25 : 1.0);
+			shieldRangedDefense = shield.getRangedDefense() * (this.m.CurrentProperties.IsSpecializedInShields ? 1.25 : 1.0);
+		}
 
 		if (_skill.isRanged())
 		{
 			d = _properties.getRangedDefense();
+			
+			if (!_skill.isShieldRelevant())
+			{
+				d = d - shieldRangedDefense;
+			}
 		}
 		else
 		{
 			d = _properties.getMeleeDefense();
+			
+			if (!_skill.isShieldRelevant())
+			{
+				d = d - shieldMeleeDefense;
+			}
 		}
 
-		if (d > 50)
+		if (d > this.Const.Tactical.Settings.AttributeDefenseSoftCap)
 		{
-			local e = d - 50;
-			d = 50 + e * 0.5;
+			local e = d - this.Const.Tactical.Settings.AttributeDefenseSoftCap;
+			d = this.Const.Tactical.Settings.AttributeDefenseSoftCap + e * 0.5;
 		}
 
 		if (!_skill.isRanged())
@@ -1386,6 +1406,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 			{
 				this.setDiscovered(true);
 				this.getTile().addVisibilityForFaction(this.Const.Faction.Player);
+				this.getTile().addVisibilityForCurrentEntity();
 			}
 		}
 	}
@@ -1460,7 +1481,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 			this.getTile().addVisibilityForCurrentEntity();
 		}
 
-		if (this.m.Skills.hasSkill("perk.steel_brow"))
+		if (this.m.CurrentProperties.IsImmuneToCriticals || this.m.CurrentProperties.IsImmuneToHeadshots)
 		{
 			_hitInfo.BodyDamageMult = 1.0;
 		}
@@ -1586,7 +1607,9 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 			if (this.m.BaseProperties.Armor[_hitInfo.BodyPart] != 0)
 			{
 				overflowDamage = overflowDamage - this.m.BaseProperties.Armor[_hitInfo.BodyPart] * this.m.BaseProperties.ArmorMult[_hitInfo.BodyPart];
-				this.m.BaseProperties.Armor[_hitInfo.BodyPart] = this.Math.max(0, this.m.BaseProperties.Armor[_hitInfo.BodyPart] * this.m.BaseProperties.ArmorMult[_hitInfo.BodyPart] - _hitInfo.DamageArmor);
+				local newArmor = this.m.BaseProperties.Armor[_hitInfo.BodyPart] * p.ArmorMult[_hitInfo.BodyPart] - _hitInfo.DamageArmor;
+				newArmor = newArmor / p.ArmorMult[_hitInfo.BodyPart];
+				this.m.BaseProperties.Armor[_hitInfo.BodyPart] = this.Math.max(0, newArmor);
 				this.Tactical.EventLog.logEx("L\'armure de " + this.Const.UI.getColorizedEntityName(this) + " a été touché pour [b]" + this.Math.floor(_hitInfo.DamageArmor) + "[/b] dégâts");
 			}
 
@@ -1772,6 +1795,31 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 
 	function onDeath( _killer, _skill, _tile, _fatalityType )
 	{
+	}
+
+	function getLootForTile( _killer, _loot )
+	{
+		return _loot;
+	}
+
+	function dropLoot( _tile, _loot, _flip = false )
+	{
+		if (_tile == null)
+		{
+			_tile = this.getTile();
+		}
+
+		foreach( item in _loot )
+		{
+			item.drop(_tile);
+		}
+
+		_tile.IsContainingItemsFlipped = _flip;
+	}
+
+	function generateCorpse( _tile, _fatalityType )
+	{
+		return clone this.Const.Corpse;
 	}
 
 	function onActorKilled( _actor, _tile, _skill )
@@ -2617,7 +2665,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 			_tile.Properties.Effect.Callback(_tile, this);
 		}
 
-		this.m.Skills.update();
+		this.m.Skills.onMovementFinished();
 		this.m.Items.onMovementFinished();
 		this.setDirty(true);
 		this.m.IsMoving = false;

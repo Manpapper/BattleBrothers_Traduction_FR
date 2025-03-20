@@ -3,6 +3,7 @@ this.tactical_entity_manager <- {
 		Instances = [],
 		InstancesMax = [],
 		Corpses = [],
+		UnplacedCorpses = [],
 		TileEffects = [],
 		Strategies = [],
 		OnCombatFinishedListener = null,
@@ -15,7 +16,8 @@ this.tactical_entity_manager <- {
 		IsEnemyRetreating = false,
 		IsLineVSLine = false,
 		CombatResult = this.Const.Tactical.CombatResult.None,
-		LastCombatResult = this.Const.Tactical.CombatResult.None
+		LastCombatResult = this.Const.Tactical.CombatResult.None,
+		Busy = false
 	},
 	function getInstancesOfFaction( _f )
 	{
@@ -45,6 +47,11 @@ this.tactical_entity_manager <- {
 	function getCorpses()
 	{
 		return this.m.Corpses;
+	}
+	
+	function getUnplacedCorpses()
+	{
+		return this.m.UnplacedCorpses;
 	}
 
 	function getStrategy( _f )
@@ -96,6 +103,11 @@ this.tactical_entity_manager <- {
 	{
 		return this.m.CombatResult;
 	}
+	
+	function setBusy( _busy )
+	{
+		this.m.Busy = _busy;
+	}
 
 	function setLastCombatResult( _r )
 	{
@@ -105,6 +117,11 @@ this.tactical_entity_manager <- {
 	function checkCombatFinished( _forceFinish = false )
 	{
 		if (this.m.IsCombatFinished)
+		{
+			return;
+		}
+		
+		if (this.m.Busy)
 		{
 			return;
 		}
@@ -444,6 +461,11 @@ this.tactical_entity_manager <- {
 			}
 		}
 	}
+	
+	function addUnplacedCorpse( _corpse )
+	{
+		this.m.UnplacedCorpses.push(_corpse);
+	}
 
 	function create()
 	{
@@ -470,6 +492,7 @@ this.tactical_entity_manager <- {
 		}
 
 		this.m.Corpses = [];
+		this.m.UnplacedCorpses = [];
 		this.m.IsDirty = true;
 	}
 
@@ -625,6 +648,58 @@ this.tactical_entity_manager <- {
 						if (eggs <= 0)
 						{
 							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	function getImpactTiles()
+	{
+		local tiles = [];
+		local entities = this.getAllInstances();
+
+		foreach( iterator in entities )
+		{
+			foreach( actor in iterator )
+			{
+				foreach( skillID in this.Const.Tactical.ImpactTileSkills )
+				{
+					if (actor.getSkills().hasSkill(skillID))
+					{
+						local skill = actor.getSkills().getSkillByID(skillID);
+
+						foreach( tile in skill.m.AffectedTiles )
+						{
+							tiles.push(tile);
+						}
+					}
+				}
+			}
+		}
+
+		return tiles;
+	}
+
+	function resetTileDangerIndicators()
+	{
+		local entities = this.getAllInstances();
+
+		foreach( iterator in entities )
+		{
+			foreach( actor in iterator )
+			{
+				foreach( skillID in this.Const.Tactical.ImpactTileSkills )
+				{
+					if (actor.getSkills().hasSkill(skillID))
+					{
+						local skill = actor.getSkills().getSkillByID(skillID);
+
+						foreach( tile in skill.m.AffectedTiles )
+						{
+							tile.Properties.IsMarkedForImpact = true;
+							tile.spawnDetail(skill.getImpactSprite(), this.Const.Tactical.DetailFlag.SpecialOverlay, false, true);
 						}
 					}
 				}
@@ -1211,6 +1286,10 @@ this.tactical_entity_manager <- {
 			}
 
 			break;
+			
+		case this.Const.Tactical.DeploymentType.LineCenter:
+			this.placePlayersInFormation(players, 3 + shiftX);
+			break;
 
 		case this.Const.Tactical.DeploymentType.LineForward:
 			this.placePlayersInFormation(players, 8 + shiftX);
@@ -1290,6 +1369,10 @@ this.tactical_entity_manager <- {
 				{
 					this.spawnEntitiesInFormation(f.Entities, n, 8 + shiftX);
 				}
+				else if (f.IsAlliedWithPlayer && _properties.PlayerDeploymentType == this.Const.Tactical.DeploymentType.LineCenter)
+				{
+					this.spawnEntitiesInFormation(f.Entities, n, 3 + shiftX);
+				}
 				else if (!f.IsAlliedWithPlayer && _properties.PlayerDeploymentType == this.Const.Tactical.DeploymentType.LineForward)
 				{
 					this.spawnEntitiesInFormation(f.Entities, n, -10 - shiftX);
@@ -1297,6 +1380,22 @@ this.tactical_entity_manager <- {
 				else
 				{
 					this.spawnEntitiesInFormation(f.Entities, n, -10 + shiftX);
+				}
+
+				break;
+				
+			case this.Const.Tactical.DeploymentType.LineCenter:
+				if (f.IsAlliedWithPlayer && _properties.PlayerDeploymentType == this.Const.Tactical.DeploymentType.LineForward)
+				{
+					this.spawnEntitiesInFormation(f.Entities, n, 8 + shiftX);
+				}
+				else if (!f.IsAlliedWithPlayer && _properties.PlayerDeploymentType == this.Const.Tactical.DeploymentType.LineForward)
+				{
+					this.spawnEntitiesInFormation(f.Entities, n, 3 - shiftX);
+				}
+				else
+				{
+					this.spawnEntitiesInFormation(f.Entities, n, 3 + shiftX);
 				}
 
 				break;
@@ -1851,11 +1950,12 @@ this.tactical_entity_manager <- {
 		{
 			local x = 0;
 			local y = 0;
-			local tries = 0;
+			local tries = 0;			
+			local clearedArea = false;
 
 			while (1)
 			{
-				if (tries > 1000 && !this.clearedArea)
+				if (tries > 1000 && !clearedArea)
 				{
 					for( local x = 13; x != 19; x = ++x )
 					{
@@ -1865,7 +1965,7 @@ this.tactical_entity_manager <- {
 						}
 					}
 
-					this.clearedArea = true;
+					clearedArea = true;
 				}
 
 				tries = ++tries;
@@ -1981,7 +2081,7 @@ this.tactical_entity_manager <- {
 	{
 		for( local x = 11 + _offsetX; x <= 14 + _offsetX; x = ++x )
 		{
-			for( local y = 10; y <= 20 + _offsetY; y = ++y )
+			for( local y = 10 + _offsetY; y <= 20 + _offsetY; y = ++y )
 			{
 				this.Tactical.getTile(x, y - x / 2).removeObject();
 			}
