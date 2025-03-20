@@ -36,34 +36,6 @@ this.ghoul_claws <- this.inherit("scripts/skills/skill", {
 		this.m.ChanceSmash = 0;
 	}
 
-	function getTooltip()
-	{
-		local p = this.getContainer().getActor().getCurrentProperties();
-		return [
-			{
-				id = 1,
-				type = "title",
-				text = this.getName()
-			},
-			{
-				id = 2,
-				type = "description",
-				text = this.getDescription()
-			},
-			{
-				id = 3,
-				type = "text",
-				text = this.getCostString()
-			},
-			{
-				id = 4,
-				type = "text",
-				icon = "/ui/tooltips/heart.png",
-				text = "Inflige [color=" + this.Const.UI.Color.DamageValue + "]" + p.DamageRegularMin + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + p.DamageRegularMax + "[/color] de dégats"
-			}
-		];
-	}
-
 	function onUpdate( _properties )
 	{
 		_properties.DamageRegularMin += 25;

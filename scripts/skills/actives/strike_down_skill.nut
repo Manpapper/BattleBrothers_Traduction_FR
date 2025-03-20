@@ -94,15 +94,22 @@ this.strike_down_skill <- this.inherit("scripts/skills/skill", {
 
 		if (success && target.isAlive())
 		{
-			if ((_user.getCurrentProperties().IsSpecializedInMaces || this.Math.rand(1, 100) <= this.m.StunChance) && !target.getCurrentProperties().IsImmuneToStun && !target.getSkills().hasSkill("effects.stunned"))
+			if ((_user.getCurrentProperties().IsSpecializedInMaces || this.Math.rand(1, 100) <= this.m.StunChance) && !target.getCurrentProperties().IsImmuneToStun)
 			{
-				local stun = this.new("scripts/skills/effects/stunned_effect");
-				target.getSkills().add(stun);
-				stun.setTurns(2);
+				local stun = target.getSkills().getSkillByID("effects.stunned");
+				local shouldLog = stun == null || stun.getTurns() < 2;
 
-				if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
+				if (stun == null)
 				{
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " a étourdi " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " pour deux tours");
+					stun = this.new("scripts/skills/effects/stunned_effect");
+					target.getSkills().add(stun);
+				}
+
+				stun.setTurns(this.Math.max(stun.getTurns(), 2));
+
+				if (shouldLog && !_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
+				{
+					this.Tactical.EventLog.log(stun.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 				}
 			}
 		}

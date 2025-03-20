@@ -45,11 +45,12 @@ this.uproot_small_zoc_skill <- this.inherit("scripts/skills/skill", {
 
 	function applyEffectToTarget( _user, _target, _targetTile )
 	{
-		_target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+		local stagger = this.new("scripts/skills/effects/staggered_effect");
+		_target.getSkills().add(stagger);
 
 		if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has staggered " + this.Const.UI.getColorizedEntityName(_target) + " for one turn");
+			this.Tactical.EventLog.log(stagger.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(_target)));
 		}
 	}
 

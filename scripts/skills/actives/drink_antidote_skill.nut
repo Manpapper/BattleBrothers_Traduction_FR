@@ -1,12 +1,5 @@
 this.drink_antidote_skill <- this.inherit("scripts/skills/skill", {
-	m = {
-		Item = null
-	},
-	function setItem( _i )
-	{
-		this.m.Item = this.WeakTableRef(_i);
-	}
-
+	m = {},
 	function create()
 	{
 		this.m.ID = "actives.drink_antidote";

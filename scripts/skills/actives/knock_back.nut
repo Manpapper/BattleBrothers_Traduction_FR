@@ -149,30 +149,44 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 	function onUse( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
+		local success = this.Math.rand(1, 100) <= this.getHitchance(_targetTile.getEntity());
 
 		if (this.m.SoundOnUse.len() != 0)
 		{
 			this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.Skill, _user.getPos());
 		}
 
-		if (this.Math.rand(1, 100) > this.getHitchance(_targetTile.getEntity()))
+		if (!success)
 		{
 			target.onMissed(this.getContainer().getActor(), this);
-			return false;
 		}
 
 		local knockToTile = this.findTileToKnockBackTo(_user.getTile(), _targetTile);
 
 		if (knockToTile == null)
 		{
-			return false;
+			success = false;
 		}
 
-		this.applyFatigueDamage(target, 10);
-
-		if (target.getCurrentProperties().IsImmuneToKnockBackAndGrab || target.getCurrentProperties().IsRooted)
+		if (success)
 		{
-			return false;
+			this.applyFatigueDamage(target, 10);
+		}
+
+		if (target.getCurrentProperties().IsImmuneToKnockBackAndGrab)
+		{
+			success = false;
+		}
+		
+		if (!success)
+		{
+			if (this.m.SoundOnMiss.len() != 0)
+			{
+				this.Sound.play(this.m.SoundOnMiss[this.Math.rand(0, this.m.SoundOnMiss.len() - 1)], this.Const.Sound.Volume.Skill, _user.getPos());
+			}
+
+			_user.getSkills().onTargetMissed(this, target);
+			return success;
 		}
 
 		if (!_user.isHiddenToPlayer() && (_targetTile.IsVisibleForPlayer || knockToTile.IsVisibleForPlayer))
@@ -185,13 +199,14 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 		skills.removeByID("effects.spearwall");
 		skills.removeByID("effects.riposte");
 
-		if (_user.getSkills().hasSkill("trait.oath_of_fortification") && _targetTile.IsOccupiedByActor && !target.isNonCombatant())
+		if (_user.getSkills().hasSkill("trait.oath_of_fortification") && target.isAlive() && !target.isNonCombatant())
 		{
-			target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+			local stagger = this.new("scripts/skills/effects/staggered_effect");
+			target.getSkills().add(stagger);
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has staggered " + this.Const.UI.getColorizedEntityName(target) + " for one turn");
+				this.Tactical.EventLog.log(stagger.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 			}
 		}
 
@@ -200,6 +215,7 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 			this.Sound.play(this.m.SoundOnHit[this.Math.rand(0, this.m.SoundOnHit.len() - 1)], this.Const.Sound.Volume.Skill, _user.getPos());
 		}
 
+		_user.getSkills().onTargetHit(this, target, this.Const.BodyPart.Body, 0, 0);
 		target.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
 		local hasShieldBash = _user.getSkills().hasSkill("perk.shield_bash");
 		local damage = this.Math.max(0, this.Math.abs(knockToTile.Level - _targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
@@ -239,7 +255,7 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 			this.Tactical.getNavigator().teleport(target, knockToTile, this.onKnockedDown, tag, true);
 		}
 
-		return true;
+		return success;
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )

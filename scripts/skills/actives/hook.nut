@@ -71,7 +71,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 		{
 			local tile = _targetTile.getNextTile(dir);
 
-			if (tile.Level <= _userTile.Level && tile.IsEmpty)
+			if (tile.Level <= _targetTile.Level && tile.IsEmpty)
 			{
 				return tile;
 			}
@@ -83,7 +83,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 		{
 			local tile = _targetTile.getNextTile(dir);
 
-			if (tile.getDistanceTo(_userTile) == 1 && tile.Level <= _userTile.Level && tile.IsEmpty)
+			if (tile.getDistanceTo(_userTile) == 1 && tile.Level <= _targetTile.Level && tile.IsEmpty)
 			{
 				return tile;
 			}
@@ -96,7 +96,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 		{
 			local tile = _targetTile.getNextTile(dir);
 
-			if (tile.getDistanceTo(_userTile) == 1 && tile.Level <= _userTile.Level && tile.IsEmpty)
+			if (tile.getDistanceTo(_userTile) == 1 && tile.Level <= _targetTile.Level && tile.IsEmpty)
 			{
 				return tile;
 			}
@@ -136,29 +136,39 @@ this.hook <- this.inherit("scripts/skills/skill", {
 	function onUse( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
+		local success = this.Math.rand(1, 100) <= this.getHitchance(target);
 
-		if (this.Math.rand(1, 100) > this.getHitchance(target))
+		if (!success)
 		{
-			local overwhelm = this.getContainer().getSkillByID("perk.overwhelm");
-
-			if (overwhelm != null)
-			{
-				overwhelm.onTargetMissed(this, target);
-			}
-
-			return false;
+			target.onMissed(this.getContainer().getActor(), this);
 		}
 
 		local pullToTile = this.getPulledToTile(_user.getTile(), _targetTile);
 
 		if (pullToTile == null)
 		{
-			return false;
+			success = false;
+		}
+		
+		if (success)
+		{
+			this.applyFatigueDamage(target, 10);
 		}
 
 		if (target.getCurrentProperties().IsImmuneToKnockBackAndGrab)
 		{
-			return false;
+			success = false;
+		}
+		
+		if (!success)
+		{
+			if (this.m.SoundOnMiss.len() != 0)
+			{
+				this.Sound.play(this.m.SoundOnMiss[this.Math.rand(0, this.m.SoundOnMiss.len() - 1)], this.Const.Sound.Volume.Skill, _user.getPos());
+			}
+
+			_user.getSkills().onTargetMissed(this, target);
+			return success;
 		}
 
 		if (!_user.isHiddenToPlayer() && pullToTile.IsVisibleForPlayer)
@@ -176,20 +186,15 @@ this.hook <- this.inherit("scripts/skills/skill", {
 			this.Sound.play(this.m.SoundOnHit[this.Math.rand(0, this.m.SoundOnHit.len() - 1)], this.Const.Sound.Volume.Skill, _user.getPos());
 		}
 
-		target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+		local stagger = this.new("scripts/skills/effects/staggered_effect");
+		target.getSkills().add(stagger);
 
 		if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " a fait tituber " + this.Const.UI.getColorizedEntityName(target) + " pour un tour");
+			this.Tactical.EventLog.log(stagger.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 		}
 
-		local overwhelm = this.getContainer().getSkillByID("perk.overwhelm");
-
-		if (overwhelm != null)
-		{
-			overwhelm.onTargetHit(this, target, this.Const.BodyPart.Body, 0, 0);
-		}
-
+		_user.getSkills().onTargetHit(this, target, this.Const.BodyPart.Body, 0, 0);
 		target.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
 		local damage = this.Math.max(0, this.Math.abs(pullToTile.Level - _targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
 		local tag = {
@@ -211,7 +216,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 			this.Tactical.getNavigator().teleport(_targetTile.getEntity(), pullToTile, this.onPulledDown, tag, true);
 		}
 
-		return true;
+		return success;
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )

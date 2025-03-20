@@ -95,11 +95,12 @@ this.tail_slam_skill <- this.inherit("scripts/skills/skill", {
 				return;
 			}
 
-			_target.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
+			local daze = this.new("scripts/skills/effects/dazed_effect");
+			_target.getSkills().add(daze);
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has dazed " + this.Const.UI.getColorizedEntityName(_target) + " for two turns");
+				this.Tactical.EventLog.log(daze.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(_target)));
 			}
 		}
 		else if (applyEffect == 2)
@@ -157,11 +158,12 @@ this.tail_slam_skill <- this.inherit("scripts/skills/skill", {
 				return;
 			}
 
-			_target.getSkills().add(this.new("scripts/skills/effects/stunned_effect"));
+			local stun = this.new("scripts/skills/effects/stunned_effect");
+			_target.getSkills().add(stun);
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has stunned " + this.Const.UI.getColorizedEntityName(_target) + " for one turn");
+				this.Tactical.EventLog.log(stun.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(_target)));
 			}
 		}
 	}

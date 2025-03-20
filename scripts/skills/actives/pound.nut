@@ -7,6 +7,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "actives.pound";
 		this.m.Name = "Frappe";
 		this.m.Description = "Frappe la cible au sol avec la chaîne et frappe la tête. Quelque peu imprévisible, mais capable de frapper par-dessus ou autour d\'un bouclier avec un peu de chance. Une cible frappée avec assez de force peut être étourdie pendant un tour.";
+		this.m.KilledString = "Pounded to death";
 		this.m.Icon = "skills/active_50.png";
 		this.m.IconDisabled = "skills/active_50_sw.png";
 		this.m.Overlay = "active_50";
@@ -123,22 +124,24 @@ this.pound <- this.inherit("scripts/skills/skill", {
 	}
 
 	function onUse( _user, _targetTile )
-	{
+	{	
+		local target = _targetTile.getEntity();
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectBash);
-		local success = this.attackEntity(_user, _targetTile.getEntity());
+		local success = this.attackEntity(_user, target);
 
 		if (!_user.isAlive() || _user.isDying())
 		{
 			return success;
 		}
 
-		if (success && _targetTile.IsOccupiedByActor && this.Math.rand(1, 100) <= this.m.StunChance && !_targetTile.getEntity().getCurrentProperties().IsImmuneToStun && !_targetTile.getEntity().getSkills().hasSkill("effects.stunned"))
+		if (success && target.isAlive() && this.Math.rand(1, 100) <= this.m.StunChance && !target.getCurrentProperties().IsImmuneToStun && !target.getSkills().hasSkill("effects.stunned"))
 		{
-			_targetTile.getEntity().getSkills().add(this.new("scripts/skills/effects/stunned_effect"));
+			local stun = this.new("scripts/skills/effects/stunned_effect");
+			target.getSkills().add(stun);
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has stunned " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " for one turn");
+				this.Tactical.EventLog.log(stun.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 			}
 		}
 
@@ -147,7 +150,7 @@ this.pound <- this.inherit("scripts/skills/skill", {
 
 	function onBeforeTargetHit( _skill, _targetEntity, _hitInfo )
 	{
-		if (_skill == this && _hitInfo.BodyPart == this.Const.BodyPart.Head)
+		if (_skill == this && _hitInfo.BodyPart == this.Const.BodyPart.Head && !_targetEntity.getCurrentProperties().IsImmuneToHeadshots)
 		{
 			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInFlails)
 			{

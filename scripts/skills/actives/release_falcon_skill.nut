@@ -1,7 +1,5 @@
 this.release_falcon_skill <- this.inherit("scripts/skills/skill", {
-	m = {
-		Item = null
-	},
+	m = {},
 	function create()
 	{
 		this.m.ID = "actives.release_falcon";
@@ -74,6 +72,12 @@ this.release_falcon_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.Item.setReleased(true);
 		this.Tactical.queryTilesInRange(_user.getTile(), 1, 12, false, [], this.onQueryTile, _user.getFaction());
+		
+		if (this.Tactical.TurnSequenceBar.getActiveEntity() != null)
+		{
+			this.Tactical.TurnSequenceBar.getActiveEntity().updateVisibilityForFaction();
+		}
+
 		return true;
 	}
 
@@ -84,11 +88,6 @@ this.release_falcon_skill <- this.inherit("scripts/skills/skill", {
 		if (_tile.IsOccupiedByActor)
 		{
 			_tile.getEntity().setDiscovered(true);
-		}
-
-		if (this.Tactical.TurnSequenceBar.getActiveEntity() != null)
-		{
-			this.Tactical.TurnSequenceBar.getActiveEntity().updateVisibilityForFaction();
 		}
 	}
 

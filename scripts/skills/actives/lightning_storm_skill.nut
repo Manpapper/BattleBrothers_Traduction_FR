@@ -13,6 +13,7 @@ this.lightning_storm_skill <- this.inherit("scripts/skills/skill", {
 		this.m.Icon = "skills/active_216.png";
 		this.m.IconDisabled = "skills/active_216.png";
 		this.m.Overlay = "active_216";
+		this.m.ImpactSprite = "mortar_target_02";
 		this.m.SoundOnUse = [
 			"sounds/enemies/dlc6/cast_lightning_01.wav",
 			"sounds/enemies/dlc6/cast_lightning_02.wav",
@@ -54,7 +55,7 @@ this.lightning_storm_skill <- this.inherit("scripts/skills/skill", {
 
 	function setCooldownAfterImpact( _c )
 	{
-		this.m.HasCooldownAfterImpact = true;
+		this.m.HasCooldownAfterImpact = _c;
 
 		if (!_c)
 		{
@@ -120,7 +121,7 @@ this.lightning_storm_skill <- this.inherit("scripts/skills/skill", {
 		foreach( tile in this.m.AffectedTiles )
 		{
 			tile.Properties.IsMarkedForImpact = true;
-			tile.spawnDetail("mortar_target_02", this.Const.Tactical.DetailFlag.SpecialOverlay, false, true);
+			tile.spawnDetail(this.getImpactSprite(), this.Const.Tactical.DetailFlag.SpecialOverlay, false, true);
 		}
 
 		this.Tactical.Entities.getFlags().increment("LightningStrikesActive");

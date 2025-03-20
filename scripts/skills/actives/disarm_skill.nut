@@ -78,19 +78,19 @@ this.disarm_skill <- this.inherit("scripts/skills/skill", {
 
 	function onUse( _user, _targetTile )
 	{
-		local success = this.attackEntity(_user, _targetTile.getEntity());
+		local target = _targetTile.getEntity();
+		local success = this.attackEntity(_user, target);
 
 		if (success)
 		{
-			local target = _targetTile.getEntity();
-
 			if (!target.getCurrentProperties().IsStunned && !target.getCurrentProperties().IsImmuneToDisarm)
 			{
-				target.getSkills().add(this.new("scripts/skills/effects/disarmed_effect"));
+				local disarm = this.new("scripts/skills/effects/disarmed_effect");
+				target.getSkills().add(disarm);
 
 				if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 				{
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has disarmed " + this.Const.UI.getColorizedEntityName(target) + " for one turn");
+					this.Tactical.EventLog.log(disarm.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 				}
 			}
 		}

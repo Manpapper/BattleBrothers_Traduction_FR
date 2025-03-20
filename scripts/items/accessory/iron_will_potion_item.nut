@@ -2,7 +2,6 @@ this.iron_will_potion_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
-
 		this.item.create();
 		this.m.ID = "accessory.iron_will_potion";
 		this.m.Name = "Potion de volonté de fer";

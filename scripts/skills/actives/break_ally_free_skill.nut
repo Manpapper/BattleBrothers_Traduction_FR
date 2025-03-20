@@ -27,7 +27,6 @@ this.break_ally_free_skill <- this.inherit("scripts/skills/skill", {
 
 	function getTooltip()
 	{
-		local chance = this.Math.min(100, this.getContainer().getActor().getCurrentProperties().getMeleeSkill() - 10);
 		return [
 			{
 				id = 1,
@@ -48,7 +47,7 @@ this.break_ally_free_skill <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]" + chance + "%[/color] chance de réussir en se basant de la Maîtrise de Mêlée, ou plus s\'il y a déjà eu une tentative de libération de l\'allié."
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getChance() + "%[/color] chance de réussir en se basant de la Maîtrise de Mêlée, ou plus s\'il y a déjà eu une tentative de libération de l\'allié."
 			}
 		];
 	}

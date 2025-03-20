@@ -1,6 +1,5 @@
 this.unleash_wolf <- this.inherit("scripts/skills/skill", {
 	m = {
-		Item = null,
 		Sounds0 = [
 			"sounds/enemies/wolf_death_00.wav",
 			"sounds/enemies/wolf_death_01.wav",
@@ -32,11 +31,6 @@ this.unleash_wolf <- this.inherit("scripts/skills/skill", {
 			"sounds/enemies/wolf_idle_09.wav"
 		]
 	},
-	function setItem( _i )
-	{
-		this.m.Item = this.WeakTableRef(_i);
-	}
-
 	function create()
 	{
 		this.m.ID = "actives.unleash_wolf";

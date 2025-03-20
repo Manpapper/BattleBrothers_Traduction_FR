@@ -53,6 +53,7 @@ this.recover_skill <- this.inherit("scripts/skills/skill", {
 	function onUse( _user, _targetTile )
 	{
 		_user.setFatigue(_user.getFatigue() / 2);
+		_user.getSkills().update();
 
 		if (!_user.isHiddenToPlayer())
 		{

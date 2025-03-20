@@ -39,7 +39,7 @@ this.crush_armor <- this.inherit("scripts/skills/skill", {
 
 	function getTooltip()
 	{
-		local p = this.getContainer().getActor().getCurrentProperties();
+		local p = this.getContainer().buildPropertiesForUse(this, null);
 		local f = p.IsSpecializedInHammers ? 2.0 : 1.5;
 		local damage_armor_min = this.Math.floor(p.DamageRegularMin * p.DamageArmorMult * f * p.DamageTotalMult * p.MeleeDamageMult);
 		local damage_armor_max = this.Math.floor(p.DamageRegularMax * p.DamageArmorMult * f * p.DamageTotalMult * p.MeleeDamageMult);

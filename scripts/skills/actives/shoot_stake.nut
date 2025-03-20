@@ -154,7 +154,7 @@ this.shoot_stake <- this.inherit("scripts/skills/skill", {
 		{
 			local knockToTile = _targetTile.getNextTile(dir);
 
-			if (knockToTile.IsEmpty && knockToTile.Level - _userTile.Level <= 1)
+			if (knockToTile.IsEmpty && knockToTile.Level - _targetTile.Level <= 1)
 			{
 				return knockToTile;
 			}
@@ -228,6 +228,7 @@ this.shoot_stake <- this.inherit("scripts/skills/skill", {
 			skills.removeByID("effects.shieldwall");
 			skills.removeByID("effects.spearwall");
 			skills.removeByID("effects.riposte");
+			_targetEntity.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
 			local damage = this.Math.max(0, this.Math.abs(knockToTile.Level - targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
 
 			if (damage == 0)
@@ -252,16 +253,14 @@ this.shoot_stake <- this.inherit("scripts/skills/skill", {
 				this.Tactical.getNavigator().teleport(_targetEntity, knockToTile, this.onKnockedDown, tag, true);
 			}
 		}
-
-		function onKnockedDown( _entity, _tag )
-		{
-			if (_tag.HitInfo.DamageRegular != 0)
-			{
-				_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
-			}
-		}
-
 	}
 
+	function onKnockedDown( _entity, _tag )
+	{
+		if (_tag.HitInfo.DamageRegular != 0)
+		{
+			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
+		}
+	}
 });
 

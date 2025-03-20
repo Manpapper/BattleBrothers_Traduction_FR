@@ -167,20 +167,22 @@ this.unstoppable_charge_skill <- this.inherit("scripts/skills/skill", {
 
 		if (applyEffect == 1 && !_target.getCurrentProperties().IsImmuneToStun)
 		{
-			_target.getSkills().add(this.new("scripts/skills/effects/stunned_effect"));
+			local stun = this.new("scripts/skills/effects/stunned_effect");
+			_target.getSkills().add(stun);
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has stunned " + this.Const.UI.getColorizedEntityName(_target) + " for one turn");
+				this.Tactical.EventLog.log(stun.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(_target)));
 			}
 		}
 		else if (applyEffect == 2 && !_target.getCurrentProperties().IsImmuneToKnockBackAndGrab && !_target.getCurrentProperties().IsRooted)
 		{
-			_target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+			local stagger = this.new("scripts/skills/effects/staggered_effect");
+			_target.getSkills().add(stagger);
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has staggered " + this.Const.UI.getColorizedEntityName(_target) + " for one turn");
+				this.Tactical.EventLog.log(stagger.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(_target)));
 			}
 
 			local knockToTile = this.findTileToKnockBackTo(_user.getTile(), _targetTile);
@@ -226,11 +228,12 @@ this.unstoppable_charge_skill <- this.inherit("scripts/skills/skill", {
 		}
 		else
 		{
-			_target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+			local stagger = this.new("scripts/skills/effects/staggered_effect");
+			_target.getSkills().add(stagger);
 
 			if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has staggered " + this.Const.UI.getColorizedEntityName(_target) + " for one turn");
+				this.Tactical.EventLog.log(stagger.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(_target)));
 			}
 		}
 	}

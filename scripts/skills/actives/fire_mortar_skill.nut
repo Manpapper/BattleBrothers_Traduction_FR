@@ -12,6 +12,7 @@ this.fire_mortar_skill <- this.inherit("scripts/skills/skill", {
 		this.m.Icon = "skills/active_211.png";
 		this.m.IconDisabled = "skills/active_211.png";
 		this.m.Overlay = "active_211";
+		this.m.ImpactSprite = "mortar_target_02";
 		this.m.SoundOnUse = [
 			"sounds/combat/dlc6/fire_mortar_01.wav",
 			"sounds/combat/dlc6/fire_mortar_02.wav",
@@ -104,7 +105,7 @@ this.fire_mortar_skill <- this.inherit("scripts/skills/skill", {
 		foreach( tile in this.m.AffectedTiles )
 		{
 			tile.Properties.IsMarkedForImpact = true;
-			tile.spawnDetail("mortar_target_02", this.Const.Tactical.DetailFlag.SpecialOverlay, false, true);
+			tile.spawnDetail(this.getImpactSprite(), this.Const.Tactical.DetailFlag.SpecialOverlay, false, true);
 		}
 
 		this.Time.scheduleEvent(this.TimeUnit.Real, 1000, this.onSpawnFireEffect.bindenv(this), this);
