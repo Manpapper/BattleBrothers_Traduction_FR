@@ -614,7 +614,7 @@ this.hedgeknight_vs_hedgeknight_event <- this.inherit("scripts/events/event", {
 			this.m.Monk = candidates_monk[this.Math.rand(0, candidates_monk.len() - 1)];
 		}
 
-		this.m.Score = (2 + candidates.len()) * 600;
+		this.m.Score = (2 + candidates.len()) * 6;
 	}
 
 	function onPrepare()

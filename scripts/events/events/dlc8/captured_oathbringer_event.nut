@@ -146,7 +146,7 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 					"weapons/military_cleaver",
 					"shields/heater_shield"
 				];
-				local item = this.new("scripts/items/" + potential_loot[this.Math.rand(0, potential_loot.len() - 1)]);
+				item = this.new("scripts/items/" + potential_loot[this.Math.rand(0, potential_loot.len() - 1)]);
 				item.setCondition(this.Math.max(1, item.getConditionMax() * this.Math.rand(10, 30) * 0.01));
 				this.List.push({
 					id = 10,
@@ -326,7 +326,7 @@ this.captured_oathbringer_event <- this.inherit("scripts/events/event", {
 
 		if (torturer_candidates.len() == 0)
 		{
-			torturer_candidates.push(brothers[this.Math.rand(0, this.brother.len() - 1)]);
+			torturer_candidates.push(brothers[this.Math.rand(0, brothers.len() - 1)]);
 		}
 
 		this.m.Torturer = torturer_candidates[this.Math.rand(0, torturer_candidates.len() - 1)];

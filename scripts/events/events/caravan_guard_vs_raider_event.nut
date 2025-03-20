@@ -145,7 +145,7 @@ this.caravan_guard_vs_raider_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() <= 7 && bro.getBackground().getID() == "background.caravan_guard" && !bro.getSkills().hasSkillOfType(this.Const.SkillType.TemporaryInjury))
+			if (bro.getLevel() <= 7 && bro.getBackground().getID() == "background.caravan_hand" && !bro.getSkills().hasSkillOfType(this.Const.SkillType.TemporaryInjury))
 			{
 				candidates_caravan.push(bro);
 			}

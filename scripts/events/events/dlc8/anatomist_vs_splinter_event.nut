@@ -57,7 +57,7 @@ this.anatomist_vs_splinter_event <- this.inherit("scripts/events/event", {
 			{
 				anatomist_candidates.push(bro);
 			}
-			else if (!bro.getSkills().hasSkill("trait.bright") && bro.getBackground().getID() != "background.monk" || bro.getBackground().getID() != "background.historian" || bro.getBackground().getID() != "background.adventurous_noble" || bro.getBackground().getID() != "background.disowned_noble" || bro.getBackground().getID() != "background.regent_in_absentia" || bro.getBackground().getID() != "background.minstrel")
+			else if (!bro.getSkills().hasSkill("trait.bright") && !(bro.getBackground().getID() == "background.monk" || bro.getBackground().getID() == "background.historian" || bro.getBackground().getID() == "background.adventurous_noble" || bro.getBackground().getID() == "background.disowned_noble" || bro.getBackground().getID() == "background.regent_in_absentia" || bro.getBackground().getID() == "background.minstrel"))
 			{
 				splinter_candidates.push(bro);
 			}

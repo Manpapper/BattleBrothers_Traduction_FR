@@ -18,6 +18,17 @@ this.ancient_watchtower_event <- this.inherit("scripts/events/event", {
 					function getResult( _event )
 					{
 						this.World.uncoverFogOfWar(this.World.State.getPlayer().getPos(), 1900.0);
+						local locations = this.World.EntityManager.getLocations();
+
+						foreach( location in locations )
+						{
+							if (location.m.VisibilityMult > 0.0 && this.World.State.getPlayer().getTile().getDistanceTo(location.getTile()) < 1900)
+							{
+								location.setDiscovered(true);
+								location.onDiscovered();
+							}
+						}
+
 						return 0;
 					}
 

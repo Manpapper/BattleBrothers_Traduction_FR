@@ -224,7 +224,7 @@ this.graverobber_finds_item_event <- this.inherit("scripts/events/event", {
 	{
 		_vars.push([
 			"graverobber",
-			this.m.Graverobber.getName()
+			this.m.Graverobber.getNameOnly()
 		]);
 		_vars.push([
 			"historian",

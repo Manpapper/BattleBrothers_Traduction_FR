@@ -182,6 +182,11 @@ this.civilwar_treasurer_event <- this.inherit("scripts/events/event", {
 
 		foreach( t in towns )
 		{
+			if (t.isSouthern())
+			{
+				continue;
+			}
+
 			local d = playerTile.getDistanceTo(t.getTile());
 
 			if (d <= bestDistance)
