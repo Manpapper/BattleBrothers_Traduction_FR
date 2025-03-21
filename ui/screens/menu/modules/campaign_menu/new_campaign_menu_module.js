@@ -610,8 +610,8 @@ NewCampaignMenuModule.prototype.resetPanels = function ()
 	this.mOriginSelectionPanel.removeClass('display-block').addClass('display-none');
 	this.mCompanyCrisisSelectionPanel.removeClass('display-block').addClass('display-none');
 	this.mDifficultySelectionPanel.removeClass('display-block').addClass('display-none');
-	this.mStartButton.changeButtonText("Next");
-	this.mCancelButton.changeButtonText("Previous");
+	this.mStartButton.changeButtonText("Suivant");
+	this.mCancelButton.changeButtonText("Précédent");
 	this.mStartButton.enableButton(true);
 }
 
@@ -619,7 +619,7 @@ NewCampaignMenuModule.prototype.showOriginSelectionPanel = function ()
 {
 	this.resetPanels();
 	this.mOriginSelectionPanel.addClass('display-block').removeClass('display-none');
-	this.mCancelButton.changeButtonText("Cancel");
+	this.mCancelButton.changeButtonText("Annuler");
 }
 
 NewCampaignMenuModule.prototype.showCompanyCrisisSelectionPanel = function ()
@@ -633,7 +633,7 @@ NewCampaignMenuModule.prototype.showDifficultySelectionPanel = function ()
 {
 	this.resetPanels();
 	this.mDifficultySelectionPanel.addClass('display-block').removeClass('display-none');
-	this.mStartButton.changeButtonText("Start");
+	this.mStartButton.changeButtonText("Commencer");
 }
 
 NewCampaignMenuModule.prototype.destroyDIV = function ()
