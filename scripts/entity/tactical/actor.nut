@@ -1817,7 +1817,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		_tile.IsContainingItemsFlipped = _flip;
 	}
 
-	function generateCorpse( _tile, _fatalityType )
+	function generateCorpse( _tile, _fatalityType, _killer )
 	{
 		return clone this.Const.Corpse;
 	}

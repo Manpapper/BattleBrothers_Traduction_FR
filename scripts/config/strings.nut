@@ -352,7 +352,12 @@ gt.Const.Strings.EntityNamePlural <- [
 	"Phylactères",
 	"Chasseurs de trésors (perdus ? todo)",
 	"Crânes hurlants",
-	"Oathbringers"
+	"Oathbringers",
+	"Golems de Chair",
+	"Golems de Chair Supérieur",
+	"Reconnaisseurs de Fautes",
+	"Le Grand Devin",
+	"Berceaux de Chair"
 ];
 gt.Const.Strings.Tactical.EntityName <- {
 	Boulder = "Rocher",

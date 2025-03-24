@@ -116,7 +116,7 @@ this.thresh <- this.inherit("scripts/skills/skill", {
 							local stun = this.new("scripts/skills/effects/stunned_effect");
 							tile.getEntity().getSkills().add(stun);
 
-							if (!_user.isHiddenToPlayer() && tile.getEntity().IsVisibleForPlayer)
+							if (!_user.isHiddenToPlayer() && tile.IsVisibleForPlayer)
 							{
 								this.Tactical.EventLog.log(stun.getLogEntryOnAdded(this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(tile.getEntity())));
 							}

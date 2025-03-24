@@ -592,26 +592,33 @@ this.item_container <- {
 		return true;
 	}
 
-	function dropAll( _tile, _killer, _flip = false )
+	function canDropItems( _killer )
 	{
-		local IsDroppingLoot = true;
+		local isDroppingItems = true;
 		local isPlayer = this.m.Actor.getFaction() == this.Const.Faction.Player || this.isKindOf(this.m.Actor.get(), "player");
-		local emergency = false;
 
 		if (_killer != null && !_killer.isPlayerControlled() && !this.m.Actor.isPlayerControlled() && _killer.getID() != this.m.Actor.getID() && _killer.getFaction() != this.Const.Faction.PlayerAnimals)
 		{
-			IsDroppingLoot = false;
+			isDroppingItems = false;
 		}
 
 		if (!this.m.Actor.isPlayerControlled() && this.m.Actor.isAlliedWithPlayer())
 		{
-			IsDroppingLoot = false;
+			isDroppingItems = false;
 		}
 
 		if (_killer != null && _killer.isPlayerControlled() && !isPlayer && _killer.isAlliedWith(this.m.Actor))
 		{
-			IsDroppingLoot = false;
+			isDroppingItems = false;
 		}
+		
+		return isDroppingItems;
+	}
+
+	function dropAll( _tile, _killer, _flip = false )
+	{
+		local IsDroppingLoot = this.canDropItems(_killer);
+		local emergency = false;
 
 		if (_tile == null)
 		{
@@ -657,23 +664,7 @@ this.item_container <- {
 	function getDroppableLoot( _killer )
 	{
 		local droppableItems = [];
-		local isDroppingLoot = true;
-		local isPlayer = this.m.Actor.getFaction() == this.Const.Faction.Player || this.isKindOf(this.m.Actor.get(), "player");
-
-		if (_killer != null && !_killer.isPlayerControlled() && !this.m.Actor.isPlayerControlled() && _killer.getID() != this.m.Actor.getID() && _killer.getFaction() != this.Const.Faction.PlayerAnimals)
-		{
-			isDroppingLoot = false;
-		}
-
-		if (!this.m.Actor.isPlayerControlled() && this.m.Actor.isAlliedWithPlayer())
-		{
-			isDroppingLoot = false;
-		}
-
-		if (_killer != null && _killer.isPlayerControlled() && !isPlayer && _killer.isAlliedWith(this.m.Actor))
-		{
-			isDroppingLoot = false;
-		}
+		local isDroppingLoot = this.canDropItems(_killer);
 
 		for( local i = 0; i < this.Const.ItemSlot.COUNT; i = ++i )
 		{
@@ -693,6 +684,27 @@ this.item_container <- {
 		}
 
 		return droppableItems;
+	}
+	
+	function prepareItemsForCorpse( _killer )
+	{
+		local isDroppingLoot = this.canDropItems(_killer);
+
+		for( local i = 0; i < this.Const.ItemSlot.COUNT; i = ++i )
+		{
+			for( local j = 0; j < this.m.Items[i].len(); j = ++j )
+			{
+				if (this.m.Items[i][j] == null || this.m.Items[i][j] == -1)
+				{
+				}
+				else if (this.m.Items[i][j].isChangeableInBattle() || !(isDroppingLoot || this.m.Items[i][j].isItemType(this.Const.Items.ItemType.Legendary)))
+				{
+					this.m.Items[i][j].m.IsDroppedAsLoot = false;
+				}
+			}
+		}
+
+		return this;
 	}
 
 	function transferToStash( _stash )

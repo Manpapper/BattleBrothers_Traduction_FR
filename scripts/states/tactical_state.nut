@@ -573,6 +573,7 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 						item.setCondition(this.Math.minf(item.getCondition(), this.Math.rand(this.Math.maxf(10, item.getConditionMax() * 0.35), item.getConditionMax())));
 					}
 
+					item.removeFromContainer();
 					loot.push(item);
 				}
 			}

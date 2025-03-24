@@ -231,6 +231,11 @@ this.skill <- {
 		return this.m.IsRanged;
 	}
 
+	function isOffensiveToolSkill()
+	{
+		return this.m.IsOffensiveToolSkill;
+	}
+
 	function isTargetingActor()
 	{
 		return this.m.IsTargetingActor;
