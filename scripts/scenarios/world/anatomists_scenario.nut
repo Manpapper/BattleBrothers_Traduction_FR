@@ -121,6 +121,9 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		this.World.Statistics.getFlags().set("isIjirokPotionAcquired", false);
 		this.World.Statistics.getFlags().set("isIfritPotionAcquired", false);
 		this.World.Statistics.getFlags().set("isHyenaPotionAcquired", false);
+		this.World.Statistics.getFlags().set("isLesserFleshGolemPotionAcquired", false);
+		this.World.Statistics.getFlags().set("isGreaterFleshGolemPotionAcquired", false);
+		this.World.Statistics.getFlags().set("isGrandDivinerPotionAcquired", false);
 		this.World.Assets.m.Money = this.World.Assets.m.Money + 700;
 	}
 
@@ -191,7 +194,19 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			return;
 		}
 
-		local isLegendary = _actor.getType() == this.Const.EntityType.ZombieBoss || _actor.getType() == this.Const.EntityType.SkeletonLich || _actor.getType() == this.Const.EntityType.Kraken || _actor.getType() == this.Const.EntityType.TricksterGod;
+		local isLegendary = false;
+
+		switch(_actor.getType())
+		{
+			case this.Const.EntityType.ZombieBoss:
+			case this.Const.EntityType.SkeletonLich:
+			case this.Const.EntityType.Kraken:
+			case this.Const.EntityType.TricksterGod:
+			case this.Const.EntityType.GrandDiviner:
+			case this.Const.EntityType.LesserFleshGolem:
+			case this.Const.EntityType.GreaterFleshGolem:
+				isLegendary = true;
+		}
 
 		if (!isLegendary && _killer != null && _killer.getFaction() != this.Const.Faction.Player && _killer.getFaction() != this.Const.Faction.PlayerAnimals)
 		{
@@ -327,6 +342,18 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 
 		case this.Const.EntityType.Hyena:
 			this.World.Statistics.getFlags().set("shouldDropHyenaPotion", true);
+			break;
+
+		case this.Const.EntityType.LesserFleshGolem:
+			this.World.Statistics.getFlags().set("shouldDropLesserFleshGolemPotion", true);
+			break;
+
+		case this.Const.EntityType.GreaterFleshGolem:
+			this.World.Statistics.getFlags().set("shouldDropGreaterFleshGolemPotion", true);
+			break;
+
+		case this.Const.EntityType.GrandDiviner:
+			this.World.Statistics.getFlags().set("shouldDropGrandDivinerPotion", true);
 			break;
 		}
 	}
@@ -513,6 +540,24 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 				discoveredFlagName = "isHyenaPotionDiscovered",
 				shouldDropFlagName = "shouldDropHyenaPotion",
 				itemName = "hyena_potion_item"
+			},
+			{
+				acquiredFlagName = "isLesserFleshGolemPotionAcquired",
+				discoveredFlagName = "isLesserFleshGolemPotionDiscovered",
+				shouldDropFlagName = "shouldDropLesserFleshGolemPotion",
+				itemName = "lesser_flesh_golem_potion_item"
+			},
+			{
+				acquiredFlagName = "isGreaterFleshGolemPotionAcquired",
+				discoveredFlagName = "isGreaterFleshGolemPotionDiscovered",
+				shouldDropFlagName = "shouldDropGreaterFleshGolemPotion",
+				itemName = "greater_flesh_golem_potion_item"
+			},
+			{
+				acquiredFlagName = "isGrandDivinerPotionAcquired",
+				discoveredFlagName = "isGrandDivinerPotionDiscovered",
+				shouldDropFlagName = "shouldDropGrandDivinerPotion",
+				itemName = "grand_diviner_potion_item"
 			}
 		];
 
@@ -559,7 +604,10 @@ this.anatomists_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		this.World.Statistics.getFlags().set("shouldDropKrakenPotion", false);
 		this.World.Statistics.getFlags().set("shouldDropIjirokPotion", false);
 		this.World.Statistics.getFlags().set("shouldDropIfritPotion", false);
-		this.World.Statistics.getFlags().set("shouldDropHyenaPotion", false);
+		this.World.Statistics.getFlags().set("shouldDropHyenaPotion", false);		
+		this.World.Statistics.getFlags().set("shouldDropLesserFleshGolemPotion", false);
+		this.World.Statistics.getFlags().set("shouldDropGreaterFleshGolemPotion", false);
+		this.World.Statistics.getFlags().set("shouldDropGrandDivinerPotion", false);
 		return true;
 	}
 

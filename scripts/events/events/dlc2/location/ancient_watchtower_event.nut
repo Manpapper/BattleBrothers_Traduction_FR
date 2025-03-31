@@ -17,15 +17,16 @@ this.ancient_watchtower_event <- this.inherit("scripts/events/event", {
 					Text = "Au moins, on a eu un aperçu du terrain.",
 					function getResult( _event )
 					{
-						this.World.uncoverFogOfWar(this.World.State.getPlayer().getPos(), 1900.0);
-						local locations = this.World.EntityManager.getLocations();
+						local radius = 1900.0;
+						this.World.uncoverFogOfWar(this.World.State.getPlayer().getPos(), radius);
+						local entities = this.World.getAllEntitiesAtPos(this.World.State.getPlayer().getPos(), radius);
 
-						foreach( location in locations )
+						foreach( entity in entities )
 						{
-							if (location.m.VisibilityMult > 0.0 && this.World.State.getPlayer().getTile().getDistanceTo(location.getTile()) < 1900)
+							if (entity.isLocation() && entity.m.VisibilityMult > 0.0)
 							{
-								location.setDiscovered(true);
-								location.onDiscovered();
+								entity.setDiscovered(true);
+								entity.onDiscovered();
 							}
 						}
 

@@ -99,9 +99,13 @@ this.censer_castigate_skill <- this.inherit("scripts/skills/skill", {
 				_properties.MeleeSkill += -15;
 				this.m.HitChanceBonus = -15;
 			}
-			else
+			else if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInFlails)
 			{
 				this.m.HitChanceBonus = 0;
+			}
+			else
+			{
+				this.m.IsShieldRelevant = false;
 			}
 		}
 	}

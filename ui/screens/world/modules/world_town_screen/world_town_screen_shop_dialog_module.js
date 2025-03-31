@@ -299,7 +299,7 @@ WorldTownScreenShopDialogModule.prototype.destroyDIV = function ()
 
 WorldTownScreenShopDialogModule.prototype.showSwapConfirmationDialog = function(_item, _options, _callbackOnConfirm)
 {
-    var popupDialog = $('.l-shop-dialog-container').createPopupDialog(_options.Prompt, null, null, 'swap-confirmation-popup');
+    var popupDialog = this.mContainer.createPopupDialog(_options.Prompt, null, null, 'swap-confirmation-popup');
     
     popupDialog.addPopupDialogContent(this.createSwapConfirmationDialogContent(_item, _options.Text));
 
