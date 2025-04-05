@@ -231,7 +231,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 	{
 		return 1;
 	}
-	
+
 	function addXP( _xp )
 	{
 		this.m.XP += _xp;
@@ -645,7 +645,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 			arrow.fadeOutAndHide(100);
 		}
 	}
-	
+
 	function getTurnOrderInitiative()
 	{
 		local ret = (this.getInitiative() + this.getCurrentProperties().InitiativeForTurnOrderAdditional) * this.getCurrentProperties().InitiativeForTurnOrderMult;
@@ -873,7 +873,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		{
 			return;
 		}
-		
+
 		this.updateVisibility(this.getTile(), this.m.CurrentProperties.getVision(), this.getFaction());
 
 		if (this.getFaction() == this.Const.Faction.PlayerAnimals)
@@ -917,7 +917,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		{
 			malus = _attackingEntity != null ? this.Math.max(0, _attackingEntity.getCurrentProperties().SurroundedBonus * _attackingEntity.getCurrentProperties().SurroundedBonusMult - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount() : this.Math.max(0, 5 - this.getCurrentProperties().SurroundedDefense) * this.getSurroundedCount();
 		}
-		
+
 		local shield = this.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 
 		if (shield != null && shield.isItemType(this.Const.Items.ItemType.Shield))
@@ -929,7 +929,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		if (_skill.isRanged())
 		{
 			d = _properties.getRangedDefense();
-			
+
 			if (!_skill.isShieldRelevant())
 			{
 				d = d - shieldRangedDefense;
@@ -938,7 +938,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		else
 		{
 			d = _properties.getMeleeDefense();
-			
+
 			if (!_skill.isShieldRelevant())
 			{
 				d = d - shieldMeleeDefense;
@@ -1494,7 +1494,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		{
 			dmgMult = dmgMult * (_skill.isRanged() ? p.DamageReceivedRangedMult : p.DamageReceivedMeleeMult);
 		}
-		
+
 		_hitInfo.DamageRegular -= p.DamageRegularReduction;
 		_hitInfo.DamageArmor -= p.DamageArmorReduction;
 		_hitInfo.DamageRegular *= p.DamageReceivedRegularMult * dmgMult;
@@ -1701,7 +1701,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 						if (this.isPlayerControlled() && this.isKindOf(this, "player"))
 						{
 							this.worsenMood(this.Const.MoodChange.Injury, "A subi une blessure");
-							
+
 							if (("State" in this.World) && this.World.State != null && this.World.Ambitions.hasActiveAmbition() && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_sacrifice")
 							{
 								this.World.Statistics.getFlags().increment("OathtakersInjuriesSuffered");
@@ -2992,7 +2992,7 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 		local oldMoraleState = this.m.MoraleState;
 		this.m.MoraleState = this.Math.min(this.Const.MoraleState.Confident, this.Math.max(0, this.m.MoraleState + _change));
 		this.m.FleeingRounds = 0;
-		
+
 		if (this.m.MoraleState == this.Const.MoraleState.Confident && oldMoraleState != this.Const.MoraleState.Confident && ("State" in this.World) && this.World.State != null && this.World.Ambitions.hasActiveAmbition() && this.World.Ambitions.getActiveAmbition().getID() == "ambition.oath_of_camaraderie")
 		{
 			this.World.Statistics.getFlags().increment("OathtakersBrosConfident");

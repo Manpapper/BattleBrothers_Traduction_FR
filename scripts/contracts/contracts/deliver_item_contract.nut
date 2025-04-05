@@ -739,18 +739,18 @@ this.deliver_item_contract <- this.inherit("scripts/contracts/contract", {
 
 						if (this.World.FactionManager.getFaction(this.Contract.getFaction()).getType() == this.Const.FactionType.OrientalCityState)
 						{
-							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Delivered some cargo");
+							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Livraison d\'une cargaison");
 						}
 						else
 						{
-							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Delivered some cargo");
+							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Livraison d\'une cargaison");
 						}
 
 						local recipientFaction = this.Contract.m.Destination.getFactionOfType(this.Const.FactionType.Settlement);
 
 						if (recipientFaction != null)
 						{
-							recipientFaction.addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess * 0.5, "Delivered some cargo");
+							recipientFaction.addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess * 0.5, "Livraison d\'une cargaison");
 						}
 
 						this.World.Contracts.finishActiveContract();
@@ -788,18 +788,18 @@ this.deliver_item_contract <- this.inherit("scripts/contracts/contract", {
 
 						if (this.World.FactionManager.getFaction(this.Contract.getFaction()).getType() == this.Const.FactionType.OrientalCityState)
 						{
-							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Delivered some cargo");
+							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Livraison d\'une cargaison");
 						}
 						else
 						{
-							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Delivered some cargo");
+							this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Livraison d\'une cargaison");
 						}
 
 						local recipientFaction = this.Contract.m.Destination.getFactionOfType(this.Const.FactionType.Settlement);
 
 						if (recipientFaction != null)
 						{
-							recipientFaction.addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess * 0.5, "Delivered some cargo");
+							recipientFaction.addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess * 0.5, "Livraison d\'une cargaison");
 						}
 
 						this.World.Contracts.finishActiveContract();

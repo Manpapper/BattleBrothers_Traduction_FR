@@ -662,7 +662,7 @@ this.drive_away_barbarians_contract <- this.inherit("scripts/contracts/contract"
 					{
 						this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 						this.World.Assets.addMoney(this.Contract.m.Payment.getOnCompletion());
-						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "You destroyed a barbarian encampment that threatened " + this.Contract.m.Home.getName());
+						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationCivilianContractSuccess, "Vous avez détruit un campement barbare qui menaçait " + this.Contract.m.Home.getName());
 						this.World.Contracts.finishActiveContract();
 						return 0;
 					}

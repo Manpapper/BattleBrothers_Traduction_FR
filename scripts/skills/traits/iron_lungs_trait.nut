@@ -33,7 +33,7 @@ this.iron_lungs_trait <- this.inherit("scripts/skills/traits/character_trait", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] de Fatigue Récupérée par tout"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] de Fatigue Récupérée par tour"
 			}
 		];
 	}
