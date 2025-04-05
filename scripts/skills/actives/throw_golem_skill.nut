@@ -297,6 +297,7 @@ this.throw_golem_skill <- this.inherit("scripts/skills/skill", {
 			}
 
 			local n = 0;
+			local max = 0;
 
 			if (_data.User.getSize() == 2)
 			{
@@ -304,8 +305,8 @@ this.throw_golem_skill <- this.inherit("scripts/skills/skill", {
 			}
 
 			n = --n;
-
-			while (n >= 0 && freeTiles.len() >= 1)
+		
+			while (n >= 0 && freeTiles.len() >= 1 && max < 1)
 			{
 				local tile = freeTiles[0].Tile;
 				freeTiles.remove(0);
@@ -330,20 +331,23 @@ this.throw_golem_skill <- this.inherit("scripts/skills/skill", {
 						this.Tactical.spawnParticleEffect(false, this.Const.Tactical.SandGolemParticles[i].Brushes, tile, this.Const.Tactical.SandGolemParticles[i].Delay, this.Const.Tactical.SandGolemParticles[i].Quantity, this.Const.Tactical.SandGolemParticles[i].LifeTimeQuantity, this.Const.Tactical.SandGolemParticles[i].SpawnRate, this.Const.Tactical.SandGolemParticles[i].Stages);
 					}
 				}
+				max++;
 			}
 
 			if (_data.User.getSize() == 2)
 			{
 				n = 2;
+				max = -1
 			}
 			else
 			{
 				n = 1;
+				max = 0;
 			}
 
-			n = --n;
-
-			while (n >= 0 && freeTiles.len() >= 1)
+			n = --n;			
+			
+			while (n >= 0 && freeTiles.len() >= 1 && max < 1)
 			{
 				local tile = freeTiles[0].Tile;
 				freeTiles.remove(0);
@@ -368,6 +372,7 @@ this.throw_golem_skill <- this.inherit("scripts/skills/skill", {
 						this.Tactical.spawnParticleEffect(false, this.Const.Tactical.SandGolemParticles[i].Brushes, tile, this.Const.Tactical.SandGolemParticles[i].Delay, this.Const.Tactical.SandGolemParticles[i].Quantity, this.Const.Tactical.SandGolemParticles[i].LifeTimeQuantity, this.Const.Tactical.SandGolemParticles[i].SpawnRate, this.Const.Tactical.SandGolemParticles[i].Stages);
 					}
 				}
+				max++;
 			}
 		}
 	}
