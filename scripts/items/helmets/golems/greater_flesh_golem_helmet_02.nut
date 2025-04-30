@@ -13,8 +13,7 @@ this.greater_flesh_golem_helmet_02 <- this.inherit("scripts/items/helmets/helmet
 		this.m.ReplaceSprite = true;
 		this.m.Variant = 2;
 		this.updateVariant();
-		this.m.ImpactSound = this.Const.Sound.ArmorUnholdImpact;
-		this.m.InventorySound = this.Const.Sound.ArmorUnholdImpact;
+		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.Value = 0;
 		this.m.Condition = 210;
 		this.m.ConditionMax = 210;

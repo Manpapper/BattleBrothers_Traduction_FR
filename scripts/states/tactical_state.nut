@@ -772,7 +772,17 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 				this.Tactical.addResource(r);
 			}
 
-			foreach( r in this.Const.Sound.ArenaHit )
+			foreach( r in this.Const.Sound.ArenaStart )
+			{
+				this.Tactical.addResource(r);
+			}
+
+			foreach( r in this.Const.Sound.ArenaEnd )
+			{
+				this.Tactical.addResource(r);
+			}
+
+			foreach( r in this.Const.Sound.ArenaOutro )
 			{
 				this.Tactical.addResource(r);
 			}

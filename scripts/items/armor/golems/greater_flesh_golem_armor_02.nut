@@ -10,7 +10,7 @@ this.greater_flesh_golem_armor_02 <- this.inherit("scripts/items/armor/armor", {
 		this.m.ShowOnCharacter = true;
 		this.m.Variant = 2;
 		this.updateVariant();
-		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
+		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ClothEquip;
 		this.m.Value = 0;
 		this.m.Condition = 300;
