@@ -144,11 +144,7 @@ this.censer_strike <- this.inherit("scripts/skills/skill", {
 			if (_targetEntity != null && !this.getContainer().getActor().getCurrentProperties().IsSpecializedInFlails && this.getContainer().getActor().getTile().getDistanceTo(_targetEntity.getTile()) == 1)
 			{
 				_properties.MeleeSkill += -15;
-				this.m.HitChanceBonus = -15;
-			}
-			else
-			{
-				this.m.HitChanceBonus = 0;
+				this.m.HitChanceBonus += -15;
 			}
 
 			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInFlails)

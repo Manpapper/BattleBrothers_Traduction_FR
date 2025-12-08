@@ -35,7 +35,7 @@ this.slash_lightning <- this.inherit("scripts/skills/skill", {
 		this.m.Delay = 1250;
 		this.m.InjuriesOnBody = this.Const.Injury.CuttingBody;
 		this.m.InjuriesOnHead = this.Const.Injury.CuttingHead;
-		this.m.HitChanceBonus = 10;
+		this.m.HitChanceBonus = 0;
 		this.m.DirectDamageMult = 0.2;
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 10;
@@ -60,7 +60,7 @@ this.slash_lightning <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de chance de toucher"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
 			}
 		]);
 		return ret;
@@ -101,6 +101,11 @@ this.slash_lightning <- this.inherit("scripts/skills/skill", {
 		}, _data);
 	}
 
+	function getHitChanceModifier()
+	{
+		return 10;
+	}
+
 	function onAfterUpdate( _properties )
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInSwords ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
@@ -112,7 +117,7 @@ this.slash_lightning <- this.inherit("scripts/skills/skill", {
 		local success = this.attackEntity(_user, _targetTile.getEntity());
 		local myTile = _user.getTile();
 
-		if (success && _user.isAlive() && this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID())
+		if (success && _user.isAlive() && (this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID()))
 		{
 			local selectedTargets = [];
 			local potentialTargets = [];
@@ -239,7 +244,8 @@ this.slash_lightning <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.MeleeSkill += 10;
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 		}
 	}
 

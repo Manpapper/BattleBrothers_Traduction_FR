@@ -270,7 +270,7 @@ this.apprentice_learns_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (bro.getBackground().getID() == "background.swordmaster" || bro.getBackground().getID() == "background.old_swordmaster" || bro.getBackground().getID() == "background.retired_soldier" || bro.getBackground().getID() == "background.hedgeknight" || bro.getBackground().getID() == "background.sellsword")
+			if (bro.getBackground().getID() == "background.swordmaster" || bro.getBackground().getID() == "background.old_swordmaster" || bro.getBackground().getID() == "background.retired_soldier" || bro.getBackground().getID() == "background.hedge_knight" || bro.getBackground().getID() == "background.sellsword")
 			{
 				teacher_candidates.push(bro);
 			}

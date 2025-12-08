@@ -56,7 +56,7 @@ this.night_effect <- this.inherit("scripts/skills/skill", {
 		{
 			_properties.Vision -= 2;
 			_properties.RangedSkillMult *= 0.7;
-			_properties.RangedDefense *= 0.7;
+			_properties.RangedDefenseMult *= 0.7;
 		}
 	}
 

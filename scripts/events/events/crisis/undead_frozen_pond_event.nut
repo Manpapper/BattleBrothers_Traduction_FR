@@ -230,7 +230,11 @@ this.undead_frozen_pond_event <- this.inherit("scripts/events/event", {
 			return;
 		}
 
-		this.m.Lightweight = candidates_lightweight[this.Math.rand(0, candidates_lightweight.len() - 1)];
+		if (candidates_lightweight.len() != 0)
+		{
+			this.m.Lightweight = candidates_lightweight[this.Math.rand(0, candidates_lightweight.len() - 1)];
+		}
+
 		this.m.Other = candidates[this.Math.rand(0, candidates.len() - 1)];
 		this.m.Score = 20;
 	}

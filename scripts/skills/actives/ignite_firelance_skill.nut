@@ -40,7 +40,7 @@ this.ignite_firelance_skill <- this.inherit("scripts/skills/skill", {
 		this.m.IsTargetingActor = false;
 		this.m.InjuriesOnBody = this.Const.Injury.BurningBody;
 		this.m.InjuriesOnHead = this.Const.Injury.BurningHead;
-		this.m.HitChanceBonus = 40;
+		this.m.HitChanceBonus = 0;
 		this.m.DirectDamageMult = 0.15;
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 5;
@@ -57,7 +57,7 @@ this.ignite_firelance_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+40%[/color] de chance de toucher"
+			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
 		});
 		ret.push({
 			id = 10,
@@ -87,6 +87,11 @@ this.ignite_firelance_skill <- this.inherit("scripts/skills/skill", {
 		}
 
 		return ret;
+	}
+	
+	function getHitChanceModifier()
+	{
+		return 40;
 	}
 
 	function isUsable()
@@ -145,7 +150,8 @@ this.ignite_firelance_skill <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.RangedSkill += 40;
+			_properties.RangedSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 			_properties.DamageRegularMin = 40;
 			_properties.DamageRegularMax = 60;
 			_properties.DamageArmorMult = 0.9;

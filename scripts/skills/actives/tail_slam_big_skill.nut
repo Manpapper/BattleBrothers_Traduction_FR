@@ -32,7 +32,7 @@ this.tail_slam_big_skill <- this.inherit("scripts/skills/skill", {
 		this.m.IsAOE = true;
 		this.m.InjuriesOnBody = this.Const.Injury.BluntBody;
 		this.m.InjuriesOnHead = this.Const.Injury.BluntHead;
-		this.m.HitChanceBonus = -5;
+		this.m.HitChanceBonus = 0;
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 25;
 		this.m.MinRange = 1;

@@ -101,19 +101,33 @@ this.hammer_mastery_ambition <- this.inherit("scripts/ambitions/ambition", {
 			}
 		}
 
-		if (not_candidates.len() == 0)
-		{
-			this.candiates = not_candidates;
-		}
-
+		local candidates_index = this.Math.rand(0, candidates.len() - 1);
 		_vars.push([
 			"hammerbrother",
-			candidates[this.Math.rand(0, candidates.len() - 1)].getName()
+			candidates[candidates_index].getName()
 		]);
-		_vars.push([
-			"nothammerbrother",
-			not_candidates[this.Math.rand(0, not_candidates.len() - 1)].getName()
-		]);
+
+		if (not_candidates.len() == 0)
+		{
+			local index = 0;
+
+			while (index == candidates_index)
+			{
+				index = this.Math.rand(0, candidates.len() - 1);
+			}
+
+			_vars.push([
+				"nothammerbrother",
+				candidates[index].getName()
+			]);
+		}
+		else
+		{
+			_vars.push([
+				"nothammerbrother",
+				not_candidates[this.Math.rand(0, not_candidates.len() - 1)].getName()
+			]);
+		}
 	}
 
 	function onSerialize( _out )

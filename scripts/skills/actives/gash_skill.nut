@@ -36,7 +36,6 @@ this.gash_skill <- this.inherit("scripts/skills/skill", {
 		this.m.IsWeaponSkill = true;
 		this.m.InjuriesOnBody = this.Const.Injury.CuttingBody;
 		this.m.InjuriesOnHead = this.Const.Injury.CuttingHead;
-		this.m.HitChanceBonus = 10;
 		this.m.DirectDamageMult = 0.2;
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 20;
@@ -55,7 +54,7 @@ this.gash_skill <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] chance de toucher"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getHitChanceModifier() + "%[/color] chance de toucher"
 			}
 		]);
 
@@ -87,6 +86,11 @@ this.gash_skill <- this.inherit("scripts/skills/skill", {
 		{
 			this.Tactical.addResource(r);
 		}
+	}
+	
+	function getHitChanceModifier()
+	{
+		return 10;
 	}
 
 	function onAfterUpdate( _properties )
@@ -124,7 +128,8 @@ this.gash_skill <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.MeleeSkill += 10;
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 		}
 	}
 

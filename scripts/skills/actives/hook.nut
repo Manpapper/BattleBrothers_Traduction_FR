@@ -27,7 +27,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 		this.m.IsAttack = true;
 		this.m.IsIgnoredAsAOO = true;
 		this.m.IsWeaponSkill = true;
-		this.m.HitChanceBonus = 10;
+		this.m.HitChanceBonus = 0;
 		this.m.ActionPointCost = 6;
 		this.m.FatigueCost = 25;
 		this.m.MinRange = 2;
@@ -224,6 +224,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 		if (_skill == this)
 		{
 			_properties.MeleeSkill += 10;
+			this.m.HitChanceBonus += 10;
 		}
 	}
 

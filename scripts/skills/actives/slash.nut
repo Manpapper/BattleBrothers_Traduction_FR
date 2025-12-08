@@ -29,7 +29,7 @@ this.slash <- this.inherit("scripts/skills/skill", {
 		this.m.IsWeaponSkill = true;
 		this.m.InjuriesOnBody = this.Const.Injury.CuttingBody;
 		this.m.InjuriesOnHead = this.Const.Injury.CuttingHead;
-		this.m.HitChanceBonus = 10;
+		this.m.HitChanceBonus = 0;
 		this.m.DirectDamageMult = 0.2;
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 10;
@@ -48,10 +48,15 @@ this.slash <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de chance de toucher"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getHitChanceModifier() + "[/color] de chance de toucher"
 			}
 		]);
 		return ret;
+	}
+	
+	function getHitChanceModifier()
+	{
+		return 10;
 	}
 
 	function onAfterUpdate( _properties )
@@ -69,7 +74,8 @@ this.slash <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.MeleeSkill += 10;
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 		}
 	}
 

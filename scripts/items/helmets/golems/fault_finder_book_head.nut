@@ -5,7 +5,7 @@ this.fault_finder_book_head <- this.inherit("scripts/items/helmets/helmet", {
 		this.helmet.create();
 		this.m.ID = "armor.head.fault_finder_book_head";
 		this.m.Name = "Temple of Knowledge";
-		this.m.Description = "";
+		this.m.Description = "A tiny book, fashioned into a headband with leather straps. Its contents are unintelligible.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = false;

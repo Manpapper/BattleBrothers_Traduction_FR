@@ -5,7 +5,7 @@ this.fault_finder_facewrap <- this.inherit("scripts/items/helmets/helmet", {
 		this.helmet.create();
 		this.m.ID = "armor.head.fault_finder_facewrap";
 		this.m.Name = "Leather Facewrap";
-		this.m.Description = "";
+		this.m.Description = "Thick leather straps, wrapped crudely around the head for protection.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = false;

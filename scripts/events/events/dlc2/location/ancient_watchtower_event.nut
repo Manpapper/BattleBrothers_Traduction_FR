@@ -23,10 +23,23 @@ this.ancient_watchtower_event <- this.inherit("scripts/events/event", {
 
 						foreach( entity in entities )
 						{
-							if (entity.isLocation() && entity.m.VisibilityMult > 0.0)
+							if (entity.isLocation() && entity.m.VisibilityMult > 0.0 && !entity.isDiscovered())
 							{
-								entity.setDiscovered(true);
-								entity.onDiscovered();
+								local location = entity.location;
+								location.setDiscovered(true);
+								location.onDiscovered();
+
+								if (entity.isHiddenToPlayer() && location.getTypeID() != "location.battlefield")
+								{
+									this.World.Statistics.getFlags().increment("LocationsDiscovered");
+
+									if (this.World.Retinue.hasFollower("follower.cartographer"))
+									{
+										this.World.Retinue.getFollower("follower.cartographer").onLocationDiscovered(location);
+									}
+
+									this.World.Ambitions.onLocationDiscovered(location);
+								}
 							}
 						}
 

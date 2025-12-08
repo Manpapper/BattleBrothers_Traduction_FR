@@ -809,6 +809,11 @@ this.skill <- {
 		}
 	}
 
+	function resetBeforeUse()
+	{
+		this.m.HitChanceBonus = 0;
+	}
+
 	function onItemSet()
 	{
 	}

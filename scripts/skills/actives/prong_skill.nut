@@ -32,7 +32,7 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 		this.m.InjuriesOnBody = this.Const.Injury.PiercingBody;
 		this.m.InjuriesOnHead = this.Const.Injury.PiercingHead;
 		this.m.DirectDamageMult = 0.25;
-		this.m.HitChanceBonus = 10;
+		this.m.HitChanceBonus = 0;
 		this.m.ActionPointCost = 6;
 		this.m.FatigueCost = 15;
 		this.m.MinRange = 1;
@@ -52,7 +52,7 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "A une chance de toucher de [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color]"
+			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInSpears)
@@ -66,6 +66,11 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 		}
 
 		return ret;
+	}
+	
+	function getHitChanceModifier()
+	{
+		return 10;
 	}
 
 	function onAfterUpdate( _properties )
@@ -83,16 +88,13 @@ this.prong_skill <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.MeleeSkill += 10;
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 
 			if (_targetEntity != null && !this.getContainer().getActor().getCurrentProperties().IsSpecializedInSpears && this.getContainer().getActor().getTile().getDistanceTo(_targetEntity.getTile()) == 1)
 			{
 				_properties.MeleeSkill += -15;
-				this.m.HitChanceBonus = -5;
-			}
-			else
-			{
-				this.m.HitChanceBonus = 10;
+				this.m.HitChanceBonus += -15;
 			}
 		}
 	}

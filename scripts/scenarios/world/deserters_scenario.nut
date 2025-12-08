@@ -36,6 +36,7 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		}
 
 		local items = _bro.getItems();
+		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Offhand));
 		local shield = this.new("scripts/items/shields/faction_heater_shield");
 		shield.setFaction(_faction.getBanner());
@@ -182,7 +183,6 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		bros[0].m.XP = this.Const.LevelXP[bros[0].m.Level - 1];
 		bros[0].fillAttributeLevelUpValues(this.Const.XP.MaxLevelWithPerkpoints - 1);
 		local items = bros[0].getItems();
-		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
 		items.equip(this.new("scripts/items/weapons/hatchet"));
 		bros[1].getBackground().m.RawDescription = "{Un combattant accompli selon tout jugement, %name% détestait simplement le faible salaire d\'un soldat dans l\'armée. Sa poursuite de la vie de mercenaire a du sens. Bien qu\'il soit assez volage, vous croyez que son sens transitoire de l\'allégeance sera compensé par un flux constant de bonne monnaie.}";
@@ -197,7 +197,6 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		bros[1].m.XP = this.Const.LevelXP[bros[1].m.Level - 1];
 		bros[1].fillAttributeLevelUpValues(this.Const.XP.MaxLevelWithPerkpoints - 1);
 		items = bros[1].getItems();
-		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
 		items.equip(this.new("scripts/items/weapons/shortsword"));
 		bros[2].getBackground().m.RawDescription = "{%name% est comme beaucoup de déserteurs. Vous pouvez voir l\'esprit d\'un combattant en lui, mais le cœur pour cela se flétrit. Cela ne fait pas de lui un lâche, comme beaucoup le supposent des déserteurs, mais simplement un homme qui peut avoir besoin de changement. Espérons que la monnaie du travail de mercenaire puisse le lui fournir.}";
@@ -212,7 +211,6 @@ this.deserters_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		bros[2].m.XP = this.Const.LevelXP[bros[2].m.Level - 1];
 		bros[2].fillAttributeLevelUpValues(this.Const.XP.MaxLevelWithPerkpoints - 1);
 		items = bros[2].getItems();
-		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Offhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
 		items.equip(this.new("scripts/items/weapons/light_crossbow"));

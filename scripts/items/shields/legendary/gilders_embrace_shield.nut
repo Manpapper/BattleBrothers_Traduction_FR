@@ -6,6 +6,7 @@ this.gilders_embrace_shield <- this.inherit("scripts/items/shields/shield", {
 		this.m.ID = "shield.gilders_embrace";
 		this.m.Name = "L\'étreinte doré";
 		this.m.Description = "Un bouclier en métal orné avec un éclat doré brillant qui reflète même le plus petit rayon de lumière avec la puissance du soleil lui-même.";
+		this.m.ItemType = this.Const.Items.ItemType.Shield | this.Const.Items.ItemType.Legendary;
 		this.m.AddGenericSkill = true;
 		this.m.ShowOnCharacter = true;
 		this.m.SoundOnHit = this.Const.Sound.ShieldHitMetal;

@@ -3091,11 +3091,29 @@ this.tactical_state <- this.inherit("scripts/states/state", {
 				break;
 			}
 
-			if (this.m.LastTileHovered != null && this.m.LastTileHovered.IsEmpty)
+			if (this.m.LastTileHovered != null && !this.m.LastTileHovered.IsCorpseSpawned)
 			{
-				local e = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/flying_skull");
-				e.setFaction(this.isScenarioMode() ? this.Const.Faction.OrientalBandits : this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getID());
-				e.assignRandomEquipment();
+				local flip = this.Math.rand(1, 2) == 1 ? true : false;
+				local decal;
+				decal = this.m.LastTileHovered.spawnDetail("bust_flesh_golem_body_01_dead", this.Const.Tactical.DetailFlag.Corpse, flip);
+				decal.Scale = 0.9;
+				decal.setBrightness(0.9);
+				local head_brushes = [
+					"bust_flesh_golem_head_01_dead",
+					"bust_flesh_golem_head_02_dead",
+					"bust_flesh_golem_head_03_dead"
+				];
+				decal = this.m.LastTileHovered.spawnDetail(head_brushes[this.Math.rand(0, head_brushes.len() - 1)], this.Const.Tactical.DetailFlag.Corpse, flip);
+				decal.Scale = 0.9;
+				decal.setBrightness(0.9);
+				local corpse = clone this.Const.Corpse;
+				corpse.CorpseName = "A Fleshy Corpse";
+				corpse.Tile = this.m.LastTileHovered;
+				corpse.IsResurrectable = false;
+				corpse.IsConsumable = true;
+				corpse.IsHeadAttached = false;
+				this.m.LastTileHovered.Properties.set("Corpse", corpse);
+				this.Tactical.Entities.addCorpse(this.m.LastTileHovered);
 			}
 
 			break;

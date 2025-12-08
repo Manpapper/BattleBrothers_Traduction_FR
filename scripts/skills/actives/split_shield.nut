@@ -169,11 +169,7 @@ this.split_shield <- this.inherit("scripts/skills/skill", {
 			if (_targetEntity != null && !this.getContainer().getActor().getCurrentProperties().IsSpecializedInAxes && this.getContainer().getActor().getTile().getDistanceTo(_targetEntity.getTile()) == 1)
 			{
 				_properties.MeleeSkill += -15;
-				this.m.HitChanceBonus = -15;
-			}
-			else
-			{
-				this.m.HitChanceBonus = 0;
+				this.m.HitChanceBonus += -15;
 			}
 		}
 	}

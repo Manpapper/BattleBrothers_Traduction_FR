@@ -33,7 +33,7 @@ this.shatter_skill <- this.inherit("scripts/skills/skill", {
 		this.m.IsWeaponSkill = true;
 		this.m.InjuriesOnBody = this.Const.Injury.BluntBody;
 		this.m.InjuriesOnHead = this.Const.Injury.BluntHead;
-		this.m.HitChanceBonus = -10;
+		this.m.HitChanceBonus = 0;
 		this.m.DirectDamageMult = 0.4;
 		this.m.ActionPointCost = 6;
 		this.m.FatigueCost = 30;
@@ -47,26 +47,12 @@ this.shatter_skill <- this.inherit("scripts/skills/skill", {
 	function getTooltip()
 	{
 		local ret = this.getDefaultTooltip();
-
-		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInHammers)
-		{
-			ret.push({
-				id = 7,
-				type = "text",
-				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] de chance de toucher"
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 7,
-				type = "text",
-				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] de chance de toucher"
-			});
-		}
-
+		ret.push({
+			id = 7,
+			type = "text",
+			icon = "ui/icons/hitchance.png",
+			text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
+		});
 		ret.extend([
 			{
 				id = 8,
@@ -212,6 +198,18 @@ this.shatter_skill <- this.inherit("scripts/skills/skill", {
 		}
 	}
 
+	function getHitChanceModifier()
+	{
+		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInHammers)
+		{
+			return -5;
+		}
+		else
+		{
+			return -10;
+		}
+	}
+
 	function onAfterUpdate( _properties )
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInHammers ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
@@ -324,14 +322,8 @@ this.shatter_skill <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInHammers)
-			{
-				_properties.MeleeSkill -= 10;
-			}
-			else
-			{
-				_properties.MeleeSkill -= 5;
-			}
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 		}
 	}
 

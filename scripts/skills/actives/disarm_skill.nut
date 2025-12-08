@@ -26,7 +26,7 @@ this.disarm_skill <- this.inherit("scripts/skills/skill", {
 		this.m.InjuriesOnBody = this.Const.Injury.CuttingBody;
 		this.m.InjuriesOnHead = this.Const.Injury.CuttingHead;
 		this.m.DirectDamageMult = 0.0;
-		this.m.HitChanceBonus = -20;
+		this.m.HitChanceBonus = 0;
 		this.m.ActionPointCost = 5;
 		this.m.FatigueCost = 30;
 		this.m.MinRange = 1;
@@ -43,13 +43,13 @@ this.disarm_skill <- this.inherit("scripts/skills/skill", {
 			text = "A une istance d\'attaque de [color=" + this.Const.UI.Color.PositiveValue + "]3" + "[/color] tuiles"
 		});
 
-		if (this.m.HitChanceBonus != 0)
+		if (this.getHitChanceModifier() != 0)
 		{
 			ret.push({
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.HitChanceBonus + "%[/color] de chance de toucher"
+				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
 			});
 		}
 
@@ -62,18 +62,21 @@ this.disarm_skill <- this.inherit("scripts/skills/skill", {
 		return ret;
 	}
 
-	function onAfterUpdate( _properties )
+	function getHitChanceModifier()
 	{
-		this.m.FatigueCostMult = _properties.IsSpecializedInCleavers ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
-
 		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers)
 		{
-			this.m.HitChanceBonus = -10;
+			return -10;
 		}
 		else
 		{
-			this.m.HitChanceBonus = -20;
+			return -20;
 		}
+	}
+	
+	function onAfterUpdate( _properties )
+	{
+		this.m.FatigueCostMult = _properties.IsSpecializedInCleavers ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 	}
 
 	function onUse( _user, _targetTile )
@@ -102,15 +105,8 @@ this.disarm_skill <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers)
-			{
-				_properties.MeleeSkill -= 20;
-			}
-			else
-			{
-				_properties.MeleeSkill -= 10;
-			}
-
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 			_properties.DamageTotalMult = 0.0;
 			_properties.HitChanceMult[this.Const.BodyPart.Head] = 0.0;
 		}

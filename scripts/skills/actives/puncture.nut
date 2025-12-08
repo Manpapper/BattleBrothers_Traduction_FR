@@ -30,7 +30,7 @@ this.puncture <- this.inherit("scripts/skills/skill", {
 		this.m.IsWeaponSkill = true;
 		this.m.InjuriesOnBody = this.Const.Injury.PiercingBody;
 		this.m.InjuriesOnHead = this.Const.Injury.PiercingHead;
-		this.m.HitChanceBonus = -15;
+		this.m.HitChanceBonus = 0;
 		this.m.DirectDamageMult = 1.0;
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 20;
@@ -46,7 +46,7 @@ this.puncture <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] de chance de toucher"
+				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
 			},
 			{
 				id = 8,
@@ -63,6 +63,11 @@ this.puncture <- this.inherit("scripts/skills/skill", {
 		local main = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		local off = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		return main != null && off == null && main.isDoubleGrippable();
+	}
+
+	function getHitChanceModifier()
+	{
+		return -15;
 	}
 
 	function onAfterUpdate( _properties )
@@ -83,7 +88,8 @@ this.puncture <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.MeleeSkill -= 15;
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 			_properties.DamageArmorMult *= 0.0;
 			_properties.IsIgnoringArmorOnAttack = true;
 			_properties.HitChanceMult[this.Const.BodyPart.Head] = 0.0;

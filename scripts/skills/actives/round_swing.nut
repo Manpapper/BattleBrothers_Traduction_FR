@@ -31,7 +31,7 @@ this.round_swing <- this.inherit("scripts/skills/skill", {
 		this.m.IsWeaponSkill = true;
 		this.m.InjuriesOnBody = this.Const.Injury.CuttingBody;
 		this.m.InjuriesOnHead = this.Const.Injury.CuttingHead;
-		this.m.HitChanceBonus = -15;
+		this.m.HitChanceBonus = 0;
 		this.m.DirectDamageMult = 0.3;
 		this.m.ActionPointCost = 6;
 		this.m.FatigueCost = 35;
@@ -45,19 +45,12 @@ this.round_swing <- this.inherit("scripts/skills/skill", {
 	function getTooltip()
 	{
 		local ret = this.getDefaultTooltip();
-		local hitchanceBonus = this.m.HitChanceBonus;
-
-		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInAxes)
-		{
-			hitchanceBonus = hitchanceBonus + 5;
-		}
-
 		ret.extend([
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]" + hitchanceBonus + "%[/color] de chance de toucher"
+				text = "A [color=" + this.Const.UI.Color.NegativeValue + "]-" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
 			},
 			{
 				id = 6,
@@ -67,6 +60,18 @@ this.round_swing <- this.inherit("scripts/skills/skill", {
 			}
 		]);
 		return ret;
+	}
+	
+	function getHitChanceModifier()
+	{
+		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInAxes)
+		{
+			return -10;
+		}
+		else
+		{
+			return -15;
+		}
 	}
 
 	function onAfterUpdate( _properties )
@@ -141,14 +146,8 @@ this.round_swing <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInAxes)
-			{
-				_properties.MeleeSkill -= 10;
-			}
-			else
-			{
-				_properties.MeleeSkill -= 15;
-			}
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 		}
 	}
 

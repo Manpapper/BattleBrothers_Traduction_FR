@@ -55,7 +55,7 @@ this.serpent_bite_skill <- this.inherit("scripts/skills/skill", {
 			TargetTile = _targetTile
 		};
 
-		if ((!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer) && this.Tactical.TurnSequenceBar.getActiveEntity().getID() == this.getContainer().getActor().getID())
+		if ((!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer) && (this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() == this.getContainer().getActor().getID()))
 		{
 			this.getContainer().setBusy(true);
 			local d = _user.getTile().getDirectionTo(_targetTile) + 3;

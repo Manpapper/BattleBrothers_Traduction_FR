@@ -85,7 +85,7 @@ this.hail_skill <- this.inherit("scripts/skills/skill", {
 		local target = _targetTile.getEntity();
 		local ret = this.attackEntity(_user, target);
 
-		if (this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID() && (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer))
+		if ((this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID()) && (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer))
 		{
 			this.m.IsDoingAttackMove = false;
 			this.getContainer().setBusy(true);

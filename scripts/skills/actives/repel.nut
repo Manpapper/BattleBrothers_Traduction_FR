@@ -28,7 +28,7 @@ this.repel <- this.inherit("scripts/skills/skill", {
 		this.m.IsIgnoredAsAOO = true;
 		this.m.IsTooCloseShown = true;
 		this.m.IsWeaponSkill = true;
-		this.m.HitChanceBonus = 10;
+		this.m.HitChanceBonus = 0;
 		this.m.ActionPointCost = 6;
 		this.m.FatigueCost = 25;
 		this.m.MinRange = 1;
@@ -54,7 +54,7 @@ this.repel <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de chance de toucher"
+			text = "A [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getHitChanceModifier() + "%[/color] de chance de toucher"
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms)
@@ -109,6 +109,11 @@ this.repel <- this.inherit("scripts/skills/skill", {
 		}
 
 		return null;
+	}
+
+	function getHitChanceModifier()
+	{
+		return 10;
 	}
 
 	function onAfterUpdate( _properties )
@@ -226,16 +231,13 @@ this.repel <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.MeleeSkill += 10;
+			_properties.MeleeSkill += this.getHitChanceModifier();
+			this.m.HitChanceBonus += this.getHitChanceModifier();
 
 			if (_targetEntity != null && !this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms && this.getContainer().getActor().getTile().getDistanceTo(_targetEntity.getTile()) == 1)
 			{
 				_properties.MeleeSkill += -15;
-				this.m.HitChanceBonus = -5;
-			}
-			else
-			{
-				this.m.HitChanceBonus = 10;
+				this.m.HitChanceBonus += -15;
 			}
 		}
 	}

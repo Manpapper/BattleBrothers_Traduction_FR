@@ -5,7 +5,7 @@ this.fault_finder_eye_mask <- this.inherit("scripts/items/helmets/helmet", {
 		this.helmet.create();
 		this.m.ID = "armor.head.fault_finder_eye_mask";
 		this.m.Name = "Occult Eye Mask";
-		this.m.Description = "";
+		this.m.Description = "A crude mask bearing an occult symbol that covers the face.";
 		this.m.ShowOnCharacter = true;
 		this.m.IsDroppedAsLoot = true;
 		this.m.HideHair = false;

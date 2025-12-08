@@ -305,7 +305,7 @@ this.missing_kids_event <- this.inherit("scripts/events/event", {
 			}
 			else if (bro.getBackground().getID() == "background.killer_on_the_run")
 			{
-				this.killerCandidates.push(bro);
+				killer_candidates.push(bro);
 			}
 		}
 
