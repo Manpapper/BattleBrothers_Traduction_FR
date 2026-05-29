@@ -110,7 +110,7 @@ this.skill <- {
 	{
 		return this.m.KilledString;
 	}
-	
+
 	function getImpactSprite()
 	{
 		return this.m.ImpactSprite;
@@ -290,7 +290,7 @@ this.skill <- {
 	{
 		return this.m.IsSpearwallRelevant;
 	}
-	
+
 	function isShieldRelevant()
 	{
 		return this.m.IsShieldRelevant;
@@ -842,7 +842,7 @@ this.skill <- {
 	function onDismiss()
 	{
 	}
-	
+
 	function onMovementFinished()
 	{
 	}
@@ -1211,7 +1211,7 @@ this.skill <- {
 				});
 			}
 		}
-
+		
 		if (_targetTile.IsOccupiedByActor && targetEntity.getCurrentProperties().IsImmuneToStun && (this.m.ID == "actives.knock_out" || this.m.ID == "actives.knock_over" || this.m.ID == "actives.strike_down"))
 		{
 			ret.push({
@@ -1840,7 +1840,7 @@ this.skill <- {
 		local dir = _info.User.getTile().getDirectionTo(_info.TileHit);
 		local flip = dir <= this.Const.Direction.S ? false : true;
 
-		for( local n = this.Const.Combat.SpawnArrowDecalAttempts; n != 0; )
+		for( local n = this.Const.Combat.SpawnArrowDecalAttempts; n != 0;  )
 		{
 			local decal = this.Const.ProjectileDecals[_info.Skill.getProjectileType()][this.Math.rand(0, this.Const.ProjectileDecals[_info.Skill.getProjectileType()].len() - 1)];
 
