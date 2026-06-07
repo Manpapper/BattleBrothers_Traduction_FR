@@ -1,4 +1,4 @@
-this.desert_camp_Fireplace <- this.inherit("scripts/entity/tactical/entity", {
+this.desert_camp_fireplace <- this.inherit("scripts/entity/tactical/entity", {
 	m = {},
 	function getName()
 	{
