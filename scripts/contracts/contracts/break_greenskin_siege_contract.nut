@@ -155,7 +155,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 					this.Contract.m.Origin.getSprite("selection").Visible = true;
 				}
 
-				this.World.State.setEscortedEntity(this.Contract.m.Troops);
+				this.World.State.setEscortedEntity(this.Contract.m.Troops, true);
 			}
 
 			function update()
@@ -172,7 +172,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 				{
 					if (!this.Contract.m.IsEscortUpdated)
 					{
-						this.World.State.setEscortedEntity(this.Contract.m.Troops);
+						this.World.State.setEscortedEntity(this.Contract.m.Troops, true);
 						this.Contract.m.IsEscortUpdated = true;
 					}
 
@@ -181,13 +181,6 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 					this.World.State.getPlayer().setVisible(false);
 					this.World.Assets.setUseProvisions(false);
 					this.World.getCamera().moveTo(this.World.State.getPlayer());
-
-					if (!this.World.State.isPaused())
-					{
-						this.World.setSpeedMult(this.Const.World.SpeedSettings.FastMult);
-					}
-
-					this.World.State.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.FastMult;
 				}
 
 				if ((this.Contract.m.Troops == null || this.Contract.m.Troops.isNull() || !this.Contract.m.Troops.isAlive()) && !this.Flags.get("IsTroopsDeadShown"))
@@ -197,13 +190,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 					this.World.State.setEscortedEntity(null);
 					this.World.State.getPlayer().setVisible(true);
 					this.World.Assets.setUseProvisions(true);
-
-					if (!this.World.State.isPaused())
-					{
-						this.World.setSpeedMult(1.0);
-					}
-
-					this.World.State.m.LastWorldSpeedMult = 1.0;
+					this.World.State.resetSpeedToNormal();
 					this.Contract.setScreen("TroopsHaveDied");
 					this.World.Contracts.showActiveContract();
 				}
@@ -225,13 +212,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 					this.World.State.setEscortedEntity(null);
 					this.World.State.getPlayer().setVisible(true);
 					this.World.Assets.setUseProvisions(true);
-
-					if (!this.World.State.isPaused())
-					{
-						this.World.setSpeedMult(1.0);
-					}
-
-					this.World.State.m.LastWorldSpeedMult = 1.0;
+					this.World.State.resetSpeedToNormal();
 				}
 			}
 
@@ -783,13 +764,7 @@ this.break_greenskin_siege_contract <- this.inherit("scripts/contracts/contract"
 			this.World.State.setEscortedEntity(null);
 			this.World.State.getPlayer().setVisible(true);
 			this.World.Assets.setUseProvisions(true);
-
-			if (!this.World.State.isPaused())
-			{
-				this.World.setSpeedMult(1.0);
-			}
-
-			this.World.State.m.LastWorldSpeedMult = 1.0;
+			this.World.State.resetSpeedToNormal();
 
 			if (!this.m.Flags.get("IsSiegeSpawned"))
 			{

@@ -61,8 +61,14 @@ this.medium_tundra_fort <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background",
 			"retired_soldier_background",
 			"sellsword_background",
-			"paladin_background"
+			"executioner_background"
 		];
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("paladin_background");
+		}
+
 		this.m.UIDescription = "Un donjon de pierre sécurisant la toundra environnante";
 		this.m.Description = "Un donjon de pierre qui est le siège du pouvoir dans la toundra environnante. Il sert de base d\'opérations pour une garnison de taille raisonnable.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_02";

@@ -15,7 +15,19 @@ this.green_coat_of_plates_armor <- this.inherit("scripts/items/armor/named/named
 			"Harness",
 			"Ward"
 		];
-		this.m.Variant = 43;
+		local variants = [
+			43,
+			43,
+			43,
+			43,
+			43,
+			122,
+			123,
+			124,
+			125,
+			126
+		];
+		this.m.Variant = variants[this.Math.rand(0, variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;

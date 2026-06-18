@@ -44,6 +44,7 @@ this.goedendag <- this.inherit("scripts/items/weapons/weapon", {
 		knockOut.m.Overlay = "active_127";
 		knockOut.setFatigueCost(knockOut.getFatigueCostRaw() + 5);
 		knockOut.m.ActionPointCost = 6;
+		knockOut.m.DamageTotalMultMod = 0.75;
 		this.addSkill(knockOut);
 	}
 

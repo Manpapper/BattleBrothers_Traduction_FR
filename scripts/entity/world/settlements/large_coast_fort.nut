@@ -61,8 +61,14 @@ this.large_coast_fort <- this.inherit("scripts/entity/world/settlement", {
 			"swordmaster_background",
 			"cripple_background",
 			"eunuch_background",
-			"paladin_background"
+			"executioner_background"
 		];
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("paladin_background");
+		}
+
 		this.m.UIDescription = "Cette citadelle massive protège un port de guerre et les routes commerciales environnantes";
 		this.m.Description = "Cette citadelle massive protège un port de guerre et les routes commerciales environnantes. C\'est un siège de pouvoir pour la noblesse et le foyer d\'une grande garnison.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";

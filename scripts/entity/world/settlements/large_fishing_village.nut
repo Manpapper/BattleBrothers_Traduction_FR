@@ -69,8 +69,14 @@ this.large_fishing_village <- this.inherit("scripts/entity/world/settlement", {
 			"retired_soldier_background",
 			"sellsword_background",
 			"swordmaster_background",
-			"anatomist_background"
+			"executioner_background"
 		];
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("anatomist_background");
+		}
+
 		this.m.UIDescription = "Une grande ville côtière et un centre commercial";
 		this.m.Description = "Une grande ville portuaire reposant sur le commerce et la pêche, et une importante plaque tournante pour les voyageurs arrivant ou partant par bateau.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_03";

@@ -1,10 +1,16 @@
 this.marketplace_building <- this.inherit("scripts/entity/world/settlements/buildings/building", {
-	m = {
+	m = {	
+		AllowDamaged = true,
 		Stash = null
 	},
 	function getStash()
 	{
 		return this.m.Stash;
+	}
+
+	function getAllowDamaged()
+	{
+		return this.m.AllowDamaged;
 	}
 
 	function create()
@@ -172,7 +178,7 @@ this.marketplace_building <- this.inherit("scripts/entity/world/settlements/buil
 		}
 	}
 
-	function onUpdateShopList()
+	function getDefaultShopList()
 	{
 		local list = [
 			{
@@ -454,23 +460,19 @@ this.marketplace_building <- this.inherit("scripts/entity/world/settlements/buil
 
 		if (this.Const.DLC.Unhold)
 		{
-			list.extend([
-				{
-					R = 90,
-					P = 1.0,
-					S = "weapons/two_handed_wooden_hammer"
-				}
-			]);
+			list.push({
+				R = 90,
+				P = 1.0,
+				S = "weapons/two_handed_wooden_hammer"
+			});
 
 			if (this.m.Settlement.isMilitary())
 			{
-				list.extend([
-					{
-						R = 80,
-						P = 1.0,
-						S = "weapons/throwing_spear"
-					}
-				]);
+				list.push({
+					R = 80,
+					P = 1.0,
+					S = "weapons/throwing_spear"
+				});
 			}
 		}
 
@@ -490,8 +492,7 @@ this.marketplace_building <- this.inherit("scripts/entity/world/settlements/buil
 			]);
 		}
 
-		this.m.Settlement.onUpdateShopList(this.m.ID, list);
-		this.fillStash(list, this.m.Stash, 1.0, true);
+		return list;
 	}
 
 	function onSerialize( _out )

@@ -72,12 +72,17 @@ this.large_snow_fort <- this.inherit("scripts/entity/world/settlement", {
 			"sellsword_background",
 			"squire_background",
 			"cripple_background",
-			"paladin_background"
+			"executioner_background"
 		];
 
 		if (this.Const.DLC.Unhold)
 		{
 			this.m.DraftList.push("beast_hunter_background");
+		}
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("paladin_background");
 		}
 
 		this.m.UIDescription = "Cette grande citadelle donne sur la neige à perte de vue";

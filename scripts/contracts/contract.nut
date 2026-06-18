@@ -1411,7 +1411,14 @@ this.contract <- {
 
 		if (_factionType == this.Const.FactionType.Bandits)
 		{
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(enemyBase.getTile(), "Brigands", false, this.Const.World.Spawn.BanditRaiders, _resources);
+			if (this.Math.rand(1, 100) <= this.Const.World.Scaling.Brigands.GetMarauderSpawnChance(this.World.getTime().Days))
+			{
+				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(enemyBase.getTile(), "Brigands", false, this.Const.World.Spawn.BanditMarauders, _resources, this.getMinibossModifier());
+			}
+			else
+			{
+				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(enemyBase.getTile(), "Brigands", false, this.Const.World.Spawn.BanditRaiders, _resources, this.getMinibossModifier());
+			}
 			party.setDescription("Une bande de brigands rudes et coriaces en quête de nourriture.");
 			party.setFootprintType(this.Const.World.FootprintsType.Brigands);
 			party.getLoot().Money = this.Math.rand(50, 100);

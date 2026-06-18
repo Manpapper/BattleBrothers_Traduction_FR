@@ -55,7 +55,8 @@ this.medium_steppe_fort <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"retired_soldier_background",
 			"retired_soldier_background",
-			"sellsword_background"
+			"sellsword_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Un donjon de pierre qui projette son pouvoir sur la steppe plate";
 		this.m.Description = "Ce donjon en pierre est un point fort de la région et offre une bonne vue sur les terres plates et sèches environnantes.";

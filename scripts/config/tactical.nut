@@ -74,8 +74,9 @@ gt.Const.Tactical.Settings <- {
 	SkillIconScale = 0.75,
 	CameraWaitForEventDelay = 500,
 	CameraNextEventDelay = 1000,
-	SwitchWeaponAPCost = 4,
 	SwitchItemAPCost = 4,
+	SwitchTwoHanderAPCost = 4,
+	SwitchShieldAPCost = 4,
 	CampRadius = 7,
 	AttributeDefenseSoftCap = 50
 };

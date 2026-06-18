@@ -1,8 +1,5 @@
 this.dead_bodies_on_road_event <- this.inherit("scripts/events/event", {
-	m = {
-		Hunter = null,
-		OtherGuy = null
-	},
+	m = {},
 	function create()
 	{
 		this.m.ID = "event.dead_bodies_on_road";

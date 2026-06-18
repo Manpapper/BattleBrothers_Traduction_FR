@@ -1,10 +1,16 @@
 this.armorsmith_building <- this.inherit("scripts/entity/world/settlements/buildings/building", {
 	m = {
+		PriceMult = 1.25,
 		Stash = null
 	},
 	function getStash()
 	{
 		return this.m.Stash;
+	}
+
+	function getPriceMult()
+	{
+		return this.m.PriceMult;
 	}
 
 	function create()
@@ -139,7 +145,7 @@ this.armorsmith_building <- this.inherit("scripts/entity/world/settlements/build
 		}
 	}
 
-	function onUpdateShopList()
+	function getDefaultShopList()
 	{
 		local list = [
 			{
@@ -319,6 +325,173 @@ this.armorsmith_building <- this.inherit("scripts/entity/world/settlements/build
 			}
 		];
 
+		if (this.Const.DLC.Unhold)
+		{
+			list.extend([
+				{
+					R = 45,
+					P = 1.0,
+					S = "armor/leather_scale_armor"
+				},
+				{
+					R = 55,
+					P = 1.0,
+					S = "armor/light_scale_armor"
+				},
+				{
+					R = 90,
+					P = 1.0,
+					S = "armor/noble_mail_armor"
+				},
+				{
+					R = 60,
+					P = 1.0,
+					S = "armor/sellsword_armor"
+				},
+				{
+					R = 50,
+					P = 1.0,
+					S = "armor/footman_armor"
+				},
+				{
+					R = 70,
+					P = 1.0,
+					S = "helmets/sallet_helmet"
+				},
+				{
+					R = 80,
+					P = 1.0,
+					S = "helmets/barbute_helmet"
+				},
+				{
+					R = 60,
+					P = 1.0,
+					S = "misc/paint_set_item"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "misc/paint_remover_item"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "misc/paint_black_item"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "misc/paint_red_item"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "misc/paint_orange_red_item"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "misc/paint_white_blue_item"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "misc/paint_white_green_yellow_item"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/metal_plating_upgrade"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/metal_pauldrons_upgrade"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/mail_patch_upgrade"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/leather_shoulderguards_upgrade"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/leather_neckguard_upgrade"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/joint_cover_upgrade"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/heraldic_plates_upgrade"
+				},
+				{
+					R = 85,
+					P = 1.25,
+					S = "armor_upgrades/double_mail_upgrade"
+				}
+			]);
+		}
+
+		if (this.Const.DLC.Wildmen && this.m.Settlement.getTile().SquareCoords.Y > this.World.getMapSize().Y * 0.7)
+		{
+			list.extend([
+				{
+					R = 70,
+					P = 1.0,
+					S = "helmets/nordic_helmet"
+				},
+				{
+					R = 70,
+					P = 1.0,
+					S = "helmets/steppe_helmet_with_mail"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "helmets/conic_helmet_with_closed_mail"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "helmets/nordic_helmet_with_closed_mail"
+				},
+				{
+					R = 80,
+					P = 1.0,
+					S = "helmets/conic_helmet_with_faceguard"
+				}
+			]);
+		}
+		else
+		{
+			list.extend([
+				{
+					R = 70,
+					P = 1.0,
+					S = "helmets/flat_top_helmet"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "helmets/flat_top_with_mail"
+				},
+				{
+					R = 75,
+					P = 1.0,
+					S = "helmets/flat_top_with_closed_mail"
+				}
+			]);
+		}
+
 		foreach( i in this.Const.Items.NamedArmors )
 		{
 			if (this.Math.rand(1, 100) <= 33)
@@ -343,169 +516,16 @@ this.armorsmith_building <- this.inherit("scripts/entity/world/settlements/build
 			}
 		}
 
-		if (this.Const.DLC.Unhold)
+		if (this.Math.rand(1, 100) <= 33)
 		{
 			list.push({
-				R = 45,
-				P = 1.0,
-				S = "armor/leather_scale_armor"
-			});
-			list.push({
-				R = 55,
-				P = 1.0,
-				S = "armor/light_scale_armor"
-			});
-			list.push({
-				R = 90,
-				P = 1.0,
-				S = "armor/noble_mail_armor"
-			});
-			list.push({
-				R = 60,
-				P = 1.0,
-				S = "armor/sellsword_armor"
-			});
-			list.push({
-				R = 50,
-				P = 1.0,
-				S = "armor/footman_armor"
-			});
-			list.push({
-				R = 70,
-				P = 1.0,
-				S = "helmets/sallet_helmet"
-			});
-			list.push({
-				R = 80,
-				P = 1.0,
-				S = "helmets/barbute_helmet"
-			});
-			list.push({
-				R = 60,
-				P = 1.0,
-				S = "misc/paint_set_item"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "misc/paint_remover_item"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "misc/paint_black_item"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "misc/paint_red_item"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "misc/paint_orange_red_item"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "misc/paint_white_blue_item"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "misc/paint_white_green_yellow_item"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/metal_plating_upgrade"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/metal_pauldrons_upgrade"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/mail_patch_upgrade"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/leather_shoulderguards_upgrade"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/leather_neckguard_upgrade"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/joint_cover_upgrade"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/heraldic_plates_upgrade"
-			});
-			list.push({
-				R = 85,
-				P = 1.25,
-				S = "armor_upgrades/double_mail_upgrade"
+				R = 99,
+				P = 2.0,
+				S = "shields/named/named_buckler_shield"
 			});
 		}
-
-		if (this.Const.DLC.Wildmen && this.m.Settlement.getTile().SquareCoords.Y > this.World.getMapSize().Y * 0.7)
-		{
-			list.push({
-				R = 70,
-				P = 1.0,
-				S = "helmets/nordic_helmet"
-			});
-			list.push({
-				R = 70,
-				P = 1.0,
-				S = "helmets/steppe_helmet_with_mail"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "helmets/conic_helmet_with_closed_mail"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "helmets/nordic_helmet_with_closed_mail"
-			});
-			list.push({
-				R = 80,
-				P = 1.0,
-				S = "helmets/conic_helmet_with_faceguard"
-			});
-		}
-		else
-		{
-			list.push({
-				R = 70,
-				P = 1.0,
-				S = "helmets/flat_top_helmet"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "helmets/flat_top_with_mail"
-			});
-			list.push({
-				R = 75,
-				P = 1.0,
-				S = "helmets/flat_top_with_closed_mail"
-			});
-		}
-
-		this.m.Settlement.onUpdateShopList(this.m.ID, list);
-		this.fillStash(list, this.m.Stash, 1.25, false);
+			
+		return list;
 	}
 
 	function onSerialize( _out )

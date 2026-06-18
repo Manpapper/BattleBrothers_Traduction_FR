@@ -56,7 +56,8 @@ this.small_snow_fort <- this.inherit("scripts/entity/world/settlement", {
 			"deserter_background",
 			"raider_background",
 			"retired_soldier_background",
-			"retired_soldier_background"
+			"retired_soldier_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Cette motte avec bailey regarde largement la neige infinie.";
 		this.m.Description = "Cette motte avec bailey domine les neiges éternelles et offre un abri contre le froid et une nourriture chaude à la garnison qui y est stationnée.";

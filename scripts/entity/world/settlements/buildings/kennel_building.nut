@@ -1,10 +1,16 @@
 this.kennel_building <- this.inherit("scripts/entity/world/settlements/buildings/building", {
 	m = {
+		PriceMult = 0.75,
 		Stash = null
 	},
 	function getStash()
 	{
 		return this.m.Stash;
+	}
+
+	function getPriceMult()
+	{
+		return this.m.PriceMult;
 	}
 
 	function create()
@@ -203,7 +209,7 @@ this.kennel_building <- this.inherit("scripts/entity/world/settlements/buildings
 		}
 	}
 
-	function onUpdateShopList()
+	function getDefaultShopList()
 	{
 		local list = [
 			{
@@ -220,13 +226,11 @@ this.kennel_building <- this.inherit("scripts/entity/world/settlements/buildings
 
 		if (this.Const.DLC.Unhold)
 		{
-			list.extend([
-				{
-					R = 40,
-					P = 1.0,
-					S = "misc/wardog_armor_upgrade_item"
-				}
-			]);
+			list.push({
+				R = 40,
+				P = 1.0,
+				S = "misc/wardog_armor_upgrade_item"
+			});
 		}
 
 		if (this.Const.DLC.Wildmen && this.m.Settlement.getTile().SquareCoords.Y > this.World.getMapSize().Y * 0.7)
@@ -251,8 +255,7 @@ this.kennel_building <- this.inherit("scripts/entity/world/settlements/buildings
 			});
 		}
 
-		this.m.Settlement.onUpdateShopList(this.m.ID, list);
-		this.fillStash(list, this.m.Stash, 0.75, false);
+		return list;
 	}
 
 	function onUpdateDraftList( _list )

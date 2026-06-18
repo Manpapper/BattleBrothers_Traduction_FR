@@ -59,7 +59,11 @@ this.temple_building <- this.inherit("scripts/entity/world/settlements/buildings
 	{
 		_list.push("monk_background");
 		_list.push("cripple_background");
-		_list.push("paladin_background");
+
+		if (this.Const.DLC.Paladins)
+		{
+			_list.push("paladin_background");
+		}
 	}
 
 	function onClicked( _townScreen )

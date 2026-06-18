@@ -45,7 +45,8 @@ this.small_steppe_fort <- this.inherit("scripts/entity/world/settlement", {
 			"deserter_background",
 			"deserter_background",
 			"retired_soldier_background",
-			"retired_soldier_background"
+			"retired_soldier_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Un petit donjon en bois dans la steppe sèche";
 		this.m.Description = "Ce petit donjon en bois donne sur la steppe sèche et offre de l\'ombre aux soldats fatigués.";

@@ -48,7 +48,8 @@ this.small_tundra_fort <- this.inherit("scripts/entity/world/settlement", {
 			"deserter_background",
 			"deserter_background",
 			"retired_soldier_background",
-			"retired_soldier_background"
+			"retired_soldier_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Un fort de bois dominant la toundra";
 		this.m.Description = "Dans les terres plates de la toundra, cette petite fortification peut être repérée de très loin.";

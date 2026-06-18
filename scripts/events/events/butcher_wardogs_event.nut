@@ -141,11 +141,15 @@ this.butcher_wardogs_event <- this.inherit("scripts/events/event", {
 			{
 				this.Characters.push(_event.m.Butcher.getImagePath());
 				_event.m.Butcher.worsenMood(1.0, "Was denied a request");
-				this.List.push({
-					id = 10,
-					icon = this.Const.MoodStateIcon[_event.m.Butcher.getMoodState()],
-					text = _event.m.Butcher.getName() + this.Const.MoodStateEvent[_event.m.Butcher.getMoodState()]
-				});
+
+				if (_event.m.Butcher.getMoodState() < this.Const.MoodState.Neutral)
+				{
+					this.List.push({
+						id = 10,
+						icon = this.Const.MoodStateIcon[_event.m.Butcher.getMoodState()],
+						text = _event.m.Butcher.getName() + this.Const.MoodStateEvent[_event.m.Butcher.getMoodState()]
+					});
+				}
 			}
 
 		});

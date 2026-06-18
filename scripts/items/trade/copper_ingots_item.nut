@@ -14,5 +14,15 @@ this.copper_ingots_item <- this.inherit("scripts/items/trade/trading_good_item",
 		this.m.Value = 220;
 	}
 
+	function getSellPriceMult()
+	{
+		return this.World.State.getCurrentTown().getModifiers().BuildingPriceMult;
+	}
+
+	function getBuyPriceMult()
+	{
+		return this.World.State.getCurrentTown().getModifiers().BuildingPriceMult;
+	}
+
 });
 

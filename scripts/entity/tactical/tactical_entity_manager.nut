@@ -682,6 +682,16 @@ this.tactical_entity_manager <- {
 		return tiles;
 	}
 
+	function getNonFlammableTileSubtypes()
+	{
+		return [
+			this.Const.Tactical.TerrainSubtype.Snow,
+			this.Const.Tactical.TerrainSubtype.LightSnow,
+			this.Const.Tactical.TerrainSubtype.ShallowWater,
+			this.Const.Tactical.TerrainSubtype.MurkyWater
+		];
+	}
+
 	function resetTileDangerIndicators()
 	{
 		local entities = this.getAllInstances();
@@ -2133,18 +2143,18 @@ this.tactical_entity_manager <- {
 			_t.Callback(_e, "Tag" in _t ? _t.Tag : null);
 		}
 
+		if (("Name" in _t) && _t.Name != "")
+		{
+			_e.setName(_t.Name);
+			_e.m.IsGeneratingKillName = false;
+		}
+
 		if (_t.Variant != 0)
 		{
 			_e.makeMiniboss();
 		}
 
 		_e.assignRandomEquipment();
-
-		if (("Name" in _t) && _t.Name != "")
-		{
-			_e.setName(_t.Name);
-			_e.m.IsGeneratingKillName = false;
-		}
 
 		if (!this.World.getTime().IsDaytime && _e.getBaseProperties().IsAffectedByNight)
 		{

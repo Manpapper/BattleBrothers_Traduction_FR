@@ -11,7 +11,12 @@ this.named_sellswords_armor <- this.inherit("scripts/items/armor/named/named_arm
 			"Layered Armor",
 			"Plated Coat"
 		];
-		this.m.Variant = 101;
+		local variants = [
+			101,
+			101,
+			127
+		];
+		this.m.Variant = variants[this.Math.rand(0, variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorChainmailImpact;

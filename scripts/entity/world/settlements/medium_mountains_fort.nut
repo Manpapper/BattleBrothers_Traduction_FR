@@ -56,7 +56,8 @@ this.medium_mountains_fort <- this.inherit("scripts/entity/world/settlement", {
 			"disowned_noble_background",
 			"retired_soldier_background",
 			"sellsword_background",
-			"sellsword_background"
+			"sellsword_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Un donjon en pierre qui domine les montagnes environnantes";
 		this.m.Description = "Un donjon de pierre qui domine les montagnes environnantes. Les guetteurs sur les tours peuvent voir les troupes en approche à des kilomètres de distance.";

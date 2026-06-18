@@ -3,6 +3,7 @@ this.wolf_item <- this.inherit("scripts/items/accessory/accessory", {
 		Skill = null,
 		Entity = null,
 		Script = "scripts/entity/tactical/warwolf",
+		ArmorScript = null,
 		UnleashSounds = [
 			"sounds/enemies/wolf_idle_00.wav",
 			"sounds/enemies/wolf_idle_01.wav",
@@ -57,7 +58,7 @@ this.wolf_item <- this.inherit("scripts/items/accessory/accessory", {
 	function create()
 	{
 		this.accessory.create();
-		this.m.Variant = this.Math.rand(1, 4);
+		this.m.Variant = 2;
 		this.updateVariant();
 		this.m.ID = "accessory.warwolf";
 		this.m.Name = this.Const.Strings.WardogNames[this.Math.rand(0, this.Const.Strings.WardogNames.len() - 1)] + " Le loup";

@@ -52,7 +52,8 @@ this.small_swamp_fort <- this.inherit("scripts/entity/world/settlement", {
 			"witchhunter_background",
 			"bastard_background",
 			"deserter_background",
-			"retired_soldier_background"
+			"retired_soldier_background",
+			"executioner_background"
 		];
 
 		if (this.Const.DLC.Unhold)

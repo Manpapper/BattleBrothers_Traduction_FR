@@ -35,6 +35,11 @@ this.bascinet_with_mail <- this.inherit("scripts/items/helmets/helmet", {
 		this.m.Vision = -2;
 	}
 
+	function setPlainVariant()
+	{
+		this.setVariant(54);
+	}
+
 	function onPaint( _color )
 	{
 		switch(_color)

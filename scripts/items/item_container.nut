@@ -4,7 +4,8 @@ this.item_container <- {
 		Items = [],
 		UnlockedBagSlots = 2,
 		ActionCost = this.Const.Tactical.Settings.SwitchItemAPCost,
-		ActionCost2H = this.Const.Tactical.Settings.SwitchItemAPCost,
+		ActionCost2H = this.Const.Tactical.Settings.SwitchTwoHanderAPCost,
+		ActionCostShield = this.Const.Tactical.Settings.SwitchShieldAPCost,
 		Appearance = {
 			ShowQuiver = false,
 			HideHead = false,
@@ -97,54 +98,59 @@ this.item_container <- {
 
 	function isActionAffordable( _items )
 	{
-		local twoHanded = false;
-
-		foreach( i in _items )
-		{
-			if (i != null && i.isItemType(this.Const.Items.ItemType.Shield))
-			{
-				twoHanded = true;
-				break;
-			}
-		}
-
-		return this.m.Actor.getActionPoints() >= (twoHanded ? this.m.ActionCost2H : this.m.ActionCost);
+		return this.m.Actor.getActionPoints() >= this.getActionCost(_items);
 	}
 
 	function getActionCost( _items )
 	{
-		local twoHanded = false;
+		local isTwoHanded = false;
+		local isShield = false;
 
 		foreach( i in _items )
 		{
-			if (i != null && i.isItemType(this.Const.Items.ItemType.Shield))
+			if (i != null)
 			{
-				twoHanded = true;
-				break;
+				if (i.isItemType(this.Const.Items.ItemType.Shield))
+				{
+					isShield = true;
+					break;
+				}
+				else if (i.getBlockedSlotType() != null)
+				{
+					isTwoHanded = true;
+				}
 			}
 		}
 
-		return twoHanded ? this.m.ActionCost2H : this.m.ActionCost;
+		if (isShield)
+		{
+			return this.m.ActionCostShield;
+		}
+
+		local quickHands = this.m.Actor.getSkills().getSkillByID("perk.quick_hands");
+
+		if (quickHands != null && !quickHands.isSpent())
+		{
+			return 0;
+		}
+
+		if (isTwoHanded)
+		{
+			return this.m.ActionCost2H;
+		}
+		
+		return this.m.ActionCost;
 	}
 
 	function payForAction( _items )
 	{
-		local twoHanded = false;
+		local actionCost = this.getActionCost(_items);
+		this.m.Actor.setActionPoints(this.Math.max(0, this.m.Actor.getActionPoints() - actionCost));
+		local quickHands = this.m.Actor.getSkills().getSkillByID("perk.quick_hands");
 
-		foreach( i in _items )
+		if (quickHands != null)
 		{
-			if (i != null && i.isItemType(this.Const.Items.ItemType.Shield))
-			{
-				twoHanded = true;
-				break;
-			}
-		}
-
-		this.m.Actor.setActionPoints(this.Math.max(0, this.m.Actor.getActionPoints() - (twoHanded ? this.m.ActionCost2H : this.m.ActionCost)));
-
-		if (!twoHanded)
-		{
-			this.m.ActionCost = this.Const.Tactical.Settings.SwitchItemAPCost;
+			quickHands.onSpend(_items);
 		}
 
 		this.m.Actor.getSkills().update();
@@ -995,10 +1001,6 @@ this.item_container <- {
 
 	function onNewRound()
 	{
-		if (this.m.Actor.getSkills().hasSkill("perk.quick_hands"))
-		{
-			this.m.ActionCost = 0;
-		}
 	}
 
 	function onMovementFinished()

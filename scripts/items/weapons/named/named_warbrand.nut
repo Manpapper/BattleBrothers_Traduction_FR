@@ -43,8 +43,12 @@ this.named_warbrand <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		local slash = this.new("scripts/skills/actives/slash");
 		slash.m.FatigueCost = 13;
 		this.addSkill(slash);
-		this.addSkill(this.new("scripts/skills/actives/split"));
-		this.addSkill(this.new("scripts/skills/actives/swing"));
+		local split = this.new("scripts/skills/actives/split");
+		split.m.ActionPointCost = 5;
+		this.addSkill(split);
+		local swing = this.new("scripts/skills/actives/swing");
+		swing.m.ActionPointCost = 5;
+		this.addSkill(swing);
 	}
 
 });

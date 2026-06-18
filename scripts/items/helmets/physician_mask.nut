@@ -38,7 +38,7 @@ this.physician_mask <- this.inherit("scripts/items/helmets/helmet", {
 	function onUpdateProperties( _properties )
 	{
 		this.helmet.onUpdateProperties(_properties);
-		_properties.IsResistantToMiasma = true;
+		_properties.DamageReceivedMiasmaMult = 0.5;
 	}
 
 });

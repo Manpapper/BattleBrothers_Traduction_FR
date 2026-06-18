@@ -109,7 +109,7 @@ this.situation <- {
 	{
 	}
 
-	function onUpdateShop( _stash )
+	function onUpdateShopList( _id, _list )
 	{
 	}
 

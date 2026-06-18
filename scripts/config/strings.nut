@@ -243,7 +243,9 @@ gt.Const.Strings.EntityName <- [
 	"Golem de Chair Supérieur",
 	"Reconnaisseur de Fautes",
 	"Le Grand Devin",
-	"Berceau de Chair"
+	"Berceau de Chair",
+	"Maraudeur Brigand",
+	"Homme d\'armes"
 ];
 gt.Const.Strings.EntityNamePlural <- [
 	"Nécromanciens",
@@ -357,7 +359,9 @@ gt.Const.Strings.EntityNamePlural <- [
 	"Golems de Chair Supérieur",
 	"Reconnaisseurs de Fautes",
 	"Le Grand Devin",
-	"Berceaux de Chair"
+	"Berceaux de Chair",
+	"Maraudeurs Brigand",
+	"Hommes d\'armes"
 ];
 gt.Const.Strings.Tactical.EntityName <- {
 	Boulder = "Rocher",
@@ -1355,7 +1359,7 @@ gt.Const.Strings.PerkDescription <- {
 	Dodge = "Trop rapide pour toi! Gagnez [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] de l\'initiative du personnage en tant que bonus de Défense (Mêlée et à Distance).",
 	Nimble = "Vous êtes spécialisé en armure légère! En déviant et en esquivant agilement les attaques, transforme les coups en coups faibles. Les points de dégât sont réduits jusqu\'à un maximum de [color=" + this.Const.UI.Color.PositiveValue + "]60%[/color], mais est diminué exponentiellement par le malus de Fatigue Maximum de l\'armure (tête et corps) au dessus de [color=" + this.Const.UI.Color.PositiveValue + "]15[/color]. Plus votre armure est légère, plus vous en bénéficierez.\n\nMusculeux n\'affecte pas ce Talent.\n\nN\'affecte pas les attaques mentales et les Effets de Status, mais peut aider à les esquiver.",
 	BattleForged = "Vous êtes spécialisé en armure lourde ! Les dégats d\'armure sont réduits d\'un pourcentage égal à [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] du total de la valeur de l\'armure (tête et corps). Le plus lourd sont l\'armure et le casque, le meilleur est le bénéfice.\n\nN\'affecte pas les attaques mentales et les Effets de Status, mais peut aider à les esquiver.",
-	Duelist = "Quand vous avez une main libre ou prise avec un outil jetable (exemple Filet à jeter), vous obtenez un bonus supplémentaire de [color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] qui ignorera l\'armure. Ne fonctionne pas avec les armes à deux mains.",
+	Duelist = "Quand vous avez une main libre, un bouclier ou occupée avec un outil jetable (exemple Filet à jeter), vous obtenez un bonus supplémentaire de [color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] qui ignorera l\'armure. Ne fonctionne pas avec les armes à deux mains.",
 	CripplingStrikes = "Handicaper vos ennemis! La probabilité minimum pour infliger des blessures est augmentée de [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] pour les armes de mêlée et les armes à distance.",
 	QuickHands = "Vous cherchiez quelque chose? Echanger un objet (sauf les boucliers) devient une action gratuite et ne consomme pas de points d\'action (Une fois par tour seulement).",
 	Bullseye = "C\'est réglé! La pénalité de toucher un ennemi lorsque vous n\'avez pas d\'angle de tir passe à [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] au lieu de [color=" + this.Const.UI.Color.NegativeValue + "]75%[/color] pour les armes à distance.",
@@ -1392,7 +1396,7 @@ gt.Const.Strings.PerkDescription <- {
 	SpecThrowing = "Maîtrisez le lancé d\'armes de jet pour blesser ou tuer les ennemis avant même qu\'ils aient le temps de se rapprocher. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes dégâts sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]30%[/color] en attaquant à 2 tuiles de distance.\n\nLes dégâts sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] en attaquant à 3 tuiles de distance.",
 	SpecAxe = "Maîtrisez le combat avec des haches ou de destruction de bouclier. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes dégâts de \'Pourfendre un Bouclier\' sont augmentés de [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] en utilisant des haches.\n\n\'Coup Tournoyant\' gagne [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance de toucher.\n\nLa Hache Danoise n\'a plus de pénalité en attaquant les cibles au contact.",
 	SpecCleaver = "Maîtrisez les fendoirs pour infliger d\'horribles blessures. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes dégâts de saignement infligés par les fendoirs et les fouets doublés à [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] et [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] par tour, respectivement.\n\nDésarmé a seulement la moitié de la pénalité pour toucher.",
-	SpecDagger = "Maîtrise des dagues rapides et mortelles. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Poignarder\', \'Percer\' et \'Coup Mortel\' ont un coup en Points d\'Action réduit pour permettre une attaque supplémentaire à chaque tour.",
+	SpecDagger = "Maîtrise des dagues rapides et mortelles. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Poignarder\', \'Percer\',\'Coup Mortel\', \'Perforer\' ou \'Embrocher\' ont un coup en Points d\'Action réduit pouvant permettre une attaque supplémentaire à chaque tour.",
 	SpecSword = "Maîtrisez l\'art du combat à l\'épée et utilisez les erreurs de vos ennemis à votre avantage. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Riposte\' n\'a plus de malus à la probabilité de toucher.\n\n\'Entaille\' a un palier diminué de [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] pour infliger des blessures.\n\n\'Fendre\' et \'Coup d\'épée\' n\'ont plus de pénalité de toucher et gagnent [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de chance en plus de toucher.",
 	SpecSpear = "Maîtrisez le combat avec les lances et gardez vos ennemis à distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\n\'Mur de Lance\' n\'est plus désactivé quand un ennemi arrive à y rentrer. Effectivement, \'Mur de Lance\' peut toujours être utilisé et continue de faire des attaques gratuite à tous les ennemis qui tentent de rentrer dans la zone de contrôle.\n\nLe Spetum and Fourche de Guerre n\'ont plus de pénalité en attaquant les cibles au contact.",
 	SpecPolearm = "Maîtrisez les armes d\'hast et gardez l\'ennemi à distance. Les compétences produisent [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] de Fatigue en moins.\n\nLes Armes d\'hast ont leur coup en Point d\'action réduit à [color=" + this.Const.UI.Color.NegativeValue + "]5[/color], et n\'ont plus de pénalité en attaquant les cibles au contact.",

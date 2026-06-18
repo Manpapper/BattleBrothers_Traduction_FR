@@ -260,7 +260,7 @@ this.drunkard_loses_stuff_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (item.isItemType(this.Const.Items.ItemType.Legendary))
+			if (item.isItemType(this.Const.Items.ItemType.Legendary) || item.isIndestructible())
 			{
 				continue;
 			}

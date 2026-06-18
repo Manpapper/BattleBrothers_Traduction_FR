@@ -82,7 +82,10 @@ this.taxidermist_building <- this.inherit("scripts/entity/world/settlements/buil
 
 	function onUpdateDraftList( _list )
 	{
-		_list.push("anatomist_background");
+		if (this.Const.DLC.Paladins)
+		{
+			_list.push("anatomist_background");
+		}
 	}
 
 	function onClicked( _townScreen )

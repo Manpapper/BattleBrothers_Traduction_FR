@@ -60,13 +60,17 @@ this.medium_lumber_village <- this.inherit("scripts/entity/world/settlement", {
 			"wildman_background",
 			"witchhunter_background",
 			"cripple_background",
-			"eunuch_background",
-			"anatomist_background"
+			"eunuch_background"
 		];
 
 		if (this.Const.DLC.Unhold)
 		{
 			this.m.DraftList.push("beast_hunter_background");
+		}
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("anatomist_background");
 		}
 
 		this.m.UIDescription = "Un village développé, prospère grâce au bois et au gibier";

@@ -37,5 +37,24 @@ this.public_executions_situation <- this.inherit("scripts/entity/world/settlemen
 		_modifiers.FoodPriceMult *= 1.15;
 	}
 
+	function onUpdateShopList( _id, _list )
+	{
+		if (_id == "building.marketplace")
+		{
+			_list.push({
+				R = 50,
+				P = 1.0,
+				S = "weapons/exesword"
+			});
+		}
+	}
+
+	function onUpdateDraftList( _draftList )
+	{
+		_draftList.push("executioner_background");
+		_draftList.push("executioner_background");
+		_draftList.push("executioner_background");
+	}
+	
 });
 

@@ -308,6 +308,11 @@ this.actor <- this.inherit("scripts/entity/tactical/entity", {
 	{
 		return this.m.SoundVolume[_t];
 	}
+	
+	function getIsActingImmediately()
+	{
+		return this.m.IsActingImmediately;
+	}
 
 	function getActionPointCostsRaw()
 	{

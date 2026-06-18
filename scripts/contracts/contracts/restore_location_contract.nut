@@ -207,13 +207,6 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 				this.World.Assets.setUseProvisions(false);
 				this.World.getCamera().moveTo(this.World.State.getPlayer());
 
-				if (!this.World.State.isPaused())
-				{
-					this.World.setSpeedMult(this.Const.World.SpeedSettings.EscortMult);
-				}
-
-				this.World.State.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.EscortMult;
-
 				if (this.Flags.get("IsFleeing"))
 				{
 					this.Contract.setScreen("Failure1");
@@ -244,13 +237,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 				this.World.State.setEscortedEntity(null);
 				this.World.State.getPlayer().setVisible(true);
 				this.World.Assets.setUseProvisions(true);
-
-				if (!this.World.State.isPaused())
-				{
-					this.World.setSpeedMult(1.0);
-				}
-
-				this.World.State.m.LastWorldSpeedMult = 1.0;
+				this.World.State.resetSpeedToNormal();
 				this.Contract.clearSpawnedUnits();
 			}
 
@@ -631,13 +618,7 @@ this.restore_location_contract <- this.inherit("scripts/contracts/contract", {
 			this.World.State.setEscortedEntity(null);
 			this.World.State.getPlayer().setVisible(true);
 			this.World.Assets.setUseProvisions(true);
-
-			if (!this.World.State.isPaused())
-			{
-				this.World.setSpeedMult(1.0);
-			}
-
-			this.World.State.m.LastWorldSpeedMult = 1.0;
+			this.World.State.resetSpeedToNormal();
 
 			if (this.m.Location != null && !this.m.Location.isNull())
 			{

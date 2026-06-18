@@ -25,7 +25,11 @@ this.herbalists_grove_location <- this.inherit("scripts/entity/world/attached_lo
 
 		_list.push("monk_background");
 		_list.push("flagellant_background");
-		_list.push("anatomist_background");
+
+		if (this.Const.DLC.Paladins)
+		{
+			_list.push("anatomist_background");
+		}
 	}
 
 	function onUpdateShopList( _id, _list )

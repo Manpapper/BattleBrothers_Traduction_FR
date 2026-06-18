@@ -1,10 +1,16 @@
 this.fletcher_building <- this.inherit("scripts/entity/world/settlements/buildings/building", {
 	m = {
+		PriceMult = 1.25,
 		Stash = null
 	},
 	function getStash()
 	{
 		return this.m.Stash;
+	}
+
+	function getPriceMult()
+	{
+		return this.m.PriceMult;
 	}
 
 	function create()
@@ -78,7 +84,7 @@ this.fletcher_building <- this.inherit("scripts/entity/world/settlements/buildin
 		}
 	}
 
-	function onUpdateShopList()
+	function getDefaultShopList()
 	{
 		local list = [
 			{
@@ -170,18 +176,16 @@ this.fletcher_building <- this.inherit("scripts/entity/world/settlements/buildin
 
 		if (this.Const.DLC.Unhold)
 		{
-			list.extend([
-				{
-					R = 90,
-					P = 1.0,
-					S = "weapons/throwing_spear"
-				}
-			]);
+			list.push({
+				R = 90,
+				P = 1.0,
+				S = "weapons/throwing_spear"
+			});
 		}
 
 		foreach( i in this.Const.Items.NamedRangedWeapons )
 		{
-			if (this.Math.rand(1, 100) <= 50)
+			if (this.Math.rand(1, 100) <= 30)
 			{
 				list.push({
 					R = 99,
@@ -191,8 +195,7 @@ this.fletcher_building <- this.inherit("scripts/entity/world/settlements/buildin
 			}
 		}
 
-		this.m.Settlement.onUpdateShopList(this.m.ID, list);
-		this.fillStash(list, this.m.Stash, 1.25, false);
+		return list;
 	}
 
 	function onUpdateDraftList( _list )

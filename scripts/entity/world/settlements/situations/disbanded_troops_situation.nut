@@ -38,6 +38,23 @@ this.disbanded_troops_situation <- this.inherit("scripts/entity/world/settlement
 		_modifiers.RecruitsMult *= 1.25;
 	}
 
+	function onUpdateShopList( _id, _list )
+	{
+		if (_id == "building.marketplace")
+		{
+			_list.push({
+				R = 55,
+				P = 1.0,
+				S = "helmets/greatsword_hat"
+			});
+			_list.push({
+				R = 75,
+				P = 1.0,
+				S = "helmets/greatsword_faction_helm"
+			});
+		}
+	}
+
 	function onUpdateDraftList( _draftList )
 	{
 		_draftList.push("deserter_background");

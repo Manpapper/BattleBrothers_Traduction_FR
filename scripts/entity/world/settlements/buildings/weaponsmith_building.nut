@@ -1,10 +1,16 @@
 this.weaponsmith_building <- this.inherit("scripts/entity/world/settlements/buildings/building", {
 	m = {
+		PriceMult = 1.25,
 		Stash = null
 	},
 	function getStash()
 	{
 		return this.m.Stash;
+	}
+
+	function getPriceMult()
+	{
+		return this.m.PriceMult;
 	}
 
 	function create()
@@ -139,7 +145,7 @@ this.weaponsmith_building <- this.inherit("scripts/entity/world/settlements/buil
 		}
 	}
 
-	function onUpdateShopList()
+	function getDefaultShopList()
 	{
 		local list = [
 			{
@@ -303,6 +309,21 @@ this.weaponsmith_building <- this.inherit("scripts/entity/world/settlements/buil
 				S = "weapons/warbrand"
 			},
 			{
+				R = 35,
+				P = 1.0,
+				S = "weapons/exesword"
+			},
+			{
+				R = 35,
+				P = 1.0,
+				S = "weapons/estoc"
+			},
+			{
+				R = 35,
+				P = 1.0,
+				S = "weapons/poleaxe"
+			},
+			{
 				R = 60,
 				P = 1.0,
 				S = "weapons/greataxe"
@@ -423,8 +444,7 @@ this.weaponsmith_building <- this.inherit("scripts/entity/world/settlements/buil
 			}
 		}
 
-		this.m.Settlement.onUpdateShopList(this.m.ID, list);
-		this.fillStash(list, this.m.Stash, 1.25, false);
+		return list;
 	}
 
 	function onSerialize( _out )

@@ -312,13 +312,6 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 				this.World.Assets.setUseProvisions(false);
 				this.World.getCamera().moveTo(this.World.State.getPlayer());
 
-				if (!this.World.State.isPaused())
-				{
-					this.World.setSpeedMult(this.Const.World.SpeedSettings.EscortMult);
-				}
-
-				this.World.State.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.EscortMult;
-
 				if (this.Flags.get("IsFleeing"))
 				{
 					this.Contract.setScreen("Failure1");
@@ -457,13 +450,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 				this.World.State.setEscortedEntity(null);
 				this.World.State.getPlayer().setVisible(true);
 				this.World.Assets.setUseProvisions(true);
-
-				if (!this.World.State.isPaused())
-				{
-					this.World.setSpeedMult(1.0);
-				}
-
-				this.World.State.m.LastWorldSpeedMult = 1.0;
+				this.World.State.resetSpeedToNormal();
 
 				if (this.Contract.m.Destination != null && !this.Contract.m.Destination.isNull())
 				{
@@ -835,13 +822,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 						this.World.State.setCampingAllowed(true);
 						this.World.State.getPlayer().setVisible(true);
 						this.World.Assets.setUseProvisions(true);
-
-						if (!this.World.State.isPaused())
-						{
-							this.World.setSpeedMult(1.0);
-						}
-
-						this.World.State.m.LastWorldSpeedMult = 1.0;
+						this.World.State.resetSpeedToNormal();
 						this.Contract.m.Caravan.die();
 						this.Contract.m.Caravan = null;
 						this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationAttacked, "A massacré une caravane dont vous étiez chargés de protéger");
@@ -1382,13 +1363,7 @@ this.escort_caravan_contract <- this.inherit("scripts/contracts/contract", {
 			this.World.State.setEscortedEntity(null);
 			this.World.State.getPlayer().setVisible(true);
 			this.World.Assets.setUseProvisions(true);
-
-			if (!this.World.State.isPaused())
-			{
-				this.World.setSpeedMult(1.0);
-			}
-
-			this.World.State.m.LastWorldSpeedMult = 1.0;
+			this.World.State.resetSpeedToNormal();
 
 			if (this.m.Destination != null && !this.m.Destination.isNull())
 			{

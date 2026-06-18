@@ -13,7 +13,19 @@ this.sallet_green_helmet <- this.inherit("scripts/items/helmets/named/named_helm
 		];
 		this.m.ShowOnCharacter = true;
 		this.m.HideHair = true;
-		this.m.Variant = 49;
+		local variants = [
+			49,
+			49,
+			49,
+			49,
+			49,
+			257,
+			258,
+			259,
+			260,
+			261
+		];
+		this.m.Variant = variants[this.Math.rand(0, variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorChainmailImpact;

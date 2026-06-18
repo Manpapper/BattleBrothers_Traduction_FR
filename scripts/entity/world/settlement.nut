@@ -1503,17 +1503,11 @@ this.settlement <- this.inherit("scripts/entity/world/location", {
 
 		foreach( building in this.m.Buildings )
 		{
-			if (building != null)
+			if (building != null && building.getStash() != null)
 			{
-				building.onUpdateShopList();
-
-				if (building.getStash() != null)
-				{
-					foreach( s in this.m.Situations )
-					{
-						s.onUpdateShop(building.getStash());
-					}
-				}
+				local newShopList = building.onUpdateShopList();
+				this.onUpdateShopList(building.getID(), newShopList);
+				building.fillStash(newShopList, building.getStash(), building.getPriceMult(), building.getAllowDamaged());
 			}
 		}
 
@@ -1829,6 +1823,13 @@ this.settlement <- this.inherit("scripts/entity/world/location", {
 				loc.onUpdateShopList(_id, _list);
 			}
 		}
+
+		foreach( s in this.m.Situations )
+		{
+			s.onUpdateShopList(_id, _list);
+		}
+
+		return _list;
 	}
 
 	function onBuild()

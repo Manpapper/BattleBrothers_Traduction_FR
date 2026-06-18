@@ -54,7 +54,8 @@ this.medium_forest_fort <- this.inherit("scripts/entity/world/settlement", {
 			"disowned_noble_background",
 			"disowned_noble_background",
 			"retired_soldier_background",
-			"squire_background"
+			"squire_background",
+			"executioner_background"
 		];
 
 		if (this.Const.DLC.Unhold)

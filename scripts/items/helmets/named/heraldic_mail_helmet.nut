@@ -16,7 +16,19 @@ this.heraldic_mail_helmet <- this.inherit("scripts/items/helmets/named/named_hel
 		this.m.ShowOnCharacter = true;
 		this.m.HideHair = true;
 		this.m.HideBeard = false;
-		this.m.Variant = 53;
+		local variants = [
+			53,
+			53,
+			53,
+			53,
+			53,
+			262,
+			263,
+			264,
+			265,
+			266
+		];
+		this.m.Variant = variants[this.Math.rand(0, variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;

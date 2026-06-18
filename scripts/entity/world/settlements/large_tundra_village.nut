@@ -65,8 +65,14 @@ this.large_tundra_village <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"sellsword_background",
 			"swordmaster_background",
-			"anatomist_background"
+			"executioner_background"
 		];
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("anatomist_background");
+		}
+
 		this.m.UIDescription = "Une grande ville et un centre commercial entourés de la toundra stérile";
 		this.m.Description = "Entourée de toundra stérile, cette grande ville a perduré en tant que centre commercial important et foyer de penseurs et de beaux-arts.";
 		this.m.UIBackgroundCenter = "ui/settlements/townhall_03";

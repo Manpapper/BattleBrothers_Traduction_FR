@@ -63,13 +63,17 @@ this.medium_swamp_village <- this.inherit("scripts/entity/world/settlement", {
 			"witchhunter_background",
 			"adventurous_noble_background",
 			"disowned_noble_background",
-			"cripple_background",
-			"anatomist_background"
+			"cripple_background"
 		];
 
 		if (this.Const.DLC.Unhold)
 		{
 			this.m.DraftList.push("beast_hunter_background");
+		}
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("anatomist_background");
 		}
 
 		this.m.UIDescription = "Une plus grande colonie entourée de marais nauséabonds";

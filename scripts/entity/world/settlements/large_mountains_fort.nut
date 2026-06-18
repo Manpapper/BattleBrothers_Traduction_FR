@@ -74,8 +74,14 @@ this.large_mountains_fort <- this.inherit("scripts/entity/world/settlement", {
 			"cripple_background",
 			"hedge_knight_background",
 			"hedge_knight_background",
-			"paladin_background"
-		];
+			"executioner_background"
+		];		
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("paladin_background");
+		}
+
 		this.m.UIDescription = "Une citadelle massive en pierre construite dans les montagnes escarpées";
 		this.m.Description = "Cette citadelle massive en pierre est construite dans les montagnes escarpées. Un grand nombre d\'hommes sont stationnés ici pour garder une emprise sur le territoire.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";

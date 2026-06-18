@@ -25,7 +25,16 @@ this.bandit_ruins_location <- this.inherit("scripts/entity/world/location", {
 		this.m.CombatLocation.CutDownTrees = true;
 		this.m.IsShowingDefenders = false;
 		this.m.IsShowingBanner = false;
-		this.setDefenderSpawnList(this.Const.World.Spawn.BanditDefenders);
+
+		if (this.Math.rand(1, 100) <= this.Const.World.Scaling.Brigands.GetMarauderSpawnChance(this.World.getTime().Days))
+		{
+			this.setDefenderSpawnList(this.Const.World.Spawn.BanditMarauders);
+		}
+		else
+		{
+			this.setDefenderSpawnList(this.Const.World.Spawn.BanditDefenders);
+		}
+
 		this.m.Resources = 150;
 		this.m.NamedShieldsList = this.Const.Items.NamedBanditShields;
 	}

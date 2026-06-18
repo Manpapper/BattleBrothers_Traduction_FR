@@ -73,12 +73,17 @@ this.large_snow_village <- this.inherit("scripts/entity/world/settlement", {
 			"raider_background",
 			"sellsword_background",
 			"swordmaster_background",
-			"anatomist_background"
+			"executioner_background"
 		];
 
 		if (this.Const.DLC.Unhold)
 		{
 			this.m.DraftList.push("beast_hunter_background");
+		}
+		
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("anatomist_background");
 		}
 
 		this.m.UIDescription = "Une grande ville qui abrite les voyageurs et les commerçants de la neige et du froid";

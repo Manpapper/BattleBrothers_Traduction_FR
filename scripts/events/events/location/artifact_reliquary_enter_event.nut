@@ -189,21 +189,6 @@ this.artifact_reliquary_enter_event <- this.inherit("scripts/events/event", {
 		properties.IsWithoutAmbience = true;
 		properties.IsFogOfWarVisible = false;
 		properties.Parties.push(_location);
-		local weather = this.Tactical.getWeather();
-		local time = this.World.getTime().TimeOfDay;
-		weather.setAmbientLightingColor(this.createColor(this.Const.Tactical.AmbientLightingColor.Time[time]));
-		weather.setAmbientLightingSaturation(this.Const.Tactical.AmbientLightingSaturation.Time[time]);
-		local clouds = weather.createCloudSettings();
-		clouds.Type = this.getconsttable().CloudType.Fog;
-		clouds.MinClouds = 20;
-		clouds.MaxClouds = 20;
-		clouds.MinVelocity = 3.0;
-		clouds.MaxVelocity = 9.0;
-		clouds.MinAlpha = 0.15;
-		clouds.MaxAlpha = 0.25;
-		clouds.MinScale = 2.0;
-		clouds.MaxScale = 3.0;
-		weather.buildCloudCover(clouds);
 		properties.Entities = [];
 		local f = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).getID();
 		properties.BeforeDeploymentCallback = function ()
@@ -265,8 +250,21 @@ this.artifact_reliquary_enter_event <- this.inherit("scripts/events/event", {
 				}
 			}
 
-			this.Tactical.getWeather().setAmbientLightingPreset(5);
-			this.Tactical.getWeather().setAmbientLightingSaturation(0.9);
+			local weather = this.Tactical.getWeather();
+			local time = this.World.getTime().TimeOfDay;
+			weather.setAmbientLightingPreset(5);
+			weather.setAmbientLightingSaturation(0.9);
+			local clouds = weather.createCloudSettings();
+			clouds.Type = this.getconsttable().CloudType.Fog;
+			clouds.MinClouds = 20;
+			clouds.MaxClouds = 24;
+			clouds.MinVelocity = 3.0;
+			clouds.MaxVelocity = 16.0;
+			clouds.MinAlpha = 0.35;
+			clouds.MaxAlpha = 0.45;
+			clouds.MinScale = 2.0;
+			clouds.MaxScale = 3.0;
+			weather.buildCloudCover(clouds);
 		};
 		return properties;
 	}

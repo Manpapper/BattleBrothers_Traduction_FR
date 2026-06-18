@@ -47,7 +47,8 @@ this.city_state <- this.inherit("scripts/entity/world/settlement", {
 			"nomad_background",
 			"nomad_background",
 			"nomad_ranged_background",
-			"assassin_southern_background"
+			"assassin_southern_background",
+			"executioner_southern_background"
 		];
 
 		if (this.Const.DLC.Unhold)

@@ -60,8 +60,14 @@ this.large_farm_fort <- this.inherit("scripts/entity/world/settlement", {
 			"squire_background",
 			"swordmaster_background",
 			"cripple_background",
-			"paladin_background"
+			"executioner_background"
 		];
+
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("paladin_background");
+		}
+		
 		this.m.UIDescription = "Une citadelle massive dominant les plaines ouvertes";
 		this.m.Description = "Une citadelle massive qui domine les plaines ouvertes qui l\'entourent. Siège du pouvoir des nobles, elle abrite d\'importantes forces armées qui lui permettent d\'avoir une emprise ferme sur la région.";
 		this.m.UIBackgroundCenter = "ui/settlements/stronghold_03";

@@ -76,13 +76,17 @@ this.large_steppe_fort <- this.inherit("scripts/entity/world/settlement", {
 			"sellsword_background",
 			"swordmaster_background",
 			"hedge_knight_background",
-			"eunuch_background",
-			"anatomist_background"
+			"executioner_background"
 		];
 
 		if (this.Const.DLC.Desert)
 		{
 			this.m.DraftList.push("eunuch_southern_background");
+		}
+		
+		if (this.Const.DLC.Paladins)
+		{
+			this.m.DraftList.push("paladin_background");
 		}
 
 		this.m.UIDescription = "Une puissante citadelle dominant la steppe environnante";

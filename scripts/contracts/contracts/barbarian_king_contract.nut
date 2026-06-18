@@ -187,7 +187,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 				if (this.Contract.m.Destination != null && !this.Contract.m.Destination.isNull())
 				{
 					this.Contract.m.Destination.setFaction(2);
-					this.World.State.setEscortedEntity(this.Contract.m.Destination);
+					this.World.State.setEscortedEntity(this.Contract.m.Destination, true);
 				}
 			}
 
@@ -223,7 +223,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 				{
 					if (!this.Contract.m.IsEscortUpdated)
 					{
-						this.World.State.setEscortedEntity(this.Contract.m.Destination);
+						this.World.State.setEscortedEntity(this.Contract.m.Destination, true);
 						this.Contract.m.IsEscortUpdated = true;
 					}
 
@@ -232,13 +232,6 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 					this.World.State.getPlayer().setVisible(false);
 					this.World.Assets.setUseProvisions(false);
 					this.World.getCamera().moveTo(this.World.State.getPlayer());
-
-					if (!this.World.State.isPaused())
-					{
-						this.World.setSpeedMult(this.Const.World.SpeedSettings.FastMult);
-					}
-
-					this.World.State.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.FastMult;
 				}
 
 				if (this.Contract.isPlayerAt(this.Contract.m.Threat))
@@ -254,13 +247,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 				this.World.State.setEscortedEntity(null);
 				this.World.State.getPlayer().setVisible(true);
 				this.World.Assets.setUseProvisions(true);
-
-				if (!this.World.State.isPaused())
-				{
-					this.World.setSpeedMult(1.0);
-				}
-
-				this.World.State.m.LastWorldSpeedMult = 1.0;
+				this.World.State.resetSpeedToNormal();
 			}
 
 			function onRetreatedFromCombat( _combatID )
@@ -729,13 +716,7 @@ this.barbarian_king_contract <- this.inherit("scripts/contracts/contract", {
 			this.World.State.setEscortedEntity(null);
 			this.World.State.getPlayer().setVisible(true);
 			this.World.Assets.setUseProvisions(true);
-
-			if (!this.World.State.isPaused())
-			{
-				this.World.setSpeedMult(1.0);
-			}
-
-			this.World.State.m.LastWorldSpeedMult = 1.0;
+			this.World.State.resetSpeedToNormal();
 			this.m.Home.getSprite("selection").Visible = false;
 		}
 	}

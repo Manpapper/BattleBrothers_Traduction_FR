@@ -47,7 +47,8 @@ this.small_farm_fort <- this.inherit("scripts/entity/world/settlement", {
 			"deserter_background",
 			"deserter_background",
 			"retired_soldier_background",
-			"retired_soldier_background"
+			"retired_soldier_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Une motte en bois avec une basse-cour surplombant les champs environnants";
 		this.m.Description = "Une motte en bois avec une bailey donnant sur les champs environnants.";

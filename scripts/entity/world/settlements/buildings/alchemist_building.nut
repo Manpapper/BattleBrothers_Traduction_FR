@@ -103,7 +103,7 @@ this.alchemist_building <- this.inherit("scripts/entity/world/settlements/buildi
 		}
 	}
 
-	function onUpdateShopList()
+	function getDefaultShopList()
 	{
 		local list = [
 			{
@@ -170,11 +170,6 @@ this.alchemist_building <- this.inherit("scripts/entity/world/settlements/buildi
 				R = 0,
 				P = 1.0,
 				S = "ammo/powder_bag"
-			},
-			{
-				R = 99,
-				P = 2.0,
-				S = "weapons/named/named_handgonne"
 			}
 		];
 
@@ -219,8 +214,12 @@ this.alchemist_building <- this.inherit("scripts/entity/world/settlements/buildi
 			]);
 		}
 
-		this.m.Settlement.onUpdateShopList(this.m.ID, list);
-		this.fillStash(list, this.m.Stash, 1.0, false);
+		list.push({
+			R = 99,
+			P = 2.0,
+			S = "weapons/named/named_handgonne"
+		});
+		return list;
 	}
 
 	function onUpdateDraftList( _list )

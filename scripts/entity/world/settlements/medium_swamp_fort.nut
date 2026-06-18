@@ -60,7 +60,8 @@ this.medium_swamp_fort <- this.inherit("scripts/entity/world/settlement", {
 			"deserter_background",
 			"disowned_noble_background",
 			"raider_background",
-			"retired_soldier_background"
+			"retired_soldier_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Un donjon de pierre contrôlant les routes à travers les marais";
 		this.m.Description = "Un donjon en pierre contrôlant les routes et l\'accès aux marais et marécages environnants.";

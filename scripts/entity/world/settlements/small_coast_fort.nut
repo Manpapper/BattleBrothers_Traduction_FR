@@ -51,7 +51,8 @@ this.small_coast_fort <- this.inherit("scripts/entity/world/settlement", {
 			"deserter_background",
 			"raider_background",
 			"raider_background",
-			"retired_soldier_background"
+			"retired_soldier_background",
+			"executioner_background"
 		];
 		this.m.UIDescription = "Une motte en bois avec une tour qui domine la côte avoisinante";
 		this.m.Description = "Une motte en bois avec une tour qui domine la côte avoisinante.";

@@ -64,6 +64,7 @@ gt.Const.Combat <- {
 	GlobalXPMult = 0.85,
 	GlobalXPVeteranLevelMult = 1.0,
 	WeaponSpecFatigueMult = 0.75,
+	DoubleGripDamageMult = 1.25,
 	RetreatDeathChanceNotAtBorder = 0,
 	InitiativeAfterWaitMult = 0.75,
 	InjuryThresholdMult = 1.0,
@@ -80,6 +81,7 @@ gt.Const.Combat <- {
 	FallingDamage = 10,
 	ArmorDirectDamageMitigationMult = 0.1,
 	PoisonEffectMinDamage = 6,
+	OnMovementCallbackDelay = 250,
 	AlertWeaponBreakingCondition = 12,
 	WeaponDurabilityLossOnHit = 3.0,
 	WeaponDurabilityLossOnUse = 2.0,
@@ -127,7 +129,10 @@ gt.Const.Combat <- {
 	ResurrectAnimationDistance = -200.0,
 	RootedAnimationTime = 0.5,
 	ZweihanderFatigueMult = 0.8,
-	StealthFailRadius = 4
+	StealthFailRadius = 4,
+	MiasmaTimeout = 3,
+	FireTimeout = 2,
+	SmokeTimeout = 1
 };
 gt.Const.Corpse <- {
 	Type = "",
@@ -837,6 +842,8 @@ gt.Const.CharacterProperties <- {
 	RerollDefenseChance = 0,
 	RerollMoraleChance = 0,
 	NegativeStatusEffectDuration = 0,
+	DamageReceivedFireMult = 1.0,
+	DamageReceivedMiasmaMult = 1.0,
 	DamageAgainstMult = [
 		1.0,
 		1.5
@@ -851,6 +858,7 @@ gt.Const.CharacterProperties <- {
 	],
 	HitChanceAdditionalWithEachTile = 0.0,
 	HitChanceWithEachTileMult = 1.0,
+	HitChanceOnDiversion = -15,
 	FatigueDealtPerHitMult = 1.0,
 	FatigueLossOnAnyAttackMult = 1.0,
 	MeleeDamageMult = 1.0,
@@ -865,6 +873,7 @@ gt.Const.CharacterProperties <- {
 	DamageDirectMult = 1.0,
 	DamageTotalMult = 1.0,
 	DamageAdditionalWithEachTile = 0.0,
+	DamageTotalOnDiversionMult = 0.75,
 	DamageMinimum = 0,
 	DamageTooltipMinMult = 1.0,
 	DamageTooltipMaxMult = 1.0,
@@ -890,7 +899,6 @@ gt.Const.CharacterProperties <- {
 	IsIgnoringArmorOnAttack = false,
 	IsResistantToAnyStatuses = false,
 	IsResistantToPhysicalStatuses = false,
-	IsResistantToMiasma = false,
 	IsRooted = false,
 	IsStunned = false,
 	IsMovable = true,
