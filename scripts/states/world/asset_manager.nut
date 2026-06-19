@@ -884,7 +884,7 @@ this.asset_manager <- {
 				{
 					if (bro.getBackground().getID() != "background.slave")
 					{
-						bro.worsenMood(this.Const.MoodChange.TooFewSlaves, "Pas assez d\endettés dans la compagnie");
+						bro.worsenMood(this.Const.MoodChange.TooFewSlaves, "Pas assez d\'endettés dans la compagnie");
 					}
 				}
 
