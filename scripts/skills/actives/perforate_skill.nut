@@ -4,7 +4,7 @@ this.perforate_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.perforate";
 		this.m.Name = "Perforer";
-		this.m.Description = "Une série de deux coups d'estoc ou plus, enchaînés rapidement, en fonction du nombre de blessures subies par l\'adversaire.";
+		this.m.Description = "Une série de deux coups d\'estoc ou plus, enchaînés rapidement, en fonction du nombre de blessures subies par l\'adversaire.";
 		this.m.KilledString = "Transformé en pelote à épingles";
 		this.m.Icon = "skills/active_237.png";
 		this.m.IconDisabled = "skills/active_237_sw.png";

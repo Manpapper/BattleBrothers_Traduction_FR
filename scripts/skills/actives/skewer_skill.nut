@@ -4,7 +4,7 @@ this.skewer_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.skewer";
 		this.m.Name = "Embrocher";
-		this.m.Description = "Une attaque précise et puissante qui tire parti de l'élan et du poids de l'attaquant pour transpercer l'armure.";
+		this.m.Description = "Une attaque précise et puissante qui tire parti de l\'élan et du poids de l\'attaquant pour transpercer l\'armure.";
 		this.m.KilledString = "Embroché";
 		this.m.Icon = "skills/active_238.png";
 		this.m.IconDisabled = "skills/active_238_sw.png";

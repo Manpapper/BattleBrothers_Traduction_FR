@@ -30,7 +30,7 @@ this.assault_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.assault";
 		this.m.Name = "Assaut";
-		this.m.Description = "Une attaque en estoc difficile à parer. Elle est suivie d'un coup porté avec le fer de hache si la cible est déséquilibrée.";
+		this.m.Description = "Une attaque en estoc difficile à parer. Elle est suivie d\'un coup porté avec le fer de hache si la cible est déséquilibrée.";
 		this.m.KilledString = "Aggressé";
 		this.m.Icon = "skills/active_240.png";
 		this.m.IconDisabled = "skills/active_240_sw.png";
