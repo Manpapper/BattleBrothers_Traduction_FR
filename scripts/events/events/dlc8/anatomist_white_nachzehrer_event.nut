@@ -26,7 +26,7 @@ this.anatomist_white_nachzehrer_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Anatomist.getImagePath());
-				_event.m.Anatomist.improveMood(1.5, "Had his faith in the existence of the white nachzehrer renewed");
+				_event.m.Anatomist.improveMood(1.5, "Sa conviction en l\'existence du nachzehrer blanc s\'est renouvelée");
 
 				if (_event.m.Anatomist.getMoodState() > this.Const.MoodState.Neutral)
 				{
