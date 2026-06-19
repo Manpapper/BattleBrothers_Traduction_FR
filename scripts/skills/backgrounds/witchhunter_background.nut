@@ -56,7 +56,7 @@ this.witchhunter_background <- this.inherit("scripts/skills/backgrounds/characte
 				id = 14,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Resolve at morale checks against fear, panic or mind control effects"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] de Détermination lors des tests de moral contre la peur, la panique ou les effets de contrôle mental"
 			}
 		];
 	}

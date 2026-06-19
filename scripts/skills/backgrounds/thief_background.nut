@@ -35,16 +35,15 @@ this.thief_background <- this.inherit("scripts/skills/backgrounds/character_back
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Shadow",
-			"the Cutpurse",
-			"the Snake",
-			"the Raven",
-			"the Burglar",
-			"the Snatcher",
-			"the Black Cat",
-			"the Prince",
-			"Quickfingers",
-			"the Thief"
+			"l\'Ombre",
+			"le Voleur à la Tire",
+			"le Serpent",
+			"le Corbeau",
+			"le Mendiant",
+			"le Chat Noir",
+			"le Prince",
+			"Doigts Agiles",
+			"le Voleur"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;

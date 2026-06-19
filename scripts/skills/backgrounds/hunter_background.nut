@@ -29,13 +29,13 @@ this.hunter_background <- this.inherit("scripts/skills/backgrounds/character_bac
 			"trait.drunkard"
 		];
 		this.m.Titles = [
-			"the Deerhunter",
-			"Woodstalker",
-			"the Woodsman",
-			"the Hunter",
-			"True-Shot",
-			"One Shot",
-			"Eagle Eye"
+			"le Chasseur de Cerfs",
+			"le Stalker des Bois",
+			"le Bûcheron",
+			"le Chasseur",
+			"le Tireur",
+			"Un Seul Tir",
+			"l\oeil d\'aigle"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.UntidyMale;

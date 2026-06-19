@@ -37,7 +37,7 @@ this.assassin_background <- this.inherit("scripts/skills/backgrounds/character_b
 			this.Const.Attributes.Bravery
 		];
 		this.m.Titles = [
-			"the Assassin"
+			"l\'Assassin"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;
@@ -107,7 +107,7 @@ this.assassin_background <- this.inherit("scripts/skills/backgrounds/character_b
 	{
 		this.character_background.onAdded();
 		local actor = this.getContainer().getActor();
-		actor.setTitle("the Assassin");
+		actor.setTitle("l\'Assassin");
 	}
 
 	function onAddEquipment()

@@ -30,16 +30,16 @@ this.raider_background <- this.inherit("scripts/skills/backgrounds/character_bac
 			"trait.insecure"
 		];
 		this.m.Titles = [
-			"the Raider",
-			"the Marauder",
-			"the Terrible",
-			"the Bandit",
-			"Fourfingers",
+			"le Voleur",
+			"le Maraudeur",
+			"le Terrible",
+			"le Bandit",
+			"Quatre Doigts",
 			"Ravensblack",
-			"the Crow",
-			"the Defiant",
-			"the Pillager",
-			"the Menace"
+			"le Corbeau",
+			"le Defiant",
+			"le Pilleur",
+			"la Menace"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.UntidyMale;

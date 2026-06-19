@@ -19,9 +19,9 @@ this.disowned_noble_background <- this.inherit("scripts/skills/backgrounds/chara
 			"trait.clubfooted"
 		];
 		this.m.Titles = [
-			"the Disowned",
-			"the Exiled",
-			"the Disgraced"
+			"le Déshérité",
+			"l\'exilé",
+			"le Disgracié"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.AllMale;

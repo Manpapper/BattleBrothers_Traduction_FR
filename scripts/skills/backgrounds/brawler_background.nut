@@ -59,7 +59,7 @@ this.brawler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 				id = 12,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+100%[/color] Damage when unarmed"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+100%[/color] de Dégâts infligés à mains nues"
 			}
 		];
 	}

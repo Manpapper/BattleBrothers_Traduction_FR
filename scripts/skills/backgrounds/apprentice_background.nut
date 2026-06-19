@@ -22,15 +22,13 @@ this.apprentice_background <- this.inherit("scripts/skills/backgrounds/character
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Learner",
-			"Quickmind",
-			"the Apprentice",
-			"the Understudy",
-			"Goodhand",
-			"the Student",
-			"the Young",
-			"the Kid",
-			"the Bright"
+			"l\'Apprenti",
+			"le Vif",
+			"la Doublure",
+			"l\'Etudiant",
+			"le Jeune",
+			"l\'Enfant",
+			"le Radieux"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.YoungMale;
@@ -56,7 +54,7 @@ this.apprentice_background <- this.inherit("scripts/skills/backgrounds/character
 				id = 13,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Experience Gain"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] de gain d\'expérience"
 			}
 		];
 	}

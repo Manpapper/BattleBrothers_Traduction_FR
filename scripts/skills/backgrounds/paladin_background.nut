@@ -12,15 +12,13 @@ this.paladin_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.HiringCost = 150;
 		this.m.DailyCost = 22;
 		this.m.Titles = [
-			"the Crusader",
-			"le zélote",
-			"the Pious",
-			"the Devoted",
-			"the Paladin",
-			"the Righteous",
-			"the Oathbound",
-			"the Oathsworn",
-			"the Virtuous"
+			"le Croisé",
+			"le Zélote",
+			"le Pieux",
+			"le Dévoué",
+			"le Paladin",
+			"le Juste",
+			"le Virtueux"
 		];
 		this.m.Excluded = [
 			"trait.ailing",

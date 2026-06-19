@@ -25,7 +25,7 @@ this.miller_background <- this.inherit("scripts/skills/backgrounds/character_bac
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Miller"
+			"le Meunier"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;

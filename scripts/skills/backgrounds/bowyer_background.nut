@@ -32,10 +32,9 @@ this.bowyer_background <- this.inherit("scripts/skills/backgrounds/character_bac
 			this.Const.Attributes.MeleeSkill
 		];
 		this.m.Titles = [
-			"the Bowyer",
-			"the Fletcher",
-			"the Arrowmaker",
-			"the Patient"
+			"le Fabricant d\'Arc",
+			"le Fabricant de Flèches",
+			"le Patient"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.TidyMale;

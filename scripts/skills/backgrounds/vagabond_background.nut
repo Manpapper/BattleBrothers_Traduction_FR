@@ -22,15 +22,13 @@ this.vagabond_background <- this.inherit("scripts/skills/backgrounds/character_b
 			"trait.asthmatic"
 		];
 		this.m.Titles = [
-			"the Vagabond",
-			"the Wanderer",
-			"Threefeet",
-			"Bindlestiff",
-			"Tatterdemalion",
-			"the Homeless",
-			"the Restless",
-			"the Traveller",
-			"the Raven"
+			"le Vagabond",
+			"le Voyageur",
+			"Trois Pied",
+			"le Sans-Abri",
+			"l\'Inquiet",
+			"le Voyageur",
+			"le Corbeau"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.UntidyMale;

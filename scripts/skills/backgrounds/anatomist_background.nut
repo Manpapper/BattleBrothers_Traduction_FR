@@ -40,15 +40,15 @@ this.anatomist_background <- this.inherit("scripts/skills/backgrounds/character_
 			"trait.superstitious"
 		];
 		this.m.Titles = [
-			"the Vulture",
-			"the Crow",
-			"the Magistrate",
-			"the Mortician",
-			"the Undertaker",
-			"the Grim",
-			"the Anatomist",
-			"the Curious",
-			"the Tainted"
+			"le Vautour",
+			"le Corbeau",
+			"le magistrat",
+			"le croque-mort",
+			"l\'Undertaker",
+			"le Sinistre",
+			"l\'Anatomiste",
+			"le Curieux",
+			"le Corrompu"
 		];
 		this.m.Faces = this.Const.Faces.SmartMale;
 		this.m.Hairs = this.Const.Hair.TidyMale;

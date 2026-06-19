@@ -29,11 +29,11 @@ this.tailor_background <- this.inherit("scripts/skills/backgrounds/character_bac
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Peculiar",
-			"the Tailor",
-			"the Particular",
-			"the Fine",
-			"Silkworm"
+			"le Singulier",
+			"le Couturier",
+			"le tailleur",
+			"le Bon",
+			"Ver à Soie"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.TidyMale;

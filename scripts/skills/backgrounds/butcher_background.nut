@@ -29,11 +29,11 @@ this.butcher_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			this.Const.Attributes.RangedSkill
 		];
 		this.m.Titles = [
-			"the Butcher",
-			"the Cleaver",
-			"the Red",
-			"Redmeat",
-			"Bloodeye"
+			"le Boucher",
+			"le Couperet",
+			"le Rouge",
+			"Viande Rouge",
+			"Yeux de Sang"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.AllMale;

@@ -30,12 +30,12 @@ this.killer_on_the_run_background <- this.inherit("scripts/skills/backgrounds/ch
 			"trait.optimist"
 		];
 		this.m.Titles = [
-			"Darkhearted",
-			"Backblade",
-			"Throatslash",
-			"on the Run",
-			"the Wanted",
-			"the Murderer"
+			"le Cœur Sombre",
+			"le Traître",
+			"le Coupe Gorge",
+			"en Cavale",
+			"le Recherché",
+			"le Meurtrier"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.UntidyMale;
@@ -62,7 +62,7 @@ this.killer_on_the_run_background <- this.inherit("scripts/skills/backgrounds/ch
 				id = 11,
 				type = "text",
 				icon = "ui/icons/chance_to_hit_head.png",
-				text = "Higher Chance To Hit Head"
+				text = "Plus de chance de toucher la tête"
 			}
 		];
 	}

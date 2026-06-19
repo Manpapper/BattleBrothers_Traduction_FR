@@ -27,14 +27,13 @@ this.minstrel_background <- this.inherit("scripts/skills/backgrounds/character_b
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Minstrel",
+			"le Ménestrel",
 			"the Skjald",
-			"the Poet",
-			"Songbird",
-			"the Troubadour",
-			"the Chorine",
-			"the Lover",
-			"the Bard"
+			"le Poète",
+			"l\'Oiseau chanteur",
+			"le Troubadour",
+			"l\'Amant",
+			"le Barde"
 		];
 		this.m.Faces = this.Const.Faces.SmartMale;
 		this.m.Hairs = this.Const.Hair.TidyMale;

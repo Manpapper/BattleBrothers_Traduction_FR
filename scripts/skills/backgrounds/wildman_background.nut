@@ -43,12 +43,10 @@ this.wildman_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.drunkard"
 		];
 		this.m.Titles = [
-			"the Savage",
-			"the Outcast",
-			"the Wildman",
-			"the Feral",
-			"the Wild",
-			"the Barbarian"
+			"le Sauvage",
+			"le Paria",
+			"le Sauvage",
+			"le Barbare"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.WildMale;
@@ -77,7 +75,7 @@ this.wildman_background <- this.inherit("scripts/skills/backgrounds/character_ba
 				id = 15,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] Experience Gain"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] de gain d\'expérience"
 			}
 		];
 	}

@@ -26,20 +26,18 @@ this.manhunter_background <- this.inherit("scripts/skills/backgrounds/character_
 			"trait.short_sighted"
 		];
 		this.m.Titles = [
-			"the Manhunter",
-			"the Mancatcher",
-			"the Hunter",
-			"the Ruthless",
-			"the Bounty Hunter",
-			"the Brutal",
-			"the Cruel",
-			"the Unforgiving",
-			"the Merciless",
-			"the Tracker",
-			"the Catcher",
-			"the Heartless",
-			"the Swine",
-			"the Slaver"
+			"le Chasseur d\'Hommes",
+			"le Chasseur",
+			"l\'Impitoyable",
+			"le Chasseur de Primes",
+			"le Brutal",
+			"le Cruel",
+			"l\'Impitoyable",
+			"le Traqueur",
+			"l\'Attrapeur",
+			"le Sans-Coeur",
+			"le Porc",
+			"l\'esclavagiste"
 		];
 		this.m.Faces = this.Const.Faces.SouthernMale;
 		this.m.Hairs = this.Const.Hair.SouthernMale;

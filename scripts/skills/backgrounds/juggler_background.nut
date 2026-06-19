@@ -28,9 +28,9 @@ this.juggler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Juggler",
-			"the Jester",
-			"the Fool"
+			"le Jongleur",
+			"le Bouffon",
+			"le Fou"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;

@@ -12,19 +12,19 @@ this.slave_background <- this.inherit("scripts/skills/backgrounds/character_back
 		this.m.HiringCost = this.Math.rand(19, 22) * 10;
 		this.m.DailyCost = 0;
 		this.m.Titles = [
-			"the Enslaved",
-			"the Northerner",
-			"the Captive",
-			"the Pale",
-			"the Prisoner",
-			"the Kidnapped",
-			"the Unlucky",
-			"the Indebted",
-			"the Indebted",
-			"the Unfree",
-			"the Restrained",
-			"the Shackled",
-			"the Bound"
+			"l\'Esclave",
+			"le Nordiste",
+			"le Captif",
+			"le Pale",
+			"le Prisonnier",
+			"le Kidnappé",
+			"le Malchanceux",
+			"l\'Endetté",
+			"l\'Endetté",
+			"le Non Libre",
+			"le Restreint",
+			"l\'Enchainé",
+			"le Lié"
 		];
 		this.m.Excluded = [
 			"trait.survivor",
@@ -77,7 +77,7 @@ this.slave_background <- this.inherit("scripts/skills/backgrounds/character_back
 			id = 19,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "No morale check triggered for non-indebted allies upon dying"
+			text = "Aucun test de moral n\'est déclenché pour les alliés non endettés lorsqu\'ils meurent"
 		});
 		ret.push({
 			id = 20,

@@ -31,19 +31,19 @@ this.nomad_background <- this.inherit("scripts/skills/backgrounds/character_back
 			"trait.insecure"
 		];
 		this.m.Titles = [
-			"the Desert Raider",
-			"of the Desert",
-			"Son of the Desert",
-			"the Desert Scourge",
-			"the Scorpion",
-			"the Nomad",
-			"Redsands",
-			"the Hyena",
-			"the Hawk",
-			"the Serpent",
-			"the Free",
-			"the Wanderer",
-			"the Waylayer"
+			"le Voleur du Désert",
+			"du Désert",
+			"le Fils du Désert",
+			"le Fléau du Désert",
+			"le Scorpion",
+			"le Nomade",
+			"Sable Rouge",
+			"la Hyene",
+			"le Faucon",
+			"le Serpent",
+			"le Libre",
+			"le Voyageur",
+			"le Pisteur"
 		];
 		this.m.Bodies = this.Const.Bodies.SouthernMuscular;
 		this.m.Faces = this.Const.Faces.SouthernMale;

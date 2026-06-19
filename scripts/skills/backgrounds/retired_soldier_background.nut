@@ -33,11 +33,11 @@ this.retired_soldier_background <- this.inherit("scripts/skills/backgrounds/char
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Oldguard",
-			"the Old",
-			"the Sergeant",
-			"the Veteran",
-			"the Soldier"
+			"le Vieux Garde",
+			"le Vieux",
+			"le Sergeant",
+			"le Vétéran",
+			"le Soldat"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;

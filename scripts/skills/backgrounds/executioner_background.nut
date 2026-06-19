@@ -31,8 +31,8 @@ this.executioner_background <- this.inherit("scripts/skills/backgrounds/characte
 			this.Const.Attributes.RangedSkill
 		];
 		this.m.Titles = [
-			"preneur de tête",
-			"séparateur de cou",
+			"le Preneur de tête",
+			"le Séparateur de cou",
 			"la Hache",
 			"le juge",
 			"le bourreau",

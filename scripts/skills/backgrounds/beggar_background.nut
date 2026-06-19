@@ -30,19 +30,18 @@ this.beggar_background <- this.inherit("scripts/skills/backgrounds/character_bac
 			this.Const.Attributes.Bravery
 		];
 		this.m.Titles = [
-			"the Dirty",
-			"the Poor",
-			"the Ragged",
-			"the Sick",
-			"the Liar",
-			"the Idle",
-			"the Sloth",
-			"the Useless",
-			"the Beggar",
-			"the Weasel",
-			"the Skunk",
-			"the Sluggard",
-			"the Homeless"
+			"le Sale",
+			"le Pauvre",
+			"le Loqueteux",
+			"le Malade",
+			"le Menteur",
+			"l\'Inactif",
+			"le Paresseux",
+			"l\'Inutile",
+			"le Mendiant",
+			"la Belette",
+			"la Mouffette",
+			"le Sans-Abri"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.UntidyMale;

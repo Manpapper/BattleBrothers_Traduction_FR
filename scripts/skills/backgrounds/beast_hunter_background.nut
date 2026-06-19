@@ -31,12 +31,12 @@ this.beast_hunter_background <- this.inherit("scripts/skills/backgrounds/charact
 			"trait.dastard"
 		];
 		this.m.Titles = [
-			"the Beasthunter",
-			"Woodstalker",
-			"the Beastslayer",
-			"the Tracker",
-			"the Trophyhunter",
-			"the Hunter"
+			"le Chasseur de Bêtes",
+			"le Stalker des Bois",
+			"le Tueur de Bêtes",
+			"le Traqueur",
+			"le Chasseur de Trophées",
+			"le Chasseur"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.UntidyMale;

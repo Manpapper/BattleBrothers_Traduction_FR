@@ -26,8 +26,8 @@ this.miner_background <- this.inherit("scripts/skills/backgrounds/character_back
 			"trait.dastard"
 		];
 		this.m.Titles = [
-			"the Miner",
-			"the Crawler",
+			"le Mineur",
+			"Le Rampeur",
 			"Earthside"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;

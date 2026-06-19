@@ -31,12 +31,11 @@ this.shepherd_background <- this.inherit("scripts/skills/backgrounds/character_b
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Shepherd",
-			"the Humble",
-			"the Peaceful",
-			"the Goatman",
-			"Hoofmind",
-			"the Sheep"
+			"le Berger",
+			"le Modeste",
+			"le Pacifiste",
+			"l\'Homme-Chèvre",
+			"le Mouton"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.CommonMale;

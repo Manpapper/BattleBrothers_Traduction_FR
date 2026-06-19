@@ -30,14 +30,14 @@ this.monk_background <- this.inherit("scripts/skills/backgrounds/character_backg
 			"trait.bloodthirsty"
 		];
 		this.m.Titles = [
-			"the Pious",
-			"the Monk",
-			"the Scholar",
-			"the Preacher",
-			"the Devoted",
-			"the Quiet",
-			"the Calm",
-			"the Faithful"
+			"le Pieux",
+			"Le Moine",
+			"l\'Erudit",
+			"le Prêcheur",
+			"le Dévoué",
+			"le Silencieux",
+			"le Calme",
+			"le Fidèle"
 		];
 		this.m.Faces = this.Const.Faces.AllMale;
 		this.m.Hairs = this.Const.Hair.Monk;
