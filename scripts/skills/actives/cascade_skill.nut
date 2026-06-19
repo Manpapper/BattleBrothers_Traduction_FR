@@ -78,14 +78,14 @@ this.cascade_skill <- this.inherit("scripts/skills/skill", {
 			this.getContainer().setBusy(true);
 			this.Time.scheduleEvent(this.TimeUnit.Virtual, 100, function ( _skill )
 			{
-				if (target.isAlive())
+				if (target.isAlive() && _skill.getContainer() != null)
 				{
 					_skill.attackEntity(_user, target);
 				}
 			}.bindenv(this), this);
 			this.Time.scheduleEvent(this.TimeUnit.Virtual, 200, function ( _skill )
 			{
-				if (target.isAlive())
+				if (target.isAlive() && _skill.getContainer() != null)
 				{
 					_skill.attackEntity(_user, target);
 				}

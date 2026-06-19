@@ -60,7 +60,7 @@ this.strike_down_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance d\'assommer sévèremment en touchant la cible"
+				text = "A [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] de chance d\'assommer pendant deux tours en touchant la cible"
 			});
 		}
 		else

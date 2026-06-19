@@ -3081,6 +3081,20 @@ this.tooltip_events <- {
 				}
 			];
 
+		case "world-screen.topbar.TimeVeryFastButton":
+			return [
+				{
+					id = 1,
+					type = "title",
+					text = "Vitesse Très Rapide (2)"
+				},
+				{
+					id = 2,
+					type = "description",
+					text = "Le jeu s\'écoulera plus encore plus rapidement que la normale. À utiliser avec discernement."
+				}
+			];
+
 		case "world-screen.topbar.options-module.ActiveContractButton":
 			return [
 				{

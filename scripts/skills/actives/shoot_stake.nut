@@ -228,38 +228,7 @@ this.shoot_stake <- this.inherit("scripts/skills/skill", {
 			skills.removeByID("effects.shieldwall");
 			skills.removeByID("effects.spearwall");
 			skills.removeByID("effects.riposte");
-			_targetEntity.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
-			local damage = this.Math.max(0, this.Math.abs(knockToTile.Level - targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
-
-			if (damage == 0)
-			{
-				this.Tactical.getNavigator().teleport(_targetEntity, knockToTile, null, null, true);
-			}
-			else
-			{
-				local p = this.getContainer().getActor().getCurrentProperties();
-				local tag = {
-					Attacker = user,
-					Skill = this,
-					HitInfo = clone this.Const.Tactical.HitInfo,
-					HitInfoBash = null
-				};
-				tag.HitInfo.DamageRegular = damage;
-				tag.HitInfo.DamageFatigue = this.Const.Combat.FatigueReceivedPerHit;
-				tag.HitInfo.DamageDirect = 1.0;
-				tag.HitInfo.BodyPart = this.Const.BodyPart.Body;
-				tag.HitInfo.BodyDamageMult = 1.0;
-				tag.HitInfo.FatalityChanceMult = 1.0;
-				this.Tactical.getNavigator().teleport(_targetEntity, knockToTile, this.onKnockedDown, tag, true);
-			}
-		}
-	}
-
-	function onKnockedDown( _entity, _tag )
-	{
-		if (_tag.HitInfo.DamageRegular != 0)
-		{
-			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
+			this.Tactical.State.handleInvoluntaryMovement(_targetEntity, user, targetTile, knockToTile, this, null, null);
 		}
 	}
 });

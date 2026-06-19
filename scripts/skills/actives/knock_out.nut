@@ -1,7 +1,8 @@
 this.knock_out <- this.inherit("scripts/skills/skill", {
 	m = {
 		StunChance = 75,
-		IsFromLute = false
+		IsFromLute = false,
+		DamageTotalMultMod = 0.5
 	},
 	function setStunChance( _c )
 	{
@@ -121,7 +122,7 @@ this.knock_out <- this.inherit("scripts/skills/skill", {
 	{
 		if (_skill == this)
 		{
-			_properties.DamageTotalMult *= 0.5;
+			_properties.DamageTotalMult *= this.m.DamageTotalMultMod;
 			_properties.FatigueDealtPerHitMult += 2.0;
 		}
 	}

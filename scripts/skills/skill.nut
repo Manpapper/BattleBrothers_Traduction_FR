@@ -935,6 +935,10 @@ this.skill <- {
 		}
 	}
 
+	function onTriggeredMovement( _caller, _targetEntity, _hitInfo )
+	{
+	}
+
 	function onVerifyTarget( _originTile, _targetTile )
 	{
 		if (this.m.IsTargetingActor && (_targetTile.IsEmpty || !_targetTile.getEntity().isAttackable() || !_targetTile.getEntity().isAlive() || _targetTile.getEntity().isDying()))
@@ -1203,7 +1207,7 @@ this.skill <- {
 					text = "Résistance aux armes à distance"
 				});
 			}
-			else if (this.m.ID == "actives.puncture" || this.m.ID == "actives.thrust" || this.m.ID == "actives.stab" || this.m.ID == "actives.deathblow" || this.m.ID == "actives.impale" || this.m.ID == "actives.rupture" || this.m.ID == "actives.prong" || this.m.ID == "actives.lunge")
+			else if (this.m.ID == "actives.puncture" || this.m.ID == "actives.thrust" || this.m.ID == "actives.stab" || this.m.ID == "actives.deathblow" || this.m.ID == "actives.impale" || this.m.ID == "actives.rupture" || this.m.ID == "actives.prong" || this.m.ID == "actives.lunge" || this.m.ID == "actives.estoc_stab" || this.m.ID == "actives.perforate" || this.m.ID == "actives.skewer")
 			{
 				ret.push({
 					icon = "ui/tooltips/negative.png",
@@ -1389,8 +1393,8 @@ this.skill <- {
 
 		if (this.m.IsRanged && !_allowDiversion && this.m.IsShowingProjectile)
 		{
-			toHit = toHit - 15;
-			properties.DamageTotalMult *= 0.75;
+			toHit = toHit + properties.HitChanceOnDiversion;
+			properties.DamageTotalMult *= properties.DamageTotalOnDiversionMult;
 		}
 
 		if (defense > -100 && skill > -100)

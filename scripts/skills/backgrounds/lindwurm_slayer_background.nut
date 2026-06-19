@@ -36,6 +36,7 @@ this.lindwurm_slayer_background <- this.inherit("scripts/skills/backgrounds/char
 		this.m.HairColors = this.Const.HairColors.All;
 		this.m.Beards = this.Const.Beards.Untidy;
 		this.m.Bodies = this.Const.Bodies.Muscular;
+		this.m.IsCombatBackground = true;
 	}
 
 	function getTooltip()

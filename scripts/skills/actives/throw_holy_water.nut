@@ -126,6 +126,7 @@ this.throw_holy_water <- this.inherit("scripts/skills/skill", {
 			Skill = this,
 			TargetTile = _targetTile
 		});
+		return true;
 	}
 
 	function onApplyEffect( _data )

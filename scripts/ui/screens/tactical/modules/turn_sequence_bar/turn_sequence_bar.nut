@@ -6,6 +6,7 @@ this.turn_sequence_bar <- this.inherit("scripts/ui/screens/ui_module", {
 		MaxVisibleEntities = 7,
 		CurrentRound = 0,
 		LastRemoveTime = 0,
+		LastCurrentRemoveTime = 0,
 		JumpToFirstEntity = false,
 		IsLocked = false,
 		IsBattleEnded = false,
@@ -191,10 +192,10 @@ this.turn_sequence_bar <- this.inherit("scripts/ui/screens/ui_module", {
 			return false;
 		}
 
-		if (!this.isRemovingEntity() && this.m.CurrentEntities.len() >= 1)
+		if ((!this.isRemovingEntity() || _entity.getIsActingImmediately()) && this.m.CurrentEntities.len() >= 1)
 		{
 			this.m.AllEntities.push(_entity);
-			this.m.CurrentEntities.insert(1, _entity);
+			this.m.CurrentEntities.insert(_entity.getIsActingImmediately() && this.m.LastCurrentRemoveTime == this.Time.getRealTimeF() ? 0 : 1, _entity);
 			this.m.JSHandle.call("insertEntity", {
 				id = _entity.getID(),
 				index = 1
@@ -205,6 +206,11 @@ this.turn_sequence_bar <- this.inherit("scripts/ui/screens/ui_module", {
 				local indexToRemove = this.Math.min(this.m.CurrentEntities.len(), this.m.MaxVisibleEntities);
 				this.m.JSHandle.asyncCall("removeEntity", this.m.CurrentEntities[indexToRemove].getID());
 				this.m.LastRemoveTime = this.Time.getRealTimeF();
+
+				if (indexToRemove == 0)
+				{
+					this.m.LastCurrentRemoveTime = this.Time.getRealTimeF();
+				}
 			}
 
 			_entity.onRoundStart();
@@ -264,6 +270,7 @@ this.turn_sequence_bar <- this.inherit("scripts/ui/screens/ui_module", {
 		{
 			if (currentIndex == 0)
 			{
+				this.m.LastCurrentRemoveTime = this.Time.getRealTimeF();
 				this.initNextTurn(true);
 			}
 			else
@@ -581,6 +588,11 @@ this.turn_sequence_bar <- this.inherit("scripts/ui/screens/ui_module", {
 			local indexToRemove = this.Math.min(this.m.CurrentEntities.len(), this.m.MaxVisibleEntities);
 			this.m.JSHandle.asyncCall("removeEntity", this.m.CurrentEntities[indexToRemove].getID());
 			this.m.LastRemoveTime = this.Time.getRealTimeF();
+
+			if (idx == 0)
+			{
+				this.m.LastCurrentRemoveTime = this.Time.getRealTimeF();
+			}
 		}
 	}
 

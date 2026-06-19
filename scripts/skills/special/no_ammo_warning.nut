@@ -1,4 +1,5 @@
 this.no_ammo_warning <- this.inherit("scripts/skills/skill", {
+	m = {},
 	function create()
 	{
 		this.m.ID = "special.no_ammo_warning";

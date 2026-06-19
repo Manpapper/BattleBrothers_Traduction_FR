@@ -199,31 +199,7 @@ this.repel <- this.inherit("scripts/skills/skill", {
 		}
 		
 		_user.getSkills().onTargetHit(this, target, this.Const.BodyPart.Body, 0, 0);
-		target.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
-		local damage = this.Math.max(0, this.Math.abs(knockToTile.Level - _targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
-
-		if (damage == 0)
-		{
-			this.Tactical.getNavigator().teleport(target, knockToTile, null, null, true);
-		}
-		else
-		{
-			local p = this.getContainer().getActor().getCurrentProperties();
-			local tag = {
-				Attacker = _user,
-				Skill = this,
-				HitInfo = clone this.Const.Tactical.HitInfo,
-				HitInfoBash = null
-			};
-			tag.HitInfo.DamageRegular = damage;
-			tag.HitInfo.DamageFatigue = this.Const.Combat.FatigueReceivedPerHit;
-			tag.HitInfo.DamageDirect = 1.0;
-			tag.HitInfo.BodyPart = this.Const.BodyPart.Body;
-			tag.HitInfo.BodyDamageMult = 1.0;
-			tag.HitInfo.FatalityChanceMult = 1.0;
-			this.Tactical.getNavigator().teleport(target, knockToTile, this.onKnockedDown, tag, true);
-		}
-
+		this.Tactical.State.handleInvoluntaryMovement(target, _user, _targetTile, knockToTile, this, null, null);
 		return success;
 	}
 
@@ -239,19 +215,6 @@ this.repel <- this.inherit("scripts/skills/skill", {
 				_properties.MeleeSkill += -15;
 				this.m.HitChanceBonus += -15;
 			}
-		}
-	}
-
-	function onKnockedDown( _entity, _tag )
-	{
-		if (_tag.HitInfo.DamageRegular != 0)
-		{
-			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
-		}
-
-		if (_tag.HitInfoBash != null)
-		{
-			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfoBash);
 		}
 	}
 

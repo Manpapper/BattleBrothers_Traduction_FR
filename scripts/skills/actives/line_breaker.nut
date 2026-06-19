@@ -118,35 +118,7 @@ this.line_breaker <- this.inherit("scripts/skills/skill", {
 			this.Sound.play(this.m.SoundOnHit[this.Math.rand(0, this.m.SoundOnHit.len() - 1)], this.Const.Sound.Volume.Skill, _user.getPos());
 		}
 
-		target.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
-		local damage = this.Math.max(0, this.Math.abs(knockToTile.Level - _targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
-
-		if (damage == 0)
-		{
-			this.Tactical.getNavigator().teleport(target, knockToTile, null, null, true);
-		}
-		else
-		{
-			local p = this.getContainer().getActor().getCurrentProperties();
-			local tag = {
-				Attacker = _user,
-				Skill = this,
-				HitInfo = clone this.Const.Tactical.HitInfo
-			};
-			tag.HitInfo.DamageRegular = damage;
-			tag.HitInfo.DamageFatigue = this.Const.Combat.FatigueReceivedPerHit;
-			tag.HitInfo.DamageDirect = 1.0;
-			tag.HitInfo.BodyPart = this.Const.BodyPart.Body;
-			tag.HitInfo.BodyDamageMult = 1.0;
-			tag.HitInfo.FatalityChanceMult = 1.0;
-			this.Tactical.getNavigator().teleport(target, knockToTile, this.onKnockedDown, tag, true);
-		}
-
-		local tag = {
-			TargetTile = _targetTile,
-			Actor = _user
-		};
-		this.Time.scheduleEvent(this.TimeUnit.Virtual, 250, this.onFollow, tag);
+		this.Tactical.State.handleInvoluntaryMovement(target, _user, _targetTile, knockToTile, this, null, this.onFollow);
 		return true;
 	}
 
@@ -156,14 +128,6 @@ this.line_breaker <- this.inherit("scripts/skills/skill", {
 		{
 			_tag.Actor.setCurrentMovementType(this.Const.Tactical.MovementType.Default);
 			this.Tactical.getNavigator().teleport(_tag.Actor, _tag.TargetTile, null, null, false);
-		}
-	}
-
-	function onKnockedDown( _entity, _tag )
-	{
-		if (_tag.HitInfo.DamageRegular != 0)
-		{
-			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
 		}
 	}
 

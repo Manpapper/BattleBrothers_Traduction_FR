@@ -59,7 +59,7 @@ this.voice_of_davkul_skill <- this.inherit("scripts/skills/skill", {
 				continue;
 			}
 
-			if (a.getType() == this.Const.EntityType.Cultist || a.isPlayerControlled() && (a.getBackground().getID() == "background.cultist" || a.getBackground().getID() == "background.converted_cultist"))
+			if (a.getType() == this.Const.EntityType.Cultist || a.isPlayerControlled() && a.getBackground() != null && (a.getBackground().getID() == "background.cultist" || a.getBackground().getID() == "background.converted_cultist"))
 			{
 				a.getSkills().add(this.new("scripts/skills/effects/voice_of_davkul_effect"));
 			}

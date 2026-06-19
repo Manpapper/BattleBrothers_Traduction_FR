@@ -117,6 +117,7 @@ this.throw_daze_bomb_skill <- this.inherit("scripts/skills/skill", {
 			Skill = this,
 			TargetTile = _targetTile
 		});
+		return true;
 	}
 
 	function onApply( _data )

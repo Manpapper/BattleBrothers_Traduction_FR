@@ -113,7 +113,7 @@ this.throw_net <- this.inherit("scripts/skills/skill", {
 			local effect = this.Tactical.spawnSpriteEffect(this.m.IsReinforced ? "bust_net_02" : "bust_net", this.createColor("#ffffff"), _targetTile, 0, 10, 1.0, targetEntity.getSprite("status_rooted").Scale, 100, 100, 0);
 			local flip = !targetEntity.isAlliedWithPlayer();
 			effect.setHorizontalFlipping(flip);
-			this.Time.scheduleEvent(this.TimeUnit.Real, 200, this.onNetSpawn.bindenv(this), {
+			this.Time.scheduleEvent(this.TimeUnit.Virtual, 200, this.onNetSpawn.bindenv(this), {
 				TargetEntity = targetEntity,
 				IsReinforced = this.m.IsReinforced
 			});
@@ -128,6 +128,8 @@ this.throw_net <- this.inherit("scripts/skills/skill", {
 			_user.getItems().unequip(_user.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand));
 			return false;
 		}
+
+		return true;
 	}
 
 	function onNetSpawn( _data )

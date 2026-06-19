@@ -1,4 +1,5 @@
 this.oath_of_fortification_warning <- this.inherit("scripts/skills/skill", {
+	m = {},
 	function create()
 	{
 		this.m.ID = "special.oath_of_fortification_warning";

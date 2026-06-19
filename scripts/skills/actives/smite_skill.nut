@@ -1,5 +1,7 @@
 this.smite_skill <- this.inherit("scripts/skills/skill", {
-	m = {},
+	m = {
+		IsPolearm = false
+	},
 	function create()
 	{
 		this.m.ID = "actives.smite";
@@ -93,7 +95,19 @@ this.smite_skill <- this.inherit("scripts/skills/skill", {
 
 	function onAfterUpdate( _properties )
 	{
-		this.m.FatigueCostMult = _properties.IsSpecializedInHammers ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		function onAfterUpdate( _properties )
+		{
+			if (this.m.IsPolearm)
+			{
+				this.m.FatigueCostMult = _properties.IsSpecializedInPolearms ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+				this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+			}
+			else
+			{
+				this.m.FatigueCostMult = _properties.IsSpecializedInHammers ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+			}
+		}
+		
 	}
 
 	function onUse( _user, _targetTile )

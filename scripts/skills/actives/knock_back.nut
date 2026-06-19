@@ -216,45 +216,7 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 		}
 
 		_user.getSkills().onTargetHit(this, target, this.Const.BodyPart.Body, 0, 0);
-		target.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
-		local hasShieldBash = _user.getSkills().hasSkill("perk.shield_bash");
-		local damage = this.Math.max(0, this.Math.abs(knockToTile.Level - _targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
-
-		if (damage == 0 && !hasShieldBash)
-		{
-			this.Tactical.getNavigator().teleport(target, knockToTile, null, null, true);
-		}
-		else
-		{
-			local p = this.getContainer().getActor().getCurrentProperties();
-			local tag = {
-				Attacker = _user,
-				Skill = this,
-				HitInfo = clone this.Const.Tactical.HitInfo,
-				HitInfoBash = null
-			};
-			tag.HitInfo.DamageRegular = damage;
-			tag.HitInfo.DamageFatigue = this.Const.Combat.FatigueReceivedPerHit;
-			tag.HitInfo.DamageDirect = 1.0;
-			tag.HitInfo.BodyPart = this.Const.BodyPart.Body;
-			tag.HitInfo.BodyDamageMult = 1.0;
-			tag.HitInfo.FatalityChanceMult = 1.0;
-
-			if (hasShieldBash)
-			{
-				damage = damage + this.Math.rand(10, 25) * p.DamageTotalMult;
-				tag.HitInfoBash = clone this.Const.Tactical.HitInfo;
-				tag.HitInfoBash.DamageRegular = damage * p.DamageRegularMult;
-				tag.HitInfoBash.DamageArmor = this.Math.floor(damage * 0.5);
-				tag.HitInfoBash.DamageFatigue = 10;
-				tag.HitInfoBash.BodyPart = this.Const.BodyPart.Body;
-				tag.HitInfoBash.BodyDamageMult = 1.0;
-				tag.HitInfoBash.FatalityChanceMult = 0.0;
-			}
-
-			this.Tactical.getNavigator().teleport(target, knockToTile, this.onKnockedDown, tag, true);
-		}
-
+		this.Tactical.State.handleInvoluntaryMovement(target, _user, _targetTile, knockToTile, this, null, null);
 		return success;
 	}
 
@@ -268,19 +230,6 @@ this.knock_back <- this.inherit("scripts/skills/skill", {
 			{
 				_properties.MeleeSkill += 15;
 			}
-		}
-	}
-
-	function onKnockedDown( _entity, _tag )
-	{
-		if (_tag.HitInfo.DamageRegular != 0)
-		{
-			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
-		}
-
-		if (_tag.HitInfoBash != null)
-		{
-			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfoBash);
 		}
 	}
 

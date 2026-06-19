@@ -58,6 +58,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 		OnCameraMovementStartCallback = null,
 		OnCameraMovementEndCallback = null,
 		LastWorldSpeedMult = null,
+		MinWorldSpeedMult = null,
 		AutoUnpauseFrame = 0,
 		AIEngageCallback = null,
 		EngageCombatPos = null,
@@ -200,6 +201,26 @@ this.world_state <- this.inherit("scripts/states/state", {
 		return this.m.EscortedEntity;
 	}
 
+	function getLastWorldSpeedMult()
+	{
+		return this.m.LastWorldSpeedMult;
+	}
+
+	function getMinWorldSpeedMult()
+	{
+		return this.m.MinWorldSpeedMult;
+	}
+
+	function setLastWorldSpeedMult( _m )
+	{
+		this.m.LastWorldSpeedMult = _m;
+	}
+
+	function setMinWorldSpeedMult( _m )
+	{
+		this.m.MinWorldSpeedMult = _m;
+	}
+
 	function updateRegionDiscovery( _r )
 	{
 		if (_r.Tiles.len() == 0)
@@ -236,7 +257,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 		return this.m.IsCampingAllowed;
 	}
 
-	function setEscortedEntity( _e )
+	function setEscortedEntity( _e, _fastEscort = false )
 	{
 		if (_e == null)
 		{
@@ -253,29 +274,11 @@ this.world_state <- this.inherit("scripts/states/state", {
 
 		if (this.m.EscortedEntity != null && !this.m.EscortedEntity.isNull() && this.m.EscortedEntity.isAlive())
 		{
-			this.World.TopbarDayTimeModule.enableNormalTimeButton(false);
-
-			if (!this.isPaused())
-			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(2);
-			}
-			else
-			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(0);
-			}
+			this.setMinWorldSpeedMult(_fastEscort ? this.Const.World.SpeedSettings.FastMult : this.Const.World.SpeedSettings.EscortMult);
 		}
 		else
 		{
-			this.World.TopbarDayTimeModule.enableNormalTimeButton(true);
-
-			if (!this.isPaused())
-			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(1);
-			}
-			else
-			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(0);
-			}
+			this.setMinWorldSpeedMult(this.Const.World.SpeedSettings.NormalMult);
 		}
 	}
 
@@ -362,25 +365,19 @@ this.world_state <- this.inherit("scripts/states/state", {
 		}
 		else
 		{
-			this.World.setSpeedMult(this.m.LastWorldSpeedMult != 0 ? this.m.LastWorldSpeedMult : 1.0);
-			this.m.IsAIPaused = false;
-		}
-
-		if (("TopbarDayTimeModule" in this.World) && this.World.TopbarDayTimeModule != null)
-		{
-			if (this.m.IsGamePaused)
+			if (this.m.MinWorldSpeedMult != null && this.m.MinWorldSpeedMult > this.m.LastWorldSpeedMult)
 			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(0);
-			}
-			else if (this.World.getSpeedMult() == 1.0)
-			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(1);
+				this.World.setSpeedMult(this.m.MinWorldSpeedMult);
 			}
 			else
 			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(2);
+				this.World.setSpeedMult(this.m.LastWorldSpeedMult != 0 ? this.m.LastWorldSpeedMult : this.Const.World.SpeedSettings.NormalMult);
 			}
+
+			this.m.IsAIPaused = false;
 		}
+
+		this.updateTopBarButtonState();
 	}
 
 	function setWorldmapMusic( _keepPlaying )
@@ -462,7 +459,8 @@ this.world_state <- this.inherit("scripts/states/state", {
 		this.m.IsGamePaused = false;
 		this.m.IsAIPaused = false;
 		this.m.UseDragStyleScrolling = true;
-		this.m.LastWorldSpeedMult = 1.0;
+		this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.NormalMult;
+		this.m.MinWorldSpeedMult = this.Const.World.SpeedSettings.NormalMult;
 		this.m.ExitGame = false;
 		this.m.GameWon = false;
 		this.Settings.getTempGameplaySettings().CameraLocked = false;
@@ -517,6 +515,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 		dayTimeModule.setOnTimeNormalPressedListener(this.setNormalTime.bindenv(this));
 		dayTimeModule.setOnTimeFastPressedListener(this.setFastTime.bindenv(this));
 		this.m.CombatDialog <- this.new("scripts/ui/screens/world/world_combat_dialog");
+		dayTimeModule.setOnTimeVeryFastPressedListener(this.setVeryFastTime.bindenv(this));
 		this.m.CombatDialog.setOnEngageButtonPressedListener(this.combat_dialog_module_onEngagePressed.bindenv(this));
 		this.m.CombatDialog.setOnCancelButtonPressedListener(this.combat_dialog_module_onCancelPressed.bindenv(this));
 		this.m.EventScreen = this.new("scripts/ui/screens/world/world_event_screen");
@@ -596,7 +595,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 
 	function onFinish()
 	{
-		this.World.setSpeedMult(1.0);
+		this.World.setSpeedMult(this.Const.World.SpeedSettings.NormalMult);
 		this.Music.setTrackList(this.Const.Music.MenuTracks, this.Const.Music.CrossFadeTime);
 		this.Time.clearEvents();
 		this.logDebug("Clearing World Scene");
@@ -716,18 +715,15 @@ this.world_state <- this.inherit("scripts/states/state", {
 			}
 		}
 
-		if (this.World.Assets.isCamping())
+		if (!this.isPaused())
 		{
-			this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.CampMult;
+			this.World.setSpeedMult(this.m.LastWorldSpeedMult);
 
-			if (!this.isPaused())
+			if (this.World.getSpeedMult() < this.m.MinWorldSpeedMult)
 			{
 				this.World.setSpeedMult(this.Const.World.SpeedSettings.CampMult);
 			}
-		}
-
-		if (!this.isPaused())
-		{
+		
 			this.m.IsRunningUpdatesWhilePaused = false;
 			this.World.Contracts.update();
 			this.m.Assets.update(this);
@@ -943,7 +939,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 
 						if (entity.isParty())
 						{
-							if (!isEscorting && entity.isAttackable() && entity.getVisibilityMult() != 0 && !entity.isHiddenToPlayer() && (!entity.isAlliedWith(this.m.Player) || forceAttack))
+							if (!isEscorting && entity.isAttackable() && entity.getVisibilityMult() != 0.0 && !entity.isHiddenToPlayer() && (!entity.isAlliedWith(this.m.Player) || forceAttack))
 							{
 								if (this.m.Player.getDistanceTo(entity) <= this.Const.World.CombatSettings.CombatPlayerDistance)
 								{
@@ -1171,6 +1167,12 @@ this.world_state <- this.inherit("scripts/states/state", {
 		this.setupWeather();
 		this.updateDayTime();
 		this.setWorldmapMusic(false);
+
+		if (this.World.Assets.isCamping())
+		{
+			this.setCampingSpeedState();
+		}
+
 		this.setPause(true);
 	}
 
@@ -1255,7 +1257,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				continue;
 			}
 
-			if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0)
+			if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0.0)
 			{
 				continue;
 			}
@@ -1280,7 +1282,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				continue;
 			}
 
-			if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0)
+			if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0.0)
 			{
 				continue;
 			}
@@ -1439,8 +1441,8 @@ this.world_state <- this.inherit("scripts/states/state", {
 			this.Stash.setLocked(true);
 			this.m.CombatStartTime = this.Time.getVirtualTimeF();
 			this.Time.setVirtualTime(0);
-			this.m.LastWorldSpeedMult = 1.0;
-			this.World.setSpeedMult(1.0);
+			this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.NormalMult;
+			this.World.setSpeedMult(this.Const.World.SpeedSettings.NormalMult);
 
 			if (this.m.CombatProperties.Ambience[0].len() != 0)
 			{
@@ -1497,8 +1499,8 @@ this.world_state <- this.inherit("scripts/states/state", {
 		}
 
 		this.autosave();
-		this.m.LastWorldSpeedMult = 1.0;
-		this.World.setSpeedMult(1.0);
+		this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.NormalMult;
+		this.World.setSpeedMult(this.Const.World.SpeedSettings.NormalMult);
 
 		if (this.Settings.getGameplaySettings().RestoreEquipment)
 		{
@@ -1655,42 +1657,13 @@ this.world_state <- this.inherit("scripts/states/state", {
 			this.m.AutoAttack = null;
 		}
 
-		if (this.World.Assets.isCamping())
-		{
-			this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.CampMult;
-			this.World.TopbarDayTimeModule.enableNormalTimeButton(false);
-
-			if (!this.isPaused())
-			{
-				this.World.setSpeedMult(this.Const.World.SpeedSettings.CampMult);
-				this.World.TopbarDayTimeModule.updateTimeButtons(2);
-			}
-			else
-			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(0);
-			}
-		}
-		else
-		{
-			this.m.LastWorldSpeedMult = 1.0;
-			this.World.TopbarDayTimeModule.enableNormalTimeButton(true);
-
-			if (!this.isPaused())
-			{
-				this.World.setSpeedMult(1.0);
-				this.World.TopbarDayTimeModule.updateTimeButtons(1);
-			}
-			else
-			{
-				this.World.TopbarDayTimeModule.updateTimeButtons(0);
-			}
-		}
-
+		this.setCampingSpeedState();
+		
 		if (!this.isPaused())
 		{
 			if (this.World.Assets.isCamping())
 			{
-				this.World.TopbarDayTimeModule.showMessage("ENCAMPED", "");
+				this.World.TopbarDayTimeModule.showMessage("EN CAMPEMENT", "");
 			}
 			else
 			{
@@ -1699,7 +1672,74 @@ this.world_state <- this.inherit("scripts/states/state", {
 		}
 		else
 		{
-			this.World.TopbarDayTimeModule.showMessage("Pause", "(Appuyez sur Espace)");
+			this.World.TopbarDayTimeModule.showMessage("Pause", "(Appuyer sur espace)");
+		}
+	}
+
+	function resetSpeedToNormal()
+	{
+		if (!this.isPaused())
+		{
+			this.World.setSpeedMult(this.Const.World.SpeedSettings.NormalMult);
+		}
+
+		this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.NormalMult;
+	}
+
+	function setCampingSpeedState()
+	{
+		local speed = this.World.Assets.isCamping() ? this.Const.World.SpeedSettings.CampMult : this.Const.World.SpeedSettings.NormalMult;
+		this.setMinWorldSpeedMult(speed);
+
+		if (!this.isPaused())
+		{
+			this.m.LastWorldSpeedMult = speed;
+			this.World.setSpeedMult(speed);
+		}
+
+		this.updateTopBarButtonState();
+	}
+
+	function updateTopBarButtonState()
+	{
+		if (("TopbarDayTimeModule" in this.World) && this.World.TopbarDayTimeModule != null)
+		{
+			if (this.World.Assets.isCamping() || this.m.EscortedEntity != null && !this.m.EscortedEntity.isNull() && this.m.EscortedEntity.isAlive())
+			{
+				this.World.TopbarDayTimeModule.enableNormalTimeButton(false);
+				this.World.TopbarDayTimeModule.enableFastTimeButton(false);
+
+				if (!this.isPaused())
+				{
+					this.World.TopbarDayTimeModule.updateTimeButtons(3);
+				}
+				else
+				{
+					this.World.TopbarDayTimeModule.updateTimeButtons(0);
+				}
+			}
+			else
+			{
+				this.World.TopbarDayTimeModule.enableNormalTimeButton(true);
+				this.World.TopbarDayTimeModule.enableFastTimeButton(true);
+
+				if (this.isPaused())
+				{
+					this.World.TopbarDayTimeModule.updateTimeButtons(0);
+				}
+				else if (this.World.getSpeedMult() == this.Const.World.SpeedSettings.NormalMult)
+				{
+					this.World.TopbarDayTimeModule.updateTimeButtons(1);
+				}
+				else if (this.World.getSpeedMult() == this.Const.World.SpeedSettings.FastMult)
+				{
+					this.World.TopbarDayTimeModule.updateTimeButtons(2);
+				}
+				else
+				{
+					this.World.TopbarDayTimeModule.updateTimeButtons(3);
+				}
+			}
 		}
 	}
 
@@ -1946,28 +1986,53 @@ this.world_state <- this.inherit("scripts/states/state", {
 		}
 	}
 
-	function setNormalTime()
+	function setNormalTime( _force = false )
 	{
 		if (!this.m.MenuStack.hasBacksteps())
 		{
-			if (!this.World.Assets.isCamping() && this.m.EscortedEntity == null)
+			if (_force || !this.World.Assets.isCamping() && this.m.EscortedEntity == null)
 			{
-				this.m.LastWorldSpeedMult = 1.0;
+				this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.NormalMult;
+			}
+			else if (this.m.MinWorldSpeedMult > this.Const.World.SpeedSettings.NormalMult)
+			{
+				this.m.LastWorldSpeedMult = this.m.MinWorldSpeedMult;
 			}
 
 			this.setPause(false);
 		}
 	}
 
-	function setFastTime()
+	function setFastTime( _force = false )
 	{
 		if (!this.m.MenuStack.hasBacksteps())
 		{
-			if (!this.World.Assets.isCamping() && this.m.EscortedEntity == null)
+			if (_force || !this.World.Assets.isCamping() && this.m.EscortedEntity == null)
 			{
 				this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.FastMult;
 			}
+			else if (this.m.MinWorldSpeedMult > this.Const.World.SpeedSettings.FastMult)
+			{
+				this.m.LastWorldSpeedMult = this.m.MinWorldSpeedMult;
+			}
 
+			this.setPause(false);
+		}
+	}
+
+	function setVeryFastTime( _force = false )
+	{
+		if (!this.m.MenuStack.hasBacksteps())
+		{
+			if (_force || !this.World.Assets.isCamping() && this.m.EscortedEntity == null)
+			{
+				this.m.LastWorldSpeedMult = this.Const.World.SpeedSettings.VeryFastMult;
+			}
+			else if (this.m.MinWorldSpeedMult > this.Const.World.SpeedSettings.VeryFastMult)
+			{
+				this.m.LastWorldSpeedMult = this.m.MinWorldSpeedMult;
+			}
+			
 			this.setPause(false);
 		}
 	}
@@ -2149,7 +2214,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 					continue;
 				}
 
-				if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0)
+				if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0.0)
 				{
 					continue;
 				}
@@ -2183,7 +2248,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 					continue;
 				}
 
-				if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0)
+				if (!party.isAttackable() || party.getFaction() == 0 || party.getVisibilityMult() == 0.0)
 				{
 					continue;
 				}
@@ -2781,7 +2846,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 						this.Cursor.setCursor(this.Const.UI.Cursor.Attack);
 					}
 				}
-				else if (entity.isAttackable() && entity.getVisibilityMult() != 0 && !entity.isAlliedWithPlayer())
+				else if (entity.isAttackable() && entity.getVisibilityMult() != 0.0 && !entity.isAlliedWithPlayer())
 				{
 					this.Cursor.setCursor(this.Const.UI.Cursor.Attack);
 				}
@@ -2983,21 +3048,6 @@ this.world_state <- this.inherit("scripts/states/state", {
 
 		switch(_key.getKey())
 		{
-		case 3:
-			if (!this.m.IsDeveloperModeEnabled)
-			{
-				break;
-			}
-
-			if (this.getCurrentTown() != null)
-			{
-				break;
-			}
-
-			this.World.setSpeedMult(3.0);
-			this.logDebug("World Speed set to x3.0");
-			return true;
-
 		case 4:
 			if (!this.m.IsDeveloperModeEnabled)
 			{
@@ -3009,6 +3059,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				break;
 			}
 
+			this.setLastWorldSpeedMult(4.0);
 			this.World.setSpeedMult(4.0);
 			this.logDebug("World Speed set to x4.0");
 			return true;
@@ -3024,6 +3075,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				break;
 			}
 
+			this.setLastWorldSpeedMult(5.0);
 			this.World.setSpeedMult(5.0);
 			this.logDebug("World Speed set to x5.0");
 			return true;
@@ -3039,6 +3091,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				break;
 			}
 
+			this.setLastWorldSpeedMult(6.0);
 			this.World.setSpeedMult(6.0);
 			this.logDebug("World Speed set to x6.0");
 			return true;
@@ -3054,6 +3107,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				break;
 			}
 
+			this.setLastWorldSpeedMult(7.0);
 			this.World.setSpeedMult(7.0);
 			this.logDebug("World Speed set to x7.0");
 			return true;
@@ -3069,6 +3123,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				break;
 			}
 
+			this.setLastWorldSpeedMult(8.0);
 			this.World.setSpeedMult(8.0);
 			this.logDebug("World Speed set to x8.0");
 			return true;
@@ -3084,6 +3139,7 @@ this.world_state <- this.inherit("scripts/states/state", {
 				break;
 			}
 
+			this.setLastWorldSpeedMult(9.0);
 			this.World.setSpeedMult(9.0);
 			this.logDebug("World Speed set to x9.0");
 			return true;
@@ -3456,6 +3512,12 @@ this.world_state <- this.inherit("scripts/states/state", {
 				return true;
 
 			case 3:
+				if (!this.m.MenuStack.hasBacksteps())
+				{
+					this.setVeryFastTime();
+					break;
+				}
+
 				if (!this.m.EventScreen.isVisible() || this.m.EventScreen.isAnimating() || this.m.EventScreen.isJustShown())
 				{
 					break;

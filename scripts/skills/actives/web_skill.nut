@@ -88,7 +88,7 @@ this.web_skill <- this.inherit("scripts/skills/skill", {
 			local effect = this.Tactical.spawnSpriteEffect("bust_web2", this.createColor("#ffffff"), _targetTile, 0, 4, 1.0, targetEntity.getSprite("status_rooted").Scale, 100, 100, 0);
 			local flip = !targetEntity.isAlliedWithPlayer();
 			effect.setHorizontalFlipping(flip);
-			this.Time.scheduleEvent(this.TimeUnit.Real, 200, this.onNetSpawn.bindenv(this), targetEntity);
+			this.Time.scheduleEvent(this.TimeUnit.Virtual, 200, this.onNetSpawn.bindenv(this), targetEntity);
 		}
 		else
 		{

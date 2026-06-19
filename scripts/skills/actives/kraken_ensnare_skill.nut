@@ -73,7 +73,7 @@ this.kraken_ensnare_skill <- this.inherit("scripts/skills/skill", {
 		_user.sinkIntoGround(0.75);
 		_user.getSkills().setBusy(true);
 		_user.m.IsAbleToDie = false;
-		this.Time.scheduleEvent(this.TimeUnit.Real, 800, this.onNetSpawn.bindenv(this), {
+		this.Time.scheduleEvent(this.TimeUnit.Virtual, 800, this.onNetSpawn.bindenv(this), {
 			User = _user,
 			Skill = this,
 			TargetEntity = _targetTile.getEntity(),

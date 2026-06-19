@@ -111,6 +111,14 @@ this.fling_back_skill <- this.inherit("scripts/skills/skill", {
 		return true;
 	}
 
+	function onTriggeredMovement( _skill, _targetEntity, _hitInfo )
+	{
+		if (_skill == this)
+		{
+			_hitInfo.DamageRegular += this.Const.Combat.FallingDamage;
+		}
+	}
+
 	function onPerformAttack( _tag )
 	{
 		local _user = _tag.User;
@@ -139,35 +147,7 @@ this.fling_back_skill <- this.inherit("scripts/skills/skill", {
 		skills.removeByID("effects.shieldwall");
 		skills.removeByID("effects.spearwall");
 		skills.removeByID("effects.riposte");
-		target.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
-		local damage = this.Math.max(0, this.Math.abs(flingToTile.Level - _targetTile.Level) - 1) * this.Const.Combat.FallingDamage + this.Const.Combat.FallingDamage;
-
-		if (damage == 0)
-		{
-			this.Tactical.getNavigator().teleport(target, flingToTile, null, null, true);
-		}
-		else
-		{
-			local p = this.getContainer().getActor().getCurrentProperties();
-			local tag = {
-				Attacker = _user,
-				Skill = this,
-				HitInfo = clone this.Const.Tactical.HitInfo
-			};
-			tag.HitInfo.DamageRegular = damage;
-			tag.HitInfo.DamageFatigue = this.Const.Combat.FatigueReceivedPerHit;
-			tag.HitInfo.DamageDirect = 1.0;
-			tag.HitInfo.BodyPart = this.Const.BodyPart.Body;
-			tag.HitInfo.BodyDamageMult = 1.0;
-			tag.HitInfo.FatalityChanceMult = 1.0;
-			this.Tactical.getNavigator().teleport(target, flingToTile, this.onKnockedDown, tag, true);
-		}
-
-		local tag = {
-			TargetTile = _targetTile,
-			Actor = _user
-		};
-		this.Time.scheduleEvent(this.TimeUnit.Virtual, 250, this.onFollow, tag);
+		this.Tactical.State.handleInvoluntaryMovement(target, _user, _targetTile, flingToTile, this, this.onKnockedDown, this.onFollow);
 		return true;
 	}
 
@@ -185,11 +165,6 @@ this.fling_back_skill <- this.inherit("scripts/skills/skill", {
 		if (_tag.Skill.m.SoundOnHit.len() != 0)
 		{
 			this.Sound.play(_tag.Skill.m.SoundOnHit[this.Math.rand(0, _tag.Skill.m.SoundOnHit.len() - 1)], this.Const.Sound.Volume.Skill, _entity.getPos());
-		}
-
-		if (_tag.HitInfo.DamageRegular != 0)
-		{
-			_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
 		}
 	}
 

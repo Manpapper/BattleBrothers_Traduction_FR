@@ -195,27 +195,7 @@ this.hook <- this.inherit("scripts/skills/skill", {
 		}
 
 		_user.getSkills().onTargetHit(this, target, this.Const.BodyPart.Body, 0, 0);
-		target.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
-		local damage = this.Math.max(0, this.Math.abs(pullToTile.Level - _targetTile.Level) - 1) * this.Const.Combat.FallingDamage;
-		local tag = {
-			Attacker = _user,
-			Skill = this,
-			HitInfo = clone this.Const.Tactical.HitInfo
-		};
-
-		if (damage == 0)
-		{
-			this.Tactical.getNavigator().teleport(_targetTile.getEntity(), pullToTile, this.onHookingComplete, tag, true);
-		}
-		else
-		{
-			tag.HitInfo.DamageRegular = damage;
-			tag.HitInfo.DamageFatigue = this.Const.Combat.FatigueReceivedPerHit;
-			tag.HitInfo.DamageDirect = 1.0;
-			tag.HitInfo.BodyPart = this.Const.BodyPart.Body;
-			this.Tactical.getNavigator().teleport(_targetTile.getEntity(), pullToTile, this.onPulledDown, tag, true);
-		}
-
+		this.Tactical.State.handleInvoluntaryMovement(target, _user, _targetTile, pullToTile, this, null, this.onHookingComplete);
 		return success;
 	}
 
@@ -226,11 +206,6 @@ this.hook <- this.inherit("scripts/skills/skill", {
 			_properties.MeleeSkill += 10;
 			this.m.HitChanceBonus += 10;
 		}
-	}
-
-	function onPulledDown( _entity, _tag )
-	{
-		_entity.onDamageReceived(_tag.Attacker, _tag.Skill, _tag.HitInfo);
 	}
 
 	function onHookingComplete( _entity, _tag )

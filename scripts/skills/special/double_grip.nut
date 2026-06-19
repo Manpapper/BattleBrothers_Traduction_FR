@@ -51,7 +51,7 @@ this.double_grip <- this.inherit("scripts/skills/skill", {
 	{
 		if (this.canDoubleGrip())
 		{
-			_properties.MeleeDamageMult *= 1.25;
+			_properties.MeleeDamageMult *= this.Const.Combat.DoubleGripDamageMult;
 		}
 	}
 

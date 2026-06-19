@@ -11,7 +11,7 @@ this.troublemakers_bully_peasants_event <- this.inherit("scripts/events/event", 
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "%townImage%Entering %townname%, il ne faut pas longtemps pour que le %troublemaker% embête les habitants. Il leur arrache les seaux des mains et jette les femmes dans la boue à coups de pied. Quand un vieil homme lui fait face, le mercenaire sort son arme. Les autres paysans vous supplient de mettre fin à cette situation immédiatement.",
+			Text = "%townImage%En entrant dans %townname%, il ne faut pas longtemps pour que %troublemaker% embête les habitants. Il leur arrache les seaux des mains et jette les femmes dans la boue à coups de pied. Quand un vieil homme lui fait face, le mercenaire sort son arme. Les autres paysans vous supplient de mettre fin à cette situation immédiatement.",
 			Image = "",
 			List = [],
 			Characters = [],
