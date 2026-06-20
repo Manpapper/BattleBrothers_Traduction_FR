@@ -3,7 +3,7 @@ this.shieldwall_effect <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "effects.shieldwall";
-		this.m.Name = "Mur de boulier";
+		this.m.Name = "Mur de Bouclier";
 		this.m.Description = "Ayant un bouclier équipé, ce personnage bénéficie d\'une défense accrue.";
 		this.m.Icon = "skills/status_effect_03.png";
 		this.m.IconMini = "status_effect_03_mini";

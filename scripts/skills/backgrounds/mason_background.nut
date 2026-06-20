@@ -45,7 +45,7 @@ this.mason_background <- this.inherit("scripts/skills/backgrounds/character_back
 				id = 13,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] Experience Gain"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] de Gain d\'Experience"
 			}
 		];
 	}
