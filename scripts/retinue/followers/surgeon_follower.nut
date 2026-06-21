@@ -5,7 +5,7 @@ this.surgeon_follower <- this.inherit("scripts/retinue/follower", {
 		this.follower.create();
 		this.m.ID = "follower.surgeon";
 		this.m.Name = "Le Chirurgien";
-		this.m.Description = "Le chirurgien est un livre ambulant de connaissances anatomiques. Une compagnie de mercenaires semble être l\'endroit idéal pour appliquer ces connaissances de la guérison, mais aussi pour en apprendre davantage sur la façon dont l\'intérieur des hommes est constitué.";
+		this.m.Description = "Le chirurgien déborde de connaissances anatomiques. Une compagnie de mercenaires semble être l\'endroit idéal pour appliquer ses connaissances, mais aussi pour en apprendre davantage sur la façon dont l\'intérieur des hommes est constitué.";
 		this.m.Image = "ui/campfire/surgeon_01";
 		this.m.Cost = 3500;
 		this.m.Effects = [
