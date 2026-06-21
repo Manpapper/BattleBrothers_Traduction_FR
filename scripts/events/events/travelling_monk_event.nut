@@ -27,7 +27,7 @@ this.travelling_monk_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "A2",
-			Text = "[img]gfx/ui/events/event_40.png[/img]%SPEECH_ON%Oui, je savais que vous demanderiez ça. Voici Bessie, un nom de vache pour un âne. Ne vous inquiétez pas, elle ne va pas vous frapper. Elle est toute cravatée, vous voyez ? Ce qu\'elle transporte, eh bien, c\'est de la bière. Pour les hommes là-bas, afin qu\'ils puissent boire aux hommes décédés. Si ça ne vous dérange pas, ou si ça ne vous dérange pas pour mes affaires, j\'aimerais continur mon chemin.%SPEECH_OFF%Le moine prend les rênes de son jenny et se prépare à partir.",
+			Text = "[img]gfx/ui/events/event_40.png[/img]%SPEECH_ON%Oui, je savais que vous demanderiez ça. Voici Bessie, un nom de vache pour un âne. Ne vous inquiétez pas, elle ne va pas vous frapper. Elle est toute cravatée, vous voyez ? Ce qu\'elle transporte, eh bien, c\'est de la bière. Pour les hommes là-bas, afin qu\'ils puissent boire aux hommes décédés. Si ça ne vous dérange pas, ou si ça ne vous dérange pas pour mes affaires, j\'aimerais continuer mon chemin.%SPEECH_OFF%Le moine prend les rênes de son jenny et se prépare à partir.",
 			Image = "",
 			List = [],
 			Options = [
