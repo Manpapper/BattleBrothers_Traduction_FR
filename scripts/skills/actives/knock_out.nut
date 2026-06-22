@@ -12,7 +12,7 @@ this.knock_out <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.knock_out";
-		this.m.Name = "Assomer";
+		this.m.Name = "Assommer";
 		this.m.Description = "Un lourd coup qui a pour but d\'étourdir ou d\'incapaciter la personne pendant un tour, mais ne fait pas beaucoup de dégâts. Les cibles étourdies ne peuvent pas garder en place leur Mur de Bouclier, Mur de Lance ou toute autre compétence similaire.";
 		this.m.Icon = "skills/active_32.png";
 		this.m.IconDisabled = "skills/active_32_sw.png";
