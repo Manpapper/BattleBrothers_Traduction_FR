@@ -39,11 +39,12 @@ this.mine_cavein_situation <- this.inherit("scripts/entity/world/settlements/sit
 
 	function onUpdateShopList( _id, _list )
 	{
-		foreach( index, item in _list )
+		for( local i = 0; i < _list.len(); i++ )
 		{
-			if (item.S == "trade/uncut_gems_item" || item.S == "trade/copper_ingots_item")
+			if (_list[i].S == "trade/uncut_gems_item" || _list[i].S == "trade/copper_ingots_item")
 			{
-				_list.remove(index);
+				_list.remove(i);
+				i--;
 			}
 		}
 	}

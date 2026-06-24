@@ -15,10 +15,10 @@ this.perforate_skill <- this.inherit("scripts/skills/skill", {
 			"sounds/combat/impale_03.wav"
 		];
 		this.m.SoundOnHit = [
-			"sounds/combat/dlc2/lunge_attack_hit_01.wav",
-			"sounds/combat/dlc2/lunge_attack_hit_02.wav",
-			"sounds/combat/dlc2/lunge_attack_hit_03.wav",
-			"sounds/combat/dlc2/lunge_attack_hit_04.wav"
+			"sounds/combat/perforate_attack_hit_01.wav",
+			"sounds/combat/perforate_attack_hit_02.wav",
+			"sounds/combat/perforate_attack_hit_03.wav",
+			"sounds/combat/perforate_attack_hit_04.wav"
 		];
 		this.m.Type = this.Const.SkillType.Active;
 		this.m.Order = this.Const.SkillOrder.OffensiveTargeted;
